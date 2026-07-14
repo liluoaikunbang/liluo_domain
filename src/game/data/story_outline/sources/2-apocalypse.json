@@ -1,0 +1,216 @@
+{
+  "rootKeys": [
+    "world-2-silent-earth-dirge"
+  ],
+  "nodes": [
+    {
+      "key": "world-2-silent-earth-dirge",
+      "world": "2-寂土挽歌",
+      "title": "寂土挽歌（末日）",
+      "status": "分类",
+      "summary": "丧尸、诡异、极端天气……这个世界似乎陷入了无尽的启示录循环。",
+      "order": 30
+    },
+    {
+      "key": "world-2-silent-earth-dirge-zombie-apocalypse",
+      "world": "2-寂土挽歌",
+      "title": "尸潮噬世",
+      "status": "主线任务",
+      "parentKey": "world-2-silent-earth-dirge",
+      "order": 10
+    },
+    {
+      "key": "world-2-silent-earth-dirge-red-line",
+      "world": "2-寂土挽歌",
+      "title": "红线鬼域",
+      "summary": "进入丧尸末日。",
+      "tags": [
+        "性刺激"
+      ],
+      "specialGameplay": [
+        "三点刺激"
+      ],
+      "storyTags": [
+        "废城求生"
+      ],
+      "status": "大纲草稿",
+      "parentKey": "world-2-silent-earth-dirge-zombie-apocalypse",
+      "order": 10
+    },
+    {
+      "key": "world-2-silent-earth-dirge-omega",
+      "world": "2-寂土挽歌",
+      "title": "Ω级禁忌束缚套装",
+      "summary": "永久拘束开端。",
+      "foreshadowing": [
+        "永久拘束"
+      ],
+      "tags": [
+        "永久拘束",
+        "扎带"
+      ],
+      "storyTags": [
+        "废城求生"
+      ],
+      "status": "大纲草稿",
+      "parentKey": "world-2-silent-earth-dirge-red-line",
+      "order": 20
+    },
+    {
+      "key": "world-2-silent-earth-dirge-eerie-apocalypse",
+      "world": "2-寂土挽歌",
+      "title": "异诡临界",
+      "status": "主线任务",
+      "parentKey": "world-2-silent-earth-dirge-omega",
+      "order": 20
+    },
+    {
+      "key": "world-2-silent-earth-dirge-fog-city",
+      "world": "2-寂土挽歌",
+      "title": "诡雾迷城",
+      "summary": "诡异末日开端。",
+      "tags": [
+        "永久拘束",
+        "触手"
+      ],
+      "characters": [
+        "娜芙",
+        "老陆"
+      ],
+      "status": "大纲草稿",
+      "storyTags": [
+        "废城求生"
+      ],
+      "parentKey": "world-2-silent-earth-dirge-eerie-apocalypse",
+      "order": 10
+    },
+    {
+      "key": "world-2-silent-earth-dirge-disaster-anomaly",
+      "world": "2-寂土挽歌",
+      "title": "天灾异像",
+      "status": "主线任务",
+      "parentKey": "world-2-silent-earth-dirge-fog-city",
+      "order": 30
+    },
+    {
+      "key": "world-2-silent-earth-dirge-plague-ruined-city",
+      "world": "2-寂土挽歌",
+      "title": "疫病残城",
+      "status": "主线任务",
+      "parentKey": "world-2-silent-earth-dirge-disaster-anomaly",
+      "order": 40
+    },
+    {
+      "key": "world-2-silent-earth-dirge-ecology-devouring-city",
+      "world": "2-寂土挽歌",
+      "title": "生态吞城",
+      "status": "主线任务",
+      "parentKey": "world-2-silent-earth-dirge-plague-ruined-city",
+      "order": 50
+    },
+    {
+      "key": "world-2-silent-earth-dirge-beast-treading-land",
+      "world": "2-寂土挽歌",
+      "title": "异兽踏陆",
+      "status": "主线任务",
+      "parentKey": "world-2-silent-earth-dirge-ecology-devouring-city",
+      "order": 60
+    },
+    {
+      "key": "world-2-silent-earth-dirge-insect-hive-border",
+      "world": "2-寂土挽歌",
+      "title": "虫巢边境",
+      "status": "主线任务",
+      "parentKey": "world-2-silent-earth-dirge-beast-treading-land",
+      "order": 70
+    },
+    {
+      "key": "world-2-silent-earth-dirge-deep-sea-drifting-land",
+      "world": "2-寂土挽歌",
+      "title": "深海漂陆",
+      "status": "主线任务",
+      "parentKey": "world-2-silent-earth-dirge-insect-hive-border",
+      "order": 80
+    },
+    {
+      "key": "world-2-silent-earth-dirge-eternal-winter-white-realm",
+      "world": "2-寂土挽歌",
+      "title": "永冬白境",
+      "status": "主线任务",
+      "parentKey": "world-2-silent-earth-dirge-deep-sea-drifting-land",
+      "order": 90
+    },
+    {
+      "key": "world-2-silent-earth-dirge-lone-sand-sea",
+      "world": "2-寂土挽歌",
+      "title": "沙海孤途",
+      "status": "主线任务",
+      "parentKey": "world-2-silent-earth-dirge-eternal-winter-white-realm",
+      "order": 100
+    },
+    {
+      "key": "world-2-silent-earth-dirge-mechanical-afterglow",
+      "world": "2-寂土挽歌",
+      "title": "机械余晖",
+      "status": "主线任务",
+      "parentKey": "world-2-silent-earth-dirge-lone-sand-sea",
+      "order": 110
+    },
+    {
+      "key": "world-2-silent-earth-dirge-ark-ghost-cage",
+      "world": "2-寂土挽歌",
+      "title": "方舟幽笼",
+      "status": "主线任务",
+      "parentKey": "world-2-silent-earth-dirge-mechanical-afterglow",
+      "order": 120
+    },
+    {
+      "key": "world-2-silent-earth-dirge-wasteland-court",
+      "world": "2-寂土挽歌",
+      "title": "废土王庭",
+      "status": "主线任务",
+      "parentKey": "world-2-silent-earth-dirge-ark-ghost-cage",
+      "order": 130
+    },
+    {
+      "key": "world-2-silent-earth-dirge-apocalypse-holy-judgment",
+      "world": "2-寂土挽歌",
+      "title": "末日圣裁",
+      "status": "主线任务",
+      "parentKey": "world-2-silent-earth-dirge-wasteland-court",
+      "order": 140
+    },
+    {
+      "key": "world-2-silent-earth-dirge-dream-city-slumber",
+      "world": "2-寂土挽歌",
+      "title": "梦城沉眠",
+      "status": "主线任务",
+      "parentKey": "world-2-silent-earth-dirge-apocalypse-holy-judgment",
+      "order": 150
+    },
+    {
+      "key": "world-2-silent-earth-dirge-looping-final-day",
+      "world": "2-寂土挽歌",
+      "title": "循时终日",
+      "status": "主线任务",
+      "parentKey": "world-2-silent-earth-dirge-dream-city-slumber",
+      "order": 160
+    },
+    {
+      "key": "world-2-silent-earth-dirge-forgotten-river-gray-world",
+      "world": "2-寂土挽歌",
+      "title": "忘川灰世",
+      "status": "主线任务",
+      "parentKey": "world-2-silent-earth-dirge-looping-final-day",
+      "order": 170
+    },
+    {
+      "key": "world-2-silent-earth-dirge-rift-disaster",
+      "world": "2-寂土挽歌",
+      "title": "裂界灾临",
+      "status": "主线任务",
+      "parentKey": "world-2-silent-earth-dirge-forgotten-river-gray-world",
+      "order": 180
+    }
+  ]
+}

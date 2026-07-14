@@ -1,0 +1,50 @@
+{
+  "city_desire_leave_north": {
+    "eventId": "city_desire_leave_north",
+    "triggerType": "manual",
+    "dialogueId": "city_desire_leave_north",
+    "tileMarker": {
+      "mapId": "city_desire",
+      "layerName": "leave_event_1"
+    },
+    "panelActions": [
+      {
+        "actionId": "open_city_desire_leave_north",
+        "label": "离开醉欲之城中心城区（Space）",
+        "description": "列车停靠在城北站台旁，可以从这里离开中心城区。"
+      }
+    ]
+  },
+  "city_desire_leave_west": {
+    "eventId": "city_desire_leave_west",
+    "triggerType": "manual",
+    "dialogueId": "city_desire_leave_west",
+    "tileMarker": {
+      "mapId": "city_desire",
+      "layerName": "leave_event_left"
+    },
+    "panelActions": [
+      {
+        "actionId": "open_city_desire_leave_west",
+        "label": "离开醉欲之城中心城区（Space）",
+        "description": "列车停靠在城西站台旁，可以从这里离开中心城区。"
+      }
+    ]
+  },
+  "city_desire_leave_east": {
+    "eventId": "city_desire_leave_east",
+    "triggerType": "manual",
+    "dialogueId": "city_desire_leave_east",
+    "tileMarker": {
+      "mapId": "city_desire",
+      "layerName": "leave_event_right"
+    },
+    "panelActions": [
+      {
+        "actionId": "open_city_desire_leave_east",
+        "label": "离开醉欲之城中心城区（Space）",
+        "description": "列车停靠在城东站台旁，可以从这里离开中心城区。"
+      }
+    ]
+  }
+}

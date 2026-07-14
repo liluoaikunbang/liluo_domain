@@ -1,0 +1,119 @@
+{
+  "city_desire_leave_north": {
+    "id": "city_desire_leave_north",
+    "startNodeId": "start",
+    "nodes": {
+      "start": {
+        "id": "start",
+        "text": "车站的灯牌在雾色里闪烁。离开醉欲之城中心城区，需要搭乘穿城列车，从这里驶向下一段路。",
+        "choices": [
+          {
+            "id": "go_to_north_beach",
+            "label": "去往北沙滩",
+            "next": "north_beach_pending"
+          },
+          {
+            "id": "return_to_liluo_estate",
+            "label": "回到四季花园",
+            "mapTransition": {
+              "mapId": "liluo_estate",
+              "spawnId": "role"
+            }
+          },
+          {
+            "id": "stay_in_city_desire",
+            "label": "暂时不离开"
+          }
+        ]
+      },
+      "north_beach_pending": {
+        "id": "north_beach_pending",
+        "text": "北沙滩方向的列车还没有正式接入。站台广播里只有潮声一样的杂音。"
+      }
+    }
+  },
+  "city_desire_leave_west": {
+    "id": "city_desire_leave_west",
+    "startNodeId": "start",
+    "nodes": {
+      "start": {
+        "id": "start",
+        "text": "西侧轨道贴着旧街区延伸出去。离开醉欲之城中心城区，需要坐列车穿过城门与广告屏之间的阴影。",
+        "choices": [
+          {
+            "id": "go_to_west_suburb",
+            "label": "去往西部郊区",
+            "next": "west_suburb_pending"
+          },
+          {
+            "id": "go_to_industrial_area",
+            "label": "去往工业区",
+            "next": "industrial_area_pending"
+          },
+          {
+            "id": "go_to_abyss_prison",
+            "label": "去往深渊幽狱",
+            "next": "abyss_prison_pending"
+          },
+          {
+            "id": "return_to_liluo_estate",
+            "label": "回到四季花园",
+            "mapTransition": {
+              "mapId": "liluo_estate",
+              "spawnId": "role"
+            }
+          },
+          {
+            "id": "stay_in_city_desire",
+            "label": "暂时不离开"
+          }
+        ]
+      },
+      "west_suburb_pending": {
+        "id": "west_suburb_pending",
+        "text": "西部郊区方向的列车还没有正式接入。远处的站台地图暂时仍是一片暗格。"
+      },
+      "industrial_area_pending": {
+        "id": "industrial_area_pending",
+        "text": "工业区方向的列车还没有正式接入。轨道尽头传来低沉的机械轰鸣，但道路仍被拦下。"
+      },
+      "abyss_prison_pending": {
+        "id": "abyss_prison_pending",
+        "text": "深渊幽狱方向的列车还没有正式接入。检票口后的黑色灯带像在等待某个更晚的章节。"
+      }
+    }
+  },
+  "city_desire_leave_east": {
+    "id": "city_desire_leave_east",
+    "startNodeId": "start",
+    "nodes": {
+      "start": {
+        "id": "start",
+        "text": "东侧月台被霓虹照成浅金色。离开醉欲之城中心城区，需要搭乘列车越过内城的边界。",
+        "choices": [
+          {
+            "id": "go_to_east_suburb",
+            "label": "去往东部郊区",
+            "next": "east_suburb_pending"
+          },
+          {
+            "id": "return_to_liluo_estate",
+            "label": "回到四季花园",
+            "mapTransition": {
+              "mapId": "liluo_estate",
+              "spawnId": "role"
+            }
+          },
+          {
+            "id": "stay_in_city_desire",
+            "label": "暂时不离开"
+          }
+        ]
+      },
+      "east_suburb_pending": {
+        "id": "east_suburb_pending",
+        "text": "东部郊区方向的列车还没有正式接入。站台尽头的道岔暂时没有亮起。"
+      }
+    }
+  }
+}

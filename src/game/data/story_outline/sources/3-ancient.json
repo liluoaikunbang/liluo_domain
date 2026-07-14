@@ -1,0 +1,227 @@
+{
+  "rootKeys": [
+    "world-3-mortal-dao"
+  ],
+  "nodes": [
+    {
+      "key": "world-3-mortal-dao",
+      "world": "3-尘寰问道",
+      "title": "尘寰问道（古风）",
+      "status": "分类",
+      "summary": "从丫鬟到一国的公主，从武林侠女到问道修士，这个世界总有无限的可能。",
+      "order": 40
+    },
+    {
+      "key": "world-3-mortal-dao-maid-difficulty",
+      "world": "3-尘寰问道",
+      "title": "丫鬟难为",
+      "status": "主线任务",
+      "parentKey": "world-3-mortal-dao",
+      "order": 10
+    },
+    {
+      "key": "world-3-mortal-dao-commoner-princess",
+      "world": "3-尘寰问道",
+      "title": "平民公主",
+      "status": "主线任务",
+      "parentKey": "world-3-mortal-dao-royal-garden-beast-hunt",
+      "order": 10
+    },
+    {
+      "key": "world-3-mortal-dao-royal-garden-beast-hunt",
+      "world": "3-尘寰问道",
+      "title": "王苑兽猎",
+      "status": "大纲",
+      "parentKey": "world-3-mortal-dao-maid-difficulty",
+      "order": 10
+    },
+    {
+      "key": "world-3-mortal-dao-frontier-marriage",
+      "world": "3-尘寰问道",
+      "title": "塞外和亲",
+      "status": "主线任务",
+      "parentKey": "world-3-mortal-dao-commoner-princess",
+      "order": 10
+    },
+    {
+      "key": "world-3-mortal-dao-chaotic-world-ranger",
+      "world": "3-尘寰问道",
+      "title": "乱世游侠",
+      "status": "主线任务",
+      "parentKey": "world-3-mortal-dao-frontier-marriage",
+      "order": 10
+    },
+    {
+      "key": "world-3-mortal-dao-start",
+      "world": "3-尘寰问道",
+      "title": "问道起点",
+      "status": "主线任务",
+      "parentKey": "world-3-mortal-dao-siege-survival",
+      "order": 10
+    },
+    {
+      "key": "world-3-mortal-dao-siege-survival",
+      "world": "3-尘寰问道",
+      "title": "围城求生",
+      "status": "大纲",
+      "parentKey": "world-3-mortal-dao-sakura-storm-shogunate",
+      "order": 10
+    },
+    {
+      "key": "world-3-mortal-dao-sakura-storm-shogunate",
+      "world": "3-尘寰问道",
+      "title": "樱岚幕府",
+      "status": "大纲",
+      "parentKey": "world-3-mortal-dao-chaotic-world-ranger",
+      "order": 10
+    },
+    {
+      "key": "world-3-mortal-dao-counterattack",
+      "world": "3-尘寰问道",
+      "title": "缚身反杀",
+      "summary": "初入宗门，被魔修绑架反杀。",
+      "foreshadowing": [
+        "修为废除",
+        "第一次"
+      ],
+      "tags": [
+        "镣铐",
+        "拘束生活",
+        "DID"
+      ],
+      "characters": [
+        "妙桐"
+      ],
+      "storyTags": [
+        "玄途炼心"
+      ],
+      "status": "大纲草稿",
+      "parentKey": "world-3-mortal-dao-start",
+      "order": 10
+    },
+    {
+      "key": "world-3-mortal-dao-no-master",
+      "world": "3-尘寰问道",
+      "title": "无人收徒",
+      "summary": "回到宗门，由于丹田被毁无人收徒。",
+      "characters": [
+        "妙桐"
+      ],
+      "locations": [
+        "玉衡宗"
+      ],
+      "storyTags": [
+        "玄途炼心"
+      ],
+      "status": "大纲草稿",
+      "parentKey": "world-3-mortal-dao-counterattack",
+      "order": 10
+    },
+    {
+      "key": "world-3-mortal-dao-framed",
+      "world": "3-尘寰问道",
+      "title": "陷害，入魔宗",
+      "summary": "被陷害，思过崖，魔宗。",
+      "tags": [
+        "社死",
+        "镣铐",
+        "监禁"
+      ],
+      "specialGameplay": [
+        "无鞋",
+        "露天地牢",
+        "水牢",
+        "寒冷",
+        "冤罪"
+      ],
+      "characters": [
+        "妙桐",
+        "顾文若"
+      ],
+      "locations": [
+        "玉衡宗",
+        "血影门"
+      ],
+      "reference": "小说《我家仙子多有病》开局思过崖情节",
+      "storyTags": [
+        "玄途炼心"
+      ],
+      "status": "大纲草稿",
+      "parentKey": "world-3-mortal-dao-no-master",
+      "order": 10
+    },
+    {
+      "key": "world-3-mortal-dao-demonic-sect-adventure",
+      "world": "3-尘寰问道",
+      "title": "魔宗历险",
+      "status": "主线任务",
+      "questType": "main",
+      "parentKey": "world-3-mortal-dao-framed",
+      "order": 10
+    },
+    {
+      "key": "world-3-mortal-dao-rebuild",
+      "world": "3-尘寰问道",
+      "title": "重新修炼",
+      "summary": "重修功法。",
+      "foreshadowing": [
+        "修为废除",
+        "第二次"
+      ],
+      "characters": [
+        "妙桐"
+      ],
+      "locations": [
+        "血影门"
+      ],
+      "storyTags": [
+        "玄途炼心"
+      ],
+      "status": "大纲草稿",
+      "parentKey": "world-3-mortal-dao-demonic-sect-adventure",
+      "order": 10
+    },
+    {
+      "key": "world-3-mortal-dao-spider-valley",
+      "world": "3-尘寰问道",
+      "title": "误入灵蛛谷",
+      "summary": "被蜘蛛精小姐姐抓到巢穴玩弄。",
+      "tags": [
+        "蛛丝"
+      ],
+      "characters": [
+        "茯丝"
+      ],
+      "storyTags": [
+        "玄途炼心"
+      ],
+      "status": "大纲草稿",
+      "parentKey": "world-3-mortal-dao-rebuild",
+      "order": 10
+    },
+    {
+      "key": "world-3-mortal-dao-epilogue",
+      "world": "3-尘寰问道",
+      "title": "尾声",
+      "status": "主线任务",
+      "parentKey": "world-3-mortal-dao-spider-valley",
+      "order": 10
+    },
+    {
+      "key": "world-3-mortal-dao-eternal",
+      "world": "3-尘寰问道",
+      "title": "永世束缚",
+      "summary": "缚神，缚身，缚婴。",
+      "tags": [
+        "永久拘束",
+        "灵魂拘束"
+      ],
+      "storyTags": [
+        "玄途炼心"
+      ],
+      "status": "大纲草稿",
+      "parentKey": "world-3-mortal-dao-epilogue",
+      "order": 10
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "estate_house_entry": {
+    "eventId": "estate_house_entry",
+    "triggerType": "manual",
+    "mapTransition": {
+      "mapId": "liluo_house_living_room",
+      "spawnId": "role"
+    },
+    "tileMarker": {
+      "mapId": "liluo_estate",
+      "layerName": "House_event"
+    },
+    "panelActions": [
+      {
+        "actionId": "enter_estate_house",
+        "label": "进入小别野（Space）",
+        "description": "门口的灯光落下，窗里透着一点安静的暖意，要回家吗？"
+      }
+    ]
+  },
+  "north_cave_entry": {
+    "eventId": "north_cave_entry",
+    "triggerType": "manual",
+    "dialogueId": "north_cave_entry_pending",
+    "tileMarker": {
+      "mapId": "liluo_estate",
+      "layerName": "Hole_event"
+    },
+    "panelActions": [
+      {
+        "actionId": "enter_north_cave",
+        "label": "进入山洞（Space）",
+        "description": "幽暗的洞口静静敞着，里面似乎连风声都更冷一些。"
+      }
+    ]
+  },
+  "empire_portal_entry": {
+    "eventId": "empire_portal_entry",
+    "triggerType": "manual",
+    "dialogueId": "empire_portal_entry_pending",
+    "tileMarker": {
+      "mapId": "liluo_estate",
+      "layerName": "outdoor_event"
+    },
+    "panelActions": [
+      {
+        "actionId": "empire_portal_entry",
+        "label": "去往慕妮卡帝国（Space）",
+        "description": "搭乘缚神列车后，你可以快速去往帝国的任何一座城市。"
+      }
+    ]
+  },
+  "parallel_world_portal_entry": {
+    "eventId": "parallel_world_portal_entry",
+    "triggerType": "manual",
+    "dialogueId": "parallel_world_adventure_pending",
+    "tileMarker": {
+      "mapId": "liluo_estate",
+      "layerName": "Portal_event"
+    },
+    "panelActions": [
+      {
+        "actionId": "parallel_world_portal_entry",
+        "label": "去往平行世界冒险（Space）",
+        "description": "传送门深处翻涌着陌生的天光，像另一段冒险正在那里等你。"
+      }
+    ]
+  },
+  "estate_dusk_transition": {
+    "eventId": "estate_dusk_transition",
+    "triggerType": "manual",
+    "dialogueId": "estate_time_of_day_selection",
+    "tileMarker": {
+      "mapId": "liluo_estate",
+      "layerName": "NPC_event"
+    },
+    "panelActions": [
+      {
+        "actionId": "open_estate_time_of_day_selection",
+        "label": "和璃音聊聊（Space）",
+        "description": "璃音在这里等你。她像是在帮忙照看庭院里刚接好的功能，也愿意陪你随便聊两句。"
+      }
+    ]
+  }
+}

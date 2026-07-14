@@ -1,0 +1,105 @@
+{
+  "mumu_room_leave": {
+    "eventId": "mumu_room_leave",
+    "triggerType": "manual",
+    "mapTransition": {
+      "mapId": "liluo_house_living_room",
+      "spawnId": "mumu_room_event"
+    },
+    "tileMarker": {
+      "mapId": "mumu_room",
+      "layerName": "role"
+    },
+    "panelActions": [
+      {
+        "actionId": "leave_mumu_room",
+        "label": "离开沐沐的牢房（Space）",
+        "description": "从牢房里退出来，回到客厅门口。"
+      }
+    ]
+  },
+  "mumu_room_input_event_1": {
+    "eventId": "mumu_room_input_event_1",
+    "triggerType": "manual",
+    "mapTransition": {
+      "mapId": "mumu_room",
+      "spawnMarker": {
+        "layerName": "output_event_1",
+        "anchor": "first"
+      }
+    },
+    "tileMarker": {
+      "mapId": "mumu_room",
+      "layerName": "input_event_1"
+    },
+    "panelActions": [
+      {
+        "actionId": "use_mumu_room_input_event_1",
+        "label": "进入沐沐球笼（Space）"
+      }
+    ]
+  },
+  "mumu_room_output_event_1": {
+    "eventId": "mumu_room_output_event_1",
+    "triggerType": "manual",
+    "mapTransition": {
+      "mapId": "mumu_room",
+      "spawnMarker": {
+        "layerName": "input_event_1",
+        "anchor": "bottom-left"
+      }
+    },
+    "tileMarker": {
+      "mapId": "mumu_room",
+      "layerName": "output_event_1"
+    },
+    "panelActions": [
+      {
+        "actionId": "use_mumu_room_output_event_1",
+        "label": "离开沐沐球笼（Space）"
+      }
+    ]
+  },
+  "mumu_room_input_event_2": {
+    "eventId": "mumu_room_input_event_2",
+    "triggerType": "manual",
+    "mapTransition": {
+      "mapId": "mumu_room",
+      "spawnMarker": {
+        "layerName": "output_event_2",
+        "anchor": "first"
+      }
+    },
+    "tileMarker": {
+      "mapId": "mumu_room",
+      "layerName": "input_event_2"
+    },
+    "panelActions": [
+      {
+        "actionId": "use_mumu_room_input_event_2",
+        "label": "进入沐沐专属调教室（Space）"
+      }
+    ]
+  },
+  "mumu_room_output_event_2": {
+    "eventId": "mumu_room_output_event_2",
+    "triggerType": "manual",
+    "mapTransition": {
+      "mapId": "mumu_room",
+      "spawnMarker": {
+        "layerName": "input_event_2",
+        "anchor": "bottom-left"
+      }
+    },
+    "tileMarker": {
+      "mapId": "mumu_room",
+      "layerName": "output_event_2"
+    },
+    "panelActions": [
+      {
+        "actionId": "use_mumu_room_output_event_2",
+        "label": "离开沐沐专属调教室（Space）"
+      }
+    ]
+  }
+}

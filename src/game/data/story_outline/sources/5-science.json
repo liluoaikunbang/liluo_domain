@@ -1,0 +1,184 @@
+{
+  "rootKeys": [
+    "world-5-star-weaving-dream"
+  ],
+  "nodes": [
+    {
+      "key": "world-5-star-weaving-dream",
+      "world": "5-星宇织梦",
+      "title": "星宇织梦（科幻）",
+      "status": "分类",
+      "summary": "在科技高度发达的星际文明，还有更多让人向往的旅途",
+      "order": 60
+    },
+    {
+      "key": "world-5-star-weaving-dream-stargate-port",
+      "world": "5-星宇织梦",
+      "title": "星门港区",
+      "status": "主线任务",
+      "parentKey": "world-5-star-weaving-dream",
+      "order": 10
+    },
+    {
+      "key": "world-5-star-weaving-dream-ringlock-stars",
+      "world": "5-星宇织梦",
+      "title": "环锁群星",
+      "status": "主线任务",
+      "parentKey": "world-5-star-weaving-dream-stargate-port",
+      "order": 20
+    },
+    {
+      "key": "world-5-star-weaving-dream-bionic-maze",
+      "world": "5-星宇织梦",
+      "title": "仿生迷途",
+      "status": "主线任务",
+      "parentKey": "world-5-star-weaving-dream-restraint-paradise-shop",
+      "order": 30
+    },
+    {
+      "key": "world-5-star-weaving-dream-order-paradise",
+      "world": "5-星宇织梦",
+      "title": "律序乐园",
+      "status": "主线任务",
+      "parentKey": "world-5-star-weaving-dream-ringlock-stars",
+      "order": 25
+    },
+    {
+      "key": "world-5-star-weaving-dream-restraint-paradise-shop",
+      "world": "5-星宇织梦",
+      "title": "拘束具店铺",
+      "summary": "拘束用品店。",
+      "status": "大纲草稿",
+      "parentKey": "world-5-star-weaving-dream-order-paradise",
+      "order": 26
+    },
+    {
+      "key": "world-5-star-weaving-dream-mirror-domain",
+      "world": "5-星宇织梦",
+      "title": "镜域沉沦",
+      "status": "主线任务",
+      "parentKey": "world-5-star-weaving-dream-bionic-maze",
+      "order": 40
+    },
+    {
+      "key": "world-5-star-weaving-dream-sequence-gu-city",
+      "world": "5-星宇织梦",
+      "title": "基序蛊城",
+      "status": "主线任务",
+      "parentKey": "world-5-star-weaving-dream-mirror-domain",
+      "order": 50
+    },
+    {
+      "key": "world-5-star-weaving-dream-star-voyage",
+      "world": "5-星宇织梦",
+      "title": "逐星远航",
+      "status": "主线任务",
+      "parentKey": "world-5-star-weaving-dream-sequence-gu-city",
+      "order": 60
+    },
+    {
+      "key": "world-5-star-weaving-dream-cryosleep-ark",
+      "world": "5-星宇织梦",
+      "title": "冷眠方舟",
+      "status": "主线任务",
+      "parentKey": "world-5-star-weaving-dream-star-voyage",
+      "order": 70
+    },
+    {
+      "key": "world-5-star-weaving-dream-orbital-garden",
+      "world": "5-星宇织梦",
+      "title": "轨道庭院",
+      "status": "主线任务",
+      "parentKey": "world-5-star-weaving-dream-cryosleep-ark",
+      "order": 80
+    },
+    {
+      "key": "world-5-star-weaving-dream-molten-armor-warstar",
+      "world": "5-星宇织梦",
+      "title": "熔铠战星",
+      "status": "主线任务",
+      "parentKey": "world-5-star-weaving-dream-orbital-garden",
+      "order": 90
+    },
+    {
+      "key": "world-5-star-weaving-dream-frontier-colony",
+      "world": "5-星宇织梦",
+      "title": "边境殖民星",
+      "status": "主线任务",
+      "parentKey": "world-5-star-weaving-dream-molten-armor-warstar",
+      "order": 100
+    },
+    {
+      "key": "world-5-star-weaving-dream-barren-mining-asteroid",
+      "world": "5-星宇织梦",
+      "title": "荒矿小行星",
+      "status": "主线任务",
+      "parentKey": "world-5-star-weaving-dream-frontier-colony",
+      "order": 110
+    },
+    {
+      "key": "world-5-star-weaving-dream-deep-blue-moon",
+      "world": "5-星宇织梦",
+      "title": "深蓝海卫",
+      "status": "主线任务",
+      "parentKey": "world-5-star-weaving-dream-barren-mining-asteroid",
+      "order": 120
+    },
+    {
+      "key": "world-5-star-weaving-dream-interstellar-black-market",
+      "world": "5-星宇织梦",
+      "title": "星际黑市",
+      "status": "主线任务",
+      "parentKey": "world-5-star-weaving-dream-deep-blue-moon",
+      "order": 130
+    },
+    {
+      "key": "world-5-star-weaving-dream-prison-planet",
+      "world": "5-星宇织梦",
+      "title": "监狱行星",
+      "status": "主线任务",
+      "parentKey": "world-5-star-weaving-dream-interstellar-black-market",
+      "order": 140
+    },
+    {
+      "key": "world-5-star-weaving-dream-clone-corridor",
+      "world": "5-星宇织梦",
+      "title": "克隆回廊",
+      "status": "主线任务",
+      "parentKey": "world-5-star-weaving-dream-prison-planet",
+      "order": 150
+    },
+    {
+      "key": "world-5-star-weaving-dream-hivemind-hive",
+      "world": "5-星宇织梦",
+      "title": "群心蜂巢",
+      "status": "主线任务",
+      "parentKey": "world-5-star-weaving-dream-clone-corridor",
+      "order": 160
+    },
+    {
+      "key": "world-5-star-weaving-dream-first-contact",
+      "world": "5-星宇织梦",
+      "title": "异星初触",
+      "status": "主线任务",
+      "parentKey": "world-5-star-weaving-dream-hivemind-hive",
+      "order": 170
+    },
+    {
+      "key": "world-5-star-weaving-dream-forerunner-ruins",
+      "world": "5-星宇织梦",
+      "title": "先驱遗迹",
+      "status": "主线任务",
+      "parentKey": "world-5-star-weaving-dream-first-contact",
+      "order": 180
+    },
+    {
+      "key": "world-5-star-weaving-dream-quantum-maze",
+      "world": "5-星宇织梦",
+      "title": "量子迷城",
+      "status": "主线任务",
+      "parentKey": "world-5-star-weaving-dream-forerunner-ruins",
+      "order": 190
+    }
+  ]
+}

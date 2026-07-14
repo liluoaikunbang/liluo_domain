@@ -1,0 +1,18 @@
+{
+  "living_room_liluo_room_pending": {
+    "id": "living_room_liluo_room_pending",
+    "text": "你轻轻碰了碰自己房间的门。\n这个房间还没有接入，暂时先只能在客厅里转转。"
+  },
+  "living_room_mumu_room_pending": {
+    "id": "living_room_mumu_room_pending",
+    "text": "门后静悄悄的。\n沐沐的房间还没有接入，暂时进不去。"
+  },
+  "living_room_locked_room_pending": {
+    "id": "living_room_locked_room_pending",
+    "text": "门锁着，暂时还进不去呢。"
+  },
+  "living_room_lixue_room_pending": {
+    "id": "living_room_lixue_room_pending",
+    "text": "房间上锁了，看起来璃雪姐姐这个时候不在家。"
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "living_room_leave": {
+    "eventId": "living_room_leave",
+    "triggerType": "manual",
+    "mapTransition": {
+      "mapId": "liluo_estate",
+      "spawnId": "House_event"
+    },
+    "tileMarker": {
+      "mapId": "liluo_house_living_room",
+      "layerName": "leave_event"
+    },
+    "panelActions": [
+      {
+        "actionId": "leave_living_room",
+        "label": "离开小别野（Space）",
+        "description": "门外是四季花园，要现在出去吗？"
+      }
+    ]
+  },
+  "living_room_liluo_room_entry": {
+    "eventId": "living_room_liluo_room_entry",
+    "triggerType": "manual",
+    "mapTransition": {
+      "mapId": "liluo_room",
+      "spawnId": "role"
+    },
+    "tileMarker": {
+      "mapId": "liluo_house_living_room",
+      "layerName": "liluo_room_event"
+    },
+    "panelActions": [
+      {
+        "actionId": "enter_liluo_room",
+        "label": "进入自己的房间（Space）",
+        "description": "里面是自己的卧室，要进去吗？"
+      }
+    ]
+  },
+  "living_room_mumu_room_entry": {
+    "eventId": "living_room_mumu_room_entry",
+    "triggerType": "manual",
+    "mapTransition": {
+      "mapId": "mumu_room",
+      "spawnId": "role"
+    },
+    "tileMarker": {
+      "mapId": "liluo_house_living_room",
+      "layerName": "mumu_room_event"
+    },
+    "panelActions": [
+      {
+        "actionId": "enter_mumu_room",
+        "label": "去看看沐沐的牢房（Space）",
+        "description": "听不到什么声音，不知道她现在在不在里面。"
+      }
+    ]
+  },
+  "living_room_locked_room_entry": {
+    "eventId": "living_room_locked_room_entry",
+    "triggerType": "manual",
+    "dialogueId": "living_room_locked_room_pending",
+    "tileMarker": {
+      "mapId": "liluo_house_living_room",
+      "layerName": "locked_room_event"
+    },
+    "panelActions": [
+      {
+        "actionId": "check_locked_room",
+        "label": "查看上锁的房间（Space）",
+        "description": "门把手冰凉，锁扣也还安安静静地扣着。"
+      }
+    ]
+  },
+  "living_room_lixue_room_entry": {
+    "eventId": "living_room_lixue_room_entry",
+    "triggerType": "manual",
+    "dialogueId": "living_room_lixue_room_pending",
+    "tileMarker": {
+      "mapId": "liluo_house_living_room",
+      "layerName": "lixue_room_event"
+    },
+    "panelActions": [
+      {
+        "actionId": "enter_lixue_room",
+        "label": "去看看璃雪姐姐的房间（Space）"
+      }
+    ]
+  }
+}

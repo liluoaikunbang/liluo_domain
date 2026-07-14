@@ -1,0 +1,133 @@
+{
+  "liluo_room_leave_change_clothes_required": {
+    "id": "liluo_room_leave_change_clothes_required",
+    "startNodeId": "start",
+    "nodes": {
+      "start": {
+        "id": "start",
+        "speaker": "璃落",
+        "text": "穿成这样出去不太好吧，还是换身衣服吧",
+        "choices": [
+          {
+            "id": "change_clothes_and_leave",
+            "label": "换身衣服",
+            "playerStatusChange": {
+              "mode": "remove",
+              "status": [
+                "no_shoes",
+                "hands_bound",
+                "legs_bound"
+              ]
+            },
+            "playerPortraitChange": {
+              "portraitKey": "portrait_liluo_default"
+            },
+            "mapTransition": {
+              "mapId": "liluo_house_living_room",
+              "spawnId": "liluo_room_event"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "liluo_room_bed_dialogue": {
+    "id": "liluo_room_bed_dialogue",
+    "startNodeId": "start",
+    "sceneImage": {
+      "assetKey": "liluo-room-bed-background"
+    },
+    "nodes": {
+      "start": {
+        "id": "start",
+        "speaker": "璃落",
+        "text": "要去找柔软的被子娘贴贴吗？",
+        "choices": [
+          {
+            "id": "sleep_on_bed",
+            "label": "上床休息",
+            "next": "sleep_on_bed_selected",
+            "mapSessionFlagChange": {
+              "flagId": "liluo_room_has_slept",
+              "value": true
+            },
+            "cutscene": {
+              "type": "fade_message",
+              "text": "一夜无话……",
+              "holdMs": 500
+            },
+            "playerStatusChange": {
+              "status": [
+                "no_shoes"
+              ]
+            },
+            "playerPortraitChange": {
+              "portraitKey": "portrait_liluo_sleep"
+            }
+          },
+          {
+            "id": "sleep_in_tie_bag",
+            "label": "体验下拘束睡袋休息",
+            "next": "sleep_in_tie_bag_selected",
+            "mapSessionFlagChange": {
+              "flagId": "liluo_room_has_slept",
+              "value": true
+            },
+            "cutscene": {
+              "type": "fade_message",
+              "text": "一夜无话……",
+              "holdMs": 500
+            },
+            "playerStatusChange": {
+              "status": [
+                "no_shoes",
+                "hands_bound",
+                "legs_bound"
+              ]
+            },
+            "playerPortraitChange": {
+              "portraitKey": "portrait_liluo_sleep_tie"
+            }
+          },
+          {
+            "id": "leave_bed",
+            "label": "还是先不休息了"
+          }
+        ]
+      },
+      "sleep_on_bed_selected": {
+        "id": "sleep_on_bed_selected",
+        "speaker": "璃落",
+        "text": "这一觉睡得好舒服呀。"
+      },
+      "sleep_in_tie_bag_selected": {
+        "id": "sleep_in_tie_bag_selected",
+        "speaker": "璃落",
+        "text": "这一觉睡得好舒服呀。才发现自己还被捆着呢。要让女仆帮忙解开吗？",
+        "choices": [
+          {
+            "id": "ask_maid_to_untie",
+            "label": "让女仆帮忙解开",
+            "playerStatusChange": {
+              "status": [
+                "no_shoes"
+              ]
+            },
+            "playerPortraitChange": {
+              "portraitKey": "portrait_liluo_sleep"
+            }
+          },
+          {
+            "id": "stay_tied_after_sleep",
+            "label": "先这样待着"
+          }
+        ]
+      }
+    }
+  },
+  "liluo_room_bed_already_slept": {
+    "id": "liluo_room_bed_already_slept",
+    "speaker": "璃落",
+    "text": "现在暂时不想睡觉了。"
+  }
+}

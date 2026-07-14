@@ -1,0 +1,37 @@
+{
+  "locations": [
+    {
+      "key": "liluo-home",
+      "title": "璃落的小窝",
+      "summary": "阁楼",
+      "description": "璃落小窝中的阁楼与相连空间。",
+      "defaultScene": "attic",
+      "scenes": [
+        {
+          "key": "attic",
+          "title": "阁楼",
+          "fileName": "璃落的小窝-阁楼.png",
+          "navigation": [
+            {
+              "direction": "left",
+              "target": "attic-stairs",
+              "label": "前往阁楼楼梯"
+            }
+          ]
+        },
+        {
+          "key": "attic-stairs",
+          "title": "阁楼楼梯",
+          "fileName": "璃落的小窝-阁楼楼梯.png",
+          "navigation": [
+            {
+              "direction": "right",
+              "target": "attic",
+              "label": "返回阁楼"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

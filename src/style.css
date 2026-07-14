@@ -1,0 +1,78 @@
+@font-face {
+  font-family: 'kangkang';
+  src: url('./assets/fonts/kangkang.ttf');
+}
+
+body {
+  padding: 0 0 0 0;
+  font-size: 18px;
+  /* background-color: rgb(81, 81, 85); */
+  background-color: rgb(40, 40, 45);
+  /* font-family: "楷体","楷体_GB2312" !important; */
+  font-family: 'kangkang' !important;
+}
+
+#app {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.start {
+  width: 92%;
+  height: 92%;
+  padding: 0% 4% 0% 4%;
+  overflow: auto;
+}
+
+h2 {
+  color: white;
+  font-size: 30px;
+}
+
+h3 {
+  color: white;
+  font-size: 25px;
+  margin: 15px 0 15px 0;
+}
+
+p {
+  color: white;
+  text-indent: 2em;
+  text-align: start;
+  font-size: 18px;
+  margin: 5px 0 5px 0;
+  word-wrap: break-word; /* 自动换行 */
+  word-break: break-all; /* 自动换行 */
+}
+.menu-content {
+  font-size: 17px;
+}
+
+a {
+  color: rgb(198, 181, 222);
+  font-size: 20px;
+  text-decoration: none;
+}
+
+:deep(.arco-card-header) {
+  height: 30px;
+}
+:deep(.arco-card-header-title) {
+  margin-top: 2px;
+  font-size: 12px;
+}
+
+.default-button {
+  margin: 0px 10px 10px 10px;
+}
+.return-button {
+  margin: 30px 10px 0 10px;
+}
+
+.map-drawing {
+  text-align: center;
+  line-height: 0.5;
+}
+
+

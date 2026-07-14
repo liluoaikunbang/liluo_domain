@@ -1,0 +1,963 @@
+{
+  "rootKeys": [
+    "world-1-glimmering-glance"
+  ],
+  "nodes": [
+    {
+      "key": "world-1-glimmering-glance",
+      "world": "1-浮光掠影",
+      "title": "浮光掠影（都市）",
+      "status": "分类",
+      "summary": "带有一些超自然能力与现象的现代都市世界。",
+      "order": 20
+    },
+    {
+      "key": "world-1-glimmering-glance-jingsuo-event",
+      "world": "1-浮光掠影",
+      "title": "荆锁会事件",
+      "status": "主线任务",
+      "summary": "每个学校，都有属于自己的灵异传说。",
+      "foreshadowing": [
+        "荆锁",
+        "校园"
+      ],
+      "locations": [
+        "荆江市",
+        "荆南大学"
+      ],
+      "questType": "main",
+      "parentKey": "world-1-glimmering-glance",
+      "order": 10
+    },
+    {
+      "key": "world-1-glimmering-glance-campus-arrival",
+      "world": "1-浮光掠影",
+      "title": "重返校园",
+      "storyTags": [
+        "街景一隅"
+      ],
+      "status": "大纲",
+      "summary": "璃落在医院醒来。",
+      "foreshadowing": [
+        "小窝",
+        "起始"
+      ],
+      "tags": [
+        "拘束衣"
+      ],
+      "locations": [
+        "荆江市",
+        "市医院"
+      ],
+      "parentKey": "world-1-glimmering-glance-jingsuo-event",
+      "order": 10
+    },
+    {
+      "key": "world-1-glimmering-glance-club",
+      "world": "1-浮光掠影",
+      "title": "加入紧缚社团",
+      "summary": "加入紧缚社团。",
+      "foreshadowing": [
+        "介绍",
+        "璃落XP"
+      ],
+      "tags": [
+        "模特",
+        "气味系",
+        "社死",
+        "感官刺激"
+      ],
+      "specialGameplay": [
+        "踩踩",
+        "捆绑上街",
+        "芥末辣椒等"
+      ],
+      "characters": [
+        "林雨薇",
+        "陈思雨"
+      ],
+      "locations": [
+        "荆江市"
+      ],
+      "storyTags": [
+        "街景一隅"
+      ],
+      "status": "大纲草稿",
+      "parentKey": "world-1-glimmering-glance-campus-arrival",
+      "order": 10
+    },
+    {
+      "key": "world-1-glimmering-glance-dance-classroom",
+      "world": "1-浮光掠影",
+      "title": "舞蹈教室",
+      "summary": "荆锁会事件1，对应全班被绑架事件。",
+      "foreshadowing": [
+        "荆锁",
+        "手铐"
+      ],
+      "tags": [
+        "DID"
+      ],
+      "characters": [
+        "顾棠"
+      ],
+      "locations": [
+        "荆江市",
+        "荆南大学",
+        "舞蹈教室"
+      ],
+      "storyTags": [
+        "诡影侵临"
+      ],
+      "status": "大纲",
+      "parentKey": "world-1-glimmering-glance-club",
+      "order": 10
+    },
+    {
+      "key": "world-1-glimmering-glance-stage-performance",
+      "world": "1-浮光掠影",
+      "title": "舞台表演",
+      "status": "大纲草稿",
+      "summary": "荆锁会事件2,舞台表演时的灵异事件。",
+      "parentKey": "world-1-glimmering-glance-dance-classroom",
+      "order": 10
+    },
+    {
+      "key": "world-1-glimmering-glance-old-dormitory",
+      "world": "1-浮光掠影",
+      "title": "宿舍旧楼",
+      "summary": "荆锁会事件3，对应璃落被校园霸凌事件。",
+      "foreshadowing": [
+        "荆锁",
+        "脚铐"
+      ],
+      "tags": [
+        "霸凌",
+        "气味系"
+      ],
+      "specialGameplay": [
+        "小黑屋",
+        "语言羞辱"
+      ],
+      "characters": [
+        "林沐遥"
+      ],
+      "locations": [
+        "荆江市",
+        "荆南大学",
+        "宿舍旧楼"
+      ],
+      "storyTags": [
+        "诡影侵临"
+      ],
+      "status": "大纲",
+      "parentKey": "world-1-glimmering-glance-rope-spirit-game",
+      "order": 10
+    },
+    {
+      "key": "world-1-glimmering-glance-rope-spirit-game",
+      "world": "1-浮光掠影",
+      "title": "绳仙游戏",
+      "status": "大纲",
+      "parentKey": "world-1-glimmering-glance-stage-performance",
+      "order": 10
+    },
+    {
+      "key": "world-1-glimmering-glance-grudge-ancient-tree",
+      "world": "1-浮光掠影",
+      "title": "满怨古树",
+      "storyTags": [
+        "诡影侵临"
+      ],
+      "status": "灵感",
+      "parentKey": "world-1-glimmering-glance-old-dormitory",
+      "order": 10
+    },
+    {
+      "key": "world-1-glimmering-glance-urban-rumors",
+      "world": "1-浮光掠影",
+      "title": "都市异闻",
+      "status": "主线任务",
+      "summary": "体验特色职业，享受绑架人生",
+      "locations": [
+        "荆江市"
+      ],
+      "questType": "main",
+      "parentKey": "world-1-glimmering-glance-grudge-ancient-tree",
+      "order": 10
+    },
+    {
+      "key": "world-1-glimmering-glance-night-school-ghost-stories",
+      "world": "1-浮光掠影",
+      "title": "夜校怪谈",
+      "storyTags": [
+        "诡影侵临"
+      ],
+      "branchLayout": "side",
+      "status": "灵感",
+      "parentKey": "world-1-glimmering-glance-grudge-ancient-tree",
+      "order": 20
+    },
+    {
+      "key": "world-1-glimmering-glance-little-prisoner",
+      "world": "1-浮光掠影",
+      "title": "小囚犯出圈记",
+      "summary": "体验警铐解不开，偶遇易容后的苏婉儿，被她当做人质加固束缚。",
+      "foreshadowing": [
+        "账号",
+        "起始",
+        "杂技团"
+      ],
+      "tags": [
+        "镣铐",
+        "社死"
+      ],
+      "specialGameplay": [
+        "镣铐上街",
+        "无鞋"
+      ],
+      "characters": [
+        "程见微",
+        "苏婉儿"
+      ],
+      "locations": [
+        "荆江市",
+        "江湾广场"
+      ],
+      "storyTags": [
+        "街景一隅"
+      ],
+      "status": "大纲草稿",
+      "parentKey": "world-1-glimmering-glance-anomaly-disaster-response-organization",
+      "order": 10
+    },
+    {
+      "key": "world-1-glimmering-glance-anomaly-disaster-response-organization",
+      "world": "1-浮光掠影",
+      "title": "异常灾害处理组织",
+      "status": "大纲",
+      "parentKey": "world-1-glimmering-glance-urban-rumors",
+      "order": 10
+    },
+    {
+      "key": "world-1-glimmering-glance-strange-object-society-archive",
+      "world": "1-浮光掠影",
+      "title": "诡物收录",
+      "status": "大纲",
+      "branchLayout": "side",
+      "parentKey": "world-1-glimmering-glance-anomaly-disaster-response-organization",
+      "order": 20
+    },
+    {
+      "key": "world-1-glimmering-glance-midnight-city-exploration",
+      "world": "1-浮光掠影",
+      "title": "深夜城市探险",
+      "tags": [
+        "DID"
+      ],
+      "storyTags": [
+        "街景一隅"
+      ],
+      "branchLayout": "side",
+      "status": "灵感",
+      "parentKey": "world-1-glimmering-glance-urban-rumors",
+      "order": 20
+    },
+    {
+      "key": "world-1-glimmering-glance-model",
+      "world": "1-浮光掠影",
+      "title": "紧缚模特",
+      "branchLayout": "side",
+      "summary": "拘束用具模特。",
+      "tags": [
+        "模特"
+      ],
+      "specialGameplay": [
+        "紧缚拍摄"
+      ],
+      "locations": [
+        "荆江市"
+      ],
+      "storyTags": [
+        "街景一隅"
+      ],
+      "status": "大纲草稿",
+      "parentKey": "world-1-glimmering-glance-little-prisoner",
+      "order": 10
+    },
+    {
+      "key": "world-1-glimmering-glance-maid-hotel",
+      "world": "1-浮光掠影",
+      "title": "女仆酒店",
+      "summary": "女仆酒店中被女仆们抓捕。",
+      "tags": [
+        "气味系",
+        "职业",
+        "反套路"
+      ],
+      "specialGameplay": [
+        "踩踩",
+        "演员",
+        "女仆捆主人"
+      ],
+      "characters": [
+        "苏婉儿"
+      ],
+      "requiredAbilities": [
+        "开锁"
+      ],
+      "storyTags": [
+        "街景一隅"
+      ],
+      "status": "大纲草稿",
+      "parentKey": "world-1-glimmering-glance-little-prisoner",
+      "order": 20
+    },
+    {
+      "key": "world-1-glimmering-glance-hotel-fright",
+      "world": "1-浮光掠影",
+      "title": "酒店惊魂",
+      "parentKey": "world-1-glimmering-glance-maid-hotel",
+      "order": 10
+    },
+    {
+      "key": "world-1-glimmering-glance-maid-massage-shop",
+      "world": "1-浮光掠影",
+      "title": "女仆按摩店",
+      "branchLayout": "side",
+      "storyTags": [
+        "街景一隅"
+      ],
+      "status": "大纲草稿",
+      "parentKey": "world-1-glimmering-glance-hotel-fright",
+      "order": 10
+    },
+    {
+      "key": "world-1-glimmering-glance-trafficker",
+      "world": "1-浮光掠影",
+      "title": "人贩子",
+      "summary": "找模特工作时遇到人贩子。",
+      "tags": [
+        "DID",
+        "挠痒",
+        "扎带"
+      ],
+      "specialGameplay": [
+        "拐卖",
+        "蚊子",
+        "扎带+拘捕网"
+      ],
+      "locations": [
+        "槐湾村"
+      ],
+      "storyTags": [
+        "禁域长廊"
+      ],
+      "status": "大纲草稿",
+      "parentKey": "world-1-glimmering-glance-hotel-fright",
+      "order": 20
+    },
+    {
+      "key": "world-1-glimmering-glance-huaiwan-village",
+      "world": "1-浮光掠影",
+      "title": "槐湾村",
+      "summary": "村子里的璃落被捆着授课。",
+      "tags": [
+        "职业"
+      ],
+      "specialGameplay": [
+        "捆绑授课"
+      ],
+      "characters": [
+        "黄翠"
+      ],
+      "locations": [
+        "槐湾村"
+      ],
+      "reference": "电影《嫁给大山的女人》",
+      "storyTags": [
+        "禁域长廊"
+      ],
+      "status": "大纲草稿",
+      "parentKey": "world-1-glimmering-glance-trafficker",
+      "order": 10
+    },
+    {
+      "key": "world-1-glimmering-glance-gray-alley-adventure",
+      "world": "1-浮光掠影",
+      "title": "灰巷历险",
+      "status": "主线任务",
+      "summary": "暗巷与废墟交织的地下都市，暴力与无序像潮水般涌动。",
+      "locations": [
+        "海顿联邦",
+        "灰巷"
+      ],
+      "questType": "main",
+      "parentKey": "world-1-glimmering-glance-sinkhole-rainforest-expedition",
+      "order": 10
+    },
+    {
+      "key": "world-1-glimmering-glance-variety-show-fright",
+      "world": "1-浮光掠影",
+      "title": "综艺惊魂",
+      "status": "大纲",
+      "parentKey": "world-1-glimmering-glance-jingjiang-geomancy",
+      "order": 10
+    },
+    {
+      "key": "world-1-glimmering-glance-jingjiang-geomancy",
+      "world": "1-浮光掠影",
+      "title": "荆江堪舆",
+      "status": "大纲",
+      "parentKey": "world-1-glimmering-glance-huaiwan-village",
+      "order": 10
+    },
+    {
+      "key": "world-1-glimmering-glance-world-expedition-team",
+      "world": "1-浮光掠影",
+      "title": "世界科考队",
+      "status": "主线任务",
+      "questType": "main",
+      "parentKey": "world-1-glimmering-glance-variety-show-fright",
+      "order": 10
+    },
+    {
+      "key": "world-1-glimmering-glance-fog-sea-lone-island-expedition",
+      "world": "1-浮光掠影",
+      "title": "雾海孤岛探险",
+      "status": "大纲",
+      "parentKey": "world-1-glimmering-glance-world-expedition-team",
+      "order": 10
+    },
+    {
+      "key": "world-1-glimmering-glance-sinkhole-rainforest-expedition",
+      "world": "1-浮光掠影",
+      "title": "天坑雨林远征",
+      "status": "大纲",
+      "parentKey": "world-1-glimmering-glance-fog-sea-lone-island-expedition",
+      "order": 10
+    },
+    {
+      "key": "world-1-glimmering-glance-reality-show",
+      "world": "1-浮光掠影",
+      "title": "真人秀",
+      "status": "支线任务",
+      "branchLayout": "side",
+      "parentKey": "world-1-glimmering-glance-variety-show-fright",
+      "order": 20
+    },
+    {
+      "key": "world-1-glimmering-glance-cement-shoes",
+      "world": "1-浮光掠影",
+      "title": "水泥鞋",
+      "summary": "水泥鞋拷问，推入湖中。",
+      "tags": [
+        "水泥鞋"
+      ],
+      "characters": [
+        "林沐遥",
+        "缄枷会"
+      ],
+      "locations": [
+        "荆江市",
+        "南堤老码头"
+      ],
+      "storyTags": [
+        "暗痕追迹"
+      ],
+      "status": "大纲草稿",
+      "parentKey": "world-1-glimmering-glance-gray-alley-adventure",
+      "order": 10
+    },
+    {
+      "key": "world-1-glimmering-glance-missing",
+      "world": "1-浮光掠影",
+      "title": "失联",
+      "summary": "在国外SM酒吧被绑架。",
+      "tags": [
+        "社死",
+        "DID",
+        "模特"
+      ],
+      "specialGameplay": [
+        "伪装拘束",
+        "魔术助手"
+      ],
+      "characters": [
+        "艾琳",
+        "沈芷"
+      ],
+      "locations": [
+        "海顿联邦",
+        "格兰港"
+      ],
+      "storyTags": [
+        "暗痕追迹"
+      ],
+      "status": "大纲草稿",
+      "parentKey": "world-1-glimmering-glance-cement-shoes",
+      "order": 10
+    },
+    {
+      "key": "world-1-glimmering-glance-rust-salt",
+      "world": "1-浮光掠影",
+      "title": "锈盐",
+      "summary": "初入灰巷。",
+      "foreshadowing": [
+        "介绍",
+        "灰巷势力"
+      ],
+      "tags": [
+        "活埋",
+        "社死"
+      ],
+      "specialGameplay": [
+        "小笼子",
+        "露头活埋",
+        "捆绑上街"
+      ],
+      "characters": [
+        "Rin",
+        "缄枷会",
+        "盐坞帮"
+      ],
+      "locations": [
+        "海顿联邦",
+        "灰巷"
+      ],
+      "reference": "电影《智齿》的风格",
+      "storyTags": [
+        "暗痕追迹"
+      ],
+      "status": "大纲草稿",
+      "parentKey": "world-1-glimmering-glance-missing",
+      "order": 10
+    },
+    {
+      "key": "world-1-glimmering-glance-prison-storm",
+      "world": "1-浮光掠影",
+      "title": "监狱风云",
+      "status": "大纲草稿",
+      "storyTags": [
+        "禁域长廊"
+      ],
+      "questType": "main",
+      "parentKey": "world-1-glimmering-glance-rust-salt",
+      "order": 10
+    },
+    {
+      "key": "world-1-glimmering-glance-return-to-jingjiang",
+      "world": "1-浮光掠影",
+      "title": "重返荆江市",
+      "status": "主线任务",
+      "summary": "与罪恶异能者组织的最终决战。",
+      "parentKey": "world-1-glimmering-glance-taisho-romance",
+      "order": 10
+    },
+    {
+      "key": "world-1-glimmering-glance-old-capital-echo",
+      "world": "1-浮光掠影",
+      "title": "旧都回声",
+      "status": "主线任务",
+      "summary": "旧都遗留的回声，把监狱风云之后的线索重新引向荆江市。",
+      "parentKey": "world-1-glimmering-glance-black-oak-night-hunt",
+      "order": 10
+    },
+    {
+      "key": "world-1-glimmering-glance-black-oak-night-hunt",
+      "world": "1-浮光掠影",
+      "title": "黑槲夜猎",
+      "status": "大纲",
+      "parentKey": "world-1-glimmering-glance-prison-storm",
+      "order": 10
+    },
+    {
+      "key": "world-1-glimmering-glance-rainy-ancient-city",
+      "world": "1-浮光掠影",
+      "title": "烟雨古城",
+      "status": "大纲",
+      "parentKey": "world-1-glimmering-glance-old-capital-echo",
+      "order": 10
+    },
+    {
+      "key": "world-1-glimmering-glance-fog-capital-strangeness",
+      "world": "1-浮光掠影",
+      "title": "雾都怪奇",
+      "status": "大纲",
+      "parentKey": "world-1-glimmering-glance-red-white-marriage-contract",
+      "order": 10
+    },
+    {
+      "key": "world-1-glimmering-glance-red-white-marriage-contract",
+      "world": "1-浮光掠影",
+      "title": "赤白婚契",
+      "status": "大纲",
+      "parentKey": "world-1-glimmering-glance-rainy-ancient-city",
+      "order": 10
+    },
+    {
+      "key": "world-1-glimmering-glance-taisho-romance",
+      "world": "1-浮光掠影",
+      "title": "大正浪漫",
+      "status": "大纲",
+      "parentKey": "world-1-glimmering-glance-black-rose-sanatorium",
+      "order": 10
+    },
+    {
+      "key": "world-1-glimmering-glance-black-rose-sanatorium",
+      "world": "1-浮光掠影",
+      "title": "黑蔷薇疗养院",
+      "status": "大纲",
+      "parentKey": "world-1-glimmering-glance-fog-capital-strangeness",
+      "order": 10
+    },
+    {
+      "key": "world-1-glimmering-glance-little-maid-team",
+      "world": "1-浮光掠影",
+      "title": "小小女仆团",
+      "summary": "被迷你女仆捆绑。",
+      "tags": [
+        "气味系"
+      ],
+      "characters": [
+        "苏婉儿",
+        "夜栈",
+        "绯总管"
+      ],
+      "storyTags": [
+        "浮世奇人"
+      ],
+      "status": "大纲草稿",
+      "parentKey": "world-1-glimmering-glance-return-to-jingjiang",
+      "order": 10
+    },
+    {
+      "key": "world-1-glimmering-glance-luxury-theater",
+      "world": "1-浮光掠影",
+      "title": "浮华剧场",
+      "storyTags": [
+        "幻域回声"
+      ],
+      "parentKey": "world-1-glimmering-glance-little-maid-team",
+      "order": 10
+    },
+    {
+      "key": "world-1-glimmering-glance-eternal-restraint-maze",
+      "world": "1-浮光掠影",
+      "title": "永拘迷宫",
+      "parentKey": "world-1-glimmering-glance-silent-correction-center",
+      "order": 10
+    },
+    {
+      "key": "world-1-glimmering-glance-silent-correction-center",
+      "world": "1-浮光掠影",
+      "title": "静默矫治中心",
+      "status": "大纲",
+      "parentKey": "world-1-glimmering-glance-luxury-theater",
+      "order": 10
+    },
+    {
+      "key": "world-1-glimmering-glance-fantasy-world-adventure",
+      "world": "1-浮光掠影",
+      "title": "幻想世界冒险",
+      "storyTags": [
+        "幻域回声"
+      ],
+      "branchLayout": "side",
+      "parentKey": "world-1-glimmering-glance-luxury-theater",
+      "order": 20
+    },
+    {
+      "key": "world-1-glimmering-glance-liminal-space",
+      "world": "1-浮光掠影",
+      "title": "阈限空间",
+      "storyTags": [
+        "禁域长廊"
+      ],
+      "branchLayout": "side",
+      "parentKey": "world-1-glimmering-glance-eternal-restraint-maze",
+      "order": 20
+    },
+    {
+      "key": "world-1-glimmering-glance-epilogue",
+      "world": "1-浮光掠影",
+      "title": "尾声",
+      "status": "主线任务",
+      "summary": "灰巷线尾声。",
+      "questType": "main",
+      "parentKey": "world-1-glimmering-glance-eternal-restraint-maze",
+      "order": 10
+    },
+    {
+      "key": "world-1-glimmering-glance-ultimate-restraint",
+      "world": "1-浮光掠影",
+      "title": "极端高危女性囚犯运输终极约束方案",
+      "summary": "都市反派的最终拘束方案。",
+      "tags": [
+        "永久拘束",
+        "监禁"
+      ],
+      "storyTags": [
+        "禁域长廊"
+      ],
+      "status": "大纲草稿",
+      "parentKey": "world-1-glimmering-glance-epilogue",
+      "order": 10
+    },
+    {
+      "key": "world-1-glimmering-glance-silent-witness",
+      "world": "1-浮光掠影",
+      "title": "沉默见证",
+      "summary": "记者被剥夺所有发声能力。",
+      "tags": [
+        "胶水",
+        "拘束生活"
+      ],
+      "characters": [
+        "闻澜"
+      ],
+      "storyTags": [
+        "暗痕追迹"
+      ],
+      "branchLayout": "side",
+      "status": "大纲草稿",
+      "parentKey": "world-1-glimmering-glance-rust-salt",
+      "order": 20
+    },
+    {
+      "key": "world-1-glimmering-glance-snow-train",
+      "world": "1-浮光掠影",
+      "title": "雪城列车",
+      "summary": "去往雪城的火车卧铺玩法，包含火车牌局与客串乘务员场景。",
+      "tags": [
+        "气味系",
+        "挠痒",
+        "游戏",
+        "职业"
+      ],
+      "specialGameplay": [
+        "气味系-踩踩",
+        "游戏-紧缚斗地主",
+        "职业-火车乘务员"
+      ],
+      "characters": [
+        "林沐遥",
+        "陈思雨",
+        "林雨薇"
+      ],
+      "locations": [
+        "火车卧铺"
+      ],
+      "storyTags": [
+        "街景一隅"
+      ],
+      "branchLayout": "side",
+      "status": "大纲草稿",
+      "parentKey": "world-1-glimmering-glance-huaiwan-village",
+      "order": 20
+    },
+    {
+      "key": "world-1-glimmering-glance-movie-bound-stand-in",
+      "world": "1-浮光掠影",
+      "title": "电影绑替兼职",
+      "summary": "璃落接到片场绑替兼职，在电影拍摄中担任被拘束替身。",
+      "tags": [
+        "职业",
+        "演员",
+        "社死"
+      ],
+      "specialGameplay": [
+        "绑替拍摄",
+        "分镜配合",
+        "道具拘束"
+      ],
+      "characters": [
+        "苏婉儿"
+      ],
+      "locations": [
+        "荆江市",
+        "片场"
+      ],
+      "storyTags": [
+        "街景一隅"
+      ],
+      "branchLayout": "side",
+      "status": "灵感",
+      "parentKey": "world-1-glimmering-glance-maid-hotel",
+      "order": 20
+    },
+    {
+      "key": "world-1-glimmering-glance-inflatable-castle",
+      "world": "1-浮光掠影",
+      "title": "充气城堡",
+      "summary": "和社团大家在充气城堡玩闹。",
+      "foreshadowing": [
+        "社团活动"
+      ],
+      "tags": [
+        "扎带",
+        "社死",
+        "气味系",
+        "惊险刺激"
+      ],
+      "specialGameplay": [
+        "踩踩",
+        "捆绑上街",
+        "失重"
+      ],
+      "characters": [
+        "林雨薇",
+        "陈思雨",
+        "林沐遥"
+      ],
+      "locations": [
+        "荆江市",
+        "充气城堡"
+      ],
+      "storyTags": [
+        "街景一隅"
+      ],
+      "branchLayout": "side",
+      "status": "大纲草稿",
+      "parentKey": "world-1-glimmering-glance-maid-hotel",
+      "order": 30
+    },
+    {
+      "key": "world-1-glimmering-glance-sensory-trial",
+      "world": "1-浮光掠影",
+      "title": "感官试炼",
+      "summary": "荆锁会感官刺激。",
+      "tags": [
+        "挠痒",
+        "感官刺激"
+      ],
+      "specialGameplay": [
+        "眼耳口鼻"
+      ],
+      "locations": [
+        "荆江市",
+        "安和精神病院"
+      ],
+      "storyTags": [
+        "禁域长廊"
+      ],
+      "branchLayout": "side",
+      "status": "大纲草稿",
+      "parentKey": "world-1-glimmering-glance-old-dormitory",
+      "order": 20
+    },
+    {
+      "key": "world-1-glimmering-glance-old-case",
+      "world": "1-浮光掠影",
+      "title": "旧案",
+      "parentKey": "world-1-glimmering-glance-sensory-trial",
+      "order": 10
+    },
+    {
+      "key": "world-1-glimmering-glance-mirror-person",
+      "world": "1-浮光掠影",
+      "title": "镜中人",
+      "branchLayout": "side",
+      "storyTags": [
+        "诡影侵临"
+      ],
+      "status": "大纲草稿",
+      "parentKey": "world-1-glimmering-glance-stage-performance",
+      "order": 20
+    },
+    {
+      "key": "world-1-glimmering-glance-cruise",
+      "world": "1-浮光掠影",
+      "title": "游轮",
+      "summary": "游轮上的玩耍。",
+      "foreshadowing": [
+        "社团活动",
+        "杂技团",
+        "初见"
+      ],
+      "tags": [
+        "模特"
+      ],
+      "specialGameplay": [
+        "美人鱼",
+        "荧光绳",
+        "魔术助手"
+      ],
+      "characters": [
+        "林雨薇",
+        "欣雨",
+        "苏婉儿"
+      ],
+      "locations": [
+        "翡翠岛"
+      ],
+      "storyTags": [
+        "街景一隅"
+      ],
+      "branchLayout": "side",
+      "status": "大纲草稿",
+      "parentKey": "world-1-glimmering-glance-dance-classroom",
+      "order": 20
+    },
+    {
+      "key": "world-1-glimmering-glance-hot-spring",
+      "world": "1-浮光掠影",
+      "title": "温泉度假酒店",
+      "summary": "温泉里的比赛。",
+      "foreshadowing": [
+        "社团活动"
+      ],
+      "tags": [
+        "挠痒",
+        "活埋",
+        "性刺激",
+        "气味系",
+        "游戏"
+      ],
+      "specialGameplay": [
+        "区别对待",
+        "山药汁",
+        "沙滩活埋",
+        "紧缚比赛"
+      ],
+      "characters": [
+        "林雨薇",
+        "陈思雨"
+      ],
+      "locations": [
+        "翡翠岛"
+      ],
+      "storyTags": [
+        "街景一隅"
+      ],
+      "status": "大纲草稿",
+      "parentKey": "world-1-glimmering-glance-cruise",
+      "order": 10
+    },
+    {
+      "key": "world-1-glimmering-glance-flexibility",
+      "world": "1-浮光掠影",
+      "title": "柔韧性练习",
+      "branchLayout": "side",
+      "summary": "选修舞蹈课。",
+      "tags": [
+        "社死",
+        "疼痛"
+      ],
+      "specialGameplay": [
+        "教室被绑",
+        "捆绑拉伸"
+      ],
+      "characters": [
+        "林雨薇",
+        "莫语"
+      ],
+      "storyTags": [
+        "街景一隅"
+      ],
+      "status": "大纲草稿",
+      "parentKey": "world-1-glimmering-glance-club",
+      "order": 20
+    }
+  ]
+}

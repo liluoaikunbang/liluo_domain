@@ -1,0 +1,496 @@
+{
+  "estate_house_entry_pending": {
+    "id": "estate_house_entry_pending",
+    "text": "你站在小别野门前，轻轻推了推门。\n现在还没有接入室内地图，暂时进不去。"
+  },
+  "north_cave_entry_pending": {
+    "id": "north_cave_entry_pending",
+    "text": "洞口里吹出一阵微凉的风。\n现在还没有接入山洞地图，暂时进不去。"
+  },
+  "empire_portal_entry_pending": {
+    "id": "empire_portal_entry_pending",
+    "startNodeId": "start",
+    "nodes": {
+      "start": {
+        "id": "start",
+        "text": "这里不是传送门，而是通往慕妮卡帝国方向的缚神列车乘点。\n车站的目的地牌还没有完全亮起，但已经有一座城市可以抵达。",
+        "choices": [
+          {
+            "id": "go_to_city_desire",
+            "label": "去往醉欲之城",
+            "mapTransition": {
+              "mapId": "city_desire",
+              "spawnId": "role"
+            }
+          },
+          {
+            "id": "leave_empire_portal",
+            "label": "暂时不出发"
+          }
+        ]
+      }
+    }
+  },
+  "parallel_world_adventure_pending": {
+    "id": "parallel_world_adventure_pending",
+    "startNodeId": "start",
+    "nodes": {
+      "start": {
+        "id": "start",
+        "text": "你把手伸向传送门，另一侧像有陌生的风景和气息正缓缓涌来。",
+        "choices": [
+          {
+            "id": "start_adventure",
+            "label": "开始冒险",
+            "next": "adventure_chapter_selection"
+          },
+          {
+            "id": "leave_parallel_world_portal",
+            "label": "暂时不出发"
+          }
+        ]
+      },
+      "adventure_chapter_selection": {
+        "id": "adventure_chapter_selection",
+        "text": "传送门深处浮现出一页页还未完全点亮的章节。现在能看清的，只有其中一段。",
+        "choices": [
+          {
+            "id": "go_to_fleeting_light",
+            "label": "浮光掠影",
+            "mapTransition": {
+              "mapId": "city_jingjiang_school",
+              "spawnId": "role"
+            }
+          },
+          {
+            "id": "back_to_parallel_world_start",
+            "label": "再想想",
+            "next": "start"
+          }
+        ]
+      }
+    }
+  },
+  "estate_time_of_day_selection": {
+    "id": "estate_time_of_day_selection",
+    "startNodeId": "start",
+    "nodes": {
+      "start": {
+        "id": "start",
+        "speaker": "璃音",
+        "text": "你来啦。庭院这边有些东西刚接好，要不要顺手看一眼？",
+        "choices": [
+          {
+            "id": "go_to_function_test_branch",
+            "label": "功能测试",
+            "next": "function_test_branch"
+          },
+          {
+            "id": "go_to_scene_test_branch",
+            "label": "场景测试",
+            "next": "scene_test_branch"
+          },
+          {
+            "id": "leave_time_of_day_selection",
+            "label": "没什么事了"
+          }
+        ]
+      },
+      "function_test_branch": {
+        "id": "function_test_branch",
+        "speaker": "璃音",
+        "text": "嗯，我把现在能试的东西都整理在这里了。你想先看哪一项？",
+        "choices": [
+          {
+            "id": "go_to_time_branch",
+            "label": "切换天色表现",
+            "next": "time_branch"
+          },
+          {
+            "id": "go_to_weather_branch",
+            "label": "切换天气表现",
+            "next": "weather_branch"
+          },
+          {
+            "id": "go_to_notification_branch",
+            "label": "测试提示表现",
+            "next": "notification_branch"
+          },
+          {
+            "id": "go_to_player_status_test_branch",
+            "label": "测试人物状态",
+            "next": "player_status_test_selected"
+          },
+          {
+            "id": "go_to_sound_effect_test_branch",
+            "label": "测试细节音效",
+            "next": "sound_effect_test_branch"
+          },
+          {
+            "id": "back_to_root_from_function_test",
+            "label": "先不看了",
+            "next": "start"
+          }
+        ]
+      },
+      "player_status_test_selected": {
+        "id": "player_status_test_selected",
+        "speaker": "璃音",
+        "text": "想单独测试哪一种人物状态？点完以后对话会先收起来，你可以直接看左侧人物框。",
+        "choices": [
+          {
+            "id": "apply_player_status_no_shoes",
+            "label": "添加未穿鞋状态",
+            "playerStatusChange": {
+              "mode": "append",
+              "status": [
+                "no_shoes"
+              ]
+            }
+          },
+          {
+            "id": "apply_player_status_barefoot",
+            "label": "添加赤脚状态",
+            "playerStatusChange": {
+              "mode": "append",
+              "status": [
+                "barefoot"
+              ]
+            }
+          },
+          {
+            "id": "apply_player_status_hands_bound",
+            "label": "添加双手被缚状态",
+            "playerStatusChange": {
+              "mode": "append",
+              "status": [
+                "hands_bound"
+              ]
+            }
+          },
+          {
+            "id": "apply_player_status_legs_bound",
+            "label": "添加双腿被缚状态",
+            "playerStatusChange": {
+              "mode": "append",
+              "status": [
+                "legs_bound"
+              ]
+            }
+          },
+          {
+            "id": "apply_player_status_muted",
+            "label": "添加禁言状态",
+            "playerStatusChange": {
+              "mode": "append",
+              "status": [
+                "muted"
+              ]
+            }
+          },
+          {
+            "id": "apply_player_status_blind",
+            "label": "添加失明状态",
+            "playerStatusChange": {
+              "mode": "append",
+              "status": [
+                "blind"
+              ]
+            }
+          },
+          {
+            "id": "apply_player_status_confined",
+            "label": "添加禁锢状态",
+            "playerStatusChange": {
+              "mode": "append",
+              "status": [
+                "confined"
+              ]
+            }
+          },
+          {
+            "id": "apply_all_player_statuses",
+            "label": "添加所有状态",
+            "playerStatusChange": {
+              "mode": "append",
+              "status": [
+                "no_shoes",
+                "barefoot",
+                "hands_bound",
+                "legs_bound",
+                "muted",
+                "blind",
+                "confined"
+              ]
+            }
+          },
+          {
+            "id": "clear_player_status_test",
+            "label": "去掉所有状态",
+            "next": "player_status_cleared",
+            "playerStatusChange": {
+              "status": []
+            }
+          }
+        ]
+      },
+      "player_status_cleared": {
+        "id": "player_status_cleared",
+        "speaker": "璃音",
+        "text": "状态已经清掉了。还要再加一个状态看看吗？",
+        "choices": [
+          {
+            "id": "return_to_player_status_test",
+            "label": "继续添加状态",
+            "next": "player_status_test_selected"
+          },
+          {
+            "id": "leave_player_status_test",
+            "label": "结束对话"
+          }
+        ]
+      },
+      "scene_test_branch": {
+        "id": "scene_test_branch",
+        "speaker": "璃音",
+        "text": "这些更像是会展开成一段场景的测试。你想先进哪一个？",
+        "choices": [
+          {
+            "id": "start_asylum_for_lunatic_interactive_fiction",
+            "label": "测试互动小说",
+            "interactiveFictionStart": {
+              "scenarioId": "asylum_for_lunatic"
+            }
+          },
+          {
+            "id": "start_direction_pad_test",
+            "label": "测试方向键小游戏",
+            "directionPadGameStart": {
+              "gameId": "liyin_direction_pad_test"
+            }
+          },
+          {
+            "id": "start_direction_pad_rhythm_test",
+            "label": "测试进阶方向键小游戏",
+            "directionPadGameStart": {
+              "gameId": "liyin_direction_pad_rhythm_test"
+            }
+          },
+          {
+            "id": "back_to_root_from_scene_test",
+            "label": "先不进入场景",
+            "next": "start"
+          }
+        ]
+      },
+      "time_branch": {
+        "id": "time_branch",
+        "speaker": "璃音",
+        "text": "这里可以临时切换庭院的光线表现。想看哪一种？",
+        "choices": [
+          {
+            "id": "switch_to_day",
+            "label": "白天",
+            "next": "day_selected",
+            "timeOfDayChange": {
+              "timeOfDayId": "day"
+            }
+          },
+          {
+            "id": "switch_to_dusk",
+            "label": "黄昏",
+            "next": "dusk_selected",
+            "timeOfDayChange": {
+              "timeOfDayId": "dusk"
+            }
+          },
+          {
+            "id": "switch_to_night",
+            "label": "夜晚",
+            "next": "night_selected",
+            "timeOfDayChange": {
+              "timeOfDayId": "night"
+            }
+          },
+          {
+            "id": "back_to_root_from_time",
+            "label": "还是先看看别的",
+            "next": "function_test_branch"
+          }
+        ]
+      },
+      "weather_branch": {
+        "id": "weather_branch",
+        "speaker": "璃音",
+        "text": "天气效果也可以一起看。只是临时演示，不用太在意是不是正好对上现在的天色。",
+        "choices": [
+          {
+            "id": "switch_to_clear",
+            "label": "把天气收回去",
+            "next": "clear_weather_selected",
+            "weatherChange": {
+              "weatherId": "clear"
+            }
+          },
+          {
+            "id": "switch_to_rain",
+            "label": "雨天",
+            "next": "rain_selected",
+            "weatherChange": {
+              "weatherId": "rain"
+            }
+          },
+          {
+            "id": "switch_to_fog",
+            "label": "雾天",
+            "next": "fog_selected",
+            "weatherChange": {
+              "weatherId": "fog"
+            }
+          },
+          {
+            "id": "back_to_root_from_weather",
+            "label": "先不加天气了",
+            "next": "function_test_branch"
+          }
+        ]
+      },
+      "notification_branch": {
+        "id": "notification_branch",
+        "speaker": "璃音",
+        "text": "提示也可以试一下。它主要用来确认场内变化有没有被清楚地传达出来。",
+        "choices": [
+          {
+            "id": "test_gain_notification",
+            "label": "测试获得提示",
+            "next": "gain_notification_selected",
+            "notification": {
+              "text": "你从璃音手里接过了一小束微光花。",
+              "type": "gain"
+            }
+          },
+          {
+            "id": "test_loss_notification",
+            "label": "测试失去提示",
+            "next": "loss_notification_selected",
+            "notification": {
+              "text": "风把你袖口里折好的纸签吹走了一张。",
+              "type": "loss"
+            }
+          },
+          {
+            "id": "test_neutral_notification",
+            "label": "测试普通提示",
+            "next": "neutral_notification_selected",
+            "notification": {
+              "text": "庭院角落传来很轻的一声风铃响。",
+              "type": "neutral"
+            }
+          },
+          {
+            "id": "back_to_root_from_notification",
+            "label": "先不测了",
+            "next": "function_test_branch"
+          }
+        ]
+      },
+      "day_selected": {
+        "id": "day_selected",
+        "speaker": "璃音",
+        "text": "天色重新亮了起来，花叶上的光也显得更轻一些。"
+      },
+      "dusk_selected": {
+        "id": "dusk_selected",
+        "speaker": "璃音",
+        "text": "黄昏慢慢铺下来，庭院像被一层淡橙粉色的雾轻轻罩住了。"
+      },
+      "night_selected": {
+        "id": "night_selected",
+        "speaker": "璃音",
+        "text": "夜色压低了花园的呼吸，蓝紫色的光影安静地覆在枝叶和石路上。"
+      },
+      "rain_selected": {
+        "id": "rain_selected",
+        "speaker": "璃音",
+        "text": "天光一下子冷了些，像有细雨正从高处无声落下，让整座庭院都偏灰了半分。"
+      },
+      "fog_selected": {
+        "id": "fog_selected",
+        "speaker": "璃音",
+        "text": "薄雾在地面和花丛间缓缓散开，颜色被压淡了些，轮廓也变得更轻更远。"
+      },
+      "clear_weather_selected": {
+        "id": "clear_weather_selected",
+        "speaker": "璃音",
+        "text": "我把这些潮气和雾意先收起来了。现在庭院只剩下原本的天色。"
+      },
+      "gain_notification_selected": {
+        "id": "gain_notification_selected",
+        "speaker": "璃音",
+        "text": "看到了吗？这种更适合表现获得、拾取、推进之类的正向反馈。"
+      },
+      "loss_notification_selected": {
+        "id": "loss_notification_selected",
+        "speaker": "璃音",
+        "text": "这类颜色更适合提醒失去、消耗，或者一些不太妙的小变化。"
+      },
+      "neutral_notification_selected": {
+        "id": "neutral_notification_selected",
+        "speaker": "璃音",
+        "text": "普通提示就放这种，不会太抢戏，但还能让你注意到场内变化。"
+      },
+      "sound_effect_test_branch": {
+        "id": "sound_effect_test_branch",
+        "speaker": "璃音",
+        "text": "这些是刚接进来的细节音效。你可以逐个听一下，确认节奏、长度和氛围合不合适。",
+        "choices": [
+          {
+            "id": "play_zip_tie_tighten_1",
+            "label": "扎带收紧 1",
+            "next": "sound_effect_test_branch",
+            "soundEffectPlay": {
+              "key": "sfx_zip_tie_tighten_1"
+            }
+          },
+          {
+            "id": "play_zip_tie_tighten_2",
+            "label": "扎带收紧 2",
+            "next": "sound_effect_test_branch",
+            "soundEffectPlay": {
+              "key": "sfx_zip_tie_tighten_2"
+            }
+          },
+          {
+            "id": "play_zip_tie_tighten_3",
+            "label": "扎带收紧 3",
+            "next": "sound_effect_test_branch",
+            "soundEffectPlay": {
+              "key": "sfx_zip_tie_tighten_3"
+            }
+          },
+          {
+            "id": "play_zip_tie_tighten_4",
+            "label": "扎带收紧 4",
+            "next": "sound_effect_test_branch",
+            "soundEffectPlay": {
+              "key": "sfx_zip_tie_tighten_4"
+            }
+          },
+          {
+            "id": "play_leg_shackle",
+            "label": "脚镣声",
+            "next": "sound_effect_test_branch",
+            "soundEffectPlay": {
+              "key": "sfx_leg_shackle"
+            }
+          },
+          {
+            "id": "back_to_function_from_sound_effect",
+            "label": "先不听了",
+            "next": "function_test_branch"
+          }
+        ]
+      }
+    }
+  }
+}

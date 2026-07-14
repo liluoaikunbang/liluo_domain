@@ -1,0 +1,17 @@
+/* 少女体，但变化不大 */
+@font-face {
+    font-family: 'girl';
+    src: url('./girl.ttc');
+}
+
+/* 有缺字，不建议使用 */
+@font-face {
+    font-family: 'girl1';
+    src: url('./girl1.otf');
+}
+
+/* 素材集市康康体 来自100font */
+@font-face {
+    font-family: 'kangkang';
+    src: url('./kangkang.ttf');
+}

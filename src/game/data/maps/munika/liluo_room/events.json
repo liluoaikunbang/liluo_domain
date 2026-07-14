@@ -1,0 +1,53 @@
+{
+  "liluo_room_bed_event": {
+    "eventId": "liluo_room_bed_event",
+    "triggerType": "manual",
+    "mapSessionFlagRequired": {
+      "flagId": "liluo_room_has_slept",
+      "expected": false,
+      "fallbackDialogueId": "liluo_room_bed_already_slept"
+    },
+    "dialogueId": "liluo_room_bed_dialogue",
+    "tileMarker": {
+      "mapId": "liluo_room",
+      "layerName": "bed_event"
+    },
+    "panelActions": [
+      {
+        "actionId": "inspect_liluo_bed",
+        "label": "看看床铺（Space）",
+        "description": "靠近床边时，会短暂沉进只属于房间里的安静里。"
+      }
+    ]
+  },
+  "liluo_room_leave": {
+    "eventId": "liluo_room_leave",
+    "triggerType": "manual",
+    "defaultPlayerPortraitRequired": {
+      "fallbackDialogueId": "liluo_room_leave_change_clothes_required"
+    },
+    "mapTransition": {
+      "mapId": "liluo_house_living_room",
+      "spawnId": "liluo_room_event"
+    },
+    "playerStatusChange": {
+      "mode": "remove",
+      "status": [
+        "no_shoes",
+        "hands_bound",
+        "legs_bound"
+      ]
+    },
+    "tileMarker": {
+      "mapId": "liluo_room",
+      "layerName": "role"
+    },
+    "panelActions": [
+      {
+        "actionId": "leave_liluo_room",
+        "label": "离开璃落的房间（Space）",
+        "description": "轻轻推门回到客厅，门外还是熟悉的小家。"
+      }
+    ]
+  }
+}
