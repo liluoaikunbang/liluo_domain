@@ -3019,9 +3019,10 @@
   display: flex;
   align-items: stretch;
   justify-content: center;
-  max-width: min(94vw, 1180px);
-  max-height: 88vh;
+  width: min(94vw, 1180px);
+  height: min(88vh, 760px);
   margin: 0;
+  overflow: hidden;
   background: #050507;
   border: 1px solid rgba(255, 224, 247, 0.24);
   box-shadow: 0 20px 64px rgba(0, 0, 0, 0.42);
@@ -3086,19 +3087,25 @@
 }
 
 .codex-cg-preview-variant-image-stack {
+  position: relative;
   display: grid;
   width: 100%;
   aspect-ratio: 16 / 9;
   place-items: center;
+  overflow: hidden;
   background: #050507;
 }
 
 .codex-cg-preview-variant-image {
+  position: absolute;
+  inset: 0;
   display: block;
-  grid-area: 1 / 1;
   width: 100%;
   height: 100%;
+  min-width: 0;
+  min-height: 0;
   object-fit: contain;
+  object-position: center;
 }
 
 .codex-cg-preview-variant-label {
@@ -3127,27 +3134,37 @@
 
 .codex-cg-preview-stage {
   position: relative;
+  flex: 1 1 auto;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 0;
   min-width: 0;
-  max-width: 100%;
-  max-height: 88vh;
+  min-height: 0;
+  overflow: hidden;
 }
 
 .codex-cg-preview-image-stack {
+  position: relative;
   display: grid;
-  max-width: 100%;
-  max-height: 88vh;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  min-height: 0;
   place-items: center;
+  overflow: hidden;
 }
 
 .codex-cg-preview-image {
+  position: absolute;
+  inset: 0;
   display: block;
-  grid-area: 1 / 1;
-  max-width: 100%;
-  max-height: 88vh;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  min-height: 0;
   object-fit: contain;
+  object-position: center;
 }
 
 .codex-cg-preview-code {
