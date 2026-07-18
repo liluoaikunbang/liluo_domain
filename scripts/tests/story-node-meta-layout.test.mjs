@@ -30,7 +30,9 @@ test('uses content-aware node heights with fixed track gaps', () => {
   assert.equal(storyPanelSource.includes('height: `${node.layoutHeight}px`'), true);
 });
 
-test('does not expose gameplay linking on pure category nodes', () => {
-  assert.equal(storyPanelSource.includes('canLinkGameplay(node)'), true);
-  assert.equal(storyPanelSource.includes('v-if="canLinkGameplay(node)"'), true);
+test('only shows linked gameplay labels and does not expose a per-node picker', () => {
+  assert.equal(storyPanelSource.includes('hasLinkedGameplay(node)'), true);
+  assert.equal(storyPanelSource.includes('v-if="hasLinkedGameplay(node)"'), true);
+  assert.equal(storyPanelSource.includes('StoryGameplayLinkDialog'), true);
+  assert.equal(storyPanelSource.includes('openGameplayLinks(node)'), true);
 });

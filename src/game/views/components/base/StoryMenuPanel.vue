@@ -86,7 +86,7 @@
               </template>
               <template v-else>
                 <div
-                  v-if="isCategoryStatus(node.status) || node.metaItems.length > 0 || hasStoryDetail(node) || hasGameplayCatalog"
+                  v-if="isCategoryStatus(node.status) || node.metaItems.length > 0 || hasStoryDetail(node) || hasStoryCg(node) || hasLinkedGameplay(node)"
                   class="story-node-actions"
                 >
                   <button
@@ -125,10 +125,19 @@
                     {{ node.detailLabel }}
                   </button>
                   <button
-                    v-if="canLinkGameplay(node)"
+                    v-if="hasStoryCg(node)"
+                    class="story-node-cg-button"
+                    type="button"
+                    :aria-label="`查看${node.title}关联CG，共${getStoryCgEntries(node).length}项`"
+                    @click.stop="openStoryCg(node)"
+                  >
+                    CG
+                  </button>
+                  <button
+                    v-if="hasLinkedGameplay(node)"
                     class="story-node-gameplay-button"
                     type="button"
-                    :aria-label="`${node.title}关联玩法，已选择${node.gameplayRefs.length}项`"
+                    :aria-label="`查看${node.title}关联玩法，共${getLinkedGameplay(node).length}项`"
                     @click.stop="openGameplayLinks(node)"
                   >
                     关联玩法
@@ -210,10 +219,19 @@
                     {{ node.detailLabel }}
                   </button>
                   <button
-                    v-if="canLinkGameplay(node)"
+                    v-if="hasStoryCg(node)"
                     class="story-table-detail-button"
                     type="button"
-                    :aria-label="`${node.title}关联玩法，已选择${node.gameplayRefs.length}项`"
+                    :aria-label="`查看${node.title}关联CG，共${getStoryCgEntries(node).length}项`"
+                    @click.stop="openStoryCg(node)"
+                  >
+                    CG
+                  </button>
+                  <button
+                    v-if="hasLinkedGameplay(node)"
+                    class="story-table-detail-button"
+                    type="button"
+                    :aria-label="`查看${node.title}关联玩法，共${getLinkedGameplay(node).length}项`"
                     @click.stop="openGameplayLinks(node)"
                   >
                     关联玩法
@@ -410,6 +428,94 @@
     </div>
 
     <div
+      v-if="activeCgNode"
+      class="story-detail-overlay"
+      role="presentation"
+      @click.self="closeStoryCg"
+    >
+      <section
+        ref="cgDialogRef"
+        class="story-detail-dialog story-cg-dialog"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="story-cg-dialog-title"
+        tabindex="-1"
+        @keydown.esc.stop.prevent="closeStoryCg"
+      >
+        <header class="story-detail-header">
+          <div class="story-detail-heading">
+            <span class="story-node-status">关联 CG</span>
+            <h2 id="story-cg-dialog-title" class="story-detail-title">{{ activeCgNode.title }}</h2>
+          </div>
+          <button class="story-detail-close" type="button" aria-label="关闭关联CG" @click="closeStoryCg">×</button>
+        </header>
+        <div class="story-detail-content" role="region" :aria-label="`${activeCgNode.title}关联CG条目`">
+          <div class="story-cg-grid">
+            <article v-for="entry in activeStoryCgEntries" :key="entry.key" class="story-cg-entry">
+              <header class="story-cg-entry-header">
+                <h3>{{ entry.title }}</h3>
+                <span>{{ entry.summary }}</span>
+              </header>
+              <button
+                v-if="getStoryCgCover(entry)"
+                class="story-cg-cover"
+                type="button"
+                :aria-label="`查看${entry.title}大图与差分`"
+                @click="openStoryCgPreview(entry)"
+              >
+                <img :src="getStoryCgCover(entry).image" :alt="`${entry.title}封面`" loading="lazy" />
+                <span>点击查看大图<span v-if="entry.variants.length > 1"> · {{ entry.variants.length }} 个差分</span></span>
+              </button>
+            </article>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div
+      v-if="activeStoryCgPreview"
+      class="story-detail-overlay story-cg-preview-overlay"
+      role="presentation"
+      @click.self="closeStoryCgPreview"
+    >
+      <section
+        ref="cgPreviewDialogRef"
+        class="story-detail-dialog story-cg-preview-dialog"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="story-cg-preview-title"
+        tabindex="-1"
+        @keydown.esc.stop.prevent="closeStoryCgPreview"
+      >
+        <header class="story-detail-header">
+          <div class="story-detail-heading">
+            <span class="story-node-status">CG 大图</span>
+            <h2 id="story-cg-preview-title" class="story-detail-title">{{ activeStoryCgPreview.title }}</h2>
+          </div>
+          <button class="story-detail-close" type="button" aria-label="关闭CG大图" @click="closeStoryCgPreview">×</button>
+        </header>
+        <div class="story-cg-preview-content">
+          <img
+            :src="activeStoryCgVariant.image"
+            :alt="`${activeStoryCgPreview.title} ${activeStoryCgVariant.label}`"
+          />
+          <div v-if="activeStoryCgPreview.variants.length > 1" class="story-cg-preview-switcher" aria-label="切换CG差分">
+            <button
+              v-for="(variant, index) in activeStoryCgPreview.variants"
+              :key="variant.key || variant.image"
+              type="button"
+              :class="{ active: index === activeStoryCgPreview.activeVariantIndex }"
+              :aria-pressed="index === activeStoryCgPreview.activeVariantIndex"
+              @click="selectStoryCgVariant(index)"
+            >
+              {{ variant.label }}
+            </button>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div
       v-if="activeSummaryFilter"
       class="story-detail-overlay"
       role="presentation"
@@ -527,7 +633,6 @@
       :node="activeGameplayNode"
       :catalog="gameplayCatalog"
       @close="closeGameplayLinks"
-      @save="saveGameplayLinks"
       @view-gameplay="viewGameplay"
     />
   </section>
@@ -538,18 +643,23 @@ import { computed, nextTick, onBeforeUnmount, onMounted, ref, watch } from 'vue'
 import {
   createAllStoryExportPayload,
   createCategoryExportPayload,
-  findOutlineNodeByKey,
   sanitizeStoryExportFilename
 } from '../../../data/story_outline/storyOutlineExport';
-import { updateOutlineNodeGameplayRefs } from '../../../data/gameplay_outline/gameplayOutline';
+import { createStoryCgPreview, resolveStoryCgEntries } from '../../../data/story_outline/storyCgLinks';
+import { resolveStoryGameplayLinks } from '../../../data/gameplay_outline/gameplayOutline';
+import { codexCategories } from '../../../data/global/gameMenuData';
 import StoryGameplayLinkDialog from './StoryGameplayLinkDialog.vue';
 
-const detailImageModules = import.meta.glob('../../../../assets/game/outlines/**/*.{png,jpg,jpeg,webp,gif}', {
+const detailImageModules = import.meta.glob([
+  '../../../../assets/game/outlines/**/*.{png,jpg,jpeg,webp,gif}',
+  '../../../../assets/game/cg/*.{png,jpg,jpeg,webp,gif}'
+], {
   eager: true,
   query: '?url',
   import: 'default'
 });
 const detailImageUrlByPath = createDetailImageUrlMap(detailImageModules);
+const storyCgSlots = codexCategories.find((category) => category.key === 'cg')?.slots ?? [];
 
 const props = defineProps({
   outline: {
@@ -562,7 +672,7 @@ const props = defineProps({
   }
 });
 
-const emit = defineEmits(['update:outline', 'view-gameplay']);
+const emit = defineEmits(['view-gameplay']);
 
 const NODE_WIDTH = 220;
 const NODE_MIN_HEIGHT = 126;
@@ -578,17 +688,20 @@ const ZOOM_STEP = 0.1;
 
 const viewportRef = ref(null);
 const detailDialogRef = ref(null);
+const cgDialogRef = ref(null);
+const cgPreviewDialogRef = ref(null);
 const zoom = ref(0.88);
 const isDragging = ref(false);
 const dragState = ref(null);
 const layoutMode = ref('vertical');
 const collapsedCategoryKeys = ref(new Set());
 const activeDetailNode = ref(null);
+const activeCgNode = ref(null);
+const activeStoryCgPreview = ref(null);
 const activeSummaryFilter = ref(null);
 const activeGameplayNode = ref(null);
 const summarySearchQueries = ref({});
 const detailTitleId = 'story-detail-title';
-const hasGameplayCatalog = computed(() => Array.isArray(props.gameplayCatalog?.entries));
 const layoutModeOptions = [
   {
     key: 'vertical',
@@ -688,6 +801,14 @@ function hasStoryDetail(node) {
   return Boolean(node?.detailMarkdown || node?.detailSourcePath);
 }
 
+function getStoryCgEntries(node) {
+  return resolveStoryCgEntries(node?.cgRefs, storyCgSlots);
+}
+
+function hasStoryCg(node) {
+  return getStoryCgEntries(node).length > 0;
+}
+
 function formatMetaValue(value) {
   if (Array.isArray(value)) {
     return value.filter(Boolean).join('、');
@@ -736,8 +857,20 @@ function hasNodeMetaRow(node) {
   return Boolean(node.displayStatus || node.storyTags.length > 0 || node.timeline);
 }
 
-function canLinkGameplay(node) {
-  return hasGameplayCatalog.value && !isCategoryStatus(node?.status);
+function getLinkedGameplay(node) {
+  return resolveStoryGameplayLinks(node, props.gameplayCatalog ?? undefined);
+}
+
+function hasLinkedGameplay(node) {
+  return getLinkedGameplay(node).length > 0;
+}
+
+function openGameplayLinks(node) {
+  activeGameplayNode.value = node;
+}
+
+function closeGameplayLinks() {
+  activeGameplayNode.value = null;
 }
 
 function isVirtualStoryNode(node) {
@@ -868,7 +1001,7 @@ function getLayoutNodeHeight(node) {
   const hasActions = isCategoryStatus(node?.status)
     || node?.metaItems?.length > 0
     || hasStoryDetail(node)
-    || canLinkGameplay(node);
+    || hasLinkedGameplay(node);
   const titleRows = String(node?.title ?? '').length > 16 ? 2 : 1;
   const tagRows = node?.tags?.length > 2 ? 2 : node?.tags?.length > 0 ? 1 : 0;
   const summaryRows = node?.summary
@@ -1049,25 +1182,33 @@ function closeDetail() {
   activeDetailNode.value = null;
 }
 
-function openGameplayLinks(node) {
-  activeGameplayNode.value = findOutlineNodeByKey(props.outline, node.key);
+function openStoryCg(node) {
+  activeCgNode.value = node;
 }
 
-function closeGameplayLinks() {
-  activeGameplayNode.value = null;
+function closeStoryCg() {
+  closeStoryCgPreview();
+  activeCgNode.value = null;
 }
 
-function saveGameplayLinks(gameplayRefs) {
-  if (!activeGameplayNode.value) {
+function getStoryCgCover(entry) {
+  return entry?.variants?.find((variant) => variant?.image) ?? null;
+}
+
+function openStoryCgPreview(entry) {
+  activeStoryCgPreview.value = createStoryCgPreview(entry);
+}
+
+function closeStoryCgPreview() {
+  activeStoryCgPreview.value = null;
+}
+
+function selectStoryCgVariant(index) {
+  if (!activeStoryCgPreview.value?.variants[index]) {
     return;
   }
 
-  emit('update:outline', updateOutlineNodeGameplayRefs(
-    props.outline,
-    activeGameplayNode.value.key,
-    gameplayRefs
-  ));
-  closeGameplayLinks();
+  activeStoryCgPreview.value.activeVariantIndex = index;
 }
 
 function viewGameplay(gameplayId) {
@@ -1076,8 +1217,12 @@ function viewGameplay(gameplayId) {
 }
 
 function handleDocumentKeydown(event) {
-  if (event.key === 'Escape' && activeDetailNode.value) {
+  if (event.key === 'Escape' && activeStoryCgPreview.value) {
+    closeStoryCgPreview();
+  } else if (event.key === 'Escape' && activeDetailNode.value) {
     closeDetail();
+  } else if (event.key === 'Escape' && activeCgNode.value) {
+    closeStoryCg();
   } else if (event.key === 'Escape' && activeSummaryFilter.value) {
     closeSummaryMatches();
   }
@@ -1106,6 +1251,7 @@ function createTableRows(outline, collapsedKeys) {
       detailMarkdown: node.detailMarkdown,
       detailSourcePath: node.detailSourcePath,
       detailLabel: getDetailLabel(node),
+      cgRefs: Array.isArray(node.cgRefs) ? node.cgRefs : [],
       gameplayRefs: Array.isArray(node.gameplayRefs) ? node.gameplayRefs : [],
       storyTags: getStoryTags(node),
       tags: getTableTags(node),
@@ -1449,6 +1595,7 @@ function createNodeLayout(outline, mode, collapsedKeys) {
       detailMarkdown: node.detailMarkdown,
       detailSourcePath: node.detailSourcePath,
       detailLabel: getDetailLabel(node),
+      cgRefs: Array.isArray(node.cgRefs) ? node.cgRefs : [],
       gameplayRefs: Array.isArray(node.gameplayRefs) ? node.gameplayRefs : [],
       storyTags: getStoryTags(node),
       tags: getNormalTags(node),
@@ -1499,6 +1646,7 @@ function createNodeLayout(outline, mode, collapsedKeys) {
       detailMarkdown: node.detailMarkdown,
       detailSourcePath: node.detailSourcePath,
       detailLabel: getDetailLabel(node),
+      cgRefs: Array.isArray(node.cgRefs) ? node.cgRefs : [],
       gameplayRefs: Array.isArray(node.gameplayRefs) ? node.gameplayRefs : [],
       storyTags: getStoryTags(node),
       tags: getNormalTags(node),
@@ -1657,6 +1805,11 @@ const canvasContentStyle = computed(() => ({
 
 const zoomPercent = computed(() => `${Math.round(zoom.value * 100)}%`);
 const activeDetailBlocks = computed(() => parseDetailMarkdownBlocks(activeDetailNode.value?.detailMarkdown));
+const activeStoryCgEntries = computed(() => getStoryCgEntries(activeCgNode.value));
+const activeStoryCgVariant = computed(() => {
+  const preview = activeStoryCgPreview.value;
+  return preview?.variants[preview.activeVariantIndex] ?? null;
+});
 
 function parseDetailMarkdownBlocks(markdown) {
   const blocks = [];
@@ -1962,6 +2115,25 @@ watch(activeDetailNode, (node) => {
   nextTick(() => {
     detailDialogRef.value?.focus();
   });
+});
+
+watch(activeCgNode, (node) => {
+  if (!node) {
+    return;
+  }
+
+  nextTick(() => {
+    cgDialogRef.value?.focus();
+  });
+});
+
+watch(activeStoryCgPreview, (preview) => {
+  if (!preview) {
+    nextTick(() => cgDialogRef.value?.focus());
+    return;
+  }
+
+  nextTick(() => cgPreviewDialogRef.value?.focus());
 });
 </script>
 

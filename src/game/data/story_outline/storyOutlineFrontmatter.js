@@ -10,8 +10,10 @@ const WORLD_DIRS = {
 const FRONTMATTER_FIELD_KINDS = {
   world: 'scalar',
   storyTags: 'list',
+  status: 'scalar',
   summary: 'scalar',
   detailLabel: 'scalar',
+  cgRefs: 'list',
   foreshadowing: 'list',
   tags: 'list',
   specialGameplay: 'list',

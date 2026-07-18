@@ -186,3 +186,15 @@ test('gameplay browser only exposes linkable gameplay and uses project scroll ar
   assert.equal(linkDialogSource.includes('<GameScrollArea class="gameplay-link-list"'), true);
   assert.equal(linkDialogSource.includes('overflow: auto'), false);
 });
+
+test('story gameplay dialog is read-only and lists only existing links', () => {
+  const dialogSource = readFileSync(
+    new URL('../../src/game/views/components/base/StoryGameplayLinkDialog.vue', import.meta.url),
+    'utf8'
+  );
+
+  assert.equal(dialogSource.includes('resolveStoryGameplayLinks'), true);
+  assert.equal(dialogSource.includes('type="checkbox"'), false);
+  assert.equal(dialogSource.includes("$emit('save'"), false);
+  assert.equal(dialogSource.includes('搜索玩法'), false);
+});

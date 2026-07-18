@@ -18,7 +18,6 @@
       v-if="activeSection === 'story'"
       :outline="editableOutline"
       :gameplay-catalog="gameplayOutline"
-      @update:outline="editableOutline = $event"
       @view-gameplay="showGameplay"
     />
     <GameplayMenuPanel

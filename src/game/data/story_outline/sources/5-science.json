@@ -109,11 +109,19 @@
       "order": 100
     },
     {
+      "key": "world-5-star-weaving-dream-dome-hunt",
+      "world": "5-星宇织梦",
+      "title": "穹顶狩猎",
+      "status": "大纲",
+      "parentKey": "world-5-star-weaving-dream-frontier-colony",
+      "order": 105
+    },
+    {
       "key": "world-5-star-weaving-dream-barren-mining-asteroid",
       "world": "5-星宇织梦",
       "title": "荒矿小行星",
       "status": "主线任务",
-      "parentKey": "world-5-star-weaving-dream-frontier-colony",
+      "parentKey": "world-5-star-weaving-dream-dome-hunt",
       "order": 110
     },
     {

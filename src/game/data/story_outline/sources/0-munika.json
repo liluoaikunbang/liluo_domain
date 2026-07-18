@@ -64,6 +64,9 @@
       "title": "人生模拟器",
       "status": "区域",
       "branchLayout": "side",
+      "gameplayRefs": [
+        "gameplay-118"
+      ],
       "locations": [
         "慕妮卡帝国",
         "缚神领地",

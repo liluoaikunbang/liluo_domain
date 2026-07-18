@@ -44,6 +44,9 @@ const markdownModules = {
     'status: 大纲草稿',
     'summary: YAML 摘要',
     'detailLabel: 灵感',
+    'cgRefs:',
+    '  - 都市DID-KTV服务员',
+    '  - 都市DID-保洁员',
     'foreshadowing:',
     '  - YAML 伏笔',
     'tags:',
@@ -76,6 +79,7 @@ const emptyDetailNode = resolvedOutline[0].children[1];
 
 assert.equal(node.summary, 'YAML 摘要');
 assert.equal(node.detailLabel, '灵感');
+assert.deepEqual(node.cgRefs, ['都市DID-KTV服务员', '都市DID-保洁员']);
 assert.deepEqual(node.storyTags, ['街景一隅']);
 assert.equal(node.status, '大纲草稿');
 assert.deepEqual(node.foreshadowing, ['YAML 伏笔']);

@@ -52,6 +52,14 @@
       "order": 10
     },
     {
+      "key": "world-3-mortal-dao-tile-kiln-disaster-sealing",
+      "world": "3-尘寰问道",
+      "title": "瓦窑封灾",
+      "status": "大纲",
+      "parentKey": "world-3-mortal-dao-chaotic-world-ranger",
+      "order": 10
+    },
+    {
       "key": "world-3-mortal-dao-start",
       "world": "3-尘寰问道",
       "title": "问道起点",
@@ -72,7 +80,7 @@
       "world": "3-尘寰问道",
       "title": "樱岚幕府",
       "status": "大纲",
-      "parentKey": "world-3-mortal-dao-chaotic-world-ranger",
+      "parentKey": "world-3-mortal-dao-tile-kiln-disaster-sealing",
       "order": 10
     },
     {
