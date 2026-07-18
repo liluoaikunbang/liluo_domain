@@ -198,9 +198,9 @@ export const menuTabs = [
   },
   {
     key: 'story',
-    label: '故事',
-    title: '故事栏正在准备中',
-    description: '之后可用于回顾已经触发的剧情片段、关键对话与冒险记忆。'
+    label: '大纲',
+    title: '故事与玩法大纲',
+    description: '查看故事结构、玩法总表以及两者之间的关联。'
   },
   {
     key: 'codex',

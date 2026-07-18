@@ -678,6 +678,7 @@
 }
 
 .story-node-detail-button,
+.story-node-gameplay-button,
 .story-table-detail-button {
   display: inline-flex;
   align-items: center;
@@ -703,6 +704,7 @@
 .story-node-meta-flag:focus-visible,
 .story-node-export-button:focus-visible,
 .story-node-detail-button:focus-visible,
+.story-node-gameplay-button:focus-visible,
 .story-table-detail-button:focus-visible {
   outline: 2px solid rgba(255, 224, 247, 0.52);
   outline-offset: 2px;

@@ -96,7 +96,7 @@
                   导出JSON
                 </button>
                 <div
-                  v-if="node.metaItems.length > 0 || hasStoryDetail(node)"
+                  v-if="node.metaItems.length > 0 || hasStoryDetail(node) || hasGameplayCatalog"
                   class="story-node-actions"
                 >
                   <div
@@ -123,6 +123,15 @@
                     @click.stop="openDetail(node)"
                   >
                     {{ node.detailLabel }}
+                  </button>
+                  <button
+                    v-if="hasGameplayCatalog"
+                    class="story-node-gameplay-button"
+                    type="button"
+                    :aria-label="`${node.title}关联玩法，已选择${node.gameplayRefs.length}项`"
+                    @click.stop="openGameplayLinks(node)"
+                  >
+                    关联玩法
                   </button>
                 </div>
                 <div v-if="node.displayStatus || node.storyTags.length > 0 || node.timeline" class="story-node-meta-row">
@@ -199,6 +208,15 @@
                     @click.stop="openDetail(node)"
                   >
                     {{ node.detailLabel }}
+                  </button>
+                  <button
+                    v-if="hasGameplayCatalog"
+                    class="story-table-detail-button"
+                    type="button"
+                    :aria-label="`${node.title}关联玩法，已选择${node.gameplayRefs.length}项`"
+                    @click.stop="openGameplayLinks(node)"
+                  >
+                    关联玩法
                   </button>
                 </th>
                 <td>
@@ -503,6 +521,15 @@
         </div>
       </section>
     </div>
+
+    <StoryGameplayLinkDialog
+      v-if="activeGameplayNode"
+      :node="activeGameplayNode"
+      :catalog="gameplayCatalog"
+      @close="closeGameplayLinks"
+      @save="saveGameplayLinks"
+      @view-gameplay="viewGameplay"
+    />
   </section>
 </template>
 
@@ -514,6 +541,8 @@ import {
   findOutlineNodeByKey,
   sanitizeStoryExportFilename
 } from '../../../data/story_outline/storyOutlineExport';
+import { updateOutlineNodeGameplayRefs } from '../../../data/gameplay_outline/gameplayOutline';
+import StoryGameplayLinkDialog from './StoryGameplayLinkDialog.vue';
 
 const detailImageModules = import.meta.glob('../../../../assets/game/outlines/**/*.{png,jpg,jpeg,webp,gif}', {
   eager: true,
@@ -526,8 +555,14 @@ const props = defineProps({
   outline: {
     type: Array,
     default: () => []
+  },
+  gameplayCatalog: {
+    type: Object,
+    default: null
   }
 });
+
+const emit = defineEmits(['update:outline', 'view-gameplay']);
 
 const NODE_WIDTH = 220;
 const NODE_HEIGHT = 126;
@@ -551,8 +586,10 @@ const layoutMode = ref('vertical');
 const collapsedCategoryKeys = ref(new Set());
 const activeDetailNode = ref(null);
 const activeSummaryFilter = ref(null);
+const activeGameplayNode = ref(null);
 const summarySearchQueries = ref({});
 const detailTitleId = 'story-detail-title';
+const hasGameplayCatalog = computed(() => Array.isArray(props.gameplayCatalog?.entries));
 const layoutModeOptions = [
   {
     key: 'vertical',
@@ -967,6 +1004,32 @@ function closeDetail() {
   activeDetailNode.value = null;
 }
 
+function openGameplayLinks(node) {
+  activeGameplayNode.value = findOutlineNodeByKey(props.outline, node.key);
+}
+
+function closeGameplayLinks() {
+  activeGameplayNode.value = null;
+}
+
+function saveGameplayLinks(gameplayRefs) {
+  if (!activeGameplayNode.value) {
+    return;
+  }
+
+  emit('update:outline', updateOutlineNodeGameplayRefs(
+    props.outline,
+    activeGameplayNode.value.key,
+    gameplayRefs
+  ));
+  closeGameplayLinks();
+}
+
+function viewGameplay(gameplayId) {
+  closeGameplayLinks();
+  emit('view-gameplay', gameplayId);
+}
+
 function handleDocumentKeydown(event) {
   if (event.key === 'Escape' && activeDetailNode.value) {
     closeDetail();
@@ -998,6 +1061,7 @@ function createTableRows(outline, collapsedKeys) {
       detailMarkdown: node.detailMarkdown,
       detailSourcePath: node.detailSourcePath,
       detailLabel: getDetailLabel(node),
+      gameplayRefs: Array.isArray(node.gameplayRefs) ? node.gameplayRefs : [],
       storyTags: getStoryTags(node),
       tags: getTableTags(node),
       specialGameplayText: formatSummaryValue(node.specialGameplay),
@@ -1340,6 +1404,7 @@ function createNodeLayout(outline, mode, collapsedKeys) {
       detailMarkdown: node.detailMarkdown,
       detailSourcePath: node.detailSourcePath,
       detailLabel: getDetailLabel(node),
+      gameplayRefs: Array.isArray(node.gameplayRefs) ? node.gameplayRefs : [],
       storyTags: getStoryTags(node),
       tags: getNormalTags(node),
       metaItems: getMetaItems(node),
@@ -1389,6 +1454,7 @@ function createNodeLayout(outline, mode, collapsedKeys) {
       detailMarkdown: node.detailMarkdown,
       detailSourcePath: node.detailSourcePath,
       detailLabel: getDetailLabel(node),
+      gameplayRefs: Array.isArray(node.gameplayRefs) ? node.gameplayRefs : [],
       storyTags: getStoryTags(node),
       tags: getNormalTags(node),
       metaItems: getMetaItems(node),

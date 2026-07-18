@@ -123,7 +123,7 @@
               @select-task="selectQuestTask"
             />
 
-            <StoryMenuPanel
+            <OutlineMenuPanel
               v-else-if="activeTab.key === 'story'"
               :outline="storyOutline"
             />
@@ -244,7 +244,7 @@ import QuestMenuPanel from './QuestMenuPanel.vue';
 import RestraintMenuPanel from './RestraintMenuPanel.vue';
 import SaveMenuPanel from './SaveMenuPanel.vue';
 import SkillMenuPanel from './SkillMenuPanel.vue';
-import StoryMenuPanel from './StoryMenuPanel.vue';
+import OutlineMenuPanel from './OutlineMenuPanel.vue';
 import {
   codexCategories,
   codexWorldOptions,
