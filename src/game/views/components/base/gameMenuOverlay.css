@@ -732,6 +732,11 @@
   overflow-y: auto;
 }
 
+.story-node-meta-flag-open-right .story-node-meta-popover {
+  right: auto;
+  left: -1px;
+}
+
 .story-node-meta-flag:hover .story-node-meta-popover,
 .story-node-meta-flag:focus-visible .story-node-meta-popover,
 .story-node-meta-flag:focus-within .story-node-meta-popover {

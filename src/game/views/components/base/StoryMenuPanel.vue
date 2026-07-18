@@ -104,6 +104,8 @@
                     class="story-node-meta-flag"
                     tabindex="0"
                     :aria-label="`${node.title} 元信息`"
+                    @pointerenter="updateMetaPopoverDirection"
+                    @focusin="updateMetaPopoverDirection"
                   >
                     元信息
                     <div class="story-node-meta-popover" role="tooltip">
@@ -649,6 +651,7 @@ import { createStoryCgPreview, resolveStoryCgEntries } from '../../../data/story
 import { resolveStoryGameplayLinks } from '../../../data/gameplay_outline/gameplayOutline';
 import { codexCategories } from '../../../data/global/gameMenuData';
 import StoryGameplayLinkDialog from './StoryGameplayLinkDialog.vue';
+import { shouldOpenMetaPopoverRight } from './storyMetaPopover';
 
 const detailImageModules = import.meta.glob([
   '../../../../assets/game/outlines/**/*.{png,jpg,jpeg,webp,gif}',
@@ -855,6 +858,28 @@ function hasSummaryFields(node) {
 
 function hasNodeMetaRow(node) {
   return Boolean(node.displayStatus || node.storyTags.length > 0 || node.timeline);
+}
+
+function updateMetaPopoverDirection(event) {
+  const flag = event.currentTarget;
+  const popover = flag?.querySelector('.story-node-meta-popover');
+
+  if (!flag || !popover) {
+    return;
+  }
+
+  const viewportRect = viewportRef.value?.getBoundingClientRect();
+  const boundaryRect = {
+    left: Math.max(0, viewportRect?.left ?? 0),
+    right: Math.min(window.innerWidth, viewportRect?.right ?? window.innerWidth)
+  };
+  const openRight = shouldOpenMetaPopoverRight(
+    flag.getBoundingClientRect(),
+    boundaryRect,
+    popover.getBoundingClientRect().width
+  );
+
+  flag.classList.toggle('story-node-meta-flag-open-right', openRight);
 }
 
 function getLinkedGameplay(node) {
