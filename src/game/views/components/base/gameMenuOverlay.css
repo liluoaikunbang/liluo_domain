@@ -565,8 +565,8 @@
   background: rgba(82, 39, 96, 0.88);
 }
 
-.story-node-card-actions-without-meta {
-  padding-top: 38px;
+.story-node-card-with-bottom-meta {
+  padding-bottom: 38px;
 }
 
 .story-node-card-collapsed-preview {
@@ -608,30 +608,30 @@
 }
 
 .story-node-meta-row {
+  position: absolute;
+  left: 8px;
+  bottom: 8px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   gap: 8px;
   min-width: 0;
-  padding-right: 112px;
+  max-width: calc(100% - 48px);
+  overflow: hidden;
 }
 
 .story-node-actions {
-  position: absolute;
-  top: 8px;
-  right: 8px;
+  position: relative;
   z-index: 2;
-  display: inline-flex;
+  display: flex;
   align-items: center;
+  justify-content: flex-end;
   gap: 4px;
-  max-width: calc(100% - 16px);
+  width: 100%;
+  min-height: 22px;
 }
 
 .story-node-export-button {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  z-index: 2;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -889,7 +889,9 @@
   flex-wrap: wrap;
   gap: 4px;
   min-width: 0;
+  max-height: 34px;
   margin-top: auto;
+  overflow: hidden;
 }
 
 .story-node-tag {

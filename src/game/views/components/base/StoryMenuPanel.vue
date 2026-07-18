@@ -66,7 +66,7 @@
                 getNodeCardClass(node),
                 {
                   'story-node-card-collapsed-preview': node.isCollapsedPreview,
-                  'story-node-card-actions-without-meta': hasFloatingActionsWithoutMeta(node)
+                  'story-node-card-with-bottom-meta': hasNodeMetaRow(node)
                 }
               ]"
               :style="node.style"
@@ -85,20 +85,20 @@
                 </button>
               </template>
               <template v-else>
-                <button
-                  v-if="isCategoryStatus(node.status)"
-                  class="story-node-export-button"
-                  type="button"
-                  :aria-label="`导出${node.title}分类JSON`"
-                  @pointerdown.stop
-                  @click.stop="exportCategoryJson(node)"
-                >
-                  导出JSON
-                </button>
                 <div
-                  v-if="node.metaItems.length > 0 || hasStoryDetail(node) || hasGameplayCatalog"
+                  v-if="isCategoryStatus(node.status) || node.metaItems.length > 0 || hasStoryDetail(node) || hasGameplayCatalog"
                   class="story-node-actions"
                 >
+                  <button
+                    v-if="isCategoryStatus(node.status)"
+                    class="story-node-export-button"
+                    type="button"
+                    :aria-label="`导出${node.title}分类JSON`"
+                    @pointerdown.stop
+                    @click.stop="exportCategoryJson(node)"
+                  >
+                    导出JSON
+                  </button>
                   <div
                     v-if="node.metaItems.length > 0"
                     class="story-node-meta-flag"
@@ -125,7 +125,7 @@
                     {{ node.detailLabel }}
                   </button>
                   <button
-                    v-if="hasGameplayCatalog"
+                    v-if="canLinkGameplay(node)"
                     class="story-node-gameplay-button"
                     type="button"
                     :aria-label="`${node.title}关联玩法，已选择${node.gameplayRefs.length}项`"
@@ -210,7 +210,7 @@
                     {{ node.detailLabel }}
                   </button>
                   <button
-                    v-if="hasGameplayCatalog"
+                    v-if="canLinkGameplay(node)"
                     class="story-table-detail-button"
                     type="button"
                     :aria-label="`${node.title}关联玩法，已选择${node.gameplayRefs.length}项`"
@@ -565,11 +565,10 @@ const props = defineProps({
 const emit = defineEmits(['update:outline', 'view-gameplay']);
 
 const NODE_WIDTH = 220;
-const NODE_HEIGHT = 126;
+const NODE_MIN_HEIGHT = 126;
 const COLUMN_GAP = 264;
-const ROW_GAP = 132;
 const VERTICAL_COLUMN_GAP = 228;
-const VERTICAL_ROW_GAP = 154;
+const NODE_TRACK_GAP = 24;
 const CANVAS_PADDING = 96;
 const ROOT_BRANCH_GAP = 0.12;
 const SIDE_BRANCH_ROW_OFFSET = 1.24;
@@ -733,11 +732,12 @@ function hasSummaryFields(node) {
   ].some((value) => toValueList(value).length > 0);
 }
 
-function hasFloatingActionsWithoutMeta(node) {
-  const hasFloatingActions = node.metaItems.length > 0 || hasStoryDetail(node);
-  const hasMetaRow = node.displayStatus || node.storyTags.length > 0 || node.timeline;
+function hasNodeMetaRow(node) {
+  return Boolean(node.displayStatus || node.storyTags.length > 0 || node.timeline);
+}
 
-  return hasFloatingActions && !hasMetaRow;
+function canLinkGameplay(node) {
+  return hasGameplayCatalog.value && !isCategoryStatus(node?.status);
 }
 
 function isVirtualStoryNode(node) {
@@ -861,7 +861,52 @@ function getNodeCardClass(node) {
 }
 
 function getLayoutNodeHeight(node) {
-  return NODE_HEIGHT;
+  if (node?.isCollapsedPreview) {
+    return NODE_MIN_HEIGHT;
+  }
+
+  const hasActions = isCategoryStatus(node?.status)
+    || node?.metaItems?.length > 0
+    || hasStoryDetail(node)
+    || canLinkGameplay(node);
+  const titleRows = String(node?.title ?? '').length > 16 ? 2 : 1;
+  const tagRows = node?.tags?.length > 2 ? 2 : node?.tags?.length > 0 ? 1 : 0;
+  const summaryRows = node?.summary
+    ? isCategoryStatus(node?.status)
+      ? Math.max(1, Math.ceil(String(node.summary).length / 24))
+      : 2
+    : 0;
+  const contentHeight = 24
+    + (hasActions ? 28 : 0)
+    + titleRows * 20
+    + summaryRows * 17
+    + (summaryRows ? 7 : 0)
+    + tagRows * 20
+    + (hasNodeMetaRow(node) ? 28 : 0);
+
+  return Math.max(NODE_MIN_HEIGHT, contentHeight);
+}
+
+function applyFixedTrackSpacing(nodes, isVertical) {
+  const getTrackKey = isVertical ? (node) => node.depth : (node) => node.row;
+  const trackHeights = new Map();
+
+  nodes.forEach((node) => {
+    node.layoutHeight = getLayoutNodeHeight(node);
+    const trackKey = getTrackKey(node);
+    trackHeights.set(trackKey, Math.max(trackHeights.get(trackKey) ?? 0, node.layoutHeight));
+  });
+
+  const trackOffsets = new Map();
+  let offset = CANVAS_PADDING;
+  [...trackHeights.keys()].sort((left, right) => left - right).forEach((trackKey) => {
+    trackOffsets.set(trackKey, offset);
+    offset += trackHeights.get(trackKey) + NODE_TRACK_GAP;
+  });
+
+  nodes.forEach((node) => {
+    node.y = trackOffsets.get(getTrackKey(node));
+  });
 }
 
 function countDescendantNodes(node) {
@@ -1416,7 +1461,7 @@ function createNodeLayout(outline, mode, collapsedKeys) {
       isCollapsed,
       row,
       x: CANVAS_PADDING + (isVertical ? row * VERTICAL_COLUMN_GAP : depth * COLUMN_GAP),
-      y: CANVAS_PADDING + (isVertical ? depth * VERTICAL_ROW_GAP : row * ROW_GAP)
+      y: CANVAS_PADDING
     };
 
     nodes.push(entry);
@@ -1466,7 +1511,7 @@ function createNodeLayout(outline, mode, collapsedKeys) {
       isCollapsed,
       row,
       x: CANVAS_PADDING + (isVertical ? row * VERTICAL_COLUMN_GAP : depth * COLUMN_GAP),
-      y: CANVAS_PADDING + (isVertical ? depth * VERTICAL_ROW_GAP : row * ROW_GAP)
+      y: CANVAS_PADDING
     };
 
     nodes.push(entry);
@@ -1518,7 +1563,7 @@ function createNodeLayout(outline, mode, collapsedKeys) {
       isCollapsedPreview: true,
       row,
       x: CANVAS_PADDING + (isVertical ? row * VERTICAL_COLUMN_GAP : depth * COLUMN_GAP),
-      y: CANVAS_PADDING + (isVertical ? depth * VERTICAL_ROW_GAP : row * ROW_GAP)
+      y: CANVAS_PADDING
     };
 
     nodes.push(entry);
@@ -1532,6 +1577,8 @@ function createNodeLayout(outline, mode, collapsedKeys) {
 
     walk(rootNode, 0);
   });
+
+  applyFixedTrackSpacing(nodes, isVertical);
 
   const nodeByKey = new Map(nodes.map((node) => [node.key, node]));
   const links = nodes
@@ -1581,7 +1628,8 @@ function createNodeLayout(outline, mode, collapsedKeys) {
       ...node,
       style: {
         left: `${node.x}px`,
-        top: `${node.y}px`
+        top: `${node.y}px`,
+        height: `${node.layoutHeight}px`
       }
     })),
     links,
