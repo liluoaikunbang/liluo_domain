@@ -4,6 +4,19 @@ export const gameplayOutline = Object.freeze({
   ...catalog
 });
 
+export function createGameplayExportPayload(outline = gameplayOutline, exportedAt = new Date()) {
+  const exportedCatalog = JSON.parse(JSON.stringify(outline));
+
+  return {
+    exportType: 'gameplay-outline',
+    exportVersion: 1,
+    exportedAt: exportedAt.toISOString(),
+    categoryCount: exportedCatalog.categories.length,
+    entryCount: exportedCatalog.entries.length,
+    catalog: exportedCatalog
+  };
+}
+
 export function createGameplayIndex(outline = gameplayOutline) {
   return {
     categoryById: new Map(outline.categories.map((category) => [category.id, category])),

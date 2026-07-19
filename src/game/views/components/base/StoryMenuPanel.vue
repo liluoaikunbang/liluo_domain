@@ -645,11 +645,13 @@ import { computed, nextTick, onBeforeUnmount, onMounted, ref, watch } from 'vue'
 import {
   createAllStoryExportPayload,
   createCategoryExportPayload,
+  findOutlineNodeByKey,
   sanitizeStoryExportFilename
 } from '../../../data/story_outline/storyOutlineExport';
 import { createStoryCgPreview, resolveStoryCgEntries } from '../../../data/story_outline/storyCgLinks';
 import { resolveStoryGameplayLinks } from '../../../data/gameplay_outline/gameplayOutline';
 import { codexCategories } from '../../../data/global/gameMenuData';
+import { downloadJsonPayload } from './jsonDownload';
 import StoryGameplayLinkDialog from './StoryGameplayLinkDialog.vue';
 import { shouldOpenMetaPopoverRight } from './storyMetaPopover';
 
@@ -1182,21 +1184,6 @@ function exportCategoryJson(layoutNode) {
 
   const payload = createCategoryExportPayload(categoryNode);
   downloadJsonPayload(payload, `${sanitizeStoryExportFilename(categoryNode.title || categoryNode.key || 'story-category')}.json`);
-}
-
-function downloadJsonPayload(payload, filename) {
-  const blob = new Blob([JSON.stringify(payload, null, 2)], {
-    type: 'application/json;charset=utf-8'
-  });
-  const objectUrl = URL.createObjectURL(blob);
-  const link = document.createElement('a');
-
-  link.href = objectUrl;
-  link.download = filename;
-  document.body.appendChild(link);
-  link.click();
-  link.remove();
-  URL.revokeObjectURL(objectUrl);
 }
 
 function openDetail(node) {

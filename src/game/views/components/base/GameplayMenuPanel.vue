@@ -15,6 +15,7 @@
         </select>
       </label>
       <span class="gameplay-result-count">{{ filteredEntries.length }} / {{ catalog.entries.length }}</span>
+      <button class="gameplay-export-button" type="button" @click="exportGameplayJson">导出JSON</button>
     </header>
 
     <div class="gameplay-browser">
@@ -122,8 +123,9 @@
 
 <script setup>
 import { computed, ref, watch } from 'vue';
-import { findGameplayEntries } from '../../../data/gameplay_outline/gameplayOutline';
+import { createGameplayExportPayload, findGameplayEntries } from '../../../data/gameplay_outline/gameplayOutline';
 import GameScrollArea from './GameScrollArea.vue';
+import { downloadJsonPayload } from './jsonDownload';
 
 const props = defineProps({
   catalog: { type: Object, required: true },
@@ -198,6 +200,11 @@ function getHighlightedSegments(value) {
   if (cursor < text.length) segments.push({ text: text.slice(cursor), match: false });
   return segments.length ? segments : [{ text, match: false }];
 }
+
+function exportGameplayJson() {
+  const payload = createGameplayExportPayload(props.catalog);
+  downloadJsonPayload(payload, 'liluo-gameplay-outline.json');
+}
 </script>
 
 <style scoped>
@@ -214,6 +221,8 @@ function getHighlightedSegments(value) {
 .gameplay-search { flex: 1; }
 .gameplay-search input, .gameplay-mode-filter select { min-height: 34px; border: 1px solid #5e506d; color: #f5ebda; background: #17121f; padding: 6px 9px; font: inherit; }
 .gameplay-result-count { color: #d8b36d; padding-bottom: 8px; }
+.gameplay-export-button { min-height: 34px; border: 1px solid #715c79; color: #ead7a8; background: rgba(74, 52, 86, 0.5); padding: 6px 11px; font: inherit; cursor: pointer; }
+.gameplay-export-button:hover, .gameplay-export-button:focus-visible { color: #fff4d8; background: rgba(113, 79, 135, 0.48); outline: 1px solid #d8b36d; outline-offset: 2px; }
 .gameplay-browser { min-height: 0; display: grid; grid-template-columns: minmax(170px, 0.72fr) minmax(220px, 1fr) minmax(300px, 1.6fr); }
 .gameplay-category-scroll, .gameplay-entry-list, .gameplay-detail { min-height: 0; }
 .gameplay-category-scroll { border-right: 1px solid rgba(129, 111, 152, 0.32); }
@@ -242,5 +251,5 @@ function getHighlightedSegments(value) {
 .gameplay-variant-list { display: grid; gap: 8px; padding-left: 22px; line-height: 1.55; }
 .gameplay-variant-list strong { margin-right: 6px; color: #eadbb8; }
 .gameplay-empty { padding: 18px; color: #897e91; }
-@media (max-width: 900px) { .gameplay-browser { grid-template-columns: 150px minmax(190px, 0.9fr) 1.3fr; } }
+@media (max-width: 900px) { .gameplay-toolbar { flex-wrap: wrap; } .gameplay-search { flex-basis: 100%; } .gameplay-browser { grid-template-columns: 150px minmax(190px, 0.9fr) 1.3fr; } }
 </style>

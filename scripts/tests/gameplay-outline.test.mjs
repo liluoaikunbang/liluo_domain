@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 
 import {
+  createGameplayExportPayload,
   createGameplayIndex,
   findGameplayEntries,
   gameplayOutline,
@@ -10,6 +11,18 @@ import {
   updateOutlineNodeGameplayRefs,
   updateStoryGameplayRefs
 } from '../../src/game/data/gameplay_outline/gameplayOutline.js';
+
+test('creates a self-describing JSON export for the complete gameplay outline', () => {
+  const payload = createGameplayExportPayload(gameplayOutline, new Date('2026-07-19T08:00:00.000Z'));
+
+  assert.equal(payload.exportType, 'gameplay-outline');
+  assert.equal(payload.exportVersion, 1);
+  assert.equal(payload.exportedAt, '2026-07-19T08:00:00.000Z');
+  assert.equal(payload.categoryCount, gameplayOutline.categories.length);
+  assert.equal(payload.entryCount, gameplayOutline.entries.length);
+  assert.deepEqual(payload.catalog, gameplayOutline);
+  assert.notEqual(payload.catalog, gameplayOutline);
+});
 
 test('loads the 106 consolidated gameplay entries with valid references', () => {
   assert.equal(gameplayOutline.entries.length, 106);
