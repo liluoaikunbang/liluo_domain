@@ -1,18 +1,18 @@
 <template>
   <section class="entry-shell" aria-label="游戏入口页">
-    <div class="entry-stage">
+    <div class="entry-stage" :class="{ 'entry-stage-updates': isViewingUpdates }">
       <div class="entry-illustration" aria-hidden="true">
         <div class="illustration-backdrop"></div>
         <img class="entry-illustration-image" :src="illustration" alt="" />
         <div class="entry-vignette"></div>
       </div>
 
-      <div class="entry-overlay">
-        <div class="entry-centerpiece" :class="{ 'entry-centerpiece-compact': isSelectingSave }">
+      <div class="entry-overlay" :class="{ 'entry-overlay-updates': isViewingUpdates }">
+        <div class="entry-centerpiece" :class="{ 'entry-centerpiece-compact': isSelectingSave || isViewingUpdates, 'entry-centerpiece-updates': isViewingUpdates }">
           <h1 class="entry-title">{{ title }}</h1>
 
           <div
-            v-if="!isSelectingSave"
+            v-if="!isSelectingSave && !isViewingUpdates"
             ref="entryMenuRef"
             class="entry-menu"
             role="navigation"
@@ -41,9 +41,19 @@
             >
               <span class="entry-menu-label">继续旅程</span>
             </button>
+            <button
+              class="entry-menu-button entry-menu-button-secondary"
+              :class="{ 'entry-menu-button-selected': selectedMenuKey === 'updates' }"
+              type="button"
+              @mouseenter="selectMenuItem('updates')"
+              @focus="selectMenuItem('updates')"
+              @click="openUpdateRecords"
+            >
+              <span class="entry-menu-label">更新记录</span>
+            </button>
           </div>
 
-          <section v-else class="entry-save-panel" aria-label="选择存档">
+          <section v-else-if="isSelectingSave" class="entry-save-panel" aria-label="选择存档">
             <header class="entry-save-header">
               <div>
                 <span class="entry-save-eyebrow">继续旅程</span>
@@ -62,6 +72,12 @@
               @load-game="emit('select-save', $event)"
             />
           </section>
+
+          <UpdateRecordsPanel
+            v-else
+            :records="updateRecords"
+            @close="closeUpdateRecords"
+          />
         </div>
       </div>
     </div>
@@ -70,7 +86,9 @@
 
 <script setup>
 import { computed, nextTick, onMounted, ref, watch } from 'vue';
+import { updateRecords } from '../data/global/updateRecords.js';
 import SaveSlotList from './components/base/SaveSlotList.vue';
+import UpdateRecordsPanel from './components/base/UpdateRecordsPanel.vue';
 
 const props = defineProps({
   illustration: {
@@ -91,6 +109,7 @@ const emit = defineEmits(['start', 'select-save']);
 
 const entryMenuRef = ref(null);
 const isSelectingSave = ref(false);
+const isViewingUpdates = ref(false);
 const selectedMenuKey = ref('start');
 
 const hasSaves = computed(() => props.saves.length > 0);
@@ -113,13 +132,11 @@ const selectDefaultMenuItem = () => {
   selectedMenuKey.value = hasSaves.value ? 'continue' : 'start';
 };
 
-const moveMenuSelection = () => {
-  if (!hasSaves.value) {
-    selectedMenuKey.value = 'start';
-    return;
-  }
-
-  selectedMenuKey.value = selectedMenuKey.value === 'start' ? 'continue' : 'start';
+const moveMenuSelection = (direction) => {
+  const menuKeys = hasSaves.value ? ['start', 'continue', 'updates'] : ['start', 'updates'];
+  const currentIndex = Math.max(menuKeys.indexOf(selectedMenuKey.value), 0);
+  const nextIndex = (currentIndex + direction + menuKeys.length) % menuKeys.length;
+  selectedMenuKey.value = menuKeys[nextIndex];
 };
 
 const startJourney = () => {
@@ -129,6 +146,16 @@ const startJourney = () => {
 
 const openSaveSelector = () => {
   isSelectingSave.value = true;
+};
+const openUpdateRecords = () => {
+  selectedMenuKey.value = 'updates';
+  isViewingUpdates.value = true;
+};
+
+const closeUpdateRecords = () => {
+  isViewingUpdates.value = false;
+  selectedMenuKey.value = 'updates';
+  focusEntryMenu();
 };
 
 const closeSaveSelector = () => {
@@ -148,6 +175,11 @@ const continueJourney = () => {
 };
 
 const activateSelectedMenuItem = () => {
+  if (selectedMenuKey.value === 'updates') {
+    openUpdateRecords();
+    return;
+  }
+
   if (selectedMenuKey.value === 'continue' && hasSaves.value) {
     continueJourney();
     return;
@@ -159,7 +191,7 @@ const activateSelectedMenuItem = () => {
 const handleMenuKeydown = (event) => {
   if (event.key === 'ArrowUp' || event.key === 'ArrowDown') {
     event.preventDefault();
-    moveMenuSelection();
+    moveMenuSelection(event.key === 'ArrowDown' ? 1 : -1);
     return;
   }
 
@@ -196,6 +228,14 @@ onMounted(() => {
     0 24px 54px rgba(0, 0, 0, 0.45),
     inset 0 0 0 1px rgba(255, 228, 251, 0.1);
   background: #c89bb1;
+}
+
+.entry-stage-updates {
+  width: 100vw;
+  height: 100vh;
+  aspect-ratio: auto;
+  border: 0;
+  box-shadow: none;
 }
 
 .entry-illustration,
@@ -244,6 +284,10 @@ onMounted(() => {
   box-sizing: border-box;
 }
 
+.entry-overlay-updates {
+  padding: clamp(8px, 1.5vw, 20px);
+}
+
 .entry-centerpiece {
   display: flex;
   flex-direction: column;
@@ -262,9 +306,15 @@ onMounted(() => {
   min-height: 0;
 }
 
-.entry-centerpiece-compact .entry-title {
-  flex: 0 0 auto;
-  font-size: clamp(30px, 3.4vw, 50px);
+
+.entry-centerpiece-updates {
+  width: 100%;
+  height: 100%;
+  gap: 0;
+}
+
+.entry-centerpiece-updates .entry-title {
+  display: none;
 }
 
 .entry-title {
@@ -540,7 +590,7 @@ onMounted(() => {
     padding: 20px;
   }
 
-  .entry-centerpiece-compact .entry-title {
+  .entry-title {
     font-size: clamp(28px, 10vw, 40px);
   }
 
