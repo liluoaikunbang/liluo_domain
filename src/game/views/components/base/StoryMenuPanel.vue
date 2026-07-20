@@ -156,6 +156,15 @@
                   <span v-for="tag in node.tags" :key="tag" class="story-node-tag">{{ tag }}</span>
                 </div>
                 <button
+                  v-if="hasMissingItems(node)"
+                  class="story-node-missing-button"
+                  type="button"
+                  :aria-label="`查看${node.title}待补充内容，共${node.missingItems.length}项`"
+                  @click.stop="openMissingItems(node)"
+                >
+                  待补充
+                </button>
+                <button
                   v-if="node.canCollapse"
                   class="story-node-collapse-button"
                   type="button"
@@ -237,6 +246,15 @@
                     @click.stop="openGameplayLinks(node)"
                   >
                     关联玩法
+                  </button>
+                  <button
+                    v-if="hasMissingItems(node)"
+                    class="story-table-detail-button story-table-missing-button"
+                    type="button"
+                    :aria-label="`查看${node.title}待补充内容，共${node.missingItems.length}项`"
+                    @click.stop="openMissingItems(node)"
+                  >
+                    待补充
                   </button>
                 </th>
                 <td>
@@ -350,6 +368,41 @@
         </div>
       </div>
     </section>
+
+    <div
+      v-if="activeMissingNode"
+      class="story-detail-overlay"
+      role="presentation"
+      @click.self="closeMissingItems"
+    >
+      <section
+        ref="missingDialogRef"
+        class="story-detail-dialog story-missing-dialog"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="story-missing-dialog-title"
+        tabindex="-1"
+        @keydown.esc.stop.prevent="closeMissingItems"
+      >
+        <header class="story-detail-header">
+          <div class="story-detail-heading">
+            <span class="story-node-status story-missing-status">待补充</span>
+            <h2 id="story-missing-dialog-title" class="story-detail-title">{{ activeMissingNode.title }}</h2>
+          </div>
+          <button class="story-detail-close" type="button" aria-label="关闭待补充内容" @click="closeMissingItems">×</button>
+        </header>
+        <div class="story-detail-content" role="region" :aria-label="`${activeMissingNode.title}待补充内容`">
+          <p class="story-missing-intro">该条目仍需补充以下已确认内容：</p>
+          <ol class="story-missing-list">
+            <li v-for="(item, index) in activeMissingItems" :key="`${activeMissingNode.key}-missing-${index}`">
+              <strong>{{ item.type }}</strong>
+              <span class="story-missing-module">{{ item.module }}</span>
+              <p>{{ item.detail }}</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+    </div>
 
     <div
       v-if="activeDetailNode"
@@ -693,6 +746,7 @@ const ZOOM_STEP = 0.1;
 
 const viewportRef = ref(null);
 const detailDialogRef = ref(null);
+const missingDialogRef = ref(null);
 const cgDialogRef = ref(null);
 const cgPreviewDialogRef = ref(null);
 const zoom = ref(0.88);
@@ -701,6 +755,7 @@ const dragState = ref(null);
 const layoutMode = ref('vertical');
 const collapsedCategoryKeys = ref(new Set());
 const activeDetailNode = ref(null);
+const activeMissingNode = ref(null);
 const activeCgNode = ref(null);
 const activeStoryCgPreview = ref(null);
 const activeSummaryFilter = ref(null);
@@ -860,6 +915,19 @@ function hasSummaryFields(node) {
 
 function hasNodeMetaRow(node) {
   return Boolean(node.displayStatus || node.storyTags.length > 0 || node.timeline);
+}
+
+function hasMissingItems(node) {
+  return Array.isArray(node?.missingItems) && node.missingItems.length > 0;
+}
+
+function parseMissingItem(value) {
+  const [type = '其他', module = '未标明模块', ...detailParts] = String(value ?? '').split('｜');
+  return {
+    type: type.trim() || '其他',
+    module: module.trim() || '未标明模块',
+    detail: detailParts.join('｜').trim() || '具体缺失内容未说明'
+  };
 }
 
 function updateMetaPopoverDirection(event) {
@@ -1190,6 +1258,14 @@ function openDetail(node) {
   activeDetailNode.value = node;
 }
 
+function openMissingItems(node) {
+  activeMissingNode.value = node;
+}
+
+function closeMissingItems() {
+  activeMissingNode.value = null;
+}
+
 function closeDetail() {
   activeDetailNode.value = null;
 }
@@ -1237,6 +1313,8 @@ function handleDocumentKeydown(event) {
     closeStoryCg();
   } else if (event.key === 'Escape' && activeSummaryFilter.value) {
     closeSummaryMatches();
+  } else if (event.key === 'Escape' && activeMissingNode.value) {
+    closeMissingItems();
   }
 }
 
@@ -1263,6 +1341,7 @@ function createTableRows(outline, collapsedKeys) {
       detailMarkdown: node.detailMarkdown,
       detailSourcePath: node.detailSourcePath,
       detailLabel: getDetailLabel(node),
+      missingItems: Array.isArray(node.missingItems) ? node.missingItems : [],
       cgRefs: Array.isArray(node.cgRefs) ? node.cgRefs : [],
       gameplayRefs: Array.isArray(node.gameplayRefs) ? node.gameplayRefs : [],
       storyTags: getStoryTags(node),
@@ -1607,6 +1686,7 @@ function createNodeLayout(outline, mode, collapsedKeys) {
       detailMarkdown: node.detailMarkdown,
       detailSourcePath: node.detailSourcePath,
       detailLabel: getDetailLabel(node),
+      missingItems: Array.isArray(node.missingItems) ? node.missingItems : [],
       cgRefs: Array.isArray(node.cgRefs) ? node.cgRefs : [],
       gameplayRefs: Array.isArray(node.gameplayRefs) ? node.gameplayRefs : [],
       storyTags: getStoryTags(node),
@@ -1658,6 +1738,7 @@ function createNodeLayout(outline, mode, collapsedKeys) {
       detailMarkdown: node.detailMarkdown,
       detailSourcePath: node.detailSourcePath,
       detailLabel: getDetailLabel(node),
+      missingItems: Array.isArray(node.missingItems) ? node.missingItems : [],
       cgRefs: Array.isArray(node.cgRefs) ? node.cgRefs : [],
       gameplayRefs: Array.isArray(node.gameplayRefs) ? node.gameplayRefs : [],
       storyTags: getStoryTags(node),
@@ -1817,6 +1898,7 @@ const canvasContentStyle = computed(() => ({
 
 const zoomPercent = computed(() => `${Math.round(zoom.value * 100)}%`);
 const activeDetailBlocks = computed(() => parseDetailMarkdownBlocks(activeDetailNode.value?.detailMarkdown));
+const activeMissingItems = computed(() => (activeMissingNode.value?.missingItems ?? []).map(parseMissingItem));
 const activeStoryCgEntries = computed(() => getStoryCgEntries(activeCgNode.value));
 const activeStoryCgVariant = computed(() => {
   const preview = activeStoryCgPreview.value;
@@ -2126,6 +2208,16 @@ watch(activeDetailNode, (node) => {
 
   nextTick(() => {
     detailDialogRef.value?.focus();
+  });
+});
+
+watch(activeMissingNode, (node) => {
+  if (!node) {
+    return;
+  }
+
+  nextTick(() => {
+    missingDialogRef.value?.focus();
   });
 });
 

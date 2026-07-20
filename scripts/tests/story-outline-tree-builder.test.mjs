@@ -516,6 +516,20 @@ test('monica empire keeps free exploration regions in one display chain', () => 
   assert.equal(Object.hasOwn(cityDesire, 'branchLayout'), false);
 });
 
+test('modern story starts with hospital awakening before returning to campus', () => {
+  const sourceNodeByKey = new Map(storyOutlineSource.nodes.map((node) => [node.key, node]));
+  const mainQuest = sourceNodeByKey.get('world-1-glimmering-glance-jingsuo-event');
+  const hospitalAwakening = sourceNodeByKey.get('world-1-glimmering-glance-hospital-awakening');
+  const campusArrival = sourceNodeByKey.get('world-1-glimmering-glance-campus-arrival');
+  const club = sourceNodeByKey.get('world-1-glimmering-glance-club');
+
+  assert.equal(hospitalAwakening?.parentKey, mainQuest?.key);
+  assert.equal(campusArrival?.parentKey, hospitalAwakening?.key);
+  assert.equal(club?.parentKey, campusArrival?.key);
+  assert.equal(hospitalAwakening?.title, '病房苏醒');
+  assert.equal(hospitalAwakening?.status, '大纲');
+});
+
 function findTreeNodeByKey(node, key) {
   if (!node) {
     return null;

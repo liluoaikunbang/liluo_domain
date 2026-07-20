@@ -30,6 +30,38 @@
       "order": 10
     },
     {
+      "key": "world-1-glimmering-glance-hospital-awakening",
+      "world": "1-浮光掠影",
+      "title": "病房苏醒",
+      "storyTags": [
+        "街景一隅"
+      ],
+      "status": "大纲",
+      "summary": "璃落从荆锁会据点获救后在市医院醒来，并在许知遥与顾棠的会诊中同意植入用于恢复身体原主记忆的梦境种子。",
+      "foreshadowing": [
+        "梦境种子",
+        "身体原主记忆",
+        "荆锁会实验"
+      ],
+      "tags": [
+        "医院",
+        "拘束衣",
+        "失忆",
+        "创伤治疗"
+      ],
+      "characters": [
+        "沈芷",
+        "顾棠",
+        "许知遥"
+      ],
+      "locations": [
+        "荆江市",
+        "市医院"
+      ],
+      "parentKey": "world-1-glimmering-glance-jingsuo-event",
+      "order": 10
+    },
+    {
       "key": "world-1-glimmering-glance-campus-arrival",
       "world": "1-浮光掠影",
       "title": "重返校园",
@@ -37,19 +69,22 @@
         "街景一隅"
       ],
       "status": "大纲",
-      "summary": "璃落在医院醒来。",
+      "summary": "璃落以复学生身份回到荆南大学，从校门口重新熟悉安全的校园日常，并在论坛异常传闻的引导下抵达社团招新区域。",
       "foreshadowing": [
-        "小窝",
-        "起始"
+        "梦境种子",
+        "校园怪谈",
+        "舞蹈教室"
       ],
       "tags": [
-        "拘束衣"
+        "校园",
+        "复学",
+        "校园论坛"
       ],
       "locations": [
         "荆江市",
-        "市医院"
+        "荆南大学"
       ],
-      "parentKey": "world-1-glimmering-glance-jingsuo-event",
+      "parentKey": "world-1-glimmering-glance-hospital-awakening",
       "order": 10
     },
     {

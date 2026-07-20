@@ -44,6 +44,9 @@ const markdownModules = {
     'status: 大纲草稿',
     'summary: YAML 摘要',
     'detailLabel: 灵感',
+    'missingItems:',
+    '  - CG｜病房苏醒·梦境种子植入｜缺少植入过程与记忆闪回的正式 CG',
+    '  - 地图｜重返校园·校门口接管｜缺少校门口准确出生点配置',
     'cgRefs:',
     '  - 都市DID-KTV服务员',
     '  - 都市DID-保洁员',
@@ -79,6 +82,10 @@ const emptyDetailNode = resolvedOutline[0].children[1];
 
 assert.equal(node.summary, 'YAML 摘要');
 assert.equal(node.detailLabel, '灵感');
+assert.deepEqual(node.missingItems, [
+  'CG｜病房苏醒·梦境种子植入｜缺少植入过程与记忆闪回的正式 CG',
+  '地图｜重返校园·校门口接管｜缺少校门口准确出生点配置'
+]);
 assert.deepEqual(node.cgRefs, ['都市DID-KTV服务员', '都市DID-保洁员']);
 assert.deepEqual(node.storyTags, ['街景一隅']);
 assert.equal(node.status, '大纲草稿');

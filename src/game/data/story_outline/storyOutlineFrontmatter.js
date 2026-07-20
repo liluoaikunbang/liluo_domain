@@ -13,6 +13,7 @@ const FRONTMATTER_FIELD_KINDS = {
   status: 'scalar',
   summary: 'scalar',
   detailLabel: 'scalar',
+  missingItems: 'list',
   cgRefs: 'list',
   foreshadowing: 'list',
   tags: 'list',
