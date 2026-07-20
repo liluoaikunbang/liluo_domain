@@ -13,8 +13,10 @@ const FRONTMATTER_FIELD_KINDS = {
   status: 'scalar',
   summary: 'scalar',
   detailLabel: 'scalar',
+  isTemplated: 'boolean',
   missingItems: 'list',
   cgRefs: 'list',
+  cgSequence: 'list',
   foreshadowing: 'list',
   tags: 'list',
   specialGameplay: 'list',
@@ -117,6 +119,7 @@ function createFrontmatterIndex(markdownModules) {
 function applyNodeFrontmatter(node, frontmatterByDirectoryAndTitle) {
   const nextNode = {
     ...node,
+    isTemplated: node.isTemplated === true,
     children: Array.isArray(node.children)
       ? node.children.map((child) => applyNodeFrontmatter(child, frontmatterByDirectoryAndTitle))
       : node.children
@@ -174,6 +177,10 @@ function findFrontmatterForNode(node, frontmatterByDirectoryAndTitle) {
 }
 
 function resolveFrontmatterValue(rawValue, kind) {
+  if (kind === 'boolean') {
+    return toBoolean(rawValue);
+  }
+
   if (kind === 'list') {
     const listValue = toList(rawValue);
     return listValue.length > 0 ? listValue : undefined;
@@ -181,6 +188,20 @@ function resolveFrontmatterValue(rawValue, kind) {
 
   const scalarValue = toScalar(rawValue);
   return scalarValue || undefined;
+}
+
+function toBoolean(value) {
+  const scalarValue = toScalar(value).toLowerCase();
+
+  if (['true', 'yes', '1'].includes(scalarValue)) {
+    return true;
+  }
+
+  if (['false', 'no', '0'].includes(scalarValue)) {
+    return false;
+  }
+
+  return undefined;
 }
 
 function toList(value) {

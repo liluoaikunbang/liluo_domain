@@ -808,6 +808,7 @@
 }
 
 .story-node-status,
+.story-node-template-status,
 .story-node-story-tag,
 .story-node-timeline {
   align-self: flex-start;
@@ -825,6 +826,29 @@
 
 .story-node-status {
   min-width: 0;
+}
+
+.story-node-template-status {
+  flex: 0 0 auto;
+  padding: 2px 6px;
+  border: 1px solid rgba(255, 171, 143, 0.3);
+  background: rgba(123, 50, 39, 0.2);
+  color: rgba(255, 211, 196, 0.82);
+  font-size: 11px;
+  line-height: 1.25;
+  white-space: nowrap;
+}
+
+.story-node-template-status-current {
+  border-color: rgba(143, 218, 205, 0.36);
+  background: rgba(143, 218, 205, 0.14);
+  color: rgba(220, 255, 249, 0.88);
+}
+
+.story-table-template-status {
+  display: block;
+  width: max-content;
+  margin-top: 4px;
 }
 
 .story-node-status-category {
@@ -1101,7 +1125,7 @@
 }
 
 .story-summary-table {
-  min-width: 1560px;
+  min-width: 1720px;
 }
 
 .story-summary-group-row th {
@@ -1115,10 +1139,23 @@
   font-size: 13px;
 }
 
+.story-summary-category-heading,
 .story-summary-category {
-  width: 150px;
+  width: 1%;
+  white-space: nowrap;
+}
+
+.story-summary-category-heading {
+  left: 0;
+  z-index: 3 !important;
+}
+
+.story-summary-category {
+  position: sticky;
+  left: 0;
+  z-index: 2;
+  background: rgba(49, 22, 61, 0.98);
   color: rgba(255, 241, 249, 0.58);
-  overflow-wrap: anywhere;
 }
 
 .story-summary-node {
@@ -1571,6 +1608,42 @@
   flex: 0 0 auto;
   color: rgba(255, 241, 249, 0.62);
   font-size: 11px;
+}
+
+.story-cg-entry-header > div {
+  min-width: 0;
+}
+
+.story-cg-entry-header .story-cg-sequence-index {
+  display: block;
+  margin-bottom: 3px;
+  color: rgba(244, 203, 122, 0.82);
+  font-size: 10px;
+  letter-spacing: 0.08em;
+}
+
+.story-cg-description {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 6px 10px;
+  margin: 0 0 10px;
+  padding: 9px 10px;
+  border-left: 2px solid rgba(244, 203, 122, 0.45);
+  background: rgba(15, 7, 20, 0.38);
+}
+
+.story-cg-description dt {
+  color: rgba(244, 203, 122, 0.8);
+  font-size: 11px;
+  white-space: nowrap;
+}
+
+.story-cg-description dd {
+  margin: 0;
+  color: rgba(255, 241, 249, 0.82);
+  font-size: 12px;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
 }
 
 .story-cg-cover {

@@ -145,8 +145,15 @@
                     关联玩法
                   </button>
                 </div>
-                <div v-if="node.displayStatus || node.storyTags.length > 0 || node.timeline" class="story-node-meta-row">
+                <div v-if="hasNodeMetaRow(node)" class="story-node-meta-row">
                   <span v-if="node.displayStatus" class="story-node-status" :class="getStatusClass(node.displayStatus)">{{ node.displayStatus }}</span>
+                  <span
+                    v-if="node.showsTemplateStatus"
+                    class="story-node-template-status"
+                    :class="{ 'story-node-template-status-current': node.isTemplated }"
+                  >
+                    {{ node.isTemplated ? '已模板化' : '旧版未模板化' }}
+                  </span>
                   <span v-for="storyTag in node.storyTags" :key="storyTag" class="story-node-story-tag">{{ storyTag }}</span>
                   <span v-if="node.timeline" class="story-node-timeline">{{ node.timeline }}</span>
                 </div>
@@ -259,7 +266,12 @@
                 </th>
                 <td>
                   <span v-if="node.displayStatus" class="story-node-status" :class="getStatusClass(node.displayStatus)">{{ node.displayStatus }}</span>
-                  <span v-else class="story-table-empty">-</span>
+                  <span
+                    v-if="node.showsTemplateStatus"
+                    class="story-node-template-status story-table-template-status"
+                    :class="{ 'story-node-template-status-current': node.isTemplated }"
+                  >{{ node.isTemplated ? '已模板化' : '旧版未模板化' }}</span>
+                  <span v-if="!node.displayStatus && !node.showsTemplateStatus" class="story-table-empty">-</span>
                 </td>
                 <td>
                   <div class="story-table-tags">
@@ -296,7 +308,7 @@
           <table class="story-table story-summary-table">
             <thead>
               <tr>
-                <th scope="col">类别</th>
+                <th scope="col" class="story-summary-category-heading">类别</th>
                 <th
                   v-for="field in SUMMARY_FIELD_DEFINITIONS"
                   :key="field.key"
@@ -508,9 +520,22 @@
           <div class="story-cg-grid">
             <article v-for="entry in activeStoryCgEntries" :key="entry.key" class="story-cg-entry">
               <header class="story-cg-entry-header">
-                <h3>{{ entry.title }}</h3>
+                <div>
+                  <span class="story-cg-sequence-index">CG {{ entry.sequenceIndex }}</span>
+                  <h3>{{ entry.title }}</h3>
+                </div>
                 <span>{{ entry.summary }}</span>
               </header>
+              <dl v-if="entry.timing || entry.content" class="story-cg-description">
+                <template v-if="entry.timing">
+                  <dt>出现时机</dt>
+                  <dd>{{ entry.timing }}</dd>
+                </template>
+                <template v-if="entry.content">
+                  <dt>具体画面</dt>
+                  <dd>{{ entry.content }}</dd>
+                </template>
+              </dl>
               <button
                 v-if="getStoryCgCover(entry)"
                 class="story-cg-cover"
@@ -701,8 +726,11 @@ import {
   findOutlineNodeByKey,
   sanitizeStoryExportFilename
 } from '../../../data/story_outline/storyOutlineExport';
-import { createStoryCgPreview, resolveStoryCgEntries } from '../../../data/story_outline/storyCgLinks';
-import { resolveStoryGameplayLinks } from '../../../data/gameplay_outline/gameplayOutline';
+import { createStoryCgPreview, resolveStoryCgSequence } from '../../../data/story_outline/storyCgLinks';
+import {
+  resolveStoryGameplayLinks,
+  resolveStoryGameplayTitles
+} from '../../../data/gameplay_outline/gameplayOutline';
 import { codexCategories } from '../../../data/global/gameMenuData';
 import { downloadJsonPayload } from './jsonDownload';
 import StoryGameplayLinkDialog from './StoryGameplayLinkDialog.vue';
@@ -803,6 +831,10 @@ const STORY_TAG_NAMES = new Set([
 ]);
 const SUMMARY_FIELD_DEFINITIONS = [
   {
+    key: 'primaryGameplay',
+    label: '主要玩法'
+  },
+  {
     key: 'storyTags',
     label: 'storyTags'
   },
@@ -862,7 +894,7 @@ function hasStoryDetail(node) {
 }
 
 function getStoryCgEntries(node) {
-  return resolveStoryCgEntries(node?.cgRefs, storyCgSlots);
+  return resolveStoryCgSequence(node?.cgRefs, node?.cgSequence, storyCgSlots);
 }
 
 function hasStoryCg(node) {
@@ -914,7 +946,11 @@ function hasSummaryFields(node) {
 }
 
 function hasNodeMetaRow(node) {
-  return Boolean(node.displayStatus || node.storyTags.length > 0 || node.timeline);
+  return Boolean(node.displayStatus || node.showsTemplateStatus || node.storyTags.length > 0 || node.timeline);
+}
+
+function shouldShowTemplateStatus(status) {
+  return !isCategoryStatus(status) && !isMainQuestStatus(status) && status !== '收回';
 }
 
 function hasMissingItems(node) {
@@ -1341,8 +1377,11 @@ function createTableRows(outline, collapsedKeys) {
       detailMarkdown: node.detailMarkdown,
       detailSourcePath: node.detailSourcePath,
       detailLabel: getDetailLabel(node),
+      isTemplated: node.isTemplated === true,
+      showsTemplateStatus: shouldShowTemplateStatus(node.status),
       missingItems: Array.isArray(node.missingItems) ? node.missingItems : [],
       cgRefs: Array.isArray(node.cgRefs) ? node.cgRefs : [],
+      cgSequence: Array.isArray(node.cgSequence) ? node.cgSequence : [],
       gameplayRefs: Array.isArray(node.gameplayRefs) ? node.gameplayRefs : [],
       storyTags: getStoryTags(node),
       tags: getTableTags(node),
@@ -1375,7 +1414,10 @@ function createSummaryGroups(outline) {
       const nodes = [];
 
       function walk(node) {
-        nodes.push(node);
+        nodes.push({
+          ...node,
+          primaryGameplay: resolveStoryGameplayTitles(node, props.gameplayCatalog ?? undefined)
+        });
         const children = Array.isArray(node.children) ? node.children : [];
         children.forEach(walk);
       }
@@ -1686,8 +1728,11 @@ function createNodeLayout(outline, mode, collapsedKeys) {
       detailMarkdown: node.detailMarkdown,
       detailSourcePath: node.detailSourcePath,
       detailLabel: getDetailLabel(node),
+      isTemplated: node.isTemplated === true,
+      showsTemplateStatus: shouldShowTemplateStatus(node.status),
       missingItems: Array.isArray(node.missingItems) ? node.missingItems : [],
       cgRefs: Array.isArray(node.cgRefs) ? node.cgRefs : [],
+      cgSequence: Array.isArray(node.cgSequence) ? node.cgSequence : [],
       gameplayRefs: Array.isArray(node.gameplayRefs) ? node.gameplayRefs : [],
       storyTags: getStoryTags(node),
       tags: getNormalTags(node),
@@ -1738,8 +1783,11 @@ function createNodeLayout(outline, mode, collapsedKeys) {
       detailMarkdown: node.detailMarkdown,
       detailSourcePath: node.detailSourcePath,
       detailLabel: getDetailLabel(node),
+      isTemplated: node.isTemplated === true,
+      showsTemplateStatus: shouldShowTemplateStatus(node.status),
       missingItems: Array.isArray(node.missingItems) ? node.missingItems : [],
       cgRefs: Array.isArray(node.cgRefs) ? node.cgRefs : [],
+      cgSequence: Array.isArray(node.cgSequence) ? node.cgSequence : [],
       gameplayRefs: Array.isArray(node.gameplayRefs) ? node.gameplayRefs : [],
       storyTags: getStoryTags(node),
       tags: getNormalTags(node),

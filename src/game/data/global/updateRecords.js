@@ -1,5 +1,11 @@
 export const updateRecords = Object.freeze([
     {
+        "id":  "125",
+        "date":  "2026-07-20",
+        "title":  "故事大纲模板化标识与 CG 玩法汇总",
+        "summary":  "本次增加故事条目模板化标识、CG 具体内容序列与主要玩法汇总，并优化故事汇总类别列宽度。"
+    },
+    {
         "id":  "124",
         "date":  "2026-07-20",
         "title":  "故事大纲待补充清单",

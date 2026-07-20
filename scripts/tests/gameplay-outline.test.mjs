@@ -8,6 +8,7 @@ import {
   findGameplayEntries,
   gameplayOutline,
   resolveStoryGameplayLinks,
+  resolveStoryGameplayTitles,
   updateOutlineNodeGameplayRefs,
   updateStoryGameplayRefs
 } from '../../src/game/data/gameplay_outline/gameplayOutline.js';
@@ -150,10 +151,22 @@ test('resolves story gameplay links and updates refs without mutating the story 
 
   const links = resolveStoryGameplayLinks(storyNode, gameplayOutline);
   assert.deepEqual(links.map((entry) => entry.id), ['gameplay-001']);
+  assert.deepEqual(resolveStoryGameplayTitles(storyNode, gameplayOutline), ['房间式地牢探索']);
 
   const updatedNode = updateStoryGameplayRefs(storyNode, ['gameplay-014', 'gameplay-001', 'gameplay-014']);
   assert.deepEqual(updatedNode.gameplayRefs, ['gameplay-014', 'gameplay-001']);
   assert.deepEqual(storyNode.gameplayRefs, ['gameplay-001', 'missing-gameplay']);
+});
+
+test('story summary includes a searchable primary gameplay column backed by catalog titles', () => {
+  const panelSource = readFileSync(
+    new URL('../../src/game/views/components/base/StoryMenuPanel.vue', import.meta.url),
+    'utf8'
+  );
+
+  assert.equal(panelSource.includes("key: 'primaryGameplay'"), true);
+  assert.equal(panelSource.includes("label: '主要玩法'"), true);
+  assert.equal(panelSource.includes('resolveStoryGameplayTitles(node'), true);
 });
 
 test('updates a nested outline node while preserving unrelated branches', () => {

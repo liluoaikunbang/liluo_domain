@@ -1,7 +1,8 @@
 import assert from 'node:assert/strict';
 import {
   createStoryCgPreview,
-  resolveStoryCgEntries
+  resolveStoryCgEntries,
+  resolveStoryCgSequence
 } from '../../src/game/data/story_outline/storyCgLinks.js';
 
 const cgSlots = [
@@ -21,6 +22,34 @@ assert.deepEqual(
 
 assert.deepEqual(resolveStoryCgEntries([], cgSlots), []);
 assert.deepEqual(resolveStoryCgEntries(null, cgSlots), []);
+
+assert.deepEqual(
+  resolveStoryCgSequence(
+    ['都市DID-KTV服务员', '都市DID-保洁员'],
+    [
+      '都市DID-KTV服务员｜夜班收尾｜璃落被留在最后一桌旁，窗外霓虹映入空荡包厢',
+      '梦境种子植入｜昏迷转场｜种子化作微光沉入璃落胸口，旧记忆在背景闪回'
+    ],
+    cgSlots
+  ),
+  [
+    {
+      ...cgSlots[0],
+      sequenceIndex: 1,
+      timing: '夜班收尾',
+      content: '璃落被留在最后一桌旁，窗外霓虹映入空荡包厢',
+      hasAsset: true
+    },
+    {
+      ...cgSlots[1],
+      sequenceIndex: 2,
+      timing: '',
+      content: '',
+      hasAsset: true
+    }
+  ],
+  'CG 序列应展示已有资源的具体内容、排除未制作画面，并在末尾补充未写入序列的有效 cgRefs'
+);
 
 const previewEntry = {
   ...cgSlots[0],

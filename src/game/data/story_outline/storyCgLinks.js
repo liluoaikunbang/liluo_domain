@@ -22,6 +22,53 @@ export function resolveStoryCgEntries(cgRefs, cgSlots) {
   }, []);
 }
 
+export function resolveStoryCgSequence(cgRefs, cgSequence, cgSlots) {
+  const referencedEntries = resolveStoryCgEntries(cgRefs, cgSlots);
+  const entryByTitle = new Map(referencedEntries.map((entry) => [String(entry.title).trim(), entry]));
+  const sequencedTitles = new Set();
+  const sequenceItems = Array.isArray(cgSequence) ? cgSequence : [];
+
+  const entries = sequenceItems.reduce((resolvedEntries, item) => {
+    const [rawTitle = '', rawTiming = '', ...contentParts] = String(item ?? '').split('｜');
+    const title = rawTitle.trim();
+    const timing = rawTiming.trim();
+    const content = contentParts.join('｜').trim();
+
+    const linkedEntry = entryByTitle.get(title);
+
+    if (!title || !linkedEntry || sequencedTitles.has(title)) {
+      return resolvedEntries;
+    }
+
+    sequencedTitles.add(title);
+    resolvedEntries.push({
+      ...linkedEntry,
+      sequenceIndex: resolvedEntries.length + 1,
+      timing,
+      content,
+      hasAsset: true
+    });
+    return resolvedEntries;
+  }, []);
+
+  referencedEntries.forEach((entry) => {
+    const title = String(entry.title ?? '').trim();
+    if (sequencedTitles.has(title)) {
+      return;
+    }
+
+    entries.push({
+      ...entry,
+      sequenceIndex: entries.length + 1,
+      timing: '',
+      content: '',
+      hasAsset: true
+    });
+  });
+
+  return entries;
+}
+
 export function createStoryCgPreview(entry, activeVariantIndex = 0) {
   const variants = Array.isArray(entry?.variants)
     ? entry.variants.filter((variant) => String(variant?.image ?? '').trim())

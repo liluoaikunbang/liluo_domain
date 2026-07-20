@@ -60,6 +60,10 @@ export function resolveStoryGameplayLinks(storyNode, outline = gameplayOutline) 
     .filter(Boolean);
 }
 
+export function resolveStoryGameplayTitles(storyNode, outline = gameplayOutline) {
+  return resolveStoryGameplayLinks(storyNode, outline).map((entry) => entry.title);
+}
+
 export function updateStoryGameplayRefs(storyNode, gameplayRefs) {
   return {
     ...storyNode,
