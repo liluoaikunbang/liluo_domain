@@ -7,6 +7,8 @@ import { parseMarkdownFrontmatter } from '../../src/game/data/story_outline/stor
 const projectRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 const sourcePath = path.join(projectRoot, 'src/game/data/story_outline/sources/1-modern.json');
 const detailPath = path.join(projectRoot, 'src/game/data/story_outline/1-modern/1.0.1-病房苏醒.md');
+const liminalDetailPath = path.join(projectRoot, 'src/game/data/story_outline/1-modern/4.3.1-阈限空间.md');
+const interviewTemplatePath = path.join(projectRoot, 'docs/系统说明/故事大纲随机提问模板.md');
 
 const outline = JSON.parse(fs.readFileSync(sourcePath, 'utf8'));
 
@@ -70,5 +72,18 @@ assert.match(markdown, /不播放误伤 CG 或动作动画/u);
 assert.match(markdown, /现实人物、记忆残影与真正鬼魂/u);
 assert.match(markdown, /无可行走地图不等于无场景图/u);
 assert.match(markdown, /每个剧情场景都必须有对应场景图/u);
+
+const liminalNode = outline.nodes.find((node) => node.key === 'world-1-glimmering-glance-liminal-space');
+const liminalFrontmatter = parseMarkdownFrontmatter(fs.readFileSync(liminalDetailPath, 'utf8'));
+assert.equal(liminalNode?.missingItems?.length, 6);
+assert.deepEqual(liminalFrontmatter.missingItems, liminalNode.missingItems);
+assert.ok(liminalFrontmatter.missingItems.some((item) => item.includes('首次跨域入口')));
+assert.ok(liminalFrontmatter.missingItems.some((item) => item.includes('奇效回收')));
+assert.ok(liminalFrontmatter.missingItems.some((item) => item.includes('拘束差异')));
+assert.ok(!liminalFrontmatter.tags.includes('可重复探索'));
+
+const interviewTemplate = fs.readFileSync(interviewTemplatePath, 'utf8');
+assert.match(interviewTemplate, /重新执行一次缺口审计/u);
+assert.match(interviewTemplate, /旧 `missingItems` 全部得到回答不等于条目已经完整/u);
 
 console.log('urban first module template passed');

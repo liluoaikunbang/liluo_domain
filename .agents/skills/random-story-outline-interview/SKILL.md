@@ -38,4 +38,4 @@ Read `docs/系统说明/故事大纲随机提问模板.md` completely before sel
 
 ## After the user answers
 
-When asked to write the answers back, re-read the source node and Markdown, determine the highest honestly supported maturity, update both sources consistently, remove only resolved missing items, and run the existing story-outline tests. Do not fabricate stable IDs or implementation references.
+When asked to write the answers back, re-read the source node and Markdown, determine the highest honestly supported maturity, update both sources consistently, and remove only resolved missing items. Then perform a second gap audit against the updated full context. If the answers reveal narrower unresolved decisions, replace the old items with specific new `missingItems`; never treat an exhausted old list as proof that the entry is complete. Leave `missingItems` empty only when no actionable gap required by the current maturity remains. Do not promote asset-production details that belong to a later maturity, fabricate stable IDs, or invent implementation references. Run the existing story-outline tests after writing.
