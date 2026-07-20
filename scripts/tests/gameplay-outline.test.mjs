@@ -25,12 +25,12 @@ test('creates a self-describing JSON export for the complete gameplay outline', 
   assert.notEqual(payload.catalog, gameplayOutline);
 });
 
-test('loads the 106 consolidated gameplay entries with valid references', () => {
-  assert.equal(gameplayOutline.entries.length, 106);
-  assert.equal(new Set(gameplayOutline.entries.map((entry) => entry.id)).size, 106);
+test('loads the 107 consolidated gameplay entries with valid references', () => {
+  assert.equal(gameplayOutline.entries.length, 107);
+  assert.equal(new Set(gameplayOutline.entries.map((entry) => entry.id)).size, 107);
   assert.deepEqual(
     gameplayOutline.entries.map((entry) => entry.number),
-    Array.from({ length: 106 }, (_, index) => index + 1)
+    Array.from({ length: 107 }, (_, index) => index + 1)
   );
 
   const categoryIds = new Set(gameplayOutline.categories.map((category) => category.id));
@@ -156,6 +156,14 @@ test('resolves story gameplay links and updates refs without mutating the story 
   const updatedNode = updateStoryGameplayRefs(storyNode, ['gameplay-014', 'gameplay-001', 'gameplay-014']);
   assert.deepEqual(updatedNode.gameplayRefs, ['gameplay-014', 'gameplay-001']);
   assert.deepEqual(storyNode.gameplayRefs, ['gameplay-001', 'missing-gameplay']);
+});
+
+test('keeps linear interactive fiction separate from outcome-changing branch dialogue', () => {
+  const interactiveFiction = gameplayOutline.entries.find(({ id }) => id === 'gameplay-119');
+  assert.equal(interactiveFiction?.title, '互动小说');
+  assert.equal(interactiveFiction?.categoryId, 'gameplay-group-12');
+  assert.equal(interactiveFiction?.presentationModes.includes('cg-friendly'), true);
+  assert.notEqual(interactiveFiction?.summary, gameplayOutline.entries.find(({ id }) => id === 'gameplay-104')?.summary);
 });
 
 test('story summary includes a searchable primary gameplay column backed by catalog titles', () => {

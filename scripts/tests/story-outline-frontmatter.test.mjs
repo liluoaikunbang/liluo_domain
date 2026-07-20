@@ -53,6 +53,8 @@ const markdownModules = {
     '  - 都市DID-保洁员',
     'cgSequence:',
     '  - 都市DID-KTV服务员｜夜班收尾｜璃落被留在最后一桌旁，窗外霓虹映入空荡包厢',
+    'gameplayRefs:',
+    '  - gameplay-104',
     'foreshadowing:',
     '  - YAML 伏笔',
     'tags:',
@@ -94,6 +96,7 @@ assert.deepEqual(node.cgRefs, ['都市DID-KTV服务员', '都市DID-保洁员'])
 assert.deepEqual(node.cgSequence, [
   '都市DID-KTV服务员｜夜班收尾｜璃落被留在最后一桌旁，窗外霓虹映入空荡包厢'
 ]);
+assert.deepEqual(node.gameplayRefs, ['gameplay-104']);
 assert.deepEqual(node.storyTags, ['街景一隅']);
 assert.equal(node.status, '大纲草稿');
 assert.deepEqual(node.foreshadowing, ['YAML 伏笔']);

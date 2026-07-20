@@ -17,6 +17,7 @@ const FRONTMATTER_FIELD_KINDS = {
   missingItems: 'list',
   cgRefs: 'list',
   cgSequence: 'list',
+  gameplayRefs: 'list',
   foreshadowing: 'list',
   tags: 'list',
   specialGameplay: 'list',

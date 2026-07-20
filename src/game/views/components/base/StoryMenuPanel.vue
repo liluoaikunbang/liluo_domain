@@ -148,11 +148,10 @@
                 <div v-if="hasNodeMetaRow(node)" class="story-node-meta-row">
                   <span v-if="node.displayStatus" class="story-node-status" :class="getStatusClass(node.displayStatus)">{{ node.displayStatus }}</span>
                   <span
-                    v-if="node.showsTemplateStatus"
+                    v-if="shouldDisplayTemplateStatus(node)"
                     class="story-node-template-status"
-                    :class="{ 'story-node-template-status-current': node.isTemplated }"
                   >
-                    {{ node.isTemplated ? '已模板化' : '旧版未模板化' }}
+                    旧版未模板化
                   </span>
                   <span v-for="storyTag in node.storyTags" :key="storyTag" class="story-node-story-tag">{{ storyTag }}</span>
                   <span v-if="node.timeline" class="story-node-timeline">{{ node.timeline }}</span>
@@ -267,11 +266,10 @@
                 <td>
                   <span v-if="node.displayStatus" class="story-node-status" :class="getStatusClass(node.displayStatus)">{{ node.displayStatus }}</span>
                   <span
-                    v-if="node.showsTemplateStatus"
+                    v-if="shouldDisplayTemplateStatus(node)"
                     class="story-node-template-status story-table-template-status"
-                    :class="{ 'story-node-template-status-current': node.isTemplated }"
-                  >{{ node.isTemplated ? '已模板化' : '旧版未模板化' }}</span>
-                  <span v-if="!node.displayStatus && !node.showsTemplateStatus" class="story-table-empty">-</span>
+                  >旧版未模板化</span>
+                  <span v-if="!node.displayStatus && !shouldDisplayTemplateStatus(node)" class="story-table-empty">-</span>
                 </td>
                 <td>
                   <div class="story-table-tags">
@@ -946,7 +944,11 @@ function hasSummaryFields(node) {
 }
 
 function hasNodeMetaRow(node) {
-  return Boolean(node.displayStatus || node.showsTemplateStatus || node.storyTags.length > 0 || node.timeline);
+  return Boolean(node.displayStatus || shouldDisplayTemplateStatus(node) || node.storyTags.length > 0 || node.timeline);
+}
+
+function shouldDisplayTemplateStatus(node) {
+  return node.showsTemplateStatus && !node.isTemplated;
 }
 
 function shouldShowTemplateStatus(status) {

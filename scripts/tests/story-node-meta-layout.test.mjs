@@ -17,6 +17,12 @@ test('places story classification metadata in a dedicated bottom-left area', () 
   assert.match(menuStyles, /\.story-node-card-with-bottom-meta\s*{[^}]*padding-bottom:/s);
 });
 
+test('only reserves the template status label for legacy untemplated entries', () => {
+  assert.equal(storyPanelSource.includes('function shouldDisplayTemplateStatus(node)'), true);
+  assert.equal(storyPanelSource.includes('v-if="shouldDisplayTemplateStatus(node)"'), true);
+  assert.equal(storyPanelSource.includes("node.isTemplated ? '已模板化' : '旧版未模板化'"), false);
+});
+
 test('reserves a normal-flow row for story node actions above the title', () => {
   assert.equal(storyPanelSource.includes("'story-node-card-actions-without-meta'"), false);
   assert.match(menuStyles, /\.story-node-actions\s*{[^}]*position:\s*relative;[^}]*min-height:\s*22px;/s);
