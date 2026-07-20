@@ -21,9 +21,13 @@
       @view-gameplay="showGameplay"
     />
     <GameplayMenuPanel
-      v-else
+      v-else-if="activeSection === 'gameplay'"
       :catalog="gameplayOutline"
       :selected-gameplay-id="selectedGameplayId"
+    />
+    <CharacterOutlinePanel
+      v-else
+      :catalog="storyCharacterOutline"
     />
   </section>
 </template>
@@ -31,6 +35,8 @@
 <script setup>
 import { ref, watch } from 'vue';
 import { gameplayOutline } from '../../../data/gameplay_outline/gameplayOutline';
+import { storyCharacterOutline } from '../../../data/story_outline/storyCharacterOutline';
+import CharacterOutlinePanel from './CharacterOutlinePanel.vue';
 import GameplayMenuPanel from './GameplayMenuPanel.vue';
 import StoryMenuPanel from './StoryMenuPanel.vue';
 
@@ -43,7 +49,8 @@ const props = defineProps({
 
 const sections = [
   { key: 'story', label: '故事' },
-  { key: 'gameplay', label: '玩法' }
+  { key: 'gameplay', label: '玩法' },
+  { key: 'character', label: '人物/组织' }
 ];
 const activeSection = ref('story');
 const selectedGameplayId = ref('');
