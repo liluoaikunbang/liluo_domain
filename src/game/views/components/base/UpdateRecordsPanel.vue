@@ -14,26 +14,50 @@
       从最近一次变化开始，回看城堡逐步生长的足迹。
     </p>
 
-    <ol class="update-records-list" aria-label="按时间从近到远排列的更新">
-      <li v-for="record in records" :key="record.id" class="update-record-item">
-        <div class="update-record-marker" aria-hidden="true"></div>
-        <article class="update-record-card">
-          <div class="update-record-meta">
-            <time :datetime="record.date">{{ record.date }}</time>
-            <span>记录 {{ record.id }}</span>
-          </div>
-          <h3>{{ record.title }}</h3>
-          <p>{{ record.summary }}</p>
-        </article>
+    <ol class="update-records-list" aria-label="按月份分组的更新记录">
+      <li v-for="group in recordGroups" :key="group.key" class="update-record-month">
+        <button
+          class="update-record-month-toggle"
+          type="button"
+          :aria-expanded="isMonthExpanded(group.key)"
+          :aria-controls="`update-record-month-${group.key}`"
+          @click="toggleMonth(group.key)"
+        >
+          <span>{{ group.label }}</span>
+          <span class="update-record-month-meta">
+            {{ group.records.length }} 条
+            <span aria-hidden="true">{{ isMonthExpanded(group.key) ? '−' : '+' }}</span>
+          </span>
+        </button>
+
+        <ol
+          v-if="isMonthExpanded(group.key)"
+          :id="`update-record-month-${group.key}`"
+          class="update-record-month-list"
+          :aria-label="`${group.label}更新`"
+        >
+          <li v-for="record in group.records" :key="record.id" class="update-record-item">
+            <div class="update-record-marker" aria-hidden="true"></div>
+            <article class="update-record-card">
+              <div class="update-record-meta">
+                <time :datetime="record.date">{{ record.date }}</time>
+                <span>记录 {{ record.id }}</span>
+              </div>
+              <h3>{{ record.title }}</h3>
+              <p>{{ record.summary }}</p>
+            </article>
+          </li>
+        </ol>
       </li>
     </ol>
   </section>
 </template>
 
 <script setup>
-import { nextTick, onMounted, ref } from 'vue';
+import { computed, nextTick, onMounted, ref } from 'vue';
+import { groupUpdateRecordsByMonth } from '../../../data/global/updateRecordGroups.js';
 
-defineProps({
+const props = defineProps({
   records: {
     type: Array,
     required: true
@@ -42,6 +66,14 @@ defineProps({
 
 const emit = defineEmits(['close']);
 const backButtonRef = ref(null);
+const recordGroups = computed(() => groupUpdateRecordsByMonth(props.records));
+const expandedMonthKey = ref(recordGroups.value[0]?.key ?? null);
+
+const isMonthExpanded = (monthKey) => expandedMonthKey.value === monthKey;
+
+const toggleMonth = (monthKey) => {
+  expandedMonthKey.value = isMonthExpanded(monthKey) ? null : monthKey;
+};
 
 onMounted(() => {
   nextTick(() => backButtonRef.value?.focus());
@@ -119,10 +151,55 @@ onMounted(() => {
   flex: 1 1 auto;
   overflow-y: auto;
   margin: 0;
-  padding: 0 8px 0 19px;
+  padding: 0 8px 0 0;
   list-style: none;
   scrollbar-color: rgba(220, 148, 204, 0.72) rgba(35, 17, 43, 0.44);
   scrollbar-width: thin;
+}
+
+.update-record-month {
+  margin-bottom: 10px;
+}
+
+.update-record-month-toggle {
+  width: 100%;
+  min-height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 8px 12px;
+  border: 1px solid rgba(255, 228, 247, 0.28);
+  background: rgba(91, 39, 82, 0.82);
+  color: #fff5fb;
+  font: inherit;
+  font-size: 15px;
+  letter-spacing: 0.08em;
+  text-align: left;
+  cursor: pointer;
+}
+
+.update-record-month-toggle:hover,
+.update-record-month-toggle:focus-visible {
+  outline: none;
+  border-color: rgba(255, 237, 249, 0.88);
+  background: rgba(126, 52, 112, 0.82);
+}
+
+.update-record-month-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: rgba(244, 194, 229, 0.78);
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+}
+
+.update-record-month-list {
+  margin: 10px 0 0 8px;
+  padding: 0 0 0 19px;
+  list-style: none;
 }
 
 .update-record-item {
