@@ -1,0 +1,81 @@
+# random-story-outline-interview
+
+## 用途与触发条件
+
+`random-story-outline-interview` 用于从一个或多个世界中随机选择存在已确认缺口的故事大纲条目，重建该条目的项目上下文，再向用户提出具体、能激发灵感的元数据问题。
+
+以下请求应触发该 Skill：
+
+- 随机选一个故事条目问我问题。
+- 从都市、古代、末日、幻想、科幻、慕妮卡或全部世界里随机抽取缺项条目。
+- 先给出某个不完整条目的上下文，再根据缺失内容访谈用户。
+- 重复进行故事大纲灵感访谈。
+
+## 文件路径与引用资源
+
+- Skill 主体：`.agents/skills/random-story-outline-interview/SKILL.md`
+- Skill 界面元数据：`.agents/skills/random-story-outline-interview/agents/openai.yaml`
+- 必读提问模板：`docs/系统说明/故事大纲随机提问模板.md`
+- 写回大纲时必读：`docs/系统说明/故事大纲条目模板.md`
+- 世界候选资料：`docs/系统说明/故事大纲世界选项/`
+- 来源节点：`src/game/data/story_outline/sources/`
+- 大纲正文：`src/game/data/story_outline/<世界目录>/`
+- 玩法目录：`src/game/data/gameplay_outline/catalog.json`
+
+## 输入与输出
+
+### 输入
+
+- 可选的世界限定；未指定时使用全部世界。
+- 可选的条目类型、问题数量或本轮访谈主题。
+- 项目中已有的 JSON、Markdown、父子节点、玩法引用和 `missingItems`。
+
+### 输出
+
+- 真实随机抽取的条目名称。
+- 包含世界、风格、成熟度、父子关系、现有概念和已确认规则的上下文。
+- 默认 4–7 个指向具体条目、角色、区域或状态的元数据问题。
+- 每个问题都包含需要决定的事项、其设计影响和可选灵感方向。
+
+## 执行流程
+
+1. 确定用户指定的世界范围；未指定时汇总全部世界。
+2. 从含有非空 `missingItems` 的普通故事节点中随机抽取一项。
+3. 读取来源 JSON节点、对应 Markdown、父节点、子节点、相关同级节点和玩法引用。
+4. 只用已确认资料汇总上下文，不将候选灵感写成既定设定。
+5. 将缺口分为可文字回答的元数据和不便当场准备的制作项。
+6. 优先询问故事关系、进入状态、角色动机、玩家目标、核心循环、完成失败、分支结局和长期扩展规则。
+7. 默认跳过地图制作、音频、像素动画、精灵表和工程制作规格。
+8. 用户回答后，只在用户要求写回时修改大纲文件。
+
+## 限制与维护要点
+
+- 不得为方便而总是选择熟悉条目，必须从实际候选池随机抽取。
+- 不得询问可从项目中直接查明的内容。
+- 不得只说“请补充地图”“请补充玩法”或类似空泛问句。
+- 地图、场景图或 CG 仅在叙事内容会改变剧情时询问，不询问分辨率、文件格式或制作工时。
+- 对可无限扩展的区域，只询问稳定规则和进出方式，不强迫用户一次穷举全部内容。
+- 写回大纲时必须重新判断成熟度，只移除已解决的缺口，不伪造稳定 ID、路径或实现进度。
+- Skill 的触发条件、执行流程、资源引用、输入输出或限制发生实质变化时，必须同步更新本文档。
+
+## 验证方式
+
+Skill 结构或元数据修改后，使用 UTF-8 模式运行：
+
+```powershell
+$env:PYTHONUTF8='1'
+python C:\Users\lenovo\.codex\skills\.system\skill-creator\scripts\quick_validate.py .agents\skills\random-story-outline-interview
+```
+
+预期结果：
+
+```text
+Skill is valid!
+```
+
+同时运行：
+
+```powershell
+npm run docs:check-encoding
+git diff --check
+```

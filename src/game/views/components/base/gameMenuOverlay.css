@@ -1390,6 +1390,15 @@
   background: rgba(72, 45, 31, 0.4);
 }
 
+.story-missing-list li.story-missing-item-ready {
+  border-color: rgba(112, 220, 176, 0.48);
+  background: rgba(28, 76, 65, 0.44);
+}
+
+.story-missing-list li.story-missing-item-ready strong {
+  color: #9ff3cf;
+}
+
 .story-missing-list strong,
 .story-missing-module {
   display: inline-block;

@@ -168,7 +168,7 @@
                   :aria-label="`查看${node.title}待补充内容，共${node.missingItems.length}项`"
                   @click.stop="openMissingItems(node)"
                 >
-                  待补充
+                  待补充（{{ node.missingItems.length }}）
                 </button>
                 <button
                   v-if="node.canCollapse"
@@ -260,7 +260,7 @@
                     :aria-label="`查看${node.title}待补充内容，共${node.missingItems.length}项`"
                     @click.stop="openMissingItems(node)"
                   >
-                    待补充
+                    待补充（{{ node.missingItems.length }}）
                   </button>
                 </th>
                 <td>
@@ -404,7 +404,11 @@
         <div class="story-detail-content" role="region" :aria-label="`${activeMissingNode.title}待补充内容`">
           <p class="story-missing-intro">该条目仍需补充以下已确认内容：</p>
           <ol class="story-missing-list">
-            <li v-for="(item, index) in activeMissingItems" :key="`${activeMissingNode.key}-missing-${index}`">
+            <li
+              v-for="(item, index) in activeMissingItems"
+              :key="`${activeMissingNode.key}-missing-${index}`"
+              :class="{ 'story-missing-item-ready': item.isReady }"
+            >
               <strong>{{ item.type }}</strong>
               <span class="story-missing-module">{{ item.module }}</span>
               <p>{{ item.detail }}</p>
@@ -964,7 +968,8 @@ function parseMissingItem(value) {
   return {
     type: type.trim() || '其他',
     module: module.trim() || '未标明模块',
-    detail: detailParts.join('｜').trim() || '具体缺失内容未说明'
+    detail: detailParts.join('｜').trim() || '具体缺失内容未说明',
+    isReady: type.trim() === '可制作'
   };
 }
 

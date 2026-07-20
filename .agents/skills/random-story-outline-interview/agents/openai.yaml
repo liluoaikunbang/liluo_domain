@@ -1,0 +1,4 @@
+interface:
+  display_name: "随机故事条目访谈"
+  short_description: "从任意世界随机抽取缺项故事，并生成具体、有上下文的创作访谈问题"
+  default_prompt: "Use $random-story-outline-interview to select an incomplete story entry at random and ask detailed context-aware metadata questions."

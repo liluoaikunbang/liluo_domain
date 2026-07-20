@@ -1,5 +1,11 @@
 export const updateRecords = Object.freeze([
     {
+        "id":  "127",
+        "date":  "2026-07-20",
+        "title":  "故事大纲随机访谈 Skill 与技能文档规范",
+        "summary":  "本次新增跨世界随机故事条目访谈模板与项目 Skill，并建立每个新 Skill 必须在 `docs/技能说明/` 单独建档的项目规范。"
+    },
+    {
         "id":  "126",
         "date":  "2026-07-20",
         "title":  "故事大纲人物与组织汇总",

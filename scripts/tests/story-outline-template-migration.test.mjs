@@ -32,6 +32,17 @@ const outlineHeadings = [
   '最小可玩版本'
 ];
 
+function resolveRequiredHeadings(frontmatter) {
+  const headings = frontmatter.detailLabel === '灵感' ? inspirationHeadings : outlineHeadings;
+  const moduleTypes = frontmatter.moduleType ?? [];
+
+  if (moduleTypes.length === 1 && moduleTypes[0] === '互动小说') {
+    return headings.map((heading) => heading === '地图与探索设计' ? '场景呈现' : heading);
+  }
+
+  return headings;
+}
+
 function normalizeTitle(filename) {
   return filename.replace(/\.md$/i, '').replace(/^\d+(?:\.\d+)*[-_\s]*/, '').trim();
 }
@@ -59,7 +70,7 @@ test('all existing ordinary story modules use the current maturity-aware templat
     const frontmatter = parseMarkdownFrontmatter(markdown);
     const body = parseMarkdownBody(markdown);
     const label = path.basename(module.path);
-    const requiredHeadings = frontmatter.detailLabel === '灵感' ? inspirationHeadings : outlineHeadings;
+    const requiredHeadings = resolveRequiredHeadings(frontmatter);
 
     if (frontmatter.isTemplated !== 'true') failures.push(`${label}: isTemplated`);
     for (const field of ['key', 'world', 'summary', 'detailLabel']) {

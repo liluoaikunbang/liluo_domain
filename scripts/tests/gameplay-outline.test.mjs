@@ -163,6 +163,10 @@ test('keeps linear interactive fiction separate from outcome-changing branch dia
   assert.equal(interactiveFiction?.title, '互动小说');
   assert.equal(interactiveFiction?.categoryId, 'gameplay-group-12');
   assert.equal(interactiveFiction?.presentationModes.includes('cg-friendly'), true);
+  assert.equal(
+    interactiveFiction?.variants.find(({ id }) => id === 'gameplay-119-variant-02')?.description,
+    '每个剧情场景都应配置对应场景图，并通过切换场景图表达地点、时间与气氛变化。'
+  );
   assert.notEqual(interactiveFiction?.summary, gameplayOutline.entries.find(({ id }) => id === 'gameplay-104')?.summary);
 });
 

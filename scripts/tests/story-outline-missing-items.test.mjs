@@ -15,7 +15,15 @@ test('story nodes expose confirmed missing items from a bottom-right button and 
   assert.match(panelSource, /v-if="hasMissingItems\(node\)"/);
   assert.match(panelSource, /class="story-node-missing-button"/);
   assert.match(panelSource, /openMissingItems\(node\)/);
+  assert.equal(
+    (panelSource.match(/待补充（\{\{ node\.missingItems\.length \}\}）/gu) ?? []).length,
+    2,
+    '树状卡片和表格视图都应显示待补充数量'
+  );
   assert.match(panelSource, /activeMissingNode/);
   assert.match(panelSource, /该条目仍需补充以下已确认内容/);
+  assert.match(panelSource, /:class="\{ 'story-missing-item-ready': item\.isReady \}"/);
+  assert.match(panelSource, /isReady:\s*type\.trim\(\) === '可制作'/);
+  assert.match(panelStyles, /\.story-missing-list li\.story-missing-item-ready\s*\{/);
   assert.match(panelStyles, /\.story-node-missing-button\s*\{[\s\S]*position:\s*absolute;[\s\S]*right:\s*8px;[\s\S]*bottom:\s*8px;/);
 });
