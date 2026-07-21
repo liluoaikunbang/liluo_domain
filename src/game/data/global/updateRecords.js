@@ -1,5 +1,23 @@
 export const updateRecords = Object.freeze([
     {
+        "id":  "134",
+        "date":  "2026-07-21",
+        "title":  "情节灵感目录与大纲Skill联动",
+        "summary":  "情节目录支持大情节/小情节分组与三栏浏览，并保留使用状态、紧缚分类及大纲 Skill 联动。"
+    },
+    {
+        "id":  "133",
+        "date":  "2026-07-21",
+        "title":  "故事栏主线任务独立折叠恢复",
+        "summary":  "恢复主线任务容器的独立折叠入口，只收回所属后代块，并保留下一段主线续接显示。"
+    },
+    {
+        "id":  "132",
+        "date":  "2026-07-21",
+        "title":  "宿舍旧楼黄毛女孩救援与待定灵感规则",
+        "summary":  "重写《宿舍旧楼》的现实救援，加入手写保护费收据的反差设定，并为未完成灵感建立只登记、不代写的规则。"
+    },
+    {
         "id":  "131",
         "date":  "2026-07-21",
         "title":  "邮轮真人垂钓 CG 素材",
@@ -15,7 +33,7 @@ export const updateRecords = Object.freeze([
         "id":  "129",
         "date":  "2026-07-20",
         "title":  "项目专属 Codex Skills 体系",
-        "summary":  "本次建立 13 个项目专属 Skills、四个只读验证脚本和技能说明，并将 AGENTS.md 精简为核心约束与 Skill 路由。"
+        "summary":  "本次建立 13 个项目专属 Skills、四个只读验证脚本和技能说明，精简 AGENTS.md，并补充 GitHub 认证自动恢复规范。"
     },
     {
         "id":  "128",

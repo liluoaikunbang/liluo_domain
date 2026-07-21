@@ -1080,7 +1080,7 @@ function getDisplayStatus(status) {
 }
 
 function isCollapsibleStatus(status) {
-  return ['分类', '支线任务'].includes(status);
+  return ['分类', '主线任务', '支线任务'].includes(status);
 }
 
 function isSideBranchNode(node) {

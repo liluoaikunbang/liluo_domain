@@ -20,6 +20,10 @@
       :gameplay-catalog="gameplayOutline"
       @view-gameplay="showGameplay"
     />
+    <PlotOutlinePanel
+      v-else-if="activeSection === 'plot'"
+      :catalog="plotOutline"
+    />
     <GameplayMenuPanel
       v-else-if="activeSection === 'gameplay'"
       :catalog="gameplayOutline"
@@ -35,9 +39,11 @@
 <script setup>
 import { ref, watch } from 'vue';
 import { gameplayOutline } from '../../../data/gameplay_outline/gameplayOutline';
+import { plotOutline } from '../../../data/plot_outline/plotOutline.js';
 import { storyCharacterOutline } from '../../../data/story_outline/storyCharacterOutline';
 import CharacterOutlinePanel from './CharacterOutlinePanel.vue';
 import GameplayMenuPanel from './GameplayMenuPanel.vue';
+import PlotOutlinePanel from './PlotOutlinePanel.vue';
 import StoryMenuPanel from './StoryMenuPanel.vue';
 
 const props = defineProps({
@@ -49,6 +55,7 @@ const props = defineProps({
 
 const sections = [
   { key: 'story', label: '故事' },
+  { key: 'plot', label: '情节' },
   { key: 'gameplay', label: '玩法' },
   { key: 'character', label: '人物/组织' }
 ];
