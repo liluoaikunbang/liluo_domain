@@ -1,0 +1,22 @@
+[
+  {
+    "id": "src/game/data/registry.ts",
+    "indexVersion": 1,
+    "sourceHash": "85aa57fb34709aa5252d351b0d075c7f528fbf8bde2c217feb631b8d49053e83",
+    "sourcePath": "src/game/data/registry.ts",
+    "summary": "游戏内容注册入口",
+    "summarySource": "structured-fields",
+    "title": "registry.ts",
+    "type": "registry"
+  },
+  {
+    "id": "src/game/data/interactive_fictions/registry.ts",
+    "indexVersion": 1,
+    "sourceHash": "a79db50779bb160af6cb61d42489d1cf3853f5a935fee891f4e4647b7515ffb6",
+    "sourcePath": "src/game/data/interactive_fictions/registry.ts",
+    "summary": "游戏内容注册入口",
+    "summarySource": "structured-fields",
+    "title": "registry.ts",
+    "type": "registry"
+  }
+]

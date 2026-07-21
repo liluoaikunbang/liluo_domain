@@ -1,0 +1,446 @@
+[
+  {
+    "category": "随机远征",
+    "categoryId": "gameplay-group-03",
+    "id": "gameplay-010",
+    "indexVersion": 1,
+    "presentationModes": [
+      "main-map"
+    ],
+    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourcePath": "src/game/data/gameplay_outline/catalog.json",
+    "summary": "每次远征的地图、敌人、奖励和事件有所变化。",
+    "summarySource": "source-json.summary",
+    "title": "随机地牢远征",
+    "type": "gameplay",
+    "variants": [
+      {
+        "id": "gameplay-010-variant-01",
+        "title": "随机房间型"
+      },
+      {
+        "id": "gameplay-010-variant-02",
+        "title": "随机路线型"
+      },
+      {
+        "id": "gameplay-010-variant-03",
+        "title": "随机敌群型"
+      },
+      {
+        "id": "gameplay-010-variant-04",
+        "title": "随机奖励型"
+      },
+      {
+        "id": "gameplay-010-variant-05",
+        "title": "随机Boss型"
+      },
+      {
+        "id": "gameplay-010-variant-06",
+        "title": "有限生命型"
+      },
+      {
+        "id": "gameplay-010-variant-07",
+        "title": "永久死亡型"
+      },
+      {
+        "id": "gameplay-010-variant-08",
+        "title": "轻度保留型"
+      },
+      {
+        "id": "gameplay-010-variant-09",
+        "title": "角色解锁型"
+      },
+      {
+        "id": "gameplay-010-variant-10",
+        "title": "世界难度递增型"
+      }
+    ]
+  },
+  {
+    "category": "随机远征",
+    "categoryId": "gameplay-group-03",
+    "id": "gameplay-011",
+    "indexVersion": 1,
+    "presentationModes": [
+      "main-map",
+      "light-extension"
+    ],
+    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourcePath": "src/game/data/gameplay_outline/catalog.json",
+    "summary": "远征过程中持续形成独特的战斗流派。",
+    "summarySource": "source-json.summary",
+    "title": "随机远征构筑",
+    "type": "gameplay",
+    "variants": [
+      {
+        "id": "gameplay-011-variant-01",
+        "title": "技能三选一"
+      },
+      {
+        "id": "gameplay-011-variant-02",
+        "title": "武器构筑"
+      },
+      {
+        "id": "gameplay-011-variant-03",
+        "title": "遗物构筑"
+      },
+      {
+        "id": "gameplay-011-variant-04",
+        "title": "状态构筑"
+      },
+      {
+        "id": "gameplay-011-variant-05",
+        "title": "召唤构筑"
+      },
+      {
+        "id": "gameplay-011-variant-06",
+        "title": "防御反击构筑"
+      },
+      {
+        "id": "gameplay-011-variant-07",
+        "title": "移动伤害构筑"
+      },
+      {
+        "id": "gameplay-011-variant-08",
+        "title": "资源循环构筑"
+      },
+      {
+        "id": "gameplay-011-variant-09",
+        "title": "同伴羁绊构筑"
+      },
+      {
+        "id": "gameplay-011-variant-10",
+        "title": "诅咒构筑"
+      },
+      {
+        "id": "gameplay-011-variant-11",
+        "title": "装备套装构筑"
+      },
+      {
+        "id": "gameplay-011-variant-12",
+        "title": "多流派融合"
+      }
+    ]
+  },
+  {
+    "category": "随机远征",
+    "categoryId": "gameplay-group-03",
+    "id": "gameplay-012",
+    "indexVersion": 1,
+    "presentationModes": [
+      "main-map"
+    ],
+    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourcePath": "src/game/data/gameplay_outline/catalog.json",
+    "summary": "地图以连续楼层、区域或关卡构成，难度持续上升。",
+    "summarySource": "source-json.summary",
+    "title": "层级远征",
+    "type": "gameplay",
+    "variants": [
+      {
+        "id": "gameplay-012-variant-01",
+        "title": "固定层数爬塔"
+      },
+      {
+        "id": "gameplay-012-variant-02",
+        "title": "无尽爬塔"
+      },
+      {
+        "id": "gameplay-012-variant-03",
+        "title": "分支爬塔"
+      },
+      {
+        "id": "gameplay-012-variant-04",
+        "title": "休息层爬塔"
+      },
+      {
+        "id": "gameplay-012-variant-05",
+        "title": "Boss间隔爬塔"
+      },
+      {
+        "id": "gameplay-012-variant-06",
+        "title": "诅咒累积爬塔"
+      },
+      {
+        "id": "gameplay-012-variant-07",
+        "title": "资源消耗爬塔"
+      },
+      {
+        "id": "gameplay-012-variant-08",
+        "title": "角色轮换爬塔"
+      },
+      {
+        "id": "gameplay-012-variant-09",
+        "title": "队伍损耗爬塔"
+      },
+      {
+        "id": "gameplay-012-variant-10",
+        "title": "世界串联爬塔"
+      }
+    ]
+  },
+  {
+    "category": "随机远征",
+    "categoryId": "gameplay-group-03",
+    "id": "gameplay-013",
+    "indexVersion": 1,
+    "presentationModes": [
+      "light-extension",
+      "cg-friendly"
+    ],
+    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourcePath": "src/game/data/gameplay_outline/catalog.json",
+    "summary": "通过文字、像素互动和CG呈现高风险选择。",
+    "summarySource": "source-json.summary",
+    "title": "风险选择事件",
+    "type": "gameplay",
+    "variants": [
+      {
+        "id": "gameplay-013-variant-01",
+        "title": "祭坛交易"
+      },
+      {
+        "id": "gameplay-013-variant-02",
+        "title": "未知宝箱"
+      },
+      {
+        "id": "gameplay-013-variant-03",
+        "title": "受困NPC"
+      },
+      {
+        "id": "gameplay-013-variant-04",
+        "title": "危险捷径"
+      },
+      {
+        "id": "gameplay-013-variant-05",
+        "title": "诅咒遗物"
+      },
+      {
+        "id": "gameplay-013-variant-06",
+        "title": "阵营抉择"
+      },
+      {
+        "id": "gameplay-013-variant-07",
+        "title": "能力交换"
+      },
+      {
+        "id": "gameplay-013-variant-08",
+        "title": "状态赌局"
+      },
+      {
+        "id": "gameplay-013-variant-09",
+        "title": "记忆事件"
+      },
+      {
+        "id": "gameplay-013-variant-10",
+        "title": "伪装事件"
+      }
+    ]
+  },
+  {
+    "category": "随机远征",
+    "categoryId": "gameplay-group-03",
+    "id": "gameplay-014",
+    "indexVersion": 1,
+    "presentationModes": [
+      "main-map",
+      "light-extension"
+    ],
+    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourcePath": "src/game/data/gameplay_outline/catalog.json",
+    "summary": "进入危险区域搜索物资、完成任务，并在负重、风险、深入探索与及时撤离之间作出取舍。",
+    "summarySource": "source-json.summary",
+    "title": "搜打撤远征",
+    "type": "gameplay",
+    "variants": [
+      {
+        "id": "gameplay-014-variant-01",
+        "title": "轻度搜打撤"
+      },
+      {
+        "id": "gameplay-014-variant-02",
+        "title": "标准搜打撤"
+      },
+      {
+        "id": "gameplay-014-variant-03",
+        "title": "硬核搜打撤"
+      },
+      {
+        "id": "gameplay-014-variant-04",
+        "title": "剧情搜打撤"
+      },
+      {
+        "id": "gameplay-014-variant-05",
+        "title": "资源搜打撤"
+      },
+      {
+        "id": "gameplay-014-variant-06",
+        "title": "装备搜打撤"
+      },
+      {
+        "id": "gameplay-014-variant-07",
+        "title": "情报搜打撤"
+      },
+      {
+        "id": "gameplay-014-variant-08",
+        "title": "样本搜打撤"
+      },
+      {
+        "id": "gameplay-014-variant-09",
+        "title": "遗物搜打撤"
+      },
+      {
+        "id": "gameplay-014-variant-10",
+        "title": "战场搜打撤"
+      },
+      {
+        "id": "gameplay-014-variant-11",
+        "title": "城市搜打撤"
+      },
+      {
+        "id": "gameplay-014-variant-12",
+        "title": "太空站搜打撤"
+      },
+      {
+        "id": "gameplay-014-merged-gameplay-015",
+        "title": "任务型搜打撤"
+      },
+      {
+        "id": "gameplay-015-variant-01",
+        "title": "悬赏任务"
+      },
+      {
+        "id": "gameplay-015-variant-02",
+        "title": "破坏任务"
+      },
+      {
+        "id": "gameplay-015-variant-03",
+        "title": "修复任务"
+      },
+      {
+        "id": "gameplay-015-variant-04",
+        "title": "救援任务"
+      },
+      {
+        "id": "gameplay-015-variant-05",
+        "title": "护送任务"
+      },
+      {
+        "id": "gameplay-015-variant-06",
+        "title": "调查任务"
+      },
+      {
+        "id": "gameplay-015-variant-07",
+        "title": "标记任务"
+      },
+      {
+        "id": "gameplay-015-variant-08",
+        "title": "上传任务"
+      },
+      {
+        "id": "gameplay-015-variant-09",
+        "title": "采集任务"
+      },
+      {
+        "id": "gameplay-015-variant-10",
+        "title": "多阶段任务"
+      },
+      {
+        "id": "gameplay-015-variant-11",
+        "title": "隐藏任务"
+      },
+      {
+        "id": "gameplay-015-variant-12",
+        "title": "动态委托"
+      },
+      {
+        "id": "gameplay-014-merged-gameplay-016",
+        "title": "深层与连续撤离"
+      },
+      {
+        "id": "gameplay-016-variant-01",
+        "title": "分层撤离"
+      },
+      {
+        "id": "gameplay-016-variant-02",
+        "title": "多区域连续远征"
+      },
+      {
+        "id": "gameplay-016-variant-03",
+        "title": "中途仓储"
+      },
+      {
+        "id": "gameplay-016-variant-04",
+        "title": "临时营地"
+      },
+      {
+        "id": "gameplay-016-variant-05",
+        "title": "撤离点轮换"
+      },
+      {
+        "id": "gameplay-016-variant-06",
+        "title": "条件撤离"
+      },
+      {
+        "id": "gameplay-016-variant-07",
+        "title": "移动撤离点"
+      },
+      {
+        "id": "gameplay-016-variant-08",
+        "title": "紧急撤离"
+      },
+      {
+        "id": "gameplay-016-variant-09",
+        "title": "虚假撤离点"
+      },
+      {
+        "id": "gameplay-016-variant-10",
+        "title": "最终撤离战"
+      },
+      {
+        "id": "gameplay-014-merged-gameplay-017",
+        "title": "负重与战利品决策"
+      },
+      {
+        "id": "gameplay-017-variant-01",
+        "title": "重量限制"
+      },
+      {
+        "id": "gameplay-017-variant-02",
+        "title": "格子背包"
+      },
+      {
+        "id": "gameplay-017-variant-03",
+        "title": "高价值暴露"
+      },
+      {
+        "id": "gameplay-017-variant-04",
+        "title": "噪声负重"
+      },
+      {
+        "id": "gameplay-017-variant-05",
+        "title": "双手搬运"
+      },
+      {
+        "id": "gameplay-017-variant-06",
+        "title": "易碎物品"
+      },
+      {
+        "id": "gameplay-017-variant-07",
+        "title": "限时物品"
+      },
+      {
+        "id": "gameplay-017-variant-08",
+        "title": "污染物品"
+      },
+      {
+        "id": "gameplay-017-variant-09",
+        "title": "物资鉴定"
+      },
+      {
+        "id": "gameplay-017-variant-10",
+        "title": "队伍分配"
+      }
+    ]
+  }
+]

@@ -1,0 +1,4 @@
+interface:
+  display_name: "项目知识索引维护"
+  short_description: "建立、检查、查询、验证并更新璃落项目的分层知识索引"
+  default_prompt: "Use $liluo-project-index-maintenance to inspect the current project index, update only the affected domains, validate the result, and report the authoritative source files used."

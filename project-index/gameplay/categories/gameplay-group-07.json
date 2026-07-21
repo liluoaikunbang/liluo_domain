@@ -1,0 +1,472 @@
+[
+  {
+    "category": "机关调查",
+    "categoryId": "gameplay-group-07",
+    "id": "gameplay-056",
+    "indexVersion": 1,
+    "presentationModes": [
+      "main-map"
+    ],
+    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourcePath": "src/game/data/gameplay_outline/catalog.json",
+    "summary": "利用地图物体和角色移动完成谜题。",
+    "summarySource": "source-json.summary",
+    "title": "环境机关解谜",
+    "type": "gameplay",
+    "variants": [
+      {
+        "id": "gameplay-056-variant-01",
+        "title": "推箱子"
+      },
+      {
+        "id": "gameplay-056-variant-02",
+        "title": "压力板"
+      },
+      {
+        "id": "gameplay-056-variant-03",
+        "title": "开关门路"
+      },
+      {
+        "id": "gameplay-056-variant-04",
+        "title": "光线反射"
+      },
+      {
+        "id": "gameplay-056-variant-05",
+        "title": "电路连接"
+      },
+      {
+        "id": "gameplay-056-variant-06",
+        "title": "齿轮传动"
+      },
+      {
+        "id": "gameplay-056-variant-07",
+        "title": "水位控制"
+      },
+      {
+        "id": "gameplay-056-variant-08",
+        "title": "火焰机关"
+      },
+      {
+        "id": "gameplay-056-variant-09",
+        "title": "元素反应"
+      },
+      {
+        "id": "gameplay-056-variant-10",
+        "title": "重量平衡"
+      },
+      {
+        "id": "gameplay-056-variant-11",
+        "title": "声音机关"
+      },
+      {
+        "id": "gameplay-056-variant-12",
+        "title": "影子机关"
+      }
+    ]
+  },
+  {
+    "category": "机关调查",
+    "categoryId": "gameplay-group-07",
+    "id": "gameplay-057",
+    "indexVersion": 1,
+    "presentationModes": [
+      "main-map",
+      "cg-friendly"
+    ],
+    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourcePath": "src/game/data/gameplay_outline/catalog.json",
+    "summary": "在有限空间中调查物品、组合线索并寻找出口。",
+    "summarySource": "source-json.summary",
+    "title": "密室逃脱",
+    "type": "gameplay",
+    "variants": [
+      {
+        "id": "gameplay-057-variant-01",
+        "title": "单房间密室"
+      },
+      {
+        "id": "gameplay-057-variant-02",
+        "title": "多房间密室"
+      },
+      {
+        "id": "gameplay-057-variant-03",
+        "title": "物品组合"
+      },
+      {
+        "id": "gameplay-057-variant-04",
+        "title": "密码推理"
+      },
+      {
+        "id": "gameplay-057-variant-05",
+        "title": "机关顺序"
+      },
+      {
+        "id": "gameplay-057-variant-06",
+        "title": "隐藏夹层"
+      },
+      {
+        "id": "gameplay-057-variant-07",
+        "title": "倒计时密室"
+      },
+      {
+        "id": "gameplay-057-variant-08",
+        "title": "追猎密室"
+      },
+      {
+        "id": "gameplay-057-variant-09",
+        "title": "合作密室"
+      },
+      {
+        "id": "gameplay-057-variant-10",
+        "title": "虚假出口"
+      }
+    ]
+  },
+  {
+    "category": "机关调查",
+    "categoryId": "gameplay-group-07",
+    "id": "gameplay-058",
+    "indexVersion": 1,
+    "presentationModes": [
+      "main-map",
+      "special-map"
+    ],
+    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourcePath": "src/game/data/gameplay_outline/catalog.json",
+    "summary": "利用过去动作、循环和时间状态完成机关。",
+    "summarySource": "source-json.summary",
+    "title": "时序分身解谜",
+    "type": "gameplay",
+    "variants": [
+      {
+        "id": "gameplay-058-variant-01",
+        "title": "时间回溯"
+      },
+      {
+        "id": "gameplay-058-variant-02",
+        "title": "时间暂停"
+      },
+      {
+        "id": "gameplay-058-variant-03",
+        "title": "过去未来切换"
+      },
+      {
+        "id": "gameplay-058-variant-04",
+        "title": "动作录制"
+      },
+      {
+        "id": "gameplay-058-variant-05",
+        "title": "循环协作"
+      },
+      {
+        "id": "gameplay-058-variant-06",
+        "title": "物体状态回溯"
+      },
+      {
+        "id": "gameplay-058-variant-07",
+        "title": "时间老化"
+      },
+      {
+        "id": "gameplay-058-variant-08",
+        "title": "延迟机关"
+      },
+      {
+        "id": "gameplay-058-variant-09",
+        "title": "多时间线选择"
+      },
+      {
+        "id": "gameplay-058-variant-10",
+        "title": "固定事件利用"
+      }
+    ]
+  },
+  {
+    "category": "机关调查",
+    "categoryId": "gameplay-group-07",
+    "id": "gameplay-059",
+    "indexVersion": 1,
+    "presentationModes": [
+      "main-map"
+    ],
+    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourcePath": "src/game/data/gameplay_outline/catalog.json",
+    "summary": "战斗本身是一道谜题，不能只依靠数值碾压。",
+    "summarySource": "source-json.summary",
+    "title": "战斗解谜",
+    "type": "gameplay",
+    "variants": [
+      {
+        "id": "gameplay-059-variant-01",
+        "title": "攻击顺序谜题"
+      },
+      {
+        "id": "gameplay-059-variant-02",
+        "title": "位置谜题"
+      },
+      {
+        "id": "gameplay-059-variant-03",
+        "title": "元素谜题"
+      },
+      {
+        "id": "gameplay-059-variant-04",
+        "title": "反弹攻击谜题"
+      },
+      {
+        "id": "gameplay-059-variant-05",
+        "title": "有限攻击次数"
+      },
+      {
+        "id": "gameplay-059-variant-06",
+        "title": "不可直接攻击目标"
+      },
+      {
+        "id": "gameplay-059-variant-07",
+        "title": "复制敌人谜题"
+      },
+      {
+        "id": "gameplay-059-variant-08",
+        "title": "同步击破"
+      },
+      {
+        "id": "gameplay-059-variant-09",
+        "title": "护盾循环"
+      },
+      {
+        "id": "gameplay-059-variant-10",
+        "title": "移动路径战斗"
+      }
+    ]
+  },
+  {
+    "category": "机关调查",
+    "categoryId": "gameplay-group-07",
+    "id": "gameplay-060",
+    "indexVersion": 1,
+    "presentationModes": [
+      "main-map",
+      "cg-friendly"
+    ],
+    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourcePath": "src/game/data/gameplay_outline/catalog.json",
+    "summary": "通过像素地图寻找证据，再用CG展示关键细节。",
+    "summarySource": "source-json.summary",
+    "title": "现场调查",
+    "type": "gameplay",
+    "variants": [
+      {
+        "id": "gameplay-060-variant-01",
+        "title": "物证搜索"
+      },
+      {
+        "id": "gameplay-060-variant-02",
+        "title": "现场复原"
+      },
+      {
+        "id": "gameplay-060-variant-03",
+        "title": "脚印与轨迹"
+      },
+      {
+        "id": "gameplay-060-variant-04",
+        "title": "时间线整理"
+      },
+      {
+        "id": "gameplay-060-variant-05",
+        "title": "证据关联"
+      },
+      {
+        "id": "gameplay-060-variant-06",
+        "title": "隐藏证据"
+      },
+      {
+        "id": "gameplay-060-variant-07",
+        "title": "证据污染"
+      },
+      {
+        "id": "gameplay-060-variant-08",
+        "title": "多现场调查"
+      },
+      {
+        "id": "gameplay-060-variant-09",
+        "title": "调查时限"
+      },
+      {
+        "id": "gameplay-060-variant-10",
+        "title": "错误推理后果"
+      }
+    ]
+  },
+  {
+    "category": "机关调查",
+    "categoryId": "gameplay-group-07",
+    "id": "gameplay-061",
+    "indexVersion": 1,
+    "presentationModes": [
+      "interface-gameplay",
+      "cg-friendly"
+    ],
+    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourcePath": "src/game/data/gameplay_outline/catalog.json",
+    "summary": "通过对话、证据和人物反应寻找漏洞。",
+    "summarySource": "source-json.summary",
+    "title": "证词审查",
+    "type": "gameplay",
+    "variants": [
+      {
+        "id": "gameplay-061-variant-01",
+        "title": "证词对照"
+      },
+      {
+        "id": "gameplay-061-variant-02",
+        "title": "证据质疑"
+      },
+      {
+        "id": "gameplay-061-variant-03",
+        "title": "情绪观察"
+      },
+      {
+        "id": "gameplay-061-variant-04",
+        "title": "压力控制"
+      },
+      {
+        "id": "gameplay-061-variant-05",
+        "title": "诱导提问"
+      },
+      {
+        "id": "gameplay-061-variant-06",
+        "title": "谎言识别"
+      },
+      {
+        "id": "gameplay-061-variant-07",
+        "title": "不完整真话"
+      },
+      {
+        "id": "gameplay-061-variant-08",
+        "title": "多人对质"
+      },
+      {
+        "id": "gameplay-061-variant-09",
+        "title": "角色关系利用"
+      },
+      {
+        "id": "gameplay-061-variant-10",
+        "title": "错误指控路线"
+      }
+    ]
+  },
+  {
+    "category": "机关调查",
+    "categoryId": "gameplay-group-07",
+    "id": "gameplay-062",
+    "indexVersion": 1,
+    "presentationModes": [
+      "main-map",
+      "interface-gameplay"
+    ],
+    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourcePath": "src/game/data/gameplay_outline/catalog.json",
+    "summary": "NPC群体中存在隐藏身份或未知威胁。",
+    "summarySource": "source-json.summary",
+    "title": "NPC群像社交推理",
+    "type": "gameplay",
+    "variants": [
+      {
+        "id": "gameplay-062-variant-01",
+        "title": "寻找伪装者"
+      },
+      {
+        "id": "gameplay-062-variant-02",
+        "title": "感染者识别"
+      },
+      {
+        "id": "gameplay-062-variant-03",
+        "title": "替身识别"
+      },
+      {
+        "id": "gameplay-062-variant-04",
+        "title": "夜间行动记录"
+      },
+      {
+        "id": "gameplay-062-variant-05",
+        "title": "任务破坏调查"
+      },
+      {
+        "id": "gameplay-062-variant-06",
+        "title": "信任投票"
+      },
+      {
+        "id": "gameplay-062-variant-07",
+        "title": "秘密身份网络"
+      },
+      {
+        "id": "gameplay-062-variant-08",
+        "title": "非敌对秘密"
+      },
+      {
+        "id": "gameplay-062-variant-09",
+        "title": "伪造证据"
+      },
+      {
+        "id": "gameplay-062-variant-10",
+        "title": "动态内鬼"
+      }
+    ]
+  },
+  {
+    "category": "机关调查",
+    "categoryId": "gameplay-group-07",
+    "id": "gameplay-063",
+    "indexVersion": 1,
+    "presentationModes": [
+      "interface-gameplay",
+      "cg-friendly"
+    ],
+    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourcePath": "src/game/data/gameplay_outline/catalog.json",
+    "summary": "特别适合“命锁谕令”和“命罪裁决”。",
+    "summarySource": "source-json.summary",
+    "title": "司法裁决",
+    "type": "gameplay",
+    "variants": [
+      {
+        "id": "gameplay-063-variant-01",
+        "title": "证据提交"
+      },
+      {
+        "id": "gameplay-063-variant-02",
+        "title": "罪责分类"
+      },
+      {
+        "id": "gameplay-063-variant-03",
+        "title": "规则解释"
+      },
+      {
+        "id": "gameplay-063-variant-04",
+        "title": "证据权重"
+      },
+      {
+        "id": "gameplay-063-variant-05",
+        "title": "动机与结果区分"
+      },
+      {
+        "id": "gameplay-063-variant-06",
+        "title": "多方陈述"
+      },
+      {
+        "id": "gameplay-063-variant-07",
+        "title": "程序合法性"
+      },
+      {
+        "id": "gameplay-063-variant-08",
+        "title": "裁决代价"
+      },
+      {
+        "id": "gameplay-063-variant-09",
+        "title": "隐藏条款"
+      },
+      {
+        "id": "gameplay-063-variant-10",
+        "title": "多结局裁决"
+      }
+    ]
+  }
+]

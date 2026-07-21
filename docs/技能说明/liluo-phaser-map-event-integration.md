@@ -1,5 +1,9 @@
 # liluo-phaser-map-event-integration
 
+## 项目索引协作
+
+跨文件接入先查询 game/code 索引，随后打开注册表与源码核验；接入完成后刷新受影响领域并验证。
+
 ## 用途与边界
 
 将地图、出生点、碰撞、NPC、传送和事件接入现有 Vue3/Phaser/Pinia 分层。纯大纲、纯对话或无关 UI 不触发。

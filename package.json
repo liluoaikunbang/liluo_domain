@@ -11,6 +11,11 @@
     "build:offline": "vite build --mode offline",
     "preview": "vite preview",
     "docs:check-encoding": "node scripts/docs/check-doc-encoding.js",
+    "project:index:build": "node scripts/project-index/build-project-index.mjs --all",
+    "project:index:changed": "node scripts/project-index/build-project-index.mjs --changed",
+    "project:index:check": "node scripts/project-index/check-project-index.mjs",
+    "project:index:validate": "node scripts/project-index/validate-project-index.mjs",
+    "project:index:query": "node scripts/project-index/query-project-index.mjs",
     "map:trim-empty-border": "node scripts/maps/trim-empty-map-border.js",
     "assets:build-liluo-character-frames": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts\\assets\\build-liluo-character-frames.ps1"
   },

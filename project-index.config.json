@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "generatorVersion": "1.0.3",
+  "outputDirectory": "project-index",
+  "maxRecordsPerShard": 250,
+  "summaryMaxChars": 240,
+  "assetHashing": true,
+  "excludedDirectories": [".git", "node_modules", "dist", "project-index", ".vite", "coverage", "audio-splitter-temp"]
+}

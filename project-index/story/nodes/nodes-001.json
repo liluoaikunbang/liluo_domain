@@ -1,0 +1,3971 @@
+[
+  {
+    "childKeys": [
+      "world-1-glimmering-glance-jingsuo-event"
+    ],
+    "id": "world-1-glimmering-glance",
+    "indexVersion": 1,
+    "key": "world-1-glimmering-glance",
+    "maturity": "分类",
+    "series": "1-modern",
+    "side": false,
+    "sourceHashes": {
+      "json": "21b0833ee4fea43f8ce3466e318f0e99b3231cd8dd9ac4793135e131b407262c"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
+    "summary": "带有一些超自然能力与现象的现代都市世界。",
+    "summarySource": "source-json.summary",
+    "title": "浮光掠影（都市）",
+    "type": "story-node",
+    "world": "1-浮光掠影"
+  },
+  {
+    "childKeys": [
+      "world-1-glimmering-glance-little-prisoner",
+      "world-1-glimmering-glance-strange-object-society-archive"
+    ],
+    "id": "world-1-glimmering-glance-anomaly-disaster-response-organization",
+    "indexVersion": 1,
+    "key": "world-1-glimmering-glance-anomaly-disaster-response-organization",
+    "markdownPath": "src/game/data/story_outline/1-modern/2.0.1-异常灾害处理组织.md",
+    "maturity": "大纲",
+    "missingItems": [
+      "设计｜异常灾害处理组织·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜异常灾害处理组织·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜异常灾害处理组织·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "地图｜异常灾害处理组织·场景结构｜缺少实际地点、区域连接、道路限制与返回变化"
+    ],
+    "parentKey": "world-1-glimmering-glance-urban-rumors",
+    "series": "1-modern",
+    "side": false,
+    "sourceHashes": {
+      "json": "21b0833ee4fea43f8ce3466e318f0e99b3231cd8dd9ac4793135e131b407262c",
+      "markdown": "97ad868c0f9301fda1620ab0220c354da9392455c4a4bf5b7a51bbfdfbdbea8f"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
+    "summary": "璃落收到异常灾害处理协会邀请，去封印附在她身上的满怨古树。",
+    "summarySource": "frontmatter.summary",
+    "title": "异常灾害处理组织",
+    "type": "story-node",
+    "world": "1-浮光掠影"
+  },
+  {
+    "childKeys": [
+      "world-1-glimmering-glance-old-capital-echo"
+    ],
+    "id": "world-1-glimmering-glance-black-oak-night-hunt",
+    "indexVersion": 1,
+    "key": "world-1-glimmering-glance-black-oak-night-hunt",
+    "markdownPath": "src/game/data/story_outline/1-modern/3.4.1-黑槲夜猎.md",
+    "maturity": "大纲",
+    "missingItems": [
+      "设计｜黑槲夜猎·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜黑槲夜猎·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜黑槲夜猎·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "地图｜黑槲夜猎·场景结构｜缺少实际地点、区域连接、道路限制与返回变化"
+    ],
+    "parentKey": "world-1-glimmering-glance-prison-storm",
+    "series": "1-modern",
+    "side": false,
+    "sourceHashes": {
+      "json": "21b0833ee4fea43f8ce3466e318f0e99b3231cd8dd9ac4793135e131b407262c",
+      "markdown": "6ce1ef4a1633b503069de5a95a2c7b8445a7eb7467293ce97be1236e4e23ac49"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
+    "summary": "现代版本的紧缚吃鸡游戏",
+    "summarySource": "frontmatter.summary",
+    "title": "黑槲夜猎",
+    "type": "story-node",
+    "world": "1-浮光掠影"
+  },
+  {
+    "childKeys": [
+      "world-1-glimmering-glance-taisho-romance"
+    ],
+    "id": "world-1-glimmering-glance-black-rose-sanatorium",
+    "indexVersion": 1,
+    "key": "world-1-glimmering-glance-black-rose-sanatorium",
+    "markdownPath": "src/game/data/story_outline/1-modern/3.5.2.1-黑蔷薇疗养院.md",
+    "maturity": "大纲",
+    "missingItems": [
+      "设计｜黑蔷薇疗养院·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜黑蔷薇疗养院·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜黑蔷薇疗养院·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "地图｜黑蔷薇疗养院·场景结构｜缺少实际地点、区域连接、道路限制与返回变化"
+    ],
+    "parentKey": "world-1-glimmering-glance-fog-capital-strangeness",
+    "series": "1-modern",
+    "side": false,
+    "sourceHashes": {
+      "json": "21b0833ee4fea43f8ce3466e318f0e99b3231cd8dd9ac4793135e131b407262c",
+      "markdown": "80a9a16c625b03b609b27addc8babcabcafd4915e45c9711ed8e1cd42ce331e8"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
+    "summary": "20世纪欧洲的一家成年女性疗养院。",
+    "summarySource": "frontmatter.summary",
+    "title": "黑蔷薇疗养院",
+    "type": "story-node",
+    "world": "1-浮光掠影"
+  },
+  {
+    "characters": [
+      "璃落"
+    ],
+    "childKeys": [
+      "world-1-glimmering-glance-club"
+    ],
+    "id": "world-1-glimmering-glance-campus-arrival",
+    "indexVersion": 1,
+    "key": "world-1-glimmering-glance-campus-arrival",
+    "locations": [
+      "荆江市",
+      "荆南大学"
+    ],
+    "mapRefs": [
+      "city_jingjiang_school"
+    ],
+    "markdownPath": "src/game/data/story_outline/1-modern/1.1-重返校园.md",
+    "maturity": "大纲",
+    "missingItems": [
+      "地图｜重返校园·校门口接管｜缺少 city_jingjiang_school 校门口准确出生点配置",
+      "事件｜重返校园·校园论坛浏览｜缺少打开论坛、记录异常传闻和完成浏览的正式事件 ID",
+      "事件｜重返校园·社团招新区抵达｜缺少进入招新区域并衔接“加入紧缚社团”的正式事件 ID",
+      "对话｜重返校园·复学导览｜缺少校园功能 NPC 与璃落的正式导览台词及对话 ID"
+    ],
+    "parentKey": "world-1-glimmering-glance-hospital-awakening",
+    "series": "1-modern",
+    "side": false,
+    "sourceHashes": {
+      "json": "21b0833ee4fea43f8ce3466e318f0e99b3231cd8dd9ac4793135e131b407262c",
+      "markdown": "2dabbdcc2ccf394b37479d6346759c5bf0566820b3aac3994a6be8ddb631b713"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
+    "summary": "璃落以复学生身份回到荆南大学，从校门口重新熟悉安全的校园日常，并在论坛异常传闻的引导下抵达社团招新区域。",
+    "summarySource": "frontmatter.summary",
+    "title": "重返校园",
+    "type": "story-node",
+    "world": "1-浮光掠影"
+  },
+  {
+    "characters": [
+      "林沐遥",
+      "缄枷会"
+    ],
+    "childKeys": [
+      "world-1-glimmering-glance-missing"
+    ],
+    "id": "world-1-glimmering-glance-cement-shoes",
+    "indexVersion": 1,
+    "key": "world-1-glimmering-glance-cement-shoes",
+    "locations": [
+      "荆江市",
+      "南堤老码头"
+    ],
+    "markdownPath": "src/game/data/story_outline/1-modern/3.1-水泥鞋.md",
+    "maturity": "大纲草稿",
+    "missingItems": [
+      "设计｜水泥鞋·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜水泥鞋·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜水泥鞋·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "衔接｜水泥鞋·黄毛女孩救援灵感｜黄毛女孩可能在救下璃落的过程中发挥重要作用，具体介入原因、行动和结果尚未确认"
+    ],
+    "parentKey": "world-1-glimmering-glance-gray-alley-adventure",
+    "series": "1-modern",
+    "side": false,
+    "sourceHashes": {
+      "json": "21b0833ee4fea43f8ce3466e318f0e99b3231cd8dd9ac4793135e131b407262c",
+      "markdown": "25e2b41cecd9514eb468a5c116f1a9a00eae50c900c343597e649c74617cc3a9"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
+    "summary": "水泥鞋拷问，推入湖中。",
+    "summarySource": "frontmatter.summary",
+    "title": "水泥鞋",
+    "type": "story-node",
+    "world": "1-浮光掠影"
+  },
+  {
+    "characters": [
+      "林雨薇",
+      "陈思雨"
+    ],
+    "childKeys": [
+      "world-1-glimmering-glance-dance-classroom",
+      "world-1-glimmering-glance-flexibility"
+    ],
+    "id": "world-1-glimmering-glance-club",
+    "indexVersion": 1,
+    "key": "world-1-glimmering-glance-club",
+    "locations": [
+      "荆江市"
+    ],
+    "markdownPath": "src/game/data/story_outline/1-modern/1.2-加入紧缚社团.md",
+    "maturity": "大纲草稿",
+    "missingItems": [
+      "设计｜加入紧缚社团·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜加入紧缚社团·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜加入紧缚社团·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解"
+    ],
+    "parentKey": "world-1-glimmering-glance-campus-arrival",
+    "series": "1-modern",
+    "side": false,
+    "sourceHashes": {
+      "json": "21b0833ee4fea43f8ce3466e318f0e99b3231cd8dd9ac4793135e131b407262c",
+      "markdown": "35eba0d43397b0e3df5600985d1d6d37fe1fc9f8879177cc51329d5ba9cfd87e"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
+    "summary": "加入紧缚社团。",
+    "summarySource": "frontmatter.summary",
+    "title": "加入紧缚社团",
+    "type": "story-node",
+    "world": "1-浮光掠影"
+  },
+  {
+    "characters": [
+      "林雨薇",
+      "欣雨",
+      "苏婉儿"
+    ],
+    "childKeys": [
+      "world-1-glimmering-glance-hot-spring"
+    ],
+    "id": "world-1-glimmering-glance-cruise",
+    "indexVersion": 1,
+    "key": "world-1-glimmering-glance-cruise",
+    "locations": [
+      "翡翠岛"
+    ],
+    "markdownPath": "src/game/data/story_outline/1-modern/1.3.1-游轮.md",
+    "maturity": "大纲草稿",
+    "missingItems": [
+      "设计｜游轮·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜游轮·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜游轮·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解"
+    ],
+    "parentKey": "world-1-glimmering-glance-dance-classroom",
+    "series": "1-modern",
+    "side": true,
+    "sourceHashes": {
+      "json": "21b0833ee4fea43f8ce3466e318f0e99b3231cd8dd9ac4793135e131b407262c",
+      "markdown": "0b26df1fe9dbbd0edec721814d96b212330112ce05499972fdba65ed2ef44703"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
+    "summary": "游轮上的玩耍。",
+    "summarySource": "frontmatter.summary",
+    "title": "游轮",
+    "type": "story-node",
+    "world": "1-浮光掠影"
+  },
+  {
+    "characters": [
+      "沈芷"
+    ],
+    "childKeys": [
+      "world-1-glimmering-glance-cruise",
+      "world-1-glimmering-glance-stage-performance"
+    ],
+    "id": "world-1-glimmering-glance-dance-classroom",
+    "indexVersion": 1,
+    "key": "world-1-glimmering-glance-dance-classroom",
+    "locations": [
+      "荆江市",
+      "荆南大学",
+      "舞蹈教室"
+    ],
+    "markdownPath": "src/game/data/story_outline/1-modern/1.3-舞蹈教室.md",
+    "maturity": "大纲",
+    "missingItems": [
+      "设计｜舞蹈教室·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜舞蹈教室·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜舞蹈教室·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解"
+    ],
+    "parentKey": "world-1-glimmering-glance-club",
+    "series": "1-modern",
+    "side": false,
+    "sourceHashes": {
+      "json": "21b0833ee4fea43f8ce3466e318f0e99b3231cd8dd9ac4793135e131b407262c",
+      "markdown": "5677a20d5427076d2b65e11c4360558c26f2a642498073158779cddfef804d05"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
+    "summary": "荆锁会事件1，对应全班被绑架事件。",
+    "summarySource": "frontmatter.summary",
+    "title": "舞蹈教室",
+    "type": "story-node",
+    "world": "1-浮光掠影"
+  },
+  {
+    "childKeys": [
+      "world-1-glimmering-glance-ultimate-restraint"
+    ],
+    "id": "world-1-glimmering-glance-epilogue",
+    "indexVersion": 1,
+    "key": "world-1-glimmering-glance-epilogue",
+    "maturity": "主线任务",
+    "parentKey": "world-1-glimmering-glance-eternal-restraint-maze",
+    "series": "1-modern",
+    "side": false,
+    "sourceHashes": {
+      "json": "21b0833ee4fea43f8ce3466e318f0e99b3231cd8dd9ac4793135e131b407262c"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
+    "summary": "灰巷线尾声。",
+    "summarySource": "source-json.summary",
+    "title": "尾声",
+    "type": "story-node",
+    "world": "1-浮光掠影"
+  },
+  {
+    "childKeys": [
+      "world-1-glimmering-glance-epilogue",
+      "world-1-glimmering-glance-liminal-space"
+    ],
+    "id": "world-1-glimmering-glance-eternal-restraint-maze",
+    "indexVersion": 1,
+    "key": "world-1-glimmering-glance-eternal-restraint-maze",
+    "locations": [
+      "荆江市"
+    ],
+    "markdownPath": "src/game/data/story_outline/1-modern/4.3-永拘迷宫.md",
+    "missingItems": [
+      "设计｜永拘迷宫·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜永拘迷宫·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜永拘迷宫·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解"
+    ],
+    "parentKey": "world-1-glimmering-glance-silent-correction-center",
+    "series": "1-modern",
+    "side": false,
+    "sourceHashes": {
+      "json": "21b0833ee4fea43f8ce3466e318f0e99b3231cd8dd9ac4793135e131b407262c",
+      "markdown": "73a37ed048eeba47f58640be5f702021a7a4b53e13fdb82affb1be8ebf0a5c7f"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
+    "summary": "异能者决战，璃落被永久拘束后投入迷宫中",
+    "summarySource": "frontmatter.summary",
+    "title": "永拘迷宫",
+    "type": "story-node",
+    "world": "1-浮光掠影"
+  },
+  {
+    "childKeys": [],
+    "id": "world-1-glimmering-glance-fantasy-world-adventure",
+    "indexVersion": 1,
+    "key": "world-1-glimmering-glance-fantasy-world-adventure",
+    "markdownPath": "src/game/data/story_outline/1-modern/4.2.2-幻想世界冒险.md",
+    "missingItems": [
+      "设计｜幻想世界冒险·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜幻想世界冒险·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜幻想世界冒险·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "地图｜幻想世界冒险·场景结构｜缺少实际地点、区域连接、道路限制与返回变化"
+    ],
+    "parentKey": "world-1-glimmering-glance-luxury-theater",
+    "series": "1-modern",
+    "side": true,
+    "sourceHashes": {
+      "json": "21b0833ee4fea43f8ce3466e318f0e99b3231cd8dd9ac4793135e131b407262c",
+      "markdown": "c2650a3ea8076ea60002fbc9caec7d73b740f6873bd56ea8bb823d0304fe3c16"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
+    "summary": "幻想世界冒险的现有构想。",
+    "summarySource": "frontmatter.summary",
+    "title": "幻想世界冒险",
+    "type": "story-node",
+    "world": "1-浮光掠影"
+  },
+  {
+    "characters": [
+      "林雨薇",
+      "莫语"
+    ],
+    "childKeys": [],
+    "id": "world-1-glimmering-glance-flexibility",
+    "indexVersion": 1,
+    "key": "world-1-glimmering-glance-flexibility",
+    "markdownPath": "src/game/data/story_outline/1-modern/1.2.1-柔韧性练习.md",
+    "maturity": "大纲草稿",
+    "missingItems": [
+      "设计｜柔韧性练习·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜柔韧性练习·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜柔韧性练习·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "地图｜柔韧性练习·场景结构｜缺少实际地点、区域连接、道路限制与返回变化"
+    ],
+    "parentKey": "world-1-glimmering-glance-club",
+    "series": "1-modern",
+    "side": true,
+    "sourceHashes": {
+      "json": "21b0833ee4fea43f8ce3466e318f0e99b3231cd8dd9ac4793135e131b407262c",
+      "markdown": "8d353be66582e9c4754f553cea91a8744d34fb7d674bafbfa4b144efcc05f1c5"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
+    "summary": "选修舞蹈课。",
+    "summarySource": "frontmatter.summary",
+    "title": "柔韧性练习",
+    "type": "story-node",
+    "world": "1-浮光掠影"
+  },
+  {
+    "childKeys": [
+      "world-1-glimmering-glance-black-rose-sanatorium"
+    ],
+    "id": "world-1-glimmering-glance-fog-capital-strangeness",
+    "indexVersion": 1,
+    "key": "world-1-glimmering-glance-fog-capital-strangeness",
+    "markdownPath": "src/game/data/story_outline/1-modern/3.5.2-雾都怪奇.md",
+    "maturity": "大纲",
+    "missingItems": [
+      "设计｜雾都怪奇·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜雾都怪奇·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜雾都怪奇·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "地图｜雾都怪奇·场景结构｜缺少实际地点、区域连接、道路限制与返回变化"
+    ],
+    "parentKey": "world-1-glimmering-glance-red-white-marriage-contract",
+    "series": "1-modern",
+    "side": false,
+    "sourceHashes": {
+      "json": "21b0833ee4fea43f8ce3466e318f0e99b3231cd8dd9ac4793135e131b407262c",
+      "markdown": "a16faa5a35f901775120b78ab8abee4e900d35732a7df9ed7f1cfab1279293b9"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
+    "summary": "维多利亚风格的20世纪伦敦冒险故事",
+    "summarySource": "frontmatter.summary",
+    "title": "雾都怪奇",
+    "type": "story-node",
+    "world": "1-浮光掠影"
+  },
+  {
+    "childKeys": [
+      "world-1-glimmering-glance-sinkhole-rainforest-expedition"
+    ],
+    "id": "world-1-glimmering-glance-fog-sea-lone-island-expedition",
+    "indexVersion": 1,
+    "key": "world-1-glimmering-glance-fog-sea-lone-island-expedition",
+    "markdownPath": "src/game/data/story_outline/1-modern/2.6.1-雾海孤岛探险.md",
+    "maturity": "大纲",
+    "missingItems": [
+      "设计｜雾海孤岛探险·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜雾海孤岛探险·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜雾海孤岛探险·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "地图｜雾海孤岛探险·场景结构｜缺少实际地点、区域连接、道路限制与返回变化"
+    ],
+    "parentKey": "world-1-glimmering-glance-world-expedition-team",
+    "series": "1-modern",
+    "side": false,
+    "sourceHashes": {
+      "json": "21b0833ee4fea43f8ce3466e318f0e99b3231cd8dd9ac4793135e131b407262c",
+      "markdown": "227e7c0eefa544ada58d77c6c7ff252d480df5265faeeb728e80e36d69ca335c"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
+    "summary": "古老文明，科考队与殖民者的碰撞",
+    "summarySource": "frontmatter.summary",
+    "title": "雾海孤岛探险",
+    "type": "story-node",
+    "world": "1-浮光掠影"
+  },
+  {
+    "childKeys": [
+      "world-1-glimmering-glance-cement-shoes"
+    ],
+    "id": "world-1-glimmering-glance-gray-alley-adventure",
+    "indexVersion": 1,
+    "key": "world-1-glimmering-glance-gray-alley-adventure",
+    "locations": [
+      "海顿联邦",
+      "灰巷"
+    ],
+    "maturity": "主线任务",
+    "parentKey": "world-1-glimmering-glance-sinkhole-rainforest-expedition",
+    "series": "1-modern",
+    "side": false,
+    "sourceHashes": {
+      "json": "21b0833ee4fea43f8ce3466e318f0e99b3231cd8dd9ac4793135e131b407262c"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
+    "summary": "暗巷与废墟交织的地下都市，暴力与无序像潮水般涌动。",
+    "summarySource": "source-json.summary",
+    "title": "灰巷历险",
+    "type": "story-node",
+    "world": "1-浮光掠影"
+  },
+  {
+    "childKeys": [
+      "world-1-glimmering-glance-night-school-ghost-stories",
+      "world-1-glimmering-glance-urban-rumors"
+    ],
+    "id": "world-1-glimmering-glance-grudge-ancient-tree",
+    "indexVersion": 1,
+    "key": "world-1-glimmering-glance-grudge-ancient-tree",
+    "markdownPath": "src/game/data/story_outline/1-modern/1.6-满怨古树.md",
+    "maturity": "灵感",
+    "missingItems": [
+      "设计｜满怨古树·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜满怨古树·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜满怨古树·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "地图｜满怨古树·场景结构｜缺少实际地点、区域连接、道路限制与返回变化"
+    ],
+    "parentKey": "world-1-glimmering-glance-old-dormitory",
+    "series": "1-modern",
+    "side": false,
+    "sourceHashes": {
+      "json": "21b0833ee4fea43f8ce3466e318f0e99b3231cd8dd9ac4793135e131b407262c",
+      "markdown": "b7be260f1b6495a9deaa28522e8f1bf333ead00abee353d65fd15c8f1610def5"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
+    "summary": "荆锁会事件完结，与校园地下的灵异巨树缠斗。",
+    "summarySource": "frontmatter.summary",
+    "title": "满怨古树",
+    "type": "story-node",
+    "world": "1-浮光掠影"
+  },
+  {
+    "characters": [
+      "璃落",
+      "沈芷",
+      "许知遥",
+      "无名女鬼"
+    ],
+    "childKeys": [
+      "world-1-glimmering-glance-campus-arrival"
+    ],
+    "gameplayRefs": [
+      "gameplay-119"
+    ],
+    "id": "world-1-glimmering-glance-hospital-awakening",
+    "indexVersion": 1,
+    "key": "world-1-glimmering-glance-hospital-awakening",
+    "locations": [
+      "荆江市",
+      "市医院"
+    ],
+    "markdownPath": "src/game/data/story_outline/1-modern/1.0.1-病房苏醒.md",
+    "maturity": "大纲",
+    "missingItems": [
+      "可制作｜病房苏醒·梦境种子植入闪回｜素材已齐，可用代码光效、失真与切镜串联霸凌系列 CG 快速闪回，表现植入和创伤记忆被短暂激活",
+      "场景图｜病房苏醒·医院场景｜缺少市医院单人病房、封闭活动区与室外庭院三组正式场景图；它们用于互动小说背景切换，不是可行走地图",
+      "立绘｜病房苏醒·恢复评估｜缺少年轻女医生许知遥和无名女鬼的正式外观设定与立绘",
+      "对话｜病房苏醒·灵异辨识训练｜缺少璃落、沈芷、许知遥与无名女鬼的正式台词及对应对话 ID",
+      "音频｜病房苏醒·鬼魂接近与记忆切换｜缺少环境声减弱、耳鸣、低语、梦境切换和恢复提示的音效需求确认"
+    ],
+    "parentKey": "world-1-glimmering-glance-jingsuo-event",
+    "series": "1-modern",
+    "side": false,
+    "sourceHashes": {
+      "json": "21b0833ee4fea43f8ce3466e318f0e99b3231cd8dd9ac4793135e131b407262c",
+      "markdown": "b8905fec775adb4533eb546518bf824e3cdcab27a66fd1c076a1159d93b8ac98"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
+    "summary": "璃落获救后在市医院接受观察，从低攻击性时的轻度约束与封闭放风，到梦境种子植入后因副作用看见鬼魂、被女鬼惊吓而误伤他人、升级病房约束，最终在严密保护下重新外出放风并学会辨识鬼魂。",
+    "summarySource": "frontmatter.summary",
+    "title": "病房苏醒",
+    "type": "story-node",
+    "world": "1-浮光掠影"
+  },
+  {
+    "characters": [
+      "林雨薇",
+      "陈思雨"
+    ],
+    "childKeys": [],
+    "id": "world-1-glimmering-glance-hot-spring",
+    "indexVersion": 1,
+    "key": "world-1-glimmering-glance-hot-spring",
+    "locations": [
+      "翡翠岛"
+    ],
+    "markdownPath": "src/game/data/story_outline/1-modern/1.8-温泉度假酒店.md",
+    "maturity": "大纲草稿",
+    "missingItems": [
+      "设计｜温泉度假酒店·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜温泉度假酒店·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜温泉度假酒店·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解"
+    ],
+    "parentKey": "world-1-glimmering-glance-cruise",
+    "series": "1-modern",
+    "side": false,
+    "sourceHashes": {
+      "json": "21b0833ee4fea43f8ce3466e318f0e99b3231cd8dd9ac4793135e131b407262c",
+      "markdown": "8f22131773d6bdb0cc866f3852b7ad56ba754d404c9c99d7cf708077048e4f72"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
+    "summary": "温泉里的比赛。",
+    "summarySource": "frontmatter.summary",
+    "title": "温泉度假酒店",
+    "type": "story-node",
+    "world": "1-浮光掠影"
+  },
+  {
+    "childKeys": [
+      "world-1-glimmering-glance-maid-massage-shop",
+      "world-1-glimmering-glance-trafficker"
+    ],
+    "id": "world-1-glimmering-glance-hotel-fright",
+    "indexVersion": 1,
+    "key": "world-1-glimmering-glance-hotel-fright",
+    "locations": [
+      "荆江市"
+    ],
+    "markdownPath": "src/game/data/story_outline/1-modern/2.3-酒店惊魂.md",
+    "missingItems": [
+      "设计｜酒店惊魂·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜酒店惊魂·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜酒店惊魂·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解"
+    ],
+    "parentKey": "world-1-glimmering-glance-maid-hotel",
+    "series": "1-modern",
+    "side": false,
+    "sourceHashes": {
+      "json": "21b0833ee4fea43f8ce3466e318f0e99b3231cd8dd9ac4793135e131b407262c",
+      "markdown": "d3635751adee3f06dc2bb1b3cddb0959e3baee0f474bcfc43efd0b2d565b1271"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
+    "summary": "在和女仆小姐姐们入住的酒店中，遇到伪装成灵异事件的异能者，差点被抓走。",
+    "summarySource": "frontmatter.summary",
+    "title": "酒店惊魂",
+    "type": "story-node",
+    "world": "1-浮光掠影"
+  },
+  {
+    "characters": [
+      "黄翠"
+    ],
+    "childKeys": [
+      "world-1-glimmering-glance-jingjiang-geomancy",
+      "world-1-glimmering-glance-snow-train"
+    ],
+    "id": "world-1-glimmering-glance-huaiwan-village",
+    "indexVersion": 1,
+    "key": "world-1-glimmering-glance-huaiwan-village",
+    "locations": [
+      "槐湾村"
+    ],
+    "markdownPath": "src/game/data/story_outline/1-modern/2.5-槐湾村.md",
+    "maturity": "大纲草稿",
+    "missingItems": [
+      "设计｜槐湾村·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜槐湾村·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜槐湾村·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解"
+    ],
+    "parentKey": "world-1-glimmering-glance-trafficker",
+    "series": "1-modern",
+    "side": false,
+    "sourceHashes": {
+      "json": "21b0833ee4fea43f8ce3466e318f0e99b3231cd8dd9ac4793135e131b407262c",
+      "markdown": "2236e3c4971bf68503d27f5230cfaca49842022ce2e4db8acbd9658a1eda3b55"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
+    "summary": "村子里的璃落被捆着授课。",
+    "summarySource": "frontmatter.summary",
+    "title": "槐湾村",
+    "type": "story-node",
+    "world": "1-浮光掠影"
+  },
+  {
+    "characters": [
+      "林雨薇",
+      "陈思雨",
+      "林沐遥"
+    ],
+    "childKeys": [],
+    "id": "world-1-glimmering-glance-inflatable-castle",
+    "indexVersion": 1,
+    "key": "world-1-glimmering-glance-inflatable-castle",
+    "locations": [
+      "荆江市",
+      "充气城堡"
+    ],
+    "markdownPath": "src/game/data/story_outline/1-modern/2.2.2-充气城堡.md",
+    "maturity": "大纲草稿",
+    "missingItems": [
+      "设计｜充气城堡·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜充气城堡·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜充气城堡·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解"
+    ],
+    "parentKey": "world-1-glimmering-glance-maid-hotel",
+    "series": "1-modern",
+    "side": true,
+    "sourceHashes": {
+      "json": "21b0833ee4fea43f8ce3466e318f0e99b3231cd8dd9ac4793135e131b407262c",
+      "markdown": "0bfb7f0c1cd9025af4a2a3f8a492fbfe88fc4e665a5f9066164531ac4fcd83ff"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
+    "summary": "和社团大家在充气城堡玩闹。",
+    "summarySource": "frontmatter.summary",
+    "title": "充气城堡",
+    "type": "story-node",
+    "world": "1-浮光掠影"
+  },
+  {
+    "childKeys": [
+      "world-1-glimmering-glance-variety-show-fright"
+    ],
+    "id": "world-1-glimmering-glance-jingjiang-geomancy",
+    "indexVersion": 1,
+    "key": "world-1-glimmering-glance-jingjiang-geomancy",
+    "markdownPath": "src/game/data/story_outline/1-modern/2.5.1.1-荆江堪舆.md",
+    "maturity": "大纲",
+    "missingItems": [
+      "设计｜荆江堪舆·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜荆江堪舆·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜荆江堪舆·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "地图｜荆江堪舆·场景结构｜缺少实际地点、区域连接、道路限制与返回变化"
+    ],
+    "parentKey": "world-1-glimmering-glance-huaiwan-village",
+    "series": "1-modern",
+    "side": false,
+    "sourceHashes": {
+      "json": "21b0833ee4fea43f8ce3466e318f0e99b3231cd8dd9ac4793135e131b407262c",
+      "markdown": "672a692fad36d352e8408162ffb1168b5cdc831ba612b2e5330ba890b614c24a"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
+    "summary": "跟随大师探索荆江市的阵眼。",
+    "summarySource": "frontmatter.summary",
+    "title": "荆江堪舆",
+    "type": "story-node",
+    "world": "1-浮光掠影"
+  },
+  {
+    "childKeys": [
+      "world-1-glimmering-glance-hospital-awakening"
+    ],
+    "id": "world-1-glimmering-glance-jingsuo-event",
+    "indexVersion": 1,
+    "key": "world-1-glimmering-glance-jingsuo-event",
+    "locations": [
+      "荆江市",
+      "荆南大学"
+    ],
+    "maturity": "主线任务",
+    "parentKey": "world-1-glimmering-glance",
+    "series": "1-modern",
+    "side": false,
+    "sourceHashes": {
+      "json": "21b0833ee4fea43f8ce3466e318f0e99b3231cd8dd9ac4793135e131b407262c"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
+    "summary": "每个学校，都有属于自己的灵异传说。",
+    "summarySource": "source-json.summary",
+    "title": "荆锁会事件",
+    "type": "story-node",
+    "world": "1-浮光掠影"
+  },
+  {
+    "characters": [
+      "璃落"
+    ],
+    "childKeys": [],
+    "gameplayRefs": [
+      "gameplay-002"
+    ],
+    "id": "world-1-glimmering-glance-liminal-space",
+    "indexVersion": 1,
+    "key": "world-1-glimmering-glance-liminal-space",
+    "locations": [
+      "荆江市",
+      "阈限空间",
+      "永拘迷宫"
+    ],
+    "markdownPath": "src/game/data/story_outline/1-modern/4.3.1-阈限空间.md",
+    "missingItems": [
+      "流程｜阈限空间·首次跨域入口｜缺少璃落在永拘迷宫中从哪个具体区域、因何种异常现象第一次穿过能力边界",
+      "衔接｜阈限空间·奇效回收｜缺少首次找到的出口通往何处，以及这条跨域通路后来如何帮助璃落推进永拘迷宫主线",
+      "设计｜阈限空间·首批层级｜缺少首版可玩内容准备采用的层级及各层稳定空间规则、出口辨识方式与结束点",
+      "状态｜阈限空间·探索记录｜缺少重复进入时会保留哪些长期进度，例如已发现层级、出口记录、线索或收集物",
+      "玩法｜阈限空间·拘束差异｜缺少不同拘束组合对移动、调查、开门、躲避与通过障碍的具体影响",
+      "人物｜阈限空间·永拘迷宫建立者｜缺少建立永拘迷宫的异能者身份、能力边界，以及其本人是否知道阈限网络存在"
+    ],
+    "parentKey": "world-1-glimmering-glance-eternal-restraint-maze",
+    "series": "1-modern",
+    "side": true,
+    "sourceHashes": {
+      "json": "21b0833ee4fea43f8ce3466e318f0e99b3231cd8dd9ac4793135e131b407262c",
+      "markdown": "a4c03a132582f7aa739b06fcab6dc9b1a73e1e6f15e5fdfde53d8987f8738a19"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
+    "summary": "所有异能者的能力无意间串联而成的阈限网络；永拘迷宫只是其中一名异能者建立的子域，璃落在主线中独自误入，后续可将它作为无失败条件的可重复探索大迷宫。",
+    "summarySource": "frontmatter.summary",
+    "title": "阈限空间",
+    "type": "story-node",
+    "world": "1-浮光掠影"
+  },
+  {
+    "characters": [
+      "苏婉儿",
+      "夜栈",
+      "绯总管"
+    ],
+    "childKeys": [
+      "world-1-glimmering-glance-luxury-theater"
+    ],
+    "id": "world-1-glimmering-glance-little-maid-team",
+    "indexVersion": 1,
+    "key": "world-1-glimmering-glance-little-maid-team",
+    "markdownPath": "src/game/data/story_outline/1-modern/4.1-小小女仆团.md",
+    "maturity": "大纲草稿",
+    "missingItems": [
+      "设计｜小小女仆团·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜小小女仆团·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜小小女仆团·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "地图｜小小女仆团·场景结构｜缺少实际地点、区域连接、道路限制与返回变化"
+    ],
+    "parentKey": "world-1-glimmering-glance-return-to-jingjiang",
+    "series": "1-modern",
+    "side": false,
+    "sourceHashes": {
+      "json": "21b0833ee4fea43f8ce3466e318f0e99b3231cd8dd9ac4793135e131b407262c",
+      "markdown": "e29fda9cb5fb153de98647c0d84d7560856cda85cdfe7f3ab8d923885773bbeb"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
+    "summary": "被迷你女仆捆绑。",
+    "summarySource": "frontmatter.summary",
+    "title": "小小女仆团",
+    "type": "story-node",
+    "world": "1-浮光掠影"
+  },
+  {
+    "characters": [
+      "程见微",
+      "苏婉儿"
+    ],
+    "childKeys": [
+      "world-1-glimmering-glance-maid-hotel",
+      "world-1-glimmering-glance-model"
+    ],
+    "id": "world-1-glimmering-glance-little-prisoner",
+    "indexVersion": 1,
+    "key": "world-1-glimmering-glance-little-prisoner",
+    "locations": [
+      "荆江市",
+      "江湾广场"
+    ],
+    "markdownPath": "src/game/data/story_outline/1-modern/2.1-小囚犯出圈记.md",
+    "maturity": "大纲草稿",
+    "missingItems": [
+      "设计｜小囚犯出圈记·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜小囚犯出圈记·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜小囚犯出圈记·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解"
+    ],
+    "parentKey": "world-1-glimmering-glance-anomaly-disaster-response-organization",
+    "series": "1-modern",
+    "side": false,
+    "sourceHashes": {
+      "json": "21b0833ee4fea43f8ce3466e318f0e99b3231cd8dd9ac4793135e131b407262c",
+      "markdown": "12d038de395564f399c87b77079b5545eed01793a9fbf8a6128fb01bd634b3be"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
+    "summary": "体验警铐解不开，偶遇易容后的苏婉儿，被她当做人质加固束缚。",
+    "summarySource": "frontmatter.summary",
+    "title": "小囚犯出圈记",
+    "type": "story-node",
+    "world": "1-浮光掠影"
+  },
+  {
+    "childKeys": [
+      "world-1-glimmering-glance-fantasy-world-adventure",
+      "world-1-glimmering-glance-silent-correction-center"
+    ],
+    "id": "world-1-glimmering-glance-luxury-theater",
+    "indexVersion": 1,
+    "key": "world-1-glimmering-glance-luxury-theater",
+    "markdownPath": "src/game/data/story_outline/1-modern/4.2-浮华剧场.md",
+    "missingItems": [
+      "设计｜浮华剧场·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜浮华剧场·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜浮华剧场·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "地图｜浮华剧场·场景结构｜缺少实际地点、区域连接、道路限制与返回变化"
+    ],
+    "parentKey": "world-1-glimmering-glance-little-maid-team",
+    "series": "1-modern",
+    "side": false,
+    "sourceHashes": {
+      "json": "21b0833ee4fea43f8ce3466e318f0e99b3231cd8dd9ac4793135e131b407262c",
+      "markdown": "6c09ed90ee9f002cfe5c295632587f8a1233becbc60fa2c912ab34b5f86ebad6"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
+    "summary": "浮华剧场的现有构想。",
+    "summarySource": "frontmatter.summary",
+    "title": "浮华剧场",
+    "type": "story-node",
+    "world": "1-浮光掠影"
+  },
+  {
+    "characters": [
+      "苏婉儿"
+    ],
+    "childKeys": [
+      "world-1-glimmering-glance-hotel-fright",
+      "world-1-glimmering-glance-inflatable-castle",
+      "world-1-glimmering-glance-movie-bound-stand-in"
+    ],
+    "id": "world-1-glimmering-glance-maid-hotel",
+    "indexVersion": 1,
+    "key": "world-1-glimmering-glance-maid-hotel",
+    "markdownPath": "src/game/data/story_outline/1-modern/2.2-女仆酒店.md",
+    "maturity": "大纲草稿",
+    "missingItems": [
+      "设计｜女仆酒店·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜女仆酒店·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜女仆酒店·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "地图｜女仆酒店·场景结构｜缺少实际地点、区域连接、道路限制与返回变化"
+    ],
+    "parentKey": "world-1-glimmering-glance-little-prisoner",
+    "series": "1-modern",
+    "side": false,
+    "sourceHashes": {
+      "json": "21b0833ee4fea43f8ce3466e318f0e99b3231cd8dd9ac4793135e131b407262c",
+      "markdown": "015f15d87791692687b8df9f20e88edd21886914a4add0b767762bd58ca4284c"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
+    "summary": "女仆酒店中被女仆们抓捕。",
+    "summarySource": "frontmatter.summary",
+    "title": "女仆酒店",
+    "type": "story-node",
+    "world": "1-浮光掠影"
+  },
+  {
+    "childKeys": [],
+    "id": "world-1-glimmering-glance-maid-massage-shop",
+    "indexVersion": 1,
+    "key": "world-1-glimmering-glance-maid-massage-shop",
+    "markdownPath": "src/game/data/story_outline/1-modern/2.3.1-女仆按摩店.md",
+    "maturity": "大纲草稿",
+    "missingItems": [
+      "设计｜女仆按摩店·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜女仆按摩店·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜女仆按摩店·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "地图｜女仆按摩店·场景结构｜缺少实际地点、区域连接、道路限制与返回变化"
+    ],
+    "parentKey": "world-1-glimmering-glance-hotel-fright",
+    "series": "1-modern",
+    "side": true,
+    "sourceHashes": {
+      "json": "21b0833ee4fea43f8ce3466e318f0e99b3231cd8dd9ac4793135e131b407262c",
+      "markdown": "c136d2b68fc9ff89e439881c72afe7663b78d49eb48150937d051394697960e1"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
+    "summary": "长期开放和反复体验的女仆按摩服务",
+    "summarySource": "frontmatter.summary",
+    "title": "女仆按摩店",
+    "type": "story-node",
+    "world": "1-浮光掠影"
+  },
+  {
+    "childKeys": [],
+    "id": "world-1-glimmering-glance-midnight-city-exploration",
+    "indexVersion": 1,
+    "key": "world-1-glimmering-glance-midnight-city-exploration",
+    "locations": [
+      "荆江市"
+    ],
+    "markdownPath": "src/game/data/story_outline/1-modern/2.1-深夜城市探险.md",
+    "maturity": "灵感",
+    "missingItems": [
+      "设计｜深夜城市探险·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜深夜城市探险·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜深夜城市探险·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解"
+    ],
+    "parentKey": "world-1-glimmering-glance-urban-rumors",
+    "series": "1-modern",
+    "side": true,
+    "sourceHashes": {
+      "json": "21b0833ee4fea43f8ce3466e318f0e99b3231cd8dd9ac4793135e131b407262c",
+      "markdown": "f8675fdcdfb945b6da76582288a695065171be1cca8dd21b463a583003870eec"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
+    "summary": "都市夜间职业背景下的普通绑架小支线合集。",
+    "summarySource": "frontmatter.summary",
+    "title": "深夜城市探险",
+    "type": "story-node",
+    "world": "1-浮光掠影"
+  },
+  {
+    "childKeys": [],
+    "id": "world-1-glimmering-glance-mirror-person",
+    "indexVersion": 1,
+    "key": "world-1-glimmering-glance-mirror-person",
+    "markdownPath": "src/game/data/story_outline/1-modern/1.4.1-镜中人.md",
+    "maturity": "大纲草稿",
+    "missingItems": [
+      "设计｜镜中人·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜镜中人·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜镜中人·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "地图｜镜中人·场景结构｜缺少实际地点、区域连接、道路限制与返回变化"
+    ],
+    "parentKey": "world-1-glimmering-glance-stage-performance",
+    "series": "1-modern",
+    "side": true,
+    "sourceHashes": {
+      "json": "21b0833ee4fea43f8ce3466e318f0e99b3231cd8dd9ac4793135e131b407262c",
+      "markdown": "47cf3ece2b7fab06a08a6c217dc0d9fa32607f576399ff054dfef385788ee4e1"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
+    "summary": "能够替代你的身份的镜子鬼。",
+    "summarySource": "frontmatter.summary",
+    "title": "镜中人",
+    "type": "story-node",
+    "world": "1-浮光掠影"
+  },
+  {
+    "characters": [
+      "艾琳",
+      "沈芷",
+      "欣雨"
+    ],
+    "childKeys": [
+      "world-1-glimmering-glance-rust-salt"
+    ],
+    "id": "world-1-glimmering-glance-missing",
+    "indexVersion": 1,
+    "key": "world-1-glimmering-glance-missing",
+    "locations": [
+      "海顿联邦",
+      "格兰港"
+    ],
+    "markdownPath": "src/game/data/story_outline/1-modern/3.2-失联.md",
+    "maturity": "大纲草稿",
+    "missingItems": [
+      "设计｜失联·章节边界｜已确认为完整主线章节，仍缺少主要区域数量与核心机制差异说明",
+      "玩法｜失联·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜失联·独自脱逃｜缺少璃落从绑架车辆或转运点脱身的具体方式，以及她在看见欣雨前已经逃到哪一步",
+      "人物｜失联·欣雨被捕｜缺少欣雨从《游轮》之后落入人口贩运链的原因、被捕时间及她与璃落重逢时的状态",
+      "流程｜失联·折返营救｜缺少璃落折返后采用的救人办法、为何失败，以及她具体如何受伤并被重新抓获"
+    ],
+    "parentKey": "world-1-glimmering-glance-cement-shoes",
+    "series": "1-modern",
+    "side": false,
+    "sourceHashes": {
+      "json": "21b0833ee4fea43f8ce3466e318f0e99b3231cd8dd9ac4793135e131b407262c",
+      "markdown": "db9f2603a7f56d482bdd40d93307f765a5d493c34f1d6b3267dec1f70ca78bd3"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
+    "summary": "璃落在国外 SM 酒吧遭绑架后本可独自逃生，却因在被贩运者中看见欣雨而折返救人，最终负伤被抓回并押上运奴船。",
+    "summarySource": "frontmatter.summary",
+    "title": "失联",
+    "type": "story-node",
+    "world": "1-浮光掠影"
+  },
+  {
+    "childKeys": [],
+    "id": "world-1-glimmering-glance-model",
+    "indexVersion": 1,
+    "key": "world-1-glimmering-glance-model",
+    "locations": [
+      "荆江市"
+    ],
+    "markdownPath": "src/game/data/story_outline/1-modern/2.1.1-紧缚模特.md",
+    "maturity": "大纲草稿",
+    "missingItems": [
+      "设计｜紧缚模特·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜紧缚模特·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜紧缚模特·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解"
+    ],
+    "parentKey": "world-1-glimmering-glance-little-prisoner",
+    "series": "1-modern",
+    "side": true,
+    "sourceHashes": {
+      "json": "21b0833ee4fea43f8ce3466e318f0e99b3231cd8dd9ac4793135e131b407262c",
+      "markdown": "8ef34b5274a7fad7cf6b9634426a1eba4c79efeca8e0933d392062e4ce2b5d24"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
+    "summary": "拘束用具模特。",
+    "summarySource": "frontmatter.summary",
+    "title": "紧缚模特",
+    "type": "story-node",
+    "world": "1-浮光掠影"
+  },
+  {
+    "characters": [
+      "苏婉儿"
+    ],
+    "childKeys": [],
+    "id": "world-1-glimmering-glance-movie-bound-stand-in",
+    "indexVersion": 1,
+    "key": "world-1-glimmering-glance-movie-bound-stand-in",
+    "locations": [
+      "荆江市"
+    ],
+    "markdownPath": "src/game/data/story_outline/1-modern/2.2.1-电影绑替兼职.md",
+    "maturity": "灵感",
+    "missingItems": [
+      "设计｜电影绑替兼职·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜电影绑替兼职·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜电影绑替兼职·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解"
+    ],
+    "parentKey": "world-1-glimmering-glance-maid-hotel",
+    "series": "1-modern",
+    "side": true,
+    "sourceHashes": {
+      "json": "21b0833ee4fea43f8ce3466e318f0e99b3231cd8dd9ac4793135e131b407262c",
+      "markdown": "feba20b8984a36aa210b78c36fb8d2d2a38630824a217a35580f11722e59f35e"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
+    "summary": "璃落接到片场绑替兼职，在电影拍摄中担任被拘束替身。",
+    "summarySource": "frontmatter.summary",
+    "title": "电影绑替兼职",
+    "type": "story-node",
+    "world": "1-浮光掠影"
+  },
+  {
+    "childKeys": [],
+    "id": "world-1-glimmering-glance-night-school-ghost-stories",
+    "indexVersion": 1,
+    "key": "world-1-glimmering-glance-night-school-ghost-stories",
+    "markdownPath": "src/game/data/story_outline/1-modern/1.6.1-夜校怪谈.md",
+    "maturity": "灵感",
+    "missingItems": [
+      "设计｜夜校怪谈·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜夜校怪谈·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜夜校怪谈·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "地图｜夜校怪谈·场景结构｜缺少实际地点、区域连接、道路限制与返回变化"
+    ],
+    "parentKey": "world-1-glimmering-glance-grudge-ancient-tree",
+    "series": "1-modern",
+    "side": true,
+    "sourceHashes": {
+      "json": "21b0833ee4fea43f8ce3466e318f0e99b3231cd8dd9ac4793135e131b407262c",
+      "markdown": "aca208cedf2fadbfd2c3d30802e96da2035dfadf247215264fbab615350749f7"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
+    "summary": "校园灵异支线",
+    "summarySource": "frontmatter.summary",
+    "title": "夜校怪谈",
+    "type": "story-node",
+    "world": "1-浮光掠影"
+  },
+  {
+    "childKeys": [
+      "world-1-glimmering-glance-rainy-ancient-city"
+    ],
+    "id": "world-1-glimmering-glance-old-capital-echo",
+    "indexVersion": 1,
+    "key": "world-1-glimmering-glance-old-capital-echo",
+    "maturity": "主线任务",
+    "parentKey": "world-1-glimmering-glance-black-oak-night-hunt",
+    "series": "1-modern",
+    "side": false,
+    "sourceHashes": {
+      "json": "21b0833ee4fea43f8ce3466e318f0e99b3231cd8dd9ac4793135e131b407262c"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
+    "summary": "旧都遗留的回声，把监狱风云之后的线索重新引向荆江市。",
+    "summarySource": "source-json.summary",
+    "title": "旧都回声",
+    "type": "story-node",
+    "world": "1-浮光掠影"
+  },
+  {
+    "childKeys": [],
+    "id": "world-1-glimmering-glance-old-case",
+    "indexVersion": 1,
+    "key": "world-1-glimmering-glance-old-case",
+    "locations": [
+      "荆南大学"
+    ],
+    "markdownPath": "src/game/data/story_outline/1-modern/1.7-旧案.md",
+    "missingItems": [
+      "设计｜旧案·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜旧案·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜旧案·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解"
+    ],
+    "parentKey": "world-1-glimmering-glance-sensory-trial",
+    "series": "1-modern",
+    "side": false,
+    "sourceHashes": {
+      "json": "21b0833ee4fea43f8ce3466e318f0e99b3231cd8dd9ac4793135e131b407262c",
+      "markdown": "71a49cc055020115fd4a4eee9f578afbbe9428e5b251bfe2a8a5e97c1e2fe326"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
+    "summary": "荆锁会副本，一件校园霸凌旧案复现。",
+    "summarySource": "frontmatter.summary",
+    "title": "旧案",
+    "type": "story-node",
+    "world": "1-浮光掠影"
+  },
+  {
+    "characters": [
+      "林沐遥",
+      "黄毛女孩"
+    ],
+    "childKeys": [
+      "world-1-glimmering-glance-grudge-ancient-tree",
+      "world-1-glimmering-glance-sensory-trial"
+    ],
+    "id": "world-1-glimmering-glance-old-dormitory",
+    "indexVersion": 1,
+    "key": "world-1-glimmering-glance-old-dormitory",
+    "locations": [
+      "荆江市",
+      "荆南大学",
+      "宿舍旧楼",
+      "废弃厂房"
+    ],
+    "markdownPath": "src/game/data/story_outline/1-modern/1.5-宿舍旧楼.md",
+    "maturity": "大纲",
+    "missingItems": [
+      "设计｜宿舍旧楼·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜宿舍旧楼·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜宿舍旧楼·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "支线｜黄毛女孩·后续友情趣事｜已确认璃落会与黄毛女孩成为朋友并发展趣事支线，缺少正式姓名、进入条件、具体事件与结局"
+    ],
+    "parentKey": "world-1-glimmering-glance-rope-spirit-game",
+    "series": "1-modern",
+    "side": false,
+    "sourceHashes": {
+      "json": "21b0833ee4fea43f8ce3466e318f0e99b3231cd8dd9ac4793135e131b407262c",
+      "markdown": "6f140484cd03b07ec826b593f5da69861ed34a9d973316132bea4616136a0758"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
+    "summary": "璃落与林沐遥调查宿舍旧楼和废弃厂房，恢复校园霸凌旧案记忆，并被一名因漏写保护费收据而折返的黄毛女孩阴差阳错救下。",
+    "summarySource": "frontmatter.summary",
+    "title": "宿舍旧楼",
+    "type": "story-node",
+    "world": "1-浮光掠影"
+  },
+  {
+    "childKeys": [
+      "world-1-glimmering-glance-black-oak-night-hunt"
+    ],
+    "id": "world-1-glimmering-glance-prison-storm",
+    "indexVersion": 1,
+    "key": "world-1-glimmering-glance-prison-storm",
+    "locations": [
+      "海顿联邦",
+      "灰巷"
+    ],
+    "markdownPath": "src/game/data/story_outline/1-modern/3.4-监狱风云.md",
+    "maturity": "大纲草稿",
+    "missingItems": [
+      "设计｜监狱风云·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜监狱风云·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜监狱风云·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解"
+    ],
+    "parentKey": "world-1-glimmering-glance-rust-salt",
+    "series": "1-modern",
+    "side": false,
+    "sourceHashes": {
+      "json": "21b0833ee4fea43f8ce3466e318f0e99b3231cd8dd9ac4793135e131b407262c",
+      "markdown": "b3209f9cb05da62f1e2e8110dac8003ba617286556bdb7ba7f4cf50936aa366d"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
+    "summary": "璃落第一次进灰巷监狱",
+    "summarySource": "frontmatter.summary",
+    "title": "监狱风云",
+    "type": "story-node",
+    "world": "1-浮光掠影"
+  },
+  {
+    "childKeys": [
+      "world-1-glimmering-glance-red-white-marriage-contract"
+    ],
+    "id": "world-1-glimmering-glance-rainy-ancient-city",
+    "indexVersion": 1,
+    "key": "world-1-glimmering-glance-rainy-ancient-city",
+    "markdownPath": "src/game/data/story_outline/1-modern/3.5.1-烟雨古城.md",
+    "maturity": "大纲",
+    "missingItems": [
+      "设计｜烟雨古城·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜烟雨古城·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜烟雨古城·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "地图｜烟雨古城·场景结构｜缺少实际地点、区域连接、道路限制与返回变化"
+    ],
+    "parentKey": "world-1-glimmering-glance-old-capital-echo",
+    "series": "1-modern",
+    "side": false,
+    "sourceHashes": {
+      "json": "21b0833ee4fea43f8ce3466e318f0e99b3231cd8dd9ac4793135e131b407262c",
+      "markdown": "1d32250e3473c0e5f953d8085af4e2dde0e582508c02905a9c335bdf9dc5c150"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
+    "summary": "民国冒险故事",
+    "summarySource": "frontmatter.summary",
+    "title": "烟雨古城",
+    "type": "story-node",
+    "world": "1-浮光掠影"
+  },
+  {
+    "childKeys": [],
+    "id": "world-1-glimmering-glance-reality-show",
+    "indexVersion": 1,
+    "key": "world-1-glimmering-glance-reality-show",
+    "markdownPath": "src/game/data/story_outline/1-modern/2.5.2.1-真人秀.md",
+    "maturity": "支线任务",
+    "missingItems": [
+      "设计｜真人秀·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜真人秀·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜真人秀·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "地图｜真人秀·场景结构｜缺少实际地点、区域连接、道路限制与返回变化"
+    ],
+    "parentKey": "world-1-glimmering-glance-variety-show-fright",
+    "series": "1-modern",
+    "side": true,
+    "sourceHashes": {
+      "json": "21b0833ee4fea43f8ce3466e318f0e99b3231cd8dd9ac4793135e131b407262c",
+      "markdown": "d7061bc4eccef96df5997eb6b2159a667525aae9151d3745a0490a1410ad673d"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
+    "summary": "正经的真人秀综艺支线",
+    "summarySource": "frontmatter.summary",
+    "title": "真人秀",
+    "type": "story-node",
+    "world": "1-浮光掠影"
+  },
+  {
+    "childKeys": [
+      "world-1-glimmering-glance-fog-capital-strangeness"
+    ],
+    "id": "world-1-glimmering-glance-red-white-marriage-contract",
+    "indexVersion": 1,
+    "key": "world-1-glimmering-glance-red-white-marriage-contract",
+    "markdownPath": "src/game/data/story_outline/1-modern/3.5.1.1-赤白婚契.md",
+    "maturity": "大纲",
+    "missingItems": [
+      "设计｜赤白婚契·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜赤白婚契·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜赤白婚契·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "地图｜赤白婚契·场景结构｜缺少实际地点、区域连接、道路限制与返回变化"
+    ],
+    "parentKey": "world-1-glimmering-glance-rainy-ancient-city",
+    "series": "1-modern",
+    "side": false,
+    "sourceHashes": {
+      "json": "21b0833ee4fea43f8ce3466e318f0e99b3231cd8dd9ac4793135e131b407262c",
+      "markdown": "48c59e231021fe4c7aad69691cbb4a23e919ba31202fd38a95ffbc4d27bd877a"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
+    "summary": "璃落被卷入逃婚事件，替代新娘参加婚礼。",
+    "summarySource": "frontmatter.summary",
+    "title": "赤白婚契",
+    "type": "story-node",
+    "world": "1-浮光掠影"
+  },
+  {
+    "childKeys": [
+      "world-1-glimmering-glance-little-maid-team"
+    ],
+    "id": "world-1-glimmering-glance-return-to-jingjiang",
+    "indexVersion": 1,
+    "key": "world-1-glimmering-glance-return-to-jingjiang",
+    "maturity": "主线任务",
+    "parentKey": "world-1-glimmering-glance-taisho-romance",
+    "series": "1-modern",
+    "side": false,
+    "sourceHashes": {
+      "json": "21b0833ee4fea43f8ce3466e318f0e99b3231cd8dd9ac4793135e131b407262c"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
+    "summary": "与罪恶异能者组织的最终决战。",
+    "summarySource": "source-json.summary",
+    "title": "重返荆江市",
+    "type": "story-node",
+    "world": "1-浮光掠影"
+  },
+  {
+    "childKeys": [
+      "world-1-glimmering-glance-old-dormitory"
+    ],
+    "id": "world-1-glimmering-glance-rope-spirit-game",
+    "indexVersion": 1,
+    "key": "world-1-glimmering-glance-rope-spirit-game",
+    "markdownPath": "src/game/data/story_outline/1-modern/1.4.2-绳仙游戏.md",
+    "maturity": "大纲",
+    "missingItems": [
+      "设计｜绳仙游戏·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜绳仙游戏·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜绳仙游戏·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "地图｜绳仙游戏·场景结构｜缺少实际地点、区域连接、道路限制与返回变化"
+    ],
+    "parentKey": "world-1-glimmering-glance-stage-performance",
+    "series": "1-modern",
+    "side": false,
+    "sourceHashes": {
+      "json": "21b0833ee4fea43f8ce3466e318f0e99b3231cd8dd9ac4793135e131b407262c",
+      "markdown": "c3e6f3b593b6fbd74ce9335600a46a6dea2e8cca567d35a16fe6e9570ea108dc"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
+    "summary": "校园突然流行起了绳仙游戏，璃落感觉有些奇怪。",
+    "summarySource": "frontmatter.summary",
+    "title": "绳仙游戏",
+    "type": "story-node",
+    "world": "1-浮光掠影"
+  },
+  {
+    "characters": [
+      "欣雨",
+      "Rin",
+      "缄枷会",
+      "盐坞帮"
+    ],
+    "childKeys": [
+      "world-1-glimmering-glance-prison-storm",
+      "world-1-glimmering-glance-silent-witness"
+    ],
+    "id": "world-1-glimmering-glance-rust-salt",
+    "indexVersion": 1,
+    "key": "world-1-glimmering-glance-rust-salt",
+    "locations": [
+      "海顿联邦",
+      "灰巷"
+    ],
+    "markdownPath": "src/game/data/story_outline/1-modern/3.3-锈盐.md",
+    "maturity": "大纲草稿",
+    "missingItems": [
+      "玩法｜锈盐·船舱脱困工具链｜缺少可搜集小工具、分阶段解除步骤及每一步解锁的具体操作",
+      "调查｜锈盐·值班区证据筛选｜缺少可调查文件与物件、有效证据判定、错误选择反馈及存储卡提示方式",
+      "流程｜锈盐·甲板追逐与失败恢复｜缺少追逐路线危险、看守追击规则、跳海成功条件及再次被抓后的补救流程",
+      "流程｜锈盐·海岸至灰巷｜缺少 Rin 救起璃落后到藏卡完成之间的玩家目标、可执行活动与失败反馈",
+      "玩法｜锈盐·唐人街与填埋场｜缺少交易、出卖、逼供、活埋救援和官方收网阶段的玩家参与方式与阶段目标",
+      "状态｜锈盐·章节状态写入｜缺少伤势与约束变化、存储卡状态、Rin 关系、女孩去向及进入《监狱风云》的存档字段设计"
+    ],
+    "parentKey": "world-1-glimmering-glance-missing",
+    "series": "1-modern",
+    "side": false,
+    "sourceHashes": {
+      "json": "21b0833ee4fea43f8ce3466e318f0e99b3231cd8dd9ac4793135e131b407262c",
+      "markdown": "5835d5e1271d7d1cb15880e311a513367fba13c122121afaa7b4ec3a30752627"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
+    "summary": "璃落为救欣雨而被抓回运奴船，负伤且成为船舱中唯一持续被捆绑的人；受她帮助的女孩们分享食物并照顾她，随后璃落逃船夺证，初入灰巷。",
+    "summarySource": "frontmatter.summary",
+    "title": "锈盐",
+    "type": "story-node",
+    "world": "1-浮光掠影"
+  },
+  {
+    "childKeys": [
+      "world-1-glimmering-glance-old-case"
+    ],
+    "id": "world-1-glimmering-glance-sensory-trial",
+    "indexVersion": 1,
+    "key": "world-1-glimmering-glance-sensory-trial",
+    "locations": [
+      "荆江市",
+      "安和精神病院"
+    ],
+    "markdownPath": "src/game/data/story_outline/1-modern/1.5.1-感官试炼.md",
+    "maturity": "大纲草稿",
+    "missingItems": [
+      "设计｜感官试炼·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜感官试炼·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜感官试炼·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解"
+    ],
+    "parentKey": "world-1-glimmering-glance-old-dormitory",
+    "series": "1-modern",
+    "side": true,
+    "sourceHashes": {
+      "json": "21b0833ee4fea43f8ce3466e318f0e99b3231cd8dd9ac4793135e131b407262c",
+      "markdown": "ffcbc1cf9007a60324a14a85017ed4d2a1b306627fbe9456b0876dfb73965157"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
+    "summary": "荆锁会感官刺激。",
+    "summarySource": "frontmatter.summary",
+    "title": "感官试炼",
+    "type": "story-node",
+    "world": "1-浮光掠影"
+  },
+  {
+    "childKeys": [
+      "world-1-glimmering-glance-eternal-restraint-maze"
+    ],
+    "id": "world-1-glimmering-glance-silent-correction-center",
+    "indexVersion": 1,
+    "key": "world-1-glimmering-glance-silent-correction-center",
+    "markdownPath": "src/game/data/story_outline/1-modern/4.2.1-静默矫治中心.md",
+    "maturity": "大纲",
+    "missingItems": [
+      "设计｜静默矫治中心·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜静默矫治中心·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜静默矫治中心·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "地图｜静默矫治中心·场景结构｜缺少实际地点、区域连接、道路限制与返回变化"
+    ],
+    "parentKey": "world-1-glimmering-glance-luxury-theater",
+    "series": "1-modern",
+    "side": false,
+    "sourceHashes": {
+      "json": "21b0833ee4fea43f8ce3466e318f0e99b3231cd8dd9ac4793135e131b407262c",
+      "markdown": "1b1ebaae1bfa844606c539c35f76eccc4af48078058fde2242ee30d4e482919e"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
+    "summary": "静默矫治中心的现有构想。",
+    "summarySource": "frontmatter.summary",
+    "title": "静默矫治中心",
+    "type": "story-node",
+    "world": "1-浮光掠影"
+  },
+  {
+    "characters": [
+      "闻澜"
+    ],
+    "childKeys": [],
+    "id": "world-1-glimmering-glance-silent-witness",
+    "indexVersion": 1,
+    "key": "world-1-glimmering-glance-silent-witness",
+    "markdownPath": "src/game/data/story_outline/1-modern/3.3.1-沉默见证.md",
+    "maturity": "大纲草稿",
+    "missingItems": [
+      "设计｜沉默见证·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜沉默见证·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜沉默见证·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "地图｜沉默见证·场景结构｜缺少实际地点、区域连接、道路限制与返回变化"
+    ],
+    "parentKey": "world-1-glimmering-glance-rust-salt",
+    "series": "1-modern",
+    "side": true,
+    "sourceHashes": {
+      "json": "21b0833ee4fea43f8ce3466e318f0e99b3231cd8dd9ac4793135e131b407262c",
+      "markdown": "bdfdc4b96e9745f2845be5b7dee874c86e7ced71dc2dc106dca7fe1ac2efa57b"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
+    "summary": "记者被剥夺所有发声能力。",
+    "summarySource": "frontmatter.summary",
+    "title": "沉默见证",
+    "type": "story-node",
+    "world": "1-浮光掠影"
+  },
+  {
+    "childKeys": [
+      "world-1-glimmering-glance-gray-alley-adventure"
+    ],
+    "id": "world-1-glimmering-glance-sinkhole-rainforest-expedition",
+    "indexVersion": 1,
+    "key": "world-1-glimmering-glance-sinkhole-rainforest-expedition",
+    "markdownPath": "src/game/data/story_outline/1-modern/2.6.2-天坑雨林远征.md",
+    "maturity": "大纲",
+    "missingItems": [
+      "设计｜天坑雨林远征·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜天坑雨林远征·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜天坑雨林远征·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "地图｜天坑雨林远征·场景结构｜缺少实际地点、区域连接、道路限制与返回变化"
+    ],
+    "parentKey": "world-1-glimmering-glance-fog-sea-lone-island-expedition",
+    "series": "1-modern",
+    "side": false,
+    "sourceHashes": {
+      "json": "21b0833ee4fea43f8ce3466e318f0e99b3231cd8dd9ac4793135e131b407262c",
+      "markdown": "d26cb46864230c5412dd87141e8a41e278011d8646e533823fe079f84123a6c3"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
+    "summary": "原始丛林，巨型昆虫与植物，以及女娲遗迹。",
+    "summarySource": "frontmatter.summary",
+    "title": "天坑雨林远征",
+    "type": "story-node",
+    "world": "1-浮光掠影"
+  },
+  {
+    "characters": [
+      "林沐遥",
+      "陈思雨",
+      "林雨薇"
+    ],
+    "childKeys": [],
+    "id": "world-1-glimmering-glance-snow-train",
+    "indexVersion": 1,
+    "key": "world-1-glimmering-glance-snow-train",
+    "locations": [
+      "火车卧铺"
+    ],
+    "markdownPath": "src/game/data/story_outline/1-modern/2.5.1-雪城列车.md",
+    "maturity": "大纲草稿",
+    "missingItems": [
+      "设计｜雪城列车·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜雪城列车·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜雪城列车·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解"
+    ],
+    "parentKey": "world-1-glimmering-glance-huaiwan-village",
+    "series": "1-modern",
+    "side": true,
+    "sourceHashes": {
+      "json": "21b0833ee4fea43f8ce3466e318f0e99b3231cd8dd9ac4793135e131b407262c",
+      "markdown": "f02ce09f8a05213a12f780dfbb599fbabd52405df70585c7b0cf3f415bd5b33c"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
+    "summary": "去往雪城的火车卧铺玩法，包含火车牌局与客串乘务员场景。",
+    "summarySource": "frontmatter.summary",
+    "title": "雪城列车",
+    "type": "story-node",
+    "world": "1-浮光掠影"
+  },
+  {
+    "childKeys": [
+      "world-1-glimmering-glance-mirror-person",
+      "world-1-glimmering-glance-rope-spirit-game"
+    ],
+    "id": "world-1-glimmering-glance-stage-performance",
+    "indexVersion": 1,
+    "key": "world-1-glimmering-glance-stage-performance",
+    "markdownPath": "src/game/data/story_outline/1-modern/1.4-舞台表演.md",
+    "maturity": "大纲草稿",
+    "missingItems": [
+      "设计｜舞台表演·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜舞台表演·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜舞台表演·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "地图｜舞台表演·场景结构｜缺少实际地点、区域连接、道路限制与返回变化"
+    ],
+    "parentKey": "world-1-glimmering-glance-dance-classroom",
+    "series": "1-modern",
+    "side": false,
+    "sourceHashes": {
+      "json": "21b0833ee4fea43f8ce3466e318f0e99b3231cd8dd9ac4793135e131b407262c",
+      "markdown": "619e0272ef98c7d59781e6659839a6e23c0ac0e3adff17e15e6d491f2f8b32f2"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
+    "summary": "荆锁会事件2,舞台表演时的灵异事件。",
+    "summarySource": "frontmatter.summary",
+    "title": "舞台表演",
+    "type": "story-node",
+    "world": "1-浮光掠影"
+  },
+  {
+    "childKeys": [],
+    "id": "world-1-glimmering-glance-strange-object-society-archive",
+    "indexVersion": 1,
+    "key": "world-1-glimmering-glance-strange-object-society-archive",
+    "markdownPath": "src/game/data/story_outline/1-modern/2.0.1.1-诡物收录.md",
+    "maturity": "大纲",
+    "missingItems": [
+      "设计｜诡物收录·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜诡物收录·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜诡物收录·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "地图｜诡物收录·场景结构｜缺少实际地点、区域连接、道路限制与返回变化"
+    ],
+    "parentKey": "world-1-glimmering-glance-anomaly-disaster-response-organization",
+    "series": "1-modern",
+    "side": true,
+    "sourceHashes": {
+      "json": "21b0833ee4fea43f8ce3466e318f0e99b3231cd8dd9ac4793135e131b407262c",
+      "markdown": "bbd3a80d9e3b5ba0342d04bbaf062ea919f7bdc2736b81b81ef22b79b998c67f"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
+    "summary": "受到协会邀请，成为编外会员，以后可以帮忙处理一些诡异事件。",
+    "summarySource": "frontmatter.summary",
+    "title": "诡物收录",
+    "type": "story-node",
+    "world": "1-浮光掠影"
+  },
+  {
+    "childKeys": [
+      "world-1-glimmering-glance-return-to-jingjiang"
+    ],
+    "id": "world-1-glimmering-glance-taisho-romance",
+    "indexVersion": 1,
+    "key": "world-1-glimmering-glance-taisho-romance",
+    "markdownPath": "src/game/data/story_outline/1-modern/3.5.3-大正浪漫.md",
+    "maturity": "大纲",
+    "missingItems": [
+      "设计｜大正浪漫·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜大正浪漫·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜大正浪漫·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "地图｜大正浪漫·场景结构｜缺少实际地点、区域连接、道路限制与返回变化"
+    ],
+    "parentKey": "world-1-glimmering-glance-black-rose-sanatorium",
+    "series": "1-modern",
+    "side": false,
+    "sourceHashes": {
+      "json": "21b0833ee4fea43f8ce3466e318f0e99b3231cd8dd9ac4793135e131b407262c",
+      "markdown": "99ef435451b356ba581dfda87424d8d2eb72385e2493a7fe4e9ceffc1b7f659c"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
+    "summary": "赴日留学的故事",
+    "summarySource": "frontmatter.summary",
+    "title": "大正浪漫",
+    "type": "story-node",
+    "world": "1-浮光掠影"
+  },
+  {
+    "childKeys": [
+      "world-1-glimmering-glance-huaiwan-village"
+    ],
+    "id": "world-1-glimmering-glance-trafficker",
+    "indexVersion": 1,
+    "key": "world-1-glimmering-glance-trafficker",
+    "locations": [
+      "槐湾村"
+    ],
+    "markdownPath": "src/game/data/story_outline/1-modern/2.4-人贩子.md",
+    "maturity": "大纲草稿",
+    "missingItems": [
+      "设计｜人贩子·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜人贩子·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜人贩子·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解"
+    ],
+    "parentKey": "world-1-glimmering-glance-hotel-fright",
+    "series": "1-modern",
+    "side": false,
+    "sourceHashes": {
+      "json": "21b0833ee4fea43f8ce3466e318f0e99b3231cd8dd9ac4793135e131b407262c",
+      "markdown": "6714b312727d79c80cfa4ace63ad4d6fe7ee046866e5b192f6128d6c97cdee68"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
+    "summary": "找模特工作时遇到人贩子。",
+    "summarySource": "frontmatter.summary",
+    "title": "人贩子",
+    "type": "story-node",
+    "world": "1-浮光掠影"
+  },
+  {
+    "childKeys": [],
+    "id": "world-1-glimmering-glance-ultimate-restraint",
+    "indexVersion": 1,
+    "key": "world-1-glimmering-glance-ultimate-restraint",
+    "markdownPath": "src/game/data/story_outline/1-modern/5.1-极端高危女性囚犯运输终极约束方案.md",
+    "maturity": "大纲草稿",
+    "missingItems": [
+      "设计｜极端高危女性囚犯运输终极约束方案·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜极端高危女性囚犯运输终极约束方案·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜极端高危女性囚犯运输终极约束方案·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "地图｜极端高危女性囚犯运输终极约束方案·场景结构｜缺少实际地点、区域连接、道路限制与返回变化"
+    ],
+    "parentKey": "world-1-glimmering-glance-epilogue",
+    "series": "1-modern",
+    "side": false,
+    "sourceHashes": {
+      "json": "21b0833ee4fea43f8ce3466e318f0e99b3231cd8dd9ac4793135e131b407262c",
+      "markdown": "5561fa0f73b505cedc6b4b03a0eacb8729fa6095c83420bf7b3f57912d517bb6"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
+    "summary": "都市反派的最终拘束方案。",
+    "summarySource": "frontmatter.summary",
+    "title": "极端高危女性囚犯运输终极约束方案",
+    "type": "story-node",
+    "world": "1-浮光掠影"
+  },
+  {
+    "childKeys": [
+      "world-1-glimmering-glance-anomaly-disaster-response-organization",
+      "world-1-glimmering-glance-midnight-city-exploration"
+    ],
+    "id": "world-1-glimmering-glance-urban-rumors",
+    "indexVersion": 1,
+    "key": "world-1-glimmering-glance-urban-rumors",
+    "locations": [
+      "荆江市"
+    ],
+    "maturity": "主线任务",
+    "parentKey": "world-1-glimmering-glance-grudge-ancient-tree",
+    "series": "1-modern",
+    "side": false,
+    "sourceHashes": {
+      "json": "21b0833ee4fea43f8ce3466e318f0e99b3231cd8dd9ac4793135e131b407262c"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
+    "summary": "体验特色职业，享受绑架人生",
+    "summarySource": "source-json.summary",
+    "title": "都市异闻",
+    "type": "story-node",
+    "world": "1-浮光掠影"
+  },
+  {
+    "childKeys": [
+      "world-1-glimmering-glance-reality-show",
+      "world-1-glimmering-glance-world-expedition-team"
+    ],
+    "id": "world-1-glimmering-glance-variety-show-fright",
+    "indexVersion": 1,
+    "key": "world-1-glimmering-glance-variety-show-fright",
+    "markdownPath": "src/game/data/story_outline/1-modern/2.5.2-综艺惊魂.md",
+    "maturity": "大纲",
+    "missingItems": [
+      "设计｜综艺惊魂·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜综艺惊魂·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜综艺惊魂·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "地图｜综艺惊魂·场景结构｜缺少实际地点、区域连接、道路限制与返回变化"
+    ],
+    "parentKey": "world-1-glimmering-glance-jingjiang-geomancy",
+    "series": "1-modern",
+    "side": false,
+    "sourceHashes": {
+      "json": "21b0833ee4fea43f8ce3466e318f0e99b3231cd8dd9ac4793135e131b407262c",
+      "markdown": "93c2f837cb4e535da15c9d644e2020d8a79d1de437ea5b19ee716e1f65304f22"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
+    "summary": "璃落受邀参加综艺，在里面遇到的灵异事件",
+    "summarySource": "frontmatter.summary",
+    "title": "综艺惊魂",
+    "type": "story-node",
+    "world": "1-浮光掠影"
+  },
+  {
+    "childKeys": [
+      "world-1-glimmering-glance-fog-sea-lone-island-expedition"
+    ],
+    "id": "world-1-glimmering-glance-world-expedition-team",
+    "indexVersion": 1,
+    "key": "world-1-glimmering-glance-world-expedition-team",
+    "maturity": "主线任务",
+    "parentKey": "world-1-glimmering-glance-variety-show-fright",
+    "series": "1-modern",
+    "side": false,
+    "sourceHashes": {
+      "json": "21b0833ee4fea43f8ce3466e318f0e99b3231cd8dd9ac4793135e131b407262c"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
+    "summary": "世界科考队",
+    "summarySource": "title-only",
+    "title": "世界科考队",
+    "type": "story-node",
+    "world": "1-浮光掠影"
+  },
+  {
+    "childKeys": [
+      "world-2-silent-earth-dirge-zombie-apocalypse"
+    ],
+    "id": "world-2-silent-earth-dirge",
+    "indexVersion": 1,
+    "key": "world-2-silent-earth-dirge",
+    "maturity": "分类",
+    "series": "2-apocalypse",
+    "side": false,
+    "sourceHashes": {
+      "json": "c57ed8ecb019ae6523c6816781e45673389d7647db3aef46e6f4d556c505d18d"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/2-apocalypse.json",
+    "summary": "丧尸、诡异、极端天气……这个世界似乎陷入了无尽的启示录循环。",
+    "summarySource": "source-json.summary",
+    "title": "寂土挽歌（末日）",
+    "type": "story-node",
+    "world": "2-寂土挽歌"
+  },
+  {
+    "childKeys": [
+      "world-2-silent-earth-dirge-dream-city-slumber"
+    ],
+    "id": "world-2-silent-earth-dirge-apocalypse-holy-judgment",
+    "indexVersion": 1,
+    "key": "world-2-silent-earth-dirge-apocalypse-holy-judgment",
+    "maturity": "主线任务",
+    "parentKey": "world-2-silent-earth-dirge-wasteland-court",
+    "series": "2-apocalypse",
+    "side": false,
+    "sourceHashes": {
+      "json": "c57ed8ecb019ae6523c6816781e45673389d7647db3aef46e6f4d556c505d18d"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/2-apocalypse.json",
+    "summary": "末日圣裁",
+    "summarySource": "title-only",
+    "title": "末日圣裁",
+    "type": "story-node",
+    "world": "2-寂土挽歌"
+  },
+  {
+    "childKeys": [
+      "world-2-silent-earth-dirge-wasteland-court"
+    ],
+    "id": "world-2-silent-earth-dirge-ark-ghost-cage",
+    "indexVersion": 1,
+    "key": "world-2-silent-earth-dirge-ark-ghost-cage",
+    "maturity": "主线任务",
+    "parentKey": "world-2-silent-earth-dirge-mechanical-afterglow",
+    "series": "2-apocalypse",
+    "side": false,
+    "sourceHashes": {
+      "json": "c57ed8ecb019ae6523c6816781e45673389d7647db3aef46e6f4d556c505d18d"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/2-apocalypse.json",
+    "summary": "方舟幽笼",
+    "summarySource": "title-only",
+    "title": "方舟幽笼",
+    "type": "story-node",
+    "world": "2-寂土挽歌"
+  },
+  {
+    "childKeys": [
+      "world-2-silent-earth-dirge-insect-hive-border"
+    ],
+    "id": "world-2-silent-earth-dirge-beast-treading-land",
+    "indexVersion": 1,
+    "key": "world-2-silent-earth-dirge-beast-treading-land",
+    "maturity": "主线任务",
+    "parentKey": "world-2-silent-earth-dirge-ecology-devouring-city",
+    "series": "2-apocalypse",
+    "side": false,
+    "sourceHashes": {
+      "json": "c57ed8ecb019ae6523c6816781e45673389d7647db3aef46e6f4d556c505d18d"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/2-apocalypse.json",
+    "summary": "异兽踏陆",
+    "summarySource": "title-only",
+    "title": "异兽踏陆",
+    "type": "story-node",
+    "world": "2-寂土挽歌"
+  },
+  {
+    "childKeys": [
+      "world-2-silent-earth-dirge-eternal-winter-white-realm"
+    ],
+    "id": "world-2-silent-earth-dirge-deep-sea-drifting-land",
+    "indexVersion": 1,
+    "key": "world-2-silent-earth-dirge-deep-sea-drifting-land",
+    "maturity": "主线任务",
+    "parentKey": "world-2-silent-earth-dirge-insect-hive-border",
+    "series": "2-apocalypse",
+    "side": false,
+    "sourceHashes": {
+      "json": "c57ed8ecb019ae6523c6816781e45673389d7647db3aef46e6f4d556c505d18d"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/2-apocalypse.json",
+    "summary": "深海漂陆",
+    "summarySource": "title-only",
+    "title": "深海漂陆",
+    "type": "story-node",
+    "world": "2-寂土挽歌"
+  },
+  {
+    "childKeys": [
+      "world-2-silent-earth-dirge-plague-ruined-city"
+    ],
+    "id": "world-2-silent-earth-dirge-disaster-anomaly",
+    "indexVersion": 1,
+    "key": "world-2-silent-earth-dirge-disaster-anomaly",
+    "maturity": "主线任务",
+    "parentKey": "world-2-silent-earth-dirge-fog-city",
+    "series": "2-apocalypse",
+    "side": false,
+    "sourceHashes": {
+      "json": "c57ed8ecb019ae6523c6816781e45673389d7647db3aef46e6f4d556c505d18d"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/2-apocalypse.json",
+    "summary": "天灾异像",
+    "summarySource": "title-only",
+    "title": "天灾异像",
+    "type": "story-node",
+    "world": "2-寂土挽歌"
+  },
+  {
+    "childKeys": [
+      "world-2-silent-earth-dirge-looping-final-day"
+    ],
+    "id": "world-2-silent-earth-dirge-dream-city-slumber",
+    "indexVersion": 1,
+    "key": "world-2-silent-earth-dirge-dream-city-slumber",
+    "maturity": "主线任务",
+    "parentKey": "world-2-silent-earth-dirge-apocalypse-holy-judgment",
+    "series": "2-apocalypse",
+    "side": false,
+    "sourceHashes": {
+      "json": "c57ed8ecb019ae6523c6816781e45673389d7647db3aef46e6f4d556c505d18d"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/2-apocalypse.json",
+    "summary": "梦城沉眠",
+    "summarySource": "title-only",
+    "title": "梦城沉眠",
+    "type": "story-node",
+    "world": "2-寂土挽歌"
+  },
+  {
+    "childKeys": [
+      "world-2-silent-earth-dirge-beast-treading-land"
+    ],
+    "id": "world-2-silent-earth-dirge-ecology-devouring-city",
+    "indexVersion": 1,
+    "key": "world-2-silent-earth-dirge-ecology-devouring-city",
+    "maturity": "主线任务",
+    "parentKey": "world-2-silent-earth-dirge-plague-ruined-city",
+    "series": "2-apocalypse",
+    "side": false,
+    "sourceHashes": {
+      "json": "c57ed8ecb019ae6523c6816781e45673389d7647db3aef46e6f4d556c505d18d"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/2-apocalypse.json",
+    "summary": "生态吞城",
+    "summarySource": "title-only",
+    "title": "生态吞城",
+    "type": "story-node",
+    "world": "2-寂土挽歌"
+  },
+  {
+    "childKeys": [
+      "world-2-silent-earth-dirge-fog-city"
+    ],
+    "id": "world-2-silent-earth-dirge-eerie-apocalypse",
+    "indexVersion": 1,
+    "key": "world-2-silent-earth-dirge-eerie-apocalypse",
+    "maturity": "主线任务",
+    "parentKey": "world-2-silent-earth-dirge-omega",
+    "series": "2-apocalypse",
+    "side": false,
+    "sourceHashes": {
+      "json": "c57ed8ecb019ae6523c6816781e45673389d7647db3aef46e6f4d556c505d18d"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/2-apocalypse.json",
+    "summary": "异诡临界",
+    "summarySource": "title-only",
+    "title": "异诡临界",
+    "type": "story-node",
+    "world": "2-寂土挽歌"
+  },
+  {
+    "childKeys": [
+      "world-2-silent-earth-dirge-lone-sand-sea"
+    ],
+    "id": "world-2-silent-earth-dirge-eternal-winter-white-realm",
+    "indexVersion": 1,
+    "key": "world-2-silent-earth-dirge-eternal-winter-white-realm",
+    "maturity": "主线任务",
+    "parentKey": "world-2-silent-earth-dirge-deep-sea-drifting-land",
+    "series": "2-apocalypse",
+    "side": false,
+    "sourceHashes": {
+      "json": "c57ed8ecb019ae6523c6816781e45673389d7647db3aef46e6f4d556c505d18d"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/2-apocalypse.json",
+    "summary": "永冬白境",
+    "summarySource": "title-only",
+    "title": "永冬白境",
+    "type": "story-node",
+    "world": "2-寂土挽歌"
+  },
+  {
+    "characters": [
+      "娜芙",
+      "老陆"
+    ],
+    "childKeys": [
+      "world-2-silent-earth-dirge-disaster-anomaly"
+    ],
+    "id": "world-2-silent-earth-dirge-fog-city",
+    "indexVersion": 1,
+    "key": "world-2-silent-earth-dirge-fog-city",
+    "markdownPath": "src/game/data/story_outline/2-apocalypse/2.1-诡雾迷城.md",
+    "maturity": "大纲草稿",
+    "missingItems": [
+      "设计｜诡雾迷城·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜诡雾迷城·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜诡雾迷城·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "地图｜诡雾迷城·场景结构｜缺少实际地点、区域连接、道路限制与返回变化"
+    ],
+    "parentKey": "world-2-silent-earth-dirge-eerie-apocalypse",
+    "series": "2-apocalypse",
+    "side": false,
+    "sourceHashes": {
+      "json": "c57ed8ecb019ae6523c6816781e45673389d7647db3aef46e6f4d556c505d18d",
+      "markdown": "608c21e2df85a617f92e0b98dc331a92432315ad05029a97f903cdcafd945ee1"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/2-apocalypse.json",
+    "summary": "诡异末日开端。",
+    "summarySource": "frontmatter.summary",
+    "title": "诡雾迷城",
+    "type": "story-node",
+    "world": "2-寂土挽歌"
+  },
+  {
+    "childKeys": [
+      "world-2-silent-earth-dirge-rift-disaster"
+    ],
+    "id": "world-2-silent-earth-dirge-forgotten-river-gray-world",
+    "indexVersion": 1,
+    "key": "world-2-silent-earth-dirge-forgotten-river-gray-world",
+    "maturity": "主线任务",
+    "parentKey": "world-2-silent-earth-dirge-looping-final-day",
+    "series": "2-apocalypse",
+    "side": false,
+    "sourceHashes": {
+      "json": "c57ed8ecb019ae6523c6816781e45673389d7647db3aef46e6f4d556c505d18d"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/2-apocalypse.json",
+    "summary": "忘川灰世",
+    "summarySource": "title-only",
+    "title": "忘川灰世",
+    "type": "story-node",
+    "world": "2-寂土挽歌"
+  },
+  {
+    "childKeys": [
+      "world-2-silent-earth-dirge-deep-sea-drifting-land"
+    ],
+    "id": "world-2-silent-earth-dirge-insect-hive-border",
+    "indexVersion": 1,
+    "key": "world-2-silent-earth-dirge-insect-hive-border",
+    "maturity": "主线任务",
+    "parentKey": "world-2-silent-earth-dirge-beast-treading-land",
+    "series": "2-apocalypse",
+    "side": false,
+    "sourceHashes": {
+      "json": "c57ed8ecb019ae6523c6816781e45673389d7647db3aef46e6f4d556c505d18d"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/2-apocalypse.json",
+    "summary": "虫巢边境",
+    "summarySource": "title-only",
+    "title": "虫巢边境",
+    "type": "story-node",
+    "world": "2-寂土挽歌"
+  },
+  {
+    "childKeys": [
+      "world-2-silent-earth-dirge-mechanical-afterglow"
+    ],
+    "id": "world-2-silent-earth-dirge-lone-sand-sea",
+    "indexVersion": 1,
+    "key": "world-2-silent-earth-dirge-lone-sand-sea",
+    "maturity": "主线任务",
+    "parentKey": "world-2-silent-earth-dirge-eternal-winter-white-realm",
+    "series": "2-apocalypse",
+    "side": false,
+    "sourceHashes": {
+      "json": "c57ed8ecb019ae6523c6816781e45673389d7647db3aef46e6f4d556c505d18d"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/2-apocalypse.json",
+    "summary": "沙海孤途",
+    "summarySource": "title-only",
+    "title": "沙海孤途",
+    "type": "story-node",
+    "world": "2-寂土挽歌"
+  },
+  {
+    "childKeys": [
+      "world-2-silent-earth-dirge-forgotten-river-gray-world"
+    ],
+    "id": "world-2-silent-earth-dirge-looping-final-day",
+    "indexVersion": 1,
+    "key": "world-2-silent-earth-dirge-looping-final-day",
+    "maturity": "主线任务",
+    "parentKey": "world-2-silent-earth-dirge-dream-city-slumber",
+    "series": "2-apocalypse",
+    "side": false,
+    "sourceHashes": {
+      "json": "c57ed8ecb019ae6523c6816781e45673389d7647db3aef46e6f4d556c505d18d"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/2-apocalypse.json",
+    "summary": "循时终日",
+    "summarySource": "title-only",
+    "title": "循时终日",
+    "type": "story-node",
+    "world": "2-寂土挽歌"
+  },
+  {
+    "childKeys": [
+      "world-2-silent-earth-dirge-ark-ghost-cage"
+    ],
+    "id": "world-2-silent-earth-dirge-mechanical-afterglow",
+    "indexVersion": 1,
+    "key": "world-2-silent-earth-dirge-mechanical-afterglow",
+    "maturity": "主线任务",
+    "parentKey": "world-2-silent-earth-dirge-lone-sand-sea",
+    "series": "2-apocalypse",
+    "side": false,
+    "sourceHashes": {
+      "json": "c57ed8ecb019ae6523c6816781e45673389d7647db3aef46e6f4d556c505d18d"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/2-apocalypse.json",
+    "summary": "机械余晖",
+    "summarySource": "title-only",
+    "title": "机械余晖",
+    "type": "story-node",
+    "world": "2-寂土挽歌"
+  },
+  {
+    "childKeys": [
+      "world-2-silent-earth-dirge-eerie-apocalypse"
+    ],
+    "id": "world-2-silent-earth-dirge-omega",
+    "indexVersion": 1,
+    "key": "world-2-silent-earth-dirge-omega",
+    "markdownPath": "src/game/data/story_outline/2-apocalypse/1.2-Ω级禁忌束缚套装.md",
+    "maturity": "大纲草稿",
+    "missingItems": [
+      "设计｜Ω级禁忌束缚套装·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜Ω级禁忌束缚套装·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜Ω级禁忌束缚套装·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "地图｜Ω级禁忌束缚套装·场景结构｜缺少实际地点、区域连接、道路限制与返回变化"
+    ],
+    "parentKey": "world-2-silent-earth-dirge-red-line",
+    "series": "2-apocalypse",
+    "side": false,
+    "sourceHashes": {
+      "json": "c57ed8ecb019ae6523c6816781e45673389d7647db3aef46e6f4d556c505d18d",
+      "markdown": "e648bfc47d1ce6ec06dce5068121192f6e46fcabf0185f40d44549615c04fb31"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/2-apocalypse.json",
+    "summary": "永久拘束开端。",
+    "summarySource": "frontmatter.summary",
+    "title": "Ω级禁忌束缚套装",
+    "type": "story-node",
+    "world": "2-寂土挽歌"
+  },
+  {
+    "childKeys": [
+      "world-2-silent-earth-dirge-ecology-devouring-city"
+    ],
+    "id": "world-2-silent-earth-dirge-plague-ruined-city",
+    "indexVersion": 1,
+    "key": "world-2-silent-earth-dirge-plague-ruined-city",
+    "maturity": "主线任务",
+    "parentKey": "world-2-silent-earth-dirge-disaster-anomaly",
+    "series": "2-apocalypse",
+    "side": false,
+    "sourceHashes": {
+      "json": "c57ed8ecb019ae6523c6816781e45673389d7647db3aef46e6f4d556c505d18d"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/2-apocalypse.json",
+    "summary": "疫病残城",
+    "summarySource": "title-only",
+    "title": "疫病残城",
+    "type": "story-node",
+    "world": "2-寂土挽歌"
+  },
+  {
+    "childKeys": [
+      "world-2-silent-earth-dirge-omega"
+    ],
+    "id": "world-2-silent-earth-dirge-red-line",
+    "indexVersion": 1,
+    "key": "world-2-silent-earth-dirge-red-line",
+    "markdownPath": "src/game/data/story_outline/2-apocalypse/1.1-红线鬼域.md",
+    "maturity": "大纲草稿",
+    "missingItems": [
+      "设计｜红线鬼域·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜红线鬼域·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜红线鬼域·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "地图｜红线鬼域·场景结构｜缺少实际地点、区域连接、道路限制与返回变化"
+    ],
+    "parentKey": "world-2-silent-earth-dirge-zombie-apocalypse",
+    "series": "2-apocalypse",
+    "side": false,
+    "sourceHashes": {
+      "json": "c57ed8ecb019ae6523c6816781e45673389d7647db3aef46e6f4d556c505d18d",
+      "markdown": "700f3f0a6475425a0a5cd0d4da0b2b306cc0fdf946deeefa570750395e52405e"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/2-apocalypse.json",
+    "summary": "进入丧尸末日。",
+    "summarySource": "frontmatter.summary",
+    "title": "红线鬼域",
+    "type": "story-node",
+    "world": "2-寂土挽歌"
+  },
+  {
+    "childKeys": [],
+    "id": "world-2-silent-earth-dirge-rift-disaster",
+    "indexVersion": 1,
+    "key": "world-2-silent-earth-dirge-rift-disaster",
+    "maturity": "主线任务",
+    "parentKey": "world-2-silent-earth-dirge-forgotten-river-gray-world",
+    "series": "2-apocalypse",
+    "side": false,
+    "sourceHashes": {
+      "json": "c57ed8ecb019ae6523c6816781e45673389d7647db3aef46e6f4d556c505d18d"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/2-apocalypse.json",
+    "summary": "裂界灾临",
+    "summarySource": "title-only",
+    "title": "裂界灾临",
+    "type": "story-node",
+    "world": "2-寂土挽歌"
+  },
+  {
+    "childKeys": [
+      "world-2-silent-earth-dirge-apocalypse-holy-judgment"
+    ],
+    "id": "world-2-silent-earth-dirge-wasteland-court",
+    "indexVersion": 1,
+    "key": "world-2-silent-earth-dirge-wasteland-court",
+    "maturity": "主线任务",
+    "parentKey": "world-2-silent-earth-dirge-ark-ghost-cage",
+    "series": "2-apocalypse",
+    "side": false,
+    "sourceHashes": {
+      "json": "c57ed8ecb019ae6523c6816781e45673389d7647db3aef46e6f4d556c505d18d"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/2-apocalypse.json",
+    "summary": "废土王庭",
+    "summarySource": "title-only",
+    "title": "废土王庭",
+    "type": "story-node",
+    "world": "2-寂土挽歌"
+  },
+  {
+    "childKeys": [
+      "world-2-silent-earth-dirge-red-line"
+    ],
+    "id": "world-2-silent-earth-dirge-zombie-apocalypse",
+    "indexVersion": 1,
+    "key": "world-2-silent-earth-dirge-zombie-apocalypse",
+    "maturity": "主线任务",
+    "parentKey": "world-2-silent-earth-dirge",
+    "series": "2-apocalypse",
+    "side": false,
+    "sourceHashes": {
+      "json": "c57ed8ecb019ae6523c6816781e45673389d7647db3aef46e6f4d556c505d18d"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/2-apocalypse.json",
+    "summary": "尸潮噬世",
+    "summarySource": "title-only",
+    "title": "尸潮噬世",
+    "type": "story-node",
+    "world": "2-寂土挽歌"
+  },
+  {
+    "childKeys": [
+      "world-3-mortal-dao-maid-difficulty"
+    ],
+    "id": "world-3-mortal-dao",
+    "indexVersion": 1,
+    "key": "world-3-mortal-dao",
+    "maturity": "分类",
+    "series": "3-ancient",
+    "side": false,
+    "sourceHashes": {
+      "json": "1ef1c90a6221490ec80ca896a1ed4650d40b0a50c9f9014662dc16220e515471"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/3-ancient.json",
+    "summary": "从丫鬟到一国的公主，从武林侠女到问道修士，这个世界总有无限的可能。",
+    "summarySource": "source-json.summary",
+    "title": "尘寰问道（古风）",
+    "type": "story-node",
+    "world": "3-尘寰问道"
+  },
+  {
+    "childKeys": [
+      "world-3-mortal-dao-tile-kiln-disaster-sealing"
+    ],
+    "id": "world-3-mortal-dao-chaotic-world-ranger",
+    "indexVersion": 1,
+    "key": "world-3-mortal-dao-chaotic-world-ranger",
+    "maturity": "主线任务",
+    "parentKey": "world-3-mortal-dao-frontier-marriage",
+    "series": "3-ancient",
+    "side": false,
+    "sourceHashes": {
+      "json": "1ef1c90a6221490ec80ca896a1ed4650d40b0a50c9f9014662dc16220e515471"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/3-ancient.json",
+    "summary": "乱世游侠",
+    "summarySource": "title-only",
+    "title": "乱世游侠",
+    "type": "story-node",
+    "world": "3-尘寰问道"
+  },
+  {
+    "childKeys": [
+      "world-3-mortal-dao-frontier-marriage"
+    ],
+    "id": "world-3-mortal-dao-commoner-princess",
+    "indexVersion": 1,
+    "key": "world-3-mortal-dao-commoner-princess",
+    "maturity": "主线任务",
+    "parentKey": "world-3-mortal-dao-royal-garden-beast-hunt",
+    "series": "3-ancient",
+    "side": false,
+    "sourceHashes": {
+      "json": "1ef1c90a6221490ec80ca896a1ed4650d40b0a50c9f9014662dc16220e515471"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/3-ancient.json",
+    "summary": "平民公主",
+    "summarySource": "title-only",
+    "title": "平民公主",
+    "type": "story-node",
+    "world": "3-尘寰问道"
+  },
+  {
+    "characters": [
+      "妙桐"
+    ],
+    "childKeys": [
+      "world-3-mortal-dao-no-master"
+    ],
+    "id": "world-3-mortal-dao-counterattack",
+    "indexVersion": 1,
+    "key": "world-3-mortal-dao-counterattack",
+    "markdownPath": "src/game/data/story_outline/3-ancient/5.1-缚身反杀.md",
+    "maturity": "大纲草稿",
+    "missingItems": [
+      "设计｜缚身反杀·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜缚身反杀·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜缚身反杀·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "地图｜缚身反杀·场景结构｜缺少实际地点、区域连接、道路限制与返回变化"
+    ],
+    "parentKey": "world-3-mortal-dao-start",
+    "series": "3-ancient",
+    "side": false,
+    "sourceHashes": {
+      "json": "1ef1c90a6221490ec80ca896a1ed4650d40b0a50c9f9014662dc16220e515471",
+      "markdown": "62944cf5602649a8729a4c4c98ccf6902c06239ac657014cf95816b9823a859c"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/3-ancient.json",
+    "summary": "初入宗门，被魔修绑架反杀。",
+    "summarySource": "frontmatter.summary",
+    "title": "缚身反杀",
+    "type": "story-node",
+    "world": "3-尘寰问道"
+  },
+  {
+    "childKeys": [
+      "world-3-mortal-dao-rebuild"
+    ],
+    "id": "world-3-mortal-dao-demonic-sect-adventure",
+    "indexVersion": 1,
+    "key": "world-3-mortal-dao-demonic-sect-adventure",
+    "maturity": "主线任务",
+    "parentKey": "world-3-mortal-dao-framed",
+    "series": "3-ancient",
+    "side": false,
+    "sourceHashes": {
+      "json": "1ef1c90a6221490ec80ca896a1ed4650d40b0a50c9f9014662dc16220e515471"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/3-ancient.json",
+    "summary": "魔宗历险",
+    "summarySource": "title-only",
+    "title": "魔宗历险",
+    "type": "story-node",
+    "world": "3-尘寰问道"
+  },
+  {
+    "childKeys": [
+      "world-3-mortal-dao-eternal"
+    ],
+    "id": "world-3-mortal-dao-epilogue",
+    "indexVersion": 1,
+    "key": "world-3-mortal-dao-epilogue",
+    "maturity": "主线任务",
+    "parentKey": "world-3-mortal-dao-spider-valley",
+    "series": "3-ancient",
+    "side": false,
+    "sourceHashes": {
+      "json": "1ef1c90a6221490ec80ca896a1ed4650d40b0a50c9f9014662dc16220e515471"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/3-ancient.json",
+    "summary": "尾声",
+    "summarySource": "title-only",
+    "title": "尾声",
+    "type": "story-node",
+    "world": "3-尘寰问道"
+  },
+  {
+    "childKeys": [],
+    "id": "world-3-mortal-dao-eternal",
+    "indexVersion": 1,
+    "key": "world-3-mortal-dao-eternal",
+    "markdownPath": "src/game/data/story_outline/3-ancient/7.1-永世束缚.md",
+    "maturity": "大纲草稿",
+    "missingItems": [
+      "设计｜永世束缚·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜永世束缚·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜永世束缚·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "地图｜永世束缚·场景结构｜缺少实际地点、区域连接、道路限制与返回变化"
+    ],
+    "parentKey": "world-3-mortal-dao-epilogue",
+    "series": "3-ancient",
+    "side": false,
+    "sourceHashes": {
+      "json": "1ef1c90a6221490ec80ca896a1ed4650d40b0a50c9f9014662dc16220e515471",
+      "markdown": "b1078334a995f9845a651db6846c38f4ad091c38d40177deea8c49c000f2588b"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/3-ancient.json",
+    "summary": "缚神，缚身，缚婴。",
+    "summarySource": "frontmatter.summary",
+    "title": "永世束缚",
+    "type": "story-node",
+    "world": "3-尘寰问道"
+  },
+  {
+    "characters": [
+      "妙桐",
+      "顾文若"
+    ],
+    "childKeys": [
+      "world-3-mortal-dao-demonic-sect-adventure"
+    ],
+    "id": "world-3-mortal-dao-framed",
+    "indexVersion": 1,
+    "key": "world-3-mortal-dao-framed",
+    "locations": [
+      "玉衡宗",
+      "血影门"
+    ],
+    "markdownPath": "src/game/data/story_outline/3-ancient/5.3-陷害，入魔宗.md",
+    "maturity": "大纲草稿",
+    "missingItems": [
+      "设计｜陷害，入魔宗·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜陷害，入魔宗·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜陷害，入魔宗·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解"
+    ],
+    "parentKey": "world-3-mortal-dao-no-master",
+    "series": "3-ancient",
+    "side": false,
+    "sourceHashes": {
+      "json": "1ef1c90a6221490ec80ca896a1ed4650d40b0a50c9f9014662dc16220e515471",
+      "markdown": "c8a8ce3e879b547283e01c9adcaec2543c5bbc5de2177ff57dc5b62fb9460cf3"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/3-ancient.json",
+    "summary": "被陷害，思过崖，魔宗。",
+    "summarySource": "frontmatter.summary",
+    "title": "陷害，入魔宗",
+    "type": "story-node",
+    "world": "3-尘寰问道"
+  },
+  {
+    "childKeys": [
+      "world-3-mortal-dao-chaotic-world-ranger"
+    ],
+    "id": "world-3-mortal-dao-frontier-marriage",
+    "indexVersion": 1,
+    "key": "world-3-mortal-dao-frontier-marriage",
+    "maturity": "主线任务",
+    "parentKey": "world-3-mortal-dao-commoner-princess",
+    "series": "3-ancient",
+    "side": false,
+    "sourceHashes": {
+      "json": "1ef1c90a6221490ec80ca896a1ed4650d40b0a50c9f9014662dc16220e515471"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/3-ancient.json",
+    "summary": "塞外和亲",
+    "summarySource": "title-only",
+    "title": "塞外和亲",
+    "type": "story-node",
+    "world": "3-尘寰问道"
+  },
+  {
+    "childKeys": [
+      "world-3-mortal-dao-royal-garden-beast-hunt"
+    ],
+    "id": "world-3-mortal-dao-maid-difficulty",
+    "indexVersion": 1,
+    "key": "world-3-mortal-dao-maid-difficulty",
+    "maturity": "主线任务",
+    "parentKey": "world-3-mortal-dao",
+    "series": "3-ancient",
+    "side": false,
+    "sourceHashes": {
+      "json": "1ef1c90a6221490ec80ca896a1ed4650d40b0a50c9f9014662dc16220e515471"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/3-ancient.json",
+    "summary": "丫鬟难为",
+    "summarySource": "title-only",
+    "title": "丫鬟难为",
+    "type": "story-node",
+    "world": "3-尘寰问道"
+  },
+  {
+    "characters": [
+      "妙桐"
+    ],
+    "childKeys": [
+      "world-3-mortal-dao-framed"
+    ],
+    "id": "world-3-mortal-dao-no-master",
+    "indexVersion": 1,
+    "key": "world-3-mortal-dao-no-master",
+    "locations": [
+      "玉衡宗"
+    ],
+    "markdownPath": "src/game/data/story_outline/3-ancient/5.2-无人收徒.md",
+    "maturity": "大纲草稿",
+    "missingItems": [
+      "设计｜无人收徒·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜无人收徒·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜无人收徒·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解"
+    ],
+    "parentKey": "world-3-mortal-dao-counterattack",
+    "series": "3-ancient",
+    "side": false,
+    "sourceHashes": {
+      "json": "1ef1c90a6221490ec80ca896a1ed4650d40b0a50c9f9014662dc16220e515471",
+      "markdown": "359d0b5796a4aa5a8bf0ae703316be893ca97914c21293899a63272e8d168fa0"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/3-ancient.json",
+    "summary": "回到宗门，由于丹田被毁无人收徒。",
+    "summarySource": "frontmatter.summary",
+    "title": "无人收徒",
+    "type": "story-node",
+    "world": "3-尘寰问道"
+  },
+  {
+    "characters": [
+      "妙桐"
+    ],
+    "childKeys": [
+      "world-3-mortal-dao-spider-valley"
+    ],
+    "id": "world-3-mortal-dao-rebuild",
+    "indexVersion": 1,
+    "key": "world-3-mortal-dao-rebuild",
+    "locations": [
+      "血影门"
+    ],
+    "markdownPath": "src/game/data/story_outline/3-ancient/6.1-重新修炼.md",
+    "maturity": "大纲草稿",
+    "missingItems": [
+      "设计｜重新修炼·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜重新修炼·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜重新修炼·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解"
+    ],
+    "parentKey": "world-3-mortal-dao-demonic-sect-adventure",
+    "series": "3-ancient",
+    "side": false,
+    "sourceHashes": {
+      "json": "1ef1c90a6221490ec80ca896a1ed4650d40b0a50c9f9014662dc16220e515471",
+      "markdown": "366325c92f6ebecfc0a3701550809a070f4528f0ea4e390744ddbfb2cbbf6718"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/3-ancient.json",
+    "summary": "重修功法。",
+    "summarySource": "frontmatter.summary",
+    "title": "重新修炼",
+    "type": "story-node",
+    "world": "3-尘寰问道"
+  },
+  {
+    "childKeys": [
+      "world-3-mortal-dao-commoner-princess"
+    ],
+    "id": "world-3-mortal-dao-royal-garden-beast-hunt",
+    "indexVersion": 1,
+    "key": "world-3-mortal-dao-royal-garden-beast-hunt",
+    "markdownPath": "src/game/data/story_outline/3-ancient/1.1-王苑兽猎.md",
+    "maturity": "大纲",
+    "missingItems": [
+      "设计｜王苑兽猎·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜王苑兽猎·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜王苑兽猎·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "地图｜王苑兽猎·场景结构｜缺少实际地点、区域连接、道路限制与返回变化"
+    ],
+    "parentKey": "world-3-mortal-dao-maid-difficulty",
+    "series": "3-ancient",
+    "side": false,
+    "sourceHashes": {
+      "json": "1ef1c90a6221490ec80ca896a1ed4650d40b0a50c9f9014662dc16220e515471",
+      "markdown": "ca530a01716e00fa1257cdc2d61f30af9044c19c6935c04895334e8ab20346e7"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/3-ancient.json",
+    "summary": "璃落卷入贵族的斗兽场，表现突出被收为丫鬟",
+    "summarySource": "frontmatter.summary",
+    "title": "王苑兽猎",
+    "type": "story-node",
+    "world": "3-尘寰问道"
+  },
+  {
+    "childKeys": [
+      "world-3-mortal-dao-siege-survival"
+    ],
+    "id": "world-3-mortal-dao-sakura-storm-shogunate",
+    "indexVersion": 1,
+    "key": "world-3-mortal-dao-sakura-storm-shogunate",
+    "markdownPath": "src/game/data/story_outline/3-ancient/4.0.1-樱岚幕府.md",
+    "maturity": "大纲",
+    "missingItems": [
+      "设计｜樱岚幕府·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜樱岚幕府·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜樱岚幕府·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "地图｜樱岚幕府·场景结构｜缺少实际地点、区域连接、道路限制与返回变化"
+    ],
+    "parentKey": "world-3-mortal-dao-tile-kiln-disaster-sealing",
+    "series": "3-ancient",
+    "side": false,
+    "sourceHashes": {
+      "json": "1ef1c90a6221490ec80ca896a1ed4650d40b0a50c9f9014662dc16220e515471",
+      "markdown": "3dc8da0f9655f0212378e0f6509709ca30c329673893a01cd226c00e009ede8d"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/3-ancient.json",
+    "summary": "去往幕府时代冒险，武士、巫女、妖怪的世界。",
+    "summarySource": "frontmatter.summary",
+    "title": "樱岚幕府",
+    "type": "story-node",
+    "world": "3-尘寰问道"
+  },
+  {
+    "childKeys": [
+      "world-3-mortal-dao-start"
+    ],
+    "id": "world-3-mortal-dao-siege-survival",
+    "indexVersion": 1,
+    "key": "world-3-mortal-dao-siege-survival",
+    "markdownPath": "src/game/data/story_outline/3-ancient/4.1-围城求生.md",
+    "maturity": "大纲",
+    "missingItems": [
+      "设计｜围城求生·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜围城求生·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜围城求生·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "地图｜围城求生·场景结构｜缺少实际地点、区域连接、道路限制与返回变化"
+    ],
+    "parentKey": "world-3-mortal-dao-sakura-storm-shogunate",
+    "series": "3-ancient",
+    "side": false,
+    "sourceHashes": {
+      "json": "1ef1c90a6221490ec80ca896a1ed4650d40b0a50c9f9014662dc16220e515471",
+      "markdown": "d23aba3a6fa890d917092952efd2dc005266baa1ac365cbd87eafe18bc9e1d0c"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/3-ancient.json",
+    "summary": "围城时救援人们，城破后送信回国。",
+    "summarySource": "frontmatter.summary",
+    "title": "围城求生",
+    "type": "story-node",
+    "world": "3-尘寰问道"
+  },
+  {
+    "characters": [
+      "茯丝"
+    ],
+    "childKeys": [
+      "world-3-mortal-dao-epilogue"
+    ],
+    "id": "world-3-mortal-dao-spider-valley",
+    "indexVersion": 1,
+    "key": "world-3-mortal-dao-spider-valley",
+    "markdownPath": "src/game/data/story_outline/3-ancient/6.2-误入灵蛛谷.md",
+    "maturity": "大纲草稿",
+    "missingItems": [
+      "设计｜误入灵蛛谷·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜误入灵蛛谷·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜误入灵蛛谷·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "地图｜误入灵蛛谷·场景结构｜缺少实际地点、区域连接、道路限制与返回变化"
+    ],
+    "parentKey": "world-3-mortal-dao-rebuild",
+    "series": "3-ancient",
+    "side": false,
+    "sourceHashes": {
+      "json": "1ef1c90a6221490ec80ca896a1ed4650d40b0a50c9f9014662dc16220e515471",
+      "markdown": "d25d95747b81d6ac368c1c243a86b46ffdfb454bf2092d2855af2fae660c6822"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/3-ancient.json",
+    "summary": "被蜘蛛精小姐姐抓到巢穴玩弄。",
+    "summarySource": "frontmatter.summary",
+    "title": "误入灵蛛谷",
+    "type": "story-node",
+    "world": "3-尘寰问道"
+  },
+  {
+    "childKeys": [
+      "world-3-mortal-dao-counterattack"
+    ],
+    "id": "world-3-mortal-dao-start",
+    "indexVersion": 1,
+    "key": "world-3-mortal-dao-start",
+    "maturity": "主线任务",
+    "parentKey": "world-3-mortal-dao-siege-survival",
+    "series": "3-ancient",
+    "side": false,
+    "sourceHashes": {
+      "json": "1ef1c90a6221490ec80ca896a1ed4650d40b0a50c9f9014662dc16220e515471"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/3-ancient.json",
+    "summary": "问道起点",
+    "summarySource": "title-only",
+    "title": "问道起点",
+    "type": "story-node",
+    "world": "3-尘寰问道"
+  },
+  {
+    "childKeys": [
+      "world-3-mortal-dao-sakura-storm-shogunate"
+    ],
+    "id": "world-3-mortal-dao-tile-kiln-disaster-sealing",
+    "indexVersion": 1,
+    "key": "world-3-mortal-dao-tile-kiln-disaster-sealing",
+    "markdownPath": "src/game/data/story_outline/3-ancient/4.0-瓦窑封灾.md",
+    "maturity": "大纲",
+    "missingItems": [
+      "设计｜瓦窑封灾·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜瓦窑封灾·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜瓦窑封灾·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "地图｜瓦窑封灾·场景结构｜缺少实际地点、区域连接、道路限制与返回变化"
+    ],
+    "parentKey": "world-3-mortal-dao-chaotic-world-ranger",
+    "series": "3-ancient",
+    "side": false,
+    "sourceHashes": {
+      "json": "1ef1c90a6221490ec80ca896a1ed4650d40b0a50c9f9014662dc16220e515471",
+      "markdown": "7105b444614d06d0b892d9711fd0f95464885fa2a44b393383c55d7865277e93"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/3-ancient.json",
+    "summary": "是一个偏乡土民俗恐怖与古风疑案的支线模块。",
+    "summarySource": "frontmatter.summary",
+    "title": "瓦窑封灾",
+    "type": "story-node",
+    "world": "3-尘寰问道"
+  },
+  {
+    "childKeys": [
+      "world-4-monica-empire-bound-god-domain"
+    ],
+    "id": "world-4-monica-empire",
+    "indexVersion": 1,
+    "key": "world-4-monica-empire",
+    "maturity": "分类",
+    "series": "0-munika",
+    "side": false,
+    "sourceHashes": {
+      "json": "29d04868f3896837d374d92e783740722f1c9f60b606c4cf09c131859c0f5e7a"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/0-munika.json",
+    "summary": "由多个自由探索大地图组成的综合区域，各地拥有自己的地图故事线与事件链。",
+    "summarySource": "source-json.summary",
+    "title": "慕妮卡帝国（综合）",
+    "type": "story-node",
+    "world": "4-慕妮卡帝国"
+  },
+  {
+    "childKeys": [
+      "world-4-monica-empire-borderlands"
+    ],
+    "id": "world-4-monica-empire-allied-cities",
+    "indexVersion": 1,
+    "key": "world-4-monica-empire-allied-cities",
+    "maturity": "区域组",
+    "parentKey": "world-4-monica-empire-city-desire",
+    "series": "0-munika",
+    "side": false,
+    "sourceHashes": {
+      "json": "29d04868f3896837d374d92e783740722f1c9f60b606c4cf09c131859c0f5e7a"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/0-munika.json",
+    "summary": "与慕妮卡帝国保持盟约、贸易或暧昧关系的城池群，等待后续地图接入。",
+    "summarySource": "source-json.summary",
+    "title": "同盟城池",
+    "type": "story-node",
+    "world": "4-慕妮卡帝国"
+  },
+  {
+    "childKeys": [],
+    "id": "world-4-monica-empire-borderlands",
+    "indexVersion": 1,
+    "key": "world-4-monica-empire-borderlands",
+    "maturity": "区域组",
+    "parentKey": "world-4-monica-empire-allied-cities",
+    "series": "0-munika",
+    "side": false,
+    "sourceHashes": {
+      "json": "29d04868f3896837d374d92e783740722f1c9f60b606c4cf09c131859c0f5e7a"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/0-munika.json",
+    "summary": "帝国边境、远方属地和异域地图的归档入口，等待后续探索内容扩展。",
+    "summarySource": "source-json.summary",
+    "title": "边境与异域",
+    "type": "story-node",
+    "world": "4-慕妮卡帝国"
+  },
+  {
+    "childKeys": [
+      "world-4-monica-empire-four-seasons-garden"
+    ],
+    "id": "world-4-monica-empire-bound-god-domain",
+    "indexVersion": 1,
+    "key": "world-4-monica-empire-bound-god-domain",
+    "maturity": "区域组",
+    "parentKey": "world-4-monica-empire",
+    "series": "0-munika",
+    "side": false,
+    "sourceHashes": {
+      "json": "29d04868f3896837d374d92e783740722f1c9f60b606c4cf09c131859c0f5e7a"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/0-munika.json",
+    "summary": "缚神祝福覆盖的核心领地，适合承载庄园、花园与私人居所相关的探索内容。",
+    "summarySource": "source-json.summary",
+    "title": "缚神领地",
+    "type": "story-node",
+    "world": "4-慕妮卡帝国"
+  },
+  {
+    "childKeys": [
+      "world-4-monica-empire-allied-cities"
+    ],
+    "id": "world-4-monica-empire-city-desire",
+    "indexVersion": 1,
+    "key": "world-4-monica-empire-city-desire",
+    "locations": [
+      "慕妮卡帝国",
+      "醉欲之城"
+    ],
+    "mapRefs": [
+      "city_desire"
+    ],
+    "maturity": "区域",
+    "parentKey": "world-4-monica-empire-core-district",
+    "series": "0-munika",
+    "side": false,
+    "sourceHashes": {
+      "json": "29d04868f3896837d374d92e783740722f1c9f60b606c4cf09c131859c0f5e7a"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/0-munika.json",
+    "summary": "慕妮卡帝国中的欲望都市，中心城区已经接入可探索地图。",
+    "summarySource": "source-json.summary",
+    "title": "醉欲之城",
+    "type": "story-node",
+    "world": "4-慕妮卡帝国"
+  },
+  {
+    "childKeys": [
+      "world-4-monica-empire-city-desire"
+    ],
+    "id": "world-4-monica-empire-core-district",
+    "indexVersion": 1,
+    "key": "world-4-monica-empire-core-district",
+    "maturity": "区域组",
+    "parentKey": "world-4-monica-empire-silly-lilili-town",
+    "series": "0-munika",
+    "side": false,
+    "sourceHashes": {
+      "json": "29d04868f3896837d374d92e783740722f1c9f60b606c4cf09c131859c0f5e7a"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/0-munika.json",
+    "summary": "帝国政治、商业与城市欲望汇聚的核心地带。",
+    "summarySource": "source-json.summary",
+    "title": "帝国核心区",
+    "type": "story-node",
+    "world": "4-慕妮卡帝国"
+  },
+  {
+    "childKeys": [
+      "world-4-monica-empire-silly-lilili-town"
+    ],
+    "id": "world-4-monica-empire-four-seasons-garden",
+    "indexVersion": 1,
+    "key": "world-4-monica-empire-four-seasons-garden",
+    "locations": [
+      "慕妮卡帝国",
+      "缚神领地",
+      "四季花园"
+    ],
+    "mapRefs": [
+      "liluo_estate"
+    ],
+    "maturity": "区域",
+    "parentKey": "world-4-monica-empire-bound-god-domain",
+    "series": "0-munika",
+    "side": false,
+    "sourceHashes": {
+      "json": "29d04868f3896837d374d92e783740722f1c9f60b606c4cf09c131859c0f5e7a"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/0-munika.json",
+    "summary": "缚神祝福过的花园，四季的植物都能在这里同时生存。",
+    "summarySource": "source-json.summary",
+    "title": "四季花园",
+    "type": "story-node",
+    "world": "4-慕妮卡帝国"
+  },
+  {
+    "childKeys": [],
+    "gameplayRefs": [
+      "gameplay-118"
+    ],
+    "id": "world-4-monica-empire-life-simulator",
+    "indexVersion": 1,
+    "key": "world-4-monica-empire-life-simulator",
+    "locations": [
+      "慕妮卡帝国",
+      "缚神领地",
+      "四季花园",
+      "笨璃璃小镇",
+      "人生模拟器"
+    ],
+    "markdownPath": "src/game/data/story_outline/0-munika/1.1-人生模拟器.md",
+    "maturity": "区域",
+    "missingItems": [
+      "设计｜人生模拟器·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜人生模拟器·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜人生模拟器·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "地图｜人生模拟器·场景结构｜缺少实际地点、区域连接、道路限制与返回变化"
+    ],
+    "parentKey": "world-4-monica-empire-silly-lilili-town",
+    "series": "0-munika",
+    "side": true,
+    "sourceHashes": {
+      "json": "29d04868f3896837d374d92e783740722f1c9f60b606c4cf09c131859c0f5e7a",
+      "markdown": "08673b0041596979eab197e52b0d64160b1f7c39cd8c4b59ae9556c49b9cbdc4"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/0-munika.json",
+    "summary": "模拟人生小游戏",
+    "summarySource": "frontmatter.summary",
+    "title": "人生模拟器",
+    "type": "story-node",
+    "world": "4-慕妮卡帝国"
+  },
+  {
+    "childKeys": [
+      "world-4-monica-empire-core-district",
+      "world-4-monica-empire-life-simulator"
+    ],
+    "id": "world-4-monica-empire-silly-lilili-town",
+    "indexVersion": 1,
+    "key": "world-4-monica-empire-silly-lilili-town",
+    "locations": [
+      "慕妮卡帝国",
+      "缚神领地",
+      "四季花园",
+      "笨璃璃小镇"
+    ],
+    "markdownPath": "src/game/data/story_outline/0-munika/1-笨璃璃小镇.md",
+    "maturity": "区域",
+    "missingItems": [
+      "设计｜笨璃璃小镇·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜笨璃璃小镇·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜笨璃璃小镇·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "地图｜笨璃璃小镇·场景结构｜缺少实际地点、区域连接、道路限制与返回变化"
+    ],
+    "parentKey": "world-4-monica-empire-four-seasons-garden",
+    "series": "0-munika",
+    "side": false,
+    "sourceHashes": {
+      "json": "29d04868f3896837d374d92e783740722f1c9f60b606c4cf09c131859c0f5e7a",
+      "markdown": "446a0520c8a3f1bed9f707991707b593ccc51643600056c6260820bc913e5363"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/0-munika.json",
+    "summary": "笨璃璃小镇的现有构想。",
+    "summarySource": "frontmatter.summary",
+    "title": "笨璃璃小镇",
+    "type": "story-node",
+    "world": "4-慕妮卡帝国"
+  },
+  {
+    "childKeys": [
+      "world-5-star-weaving-dream-stargate-port"
+    ],
+    "id": "world-5-star-weaving-dream",
+    "indexVersion": 1,
+    "key": "world-5-star-weaving-dream",
+    "maturity": "分类",
+    "series": "5-science",
+    "side": false,
+    "sourceHashes": {
+      "json": "c47a87097ca2a092f559a802a89389d9204a8749dc5fc7ff98b54443a914751c"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/5-science.json",
+    "summary": "在科技高度发达的星际文明，还有更多让人向往的旅途",
+    "summarySource": "source-json.summary",
+    "title": "星宇织梦（科幻）",
+    "type": "story-node",
+    "world": "5-星宇织梦"
+  },
+  {
+    "childKeys": [
+      "world-5-star-weaving-dream-deep-blue-moon"
+    ],
+    "id": "world-5-star-weaving-dream-barren-mining-asteroid",
+    "indexVersion": 1,
+    "key": "world-5-star-weaving-dream-barren-mining-asteroid",
+    "maturity": "主线任务",
+    "parentKey": "world-5-star-weaving-dream-dome-hunt",
+    "series": "5-science",
+    "side": false,
+    "sourceHashes": {
+      "json": "c47a87097ca2a092f559a802a89389d9204a8749dc5fc7ff98b54443a914751c"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/5-science.json",
+    "summary": "荒矿小行星",
+    "summarySource": "title-only",
+    "title": "荒矿小行星",
+    "type": "story-node",
+    "world": "5-星宇织梦"
+  },
+  {
+    "childKeys": [
+      "world-5-star-weaving-dream-mirror-domain"
+    ],
+    "id": "world-5-star-weaving-dream-bionic-maze",
+    "indexVersion": 1,
+    "key": "world-5-star-weaving-dream-bionic-maze",
+    "maturity": "主线任务",
+    "parentKey": "world-5-star-weaving-dream-restraint-paradise-shop",
+    "series": "5-science",
+    "side": false,
+    "sourceHashes": {
+      "json": "c47a87097ca2a092f559a802a89389d9204a8749dc5fc7ff98b54443a914751c"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/5-science.json",
+    "summary": "仿生迷途",
+    "summarySource": "title-only",
+    "title": "仿生迷途",
+    "type": "story-node",
+    "world": "5-星宇织梦"
+  },
+  {
+    "childKeys": [
+      "world-5-star-weaving-dream-hivemind-hive"
+    ],
+    "id": "world-5-star-weaving-dream-clone-corridor",
+    "indexVersion": 1,
+    "key": "world-5-star-weaving-dream-clone-corridor",
+    "maturity": "主线任务",
+    "parentKey": "world-5-star-weaving-dream-prison-planet",
+    "series": "5-science",
+    "side": false,
+    "sourceHashes": {
+      "json": "c47a87097ca2a092f559a802a89389d9204a8749dc5fc7ff98b54443a914751c"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/5-science.json",
+    "summary": "克隆回廊",
+    "summarySource": "title-only",
+    "title": "克隆回廊",
+    "type": "story-node",
+    "world": "5-星宇织梦"
+  },
+  {
+    "childKeys": [
+      "world-5-star-weaving-dream-orbital-garden"
+    ],
+    "id": "world-5-star-weaving-dream-cryosleep-ark",
+    "indexVersion": 1,
+    "key": "world-5-star-weaving-dream-cryosleep-ark",
+    "maturity": "主线任务",
+    "parentKey": "world-5-star-weaving-dream-star-voyage",
+    "series": "5-science",
+    "side": false,
+    "sourceHashes": {
+      "json": "c47a87097ca2a092f559a802a89389d9204a8749dc5fc7ff98b54443a914751c"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/5-science.json",
+    "summary": "冷眠方舟",
+    "summarySource": "title-only",
+    "title": "冷眠方舟",
+    "type": "story-node",
+    "world": "5-星宇织梦"
+  },
+  {
+    "childKeys": [
+      "world-5-star-weaving-dream-interstellar-black-market"
+    ],
+    "id": "world-5-star-weaving-dream-deep-blue-moon",
+    "indexVersion": 1,
+    "key": "world-5-star-weaving-dream-deep-blue-moon",
+    "maturity": "主线任务",
+    "parentKey": "world-5-star-weaving-dream-barren-mining-asteroid",
+    "series": "5-science",
+    "side": false,
+    "sourceHashes": {
+      "json": "c47a87097ca2a092f559a802a89389d9204a8749dc5fc7ff98b54443a914751c"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/5-science.json",
+    "summary": "深蓝海卫",
+    "summarySource": "title-only",
+    "title": "深蓝海卫",
+    "type": "story-node",
+    "world": "5-星宇织梦"
+  },
+  {
+    "childKeys": [
+      "world-5-star-weaving-dream-barren-mining-asteroid"
+    ],
+    "id": "world-5-star-weaving-dream-dome-hunt",
+    "indexVersion": 1,
+    "key": "world-5-star-weaving-dream-dome-hunt",
+    "markdownPath": "src/game/data/story_outline/5-science/11.1-穹顶狩猎.md",
+    "maturity": "大纲",
+    "missingItems": [
+      "设计｜穹顶狩猎·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜穹顶狩猎·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜穹顶狩猎·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "地图｜穹顶狩猎·场景结构｜缺少实际地点、区域连接、道路限制与返回变化"
+    ],
+    "parentKey": "world-5-star-weaving-dream-frontier-colony",
+    "series": "5-science",
+    "side": false,
+    "sourceHashes": {
+      "json": "c47a87097ca2a092f559a802a89389d9204a8749dc5fc7ff98b54443a914751c",
+      "markdown": "5538fe3c45d92494bec1d7a92dfd0e88e537e6a6f41907a94e44913e7ef67138"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/5-science.json",
+    "summary": "参赛者被投放进封闭生态区，在直播、积分、赞助、算法和淘汰规则中生存。",
+    "summarySource": "frontmatter.summary",
+    "title": "穹顶狩猎",
+    "type": "story-node",
+    "world": "5-星宇织梦"
+  },
+  {
+    "childKeys": [
+      "world-5-star-weaving-dream-forerunner-ruins"
+    ],
+    "id": "world-5-star-weaving-dream-first-contact",
+    "indexVersion": 1,
+    "key": "world-5-star-weaving-dream-first-contact",
+    "maturity": "主线任务",
+    "parentKey": "world-5-star-weaving-dream-hivemind-hive",
+    "series": "5-science",
+    "side": false,
+    "sourceHashes": {
+      "json": "c47a87097ca2a092f559a802a89389d9204a8749dc5fc7ff98b54443a914751c"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/5-science.json",
+    "summary": "异星初触",
+    "summarySource": "title-only",
+    "title": "异星初触",
+    "type": "story-node",
+    "world": "5-星宇织梦"
+  },
+  {
+    "childKeys": [
+      "world-5-star-weaving-dream-quantum-maze"
+    ],
+    "id": "world-5-star-weaving-dream-forerunner-ruins",
+    "indexVersion": 1,
+    "key": "world-5-star-weaving-dream-forerunner-ruins",
+    "maturity": "主线任务",
+    "parentKey": "world-5-star-weaving-dream-first-contact",
+    "series": "5-science",
+    "side": false,
+    "sourceHashes": {
+      "json": "c47a87097ca2a092f559a802a89389d9204a8749dc5fc7ff98b54443a914751c"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/5-science.json",
+    "summary": "先驱遗迹",
+    "summarySource": "title-only",
+    "title": "先驱遗迹",
+    "type": "story-node",
+    "world": "5-星宇织梦"
+  },
+  {
+    "childKeys": [
+      "world-5-star-weaving-dream-dome-hunt"
+    ],
+    "id": "world-5-star-weaving-dream-frontier-colony",
+    "indexVersion": 1,
+    "key": "world-5-star-weaving-dream-frontier-colony",
+    "maturity": "主线任务",
+    "parentKey": "world-5-star-weaving-dream-molten-armor-warstar",
+    "series": "5-science",
+    "side": false,
+    "sourceHashes": {
+      "json": "c47a87097ca2a092f559a802a89389d9204a8749dc5fc7ff98b54443a914751c"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/5-science.json",
+    "summary": "边境殖民星",
+    "summarySource": "title-only",
+    "title": "边境殖民星",
+    "type": "story-node",
+    "world": "5-星宇织梦"
+  },
+  {
+    "childKeys": [
+      "world-5-star-weaving-dream-first-contact"
+    ],
+    "id": "world-5-star-weaving-dream-hivemind-hive",
+    "indexVersion": 1,
+    "key": "world-5-star-weaving-dream-hivemind-hive",
+    "maturity": "主线任务",
+    "parentKey": "world-5-star-weaving-dream-clone-corridor",
+    "series": "5-science",
+    "side": false,
+    "sourceHashes": {
+      "json": "c47a87097ca2a092f559a802a89389d9204a8749dc5fc7ff98b54443a914751c"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/5-science.json",
+    "summary": "群心蜂巢",
+    "summarySource": "title-only",
+    "title": "群心蜂巢",
+    "type": "story-node",
+    "world": "5-星宇织梦"
+  },
+  {
+    "childKeys": [
+      "world-5-star-weaving-dream-prison-planet"
+    ],
+    "id": "world-5-star-weaving-dream-interstellar-black-market",
+    "indexVersion": 1,
+    "key": "world-5-star-weaving-dream-interstellar-black-market",
+    "maturity": "主线任务",
+    "parentKey": "world-5-star-weaving-dream-deep-blue-moon",
+    "series": "5-science",
+    "side": false,
+    "sourceHashes": {
+      "json": "c47a87097ca2a092f559a802a89389d9204a8749dc5fc7ff98b54443a914751c"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/5-science.json",
+    "summary": "星际黑市",
+    "summarySource": "title-only",
+    "title": "星际黑市",
+    "type": "story-node",
+    "world": "5-星宇织梦"
+  },
+  {
+    "childKeys": [
+      "world-5-star-weaving-dream-sequence-gu-city"
+    ],
+    "id": "world-5-star-weaving-dream-mirror-domain",
+    "indexVersion": 1,
+    "key": "world-5-star-weaving-dream-mirror-domain",
+    "maturity": "主线任务",
+    "parentKey": "world-5-star-weaving-dream-bionic-maze",
+    "series": "5-science",
+    "side": false,
+    "sourceHashes": {
+      "json": "c47a87097ca2a092f559a802a89389d9204a8749dc5fc7ff98b54443a914751c"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/5-science.json",
+    "summary": "镜域沉沦",
+    "summarySource": "title-only",
+    "title": "镜域沉沦",
+    "type": "story-node",
+    "world": "5-星宇织梦"
+  },
+  {
+    "childKeys": [
+      "world-5-star-weaving-dream-frontier-colony"
+    ],
+    "id": "world-5-star-weaving-dream-molten-armor-warstar",
+    "indexVersion": 1,
+    "key": "world-5-star-weaving-dream-molten-armor-warstar",
+    "maturity": "主线任务",
+    "parentKey": "world-5-star-weaving-dream-orbital-garden",
+    "series": "5-science",
+    "side": false,
+    "sourceHashes": {
+      "json": "c47a87097ca2a092f559a802a89389d9204a8749dc5fc7ff98b54443a914751c"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/5-science.json",
+    "summary": "熔铠战星",
+    "summarySource": "title-only",
+    "title": "熔铠战星",
+    "type": "story-node",
+    "world": "5-星宇织梦"
+  },
+  {
+    "childKeys": [
+      "world-5-star-weaving-dream-molten-armor-warstar"
+    ],
+    "id": "world-5-star-weaving-dream-orbital-garden",
+    "indexVersion": 1,
+    "key": "world-5-star-weaving-dream-orbital-garden",
+    "maturity": "主线任务",
+    "parentKey": "world-5-star-weaving-dream-cryosleep-ark",
+    "series": "5-science",
+    "side": false,
+    "sourceHashes": {
+      "json": "c47a87097ca2a092f559a802a89389d9204a8749dc5fc7ff98b54443a914751c"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/5-science.json",
+    "summary": "轨道庭院",
+    "summarySource": "title-only",
+    "title": "轨道庭院",
+    "type": "story-node",
+    "world": "5-星宇织梦"
+  },
+  {
+    "childKeys": [
+      "world-5-star-weaving-dream-restraint-paradise-shop"
+    ],
+    "id": "world-5-star-weaving-dream-order-paradise",
+    "indexVersion": 1,
+    "key": "world-5-star-weaving-dream-order-paradise",
+    "maturity": "主线任务",
+    "parentKey": "world-5-star-weaving-dream-ringlock-stars",
+    "series": "5-science",
+    "side": false,
+    "sourceHashes": {
+      "json": "c47a87097ca2a092f559a802a89389d9204a8749dc5fc7ff98b54443a914751c"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/5-science.json",
+    "summary": "律序乐园",
+    "summarySource": "title-only",
+    "title": "律序乐园",
+    "type": "story-node",
+    "world": "5-星宇织梦"
+  },
+  {
+    "childKeys": [
+      "world-5-star-weaving-dream-clone-corridor"
+    ],
+    "id": "world-5-star-weaving-dream-prison-planet",
+    "indexVersion": 1,
+    "key": "world-5-star-weaving-dream-prison-planet",
+    "maturity": "主线任务",
+    "parentKey": "world-5-star-weaving-dream-interstellar-black-market",
+    "series": "5-science",
+    "side": false,
+    "sourceHashes": {
+      "json": "c47a87097ca2a092f559a802a89389d9204a8749dc5fc7ff98b54443a914751c"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/5-science.json",
+    "summary": "监狱行星",
+    "summarySource": "title-only",
+    "title": "监狱行星",
+    "type": "story-node",
+    "world": "5-星宇织梦"
+  },
+  {
+    "childKeys": [],
+    "id": "world-5-star-weaving-dream-quantum-maze",
+    "indexVersion": 1,
+    "key": "world-5-star-weaving-dream-quantum-maze",
+    "maturity": "主线任务",
+    "parentKey": "world-5-star-weaving-dream-forerunner-ruins",
+    "series": "5-science",
+    "side": false,
+    "sourceHashes": {
+      "json": "c47a87097ca2a092f559a802a89389d9204a8749dc5fc7ff98b54443a914751c"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/5-science.json",
+    "summary": "量子迷城",
+    "summarySource": "title-only",
+    "title": "量子迷城",
+    "type": "story-node",
+    "world": "5-星宇织梦"
+  },
+  {
+    "childKeys": [
+      "world-5-star-weaving-dream-bionic-maze"
+    ],
+    "id": "world-5-star-weaving-dream-restraint-paradise-shop",
+    "indexVersion": 1,
+    "key": "world-5-star-weaving-dream-restraint-paradise-shop",
+    "markdownPath": "src/game/data/story_outline/5-science/3.1-拘束具店铺.md",
+    "maturity": "大纲草稿",
+    "missingItems": [
+      "设计｜拘束具店铺·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜拘束具店铺·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜拘束具店铺·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "地图｜拘束具店铺·场景结构｜缺少实际地点、区域连接、道路限制与返回变化"
+    ],
+    "parentKey": "world-5-star-weaving-dream-order-paradise",
+    "series": "5-science",
+    "side": false,
+    "sourceHashes": {
+      "json": "c47a87097ca2a092f559a802a89389d9204a8749dc5fc7ff98b54443a914751c",
+      "markdown": "ee78673360854562d62db8becb501ce7f3d62c00b8b0149a8751da1067c2b088"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/5-science.json",
+    "summary": "拘束用品店。",
+    "summarySource": "frontmatter.summary",
+    "title": "拘束具店铺",
+    "type": "story-node",
+    "world": "5-星宇织梦"
+  },
+  {
+    "childKeys": [
+      "world-5-star-weaving-dream-order-paradise"
+    ],
+    "id": "world-5-star-weaving-dream-ringlock-stars",
+    "indexVersion": 1,
+    "key": "world-5-star-weaving-dream-ringlock-stars",
+    "maturity": "主线任务",
+    "parentKey": "world-5-star-weaving-dream-stargate-port",
+    "series": "5-science",
+    "side": false,
+    "sourceHashes": {
+      "json": "c47a87097ca2a092f559a802a89389d9204a8749dc5fc7ff98b54443a914751c"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/5-science.json",
+    "summary": "环锁群星",
+    "summarySource": "title-only",
+    "title": "环锁群星",
+    "type": "story-node",
+    "world": "5-星宇织梦"
+  },
+  {
+    "childKeys": [
+      "world-5-star-weaving-dream-star-voyage"
+    ],
+    "id": "world-5-star-weaving-dream-sequence-gu-city",
+    "indexVersion": 1,
+    "key": "world-5-star-weaving-dream-sequence-gu-city",
+    "maturity": "主线任务",
+    "parentKey": "world-5-star-weaving-dream-mirror-domain",
+    "series": "5-science",
+    "side": false,
+    "sourceHashes": {
+      "json": "c47a87097ca2a092f559a802a89389d9204a8749dc5fc7ff98b54443a914751c"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/5-science.json",
+    "summary": "基序蛊城",
+    "summarySource": "title-only",
+    "title": "基序蛊城",
+    "type": "story-node",
+    "world": "5-星宇织梦"
+  },
+  {
+    "childKeys": [
+      "world-5-star-weaving-dream-cryosleep-ark"
+    ],
+    "id": "world-5-star-weaving-dream-star-voyage",
+    "indexVersion": 1,
+    "key": "world-5-star-weaving-dream-star-voyage",
+    "maturity": "主线任务",
+    "parentKey": "world-5-star-weaving-dream-sequence-gu-city",
+    "series": "5-science",
+    "side": false,
+    "sourceHashes": {
+      "json": "c47a87097ca2a092f559a802a89389d9204a8749dc5fc7ff98b54443a914751c"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/5-science.json",
+    "summary": "逐星远航",
+    "summarySource": "title-only",
+    "title": "逐星远航",
+    "type": "story-node",
+    "world": "5-星宇织梦"
+  },
+  {
+    "childKeys": [
+      "world-5-star-weaving-dream-ringlock-stars"
+    ],
+    "id": "world-5-star-weaving-dream-stargate-port",
+    "indexVersion": 1,
+    "key": "world-5-star-weaving-dream-stargate-port",
+    "maturity": "主线任务",
+    "parentKey": "world-5-star-weaving-dream",
+    "series": "5-science",
+    "side": false,
+    "sourceHashes": {
+      "json": "c47a87097ca2a092f559a802a89389d9204a8749dc5fc7ff98b54443a914751c"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/5-science.json",
+    "summary": "星门港区",
+    "summarySource": "title-only",
+    "title": "星门港区",
+    "type": "story-node",
+    "world": "5-星宇织梦"
+  },
+  {
+    "childKeys": [
+      "world-6-cursebound-echoes-dreambound-continent"
+    ],
+    "id": "world-6-cursebound-echoes",
+    "indexVersion": 1,
+    "key": "world-6-cursebound-echoes",
+    "maturity": "分类",
+    "series": "4-fantasy",
+    "side": false,
+    "sourceHashes": {
+      "json": "d0a1169b42dc66ed794b8eeeef4125f68044b2101eb66b9b173074fb72a4109d"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/4-fantasy.json",
+    "summary": "魔法与斗气主导的世界，各个种族共同生存的魔幻大陆。",
+    "summarySource": "source-json.summary",
+    "title": "咒缚回响（魔幻）",
+    "type": "story-node",
+    "world": "6-咒缚回响"
+  },
+  {
+    "childKeys": [],
+    "id": "world-6-cursebound-echoes-abyss-contract",
+    "indexVersion": 1,
+    "key": "world-6-cursebound-echoes-abyss-contract",
+    "maturity": "主线任务",
+    "parentKey": "world-6-cursebound-echoes-astral-rift-gate",
+    "series": "4-fantasy",
+    "side": false,
+    "sourceHashes": {
+      "json": "d0a1169b42dc66ed794b8eeeef4125f68044b2101eb66b9b173074fb72a4109d"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/4-fantasy.json",
+    "summary": "深渊契约",
+    "summarySource": "title-only",
+    "title": "深渊契约",
+    "type": "story-node",
+    "world": "6-咒缚回响"
+  },
+  {
+    "childKeys": [
+      "world-6-cursebound-echoes-abyss-contract"
+    ],
+    "id": "world-6-cursebound-echoes-astral-rift-gate",
+    "indexVersion": 1,
+    "key": "world-6-cursebound-echoes-astral-rift-gate",
+    "maturity": "主线任务",
+    "parentKey": "world-6-cursebound-echoes-witch-swamp",
+    "series": "4-fantasy",
+    "side": false,
+    "sourceHashes": {
+      "json": "d0a1169b42dc66ed794b8eeeef4125f68044b2101eb66b9b173074fb72a4109d"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/4-fantasy.json",
+    "summary": "星界裂门",
+    "summarySource": "title-only",
+    "title": "星界裂门",
+    "type": "story-node",
+    "world": "6-咒缚回响"
+  },
+  {
+    "childKeys": [
+      "world-6-cursebound-echoes-dragon-sleep-mountains"
+    ],
+    "id": "world-6-cursebound-echoes-bone-throne",
+    "indexVersion": 1,
+    "key": "world-6-cursebound-echoes-bone-throne",
+    "maturity": "主线任务",
+    "parentKey": "world-6-cursebound-echoes-darkmoon-castle",
+    "series": "4-fantasy",
+    "side": false,
+    "sourceHashes": {
+      "json": "d0a1169b42dc66ed794b8eeeef4125f68044b2101eb66b9b173074fb72a4109d"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/4-fantasy.json",
+    "summary": "骸骨王座",
+    "summarySource": "title-only",
+    "title": "骸骨王座",
+    "type": "story-node",
+    "world": "6-咒缚回响"
+  },
+  {
+    "childKeys": [
+      "world-6-cursebound-echoes-northern-frost-crown"
+    ],
+    "id": "world-6-cursebound-echoes-crystal-sand-court",
+    "indexVersion": 1,
+    "key": "world-6-cursebound-echoes-crystal-sand-court",
+    "maturity": "主线任务",
+    "parentKey": "world-6-cursebound-echoes-dark-underground-city",
+    "series": "4-fantasy",
+    "side": false,
+    "sourceHashes": {
+      "json": "d0a1169b42dc66ed794b8eeeef4125f68044b2101eb66b9b173074fb72a4109d"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/4-fantasy.json",
+    "summary": "晶沙王庭",
+    "summarySource": "title-only",
+    "title": "晶沙王庭",
+    "type": "story-node",
+    "world": "6-咒缚回响"
+  },
+  {
+    "childKeys": [
+      "world-6-cursebound-echoes-crystal-sand-court"
+    ],
+    "id": "world-6-cursebound-echoes-dark-underground-city",
+    "indexVersion": 1,
+    "key": "world-6-cursebound-echoes-dark-underground-city",
+    "maturity": "主线任务",
+    "parentKey": "world-6-cursebound-echoes-locked-horn-wasteland",
+    "series": "4-fantasy",
+    "side": false,
+    "sourceHashes": {
+      "json": "d0a1169b42dc66ed794b8eeeef4125f68044b2101eb66b9b173074fb72a4109d"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/4-fantasy.json",
+    "summary": "幽暗城池",
+    "summarySource": "title-only",
+    "title": "幽暗城池",
+    "type": "story-node",
+    "world": "6-咒缚回响"
+  },
+  {
+    "childKeys": [
+      "world-6-cursebound-echoes-bone-throne"
+    ],
+    "id": "world-6-cursebound-echoes-darkmoon-castle",
+    "indexVersion": 1,
+    "key": "world-6-cursebound-echoes-darkmoon-castle",
+    "maturity": "主线任务",
+    "parentKey": "world-6-cursebound-echoes-tiny-liluo-adventure",
+    "series": "4-fantasy",
+    "side": false,
+    "sourceHashes": {
+      "json": "d0a1169b42dc66ed794b8eeeef4125f68044b2101eb66b9b173074fb72a4109d"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/4-fantasy.json",
+    "summary": "暗月古堡",
+    "summarySource": "title-only",
+    "title": "暗月古堡",
+    "type": "story-node",
+    "world": "6-咒缚回响"
+  },
+  {
+    "childKeys": [
+      "world-6-cursebound-echoes-secret-tower-long-song"
+    ],
+    "id": "world-6-cursebound-echoes-dragon-sleep-mountains",
+    "indexVersion": 1,
+    "key": "world-6-cursebound-echoes-dragon-sleep-mountains",
+    "maturity": "主线任务",
+    "parentKey": "world-6-cursebound-echoes-bone-throne",
+    "series": "4-fantasy",
+    "side": false,
+    "sourceHashes": {
+      "json": "d0a1169b42dc66ed794b8eeeef4125f68044b2101eb66b9b173074fb72a4109d"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/4-fantasy.json",
+    "summary": "龙眠山脉",
+    "summarySource": "title-only",
+    "title": "龙眠山脉",
+    "type": "story-node",
+    "world": "6-咒缚回响"
+  },
+  {
+    "childKeys": [
+      "world-6-cursebound-echoes-silver-crown-capital"
+    ],
+    "id": "world-6-cursebound-echoes-dreambound-continent",
+    "indexVersion": 1,
+    "key": "world-6-cursebound-echoes-dreambound-continent",
+    "maturity": "主线任务",
+    "parentKey": "world-6-cursebound-echoes",
+    "series": "4-fantasy",
+    "side": false,
+    "sourceHashes": {
+      "json": "d0a1169b42dc66ed794b8eeeef4125f68044b2101eb66b9b173074fb72a4109d"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/4-fantasy.json",
+    "summary": "逐梦大陆",
+    "summarySource": "title-only",
+    "title": "逐梦大陆",
+    "type": "story-node",
+    "world": "6-咒缚回响"
+  },
+  {
+    "childKeys": [
+      "world-6-cursebound-echoes-tiny-liluo-adventure"
+    ],
+    "id": "world-6-cursebound-echoes-forest-oath-fey-realm",
+    "indexVersion": 1,
+    "key": "world-6-cursebound-echoes-forest-oath-fey-realm",
+    "maturity": "主线任务",
+    "parentKey": "world-6-cursebound-echoes-molten-glow-machine-city",
+    "series": "4-fantasy",
+    "side": false,
+    "sourceHashes": {
+      "json": "d0a1169b42dc66ed794b8eeeef4125f68044b2101eb66b9b173074fb72a4109d"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/4-fantasy.json",
+    "summary": "森誓妖境",
+    "summarySource": "title-only",
+    "title": "森誓妖境",
+    "type": "story-node",
+    "world": "6-咒缚回响"
+  },
+  {
+    "childKeys": [
+      "world-6-cursebound-echoes-lone-tide-sea"
+    ],
+    "id": "world-6-cursebound-echoes-holy-seal-islands",
+    "indexVersion": 1,
+    "key": "world-6-cursebound-echoes-holy-seal-islands",
+    "maturity": "主线任务",
+    "parentKey": "world-6-cursebound-echoes-secret-rune-academy",
+    "series": "4-fantasy",
+    "side": false,
+    "sourceHashes": {
+      "json": "d0a1169b42dc66ed794b8eeeef4125f68044b2101eb66b9b173074fb72a4109d"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/4-fantasy.json",
+    "summary": "圣印群岛",
+    "summarySource": "title-only",
+    "title": "圣印群岛",
+    "type": "story-node",
+    "world": "6-咒缚回响"
+  },
+  {
+    "childKeys": [
+      "world-6-cursebound-echoes-dark-underground-city"
+    ],
+    "id": "world-6-cursebound-echoes-locked-horn-wasteland",
+    "indexVersion": 1,
+    "key": "world-6-cursebound-echoes-locked-horn-wasteland",
+    "maturity": "主线任务",
+    "parentKey": "world-6-cursebound-echoes-secret-tower-long-song",
+    "series": "4-fantasy",
+    "side": false,
+    "sourceHashes": {
+      "json": "d0a1169b42dc66ed794b8eeeef4125f68044b2101eb66b9b173074fb72a4109d"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/4-fantasy.json",
+    "summary": "锁角荒原",
+    "summarySource": "title-only",
+    "title": "锁角荒原",
+    "type": "story-node",
+    "world": "6-咒缚回响"
+  },
+  {
+    "childKeys": [
+      "world-6-cursebound-echoes-molten-glow-machine-city"
+    ],
+    "id": "world-6-cursebound-echoes-lone-tide-sea",
+    "indexVersion": 1,
+    "key": "world-6-cursebound-echoes-lone-tide-sea",
+    "maturity": "主线任务",
+    "parentKey": "world-6-cursebound-echoes-holy-seal-islands",
+    "series": "4-fantasy",
+    "side": false,
+    "sourceHashes": {
+      "json": "d0a1169b42dc66ed794b8eeeef4125f68044b2101eb66b9b173074fb72a4109d"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/4-fantasy.json",
+    "summary": "逐潮孤海",
+    "summarySource": "title-only",
+    "title": "逐潮孤海",
+    "type": "story-node",
+    "world": "6-咒缚回响"
+  },
+  {
+    "childKeys": [
+      "world-6-cursebound-echoes-forest-oath-fey-realm"
+    ],
+    "id": "world-6-cursebound-echoes-molten-glow-machine-city",
+    "indexVersion": 1,
+    "key": "world-6-cursebound-echoes-molten-glow-machine-city",
+    "maturity": "主线任务",
+    "parentKey": "world-6-cursebound-echoes-lone-tide-sea",
+    "series": "4-fantasy",
+    "side": false,
+    "sourceHashes": {
+      "json": "d0a1169b42dc66ed794b8eeeef4125f68044b2101eb66b9b173074fb72a4109d"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/4-fantasy.json",
+    "summary": "熔辉机城",
+    "summarySource": "title-only",
+    "title": "熔辉机城",
+    "type": "story-node",
+    "world": "6-咒缚回响"
+  },
+  {
+    "childKeys": [
+      "world-6-cursebound-echoes-shadow-thief-city-state"
+    ],
+    "id": "world-6-cursebound-echoes-northern-frost-crown",
+    "indexVersion": 1,
+    "key": "world-6-cursebound-echoes-northern-frost-crown",
+    "maturity": "主线任务",
+    "parentKey": "world-6-cursebound-echoes-crystal-sand-court",
+    "series": "4-fantasy",
+    "side": false,
+    "sourceHashes": {
+      "json": "d0a1169b42dc66ed794b8eeeef4125f68044b2101eb66b9b173074fb72a4109d"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/4-fantasy.json",
+    "summary": "北境霜冠",
+    "summarySource": "title-only",
+    "title": "北境霜冠",
+    "type": "story-node",
+    "world": "6-咒缚回响"
+  },
+  {
+    "childKeys": [
+      "world-6-cursebound-echoes-holy-seal-islands"
+    ],
+    "id": "world-6-cursebound-echoes-secret-rune-academy",
+    "indexVersion": 1,
+    "key": "world-6-cursebound-echoes-secret-rune-academy",
+    "maturity": "主线任务",
+    "parentKey": "world-6-cursebound-echoes-silent-rite-court",
+    "series": "4-fantasy",
+    "side": false,
+    "sourceHashes": {
+      "json": "d0a1169b42dc66ed794b8eeeef4125f68044b2101eb66b9b173074fb72a4109d"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/4-fantasy.json",
+    "summary": "秘纹学院",
+    "summarySource": "title-only",
+    "title": "秘纹学院",
+    "type": "story-node",
+    "world": "6-咒缚回响"
+  },
+  {
+    "childKeys": [
+      "world-6-cursebound-echoes-locked-horn-wasteland"
+    ],
+    "id": "world-6-cursebound-echoes-secret-tower-long-song",
+    "indexVersion": 1,
+    "key": "world-6-cursebound-echoes-secret-tower-long-song",
+    "maturity": "主线任务",
+    "parentKey": "world-6-cursebound-echoes-dragon-sleep-mountains",
+    "series": "4-fantasy",
+    "side": false,
+    "sourceHashes": {
+      "json": "d0a1169b42dc66ed794b8eeeef4125f68044b2101eb66b9b173074fb72a4109d"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/4-fantasy.json",
+    "summary": "秘塔长歌",
+    "summarySource": "title-only",
+    "title": "秘塔长歌",
+    "type": "story-node",
+    "world": "6-咒缚回响"
+  },
+  {
+    "childKeys": [
+      "world-6-cursebound-echoes-witch-swamp"
+    ],
+    "id": "world-6-cursebound-echoes-shadow-thief-city-state",
+    "indexVersion": 1,
+    "key": "world-6-cursebound-echoes-shadow-thief-city-state",
+    "maturity": "主线任务",
+    "parentKey": "world-6-cursebound-echoes-northern-frost-crown",
+    "series": "4-fantasy",
+    "side": false,
+    "sourceHashes": {
+      "json": "d0a1169b42dc66ed794b8eeeef4125f68044b2101eb66b9b173074fb72a4109d"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/4-fantasy.json",
+    "summary": "盗影城邦",
+    "summarySource": "title-only",
+    "title": "盗影城邦",
+    "type": "story-node",
+    "world": "6-咒缚回响"
+  },
+  {
+    "childKeys": [
+      "world-6-cursebound-echoes-secret-rune-academy"
+    ],
+    "id": "world-6-cursebound-echoes-silent-rite-court",
+    "indexVersion": 1,
+    "key": "world-6-cursebound-echoes-silent-rite-court",
+    "markdownPath": "src/game/data/story_outline/4-fantasy/2.1-缄礼宫廷.md",
+    "maturity": "大纲草稿",
+    "missingItems": [
+      "设计｜缄礼宫廷·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜缄礼宫廷·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜缄礼宫廷·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "地图｜缄礼宫廷·场景结构｜缺少实际地点、区域连接、道路限制与返回变化"
+    ],
+    "parentKey": "world-6-cursebound-echoes-silver-crown-capital",
+    "series": "4-fantasy",
+    "side": false,
+    "sourceHashes": {
+      "json": "d0a1169b42dc66ed794b8eeeef4125f68044b2101eb66b9b173074fb72a4109d",
+      "markdown": "91abd751288666e5116db0f74dc7feb318119eab1a8f8f47e59537e592ede49b"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/4-fantasy.json",
+    "summary": "王都上流社会把拘束发展成了礼仪。",
+    "summarySource": "frontmatter.summary",
+    "title": "缄礼宫廷",
+    "type": "story-node",
+    "world": "6-咒缚回响"
+  },
+  {
+    "childKeys": [
+      "world-6-cursebound-echoes-silent-rite-court"
+    ],
+    "id": "world-6-cursebound-echoes-silver-crown-capital",
+    "indexVersion": 1,
+    "key": "world-6-cursebound-echoes-silver-crown-capital",
+    "maturity": "主线任务",
+    "parentKey": "world-6-cursebound-echoes-dreambound-continent",
+    "series": "4-fantasy",
+    "side": false,
+    "sourceHashes": {
+      "json": "d0a1169b42dc66ed794b8eeeef4125f68044b2101eb66b9b173074fb72a4109d"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/4-fantasy.json",
+    "summary": "银冠王都",
+    "summarySource": "title-only",
+    "title": "银冠王都",
+    "type": "story-node",
+    "world": "6-咒缚回响"
+  },
+  {
+    "childKeys": [
+      "world-6-cursebound-echoes-darkmoon-castle"
+    ],
+    "id": "world-6-cursebound-echoes-tiny-liluo-adventure",
+    "indexVersion": 1,
+    "key": "world-6-cursebound-echoes-tiny-liluo-adventure",
+    "markdownPath": "src/game/data/story_outline/4-fantasy/7.1-小小璃落大冒险.md",
+    "maturity": "大纲",
+    "missingItems": [
+      "设计｜小小璃落大冒险·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜小小璃落大冒险·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜小小璃落大冒险·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "地图｜小小璃落大冒险·场景结构｜缺少实际地点、区域连接、道路限制与返回变化"
+    ],
+    "parentKey": "world-6-cursebound-echoes-forest-oath-fey-realm",
+    "series": "4-fantasy",
+    "side": false,
+    "sourceHashes": {
+      "json": "d0a1169b42dc66ed794b8eeeef4125f68044b2101eb66b9b173074fb72a4109d",
+      "markdown": "bad14c1c5c55735dc28225c4fc471f8bf9b0705816b7f423c532b7735d5eb9c0"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/4-fantasy.json",
+    "summary": "璃落被妖精秘咒变小后的冒险",
+    "summarySource": "frontmatter.summary",
+    "title": "小小璃落大冒险",
+    "type": "story-node",
+    "world": "6-咒缚回响"
+  },
+  {
+    "childKeys": [
+      "world-6-cursebound-echoes-astral-rift-gate"
+    ],
+    "id": "world-6-cursebound-echoes-witch-swamp",
+    "indexVersion": 1,
+    "key": "world-6-cursebound-echoes-witch-swamp",
+    "maturity": "主线任务",
+    "parentKey": "world-6-cursebound-echoes-shadow-thief-city-state",
+    "series": "4-fantasy",
+    "side": false,
+    "sourceHashes": {
+      "json": "d0a1169b42dc66ed794b8eeeef4125f68044b2101eb66b9b173074fb72a4109d"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/4-fantasy.json",
+    "summary": "女巫沼泽",
+    "summarySource": "title-only",
+    "title": "女巫沼泽",
+    "type": "story-node",
+    "world": "6-咒缚回响"
+  }
+]

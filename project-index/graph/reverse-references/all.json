@@ -1,0 +1,68 @@
+[
+  {
+    "entityId": "gameplay-002",
+    "entityType": "gameplay",
+    "id": "gameplay:gameplay-002",
+    "references": {
+      "storyKeys": [
+        "world-1-glimmering-glance-liminal-space"
+      ]
+    },
+    "type": "reverse-reference"
+  },
+  {
+    "entityId": "gameplay-118",
+    "entityType": "gameplay",
+    "id": "gameplay:gameplay-118",
+    "references": {
+      "storyKeys": [
+        "world-4-monica-empire-life-simulator"
+      ]
+    },
+    "type": "reverse-reference"
+  },
+  {
+    "entityId": "gameplay-119",
+    "entityType": "gameplay",
+    "id": "gameplay:gameplay-119",
+    "references": {
+      "storyKeys": [
+        "world-1-glimmering-glance-hospital-awakening"
+      ]
+    },
+    "type": "reverse-reference"
+  },
+  {
+    "entityId": "city_desire",
+    "entityType": "map",
+    "id": "map:city_desire",
+    "references": {
+      "storyKeys": [
+        "world-4-monica-empire-city-desire"
+      ]
+    },
+    "type": "reverse-reference"
+  },
+  {
+    "entityId": "city_jingjiang_school",
+    "entityType": "map",
+    "id": "map:city_jingjiang_school",
+    "references": {
+      "storyKeys": [
+        "world-1-glimmering-glance-campus-arrival"
+      ]
+    },
+    "type": "reverse-reference"
+  },
+  {
+    "entityId": "liluo_estate",
+    "entityType": "map",
+    "id": "map:liluo_estate",
+    "references": {
+      "storyKeys": [
+        "world-4-monica-empire-four-seasons-garden"
+      ]
+    },
+    "type": "reverse-reference"
+  }
+]

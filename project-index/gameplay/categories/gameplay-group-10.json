@@ -1,0 +1,764 @@
+[
+  {
+    "category": "世界建设",
+    "categoryId": "gameplay-group-10",
+    "id": "gameplay-082",
+    "indexVersion": 1,
+    "presentationModes": [
+      "main-map"
+    ],
+    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourcePath": "src/game/data/gameplay_outline/catalog.json",
+    "summary": "在探索过程中获得各种建设和制作材料。",
+    "summarySource": "source-json.summary",
+    "title": "资源采集",
+    "type": "gameplay",
+    "variants": [
+      {
+        "id": "gameplay-082-variant-01",
+        "title": "采矿"
+      },
+      {
+        "id": "gameplay-082-variant-02",
+        "title": "伐木"
+      },
+      {
+        "id": "gameplay-082-variant-03",
+        "title": "采药"
+      },
+      {
+        "id": "gameplay-082-variant-04",
+        "title": "打捞"
+      },
+      {
+        "id": "gameplay-082-variant-05",
+        "title": "拆解设备"
+      },
+      {
+        "id": "gameplay-082-variant-06",
+        "title": "狩猎采集"
+      },
+      {
+        "id": "gameplay-082-variant-07",
+        "title": "水下采集"
+      },
+      {
+        "id": "gameplay-082-variant-08",
+        "title": "危险区采集"
+      },
+      {
+        "id": "gameplay-082-variant-09",
+        "title": "限时资源点"
+      },
+      {
+        "id": "gameplay-082-variant-10",
+        "title": "再生生态"
+      }
+    ]
+  },
+  {
+    "category": "世界建设",
+    "categoryId": "gameplay-group-10",
+    "id": "gameplay-083",
+    "indexVersion": 1,
+    "presentationModes": [
+      "light-extension"
+    ],
+    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourcePath": "src/game/data/gameplay_outline/catalog.json",
+    "summary": "将采集材料转化为装备、消耗品和建设物。",
+    "summarySource": "source-json.summary",
+    "title": "物品制作",
+    "type": "gameplay",
+    "variants": [
+      {
+        "id": "gameplay-083-variant-01",
+        "title": "基础合成"
+      },
+      {
+        "id": "gameplay-083-variant-02",
+        "title": "工作台制作"
+      },
+      {
+        "id": "gameplay-083-variant-03",
+        "title": "品质制作"
+      },
+      {
+        "id": "gameplay-083-variant-04",
+        "title": "随机词条制作"
+      },
+      {
+        "id": "gameplay-083-variant-05",
+        "title": "定向词条制作"
+      },
+      {
+        "id": "gameplay-083-variant-06",
+        "title": "装备强化"
+      },
+      {
+        "id": "gameplay-083-variant-07",
+        "title": "装备改造"
+      },
+      {
+        "id": "gameplay-083-variant-08",
+        "title": "物品修理"
+      },
+      {
+        "id": "gameplay-083-variant-09",
+        "title": "炼金制药"
+      },
+      {
+        "id": "gameplay-083-variant-10",
+        "title": "陷阱制作"
+      },
+      {
+        "id": "gameplay-083-variant-11",
+        "title": "料理制作"
+      },
+      {
+        "id": "gameplay-083-variant-12",
+        "title": "蓝图解锁"
+      }
+    ]
+  },
+  {
+    "category": "世界建设",
+    "categoryId": "gameplay-group-10",
+    "id": "gameplay-084",
+    "indexVersion": 1,
+    "presentationModes": [
+      "light-extension"
+    ],
+    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourcePath": "src/game/data/gameplay_outline/catalog.json",
+    "summary": "让战斗和探索持续产生装备成长。",
+    "summarySource": "source-json.summary",
+    "title": "装备构筑",
+    "type": "gameplay",
+    "variants": [
+      {
+        "id": "gameplay-084-variant-01",
+        "title": "品质分级"
+      },
+      {
+        "id": "gameplay-084-variant-02",
+        "title": "随机词条"
+      },
+      {
+        "id": "gameplay-084-variant-03",
+        "title": "固定独特装备"
+      },
+      {
+        "id": "gameplay-084-variant-04",
+        "title": "套装效果"
+      },
+      {
+        "id": "gameplay-084-variant-05",
+        "title": "模块插槽"
+      },
+      {
+        "id": "gameplay-084-variant-06",
+        "title": "武器熟练度"
+      },
+      {
+        "id": "gameplay-084-variant-07",
+        "title": "装备重量"
+      },
+      {
+        "id": "gameplay-084-variant-08",
+        "title": "装备耐久"
+      },
+      {
+        "id": "gameplay-084-variant-09",
+        "title": "装备污染"
+      },
+      {
+        "id": "gameplay-084-variant-10",
+        "title": "装备传承"
+      }
+    ]
+  },
+  {
+    "category": "世界建设",
+    "categoryId": "gameplay-group-10",
+    "id": "gameplay-085",
+    "indexVersion": 1,
+    "presentationModes": [
+      "main-map",
+      "interface-gameplay",
+      "cg-friendly"
+    ],
+    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourcePath": "src/game/data/gameplay_outline/catalog.json",
+    "summary": "使用远征资源建设长期据点、修复废墟，或经营列车、船只、飞船等可移动基地。",
+    "summarySource": "source-json.summary",
+    "title": "基地发展",
+    "type": "gameplay",
+    "variants": [
+      {
+        "id": "gameplay-085-variant-01",
+        "title": "房间建设"
+      },
+      {
+        "id": "gameplay-085-variant-02",
+        "title": "设施升级"
+      },
+      {
+        "id": "gameplay-085-variant-03",
+        "title": "NPC入住"
+      },
+      {
+        "id": "gameplay-085-variant-04",
+        "title": "岗位分配"
+      },
+      {
+        "id": "gameplay-085-variant-05",
+        "title": "防御建设"
+      },
+      {
+        "id": "gameplay-085-variant-06",
+        "title": "基地装饰"
+      },
+      {
+        "id": "gameplay-085-variant-07",
+        "title": "基地事件"
+      },
+      {
+        "id": "gameplay-085-variant-08",
+        "title": "生产队列"
+      },
+      {
+        "id": "gameplay-085-variant-09",
+        "title": "能源网络"
+      },
+      {
+        "id": "gameplay-085-variant-10",
+        "title": "基地扩建"
+      }
+    ]
+  },
+  {
+    "category": "世界建设",
+    "categoryId": "gameplay-group-10",
+    "id": "gameplay-086",
+    "indexVersion": 1,
+    "presentationModes": [
+      "main-map",
+      "interface-gameplay",
+      "cg-friendly"
+    ],
+    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourcePath": "src/game/data/gameplay_outline/catalog.json",
+    "summary": "修复废墟的建筑、生产、人口与公共秩序，使区域状态持续改善。",
+    "summarySource": "source-json.summary",
+    "title": "区域重建",
+    "type": "gameplay",
+    "variants": [
+      {
+        "id": "gameplay-086-variant-01",
+        "title": "建筑修复"
+      },
+      {
+        "id": "gameplay-086-variant-02",
+        "title": "道路修复"
+      },
+      {
+        "id": "gameplay-086-variant-03",
+        "title": "人口恢复"
+      },
+      {
+        "id": "gameplay-086-variant-04",
+        "title": "农业恢复"
+      },
+      {
+        "id": "gameplay-086-variant-05",
+        "title": "商业恢复"
+      },
+      {
+        "id": "gameplay-086-variant-06",
+        "title": "治安恢复"
+      },
+      {
+        "id": "gameplay-086-variant-07",
+        "title": "文化恢复"
+      },
+      {
+        "id": "gameplay-086-variant-08",
+        "title": "生态恢复"
+      },
+      {
+        "id": "gameplay-086-variant-09",
+        "title": "区域等级"
+      },
+      {
+        "id": "gameplay-086-variant-10",
+        "title": "重建前后CG"
+      }
+    ]
+  },
+  {
+    "category": "世界建设",
+    "categoryId": "gameplay-group-10",
+    "id": "gameplay-087",
+    "indexVersion": 1,
+    "presentationModes": [
+      "main-map",
+      "interface-gameplay"
+    ],
+    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourcePath": "src/game/data/gameplay_outline/catalog.json",
+    "summary": "经营列车、船只、飞船等移动据点，并处理航线、模块与旅途风险。",
+    "summarySource": "source-json.summary",
+    "title": "移动据点运营",
+    "type": "gameplay",
+    "variants": [
+      {
+        "id": "gameplay-087-variant-01",
+        "title": "列车基地"
+      },
+      {
+        "id": "gameplay-087-variant-02",
+        "title": "船只基地"
+      },
+      {
+        "id": "gameplay-087-variant-03",
+        "title": "飞船基地"
+      },
+      {
+        "id": "gameplay-087-variant-04",
+        "title": "车队基地"
+      },
+      {
+        "id": "gameplay-087-variant-05",
+        "title": "飞艇基地"
+      },
+      {
+        "id": "gameplay-087-variant-06",
+        "title": "巨兽基地"
+      },
+      {
+        "id": "gameplay-087-variant-07",
+        "title": "基地模块化"
+      },
+      {
+        "id": "gameplay-087-variant-08",
+        "title": "旅途故障"
+      },
+      {
+        "id": "gameplay-087-variant-09",
+        "title": "追击压力"
+      },
+      {
+        "id": "gameplay-087-variant-10",
+        "title": "路线选择"
+      }
+    ]
+  },
+  {
+    "category": "世界建设",
+    "categoryId": "gameplay-group-10",
+    "id": "gameplay-088",
+    "indexVersion": 1,
+    "presentationModes": [
+      "main-map",
+      "interface-gameplay"
+    ],
+    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourcePath": "src/game/data/gameplay_outline/catalog.json",
+    "summary": "玩家通过冒险获取商品，再经营店铺。",
+    "summarySource": "source-json.summary",
+    "title": "商店经营",
+    "type": "gameplay",
+    "variants": [
+      {
+        "id": "gameplay-088-variant-01",
+        "title": "冒险者商店"
+      },
+      {
+        "id": "gameplay-088-variant-02",
+        "title": "药店经营"
+      },
+      {
+        "id": "gameplay-088-variant-03",
+        "title": "料理店经营"
+      },
+      {
+        "id": "gameplay-088-variant-04",
+        "title": "杂货店经营"
+      },
+      {
+        "id": "gameplay-088-variant-05",
+        "title": "神秘商店"
+      },
+      {
+        "id": "gameplay-088-variant-06",
+        "title": "价格调整"
+      },
+      {
+        "id": "gameplay-088-variant-07",
+        "title": "顾客识别"
+      },
+      {
+        "id": "gameplay-088-variant-08",
+        "title": "订单任务"
+      },
+      {
+        "id": "gameplay-088-variant-09",
+        "title": "店铺升级"
+      },
+      {
+        "id": "gameplay-088-variant-10",
+        "title": "夜间冒险白天经营"
+      }
+    ]
+  },
+  {
+    "category": "世界建设",
+    "categoryId": "gameplay-group-10",
+    "id": "gameplay-089",
+    "indexVersion": 1,
+    "presentationModes": [
+      "main-map"
+    ],
+    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourcePath": "src/game/data/gameplay_outline/catalog.json",
+    "summary": "作为重建、家园和资源生产的一部分。",
+    "summarySource": "source-json.summary",
+    "title": "农场经营",
+    "type": "gameplay",
+    "variants": [
+      {
+        "id": "gameplay-089-variant-01",
+        "title": "作物种植"
+      },
+      {
+        "id": "gameplay-089-variant-02",
+        "title": "药草培育"
+      },
+      {
+        "id": "gameplay-089-variant-03",
+        "title": "魔法植物"
+      },
+      {
+        "id": "gameplay-089-variant-04",
+        "title": "温室系统"
+      },
+      {
+        "id": "gameplay-089-variant-05",
+        "title": "灌溉管理"
+      },
+      {
+        "id": "gameplay-089-variant-06",
+        "title": "土壤恢复"
+      },
+      {
+        "id": "gameplay-089-variant-07",
+        "title": "怪物养殖"
+      },
+      {
+        "id": "gameplay-089-variant-08",
+        "title": "自动化农场"
+      },
+      {
+        "id": "gameplay-089-variant-09",
+        "title": "农场防卫"
+      },
+      {
+        "id": "gameplay-089-variant-10",
+        "title": "收获节事件"
+      }
+    ]
+  },
+  {
+    "category": "世界建设",
+    "categoryId": "gameplay-group-10",
+    "id": "gameplay-090",
+    "indexVersion": 1,
+    "presentationModes": [
+      "main-map",
+      "interface-gameplay"
+    ],
+    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourcePath": "src/game/data/gameplay_outline/catalog.json",
+    "summary": "管理任务、成员和资源，同时亲自参与关键行动。",
+    "summarySource": "source-json.summary",
+    "title": "冒险组织经营",
+    "type": "gameplay",
+    "variants": [
+      {
+        "id": "gameplay-090-variant-01",
+        "title": "成员招募"
+      },
+      {
+        "id": "gameplay-090-variant-02",
+        "title": "任务派遣"
+      },
+      {
+        "id": "gameplay-090-variant-03",
+        "title": "队伍编成"
+      },
+      {
+        "id": "gameplay-090-variant-04",
+        "title": "成员训练"
+      },
+      {
+        "id": "gameplay-090-variant-05",
+        "title": "公会装备分配"
+      },
+      {
+        "id": "gameplay-090-variant-06",
+        "title": "成员关系"
+      },
+      {
+        "id": "gameplay-090-variant-07",
+        "title": "公会设施"
+      },
+      {
+        "id": "gameplay-090-variant-08",
+        "title": "委托等级"
+      },
+      {
+        "id": "gameplay-090-variant-09",
+        "title": "竞争公会"
+      },
+      {
+        "id": "gameplay-090-variant-10",
+        "title": "亲自救场"
+      }
+    ]
+  },
+  {
+    "category": "世界建设",
+    "categoryId": "gameplay-group-10",
+    "id": "gameplay-091",
+    "indexVersion": 1,
+    "presentationModes": [
+      "main-map",
+      "interface-gameplay"
+    ],
+    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourcePath": "src/game/data/gameplay_outline/catalog.json",
+    "summary": "适合都市、末日、科幻和禁域场景。",
+    "summarySource": "source-json.summary",
+    "title": "专业设施管理",
+    "type": "gameplay",
+    "variants": [
+      {
+        "id": "gameplay-091-variant-01",
+        "title": "人员调度"
+      },
+      {
+        "id": "gameplay-091-variant-02",
+        "title": "资源分配"
+      },
+      {
+        "id": "gameplay-091-variant-03",
+        "title": "病例处理"
+      },
+      {
+        "id": "gameplay-091-variant-04",
+        "title": "研究项目"
+      },
+      {
+        "id": "gameplay-091-variant-05",
+        "title": "样本管理"
+      },
+      {
+        "id": "gameplay-091-variant-06",
+        "title": "设施故障"
+      },
+      {
+        "id": "gameplay-091-variant-07",
+        "title": "突发事件"
+      },
+      {
+        "id": "gameplay-091-variant-08",
+        "title": "安全等级"
+      },
+      {
+        "id": "gameplay-091-variant-09",
+        "title": "内部调查"
+      },
+      {
+        "id": "gameplay-091-variant-10",
+        "title": "设施失控副本"
+      }
+    ]
+  },
+  {
+    "category": "世界建设",
+    "categoryId": "gameplay-group-10",
+    "id": "gameplay-092",
+    "indexVersion": 1,
+    "presentationModes": [
+      "main-map",
+      "interface-gameplay"
+    ],
+    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourcePath": "src/game/data/gameplay_outline/catalog.json",
+    "summary": "连接多个据点并保证资源流通。",
+    "summarySource": "source-json.summary",
+    "title": "运输线路管理",
+    "type": "gameplay",
+    "variants": [
+      {
+        "id": "gameplay-092-variant-01",
+        "title": "道路运输"
+      },
+      {
+        "id": "gameplay-092-variant-02",
+        "title": "铁路运输"
+      },
+      {
+        "id": "gameplay-092-variant-03",
+        "title": "船运线路"
+      },
+      {
+        "id": "gameplay-092-variant-04",
+        "title": "传送网络"
+      },
+      {
+        "id": "gameplay-092-variant-05",
+        "title": "补给线保护"
+      },
+      {
+        "id": "gameplay-092-variant-06",
+        "title": "运输容量"
+      },
+      {
+        "id": "gameplay-092-variant-07",
+        "title": "危险路线选择"
+      },
+      {
+        "id": "gameplay-092-variant-08",
+        "title": "货物优先级"
+      },
+      {
+        "id": "gameplay-092-variant-09",
+        "title": "线路故障"
+      },
+      {
+        "id": "gameplay-092-variant-10",
+        "title": "护送任务联动"
+      }
+    ]
+  },
+  {
+    "category": "世界建设",
+    "categoryId": "gameplay-group-10",
+    "id": "gameplay-093",
+    "indexVersion": 1,
+    "presentationModes": [
+      "main-map",
+      "interface-gameplay"
+    ],
+    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourcePath": "src/game/data/gameplay_outline/catalog.json",
+    "summary": "建立材料加工和生产链。",
+    "summarySource": "source-json.summary",
+    "title": "自动化生产",
+    "type": "gameplay",
+    "variants": [
+      {
+        "id": "gameplay-093-variant-01",
+        "title": "基础加工链"
+      },
+      {
+        "id": "gameplay-093-variant-02",
+        "title": "传送带布局"
+      },
+      {
+        "id": "gameplay-093-variant-03",
+        "title": "机器供电"
+      },
+      {
+        "id": "gameplay-093-variant-04",
+        "title": "生产比例"
+      },
+      {
+        "id": "gameplay-093-variant-05",
+        "title": "仓储管理"
+      },
+      {
+        "id": "gameplay-093-variant-06",
+        "title": "自动分拣"
+      },
+      {
+        "id": "gameplay-093-variant-07",
+        "title": "质量控制"
+      },
+      {
+        "id": "gameplay-093-variant-08",
+        "title": "污染控制"
+      },
+      {
+        "id": "gameplay-093-variant-09",
+        "title": "防御自动化"
+      },
+      {
+        "id": "gameplay-093-variant-10",
+        "title": "工厂失控事件"
+      }
+    ]
+  },
+  {
+    "category": "世界建设",
+    "categoryId": "gameplay-group-10",
+    "id": "gameplay-120",
+    "indexVersion": 1,
+    "presentationModes": [
+      "main-map",
+      "light-extension",
+      "interface-gameplay",
+      "cg-friendly"
+    ],
+    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourcePath": "src/game/data/gameplay_outline/catalog.json",
+    "summary": "璃落亲自完成探索与居民任务，为破败小镇带回资源和人才；小镇通过设施升级、职业居民、节日活动与资源解锁持续恢复，每座设施同时开放服务和对应剧情。",
+    "summarySource": "source-json.summary",
+    "title": "职业小镇经营",
+    "type": "gameplay",
+    "variants": [
+      {
+        "id": "gameplay-120-variant-01",
+        "title": "探索带回资源"
+      },
+      {
+        "id": "gameplay-120-variant-02",
+        "title": "设施修复升级"
+      },
+      {
+        "id": "gameplay-120-variant-03",
+        "title": "职业居民入住"
+      },
+      {
+        "id": "gameplay-120-variant-04",
+        "title": "设施剧情链"
+      },
+      {
+        "id": "gameplay-120-variant-05",
+        "title": "任务资源循环"
+      },
+      {
+        "id": "gameplay-120-variant-06",
+        "title": "居民关系日程"
+      },
+      {
+        "id": "gameplay-120-variant-07",
+        "title": "节日活动"
+      },
+      {
+        "id": "gameplay-120-variant-08",
+        "title": "连锁资源解锁"
+      },
+      {
+        "id": "gameplay-120-variant-09",
+        "title": "世界化小镇"
+      },
+      {
+        "id": "gameplay-120-variant-10",
+        "title": "轻量经营壳"
+      }
+    ]
+  }
+]

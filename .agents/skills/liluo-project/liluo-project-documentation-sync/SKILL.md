@@ -7,6 +7,8 @@ description: Synchronize 璃落 feature docs, 功能更新目录, updateRecords.
 
 Read `AGENTS.md` and [documentation-contract.md](references/documentation-contract.md). Inspect all three record sources before choosing an ID.
 
+Use the current docs index to localize records when helpful; after documentation changes run the shared incremental index update and validation rather than maintaining a separate index.
+
 1. Preserve creation dates and all update history; append only the current change.
 2. Keep one unique numeric ID, title, creation date and current summary across document, catalog and update record.
 3. Never invent a summary, change a creation date, overwrite history or mass-renumber unrelated records.

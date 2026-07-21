@@ -1,0 +1,119 @@
+[
+  {
+    "id": "modern/city_Jingjiang_school",
+    "indexVersion": 1,
+    "mapId": "city_Jingjiang_school",
+    "sourceHash": "6067400eae74e6e1b792b16c25b5c03edf3936d852ef0aa5418158bfc6729a70",
+    "sourcePath": "src/game/data/maps/modern/city_Jingjiang_school",
+    "sourcePaths": [
+      "src/game/data/maps/modern/city_Jingjiang_school/assets.ts",
+      "src/game/data/maps/modern/city_Jingjiang_school/dialogues.json",
+      "src/game/data/maps/modern/city_Jingjiang_school/events.json",
+      "src/game/data/maps/modern/city_Jingjiang_school/map.json",
+      "src/game/data/maps/modern/city_Jingjiang_school/meta.ts"
+    ],
+    "summary": "地图目录 src/game/data/maps/modern/city_Jingjiang_school",
+    "summarySource": "structured-fields",
+    "title": "city_Jingjiang_school",
+    "type": "map",
+    "world": "modern"
+  },
+  {
+    "id": "munika/city_desire",
+    "indexVersion": 1,
+    "mapId": "city_desire",
+    "sourceHash": "fc5a1645f514c8eb926738316b9f1e652204212bf0d7f0038fb124dcefddfa0e",
+    "sourcePath": "src/game/data/maps/munika/city_desire",
+    "sourcePaths": [
+      "src/game/data/maps/munika/city_desire/assets.ts",
+      "src/game/data/maps/munika/city_desire/dialogues.json",
+      "src/game/data/maps/munika/city_desire/events.json",
+      "src/game/data/maps/munika/city_desire/map.json",
+      "src/game/data/maps/munika/city_desire/meta.ts"
+    ],
+    "summary": "地图目录 src/game/data/maps/munika/city_desire",
+    "summarySource": "structured-fields",
+    "title": "city_desire",
+    "type": "map",
+    "world": "munika"
+  },
+  {
+    "id": "munika/liluo_estate",
+    "indexVersion": 1,
+    "mapId": "liluo_estate",
+    "sourceHash": "ea5cc3c8b6ff50cf29c0e79914ced09142bec330b7e235e1666c7ff41dd15510",
+    "sourcePath": "src/game/data/maps/munika/liluo_estate",
+    "sourcePaths": [
+      "src/game/data/maps/munika/liluo_estate/animations.ts",
+      "src/game/data/maps/munika/liluo_estate/assets.ts",
+      "src/game/data/maps/munika/liluo_estate/dialogues.json",
+      "src/game/data/maps/munika/liluo_estate/dialogues.ts",
+      "src/game/data/maps/munika/liluo_estate/events.json",
+      "src/game/data/maps/munika/liluo_estate/map.json",
+      "src/game/data/maps/munika/liluo_estate/meta.ts"
+    ],
+    "summary": "地图目录 src/game/data/maps/munika/liluo_estate",
+    "summarySource": "structured-fields",
+    "title": "liluo_estate",
+    "type": "map",
+    "world": "munika"
+  },
+  {
+    "id": "munika/liluo_house_living_room",
+    "indexVersion": 1,
+    "mapId": "liluo_house_living_room",
+    "sourceHash": "de6faf9be2bcea7950b5cca00db7076beba76bc5850660e61ac18c4149d1cfd5",
+    "sourcePath": "src/game/data/maps/munika/liluo_house_living_room",
+    "sourcePaths": [
+      "src/game/data/maps/munika/liluo_house_living_room/assets.ts",
+      "src/game/data/maps/munika/liluo_house_living_room/dialogues.json",
+      "src/game/data/maps/munika/liluo_house_living_room/dialogues.ts",
+      "src/game/data/maps/munika/liluo_house_living_room/events.json",
+      "src/game/data/maps/munika/liluo_house_living_room/map.json",
+      "src/game/data/maps/munika/liluo_house_living_room/meta.ts"
+    ],
+    "summary": "地图目录 src/game/data/maps/munika/liluo_house_living_room",
+    "summarySource": "structured-fields",
+    "title": "liluo_house_living_room",
+    "type": "map",
+    "world": "munika"
+  },
+  {
+    "id": "munika/liluo_room",
+    "indexVersion": 1,
+    "mapId": "liluo_room",
+    "sourceHash": "a62bda4db7b94edb1aa75d8f7d2dbb4d34927417065b8074ebb7093a0dd61883",
+    "sourcePath": "src/game/data/maps/munika/liluo_room",
+    "sourcePaths": [
+      "src/game/data/maps/munika/liluo_room/assets.ts",
+      "src/game/data/maps/munika/liluo_room/dialogues.json",
+      "src/game/data/maps/munika/liluo_room/dialogues.ts",
+      "src/game/data/maps/munika/liluo_room/events.json",
+      "src/game/data/maps/munika/liluo_room/map.json",
+      "src/game/data/maps/munika/liluo_room/meta.ts"
+    ],
+    "summary": "地图目录 src/game/data/maps/munika/liluo_room",
+    "summarySource": "structured-fields",
+    "title": "liluo_room",
+    "type": "map",
+    "world": "munika"
+  },
+  {
+    "id": "munika/mumu_room",
+    "indexVersion": 1,
+    "mapId": "mumu_room",
+    "sourceHash": "eb8ae7ac66e7ffe27978172e0c63d82c5a93f91d094cec0b7d31fb3d9fa1bbca",
+    "sourcePath": "src/game/data/maps/munika/mumu_room",
+    "sourcePaths": [
+      "src/game/data/maps/munika/mumu_room/assets.ts",
+      "src/game/data/maps/munika/mumu_room/events.json",
+      "src/game/data/maps/munika/mumu_room/map.json",
+      "src/game/data/maps/munika/mumu_room/meta.ts"
+    ],
+    "summary": "地图目录 src/game/data/maps/munika/mumu_room",
+    "summarySource": "structured-fields",
+    "title": "mumu_room",
+    "type": "map",
+    "world": "munika"
+  }
+]

@@ -25,12 +25,12 @@ test('creates a self-describing JSON export for the complete gameplay outline', 
   assert.notEqual(payload.catalog, gameplayOutline);
 });
 
-test('loads the 107 consolidated gameplay entries with valid references', () => {
-  assert.equal(gameplayOutline.entries.length, 107);
-  assert.equal(new Set(gameplayOutline.entries.map((entry) => entry.id)).size, 107);
+test('loads the 108 consolidated gameplay entries with valid references', () => {
+  assert.equal(gameplayOutline.entries.length, 108);
+  assert.equal(new Set(gameplayOutline.entries.map((entry) => entry.id)).size, 108);
   assert.deepEqual(
     gameplayOutline.entries.map((entry) => entry.number),
-    Array.from({ length: 107 }, (_, index) => index + 1)
+    Array.from({ length: 108 }, (_, index) => index + 1)
   );
 
   const categoryIds = new Set(gameplayOutline.categories.map((category) => category.id));
@@ -156,6 +156,17 @@ test('resolves story gameplay links and updates refs without mutating the story 
   const updatedNode = updateStoryGameplayRefs(storyNode, ['gameplay-014', 'gameplay-001', 'gameplay-014']);
   assert.deepEqual(updatedNode.gameplayRefs, ['gameplay-014', 'gameplay-001']);
   assert.deepEqual(storyNode.gameplayRefs, ['gameplay-001', 'missing-gameplay']);
+});
+
+test('keeps vocational town management as a lightweight story-linked world-building loop', () => {
+  const townManagement = gameplayOutline.entries.find((entry) => entry.id === 'gameplay-120');
+
+  assert.equal(townManagement?.title, '职业小镇经营');
+  assert.equal(townManagement?.categoryId, 'gameplay-group-10');
+  assert.ok(townManagement?.designReferences.includes('《星露谷物语》（Stardew Valley）'));
+  assert.ok(townManagement?.designReferences.includes('开罗游戏式经营模拟'));
+  assert.ok(townManagement?.variants.some((variant) => variant.title === '设施剧情链'));
+  assert.ok(townManagement?.variants.some((variant) => variant.title === '轻量经营壳'));
 });
 
 test('keeps linear interactive fiction separate from outcome-changing branch dialogue', () => {

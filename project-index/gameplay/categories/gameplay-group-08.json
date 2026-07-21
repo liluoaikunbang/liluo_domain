@@ -1,0 +1,406 @@
+[
+  {
+    "category": "异常时序",
+    "categoryId": "gameplay-group-08",
+    "id": "gameplay-064",
+    "indexVersion": 1,
+    "presentationModes": [
+      "main-map",
+      "cg-friendly"
+    ],
+    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourcePath": "src/game/data/gameplay_outline/catalog.json",
+    "summary": "资源有限，敌人危险，重点是逃生和压力。",
+    "summarySource": "source-json.summary",
+    "title": "生存恐怖",
+    "type": "gameplay",
+    "variants": [
+      {
+        "id": "gameplay-064-variant-01",
+        "title": "有限弹药恐怖"
+      },
+      {
+        "id": "gameplay-064-variant-02",
+        "title": "有限照明恐怖"
+      },
+      {
+        "id": "gameplay-064-variant-03",
+        "title": "安全屋推进"
+      },
+      {
+        "id": "gameplay-064-variant-04",
+        "title": "存档资源"
+      },
+      {
+        "id": "gameplay-064-variant-05",
+        "title": "敌人复苏"
+      },
+      {
+        "id": "gameplay-064-variant-06",
+        "title": "房间状态变化"
+      },
+      {
+        "id": "gameplay-064-variant-07",
+        "title": "精神压力"
+      },
+      {
+        "id": "gameplay-064-variant-08",
+        "title": "随机惊扰"
+      },
+      {
+        "id": "gameplay-064-variant-09",
+        "title": "不可预测敌人"
+      },
+      {
+        "id": "gameplay-064-variant-10",
+        "title": "逃生优先"
+      }
+    ]
+  },
+  {
+    "category": "异常时序",
+    "categoryId": "gameplay-group-08",
+    "id": "gameplay-065",
+    "indexVersion": 1,
+    "presentationModes": [
+      "main-map",
+      "interface-gameplay"
+    ],
+    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourcePath": "src/game/data/gameplay_outline/catalog.json",
+    "summary": "玩家需要阅读、验证并遵守看似矛盾的规则。",
+    "summarySource": "source-json.summary",
+    "title": "规则怪谈",
+    "type": "gameplay",
+    "variants": [
+      {
+        "id": "gameplay-065-variant-01",
+        "title": "规则阅读"
+      },
+      {
+        "id": "gameplay-065-variant-02",
+        "title": "真假规则"
+      },
+      {
+        "id": "gameplay-065-variant-03",
+        "title": "条件规则"
+      },
+      {
+        "id": "gameplay-065-variant-04",
+        "title": "规则冲突"
+      },
+      {
+        "id": "gameplay-065-variant-05",
+        "title": "观察验证"
+      },
+      {
+        "id": "gameplay-065-variant-06",
+        "title": "规则更新"
+      },
+      {
+        "id": "gameplay-065-variant-07",
+        "title": "违反代价"
+      },
+      {
+        "id": "gameplay-065-variant-08",
+        "title": "隐藏规则"
+      },
+      {
+        "id": "gameplay-065-variant-09",
+        "title": "利用规则漏洞"
+      },
+      {
+        "id": "gameplay-065-variant-10",
+        "title": "制定规则"
+      }
+    ]
+  },
+  {
+    "category": "异常时序",
+    "categoryId": "gameplay-group-08",
+    "id": "gameplay-066",
+    "indexVersion": 1,
+    "presentationModes": [
+      "main-map"
+    ],
+    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourcePath": "src/game/data/gameplay_outline/catalog.json",
+    "summary": "观察场景变化并判断是否存在异常。",
+    "summarySource": "source-json.summary",
+    "title": "异常辨识",
+    "type": "gameplay",
+    "variants": [
+      {
+        "id": "gameplay-066-variant-01",
+        "title": "房间异常识别"
+      },
+      {
+        "id": "gameplay-066-variant-02",
+        "title": "NPC行为异常"
+      },
+      {
+        "id": "gameplay-066-variant-03",
+        "title": "物品位置异常"
+      },
+      {
+        "id": "gameplay-066-variant-04",
+        "title": "空间结构异常"
+      },
+      {
+        "id": "gameplay-066-variant-05",
+        "title": "时间异常"
+      },
+      {
+        "id": "gameplay-066-variant-06",
+        "title": "声音异常"
+      },
+      {
+        "id": "gameplay-066-variant-07",
+        "title": "循环出口"
+      },
+      {
+        "id": "gameplay-066-variant-08",
+        "title": "错误判断惩罚"
+      },
+      {
+        "id": "gameplay-066-variant-09",
+        "title": "多重异常"
+      },
+      {
+        "id": "gameplay-066-variant-10",
+        "title": "伪正常场景"
+      }
+    ]
+  },
+  {
+    "category": "异常时序",
+    "categoryId": "gameplay-group-08",
+    "id": "gameplay-067",
+    "indexVersion": 1,
+    "presentationModes": [
+      "main-map",
+      "cg-friendly"
+    ],
+    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourcePath": "src/game/data/gameplay_outline/catalog.json",
+    "summary": "地图和角色状态受到梦境稳定度影响。",
+    "summarySource": "source-json.summary",
+    "title": "精神侵蚀",
+    "type": "gameplay",
+    "variants": [
+      {
+        "id": "gameplay-067-variant-01",
+        "title": "理智值"
+      },
+      {
+        "id": "gameplay-067-variant-02",
+        "title": "虚假敌人"
+      },
+      {
+        "id": "gameplay-067-variant-03",
+        "title": "虚假道路"
+      },
+      {
+        "id": "gameplay-067-variant-04",
+        "title": "记忆碎片"
+      },
+      {
+        "id": "gameplay-067-variant-05",
+        "title": "梦境层级"
+      },
+      {
+        "id": "gameplay-067-variant-06",
+        "title": "角色恐惧具象化"
+      },
+      {
+        "id": "gameplay-067-variant-07",
+        "title": "梦境重写"
+      },
+      {
+        "id": "gameplay-067-variant-08",
+        "title": "清醒锚点"
+      },
+      {
+        "id": "gameplay-067-variant-09",
+        "title": "梦魇追猎"
+      },
+      {
+        "id": "gameplay-067-variant-10",
+        "title": "真假结局"
+      }
+    ]
+  },
+  {
+    "category": "异常时序",
+    "categoryId": "gameplay-group-08",
+    "id": "gameplay-068",
+    "indexVersion": 1,
+    "presentationModes": [
+      "main-map",
+      "cg-friendly"
+    ],
+    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourcePath": "src/game/data/gameplay_outline/catalog.json",
+    "summary": "世界在固定时间后重置，但玩家保留信息。",
+    "summarySource": "source-json.summary",
+    "title": "固定时间循环",
+    "type": "gameplay",
+    "variants": [
+      {
+        "id": "gameplay-068-variant-01",
+        "title": "短循环"
+      },
+      {
+        "id": "gameplay-068-variant-02",
+        "title": "单日循环"
+      },
+      {
+        "id": "gameplay-068-variant-03",
+        "title": "多日循环"
+      },
+      {
+        "id": "gameplay-068-variant-04",
+        "title": "灾难倒计时"
+      },
+      {
+        "id": "gameplay-068-variant-05",
+        "title": "路线试错"
+      },
+      {
+        "id": "gameplay-068-variant-06",
+        "title": "信息积累"
+      },
+      {
+        "id": "gameplay-068-variant-07",
+        "title": "物品跨循环"
+      },
+      {
+        "id": "gameplay-068-variant-08",
+        "title": "NPC记忆残留"
+      },
+      {
+        "id": "gameplay-068-variant-09",
+        "title": "循环偏移"
+      },
+      {
+        "id": "gameplay-068-variant-10",
+        "title": "主动重置"
+      }
+    ]
+  },
+  {
+    "category": "异常时序",
+    "categoryId": "gameplay-group-08",
+    "id": "gameplay-069",
+    "indexVersion": 1,
+    "presentationModes": [
+      "main-map"
+    ],
+    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourcePath": "src/game/data/gameplay_outline/catalog.json",
+    "summary": "时间能力直接参与战斗。",
+    "summarySource": "source-json.summary",
+    "title": "战斗回溯",
+    "type": "gameplay",
+    "variants": [
+      {
+        "id": "gameplay-069-variant-01",
+        "title": "短时间倒退"
+      },
+      {
+        "id": "gameplay-069-variant-02",
+        "title": "伤害撤销"
+      },
+      {
+        "id": "gameplay-069-variant-03",
+        "title": "敌人状态回溯"
+      },
+      {
+        "id": "gameplay-069-variant-04",
+        "title": "投射物回溯"
+      },
+      {
+        "id": "gameplay-069-variant-05",
+        "title": "死亡重试"
+      },
+      {
+        "id": "gameplay-069-variant-06",
+        "title": "回溯资源限制"
+      },
+      {
+        "id": "gameplay-069-variant-07",
+        "title": "回溯分身"
+      },
+      {
+        "id": "gameplay-069-variant-08",
+        "title": "Boss反回溯"
+      },
+      {
+        "id": "gameplay-069-variant-09",
+        "title": "时间债务"
+      },
+      {
+        "id": "gameplay-069-variant-10",
+        "title": "时间状态叠加"
+      }
+    ]
+  },
+  {
+    "category": "异常时序",
+    "categoryId": "gameplay-group-08",
+    "id": "gameplay-070",
+    "indexVersion": 1,
+    "presentationModes": [
+      "main-map",
+      "cg-friendly"
+    ],
+    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourcePath": "src/game/data/gameplay_outline/catalog.json",
+    "summary": "每次通关都能改变下一周目的世界。",
+    "summarySource": "source-json.summary",
+    "title": "周目因果演化",
+    "type": "gameplay",
+    "variants": [
+      {
+        "id": "gameplay-070-variant-01",
+        "title": "继承能力周目"
+      },
+      {
+        "id": "gameplay-070-variant-02",
+        "title": "继承知识周目"
+      },
+      {
+        "id": "gameplay-070-variant-03",
+        "title": "世界强化周目"
+      },
+      {
+        "id": "gameplay-070-variant-04",
+        "title": "隐藏路线周目"
+      },
+      {
+        "id": "gameplay-070-variant-05",
+        "title": "角色命运改变"
+      },
+      {
+        "id": "gameplay-070-variant-06",
+        "title": "因果回收"
+      },
+      {
+        "id": "gameplay-070-variant-07",
+        "title": "Boss记忆"
+      },
+      {
+        "id": "gameplay-070-variant-08",
+        "title": "世界重组"
+      },
+      {
+        "id": "gameplay-070-variant-09",
+        "title": "身份变化"
+      },
+      {
+        "id": "gameplay-070-variant-10",
+        "title": "最终完整时间线"
+      }
+    ]
+  }
+]

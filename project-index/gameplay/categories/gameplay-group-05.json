@@ -1,0 +1,819 @@
+[
+  {
+    "category": "战场攻防",
+    "categoryId": "gameplay-group-05",
+    "id": "gameplay-024",
+    "indexVersion": 1,
+    "presentationModes": [
+      "main-map"
+    ],
+    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourcePath": "src/game/data/gameplay_outline/catalog.json",
+    "summary": "从竞技游戏提取控制区域的规则。",
+    "summarySource": "source-json.summary",
+    "title": "区域争夺",
+    "type": "gameplay",
+    "variants": [
+      {
+        "id": "gameplay-024-variant-01",
+        "title": "单点占领"
+      },
+      {
+        "id": "gameplay-024-variant-02",
+        "title": "多点占领"
+      },
+      {
+        "id": "gameplay-024-variant-03",
+        "title": "动态占点"
+      },
+      {
+        "id": "gameplay-024-variant-04",
+        "title": "山丘之王"
+      },
+      {
+        "id": "gameplay-024-variant-05",
+        "title": "区域争夺"
+      },
+      {
+        "id": "gameplay-024-variant-06",
+        "title": "连锁占点"
+      },
+      {
+        "id": "gameplay-024-variant-07",
+        "title": "能源节点"
+      },
+      {
+        "id": "gameplay-024-variant-08",
+        "title": "复活节点"
+      },
+      {
+        "id": "gameplay-024-variant-09",
+        "title": "传送节点"
+      },
+      {
+        "id": "gameplay-024-variant-10",
+        "title": "最终核心点"
+      }
+    ]
+  },
+  {
+    "category": "战场攻防",
+    "categoryId": "gameplay-group-05",
+    "id": "gameplay-025",
+    "indexVersion": 1,
+    "presentationModes": [
+      "main-map"
+    ],
+    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourcePath": "src/game/data/gameplay_outline/catalog.json",
+    "summary": "围绕放置、保护或解除装置展开。",
+    "summarySource": "source-json.summary",
+    "title": "爆破攻防",
+    "type": "gameplay",
+    "variants": [
+      {
+        "id": "gameplay-025-variant-01",
+        "title": "安放爆破物"
+      },
+      {
+        "id": "gameplay-025-variant-02",
+        "title": "爆破防守"
+      },
+      {
+        "id": "gameplay-025-variant-03",
+        "title": "多目标爆破"
+      },
+      {
+        "id": "gameplay-025-variant-04",
+        "title": "限时拆弹"
+      },
+      {
+        "id": "gameplay-025-variant-05",
+        "title": "线路拆除"
+      },
+      {
+        "id": "gameplay-025-variant-06",
+        "title": "诱饵装置"
+      },
+      {
+        "id": "gameplay-025-variant-07",
+        "title": "移动炸弹"
+      },
+      {
+        "id": "gameplay-025-variant-08",
+        "title": "遥控爆破"
+      },
+      {
+        "id": "gameplay-025-variant-09",
+        "title": "环境爆破"
+      },
+      {
+        "id": "gameplay-025-variant-10",
+        "title": "撤离爆破"
+      }
+    ]
+  },
+  {
+    "category": "战场攻防",
+    "categoryId": "gameplay-group-05",
+    "id": "gameplay-026",
+    "indexVersion": 1,
+    "presentationModes": [
+      "main-map"
+    ],
+    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourcePath": "src/game/data/gameplay_outline/catalog.json",
+    "summary": "保护一个沿固定或半固定路线移动的目标。",
+    "summarySource": "source-json.summary",
+    "title": "移动目标护卫",
+    "type": "gameplay",
+    "variants": [
+      {
+        "id": "gameplay-026-variant-01",
+        "title": "攻城车护送"
+      },
+      {
+        "id": "gameplay-026-variant-02",
+        "title": "能源车护送"
+      },
+      {
+        "id": "gameplay-026-variant-03",
+        "title": "医疗车护送"
+      },
+      {
+        "id": "gameplay-026-variant-04",
+        "title": "矿车推进"
+      },
+      {
+        "id": "gameplay-026-variant-05",
+        "title": "列车护送"
+      },
+      {
+        "id": "gameplay-026-variant-06",
+        "title": "双路线选择"
+      },
+      {
+        "id": "gameplay-026-variant-07",
+        "title": "停靠防守"
+      },
+      {
+        "id": "gameplay-026-variant-08",
+        "title": "维修推进"
+      },
+      {
+        "id": "gameplay-026-variant-09",
+        "title": "燃料推进"
+      },
+      {
+        "id": "gameplay-026-variant-10",
+        "title": "反向阻截"
+      }
+    ]
+  },
+  {
+    "category": "战场攻防",
+    "categoryId": "gameplay-group-05",
+    "id": "gameplay-027",
+    "indexVersion": 1,
+    "presentationModes": [
+      "main-map"
+    ],
+    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourcePath": "src/game/data/gameplay_outline/catalog.json",
+    "summary": "把“夺旗”改造成获取关键道具并带回指定位置。",
+    "summarySource": "source-json.summary",
+    "title": "目标物争夺",
+    "type": "gameplay",
+    "variants": [
+      {
+        "id": "gameplay-027-variant-01",
+        "title": "遗物夺取"
+      },
+      {
+        "id": "gameplay-027-variant-02",
+        "title": "能源核心夺取"
+      },
+      {
+        "id": "gameplay-027-variant-03",
+        "title": "情报箱夺取"
+      },
+      {
+        "id": "gameplay-027-variant-04",
+        "title": "多件物品运送"
+      },
+      {
+        "id": "gameplay-027-variant-05",
+        "title": "中立物争夺"
+      },
+      {
+        "id": "gameplay-027-variant-06",
+        "title": "移动目标夺取"
+      },
+      {
+        "id": "gameplay-027-variant-07",
+        "title": "限时回收"
+      },
+      {
+        "id": "gameplay-027-variant-08",
+        "title": "交接运输"
+      },
+      {
+        "id": "gameplay-027-variant-09",
+        "title": "真假目标"
+      },
+      {
+        "id": "gameplay-027-variant-10",
+        "title": "运送后防守"
+      }
+    ]
+  },
+  {
+    "category": "战场攻防",
+    "categoryId": "gameplay-group-05",
+    "id": "gameplay-028",
+    "indexVersion": 1,
+    "presentationModes": [
+      "main-map",
+      "cg-friendly"
+    ],
+    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourcePath": "src/game/data/gameplay_outline/catalog.json",
+    "summary": "强调潜入、开锁、警报和撤离。",
+    "summarySource": "source-json.summary",
+    "title": "金库突袭",
+    "type": "gameplay",
+    "variants": [
+      {
+        "id": "gameplay-028-variant-01",
+        "title": "潜入抢劫"
+      },
+      {
+        "id": "gameplay-028-variant-02",
+        "title": "强攻抢劫"
+      },
+      {
+        "id": "gameplay-028-variant-03",
+        "title": "伪装抢劫"
+      },
+      {
+        "id": "gameplay-028-variant-04",
+        "title": "多阶段开锁"
+      },
+      {
+        "id": "gameplay-028-variant-05",
+        "title": "搬运战利品"
+      },
+      {
+        "id": "gameplay-028-variant-06",
+        "title": "有限时间抢劫"
+      },
+      {
+        "id": "gameplay-028-variant-07",
+        "title": "内部接应"
+      },
+      {
+        "id": "gameplay-028-variant-08",
+        "title": "骗局抢劫"
+      },
+      {
+        "id": "gameplay-028-variant-09",
+        "title": "移动金库"
+      },
+      {
+        "id": "gameplay-028-variant-10",
+        "title": "撤离追捕"
+      }
+    ]
+  },
+  {
+    "category": "战场攻防",
+    "categoryId": "gameplay-group-05",
+    "id": "gameplay-029",
+    "indexVersion": 1,
+    "presentationModes": [
+      "main-map"
+    ],
+    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourcePath": "src/game/data/gameplay_outline/catalog.json",
+    "summary": "围绕终端、信号和数据传输展开。",
+    "summarySource": "source-json.summary",
+    "title": "通信任务",
+    "type": "gameplay",
+    "variants": [
+      {
+        "id": "gameplay-029-variant-01",
+        "title": "启动终端"
+      },
+      {
+        "id": "gameplay-029-variant-02",
+        "title": "守护上传"
+      },
+      {
+        "id": "gameplay-029-variant-03",
+        "title": "多节点同步"
+      },
+      {
+        "id": "gameplay-029-variant-04",
+        "title": "信号塔修复"
+      },
+      {
+        "id": "gameplay-029-variant-05",
+        "title": "移动信号源"
+      },
+      {
+        "id": "gameplay-029-variant-06",
+        "title": "信号追踪"
+      },
+      {
+        "id": "gameplay-029-variant-07",
+        "title": "数据窃取"
+      },
+      {
+        "id": "gameplay-029-variant-08",
+        "title": "病毒植入"
+      },
+      {
+        "id": "gameplay-029-variant-09",
+        "title": "远程支援呼叫"
+      },
+      {
+        "id": "gameplay-029-variant-10",
+        "title": "上传后撤离"
+      }
+    ]
+  },
+  {
+    "category": "战场攻防",
+    "categoryId": "gameplay-group-05",
+    "id": "gameplay-030",
+    "indexVersion": 1,
+    "presentationModes": [
+      "main-map"
+    ],
+    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourcePath": "src/game/data/gameplay_outline/catalog.json",
+    "summary": "围绕单路或多路兵线、防御建筑、中立区域与核心据点展开持续推进和攻防。",
+    "summarySource": "source-json.summary",
+    "title": "兵线推进战场",
+    "type": "gameplay",
+    "variants": [
+      {
+        "id": "gameplay-030-variant-01",
+        "title": "标准推进"
+      },
+      {
+        "id": "gameplay-030-variant-02",
+        "title": "英雄护线"
+      },
+      {
+        "id": "gameplay-030-variant-03",
+        "title": "据点补兵"
+      },
+      {
+        "id": "gameplay-030-variant-04",
+        "title": "攻城器械"
+      },
+      {
+        "id": "gameplay-030-variant-05",
+        "title": "敌将拦截"
+      },
+      {
+        "id": "gameplay-030-variant-06",
+        "title": "路线Boss"
+      },
+      {
+        "id": "gameplay-030-variant-07",
+        "title": "局内升级"
+      },
+      {
+        "id": "gameplay-030-variant-08",
+        "title": "兵线构筑"
+      },
+      {
+        "id": "gameplay-030-variant-09",
+        "title": "反向防守"
+      },
+      {
+        "id": "gameplay-030-variant-10",
+        "title": "核心Boss化"
+      },
+      {
+        "id": "gameplay-030-merged-gameplay-031",
+        "title": "多路兵线战场"
+      },
+      {
+        "id": "gameplay-031-variant-01",
+        "title": "双路支援"
+      },
+      {
+        "id": "gameplay-031-variant-02",
+        "title": "三路取舍"
+      },
+      {
+        "id": "gameplay-031-variant-03",
+        "title": "路线分工"
+      },
+      {
+        "id": "gameplay-031-variant-04",
+        "title": "路线失守"
+      },
+      {
+        "id": "gameplay-031-variant-05",
+        "title": "路线占领"
+      },
+      {
+        "id": "gameplay-031-variant-06",
+        "title": "路线事件"
+      },
+      {
+        "id": "gameplay-031-variant-07",
+        "title": "路线资源差异"
+      },
+      {
+        "id": "gameplay-031-variant-08",
+        "title": "秘密通路"
+      },
+      {
+        "id": "gameplay-031-variant-09",
+        "title": "中央Boss争夺"
+      },
+      {
+        "id": "gameplay-031-variant-10",
+        "title": "多线最终合流"
+      }
+    ]
+  },
+  {
+    "category": "战场攻防",
+    "categoryId": "gameplay-group-05",
+    "id": "gameplay-032",
+    "indexVersion": 1,
+    "presentationModes": [
+      "main-map"
+    ],
+    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourcePath": "src/game/data/gameplay_outline/catalog.json",
+    "summary": "弱化兵线也可以单独做成野区狩猎玩法。",
+    "summarySource": "source-json.summary",
+    "title": "中立资源争夺",
+    "type": "gameplay",
+    "variants": [
+      {
+        "id": "gameplay-032-variant-01",
+        "title": "普通野怪营地"
+      },
+      {
+        "id": "gameplay-032-variant-02",
+        "title": "增益野怪"
+      },
+      {
+        "id": "gameplay-032-variant-03",
+        "title": "大型中立Boss"
+      },
+      {
+        "id": "gameplay-032-variant-04",
+        "title": "雇佣兵营地"
+      },
+      {
+        "id": "gameplay-032-variant-05",
+        "title": "资源采集点"
+      },
+      {
+        "id": "gameplay-032-variant-06",
+        "title": "传送祭坛"
+      },
+      {
+        "id": "gameplay-032-variant-07",
+        "title": "侦察高地"
+      },
+      {
+        "id": "gameplay-032-variant-08",
+        "title": "随机野区事件"
+      },
+      {
+        "id": "gameplay-032-variant-09",
+        "title": "敌军抢夺资源"
+      },
+      {
+        "id": "gameplay-032-variant-10",
+        "title": "野区污染扩张"
+      }
+    ]
+  },
+  {
+    "category": "战场攻防",
+    "categoryId": "gameplay-group-05",
+    "id": "gameplay-033",
+    "indexVersion": 1,
+    "presentationModes": [
+      "main-map"
+    ],
+    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourcePath": "src/game/data/gameplay_outline/catalog.json",
+    "summary": "MOBA、塔防和动作战斗的混合。",
+    "summarySource": "source-json.summary",
+    "title": "核心保卫",
+    "type": "gameplay",
+    "variants": [
+      {
+        "id": "gameplay-033-variant-01",
+        "title": "核心防守"
+      },
+      {
+        "id": "gameplay-033-variant-02",
+        "title": "分路防守"
+      },
+      {
+        "id": "gameplay-033-variant-03",
+        "title": "英雄巡线"
+      },
+      {
+        "id": "gameplay-033-variant-04",
+        "title": "防御塔维修"
+      },
+      {
+        "id": "gameplay-033-variant-05",
+        "title": "临时建筑"
+      },
+      {
+        "id": "gameplay-033-variant-06",
+        "title": "反攻阶段"
+      },
+      {
+        "id": "gameplay-033-variant-07",
+        "title": "撤退防线"
+      },
+      {
+        "id": "gameplay-033-variant-08",
+        "title": "多核心防守"
+      },
+      {
+        "id": "gameplay-033-variant-09",
+        "title": "核心移动"
+      },
+      {
+        "id": "gameplay-033-variant-10",
+        "title": "最终撤离防守"
+      }
+    ]
+  },
+  {
+    "category": "战场攻防",
+    "categoryId": "gameplay-group-05",
+    "id": "gameplay-034",
+    "indexVersion": 1,
+    "presentationModes": [
+      "main-map",
+      "light-extension"
+    ],
+    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourcePath": "src/game/data/gameplay_outline/catalog.json",
+    "summary": "通过布置防御单位、调整敌人路径或组织进攻部队，完成阵地防守与防线突破。",
+    "summarySource": "source-json.summary",
+    "title": "路径塔防",
+    "type": "gameplay",
+    "variants": [
+      {
+        "id": "gameplay-034-variant-01",
+        "title": "固定路线塔防"
+      },
+      {
+        "id": "gameplay-034-variant-02",
+        "title": "多路线塔防"
+      },
+      {
+        "id": "gameplay-034-variant-03",
+        "title": "元素克制塔防"
+      },
+      {
+        "id": "gameplay-034-variant-04",
+        "title": "范围组合塔防"
+      },
+      {
+        "id": "gameplay-034-variant-05",
+        "title": "减速控制塔防"
+      },
+      {
+        "id": "gameplay-034-variant-06",
+        "title": "资源塔防"
+      },
+      {
+        "id": "gameplay-034-variant-07",
+        "title": "升级分支塔防"
+      },
+      {
+        "id": "gameplay-034-variant-08",
+        "title": "英雄塔防"
+      },
+      {
+        "id": "gameplay-034-variant-09",
+        "title": "可移动塔防"
+      },
+      {
+        "id": "gameplay-034-variant-10",
+        "title": "Boss塔防"
+      },
+      {
+        "id": "gameplay-034-merged-gameplay-035",
+        "title": "迷宫塔防"
+      },
+      {
+        "id": "gameplay-035-variant-01",
+        "title": "墙体引导"
+      },
+      {
+        "id": "gameplay-035-variant-02",
+        "title": "陷阱走廊"
+      },
+      {
+        "id": "gameplay-035-variant-03",
+        "title": "可开关道路"
+      },
+      {
+        "id": "gameplay-035-variant-04",
+        "title": "地形改造"
+      },
+      {
+        "id": "gameplay-035-variant-05",
+        "title": "分流控制"
+      },
+      {
+        "id": "gameplay-035-variant-06",
+        "title": "诱饵目标"
+      },
+      {
+        "id": "gameplay-035-variant-07",
+        "title": "动态破墙敌人"
+      },
+      {
+        "id": "gameplay-035-variant-08",
+        "title": "路线长度评分"
+      }
+    ]
+  },
+  {
+    "category": "战场攻防",
+    "categoryId": "gameplay-group-05",
+    "id": "gameplay-037",
+    "indexVersion": 1,
+    "presentationModes": [
+      "main-map",
+      "light-extension"
+    ],
+    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourcePath": "src/game/data/gameplay_outline/catalog.json",
+    "summary": "组织进攻单位、选择突破路线并摧毁敌方防御设施。",
+    "summarySource": "source-json.summary",
+    "title": "防线突破",
+    "type": "gameplay",
+    "variants": [
+      {
+        "id": "gameplay-037-variant-01",
+        "title": "兵种编队突破"
+      },
+      {
+        "id": "gameplay-037-variant-02",
+        "title": "英雄带队突破"
+      },
+      {
+        "id": "gameplay-037-variant-03",
+        "title": "路线选择突破"
+      },
+      {
+        "id": "gameplay-037-variant-04",
+        "title": "破塔优先级"
+      },
+      {
+        "id": "gameplay-037-variant-05",
+        "title": "技能支援"
+      },
+      {
+        "id": "gameplay-037-variant-06",
+        "title": "持续出兵"
+      },
+      {
+        "id": "gameplay-037-variant-07",
+        "title": "攻城Boss"
+      },
+      {
+        "id": "gameplay-037-variant-08",
+        "title": "限时突破"
+      }
+    ]
+  },
+  {
+    "category": "战场攻防",
+    "categoryId": "gameplay-group-05",
+    "id": "gameplay-036",
+    "indexVersion": 1,
+    "presentationModes": [
+      "main-map",
+      "interface-gameplay"
+    ],
+    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourcePath": "src/game/data/gameplay_outline/catalog.json",
+    "summary": "玩家布置自己的地牢，抵御入侵者。",
+    "summarySource": "source-json.summary",
+    "title": "地牢经营防御",
+    "type": "gameplay",
+    "variants": [
+      {
+        "id": "gameplay-036-variant-01",
+        "title": "怪物驻守"
+      },
+      {
+        "id": "gameplay-036-variant-02",
+        "title": "陷阱布置"
+      },
+      {
+        "id": "gameplay-036-variant-03",
+        "title": "房间功能"
+      },
+      {
+        "id": "gameplay-036-variant-04",
+        "title": "诱饵宝箱"
+      },
+      {
+        "id": "gameplay-036-variant-05",
+        "title": "守卫轮换"
+      },
+      {
+        "id": "gameplay-036-variant-06",
+        "title": "资源循环"
+      },
+      {
+        "id": "gameplay-036-variant-07",
+        "title": "英雄入侵事件"
+      },
+      {
+        "id": "gameplay-036-variant-08",
+        "title": "秘密通道"
+      },
+      {
+        "id": "gameplay-036-variant-09",
+        "title": "地牢声望"
+      },
+      {
+        "id": "gameplay-036-variant-10",
+        "title": "亲自防守"
+      }
+    ]
+  },
+  {
+    "category": "战场攻防",
+    "categoryId": "gameplay-group-05",
+    "id": "gameplay-039",
+    "indexVersion": 1,
+    "presentationModes": [
+      "main-map"
+    ],
+    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourcePath": "src/game/data/gameplay_outline/catalog.json",
+    "summary": "白天探索和建设，夜晚抵御敌人。",
+    "summarySource": "source-json.summary",
+    "title": "昼夜基地攻防",
+    "type": "gameplay",
+    "variants": [
+      {
+        "id": "gameplay-039-variant-01",
+        "title": "昼采夜守"
+      },
+      {
+        "id": "gameplay-039-variant-02",
+        "title": "周期尸潮"
+      },
+      {
+        "id": "gameplay-039-variant-03",
+        "title": "防线升级"
+      },
+      {
+        "id": "gameplay-039-variant-04",
+        "title": "居民分工"
+      },
+      {
+        "id": "gameplay-039-variant-05",
+        "title": "资源短缺"
+      },
+      {
+        "id": "gameplay-039-variant-06",
+        "title": "季节变化"
+      },
+      {
+        "id": "gameplay-039-variant-07",
+        "title": "基地搬迁"
+      },
+      {
+        "id": "gameplay-039-variant-08",
+        "title": "多基地管理"
+      },
+      {
+        "id": "gameplay-039-variant-09",
+        "title": "内应事件"
+      },
+      {
+        "id": "gameplay-039-variant-10",
+        "title": "最终围城"
+      }
+    ]
+  }
+]

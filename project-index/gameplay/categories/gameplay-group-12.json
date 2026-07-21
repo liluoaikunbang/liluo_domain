@@ -1,0 +1,463 @@
+[
+  {
+    "category": "叙事模拟",
+    "categoryId": "gameplay-group-12",
+    "id": "gameplay-104",
+    "indexVersion": 1,
+    "presentationModes": [
+      "main-map",
+      "cg-friendly"
+    ],
+    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourcePath": "src/game/data/gameplay_outline/catalog.json",
+    "summary": "选择对话方式影响人物关系和任务结果。",
+    "summarySource": "source-json.summary",
+    "title": "分支对话",
+    "type": "gameplay",
+    "variants": [
+      {
+        "id": "gameplay-104-variant-01",
+        "title": "态度选择"
+      },
+      {
+        "id": "gameplay-104-variant-02",
+        "title": "情报解锁选项"
+      },
+      {
+        "id": "gameplay-104-variant-03",
+        "title": "属性检定"
+      },
+      {
+        "id": "gameplay-104-variant-04",
+        "title": "道具对话"
+      },
+      {
+        "id": "gameplay-104-variant-05",
+        "title": "时间限制选择"
+      },
+      {
+        "id": "gameplay-104-variant-06",
+        "title": "沉默选择"
+      },
+      {
+        "id": "gameplay-104-variant-07",
+        "title": "欺骗与识破"
+      },
+      {
+        "id": "gameplay-104-variant-08",
+        "title": "承诺记录"
+      },
+      {
+        "id": "gameplay-104-variant-09",
+        "title": "多方对话"
+      },
+      {
+        "id": "gameplay-104-variant-10",
+        "title": "隐藏态度变量"
+      }
+    ]
+  },
+  {
+    "category": "叙事模拟",
+    "categoryId": "gameplay-group-12",
+    "id": "gameplay-105",
+    "indexVersion": 1,
+    "presentationModes": [
+      "main-map",
+      "light-extension"
+    ],
+    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourcePath": "src/game/data/gameplay_outline/catalog.json",
+    "summary": "不同势力对璃落的态度影响世界状态。",
+    "summarySource": "source-json.summary",
+    "title": "阵营声望",
+    "type": "gameplay",
+    "variants": [
+      {
+        "id": "gameplay-105-variant-01",
+        "title": "地区声望"
+      },
+      {
+        "id": "gameplay-105-variant-02",
+        "title": "敌对阵营关系"
+      },
+      {
+        "id": "gameplay-105-variant-03",
+        "title": "身份等级"
+      },
+      {
+        "id": "gameplay-105-variant-04",
+        "title": "商店折扣"
+      },
+      {
+        "id": "gameplay-105-variant-05",
+        "title": "特殊援军"
+      },
+      {
+        "id": "gameplay-105-variant-06",
+        "title": "阵营装备"
+      },
+      {
+        "id": "gameplay-105-variant-07",
+        "title": "阵营冲突事件"
+      },
+      {
+        "id": "gameplay-105-variant-08",
+        "title": "中立路线"
+      },
+      {
+        "id": "gameplay-105-variant-09",
+        "title": "背叛与修复"
+      },
+      {
+        "id": "gameplay-105-variant-10",
+        "title": "阵营结局"
+      }
+    ]
+  },
+  {
+    "category": "叙事模拟",
+    "categoryId": "gameplay-group-12",
+    "id": "gameplay-106",
+    "indexVersion": 1,
+    "presentationModes": [
+      "main-map",
+      "cg-friendly"
+    ],
+    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourcePath": "src/game/data/gameplay_outline/catalog.json",
+    "summary": "将AI伙伴从战斗单位发展为长期角色。",
+    "summarySource": "source-json.summary",
+    "title": "伙伴羁绊",
+    "type": "gameplay",
+    "variants": [
+      {
+        "id": "gameplay-106-variant-01",
+        "title": "好感成长"
+      },
+      {
+        "id": "gameplay-106-variant-02",
+        "title": "信任检定"
+      },
+      {
+        "id": "gameplay-106-variant-03",
+        "title": "个人任务"
+      },
+      {
+        "id": "gameplay-106-variant-04",
+        "title": "立场冲突"
+      },
+      {
+        "id": "gameplay-106-variant-05",
+        "title": "战斗默契"
+      },
+      {
+        "id": "gameplay-106-variant-06",
+        "title": "营地互动"
+      },
+      {
+        "id": "gameplay-106-variant-07",
+        "title": "离队风险"
+      },
+      {
+        "id": "gameplay-106-variant-08",
+        "title": "拯救与牺牲选择"
+      },
+      {
+        "id": "gameplay-106-variant-09",
+        "title": "多角色关系网"
+      },
+      {
+        "id": "gameplay-106-variant-10",
+        "title": "专属CG与结局"
+      }
+    ]
+  },
+  {
+    "category": "叙事模拟",
+    "categoryId": "gameplay-group-12",
+    "id": "gameplay-107",
+    "indexVersion": 1,
+    "presentationModes": [
+      "main-map"
+    ],
+    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourcePath": "src/game/data/gameplay_outline/catalog.json",
+    "summary": "同一目标可以通过不同方式完成。",
+    "summarySource": "source-json.summary",
+    "title": "多解任务",
+    "type": "gameplay",
+    "variants": [
+      {
+        "id": "gameplay-107-variant-01",
+        "title": "正面战斗"
+      },
+      {
+        "id": "gameplay-107-variant-02",
+        "title": "秘密潜入"
+      },
+      {
+        "id": "gameplay-107-variant-03",
+        "title": "身份伪装"
+      },
+      {
+        "id": "gameplay-107-variant-04",
+        "title": "机关破坏"
+      },
+      {
+        "id": "gameplay-107-variant-05",
+        "title": "环境绕行"
+      },
+      {
+        "id": "gameplay-107-variant-06",
+        "title": "NPC协助"
+      },
+      {
+        "id": "gameplay-107-variant-07",
+        "title": "物资交易"
+      },
+      {
+        "id": "gameplay-107-variant-08",
+        "title": "制造事故"
+      },
+      {
+        "id": "gameplay-107-variant-09",
+        "title": "阵营冲突利用"
+      },
+      {
+        "id": "gameplay-107-variant-10",
+        "title": "直接放弃目标"
+      }
+    ]
+  },
+  {
+    "category": "叙事模拟",
+    "categoryId": "gameplay-group-12",
+    "id": "gameplay-108",
+    "indexVersion": 1,
+    "presentationModes": [
+      "main-map"
+    ],
+    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourcePath": "src/game/data/gameplay_outline/catalog.json",
+    "summary": "让环境系统互相作用，产生非预设结果。",
+    "summarySource": "source-json.summary",
+    "title": "系统互动沙盒",
+    "type": "gameplay",
+    "variants": [
+      {
+        "id": "gameplay-108-variant-01",
+        "title": "火焰传播"
+      },
+      {
+        "id": "gameplay-108-variant-02",
+        "title": "水电互动"
+      },
+      {
+        "id": "gameplay-108-variant-03",
+        "title": "冰面形成"
+      },
+      {
+        "id": "gameplay-108-variant-04",
+        "title": "烟雾遮挡"
+      },
+      {
+        "id": "gameplay-108-variant-05",
+        "title": "声音传播"
+      },
+      {
+        "id": "gameplay-108-variant-06",
+        "title": "可破坏结构"
+      },
+      {
+        "id": "gameplay-108-variant-07",
+        "title": "敌人互斗"
+      },
+      {
+        "id": "gameplay-108-variant-08",
+        "title": "诱导陷阱"
+      },
+      {
+        "id": "gameplay-108-variant-09",
+        "title": "物体搬运"
+      },
+      {
+        "id": "gameplay-108-variant-10",
+        "title": "连锁灾害"
+      }
+    ]
+  },
+  {
+    "category": "叙事模拟",
+    "categoryId": "gameplay-group-12",
+    "id": "gameplay-109",
+    "indexVersion": 1,
+    "presentationModes": [
+      "main-map"
+    ],
+    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourcePath": "src/game/data/gameplay_outline/catalog.json",
+    "summary": "NPC拥有自己的行动规律，而非固定站在原地。",
+    "summarySource": "source-json.summary",
+    "title": "动态世界日程",
+    "type": "gameplay",
+    "variants": [
+      {
+        "id": "gameplay-109-variant-01",
+        "title": "昼夜日程"
+      },
+      {
+        "id": "gameplay-109-variant-02",
+        "title": "工作与休息"
+      },
+      {
+        "id": "gameplay-109-variant-03",
+        "title": "动态商店"
+      },
+      {
+        "id": "gameplay-109-variant-04",
+        "title": "巡逻换班"
+      },
+      {
+        "id": "gameplay-109-variant-05",
+        "title": "突发事件反应"
+      },
+      {
+        "id": "gameplay-109-variant-06",
+        "title": "消息传播"
+      },
+      {
+        "id": "gameplay-109-variant-07",
+        "title": "死亡与替代"
+      },
+      {
+        "id": "gameplay-109-variant-08",
+        "title": "关系互动"
+      },
+      {
+        "id": "gameplay-109-variant-09",
+        "title": "任务错过"
+      },
+      {
+        "id": "gameplay-109-variant-10",
+        "title": "循环调查用途"
+      }
+    ]
+  },
+  {
+    "category": "叙事模拟",
+    "categoryId": "gameplay-group-12",
+    "id": "gameplay-118",
+    "indexVersion": 1,
+    "presentationModes": [
+      "interface-gameplay",
+      "cg-friendly"
+    ],
+    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourcePath": "src/game/data/gameplay_outline/catalog.json",
+    "summary": "通过初始条件、随机事件和连续数值变化快速推演角色的一生，并以不同命运结局推动再次尝试。",
+    "summarySource": "source-json.summary",
+    "title": "命运人生推演",
+    "type": "gameplay",
+    "variants": [
+      {
+        "id": "gameplay-118-variant-01",
+        "title": "初始天赋选择"
+      },
+      {
+        "id": "gameplay-118-variant-02",
+        "title": "属性分配"
+      },
+      {
+        "id": "gameplay-118-variant-03",
+        "title": "逐年事件推进"
+      },
+      {
+        "id": "gameplay-118-variant-04",
+        "title": "条件事件链"
+      },
+      {
+        "id": "gameplay-118-variant-05",
+        "title": "异世界转生"
+      },
+      {
+        "id": "gameplay-118-variant-06",
+        "title": "前世继承"
+      },
+      {
+        "id": "gameplay-118-variant-07",
+        "title": "多代家族传承"
+      },
+      {
+        "id": "gameplay-118-variant-08",
+        "title": "角色命运推演"
+      },
+      {
+        "id": "gameplay-118-variant-09",
+        "title": "世界线推演"
+      },
+      {
+        "id": "gameplay-118-variant-10",
+        "title": "人生轨迹结算"
+      }
+    ]
+  },
+  {
+    "category": "叙事模拟",
+    "categoryId": "gameplay-group-12",
+    "id": "gameplay-119",
+    "indexVersion": 1,
+    "presentationModes": [
+      "interface-gameplay",
+      "cg-friendly"
+    ],
+    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourcePath": "src/game/data/gameplay_outline/catalog.json",
+    "summary": "通过文本、立绘、背景与CG按章节推进剧情，可包含信息顺序或条件文本，但不要求选择改变结局。",
+    "summarySource": "source-json.summary",
+    "title": "互动小说",
+    "type": "gameplay",
+    "variants": [
+      {
+        "id": "gameplay-119-variant-01",
+        "title": "线性章节推进"
+      },
+      {
+        "id": "gameplay-119-variant-02",
+        "title": "场景图切换"
+      },
+      {
+        "id": "gameplay-119-variant-03",
+        "title": "角色立绘演出"
+      },
+      {
+        "id": "gameplay-119-variant-04",
+        "title": "章节CG播放"
+      },
+      {
+        "id": "gameplay-119-variant-05",
+        "title": "信息顺序选择"
+      },
+      {
+        "id": "gameplay-119-variant-06",
+        "title": "条件文本展示"
+      },
+      {
+        "id": "gameplay-119-variant-07",
+        "title": "文本回看记录"
+      },
+      {
+        "id": "gameplay-119-variant-08",
+        "title": "自动阅读播放"
+      },
+      {
+        "id": "gameplay-119-variant-09",
+        "title": "阅读断点续接"
+      },
+      {
+        "id": "gameplay-119-variant-10",
+        "title": "地图剧情入口"
+      }
+    ]
+  }
+]

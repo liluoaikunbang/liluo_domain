@@ -1,0 +1,20 @@
+[
+  {
+    "id": "asylum_for_lunatic",
+    "indexVersion": 1,
+    "sourcePath": "src/game/data/interactive_fictions/asylum_for_lunatic",
+    "summary": "互动小说目录 src/game/data/interactive_fictions/asylum_for_lunatic",
+    "summarySource": "structured-fields",
+    "title": "asylum_for_lunatic",
+    "type": "interactive-fiction"
+  },
+  {
+    "id": "interactive_fictions",
+    "indexVersion": 1,
+    "sourcePath": "src/game/data/interactive_fictions",
+    "summary": "互动小说目录 src/game/data/interactive_fictions",
+    "summarySource": "structured-fields",
+    "title": "interactive_fictions",
+    "type": "interactive-fiction"
+  }
+]

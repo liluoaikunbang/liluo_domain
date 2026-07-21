@@ -1,0 +1,2477 @@
+[
+  {
+    "id": "src/game/core/createPhaserGame.ts",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "phaser",
+        "../scenes/BootScene",
+        "../scenes/MapLoadingScene",
+        "../scenes/WorldScene",
+        "./EventRunner",
+        "./SceneKeys",
+        "./runtimeError",
+        "./loadingProgress",
+        "../systems/map/MapLoader"
+      ]
+    },
+    "sourceHash": "2a8c97f510c94fb1a660f397d975667c15eafb882656d2d798abd85bf8e1eae6",
+    "sourcePath": "src/game/core/createPhaserGame.ts",
+    "subtype": "module",
+    "summary": "module：src/game/core/createPhaserGame.ts",
+    "summarySource": "structured-fields",
+    "title": "createPhaserGame.ts",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/core/dialogueExecution.ts",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "./eventExecution",
+        "./EventRunner"
+      ]
+    },
+    "sourceHash": "ead699ab511d93e8d734e8a0fabede12c6e70966125769b8dfbc048b2ccf2d21",
+    "sourcePath": "src/game/core/dialogueExecution.ts",
+    "subtype": "module",
+    "summary": "module：src/game/core/dialogueExecution.ts",
+    "summarySource": "structured-fields",
+    "title": "dialogueExecution.ts",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/core/directionPadGame.ts",
+    "indexVersion": 1,
+    "references": {},
+    "sourceHash": "9b9198ed2a0fd305aa53abb307b669141e5088d21c17c795065c8453be758a06",
+    "sourcePath": "src/game/core/directionPadGame.ts",
+    "subtype": "module",
+    "summary": "module：src/game/core/directionPadGame.ts",
+    "summarySource": "structured-fields",
+    "title": "directionPadGame.ts",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/core/eventExecution.ts",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "./EventRunner",
+        "./dialogueExecution.ts"
+      ]
+    },
+    "sourceHash": "a30e7ffb45c6787add60f26ad459ee004d90c78f2d98ba07060f819e96092100",
+    "sourcePath": "src/game/core/eventExecution.ts",
+    "subtype": "module",
+    "summary": "module：src/game/core/eventExecution.ts",
+    "summarySource": "structured-fields",
+    "title": "eventExecution.ts",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/core/EventRunner.ts",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "../data/registry",
+        "../data/dialoguePortraits",
+        "./eventExecution",
+        "./dialogueExecution"
+      ]
+    },
+    "sourceHash": "32976599a676af44ff5fa3cb21d2d16a4bcd045b715fc22466558bbe12f493c4",
+    "sourcePath": "src/game/core/EventRunner.ts",
+    "subtype": "module",
+    "summary": "module：src/game/core/EventRunner.ts",
+    "summarySource": "structured-fields",
+    "title": "EventRunner.ts",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/core/gameMenuDataResolver.ts",
+    "indexVersion": 1,
+    "references": {},
+    "sourceHash": "d5a76da2b8bd4a07c67acfc285020eb4ca3b33551235dbc0673b8152a75fcbe7",
+    "sourcePath": "src/game/core/gameMenuDataResolver.ts",
+    "subtype": "module",
+    "summary": "module：src/game/core/gameMenuDataResolver.ts",
+    "summarySource": "structured-fields",
+    "title": "gameMenuDataResolver.ts",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/core/gameRuntime.ts",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "vue"
+      ]
+    },
+    "sourceHash": "e17f409e39a433e9bead28521183d386d86a868d1de0bbba05305e7a065dbe22",
+    "sourcePath": "src/game/core/gameRuntime.ts",
+    "subtype": "module",
+    "summary": "module：src/game/core/gameRuntime.ts",
+    "summarySource": "structured-fields",
+    "title": "gameRuntime.ts",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/core/interactiveFiction.ts",
+    "indexVersion": 1,
+    "references": {},
+    "sourceHash": "098145f812047f8adc30265a4129295b516d8fba8b371922f9d730cae71cdfb5",
+    "sourcePath": "src/game/core/interactiveFiction.ts",
+    "subtype": "module",
+    "summary": "module：src/game/core/interactiveFiction.ts",
+    "summarySource": "structured-fields",
+    "title": "interactiveFiction.ts",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/core/loadingProgress.ts",
+    "indexVersion": 1,
+    "references": {},
+    "sourceHash": "5667571f30ad872be6ed3bc63dc0757e1f6c346f97194b65d9e8d8164053e0aa",
+    "sourcePath": "src/game/core/loadingProgress.ts",
+    "subtype": "module",
+    "summary": "module：src/game/core/loadingProgress.ts",
+    "summarySource": "structured-fields",
+    "title": "loadingProgress.ts",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/core/playerRuntime.ts",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "vue",
+        "../data/dialoguePortraits.ts",
+        "../data/playerCharacter.ts",
+        "../data/playerMovementPresentationRules.ts",
+        "../data/playerStatus.ts"
+      ]
+    },
+    "sourceHash": "0968a1308d2e056745052acfb9dec4e69c4fba2a74046da09d566bb4fed6bd30",
+    "sourcePath": "src/game/core/playerRuntime.ts",
+    "subtype": "module",
+    "summary": "module：src/game/core/playerRuntime.ts",
+    "summarySource": "structured-fields",
+    "title": "playerRuntime.ts",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/core/runtimeError.ts",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "phaser"
+      ]
+    },
+    "sourceHash": "0e3d2c5e58d03a4c90fe1bd51efc4182662a970d8aa96a090c163e1ecae1288e",
+    "sourcePath": "src/game/core/runtimeError.ts",
+    "subtype": "module",
+    "summary": "module：src/game/core/runtimeError.ts",
+    "summarySource": "structured-fields",
+    "title": "runtimeError.ts",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/core/saveData.ts",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "./playerRuntime.ts",
+        "./gameRuntime.ts",
+        "../data/playerCharacter.ts",
+        "../data/playerStatus.ts"
+      ]
+    },
+    "sourceHash": "9a2bc392c48e34d608ffcc03db4885567e5b0cad3539a548ef6a9578dbab294b",
+    "sourcePath": "src/game/core/saveData.ts",
+    "subtype": "module",
+    "summary": "module：src/game/core/saveData.ts",
+    "summarySource": "structured-fields",
+    "title": "saveData.ts",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/core/saveStorage.ts",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "./saveData.ts",
+        "./gameRuntime.ts",
+        "../data/playerCharacter.ts",
+        "../data/playerMovementPresentationRules.ts"
+      ]
+    },
+    "sourceHash": "7b4262b2a05ef1e1c10633361524da85e8674a92ef6da3f8fb226f33044fda51",
+    "sourcePath": "src/game/core/saveStorage.ts",
+    "subtype": "module",
+    "summary": "module：src/game/core/saveStorage.ts",
+    "summarySource": "structured-fields",
+    "title": "saveStorage.ts",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/core/SceneKeys.ts",
+    "indexVersion": 1,
+    "references": {},
+    "sourceHash": "8ea45da76e65d2f904b6aac3c3b069b9938cb17991769819dc76ee6cc41481a5",
+    "sourcePath": "src/game/core/SceneKeys.ts",
+    "subtype": "module",
+    "summary": "module：src/game/core/SceneKeys.ts",
+    "summarySource": "structured-fields",
+    "title": "SceneKeys.ts",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/data/animations.ts",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "phaser"
+      ]
+    },
+    "sourceHash": "49a0b40d8524f5df318e95b517c6cea5620f0339b550817ccc2270c1762f2577",
+    "sourcePath": "src/game/data/animations.ts",
+    "subtype": "module",
+    "summary": "module：src/game/data/animations.ts",
+    "summarySource": "structured-fields",
+    "title": "animations.ts",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/data/assets.ts",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "phaser"
+      ]
+    },
+    "sourceHash": "daa20da259c77af8983be98a882ee0018e7b0a3641dd0782407a08732b3091db",
+    "sourcePath": "src/game/data/assets.ts",
+    "subtype": "module",
+    "summary": "module：src/game/data/assets.ts",
+    "summarySource": "structured-fields",
+    "title": "assets.ts",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/data/dialoguePortraitLayerRules.ts",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "./portraits/layerRules",
+        "./portraits/layerRules"
+      ]
+    },
+    "sourceHash": "de8f9b07c6ad47c9f43b89bc58e4f10484aa9c49739178387b8dc855dcb71053",
+    "sourcePath": "src/game/data/dialoguePortraitLayerRules.ts",
+    "subtype": "module",
+    "summary": "module：src/game/data/dialoguePortraitLayerRules.ts",
+    "summarySource": "structured-fields",
+    "title": "dialoguePortraitLayerRules.ts",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/data/dialoguePortraits.ts",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "./assets",
+        "./portraits/registry.ts",
+        "./portraits/types.ts",
+        "./portraits/types.ts"
+      ]
+    },
+    "sourceHash": "ee49f73b742dbdc55d6d776ca50884cfcac48916e234e6f4412ee51cd5a68764",
+    "sourcePath": "src/game/data/dialoguePortraits.ts",
+    "subtype": "module",
+    "summary": "module：src/game/data/dialoguePortraits.ts",
+    "summarySource": "structured-fields",
+    "title": "dialoguePortraits.ts",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/data/gameplay_outline/gameplayOutline.js",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "./catalog.json"
+      ]
+    },
+    "sourceHash": "f3fc6c44ad0df36a202bf52d96ebf49d2cac01e5680aa0fd8f4ebc25884a290d",
+    "sourcePath": "src/game/data/gameplay_outline/gameplayOutline.js",
+    "subtype": "module",
+    "summary": "module：src/game/data/gameplay_outline/gameplayOutline.js",
+    "summarySource": "structured-fields",
+    "title": "gameplayOutline.js",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/data/global/cgMetadata.js",
+    "indexVersion": 1,
+    "references": {},
+    "sourceHash": "f97cf958207c92242e82ee4007278f0b1763f34900cdc3cf810e6f094ff1a32c",
+    "sourcePath": "src/game/data/global/cgMetadata.js",
+    "subtype": "module",
+    "summary": "module：src/game/data/global/cgMetadata.js",
+    "summarySource": "structured-fields",
+    "title": "cgMetadata.js",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/data/global/cgVariantRules.ts",
+    "indexVersion": 1,
+    "references": {},
+    "sourceHash": "a9be23c234f0c8a980f304256066538db732625a5fa49647b91b3b240a58e091",
+    "sourcePath": "src/game/data/global/cgVariantRules.ts",
+    "subtype": "module",
+    "summary": "module：src/game/data/global/cgVariantRules.ts",
+    "summarySource": "structured-fields",
+    "title": "cgVariantRules.ts",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/data/global/gameMenuData.js",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "../../../assets/game/bondage_items/自动挠脚器.png",
+        "./cgMetadata",
+        "./cgVariantRules",
+        "./sceneGallery.json"
+      ]
+    },
+    "sourceHash": "549ad516de3df68f5628f912a08cf9d28dcfc52ef21e1d863bc11c3235bddb69",
+    "sourcePath": "src/game/data/global/gameMenuData.js",
+    "subtype": "module",
+    "summary": "module：src/game/data/global/gameMenuData.js",
+    "summarySource": "structured-fields",
+    "title": "gameMenuData.js",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/data/global/updateRecordGroups.js",
+    "indexVersion": 1,
+    "references": {},
+    "sourceHash": "ca9b92d0987ceb1890868ada15342a3d76e05657a319a92be851bde8efb64544",
+    "sourcePath": "src/game/data/global/updateRecordGroups.js",
+    "subtype": "module",
+    "summary": "module：src/game/data/global/updateRecordGroups.js",
+    "summarySource": "structured-fields",
+    "title": "updateRecordGroups.js",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/data/global/updateRecords.js",
+    "indexVersion": 1,
+    "references": {},
+    "sourceHash": "c1dca24a560f46f3c03fedcc11da284c18c53633ed746af64fae44324d5bf625",
+    "sourcePath": "src/game/data/global/updateRecords.js",
+    "subtype": "module",
+    "summary": "module：src/game/data/global/updateRecords.js",
+    "summarySource": "structured-fields",
+    "title": "updateRecords.js",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/data/globalAssets.ts",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "./assets",
+        "./dialoguePortraits",
+        "./playerCharacter"
+      ]
+    },
+    "sourceHash": "c8f61d63f69f0aed0fee4e821683bf4a2cee733104d4b48ab7f78d4879f4c17f",
+    "sourcePath": "src/game/data/globalAssets.ts",
+    "subtype": "module",
+    "summary": "module：src/game/data/globalAssets.ts",
+    "summarySource": "structured-fields",
+    "title": "globalAssets.ts",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/data/interactive_fictions/asylum_for_lunatic/assets.ts",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "../../../../assets/game/backgrounds/Liluo_bed.png",
+        "../../../../assets/game/standee/LiLuo.png",
+        "../../assets"
+      ]
+    },
+    "sourceHash": "a15be46e4a9841f1ea133a883c435b5fd799a858cde8a4ca44036650236c5a69",
+    "sourcePath": "src/game/data/interactive_fictions/asylum_for_lunatic/assets.ts",
+    "subtype": "module",
+    "summary": "module：src/game/data/interactive_fictions/asylum_for_lunatic/assets.ts",
+    "summarySource": "structured-fields",
+    "title": "assets.ts",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/data/interactive_fictions/asylum_for_lunatic/index.ts",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "./scenario.json",
+        "./assets",
+        "./meta",
+        "../../../core/interactiveFiction"
+      ]
+    },
+    "sourceHash": "af405bbd76de80f5999d0f28a81a48b97a8219a3d050de42320247917c44c98b",
+    "sourcePath": "src/game/data/interactive_fictions/asylum_for_lunatic/index.ts",
+    "subtype": "module",
+    "summary": "module：src/game/data/interactive_fictions/asylum_for_lunatic/index.ts",
+    "summarySource": "structured-fields",
+    "title": "index.ts",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/data/interactive_fictions/asylum_for_lunatic/meta.ts",
+    "indexVersion": 1,
+    "references": {},
+    "sourceHash": "5f8d01f66d27882f80cd0034a06da536896f47a74d8dc3c511c620b7b7ef9ec8",
+    "sourcePath": "src/game/data/interactive_fictions/asylum_for_lunatic/meta.ts",
+    "subtype": "module",
+    "summary": "module：src/game/data/interactive_fictions/asylum_for_lunatic/meta.ts",
+    "summarySource": "structured-fields",
+    "title": "meta.ts",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/data/interactive_fictions/registry.ts",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "../assets",
+        "./asylum_for_lunatic",
+        "../../core/interactiveFiction"
+      ]
+    },
+    "sourceHash": "a79db50779bb160af6cb61d42489d1cf3853f5a935fee891f4e4647b7515ffb6",
+    "sourcePath": "src/game/data/interactive_fictions/registry.ts",
+    "subtype": "module",
+    "summary": "module：src/game/data/interactive_fictions/registry.ts",
+    "summarySource": "structured-fields",
+    "title": "registry.ts",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/data/mapPanelActions.ts",
+    "indexVersion": 1,
+    "references": {},
+    "sourceHash": "d3412b30822a8d52c3c57c4820e947338a955b425d0bcfb115ec4567b2ab04f8",
+    "sourcePath": "src/game/data/mapPanelActions.ts",
+    "subtype": "module",
+    "summary": "module：src/game/data/mapPanelActions.ts",
+    "summarySource": "structured-fields",
+    "title": "mapPanelActions.ts",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/data/maps/breadcrumbs.ts",
+    "indexVersion": 1,
+    "references": {},
+    "sourceHash": "4319d64cb2bfb418eef960e34e4cdeb5947898eaf49530ad3bd40838217a86e1",
+    "sourcePath": "src/game/data/maps/breadcrumbs.ts",
+    "subtype": "module",
+    "summary": "module：src/game/data/maps/breadcrumbs.ts",
+    "summarySource": "structured-fields",
+    "title": "breadcrumbs.ts",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/data/maps/modern/city_Jingjiang_school/assets.ts",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "../../../assets"
+      ]
+    },
+    "sourceHash": "6a2dda48cd258e60a9a205fb8c37009d4aefbd3551812cbaf234c46c5f776955",
+    "sourcePath": "src/game/data/maps/modern/city_Jingjiang_school/assets.ts",
+    "subtype": "module",
+    "summary": "module：src/game/data/maps/modern/city_Jingjiang_school/assets.ts",
+    "summarySource": "structured-fields",
+    "title": "assets.ts",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/data/maps/modern/city_Jingjiang_school/meta.ts",
+    "indexVersion": 1,
+    "references": {},
+    "sourceHash": "b9a3ce9d6509bf306e66f5da58711da4b1dbe4bc734397f9d7d2020481666a76",
+    "sourcePath": "src/game/data/maps/modern/city_Jingjiang_school/meta.ts",
+    "subtype": "module",
+    "summary": "module：src/game/data/maps/modern/city_Jingjiang_school/meta.ts",
+    "summarySource": "structured-fields",
+    "title": "meta.ts",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/data/maps/munika/city_desire/assets.ts",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "../../../assets"
+      ]
+    },
+    "sourceHash": "4ce9415887493b9ccb5214c67d3ea61d15996771cbae0460cc69b4d22b837baa",
+    "sourcePath": "src/game/data/maps/munika/city_desire/assets.ts",
+    "subtype": "module",
+    "summary": "module：src/game/data/maps/munika/city_desire/assets.ts",
+    "summarySource": "structured-fields",
+    "title": "assets.ts",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/data/maps/munika/city_desire/meta.ts",
+    "indexVersion": 1,
+    "references": {},
+    "sourceHash": "b8d9bb677581ed41bee20b9581c3603708557b1e6aaf1765ebabd0a817056a3d",
+    "sourcePath": "src/game/data/maps/munika/city_desire/meta.ts",
+    "subtype": "module",
+    "summary": "module：src/game/data/maps/munika/city_desire/meta.ts",
+    "summarySource": "structured-fields",
+    "title": "meta.ts",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/data/maps/munika/liluo_estate/animations.ts",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "../../animations"
+      ]
+    },
+    "sourceHash": "2c64551aad81991c588b5097f10ab8c8a76ae4cc2b3c58d4ac930232929ff15f",
+    "sourcePath": "src/game/data/maps/munika/liluo_estate/animations.ts",
+    "subtype": "module",
+    "summary": "module：src/game/data/maps/munika/liluo_estate/animations.ts",
+    "summarySource": "structured-fields",
+    "title": "animations.ts",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/data/maps/munika/liluo_estate/assets.ts",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "phaser",
+        "../../../assets"
+      ]
+    },
+    "sourceHash": "a4593ce929b1d9f0f5219f5cde9ee8612bf98981738a3fa1fc09d5255e70b758",
+    "sourcePath": "src/game/data/maps/munika/liluo_estate/assets.ts",
+    "subtype": "module",
+    "summary": "module：src/game/data/maps/munika/liluo_estate/assets.ts",
+    "summarySource": "structured-fields",
+    "title": "assets.ts",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/data/maps/munika/liluo_estate/dialogues.ts",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "../../../assets",
+        "../../../dialoguePortraits.ts",
+        "./dialogues.json"
+      ]
+    },
+    "sourceHash": "62bc43c45e9891ec96b29279dc003a7b9ba43e6df368271a859c5a06822925ad",
+    "sourcePath": "src/game/data/maps/munika/liluo_estate/dialogues.ts",
+    "subtype": "module",
+    "summary": "module：src/game/data/maps/munika/liluo_estate/dialogues.ts",
+    "summarySource": "structured-fields",
+    "title": "dialogues.ts",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/data/maps/munika/liluo_estate/meta.ts",
+    "indexVersion": 1,
+    "references": {},
+    "sourceHash": "a535e258a679b4bfbbffdec884e94f313cb6c026781d6387b04a89ffb2be0e0a",
+    "sourcePath": "src/game/data/maps/munika/liluo_estate/meta.ts",
+    "subtype": "module",
+    "summary": "module：src/game/data/maps/munika/liluo_estate/meta.ts",
+    "summarySource": "structured-fields",
+    "title": "meta.ts",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/data/maps/munika/liluo_house_living_room/assets.ts",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "../../../assets"
+      ]
+    },
+    "sourceHash": "9d969f8b8230e9eb30346916b3af22f4170520f2154ecbdb098356ec140ba199",
+    "sourcePath": "src/game/data/maps/munika/liluo_house_living_room/assets.ts",
+    "subtype": "module",
+    "summary": "module：src/game/data/maps/munika/liluo_house_living_room/assets.ts",
+    "summarySource": "structured-fields",
+    "title": "assets.ts",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/data/maps/munika/liluo_house_living_room/dialogues.ts",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "../../../assets",
+        "./dialogues.json"
+      ]
+    },
+    "sourceHash": "c585e0df991a5d3b23f5a872477529f2d51e908bf7f652f5b5d4ab03d4efe99d",
+    "sourcePath": "src/game/data/maps/munika/liluo_house_living_room/dialogues.ts",
+    "subtype": "module",
+    "summary": "module：src/game/data/maps/munika/liluo_house_living_room/dialogues.ts",
+    "summarySource": "structured-fields",
+    "title": "dialogues.ts",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/data/maps/munika/liluo_house_living_room/meta.ts",
+    "indexVersion": 1,
+    "references": {},
+    "sourceHash": "c0eda44cd4e6ebd5750a19936152f3bfa5105b38da9fc0325d8565533c68437c",
+    "sourcePath": "src/game/data/maps/munika/liluo_house_living_room/meta.ts",
+    "subtype": "module",
+    "summary": "module：src/game/data/maps/munika/liluo_house_living_room/meta.ts",
+    "summarySource": "structured-fields",
+    "title": "meta.ts",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/data/maps/munika/liluo_room/assets.ts",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "../../../assets"
+      ]
+    },
+    "sourceHash": "0acf044a1d64783eed439274ecb7df11638bf2fbbffaee9f9aac04cb388828df",
+    "sourcePath": "src/game/data/maps/munika/liluo_room/assets.ts",
+    "subtype": "module",
+    "summary": "module：src/game/data/maps/munika/liluo_room/assets.ts",
+    "summarySource": "structured-fields",
+    "title": "assets.ts",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/data/maps/munika/liluo_room/dialogues.ts",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "../../../assets",
+        "./dialogues.json"
+      ]
+    },
+    "sourceHash": "b901590aefd6e80a8a7bcdcecd7a938e2855c88ada6a8cd82daa7fd4db459559",
+    "sourcePath": "src/game/data/maps/munika/liluo_room/dialogues.ts",
+    "subtype": "module",
+    "summary": "module：src/game/data/maps/munika/liluo_room/dialogues.ts",
+    "summarySource": "structured-fields",
+    "title": "dialogues.ts",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/data/maps/munika/liluo_room/meta.ts",
+    "indexVersion": 1,
+    "references": {},
+    "sourceHash": "6eecc30ee794916a39fe14ce7709e2a0ca0b0868846292b6730a03aea224fb8f",
+    "sourcePath": "src/game/data/maps/munika/liluo_room/meta.ts",
+    "subtype": "module",
+    "summary": "module：src/game/data/maps/munika/liluo_room/meta.ts",
+    "summarySource": "structured-fields",
+    "title": "meta.ts",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/data/maps/munika/mumu_room/assets.ts",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "../../../assets"
+      ]
+    },
+    "sourceHash": "3bf6d7e8e1ec44809e7778a6fcda52973495bf20d2c5c3b7fd0d8457caaa2088",
+    "sourcePath": "src/game/data/maps/munika/mumu_room/assets.ts",
+    "subtype": "module",
+    "summary": "module：src/game/data/maps/munika/mumu_room/assets.ts",
+    "summarySource": "structured-fields",
+    "title": "assets.ts",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/data/maps/munika/mumu_room/meta.ts",
+    "indexVersion": 1,
+    "references": {},
+    "sourceHash": "5640b1dbd73f2636ff06d2eee85a452b5b5a597fcd13b185e895594b94963d2b",
+    "sourcePath": "src/game/data/maps/munika/mumu_room/meta.ts",
+    "subtype": "module",
+    "summary": "module：src/game/data/maps/munika/mumu_room/meta.ts",
+    "summarySource": "structured-fields",
+    "title": "meta.ts",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/data/minigames/directionPadGames.ts",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "../../core/directionPadGame"
+      ]
+    },
+    "sourceHash": "ade6bdd485b76f9c7fe67cf1aa7afa289209f090d9d51d03637db0cdc0ae43d8",
+    "sourcePath": "src/game/data/minigames/directionPadGames.ts",
+    "subtype": "module",
+    "summary": "module：src/game/data/minigames/directionPadGames.ts",
+    "summarySource": "structured-fields",
+    "title": "directionPadGames.ts",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/data/playerAppearanceRegistry.ts",
+    "indexVersion": 1,
+    "references": {},
+    "sourceHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "sourcePath": "src/game/data/playerAppearanceRegistry.ts",
+    "subtype": "module",
+    "summary": "module：src/game/data/playerAppearanceRegistry.ts",
+    "summarySource": "structured-fields",
+    "title": "playerAppearanceRegistry.ts",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/data/playerCharacter.ts",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "phaser",
+        "./assets",
+        "./animations",
+        "../systems/animation/character/layeredCharacterTexture.ts"
+      ]
+    },
+    "sourceHash": "b4f7e96702b463f51fe9465923234e7c367d901dd6a7f3a2c82c70eccdcecd5f",
+    "sourcePath": "src/game/data/playerCharacter.ts",
+    "subtype": "module",
+    "summary": "module：src/game/data/playerCharacter.ts",
+    "summarySource": "structured-fields",
+    "title": "playerCharacter.ts",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/data/playerMovementPresentationRules.ts",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "./playerCharacter.ts",
+        "./playerStatus.ts"
+      ]
+    },
+    "sourceHash": "4ce397fec7e93a6a5dcdaddcac3650f012293edb066e78405e2e0110f218248d",
+    "sourcePath": "src/game/data/playerMovementPresentationRules.ts",
+    "subtype": "module",
+    "summary": "module：src/game/data/playerMovementPresentationRules.ts",
+    "summarySource": "structured-fields",
+    "title": "playerMovementPresentationRules.ts",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/data/playerStatus.ts",
+    "indexVersion": 1,
+    "references": {},
+    "sourceHash": "a8dfbba221c8b5a6f2c0b9b55a650f15b3a8c143623d68f2d3812d5566c1fe60",
+    "sourcePath": "src/game/data/playerStatus.ts",
+    "subtype": "module",
+    "summary": "module：src/game/data/playerStatus.ts",
+    "summarySource": "structured-fields",
+    "title": "playerStatus.ts",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/data/plot_outline/plotOutline.js",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "./catalog.json"
+      ]
+    },
+    "sourceHash": "05822f0c07602efe0b21b5ec51a83c3165afb2df45b57b10bce303f7f1610764",
+    "sourcePath": "src/game/data/plot_outline/plotOutline.js",
+    "subtype": "module",
+    "summary": "module：src/game/data/plot_outline/plotOutline.js",
+    "summarySource": "structured-fields",
+    "title": "plotOutline.js",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/data/portraits/layerRules.ts",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "./types"
+      ]
+    },
+    "sourceHash": "75c3b3a0628e38d81971a27e01ea45308175a87c5305997f85a8cdc7b2bcb670",
+    "sourcePath": "src/game/data/portraits/layerRules.ts",
+    "subtype": "module",
+    "summary": "module：src/game/data/portraits/layerRules.ts",
+    "summarySource": "structured-fields",
+    "title": "layerRules.ts",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/data/portraits/liluo.ts",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "./layerRules.ts",
+        "./types.ts"
+      ]
+    },
+    "sourceHash": "716d343aa42be5aee0847b08996b3475aa02040d253b436129061d82a87dcd98",
+    "sourcePath": "src/game/data/portraits/liluo.ts",
+    "subtype": "module",
+    "summary": "module：src/game/data/portraits/liluo.ts",
+    "summarySource": "structured-fields",
+    "title": "liluo.ts",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/data/portraits/registry.ts",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "./liluo.ts",
+        "./types.ts"
+      ]
+    },
+    "sourceHash": "d7c6fb63b277413bfdb83d3fd8465c66916d3ded77527df8c6d5b4ae0cb0092f",
+    "sourcePath": "src/game/data/portraits/registry.ts",
+    "subtype": "module",
+    "summary": "module：src/game/data/portraits/registry.ts",
+    "summarySource": "structured-fields",
+    "title": "registry.ts",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/data/portraits/types.ts",
+    "indexVersion": 1,
+    "references": {},
+    "sourceHash": "e02b4e62f771dba57630209749cf63965557c99e09ccc7b6d71807f46fbf218c",
+    "sourcePath": "src/game/data/portraits/types.ts",
+    "subtype": "module",
+    "summary": "module：src/game/data/portraits/types.ts",
+    "summarySource": "structured-fields",
+    "title": "types.ts",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/data/registry.ts",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "./maps/munika/city_desire/map.json",
+        "./maps/munika/city_desire/events.json",
+        "./maps/munika/city_desire/dialogues.json",
+        "./maps/modern/city_Jingjiang_school/map.json",
+        "./maps/modern/city_Jingjiang_school/events.json",
+        "./maps/modern/city_Jingjiang_school/dialogues.json",
+        "./maps/munika/liluo_estate/map.json",
+        "./maps/munika/liluo_estate/events.json",
+        "./maps/munika/liluo_estate/dialogues",
+        "./maps/munika/liluo_house_living_room/map.json",
+        "./maps/munika/liluo_house_living_room/events.json",
+        "./maps/munika/liluo_house_living_room/dialogues",
+        "./maps/munika/liluo_room/map.json",
+        "./maps/munika/liluo_room/events.json",
+        "./maps/munika/liluo_room/dialogues",
+        "./maps/munika/mumu_room/map.json",
+        "./assets",
+        "./maps/munika/mumu_room/events.json",
+        "./animations",
+        "./maps/munika/city_desire/assets",
+        "./maps/munika/city_desire/meta",
+        "./maps/modern/city_Jingjiang_school/assets",
+        "./maps/modern/city_Jingjiang_school/meta",
+        "./maps/breadcrumbs",
+        "./maps/munika/liluo_estate/assets",
+        "./maps/munika/liluo_estate/animations",
+        "./maps/munika/liluo_estate/meta",
+        "./maps/munika/liluo_house_living_room/assets",
+        "./maps/munika/liluo_house_living_room/meta",
+        "./maps/munika/liluo_room/assets"
+      ]
+    },
+    "sourceHash": "85aa57fb34709aa5252d351b0d075c7f528fbf8bde2c217feb631b8d49053e83",
+    "sourcePath": "src/game/data/registry.ts",
+    "subtype": "module",
+    "summary": "module：src/game/data/registry.ts",
+    "summarySource": "structured-fields",
+    "title": "registry.ts",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/data/spriteSheetNormalization.ts",
+    "indexVersion": 1,
+    "references": {},
+    "sourceHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "sourcePath": "src/game/data/spriteSheetNormalization.ts",
+    "subtype": "module",
+    "summary": "module：src/game/data/spriteSheetNormalization.ts",
+    "summarySource": "structured-fields",
+    "title": "spriteSheetNormalization.ts",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/data/story_outline/storyCgLinks.js",
+    "indexVersion": 1,
+    "references": {},
+    "sourceHash": "e36abaa57bc68a0a7e64eaf28ae2badb921c558133d7cdc397ab3d639ebba3e6",
+    "sourcePath": "src/game/data/story_outline/storyCgLinks.js",
+    "subtype": "module",
+    "summary": "module：src/game/data/story_outline/storyCgLinks.js",
+    "summarySource": "structured-fields",
+    "title": "storyCgLinks.js",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/data/story_outline/storyCharacterOutline.js",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "./storyOutlineSource.js"
+      ]
+    },
+    "sourceHash": "1e559dfa3512391e6e0101b26ecd6ffd403b07f532716c95a9f6bc4c459a69ac",
+    "sourcePath": "src/game/data/story_outline/storyCharacterOutline.js",
+    "subtype": "module",
+    "summary": "module：src/game/data/story_outline/storyCharacterOutline.js",
+    "summarySource": "structured-fields",
+    "title": "storyCharacterOutline.js",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/data/story_outline/storyOutline.js",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "./storyOutlineFrontmatter",
+        "./storyOutlineSource",
+        "./storyOutlineTreeBuilder"
+      ]
+    },
+    "sourceHash": "3517edf1048fad9f565151c7fd606d764e094df25be94b332437a94ad86d2308",
+    "sourcePath": "src/game/data/story_outline/storyOutline.js",
+    "subtype": "module",
+    "summary": "module：src/game/data/story_outline/storyOutline.js",
+    "summarySource": "structured-fields",
+    "title": "storyOutline.js",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/data/story_outline/storyOutlineExport.js",
+    "indexVersion": 1,
+    "references": {},
+    "sourceHash": "8cf3eb5893e32321fb1589e2ac1517aba8a73ae3d2ec9f0e096fec6163bfd3a2",
+    "sourcePath": "src/game/data/story_outline/storyOutlineExport.js",
+    "subtype": "module",
+    "summary": "module：src/game/data/story_outline/storyOutlineExport.js",
+    "summarySource": "structured-fields",
+    "title": "storyOutlineExport.js",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/data/story_outline/storyOutlineFrontmatter.js",
+    "indexVersion": 1,
+    "references": {},
+    "sourceHash": "029235f9dddae19fc64dc440636963e0003a1e9a35f945c3e4975f91cda40aff",
+    "sourcePath": "src/game/data/story_outline/storyOutlineFrontmatter.js",
+    "subtype": "module",
+    "summary": "module：src/game/data/story_outline/storyOutlineFrontmatter.js",
+    "summarySource": "structured-fields",
+    "title": "storyOutlineFrontmatter.js",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/data/story_outline/storyOutlineSource.js",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "./sources/0-munika.json",
+        "./sources/1-modern.json",
+        "./sources/2-apocalypse.json",
+        "./sources/3-ancient.json",
+        "./sources/4-fantasy.json",
+        "./sources/5-science.json"
+      ]
+    },
+    "sourceHash": "53e7a5bfd15fb29efb54885933394afaa670991c401d5cc296f08f5e6cf73dd6",
+    "sourcePath": "src/game/data/story_outline/storyOutlineSource.js",
+    "subtype": "module",
+    "summary": "module：src/game/data/story_outline/storyOutlineSource.js",
+    "summarySource": "structured-fields",
+    "title": "storyOutlineSource.js",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/data/story_outline/storyOutlineTreeBuilder.js",
+    "indexVersion": 1,
+    "references": {},
+    "sourceHash": "56661bae2af0e27c477ad2cd8eb46e978350b1ca7336dafda7346c466bd2e881",
+    "sourcePath": "src/game/data/story_outline/storyOutlineTreeBuilder.js",
+    "subtype": "module",
+    "summary": "module：src/game/data/story_outline/storyOutlineTreeBuilder.js",
+    "summarySource": "structured-fields",
+    "title": "storyOutlineTreeBuilder.js",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/data/timeOfDay.ts",
+    "indexVersion": 1,
+    "references": {},
+    "sourceHash": "038446ae08349ffbd52811c104b6621b1db726125adcd60a5841cc8b4f173b0c",
+    "sourcePath": "src/game/data/timeOfDay.ts",
+    "subtype": "module",
+    "summary": "module：src/game/data/timeOfDay.ts",
+    "summarySource": "structured-fields",
+    "title": "timeOfDay.ts",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/scenes/BootScene.ts",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "phaser",
+        "../core/SceneKeys",
+        "../data/assets",
+        "../data/globalAssets",
+        "../data/playerCharacter",
+        "../systems/animation/character/prepareCharacterAssets",
+        "../systems/map/MapLoader",
+        "../core/runtimeError",
+        "../core/loadingProgress"
+      ]
+    },
+    "sourceHash": "41025f27a581839bf314ae7d2db267ac2098b12edd1fe54125685477158c48fe",
+    "sourcePath": "src/game/scenes/BootScene.ts",
+    "subtype": "phaser-scene",
+    "summary": "phaser-scene：src/game/scenes/BootScene.ts",
+    "summarySource": "structured-fields",
+    "title": "BootScene.ts",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/scenes/MapLoadingScene.ts",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "phaser",
+        "../core/SceneKeys",
+        "../core/runtimeError",
+        "../core/loadingProgress",
+        "../data/assets",
+        "../data/registry",
+        "../systems/animation/registerAnimationBundle",
+        "../systems/map/MapLoader"
+      ]
+    },
+    "sourceHash": "f391fca1602f7ddf972fff29bf463dcbf1f3d97b12138ca20fc636df6273bbab",
+    "sourcePath": "src/game/scenes/MapLoadingScene.ts",
+    "subtype": "phaser-scene",
+    "summary": "phaser-scene：src/game/scenes/MapLoadingScene.ts",
+    "summarySource": "structured-fields",
+    "title": "MapLoadingScene.ts",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/scenes/WorldScene.ts",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "phaser",
+        "../core/SceneKeys",
+        "../core/EventRunner",
+        "../core/playerRuntime",
+        "../systems/map/MapLoader",
+        "../systems/character/interactionInputGate",
+        "../systems/map/worldSceneRuntime"
+      ]
+    },
+    "sourceHash": "abee0cc660653523a9fe181f01e2fccd76f73e1b3a16f25123d4518fe1e3e137",
+    "sourcePath": "src/game/scenes/WorldScene.ts",
+    "subtype": "phaser-scene",
+    "summary": "phaser-scene：src/game/scenes/WorldScene.ts",
+    "summarySource": "structured-fields",
+    "title": "WorldScene.ts",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/systems/animation/character/layeredCharacterTexture.ts",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "phaser"
+      ]
+    },
+    "sourceHash": "9cb996699d04df69853e67bfd4bc1efd46fae66f4609fd741e3e1ee49dc78ed6",
+    "sourcePath": "src/game/systems/animation/character/layeredCharacterTexture.ts",
+    "subtype": "phaser-system",
+    "summary": "phaser-system：src/game/systems/animation/character/layeredCharacterTexture.ts",
+    "summarySource": "structured-fields",
+    "title": "layeredCharacterTexture.ts",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/systems/animation/character/prepareCharacterAssets.ts",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "phaser",
+        "../../../data/playerCharacter",
+        "../registerAnimationBundle"
+      ]
+    },
+    "sourceHash": "d0b9fbb8fe1bcb54561772a213400b3cb10f5db17ae8f01fc16c15396a5d6543",
+    "sourcePath": "src/game/systems/animation/character/prepareCharacterAssets.ts",
+    "subtype": "phaser-system",
+    "summary": "phaser-system：src/game/systems/animation/character/prepareCharacterAssets.ts",
+    "summarySource": "structured-fields",
+    "title": "prepareCharacterAssets.ts",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/systems/animation/registerAnimationBundle.ts",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "phaser",
+        "../../data/animations"
+      ]
+    },
+    "sourceHash": "49e88265a91f1f6c903fc390f0dc271bfff63c7c3b26e4dc2df32cc2480b31a0",
+    "sourcePath": "src/game/systems/animation/registerAnimationBundle.ts",
+    "subtype": "phaser-system",
+    "summary": "phaser-system：src/game/systems/animation/registerAnimationBundle.ts",
+    "summarySource": "structured-fields",
+    "title": "registerAnimationBundle.ts",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/systems/character/autoPathVision.ts",
+    "indexVersion": 1,
+    "references": {},
+    "sourceHash": "1455d0bb2864cc939311207cb8f7e7ff3a29c8af2bd21a34e58aa01f07828a95",
+    "sourcePath": "src/game/systems/character/autoPathVision.ts",
+    "subtype": "phaser-system",
+    "summary": "phaser-system：src/game/systems/character/autoPathVision.ts",
+    "summarySource": "structured-fields",
+    "title": "autoPathVision.ts",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/systems/character/interactionInputGate.ts",
+    "indexVersion": 1,
+    "references": {},
+    "sourceHash": "81c1387fafe653fe2778764aaa54d077a0e71ab0e0ee141aea313bc1e0419135",
+    "sourcePath": "src/game/systems/character/interactionInputGate.ts",
+    "subtype": "phaser-system",
+    "summary": "phaser-system：src/game/systems/character/interactionInputGate.ts",
+    "summarySource": "structured-fields",
+    "title": "interactionInputGate.ts",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/systems/character/playerController.ts",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "phaser",
+        "../../data/playerCharacter",
+        "../map/collision",
+        "../map/pathfinding",
+        "./playerPathPreviewRenderer",
+        "../../data/playerMovementPresentationRules",
+        "./autoPathVision"
+      ]
+    },
+    "sourceHash": "d66245dd13e1d6c6f5f7171c63cb2a2c3f8a737af10347dd2808e3558d81b41f",
+    "sourcePath": "src/game/systems/character/playerController.ts",
+    "subtype": "phaser-system",
+    "summary": "phaser-system：src/game/systems/character/playerController.ts",
+    "summarySource": "structured-fields",
+    "title": "playerController.ts",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/systems/character/playerPathPreviewRenderer.ts",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "phaser"
+      ]
+    },
+    "sourceHash": "6cd8eaf3a728635c052d3b8924fa794c9fbf305afb9d438b057b2d87adb5faba",
+    "sourcePath": "src/game/systems/character/playerPathPreviewRenderer.ts",
+    "subtype": "phaser-system",
+    "summary": "phaser-system：src/game/systems/character/playerPathPreviewRenderer.ts",
+    "summarySource": "structured-fields",
+    "title": "playerPathPreviewRenderer.ts",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/systems/environment/environmentOverlayState.ts",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "../../data/timeOfDay.ts"
+      ]
+    },
+    "sourceHash": "db308b82227c71a1d4beb66189781907325f2f6d647f9c59889d7e9d33f96e50",
+    "sourcePath": "src/game/systems/environment/environmentOverlayState.ts",
+    "subtype": "phaser-system",
+    "summary": "phaser-system：src/game/systems/environment/environmentOverlayState.ts",
+    "summarySource": "structured-fields",
+    "title": "environmentOverlayState.ts",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/systems/environment/fogLayer.ts",
+    "indexVersion": 1,
+    "references": {},
+    "sourceHash": "b38698f7167715f214182c3e6dfa880567e3ad685567eff5c0897f76a086c6d1",
+    "sourcePath": "src/game/systems/environment/fogLayer.ts",
+    "subtype": "phaser-system",
+    "summary": "phaser-system：src/game/systems/environment/fogLayer.ts",
+    "summarySource": "structured-fields",
+    "title": "fogLayer.ts",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/systems/environment/timeOfDayOverlay.ts",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "phaser",
+        "../../data/timeOfDay",
+        "./environmentOverlayState",
+        "./fogLayer"
+      ]
+    },
+    "sourceHash": "5cdb5af31948f35a19b0860495a4151322a0d52e043da640e85993a655e6274c",
+    "sourcePath": "src/game/systems/environment/timeOfDayOverlay.ts",
+    "subtype": "phaser-system",
+    "summary": "phaser-system：src/game/systems/environment/timeOfDayOverlay.ts",
+    "summarySource": "structured-fields",
+    "title": "timeOfDayOverlay.ts",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/systems/map/autoEventTriggerState.ts",
+    "indexVersion": 1,
+    "references": {},
+    "sourceHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "sourcePath": "src/game/systems/map/autoEventTriggerState.ts",
+    "subtype": "phaser-system",
+    "summary": "phaser-system：src/game/systems/map/autoEventTriggerState.ts",
+    "summarySource": "structured-fields",
+    "title": "autoEventTriggerState.ts",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/systems/map/cameraLayout.ts",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "./runtimeMapNormalizer",
+        "./cameraLayoutRules",
+        "./cameraLayoutRules"
+      ]
+    },
+    "sourceHash": "5aab5e130d2a32ccda32137aab694d45ba1038f2282e49155515b70b52e010e8",
+    "sourcePath": "src/game/systems/map/cameraLayout.ts",
+    "subtype": "phaser-system",
+    "summary": "phaser-system：src/game/systems/map/cameraLayout.ts",
+    "summarySource": "structured-fields",
+    "title": "cameraLayout.ts",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/systems/map/cameraLayoutRules.ts",
+    "indexVersion": 1,
+    "references": {},
+    "sourceHash": "6b30344477f5eb2fe2e155fa04fdbfd7c18c8bf5a1852379bba61708f60a003d",
+    "sourcePath": "src/game/systems/map/cameraLayoutRules.ts",
+    "subtype": "phaser-system",
+    "summary": "phaser-system：src/game/systems/map/cameraLayoutRules.ts",
+    "summarySource": "structured-fields",
+    "title": "cameraLayoutRules.ts",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/systems/map/collision.ts",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "phaser",
+        "./runtimeMapNormalizer"
+      ]
+    },
+    "sourceHash": "2b84fb4ac06f720253daee230c43e08226c8cd726c19ff7d3492738ea30dfe1e",
+    "sourcePath": "src/game/systems/map/collision.ts",
+    "subtype": "phaser-system",
+    "summary": "phaser-system：src/game/systems/map/collision.ts",
+    "summarySource": "structured-fields",
+    "title": "collision.ts",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/systems/map/foregroundTileOverlay.ts",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "phaser",
+        "./runtimeMapNormalizer",
+        "./renderers/tileLayerRenderer",
+        "./foregroundTileOverlayRules"
+      ]
+    },
+    "sourceHash": "1109369581624ccc11d2296912e05dcaa9c601fe5501d946dd9d78cfb477206c",
+    "sourcePath": "src/game/systems/map/foregroundTileOverlay.ts",
+    "subtype": "phaser-system",
+    "summary": "phaser-system：src/game/systems/map/foregroundTileOverlay.ts",
+    "summarySource": "structured-fields",
+    "title": "foregroundTileOverlay.ts",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/systems/map/foregroundTileOverlayRules.js",
+    "indexVersion": 1,
+    "references": {},
+    "sourceHash": "d797fb132b409a562aebe2107d5b82c557c8e807b0da12f1c498752a57f0b270",
+    "sourcePath": "src/game/systems/map/foregroundTileOverlayRules.js",
+    "subtype": "phaser-system",
+    "summary": "phaser-system：src/game/systems/map/foregroundTileOverlayRules.js",
+    "summarySource": "structured-fields",
+    "title": "foregroundTileOverlayRules.js",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/systems/map/manualEventRegistry.ts",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "../../core/EventRunner",
+        "./pathfinding",
+        "./runtimeMapNormalizer"
+      ]
+    },
+    "sourceHash": "dee4b0d3147583d85afdea5a3270501905dcdf0c3b05b660cc890b1b9ce85d15",
+    "sourcePath": "src/game/systems/map/manualEventRegistry.ts",
+    "subtype": "phaser-system",
+    "summary": "phaser-system：src/game/systems/map/manualEventRegistry.ts",
+    "summarySource": "structured-fields",
+    "title": "manualEventRegistry.ts",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/systems/map/MapLoader.ts",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "../../core/EventRunner",
+        "../../data/registry"
+      ]
+    },
+    "sourceHash": "0be53dff7d6a20697bfdac724de1907528397b1ad203a5bd4ff0e4698ef99a04",
+    "sourcePath": "src/game/systems/map/MapLoader.ts",
+    "subtype": "phaser-system",
+    "summary": "phaser-system：src/game/systems/map/MapLoader.ts",
+    "summarySource": "structured-fields",
+    "title": "MapLoader.ts",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/systems/map/pathfinding.ts",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "./collision"
+      ]
+    },
+    "sourceHash": "56675dbcef093a087bf75d1309f0447290babe4e87b807bc3b0e84350029cd56",
+    "sourcePath": "src/game/systems/map/pathfinding.ts",
+    "subtype": "phaser-system",
+    "summary": "phaser-system：src/game/systems/map/pathfinding.ts",
+    "summarySource": "structured-fields",
+    "title": "pathfinding.ts",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/systems/map/renderers/npcReplacementRenderer.ts",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "phaser",
+        "../../../data/playerCharacter.ts",
+        "../../../data/registry.ts",
+        "../../animation/character/layeredCharacterTexture.ts"
+      ]
+    },
+    "sourceHash": "fff2e1a6edeacd7acc6432045198c98d92b6eca8c261ae456971e94c187a45b5",
+    "sourcePath": "src/game/systems/map/renderers/npcReplacementRenderer.ts",
+    "subtype": "phaser-system",
+    "summary": "phaser-system：src/game/systems/map/renderers/npcReplacementRenderer.ts",
+    "summarySource": "structured-fields",
+    "title": "npcReplacementRenderer.ts",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/systems/map/renderers/tileLayerRenderer.ts",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "phaser",
+        "../runtimeMapNormalizer",
+        "../foregroundTileOverlayRules"
+      ]
+    },
+    "sourceHash": "98b0d75c896252a9276556dbafc8164f37053ade2ea49ea9c418f1e97d9c7ac3",
+    "sourcePath": "src/game/systems/map/renderers/tileLayerRenderer.ts",
+    "subtype": "phaser-system",
+    "summary": "phaser-system：src/game/systems/map/renderers/tileLayerRenderer.ts",
+    "summarySource": "structured-fields",
+    "title": "tileLayerRenderer.ts",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/systems/map/renderers/worldAnimationRenderer.ts",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "phaser",
+        "../../../data/animations",
+        "../../../data/registry",
+        "../runtimeMapNormalizer"
+      ]
+    },
+    "sourceHash": "d5aecce571d549d7f3745009921831c8b6505823cfc761efa685cd737ae5e7af",
+    "sourcePath": "src/game/systems/map/renderers/worldAnimationRenderer.ts",
+    "subtype": "phaser-system",
+    "summary": "phaser-system：src/game/systems/map/renderers/worldAnimationRenderer.ts",
+    "summarySource": "structured-fields",
+    "title": "worldAnimationRenderer.ts",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/systems/map/renderers/worldHintRenderer.ts",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "phaser",
+        "../../../data/registry",
+        "../runtimeMapNormalizer"
+      ]
+    },
+    "sourceHash": "536e97945edce684507a678d22b543f214b32e450befbf7a99c929324a4d7ef4",
+    "sourcePath": "src/game/systems/map/renderers/worldHintRenderer.ts",
+    "subtype": "phaser-system",
+    "summary": "phaser-system：src/game/systems/map/renderers/worldHintRenderer.ts",
+    "summarySource": "structured-fields",
+    "title": "worldHintRenderer.ts",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/systems/map/runtimeMapNormalizer.ts",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "../../data/registry"
+      ]
+    },
+    "sourceHash": "cab3e9bcbbd038ce3c711ec048294da99c3260beb7c6d8e55fa69bd7977afa32",
+    "sourcePath": "src/game/systems/map/runtimeMapNormalizer.ts",
+    "subtype": "phaser-system",
+    "summary": "phaser-system：src/game/systems/map/runtimeMapNormalizer.ts",
+    "summarySource": "structured-fields",
+    "title": "runtimeMapNormalizer.ts",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/systems/map/spawnPoint.ts",
+    "indexVersion": 1,
+    "references": {},
+    "sourceHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "sourcePath": "src/game/systems/map/spawnPoint.ts",
+    "subtype": "phaser-system",
+    "summary": "phaser-system：src/game/systems/map/spawnPoint.ts",
+    "summarySource": "structured-fields",
+    "title": "spawnPoint.ts",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/systems/map/worldSceneRuntime.ts",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "phaser",
+        "../../data/playerCharacter",
+        "../../core/playerRuntime",
+        "./MapLoader",
+        "../../core/EventRunner",
+        "../../data/registry",
+        "./cameraLayout",
+        "./collision",
+        "../character/playerController",
+        "../environment/timeOfDayOverlay",
+        "./manualEventRegistry",
+        "./renderers/tileLayerRenderer",
+        "./foregroundTileOverlay",
+        "./renderers/worldAnimationRenderer",
+        "./renderers/npcReplacementRenderer",
+        "./renderers/worldHintRenderer",
+        "./runtimeMapNormalizer",
+        "../../data/timeOfDay",
+        "../animation/character/layeredCharacterTexture.ts"
+      ]
+    },
+    "sourceHash": "01ea7415bf2fb3594961c9fbb87a33054269dfbd080b3082ca990b6b5d8b20a5",
+    "sourcePath": "src/game/systems/map/worldSceneRuntime.ts",
+    "subtype": "phaser-system",
+    "summary": "phaser-system：src/game/systems/map/worldSceneRuntime.ts",
+    "summarySource": "structured-fields",
+    "title": "worldSceneRuntime.ts",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/views/components/base/CharacterMenuPanel.vue",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "vue"
+      ]
+    },
+    "sourceHash": "df693b8442a29a77e16c3596a60fa75312aeff6399202d65d025998d2d0da4ef",
+    "sourcePath": "src/game/views/components/base/CharacterMenuPanel.vue",
+    "subtype": "vue",
+    "summary": "vue：src/game/views/components/base/CharacterMenuPanel.vue",
+    "summarySource": "structured-fields",
+    "title": "CharacterMenuPanel.vue",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/views/components/base/CharacterOutlinePanel.vue",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "vue",
+        "../../../data/story_outline/storyCharacterOutline",
+        "./GameScrollArea.vue"
+      ]
+    },
+    "sourceHash": "62524f06d0f371aa8b6f0ba4d00eaa11ccf380cd52aec433aee1284e4ffd1f4b",
+    "sourcePath": "src/game/views/components/base/CharacterOutlinePanel.vue",
+    "subtype": "vue",
+    "summary": "vue：src/game/views/components/base/CharacterOutlinePanel.vue",
+    "summarySource": "structured-fields",
+    "title": "CharacterOutlinePanel.vue",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/views/components/base/CompendiumMenuPanel.vue",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "vue",
+        "../../../../assets/game/backgrounds/Liluo_bed.png",
+        "../../../data/global/cgVariantRules",
+        "./gameMenuHelpers"
+      ]
+    },
+    "sourceHash": "9c8485bd1def456115bb55c73b3ace1d090902d239d835bcfda9d6a040859fb1",
+    "sourcePath": "src/game/views/components/base/CompendiumMenuPanel.vue",
+    "subtype": "vue",
+    "summary": "vue：src/game/views/components/base/CompendiumMenuPanel.vue",
+    "summarySource": "structured-fields",
+    "title": "CompendiumMenuPanel.vue",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/views/components/base/DialogBox.vue",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "vue",
+        "./DialogChoiceList.vue",
+        "./GameScrollArea.vue"
+      ]
+    },
+    "sourceHash": "4874564caa24b42fea3fa8a17683a4c716897079b65fa42cc8f6402d33452a45",
+    "sourcePath": "src/game/views/components/base/DialogBox.vue",
+    "subtype": "vue",
+    "summary": "vue：src/game/views/components/base/DialogBox.vue",
+    "summarySource": "structured-fields",
+    "title": "DialogBox.vue",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/views/components/base/DialogChoiceList.vue",
+    "indexVersion": 1,
+    "references": {},
+    "sourceHash": "28527db1d19c178754fb8a7554035c614bf9b1437e7a18a87502347b0376baeb",
+    "sourcePath": "src/game/views/components/base/DialogChoiceList.vue",
+    "subtype": "vue",
+    "summary": "vue：src/game/views/components/base/DialogChoiceList.vue",
+    "summarySource": "structured-fields",
+    "title": "DialogChoiceList.vue",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/views/components/base/DialogHistoryOverlay.vue",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "vue",
+        "./GameScrollArea.vue"
+      ]
+    },
+    "sourceHash": "e970e38ace180a0b3bfd511cc50bdecaceadb3dfbfdb4b0212694dfca6956c75",
+    "sourcePath": "src/game/views/components/base/DialogHistoryOverlay.vue",
+    "subtype": "vue",
+    "summary": "vue：src/game/views/components/base/DialogHistoryOverlay.vue",
+    "summarySource": "structured-fields",
+    "title": "DialogHistoryOverlay.vue",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/views/components/base/EquipmentMenuPanel.vue",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "vue",
+        "./gameMenuHelpers"
+      ]
+    },
+    "sourceHash": "ea6848056bf5b55307d66594bd7b7c30a327a35ff76d805198ac5cbd4faced15",
+    "sourcePath": "src/game/views/components/base/EquipmentMenuPanel.vue",
+    "subtype": "vue",
+    "summary": "vue：src/game/views/components/base/EquipmentMenuPanel.vue",
+    "summarySource": "structured-fields",
+    "title": "EquipmentMenuPanel.vue",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/views/components/base/GameConfirmDialog.vue",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "vue"
+      ]
+    },
+    "sourceHash": "36cc4005f0b79755ede407d33db689d44d2dbcb37a9a2b69230844f101f103c8",
+    "sourcePath": "src/game/views/components/base/GameConfirmDialog.vue",
+    "subtype": "vue",
+    "summary": "vue：src/game/views/components/base/GameConfirmDialog.vue",
+    "summarySource": "structured-fields",
+    "title": "GameConfirmDialog.vue",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/views/components/base/gameMenuHelpers.js",
+    "indexVersion": 1,
+    "references": {},
+    "sourceHash": "b996a7bfad940d13b2b5bf96ffa1a3426bf2bc09a06416e52d22b6d45461b1c9",
+    "sourcePath": "src/game/views/components/base/gameMenuHelpers.js",
+    "subtype": "module",
+    "summary": "module：src/game/views/components/base/gameMenuHelpers.js",
+    "summarySource": "structured-fields",
+    "title": "gameMenuHelpers.js",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/views/components/base/GameMenuOverlay.vue",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "vue",
+        "../../../core/gameRuntime",
+        "../../../core/playerRuntime",
+        "../../../core/gameMenuDataResolver",
+        "./CharacterMenuPanel.vue",
+        "./CompendiumMenuPanel.vue",
+        "./GameConfirmDialog.vue",
+        "./EquipmentMenuPanel.vue",
+        "./GameMenuPlaceholderPanel.vue",
+        "./InventoryMenuPanel.vue",
+        "./LoadMenuPanel.vue",
+        "./MapMenuPanel.vue",
+        "./QuestMenuPanel.vue",
+        "./RestraintMenuPanel.vue",
+        "./SaveMenuPanel.vue",
+        "./SkillMenuPanel.vue",
+        "./OutlineMenuPanel.vue",
+        "../../../data/global/gameMenuData",
+        "../../../data/story_outline/storyOutline",
+        "../../../data/playerStatus",
+        "../../../data/registry",
+        "../../../data/playerCharacter",
+        "../../../systems/animation/character/layeredCharacterTexture",
+        "./gameMenuHelpers"
+      ]
+    },
+    "sourceHash": "bbb6695242992fe9588f83663c44c2d6f812f6df372c1bfb0604753a97f1b069",
+    "sourcePath": "src/game/views/components/base/GameMenuOverlay.vue",
+    "subtype": "vue",
+    "summary": "vue：src/game/views/components/base/GameMenuOverlay.vue",
+    "summarySource": "structured-fields",
+    "title": "GameMenuOverlay.vue",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/views/components/base/GameMenuPlaceholderPanel.vue",
+    "indexVersion": 1,
+    "references": {},
+    "sourceHash": "67eaa951acf3b37f576629306a6899d22b40b16bd4d0897caa7ae4b925441f2b",
+    "sourcePath": "src/game/views/components/base/GameMenuPlaceholderPanel.vue",
+    "subtype": "vue",
+    "summary": "vue：src/game/views/components/base/GameMenuPlaceholderPanel.vue",
+    "summarySource": "structured-fields",
+    "title": "GameMenuPlaceholderPanel.vue",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/views/components/base/GameNotificationBar.vue",
+    "indexVersion": 1,
+    "references": {},
+    "sourceHash": "b4144863a9f2188adcf60563e448cd2ef9ba7e21cc2e8386aa1c24bbcd5daf44",
+    "sourcePath": "src/game/views/components/base/GameNotificationBar.vue",
+    "subtype": "vue",
+    "summary": "vue：src/game/views/components/base/GameNotificationBar.vue",
+    "summarySource": "structured-fields",
+    "title": "GameNotificationBar.vue",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/views/components/base/GameplayMenuPanel.vue",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "vue",
+        "../../../data/gameplay_outline/gameplayOutline",
+        "./GameScrollArea.vue",
+        "./jsonDownload"
+      ]
+    },
+    "sourceHash": "602a26f4649cb21b222c0ecfdaf250117dae89031b56491bc594013c11284aaf",
+    "sourcePath": "src/game/views/components/base/GameplayMenuPanel.vue",
+    "subtype": "vue",
+    "summary": "vue：src/game/views/components/base/GameplayMenuPanel.vue",
+    "summarySource": "structured-fields",
+    "title": "GameplayMenuPanel.vue",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/views/components/base/GamePortraitLayerDialog.vue",
+    "indexVersion": 1,
+    "references": {},
+    "sourceHash": "eccd4e66752b5ac2b08caf5a77fa8f7ebd146e38d0900fe12fbae5750105f04f",
+    "sourcePath": "src/game/views/components/base/GamePortraitLayerDialog.vue",
+    "subtype": "vue",
+    "summary": "vue：src/game/views/components/base/GamePortraitLayerDialog.vue",
+    "summarySource": "structured-fields",
+    "title": "GamePortraitLayerDialog.vue",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/views/components/base/GameRuntimeErrorBar.vue",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "vue"
+      ]
+    },
+    "sourceHash": "a7fc49c58710c45725a7584ec880df8f34cfd3134655ed4deea33eb6ebfa1396",
+    "sourcePath": "src/game/views/components/base/GameRuntimeErrorBar.vue",
+    "subtype": "vue",
+    "summary": "vue：src/game/views/components/base/GameRuntimeErrorBar.vue",
+    "summarySource": "structured-fields",
+    "title": "GameRuntimeErrorBar.vue",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/views/components/base/GameScrollArea.vue",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "vue"
+      ]
+    },
+    "sourceHash": "0b681530475eb87e693f330b1d0f836a96a4ef1e440c33ba6800920f671fb777",
+    "sourcePath": "src/game/views/components/base/GameScrollArea.vue",
+    "subtype": "vue",
+    "summary": "vue：src/game/views/components/base/GameScrollArea.vue",
+    "summarySource": "structured-fields",
+    "title": "GameScrollArea.vue",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/views/components/base/InventoryMenuPanel.vue",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "./gameMenuHelpers"
+      ]
+    },
+    "sourceHash": "179528d7516ed6a41d746160e0158b18614efdbb9d7a0eeadf1aa886ab732a47",
+    "sourcePath": "src/game/views/components/base/InventoryMenuPanel.vue",
+    "subtype": "vue",
+    "summary": "vue：src/game/views/components/base/InventoryMenuPanel.vue",
+    "summarySource": "structured-fields",
+    "title": "InventoryMenuPanel.vue",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/views/components/base/jsonDownload.js",
+    "indexVersion": 1,
+    "references": {},
+    "sourceHash": "da6ee1d4546c676050d4827e72a479c22e667764dcfdcd23cebfedbf4ba4e1e5",
+    "sourcePath": "src/game/views/components/base/jsonDownload.js",
+    "subtype": "module",
+    "summary": "module：src/game/views/components/base/jsonDownload.js",
+    "summarySource": "structured-fields",
+    "title": "jsonDownload.js",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/views/components/base/LiButton.vue",
+    "indexVersion": 1,
+    "references": {},
+    "sourceHash": "d5e31c52783a23ffe8b627299108c4d411e57b599e457a4bcbb2d4eca5a0fc72",
+    "sourcePath": "src/game/views/components/base/LiButton.vue",
+    "subtype": "vue",
+    "summary": "vue：src/game/views/components/base/LiButton.vue",
+    "summarySource": "structured-fields",
+    "title": "LiButton.vue",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/views/components/base/LoadMenuPanel.vue",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "vue",
+        "./SaveSlotList.vue"
+      ]
+    },
+    "sourceHash": "c0422431c3d089f3449626120366930e7b04b38ba29d9667b716e1929b5f86e6",
+    "sourcePath": "src/game/views/components/base/LoadMenuPanel.vue",
+    "subtype": "vue",
+    "summary": "vue：src/game/views/components/base/LoadMenuPanel.vue",
+    "summarySource": "structured-fields",
+    "title": "LoadMenuPanel.vue",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/views/components/base/MapMenuPanel.vue",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "vue",
+        "../../../systems/map/runtimeMapNormalizer"
+      ]
+    },
+    "sourceHash": "d573936ad95834cd64e622583bd1139908cd0f9335d8f437a1068e8d4f510c66",
+    "sourcePath": "src/game/views/components/base/MapMenuPanel.vue",
+    "subtype": "vue",
+    "summary": "vue：src/game/views/components/base/MapMenuPanel.vue",
+    "summarySource": "structured-fields",
+    "title": "MapMenuPanel.vue",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/views/components/base/OutlineMenuPanel.vue",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "vue",
+        "../../../data/gameplay_outline/gameplayOutline",
+        "../../../data/plot_outline/plotOutline.js",
+        "../../../data/story_outline/storyCharacterOutline",
+        "./CharacterOutlinePanel.vue",
+        "./GameplayMenuPanel.vue",
+        "./PlotOutlinePanel.vue",
+        "./StoryMenuPanel.vue"
+      ]
+    },
+    "sourceHash": "f97603affb1672856c529cfb77605d728a9c40e4938e3a47008d94967c68349f",
+    "sourcePath": "src/game/views/components/base/OutlineMenuPanel.vue",
+    "subtype": "vue",
+    "summary": "vue：src/game/views/components/base/OutlineMenuPanel.vue",
+    "summarySource": "structured-fields",
+    "title": "OutlineMenuPanel.vue",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/views/components/base/PlotOutlinePanel.vue",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "vue",
+        "../../../data/plot_outline/plotOutline.js",
+        "./GameScrollArea.vue"
+      ]
+    },
+    "sourceHash": "4203249919204d390cd1756ca14cbc42e443e9ec84373ba0dc905af974cd8c2b",
+    "sourcePath": "src/game/views/components/base/PlotOutlinePanel.vue",
+    "subtype": "vue",
+    "summary": "vue：src/game/views/components/base/PlotOutlinePanel.vue",
+    "summarySource": "structured-fields",
+    "title": "PlotOutlinePanel.vue",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/views/components/base/QuestMenuPanel.vue",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "./gameMenuHelpers"
+      ]
+    },
+    "sourceHash": "02391e77a4771c7e7b53a0042058205d57aea8c6a920c8b42ed7ca2ce651c094",
+    "sourcePath": "src/game/views/components/base/QuestMenuPanel.vue",
+    "subtype": "vue",
+    "summary": "vue：src/game/views/components/base/QuestMenuPanel.vue",
+    "summarySource": "structured-fields",
+    "title": "QuestMenuPanel.vue",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/views/components/base/RestraintMenuPanel.vue",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "./gameMenuHelpers"
+      ]
+    },
+    "sourceHash": "32b6fd2d07f6a3fcab6cbcc50e828df6b840bc1da0d4870d6aeb09d16a35053b",
+    "sourcePath": "src/game/views/components/base/RestraintMenuPanel.vue",
+    "subtype": "vue",
+    "summary": "vue：src/game/views/components/base/RestraintMenuPanel.vue",
+    "summarySource": "structured-fields",
+    "title": "RestraintMenuPanel.vue",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/views/components/base/SaveMenuPanel.vue",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "./SaveSlotList.vue",
+        "./gameMenuHelpers"
+      ]
+    },
+    "sourceHash": "96d168ab4ad59a45762c4a5bd557241ab391b36a358f63d480fab3ab2448294c",
+    "sourcePath": "src/game/views/components/base/SaveMenuPanel.vue",
+    "subtype": "vue",
+    "summary": "vue：src/game/views/components/base/SaveMenuPanel.vue",
+    "summarySource": "structured-fields",
+    "title": "SaveMenuPanel.vue",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/views/components/base/SaveSlotList.vue",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "../../../core/saveStorage",
+        "../../../data/playerStatus",
+        "../../../data/registry"
+      ]
+    },
+    "sourceHash": "88d76d4ee4372b5696390e6a0661db9df6cceb741cb691e95d8020009b17abfa",
+    "sourcePath": "src/game/views/components/base/SaveSlotList.vue",
+    "subtype": "vue",
+    "summary": "vue：src/game/views/components/base/SaveSlotList.vue",
+    "summarySource": "structured-fields",
+    "title": "SaveSlotList.vue",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/views/components/base/SkillMenuPanel.vue",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "./gameMenuHelpers"
+      ]
+    },
+    "sourceHash": "224c63f809c92b5b67df17b3a10198745ba4f67ed9ebed7aeebfa0b04665cf98",
+    "sourcePath": "src/game/views/components/base/SkillMenuPanel.vue",
+    "subtype": "vue",
+    "summary": "vue：src/game/views/components/base/SkillMenuPanel.vue",
+    "summarySource": "structured-fields",
+    "title": "SkillMenuPanel.vue",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/views/components/base/StoryGameplayLinkDialog.vue",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "vue",
+        "../../../data/gameplay_outline/gameplayOutline",
+        "./GameScrollArea.vue"
+      ]
+    },
+    "sourceHash": "f3cc39970f9da7ccf9da3764e00be6a5d4a663297d67f5561180a77da0d086e6",
+    "sourcePath": "src/game/views/components/base/StoryGameplayLinkDialog.vue",
+    "subtype": "vue",
+    "summary": "vue：src/game/views/components/base/StoryGameplayLinkDialog.vue",
+    "summarySource": "structured-fields",
+    "title": "StoryGameplayLinkDialog.vue",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/views/components/base/StoryMenuPanel.vue",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "vue",
+        "../../../data/story_outline/storyOutlineExport",
+        "../../../data/story_outline/storyCgLinks",
+        "../../../data/gameplay_outline/gameplayOutline",
+        "../../../data/global/gameMenuData",
+        "./jsonDownload",
+        "./StoryGameplayLinkDialog.vue",
+        "./storyMetaPopover"
+      ]
+    },
+    "sourceHash": "8d909a6ac409af2c33a1e5f1f2177e4009a286ff1c0cadf5df2d684a0e274388",
+    "sourcePath": "src/game/views/components/base/StoryMenuPanel.vue",
+    "subtype": "vue",
+    "summary": "vue：src/game/views/components/base/StoryMenuPanel.vue",
+    "summarySource": "structured-fields",
+    "title": "StoryMenuPanel.vue",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/views/components/base/storyMetaPopover.js",
+    "indexVersion": 1,
+    "references": {},
+    "sourceHash": "dc597bc957068c77c71eaa0e5ea7938fc2146d0e8a31d5895bcb8271986bad89",
+    "sourcePath": "src/game/views/components/base/storyMetaPopover.js",
+    "subtype": "module",
+    "summary": "module：src/game/views/components/base/storyMetaPopover.js",
+    "summarySource": "structured-fields",
+    "title": "storyMetaPopover.js",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/views/components/base/UpdateRecordsPanel.vue",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "vue",
+        "../../../data/global/updateRecordGroups.js"
+      ]
+    },
+    "sourceHash": "29a13a971aeed3c1c28836c4f690703f2013ac0855b24e140384dc9fee07abca",
+    "sourcePath": "src/game/views/components/base/UpdateRecordsPanel.vue",
+    "subtype": "vue",
+    "summary": "vue：src/game/views/components/base/UpdateRecordsPanel.vue",
+    "summarySource": "structured-fields",
+    "title": "UpdateRecordsPanel.vue",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/views/composables/useGameDialogueBridge.ts",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "vue",
+        "../../core/EventRunner",
+        "../../core/eventExecution"
+      ]
+    },
+    "sourceHash": "f6b82f589714a5519c390e25513d7adba4d198c9bfd499f36abf32975fbfb62e",
+    "sourcePath": "src/game/views/composables/useGameDialogueBridge.ts",
+    "subtype": "module",
+    "summary": "module：src/game/views/composables/useGameDialogueBridge.ts",
+    "summarySource": "structured-fields",
+    "title": "useGameDialogueBridge.ts",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/views/composables/useGameNotifications.ts",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "vue"
+      ]
+    },
+    "sourceHash": "6e40f207e1769606769ab6e492c4b9efa6b62ec03dcc5cbcec3693c09335a4ca",
+    "sourcePath": "src/game/views/composables/useGameNotifications.ts",
+    "subtype": "module",
+    "summary": "module：src/game/views/composables/useGameNotifications.ts",
+    "summarySource": "structured-fields",
+    "title": "useGameNotifications.ts",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/views/composables/usePhaserGameBridge.ts",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "../../core/createPhaserGame",
+        "../../core/SceneKeys",
+        "../../core/EventRunner",
+        "../../core/EventRunner",
+        "../../core/runtimeError",
+        "../../core/loadingProgress",
+        "../../systems/map/MapLoader"
+      ]
+    },
+    "sourceHash": "d087559a8f28fc14068ab1258527e5044405281fdf43618e32ef7615aa19798b",
+    "sourcePath": "src/game/views/composables/usePhaserGameBridge.ts",
+    "subtype": "module",
+    "summary": "module：src/game/views/composables/usePhaserGameBridge.ts",
+    "summarySource": "structured-fields",
+    "title": "usePhaserGameBridge.ts",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/views/GameEntryScreen.vue",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "vue",
+        "../data/global/updateRecords.js",
+        "./components/base/SaveSlotList.vue",
+        "./components/base/UpdateRecordsPanel.vue"
+      ]
+    },
+    "sourceHash": "cf2ea270e838ae630cb3c23b5ed8eab438c84934cb29c8b361bc69792b709b63",
+    "sourcePath": "src/game/views/GameEntryScreen.vue",
+    "subtype": "vue",
+    "summary": "vue：src/game/views/GameEntryScreen.vue",
+    "summarySource": "structured-fields",
+    "title": "GameEntryScreen.vue",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/views/GameView.vue",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "vue",
+        "../core/EventRunner",
+        "../core/directionPadGame",
+        "../core/interactiveFiction",
+        "../core/playerRuntime",
+        "../core/saveData",
+        "../core/saveStorage",
+        "../data/assets",
+        "../data/interactive_fictions/registry",
+        "../data/mapPanelActions",
+        "../data/minigames/directionPadGames",
+        "../data/playerStatus",
+        "../data/registry",
+        "./components/base/DialogBox.vue",
+        "./components/base/DialogHistoryOverlay.vue",
+        "./components/base/GameMenuOverlay.vue",
+        "./components/base/GamePortraitLayerDialog.vue",
+        "./GameEntryScreen.vue",
+        "./modes/direction-pad/DirectionPadMode.vue",
+        "./modes/interactive-fiction/InteractiveFictionMode.vue",
+        "./modes/map/GameMapActionChoiceDialog.vue",
+        "./modes/map/MapMode.vue",
+        "./composables/useGameDialogueBridge",
+        "./composables/useGameNotifications",
+        "./composables/usePhaserGameBridge",
+        "../../assets/images/index.jpg",
+        "../data/portraits/registry"
+      ]
+    },
+    "sourceHash": "1ad24bf22973fe93b7add37d92b372294eb7ccef7e513c57abdf9e1b156ea226",
+    "sourcePath": "src/game/views/GameView.vue",
+    "subtype": "vue",
+    "summary": "vue：src/game/views/GameView.vue",
+    "summarySource": "structured-fields",
+    "title": "GameView.vue",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/views/modes/direction-pad/DirectionPadMode.vue",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "../../../core/directionPadGame",
+        "../../shell/GameStageLayout.vue",
+        "./GameDirectionPadControls.vue",
+        "./GameDirectionPadPanel.vue",
+        "./GameDirectionPadView.vue"
+      ]
+    },
+    "sourceHash": "bd40d3a6a1694c776899323baa18e4d1b7feb82e99e6c6711c4580d6570d684e",
+    "sourcePath": "src/game/views/modes/direction-pad/DirectionPadMode.vue",
+    "subtype": "vue",
+    "summary": "vue：src/game/views/modes/direction-pad/DirectionPadMode.vue",
+    "summarySource": "structured-fields",
+    "title": "DirectionPadMode.vue",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/views/modes/direction-pad/GameDirectionPadControls.vue",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "../../../core/directionPadGame",
+        "../../shell/GameSidePanel.vue"
+      ]
+    },
+    "sourceHash": "4e1b036816f9d9e64a277a37c18264401b0d0fcddd2995533ddcd82a0d871d98",
+    "sourcePath": "src/game/views/modes/direction-pad/GameDirectionPadControls.vue",
+    "subtype": "vue",
+    "summary": "vue：src/game/views/modes/direction-pad/GameDirectionPadControls.vue",
+    "summarySource": "structured-fields",
+    "title": "GameDirectionPadControls.vue",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/views/modes/direction-pad/GameDirectionPadPanel.vue",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "vue",
+        "../../../core/directionPadGame",
+        "../../components/base/GameScrollArea.vue",
+        "../../shell/GameSidePanel.vue"
+      ]
+    },
+    "sourceHash": "97aab9e17498374facf4ad48f49641f91b871b28b034e47d46e046f1bb875c38",
+    "sourcePath": "src/game/views/modes/direction-pad/GameDirectionPadPanel.vue",
+    "subtype": "vue",
+    "summary": "vue：src/game/views/modes/direction-pad/GameDirectionPadPanel.vue",
+    "summarySource": "structured-fields",
+    "title": "GameDirectionPadPanel.vue",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/views/modes/direction-pad/GameDirectionPadView.vue",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "vue",
+        "../../../core/directionPadGame"
+      ]
+    },
+    "sourceHash": "47e599e260c7b1c4395b5101ae0afd368d4915e6872711b994a93a6f5c309928",
+    "sourcePath": "src/game/views/modes/direction-pad/GameDirectionPadView.vue",
+    "subtype": "vue",
+    "summary": "vue：src/game/views/modes/direction-pad/GameDirectionPadView.vue",
+    "summarySource": "structured-fields",
+    "title": "GameDirectionPadView.vue",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/views/modes/interactive-fiction/GameInteractiveFictionPanel.vue",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "../../../core/interactiveFiction",
+        "../../components/base/GameScrollArea.vue",
+        "../../shell/GameSidePanel.vue"
+      ]
+    },
+    "sourceHash": "430b5c4d67d0dbd3c07b401c10c1b60dfe4457c33f97234fc1b427e9d687b765",
+    "sourcePath": "src/game/views/modes/interactive-fiction/GameInteractiveFictionPanel.vue",
+    "subtype": "vue",
+    "summary": "vue：src/game/views/modes/interactive-fiction/GameInteractiveFictionPanel.vue",
+    "summarySource": "structured-fields",
+    "title": "GameInteractiveFictionPanel.vue",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/views/modes/interactive-fiction/GameInteractiveFictionView.vue",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "vue",
+        "../../components/base/GameScrollArea.vue",
+        "../../../core/interactiveFiction"
+      ]
+    },
+    "sourceHash": "ce4cec7749004927d9896b76a486a8d26feb77267f1a5190ef38bf6784a9352a",
+    "sourcePath": "src/game/views/modes/interactive-fiction/GameInteractiveFictionView.vue",
+    "subtype": "vue",
+    "summary": "vue：src/game/views/modes/interactive-fiction/GameInteractiveFictionView.vue",
+    "summarySource": "structured-fields",
+    "title": "GameInteractiveFictionView.vue",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/views/modes/interactive-fiction/InteractiveFictionMode.vue",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "../../shell/GameShell.vue",
+        "./GameInteractiveFictionPanel.vue",
+        "./GameInteractiveFictionView.vue"
+      ]
+    },
+    "sourceHash": "7ec1a632566927e5ec65c05cc03e22b03711c9c6ecd30c325c65979f0c811199",
+    "sourcePath": "src/game/views/modes/interactive-fiction/InteractiveFictionMode.vue",
+    "subtype": "vue",
+    "summary": "vue：src/game/views/modes/interactive-fiction/InteractiveFictionMode.vue",
+    "summarySource": "structured-fields",
+    "title": "InteractiveFictionMode.vue",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/views/modes/map/GameInfoPanel.vue",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "vue",
+        "../../shell/GameSidePanel.vue",
+        "./GameMapActionPanel.vue"
+      ]
+    },
+    "sourceHash": "c8d40066b474454cb17a7ab2e81c8fb863c5f5b5f66d409cca44c8a33408578d",
+    "sourcePath": "src/game/views/modes/map/GameInfoPanel.vue",
+    "subtype": "vue",
+    "summary": "vue：src/game/views/modes/map/GameInfoPanel.vue",
+    "summarySource": "structured-fields",
+    "title": "GameInfoPanel.vue",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/views/modes/map/GameMapActionChoiceDialog.vue",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "vue",
+        "../../components/base/DialogChoiceList.vue"
+      ]
+    },
+    "sourceHash": "8b88089c7f6278f18d6242024a07d700d40a8c6e61e2151f1527a2a92706a8a6",
+    "sourcePath": "src/game/views/modes/map/GameMapActionChoiceDialog.vue",
+    "subtype": "vue",
+    "summary": "vue：src/game/views/modes/map/GameMapActionChoiceDialog.vue",
+    "summarySource": "structured-fields",
+    "title": "GameMapActionChoiceDialog.vue",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/views/modes/map/GameMapActionPanel.vue",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "../../components/base/LiButton.vue"
+      ]
+    },
+    "sourceHash": "66339b734cbb94f17f2cd86127267900576b131a04d130e243a2eb3ba1e26bb9",
+    "sourcePath": "src/game/views/modes/map/GameMapActionPanel.vue",
+    "subtype": "vue",
+    "summary": "vue：src/game/views/modes/map/GameMapActionPanel.vue",
+    "summarySource": "structured-fields",
+    "title": "GameMapActionPanel.vue",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/views/modes/map/MapMode.vue",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "vue",
+        "../../../core/loadingProgress",
+        "../../components/base/GameNotificationBar.vue",
+        "../../components/base/GameRuntimeErrorBar.vue",
+        "../../shell/GamePortraitPanel.vue",
+        "../../shell/GameShell.vue",
+        "../../shell/GameSidePanel.vue",
+        "./GameInfoPanel.vue"
+      ]
+    },
+    "sourceHash": "985fcbe80cb992be9ef94bd54c782492a1181c1c973adfac4b1bbe108d276672",
+    "sourcePath": "src/game/views/modes/map/MapMode.vue",
+    "subtype": "vue",
+    "summary": "vue：src/game/views/modes/map/MapMode.vue",
+    "summarySource": "structured-fields",
+    "title": "MapMode.vue",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/views/shell/GamePortraitPanel.vue",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "vue"
+      ]
+    },
+    "sourceHash": "3fb4e8f737cc6c0b5ef22c47bba2a5662e48bba1220d9aa81c1d88ddf527f057",
+    "sourcePath": "src/game/views/shell/GamePortraitPanel.vue",
+    "subtype": "vue",
+    "summary": "vue：src/game/views/shell/GamePortraitPanel.vue",
+    "summarySource": "structured-fields",
+    "title": "GamePortraitPanel.vue",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/views/shell/GameShell.vue",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "./GamePortraitPanel.vue",
+        "./GameSidePanel.vue",
+        "./GameStageLayout.vue"
+      ]
+    },
+    "sourceHash": "eb18fc38b2de2fcc635c72ba61d080acfb8e5451e45180fa85116fbdf9f22c2e",
+    "sourcePath": "src/game/views/shell/GameShell.vue",
+    "subtype": "vue",
+    "summary": "vue：src/game/views/shell/GameShell.vue",
+    "summarySource": "structured-fields",
+    "title": "GameShell.vue",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/views/shell/GameSidePanel.vue",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "vue"
+      ]
+    },
+    "sourceHash": "07a38e67a723fe84efb6c9fa94f193d825cf83cbeaf50492de86bf44d657791a",
+    "sourcePath": "src/game/views/shell/GameSidePanel.vue",
+    "subtype": "vue",
+    "summary": "vue：src/game/views/shell/GameSidePanel.vue",
+    "summarySource": "structured-fields",
+    "title": "GameSidePanel.vue",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/views/shell/GameStageLayout.vue",
+    "indexVersion": 1,
+    "references": {},
+    "sourceHash": "ade29bb944de4e5b25ef8dbc48210bc191d38b9d1854eba68ee0564af83aca10",
+    "sourcePath": "src/game/views/shell/GameStageLayout.vue",
+    "subtype": "vue",
+    "summary": "vue：src/game/views/shell/GameStageLayout.vue",
+    "summarySource": "structured-fields",
+    "title": "GameStageLayout.vue",
+    "type": "code-module"
+  }
+]

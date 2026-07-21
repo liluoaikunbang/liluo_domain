@@ -1,0 +1,174 @@
+[
+  {
+    "category": "重复挑战",
+    "categoryId": "gameplay-group-15",
+    "id": "gameplay-115",
+    "indexVersion": 1,
+    "presentationModes": [
+      "main-map",
+      "light-extension"
+    ],
+    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourcePath": "src/game/data/gameplay_outline/catalog.json",
+    "summary": "为已有副本增加重复挑战价值。",
+    "summarySource": "source-json.summary",
+    "title": "关卡评分",
+    "type": "gameplay",
+    "variants": [
+      {
+        "id": "gameplay-115-variant-01",
+        "title": "时间评分"
+      },
+      {
+        "id": "gameplay-115-variant-02",
+        "title": "受伤评分"
+      },
+      {
+        "id": "gameplay-115-variant-03",
+        "title": "击杀评分"
+      },
+      {
+        "id": "gameplay-115-variant-04",
+        "title": "潜行评分"
+      },
+      {
+        "id": "gameplay-115-variant-05",
+        "title": "资源评分"
+      },
+      {
+        "id": "gameplay-115-variant-06",
+        "title": "救援评分"
+      },
+      {
+        "id": "gameplay-115-variant-07",
+        "title": "破坏控制评分"
+      },
+      {
+        "id": "gameplay-115-variant-08",
+        "title": "额外目标评分"
+      },
+      {
+        "id": "gameplay-115-variant-09",
+        "title": "连击评分"
+      },
+      {
+        "id": "gameplay-115-variant-10",
+        "title": "综合评级"
+      }
+    ]
+  },
+  {
+    "category": "重复挑战",
+    "categoryId": "gameplay-group-15",
+    "id": "gameplay-116",
+    "indexVersion": 1,
+    "presentationModes": [
+      "main-map"
+    ],
+    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourcePath": "src/game/data/gameplay_outline/catalog.json",
+    "summary": "使用同一地图和敌人，通过改变规则形成新关卡。",
+    "summarySource": "source-json.summary",
+    "title": "规则变异挑战",
+    "type": "gameplay",
+    "variants": [
+      {
+        "id": "gameplay-116-variant-01",
+        "title": "生命限制"
+      },
+      {
+        "id": "gameplay-116-variant-02",
+        "title": "时间限制"
+      },
+      {
+        "id": "gameplay-116-variant-03",
+        "title": "武器限制"
+      },
+      {
+        "id": "gameplay-116-variant-04",
+        "title": "技能限制"
+      },
+      {
+        "id": "gameplay-116-variant-05",
+        "title": "敌人强化"
+      },
+      {
+        "id": "gameplay-116-variant-06",
+        "title": "双倍敌人"
+      },
+      {
+        "id": "gameplay-116-variant-07",
+        "title": "环境强化"
+      },
+      {
+        "id": "gameplay-116-variant-08",
+        "title": "资源匮乏"
+      },
+      {
+        "id": "gameplay-116-variant-09",
+        "title": "随机能力"
+      },
+      {
+        "id": "gameplay-116-variant-10",
+        "title": "敌我共享规则"
+      }
+    ]
+  },
+  {
+    "category": "重复挑战",
+    "categoryId": "gameplay-group-15",
+    "id": "gameplay-117",
+    "indexVersion": 1,
+    "presentationModes": [
+      "light-extension"
+    ],
+    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourcePath": "src/game/data/gameplay_outline/catalog.json",
+    "summary": "让玩家在相同规则下重复挑战。",
+    "summarySource": "source-json.summary",
+    "title": "周期挑战",
+    "type": "gameplay",
+    "variants": [
+      {
+        "id": "gameplay-117-variant-01",
+        "title": "每日随机地牢"
+      },
+      {
+        "id": "gameplay-117-variant-02",
+        "title": "每日角色限制"
+      },
+      {
+        "id": "gameplay-117-variant-03",
+        "title": "每日特殊规则"
+      },
+      {
+        "id": "gameplay-117-variant-04",
+        "title": "每周长远征"
+      },
+      {
+        "id": "gameplay-117-variant-05",
+        "title": "固定种子竞速"
+      },
+      {
+        "id": "gameplay-117-variant-06",
+        "title": "固定构筑挑战"
+      },
+      {
+        "id": "gameplay-117-variant-07",
+        "title": "周常Boss"
+      },
+      {
+        "id": "gameplay-117-variant-08",
+        "title": "累计任务"
+      },
+      {
+        "id": "gameplay-117-variant-09",
+        "title": "世界轮换"
+      },
+      {
+        "id": "gameplay-117-variant-10",
+        "title": "奖励档位"
+      }
+    ]
+  }
+]

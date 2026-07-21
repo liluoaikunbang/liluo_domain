@@ -1,0 +1,758 @@
+[
+  {
+    "key": "world-1-glimmering-glance-anomaly-disaster-response-organization",
+    "markdownPath": "src/game/data/story_outline/1-modern/2.0.1-异常灾害处理组织.md",
+    "missingItems": [
+      "设计｜异常灾害处理组织·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜异常灾害处理组织·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜异常灾害处理组织·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "地图｜异常灾害处理组织·场景结构｜缺少实际地点、区域连接、道路限制与返回变化"
+    ],
+    "title": "异常灾害处理组织"
+  },
+  {
+    "key": "world-1-glimmering-glance-black-oak-night-hunt",
+    "markdownPath": "src/game/data/story_outline/1-modern/3.4.1-黑槲夜猎.md",
+    "missingItems": [
+      "设计｜黑槲夜猎·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜黑槲夜猎·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜黑槲夜猎·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "地图｜黑槲夜猎·场景结构｜缺少实际地点、区域连接、道路限制与返回变化"
+    ],
+    "title": "黑槲夜猎"
+  },
+  {
+    "key": "world-1-glimmering-glance-black-rose-sanatorium",
+    "markdownPath": "src/game/data/story_outline/1-modern/3.5.2.1-黑蔷薇疗养院.md",
+    "missingItems": [
+      "设计｜黑蔷薇疗养院·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜黑蔷薇疗养院·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜黑蔷薇疗养院·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "地图｜黑蔷薇疗养院·场景结构｜缺少实际地点、区域连接、道路限制与返回变化"
+    ],
+    "title": "黑蔷薇疗养院"
+  },
+  {
+    "key": "world-1-glimmering-glance-campus-arrival",
+    "markdownPath": "src/game/data/story_outline/1-modern/1.1-重返校园.md",
+    "missingItems": [
+      "地图｜重返校园·校门口接管｜缺少 city_jingjiang_school 校门口准确出生点配置",
+      "事件｜重返校园·校园论坛浏览｜缺少打开论坛、记录异常传闻和完成浏览的正式事件 ID",
+      "事件｜重返校园·社团招新区抵达｜缺少进入招新区域并衔接“加入紧缚社团”的正式事件 ID",
+      "对话｜重返校园·复学导览｜缺少校园功能 NPC 与璃落的正式导览台词及对话 ID"
+    ],
+    "title": "重返校园"
+  },
+  {
+    "key": "world-1-glimmering-glance-cement-shoes",
+    "markdownPath": "src/game/data/story_outline/1-modern/3.1-水泥鞋.md",
+    "missingItems": [
+      "设计｜水泥鞋·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜水泥鞋·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜水泥鞋·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "衔接｜水泥鞋·黄毛女孩救援灵感｜黄毛女孩可能在救下璃落的过程中发挥重要作用，具体介入原因、行动和结果尚未确认"
+    ],
+    "title": "水泥鞋"
+  },
+  {
+    "key": "world-1-glimmering-glance-club",
+    "markdownPath": "src/game/data/story_outline/1-modern/1.2-加入紧缚社团.md",
+    "missingItems": [
+      "设计｜加入紧缚社团·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜加入紧缚社团·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜加入紧缚社团·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解"
+    ],
+    "title": "加入紧缚社团"
+  },
+  {
+    "key": "world-1-glimmering-glance-cruise",
+    "markdownPath": "src/game/data/story_outline/1-modern/1.3.1-游轮.md",
+    "missingItems": [
+      "设计｜游轮·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜游轮·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜游轮·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解"
+    ],
+    "title": "游轮"
+  },
+  {
+    "key": "world-1-glimmering-glance-dance-classroom",
+    "markdownPath": "src/game/data/story_outline/1-modern/1.3-舞蹈教室.md",
+    "missingItems": [
+      "设计｜舞蹈教室·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜舞蹈教室·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜舞蹈教室·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解"
+    ],
+    "title": "舞蹈教室"
+  },
+  {
+    "key": "world-1-glimmering-glance-eternal-restraint-maze",
+    "markdownPath": "src/game/data/story_outline/1-modern/4.3-永拘迷宫.md",
+    "missingItems": [
+      "设计｜永拘迷宫·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜永拘迷宫·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜永拘迷宫·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解"
+    ],
+    "title": "永拘迷宫"
+  },
+  {
+    "key": "world-1-glimmering-glance-fantasy-world-adventure",
+    "markdownPath": "src/game/data/story_outline/1-modern/4.2.2-幻想世界冒险.md",
+    "missingItems": [
+      "设计｜幻想世界冒险·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜幻想世界冒险·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜幻想世界冒险·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "地图｜幻想世界冒险·场景结构｜缺少实际地点、区域连接、道路限制与返回变化"
+    ],
+    "title": "幻想世界冒险"
+  },
+  {
+    "key": "world-1-glimmering-glance-flexibility",
+    "markdownPath": "src/game/data/story_outline/1-modern/1.2.1-柔韧性练习.md",
+    "missingItems": [
+      "设计｜柔韧性练习·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜柔韧性练习·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜柔韧性练习·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "地图｜柔韧性练习·场景结构｜缺少实际地点、区域连接、道路限制与返回变化"
+    ],
+    "title": "柔韧性练习"
+  },
+  {
+    "key": "world-1-glimmering-glance-fog-capital-strangeness",
+    "markdownPath": "src/game/data/story_outline/1-modern/3.5.2-雾都怪奇.md",
+    "missingItems": [
+      "设计｜雾都怪奇·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜雾都怪奇·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜雾都怪奇·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "地图｜雾都怪奇·场景结构｜缺少实际地点、区域连接、道路限制与返回变化"
+    ],
+    "title": "雾都怪奇"
+  },
+  {
+    "key": "world-1-glimmering-glance-fog-sea-lone-island-expedition",
+    "markdownPath": "src/game/data/story_outline/1-modern/2.6.1-雾海孤岛探险.md",
+    "missingItems": [
+      "设计｜雾海孤岛探险·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜雾海孤岛探险·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜雾海孤岛探险·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "地图｜雾海孤岛探险·场景结构｜缺少实际地点、区域连接、道路限制与返回变化"
+    ],
+    "title": "雾海孤岛探险"
+  },
+  {
+    "key": "world-1-glimmering-glance-grudge-ancient-tree",
+    "markdownPath": "src/game/data/story_outline/1-modern/1.6-满怨古树.md",
+    "missingItems": [
+      "设计｜满怨古树·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜满怨古树·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜满怨古树·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "地图｜满怨古树·场景结构｜缺少实际地点、区域连接、道路限制与返回变化"
+    ],
+    "title": "满怨古树"
+  },
+  {
+    "key": "world-1-glimmering-glance-hospital-awakening",
+    "markdownPath": "src/game/data/story_outline/1-modern/1.0.1-病房苏醒.md",
+    "missingItems": [
+      "可制作｜病房苏醒·梦境种子植入闪回｜素材已齐，可用代码光效、失真与切镜串联霸凌系列 CG 快速闪回，表现植入和创伤记忆被短暂激活",
+      "场景图｜病房苏醒·医院场景｜缺少市医院单人病房、封闭活动区与室外庭院三组正式场景图；它们用于互动小说背景切换，不是可行走地图",
+      "立绘｜病房苏醒·恢复评估｜缺少年轻女医生许知遥和无名女鬼的正式外观设定与立绘",
+      "对话｜病房苏醒·灵异辨识训练｜缺少璃落、沈芷、许知遥与无名女鬼的正式台词及对应对话 ID",
+      "音频｜病房苏醒·鬼魂接近与记忆切换｜缺少环境声减弱、耳鸣、低语、梦境切换和恢复提示的音效需求确认"
+    ],
+    "title": "病房苏醒"
+  },
+  {
+    "key": "world-1-glimmering-glance-hot-spring",
+    "markdownPath": "src/game/data/story_outline/1-modern/1.8-温泉度假酒店.md",
+    "missingItems": [
+      "设计｜温泉度假酒店·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜温泉度假酒店·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜温泉度假酒店·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解"
+    ],
+    "title": "温泉度假酒店"
+  },
+  {
+    "key": "world-1-glimmering-glance-hotel-fright",
+    "markdownPath": "src/game/data/story_outline/1-modern/2.3-酒店惊魂.md",
+    "missingItems": [
+      "设计｜酒店惊魂·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜酒店惊魂·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜酒店惊魂·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解"
+    ],
+    "title": "酒店惊魂"
+  },
+  {
+    "key": "world-1-glimmering-glance-huaiwan-village",
+    "markdownPath": "src/game/data/story_outline/1-modern/2.5-槐湾村.md",
+    "missingItems": [
+      "设计｜槐湾村·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜槐湾村·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜槐湾村·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解"
+    ],
+    "title": "槐湾村"
+  },
+  {
+    "key": "world-1-glimmering-glance-inflatable-castle",
+    "markdownPath": "src/game/data/story_outline/1-modern/2.2.2-充气城堡.md",
+    "missingItems": [
+      "设计｜充气城堡·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜充气城堡·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜充气城堡·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解"
+    ],
+    "title": "充气城堡"
+  },
+  {
+    "key": "world-1-glimmering-glance-jingjiang-geomancy",
+    "markdownPath": "src/game/data/story_outline/1-modern/2.5.1.1-荆江堪舆.md",
+    "missingItems": [
+      "设计｜荆江堪舆·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜荆江堪舆·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜荆江堪舆·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "地图｜荆江堪舆·场景结构｜缺少实际地点、区域连接、道路限制与返回变化"
+    ],
+    "title": "荆江堪舆"
+  },
+  {
+    "key": "world-1-glimmering-glance-liminal-space",
+    "markdownPath": "src/game/data/story_outline/1-modern/4.3.1-阈限空间.md",
+    "missingItems": [
+      "流程｜阈限空间·首次跨域入口｜缺少璃落在永拘迷宫中从哪个具体区域、因何种异常现象第一次穿过能力边界",
+      "衔接｜阈限空间·奇效回收｜缺少首次找到的出口通往何处，以及这条跨域通路后来如何帮助璃落推进永拘迷宫主线",
+      "设计｜阈限空间·首批层级｜缺少首版可玩内容准备采用的层级及各层稳定空间规则、出口辨识方式与结束点",
+      "状态｜阈限空间·探索记录｜缺少重复进入时会保留哪些长期进度，例如已发现层级、出口记录、线索或收集物",
+      "玩法｜阈限空间·拘束差异｜缺少不同拘束组合对移动、调查、开门、躲避与通过障碍的具体影响",
+      "人物｜阈限空间·永拘迷宫建立者｜缺少建立永拘迷宫的异能者身份、能力边界，以及其本人是否知道阈限网络存在"
+    ],
+    "title": "阈限空间"
+  },
+  {
+    "key": "world-1-glimmering-glance-little-maid-team",
+    "markdownPath": "src/game/data/story_outline/1-modern/4.1-小小女仆团.md",
+    "missingItems": [
+      "设计｜小小女仆团·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜小小女仆团·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜小小女仆团·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "地图｜小小女仆团·场景结构｜缺少实际地点、区域连接、道路限制与返回变化"
+    ],
+    "title": "小小女仆团"
+  },
+  {
+    "key": "world-1-glimmering-glance-little-prisoner",
+    "markdownPath": "src/game/data/story_outline/1-modern/2.1-小囚犯出圈记.md",
+    "missingItems": [
+      "设计｜小囚犯出圈记·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜小囚犯出圈记·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜小囚犯出圈记·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解"
+    ],
+    "title": "小囚犯出圈记"
+  },
+  {
+    "key": "world-1-glimmering-glance-luxury-theater",
+    "markdownPath": "src/game/data/story_outline/1-modern/4.2-浮华剧场.md",
+    "missingItems": [
+      "设计｜浮华剧场·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜浮华剧场·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜浮华剧场·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "地图｜浮华剧场·场景结构｜缺少实际地点、区域连接、道路限制与返回变化"
+    ],
+    "title": "浮华剧场"
+  },
+  {
+    "key": "world-1-glimmering-glance-maid-hotel",
+    "markdownPath": "src/game/data/story_outline/1-modern/2.2-女仆酒店.md",
+    "missingItems": [
+      "设计｜女仆酒店·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜女仆酒店·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜女仆酒店·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "地图｜女仆酒店·场景结构｜缺少实际地点、区域连接、道路限制与返回变化"
+    ],
+    "title": "女仆酒店"
+  },
+  {
+    "key": "world-1-glimmering-glance-maid-massage-shop",
+    "markdownPath": "src/game/data/story_outline/1-modern/2.3.1-女仆按摩店.md",
+    "missingItems": [
+      "设计｜女仆按摩店·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜女仆按摩店·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜女仆按摩店·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "地图｜女仆按摩店·场景结构｜缺少实际地点、区域连接、道路限制与返回变化"
+    ],
+    "title": "女仆按摩店"
+  },
+  {
+    "key": "world-1-glimmering-glance-midnight-city-exploration",
+    "markdownPath": "src/game/data/story_outline/1-modern/2.1-深夜城市探险.md",
+    "missingItems": [
+      "设计｜深夜城市探险·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜深夜城市探险·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜深夜城市探险·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解"
+    ],
+    "title": "深夜城市探险"
+  },
+  {
+    "key": "world-1-glimmering-glance-mirror-person",
+    "markdownPath": "src/game/data/story_outline/1-modern/1.4.1-镜中人.md",
+    "missingItems": [
+      "设计｜镜中人·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜镜中人·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜镜中人·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "地图｜镜中人·场景结构｜缺少实际地点、区域连接、道路限制与返回变化"
+    ],
+    "title": "镜中人"
+  },
+  {
+    "key": "world-1-glimmering-glance-missing",
+    "markdownPath": "src/game/data/story_outline/1-modern/3.2-失联.md",
+    "missingItems": [
+      "设计｜失联·章节边界｜已确认为完整主线章节，仍缺少主要区域数量与核心机制差异说明",
+      "玩法｜失联·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜失联·独自脱逃｜缺少璃落从绑架车辆或转运点脱身的具体方式，以及她在看见欣雨前已经逃到哪一步",
+      "人物｜失联·欣雨被捕｜缺少欣雨从《游轮》之后落入人口贩运链的原因、被捕时间及她与璃落重逢时的状态",
+      "流程｜失联·折返营救｜缺少璃落折返后采用的救人办法、为何失败，以及她具体如何受伤并被重新抓获"
+    ],
+    "title": "失联"
+  },
+  {
+    "key": "world-1-glimmering-glance-model",
+    "markdownPath": "src/game/data/story_outline/1-modern/2.1.1-紧缚模特.md",
+    "missingItems": [
+      "设计｜紧缚模特·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜紧缚模特·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜紧缚模特·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解"
+    ],
+    "title": "紧缚模特"
+  },
+  {
+    "key": "world-1-glimmering-glance-movie-bound-stand-in",
+    "markdownPath": "src/game/data/story_outline/1-modern/2.2.1-电影绑替兼职.md",
+    "missingItems": [
+      "设计｜电影绑替兼职·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜电影绑替兼职·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜电影绑替兼职·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解"
+    ],
+    "title": "电影绑替兼职"
+  },
+  {
+    "key": "world-1-glimmering-glance-night-school-ghost-stories",
+    "markdownPath": "src/game/data/story_outline/1-modern/1.6.1-夜校怪谈.md",
+    "missingItems": [
+      "设计｜夜校怪谈·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜夜校怪谈·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜夜校怪谈·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "地图｜夜校怪谈·场景结构｜缺少实际地点、区域连接、道路限制与返回变化"
+    ],
+    "title": "夜校怪谈"
+  },
+  {
+    "key": "world-1-glimmering-glance-old-case",
+    "markdownPath": "src/game/data/story_outline/1-modern/1.7-旧案.md",
+    "missingItems": [
+      "设计｜旧案·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜旧案·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜旧案·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解"
+    ],
+    "title": "旧案"
+  },
+  {
+    "key": "world-1-glimmering-glance-old-dormitory",
+    "markdownPath": "src/game/data/story_outline/1-modern/1.5-宿舍旧楼.md",
+    "missingItems": [
+      "设计｜宿舍旧楼·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜宿舍旧楼·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜宿舍旧楼·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "支线｜黄毛女孩·后续友情趣事｜已确认璃落会与黄毛女孩成为朋友并发展趣事支线，缺少正式姓名、进入条件、具体事件与结局"
+    ],
+    "title": "宿舍旧楼"
+  },
+  {
+    "key": "world-1-glimmering-glance-prison-storm",
+    "markdownPath": "src/game/data/story_outline/1-modern/3.4-监狱风云.md",
+    "missingItems": [
+      "设计｜监狱风云·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜监狱风云·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜监狱风云·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解"
+    ],
+    "title": "监狱风云"
+  },
+  {
+    "key": "world-1-glimmering-glance-rainy-ancient-city",
+    "markdownPath": "src/game/data/story_outline/1-modern/3.5.1-烟雨古城.md",
+    "missingItems": [
+      "设计｜烟雨古城·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜烟雨古城·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜烟雨古城·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "地图｜烟雨古城·场景结构｜缺少实际地点、区域连接、道路限制与返回变化"
+    ],
+    "title": "烟雨古城"
+  },
+  {
+    "key": "world-1-glimmering-glance-reality-show",
+    "markdownPath": "src/game/data/story_outline/1-modern/2.5.2.1-真人秀.md",
+    "missingItems": [
+      "设计｜真人秀·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜真人秀·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜真人秀·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "地图｜真人秀·场景结构｜缺少实际地点、区域连接、道路限制与返回变化"
+    ],
+    "title": "真人秀"
+  },
+  {
+    "key": "world-1-glimmering-glance-red-white-marriage-contract",
+    "markdownPath": "src/game/data/story_outline/1-modern/3.5.1.1-赤白婚契.md",
+    "missingItems": [
+      "设计｜赤白婚契·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜赤白婚契·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜赤白婚契·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "地图｜赤白婚契·场景结构｜缺少实际地点、区域连接、道路限制与返回变化"
+    ],
+    "title": "赤白婚契"
+  },
+  {
+    "key": "world-1-glimmering-glance-rope-spirit-game",
+    "markdownPath": "src/game/data/story_outline/1-modern/1.4.2-绳仙游戏.md",
+    "missingItems": [
+      "设计｜绳仙游戏·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜绳仙游戏·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜绳仙游戏·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "地图｜绳仙游戏·场景结构｜缺少实际地点、区域连接、道路限制与返回变化"
+    ],
+    "title": "绳仙游戏"
+  },
+  {
+    "key": "world-1-glimmering-glance-rust-salt",
+    "markdownPath": "src/game/data/story_outline/1-modern/3.3-锈盐.md",
+    "missingItems": [
+      "玩法｜锈盐·船舱脱困工具链｜缺少可搜集小工具、分阶段解除步骤及每一步解锁的具体操作",
+      "调查｜锈盐·值班区证据筛选｜缺少可调查文件与物件、有效证据判定、错误选择反馈及存储卡提示方式",
+      "流程｜锈盐·甲板追逐与失败恢复｜缺少追逐路线危险、看守追击规则、跳海成功条件及再次被抓后的补救流程",
+      "流程｜锈盐·海岸至灰巷｜缺少 Rin 救起璃落后到藏卡完成之间的玩家目标、可执行活动与失败反馈",
+      "玩法｜锈盐·唐人街与填埋场｜缺少交易、出卖、逼供、活埋救援和官方收网阶段的玩家参与方式与阶段目标",
+      "状态｜锈盐·章节状态写入｜缺少伤势与约束变化、存储卡状态、Rin 关系、女孩去向及进入《监狱风云》的存档字段设计"
+    ],
+    "title": "锈盐"
+  },
+  {
+    "key": "world-1-glimmering-glance-sensory-trial",
+    "markdownPath": "src/game/data/story_outline/1-modern/1.5.1-感官试炼.md",
+    "missingItems": [
+      "设计｜感官试炼·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜感官试炼·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜感官试炼·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解"
+    ],
+    "title": "感官试炼"
+  },
+  {
+    "key": "world-1-glimmering-glance-silent-correction-center",
+    "markdownPath": "src/game/data/story_outline/1-modern/4.2.1-静默矫治中心.md",
+    "missingItems": [
+      "设计｜静默矫治中心·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜静默矫治中心·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜静默矫治中心·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "地图｜静默矫治中心·场景结构｜缺少实际地点、区域连接、道路限制与返回变化"
+    ],
+    "title": "静默矫治中心"
+  },
+  {
+    "key": "world-1-glimmering-glance-silent-witness",
+    "markdownPath": "src/game/data/story_outline/1-modern/3.3.1-沉默见证.md",
+    "missingItems": [
+      "设计｜沉默见证·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜沉默见证·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜沉默见证·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "地图｜沉默见证·场景结构｜缺少实际地点、区域连接、道路限制与返回变化"
+    ],
+    "title": "沉默见证"
+  },
+  {
+    "key": "world-1-glimmering-glance-sinkhole-rainforest-expedition",
+    "markdownPath": "src/game/data/story_outline/1-modern/2.6.2-天坑雨林远征.md",
+    "missingItems": [
+      "设计｜天坑雨林远征·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜天坑雨林远征·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜天坑雨林远征·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "地图｜天坑雨林远征·场景结构｜缺少实际地点、区域连接、道路限制与返回变化"
+    ],
+    "title": "天坑雨林远征"
+  },
+  {
+    "key": "world-1-glimmering-glance-snow-train",
+    "markdownPath": "src/game/data/story_outline/1-modern/2.5.1-雪城列车.md",
+    "missingItems": [
+      "设计｜雪城列车·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜雪城列车·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜雪城列车·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解"
+    ],
+    "title": "雪城列车"
+  },
+  {
+    "key": "world-1-glimmering-glance-stage-performance",
+    "markdownPath": "src/game/data/story_outline/1-modern/1.4-舞台表演.md",
+    "missingItems": [
+      "设计｜舞台表演·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜舞台表演·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜舞台表演·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "地图｜舞台表演·场景结构｜缺少实际地点、区域连接、道路限制与返回变化"
+    ],
+    "title": "舞台表演"
+  },
+  {
+    "key": "world-1-glimmering-glance-strange-object-society-archive",
+    "markdownPath": "src/game/data/story_outline/1-modern/2.0.1.1-诡物收录.md",
+    "missingItems": [
+      "设计｜诡物收录·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜诡物收录·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜诡物收录·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "地图｜诡物收录·场景结构｜缺少实际地点、区域连接、道路限制与返回变化"
+    ],
+    "title": "诡物收录"
+  },
+  {
+    "key": "world-1-glimmering-glance-taisho-romance",
+    "markdownPath": "src/game/data/story_outline/1-modern/3.5.3-大正浪漫.md",
+    "missingItems": [
+      "设计｜大正浪漫·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜大正浪漫·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜大正浪漫·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "地图｜大正浪漫·场景结构｜缺少实际地点、区域连接、道路限制与返回变化"
+    ],
+    "title": "大正浪漫"
+  },
+  {
+    "key": "world-1-glimmering-glance-trafficker",
+    "markdownPath": "src/game/data/story_outline/1-modern/2.4-人贩子.md",
+    "missingItems": [
+      "设计｜人贩子·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜人贩子·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜人贩子·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解"
+    ],
+    "title": "人贩子"
+  },
+  {
+    "key": "world-1-glimmering-glance-ultimate-restraint",
+    "markdownPath": "src/game/data/story_outline/1-modern/5.1-极端高危女性囚犯运输终极约束方案.md",
+    "missingItems": [
+      "设计｜极端高危女性囚犯运输终极约束方案·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜极端高危女性囚犯运输终极约束方案·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜极端高危女性囚犯运输终极约束方案·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "地图｜极端高危女性囚犯运输终极约束方案·场景结构｜缺少实际地点、区域连接、道路限制与返回变化"
+    ],
+    "title": "极端高危女性囚犯运输终极约束方案"
+  },
+  {
+    "key": "world-1-glimmering-glance-variety-show-fright",
+    "markdownPath": "src/game/data/story_outline/1-modern/2.5.2-综艺惊魂.md",
+    "missingItems": [
+      "设计｜综艺惊魂·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜综艺惊魂·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜综艺惊魂·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "地图｜综艺惊魂·场景结构｜缺少实际地点、区域连接、道路限制与返回变化"
+    ],
+    "title": "综艺惊魂"
+  },
+  {
+    "key": "world-2-silent-earth-dirge-fog-city",
+    "markdownPath": "src/game/data/story_outline/2-apocalypse/2.1-诡雾迷城.md",
+    "missingItems": [
+      "设计｜诡雾迷城·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜诡雾迷城·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜诡雾迷城·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "地图｜诡雾迷城·场景结构｜缺少实际地点、区域连接、道路限制与返回变化"
+    ],
+    "title": "诡雾迷城"
+  },
+  {
+    "key": "world-2-silent-earth-dirge-omega",
+    "markdownPath": "src/game/data/story_outline/2-apocalypse/1.2-Ω级禁忌束缚套装.md",
+    "missingItems": [
+      "设计｜Ω级禁忌束缚套装·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜Ω级禁忌束缚套装·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜Ω级禁忌束缚套装·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "地图｜Ω级禁忌束缚套装·场景结构｜缺少实际地点、区域连接、道路限制与返回变化"
+    ],
+    "title": "Ω级禁忌束缚套装"
+  },
+  {
+    "key": "world-2-silent-earth-dirge-red-line",
+    "markdownPath": "src/game/data/story_outline/2-apocalypse/1.1-红线鬼域.md",
+    "missingItems": [
+      "设计｜红线鬼域·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜红线鬼域·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜红线鬼域·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "地图｜红线鬼域·场景结构｜缺少实际地点、区域连接、道路限制与返回变化"
+    ],
+    "title": "红线鬼域"
+  },
+  {
+    "key": "world-3-mortal-dao-counterattack",
+    "markdownPath": "src/game/data/story_outline/3-ancient/5.1-缚身反杀.md",
+    "missingItems": [
+      "设计｜缚身反杀·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜缚身反杀·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜缚身反杀·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "地图｜缚身反杀·场景结构｜缺少实际地点、区域连接、道路限制与返回变化"
+    ],
+    "title": "缚身反杀"
+  },
+  {
+    "key": "world-3-mortal-dao-eternal",
+    "markdownPath": "src/game/data/story_outline/3-ancient/7.1-永世束缚.md",
+    "missingItems": [
+      "设计｜永世束缚·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜永世束缚·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜永世束缚·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "地图｜永世束缚·场景结构｜缺少实际地点、区域连接、道路限制与返回变化"
+    ],
+    "title": "永世束缚"
+  },
+  {
+    "key": "world-3-mortal-dao-framed",
+    "markdownPath": "src/game/data/story_outline/3-ancient/5.3-陷害，入魔宗.md",
+    "missingItems": [
+      "设计｜陷害，入魔宗·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜陷害，入魔宗·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜陷害，入魔宗·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解"
+    ],
+    "title": "陷害，入魔宗"
+  },
+  {
+    "key": "world-3-mortal-dao-no-master",
+    "markdownPath": "src/game/data/story_outline/3-ancient/5.2-无人收徒.md",
+    "missingItems": [
+      "设计｜无人收徒·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜无人收徒·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜无人收徒·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解"
+    ],
+    "title": "无人收徒"
+  },
+  {
+    "key": "world-3-mortal-dao-rebuild",
+    "markdownPath": "src/game/data/story_outline/3-ancient/6.1-重新修炼.md",
+    "missingItems": [
+      "设计｜重新修炼·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜重新修炼·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜重新修炼·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解"
+    ],
+    "title": "重新修炼"
+  },
+  {
+    "key": "world-3-mortal-dao-royal-garden-beast-hunt",
+    "markdownPath": "src/game/data/story_outline/3-ancient/1.1-王苑兽猎.md",
+    "missingItems": [
+      "设计｜王苑兽猎·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜王苑兽猎·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜王苑兽猎·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "地图｜王苑兽猎·场景结构｜缺少实际地点、区域连接、道路限制与返回变化"
+    ],
+    "title": "王苑兽猎"
+  },
+  {
+    "key": "world-3-mortal-dao-sakura-storm-shogunate",
+    "markdownPath": "src/game/data/story_outline/3-ancient/4.0.1-樱岚幕府.md",
+    "missingItems": [
+      "设计｜樱岚幕府·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜樱岚幕府·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜樱岚幕府·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "地图｜樱岚幕府·场景结构｜缺少实际地点、区域连接、道路限制与返回变化"
+    ],
+    "title": "樱岚幕府"
+  },
+  {
+    "key": "world-3-mortal-dao-siege-survival",
+    "markdownPath": "src/game/data/story_outline/3-ancient/4.1-围城求生.md",
+    "missingItems": [
+      "设计｜围城求生·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜围城求生·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜围城求生·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "地图｜围城求生·场景结构｜缺少实际地点、区域连接、道路限制与返回变化"
+    ],
+    "title": "围城求生"
+  },
+  {
+    "key": "world-3-mortal-dao-spider-valley",
+    "markdownPath": "src/game/data/story_outline/3-ancient/6.2-误入灵蛛谷.md",
+    "missingItems": [
+      "设计｜误入灵蛛谷·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜误入灵蛛谷·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜误入灵蛛谷·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "地图｜误入灵蛛谷·场景结构｜缺少实际地点、区域连接、道路限制与返回变化"
+    ],
+    "title": "误入灵蛛谷"
+  },
+  {
+    "key": "world-3-mortal-dao-tile-kiln-disaster-sealing",
+    "markdownPath": "src/game/data/story_outline/3-ancient/4.0-瓦窑封灾.md",
+    "missingItems": [
+      "设计｜瓦窑封灾·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜瓦窑封灾·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜瓦窑封灾·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "地图｜瓦窑封灾·场景结构｜缺少实际地点、区域连接、道路限制与返回变化"
+    ],
+    "title": "瓦窑封灾"
+  },
+  {
+    "key": "world-4-monica-empire-life-simulator",
+    "markdownPath": "src/game/data/story_outline/0-munika/1.1-人生模拟器.md",
+    "missingItems": [
+      "设计｜人生模拟器·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜人生模拟器·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜人生模拟器·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "地图｜人生模拟器·场景结构｜缺少实际地点、区域连接、道路限制与返回变化"
+    ],
+    "title": "人生模拟器"
+  },
+  {
+    "key": "world-4-monica-empire-silly-lilili-town",
+    "markdownPath": "src/game/data/story_outline/0-munika/1-笨璃璃小镇.md",
+    "missingItems": [
+      "设计｜笨璃璃小镇·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜笨璃璃小镇·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜笨璃璃小镇·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "地图｜笨璃璃小镇·场景结构｜缺少实际地点、区域连接、道路限制与返回变化"
+    ],
+    "title": "笨璃璃小镇"
+  },
+  {
+    "key": "world-5-star-weaving-dream-dome-hunt",
+    "markdownPath": "src/game/data/story_outline/5-science/11.1-穹顶狩猎.md",
+    "missingItems": [
+      "设计｜穹顶狩猎·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜穹顶狩猎·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜穹顶狩猎·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "地图｜穹顶狩猎·场景结构｜缺少实际地点、区域连接、道路限制与返回变化"
+    ],
+    "title": "穹顶狩猎"
+  },
+  {
+    "key": "world-5-star-weaving-dream-restraint-paradise-shop",
+    "markdownPath": "src/game/data/story_outline/5-science/3.1-拘束具店铺.md",
+    "missingItems": [
+      "设计｜拘束具店铺·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜拘束具店铺·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜拘束具店铺·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "地图｜拘束具店铺·场景结构｜缺少实际地点、区域连接、道路限制与返回变化"
+    ],
+    "title": "拘束具店铺"
+  },
+  {
+    "key": "world-6-cursebound-echoes-silent-rite-court",
+    "markdownPath": "src/game/data/story_outline/4-fantasy/2.1-缄礼宫廷.md",
+    "missingItems": [
+      "设计｜缄礼宫廷·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜缄礼宫廷·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜缄礼宫廷·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "地图｜缄礼宫廷·场景结构｜缺少实际地点、区域连接、道路限制与返回变化"
+    ],
+    "title": "缄礼宫廷"
+  },
+  {
+    "key": "world-6-cursebound-echoes-tiny-liluo-adventure",
+    "markdownPath": "src/game/data/story_outline/4-fantasy/7.1-小小璃落大冒险.md",
+    "missingItems": [
+      "设计｜小小璃落大冒险·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "玩法｜小小璃落大冒险·主要活动｜缺少主要游戏活动类型与可执行操作循环",
+      "流程｜小小璃落大冒险·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "地图｜小小璃落大冒险·场景结构｜缺少实际地点、区域连接、道路限制与返回变化"
+    ],
+    "title": "小小璃落大冒险"
+  }
+]

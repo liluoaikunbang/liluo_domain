@@ -1,0 +1,526 @@
+[
+  {
+    "category": "即时战斗",
+    "categoryId": "gameplay-group-02",
+    "id": "gameplay-005",
+    "indexVersion": 1,
+    "presentationModes": [
+      "main-map"
+    ],
+    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourcePath": "src/game/data/gameplay_outline/catalog.json",
+    "summary": "以刀剑、长枪、拳脚、法器或其他近距离武器为主。",
+    "summarySource": "source-json.summary",
+    "title": "近战动作战斗",
+    "type": "gameplay",
+    "variants": [
+      {
+        "id": "gameplay-005-variant-01",
+        "title": "轻重攻击组合"
+      },
+      {
+        "id": "gameplay-005-variant-02",
+        "title": "闪避反击"
+      },
+      {
+        "id": "gameplay-005-variant-03",
+        "title": "格挡招架"
+      },
+      {
+        "id": "gameplay-005-variant-04",
+        "title": "架势切换"
+      },
+      {
+        "id": "gameplay-005-variant-05",
+        "title": "武器切换"
+      },
+      {
+        "id": "gameplay-005-variant-06",
+        "title": "处决机制"
+      },
+      {
+        "id": "gameplay-005-variant-07",
+        "title": "连击表现评分"
+      },
+      {
+        "id": "gameplay-005-variant-08",
+        "title": "部位破坏"
+      },
+      {
+        "id": "gameplay-005-variant-09",
+        "title": "环境攻击"
+      },
+      {
+        "id": "gameplay-005-variant-10",
+        "title": "同伴连携"
+      }
+    ]
+  },
+  {
+    "category": "即时战斗",
+    "categoryId": "gameplay-group-02",
+    "id": "gameplay-006",
+    "indexVersion": 1,
+    "presentationModes": [
+      "main-map"
+    ],
+    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourcePath": "src/game/data/gameplay_outline/catalog.json",
+    "summary": "适用于枪械、弓弩、魔法弹、飞刀和科幻武器。",
+    "summarySource": "source-json.summary",
+    "title": "俯视角射击",
+    "type": "gameplay",
+    "variants": [
+      {
+        "id": "gameplay-006-variant-01",
+        "title": "双摇杆射击"
+      },
+      {
+        "id": "gameplay-006-variant-02",
+        "title": "自动瞄准射击"
+      },
+      {
+        "id": "gameplay-006-variant-03",
+        "title": "锁定目标射击"
+      },
+      {
+        "id": "gameplay-006-variant-04",
+        "title": "掩体射击"
+      },
+      {
+        "id": "gameplay-006-variant-05",
+        "title": "弹药管理"
+      },
+      {
+        "id": "gameplay-006-variant-06",
+        "title": "换弹时机"
+      },
+      {
+        "id": "gameplay-006-variant-07",
+        "title": "武器过热"
+      },
+      {
+        "id": "gameplay-006-variant-08",
+        "title": "蓄力射击"
+      },
+      {
+        "id": "gameplay-006-variant-09",
+        "title": "穿透与反弹"
+      },
+      {
+        "id": "gameplay-006-variant-10",
+        "title": "元素射击"
+      }
+    ]
+  },
+  {
+    "category": "即时战斗",
+    "categoryId": "gameplay-group-02",
+    "id": "gameplay-007",
+    "indexVersion": 1,
+    "presentationModes": [
+      "main-map",
+      "special-map"
+    ],
+    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourcePath": "src/game/data/gameplay_outline/catalog.json",
+    "summary": "通过大量投射物和精细走位制造战斗压力。",
+    "summarySource": "source-json.summary",
+    "title": "弹幕战斗",
+    "type": "gameplay",
+    "variants": [
+      {
+        "id": "gameplay-007-variant-01",
+        "title": "Boss弹幕"
+      },
+      {
+        "id": "gameplay-007-variant-02",
+        "title": "小怪弹幕群"
+      },
+      {
+        "id": "gameplay-007-variant-03",
+        "title": "环形弹幕"
+      },
+      {
+        "id": "gameplay-007-variant-04",
+        "title": "追踪弹幕"
+      },
+      {
+        "id": "gameplay-007-variant-05",
+        "title": "封路弹幕"
+      },
+      {
+        "id": "gameplay-007-variant-06",
+        "title": "节奏弹幕"
+      },
+      {
+        "id": "gameplay-007-variant-07",
+        "title": "环境弹幕"
+      },
+      {
+        "id": "gameplay-007-variant-08",
+        "title": "反弹幕构筑"
+      },
+      {
+        "id": "gameplay-007-variant-09",
+        "title": "擦弹奖励"
+      },
+      {
+        "id": "gameplay-007-variant-10",
+        "title": "弹幕解谜"
+      }
+    ]
+  },
+  {
+    "category": "即时战斗",
+    "categoryId": "gameplay-group-02",
+    "id": "gameplay-008",
+    "indexVersion": 1,
+    "presentationModes": [
+      "main-map"
+    ],
+    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourcePath": "src/game/data/gameplay_outline/catalog.json",
+    "summary": "大量敌人持续涌入，玩家通过移动、升级和构筑生存。",
+    "summarySource": "source-json.summary",
+    "title": "自动火力生存",
+    "type": "gameplay",
+    "variants": [
+      {
+        "id": "gameplay-008-variant-01",
+        "title": "自动攻击型"
+      },
+      {
+        "id": "gameplay-008-variant-02",
+        "title": "半自动攻击型"
+      },
+      {
+        "id": "gameplay-008-variant-03",
+        "title": "全手动攻击型"
+      },
+      {
+        "id": "gameplay-008-variant-04",
+        "title": "时间生存型"
+      },
+      {
+        "id": "gameplay-008-variant-05",
+        "title": "阶段Boss型"
+      },
+      {
+        "id": "gameplay-008-variant-06",
+        "title": "武器进化型"
+      },
+      {
+        "id": "gameplay-008-variant-07",
+        "title": "召唤流型"
+      },
+      {
+        "id": "gameplay-008-variant-08",
+        "title": "防御阵地型"
+      },
+      {
+        "id": "gameplay-008-variant-09",
+        "title": "移动远征型"
+      },
+      {
+        "id": "gameplay-008-variant-10",
+        "title": "任务割草型"
+      },
+      {
+        "id": "gameplay-008-variant-11",
+        "title": "无尽高分型"
+      },
+      {
+        "id": "gameplay-008-variant-12",
+        "title": "敌群进化型"
+      }
+    ]
+  },
+  {
+    "category": "即时战斗",
+    "categoryId": "gameplay-group-02",
+    "id": "gameplay-009",
+    "indexVersion": 1,
+    "presentationModes": [
+      "special-map"
+    ],
+    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourcePath": "src/game/data/gameplay_outline/catalog.json",
+    "summary": "偶尔切换为横向地图，用于悬崖、塔楼、屋顶或机关场景。",
+    "summarySource": "source-json.summary",
+    "title": "横版平台动作",
+    "type": "gameplay",
+    "variants": [
+      {
+        "id": "gameplay-009-variant-01",
+        "title": "基础平台跳跃"
+      },
+      {
+        "id": "gameplay-009-variant-02",
+        "title": "垂直攀登"
+      },
+      {
+        "id": "gameplay-009-variant-03",
+        "title": "崩塌逃亡"
+      },
+      {
+        "id": "gameplay-009-variant-04",
+        "title": "移动平台机关"
+      },
+      {
+        "id": "gameplay-009-variant-05",
+        "title": "墙面攀爬"
+      },
+      {
+        "id": "gameplay-009-variant-06",
+        "title": "摆荡移动"
+      },
+      {
+        "id": "gameplay-009-variant-07",
+        "title": "精确跳跃挑战"
+      },
+      {
+        "id": "gameplay-009-variant-08",
+        "title": "追逐横版关"
+      },
+      {
+        "id": "gameplay-009-variant-09",
+        "title": "平台战斗混合"
+      },
+      {
+        "id": "gameplay-009-variant-10",
+        "title": "重力变化关"
+      }
+    ]
+  },
+  {
+    "category": "即时战斗",
+    "categoryId": "gameplay-group-02",
+    "id": "gameplay-052",
+    "indexVersion": 1,
+    "presentationModes": [
+      "main-map",
+      "cg-friendly"
+    ],
+    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourcePath": "src/game/data/gameplay_outline/catalog.json",
+    "summary": "Boss根据生命、时间或地图事件切换阶段。",
+    "summarySource": "source-json.summary",
+    "title": "多阶段首领战",
+    "type": "gameplay",
+    "variants": [
+      {
+        "id": "gameplay-052-variant-01",
+        "title": "生命阶段Boss"
+      },
+      {
+        "id": "gameplay-052-variant-02",
+        "title": "形态转换Boss"
+      },
+      {
+        "id": "gameplay-052-variant-03",
+        "title": "场地变化Boss"
+      },
+      {
+        "id": "gameplay-052-variant-04",
+        "title": "召唤型Boss"
+      },
+      {
+        "id": "gameplay-052-variant-05",
+        "title": "追逐型Boss"
+      },
+      {
+        "id": "gameplay-052-variant-06",
+        "title": "解谜型Boss"
+      },
+      {
+        "id": "gameplay-052-variant-07",
+        "title": "资源型Boss"
+      },
+      {
+        "id": "gameplay-052-variant-08",
+        "title": "队伍协作Boss"
+      },
+      {
+        "id": "gameplay-052-variant-09",
+        "title": "多目标Boss"
+      },
+      {
+        "id": "gameplay-052-variant-10",
+        "title": "剧情选择Boss"
+      }
+    ]
+  },
+  {
+    "category": "即时战斗",
+    "categoryId": "gameplay-group-02",
+    "id": "gameplay-053",
+    "indexVersion": 1,
+    "presentationModes": [
+      "main-map"
+    ],
+    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourcePath": "src/game/data/gameplay_outline/catalog.json",
+    "summary": "先追踪和调查，再进入正式战斗。",
+    "summarySource": "source-json.summary",
+    "title": "怪物狩猎",
+    "type": "gameplay",
+    "variants": [
+      {
+        "id": "gameplay-053-variant-01",
+        "title": "足迹追踪"
+      },
+      {
+        "id": "gameplay-053-variant-02",
+        "title": "生态调查"
+      },
+      {
+        "id": "gameplay-053-variant-03",
+        "title": "诱饵狩猎"
+      },
+      {
+        "id": "gameplay-053-variant-04",
+        "title": "陷阱狩猎"
+      },
+      {
+        "id": "gameplay-053-variant-05",
+        "title": "弱点调查"
+      },
+      {
+        "id": "gameplay-053-variant-06",
+        "title": "逃跑追猎"
+      },
+      {
+        "id": "gameplay-053-variant-07",
+        "title": "巢穴突袭"
+      },
+      {
+        "id": "gameplay-053-variant-08",
+        "title": "活体捕获"
+      },
+      {
+        "id": "gameplay-053-variant-09",
+        "title": "稀有变种"
+      },
+      {
+        "id": "gameplay-053-variant-10",
+        "title": "生态连锁"
+      }
+    ]
+  },
+  {
+    "category": "即时战斗",
+    "categoryId": "gameplay-group-02",
+    "id": "gameplay-054",
+    "indexVersion": 1,
+    "presentationModes": [
+      "main-map",
+      "light-extension"
+    ],
+    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourcePath": "src/game/data/gameplay_outline/catalog.json",
+    "summary": "用AI伙伴模拟多人副本的分工感。",
+    "summarySource": "source-json.summary",
+    "title": "团队型大型副本",
+    "type": "gameplay",
+    "variants": [
+      {
+        "id": "gameplay-054-variant-01",
+        "title": "坦克、输出、支援分工"
+      },
+      {
+        "id": "gameplay-054-variant-02",
+        "title": "分组机关"
+      },
+      {
+        "id": "gameplay-054-variant-03",
+        "title": "阶段检查"
+      },
+      {
+        "id": "gameplay-054-variant-04",
+        "title": "场地分区"
+      },
+      {
+        "id": "gameplay-054-variant-05",
+        "title": "团队资源"
+      },
+      {
+        "id": "gameplay-054-variant-06",
+        "title": "连续Boss"
+      },
+      {
+        "id": "gameplay-054-variant-07",
+        "title": "副本首领议会"
+      },
+      {
+        "id": "gameplay-054-variant-08",
+        "title": "巨型Boss部位战"
+      },
+      {
+        "id": "gameplay-054-variant-09",
+        "title": "最终机制处理"
+      },
+      {
+        "id": "gameplay-054-variant-10",
+        "title": "副本评分"
+      }
+    ]
+  },
+  {
+    "category": "即时战斗",
+    "categoryId": "gameplay-group-02",
+    "id": "gameplay-055",
+    "indexVersion": 1,
+    "presentationModes": [
+      "main-map"
+    ],
+    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourcePath": "src/game/data/gameplay_outline/catalog.json",
+    "summary": "连续挑战Boss，减少普通探索内容。",
+    "summarySource": "source-json.summary",
+    "title": "连续首领挑战",
+    "type": "gameplay",
+    "variants": [
+      {
+        "id": "gameplay-055-variant-01",
+        "title": "固定顺序Boss Rush"
+      },
+      {
+        "id": "gameplay-055-variant-02",
+        "title": "随机顺序Boss Rush"
+      },
+      {
+        "id": "gameplay-055-variant-03",
+        "title": "选择路线Boss Rush"
+      },
+      {
+        "id": "gameplay-055-variant-04",
+        "title": "资源继承Boss Rush"
+      },
+      {
+        "id": "gameplay-055-variant-05",
+        "title": "构筑选择Boss Rush"
+      },
+      {
+        "id": "gameplay-055-variant-06",
+        "title": "限时Boss Rush"
+      },
+      {
+        "id": "gameplay-055-variant-07",
+        "title": "无伤Boss Rush"
+      },
+      {
+        "id": "gameplay-055-variant-08",
+        "title": "强化Boss Rush"
+      },
+      {
+        "id": "gameplay-055-variant-09",
+        "title": "双Boss组合"
+      },
+      {
+        "id": "gameplay-055-variant-10",
+        "title": "世界混合Boss Rush"
+      }
+    ]
+  }
+]

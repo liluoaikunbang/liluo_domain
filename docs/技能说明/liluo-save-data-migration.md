@@ -1,5 +1,9 @@
 # liluo-save-data-migration
 
+## 项目索引协作
+
+用 code/game 索引定位存档调用链后核验源码；schema 或标识变化后刷新相关领域并验证索引。
+
 ## 用途与边界
 
 审计和演进存档 schema、版本、导入校验与旧档迁移。维护 Skill 时不改真实存档。

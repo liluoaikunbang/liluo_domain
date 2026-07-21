@@ -1,0 +1,449 @@
+[
+  {
+    "category": "角色构筑",
+    "categoryId": "gameplay-group-09",
+    "id": "gameplay-071",
+    "indexVersion": 1,
+    "presentationModes": [
+      "main-map"
+    ],
+    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourcePath": "src/game/data/gameplay_outline/catalog.json",
+    "summary": "探索、战斗、任务、装备和角色成长结合。",
+    "summarySource": "source-json.summary",
+    "title": "即时动作角色扮演",
+    "type": "gameplay",
+    "variants": [
+      {
+        "id": "gameplay-071-variant-01",
+        "title": "等级成长"
+      },
+      {
+        "id": "gameplay-071-variant-02",
+        "title": "技能树"
+      },
+      {
+        "id": "gameplay-071-variant-03",
+        "title": "职业系统"
+      },
+      {
+        "id": "gameplay-071-variant-04",
+        "title": "装备品质"
+      },
+      {
+        "id": "gameplay-071-variant-05",
+        "title": "属性克制"
+      },
+      {
+        "id": "gameplay-071-variant-06",
+        "title": "伙伴系统"
+      },
+      {
+        "id": "gameplay-071-variant-07",
+        "title": "任务日志"
+      },
+      {
+        "id": "gameplay-071-variant-08",
+        "title": "声望系统"
+      },
+      {
+        "id": "gameplay-071-variant-09",
+        "title": "世界等级"
+      },
+      {
+        "id": "gameplay-071-variant-10",
+        "title": "终局副本"
+      }
+    ]
+  },
+  {
+    "category": "角色构筑",
+    "categoryId": "gameplay-group-09",
+    "id": "gameplay-072",
+    "indexVersion": 1,
+    "presentationModes": [
+      "special-map",
+      "interface-gameplay"
+    ],
+    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourcePath": "src/game/data/gameplay_outline/catalog.json",
+    "summary": "进入战斗后切换至传统回合制界面。",
+    "summarySource": "source-json.summary",
+    "title": "指令式回合角色扮演",
+    "type": "gameplay",
+    "variants": [
+      {
+        "id": "gameplay-072-variant-01",
+        "title": "速度排序回合"
+      },
+      {
+        "id": "gameplay-072-variant-02",
+        "title": "行动条回合"
+      },
+      {
+        "id": "gameplay-072-variant-03",
+        "title": "弱点击破"
+      },
+      {
+        "id": "gameplay-072-variant-04",
+        "title": "资源蓄积"
+      },
+      {
+        "id": "gameplay-072-variant-05",
+        "title": "队伍连携"
+      },
+      {
+        "id": "gameplay-072-variant-06",
+        "title": "前后排站位"
+      },
+      {
+        "id": "gameplay-072-variant-07",
+        "title": "角色替换"
+      },
+      {
+        "id": "gameplay-072-variant-08",
+        "title": "状态控制"
+      },
+      {
+        "id": "gameplay-072-variant-09",
+        "title": "Boss机制回合"
+      },
+      {
+        "id": "gameplay-072-variant-10",
+        "title": "自动战斗"
+      }
+    ]
+  },
+  {
+    "category": "角色构筑",
+    "categoryId": "gameplay-group-09",
+    "id": "gameplay-073",
+    "indexVersion": 1,
+    "presentationModes": [
+      "main-map",
+      "interface-gameplay"
+    ],
+    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourcePath": "src/game/data/gameplay_outline/catalog.json",
+    "summary": "捕捉怪物、召唤物或机械单位作为伙伴。",
+    "summarySource": "source-json.summary",
+    "title": "伙伴捕育",
+    "type": "gameplay",
+    "variants": [
+      {
+        "id": "gameplay-073-variant-01",
+        "title": "低生命捕捉"
+      },
+      {
+        "id": "gameplay-073-variant-02",
+        "title": "条件捕捉"
+      },
+      {
+        "id": "gameplay-073-variant-03",
+        "title": "孵化培育"
+      },
+      {
+        "id": "gameplay-073-variant-04",
+        "title": "技能继承"
+      },
+      {
+        "id": "gameplay-073-variant-05",
+        "title": "形态进化"
+      },
+      {
+        "id": "gameplay-073-variant-06",
+        "title": "性格差异"
+      },
+      {
+        "id": "gameplay-073-variant-07",
+        "title": "生态收集"
+      },
+      {
+        "id": "gameplay-073-variant-08",
+        "title": "编队作战"
+      },
+      {
+        "id": "gameplay-073-variant-09",
+        "title": "家园互动"
+      },
+      {
+        "id": "gameplay-073-variant-10",
+        "title": "非战斗用途"
+      }
+    ]
+  },
+  {
+    "category": "角色构筑",
+    "categoryId": "gameplay-group-09",
+    "id": "gameplay-074",
+    "indexVersion": 1,
+    "presentationModes": [
+      "interface-gameplay"
+    ],
+    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourcePath": "src/game/data/gameplay_outline/catalog.json",
+    "summary": "在路线图中前进，通过卡牌完成战斗。",
+    "summarySource": "source-json.summary",
+    "title": "随机远征卡牌构筑",
+    "type": "gameplay",
+    "variants": [
+      {
+        "id": "gameplay-074-variant-01",
+        "title": "攻击防御卡牌"
+      },
+      {
+        "id": "gameplay-074-variant-02",
+        "title": "能量限制"
+      },
+      {
+        "id": "gameplay-074-variant-03",
+        "title": "抽牌循环"
+      },
+      {
+        "id": "gameplay-074-variant-04",
+        "title": "删牌强化"
+      },
+      {
+        "id": "gameplay-074-variant-05",
+        "title": "状态卡牌"
+      },
+      {
+        "id": "gameplay-074-variant-06",
+        "title": "装备卡牌"
+      },
+      {
+        "id": "gameplay-074-variant-07",
+        "title": "战斗召唤卡牌"
+      },
+      {
+        "id": "gameplay-074-variant-08",
+        "title": "位置卡牌"
+      },
+      {
+        "id": "gameplay-074-variant-09",
+        "title": "组合技卡牌"
+      },
+      {
+        "id": "gameplay-074-variant-10",
+        "title": "角色专属牌组"
+      }
+    ]
+  },
+  {
+    "category": "角色构筑",
+    "categoryId": "gameplay-group-09",
+    "id": "gameplay-075",
+    "indexVersion": 1,
+    "presentationModes": [
+      "main-map",
+      "light-extension"
+    ],
+    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourcePath": "src/game/data/gameplay_outline/catalog.json",
+    "summary": "仍使用像素地图，但能力和行动通过卡牌释放。",
+    "summarySource": "source-json.summary",
+    "title": "地图行动卡牌",
+    "type": "gameplay",
+    "variants": [
+      {
+        "id": "gameplay-075-variant-01",
+        "title": "技能卡槽"
+      },
+      {
+        "id": "gameplay-075-variant-02",
+        "title": "有限使用卡"
+      },
+      {
+        "id": "gameplay-075-variant-03",
+        "title": "随机抽取技能"
+      },
+      {
+        "id": "gameplay-075-variant-04",
+        "title": "卡牌冷却"
+      },
+      {
+        "id": "gameplay-075-variant-05",
+        "title": "环境卡牌"
+      },
+      {
+        "id": "gameplay-075-variant-06",
+        "title": "地图召唤卡牌"
+      },
+      {
+        "id": "gameplay-075-variant-07",
+        "title": "事件卡牌"
+      },
+      {
+        "id": "gameplay-075-variant-08",
+        "title": "撤离卡牌"
+      },
+      {
+        "id": "gameplay-075-variant-09",
+        "title": "身份卡牌"
+      },
+      {
+        "id": "gameplay-075-variant-10",
+        "title": "剧情卡牌"
+      }
+    ]
+  },
+  {
+    "category": "角色构筑",
+    "categoryId": "gameplay-group-09",
+    "id": "gameplay-076",
+    "indexVersion": 1,
+    "presentationModes": [
+      "interface-gameplay"
+    ],
+    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourcePath": "src/game/data/gameplay_outline/catalog.json",
+    "summary": "通过骰子、符文、转盘或随机符号形成能力。",
+    "summarySource": "source-json.summary",
+    "title": "概率构筑",
+    "type": "gameplay",
+    "variants": [
+      {
+        "id": "gameplay-076-variant-01",
+        "title": "骰面构筑"
+      },
+      {
+        "id": "gameplay-076-variant-02",
+        "title": "多骰组合"
+      },
+      {
+        "id": "gameplay-076-variant-03",
+        "title": "点数分配"
+      },
+      {
+        "id": "gameplay-076-variant-04",
+        "title": "锁定重掷"
+      },
+      {
+        "id": "gameplay-076-variant-05",
+        "title": "概率操控"
+      },
+      {
+        "id": "gameplay-076-variant-06",
+        "title": "风险骰子"
+      },
+      {
+        "id": "gameplay-076-variant-07",
+        "title": "符文袋构筑"
+      },
+      {
+        "id": "gameplay-076-variant-08",
+        "title": "转盘战斗"
+      },
+      {
+        "id": "gameplay-076-variant-09",
+        "title": "牌骰混合"
+      },
+      {
+        "id": "gameplay-076-variant-10",
+        "title": "地图骰子"
+      }
+    ]
+  },
+  {
+    "category": "角色构筑",
+    "categoryId": "gameplay-group-09",
+    "id": "gameplay-077",
+    "indexVersion": 1,
+    "presentationModes": [
+      "special-map",
+      "interface-gameplay"
+    ],
+    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourcePath": "src/game/data/gameplay_outline/catalog.json",
+    "summary": "玩家负责招募、编队和站位，单位自动战斗，璃落可通过技能或行动在关键时刻干预战局。",
+    "summarySource": "source-json.summary",
+    "title": "干预式自走棋",
+    "type": "gameplay",
+    "variants": [
+      {
+        "id": "gameplay-077-variant-01",
+        "title": "职业羁绊"
+      },
+      {
+        "id": "gameplay-077-variant-02",
+        "title": "种族羁绊"
+      },
+      {
+        "id": "gameplay-077-variant-03",
+        "title": "阵营羁绊"
+      },
+      {
+        "id": "gameplay-077-variant-04",
+        "title": "装备合成"
+      },
+      {
+        "id": "gameplay-077-variant-05",
+        "title": "升星合成"
+      },
+      {
+        "id": "gameplay-077-variant-06",
+        "title": "站位克制"
+      },
+      {
+        "id": "gameplay-077-variant-07",
+        "title": "怪物波次"
+      },
+      {
+        "id": "gameplay-077-variant-08",
+        "title": "Boss针对编队"
+      },
+      {
+        "id": "gameplay-077-variant-09",
+        "title": "临时佣兵"
+      },
+      {
+        "id": "gameplay-077-variant-10",
+        "title": "永久角色池"
+      },
+      {
+        "id": "gameplay-077-merged-gameplay-078",
+        "title": "英雄干预型自走战斗"
+      },
+      {
+        "id": "gameplay-078-variant-01",
+        "title": "主动技能干预"
+      },
+      {
+        "id": "gameplay-078-variant-02",
+        "title": "移动英雄干预"
+      },
+      {
+        "id": "gameplay-078-variant-03",
+        "title": "治疗支援"
+      },
+      {
+        "id": "gameplay-078-variant-04",
+        "title": "目标标记"
+      },
+      {
+        "id": "gameplay-078-variant-05",
+        "title": "紧急撤退"
+      },
+      {
+        "id": "gameplay-078-variant-06",
+        "title": "召唤增援"
+      },
+      {
+        "id": "gameplay-078-variant-07",
+        "title": "改变阵型"
+      },
+      {
+        "id": "gameplay-078-variant-08",
+        "title": "环境机关"
+      },
+      {
+        "id": "gameplay-078-variant-09",
+        "title": "英雄被击败限制"
+      },
+      {
+        "id": "gameplay-078-variant-10",
+        "title": "最终亲自决战"
+      }
+    ]
+  }
+]

@@ -1,0 +1,1497 @@
+[
+  {
+    "childKeys": [
+      "world-1-glimmering-glance-jingsuo-event"
+    ],
+    "key": "world-1-glimmering-glance",
+    "side": false,
+    "title": "浮光掠影（都市）",
+    "world": "1-浮光掠影"
+  },
+  {
+    "childKeys": [
+      "world-1-glimmering-glance-little-prisoner",
+      "world-1-glimmering-glance-strange-object-society-archive"
+    ],
+    "key": "world-1-glimmering-glance-anomaly-disaster-response-organization",
+    "parentKey": "world-1-glimmering-glance-urban-rumors",
+    "side": false,
+    "title": "异常灾害处理组织",
+    "world": "1-浮光掠影"
+  },
+  {
+    "childKeys": [
+      "world-1-glimmering-glance-old-capital-echo"
+    ],
+    "key": "world-1-glimmering-glance-black-oak-night-hunt",
+    "parentKey": "world-1-glimmering-glance-prison-storm",
+    "side": false,
+    "title": "黑槲夜猎",
+    "world": "1-浮光掠影"
+  },
+  {
+    "childKeys": [
+      "world-1-glimmering-glance-taisho-romance"
+    ],
+    "key": "world-1-glimmering-glance-black-rose-sanatorium",
+    "parentKey": "world-1-glimmering-glance-fog-capital-strangeness",
+    "side": false,
+    "title": "黑蔷薇疗养院",
+    "world": "1-浮光掠影"
+  },
+  {
+    "childKeys": [
+      "world-1-glimmering-glance-club"
+    ],
+    "key": "world-1-glimmering-glance-campus-arrival",
+    "parentKey": "world-1-glimmering-glance-hospital-awakening",
+    "side": false,
+    "title": "重返校园",
+    "world": "1-浮光掠影"
+  },
+  {
+    "childKeys": [
+      "world-1-glimmering-glance-missing"
+    ],
+    "key": "world-1-glimmering-glance-cement-shoes",
+    "parentKey": "world-1-glimmering-glance-gray-alley-adventure",
+    "side": false,
+    "title": "水泥鞋",
+    "world": "1-浮光掠影"
+  },
+  {
+    "childKeys": [
+      "world-1-glimmering-glance-dance-classroom",
+      "world-1-glimmering-glance-flexibility"
+    ],
+    "key": "world-1-glimmering-glance-club",
+    "parentKey": "world-1-glimmering-glance-campus-arrival",
+    "side": false,
+    "title": "加入紧缚社团",
+    "world": "1-浮光掠影"
+  },
+  {
+    "childKeys": [
+      "world-1-glimmering-glance-hot-spring"
+    ],
+    "key": "world-1-glimmering-glance-cruise",
+    "parentKey": "world-1-glimmering-glance-dance-classroom",
+    "side": true,
+    "title": "游轮",
+    "world": "1-浮光掠影"
+  },
+  {
+    "childKeys": [
+      "world-1-glimmering-glance-cruise",
+      "world-1-glimmering-glance-stage-performance"
+    ],
+    "key": "world-1-glimmering-glance-dance-classroom",
+    "parentKey": "world-1-glimmering-glance-club",
+    "side": false,
+    "title": "舞蹈教室",
+    "world": "1-浮光掠影"
+  },
+  {
+    "childKeys": [
+      "world-1-glimmering-glance-ultimate-restraint"
+    ],
+    "key": "world-1-glimmering-glance-epilogue",
+    "parentKey": "world-1-glimmering-glance-eternal-restraint-maze",
+    "side": false,
+    "title": "尾声",
+    "world": "1-浮光掠影"
+  },
+  {
+    "childKeys": [
+      "world-1-glimmering-glance-epilogue",
+      "world-1-glimmering-glance-liminal-space"
+    ],
+    "key": "world-1-glimmering-glance-eternal-restraint-maze",
+    "parentKey": "world-1-glimmering-glance-silent-correction-center",
+    "side": false,
+    "title": "永拘迷宫",
+    "world": "1-浮光掠影"
+  },
+  {
+    "childKeys": [],
+    "key": "world-1-glimmering-glance-fantasy-world-adventure",
+    "parentKey": "world-1-glimmering-glance-luxury-theater",
+    "side": true,
+    "title": "幻想世界冒险",
+    "world": "1-浮光掠影"
+  },
+  {
+    "childKeys": [],
+    "key": "world-1-glimmering-glance-flexibility",
+    "parentKey": "world-1-glimmering-glance-club",
+    "side": true,
+    "title": "柔韧性练习",
+    "world": "1-浮光掠影"
+  },
+  {
+    "childKeys": [
+      "world-1-glimmering-glance-black-rose-sanatorium"
+    ],
+    "key": "world-1-glimmering-glance-fog-capital-strangeness",
+    "parentKey": "world-1-glimmering-glance-red-white-marriage-contract",
+    "side": false,
+    "title": "雾都怪奇",
+    "world": "1-浮光掠影"
+  },
+  {
+    "childKeys": [
+      "world-1-glimmering-glance-sinkhole-rainforest-expedition"
+    ],
+    "key": "world-1-glimmering-glance-fog-sea-lone-island-expedition",
+    "parentKey": "world-1-glimmering-glance-world-expedition-team",
+    "side": false,
+    "title": "雾海孤岛探险",
+    "world": "1-浮光掠影"
+  },
+  {
+    "childKeys": [
+      "world-1-glimmering-glance-cement-shoes"
+    ],
+    "key": "world-1-glimmering-glance-gray-alley-adventure",
+    "parentKey": "world-1-glimmering-glance-sinkhole-rainforest-expedition",
+    "side": false,
+    "title": "灰巷历险",
+    "world": "1-浮光掠影"
+  },
+  {
+    "childKeys": [
+      "world-1-glimmering-glance-night-school-ghost-stories",
+      "world-1-glimmering-glance-urban-rumors"
+    ],
+    "key": "world-1-glimmering-glance-grudge-ancient-tree",
+    "parentKey": "world-1-glimmering-glance-old-dormitory",
+    "side": false,
+    "title": "满怨古树",
+    "world": "1-浮光掠影"
+  },
+  {
+    "childKeys": [
+      "world-1-glimmering-glance-campus-arrival"
+    ],
+    "key": "world-1-glimmering-glance-hospital-awakening",
+    "parentKey": "world-1-glimmering-glance-jingsuo-event",
+    "side": false,
+    "title": "病房苏醒",
+    "world": "1-浮光掠影"
+  },
+  {
+    "childKeys": [],
+    "key": "world-1-glimmering-glance-hot-spring",
+    "parentKey": "world-1-glimmering-glance-cruise",
+    "side": false,
+    "title": "温泉度假酒店",
+    "world": "1-浮光掠影"
+  },
+  {
+    "childKeys": [
+      "world-1-glimmering-glance-maid-massage-shop",
+      "world-1-glimmering-glance-trafficker"
+    ],
+    "key": "world-1-glimmering-glance-hotel-fright",
+    "parentKey": "world-1-glimmering-glance-maid-hotel",
+    "side": false,
+    "title": "酒店惊魂",
+    "world": "1-浮光掠影"
+  },
+  {
+    "childKeys": [
+      "world-1-glimmering-glance-jingjiang-geomancy",
+      "world-1-glimmering-glance-snow-train"
+    ],
+    "key": "world-1-glimmering-glance-huaiwan-village",
+    "parentKey": "world-1-glimmering-glance-trafficker",
+    "side": false,
+    "title": "槐湾村",
+    "world": "1-浮光掠影"
+  },
+  {
+    "childKeys": [],
+    "key": "world-1-glimmering-glance-inflatable-castle",
+    "parentKey": "world-1-glimmering-glance-maid-hotel",
+    "side": true,
+    "title": "充气城堡",
+    "world": "1-浮光掠影"
+  },
+  {
+    "childKeys": [
+      "world-1-glimmering-glance-variety-show-fright"
+    ],
+    "key": "world-1-glimmering-glance-jingjiang-geomancy",
+    "parentKey": "world-1-glimmering-glance-huaiwan-village",
+    "side": false,
+    "title": "荆江堪舆",
+    "world": "1-浮光掠影"
+  },
+  {
+    "childKeys": [
+      "world-1-glimmering-glance-hospital-awakening"
+    ],
+    "key": "world-1-glimmering-glance-jingsuo-event",
+    "parentKey": "world-1-glimmering-glance",
+    "side": false,
+    "title": "荆锁会事件",
+    "world": "1-浮光掠影"
+  },
+  {
+    "childKeys": [],
+    "key": "world-1-glimmering-glance-liminal-space",
+    "parentKey": "world-1-glimmering-glance-eternal-restraint-maze",
+    "side": true,
+    "title": "阈限空间",
+    "world": "1-浮光掠影"
+  },
+  {
+    "childKeys": [
+      "world-1-glimmering-glance-luxury-theater"
+    ],
+    "key": "world-1-glimmering-glance-little-maid-team",
+    "parentKey": "world-1-glimmering-glance-return-to-jingjiang",
+    "side": false,
+    "title": "小小女仆团",
+    "world": "1-浮光掠影"
+  },
+  {
+    "childKeys": [
+      "world-1-glimmering-glance-maid-hotel",
+      "world-1-glimmering-glance-model"
+    ],
+    "key": "world-1-glimmering-glance-little-prisoner",
+    "parentKey": "world-1-glimmering-glance-anomaly-disaster-response-organization",
+    "side": false,
+    "title": "小囚犯出圈记",
+    "world": "1-浮光掠影"
+  },
+  {
+    "childKeys": [
+      "world-1-glimmering-glance-fantasy-world-adventure",
+      "world-1-glimmering-glance-silent-correction-center"
+    ],
+    "key": "world-1-glimmering-glance-luxury-theater",
+    "parentKey": "world-1-glimmering-glance-little-maid-team",
+    "side": false,
+    "title": "浮华剧场",
+    "world": "1-浮光掠影"
+  },
+  {
+    "childKeys": [
+      "world-1-glimmering-glance-hotel-fright",
+      "world-1-glimmering-glance-inflatable-castle",
+      "world-1-glimmering-glance-movie-bound-stand-in"
+    ],
+    "key": "world-1-glimmering-glance-maid-hotel",
+    "parentKey": "world-1-glimmering-glance-little-prisoner",
+    "side": false,
+    "title": "女仆酒店",
+    "world": "1-浮光掠影"
+  },
+  {
+    "childKeys": [],
+    "key": "world-1-glimmering-glance-maid-massage-shop",
+    "parentKey": "world-1-glimmering-glance-hotel-fright",
+    "side": true,
+    "title": "女仆按摩店",
+    "world": "1-浮光掠影"
+  },
+  {
+    "childKeys": [],
+    "key": "world-1-glimmering-glance-midnight-city-exploration",
+    "parentKey": "world-1-glimmering-glance-urban-rumors",
+    "side": true,
+    "title": "深夜城市探险",
+    "world": "1-浮光掠影"
+  },
+  {
+    "childKeys": [],
+    "key": "world-1-glimmering-glance-mirror-person",
+    "parentKey": "world-1-glimmering-glance-stage-performance",
+    "side": true,
+    "title": "镜中人",
+    "world": "1-浮光掠影"
+  },
+  {
+    "childKeys": [
+      "world-1-glimmering-glance-rust-salt"
+    ],
+    "key": "world-1-glimmering-glance-missing",
+    "parentKey": "world-1-glimmering-glance-cement-shoes",
+    "side": false,
+    "title": "失联",
+    "world": "1-浮光掠影"
+  },
+  {
+    "childKeys": [],
+    "key": "world-1-glimmering-glance-model",
+    "parentKey": "world-1-glimmering-glance-little-prisoner",
+    "side": true,
+    "title": "紧缚模特",
+    "world": "1-浮光掠影"
+  },
+  {
+    "childKeys": [],
+    "key": "world-1-glimmering-glance-movie-bound-stand-in",
+    "parentKey": "world-1-glimmering-glance-maid-hotel",
+    "side": true,
+    "title": "电影绑替兼职",
+    "world": "1-浮光掠影"
+  },
+  {
+    "childKeys": [],
+    "key": "world-1-glimmering-glance-night-school-ghost-stories",
+    "parentKey": "world-1-glimmering-glance-grudge-ancient-tree",
+    "side": true,
+    "title": "夜校怪谈",
+    "world": "1-浮光掠影"
+  },
+  {
+    "childKeys": [
+      "world-1-glimmering-glance-rainy-ancient-city"
+    ],
+    "key": "world-1-glimmering-glance-old-capital-echo",
+    "parentKey": "world-1-glimmering-glance-black-oak-night-hunt",
+    "side": false,
+    "title": "旧都回声",
+    "world": "1-浮光掠影"
+  },
+  {
+    "childKeys": [],
+    "key": "world-1-glimmering-glance-old-case",
+    "parentKey": "world-1-glimmering-glance-sensory-trial",
+    "side": false,
+    "title": "旧案",
+    "world": "1-浮光掠影"
+  },
+  {
+    "childKeys": [
+      "world-1-glimmering-glance-grudge-ancient-tree",
+      "world-1-glimmering-glance-sensory-trial"
+    ],
+    "key": "world-1-glimmering-glance-old-dormitory",
+    "parentKey": "world-1-glimmering-glance-rope-spirit-game",
+    "side": false,
+    "title": "宿舍旧楼",
+    "world": "1-浮光掠影"
+  },
+  {
+    "childKeys": [
+      "world-1-glimmering-glance-black-oak-night-hunt"
+    ],
+    "key": "world-1-glimmering-glance-prison-storm",
+    "parentKey": "world-1-glimmering-glance-rust-salt",
+    "side": false,
+    "title": "监狱风云",
+    "world": "1-浮光掠影"
+  },
+  {
+    "childKeys": [
+      "world-1-glimmering-glance-red-white-marriage-contract"
+    ],
+    "key": "world-1-glimmering-glance-rainy-ancient-city",
+    "parentKey": "world-1-glimmering-glance-old-capital-echo",
+    "side": false,
+    "title": "烟雨古城",
+    "world": "1-浮光掠影"
+  },
+  {
+    "childKeys": [],
+    "key": "world-1-glimmering-glance-reality-show",
+    "parentKey": "world-1-glimmering-glance-variety-show-fright",
+    "side": true,
+    "title": "真人秀",
+    "world": "1-浮光掠影"
+  },
+  {
+    "childKeys": [
+      "world-1-glimmering-glance-fog-capital-strangeness"
+    ],
+    "key": "world-1-glimmering-glance-red-white-marriage-contract",
+    "parentKey": "world-1-glimmering-glance-rainy-ancient-city",
+    "side": false,
+    "title": "赤白婚契",
+    "world": "1-浮光掠影"
+  },
+  {
+    "childKeys": [
+      "world-1-glimmering-glance-little-maid-team"
+    ],
+    "key": "world-1-glimmering-glance-return-to-jingjiang",
+    "parentKey": "world-1-glimmering-glance-taisho-romance",
+    "side": false,
+    "title": "重返荆江市",
+    "world": "1-浮光掠影"
+  },
+  {
+    "childKeys": [
+      "world-1-glimmering-glance-old-dormitory"
+    ],
+    "key": "world-1-glimmering-glance-rope-spirit-game",
+    "parentKey": "world-1-glimmering-glance-stage-performance",
+    "side": false,
+    "title": "绳仙游戏",
+    "world": "1-浮光掠影"
+  },
+  {
+    "childKeys": [
+      "world-1-glimmering-glance-prison-storm",
+      "world-1-glimmering-glance-silent-witness"
+    ],
+    "key": "world-1-glimmering-glance-rust-salt",
+    "parentKey": "world-1-glimmering-glance-missing",
+    "side": false,
+    "title": "锈盐",
+    "world": "1-浮光掠影"
+  },
+  {
+    "childKeys": [
+      "world-1-glimmering-glance-old-case"
+    ],
+    "key": "world-1-glimmering-glance-sensory-trial",
+    "parentKey": "world-1-glimmering-glance-old-dormitory",
+    "side": true,
+    "title": "感官试炼",
+    "world": "1-浮光掠影"
+  },
+  {
+    "childKeys": [
+      "world-1-glimmering-glance-eternal-restraint-maze"
+    ],
+    "key": "world-1-glimmering-glance-silent-correction-center",
+    "parentKey": "world-1-glimmering-glance-luxury-theater",
+    "side": false,
+    "title": "静默矫治中心",
+    "world": "1-浮光掠影"
+  },
+  {
+    "childKeys": [],
+    "key": "world-1-glimmering-glance-silent-witness",
+    "parentKey": "world-1-glimmering-glance-rust-salt",
+    "side": true,
+    "title": "沉默见证",
+    "world": "1-浮光掠影"
+  },
+  {
+    "childKeys": [
+      "world-1-glimmering-glance-gray-alley-adventure"
+    ],
+    "key": "world-1-glimmering-glance-sinkhole-rainforest-expedition",
+    "parentKey": "world-1-glimmering-glance-fog-sea-lone-island-expedition",
+    "side": false,
+    "title": "天坑雨林远征",
+    "world": "1-浮光掠影"
+  },
+  {
+    "childKeys": [],
+    "key": "world-1-glimmering-glance-snow-train",
+    "parentKey": "world-1-glimmering-glance-huaiwan-village",
+    "side": true,
+    "title": "雪城列车",
+    "world": "1-浮光掠影"
+  },
+  {
+    "childKeys": [
+      "world-1-glimmering-glance-mirror-person",
+      "world-1-glimmering-glance-rope-spirit-game"
+    ],
+    "key": "world-1-glimmering-glance-stage-performance",
+    "parentKey": "world-1-glimmering-glance-dance-classroom",
+    "side": false,
+    "title": "舞台表演",
+    "world": "1-浮光掠影"
+  },
+  {
+    "childKeys": [],
+    "key": "world-1-glimmering-glance-strange-object-society-archive",
+    "parentKey": "world-1-glimmering-glance-anomaly-disaster-response-organization",
+    "side": true,
+    "title": "诡物收录",
+    "world": "1-浮光掠影"
+  },
+  {
+    "childKeys": [
+      "world-1-glimmering-glance-return-to-jingjiang"
+    ],
+    "key": "world-1-glimmering-glance-taisho-romance",
+    "parentKey": "world-1-glimmering-glance-black-rose-sanatorium",
+    "side": false,
+    "title": "大正浪漫",
+    "world": "1-浮光掠影"
+  },
+  {
+    "childKeys": [
+      "world-1-glimmering-glance-huaiwan-village"
+    ],
+    "key": "world-1-glimmering-glance-trafficker",
+    "parentKey": "world-1-glimmering-glance-hotel-fright",
+    "side": false,
+    "title": "人贩子",
+    "world": "1-浮光掠影"
+  },
+  {
+    "childKeys": [],
+    "key": "world-1-glimmering-glance-ultimate-restraint",
+    "parentKey": "world-1-glimmering-glance-epilogue",
+    "side": false,
+    "title": "极端高危女性囚犯运输终极约束方案",
+    "world": "1-浮光掠影"
+  },
+  {
+    "childKeys": [
+      "world-1-glimmering-glance-anomaly-disaster-response-organization",
+      "world-1-glimmering-glance-midnight-city-exploration"
+    ],
+    "key": "world-1-glimmering-glance-urban-rumors",
+    "parentKey": "world-1-glimmering-glance-grudge-ancient-tree",
+    "side": false,
+    "title": "都市异闻",
+    "world": "1-浮光掠影"
+  },
+  {
+    "childKeys": [
+      "world-1-glimmering-glance-reality-show",
+      "world-1-glimmering-glance-world-expedition-team"
+    ],
+    "key": "world-1-glimmering-glance-variety-show-fright",
+    "parentKey": "world-1-glimmering-glance-jingjiang-geomancy",
+    "side": false,
+    "title": "综艺惊魂",
+    "world": "1-浮光掠影"
+  },
+  {
+    "childKeys": [
+      "world-1-glimmering-glance-fog-sea-lone-island-expedition"
+    ],
+    "key": "world-1-glimmering-glance-world-expedition-team",
+    "parentKey": "world-1-glimmering-glance-variety-show-fright",
+    "side": false,
+    "title": "世界科考队",
+    "world": "1-浮光掠影"
+  },
+  {
+    "childKeys": [
+      "world-2-silent-earth-dirge-zombie-apocalypse"
+    ],
+    "key": "world-2-silent-earth-dirge",
+    "side": false,
+    "title": "寂土挽歌（末日）",
+    "world": "2-寂土挽歌"
+  },
+  {
+    "childKeys": [
+      "world-2-silent-earth-dirge-dream-city-slumber"
+    ],
+    "key": "world-2-silent-earth-dirge-apocalypse-holy-judgment",
+    "parentKey": "world-2-silent-earth-dirge-wasteland-court",
+    "side": false,
+    "title": "末日圣裁",
+    "world": "2-寂土挽歌"
+  },
+  {
+    "childKeys": [
+      "world-2-silent-earth-dirge-wasteland-court"
+    ],
+    "key": "world-2-silent-earth-dirge-ark-ghost-cage",
+    "parentKey": "world-2-silent-earth-dirge-mechanical-afterglow",
+    "side": false,
+    "title": "方舟幽笼",
+    "world": "2-寂土挽歌"
+  },
+  {
+    "childKeys": [
+      "world-2-silent-earth-dirge-insect-hive-border"
+    ],
+    "key": "world-2-silent-earth-dirge-beast-treading-land",
+    "parentKey": "world-2-silent-earth-dirge-ecology-devouring-city",
+    "side": false,
+    "title": "异兽踏陆",
+    "world": "2-寂土挽歌"
+  },
+  {
+    "childKeys": [
+      "world-2-silent-earth-dirge-eternal-winter-white-realm"
+    ],
+    "key": "world-2-silent-earth-dirge-deep-sea-drifting-land",
+    "parentKey": "world-2-silent-earth-dirge-insect-hive-border",
+    "side": false,
+    "title": "深海漂陆",
+    "world": "2-寂土挽歌"
+  },
+  {
+    "childKeys": [
+      "world-2-silent-earth-dirge-plague-ruined-city"
+    ],
+    "key": "world-2-silent-earth-dirge-disaster-anomaly",
+    "parentKey": "world-2-silent-earth-dirge-fog-city",
+    "side": false,
+    "title": "天灾异像",
+    "world": "2-寂土挽歌"
+  },
+  {
+    "childKeys": [
+      "world-2-silent-earth-dirge-looping-final-day"
+    ],
+    "key": "world-2-silent-earth-dirge-dream-city-slumber",
+    "parentKey": "world-2-silent-earth-dirge-apocalypse-holy-judgment",
+    "side": false,
+    "title": "梦城沉眠",
+    "world": "2-寂土挽歌"
+  },
+  {
+    "childKeys": [
+      "world-2-silent-earth-dirge-beast-treading-land"
+    ],
+    "key": "world-2-silent-earth-dirge-ecology-devouring-city",
+    "parentKey": "world-2-silent-earth-dirge-plague-ruined-city",
+    "side": false,
+    "title": "生态吞城",
+    "world": "2-寂土挽歌"
+  },
+  {
+    "childKeys": [
+      "world-2-silent-earth-dirge-fog-city"
+    ],
+    "key": "world-2-silent-earth-dirge-eerie-apocalypse",
+    "parentKey": "world-2-silent-earth-dirge-omega",
+    "side": false,
+    "title": "异诡临界",
+    "world": "2-寂土挽歌"
+  },
+  {
+    "childKeys": [
+      "world-2-silent-earth-dirge-lone-sand-sea"
+    ],
+    "key": "world-2-silent-earth-dirge-eternal-winter-white-realm",
+    "parentKey": "world-2-silent-earth-dirge-deep-sea-drifting-land",
+    "side": false,
+    "title": "永冬白境",
+    "world": "2-寂土挽歌"
+  },
+  {
+    "childKeys": [
+      "world-2-silent-earth-dirge-disaster-anomaly"
+    ],
+    "key": "world-2-silent-earth-dirge-fog-city",
+    "parentKey": "world-2-silent-earth-dirge-eerie-apocalypse",
+    "side": false,
+    "title": "诡雾迷城",
+    "world": "2-寂土挽歌"
+  },
+  {
+    "childKeys": [
+      "world-2-silent-earth-dirge-rift-disaster"
+    ],
+    "key": "world-2-silent-earth-dirge-forgotten-river-gray-world",
+    "parentKey": "world-2-silent-earth-dirge-looping-final-day",
+    "side": false,
+    "title": "忘川灰世",
+    "world": "2-寂土挽歌"
+  },
+  {
+    "childKeys": [
+      "world-2-silent-earth-dirge-deep-sea-drifting-land"
+    ],
+    "key": "world-2-silent-earth-dirge-insect-hive-border",
+    "parentKey": "world-2-silent-earth-dirge-beast-treading-land",
+    "side": false,
+    "title": "虫巢边境",
+    "world": "2-寂土挽歌"
+  },
+  {
+    "childKeys": [
+      "world-2-silent-earth-dirge-mechanical-afterglow"
+    ],
+    "key": "world-2-silent-earth-dirge-lone-sand-sea",
+    "parentKey": "world-2-silent-earth-dirge-eternal-winter-white-realm",
+    "side": false,
+    "title": "沙海孤途",
+    "world": "2-寂土挽歌"
+  },
+  {
+    "childKeys": [
+      "world-2-silent-earth-dirge-forgotten-river-gray-world"
+    ],
+    "key": "world-2-silent-earth-dirge-looping-final-day",
+    "parentKey": "world-2-silent-earth-dirge-dream-city-slumber",
+    "side": false,
+    "title": "循时终日",
+    "world": "2-寂土挽歌"
+  },
+  {
+    "childKeys": [
+      "world-2-silent-earth-dirge-ark-ghost-cage"
+    ],
+    "key": "world-2-silent-earth-dirge-mechanical-afterglow",
+    "parentKey": "world-2-silent-earth-dirge-lone-sand-sea",
+    "side": false,
+    "title": "机械余晖",
+    "world": "2-寂土挽歌"
+  },
+  {
+    "childKeys": [
+      "world-2-silent-earth-dirge-eerie-apocalypse"
+    ],
+    "key": "world-2-silent-earth-dirge-omega",
+    "parentKey": "world-2-silent-earth-dirge-red-line",
+    "side": false,
+    "title": "Ω级禁忌束缚套装",
+    "world": "2-寂土挽歌"
+  },
+  {
+    "childKeys": [
+      "world-2-silent-earth-dirge-ecology-devouring-city"
+    ],
+    "key": "world-2-silent-earth-dirge-plague-ruined-city",
+    "parentKey": "world-2-silent-earth-dirge-disaster-anomaly",
+    "side": false,
+    "title": "疫病残城",
+    "world": "2-寂土挽歌"
+  },
+  {
+    "childKeys": [
+      "world-2-silent-earth-dirge-omega"
+    ],
+    "key": "world-2-silent-earth-dirge-red-line",
+    "parentKey": "world-2-silent-earth-dirge-zombie-apocalypse",
+    "side": false,
+    "title": "红线鬼域",
+    "world": "2-寂土挽歌"
+  },
+  {
+    "childKeys": [],
+    "key": "world-2-silent-earth-dirge-rift-disaster",
+    "parentKey": "world-2-silent-earth-dirge-forgotten-river-gray-world",
+    "side": false,
+    "title": "裂界灾临",
+    "world": "2-寂土挽歌"
+  },
+  {
+    "childKeys": [
+      "world-2-silent-earth-dirge-apocalypse-holy-judgment"
+    ],
+    "key": "world-2-silent-earth-dirge-wasteland-court",
+    "parentKey": "world-2-silent-earth-dirge-ark-ghost-cage",
+    "side": false,
+    "title": "废土王庭",
+    "world": "2-寂土挽歌"
+  },
+  {
+    "childKeys": [
+      "world-2-silent-earth-dirge-red-line"
+    ],
+    "key": "world-2-silent-earth-dirge-zombie-apocalypse",
+    "parentKey": "world-2-silent-earth-dirge",
+    "side": false,
+    "title": "尸潮噬世",
+    "world": "2-寂土挽歌"
+  },
+  {
+    "childKeys": [
+      "world-3-mortal-dao-maid-difficulty"
+    ],
+    "key": "world-3-mortal-dao",
+    "side": false,
+    "title": "尘寰问道（古风）",
+    "world": "3-尘寰问道"
+  },
+  {
+    "childKeys": [
+      "world-3-mortal-dao-tile-kiln-disaster-sealing"
+    ],
+    "key": "world-3-mortal-dao-chaotic-world-ranger",
+    "parentKey": "world-3-mortal-dao-frontier-marriage",
+    "side": false,
+    "title": "乱世游侠",
+    "world": "3-尘寰问道"
+  },
+  {
+    "childKeys": [
+      "world-3-mortal-dao-frontier-marriage"
+    ],
+    "key": "world-3-mortal-dao-commoner-princess",
+    "parentKey": "world-3-mortal-dao-royal-garden-beast-hunt",
+    "side": false,
+    "title": "平民公主",
+    "world": "3-尘寰问道"
+  },
+  {
+    "childKeys": [
+      "world-3-mortal-dao-no-master"
+    ],
+    "key": "world-3-mortal-dao-counterattack",
+    "parentKey": "world-3-mortal-dao-start",
+    "side": false,
+    "title": "缚身反杀",
+    "world": "3-尘寰问道"
+  },
+  {
+    "childKeys": [
+      "world-3-mortal-dao-rebuild"
+    ],
+    "key": "world-3-mortal-dao-demonic-sect-adventure",
+    "parentKey": "world-3-mortal-dao-framed",
+    "side": false,
+    "title": "魔宗历险",
+    "world": "3-尘寰问道"
+  },
+  {
+    "childKeys": [
+      "world-3-mortal-dao-eternal"
+    ],
+    "key": "world-3-mortal-dao-epilogue",
+    "parentKey": "world-3-mortal-dao-spider-valley",
+    "side": false,
+    "title": "尾声",
+    "world": "3-尘寰问道"
+  },
+  {
+    "childKeys": [],
+    "key": "world-3-mortal-dao-eternal",
+    "parentKey": "world-3-mortal-dao-epilogue",
+    "side": false,
+    "title": "永世束缚",
+    "world": "3-尘寰问道"
+  },
+  {
+    "childKeys": [
+      "world-3-mortal-dao-demonic-sect-adventure"
+    ],
+    "key": "world-3-mortal-dao-framed",
+    "parentKey": "world-3-mortal-dao-no-master",
+    "side": false,
+    "title": "陷害，入魔宗",
+    "world": "3-尘寰问道"
+  },
+  {
+    "childKeys": [
+      "world-3-mortal-dao-chaotic-world-ranger"
+    ],
+    "key": "world-3-mortal-dao-frontier-marriage",
+    "parentKey": "world-3-mortal-dao-commoner-princess",
+    "side": false,
+    "title": "塞外和亲",
+    "world": "3-尘寰问道"
+  },
+  {
+    "childKeys": [
+      "world-3-mortal-dao-royal-garden-beast-hunt"
+    ],
+    "key": "world-3-mortal-dao-maid-difficulty",
+    "parentKey": "world-3-mortal-dao",
+    "side": false,
+    "title": "丫鬟难为",
+    "world": "3-尘寰问道"
+  },
+  {
+    "childKeys": [
+      "world-3-mortal-dao-framed"
+    ],
+    "key": "world-3-mortal-dao-no-master",
+    "parentKey": "world-3-mortal-dao-counterattack",
+    "side": false,
+    "title": "无人收徒",
+    "world": "3-尘寰问道"
+  },
+  {
+    "childKeys": [
+      "world-3-mortal-dao-spider-valley"
+    ],
+    "key": "world-3-mortal-dao-rebuild",
+    "parentKey": "world-3-mortal-dao-demonic-sect-adventure",
+    "side": false,
+    "title": "重新修炼",
+    "world": "3-尘寰问道"
+  },
+  {
+    "childKeys": [
+      "world-3-mortal-dao-commoner-princess"
+    ],
+    "key": "world-3-mortal-dao-royal-garden-beast-hunt",
+    "parentKey": "world-3-mortal-dao-maid-difficulty",
+    "side": false,
+    "title": "王苑兽猎",
+    "world": "3-尘寰问道"
+  },
+  {
+    "childKeys": [
+      "world-3-mortal-dao-siege-survival"
+    ],
+    "key": "world-3-mortal-dao-sakura-storm-shogunate",
+    "parentKey": "world-3-mortal-dao-tile-kiln-disaster-sealing",
+    "side": false,
+    "title": "樱岚幕府",
+    "world": "3-尘寰问道"
+  },
+  {
+    "childKeys": [
+      "world-3-mortal-dao-start"
+    ],
+    "key": "world-3-mortal-dao-siege-survival",
+    "parentKey": "world-3-mortal-dao-sakura-storm-shogunate",
+    "side": false,
+    "title": "围城求生",
+    "world": "3-尘寰问道"
+  },
+  {
+    "childKeys": [
+      "world-3-mortal-dao-epilogue"
+    ],
+    "key": "world-3-mortal-dao-spider-valley",
+    "parentKey": "world-3-mortal-dao-rebuild",
+    "side": false,
+    "title": "误入灵蛛谷",
+    "world": "3-尘寰问道"
+  },
+  {
+    "childKeys": [
+      "world-3-mortal-dao-counterattack"
+    ],
+    "key": "world-3-mortal-dao-start",
+    "parentKey": "world-3-mortal-dao-siege-survival",
+    "side": false,
+    "title": "问道起点",
+    "world": "3-尘寰问道"
+  },
+  {
+    "childKeys": [
+      "world-3-mortal-dao-sakura-storm-shogunate"
+    ],
+    "key": "world-3-mortal-dao-tile-kiln-disaster-sealing",
+    "parentKey": "world-3-mortal-dao-chaotic-world-ranger",
+    "side": false,
+    "title": "瓦窑封灾",
+    "world": "3-尘寰问道"
+  },
+  {
+    "childKeys": [
+      "world-4-monica-empire-bound-god-domain"
+    ],
+    "key": "world-4-monica-empire",
+    "side": false,
+    "title": "慕妮卡帝国（综合）",
+    "world": "4-慕妮卡帝国"
+  },
+  {
+    "childKeys": [
+      "world-4-monica-empire-borderlands"
+    ],
+    "key": "world-4-monica-empire-allied-cities",
+    "parentKey": "world-4-monica-empire-city-desire",
+    "side": false,
+    "title": "同盟城池",
+    "world": "4-慕妮卡帝国"
+  },
+  {
+    "childKeys": [],
+    "key": "world-4-monica-empire-borderlands",
+    "parentKey": "world-4-monica-empire-allied-cities",
+    "side": false,
+    "title": "边境与异域",
+    "world": "4-慕妮卡帝国"
+  },
+  {
+    "childKeys": [
+      "world-4-monica-empire-four-seasons-garden"
+    ],
+    "key": "world-4-monica-empire-bound-god-domain",
+    "parentKey": "world-4-monica-empire",
+    "side": false,
+    "title": "缚神领地",
+    "world": "4-慕妮卡帝国"
+  },
+  {
+    "childKeys": [
+      "world-4-monica-empire-allied-cities"
+    ],
+    "key": "world-4-monica-empire-city-desire",
+    "parentKey": "world-4-monica-empire-core-district",
+    "side": false,
+    "title": "醉欲之城",
+    "world": "4-慕妮卡帝国"
+  },
+  {
+    "childKeys": [
+      "world-4-monica-empire-city-desire"
+    ],
+    "key": "world-4-monica-empire-core-district",
+    "parentKey": "world-4-monica-empire-silly-lilili-town",
+    "side": false,
+    "title": "帝国核心区",
+    "world": "4-慕妮卡帝国"
+  },
+  {
+    "childKeys": [
+      "world-4-monica-empire-silly-lilili-town"
+    ],
+    "key": "world-4-monica-empire-four-seasons-garden",
+    "parentKey": "world-4-monica-empire-bound-god-domain",
+    "side": false,
+    "title": "四季花园",
+    "world": "4-慕妮卡帝国"
+  },
+  {
+    "childKeys": [],
+    "key": "world-4-monica-empire-life-simulator",
+    "parentKey": "world-4-monica-empire-silly-lilili-town",
+    "side": true,
+    "title": "人生模拟器",
+    "world": "4-慕妮卡帝国"
+  },
+  {
+    "childKeys": [
+      "world-4-monica-empire-core-district",
+      "world-4-monica-empire-life-simulator"
+    ],
+    "key": "world-4-monica-empire-silly-lilili-town",
+    "parentKey": "world-4-monica-empire-four-seasons-garden",
+    "side": false,
+    "title": "笨璃璃小镇",
+    "world": "4-慕妮卡帝国"
+  },
+  {
+    "childKeys": [
+      "world-5-star-weaving-dream-stargate-port"
+    ],
+    "key": "world-5-star-weaving-dream",
+    "side": false,
+    "title": "星宇织梦（科幻）",
+    "world": "5-星宇织梦"
+  },
+  {
+    "childKeys": [
+      "world-5-star-weaving-dream-deep-blue-moon"
+    ],
+    "key": "world-5-star-weaving-dream-barren-mining-asteroid",
+    "parentKey": "world-5-star-weaving-dream-dome-hunt",
+    "side": false,
+    "title": "荒矿小行星",
+    "world": "5-星宇织梦"
+  },
+  {
+    "childKeys": [
+      "world-5-star-weaving-dream-mirror-domain"
+    ],
+    "key": "world-5-star-weaving-dream-bionic-maze",
+    "parentKey": "world-5-star-weaving-dream-restraint-paradise-shop",
+    "side": false,
+    "title": "仿生迷途",
+    "world": "5-星宇织梦"
+  },
+  {
+    "childKeys": [
+      "world-5-star-weaving-dream-hivemind-hive"
+    ],
+    "key": "world-5-star-weaving-dream-clone-corridor",
+    "parentKey": "world-5-star-weaving-dream-prison-planet",
+    "side": false,
+    "title": "克隆回廊",
+    "world": "5-星宇织梦"
+  },
+  {
+    "childKeys": [
+      "world-5-star-weaving-dream-orbital-garden"
+    ],
+    "key": "world-5-star-weaving-dream-cryosleep-ark",
+    "parentKey": "world-5-star-weaving-dream-star-voyage",
+    "side": false,
+    "title": "冷眠方舟",
+    "world": "5-星宇织梦"
+  },
+  {
+    "childKeys": [
+      "world-5-star-weaving-dream-interstellar-black-market"
+    ],
+    "key": "world-5-star-weaving-dream-deep-blue-moon",
+    "parentKey": "world-5-star-weaving-dream-barren-mining-asteroid",
+    "side": false,
+    "title": "深蓝海卫",
+    "world": "5-星宇织梦"
+  },
+  {
+    "childKeys": [
+      "world-5-star-weaving-dream-barren-mining-asteroid"
+    ],
+    "key": "world-5-star-weaving-dream-dome-hunt",
+    "parentKey": "world-5-star-weaving-dream-frontier-colony",
+    "side": false,
+    "title": "穹顶狩猎",
+    "world": "5-星宇织梦"
+  },
+  {
+    "childKeys": [
+      "world-5-star-weaving-dream-forerunner-ruins"
+    ],
+    "key": "world-5-star-weaving-dream-first-contact",
+    "parentKey": "world-5-star-weaving-dream-hivemind-hive",
+    "side": false,
+    "title": "异星初触",
+    "world": "5-星宇织梦"
+  },
+  {
+    "childKeys": [
+      "world-5-star-weaving-dream-quantum-maze"
+    ],
+    "key": "world-5-star-weaving-dream-forerunner-ruins",
+    "parentKey": "world-5-star-weaving-dream-first-contact",
+    "side": false,
+    "title": "先驱遗迹",
+    "world": "5-星宇织梦"
+  },
+  {
+    "childKeys": [
+      "world-5-star-weaving-dream-dome-hunt"
+    ],
+    "key": "world-5-star-weaving-dream-frontier-colony",
+    "parentKey": "world-5-star-weaving-dream-molten-armor-warstar",
+    "side": false,
+    "title": "边境殖民星",
+    "world": "5-星宇织梦"
+  },
+  {
+    "childKeys": [
+      "world-5-star-weaving-dream-first-contact"
+    ],
+    "key": "world-5-star-weaving-dream-hivemind-hive",
+    "parentKey": "world-5-star-weaving-dream-clone-corridor",
+    "side": false,
+    "title": "群心蜂巢",
+    "world": "5-星宇织梦"
+  },
+  {
+    "childKeys": [
+      "world-5-star-weaving-dream-prison-planet"
+    ],
+    "key": "world-5-star-weaving-dream-interstellar-black-market",
+    "parentKey": "world-5-star-weaving-dream-deep-blue-moon",
+    "side": false,
+    "title": "星际黑市",
+    "world": "5-星宇织梦"
+  },
+  {
+    "childKeys": [
+      "world-5-star-weaving-dream-sequence-gu-city"
+    ],
+    "key": "world-5-star-weaving-dream-mirror-domain",
+    "parentKey": "world-5-star-weaving-dream-bionic-maze",
+    "side": false,
+    "title": "镜域沉沦",
+    "world": "5-星宇织梦"
+  },
+  {
+    "childKeys": [
+      "world-5-star-weaving-dream-frontier-colony"
+    ],
+    "key": "world-5-star-weaving-dream-molten-armor-warstar",
+    "parentKey": "world-5-star-weaving-dream-orbital-garden",
+    "side": false,
+    "title": "熔铠战星",
+    "world": "5-星宇织梦"
+  },
+  {
+    "childKeys": [
+      "world-5-star-weaving-dream-molten-armor-warstar"
+    ],
+    "key": "world-5-star-weaving-dream-orbital-garden",
+    "parentKey": "world-5-star-weaving-dream-cryosleep-ark",
+    "side": false,
+    "title": "轨道庭院",
+    "world": "5-星宇织梦"
+  },
+  {
+    "childKeys": [
+      "world-5-star-weaving-dream-restraint-paradise-shop"
+    ],
+    "key": "world-5-star-weaving-dream-order-paradise",
+    "parentKey": "world-5-star-weaving-dream-ringlock-stars",
+    "side": false,
+    "title": "律序乐园",
+    "world": "5-星宇织梦"
+  },
+  {
+    "childKeys": [
+      "world-5-star-weaving-dream-clone-corridor"
+    ],
+    "key": "world-5-star-weaving-dream-prison-planet",
+    "parentKey": "world-5-star-weaving-dream-interstellar-black-market",
+    "side": false,
+    "title": "监狱行星",
+    "world": "5-星宇织梦"
+  },
+  {
+    "childKeys": [],
+    "key": "world-5-star-weaving-dream-quantum-maze",
+    "parentKey": "world-5-star-weaving-dream-forerunner-ruins",
+    "side": false,
+    "title": "量子迷城",
+    "world": "5-星宇织梦"
+  },
+  {
+    "childKeys": [
+      "world-5-star-weaving-dream-bionic-maze"
+    ],
+    "key": "world-5-star-weaving-dream-restraint-paradise-shop",
+    "parentKey": "world-5-star-weaving-dream-order-paradise",
+    "side": false,
+    "title": "拘束具店铺",
+    "world": "5-星宇织梦"
+  },
+  {
+    "childKeys": [
+      "world-5-star-weaving-dream-order-paradise"
+    ],
+    "key": "world-5-star-weaving-dream-ringlock-stars",
+    "parentKey": "world-5-star-weaving-dream-stargate-port",
+    "side": false,
+    "title": "环锁群星",
+    "world": "5-星宇织梦"
+  },
+  {
+    "childKeys": [
+      "world-5-star-weaving-dream-star-voyage"
+    ],
+    "key": "world-5-star-weaving-dream-sequence-gu-city",
+    "parentKey": "world-5-star-weaving-dream-mirror-domain",
+    "side": false,
+    "title": "基序蛊城",
+    "world": "5-星宇织梦"
+  },
+  {
+    "childKeys": [
+      "world-5-star-weaving-dream-cryosleep-ark"
+    ],
+    "key": "world-5-star-weaving-dream-star-voyage",
+    "parentKey": "world-5-star-weaving-dream-sequence-gu-city",
+    "side": false,
+    "title": "逐星远航",
+    "world": "5-星宇织梦"
+  },
+  {
+    "childKeys": [
+      "world-5-star-weaving-dream-ringlock-stars"
+    ],
+    "key": "world-5-star-weaving-dream-stargate-port",
+    "parentKey": "world-5-star-weaving-dream",
+    "side": false,
+    "title": "星门港区",
+    "world": "5-星宇织梦"
+  },
+  {
+    "childKeys": [
+      "world-6-cursebound-echoes-dreambound-continent"
+    ],
+    "key": "world-6-cursebound-echoes",
+    "side": false,
+    "title": "咒缚回响（魔幻）",
+    "world": "6-咒缚回响"
+  },
+  {
+    "childKeys": [],
+    "key": "world-6-cursebound-echoes-abyss-contract",
+    "parentKey": "world-6-cursebound-echoes-astral-rift-gate",
+    "side": false,
+    "title": "深渊契约",
+    "world": "6-咒缚回响"
+  },
+  {
+    "childKeys": [
+      "world-6-cursebound-echoes-abyss-contract"
+    ],
+    "key": "world-6-cursebound-echoes-astral-rift-gate",
+    "parentKey": "world-6-cursebound-echoes-witch-swamp",
+    "side": false,
+    "title": "星界裂门",
+    "world": "6-咒缚回响"
+  },
+  {
+    "childKeys": [
+      "world-6-cursebound-echoes-dragon-sleep-mountains"
+    ],
+    "key": "world-6-cursebound-echoes-bone-throne",
+    "parentKey": "world-6-cursebound-echoes-darkmoon-castle",
+    "side": false,
+    "title": "骸骨王座",
+    "world": "6-咒缚回响"
+  },
+  {
+    "childKeys": [
+      "world-6-cursebound-echoes-northern-frost-crown"
+    ],
+    "key": "world-6-cursebound-echoes-crystal-sand-court",
+    "parentKey": "world-6-cursebound-echoes-dark-underground-city",
+    "side": false,
+    "title": "晶沙王庭",
+    "world": "6-咒缚回响"
+  },
+  {
+    "childKeys": [
+      "world-6-cursebound-echoes-crystal-sand-court"
+    ],
+    "key": "world-6-cursebound-echoes-dark-underground-city",
+    "parentKey": "world-6-cursebound-echoes-locked-horn-wasteland",
+    "side": false,
+    "title": "幽暗城池",
+    "world": "6-咒缚回响"
+  },
+  {
+    "childKeys": [
+      "world-6-cursebound-echoes-bone-throne"
+    ],
+    "key": "world-6-cursebound-echoes-darkmoon-castle",
+    "parentKey": "world-6-cursebound-echoes-tiny-liluo-adventure",
+    "side": false,
+    "title": "暗月古堡",
+    "world": "6-咒缚回响"
+  },
+  {
+    "childKeys": [
+      "world-6-cursebound-echoes-secret-tower-long-song"
+    ],
+    "key": "world-6-cursebound-echoes-dragon-sleep-mountains",
+    "parentKey": "world-6-cursebound-echoes-bone-throne",
+    "side": false,
+    "title": "龙眠山脉",
+    "world": "6-咒缚回响"
+  },
+  {
+    "childKeys": [
+      "world-6-cursebound-echoes-silver-crown-capital"
+    ],
+    "key": "world-6-cursebound-echoes-dreambound-continent",
+    "parentKey": "world-6-cursebound-echoes",
+    "side": false,
+    "title": "逐梦大陆",
+    "world": "6-咒缚回响"
+  },
+  {
+    "childKeys": [
+      "world-6-cursebound-echoes-tiny-liluo-adventure"
+    ],
+    "key": "world-6-cursebound-echoes-forest-oath-fey-realm",
+    "parentKey": "world-6-cursebound-echoes-molten-glow-machine-city",
+    "side": false,
+    "title": "森誓妖境",
+    "world": "6-咒缚回响"
+  },
+  {
+    "childKeys": [
+      "world-6-cursebound-echoes-lone-tide-sea"
+    ],
+    "key": "world-6-cursebound-echoes-holy-seal-islands",
+    "parentKey": "world-6-cursebound-echoes-secret-rune-academy",
+    "side": false,
+    "title": "圣印群岛",
+    "world": "6-咒缚回响"
+  },
+  {
+    "childKeys": [
+      "world-6-cursebound-echoes-dark-underground-city"
+    ],
+    "key": "world-6-cursebound-echoes-locked-horn-wasteland",
+    "parentKey": "world-6-cursebound-echoes-secret-tower-long-song",
+    "side": false,
+    "title": "锁角荒原",
+    "world": "6-咒缚回响"
+  },
+  {
+    "childKeys": [
+      "world-6-cursebound-echoes-molten-glow-machine-city"
+    ],
+    "key": "world-6-cursebound-echoes-lone-tide-sea",
+    "parentKey": "world-6-cursebound-echoes-holy-seal-islands",
+    "side": false,
+    "title": "逐潮孤海",
+    "world": "6-咒缚回响"
+  },
+  {
+    "childKeys": [
+      "world-6-cursebound-echoes-forest-oath-fey-realm"
+    ],
+    "key": "world-6-cursebound-echoes-molten-glow-machine-city",
+    "parentKey": "world-6-cursebound-echoes-lone-tide-sea",
+    "side": false,
+    "title": "熔辉机城",
+    "world": "6-咒缚回响"
+  },
+  {
+    "childKeys": [
+      "world-6-cursebound-echoes-shadow-thief-city-state"
+    ],
+    "key": "world-6-cursebound-echoes-northern-frost-crown",
+    "parentKey": "world-6-cursebound-echoes-crystal-sand-court",
+    "side": false,
+    "title": "北境霜冠",
+    "world": "6-咒缚回响"
+  },
+  {
+    "childKeys": [
+      "world-6-cursebound-echoes-holy-seal-islands"
+    ],
+    "key": "world-6-cursebound-echoes-secret-rune-academy",
+    "parentKey": "world-6-cursebound-echoes-silent-rite-court",
+    "side": false,
+    "title": "秘纹学院",
+    "world": "6-咒缚回响"
+  },
+  {
+    "childKeys": [
+      "world-6-cursebound-echoes-locked-horn-wasteland"
+    ],
+    "key": "world-6-cursebound-echoes-secret-tower-long-song",
+    "parentKey": "world-6-cursebound-echoes-dragon-sleep-mountains",
+    "side": false,
+    "title": "秘塔长歌",
+    "world": "6-咒缚回响"
+  },
+  {
+    "childKeys": [
+      "world-6-cursebound-echoes-witch-swamp"
+    ],
+    "key": "world-6-cursebound-echoes-shadow-thief-city-state",
+    "parentKey": "world-6-cursebound-echoes-northern-frost-crown",
+    "side": false,
+    "title": "盗影城邦",
+    "world": "6-咒缚回响"
+  },
+  {
+    "childKeys": [
+      "world-6-cursebound-echoes-secret-rune-academy"
+    ],
+    "key": "world-6-cursebound-echoes-silent-rite-court",
+    "parentKey": "world-6-cursebound-echoes-silver-crown-capital",
+    "side": false,
+    "title": "缄礼宫廷",
+    "world": "6-咒缚回响"
+  },
+  {
+    "childKeys": [
+      "world-6-cursebound-echoes-silent-rite-court"
+    ],
+    "key": "world-6-cursebound-echoes-silver-crown-capital",
+    "parentKey": "world-6-cursebound-echoes-dreambound-continent",
+    "side": false,
+    "title": "银冠王都",
+    "world": "6-咒缚回响"
+  },
+  {
+    "childKeys": [
+      "world-6-cursebound-echoes-darkmoon-castle"
+    ],
+    "key": "world-6-cursebound-echoes-tiny-liluo-adventure",
+    "parentKey": "world-6-cursebound-echoes-forest-oath-fey-realm",
+    "side": false,
+    "title": "小小璃落大冒险",
+    "world": "6-咒缚回响"
+  },
+  {
+    "childKeys": [
+      "world-6-cursebound-echoes-astral-rift-gate"
+    ],
+    "key": "world-6-cursebound-echoes-witch-swamp",
+    "parentKey": "world-6-cursebound-echoes-shadow-thief-city-state",
+    "side": false,
+    "title": "女巫沼泽",
+    "world": "6-咒缚回响"
+  }
+]

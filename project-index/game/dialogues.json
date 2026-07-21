@@ -1,0 +1,167 @@
+[
+  {
+    "id": "city_desire_leave_north",
+    "indexVersion": 1,
+    "mapId": "city_desire",
+    "sourceHash": "f504216d74ad4617958fbe970b9508897b3664561cdc6338c976dc8a30c96dfc",
+    "sourcePath": "src/game/data/maps/munika/city_desire/dialogues.json",
+    "summary": "city_desire_leave_north",
+    "summarySource": "title-only",
+    "title": "city_desire_leave_north",
+    "type": "dialogue"
+  },
+  {
+    "id": "city_desire_leave_west",
+    "indexVersion": 1,
+    "mapId": "city_desire",
+    "sourceHash": "f504216d74ad4617958fbe970b9508897b3664561cdc6338c976dc8a30c96dfc",
+    "sourcePath": "src/game/data/maps/munika/city_desire/dialogues.json",
+    "summary": "city_desire_leave_west",
+    "summarySource": "title-only",
+    "title": "city_desire_leave_west",
+    "type": "dialogue"
+  },
+  {
+    "id": "city_desire_leave_east",
+    "indexVersion": 1,
+    "mapId": "city_desire",
+    "sourceHash": "f504216d74ad4617958fbe970b9508897b3664561cdc6338c976dc8a30c96dfc",
+    "sourcePath": "src/game/data/maps/munika/city_desire/dialogues.json",
+    "summary": "city_desire_leave_east",
+    "summarySource": "title-only",
+    "title": "city_desire_leave_east",
+    "type": "dialogue"
+  },
+  {
+    "id": "estate_house_entry_pending",
+    "indexVersion": 1,
+    "mapId": "liluo_estate",
+    "sourceHash": "71d46678ad924cc08cacd0d0e5d3466ea4f7e1a76754f30d9dd2864cf547f65b",
+    "sourcePath": "src/game/data/maps/munika/liluo_estate/dialogues.json",
+    "summary": "estate_house_entry_pending",
+    "summarySource": "title-only",
+    "title": "estate_house_entry_pending",
+    "type": "dialogue"
+  },
+  {
+    "id": "north_cave_entry_pending",
+    "indexVersion": 1,
+    "mapId": "liluo_estate",
+    "sourceHash": "71d46678ad924cc08cacd0d0e5d3466ea4f7e1a76754f30d9dd2864cf547f65b",
+    "sourcePath": "src/game/data/maps/munika/liluo_estate/dialogues.json",
+    "summary": "north_cave_entry_pending",
+    "summarySource": "title-only",
+    "title": "north_cave_entry_pending",
+    "type": "dialogue"
+  },
+  {
+    "id": "empire_portal_entry_pending",
+    "indexVersion": 1,
+    "mapId": "liluo_estate",
+    "sourceHash": "71d46678ad924cc08cacd0d0e5d3466ea4f7e1a76754f30d9dd2864cf547f65b",
+    "sourcePath": "src/game/data/maps/munika/liluo_estate/dialogues.json",
+    "summary": "empire_portal_entry_pending",
+    "summarySource": "title-only",
+    "title": "empire_portal_entry_pending",
+    "type": "dialogue"
+  },
+  {
+    "id": "parallel_world_adventure_pending",
+    "indexVersion": 1,
+    "mapId": "liluo_estate",
+    "sourceHash": "71d46678ad924cc08cacd0d0e5d3466ea4f7e1a76754f30d9dd2864cf547f65b",
+    "sourcePath": "src/game/data/maps/munika/liluo_estate/dialogues.json",
+    "summary": "parallel_world_adventure_pending",
+    "summarySource": "title-only",
+    "title": "parallel_world_adventure_pending",
+    "type": "dialogue"
+  },
+  {
+    "id": "estate_time_of_day_selection",
+    "indexVersion": 1,
+    "mapId": "liluo_estate",
+    "sourceHash": "71d46678ad924cc08cacd0d0e5d3466ea4f7e1a76754f30d9dd2864cf547f65b",
+    "sourcePath": "src/game/data/maps/munika/liluo_estate/dialogues.json",
+    "summary": "estate_time_of_day_selection",
+    "summarySource": "title-only",
+    "title": "estate_time_of_day_selection",
+    "type": "dialogue"
+  },
+  {
+    "id": "living_room_liluo_room_pending",
+    "indexVersion": 1,
+    "mapId": "liluo_house_living_room",
+    "sourceHash": "aa5f70e873ea651b3d2a73bc6387a2a8a15d852ac2a5940f062eb629aa08db24",
+    "sourcePath": "src/game/data/maps/munika/liluo_house_living_room/dialogues.json",
+    "summary": "living_room_liluo_room_pending",
+    "summarySource": "title-only",
+    "title": "living_room_liluo_room_pending",
+    "type": "dialogue"
+  },
+  {
+    "id": "living_room_mumu_room_pending",
+    "indexVersion": 1,
+    "mapId": "liluo_house_living_room",
+    "sourceHash": "aa5f70e873ea651b3d2a73bc6387a2a8a15d852ac2a5940f062eb629aa08db24",
+    "sourcePath": "src/game/data/maps/munika/liluo_house_living_room/dialogues.json",
+    "summary": "living_room_mumu_room_pending",
+    "summarySource": "title-only",
+    "title": "living_room_mumu_room_pending",
+    "type": "dialogue"
+  },
+  {
+    "id": "living_room_locked_room_pending",
+    "indexVersion": 1,
+    "mapId": "liluo_house_living_room",
+    "sourceHash": "aa5f70e873ea651b3d2a73bc6387a2a8a15d852ac2a5940f062eb629aa08db24",
+    "sourcePath": "src/game/data/maps/munika/liluo_house_living_room/dialogues.json",
+    "summary": "living_room_locked_room_pending",
+    "summarySource": "title-only",
+    "title": "living_room_locked_room_pending",
+    "type": "dialogue"
+  },
+  {
+    "id": "living_room_lixue_room_pending",
+    "indexVersion": 1,
+    "mapId": "liluo_house_living_room",
+    "sourceHash": "aa5f70e873ea651b3d2a73bc6387a2a8a15d852ac2a5940f062eb629aa08db24",
+    "sourcePath": "src/game/data/maps/munika/liluo_house_living_room/dialogues.json",
+    "summary": "living_room_lixue_room_pending",
+    "summarySource": "title-only",
+    "title": "living_room_lixue_room_pending",
+    "type": "dialogue"
+  },
+  {
+    "id": "liluo_room_leave_change_clothes_required",
+    "indexVersion": 1,
+    "mapId": "liluo_room",
+    "sourceHash": "80be19529664718e9a772ac65a240a119b0a1a600b0e3d187baf47551c698d02",
+    "sourcePath": "src/game/data/maps/munika/liluo_room/dialogues.json",
+    "summary": "liluo_room_leave_change_clothes_required",
+    "summarySource": "title-only",
+    "title": "liluo_room_leave_change_clothes_required",
+    "type": "dialogue"
+  },
+  {
+    "id": "liluo_room_bed_dialogue",
+    "indexVersion": 1,
+    "mapId": "liluo_room",
+    "sourceHash": "80be19529664718e9a772ac65a240a119b0a1a600b0e3d187baf47551c698d02",
+    "sourcePath": "src/game/data/maps/munika/liluo_room/dialogues.json",
+    "summary": "liluo_room_bed_dialogue",
+    "summarySource": "title-only",
+    "title": "liluo_room_bed_dialogue",
+    "type": "dialogue"
+  },
+  {
+    "id": "liluo_room_bed_already_slept",
+    "indexVersion": 1,
+    "mapId": "liluo_room",
+    "sourceHash": "80be19529664718e9a772ac65a240a119b0a1a600b0e3d187baf47551c698d02",
+    "sourcePath": "src/game/data/maps/munika/liluo_room/dialogues.json",
+    "summary": "liluo_room_bed_already_slept",
+    "summarySource": "title-only",
+    "title": "liluo_room_bed_already_slept",
+    "type": "dialogue"
+  }
+]

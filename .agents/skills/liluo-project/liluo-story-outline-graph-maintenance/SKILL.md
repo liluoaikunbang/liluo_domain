@@ -7,6 +7,8 @@ description: Safely insert, move, split, merge, rename, or repair 璃落 story-t
 
 Read `AGENTS.md`, affected source JSON/Markdown and [graph-operation-rules.md](references/graph-operation-rules.md). Use `scripts/outline-graph-ops.mjs` for summaries and validation.
 
+Use the current story/graph index to localize complex chains, verify original files before edits, and refresh plus validate the index after structural changes.
+
 1. Capture key count, target, parent, direct children and Markdown paths.
 2. Default to moving only the named node. For `A → C`, insert B as `A → B → C`.
 3. With multiple direct children and unspecified chain, stop and ask.

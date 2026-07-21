@@ -1,0 +1,107 @@
+{
+  "domains": {
+    "assets": {
+      "enabled": true,
+      "entryCount": 691,
+      "outputs": [
+        "assets/runtime/assets-001.json",
+        "assets/runtime/assets-002.json",
+        "assets/runtime/assets-003.json"
+      ],
+      "status": "current"
+    },
+    "code": {
+      "enabled": true,
+      "entryCount": 148,
+      "outputs": [
+        "code/modules-001.json"
+      ],
+      "status": "current"
+    },
+    "docs": {
+      "enabled": true,
+      "entryCount": 182,
+      "outputs": [
+        "docs/documents-001.json"
+      ],
+      "status": "current"
+    },
+    "game": {
+      "enabled": true,
+      "entryCount": 45,
+      "outputs": [
+        "game/maps.json",
+        "game/events.json",
+        "game/dialogues.json",
+        "game/interactive-fictions.json",
+        "game/registries.json"
+      ],
+      "status": "current"
+    },
+    "gameplay": {
+      "enabled": true,
+      "entryCount": 108,
+      "outputs": [
+        "gameplay/catalog.json",
+        "gameplay/categories/gameplay-group-01.json",
+        "gameplay/categories/gameplay-group-02.json",
+        "gameplay/categories/gameplay-group-03.json",
+        "gameplay/categories/gameplay-group-04.json",
+        "gameplay/categories/gameplay-group-05.json",
+        "gameplay/categories/gameplay-group-06.json",
+        "gameplay/categories/gameplay-group-07.json",
+        "gameplay/categories/gameplay-group-08.json",
+        "gameplay/categories/gameplay-group-09.json",
+        "gameplay/categories/gameplay-group-10.json",
+        "gameplay/categories/gameplay-group-11.json",
+        "gameplay/categories/gameplay-group-12.json",
+        "gameplay/categories/gameplay-group-13.json",
+        "gameplay/categories/gameplay-group-14.json",
+        "gameplay/categories/gameplay-group-15.json"
+      ],
+      "status": "current"
+    },
+    "story": {
+      "enabled": true,
+      "entryCount": 153,
+      "outputs": [
+        "story/nodes/nodes-001.json"
+      ],
+      "status": "partial"
+    }
+  },
+  "exclusions": [
+    ".git",
+    "node_modules",
+    "dist",
+    "project-index",
+    ".vite",
+    "coverage",
+    "audio-splitter-temp"
+  ],
+  "generatorVersion": "1.0.3",
+  "graph": {
+    "enabled": true,
+    "entryCount": 153,
+    "outputs": [
+      "graph/story-relations.json",
+      "graph/reverse-references/all.json"
+    ],
+    "status": "partial"
+  },
+  "knownLimitations": [
+    "增量更新为领域级；当前生成器仍扫描源哈希以识别删除与重命名。",
+    "代码索引使用轻量 import 提取，不构建完整 AST。",
+    "事件和对话只索引可确定的结构化 ID。"
+  ],
+  "lore": {
+    "enabled": false,
+    "reason": "缺少独立且稳定的权威实体资料库；第一版不从故事正文推断完整实体。",
+    "status": "not-enabled"
+  },
+  "schemaVersion": 1,
+  "sharding": {
+    "maxRecords": 250
+  },
+  "validationStatus": "partial"
+}

@@ -1,0 +1,711 @@
+[
+  {
+    "category": "战术行动",
+    "categoryId": "gameplay-group-06",
+    "id": "gameplay-038",
+    "indexVersion": 1,
+    "presentationModes": [
+      "main-map",
+      "light-extension"
+    ],
+    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourcePath": "src/game/data/gameplay_outline/catalog.json",
+    "summary": "保持像素小人地图，只增加框选、指令和资源系统。",
+    "summarySource": "source-json.summary",
+    "title": "小规模即时战略",
+    "type": "gameplay",
+    "variants": [
+      {
+        "id": "gameplay-038-variant-01",
+        "title": "小队指挥"
+      },
+      {
+        "id": "gameplay-038-variant-02",
+        "title": "资源采集"
+      },
+      {
+        "id": "gameplay-038-variant-03",
+        "title": "建筑生产"
+      },
+      {
+        "id": "gameplay-038-variant-04",
+        "title": "科技升级"
+      },
+      {
+        "id": "gameplay-038-variant-05",
+        "title": "据点扩张"
+      },
+      {
+        "id": "gameplay-038-variant-06",
+        "title": "战争迷雾"
+      },
+      {
+        "id": "gameplay-038-variant-07",
+        "title": "巡逻与警戒"
+      },
+      {
+        "id": "gameplay-038-variant-08",
+        "title": "攻城战"
+      },
+      {
+        "id": "gameplay-038-variant-09",
+        "title": "防守反击"
+      },
+      {
+        "id": "gameplay-038-variant-10",
+        "title": "英雄单位"
+      }
+    ]
+  },
+  {
+    "category": "战术行动",
+    "categoryId": "gameplay-group-06",
+    "id": "gameplay-040",
+    "indexVersion": 1,
+    "presentationModes": [
+      "main-map",
+      "interface-gameplay"
+    ],
+    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourcePath": "src/game/data/gameplay_outline/catalog.json",
+    "summary": "世界地图上存在多条前线，玩家逐步夺回区域。",
+    "summarySource": "source-json.summary",
+    "title": "战线推进",
+    "type": "gameplay",
+    "variants": [
+      {
+        "id": "gameplay-040-variant-01",
+        "title": "节点战役"
+      },
+      {
+        "id": "gameplay-040-variant-02",
+        "title": "区域控制"
+      },
+      {
+        "id": "gameplay-040-variant-03",
+        "title": "补给线"
+      },
+      {
+        "id": "gameplay-040-variant-04",
+        "title": "包围与切断"
+      },
+      {
+        "id": "gameplay-040-variant-05",
+        "title": "增援调度"
+      },
+      {
+        "id": "gameplay-040-variant-06",
+        "title": "战场疲劳"
+      },
+      {
+        "id": "gameplay-040-variant-07",
+        "title": "多阵营战争"
+      },
+      {
+        "id": "gameplay-040-variant-08",
+        "title": "动态反攻"
+      },
+      {
+        "id": "gameplay-040-variant-09",
+        "title": "战略事件"
+      },
+      {
+        "id": "gameplay-040-variant-10",
+        "title": "最终首都战"
+      }
+    ]
+  },
+  {
+    "category": "战术行动",
+    "categoryId": "gameplay-group-06",
+    "id": "gameplay-041",
+    "indexVersion": 1,
+    "presentationModes": [
+      "main-map"
+    ],
+    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourcePath": "src/game/data/gameplay_outline/catalog.json",
+    "summary": "地图实时运行，但玩家可以暂停并安排指令。",
+    "summarySource": "source-json.summary",
+    "title": "实时暂停战术",
+    "type": "gameplay",
+    "variants": [
+      {
+        "id": "gameplay-041-variant-01",
+        "title": "指令队列"
+      },
+      {
+        "id": "gameplay-041-variant-02",
+        "title": "目标优先级"
+      },
+      {
+        "id": "gameplay-041-variant-03",
+        "title": "技能协同"
+      },
+      {
+        "id": "gameplay-041-variant-04",
+        "title": "阵型调整"
+      },
+      {
+        "id": "gameplay-041-variant-05",
+        "title": "掩体利用"
+      },
+      {
+        "id": "gameplay-041-variant-06",
+        "title": "交叉火力"
+      },
+      {
+        "id": "gameplay-041-variant-07",
+        "title": "撤退指令"
+      },
+      {
+        "id": "gameplay-041-variant-08",
+        "title": "伤员救助"
+      },
+      {
+        "id": "gameplay-041-variant-09",
+        "title": "侦察后行动"
+      },
+      {
+        "id": "gameplay-041-variant-10",
+        "title": "自动执行阶段"
+      }
+    ]
+  },
+  {
+    "category": "战术行动",
+    "categoryId": "gameplay-group-06",
+    "id": "gameplay-042",
+    "indexVersion": 1,
+    "presentationModes": [
+      "special-map",
+      "interface-gameplay"
+    ],
+    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourcePath": "src/game/data/gameplay_outline/catalog.json",
+    "summary": "将当前场景转换为格子或行动范围地图。",
+    "summarySource": "source-json.summary",
+    "title": "回合制战棋",
+    "type": "gameplay",
+    "variants": [
+      {
+        "id": "gameplay-042-variant-01",
+        "title": "方格战棋"
+      },
+      {
+        "id": "gameplay-042-variant-02",
+        "title": "六角格战棋"
+      },
+      {
+        "id": "gameplay-042-variant-03",
+        "title": "行动点战棋"
+      },
+      {
+        "id": "gameplay-042-variant-04",
+        "title": "速度时间轴"
+      },
+      {
+        "id": "gameplay-042-variant-05",
+        "title": "高低差战棋"
+      },
+      {
+        "id": "gameplay-042-variant-06",
+        "title": "掩体战棋"
+      },
+      {
+        "id": "gameplay-042-variant-07",
+        "title": "推动拉拽战棋"
+      },
+      {
+        "id": "gameplay-042-variant-08",
+        "title": "环境互动战棋"
+      },
+      {
+        "id": "gameplay-042-variant-09",
+        "title": "护送战棋"
+      },
+      {
+        "id": "gameplay-042-variant-10",
+        "title": "撤离战棋"
+      }
+    ]
+  },
+  {
+    "category": "战术行动",
+    "categoryId": "gameplay-group-06",
+    "id": "gameplay-043",
+    "indexVersion": 1,
+    "presentationModes": [
+      "main-map"
+    ],
+    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourcePath": "src/game/data/gameplay_outline/catalog.json",
+    "summary": "适合研究院、监狱、飞船、住宅和军事设施。",
+    "summarySource": "source-json.summary",
+    "title": "室内突击",
+    "type": "gameplay",
+    "variants": [
+      {
+        "id": "gameplay-043-variant-01",
+        "title": "破门突入"
+      },
+      {
+        "id": "gameplay-043-variant-02",
+        "title": "逐房搜索"
+      },
+      {
+        "id": "gameplay-043-variant-03",
+        "title": "同步行动"
+      },
+      {
+        "id": "gameplay-043-variant-04",
+        "title": "人质识别"
+      },
+      {
+        "id": "gameplay-043-variant-05",
+        "title": "陷阱排除"
+      },
+      {
+        "id": "gameplay-043-variant-06",
+        "title": "摄像头侦察"
+      },
+      {
+        "id": "gameplay-043-variant-07",
+        "title": "断电突入"
+      },
+      {
+        "id": "gameplay-043-variant-08",
+        "title": "有限弹药突入"
+      },
+      {
+        "id": "gameplay-043-variant-09",
+        "title": "目标捕获"
+      },
+      {
+        "id": "gameplay-043-variant-10",
+        "title": "警报撤离"
+      }
+    ]
+  },
+  {
+    "category": "战术行动",
+    "categoryId": "gameplay-group-06",
+    "id": "gameplay-044",
+    "indexVersion": 1,
+    "presentationModes": [
+      "main-map",
+      "light-extension"
+    ],
+    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourcePath": "src/game/data/gameplay_outline/catalog.json",
+    "summary": "不仅管理璃落，也管理同行NPC的状态。",
+    "summarySource": "source-json.summary",
+    "title": "小队生存远征",
+    "type": "gameplay",
+    "variants": [
+      {
+        "id": "gameplay-044-variant-01",
+        "title": "队员职业分工"
+      },
+      {
+        "id": "gameplay-044-variant-02",
+        "title": "永久伤势"
+      },
+      {
+        "id": "gameplay-044-variant-03",
+        "title": "疲劳系统"
+      },
+      {
+        "id": "gameplay-044-variant-04",
+        "title": "士气系统"
+      },
+      {
+        "id": "gameplay-044-variant-05",
+        "title": "关系系统"
+      },
+      {
+        "id": "gameplay-044-variant-06",
+        "title": "队伍装备分配"
+      },
+      {
+        "id": "gameplay-044-variant-07",
+        "title": "队员失散"
+      },
+      {
+        "id": "gameplay-044-variant-08",
+        "title": "救援队员"
+      },
+      {
+        "id": "gameplay-044-variant-09",
+        "title": "替补队伍"
+      },
+      {
+        "id": "gameplay-044-variant-10",
+        "title": "队员剧情线"
+      }
+    ]
+  },
+  {
+    "category": "战术行动",
+    "categoryId": "gameplay-group-06",
+    "id": "gameplay-045",
+    "indexVersion": 1,
+    "presentationModes": [
+      "main-map"
+    ],
+    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourcePath": "src/game/data/gameplay_outline/catalog.json",
+    "summary": "通过视野、声音和巡逻路线避开敌人。",
+    "summarySource": "source-json.summary",
+    "title": "基础潜行",
+    "type": "gameplay",
+    "variants": [
+      {
+        "id": "gameplay-045-variant-01",
+        "title": "视野锥潜行"
+      },
+      {
+        "id": "gameplay-045-variant-02",
+        "title": "声音潜行"
+      },
+      {
+        "id": "gameplay-045-variant-03",
+        "title": "阴影潜行"
+      },
+      {
+        "id": "gameplay-045-variant-04",
+        "title": "掩体潜行"
+      },
+      {
+        "id": "gameplay-045-variant-05",
+        "title": "藏身点潜行"
+      },
+      {
+        "id": "gameplay-045-variant-06",
+        "title": "巡逻观察"
+      },
+      {
+        "id": "gameplay-045-variant-07",
+        "title": "诱饵潜行"
+      },
+      {
+        "id": "gameplay-045-variant-08",
+        "title": "关闭监控"
+      },
+      {
+        "id": "gameplay-045-variant-09",
+        "title": "无击杀通关"
+      },
+      {
+        "id": "gameplay-045-variant-10",
+        "title": "尸体与证据处理"
+      }
+    ]
+  },
+  {
+    "category": "战术行动",
+    "categoryId": "gameplay-group-06",
+    "id": "gameplay-046",
+    "indexVersion": 1,
+    "presentationModes": [
+      "main-map",
+      "cg-friendly"
+    ],
+    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourcePath": "src/game/data/gameplay_outline/catalog.json",
+    "summary": "不是躲在阴影中，而是混入敌方或封闭社会。",
+    "summarySource": "source-json.summary",
+    "title": "社会潜行",
+    "type": "gameplay",
+    "variants": [
+      {
+        "id": "gameplay-046-variant-01",
+        "title": "制服伪装"
+      },
+      {
+        "id": "gameplay-046-variant-02",
+        "title": "身份权限"
+      },
+      {
+        "id": "gameplay-046-variant-03",
+        "title": "口令检查"
+      },
+      {
+        "id": "gameplay-046-variant-04",
+        "title": "行为伪装"
+      },
+      {
+        "id": "gameplay-046-variant-05",
+        "title": "对话检查"
+      },
+      {
+        "id": "gameplay-046-variant-06",
+        "title": "伪造证件"
+      },
+      {
+        "id": "gameplay-046-variant-07",
+        "title": "角色顶替"
+      },
+      {
+        "id": "gameplay-046-variant-08",
+        "title": "关系担保"
+      },
+      {
+        "id": "gameplay-046-variant-09",
+        "title": "怀疑值系统"
+      },
+      {
+        "id": "gameplay-046-variant-10",
+        "title": "身份暴露逃亡"
+      }
+    ]
+  },
+  {
+    "category": "战术行动",
+    "categoryId": "gameplay-group-06",
+    "id": "gameplay-047",
+    "indexVersion": 1,
+    "presentationModes": [
+      "main-map"
+    ],
+    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourcePath": "src/game/data/gameplay_outline/catalog.json",
+    "summary": "在无法正面对抗的强敌追猎下潜行、协作并完成设备修复或出口开启等逃生目标。",
+    "summarySource": "source-json.summary",
+    "title": "追猎逃生",
+    "type": "gameplay",
+    "variants": [
+      {
+        "id": "gameplay-047-variant-01",
+        "title": "不可击败猎杀者"
+      },
+      {
+        "id": "gameplay-047-variant-02",
+        "title": "阶段可击退猎杀者"
+      },
+      {
+        "id": "gameplay-047-variant-03",
+        "title": "声音追踪猎杀者"
+      },
+      {
+        "id": "gameplay-047-variant-04",
+        "title": "视线追踪猎杀者"
+      },
+      {
+        "id": "gameplay-047-variant-05",
+        "title": "痕迹追踪猎杀者"
+      },
+      {
+        "id": "gameplay-047-variant-06",
+        "title": "气味追踪猎杀者"
+      },
+      {
+        "id": "gameplay-047-variant-07",
+        "title": "传送型猎杀者"
+      },
+      {
+        "id": "gameplay-047-variant-08",
+        "title": "伪装型猎杀者"
+      },
+      {
+        "id": "gameplay-047-variant-09",
+        "title": "学习型猎杀者"
+      },
+      {
+        "id": "gameplay-047-variant-10",
+        "title": "多猎杀者组合"
+      },
+      {
+        "id": "gameplay-047-merged-gameplay-048",
+        "title": "协作目标逃生"
+      },
+      {
+        "id": "gameplay-048-variant-01",
+        "title": "多设备修复"
+      },
+      {
+        "id": "gameplay-048-variant-02",
+        "title": "随机设备位置"
+      },
+      {
+        "id": "gameplay-048-variant-03",
+        "title": "修复小游戏"
+      },
+      {
+        "id": "gameplay-048-variant-04",
+        "title": "修复噪声"
+      },
+      {
+        "id": "gameplay-048-variant-05",
+        "title": "失败爆点"
+      },
+      {
+        "id": "gameplay-048-variant-06",
+        "title": "队友AI协作"
+      },
+      {
+        "id": "gameplay-048-variant-07",
+        "title": "出口二次开启"
+      },
+      {
+        "id": "gameplay-048-variant-08",
+        "title": "救援同伴"
+      },
+      {
+        "id": "gameplay-048-variant-09",
+        "title": "隐藏出口"
+      },
+      {
+        "id": "gameplay-048-variant-10",
+        "title": "最终追逐"
+      }
+    ]
+  },
+  {
+    "category": "战术行动",
+    "categoryId": "gameplay-group-06",
+    "id": "gameplay-049",
+    "indexVersion": 1,
+    "presentationModes": [
+      "main-map",
+      "cg-friendly",
+      "light-extension"
+    ],
+    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourcePath": "src/game/data/gameplay_outline/catalog.json",
+    "summary": "寻找受困目标，处理不同NPC的行动与生存需求，并护送个人或群体安全撤离。",
+    "summarySource": "source-json.summary",
+    "title": "人员撤离",
+    "type": "gameplay",
+    "variants": [
+      {
+        "id": "gameplay-049-variant-01",
+        "title": "普通跟随护送"
+      },
+      {
+        "id": "gameplay-049-variant-02",
+        "title": "脆弱目标护送"
+      },
+      {
+        "id": "gameplay-049-variant-03",
+        "title": "战斗型目标护送"
+      },
+      {
+        "id": "gameplay-049-variant-04",
+        "title": "恐惧型目标护送"
+      },
+      {
+        "id": "gameplay-049-variant-05",
+        "title": "伤员护送"
+      },
+      {
+        "id": "gameplay-049-variant-06",
+        "title": "儿童或普通人群护送"
+      },
+      {
+        "id": "gameplay-049-variant-07",
+        "title": "秘密身份护送"
+      },
+      {
+        "id": "gameplay-049-variant-08",
+        "title": "路线选择护送"
+      },
+      {
+        "id": "gameplay-049-variant-09",
+        "title": "资源消耗护送"
+      },
+      {
+        "id": "gameplay-049-variant-10",
+        "title": "背叛风险护送"
+      },
+      {
+        "id": "gameplay-049-merged-gameplay-050",
+        "title": "救援行动"
+      },
+      {
+        "id": "gameplay-050-variant-01",
+        "title": "定位救援"
+      },
+      {
+        "id": "gameplay-050-variant-02",
+        "title": "废墟搜救"
+      },
+      {
+        "id": "gameplay-050-variant-03",
+        "title": "战场救援"
+      },
+      {
+        "id": "gameplay-050-variant-04",
+        "title": "水下或火场救援"
+      },
+      {
+        "id": "gameplay-050-variant-05",
+        "title": "分散人员救援"
+      },
+      {
+        "id": "gameplay-050-variant-06",
+        "title": "真假求救"
+      },
+      {
+        "id": "gameplay-050-variant-07",
+        "title": "救援排序"
+      },
+      {
+        "id": "gameplay-050-variant-08",
+        "title": "医疗稳定"
+      },
+      {
+        "id": "gameplay-050-variant-09",
+        "title": "搬运救援"
+      },
+      {
+        "id": "gameplay-050-variant-10",
+        "title": "撤离点救援"
+      },
+      {
+        "id": "gameplay-049-merged-gameplay-051",
+        "title": "大规模撤离"
+      },
+      {
+        "id": "gameplay-051-variant-01",
+        "title": "分批撤离"
+      },
+      {
+        "id": "gameplay-051-variant-02",
+        "title": "撤离优先级"
+      },
+      {
+        "id": "gameplay-051-variant-03",
+        "title": "交通工具容量"
+      },
+      {
+        "id": "gameplay-051-variant-04",
+        "title": "撤离物资选择"
+      },
+      {
+        "id": "gameplay-051-variant-05",
+        "title": "通道维护"
+      },
+      {
+        "id": "gameplay-051-variant-06",
+        "title": "多出口撤离"
+      },
+      {
+        "id": "gameplay-051-variant-07",
+        "title": "撤离谣言"
+      },
+      {
+        "id": "gameplay-051-variant-08",
+        "title": "内应破坏"
+      },
+      {
+        "id": "gameplay-051-variant-09",
+        "title": "最后一批防守"
+      },
+      {
+        "id": "gameplay-051-variant-10",
+        "title": "撤离结局统计"
+      }
+    ]
+  }
+]

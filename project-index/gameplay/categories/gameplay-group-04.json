@@ -1,0 +1,480 @@
+[
+  {
+    "category": "生存挑战",
+    "categoryId": "gameplay-group-04",
+    "id": "gameplay-018",
+    "indexVersion": 1,
+    "presentationModes": [
+      "main-map"
+    ],
+    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourcePath": "src/game/data/gameplay_outline/catalog.json",
+    "summary": "安全区域会持续收缩、迁移或改变形态，玩家必须随环境压力调整路线并生存到目标阶段。",
+    "summarySource": "source-json.summary",
+    "title": "收缩安全区生存",
+    "type": "gameplay",
+    "variants": [
+      {
+        "id": "gameplay-018-variant-01",
+        "title": "毒雾缩圈"
+      },
+      {
+        "id": "gameplay-018-variant-02",
+        "title": "黑暗吞噬"
+      },
+      {
+        "id": "gameplay-018-variant-03",
+        "title": "尸潮缩圈"
+      },
+      {
+        "id": "gameplay-018-variant-04",
+        "title": "洪水上涨"
+      },
+      {
+        "id": "gameplay-018-variant-05",
+        "title": "岩浆扩张"
+      },
+      {
+        "id": "gameplay-018-variant-06",
+        "title": "暴风雪缩圈"
+      },
+      {
+        "id": "gameplay-018-variant-07",
+        "title": "空间崩塌"
+      },
+      {
+        "id": "gameplay-018-variant-08",
+        "title": "梦境破碎"
+      },
+      {
+        "id": "gameplay-018-variant-09",
+        "title": "炮火封锁"
+      },
+      {
+        "id": "gameplay-018-variant-10",
+        "title": "辐射扩散"
+      },
+      {
+        "id": "gameplay-018-merged-gameplay-020",
+        "title": "移动安全区"
+      },
+      {
+        "id": "gameplay-020-variant-01",
+        "title": "车队安全区"
+      },
+      {
+        "id": "gameplay-020-variant-02",
+        "title": "列车安全区"
+      },
+      {
+        "id": "gameplay-020-variant-03",
+        "title": "结界安全区"
+      },
+      {
+        "id": "gameplay-020-variant-04",
+        "title": "巨兽背部安全区"
+      },
+      {
+        "id": "gameplay-020-variant-05",
+        "title": "光源安全区"
+      },
+      {
+        "id": "gameplay-020-variant-06",
+        "title": "飞船投影区"
+      },
+      {
+        "id": "gameplay-020-variant-07",
+        "title": "护送目标安全区"
+      },
+      {
+        "id": "gameplay-020-variant-08",
+        "title": "随机跳跃安全区"
+      }
+    ]
+  },
+  {
+    "category": "生存挑战",
+    "categoryId": "gameplay-group-04",
+    "id": "gameplay-019",
+    "indexVersion": 1,
+    "presentationModes": [
+      "main-map"
+    ],
+    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourcePath": "src/game/data/gameplay_outline/catalog.json",
+    "summary": "模拟竞技比赛的轮次感，但对手是NPC或规则。",
+    "summarySource": "source-json.summary",
+    "title": "阶段淘汰挑战",
+    "type": "gameplay",
+    "variants": [
+      {
+        "id": "gameplay-019-variant-01",
+        "title": "生存达标"
+      },
+      {
+        "id": "gameplay-019-variant-02",
+        "title": "击杀达标"
+      },
+      {
+        "id": "gameplay-019-variant-03",
+        "title": "资源达标"
+      },
+      {
+        "id": "gameplay-019-variant-04",
+        "title": "占点达标"
+      },
+      {
+        "id": "gameplay-019-variant-05",
+        "title": "竞速达标"
+      },
+      {
+        "id": "gameplay-019-variant-06",
+        "title": "解谜达标"
+      },
+      {
+        "id": "gameplay-019-variant-07",
+        "title": "隐藏目标达标"
+      },
+      {
+        "id": "gameplay-019-variant-08",
+        "title": "积分晋级"
+      },
+      {
+        "id": "gameplay-019-variant-09",
+        "title": "生命次数晋级"
+      },
+      {
+        "id": "gameplay-019-variant-10",
+        "title": "最终Boss晋级"
+      }
+    ]
+  },
+  {
+    "category": "生存挑战",
+    "categoryId": "gameplay-group-04",
+    "id": "gameplay-021",
+    "indexVersion": 1,
+    "presentationModes": [
+      "main-map"
+    ],
+    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourcePath": "src/game/data/gameplay_outline/catalog.json",
+    "summary": "敌人按照波次持续进攻。",
+    "summarySource": "source-json.summary",
+    "title": "波次尸潮",
+    "type": "gameplay",
+    "variants": [
+      {
+        "id": "gameplay-021-variant-01",
+        "title": "固定波次"
+      },
+      {
+        "id": "gameplay-021-variant-02",
+        "title": "无尽波次"
+      },
+      {
+        "id": "gameplay-021-variant-03",
+        "title": "Boss间隔波"
+      },
+      {
+        "id": "gameplay-021-variant-04",
+        "title": "精英突袭波"
+      },
+      {
+        "id": "gameplay-021-variant-05",
+        "title": "高速敌群波"
+      },
+      {
+        "id": "gameplay-021-variant-06",
+        "title": "重装敌群波"
+      },
+      {
+        "id": "gameplay-021-variant-07",
+        "title": "远程敌群波"
+      },
+      {
+        "id": "gameplay-021-variant-08",
+        "title": "多入口尸潮"
+      },
+      {
+        "id": "gameplay-021-variant-09",
+        "title": "随机变异波"
+      },
+      {
+        "id": "gameplay-021-variant-10",
+        "title": "资源波次"
+      }
+    ]
+  },
+  {
+    "category": "生存挑战",
+    "categoryId": "gameplay-group-04",
+    "id": "gameplay-022",
+    "indexVersion": 1,
+    "presentationModes": [
+      "main-map",
+      "light-extension"
+    ],
+    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourcePath": "src/game/data/gameplay_outline/catalog.json",
+    "summary": "感染作为持续累积的特殊资源。",
+    "summarySource": "source-json.summary",
+    "title": "感染度管理",
+    "type": "gameplay",
+    "variants": [
+      {
+        "id": "gameplay-022-variant-01",
+        "title": "感染倒计时"
+      },
+      {
+        "id": "gameplay-022-variant-02",
+        "title": "药物压制"
+      },
+      {
+        "id": "gameplay-022-variant-03",
+        "title": "区域感染"
+      },
+      {
+        "id": "gameplay-022-variant-04",
+        "title": "攻击感染"
+      },
+      {
+        "id": "gameplay-022-variant-05",
+        "title": "空气传播"
+      },
+      {
+        "id": "gameplay-022-variant-06",
+        "title": "伤口感染"
+      },
+      {
+        "id": "gameplay-022-variant-07",
+        "title": "能力换感染"
+      },
+      {
+        "id": "gameplay-022-variant-08",
+        "title": "变异增益"
+      },
+      {
+        "id": "gameplay-022-variant-09",
+        "title": "不同感染类型"
+      },
+      {
+        "id": "gameplay-022-variant-10",
+        "title": "可逆感染路线"
+      },
+      {
+        "id": "gameplay-022-variant-11",
+        "title": "不可逆感染路线"
+      },
+      {
+        "id": "gameplay-022-variant-12",
+        "title": "感染结局分支"
+      }
+    ]
+  },
+  {
+    "category": "生存挑战",
+    "categoryId": "gameplay-group-04",
+    "id": "gameplay-023",
+    "indexVersion": 1,
+    "presentationModes": [
+      "main-map",
+      "cg-friendly"
+    ],
+    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourcePath": "src/game/data/gameplay_outline/catalog.json",
+    "summary": "重点不是消灭敌人，而是调查和阻止传播。",
+    "summarySource": "source-json.summary",
+    "title": "疫情防控",
+    "type": "gameplay",
+    "variants": [
+      {
+        "id": "gameplay-023-variant-01",
+        "title": "样本采集"
+      },
+      {
+        "id": "gameplay-023-variant-02",
+        "title": "病例追踪"
+      },
+      {
+        "id": "gameplay-023-variant-03",
+        "title": "传播链调查"
+      },
+      {
+        "id": "gameplay-023-variant-04",
+        "title": "区域封锁"
+      },
+      {
+        "id": "gameplay-023-variant-05",
+        "title": "人员筛查"
+      },
+      {
+        "id": "gameplay-023-variant-06",
+        "title": "隔离管理"
+      },
+      {
+        "id": "gameplay-023-variant-07",
+        "title": "疫苗制作"
+      },
+      {
+        "id": "gameplay-023-variant-08",
+        "title": "药物配送"
+      },
+      {
+        "id": "gameplay-023-variant-09",
+        "title": "巢穴清除"
+      },
+      {
+        "id": "gameplay-023-variant-10",
+        "title": "多结局控制"
+      }
+    ]
+  },
+  {
+    "category": "生存挑战",
+    "categoryId": "gameplay-group-04",
+    "id": "gameplay-079",
+    "indexVersion": 1,
+    "presentationModes": [
+      "main-map",
+      "light-extension",
+      "cg-friendly"
+    ],
+    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourcePath": "src/game/data/gameplay_outline/catalog.json",
+    "summary": "在荒野、海洋、沙漠或极地远征中管理生存需求、环境威胁、露营休息和持续补给。",
+    "summarySource": "source-json.summary",
+    "title": "荒野生存管理",
+    "type": "gameplay",
+    "variants": [
+      {
+        "id": "gameplay-079-variant-01",
+        "title": "饥饿"
+      },
+      {
+        "id": "gameplay-079-variant-02",
+        "title": "口渴"
+      },
+      {
+        "id": "gameplay-079-variant-03",
+        "title": "疲劳"
+      },
+      {
+        "id": "gameplay-079-variant-04",
+        "title": "体温"
+      },
+      {
+        "id": "gameplay-079-variant-05",
+        "title": "氧气"
+      },
+      {
+        "id": "gameplay-079-variant-06",
+        "title": "辐射"
+      },
+      {
+        "id": "gameplay-079-variant-07",
+        "title": "伤势"
+      },
+      {
+        "id": "gameplay-079-variant-08",
+        "title": "疾病"
+      },
+      {
+        "id": "gameplay-079-variant-09",
+        "title": "精神状态"
+      },
+      {
+        "id": "gameplay-079-variant-10",
+        "title": "负重"
+      },
+      {
+        "id": "gameplay-079-merged-gameplay-080",
+        "title": "荒野露营与远征"
+      },
+      {
+        "id": "gameplay-080-variant-01",
+        "title": "营地搭建"
+      },
+      {
+        "id": "gameplay-080-variant-02",
+        "title": "生火取暖"
+      },
+      {
+        "id": "gameplay-080-variant-03",
+        "title": "食物烹饪"
+      },
+      {
+        "id": "gameplay-080-variant-04",
+        "title": "装备维修"
+      },
+      {
+        "id": "gameplay-080-variant-05",
+        "title": "守夜安排"
+      },
+      {
+        "id": "gameplay-080-variant-06",
+        "title": "天气准备"
+      },
+      {
+        "id": "gameplay-080-variant-07",
+        "title": "路线规划"
+      },
+      {
+        "id": "gameplay-080-variant-08",
+        "title": "营地袭击"
+      },
+      {
+        "id": "gameplay-080-variant-09",
+        "title": "角色交流"
+      },
+      {
+        "id": "gameplay-080-variant-10",
+        "title": "紧急撤营"
+      },
+      {
+        "id": "gameplay-079-merged-gameplay-081",
+        "title": "海洋、沙漠与极地生存"
+      },
+      {
+        "id": "gameplay-081-variant-01",
+        "title": "海上漂流"
+      },
+      {
+        "id": "gameplay-081-variant-02",
+        "title": "岛屿探索"
+      },
+      {
+        "id": "gameplay-081-variant-03",
+        "title": "沙漠穿越"
+      },
+      {
+        "id": "gameplay-081-variant-04",
+        "title": "沙尘暴躲避"
+      },
+      {
+        "id": "gameplay-081-variant-05",
+        "title": "雪原远征"
+      },
+      {
+        "id": "gameplay-081-variant-06",
+        "title": "冰层危险"
+      },
+      {
+        "id": "gameplay-081-variant-07",
+        "title": "洞穴缺氧"
+      },
+      {
+        "id": "gameplay-081-variant-08",
+        "title": "太空失压"
+      },
+      {
+        "id": "gameplay-081-variant-09",
+        "title": "深海压力"
+      },
+      {
+        "id": "gameplay-081-variant-10",
+        "title": "异星环境"
+      }
+    ]
+  }
+]

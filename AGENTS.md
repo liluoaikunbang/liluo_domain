@@ -27,6 +27,13 @@
 - 存档迁移：`liluo-save-data-migration`
 - 世界观连续性：`liluo-world-bible-continuity-audit`
 - 玩法循环：`liluo-gameplay-loop-audit`
+- 项目知识索引：`liluo-project-index-maintenance`
+
+## 项目知识索引
+
+跨文件、跨世界、跨系统或需要大量资料定位的任务，优先读取 `project-index/INDEX.md`，选择最小必要领域索引，再打开相关原始权威文件。索引只用于定位、筛选、关系导航和减少重复读取；重要事实判断或正式修改前必须核验原文件。
+
+索引缺失、`partial`、`error` 或 `stale` 时，使用项目知识索引维护 Skill 或 `npm run project:index:check` / `npm run project:index:changed` 检查更新，不得仅凭过期索引修改正式内容。已有索引可完成定位时不默认全仓库扫描。修改被索引的数据、文档、代码注册表或素材后，按范围增量更新并运行 `npm run project:index:validate`。
 
 通用规划、TDD、调试、前端、Vue/Vite、审查和简化继续使用 `.agents/skills/` 下现有通用 Skills；项目 Skill 不取代它们。
 

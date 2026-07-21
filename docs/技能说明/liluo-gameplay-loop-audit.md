@@ -1,5 +1,9 @@
 # liluo-gameplay-loop-audit
 
+## 项目索引协作
+
+复杂审查先查询 gameplay/story/code 索引，核验玩法总表与实现源码；被索引来源变化后增量刷新。
+
 ## 用途与边界
 
 把玩法灵感审查为适合当前 2D 像素 PVE RPG 的可开发循环。默认不实现代码。

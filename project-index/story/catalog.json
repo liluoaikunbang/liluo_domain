@@ -1,0 +1,25 @@
+{
+  "entryCount": 153,
+  "rootKeys": [
+    "world-1-glimmering-glance",
+    "world-2-silent-earth-dirge",
+    "world-3-mortal-dao",
+    "world-4-monica-empire",
+    "world-5-star-weaving-dream",
+    "world-6-cursebound-echoes"
+  ],
+  "shards": [
+    {
+      "count": 153,
+      "file": "story/nodes/nodes-001.json"
+    }
+  ],
+  "worlds": [
+    "0-munika",
+    "1-modern",
+    "2-apocalypse",
+    "3-ancient",
+    "4-fantasy",
+    "5-science"
+  ]
+}

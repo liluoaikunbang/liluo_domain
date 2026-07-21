@@ -1,0 +1,251 @@
+[
+  {
+    "category": "地图探索",
+    "categoryId": "gameplay-group-01",
+    "id": "gameplay-001",
+    "indexVersion": 1,
+    "presentationModes": [
+      "main-map"
+    ],
+    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourcePath": "src/game/data/gameplay_outline/catalog.json",
+    "summary": "玩家进入由房间、走廊、机关和出口组成的区域，逐步完成探索。",
+    "summarySource": "source-json.summary",
+    "title": "房间式地牢探索",
+    "type": "gameplay",
+    "variants": [
+      {
+        "id": "gameplay-001-variant-01",
+        "title": "清场房"
+      },
+      {
+        "id": "gameplay-001-variant-02",
+        "title": "封锁战斗房"
+      },
+      {
+        "id": "gameplay-001-variant-03",
+        "title": "限时清场房"
+      },
+      {
+        "id": "gameplay-001-variant-04",
+        "title": "精英房"
+      },
+      {
+        "id": "gameplay-001-variant-05",
+        "title": "挑战房"
+      },
+      {
+        "id": "gameplay-001-variant-06",
+        "title": "宝藏房"
+      },
+      {
+        "id": "gameplay-001-variant-07",
+        "title": "陷阱房"
+      },
+      {
+        "id": "gameplay-001-variant-08",
+        "title": "谜题房"
+      },
+      {
+        "id": "gameplay-001-variant-09",
+        "title": "商店房"
+      },
+      {
+        "id": "gameplay-001-variant-10",
+        "title": "休息房"
+      },
+      {
+        "id": "gameplay-001-variant-11",
+        "title": "随机事件房"
+      },
+      {
+        "id": "gameplay-001-variant-12",
+        "title": "Boss房"
+      },
+      {
+        "id": "gameplay-001-variant-13",
+        "title": "隐藏房"
+      },
+      {
+        "id": "gameplay-001-variant-14",
+        "title": "追逐房"
+      },
+      {
+        "id": "gameplay-001-variant-15",
+        "title": "生存房"
+      }
+    ]
+  },
+  {
+    "category": "地图探索",
+    "categoryId": "gameplay-group-01",
+    "id": "gameplay-002",
+    "indexVersion": 1,
+    "presentationModes": [
+      "main-map"
+    ],
+    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourcePath": "src/game/data/gameplay_outline/catalog.json",
+    "summary": "地图不是单个房间，而是较大的连续迷宫。",
+    "summarySource": "source-json.summary",
+    "title": "连续迷宫探索",
+    "type": "gameplay",
+    "variants": [
+      {
+        "id": "gameplay-002-variant-01",
+        "title": "固定迷宫"
+      },
+      {
+        "id": "gameplay-002-variant-02",
+        "title": "随机迷宫"
+      },
+      {
+        "id": "gameplay-002-variant-03",
+        "title": "动态迷宫"
+      },
+      {
+        "id": "gameplay-002-variant-04",
+        "title": "循环迷宫"
+      },
+      {
+        "id": "gameplay-002-variant-05",
+        "title": "多层迷宫"
+      },
+      {
+        "id": "gameplay-002-variant-06",
+        "title": "垂直魔塔"
+      },
+      {
+        "id": "gameplay-002-variant-07",
+        "title": "开放迷宫"
+      },
+      {
+        "id": "gameplay-002-variant-08",
+        "title": "地图缺失迷宫"
+      },
+      {
+        "id": "gameplay-002-variant-09",
+        "title": "黑暗迷宫"
+      },
+      {
+        "id": "gameplay-002-variant-10",
+        "title": "追猎迷宫"
+      },
+      {
+        "id": "gameplay-002-variant-11",
+        "title": "阵营迷宫"
+      },
+      {
+        "id": "gameplay-002-variant-12",
+        "title": "崩塌迷宫"
+      }
+    ]
+  },
+  {
+    "category": "地图探索",
+    "categoryId": "gameplay-group-01",
+    "id": "gameplay-003",
+    "indexVersion": 1,
+    "presentationModes": [
+      "main-map"
+    ],
+    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourcePath": "src/game/data/gameplay_outline/catalog.json",
+    "summary": "以村庄、城市、森林、战场、废墟或大型设施为完整区域。",
+    "summarySource": "source-json.summary",
+    "title": "开放区域冒险",
+    "type": "gameplay",
+    "variants": [
+      {
+        "id": "gameplay-003-variant-01",
+        "title": "箱庭区域"
+      },
+      {
+        "id": "gameplay-003-variant-02",
+        "title": "区域解锁"
+      },
+      {
+        "id": "gameplay-003-variant-03",
+        "title": "据点辐射"
+      },
+      {
+        "id": "gameplay-003-variant-04",
+        "title": "动态事件"
+      },
+      {
+        "id": "gameplay-003-variant-05",
+        "title": "区域威胁等级"
+      },
+      {
+        "id": "gameplay-003-variant-06",
+        "title": "生态地图"
+      },
+      {
+        "id": "gameplay-003-variant-07",
+        "title": "昼夜地图"
+      },
+      {
+        "id": "gameplay-003-variant-08",
+        "title": "天气地图"
+      },
+      {
+        "id": "gameplay-003-variant-09",
+        "title": "区域净化"
+      },
+      {
+        "id": "gameplay-003-variant-10",
+        "title": "区域重建"
+      }
+    ]
+  },
+  {
+    "category": "地图探索",
+    "categoryId": "gameplay-group-01",
+    "id": "gameplay-004",
+    "indexVersion": 1,
+    "presentationModes": [
+      "main-map",
+      "special-map"
+    ],
+    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourcePath": "src/game/data/gameplay_outline/catalog.json",
+    "summary": "不一定使用传统横版，也可以在俯视地图中实现“能力解锁道路”。",
+    "summarySource": "source-json.summary",
+    "title": "能力门控探索",
+    "type": "gameplay",
+    "variants": [
+      {
+        "id": "gameplay-004-variant-01",
+        "title": "钥匙能力门"
+      },
+      {
+        "id": "gameplay-004-variant-02",
+        "title": "环境通行能力"
+      },
+      {
+        "id": "gameplay-004-variant-03",
+        "title": "战斗技能开路"
+      },
+      {
+        "id": "gameplay-004-variant-04",
+        "title": "身份权限开路"
+      },
+      {
+        "id": "gameplay-004-variant-05",
+        "title": "时间状态开路"
+      },
+      {
+        "id": "gameplay-004-variant-06",
+        "title": "角色协作开路"
+      },
+      {
+        "id": "gameplay-004-variant-07",
+        "title": "世界规则开路"
+      },
+      {
+        "id": "gameplay-004-variant-08",
+        "title": "捷径回环"
+      }
+    ]
+  }
+]

@@ -1,0 +1,175 @@
+[
+  {
+    "category": "探索收藏",
+    "categoryId": "gameplay-group-13",
+    "id": "gameplay-110",
+    "indexVersion": 1,
+    "presentationModes": [
+      "light-extension"
+    ],
+    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourcePath": "src/game/data/gameplay_outline/catalog.json",
+    "summary": "通过探索积累整个璃落宇宙的资料。",
+    "summarySource": "source-json.summary",
+    "title": "世界图鉴",
+    "type": "gameplay",
+    "variants": [
+      {
+        "id": "gameplay-110-variant-01",
+        "title": "怪物图鉴"
+      },
+      {
+        "id": "gameplay-110-variant-02",
+        "title": "人物图鉴"
+      },
+      {
+        "id": "gameplay-110-variant-03",
+        "title": "地区图鉴"
+      },
+      {
+        "id": "gameplay-110-variant-04",
+        "title": "装备图鉴"
+      },
+      {
+        "id": "gameplay-110-variant-05",
+        "title": "遗物图鉴"
+      },
+      {
+        "id": "gameplay-110-variant-06",
+        "title": "植物图鉴"
+      },
+      {
+        "id": "gameplay-110-variant-07",
+        "title": "料理图鉴"
+      },
+      {
+        "id": "gameplay-110-variant-08",
+        "title": "异常图鉴"
+      },
+      {
+        "id": "gameplay-110-variant-09",
+        "title": "敌人行为图鉴"
+      },
+      {
+        "id": "gameplay-110-variant-10",
+        "title": "多世界关联图鉴"
+      }
+    ]
+  },
+  {
+    "category": "探索收藏",
+    "categoryId": "gameplay-group-13",
+    "id": "gameplay-111",
+    "indexVersion": 1,
+    "presentationModes": [
+      "main-map",
+      "cg-friendly"
+    ],
+    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourcePath": "src/game/data/gameplay_outline/catalog.json",
+    "summary": "通过非战斗方式收集世界信息。",
+    "summarySource": "source-json.summary",
+    "title": "现场记录",
+    "type": "gameplay",
+    "variants": [
+      {
+        "id": "gameplay-111-variant-01",
+        "title": "怪物摄影"
+      },
+      {
+        "id": "gameplay-111-variant-02",
+        "title": "地点摄影"
+      },
+      {
+        "id": "gameplay-111-variant-03",
+        "title": "异常记录"
+      },
+      {
+        "id": "gameplay-111-variant-04",
+        "title": "扫描分析"
+      },
+      {
+        "id": "gameplay-111-variant-05",
+        "title": "声纹记录"
+      },
+      {
+        "id": "gameplay-111-variant-06",
+        "title": "生态观察"
+      },
+      {
+        "id": "gameplay-111-variant-07",
+        "title": "证据摄影"
+      },
+      {
+        "id": "gameplay-111-variant-08",
+        "title": "隐蔽摄影"
+      },
+      {
+        "id": "gameplay-111-variant-09",
+        "title": "CG影录解锁"
+      },
+      {
+        "id": "gameplay-111-variant-10",
+        "title": "记录评价"
+      }
+    ]
+  },
+  {
+    "category": "探索收藏",
+    "categoryId": "gameplay-group-13",
+    "id": "gameplay-112",
+    "indexVersion": 1,
+    "presentationModes": [
+      "main-map",
+      "light-extension"
+    ],
+    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourcePath": "src/game/data/gameplay_outline/catalog.json",
+    "summary": "通过探索和任务获得系列化收藏品。",
+    "summarySource": "source-json.summary",
+    "title": "系列收藏",
+    "type": "gameplay",
+    "variants": [
+      {
+        "id": "gameplay-112-variant-01",
+        "title": "地区宝物"
+      },
+      {
+        "id": "gameplay-112-variant-02",
+        "title": "隐藏碎片"
+      },
+      {
+        "id": "gameplay-112-variant-03",
+        "title": "套装收藏"
+      },
+      {
+        "id": "gameplay-112-variant-04",
+        "title": "随机掉落收藏"
+      },
+      {
+        "id": "gameplay-112-variant-05",
+        "title": "交换收藏"
+      },
+      {
+        "id": "gameplay-112-variant-06",
+        "title": "谜题收藏"
+      },
+      {
+        "id": "gameplay-112-variant-07",
+        "title": "高难挑战收藏"
+      },
+      {
+        "id": "gameplay-112-variant-08",
+        "title": "多周目收藏"
+      },
+      {
+        "id": "gameplay-112-variant-09",
+        "title": "展示室"
+      },
+      {
+        "id": "gameplay-112-variant-10",
+        "title": "收藏剧情"
+      }
+    ]
+  }
+]

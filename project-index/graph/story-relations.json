@@ -1,0 +1,737 @@
+[
+  {
+    "from": "world-1-glimmering-glance-anomaly-disaster-response-organization",
+    "relationType": "parent",
+    "to": "world-1-glimmering-glance-urban-rumors"
+  },
+  {
+    "from": "world-1-glimmering-glance-black-oak-night-hunt",
+    "relationType": "parent",
+    "to": "world-1-glimmering-glance-prison-storm"
+  },
+  {
+    "from": "world-1-glimmering-glance-black-rose-sanatorium",
+    "relationType": "parent",
+    "to": "world-1-glimmering-glance-fog-capital-strangeness"
+  },
+  {
+    "from": "world-1-glimmering-glance-campus-arrival",
+    "relationType": "parent",
+    "to": "world-1-glimmering-glance-hospital-awakening"
+  },
+  {
+    "from": "world-1-glimmering-glance-cement-shoes",
+    "relationType": "parent",
+    "to": "world-1-glimmering-glance-gray-alley-adventure"
+  },
+  {
+    "from": "world-1-glimmering-glance-club",
+    "relationType": "parent",
+    "to": "world-1-glimmering-glance-campus-arrival"
+  },
+  {
+    "from": "world-1-glimmering-glance-cruise",
+    "relationType": "parent",
+    "to": "world-1-glimmering-glance-dance-classroom"
+  },
+  {
+    "from": "world-1-glimmering-glance-dance-classroom",
+    "relationType": "parent",
+    "to": "world-1-glimmering-glance-club"
+  },
+  {
+    "from": "world-1-glimmering-glance-epilogue",
+    "relationType": "parent",
+    "to": "world-1-glimmering-glance-eternal-restraint-maze"
+  },
+  {
+    "from": "world-1-glimmering-glance-eternal-restraint-maze",
+    "relationType": "parent",
+    "to": "world-1-glimmering-glance-silent-correction-center"
+  },
+  {
+    "from": "world-1-glimmering-glance-fantasy-world-adventure",
+    "relationType": "parent",
+    "to": "world-1-glimmering-glance-luxury-theater"
+  },
+  {
+    "from": "world-1-glimmering-glance-flexibility",
+    "relationType": "parent",
+    "to": "world-1-glimmering-glance-club"
+  },
+  {
+    "from": "world-1-glimmering-glance-fog-capital-strangeness",
+    "relationType": "parent",
+    "to": "world-1-glimmering-glance-red-white-marriage-contract"
+  },
+  {
+    "from": "world-1-glimmering-glance-fog-sea-lone-island-expedition",
+    "relationType": "parent",
+    "to": "world-1-glimmering-glance-world-expedition-team"
+  },
+  {
+    "from": "world-1-glimmering-glance-gray-alley-adventure",
+    "relationType": "parent",
+    "to": "world-1-glimmering-glance-sinkhole-rainforest-expedition"
+  },
+  {
+    "from": "world-1-glimmering-glance-grudge-ancient-tree",
+    "relationType": "parent",
+    "to": "world-1-glimmering-glance-old-dormitory"
+  },
+  {
+    "from": "world-1-glimmering-glance-hospital-awakening",
+    "relationType": "parent",
+    "to": "world-1-glimmering-glance-jingsuo-event"
+  },
+  {
+    "from": "world-1-glimmering-glance-hot-spring",
+    "relationType": "parent",
+    "to": "world-1-glimmering-glance-cruise"
+  },
+  {
+    "from": "world-1-glimmering-glance-hotel-fright",
+    "relationType": "parent",
+    "to": "world-1-glimmering-glance-maid-hotel"
+  },
+  {
+    "from": "world-1-glimmering-glance-huaiwan-village",
+    "relationType": "parent",
+    "to": "world-1-glimmering-glance-trafficker"
+  },
+  {
+    "from": "world-1-glimmering-glance-inflatable-castle",
+    "relationType": "parent",
+    "to": "world-1-glimmering-glance-maid-hotel"
+  },
+  {
+    "from": "world-1-glimmering-glance-jingjiang-geomancy",
+    "relationType": "parent",
+    "to": "world-1-glimmering-glance-huaiwan-village"
+  },
+  {
+    "from": "world-1-glimmering-glance-jingsuo-event",
+    "relationType": "parent",
+    "to": "world-1-glimmering-glance"
+  },
+  {
+    "from": "world-1-glimmering-glance-liminal-space",
+    "relationType": "parent",
+    "to": "world-1-glimmering-glance-eternal-restraint-maze"
+  },
+  {
+    "from": "world-1-glimmering-glance-little-maid-team",
+    "relationType": "parent",
+    "to": "world-1-glimmering-glance-return-to-jingjiang"
+  },
+  {
+    "from": "world-1-glimmering-glance-little-prisoner",
+    "relationType": "parent",
+    "to": "world-1-glimmering-glance-anomaly-disaster-response-organization"
+  },
+  {
+    "from": "world-1-glimmering-glance-luxury-theater",
+    "relationType": "parent",
+    "to": "world-1-glimmering-glance-little-maid-team"
+  },
+  {
+    "from": "world-1-glimmering-glance-maid-hotel",
+    "relationType": "parent",
+    "to": "world-1-glimmering-glance-little-prisoner"
+  },
+  {
+    "from": "world-1-glimmering-glance-maid-massage-shop",
+    "relationType": "parent",
+    "to": "world-1-glimmering-glance-hotel-fright"
+  },
+  {
+    "from": "world-1-glimmering-glance-midnight-city-exploration",
+    "relationType": "parent",
+    "to": "world-1-glimmering-glance-urban-rumors"
+  },
+  {
+    "from": "world-1-glimmering-glance-mirror-person",
+    "relationType": "parent",
+    "to": "world-1-glimmering-glance-stage-performance"
+  },
+  {
+    "from": "world-1-glimmering-glance-missing",
+    "relationType": "parent",
+    "to": "world-1-glimmering-glance-cement-shoes"
+  },
+  {
+    "from": "world-1-glimmering-glance-model",
+    "relationType": "parent",
+    "to": "world-1-glimmering-glance-little-prisoner"
+  },
+  {
+    "from": "world-1-glimmering-glance-movie-bound-stand-in",
+    "relationType": "parent",
+    "to": "world-1-glimmering-glance-maid-hotel"
+  },
+  {
+    "from": "world-1-glimmering-glance-night-school-ghost-stories",
+    "relationType": "parent",
+    "to": "world-1-glimmering-glance-grudge-ancient-tree"
+  },
+  {
+    "from": "world-1-glimmering-glance-old-capital-echo",
+    "relationType": "parent",
+    "to": "world-1-glimmering-glance-black-oak-night-hunt"
+  },
+  {
+    "from": "world-1-glimmering-glance-old-case",
+    "relationType": "parent",
+    "to": "world-1-glimmering-glance-sensory-trial"
+  },
+  {
+    "from": "world-1-glimmering-glance-old-dormitory",
+    "relationType": "parent",
+    "to": "world-1-glimmering-glance-rope-spirit-game"
+  },
+  {
+    "from": "world-1-glimmering-glance-prison-storm",
+    "relationType": "parent",
+    "to": "world-1-glimmering-glance-rust-salt"
+  },
+  {
+    "from": "world-1-glimmering-glance-rainy-ancient-city",
+    "relationType": "parent",
+    "to": "world-1-glimmering-glance-old-capital-echo"
+  },
+  {
+    "from": "world-1-glimmering-glance-reality-show",
+    "relationType": "parent",
+    "to": "world-1-glimmering-glance-variety-show-fright"
+  },
+  {
+    "from": "world-1-glimmering-glance-red-white-marriage-contract",
+    "relationType": "parent",
+    "to": "world-1-glimmering-glance-rainy-ancient-city"
+  },
+  {
+    "from": "world-1-glimmering-glance-return-to-jingjiang",
+    "relationType": "parent",
+    "to": "world-1-glimmering-glance-taisho-romance"
+  },
+  {
+    "from": "world-1-glimmering-glance-rope-spirit-game",
+    "relationType": "parent",
+    "to": "world-1-glimmering-glance-stage-performance"
+  },
+  {
+    "from": "world-1-glimmering-glance-rust-salt",
+    "relationType": "parent",
+    "to": "world-1-glimmering-glance-missing"
+  },
+  {
+    "from": "world-1-glimmering-glance-sensory-trial",
+    "relationType": "parent",
+    "to": "world-1-glimmering-glance-old-dormitory"
+  },
+  {
+    "from": "world-1-glimmering-glance-silent-correction-center",
+    "relationType": "parent",
+    "to": "world-1-glimmering-glance-luxury-theater"
+  },
+  {
+    "from": "world-1-glimmering-glance-silent-witness",
+    "relationType": "parent",
+    "to": "world-1-glimmering-glance-rust-salt"
+  },
+  {
+    "from": "world-1-glimmering-glance-sinkhole-rainforest-expedition",
+    "relationType": "parent",
+    "to": "world-1-glimmering-glance-fog-sea-lone-island-expedition"
+  },
+  {
+    "from": "world-1-glimmering-glance-snow-train",
+    "relationType": "parent",
+    "to": "world-1-glimmering-glance-huaiwan-village"
+  },
+  {
+    "from": "world-1-glimmering-glance-stage-performance",
+    "relationType": "parent",
+    "to": "world-1-glimmering-glance-dance-classroom"
+  },
+  {
+    "from": "world-1-glimmering-glance-strange-object-society-archive",
+    "relationType": "parent",
+    "to": "world-1-glimmering-glance-anomaly-disaster-response-organization"
+  },
+  {
+    "from": "world-1-glimmering-glance-taisho-romance",
+    "relationType": "parent",
+    "to": "world-1-glimmering-glance-black-rose-sanatorium"
+  },
+  {
+    "from": "world-1-glimmering-glance-trafficker",
+    "relationType": "parent",
+    "to": "world-1-glimmering-glance-hotel-fright"
+  },
+  {
+    "from": "world-1-glimmering-glance-ultimate-restraint",
+    "relationType": "parent",
+    "to": "world-1-glimmering-glance-epilogue"
+  },
+  {
+    "from": "world-1-glimmering-glance-urban-rumors",
+    "relationType": "parent",
+    "to": "world-1-glimmering-glance-grudge-ancient-tree"
+  },
+  {
+    "from": "world-1-glimmering-glance-variety-show-fright",
+    "relationType": "parent",
+    "to": "world-1-glimmering-glance-jingjiang-geomancy"
+  },
+  {
+    "from": "world-1-glimmering-glance-world-expedition-team",
+    "relationType": "parent",
+    "to": "world-1-glimmering-glance-variety-show-fright"
+  },
+  {
+    "from": "world-2-silent-earth-dirge-apocalypse-holy-judgment",
+    "relationType": "parent",
+    "to": "world-2-silent-earth-dirge-wasteland-court"
+  },
+  {
+    "from": "world-2-silent-earth-dirge-ark-ghost-cage",
+    "relationType": "parent",
+    "to": "world-2-silent-earth-dirge-mechanical-afterglow"
+  },
+  {
+    "from": "world-2-silent-earth-dirge-beast-treading-land",
+    "relationType": "parent",
+    "to": "world-2-silent-earth-dirge-ecology-devouring-city"
+  },
+  {
+    "from": "world-2-silent-earth-dirge-deep-sea-drifting-land",
+    "relationType": "parent",
+    "to": "world-2-silent-earth-dirge-insect-hive-border"
+  },
+  {
+    "from": "world-2-silent-earth-dirge-disaster-anomaly",
+    "relationType": "parent",
+    "to": "world-2-silent-earth-dirge-fog-city"
+  },
+  {
+    "from": "world-2-silent-earth-dirge-dream-city-slumber",
+    "relationType": "parent",
+    "to": "world-2-silent-earth-dirge-apocalypse-holy-judgment"
+  },
+  {
+    "from": "world-2-silent-earth-dirge-ecology-devouring-city",
+    "relationType": "parent",
+    "to": "world-2-silent-earth-dirge-plague-ruined-city"
+  },
+  {
+    "from": "world-2-silent-earth-dirge-eerie-apocalypse",
+    "relationType": "parent",
+    "to": "world-2-silent-earth-dirge-omega"
+  },
+  {
+    "from": "world-2-silent-earth-dirge-eternal-winter-white-realm",
+    "relationType": "parent",
+    "to": "world-2-silent-earth-dirge-deep-sea-drifting-land"
+  },
+  {
+    "from": "world-2-silent-earth-dirge-fog-city",
+    "relationType": "parent",
+    "to": "world-2-silent-earth-dirge-eerie-apocalypse"
+  },
+  {
+    "from": "world-2-silent-earth-dirge-forgotten-river-gray-world",
+    "relationType": "parent",
+    "to": "world-2-silent-earth-dirge-looping-final-day"
+  },
+  {
+    "from": "world-2-silent-earth-dirge-insect-hive-border",
+    "relationType": "parent",
+    "to": "world-2-silent-earth-dirge-beast-treading-land"
+  },
+  {
+    "from": "world-2-silent-earth-dirge-lone-sand-sea",
+    "relationType": "parent",
+    "to": "world-2-silent-earth-dirge-eternal-winter-white-realm"
+  },
+  {
+    "from": "world-2-silent-earth-dirge-looping-final-day",
+    "relationType": "parent",
+    "to": "world-2-silent-earth-dirge-dream-city-slumber"
+  },
+  {
+    "from": "world-2-silent-earth-dirge-mechanical-afterglow",
+    "relationType": "parent",
+    "to": "world-2-silent-earth-dirge-lone-sand-sea"
+  },
+  {
+    "from": "world-2-silent-earth-dirge-omega",
+    "relationType": "parent",
+    "to": "world-2-silent-earth-dirge-red-line"
+  },
+  {
+    "from": "world-2-silent-earth-dirge-plague-ruined-city",
+    "relationType": "parent",
+    "to": "world-2-silent-earth-dirge-disaster-anomaly"
+  },
+  {
+    "from": "world-2-silent-earth-dirge-red-line",
+    "relationType": "parent",
+    "to": "world-2-silent-earth-dirge-zombie-apocalypse"
+  },
+  {
+    "from": "world-2-silent-earth-dirge-rift-disaster",
+    "relationType": "parent",
+    "to": "world-2-silent-earth-dirge-forgotten-river-gray-world"
+  },
+  {
+    "from": "world-2-silent-earth-dirge-wasteland-court",
+    "relationType": "parent",
+    "to": "world-2-silent-earth-dirge-ark-ghost-cage"
+  },
+  {
+    "from": "world-2-silent-earth-dirge-zombie-apocalypse",
+    "relationType": "parent",
+    "to": "world-2-silent-earth-dirge"
+  },
+  {
+    "from": "world-3-mortal-dao-chaotic-world-ranger",
+    "relationType": "parent",
+    "to": "world-3-mortal-dao-frontier-marriage"
+  },
+  {
+    "from": "world-3-mortal-dao-commoner-princess",
+    "relationType": "parent",
+    "to": "world-3-mortal-dao-royal-garden-beast-hunt"
+  },
+  {
+    "from": "world-3-mortal-dao-counterattack",
+    "relationType": "parent",
+    "to": "world-3-mortal-dao-start"
+  },
+  {
+    "from": "world-3-mortal-dao-demonic-sect-adventure",
+    "relationType": "parent",
+    "to": "world-3-mortal-dao-framed"
+  },
+  {
+    "from": "world-3-mortal-dao-epilogue",
+    "relationType": "parent",
+    "to": "world-3-mortal-dao-spider-valley"
+  },
+  {
+    "from": "world-3-mortal-dao-eternal",
+    "relationType": "parent",
+    "to": "world-3-mortal-dao-epilogue"
+  },
+  {
+    "from": "world-3-mortal-dao-framed",
+    "relationType": "parent",
+    "to": "world-3-mortal-dao-no-master"
+  },
+  {
+    "from": "world-3-mortal-dao-frontier-marriage",
+    "relationType": "parent",
+    "to": "world-3-mortal-dao-commoner-princess"
+  },
+  {
+    "from": "world-3-mortal-dao-maid-difficulty",
+    "relationType": "parent",
+    "to": "world-3-mortal-dao"
+  },
+  {
+    "from": "world-3-mortal-dao-no-master",
+    "relationType": "parent",
+    "to": "world-3-mortal-dao-counterattack"
+  },
+  {
+    "from": "world-3-mortal-dao-rebuild",
+    "relationType": "parent",
+    "to": "world-3-mortal-dao-demonic-sect-adventure"
+  },
+  {
+    "from": "world-3-mortal-dao-royal-garden-beast-hunt",
+    "relationType": "parent",
+    "to": "world-3-mortal-dao-maid-difficulty"
+  },
+  {
+    "from": "world-3-mortal-dao-sakura-storm-shogunate",
+    "relationType": "parent",
+    "to": "world-3-mortal-dao-tile-kiln-disaster-sealing"
+  },
+  {
+    "from": "world-3-mortal-dao-siege-survival",
+    "relationType": "parent",
+    "to": "world-3-mortal-dao-sakura-storm-shogunate"
+  },
+  {
+    "from": "world-3-mortal-dao-spider-valley",
+    "relationType": "parent",
+    "to": "world-3-mortal-dao-rebuild"
+  },
+  {
+    "from": "world-3-mortal-dao-start",
+    "relationType": "parent",
+    "to": "world-3-mortal-dao-siege-survival"
+  },
+  {
+    "from": "world-3-mortal-dao-tile-kiln-disaster-sealing",
+    "relationType": "parent",
+    "to": "world-3-mortal-dao-chaotic-world-ranger"
+  },
+  {
+    "from": "world-4-monica-empire-allied-cities",
+    "relationType": "parent",
+    "to": "world-4-monica-empire-city-desire"
+  },
+  {
+    "from": "world-4-monica-empire-borderlands",
+    "relationType": "parent",
+    "to": "world-4-monica-empire-allied-cities"
+  },
+  {
+    "from": "world-4-monica-empire-bound-god-domain",
+    "relationType": "parent",
+    "to": "world-4-monica-empire"
+  },
+  {
+    "from": "world-4-monica-empire-city-desire",
+    "relationType": "parent",
+    "to": "world-4-monica-empire-core-district"
+  },
+  {
+    "from": "world-4-monica-empire-core-district",
+    "relationType": "parent",
+    "to": "world-4-monica-empire-silly-lilili-town"
+  },
+  {
+    "from": "world-4-monica-empire-four-seasons-garden",
+    "relationType": "parent",
+    "to": "world-4-monica-empire-bound-god-domain"
+  },
+  {
+    "from": "world-4-monica-empire-life-simulator",
+    "relationType": "parent",
+    "to": "world-4-monica-empire-silly-lilili-town"
+  },
+  {
+    "from": "world-4-monica-empire-silly-lilili-town",
+    "relationType": "parent",
+    "to": "world-4-monica-empire-four-seasons-garden"
+  },
+  {
+    "from": "world-5-star-weaving-dream-barren-mining-asteroid",
+    "relationType": "parent",
+    "to": "world-5-star-weaving-dream-dome-hunt"
+  },
+  {
+    "from": "world-5-star-weaving-dream-bionic-maze",
+    "relationType": "parent",
+    "to": "world-5-star-weaving-dream-restraint-paradise-shop"
+  },
+  {
+    "from": "world-5-star-weaving-dream-clone-corridor",
+    "relationType": "parent",
+    "to": "world-5-star-weaving-dream-prison-planet"
+  },
+  {
+    "from": "world-5-star-weaving-dream-cryosleep-ark",
+    "relationType": "parent",
+    "to": "world-5-star-weaving-dream-star-voyage"
+  },
+  {
+    "from": "world-5-star-weaving-dream-deep-blue-moon",
+    "relationType": "parent",
+    "to": "world-5-star-weaving-dream-barren-mining-asteroid"
+  },
+  {
+    "from": "world-5-star-weaving-dream-dome-hunt",
+    "relationType": "parent",
+    "to": "world-5-star-weaving-dream-frontier-colony"
+  },
+  {
+    "from": "world-5-star-weaving-dream-first-contact",
+    "relationType": "parent",
+    "to": "world-5-star-weaving-dream-hivemind-hive"
+  },
+  {
+    "from": "world-5-star-weaving-dream-forerunner-ruins",
+    "relationType": "parent",
+    "to": "world-5-star-weaving-dream-first-contact"
+  },
+  {
+    "from": "world-5-star-weaving-dream-frontier-colony",
+    "relationType": "parent",
+    "to": "world-5-star-weaving-dream-molten-armor-warstar"
+  },
+  {
+    "from": "world-5-star-weaving-dream-hivemind-hive",
+    "relationType": "parent",
+    "to": "world-5-star-weaving-dream-clone-corridor"
+  },
+  {
+    "from": "world-5-star-weaving-dream-interstellar-black-market",
+    "relationType": "parent",
+    "to": "world-5-star-weaving-dream-deep-blue-moon"
+  },
+  {
+    "from": "world-5-star-weaving-dream-mirror-domain",
+    "relationType": "parent",
+    "to": "world-5-star-weaving-dream-bionic-maze"
+  },
+  {
+    "from": "world-5-star-weaving-dream-molten-armor-warstar",
+    "relationType": "parent",
+    "to": "world-5-star-weaving-dream-orbital-garden"
+  },
+  {
+    "from": "world-5-star-weaving-dream-orbital-garden",
+    "relationType": "parent",
+    "to": "world-5-star-weaving-dream-cryosleep-ark"
+  },
+  {
+    "from": "world-5-star-weaving-dream-order-paradise",
+    "relationType": "parent",
+    "to": "world-5-star-weaving-dream-ringlock-stars"
+  },
+  {
+    "from": "world-5-star-weaving-dream-prison-planet",
+    "relationType": "parent",
+    "to": "world-5-star-weaving-dream-interstellar-black-market"
+  },
+  {
+    "from": "world-5-star-weaving-dream-quantum-maze",
+    "relationType": "parent",
+    "to": "world-5-star-weaving-dream-forerunner-ruins"
+  },
+  {
+    "from": "world-5-star-weaving-dream-restraint-paradise-shop",
+    "relationType": "parent",
+    "to": "world-5-star-weaving-dream-order-paradise"
+  },
+  {
+    "from": "world-5-star-weaving-dream-ringlock-stars",
+    "relationType": "parent",
+    "to": "world-5-star-weaving-dream-stargate-port"
+  },
+  {
+    "from": "world-5-star-weaving-dream-sequence-gu-city",
+    "relationType": "parent",
+    "to": "world-5-star-weaving-dream-mirror-domain"
+  },
+  {
+    "from": "world-5-star-weaving-dream-star-voyage",
+    "relationType": "parent",
+    "to": "world-5-star-weaving-dream-sequence-gu-city"
+  },
+  {
+    "from": "world-5-star-weaving-dream-stargate-port",
+    "relationType": "parent",
+    "to": "world-5-star-weaving-dream"
+  },
+  {
+    "from": "world-6-cursebound-echoes-abyss-contract",
+    "relationType": "parent",
+    "to": "world-6-cursebound-echoes-astral-rift-gate"
+  },
+  {
+    "from": "world-6-cursebound-echoes-astral-rift-gate",
+    "relationType": "parent",
+    "to": "world-6-cursebound-echoes-witch-swamp"
+  },
+  {
+    "from": "world-6-cursebound-echoes-bone-throne",
+    "relationType": "parent",
+    "to": "world-6-cursebound-echoes-darkmoon-castle"
+  },
+  {
+    "from": "world-6-cursebound-echoes-crystal-sand-court",
+    "relationType": "parent",
+    "to": "world-6-cursebound-echoes-dark-underground-city"
+  },
+  {
+    "from": "world-6-cursebound-echoes-dark-underground-city",
+    "relationType": "parent",
+    "to": "world-6-cursebound-echoes-locked-horn-wasteland"
+  },
+  {
+    "from": "world-6-cursebound-echoes-darkmoon-castle",
+    "relationType": "parent",
+    "to": "world-6-cursebound-echoes-tiny-liluo-adventure"
+  },
+  {
+    "from": "world-6-cursebound-echoes-dragon-sleep-mountains",
+    "relationType": "parent",
+    "to": "world-6-cursebound-echoes-bone-throne"
+  },
+  {
+    "from": "world-6-cursebound-echoes-dreambound-continent",
+    "relationType": "parent",
+    "to": "world-6-cursebound-echoes"
+  },
+  {
+    "from": "world-6-cursebound-echoes-forest-oath-fey-realm",
+    "relationType": "parent",
+    "to": "world-6-cursebound-echoes-molten-glow-machine-city"
+  },
+  {
+    "from": "world-6-cursebound-echoes-holy-seal-islands",
+    "relationType": "parent",
+    "to": "world-6-cursebound-echoes-secret-rune-academy"
+  },
+  {
+    "from": "world-6-cursebound-echoes-locked-horn-wasteland",
+    "relationType": "parent",
+    "to": "world-6-cursebound-echoes-secret-tower-long-song"
+  },
+  {
+    "from": "world-6-cursebound-echoes-lone-tide-sea",
+    "relationType": "parent",
+    "to": "world-6-cursebound-echoes-holy-seal-islands"
+  },
+  {
+    "from": "world-6-cursebound-echoes-molten-glow-machine-city",
+    "relationType": "parent",
+    "to": "world-6-cursebound-echoes-lone-tide-sea"
+  },
+  {
+    "from": "world-6-cursebound-echoes-northern-frost-crown",
+    "relationType": "parent",
+    "to": "world-6-cursebound-echoes-crystal-sand-court"
+  },
+  {
+    "from": "world-6-cursebound-echoes-secret-rune-academy",
+    "relationType": "parent",
+    "to": "world-6-cursebound-echoes-silent-rite-court"
+  },
+  {
+    "from": "world-6-cursebound-echoes-secret-tower-long-song",
+    "relationType": "parent",
+    "to": "world-6-cursebound-echoes-dragon-sleep-mountains"
+  },
+  {
+    "from": "world-6-cursebound-echoes-shadow-thief-city-state",
+    "relationType": "parent",
+    "to": "world-6-cursebound-echoes-northern-frost-crown"
+  },
+  {
+    "from": "world-6-cursebound-echoes-silent-rite-court",
+    "relationType": "parent",
+    "to": "world-6-cursebound-echoes-silver-crown-capital"
+  },
+  {
+    "from": "world-6-cursebound-echoes-silver-crown-capital",
+    "relationType": "parent",
+    "to": "world-6-cursebound-echoes-dreambound-continent"
+  },
+  {
+    "from": "world-6-cursebound-echoes-tiny-liluo-adventure",
+    "relationType": "parent",
+    "to": "world-6-cursebound-echoes-forest-oath-fey-realm"
+  },
+  {
+    "from": "world-6-cursebound-echoes-witch-swamp",
+    "relationType": "parent",
+    "to": "world-6-cursebound-echoes-shadow-thief-city-state"
+  }
+]

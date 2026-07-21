@@ -1,0 +1,110 @@
+{
+  "categories": [
+    {
+      "entryCount": 4,
+      "file": "gameplay/categories/gameplay-group-01.json",
+      "id": "gameplay-group-01",
+      "order": 1,
+      "title": "地图探索"
+    },
+    {
+      "entryCount": 9,
+      "file": "gameplay/categories/gameplay-group-02.json",
+      "id": "gameplay-group-02",
+      "order": 2,
+      "title": "即时战斗"
+    },
+    {
+      "entryCount": 5,
+      "file": "gameplay/categories/gameplay-group-03.json",
+      "id": "gameplay-group-03",
+      "order": 3,
+      "title": "随机远征"
+    },
+    {
+      "entryCount": 6,
+      "file": "gameplay/categories/gameplay-group-04.json",
+      "id": "gameplay-group-04",
+      "order": 4,
+      "title": "生存挑战"
+    },
+    {
+      "entryCount": 13,
+      "file": "gameplay/categories/gameplay-group-05.json",
+      "id": "gameplay-group-05",
+      "order": 5,
+      "title": "战场攻防"
+    },
+    {
+      "entryCount": 10,
+      "file": "gameplay/categories/gameplay-group-06.json",
+      "id": "gameplay-group-06",
+      "order": 6,
+      "title": "战术行动"
+    },
+    {
+      "entryCount": 8,
+      "file": "gameplay/categories/gameplay-group-07.json",
+      "id": "gameplay-group-07",
+      "order": 7,
+      "title": "机关调查"
+    },
+    {
+      "entryCount": 7,
+      "file": "gameplay/categories/gameplay-group-08.json",
+      "id": "gameplay-group-08",
+      "order": 8,
+      "title": "异常时序"
+    },
+    {
+      "entryCount": 7,
+      "file": "gameplay/categories/gameplay-group-09.json",
+      "id": "gameplay-group-09",
+      "order": 9,
+      "title": "角色构筑"
+    },
+    {
+      "entryCount": 13,
+      "file": "gameplay/categories/gameplay-group-10.json",
+      "id": "gameplay-group-10",
+      "order": 10,
+      "title": "世界建设"
+    },
+    {
+      "entryCount": 10,
+      "file": "gameplay/categories/gameplay-group-11.json",
+      "id": "gameplay-group-11",
+      "order": 11,
+      "title": "专项活动"
+    },
+    {
+      "entryCount": 8,
+      "file": "gameplay/categories/gameplay-group-12.json",
+      "id": "gameplay-group-12",
+      "order": 12,
+      "title": "叙事模拟"
+    },
+    {
+      "entryCount": 3,
+      "file": "gameplay/categories/gameplay-group-13.json",
+      "id": "gameplay-group-13",
+      "order": 13,
+      "title": "探索收藏"
+    },
+    {
+      "entryCount": 2,
+      "file": "gameplay/categories/gameplay-group-14.json",
+      "id": "gameplay-group-14",
+      "order": 14,
+      "title": "后台发展"
+    },
+    {
+      "entryCount": 3,
+      "file": "gameplay/categories/gameplay-group-15.json",
+      "id": "gameplay-group-15",
+      "order": 15,
+      "title": "重复挑战"
+    }
+  ],
+  "entryCount": 108
+}

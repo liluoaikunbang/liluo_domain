@@ -1,0 +1,116 @@
+[
+  {
+    "category": "后台发展",
+    "categoryId": "gameplay-group-14",
+    "id": "gameplay-113",
+    "indexVersion": 1,
+    "presentationModes": [
+      "interface-gameplay"
+    ],
+    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourcePath": "src/game/data/gameplay_outline/catalog.json",
+    "summary": "让非当前出战角色执行自动任务。",
+    "summarySource": "source-json.summary",
+    "title": "队伍派遣",
+    "type": "gameplay",
+    "variants": [
+      {
+        "id": "gameplay-113-variant-01",
+        "title": "资源派遣"
+      },
+      {
+        "id": "gameplay-113-variant-02",
+        "title": "情报派遣"
+      },
+      {
+        "id": "gameplay-113-variant-03",
+        "title": "训练派遣"
+      },
+      {
+        "id": "gameplay-113-variant-04",
+        "title": "外交派遣"
+      },
+      {
+        "id": "gameplay-113-variant-05",
+        "title": "贸易派遣"
+      },
+      {
+        "id": "gameplay-113-variant-06",
+        "title": "救援派遣"
+      },
+      {
+        "id": "gameplay-113-variant-07",
+        "title": "高风险派遣"
+      },
+      {
+        "id": "gameplay-113-variant-08",
+        "title": "职业匹配"
+      },
+      {
+        "id": "gameplay-113-variant-09",
+        "title": "事件选择"
+      },
+      {
+        "id": "gameplay-113-variant-10",
+        "title": "失败转实战"
+      }
+    ]
+  },
+  {
+    "category": "后台发展",
+    "categoryId": "gameplay-group-14",
+    "id": "gameplay-114",
+    "indexVersion": 1,
+    "presentationModes": [
+      "interface-gameplay"
+    ],
+    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourcePath": "src/game/data/gameplay_outline/catalog.json",
+    "summary": "适合作为长期宇宙的缓慢积累系统。",
+    "summarySource": "source-json.summary",
+    "title": "计时发展",
+    "type": "gameplay",
+    "variants": [
+      {
+        "id": "gameplay-114-variant-01",
+        "title": "基地生产"
+      },
+      {
+        "id": "gameplay-114-variant-02",
+        "title": "装备制造"
+      },
+      {
+        "id": "gameplay-114-variant-03",
+        "title": "科研项目"
+      },
+      {
+        "id": "gameplay-114-variant-04",
+        "title": "植物生长"
+      },
+      {
+        "id": "gameplay-114-variant-05",
+        "title": "角色恢复"
+      },
+      {
+        "id": "gameplay-114-variant-06",
+        "title": "远征归来"
+      },
+      {
+        "id": "gameplay-114-variant-07",
+        "title": "市场更新"
+      },
+      {
+        "id": "gameplay-114-variant-08",
+        "title": "世界事件倒计时"
+      },
+      {
+        "id": "gameplay-114-variant-09",
+        "title": "累计但设上限"
+      },
+      {
+        "id": "gameplay-114-variant-10",
+        "title": "主动加速任务"
+      }
+    ]
+  }
+]

@@ -1,0 +1,222 @@
+[
+  {
+    "id": "city_desire_leave_north",
+    "indexVersion": 1,
+    "mapId": "city_desire",
+    "sourceHash": "aff9735ab0bf75f438d0960ded0dd8ab031b3aa850222cbd8c78880c9e0d9b24",
+    "sourcePath": "src/game/data/maps/munika/city_desire/events.json",
+    "summary": "city_desire_leave_north",
+    "summarySource": "title-only",
+    "title": "city_desire_leave_north",
+    "type": "event"
+  },
+  {
+    "id": "city_desire_leave_west",
+    "indexVersion": 1,
+    "mapId": "city_desire",
+    "sourceHash": "aff9735ab0bf75f438d0960ded0dd8ab031b3aa850222cbd8c78880c9e0d9b24",
+    "sourcePath": "src/game/data/maps/munika/city_desire/events.json",
+    "summary": "city_desire_leave_west",
+    "summarySource": "title-only",
+    "title": "city_desire_leave_west",
+    "type": "event"
+  },
+  {
+    "id": "city_desire_leave_east",
+    "indexVersion": 1,
+    "mapId": "city_desire",
+    "sourceHash": "aff9735ab0bf75f438d0960ded0dd8ab031b3aa850222cbd8c78880c9e0d9b24",
+    "sourcePath": "src/game/data/maps/munika/city_desire/events.json",
+    "summary": "city_desire_leave_east",
+    "summarySource": "title-only",
+    "title": "city_desire_leave_east",
+    "type": "event"
+  },
+  {
+    "id": "estate_house_entry",
+    "indexVersion": 1,
+    "mapId": "liluo_estate",
+    "sourceHash": "e9ad0b829daa1f267e31dabd115a12c42f2d180f4836dbfd88cf769a03d0a59c",
+    "sourcePath": "src/game/data/maps/munika/liluo_estate/events.json",
+    "summary": "estate_house_entry",
+    "summarySource": "title-only",
+    "title": "estate_house_entry",
+    "type": "event"
+  },
+  {
+    "id": "north_cave_entry",
+    "indexVersion": 1,
+    "mapId": "liluo_estate",
+    "sourceHash": "e9ad0b829daa1f267e31dabd115a12c42f2d180f4836dbfd88cf769a03d0a59c",
+    "sourcePath": "src/game/data/maps/munika/liluo_estate/events.json",
+    "summary": "north_cave_entry",
+    "summarySource": "title-only",
+    "title": "north_cave_entry",
+    "type": "event"
+  },
+  {
+    "id": "empire_portal_entry",
+    "indexVersion": 1,
+    "mapId": "liluo_estate",
+    "sourceHash": "e9ad0b829daa1f267e31dabd115a12c42f2d180f4836dbfd88cf769a03d0a59c",
+    "sourcePath": "src/game/data/maps/munika/liluo_estate/events.json",
+    "summary": "empire_portal_entry",
+    "summarySource": "title-only",
+    "title": "empire_portal_entry",
+    "type": "event"
+  },
+  {
+    "id": "parallel_world_portal_entry",
+    "indexVersion": 1,
+    "mapId": "liluo_estate",
+    "sourceHash": "e9ad0b829daa1f267e31dabd115a12c42f2d180f4836dbfd88cf769a03d0a59c",
+    "sourcePath": "src/game/data/maps/munika/liluo_estate/events.json",
+    "summary": "parallel_world_portal_entry",
+    "summarySource": "title-only",
+    "title": "parallel_world_portal_entry",
+    "type": "event"
+  },
+  {
+    "id": "estate_dusk_transition",
+    "indexVersion": 1,
+    "mapId": "liluo_estate",
+    "sourceHash": "e9ad0b829daa1f267e31dabd115a12c42f2d180f4836dbfd88cf769a03d0a59c",
+    "sourcePath": "src/game/data/maps/munika/liluo_estate/events.json",
+    "summary": "estate_dusk_transition",
+    "summarySource": "title-only",
+    "title": "estate_dusk_transition",
+    "type": "event"
+  },
+  {
+    "id": "living_room_leave",
+    "indexVersion": 1,
+    "mapId": "liluo_house_living_room",
+    "sourceHash": "d798523ba5763855de980027dfa7412fdd03db74086fae967f2f0124fa11000d",
+    "sourcePath": "src/game/data/maps/munika/liluo_house_living_room/events.json",
+    "summary": "living_room_leave",
+    "summarySource": "title-only",
+    "title": "living_room_leave",
+    "type": "event"
+  },
+  {
+    "id": "living_room_liluo_room_entry",
+    "indexVersion": 1,
+    "mapId": "liluo_house_living_room",
+    "sourceHash": "d798523ba5763855de980027dfa7412fdd03db74086fae967f2f0124fa11000d",
+    "sourcePath": "src/game/data/maps/munika/liluo_house_living_room/events.json",
+    "summary": "living_room_liluo_room_entry",
+    "summarySource": "title-only",
+    "title": "living_room_liluo_room_entry",
+    "type": "event"
+  },
+  {
+    "id": "living_room_mumu_room_entry",
+    "indexVersion": 1,
+    "mapId": "liluo_house_living_room",
+    "sourceHash": "d798523ba5763855de980027dfa7412fdd03db74086fae967f2f0124fa11000d",
+    "sourcePath": "src/game/data/maps/munika/liluo_house_living_room/events.json",
+    "summary": "living_room_mumu_room_entry",
+    "summarySource": "title-only",
+    "title": "living_room_mumu_room_entry",
+    "type": "event"
+  },
+  {
+    "id": "living_room_locked_room_entry",
+    "indexVersion": 1,
+    "mapId": "liluo_house_living_room",
+    "sourceHash": "d798523ba5763855de980027dfa7412fdd03db74086fae967f2f0124fa11000d",
+    "sourcePath": "src/game/data/maps/munika/liluo_house_living_room/events.json",
+    "summary": "living_room_locked_room_entry",
+    "summarySource": "title-only",
+    "title": "living_room_locked_room_entry",
+    "type": "event"
+  },
+  {
+    "id": "living_room_lixue_room_entry",
+    "indexVersion": 1,
+    "mapId": "liluo_house_living_room",
+    "sourceHash": "d798523ba5763855de980027dfa7412fdd03db74086fae967f2f0124fa11000d",
+    "sourcePath": "src/game/data/maps/munika/liluo_house_living_room/events.json",
+    "summary": "living_room_lixue_room_entry",
+    "summarySource": "title-only",
+    "title": "living_room_lixue_room_entry",
+    "type": "event"
+  },
+  {
+    "id": "liluo_room_bed_event",
+    "indexVersion": 1,
+    "mapId": "liluo_room",
+    "sourceHash": "b4e909cfcb4dd8863ef6e79c109f2e7d6935a5ef470198e00ff1dd9ccf6f7531",
+    "sourcePath": "src/game/data/maps/munika/liluo_room/events.json",
+    "summary": "liluo_room_bed_event",
+    "summarySource": "title-only",
+    "title": "liluo_room_bed_event",
+    "type": "event"
+  },
+  {
+    "id": "liluo_room_leave",
+    "indexVersion": 1,
+    "mapId": "liluo_room",
+    "sourceHash": "b4e909cfcb4dd8863ef6e79c109f2e7d6935a5ef470198e00ff1dd9ccf6f7531",
+    "sourcePath": "src/game/data/maps/munika/liluo_room/events.json",
+    "summary": "liluo_room_leave",
+    "summarySource": "title-only",
+    "title": "liluo_room_leave",
+    "type": "event"
+  },
+  {
+    "id": "mumu_room_leave",
+    "indexVersion": 1,
+    "mapId": "mumu_room",
+    "sourceHash": "9b7e0abe74f06b2d766712cdf4a3bb2cb7990566b380073434a0803ee6ec6294",
+    "sourcePath": "src/game/data/maps/munika/mumu_room/events.json",
+    "summary": "mumu_room_leave",
+    "summarySource": "title-only",
+    "title": "mumu_room_leave",
+    "type": "event"
+  },
+  {
+    "id": "mumu_room_input_event_1",
+    "indexVersion": 1,
+    "mapId": "mumu_room",
+    "sourceHash": "9b7e0abe74f06b2d766712cdf4a3bb2cb7990566b380073434a0803ee6ec6294",
+    "sourcePath": "src/game/data/maps/munika/mumu_room/events.json",
+    "summary": "mumu_room_input_event_1",
+    "summarySource": "title-only",
+    "title": "mumu_room_input_event_1",
+    "type": "event"
+  },
+  {
+    "id": "mumu_room_output_event_1",
+    "indexVersion": 1,
+    "mapId": "mumu_room",
+    "sourceHash": "9b7e0abe74f06b2d766712cdf4a3bb2cb7990566b380073434a0803ee6ec6294",
+    "sourcePath": "src/game/data/maps/munika/mumu_room/events.json",
+    "summary": "mumu_room_output_event_1",
+    "summarySource": "title-only",
+    "title": "mumu_room_output_event_1",
+    "type": "event"
+  },
+  {
+    "id": "mumu_room_input_event_2",
+    "indexVersion": 1,
+    "mapId": "mumu_room",
+    "sourceHash": "9b7e0abe74f06b2d766712cdf4a3bb2cb7990566b380073434a0803ee6ec6294",
+    "sourcePath": "src/game/data/maps/munika/mumu_room/events.json",
+    "summary": "mumu_room_input_event_2",
+    "summarySource": "title-only",
+    "title": "mumu_room_input_event_2",
+    "type": "event"
+  },
+  {
+    "id": "mumu_room_output_event_2",
+    "indexVersion": 1,
+    "mapId": "mumu_room",
+    "sourceHash": "9b7e0abe74f06b2d766712cdf4a3bb2cb7990566b380073434a0803ee6ec6294",
+    "sourcePath": "src/game/data/maps/munika/mumu_room/events.json",
+    "summary": "mumu_room_output_event_2",
+    "summarySource": "title-only",
+    "title": "mumu_room_output_event_2",
+    "type": "event"
+  }
+]
