@@ -14,3 +14,5 @@
 ## 流程、限制与验证
 
 明确进入、操作、分支、状态、成功失败退出和重入；复用真实 ID，不覆盖已有状态，不把游戏写成纯对话框。验证 JSON、注册引用、event-runner/dialogue 测试及构建。地图运行接入交 `liluo-phaser-map-event-integration`。
+
+跨文件事件可委派 `liluo_context_explorer` 定位剧情和玩法资料；涉及角色关系或时间线时委派 `liluo_continuity_reviewer`。两者只读，事件数据由主智能体编写。

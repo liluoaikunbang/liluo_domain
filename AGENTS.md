@@ -30,6 +30,12 @@
 
 通用规划、TDD、调试、前端、Vue/Vite、审查和简化继续使用 `.agents/skills/` 下现有通用 Skills；项目 Skill 不取代它们。
 
+## 项目子智能体
+
+跨目录检索、连续性审查、架构追踪、内容审计或独立验证可按需委派给 `.codex/agents/`：上下文用 `liluo_context_explorer`，世界观与时间线用 `liluo_continuity_reviewer`，Vue/Phaser/Pinia/地图/事件/存档架构用 `liluo_game_architecture_explorer`，内容与引用一致性用 `liluo_content_auditor`，构建测试与回归用 `liluo_validation_runner`。
+
+小型明确任务不委派；普通复杂任务最多并行三个，只有明确的全项目审查才考虑更多。子智能体优先只读调查和验证，正式修改默认由主 Codex 统一执行；不得并行修改同一文件，必须等待已请求报告后再决策，且报告不能替代脚本、schema 和测试。最大嵌套深度为 1，不允许子智能体递归委派。
+
 ## 全局开发底线
 
 - 先保证可玩与主流程，再补边角；地图、事件、对话、存档优先。

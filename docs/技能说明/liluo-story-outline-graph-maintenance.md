@@ -15,3 +15,5 @@
 ## 流程、限制与验证
 
 先统计 key 与邻接关系，再预览，确认后按 key 修改，最后检查重复 key、孤儿、循环、丢失节点和 Markdown。默认只移动指定节点，多子链不明确时必须询问；不擅自删除或增加 side。验证脚本帮助、全图检查、已知 key 与未知 key 错误路径。正文内容交给 `liluo-story-outline-authoring`。
+
+复杂移动前可委派 `liluo_context_explorer` 重建局部树，操作后可委派 `liluo_content_auditor` 审查结构与引用。正式操作仍由主智能体或确定性脚本执行。

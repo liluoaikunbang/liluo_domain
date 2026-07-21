@@ -14,3 +14,5 @@
 ## 流程、限制与验证
 
 当前仓库没有 Playwright，使用构建、Node 测试和人工清单，不伪造 E2E。不得自动安装依赖、打开浏览器或污染真实存档；临时服务必须关闭。未来接入浏览器框架时同步更新本 Skill 与本文。
+
+入口不清时可委派 `liluo_game_architecture_explorer`，执行既有检查可委派 `liluo_validation_runner`；回归期间均不修改应用代码。

@@ -14,3 +14,5 @@
 ## 流程、限制与验证
 
 先依据路径、引用和文档分类，再审计。不得安装感知哈希依赖或修改图片。分别运行帮助、check、exact-hash 和 write-manifest 拒绝路径。角色帧质量由 `liluo-sprite-pipeline` 负责。
+
+大范围引用和分类汇总可委派只读 `liluo_content_auditor`；不得由 Agent 自动删除、移动、转换或提升候选素材。

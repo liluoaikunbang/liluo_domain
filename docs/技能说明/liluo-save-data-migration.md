@@ -14,3 +14,5 @@
 ## 流程、限制与验证
 
 备份原数据，逐版本迁移并逐步验证，明确默认值，保留不确定字段，失败不覆盖。不得批改 localStorage、吞错或删除未知数据。用 save-data/save-storage 测试覆盖当前、旧版、损坏与未来版本。运行时代码只在用户明确要求时修改。
+
+存档调用链不清时先委派 `liluo_game_architecture_explorer`，修改后可委派 `liluo_validation_runner`。真实迁移和源码写入仍由主智能体在用户授权下执行。

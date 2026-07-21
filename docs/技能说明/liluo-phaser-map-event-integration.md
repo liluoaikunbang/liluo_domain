@@ -14,3 +14,5 @@
 ## 流程、限制与验证
 
 核对真实资源和同名地图，补齐现有目录并注册；资源交 MapLoadingScene，WorldScene 仅组织，复用逻辑下沉 systems。避免改外部生成的 map.json。验证出生、碰撞、寻路、镜头、传送、事件和存档重入，并运行相关 Node 测试与构建。对话内容交 `liluo-dialogue-event-authoring`。
+
+跨 Vue、Phaser、地图注册、事件和存档时，优先委派 `liluo_game_architecture_explorer` 只读追踪调用链和修改落点；主智能体实现。

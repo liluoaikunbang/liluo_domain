@@ -8,3 +8,5 @@ description: Audit src/assets/game and docs/游戏素材图片清单.md for coun
 Read `docs/游戏素材图片清单.md`, current asset bundles and [asset-classification.md](references/asset-classification.md). Run `node scripts/audit-game-assets.mjs --check [--exact-hash]`; use `--write-manifest` only after reviewing format impact.
 
 Remain read-only by default. Report path, size, type, references, exact duplicates and Windows case conflicts. Never alter image bytes, delete assets, install perceptual-hash dependencies or treat candidates/caches/sources as runtime finals.
+
+Broad reference/classification review may use read-only `liluo_content_auditor`, which must never delete, move, convert, compress, or promote assets.

@@ -13,3 +13,4 @@ Read `AGENTS.md`, affected source JSON/Markdown and [graph-operation-rules.md](r
 4. Produce a dry-run diff before an explicit reviewed patch; operate by stable key.
 5. Recount and check duplicates, missing parents, cycles, lost keys and paths.
 6. Never delete unspecified nodes or infer `branchLayout: side`.
+7. Before a complex move, the parent may use `liluo_context_explorer` to reconstruct the local tree; afterward it may use `liluo_content_auditor` for read-only review. The parent or deterministic script performs the change.
