@@ -395,6 +395,11 @@
     "to": "world-2-silent-earth-dirge-forgotten-river-gray-world"
   },
   {
+    "from": "world-2-silent-earth-dirge-solo-smart-rv-trader",
+    "relationType": "parent",
+    "to": "world-2-silent-earth-dirge-rift-disaster"
+  },
+  {
     "from": "world-2-silent-earth-dirge-wasteland-court",
     "relationType": "parent",
     "to": "world-2-silent-earth-dirge-ark-ghost-cage"

@@ -198,6 +198,19 @@ test('keeps wrapped-hands rock-paper-scissors under teasing and bullying', () =>
   assert.deepEqual(wrappedHandsPlot?.bondageTags, ['游戏']);
 });
 
+test('keeps the club snow-day sequence together under the outdoor amusement group', () => {
+  const outdoorGroup = plotOutline.groups.find((group) => group.title === '室外游乐场');
+  const snowPlayPlot = plotOutline.entries.find((entry) => entry.id === 'plot-047');
+
+  assert.equal(snowPlayPlot?.groupId, outdoorGroup?.id);
+  assert.deepEqual(snowPlayPlot?.worldBiases, ['1-浮光掠影']);
+  assert.ok(snowPlayPlot?.summary.includes('屁股蹲'));
+  assert.ok(snowPlayPlot?.summary.includes('捆绑打雪仗'));
+  assert.ok(snowPlayPlot?.summary.includes('下身被扒光'));
+  assert.ok(snowPlayPlot?.summary.includes('数层楼'));
+  assert.ok(snowPlayPlot?.notes.includes('同一场社团冬日活动'));
+});
+
 test('exposes unique sorted ordinary and bondage tag options', () => {
   const ordinaryTags = getPlotTagOptions(plotOutline);
   const bondageTags = getPlotBondageTagOptions(plotOutline);

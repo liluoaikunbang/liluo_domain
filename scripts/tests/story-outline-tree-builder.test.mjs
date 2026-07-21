@@ -426,7 +426,8 @@ test('apocalypse story outline keeps the requested main line unbranched and pres
     '梦城沉眠',
     '循时终日',
     '忘川灰世',
-    '裂界灾临'
+    '裂界灾临',
+    '独行房车商旅'
   ];
   let currentNode = apocalypseRoot?.children?.[0] ?? null;
 
@@ -443,6 +444,8 @@ test('apocalypse story outline keeps the requested main line unbranched and pres
   const omega = findTreeNodeByKey(apocalypseRoot, 'world-2-silent-earth-dirge-omega');
   const eerieMain = findTreeNodeByKey(apocalypseRoot, 'world-2-silent-earth-dirge-eerie-apocalypse');
   const fogCity = findTreeNodeByKey(apocalypseRoot, 'world-2-silent-earth-dirge-fog-city');
+  const riftDisaster = findTreeNodeByKey(apocalypseRoot, 'world-2-silent-earth-dirge-rift-disaster');
+  const soloRvTrader = findTreeNodeByKey(apocalypseRoot, 'world-2-silent-earth-dirge-solo-smart-rv-trader');
   const sourceNodeByKey = new Map(storyOutlineSource.nodes.map((node) => [node.key, node]));
 
   assert.deepEqual(apocalypseChain.map((node) => node.title), expectedTitles);
@@ -455,6 +458,9 @@ test('apocalypse story outline keeps the requested main line unbranched and pres
   assert.deepEqual(omega?.storyTags, ['废城求生']);
   assert.equal(eerieMain?.title, '异诡临界');
   assert.equal(fogCity?.title, '诡雾迷城');
+  assert.equal(sourceNodeByKey.get(soloRvTrader?.key)?.parentKey, riftDisaster?.key);
+  assert.equal(soloRvTrader?.status, '主线任务');
+  assert.equal(existsSync('src/game/data/story_outline/2-apocalypse/19-独行房车商旅.md'), true);
 
   [
     '尸潮噬世',

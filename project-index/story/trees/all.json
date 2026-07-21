@@ -780,11 +780,21 @@
     "world": "2-寂土挽歌"
   },
   {
-    "childKeys": [],
+    "childKeys": [
+      "world-2-silent-earth-dirge-solo-smart-rv-trader"
+    ],
     "key": "world-2-silent-earth-dirge-rift-disaster",
     "parentKey": "world-2-silent-earth-dirge-forgotten-river-gray-world",
     "side": false,
     "title": "裂界灾临",
+    "world": "2-寂土挽歌"
+  },
+  {
+    "childKeys": [],
+    "key": "world-2-silent-earth-dirge-solo-smart-rv-trader",
+    "parentKey": "world-2-silent-earth-dirge-rift-disaster",
+    "side": false,
+    "title": "独行房车商旅",
     "world": "2-寂土挽歌"
   },
   {

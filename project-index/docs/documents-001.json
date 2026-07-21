@@ -1333,7 +1333,7 @@
   {
     "id": "docs/功能更新/120-故事大纲游戏化模板与世界选项库.md",
     "indexVersion": 1,
-    "sourceHash": "4ac04b7fb36790394fa3dcaef29ff66ec169e517eb059b1d3a3b5c41b76c51c6",
+    "sourceHash": "2e97f071e823f38cfcc929e84902e9bb8e5c144e5e38e9e8b127fab3f3905506",
     "sourcePath": "docs/功能更新/120-故事大纲游戏化模板与世界选项库.md",
     "subtype": "update",
     "summary": "故事大纲游戏化模板与世界选项库",
@@ -1531,7 +1531,7 @@
   {
     "id": "docs/功能更新目录.md",
     "indexVersion": 1,
-    "sourceHash": "84f6c5a78cd86a91544be861e55ac66d283e61c0f3d33dce00396e7197cb2c62",
+    "sourceHash": "569390b98a068f7b6e0bb2f14aee9161c0bf0c384e58a74aa27c43d460be9f2a",
     "sourcePath": "docs/功能更新目录.md",
     "subtype": "other",
     "summary": "功能更新目录",
@@ -1652,7 +1652,7 @@
   {
     "id": "docs/技能说明/liluo-story-outline-authoring.md",
     "indexVersion": 1,
-    "sourceHash": "ead8fbc6360b8b9033216787f4e7ac8d6a5175f46fec5c58733698debe7a42f2",
+    "sourceHash": "bee47453565522ff5e506292544821da11e5e60d493ee3a7c8e2cd26b3464912",
     "sourcePath": "docs/技能说明/liluo-story-outline-authoring.md",
     "subtype": "skill",
     "summary": "liluo-story-outline-authoring",
@@ -1806,7 +1806,7 @@
   {
     "id": "docs/系统说明/故事大纲条目模板.md",
     "indexVersion": 1,
-    "sourceHash": "ca0f9b3b242be3a7634cb1399250bf46b0b7f9bd94164d711305860ebfb13152",
+    "sourceHash": "8dbe995cfab69db3b5ef80d03683a2d8389133542306c2f7665e3fc64ce8e0fe",
     "sourcePath": "docs/系统说明/故事大纲条目模板.md",
     "subtype": "system",
     "summary": "故事大纲条目模板",
@@ -1839,7 +1839,7 @@
   {
     "id": "docs/系统说明/情节条目系统.md",
     "indexVersion": 1,
-    "sourceHash": "875d1932e9a07bdc9c5468763c231288138d4952a5de7d0d58fce7fa561312b4",
+    "sourceHash": "627fe2a71ec0b0fff48d59ec84af5db1fc66a33b65e2836010be842ef4b92b4b",
     "sourcePath": "docs/系统说明/情节条目系统.md",
     "subtype": "system",
     "summary": "情节条目系统",

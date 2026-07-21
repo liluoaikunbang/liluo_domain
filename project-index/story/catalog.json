@@ -1,5 +1,5 @@
 {
-  "entryCount": 155,
+  "entryCount": 156,
   "rootKeys": [
     "world-1-glimmering-glance",
     "world-2-silent-earth-dirge",
@@ -10,7 +10,7 @@
   ],
   "shards": [
     {
-      "count": 155,
+      "count": 156,
       "file": "story/nodes/nodes-001.json"
     }
   ],
