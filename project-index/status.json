@@ -1,14 +1,12 @@
 {
   "affectedDomains": [
-    "graph",
-    "story"
+    "docs"
   ],
   "changes": {
     "added": [],
     "deleted": [],
     "modified": [
-      "src/game/data/story_outline/1-modern/4.3.1-阈限空间.md",
-      "src/game/data/story_outline/sources/1-modern.json"
+      "docs/系统说明/情节条目系统.md"
     ],
     "renamed": []
   },
@@ -42,11 +40,11 @@
       "status": "partial"
     }
   },
-  "generatedAt": "2026-07-21T13:39:45.901Z",
+  "generatedAt": "2026-07-21T14:19:58.574Z",
   "generatorVersion": "1.0.3",
   "mode": "changed",
   "schemaVersion": 1,
-  "sourceCommit": "42963641b7895e37a98f55bde88aadd7496e8721",
+  "sourceCommit": "b56e26009a856bba4655f295c86ab113d4d8dc4c",
   "sourceSnapshot": {
     "docs/README.md": "4e1f4e5ef6add109609e39b5d06610e3abb332888cd08ffe7a9867ab43695351",
     "docs/功能更新/001-GameView三栏布局与地图贴合.md": "7a4664d575a6611eaf355dd13d304e4f22d3710cb8a2ce9ad3e9824388318b06",
@@ -183,11 +181,11 @@
     "docs/功能更新/131-邮轮真人垂钓CG素材.md": "a78f2a346f609a5c85210fd36ab5d3901342e61bf400321b00b19c7710006772",
     "docs/功能更新/132-宿舍旧楼黄毛女孩救援与待定灵感规则.md": "5be89419397641b4722c2c099b9090101e89ec18a81e20af388234ea7ebcd5ac",
     "docs/功能更新/133-故事栏主线任务独立折叠恢复.md": "f847879bae28313fbd921d9cc2e8a76eeaa75fcd6797e025b52d2afd7dfd13b2",
-    "docs/功能更新/134-情节灵感目录与大纲Skill联动.md": "d64351737fee25de7f71e9478d9f0b306ae3433b5e2301946ce0121c4f792bbf",
+    "docs/功能更新/134-情节灵感目录与大纲Skill联动.md": "bba5db5719b4f5ccf4e1c660d0871e65725e226c79f40870267ebc2e87e28d04",
     "docs/功能更新/135-项目级Codex子智能体体系.md": "b2969053a61727be8798a31b103980eefb5c047924f435775a38c41942c0e656",
     "docs/功能更新/136-随机大纲访谈轻量抽取规则.md": "e1c33339d92e5ab105941e665405ba9fb406de7b92f79b49b55c893df7a07df1",
     "docs/功能更新/137-项目知识索引系统.md": "d076a027400e36e443d4abe305e2953a8ff70173c943deeedba97a0d446889a3",
-    "docs/功能更新目录.md": "b44755d167be7f01a2407d84cbe2e7df3af2e56e2b2a0fc116b93767687fb1c7",
+    "docs/功能更新目录.md": "84f6c5a78cd86a91544be861e55ac66d283e61c0f3d33dce00396e7197cb2c62",
     "docs/大纲玩法总表整合规格.md": "e6ffc2c182c5d46b69bd8fe08bb3b13038d005c4d08a966ac329d0bb515ec40b",
     "docs/技能说明/liluo-asset-registry-audit.md": "111c0364090f89a05009239049e662b58a55f3fb6805fdf04e4b142d80ddf71b",
     "docs/技能说明/liluo-browser-game-regression.md": "2e10bbba405b34894531841197b4cf0e7a731aec4dd3c66758dfbb0f463a7244",
@@ -216,7 +214,7 @@
     "docs/系统说明/像素行走图生成提示词模板.md": "150bef763cf631ffae5d9ced1108603144f2b0a1b7b483fd38f1b488d19a375a",
     "docs/系统说明/地图系统.md": "606e9d703a84c934a21193fc7a0435390a2d02977f3eb0f08a60301f75d5ecc6",
     "docs/系统说明/存读档系统.md": "51c45dfbc009b080b6d084b3badc740481e11474828d59eaddc74cf391be31f6",
-    "docs/系统说明/情节条目系统.md": "5706000cfce5316c3bcc33c171c01c1badcb2cdd2d804b7479edda53e334c15f",
+    "docs/系统说明/情节条目系统.md": "37d13951f3c4b5e02fb935e5318e6d1a4935e86cae3b698643a78db68355acf2",
     "docs/系统说明/故事大纲世界选项/0-munika.md": "f5e795d457e5690c977108dd92546d75a6b10e92e024fcbc41652be7132acd8e",
     "docs/系统说明/故事大纲世界选项/1-modern.md": "6624477f803b2c468a75790f69274f9ab6c2d5545d27b19aca3f1c78689959ad",
     "docs/系统说明/故事大纲世界选项/2-apocalypse.md": "c3e524717e6531eb6dce8856b267ef333adfd59e5a65e5ba3b2a19073e1717bf",
@@ -945,7 +943,7 @@
     "src/game/data/global/cgVariantRules.ts": "a9be23c234f0c8a980f304256066538db732625a5fa49647b91b3b240a58e091",
     "src/game/data/global/gameMenuData.js": "549ad516de3df68f5628f912a08cf9d28dcfc52ef21e1d863bc11c3235bddb69",
     "src/game/data/global/updateRecordGroups.js": "ca9b92d0987ceb1890868ada15342a3d76e05657a319a92be851bde8efb64544",
-    "src/game/data/global/updateRecords.js": "a83580c6a74cc6441e7afe6a2f14a73efec96f1d24efd434e615680d804c3d33",
+    "src/game/data/global/updateRecords.js": "71366b46997763d3b58ea6f0ae97519223ef2d9006b6d66680446263f2d11fb6",
     "src/game/data/globalAssets.ts": "c8f61d63f69f0aed0fee4e821683bf4a2cee733104d4b48ab7f78d4879f4c17f",
     "src/game/data/interactive_fictions/asylum_for_lunatic/assets.ts": "a15be46e4a9841f1ea133a883c435b5fd799a858cde8a4ca44036650236c5a69",
     "src/game/data/interactive_fictions/asylum_for_lunatic/index.ts": "af405bbd76de80f5999d0f28a81a48b97a8219a3d050de42320247917c44c98b",
@@ -992,7 +990,7 @@
     "src/game/data/playerCharacter.ts": "b4f7e96702b463f51fe9465923234e7c367d901dd6a7f3a2c82c70eccdcecd5f",
     "src/game/data/playerMovementPresentationRules.ts": "4ce397fec7e93a6a5dcdaddcac3650f012293edb066e78405e2e0110f218248d",
     "src/game/data/playerStatus.ts": "a8dfbba221c8b5a6f2c0b9b55a650f15b3a8c143623d68f2d3812d5566c1fe60",
-    "src/game/data/plot_outline/plotOutline.js": "05822f0c07602efe0b21b5ec51a83c3165afb2df45b57b10bce303f7f1610764",
+    "src/game/data/plot_outline/plotOutline.js": "cd6ab2ebc1935ac50e96a96fc61945ec563ae0ec610f6d8adebed287e6280343",
     "src/game/data/portraits/layerRules.ts": "75c3b3a0628e38d81971a27e01ea45308175a87c5305997f85a8cdc7b2bcb670",
     "src/game/data/portraits/liluo.ts": "716d343aa42be5aee0847b08996b3475aa02040d253b436129061d82a87dcd98",
     "src/game/data/portraits/registry.ts": "d7c6fb63b277413bfdb83d3fd8465c66916d3ded77527df8c6d5b4ae0cb0092f",
@@ -1207,7 +1205,7 @@
     "src/game/views/components/base/LoadMenuPanel.vue": "c0422431c3d089f3449626120366930e7b04b38ba29d9667b716e1929b5f86e6",
     "src/game/views/components/base/MapMenuPanel.vue": "d573936ad95834cd64e622583bd1139908cd0f9335d8f437a1068e8d4f510c66",
     "src/game/views/components/base/OutlineMenuPanel.vue": "f97603affb1672856c529cfb77605d728a9c40e4938e3a47008d94967c68349f",
-    "src/game/views/components/base/PlotOutlinePanel.vue": "4203249919204d390cd1756ca14cbc42e443e9ec84373ba0dc905af974cd8c2b",
+    "src/game/views/components/base/PlotOutlinePanel.vue": "76847d13162477bc0cae314beb326e97728503205cee19c17f2786ef1c8bb821",
     "src/game/views/components/base/QuestMenuPanel.vue": "02391e77a4771c7e7b53a0042058205d57aea8c6a920c8b42ed7ca2ce651c094",
     "src/game/views/components/base/RestraintMenuPanel.vue": "32b6fd2d07f6a3fcab6cbcc50e828df6b840bc1da0d4870d6aeb09d16a35053b",
     "src/game/views/components/base/SaveMenuPanel.vue": "96d168ab4ad59a45762c4a5bd557241ab391b36a358f63d480fab3ab2448294c",

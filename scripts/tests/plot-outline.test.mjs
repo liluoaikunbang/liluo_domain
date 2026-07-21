@@ -1,6 +1,11 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { plotOutline, findPlotEntries } from '../../src/game/data/plot_outline/plotOutline.js';
+import {
+  plotOutline,
+  findPlotEntries,
+  getPlotTagOptions,
+  getPlotBondageTagOptions
+} from '../../src/game/data/plot_outline/plotOutline.js';
 
 test('plot catalog uses unique stable ids and consistent usage state', () => {
   const ids = plotOutline.entries.map((entry) => entry.id);
@@ -103,7 +108,61 @@ test('keeps used plot entries linked to real story nodes', () => {
   assert.deepEqual(receiptPlot?.usedBy, ['world-1-glimmering-glance-old-dormitory']);
 });
 
-test('filters entries by bondage classification', () => {
-  assert.ok(findPlotEntries(plotOutline, { bondage: 'no' }).some((entry) => entry.id === 'plot-001'));
-  assert.ok(findPlotEntries(plotOutline, { bondage: 'yes' }).length > 0);
+test('filters entries independently by ordinary and bondage tags', () => {
+  assert.deepEqual(
+    findPlotEntries(plotOutline, { tag: '末日' }).map((entry) => entry.id),
+    ['plot-033', 'plot-034', 'plot-039', 'plot-040', 'plot-041']
+  );
+  assert.ok(findPlotEntries(plotOutline, { bondageTag: '监禁' }).some((entry) => entry.id === 'plot-039'));
+  assert.ok(
+    findPlotEntries(plotOutline, { tag: '末日', bondageTag: '监禁' }).every(
+      (entry) => entry.tags.includes('末日') && entry.bondageTags.includes('监禁')
+    )
+  );
+});
+
+test('keeps Liluo sustained resistance under the bondage-struggle group', () => {
+  const struggleGroup = plotOutline.groups.find((group) => group.title === '紧缚挣扎');
+  const strugglePlot = plotOutline.entries.find((entry) => entry.id === 'plot-041');
+
+  assert.ok(struggleGroup);
+  assert.equal(strugglePlot?.groupId, struggleGroup.id);
+  assert.deepEqual(strugglePlot?.worldBiases, ['2-寂土挽歌']);
+  assert.ok(strugglePlot?.tags.includes('他人安全'));
+  assert.ok(strugglePlot?.summary.includes('大母脚趾'));
+  assert.ok(strugglePlot?.summary.includes('倒吊'));
+});
+
+test('keeps the virtual-reality body abduction under the technology-consumption trap group', () => {
+  const technologyGroup = plotOutline.groups.find((group) => group.title === '科技消费陷阱');
+  const virtualAbduction = plotOutline.entries.find((entry) => entry.id === 'plot-042');
+
+  assert.equal(virtualAbduction?.groupId, technologyGroup?.id);
+  assert.deepEqual(virtualAbduction?.worldBiases, ['5-星宇织梦']);
+  assert.ok(virtualAbduction?.summary.includes('现实身体'));
+  assert.ok(virtualAbduction?.summary.includes('几个小时'));
+  assert.ok(virtualAbduction?.tags.includes('虚实错位'));
+});
+
+test('keeps tendon severing under extreme restraint and torture while preserving the cultivation transition', () => {
+  const tortureGroup = plotOutline.groups.find((group) => group.title === '极限拘束与折磨');
+  const transitionPlot = plotOutline.entries.find((entry) => entry.id === 'plot-043');
+
+  assert.equal(transitionPlot?.groupId, tortureGroup?.id);
+  assert.deepEqual(transitionPlot?.worldBiases, ['3-尘寰问道']);
+  assert.ok(transitionPlot?.summary.includes('挑断筋腱'));
+  assert.ok(transitionPlot?.summary.includes('刺青'));
+  assert.ok(transitionPlot?.tags.includes('武侠转仙侠'));
+});
+
+test('exposes unique sorted ordinary and bondage tag options', () => {
+  const ordinaryTags = getPlotTagOptions(plotOutline);
+  const bondageTags = getPlotBondageTagOptions(plotOutline);
+
+  assert.equal(new Set(ordinaryTags).size, ordinaryTags.length);
+  assert.equal(new Set(bondageTags).size, bondageTags.length);
+  assert.deepEqual(ordinaryTags, [...ordinaryTags].sort((left, right) => left.localeCompare(right, 'zh-CN')));
+  assert.deepEqual(bondageTags, [...bondageTags].sort((left, right) => left.localeCompare(right, 'zh-CN')));
+  assert.ok(ordinaryTags.includes('末日'));
+  assert.ok(bondageTags.includes('监禁'));
 });

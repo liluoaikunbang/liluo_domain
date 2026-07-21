@@ -20,15 +20,17 @@ test('places plot entries between story and gameplay', () => {
   assert.match(outlinePanelSource, /PlotOutlinePanel/u);
 });
 
-test('plot panel exposes search, usage and world-bias filters', () => {
+test('plot panel exposes search, usage, world-bias and tag filters', () => {
   assert.match(plotPanelSource, /搜索情节/u);
   assert.match(plotPanelSource, /使用状态/u);
   assert.match(plotPanelSource, /偏向世界/u);
-  assert.match(plotPanelSource, /紧缚情节/u);
-  assert.match(plotPanelSource, /bondage/u);
+  assert.match(plotPanelSource, /普通标签/u);
+  assert.match(plotPanelSource, /紧缚标签/u);
+  assert.match(plotPanelSource, /getPlotTagOptions/u);
+  assert.match(plotPanelSource, /getPlotBondageTagOptions/u);
+  assert.doesNotMatch(plotPanelSource, /<span>紧缚情节<\/span>/u);
   assert.match(plotPanelSource, /usedByLabels/u);
   assert.match(plotPanelSource, /出现人物/u);
-  assert.match(plotPanelSource, /紧缚标签/u);
   assert.match(plotPanelSource, /bondageTags/u);
   assert.match(plotPanelSource, /未使用/u);
   assert.match(plotPanelSource, /已使用/u);
