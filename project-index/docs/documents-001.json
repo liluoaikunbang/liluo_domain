@@ -1388,7 +1388,7 @@
   {
     "id": "docs/功能更新/125-故事大纲模板化标识与CG玩法汇总.md",
     "indexVersion": 1,
-    "sourceHash": "4279595f550e5695461e6d211d47bfa501de7ad7cd1a2703ee8f03557165d160",
+    "sourceHash": "50dc7f082b24e5b4349ecdc9cd2764c784c083c17e2874548ee43da16a91bb2a",
     "sourcePath": "docs/功能更新/125-故事大纲模板化标识与CG玩法汇总.md",
     "subtype": "update",
     "summary": "故事大纲模板化标识与 CG 玩法汇总",
@@ -1531,7 +1531,7 @@
   {
     "id": "docs/功能更新目录.md",
     "indexVersion": 1,
-    "sourceHash": "426af57c47c2402501d666c080f198952362d529612a576df04179e27e7d7598",
+    "sourceHash": "b44755d167be7f01a2407d84cbe2e7df3af2e56e2b2a0fc116b93767687fb1c7",
     "sourcePath": "docs/功能更新目录.md",
     "subtype": "other",
     "summary": "功能更新目录",
@@ -1652,7 +1652,7 @@
   {
     "id": "docs/技能说明/liluo-story-outline-authoring.md",
     "indexVersion": 1,
-    "sourceHash": "92d3a9efd8d2a84a9b65501405f6e64402f0958c090900dc9df3b94da7f533ad",
+    "sourceHash": "ead8fbc6360b8b9033216787f4e7ac8d6a5175f46fec5c58733698debe7a42f2",
     "sourcePath": "docs/技能说明/liluo-story-outline-authoring.md",
     "subtype": "skill",
     "summary": "liluo-story-outline-authoring",
@@ -1685,7 +1685,7 @@
   {
     "id": "docs/技能说明/random-story-outline-interview.md",
     "indexVersion": 1,
-    "sourceHash": "6c0f859f754db0e58bdf3b904b09ff0df5583bf29b993155a377f5d9f6d73810",
+    "sourceHash": "6b75a65445bcb6384f4e3c8423781a78fdbb5df9b4bf9b3afa3173361fe77243",
     "sourcePath": "docs/技能说明/random-story-outline-interview.md",
     "subtype": "skill",
     "summary": "random-story-outline-interview",
@@ -1806,7 +1806,7 @@
   {
     "id": "docs/系统说明/故事大纲条目模板.md",
     "indexVersion": 1,
-    "sourceHash": "c1d3f493e2dd43c2f52530dde016b83bf528d8d219469b06d2de8d2ab0e59a37",
+    "sourceHash": "ca0f9b3b242be3a7634cb1399250bf46b0b7f9bd94164d711305860ebfb13152",
     "sourcePath": "docs/系统说明/故事大纲条目模板.md",
     "subtype": "system",
     "summary": "故事大纲条目模板",

@@ -132,11 +132,12 @@ test('project story outline source is valid and keeps the fantasy main line unbr
     if (currentNode.title === '缄礼宫廷') {
       assert.equal(currentNode.status, '大纲草稿');
       assert.equal(currentNode.summary, '王都上流社会把拘束发展成了礼仪。');
-      assert.deepEqual(currentNode.tags, ['束腰', '拘束衣']);
+      assert.deepEqual(currentNode.bondageTags, ['束腰', '拘束衣']);
     } else {
       assert.equal(currentNode.status, '主线任务');
       assert.equal(Object.hasOwn(currentNode, 'storyTags'), false, `${currentNode.title} 不应额外显示故事线标签`);
-      assert.equal(Object.hasOwn(currentNode, 'tags'), false, `${currentNode.title} 不应额外显示普通标签`);
+      assert.equal(Object.hasOwn(currentNode, 'plotTags'), false, `${currentNode.title} 不应额外显示情节标签`);
+      assert.equal(Object.hasOwn(currentNode, 'bondageTags'), false, `${currentNode.title} 不应额外显示紧缚标签`);
     }
 
     assert.ok(children.length <= 1, `${currentNode.title} 不应产生主线分叉`);
@@ -202,7 +203,8 @@ test('science story outline keeps the requested main line unbranched with inspir
     scienceChain.push(currentNode);
     assert.equal(currentNode.status, currentNode.title === '拘束具店铺' ? '大纲草稿' : '主线任务');
     assert.equal(Object.hasOwn(currentNode, 'storyTags'), false, `${currentNode.title} 不应额外显示故事线标签`);
-    assert.equal(Object.hasOwn(currentNode, 'tags'), false, `${currentNode.title} 不应额外显示普通标签`);
+    assert.equal(Object.hasOwn(currentNode, 'plotTags'), false, `${currentNode.title} 不应额外显示情节标签`);
+    assert.equal(Object.hasOwn(currentNode, 'bondageTags'), false, `${currentNode.title} 不应额外显示紧缚标签`);
     assert.ok(children.length <= 1, `${currentNode.title} 不应产生主线分叉`);
     currentNode = children[0] ?? null;
   }
@@ -313,7 +315,8 @@ test('modern snow train merges train card game and attendant scenes', () => {
   assert.equal(keys.includes('world-1-glimmering-glance-card-game'), false);
   assert.equal(keys.includes('world-1-glimmering-glance-guest-train-attendant'), false);
   assert.equal(snowTrain?.summary, '去往雪城的火车卧铺玩法，包含火车牌局与客串乘务员场景。');
-  assert.deepEqual(snowTrain?.tags, ['气味系', '挠痒', '游戏', '职业']);
+  assert.deepEqual(snowTrain?.plotTags, ['职业']);
+  assert.deepEqual(snowTrain?.bondageTags, ['挠痒', '气味系', '游戏']);
   assert.deepEqual(snowTrain?.specialGameplay, ['气味系-踩踩', '游戏-紧缚斗地主', '职业-火车乘务员']);
 
   const foundTitles = [];
@@ -361,21 +364,25 @@ test('modern midnight city exploration is a side story under urban rumors', () =
   assert.equal(sideChild?.branchLayout, 'side');
   assert.equal(sideChild?.status, '灵感');
   assert.deepEqual(sideChild?.storyTags, ['街景一隅']);
-  assert.deepEqual(sideChild?.tags, ['DID']);
+  assert.deepEqual(sideChild?.bondageTags, ['DID']);
 });
 
-test('modern luxury theater sits between little maid team and eternal restraint maze', () => {
+test('modern ability adaptation school sits between little maid team and luxury theater', () => {
   const tree = buildStoryOutlineTree(storyOutlineSource);
   const modernRoot = tree.find((node) => node.key === 'world-1-glimmering-glance');
   const littleMaidTeam = findTreeNodeByKey(modernRoot, 'world-1-glimmering-glance-little-maid-team');
-  const luxuryTheater = littleMaidTeam?.children?.[0];
-  const eternalRestraintMaze = luxuryTheater?.children?.[0];
+  const abilityAdaptationSchool = littleMaidTeam?.children?.[0];
+  const luxuryTheater = abilityAdaptationSchool?.children?.[0];
 
+  assert.equal(abilityAdaptationSchool?.key, 'world-1-glimmering-glance-jingjiang-seventh-ability-adaptation-school');
+  assert.equal(abilityAdaptationSchool?.title, '\u8346\u6c5f\u7b2c\u4e03\u5f02\u80fd\u9002\u5e94\u5b66\u6821');
+  assert.equal(abilityAdaptationSchool?.status, '\u5927\u7eb2');
+  assert.deepEqual(abilityAdaptationSchool?.storyTags, ['\u6d6e\u4e16\u5947\u4eba', '\u8857\u666f\u4e00\u9685']);
+  assert.equal(Object.hasOwn(abilityAdaptationSchool ?? {}, 'branchLayout'), false);
   assert.equal(luxuryTheater?.key, 'world-1-glimmering-glance-luxury-theater');
   assert.equal(luxuryTheater?.title, '浮华剧场');
   assert.deepEqual(luxuryTheater?.storyTags, ['幻域回声']);
   assert.equal(Object.hasOwn(luxuryTheater ?? {}, 'branchLayout'), false);
-  assert.equal(eternalRestraintMaze?.key, 'world-1-glimmering-glance-eternal-restraint-maze');
 });
 
 test('modern old capital echo sits between prison storm and return to jingjiang', () => {

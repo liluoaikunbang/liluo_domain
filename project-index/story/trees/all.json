@@ -229,6 +229,16 @@
   },
   {
     "childKeys": [
+      "world-1-glimmering-glance-luxury-theater"
+    ],
+    "key": "world-1-glimmering-glance-jingjiang-seventh-ability-adaptation-school",
+    "parentKey": "world-1-glimmering-glance-little-maid-team",
+    "side": false,
+    "title": "荆江第七异能适应学校",
+    "world": "1-浮光掠影"
+  },
+  {
+    "childKeys": [
       "world-1-glimmering-glance-hospital-awakening"
     ],
     "key": "world-1-glimmering-glance-jingsuo-event",
@@ -247,7 +257,7 @@
   },
   {
     "childKeys": [
-      "world-1-glimmering-glance-luxury-theater"
+      "world-1-glimmering-glance-jingjiang-seventh-ability-adaptation-school"
     ],
     "key": "world-1-glimmering-glance-little-maid-team",
     "parentKey": "world-1-glimmering-glance-return-to-jingjiang",
@@ -272,7 +282,7 @@
       "world-1-glimmering-glance-silent-correction-center"
     ],
     "key": "world-1-glimmering-glance-luxury-theater",
-    "parentKey": "world-1-glimmering-glance-little-maid-team",
+    "parentKey": "world-1-glimmering-glance-jingjiang-seventh-ability-adaptation-school",
     "side": false,
     "title": "浮华剧场",
     "world": "1-浮光掠影"

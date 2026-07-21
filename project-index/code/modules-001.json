@@ -369,7 +369,7 @@
     "id": "src/game/data/global/updateRecords.js",
     "indexVersion": 1,
     "references": {},
-    "sourceHash": "e6dcc5a8ccbb1c8890e05e0479f0bd9f0142fd8f07ee5546ff76604c5832692d",
+    "sourceHash": "a83580c6a74cc6441e7afe6a2f14a73efec96f1d24efd434e615680d804c3d33",
     "sourcePath": "src/game/data/global/updateRecords.js",
     "subtype": "module",
     "summary": "module：src/game/data/global/updateRecords.js",
@@ -954,7 +954,7 @@
         "./storyOutlineSource.js"
       ]
     },
-    "sourceHash": "1e559dfa3512391e6e0101b26ecd6ffd403b07f532716c95a9f6bc4c459a69ac",
+    "sourceHash": "ecfe3499274daffe46b2ef41978568ff834ae256a0e5b89d2742889aa26dae62",
     "sourcePath": "src/game/data/story_outline/storyCharacterOutline.js",
     "subtype": "module",
     "summary": "module：src/game/data/story_outline/storyCharacterOutline.js",
@@ -996,7 +996,7 @@
     "id": "src/game/data/story_outline/storyOutlineFrontmatter.js",
     "indexVersion": 1,
     "references": {},
-    "sourceHash": "029235f9dddae19fc64dc440636963e0003a1e9a35f945c3e4975f91cda40aff",
+    "sourceHash": "c67ae1fda06718f624875ae9c78d7c2340710afbdefadd105c969c024572b1bf",
     "sourcePath": "src/game/data/story_outline/storyOutlineFrontmatter.js",
     "subtype": "module",
     "summary": "module：src/game/data/story_outline/storyOutlineFrontmatter.js",
@@ -2057,7 +2057,7 @@
         "./storyMetaPopover"
       ]
     },
-    "sourceHash": "8d909a6ac409af2c33a1e5f1f2177e4009a286ff1c0cadf5df2d684a0e274388",
+    "sourceHash": "07fccc1c1d6df89f81065d01ff9f00a5c7de33613be8f5d5b1f5937f4f6d637c",
     "sourcePath": "src/game/views/components/base/StoryMenuPanel.vue",
     "subtype": "vue",
     "summary": "vue：src/game/views/components/base/StoryMenuPanel.vue",

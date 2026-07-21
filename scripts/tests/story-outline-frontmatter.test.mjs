@@ -15,7 +15,8 @@ const outline = [
         summary: 'JSON 摘要',
         detailLabel: 'JSON 按钮',
         storyTags: ['旧章节'],
-        tags: ['旧标签'],
+        plotTags: ['旧情节标签'],
+        bondageTags: ['旧紧缚标签'],
         specialGameplay: ['旧玩法'],
         characters: ['旧角色'],
         locations: ['旧地点'],
@@ -57,8 +58,10 @@ const markdownModules = {
     '  - gameplay-104',
     'foreshadowing:',
     '  - YAML 伏笔',
-    'tags:',
-    '  - YAML 标签',
+    'plotTags:',
+    '  - YAML 情节标签',
+    'bondageTags:',
+    '  - YAML 紧缚标签',
     'specialGameplay:',
     '  - YAML 玩法',
     'characters:',
@@ -100,7 +103,8 @@ assert.deepEqual(node.gameplayRefs, ['gameplay-104']);
 assert.deepEqual(node.storyTags, ['街景一隅']);
 assert.equal(node.status, '大纲草稿');
 assert.deepEqual(node.foreshadowing, ['YAML 伏笔']);
-assert.deepEqual(node.tags, ['YAML 标签']);
+assert.deepEqual(node.plotTags, ['YAML 情节标签']);
+assert.deepEqual(node.bondageTags, ['YAML 紧缚标签']);
 assert.deepEqual(node.specialGameplay, ['YAML 玩法']);
 assert.deepEqual(node.characters, ['YAML 角色']);
 assert.deepEqual(node.locations, ['YAML 地点']);

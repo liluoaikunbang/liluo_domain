@@ -63,7 +63,7 @@ function collectMappedModules() {
 test('all existing ordinary story modules use the current maturity-aware template', () => {
   const failures = [];
   const modules = collectMappedModules();
-  assert.equal(modules.length, 70);
+  assert.equal(modules.length, 71);
 
   for (const module of modules) {
     const markdown = fs.readFileSync(module.path, 'utf8');

@@ -213,6 +213,16 @@
     "title": "荆江堪舆"
   },
   {
+    "key": "world-1-glimmering-glance-jingjiang-seventh-ability-adaptation-school",
+    "markdownPath": "src/game/data/story_outline/1-modern/4.1.1-荆江第七异能适应学校.md",
+    "missingItems": [
+      "人物｜第七异能适应学校·成年适应班｜缺少主要学员姓名、各自能力边界及发起课堂整蛊的组织者",
+      "玩法｜第七异能适应学校·课堂控制权｜缺少各类异能整蛊的识别线索、错误判断反馈和课堂失控阈值表",
+      "衔接｜第七异能适应学校·课后线索｜缺少本章通过哪名学员、异常作业或校外实践任务具体续接《浮华剧场》"
+    ],
+    "title": "荆江第七异能适应学校"
+  },
+  {
     "key": "world-1-glimmering-glance-liminal-space",
     "markdownPath": "src/game/data/story_outline/1-modern/4.3.1-阈限空间.md",
     "missingItems": [

@@ -158,8 +158,8 @@
                 </div>
                 <strong class="story-node-title">{{ node.title }}</strong>
                 <p v-if="node.summary" class="story-node-summary">{{ node.summary }}</p>
-                <div v-if="node.tags.length > 0" class="story-node-tags" aria-label="玩法标签">
-                  <span v-for="tag in node.tags" :key="tag" class="story-node-tag">{{ tag }}</span>
+                <div v-if="node.bondageTags.length > 0" class="story-node-tags" aria-label="紧缚标签">
+                  <span v-for="bondageTag in node.bondageTags" :key="bondageTag" class="story-node-tag">{{ bondageTag }}</span>
                 </div>
                 <button
                   v-if="hasMissingItems(node)"
@@ -198,7 +198,7 @@
                 <th scope="col">状态</th>
                 <th scope="col">故事线</th>
                 <th scope="col">概要</th>
-                <th scope="col">标签</th>
+                <th scope="col">紧缚标签</th>
                 <th scope="col">特殊玩法</th>
                 <th scope="col">主要角色</th>
                 <th scope="col">所在地点</th>
@@ -278,8 +278,8 @@
                 </td>
                 <td class="story-table-summary">{{ node.summary }}</td>
                 <td>
-                  <div v-if="node.tags.length > 0" class="story-table-tags">
-                    <span v-for="tag in node.tags" :key="tag" class="story-node-tag">{{ tag }}</span>
+                  <div v-if="node.bondageTags.length > 0" class="story-table-tags">
+                    <span v-for="bondageTag in node.bondageTags" :key="bondageTag" class="story-node-tag">{{ bondageTag }}</span>
                   </div>
                   <span v-else class="story-table-empty">-</span>
                 </td>
@@ -633,7 +633,8 @@
               <tr>
                 <th scope="col">文件名</th>
                 <th scope="col">状态</th>
-                <th scope="col" :class="getSummaryMatchFieldClass('tags')">tags</th>
+                <th scope="col" :class="getSummaryMatchFieldClass('plotTags')">情节标签</th>
+                <th scope="col" :class="getSummaryMatchFieldClass('bondageTags')">紧缚标签</th>
                 <th scope="col" :class="getSummaryMatchFieldClass('specialGameplay')">specialGameplay</th>
                 <th scope="col">简介</th>
               </tr>
@@ -668,10 +669,22 @@
                   <span v-else>-</span>
                 </td>
                 <td class="story-summary-copy-cell">
-                  <template v-if="node.tagsText">
+                  <template v-if="node.plotTagsText">
                     <span
-                      v-for="(part, index) in getSummaryMatchHighlightedParts(node.tagsText)"
-                      :key="`${node.key || node.fileTitle}-tags-${index}`"
+                      v-for="(part, index) in getSummaryMatchHighlightedParts(node.plotTagsText)"
+                      :key="`${node.key || node.fileTitle}-plot-tags-${index}`"
+                      :class="{ 'story-summary-match-keyword': part.isMatch }"
+                    >
+                      {{ part.text }}
+                    </span>
+                  </template>
+                  <span v-else>-</span>
+                </td>
+                <td class="story-summary-copy-cell">
+                  <template v-if="node.bondageTagsText">
+                    <span
+                      v-for="(part, index) in getSummaryMatchHighlightedParts(node.bondageTagsText)"
+                      :key="`${node.key || node.fileTitle}-bondage-tags-${index}`"
                       :class="{ 'story-summary-match-keyword': part.isMatch }"
                     >
                       {{ part.text }}
@@ -812,25 +825,6 @@ const layoutModeOptions = [
 ];
 
 const clamp = (value, min, max) => Math.min(max, Math.max(min, value));
-const STORY_TAG_NAMES = new Set([
-  '帝国线索',
-  '街景一隅',
-  '诡影侵临',
-  '暗痕追迹',
-  '禁域长廊',
-  '浮世奇人',
-  '寂土主线',
-  '尸潮噬世',
-  '废城求生',
-  '诡雾迷城',
-  '灾后见闻',
-  '问道主线',
-  '修行岔路',
-  '玄途炼心',
-  '序律乐园',
-  '律序乐园',
-  '星宇主线'
-]);
 const SUMMARY_FIELD_DEFINITIONS = [
   {
     key: 'primaryGameplay',
@@ -841,8 +835,12 @@ const SUMMARY_FIELD_DEFINITIONS = [
     label: 'storyTags'
   },
   {
-    key: 'tags',
-    label: 'tags'
+    key: 'plotTags',
+    label: '情节标签'
+  },
+  {
+    key: 'bondageTags',
+    label: '紧缚标签'
   },
   {
     key: 'specialGameplay',
@@ -871,20 +869,15 @@ function unique(values) {
 }
 
 function getStoryTags(node) {
-  const explicitStoryTags = Array.isArray(node.storyTags) ? node.storyTags : [];
-  const migratedStoryTags = Array.isArray(node.tags) ? node.tags.filter((tag) => STORY_TAG_NAMES.has(tag)) : [];
-
-  return unique([...explicitStoryTags, ...migratedStoryTags]).slice(0, 2);
+  return unique(Array.isArray(node.storyTags) ? node.storyTags : []).slice(0, 2);
 }
 
-function getNormalTags(node) {
-  return Array.isArray(node.tags)
-    ? node.tags.filter((tag) => !STORY_TAG_NAMES.has(tag)).slice(0, 4)
-    : [];
+function getBondageTags(node) {
+  return unique(Array.isArray(node.bondageTags) ? node.bondageTags : []).slice(0, 4);
 }
 
-function getTableTags(node) {
-  return Array.isArray(node.tags) ? node.tags.filter((tag) => !STORY_TAG_NAMES.has(tag)) : [];
+function getTableBondageTags(node) {
+  return unique(Array.isArray(node.bondageTags) ? node.bondageTags : []);
 }
 
 function getDetailLabel(node) {
@@ -938,7 +931,8 @@ function formatSummaryValue(value) {
 function hasSummaryFields(node) {
   return [
     node.storyTags,
-    node.tags,
+    node.plotTags,
+    node.bondageTags,
     node.specialGameplay,
     node.characters,
     node.locations,
@@ -1030,7 +1024,7 @@ function getMetaItems(node) {
     createMetaItem('世界', node.world),
     createMetaItem('简介', node.summary),
     createMetaItem('伏笔', node.foreshadowing),
-    createMetaItem('玩法标签', Array.isArray(node.tags) ? node.tags : []),
+    createMetaItem('情节标签', node.plotTags),
     createMetaItem('特殊玩法', node.specialGameplay),
     createMetaItem('主要角色', node.characters),
     createMetaItem('需要异能', node.requiredAbilities),
@@ -1141,7 +1135,7 @@ function getLayoutNodeHeight(node) {
     || hasStoryDetail(node)
     || hasLinkedGameplay(node);
   const titleRows = String(node?.title ?? '').length > 16 ? 2 : 1;
-  const tagRows = node?.tags?.length > 2 ? 2 : node?.tags?.length > 0 ? 1 : 0;
+  const tagRows = node?.bondageTags?.length > 2 ? 2 : node?.bondageTags?.length > 0 ? 1 : 0;
   const summaryRows = node?.summary
     ? isCategoryStatus(node?.status)
       ? Math.max(1, Math.ceil(String(node.summary).length / 24))
@@ -1391,7 +1385,7 @@ function createTableRows(outline, collapsedKeys) {
       cgSequence: Array.isArray(node.cgSequence) ? node.cgSequence : [],
       gameplayRefs: Array.isArray(node.gameplayRefs) ? node.gameplayRefs : [],
       storyTags: getStoryTags(node),
-      tags: getTableTags(node),
+      bondageTags: getTableBondageTags(node),
       specialGameplayText: formatSummaryValue(node.specialGameplay),
       charactersText: formatSummaryValue(node.characters),
       locationsText: formatSummaryValue(node.locations),
@@ -1566,7 +1560,8 @@ function createFilteredSummaryGroups(groups) {
 
 function createSummaryMatchNode(node) {
   const fileTitle = getMarkdownFileTitle(node.detailSourcePath);
-  const tags = getTableTags(node);
+  const plotTags = toValueList(node.plotTags);
+  const bondageTags = getTableBondageTags(node);
   const specialGameplay = toValueList(node.specialGameplay);
 
   return {
@@ -1576,7 +1571,8 @@ function createSummaryMatchNode(node) {
     summary: node.summary ?? '',
     detailSourcePath: node.detailSourcePath ?? '',
     fileTitle,
-    tagsText: formatSummaryValue(tags),
+    plotTagsText: formatSummaryValue(plotTags),
+    bondageTagsText: formatSummaryValue(bondageTags),
     specialGameplayText: formatSummaryValue(specialGameplay)
   };
 }
@@ -1742,7 +1738,7 @@ function createNodeLayout(outline, mode, collapsedKeys) {
       cgSequence: Array.isArray(node.cgSequence) ? node.cgSequence : [],
       gameplayRefs: Array.isArray(node.gameplayRefs) ? node.gameplayRefs : [],
       storyTags: getStoryTags(node),
-      tags: getNormalTags(node),
+      bondageTags: getBondageTags(node),
       metaItems: getMetaItems(node),
       branchLayout: node.branchLayout,
       isSideBranchLine,
@@ -1797,7 +1793,7 @@ function createNodeLayout(outline, mode, collapsedKeys) {
       cgSequence: Array.isArray(node.cgSequence) ? node.cgSequence : [],
       gameplayRefs: Array.isArray(node.gameplayRefs) ? node.gameplayRefs : [],
       storyTags: getStoryTags(node),
-      tags: getNormalTags(node),
+      bondageTags: getBondageTags(node),
       metaItems: getMetaItems(node),
       branchLayout: node.branchLayout,
       isSideBranchLine,
@@ -1851,7 +1847,7 @@ function createNodeLayout(outline, mode, collapsedKeys) {
       displayStatus: '',
       timeline: '',
       storyTags: [],
-      tags: [],
+      bondageTags: [],
       metaItems: [],
       depth,
       canCollapse: false,

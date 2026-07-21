@@ -110,6 +110,11 @@
     "to": "world-1-glimmering-glance-huaiwan-village"
   },
   {
+    "from": "world-1-glimmering-glance-jingjiang-seventh-ability-adaptation-school",
+    "relationType": "parent",
+    "to": "world-1-glimmering-glance-little-maid-team"
+  },
+  {
     "from": "world-1-glimmering-glance-jingsuo-event",
     "relationType": "parent",
     "to": "world-1-glimmering-glance"
@@ -132,7 +137,7 @@
   {
     "from": "world-1-glimmering-glance-luxury-theater",
     "relationType": "parent",
-    "to": "world-1-glimmering-glance-little-maid-team"
+    "to": "world-1-glimmering-glance-jingjiang-seventh-ability-adaptation-school"
   },
   {
     "from": "world-1-glimmering-glance-maid-hotel",

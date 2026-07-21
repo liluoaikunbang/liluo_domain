@@ -41,7 +41,8 @@ export function buildStoryCharacterOutline(source) {
         gameplay: uniqueStrings(node.specialGameplay)
       });
       appendUnique(character.locations, node.locations);
-      appendUnique(character.tags, node.tags);
+      appendUnique(character.tags, node.plotTags);
+      appendUnique(character.tags, node.bondageTags);
       appendUnique(character.relatedNotes, node.foreshadowing);
     });
   });

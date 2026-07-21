@@ -48,13 +48,15 @@
         "沈芷为避免阻碍璃落恢复记忆而隐瞒内幕",
         "璃落的气质像沈芷创立荆锁会时想要救助的女生"
       ],
-      "tags": [
+      "plotTags": [
         "医院",
-        "拘束衣",
         "失忆",
         "创伤治疗",
         "鬼魂",
         "灵异感知"
+      ],
+      "bondageTags": [
+        "拘束衣"
       ],
       "characters": [
         "沈芷",
@@ -82,7 +84,7 @@
         "校园怪谈",
         "舞蹈教室"
       ],
-      "tags": [
+      "plotTags": [
         "校园",
         "复学",
         "校园论坛"
@@ -103,7 +105,7 @@
         "介绍",
         "璃落XP"
       ],
-      "tags": [
+      "bondageTags": [
         "模特",
         "气味系",
         "社死",
@@ -137,7 +139,7 @@
         "荆锁",
         "手铐"
       ],
-      "tags": [
+      "bondageTags": [
         "DID"
       ],
       "characters": [
@@ -180,8 +182,10 @@
         "脚铐",
         "黄毛女孩与璃落后续成为朋友"
       ],
-      "tags": [
-        "霸凌",
+      "plotTags": [
+        "霸凌"
+      ],
+      "bondageTags": [
         "气味系"
       ],
       "specialGameplay": [
@@ -259,7 +263,7 @@
         "起始",
         "杂技团"
       ],
-      "tags": [
+      "bondageTags": [
         "镣铐",
         "社死"
       ],
@@ -303,7 +307,7 @@
       "key": "world-1-glimmering-glance-midnight-city-exploration",
       "world": "1-浮光掠影",
       "title": "深夜城市探险",
-      "tags": [
+      "bondageTags": [
         "DID"
       ],
       "storyTags": [
@@ -320,7 +324,7 @@
       "title": "紧缚模特",
       "branchLayout": "side",
       "summary": "拘束用具模特。",
-      "tags": [
+      "bondageTags": [
         "模特"
       ],
       "specialGameplay": [
@@ -341,10 +345,12 @@
       "world": "1-浮光掠影",
       "title": "女仆酒店",
       "summary": "女仆酒店中被女仆们抓捕。",
-      "tags": [
-        "气味系",
+      "plotTags": [
         "职业",
         "反套路"
+      ],
+      "bondageTags": [
+        "气味系"
       ],
       "specialGameplay": [
         "踩踩",
@@ -388,9 +394,9 @@
       "world": "1-浮光掠影",
       "title": "人贩子",
       "summary": "找模特工作时遇到人贩子。",
-      "tags": [
-        "DID",
+      "bondageTags": [
         "挠痒",
+        "DID",
         "扎带"
       ],
       "specialGameplay": [
@@ -413,7 +419,7 @@
       "world": "1-浮光掠影",
       "title": "槐湾村",
       "summary": "村子里的璃落被捆着授课。",
-      "tags": [
+      "plotTags": [
         "职业"
       ],
       "specialGameplay": [
@@ -508,7 +514,7 @@
         "流程｜水泥鞋·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
         "衔接｜水泥鞋·黄毛女孩救援灵感｜黄毛女孩可能在救下璃落的过程中发挥重要作用，具体介入原因、行动和结果尚未确认"
       ],
-      "tags": [
+      "bondageTags": [
         "水泥鞋"
       ],
       "characters": [
@@ -539,7 +545,7 @@
         "人物｜失联·欣雨被捕｜缺少欣雨从《游轮》之后落入人口贩运链的原因、被捕时间及她与璃落重逢时的状态",
         "流程｜失联·折返营救｜缺少璃落折返后采用的救人办法、为何失败，以及她具体如何受伤并被重新抓获"
       ],
-      "tags": [
+      "bondageTags": [
         "社死",
         "DID",
         "模特"
@@ -582,7 +588,7 @@
         "介绍",
         "灰巷势力"
       ],
-      "tags": [
+      "bondageTags": [
         "活埋",
         "社死"
       ],
@@ -701,7 +707,7 @@
       "world": "1-浮光掠影",
       "title": "小小女仆团",
       "summary": "璃落在睡梦中遭拇指女仆袭击并被遥控改装玩具车运往后巷，玩家每回合在挣脱、呼救、保护与标记中四选一；救援进度先满可让苏婉儿在后巷截停，受限进度先满则继续转运至接应车辆前。",
-      "tags": [
+      "bondageTags": [
         "气味系"
       ],
       "characters": [
@@ -719,13 +725,38 @@
       "order": 10
     },
     {
+      "key": "world-1-glimmering-glance-jingjiang-seventh-ability-adaptation-school",
+      "world": "1-浮光掠影",
+      "title": "荆江第七异能适应学校",
+      "summary": "小小女仆团事件后，璃落以志愿者身份进入面向成年异能者的适应学校，并临时接替请假教师；学生用协作异能争夺课堂控制权，她必须识别能力来源、处理整蛊并完成自救实践课。",
+      "plotTags": [
+        "异能者学校",
+        "职业",
+        "校园整蛊",
+        "下克上"
+      ],
+      "characters": [
+        "璃落",
+        "苏婉儿",
+        "七校教务志愿协调员",
+        "成年适应班学员"
+      ],
+      "storyTags": [
+        "浮世奇人",
+        "街景一隅"
+      ],
+      "status": "大纲",
+      "parentKey": "world-1-glimmering-glance-little-maid-team",
+      "order": 10
+    },
+    {
       "key": "world-1-glimmering-glance-luxury-theater",
       "world": "1-浮光掠影",
       "title": "浮华剧场",
       "storyTags": [
         "幻域回声"
       ],
-      "parentKey": "world-1-glimmering-glance-little-maid-team",
+      "parentKey": "world-1-glimmering-glance-jingjiang-seventh-ability-adaptation-school",
       "order": 10
     },
     {
@@ -770,7 +801,7 @@
         "玩法｜阈限空间·拘束差异｜缺少不同拘束组合对移动、调查、开门、躲避与通过障碍的具体影响",
         "人物｜阈限空间·永拘迷宫建立者｜缺少建立永拘迷宫的异能者身份、能力边界，以及其本人是否知道阈限网络存在"
       ],
-      "tags": [
+      "plotTags": [
         "迷宫",
         "后室",
         "阈限空间"
@@ -806,7 +837,7 @@
       "world": "1-浮光掠影",
       "title": "极端高危女性囚犯运输终极约束方案",
       "summary": "都市反派的最终拘束方案。",
-      "tags": [
+      "bondageTags": [
         "永久拘束",
         "监禁"
       ],
@@ -822,7 +853,7 @@
       "world": "1-浮光掠影",
       "title": "沉默见证",
       "summary": "记者被剥夺所有发声能力。",
-      "tags": [
+      "bondageTags": [
         "胶水",
         "拘束生活"
       ],
@@ -842,11 +873,13 @@
       "world": "1-浮光掠影",
       "title": "雪城列车",
       "summary": "去往雪城的火车卧铺玩法，包含火车牌局与客串乘务员场景。",
-      "tags": [
-        "气味系",
-        "挠痒",
-        "游戏",
+      "plotTags": [
         "职业"
+      ],
+      "bondageTags": [
+        "挠痒",
+        "气味系",
+        "游戏"
       ],
       "specialGameplay": [
         "气味系-踩踩",
@@ -874,9 +907,11 @@
       "world": "1-浮光掠影",
       "title": "电影绑替兼职",
       "summary": "璃落接到片场绑替兼职，在电影拍摄中担任被拘束替身。",
-      "tags": [
+      "plotTags": [
         "职业",
-        "演员",
+        "演员"
+      ],
+      "bondageTags": [
         "社死"
       ],
       "specialGameplay": [
@@ -907,11 +942,13 @@
       "foreshadowing": [
         "社团活动"
       ],
-      "tags": [
+      "plotTags": [
+        "惊险刺激"
+      ],
+      "bondageTags": [
         "扎带",
         "社死",
-        "气味系",
-        "惊险刺激"
+        "气味系"
       ],
       "specialGameplay": [
         "踩踩",
@@ -940,7 +977,7 @@
       "world": "1-浮光掠影",
       "title": "感官试炼",
       "summary": "荆锁会感官刺激。",
-      "tags": [
+      "bondageTags": [
         "挠痒",
         "感官刺激"
       ],
@@ -988,7 +1025,7 @@
         "杂技团",
         "初见"
       ],
-      "tags": [
+      "bondageTags": [
         "模特"
       ],
       "specialGameplay": [
@@ -1020,7 +1057,7 @@
       "foreshadowing": [
         "社团活动"
       ],
-      "tags": [
+      "bondageTags": [
         "挠痒",
         "活埋",
         "性刺激",
@@ -1053,7 +1090,7 @@
       "title": "柔韧性练习",
       "branchLayout": "side",
       "summary": "选修舞蹈课。",
-      "tags": [
+      "bondageTags": [
         "社死",
         "疼痛"
       ],

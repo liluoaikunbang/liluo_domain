@@ -12,7 +12,7 @@ test('groups story characters by world and merges appearances', () => {
     rootKeys: ['world-modern', 'world-ancient'],
     nodes: [
       { key: 'world-modern', world: '1-浮光掠影', title: '浮光掠影（现代）' },
-      { key: 'hospital', world: '1-浮光掠影', title: '病房苏醒', summary: '在医院醒来。', characters: ['沈芷', '许知遥'], locations: ['市医院'], tags: ['医院'], foreshadowing: ['沈芷隐瞒内幕'] },
+      { key: 'hospital', world: '1-浮光掠影', title: '病房苏醒', summary: '在医院醒来。', characters: ['沈芷', '许知遥'], locations: ['市医院'], plotTags: ['医院'], foreshadowing: ['沈芷隐瞒内幕'] },
       { key: 'dance', world: '1-浮光掠影', title: '舞蹈教室', summary: '全班被绑架事件。', characters: ['沈芷'] },
       { key: 'world-ancient', world: '3-尘寰问道', title: '尘寰问道（古代）' }
     ]
