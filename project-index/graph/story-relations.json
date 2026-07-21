@@ -15,6 +15,11 @@
     "to": "world-1-glimmering-glance-fog-capital-strangeness"
   },
   {
+    "from": "world-1-glimmering-glance-bound-world-tour",
+    "relationType": "parent",
+    "to": "world-1-glimmering-glance-ultimate-restraint"
+  },
+  {
     "from": "world-1-glimmering-glance-campus-arrival",
     "relationType": "parent",
     "to": "world-1-glimmering-glance-hospital-awakening"

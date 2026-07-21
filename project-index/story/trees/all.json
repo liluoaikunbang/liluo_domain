@@ -40,6 +40,14 @@
     "world": "1-浮光掠影"
   },
   {
+    "childKeys": [],
+    "key": "world-1-glimmering-glance-bound-world-tour",
+    "parentKey": "world-1-glimmering-glance-ultimate-restraint",
+    "side": false,
+    "title": "紧缚环游世界",
+    "world": "1-浮光掠影"
+  },
+  {
     "childKeys": [
       "world-1-glimmering-glance-club"
     ],
@@ -541,7 +549,9 @@
     "world": "1-浮光掠影"
   },
   {
-    "childKeys": [],
+    "childKeys": [
+      "world-1-glimmering-glance-bound-world-tour"
+    ],
     "key": "world-1-glimmering-glance-ultimate-restraint",
     "parentKey": "world-1-glimmering-glance-epilogue",
     "side": false,
