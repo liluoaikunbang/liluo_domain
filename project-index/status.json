@@ -1,12 +1,18 @@
 {
   "affectedDomains": [
+    "code",
     "docs"
   ],
   "changes": {
     "added": [],
-    "deleted": [],
-    "modified": [
+    "deleted": [
       "docs/功能更新/138-小小女仆团双轴脱困大纲.md"
+    ],
+    "modified": [
+      "docs/功能更新/121-主界面更新记录与文档时间维护规范.md",
+      "docs/功能更新目录.md",
+      "docs/技能说明/liluo-project-documentation-sync.md",
+      "src/game/data/global/updateRecords.js"
     ],
     "renamed": []
   },
@@ -20,7 +26,7 @@
       "status": "current"
     },
     "docs": {
-      "entryCount": 183,
+      "entryCount": 182,
       "status": "current"
     },
     "game": {
@@ -40,11 +46,11 @@
       "status": "partial"
     }
   },
-  "generatedAt": "2026-07-21T11:44:40.862Z",
+  "generatedAt": "2026-07-21T11:51:19.089Z",
   "generatorVersion": "1.0.3",
   "mode": "changed",
   "schemaVersion": 1,
-  "sourceCommit": "d0d268b15e60d56e6aec58e682ff9ba7a924e26c",
+  "sourceCommit": "3fc84ad126f130981f584fc3d441caae0c4a104e",
   "sourceSnapshot": {
     "docs/README.md": "4e1f4e5ef6add109609e39b5d06610e3abb332888cd08ffe7a9867ab43695351",
     "docs/功能更新/001-GameView三栏布局与地图贴合.md": "7a4664d575a6611eaf355dd13d304e4f22d3710cb8a2ce9ad3e9824388318b06",
@@ -168,7 +174,7 @@
     "docs/功能更新/118-图鉴场景地点分组与大图内导航.md": "49db8c4b22210e7e8a957c3ebd476adeedb7288e5a8192b6a64dcdb0ff9de77e",
     "docs/功能更新/119-大纲玩法JSON导出与故事分类导出修复.md": "7747a2150603c85210cdcbd79b08bac6c635274e92b24e78d469771c338bf47b",
     "docs/功能更新/120-故事大纲游戏化模板与世界选项库.md": "4ac04b7fb36790394fa3dcaef29ff66ec169e517eb059b1d3a3b5c41b76c51c6",
-    "docs/功能更新/121-主界面更新记录与文档时间维护规范.md": "f2ec10cb15e836dc47f183aa255d11ce8c5176261f8199f839b01d604c44e55a",
+    "docs/功能更新/121-主界面更新记录与文档时间维护规范.md": "b154640b0294b9321d86fea808f3a1d10aecd41fe596cee2c61e08ea03516c67",
     "docs/功能更新/122-荆锁会演出后台CG差分素材.md": "239897a9d0c6352e882bec921923b6ea0ca929431f1f13cb25c8dc059355decd",
     "docs/功能更新/123-都市线病房苏醒与重返校园游戏大纲.md": "fc84149a81124a9684267c22b78f2ef18ccf79c7a161f4cd0aa6756f7e91b7c3",
     "docs/功能更新/124-故事大纲待补充清单.md": "a37cf40ebfc0ef56425c587d5415b3f103e061040f300878f1a788aa2f2d578c",
@@ -185,8 +191,7 @@
     "docs/功能更新/135-项目级Codex子智能体体系.md": "b2969053a61727be8798a31b103980eefb5c047924f435775a38c41942c0e656",
     "docs/功能更新/136-随机大纲访谈轻量抽取规则.md": "e1c33339d92e5ab105941e665405ba9fb406de7b92f79b49b55c893df7a07df1",
     "docs/功能更新/137-项目知识索引系统.md": "d076a027400e36e443d4abe305e2953a8ff70173c943deeedba97a0d446889a3",
-    "docs/功能更新/138-小小女仆团双轴脱困大纲.md": "a7d213fcfb33af6748da3c3794567e59d846829cd01c97ab7c802d1f9d192118",
-    "docs/功能更新目录.md": "94e7ac41193ca99ed43be6dbdd9522a974ffb930883ae9a228b8570f66b9de13",
+    "docs/功能更新目录.md": "426af57c47c2402501d666c080f198952362d529612a576df04179e27e7d7598",
     "docs/大纲玩法总表整合规格.md": "e6ffc2c182c5d46b69bd8fe08bb3b13038d005c4d08a966ac329d0bb515ec40b",
     "docs/技能说明/liluo-asset-registry-audit.md": "111c0364090f89a05009239049e662b58a55f3fb6805fdf04e4b142d80ddf71b",
     "docs/技能说明/liluo-browser-game-regression.md": "2e10bbba405b34894531841197b4cf0e7a731aec4dd3c66758dfbb0f463a7244",
@@ -194,7 +199,7 @@
     "docs/技能说明/liluo-game-content-validator.md": "8f86788a9e995df54a326208e28f94d637297210fee219c16acf3a9115cabdab",
     "docs/技能说明/liluo-gameplay-loop-audit.md": "5fb49019982b7c3af5d61b4d04dbdef2001d81ad78911d42af95c2c4bdfd0fac",
     "docs/技能说明/liluo-phaser-map-event-integration.md": "23914ac1655f8706098bc81658cc6d38ec594ce3dbf1cc8cd24e6a08c1dc0a75",
-    "docs/技能说明/liluo-project-documentation-sync.md": "0868b8056957c81835cc6bae4932fe66a1171e98e9cde306fd2d0cdf683bffb6",
+    "docs/技能说明/liluo-project-documentation-sync.md": "fb834aa14a8a6670db244bc8c60295b6fef357f2109de41ead1f64a8be226fe1",
     "docs/技能说明/liluo-project-index-maintenance.md": "fae01eb41145add29c932d52128b58f622ebd7a05b1a805c3c6b70f010c6b63f",
     "docs/技能说明/liluo-save-data-migration.md": "b2d025507894005ac824f6ab6a37e04092a647ab52bc401f798122299da38626",
     "docs/技能说明/liluo-sprite-pipeline.md": "d993cb3d9c4c6b36a281fcf5f3f5ab3dfb3504049ef48cb5117826baef50d1a7",
@@ -944,7 +949,7 @@
     "src/game/data/global/cgVariantRules.ts": "a9be23c234f0c8a980f304256066538db732625a5fa49647b91b3b240a58e091",
     "src/game/data/global/gameMenuData.js": "549ad516de3df68f5628f912a08cf9d28dcfc52ef21e1d863bc11c3235bddb69",
     "src/game/data/global/updateRecordGroups.js": "ca9b92d0987ceb1890868ada15342a3d76e05657a319a92be851bde8efb64544",
-    "src/game/data/global/updateRecords.js": "710aa8d4e529edb07c2df772abeecc0e4fe61b310608a625eee92effd4c56f07",
+    "src/game/data/global/updateRecords.js": "e6dcc5a8ccbb1c8890e05e0479f0bd9f0142fd8f07ee5546ff76604c5832692d",
     "src/game/data/globalAssets.ts": "c8f61d63f69f0aed0fee4e821683bf4a2cee733104d4b48ab7f78d4879f4c17f",
     "src/game/data/interactive_fictions/asylum_for_lunatic/assets.ts": "a15be46e4a9841f1ea133a883c435b5fd799a858cde8a4ca44036650236c5a69",
     "src/game/data/interactive_fictions/asylum_for_lunatic/index.ts": "af405bbd76de80f5999d0f28a81a48b97a8219a3d050de42320247917c44c98b",

@@ -13,5 +13,7 @@ Use the current docs index to localize records when helpful; after documentation
 2. Keep one unique numeric ID, title, creation date and current summary across document, catalog and update record.
 3. Never invent a summary, change a creation date, overwrite history or mass-renumber unrelated records.
 4. Keep records newest-first and stable for equal dates.
-5. Run `node scripts/audit-documentation-sync.mjs --check`, encoding check and update-record test.
-6. Never commit or push automatically.
+5. Do not create a feature-update number for an ordinary single story-outline edit, interview write-back, typo fix, metadata adjustment, or other routine content maintenance. Keep those changes in their authoritative content files and refresh the project index only.
+6. Create or extend a feature-update record when the work implements playable maps/events/dialogues/gameplay, changes code or system behavior, establishes a project workflow or schema, delivers a meaningful asset batch, restructures a full main-line/content batch, or otherwise materially affects multiple content nodes. Prefer appending to the existing related record when the change extends the same feature.
+7. Run `node scripts/audit-documentation-sync.mjs --check` when the script exists, plus the encoding check and update-record test. If the documented audit script is absent, report it instead of claiming it passed.
+8. Never commit or push automatically.
