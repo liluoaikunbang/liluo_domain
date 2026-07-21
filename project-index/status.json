@@ -40,11 +40,11 @@
       "status": "partial"
     }
   },
-  "generatedAt": "2026-07-21T14:19:58.574Z",
+  "generatedAt": "2026-07-21T15:03:53.822Z",
   "generatorVersion": "1.0.3",
   "mode": "changed",
   "schemaVersion": 1,
-  "sourceCommit": "b56e26009a856bba4655f295c86ab113d4d8dc4c",
+  "sourceCommit": "a7eae86329e6325ea2496936f48276f10700659c",
   "sourceSnapshot": {
     "docs/README.md": "4e1f4e5ef6add109609e39b5d06610e3abb332888cd08ffe7a9867ab43695351",
     "docs/功能更新/001-GameView三栏布局与地图贴合.md": "7a4664d575a6611eaf355dd13d304e4f22d3710cb8a2ce9ad3e9824388318b06",
@@ -214,7 +214,7 @@
     "docs/系统说明/像素行走图生成提示词模板.md": "150bef763cf631ffae5d9ced1108603144f2b0a1b7b483fd38f1b488d19a375a",
     "docs/系统说明/地图系统.md": "606e9d703a84c934a21193fc7a0435390a2d02977f3eb0f08a60301f75d5ecc6",
     "docs/系统说明/存读档系统.md": "51c45dfbc009b080b6d084b3badc740481e11474828d59eaddc74cf391be31f6",
-    "docs/系统说明/情节条目系统.md": "37d13951f3c4b5e02fb935e5318e6d1a4935e86cae3b698643a78db68355acf2",
+    "docs/系统说明/情节条目系统.md": "875d1932e9a07bdc9c5468763c231288138d4952a5de7d0d58fce7fa561312b4",
     "docs/系统说明/故事大纲世界选项/0-munika.md": "f5e795d457e5690c977108dd92546d75a6b10e92e024fcbc41652be7132acd8e",
     "docs/系统说明/故事大纲世界选项/1-modern.md": "6624477f803b2c468a75790f69274f9ab6c2d5545d27b19aca3f1c78689959ad",
     "docs/系统说明/故事大纲世界选项/2-apocalypse.md": "c3e524717e6531eb6dce8856b267ef333adfd59e5a65e5ba3b2a19073e1717bf",

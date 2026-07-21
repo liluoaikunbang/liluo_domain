@@ -111,7 +111,7 @@ test('keeps used plot entries linked to real story nodes', () => {
 test('filters entries independently by ordinary and bondage tags', () => {
   assert.deepEqual(
     findPlotEntries(plotOutline, { tag: '末日' }).map((entry) => entry.id),
-    ['plot-033', 'plot-034', 'plot-039', 'plot-040', 'plot-041']
+    ['plot-033', 'plot-034', 'plot-039', 'plot-040', 'plot-041', 'plot-044']
   );
   assert.ok(findPlotEntries(plotOutline, { bondageTag: '监禁' }).some((entry) => entry.id === 'plot-039'));
   assert.ok(
@@ -153,6 +153,49 @@ test('keeps tendon severing under extreme restraint and torture while preserving
   assert.ok(transitionPlot?.summary.includes('挑断筋腱'));
   assert.ok(transitionPlot?.summary.includes('刺青'));
   assert.ok(transitionPlot?.tags.includes('武侠转仙侠'));
+});
+
+test('keeps hot-melt glue and dripping-wax ear sealing under apocalyptic extreme torture', () => {
+  const tortureGroup = plotOutline.groups.find((group) => group.title === '极限拘束与折磨');
+  const earSealingPlot = plotOutline.entries.find((entry) => entry.id === 'plot-044');
+
+  assert.equal(earSealingPlot?.groupId, tortureGroup?.id);
+  assert.deepEqual(earSealingPlot?.worldBiases, ['2-寂土挽歌']);
+  assert.ok(earSealingPlot?.summary.includes('热熔胶'));
+  assert.ok(earSealingPlot?.summary.includes('滴蜡'));
+  assert.ok(earSealingPlot?.tags.includes('听觉封闭'));
+});
+
+test('keeps the drilled metal mouth seal combined with the existing sewn-eye and sewn-mouth imprisonment', () => {
+  const sensorySealingPlot = plotOutline.entries.find((entry) => entry.id === 'plot-039');
+
+  assert.ok(sensorySealingPlot?.summary.includes('电钻'));
+  assert.ok(sensorySealingPlot?.summary.includes('螺丝'));
+  assert.ok(sensorySealingPlot?.summary.includes('铁片'));
+  assert.ok(sensorySealingPlot?.summary.includes('牙齿'));
+  assert.ok(sensorySealingPlot?.tags.includes('金属封嘴'));
+});
+
+test('keeps forced alcohol through a medical mouth opener under teasing and bullying', () => {
+  const bullyingGroup = plotOutline.groups.find((group) => group.title === '戏弄与霸凌');
+  const forcedAlcoholPlot = plotOutline.entries.find((entry) => entry.id === 'plot-045');
+
+  assert.equal(forcedAlcoholPlot?.groupId, bullyingGroup?.id);
+  assert.deepEqual(forcedAlcoholPlot?.worldBiases, []);
+  assert.ok(forcedAlcoholPlot?.summary.includes('医用开口器'));
+  assert.ok(forcedAlcoholPlot?.summary.includes('灌酒'));
+  assert.ok(forcedAlcoholPlot?.tags.includes('剥夺拒绝权'));
+});
+
+test('keeps wrapped-hands rock-paper-scissors under teasing and bullying', () => {
+  const bullyingGroup = plotOutline.groups.find((group) => group.title === '戏弄与霸凌');
+  const wrappedHandsPlot = plotOutline.entries.find((entry) => entry.id === 'plot-046');
+
+  assert.equal(wrappedHandsPlot?.groupId, bullyingGroup?.id);
+  assert.ok(wrappedHandsPlot?.summary.includes('圆球状'));
+  assert.ok(wrappedHandsPlot?.summary.includes('猜拳'));
+  assert.ok(wrappedHandsPlot?.tags.includes('不公平游戏'));
+  assert.deepEqual(wrappedHandsPlot?.bondageTags, ['游戏']);
 });
 
 test('exposes unique sorted ordinary and bondage tag options', () => {
