@@ -1509,7 +1509,7 @@
   {
     "id": "docs/功能更新/136-随机大纲访谈轻量抽取规则.md",
     "indexVersion": 1,
-    "sourceHash": "3b0a6a70421b886f9dfb862e5df368b42acdfd4aa649a133116abd31343170e8",
+    "sourceHash": "e1c33339d92e5ab105941e665405ba9fb406de7b92f79b49b55c893df7a07df1",
     "sourcePath": "docs/功能更新/136-随机大纲访谈轻量抽取规则.md",
     "subtype": "update",
     "summary": "随机大纲访谈轻量抽取规则",
@@ -1529,9 +1529,20 @@
     "type": "document"
   },
   {
+    "id": "docs/功能更新/138-小小女仆团双轴脱困大纲.md",
+    "indexVersion": 1,
+    "sourceHash": "a7d213fcfb33af6748da3c3794567e59d846829cd01c97ab7c802d1f9d192118",
+    "sourcePath": "docs/功能更新/138-小小女仆团双轴脱困大纲.md",
+    "subtype": "update",
+    "summary": "小小女仆团双轴脱困大纲",
+    "summarySource": "title-only",
+    "title": "小小女仆团双轴脱困大纲",
+    "type": "document"
+  },
+  {
     "id": "docs/功能更新目录.md",
     "indexVersion": 1,
-    "sourceHash": "0906df81fb362157e0b0a7c4058e70329eee75407813c52b1922e80bac73e01d",
+    "sourceHash": "94e7ac41193ca99ed43be6dbdd9522a974ffb930883ae9a228b8570f66b9de13",
     "sourcePath": "docs/功能更新目录.md",
     "subtype": "other",
     "summary": "功能更新目录",
@@ -1685,7 +1696,7 @@
   {
     "id": "docs/技能说明/random-story-outline-interview.md",
     "indexVersion": 1,
-    "sourceHash": "16f7ff243682b94cc86d05c6fc038566db2b0f195b151953650e11831b4d4b47",
+    "sourceHash": "6c0f859f754db0e58bdf3b904b09ff0df5583bf29b993155a377f5d9f6d73810",
     "sourcePath": "docs/技能说明/random-story-outline-interview.md",
     "subtype": "skill",
     "summary": "random-story-outline-interview",
@@ -1795,7 +1806,7 @@
   {
     "id": "docs/系统说明/故事大纲随机提问模板.md",
     "indexVersion": 1,
-    "sourceHash": "b421429d6f4c0996aa8ef39dfd136aae5fdc9cc19a69e0c5a0a12b519c96a2b2",
+    "sourceHash": "3b6fa6b650b4cd3b26ba530d4ac78012474faffd7606a5f1f3aa8411412eff9e",
     "sourcePath": "docs/系统说明/故事大纲随机提问模板.md",
     "subtype": "system",
     "summary": "故事大纲随机提问模板",

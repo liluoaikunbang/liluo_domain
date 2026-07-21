@@ -700,19 +700,21 @@
       "key": "world-1-glimmering-glance-little-maid-team",
       "world": "1-浮光掠影",
       "title": "小小女仆团",
-      "summary": "被迷你女仆捆绑。",
+      "summary": "璃落在睡梦中遭拇指女仆袭击并被遥控改装玩具车运往后巷，玩家每回合在挣脱、呼救、保护与标记中四选一；救援进度先满可让苏婉儿在后巷截停，受限进度先满则继续转运至接应车辆前。",
       "tags": [
         "气味系"
       ],
       "characters": [
+        "璃落",
         "苏婉儿",
         "夜栈",
-        "绯总管"
+        "绯总管",
+        "拇指女仆"
       ],
       "storyTags": [
         "浮世奇人"
       ],
-      "status": "大纲草稿",
+      "status": "大纲",
       "parentKey": "world-1-glimmering-glance-return-to-jingjiang",
       "order": 10
     },

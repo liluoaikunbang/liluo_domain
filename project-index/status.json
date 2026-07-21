@@ -6,8 +6,7 @@
     "added": [],
     "deleted": [],
     "modified": [
-      "docs/功能更新/137-项目知识索引系统.md",
-      "docs/系统说明/项目知识索引系统.md"
+      "docs/功能更新/138-小小女仆团双轴脱困大纲.md"
     ],
     "renamed": []
   },
@@ -21,7 +20,7 @@
       "status": "current"
     },
     "docs": {
-      "entryCount": 182,
+      "entryCount": 183,
       "status": "current"
     },
     "game": {
@@ -41,11 +40,11 @@
       "status": "partial"
     }
   },
-  "generatedAt": "2026-07-21T09:52:57.474Z",
+  "generatedAt": "2026-07-21T11:44:40.862Z",
   "generatorVersion": "1.0.3",
   "mode": "changed",
   "schemaVersion": 1,
-  "sourceCommit": "90b2aebb9ae16ee224a5a56386badf38c3112275",
+  "sourceCommit": "d0d268b15e60d56e6aec58e682ff9ba7a924e26c",
   "sourceSnapshot": {
     "docs/README.md": "4e1f4e5ef6add109609e39b5d06610e3abb332888cd08ffe7a9867ab43695351",
     "docs/功能更新/001-GameView三栏布局与地图贴合.md": "7a4664d575a6611eaf355dd13d304e4f22d3710cb8a2ce9ad3e9824388318b06",
@@ -184,9 +183,10 @@
     "docs/功能更新/133-故事栏主线任务独立折叠恢复.md": "f847879bae28313fbd921d9cc2e8a76eeaa75fcd6797e025b52d2afd7dfd13b2",
     "docs/功能更新/134-情节灵感目录与大纲Skill联动.md": "d64351737fee25de7f71e9478d9f0b306ae3433b5e2301946ce0121c4f792bbf",
     "docs/功能更新/135-项目级Codex子智能体体系.md": "b2969053a61727be8798a31b103980eefb5c047924f435775a38c41942c0e656",
-    "docs/功能更新/136-随机大纲访谈轻量抽取规则.md": "3b0a6a70421b886f9dfb862e5df368b42acdfd4aa649a133116abd31343170e8",
+    "docs/功能更新/136-随机大纲访谈轻量抽取规则.md": "e1c33339d92e5ab105941e665405ba9fb406de7b92f79b49b55c893df7a07df1",
     "docs/功能更新/137-项目知识索引系统.md": "d076a027400e36e443d4abe305e2953a8ff70173c943deeedba97a0d446889a3",
-    "docs/功能更新目录.md": "0906df81fb362157e0b0a7c4058e70329eee75407813c52b1922e80bac73e01d",
+    "docs/功能更新/138-小小女仆团双轴脱困大纲.md": "a7d213fcfb33af6748da3c3794567e59d846829cd01c97ab7c802d1f9d192118",
+    "docs/功能更新目录.md": "94e7ac41193ca99ed43be6dbdd9522a974ffb930883ae9a228b8570f66b9de13",
     "docs/大纲玩法总表整合规格.md": "e6ffc2c182c5d46b69bd8fe08bb3b13038d005c4d08a966ac329d0bb515ec40b",
     "docs/技能说明/liluo-asset-registry-audit.md": "111c0364090f89a05009239049e662b58a55f3fb6805fdf04e4b142d80ddf71b",
     "docs/技能说明/liluo-browser-game-regression.md": "2e10bbba405b34894531841197b4cf0e7a731aec4dd3c66758dfbb0f463a7244",
@@ -201,7 +201,7 @@
     "docs/技能说明/liluo-story-outline-authoring.md": "92d3a9efd8d2a84a9b65501405f6e64402f0958c090900dc9df3b94da7f533ad",
     "docs/技能说明/liluo-story-outline-graph-maintenance.md": "0f42df54eff3aae540bdd49296c042c0a7b6de767d9d560eb897fc3cd2a41bf0",
     "docs/技能说明/liluo-world-bible-continuity-audit.md": "438aad93dc7f27aa0113bb86a3ae127a4fe1bd9a0f7f2671034b0daffd1b5651",
-    "docs/技能说明/random-story-outline-interview.md": "16f7ff243682b94cc86d05c6fc038566db2b0f195b151953650e11831b4d4b47",
+    "docs/技能说明/random-story-outline-interview.md": "6c0f859f754db0e58bdf3b904b09ff0df5583bf29b993155a377f5d9f6d73810",
     "docs/智能体说明/liluo_content_auditor.md": "2eb7a18e20a7e943acce196ffc5d630d8736b0f98e00ab59966b120f0c34ae4f",
     "docs/智能体说明/liluo_context_explorer.md": "63f5bf7d54648e631d6041533db14d2c2880bcf533adff95ffe46fe48563067d",
     "docs/智能体说明/liluo_continuity_reviewer.md": "495d079ef28fc1dbbb3d758666997993bd12046274cf528b53b7ce9e0043c91b",
@@ -223,7 +223,7 @@
     "docs/系统说明/故事大纲世界选项/4-fantasy.md": "5a1eee1a9cf7accd2338d4cb313c7683a8e61830fd31793740c5381a596e4af3",
     "docs/系统说明/故事大纲世界选项/5-science.md": "d826fea11dfec353159f95476fa05cc00db89f0fc3451d9eedb798b72fd039e5",
     "docs/系统说明/故事大纲条目模板.md": "c1d3f493e2dd43c2f52530dde016b83bf528d8d219469b06d2de8d2ab0e59a37",
-    "docs/系统说明/故事大纲随机提问模板.md": "b421429d6f4c0996aa8ef39dfd136aae5fdc9cc19a69e0c5a0a12b519c96a2b2",
+    "docs/系统说明/故事大纲随机提问模板.md": "3b6fa6b650b4cd3b26ba530d4ac78012474faffd7606a5f1f3aa8411412eff9e",
     "docs/系统说明/游戏视图与模式.md": "cf54c683f485b54f2520b397dee8354e9b0cd23988c24a74c59a82bc9199d89e",
     "docs/系统说明/角色外观与运行时状态.md": "3f8c31612e5162e2a7607612e191d2f54716cb1f3501ef28bf28b3524151ba5d",
     "docs/系统说明/项目知识索引系统.md": "58e5d82bb0f01bb90a29d1f7bdc1db0d6e68ae587de86d57cf334503b0c5e357",
@@ -944,7 +944,7 @@
     "src/game/data/global/cgVariantRules.ts": "a9be23c234f0c8a980f304256066538db732625a5fa49647b91b3b240a58e091",
     "src/game/data/global/gameMenuData.js": "549ad516de3df68f5628f912a08cf9d28dcfc52ef21e1d863bc11c3235bddb69",
     "src/game/data/global/updateRecordGroups.js": "ca9b92d0987ceb1890868ada15342a3d76e05657a319a92be851bde8efb64544",
-    "src/game/data/global/updateRecords.js": "c1dca24a560f46f3c03fedcc11da284c18c53633ed746af64fae44324d5bf625",
+    "src/game/data/global/updateRecords.js": "710aa8d4e529edb07c2df772abeecc0e4fe61b310608a625eee92effd4c56f07",
     "src/game/data/globalAssets.ts": "c8f61d63f69f0aed0fee4e821683bf4a2cee733104d4b48ab7f78d4879f4c17f",
     "src/game/data/interactive_fictions/asylum_for_lunatic/assets.ts": "a15be46e4a9841f1ea133a883c435b5fd799a858cde8a4ca44036650236c5a69",
     "src/game/data/interactive_fictions/asylum_for_lunatic/index.ts": "af405bbd76de80f5999d0f28a81a48b97a8219a3d050de42320247917c44c98b",
@@ -1050,7 +1050,7 @@
     "src/game/data/story_outline/1-modern/3.5.2.1-黑蔷薇疗养院.md": "80a9a16c625b03b609b27addc8babcabcafd4915e45c9711ed8e1cd42ce331e8",
     "src/game/data/story_outline/1-modern/3.5.3-大正浪漫.md": "99ef435451b356ba581dfda87424d8d2eb72385e2493a7fe4e9ceffc1b7f659c",
     "src/game/data/story_outline/1-modern/4-重返荆江市.md": "ac84198fef58762a22893566bf773cdbdc874fa2cd20fd5cd96e06b570bbe901",
-    "src/game/data/story_outline/1-modern/4.1-小小女仆团.md": "e29fda9cb5fb153de98647c0d84d7560856cda85cdfe7f3ab8d923885773bbeb",
+    "src/game/data/story_outline/1-modern/4.1-小小女仆团.md": "162a9efbcc04ce034f2de83050dbeaafb30841a5af4e1d7fa4f1bc6ef41536e5",
     "src/game/data/story_outline/1-modern/4.2-浮华剧场.md": "6c09ed90ee9f002cfe5c295632587f8a1233becbc60fa2c912ab34b5f86ebad6",
     "src/game/data/story_outline/1-modern/4.2.1-静默矫治中心.md": "1b1ebaae1bfa844606c539c35f76eccc4af48078058fde2242ee30d4e482919e",
     "src/game/data/story_outline/1-modern/4.2.2-幻想世界冒险.md": "c2650a3ea8076ea60002fbc9caec7d73b740f6873bd56ea8bb823d0304fe3c16",
@@ -1140,7 +1140,7 @@
     "src/game/data/story_outline/5-science/8-冷眠方舟.md": "a10e4b619d4e1ca951383bae271f97606db71b57158227fd6a7856fca650aa5f",
     "src/game/data/story_outline/5-science/9-轨道庭院.md": "a6bee012a1b71917bfa3141629faaccc8f5aae99b4828ad2d73d3026bbbe051c",
     "src/game/data/story_outline/sources/0-munika.json": "29d04868f3896837d374d92e783740722f1c9f60b606c4cf09c131859c0f5e7a",
-    "src/game/data/story_outline/sources/1-modern.json": "21b0833ee4fea43f8ce3466e318f0e99b3231cd8dd9ac4793135e131b407262c",
+    "src/game/data/story_outline/sources/1-modern.json": "7161b1c7cdd4051b804f550d6f85b3e872ec1fe600109af5650e114cc01db6ca",
     "src/game/data/story_outline/sources/2-apocalypse.json": "c57ed8ecb019ae6523c6816781e45673389d7647db3aef46e6f4d556c505d18d",
     "src/game/data/story_outline/sources/3-ancient.json": "1ef1c90a6221490ec80ca896a1ed4650d40b0a50c9f9014662dc16220e515471",
     "src/game/data/story_outline/sources/4-fantasy.json": "d0a1169b42dc66ed794b8eeeef4125f68044b2101eb66b9b173074fb72a4109d",
