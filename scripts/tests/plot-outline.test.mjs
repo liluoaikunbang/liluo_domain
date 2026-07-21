@@ -211,6 +211,22 @@ test('keeps the club snow-day sequence together under the outdoor amusement grou
   assert.ok(snowPlayPlot?.notes.includes('同一场社团冬日活动'));
 });
 
+test('keeps the science-fiction internal tickling device under extreme torture with a no-injury boundary', () => {
+  const tortureGroup = plotOutline.groups.find((group) => group.title === '极限拘束与折磨');
+  const internalTicklingPlot = plotOutline.entries.find((entry) => entry.id === 'plot-048');
+
+  assert.equal(internalTicklingPlot?.groupId, tortureGroup?.id);
+  assert.deepEqual(internalTicklingPlot?.worldBiases, ['5-星宇织梦']);
+  assert.ok(internalTicklingPlot?.summary.includes('鼻腔'));
+  assert.ok(internalTicklingPlot?.summary.includes('咽喉'));
+  assert.ok(internalTicklingPlot?.summary.includes('食道'));
+  assert.ok(internalTicklingPlot?.summary.includes('喷嚏反射'));
+  assert.ok(internalTicklingPlot?.tags.includes('无损伤边界'));
+  assert.equal(internalTicklingPlot?.isBondagePlot, false);
+  assert.deepEqual(internalTicklingPlot?.bondageTags, []);
+  assert.ok(internalTicklingPlot?.notes.includes('不描写可在现实模仿的植入步骤'));
+});
+
 test('exposes unique sorted ordinary and bondage tag options', () => {
   const ordinaryTags = getPlotTagOptions(plotOutline);
   const bondageTags = getPlotBondageTagOptions(plotOutline);

@@ -6,9 +6,7 @@
     "added": [],
     "deleted": [],
     "modified": [
-      "docs/功能更新/120-故事大纲游戏化模板与世界选项库.md",
-      "docs/技能说明/liluo-story-outline-authoring.md",
-      "docs/系统说明/故事大纲条目模板.md"
+      "docs/系统说明/情节条目系统.md"
     ],
     "renamed": []
   },
@@ -42,11 +40,11 @@
       "status": "partial"
     }
   },
-  "generatedAt": "2026-07-21T16:42:27.136Z",
+  "generatedAt": "2026-07-21T17:27:31.527Z",
   "generatorVersion": "1.0.3",
   "mode": "changed",
   "schemaVersion": 1,
-  "sourceCommit": "e8205f8f15129bf6455e005bed869a0d203f2c29",
+  "sourceCommit": "61c298ca62eb5bbf7e1090972f33fb9ce1864067",
   "sourceSnapshot": {
     "docs/README.md": "4e1f4e5ef6add109609e39b5d06610e3abb332888cd08ffe7a9867ab43695351",
     "docs/功能更新/001-GameView三栏布局与地图贴合.md": "7a4664d575a6611eaf355dd13d304e4f22d3710cb8a2ce9ad3e9824388318b06",
@@ -216,7 +214,7 @@
     "docs/系统说明/像素行走图生成提示词模板.md": "150bef763cf631ffae5d9ced1108603144f2b0a1b7b483fd38f1b488d19a375a",
     "docs/系统说明/地图系统.md": "606e9d703a84c934a21193fc7a0435390a2d02977f3eb0f08a60301f75d5ecc6",
     "docs/系统说明/存读档系统.md": "51c45dfbc009b080b6d084b3badc740481e11474828d59eaddc74cf391be31f6",
-    "docs/系统说明/情节条目系统.md": "627fe2a71ec0b0fff48d59ec84af5db1fc66a33b65e2836010be842ef4b92b4b",
+    "docs/系统说明/情节条目系统.md": "6cf5f5275f582bf34a36f412dbbde1f823107087a93ec8194c4da0599d381857",
     "docs/系统说明/故事大纲世界选项/0-munika.md": "f5e795d457e5690c977108dd92546d75a6b10e92e024fcbc41652be7132acd8e",
     "docs/系统说明/故事大纲世界选项/1-modern.md": "6624477f803b2c468a75790f69274f9ab6c2d5545d27b19aca3f1c78689959ad",
     "docs/系统说明/故事大纲世界选项/2-apocalypse.md": "c3e524717e6531eb6dce8856b267ef333adfd59e5a65e5ba3b2a19073e1717bf",
