@@ -1,0 +1,4 @@
+interface:
+  display_name: "玩法循环与落地审查"
+  short_description: "评估玩法操作循环、落地复杂度，并转化为像素单机 PVE RPG 方案"
+  default_prompt: "Use $liluo-gameplay-loop-audit to evaluate and classify a gameplay loop for this project."

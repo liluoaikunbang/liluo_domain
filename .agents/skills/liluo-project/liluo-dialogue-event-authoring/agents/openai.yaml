@@ -1,0 +1,4 @@
+interface:
+  display_name: "对话与剧情事件编写"
+  short_description: "编写包含条件分支、玩家选择、状态变化与安全重入的可执行剧情事件"
+  default_prompt: "Use $liluo-dialogue-event-authoring to author an executable dialogue or story event."

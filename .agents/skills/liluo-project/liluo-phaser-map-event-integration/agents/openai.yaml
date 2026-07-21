@@ -1,0 +1,4 @@
+interface:
+  display_name: "Phaser地图与事件接入"
+  short_description: "按现有 Vue、Phaser 与 Pinia 分层接入地图、传送、NPC 和事件流程"
+  default_prompt: "Use $liluo-phaser-map-event-integration to integrate a map or map event into the current architecture."

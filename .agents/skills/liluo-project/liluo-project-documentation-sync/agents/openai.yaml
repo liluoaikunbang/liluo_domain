@@ -1,0 +1,4 @@
+interface:
+  display_name: "项目文档与更新记录同步"
+  short_description: "同步功能文档、功能目录、技能说明与主界面更新记录，并审计编号一致性"
+  default_prompt: "Use $liluo-project-documentation-sync to audit and synchronize project documentation records."

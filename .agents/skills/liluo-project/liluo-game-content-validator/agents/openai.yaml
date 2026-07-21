@@ -1,0 +1,4 @@
+interface:
+  display_name: "游戏内容一致性验证"
+  short_description: "统一只读审计故事、地图、事件、引用、素材路径与中文文本编码"
+  default_prompt: "Use $liluo-game-content-validator to run a read-only consistency audit."

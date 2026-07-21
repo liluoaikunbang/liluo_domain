@@ -13,8 +13,8 @@
 
 ## 文件路径与引用资源
 
-- Skill 主体：`.agents/skills/random-story-outline-interview/SKILL.md`
-- Skill 界面元数据：`.agents/skills/random-story-outline-interview/agents/openai.yaml`
+- Skill 主体：`.agents/skills/liluo-project/random-story-outline-interview/SKILL.md`
+- Skill 界面元数据：`.agents/skills/liluo-project/random-story-outline-interview/agents/openai.yaml`
 - 必读提问模板：`docs/系统说明/故事大纲随机提问模板.md`
 - 写回大纲时必读：`docs/系统说明/故事大纲条目模板.md`
 - 世界候选资料：`docs/系统说明/故事大纲世界选项/`
@@ -27,12 +27,12 @@
 ### 输入
 
 - 可选的世界限定；未指定时使用全部世界。
-- 可选的条目类型、问题数量或本轮访谈主题。
+- 可选的条目类型、问题数量、本轮主题、随机种子和最近已提问节点排除表。
 - 项目中已有的 JSON、Markdown、父子节点、玩法引用和 `missingItems`。
 
 ### 输出
 
-- 真实随机抽取的条目名称。
+- 固定结构：抽中节点、已确认上下文、当前成熟度、关键缺口、4—7 个问题、预计回写文件。
 - 包含世界、风格、成熟度、父子关系、现有概念和已确认规则的上下文。
 - 默认 4–7 个指向具体条目、角色、区域或状态的元数据问题。
 - 每个问题都包含需要决定的事项、其设计影响和可选灵感方向。
@@ -41,12 +41,12 @@
 
 1. 确定用户指定的世界范围；未指定时汇总全部世界。
 2. 从含有非空 `missingItems` 的普通故事节点中随机抽取一项。
-3. 读取来源 JSON节点、对应 Markdown、父节点、子节点、相关同级节点和玩法引用。
+3. 应用可选随机种子与最近节点排除表，并读取来源 JSON 节点、对应 Markdown、父节点、子节点、相关同级节点和玩法引用。
 4. 只用已确认资料汇总上下文，不将候选灵感写成既定设定。
-5. 将缺口分为可文字回答的元数据和不便当场准备的制作项。
+5. 区分完全没有内容的节点与已有内容但缺少制作信息的节点，再将缺口分为可文字回答的元数据和后期制作项。
 6. 优先询问故事关系、进入状态、角色动机、玩家目标、核心循环、完成失败、分支结局和长期扩展规则。
 7. 默认跳过地图制作、音频、像素动画、精灵表和工程制作规格。
-8. 用户回答后，只在用户要求写回时修改大纲文件。
+8. 直接撰写、扩写或重构指定节点时转交 `liluo-story-outline-authoring`；用户回答后，只在要求写回时调用该 Skill 并执行内容验证。
 9. 写回并移除已解决问题后，按更新后的完整上下文再次审计缺口；回答中出现的下一层未决事项要改写成新的具体 `missingItems`。
 
 ## 限制与维护要点
@@ -66,14 +66,13 @@
 Skill 结构或元数据修改后，使用 UTF-8 模式运行：
 
 ```powershell
-$env:PYTHONUTF8='1'
-python C:\Users\lenovo\.codex\skills\.system\skill-creator\scripts\quick_validate.py .agents\skills\random-story-outline-interview
+node scripts\tests\validate-project-skills.mjs
 ```
 
 预期结果：
 
 ```text
-Skill is valid!
+Validated 13 project skills.
 ```
 
 同时运行：

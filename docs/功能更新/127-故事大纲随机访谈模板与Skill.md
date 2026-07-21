@@ -7,6 +7,7 @@
 - 2026-07-20：首次新增跨世界随机故事条目访谈模板与项目内 Skill，固定上下文汇总、待补项过滤和具体提问规则；同步新增技能说明文档，并在 `AGENTS.md` 建立每个新 Skill 必须单独建档的维护规则。
 - 2026-07-20：根据访谈结果校正“阈限空间”的元数据分类，从通用标签中移除属于玩法循环的“可重复探索”，玩法说明保持不变。
 - 2026-07-20：增加用户回答写回后的二次缺口审计规则，禁止因旧问题全部解决而直接清空待补项；据此为“阈限空间”补回首次跨域、主线回收、首批层级、长期记录、拘束差异和异能者关系六项具体缺口。
+- 2026-07-20：将 Skill 安全迁移到项目专属分类目录，更新验证入口，并补充随机种子、世界筛选、最近节点排除和固定输出结构。
 
 ## 实现思路
 
@@ -19,8 +20,8 @@
 ## 相关路径
 
 - `docs/系统说明/故事大纲随机提问模板.md`
-- `.agents/skills/random-story-outline-interview/SKILL.md`
-- `.agents/skills/random-story-outline-interview/agents/openai.yaml`
+- `.agents/skills/liluo-project/random-story-outline-interview/SKILL.md`
+- `.agents/skills/liluo-project/random-story-outline-interview/agents/openai.yaml`
 - `docs/技能说明/random-story-outline-interview.md`
 - `AGENTS.md`
 
@@ -40,6 +41,6 @@
 
 ## 验证
 
-- `python C:\Users\lenovo\.codex\skills\.system\skill-creator\scripts\quick_validate.py .agents\skills\random-story-outline-interview`
+- `node scripts\tests\validate-project-skills.mjs`
 - Skill 校验结果：`Skill is valid!`
 - `git diff --check`

@@ -1,0 +1,4 @@
+interface:
+  display_name: "随机故事条目访谈"
+  short_description: "按世界和随机种子抽取缺项故事，并生成带上下文的具体创作访谈问题"
+  default_prompt: "Use $random-story-outline-interview to select an incomplete story node and ask focused questions."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "游戏素材清单审计"
+  short_description: "只读审计游戏素材清单、运行时引用、重复文件和 Windows 路径冲突"
+  default_prompt: "Use $liluo-asset-registry-audit to audit game assets without modifying image files."

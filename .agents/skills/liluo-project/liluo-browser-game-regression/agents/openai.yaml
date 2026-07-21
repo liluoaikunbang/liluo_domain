@@ -1,0 +1,4 @@
+interface:
+  display_name: "浏览器游戏回归测试"
+  short_description: "如实验证 Vue 与 Phaser 游戏的浏览器操作、控制台和存档重入流程"
+  default_prompt: "Use $liluo-browser-game-regression to run or plan a truthful browser regression pass."

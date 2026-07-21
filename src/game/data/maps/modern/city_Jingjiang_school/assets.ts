@@ -16,7 +16,7 @@ const teamUrl = new URL('../../../../../assets/game/sucai/Modern/school/team.png
 const tiled4Url = new URL('../../../../../assets/game/sucai/tiled_4.png', import.meta.url).href;
 const dingingHallUrl = new URL('../../../../../assets/game/sucai/Modern/school/dinging_hall.png', import.meta.url).href;
 const farmObject2Url = new URL('../../../../../assets/game/sucai/farm_object_2.png', import.meta.url).href;
-const student1Url = new URL('../../../../../assets/game/sucai/Modern/school/NPCs/student1.png', import.meta.url).href;
+const student1Url = new URL('../../../../../assets/game/sucai/Modern/school/NPCs/student_1.png', import.meta.url).href;
 
 const spritesheetConfig = {
   frameWidth: 16,

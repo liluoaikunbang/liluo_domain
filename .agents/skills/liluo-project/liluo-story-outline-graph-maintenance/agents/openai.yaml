@@ -1,0 +1,4 @@
+interface:
+  display_name: "故事树结构维护"
+  short_description: "以稳定 key、结构摘要和 dry-run 安全维护故事树父子关系"
+  default_prompt: "Use $liluo-story-outline-graph-maintenance to preview and safely change story-tree relationships."

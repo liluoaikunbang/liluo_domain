@@ -1,0 +1,4 @@
+interface:
+  display_name: "故事大纲撰写与完善"
+  short_description: "依据真实项目资料同步撰写故事来源 JSON 与游戏化 Markdown 大纲"
+  default_prompt: "Use $liluo-story-outline-authoring to create or improve a specified story node safely."

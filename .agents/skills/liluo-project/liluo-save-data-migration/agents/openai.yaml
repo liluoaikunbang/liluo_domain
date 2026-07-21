@@ -1,0 +1,4 @@
+interface:
+  display_name: "存档格式与迁移维护"
+  short_description: "安全维护当前 v1 存档格式、导入校验、旧档兼容和逐版本迁移"
+  default_prompt: "Use $liluo-save-data-migration to design or validate a backward-compatible save migration."

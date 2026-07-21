@@ -1,0 +1,4 @@
+interface:
+  display_name: "世界观连续性审查"
+  short_description: "依据真实路径只读审查角色、组织、时间线、伏笔与跨世界连续性"
+  default_prompt: "Use $liluo-world-bible-continuity-audit to produce an evidence-backed continuity report."
