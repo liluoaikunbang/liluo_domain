@@ -1,0 +1,90 @@
+{
+  "groups": [
+    {
+      "type": "exact",
+      "sourceIds": [
+        "fb-src-000002",
+        "fb-src-000003"
+      ],
+      "paths": [
+        "external-knowledge/sources/fiction-bondage/不知道作者/【崩坏3rd 脑洞同人文】—两人的结局.md",
+        "external-knowledge/sources/fiction-bondage/不知道作者/0-临时备忘录-1.md"
+      ]
+    },
+    {
+      "type": "exact",
+      "sourceIds": [
+        "fb-src-000038",
+        "fb-src-000040"
+      ],
+      "paths": [
+        "external-knowledge/sources/fiction-bondage/堕落方舟/0-临时备忘录-1.md",
+        "external-knowledge/sources/fiction-bondage/堕落方舟/舞蹈院的恩怨-kk@男君.md"
+      ]
+    },
+    {
+      "type": "exact",
+      "sourceIds": [
+        "fb-src-000041",
+        "fb-src-000042"
+      ],
+      "paths": [
+        "external-knowledge/sources/fiction-bondage/精品单章片段/（如梦）民国美人劫番外之段氏三姐妹  第九十章    解不开的死刑绑.md",
+        "external-knowledge/sources/fiction-bondage/精品单章片段/0-临时备忘录-1.md"
+      ]
+    },
+    {
+      "type": "exact",
+      "sourceIds": [
+        "fb-src-000045",
+        "fb-src-000092"
+      ],
+      "paths": [
+        "external-knowledge/sources/fiction-bondage/其他未分类/0-临时备忘录-1.md",
+        "external-knowledge/sources/fiction-bondage/其他未分类/DID小说作品集-aertlk（P站）.md"
+      ]
+    }
+  ],
+  "possibleVersions": [
+    {
+      "type": "possible-version",
+      "titleKey": "0-临时备忘录-1",
+      "sourceIds": [
+        "fb-src-000003",
+        "fb-src-000038",
+        "fb-src-000042",
+        "fb-src-000045"
+      ],
+      "paths": [
+        "external-knowledge/sources/fiction-bondage/不知道作者/0-临时备忘录-1.md",
+        "external-knowledge/sources/fiction-bondage/堕落方舟/0-临时备忘录-1.md",
+        "external-knowledge/sources/fiction-bondage/精品单章片段/0-临时备忘录-1.md",
+        "external-knowledge/sources/fiction-bondage/其他未分类/0-临时备忘录-1.md"
+      ]
+    },
+    {
+      "type": "possible-version",
+      "titleKey": "束具失控，赏金女王的沦陷之路",
+      "sourceIds": [
+        "fb-src-000109",
+        "fb-src-000215"
+      ],
+      "paths": [
+        "external-knowledge/sources/fiction-bondage/作者,金主大大/咚咚噹117（如梦）/束具失控，赏金女王的沦陷之路.md",
+        "external-knowledge/sources/fiction-bondage/作者,金主大大/P站咚咚噹/束具失控，赏金女王的沦陷之路.md"
+      ]
+    },
+    {
+      "type": "possible-version",
+      "titleKey": "短篇",
+      "sourceIds": [
+        "fb-src-000212",
+        "fb-src-000214"
+      ],
+      "paths": [
+        "external-knowledge/sources/fiction-bondage/作者,金主大大/P站？？？/短篇.md",
+        "external-knowledge/sources/fiction-bondage/作者,金主大大/P站1105429663/短篇.md"
+      ]
+    }
+  ]
+}

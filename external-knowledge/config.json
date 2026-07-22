@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "knowledgeScope": "external-fiction-reference",
+  "canonical": false,
+  "sourceRoots": ["external-knowledge/sources/fiction-bondage"],
+  "sourceSync": {
+    "localConfig": "external-knowledge/source-sync.local.json",
+    "manifest": "external-knowledge/sync-manifest.json",
+    "automaticMirrorDeletion": true,
+    "massDeletionThreshold": 0.2
+  },
+  "supportedTextExtensions": [".md", ".txt", ".markdown"],
+  "segmentMaxCharacters": 1400,
+  "queryModes": ["exact", "keyword"],
+  "previewMaxCharacters": 80
+}

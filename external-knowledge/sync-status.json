@@ -1,0 +1,16 @@
+{
+  "status": "current",
+  "checkedAt": "2026-07-22T07:21:47.549Z",
+  "authoritativeSource": "machine-local-config",
+  "mirrorPath": "external-knowledge/sources/fiction-bondage",
+  "plan": {
+    "added": [],
+    "modified": [],
+    "renamed": [],
+    "deleted": [],
+    "unchanged": 219,
+    "deletionRatio": 0,
+    "blocked": false,
+    "blockReason": null
+  }
+}

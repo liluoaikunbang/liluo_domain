@@ -1,0 +1,19 @@
+{
+  "status": "current",
+  "checkedAt": "2026-07-22T07:21:48.164Z",
+  "metrics": {
+    "sourceFiles": 219,
+    "indexedFiles": 180,
+    "unsupportedFiles": 39,
+    "parseFailures": 0,
+    "totalCharacters": 16119910,
+    "totalSegments": 16431,
+    "duplicateFiles": 4,
+    "possibleVersions": 3,
+    "indexFiles": 36,
+    "indexSizeBytes": 25055890,
+    "largestShardBytes": 3780484,
+    "largestShardRecords": 500,
+    "status": "current"
+  }
+}

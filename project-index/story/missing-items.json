@@ -66,6 +66,16 @@
     "title": "水泥鞋"
   },
   {
+    "key": "world-1-glimmering-glance-city-investigator",
+    "markdownPath": "src/game/data/story_outline/1-modern/4.1.2-S1-城市调查员.md",
+    "missingItems": [
+      "系统｜城市调查员·委托渠道｜缺少记者、警方外围关系、受害者转介与匿名线索的首版开放顺序",
+      "玩法｜城市调查员·调查评级｜缺少证据保全、受害者安全和幕后追查三项结算的具体反馈规则",
+      "内容｜城市调查员·工厂委托｜金属厂及其他工厂案件只有方向，仍缺各自独立的犯罪问题与调查机制"
+    ],
+    "title": "城市调查员"
+  },
+  {
     "key": "world-1-glimmering-glance-club",
     "markdownPath": "src/game/data/story_outline/1-modern/1.2-加入紧缚社团.md",
     "missingItems": [
@@ -229,7 +239,7 @@
     "missingItems": [
       "人物｜第七异能适应学校·成年适应班｜缺少主要学员姓名、各自能力边界及发起课堂整蛊的组织者",
       "玩法｜第七异能适应学校·课堂控制权｜缺少各类异能整蛊的识别线索、错误判断反馈和课堂失控阈值表",
-      "衔接｜第七异能适应学校·课后线索｜缺少本章通过哪名学员、异常作业或校外实践任务具体续接《浮华剧场》"
+      "衔接｜第七异能适应学校·课后求助｜缺少提出同住者失踪委托的学员姓名及其与失踪工人的关系细节"
     ],
     "title": "荆江第七异能适应学校"
   },
@@ -329,6 +339,16 @@
       "流程｜失联·折返营救｜缺少璃落折返后采用的救人办法、为何失败，以及她具体如何受伤并被重新抓获"
     ],
     "title": "失联"
+  },
+  {
+    "key": "world-1-glimmering-glance-missing-night-bus",
+    "markdownPath": "src/game/data/story_outline/1-modern/4.1.2-消失的夜班车.md",
+    "missingItems": [
+      "人物｜消失的夜班车·失踪工人｜缺少失踪工人、提供委托的七校学员及外包劳务负责人的正式姓名",
+      "玩法｜消失的夜班车·证据链｜缺少考勤、班车、劳务单三类证据的具体矛盾项与错误判断反馈",
+      "对手｜消失的夜班车·异能掩护｜缺少受雇异能者的具体能力、限制与被识破方式"
+    ],
+    "title": "消失的夜班车"
   },
   {
     "key": "world-1-glimmering-glance-model",
@@ -742,7 +762,7 @@
   },
   {
     "key": "world-5-star-weaving-dream-restraint-paradise-shop",
-    "markdownPath": "src/game/data/story_outline/5-science/3.1-拘束具店铺.md",
+    "markdownPath": "src/game/data/story_outline/5-science/3.2-拘束具店铺.md",
     "missingItems": [
       "设计｜拘束具店铺·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
       "玩法｜拘束具店铺·主要活动｜缺少主要游戏活动类型与可执行操作循环",
@@ -750,6 +770,29 @@
       "地图｜拘束具店铺·场景结构｜缺少实际地点、区域连接、道路限制与返回变化"
     ],
     "title": "拘束具店铺"
+  },
+  {
+    "key": "world-5-star-weaving-dream-restraint-school",
+    "markdownPath": "src/game/data/story_outline/5-science/3.1-紧缚学校.md",
+    "missingItems": [
+      "设定｜紧缚学校·璃落入境身份｜缺少璃落申报游客还是定居、预计停留时长以及是否主动选择缴费豁免的最终决定",
+      "设定｜紧缚学校·身体改造边界｜缺少每周轻度改造的具体项目、可逆程度、毕业后保留效果与中止程序",
+      "规则｜紧缚学校·审美法律｜缺少貌美程度的法定指标、复核与申诉流程，以及不达标者进入监狱还是矫正机构的准确条件",
+      "玩法｜紧缚学校·学年压缩｜缺少一年课程在游戏中的周次抽样、必修课数量、考核失败恢复与跳课代价"
+    ],
+    "title": "紧缚学校"
+  },
+  {
+    "key": "world-5-star-weaving-dream-reverse-immigration-prison",
+    "markdownPath": "src/game/data/story_outline/5-science/3.3-反向移民监狱.md",
+    "missingItems": [
+      "设定｜反向移民监狱·合规抓捕手续｜缺少外星购买者办理何种手续后可抓捕本地居民、居民是否曾签署同意以及手续能否被撤销",
+      "流程｜反向移民监狱·璃落出狱方式｜缺少璃落最终越狱、被转运、获外援救出还是通过法律漏洞离开的确定结局",
+      "设定｜反向移民监狱·女性消失机制｜缺少本星球几乎看不到老年女性究竟由外输、改造、身份注销或其他制度造成的准确答案",
+      "玩法｜反向移民监狱·训练循环｜缺少服从训练、身份剥夺、改造评估与反抗调查之间的具体操作循环及失败恢复规则",
+      "衔接｜反向移民监狱·仿生迷途｜缺少本模块结局如何把璃落或监狱证据引向后续“仿生迷途”的明确事件"
+    ],
+    "title": "反向移民监狱"
   },
   {
     "key": "world-6-cursebound-echoes-silent-rite-court",

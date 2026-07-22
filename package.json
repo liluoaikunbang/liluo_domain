@@ -16,6 +16,13 @@
     "project:index:check": "node scripts/project-index/check-project-index.mjs",
     "project:index:validate": "node scripts/project-index/validate-project-index.mjs",
     "project:index:query": "node scripts/project-index/query-project-index.mjs",
+    "external:knowledge:build": "node scripts/external-knowledge/build-external-knowledge.mjs --all",
+    "external:knowledge:sync": "node scripts/external-knowledge/sync-external-knowledge.mjs",
+    "external:knowledge:update": "node scripts/external-knowledge/update-external-knowledge.mjs --changed",
+    "external:knowledge:check": "node scripts/external-knowledge/check-external-knowledge.mjs",
+    "external:knowledge:validate": "node scripts/external-knowledge/validate-external-knowledge.mjs",
+    "external:knowledge:query": "node scripts/external-knowledge/query-external-knowledge.mjs",
+    "external:knowledge:copy-check": "node scripts/external-knowledge/check-copy-similarity.mjs",
     "map:trim-empty-border": "node scripts/maps/trim-empty-map-border.js",
     "assets:build-liluo-character-frames": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts\\assets\\build-liluo-character-frames.ps1"
   },

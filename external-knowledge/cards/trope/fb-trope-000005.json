@@ -1,0 +1,51 @@
+{
+  "cardId": "fb-trope-000005",
+  "cardType": "trope",
+  "title": "调查—受阻—发现新路径的推进模式",
+  "concepts": [
+    "调查起点",
+    "阻力升级",
+    "原创转折"
+  ],
+  "abstractPatterns": [
+    "调查起点",
+    "阻力升级",
+    "原创转折"
+  ],
+  "tags": [
+    "环境:都市",
+    "叙事:仪式",
+    "叙事:调查",
+    "氛围:悬疑",
+    "状态:受限",
+    "环境:地牢",
+    "叙事:逃脱"
+  ],
+  "sourceRefs": [
+    {
+      "sourceId": "fb-src-000001",
+      "segmentId": "fb-src-000001-seg-00005",
+      "sourcePath": "external-knowledge/sources/fiction-bondage/不知道作者/（完结）彼岸花开.md",
+      "startLine": 16,
+      "endLine": 17
+    },
+    {
+      "sourceId": "fb-src-000002",
+      "segmentId": "fb-src-000002-seg-00001",
+      "sourcePath": "external-knowledge/sources/fiction-bondage/不知道作者/【崩坏3rd 脑洞同人文】—两人的结局.md",
+      "startLine": 3,
+      "endLine": 11
+    },
+    {
+      "sourceId": "fb-src-000003",
+      "segmentId": "fb-src-000003-seg-00001",
+      "sourcePath": "external-knowledge/sources/fiction-bondage/不知道作者/0-临时备忘录-1.md",
+      "startLine": 3,
+      "endLine": 11
+    }
+  ],
+  "reviewStatus": "candidate",
+  "directQuoteIncluded": false,
+  "knowledgeScope": "external-fiction-reference",
+  "canonical": false
+}

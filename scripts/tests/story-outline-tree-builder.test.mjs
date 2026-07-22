@@ -176,7 +176,9 @@ test('science story outline keeps the requested main line unbranched with inspir
     '星门港区',
     '环锁群星',
     '律序乐园',
+    '紧缚学校',
     '拘束具店铺',
+    '反向移民监狱',
     '仿生迷途',
     '镜域沉沦',
     '基序蛊城',
@@ -201,7 +203,14 @@ test('science story outline keeps the requested main line unbranched with inspir
     const children = Array.isArray(currentNode.children) ? currentNode.children : [];
 
     scienceChain.push(currentNode);
-    assert.equal(currentNode.status, currentNode.title === '拘束具店铺' ? '大纲草稿' : '主线任务');
+    const expectedStatus = currentNode.title === '紧缚学校'
+      ? '大纲'
+      : currentNode.title === '反向移民监狱'
+        ? '大纲'
+      : currentNode.title === '拘束具店铺'
+        ? '大纲草稿'
+        : '主线任务';
+    assert.equal(currentNode.status, expectedStatus);
     assert.equal(Object.hasOwn(currentNode, 'storyTags'), false, `${currentNode.title} 不应额外显示故事线标签`);
     assert.equal(Object.hasOwn(currentNode, 'plotTags'), false, `${currentNode.title} 不应额外显示情节标签`);
     assert.equal(Object.hasOwn(currentNode, 'bondageTags'), false, `${currentNode.title} 不应额外显示紧缚标签`);
@@ -242,14 +251,24 @@ test('science story outline keeps the requested main line unbranched with inspir
 
     assert.match(markdown, /world: 5-星宇织梦/);
     assert.match(markdown, /status: 主线任务/);
-    assert.match(markdown, /detailLabel: 灵感/);
+    assert.match(markdown, /detailLabel: (?:灵感|主线备忘)/);
     assert.ok(markdown.split('---').at(-1)?.trim(), `${title} 应有灵感正文`);
   });
 
   assert.equal(
-    existsSync('src/game/data/story_outline/5-science/3.1-拘束具店铺.md'),
+    existsSync('src/game/data/story_outline/5-science/3.1-紧缚学校.md'),
     true,
-    '拘束具店铺应按律序乐园下的单元格编号保留灵感 Markdown'
+    '紧缚学校应作为律序乐园下的第一个普通模块'
+  );
+  assert.equal(
+    existsSync('src/game/data/story_outline/5-science/3.2-拘束具店铺.md'),
+    true,
+    '拘束具店铺应顺延为律序乐园下的后续模块'
+  );
+  assert.equal(
+    existsSync('src/game/data/story_outline/5-science/3.3-反向移民监狱.md'),
+    true,
+    '反向移民监狱应位于拘束具店铺之后'
   );
 });
 
@@ -367,22 +386,30 @@ test('modern midnight city exploration is a side story under urban rumors', () =
   assert.deepEqual(sideChild?.bondageTags, ['DID']);
 });
 
-test('modern ability adaptation school sits between little maid team and luxury theater', () => {
+test('modern night bus investigation unlocks one long-term city investigator branch', () => {
   const tree = buildStoryOutlineTree(storyOutlineSource);
   const modernRoot = tree.find((node) => node.key === 'world-1-glimmering-glance');
   const littleMaidTeam = findTreeNodeByKey(modernRoot, 'world-1-glimmering-glance-little-maid-team');
   const abilityAdaptationSchool = littleMaidTeam?.children?.[0];
-  const luxuryTheater = abilityAdaptationSchool?.children?.[0];
+  const missingNightBus = abilityAdaptationSchool?.children?.[0];
+  const luxuryTheater = missingNightBus?.children?.find((node) => node.key === 'world-1-glimmering-glance-luxury-theater');
+  const cityInvestigator = missingNightBus?.children?.find((node) => node.key === 'world-1-glimmering-glance-city-investigator');
 
   assert.equal(abilityAdaptationSchool?.key, 'world-1-glimmering-glance-jingjiang-seventh-ability-adaptation-school');
   assert.equal(abilityAdaptationSchool?.title, '\u8346\u6c5f\u7b2c\u4e03\u5f02\u80fd\u9002\u5e94\u5b66\u6821');
   assert.equal(abilityAdaptationSchool?.status, '\u5927\u7eb2');
   assert.deepEqual(abilityAdaptationSchool?.storyTags, ['\u6d6e\u4e16\u5947\u4eba', '\u8857\u666f\u4e00\u9685']);
   assert.equal(Object.hasOwn(abilityAdaptationSchool ?? {}, 'branchLayout'), false);
+  assert.equal(missingNightBus?.key, 'world-1-glimmering-glance-missing-night-bus');
+  assert.equal(missingNightBus?.title, '消失的夜班车');
+  assert.equal(missingNightBus?.status, '大纲');
   assert.equal(luxuryTheater?.key, 'world-1-glimmering-glance-luxury-theater');
   assert.equal(luxuryTheater?.title, '浮华剧场');
   assert.deepEqual(luxuryTheater?.storyTags, ['幻域回声']);
   assert.equal(Object.hasOwn(luxuryTheater ?? {}, 'branchLayout'), false);
+  assert.equal(cityInvestigator?.title, '城市调查员');
+  assert.equal(cityInvestigator?.branchLayout, 'side');
+  assert.equal(Array.isArray(cityInvestigator?.children), false);
 });
 
 test('modern old capital echo sits between prison storm and return to jingjiang', () => {

@@ -28,6 +28,7 @@
 - 世界观连续性：`liluo-world-bible-continuity-audit`
 - 玩法循环：`liluo-gameplay-loop-audit`
 - 项目知识索引：`liluo-project-index-maintenance`
+- 外部虚构题材知识库：`liluo-external-fiction-knowledge`
 
 ## 项目知识索引
 

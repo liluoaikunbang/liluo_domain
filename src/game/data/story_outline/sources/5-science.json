@@ -32,7 +32,7 @@
       "world": "5-星宇织梦",
       "title": "仿生迷途",
       "status": "主线任务",
-      "parentKey": "world-5-star-weaving-dream-restraint-paradise-shop",
+      "parentKey": "world-5-star-weaving-dream-reverse-immigration-prison",
       "order": 30
     },
     {
@@ -49,8 +49,26 @@
       "title": "拘束具店铺",
       "summary": "拘束用品店。",
       "status": "大纲草稿",
+      "parentKey": "world-5-star-weaving-dream-restraint-school",
+      "order": 27
+    },
+    {
+      "key": "world-5-star-weaving-dream-restraint-school",
+      "world": "5-星宇织梦",
+      "title": "紧缚学校",
+      "summary": "璃落进入律序乐园时被要求申报游客或定居身份；预计停留超过一年的外来者原则上必须接受为期一年的紧缚学校教育，在学习被缚常识的同时每周接受轻度身体适应改造，富裕者则可以缴费豁免。",
+      "status": "大纲",
       "parentKey": "world-5-star-weaving-dream-order-paradise",
       "order": 26
+    },
+    {
+      "key": "world-5-star-weaving-dream-reverse-immigration-prison",
+      "world": "5-星宇织梦",
+      "title": "反向移民监狱",
+      "summary": "璃落因阻止持有合规手续的外星人口贩子抓捕本星球居民而触犯跨星球干涉法，在无法用金钱解决的涉外案件中被投入一座以奴隶训练、性器化改造和动物化改造为核心的监狱，并由此看见律序乐园鼓励居民以奴隶身份向外星定居的真正制度本质。",
+      "status": "大纲",
+      "parentKey": "world-5-star-weaving-dream-restraint-paradise-shop",
+      "order": 28
     },
     {
       "key": "world-5-star-weaving-dream-mirror-domain",

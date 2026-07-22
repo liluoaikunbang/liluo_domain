@@ -10,7 +10,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "7dc97df25eb23b4a9b0e39ae6dcd8eb7c2ee666a498a53fb0bd0a6cfab255d84"
+      "json": "466a487e1098c7657ea5a68d0f92d33b6894ed41abef77fc5c84b79525bacc01"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
     "summary": "带有一些超自然能力与现象的现代都市世界。",
@@ -39,7 +39,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "7dc97df25eb23b4a9b0e39ae6dcd8eb7c2ee666a498a53fb0bd0a6cfab255d84",
+      "json": "466a487e1098c7657ea5a68d0f92d33b6894ed41abef77fc5c84b79525bacc01",
       "markdown": "1bbfba03ff8c3dc1ec945b13938b0c1354f12edcd9dce3ebe5bd5cadbdb25f92"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -68,7 +68,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "7dc97df25eb23b4a9b0e39ae6dcd8eb7c2ee666a498a53fb0bd0a6cfab255d84",
+      "json": "466a487e1098c7657ea5a68d0f92d33b6894ed41abef77fc5c84b79525bacc01",
       "markdown": "73bdcfa471f90d49898cf4ab7c3c44ee5f265e6c1e819973f01886b9b7bf1ded"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -97,7 +97,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "7dc97df25eb23b4a9b0e39ae6dcd8eb7c2ee666a498a53fb0bd0a6cfab255d84",
+      "json": "466a487e1098c7657ea5a68d0f92d33b6894ed41abef77fc5c84b79525bacc01",
       "markdown": "0ffdadfc5df50e28973e06c6b3ba6dc05511ccc162cf345d4737f288dcdb0267"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -133,7 +133,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "7dc97df25eb23b4a9b0e39ae6dcd8eb7c2ee666a498a53fb0bd0a6cfab255d84",
+      "json": "466a487e1098c7657ea5a68d0f92d33b6894ed41abef77fc5c84b79525bacc01",
       "markdown": "10bde2d5396a4d2de371716cf7fab2d96c313e4de11bf2434ef92d9c81d92dab"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -172,7 +172,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "7dc97df25eb23b4a9b0e39ae6dcd8eb7c2ee666a498a53fb0bd0a6cfab255d84",
+      "json": "466a487e1098c7657ea5a68d0f92d33b6894ed41abef77fc5c84b79525bacc01",
       "markdown": "bc3ccbb6f0a62fe0b844c6f1557f42c34375a3669e4a66ac9bdf7dc7f44b97a9"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -209,13 +209,48 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "7dc97df25eb23b4a9b0e39ae6dcd8eb7c2ee666a498a53fb0bd0a6cfab255d84",
+      "json": "466a487e1098c7657ea5a68d0f92d33b6894ed41abef77fc5c84b79525bacc01",
       "markdown": "3adef71345e80e28487fcacdab1c5d7e4d449130d3b22d75831eccca7d4e3e4e"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
     "summary": "水泥鞋拷问，推入湖中。",
     "summarySource": "frontmatter.summary",
     "title": "水泥鞋",
+    "type": "story-node",
+    "world": "1-浮光掠影"
+  },
+  {
+    "characters": [
+      "璃落",
+      "丝袜厂人员",
+      "金属厂人员"
+    ],
+    "childKeys": [],
+    "id": "world-1-glimmering-glance-city-investigator",
+    "indexVersion": 1,
+    "key": "world-1-glimmering-glance-city-investigator",
+    "locations": [
+      "荆江市",
+      "城市调查委托板"
+    ],
+    "markdownPath": "src/game/data/story_outline/1-modern/4.1.2-S1-城市调查员.md",
+    "maturity": "大纲",
+    "missingItems": [
+      "系统｜城市调查员·委托渠道｜缺少记者、警方外围关系、受害者转介与匿名线索的首版开放顺序",
+      "玩法｜城市调查员·调查评级｜缺少证据保全、受害者安全和幕后追查三项结算的具体反馈规则",
+      "内容｜城市调查员·工厂委托｜金属厂及其他工厂案件只有方向，仍缺各自独立的犯罪问题与调查机制"
+    ],
+    "parentKey": "world-1-glimmering-glance-missing-night-bus",
+    "series": "1-modern",
+    "side": true,
+    "sourceHashes": {
+      "json": "466a487e1098c7657ea5a68d0f92d33b6894ed41abef77fc5c84b79525bacc01",
+      "markdown": "c0ede0e563fe5ae91d014f553bb905e6579868c9760c4f6f623c92128b313183"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
+    "summary": "完成夜班车失踪案后，璃落以独立调查员身份接受城市人为案件委托，调查工厂、企业和地下运输链中的失踪、非法拘禁与异能滥用；异常灾害处理组织只在案件升级为异常区域或灾害时介入。",
+    "summarySource": "frontmatter.summary",
+    "title": "城市调查员",
     "type": "story-node",
     "world": "1-浮光掠影"
   },
@@ -245,7 +280,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "7dc97df25eb23b4a9b0e39ae6dcd8eb7c2ee666a498a53fb0bd0a6cfab255d84",
+      "json": "466a487e1098c7657ea5a68d0f92d33b6894ed41abef77fc5c84b79525bacc01",
       "markdown": "6a0acf8b411b7bcbbc3c00504e863880ea80efd5447dbd651d18c412ea325f34"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -281,7 +316,7 @@
     "series": "1-modern",
     "side": true,
     "sourceHashes": {
-      "json": "7dc97df25eb23b4a9b0e39ae6dcd8eb7c2ee666a498a53fb0bd0a6cfab255d84",
+      "json": "466a487e1098c7657ea5a68d0f92d33b6894ed41abef77fc5c84b79525bacc01",
       "markdown": "fa085398afd644c5601727945ad6dfda2c9a8cfef6511de22d90bfc1d2567e9e"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -318,7 +353,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "7dc97df25eb23b4a9b0e39ae6dcd8eb7c2ee666a498a53fb0bd0a6cfab255d84",
+      "json": "466a487e1098c7657ea5a68d0f92d33b6894ed41abef77fc5c84b79525bacc01",
       "markdown": "2a42fee2e88f3d15e492f736c513c9cb83c4c1fc5c61b208d24576eb26b54d83"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -340,7 +375,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "7dc97df25eb23b4a9b0e39ae6dcd8eb7c2ee666a498a53fb0bd0a6cfab255d84"
+      "json": "466a487e1098c7657ea5a68d0f92d33b6894ed41abef77fc5c84b79525bacc01"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
     "summary": "灰巷线尾声。",
@@ -370,7 +405,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "7dc97df25eb23b4a9b0e39ae6dcd8eb7c2ee666a498a53fb0bd0a6cfab255d84",
+      "json": "466a487e1098c7657ea5a68d0f92d33b6894ed41abef77fc5c84b79525bacc01",
       "markdown": "2ae21a66818dc2bbf663424272e7b2eed89143dd2950e9175cc7715e301c59b2"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -396,7 +431,7 @@
     "series": "1-modern",
     "side": true,
     "sourceHashes": {
-      "json": "7dc97df25eb23b4a9b0e39ae6dcd8eb7c2ee666a498a53fb0bd0a6cfab255d84",
+      "json": "466a487e1098c7657ea5a68d0f92d33b6894ed41abef77fc5c84b79525bacc01",
       "markdown": "e3908a4b007097f5fe6047f9a2939bc95e00c7295a297f26f878d006cc7d2d88"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -427,7 +462,7 @@
     "series": "1-modern",
     "side": true,
     "sourceHashes": {
-      "json": "7dc97df25eb23b4a9b0e39ae6dcd8eb7c2ee666a498a53fb0bd0a6cfab255d84",
+      "json": "466a487e1098c7657ea5a68d0f92d33b6894ed41abef77fc5c84b79525bacc01",
       "markdown": "0fd1beb4addc89b59f3723a5b93a57736477d16d2730729de46dedb73c3e6768"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -456,7 +491,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "7dc97df25eb23b4a9b0e39ae6dcd8eb7c2ee666a498a53fb0bd0a6cfab255d84",
+      "json": "466a487e1098c7657ea5a68d0f92d33b6894ed41abef77fc5c84b79525bacc01",
       "markdown": "89c8ce59ec2371e89111ffb06d94cd82fe0916699d3c0dd08fd6fdf03fa75c35"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -485,7 +520,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "7dc97df25eb23b4a9b0e39ae6dcd8eb7c2ee666a498a53fb0bd0a6cfab255d84",
+      "json": "466a487e1098c7657ea5a68d0f92d33b6894ed41abef77fc5c84b79525bacc01",
       "markdown": "c46ad84e214d509496888f842967db3ee66abf2c8c9c17b6a794d28a488439be"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -511,7 +546,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "7dc97df25eb23b4a9b0e39ae6dcd8eb7c2ee666a498a53fb0bd0a6cfab255d84"
+      "json": "466a487e1098c7657ea5a68d0f92d33b6894ed41abef77fc5c84b79525bacc01"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
     "summary": "暗巷与废墟交织的地下都市，暴力与无序像潮水般涌动。",
@@ -540,7 +575,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "7dc97df25eb23b4a9b0e39ae6dcd8eb7c2ee666a498a53fb0bd0a6cfab255d84",
+      "json": "466a487e1098c7657ea5a68d0f92d33b6894ed41abef77fc5c84b79525bacc01",
       "markdown": "df50514135eb7176139244b7b1852baa07d9751cdad30c21cb073e7b3b470b5e"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -583,7 +618,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "7dc97df25eb23b4a9b0e39ae6dcd8eb7c2ee666a498a53fb0bd0a6cfab255d84",
+      "json": "466a487e1098c7657ea5a68d0f92d33b6894ed41abef77fc5c84b79525bacc01",
       "markdown": "9c3d4ee426bfbe320c43ec35c5a68e0280309763830d2a8a96cd17d7cfd062c2"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -616,7 +651,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "7dc97df25eb23b4a9b0e39ae6dcd8eb7c2ee666a498a53fb0bd0a6cfab255d84",
+      "json": "466a487e1098c7657ea5a68d0f92d33b6894ed41abef77fc5c84b79525bacc01",
       "markdown": "8629d0e1bcd0ad2293346d37a6cb98444244722cf200371728d3ffd3beedc0a2"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -647,7 +682,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "7dc97df25eb23b4a9b0e39ae6dcd8eb7c2ee666a498a53fb0bd0a6cfab255d84",
+      "json": "466a487e1098c7657ea5a68d0f92d33b6894ed41abef77fc5c84b79525bacc01",
       "markdown": "68c413f0a2f3482e2d913d2f14efd0dfec70f1e0394d8e93fd7836696c7e5759"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -682,7 +717,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "7dc97df25eb23b4a9b0e39ae6dcd8eb7c2ee666a498a53fb0bd0a6cfab255d84",
+      "json": "466a487e1098c7657ea5a68d0f92d33b6894ed41abef77fc5c84b79525bacc01",
       "markdown": "74df7a8cbd9507971e4b04e9e3681a09045ae6eac80511df10fc061604b567c8"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -717,7 +752,7 @@
     "series": "1-modern",
     "side": true,
     "sourceHashes": {
-      "json": "7dc97df25eb23b4a9b0e39ae6dcd8eb7c2ee666a498a53fb0bd0a6cfab255d84",
+      "json": "466a487e1098c7657ea5a68d0f92d33b6894ed41abef77fc5c84b79525bacc01",
       "markdown": "05be0a5d1d93c67bae35ef1f4937213917b5867032350190234d3a510a108d0d"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -746,7 +781,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "7dc97df25eb23b4a9b0e39ae6dcd8eb7c2ee666a498a53fb0bd0a6cfab255d84",
+      "json": "466a487e1098c7657ea5a68d0f92d33b6894ed41abef77fc5c84b79525bacc01",
       "markdown": "58b83e4c2d2b2c3ed55dafb1bda5c708bbfbc8e593ce44783a5530cc0dc77059"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -764,7 +799,7 @@
       "成年适应班学员"
     ],
     "childKeys": [
-      "world-1-glimmering-glance-luxury-theater"
+      "world-1-glimmering-glance-missing-night-bus"
     ],
     "id": "world-1-glimmering-glance-jingjiang-seventh-ability-adaptation-school",
     "indexVersion": 1,
@@ -779,14 +814,14 @@
     "missingItems": [
       "人物｜第七异能适应学校·成年适应班｜缺少主要学员姓名、各自能力边界及发起课堂整蛊的组织者",
       "玩法｜第七异能适应学校·课堂控制权｜缺少各类异能整蛊的识别线索、错误判断反馈和课堂失控阈值表",
-      "衔接｜第七异能适应学校·课后线索｜缺少本章通过哪名学员、异常作业或校外实践任务具体续接《浮华剧场》"
+      "衔接｜第七异能适应学校·课后求助｜缺少提出同住者失踪委托的学员姓名及其与失踪工人的关系细节"
     ],
     "parentKey": "world-1-glimmering-glance-little-maid-team",
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "7dc97df25eb23b4a9b0e39ae6dcd8eb7c2ee666a498a53fb0bd0a6cfab255d84",
-      "markdown": "1eb4a5e3397c4100614ccd1b1e8e0e712d6a8f660e581b11df228daada5879ff"
+      "json": "466a487e1098c7657ea5a68d0f92d33b6894ed41abef77fc5c84b79525bacc01",
+      "markdown": "b97f8bc149e1707eed6f51e99066b4055a53635018aed2720b41ebd08c89422d"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
     "summary": "小小女仆团事件后，璃落以志愿者身份进入面向成年异能者的适应学校，并临时接替请假教师；学生用协作异能争夺课堂控制权，她必须识别能力来源、处理整蛊并完成自救实践课。",
@@ -811,7 +846,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "7dc97df25eb23b4a9b0e39ae6dcd8eb7c2ee666a498a53fb0bd0a6cfab255d84"
+      "json": "466a487e1098c7657ea5a68d0f92d33b6894ed41abef77fc5c84b79525bacc01"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
     "summary": "每个学校，都有属于自己的灵异传说。",
@@ -856,7 +891,7 @@
     "series": "1-modern",
     "side": true,
     "sourceHashes": {
-      "json": "7dc97df25eb23b4a9b0e39ae6dcd8eb7c2ee666a498a53fb0bd0a6cfab255d84",
+      "json": "466a487e1098c7657ea5a68d0f92d33b6894ed41abef77fc5c84b79525bacc01",
       "markdown": "4fa654d3154b58aa9a8d0cfddb10a387f17153e776be671cba6c798593718772"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -895,7 +930,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "7dc97df25eb23b4a9b0e39ae6dcd8eb7c2ee666a498a53fb0bd0a6cfab255d84",
+      "json": "466a487e1098c7657ea5a68d0f92d33b6894ed41abef77fc5c84b79525bacc01",
       "markdown": "a2a62a95a7c866d34ac7df7b33a7868e880e58f539527677b18ccbf7ed504052"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -932,7 +967,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "7dc97df25eb23b4a9b0e39ae6dcd8eb7c2ee666a498a53fb0bd0a6cfab255d84",
+      "json": "466a487e1098c7657ea5a68d0f92d33b6894ed41abef77fc5c84b79525bacc01",
       "markdown": "0b43d2b98a9ce8f8c1e82679ac46f7f5f150f78e86a6d9133ad07930f8e7fed6"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -957,11 +992,11 @@
       "流程｜浮华剧场·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
       "地图｜浮华剧场·场景结构｜缺少实际地点、区域连接、道路限制与返回变化"
     ],
-    "parentKey": "world-1-glimmering-glance-jingjiang-seventh-ability-adaptation-school",
+    "parentKey": "world-1-glimmering-glance-missing-night-bus",
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "7dc97df25eb23b4a9b0e39ae6dcd8eb7c2ee666a498a53fb0bd0a6cfab255d84",
+      "json": "466a487e1098c7657ea5a68d0f92d33b6894ed41abef77fc5c84b79525bacc01",
       "markdown": "911805b1b4bda09982e7e20c61997589a29c33d600057fa22ad1d17672b3d7ec"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -995,7 +1030,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "7dc97df25eb23b4a9b0e39ae6dcd8eb7c2ee666a498a53fb0bd0a6cfab255d84",
+      "json": "466a487e1098c7657ea5a68d0f92d33b6894ed41abef77fc5c84b79525bacc01",
       "markdown": "353aa800f91411a02854d762b7de444d779f1ca3ce1e8b4e83f8c730bbe3985b"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -1022,7 +1057,7 @@
     "series": "1-modern",
     "side": true,
     "sourceHashes": {
-      "json": "7dc97df25eb23b4a9b0e39ae6dcd8eb7c2ee666a498a53fb0bd0a6cfab255d84",
+      "json": "466a487e1098c7657ea5a68d0f92d33b6894ed41abef77fc5c84b79525bacc01",
       "markdown": "d5c97bef514d86449218cf81593b9782e55b52bded4f32e02db4558b11bbba6c"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -1051,7 +1086,7 @@
     "series": "1-modern",
     "side": true,
     "sourceHashes": {
-      "json": "7dc97df25eb23b4a9b0e39ae6dcd8eb7c2ee666a498a53fb0bd0a6cfab255d84",
+      "json": "466a487e1098c7657ea5a68d0f92d33b6894ed41abef77fc5c84b79525bacc01",
       "markdown": "7def76dd2a05ca394fbf606678fdbe8b6707ad1970cecb6231932ac03350b08c"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -1078,7 +1113,7 @@
     "series": "1-modern",
     "side": true,
     "sourceHashes": {
-      "json": "7dc97df25eb23b4a9b0e39ae6dcd8eb7c2ee666a498a53fb0bd0a6cfab255d84",
+      "json": "466a487e1098c7657ea5a68d0f92d33b6894ed41abef77fc5c84b79525bacc01",
       "markdown": "c5b217a1f8a498e7d9b214943676bff3c4e2d1938e4001cb710a81c3293813df"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -1117,13 +1152,55 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "7dc97df25eb23b4a9b0e39ae6dcd8eb7c2ee666a498a53fb0bd0a6cfab255d84",
+      "json": "466a487e1098c7657ea5a68d0f92d33b6894ed41abef77fc5c84b79525bacc01",
       "markdown": "97039a1206cfcfd63950ff8df4af1b7461ab635fd4f625e8d91cbe2df67ec440"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
     "summary": "璃落在国外 SM 酒吧遭绑架后本可独自逃生，却因在被贩运者中看见欣雨而折返救人，最终负伤被抓回并押上运奴船。",
     "summarySource": "frontmatter.summary",
     "title": "失联",
+    "type": "story-node",
+    "world": "1-浮光掠影"
+  },
+  {
+    "characters": [
+      "璃落",
+      "苏婉儿",
+      "七校成年适应班学员",
+      "失踪工人",
+      "外包劳务负责人"
+    ],
+    "childKeys": [
+      "world-1-glimmering-glance-city-investigator",
+      "world-1-glimmering-glance-luxury-theater"
+    ],
+    "id": "world-1-glimmering-glance-missing-night-bus",
+    "indexVersion": 1,
+    "key": "world-1-glimmering-glance-missing-night-bus",
+    "locations": [
+      "荆江第七异能适应学校",
+      "荆江工业园",
+      "外包劳务办公点",
+      "夜班车停车区"
+    ],
+    "markdownPath": "src/game/data/story_outline/1-modern/4.1.2-消失的夜班车.md",
+    "maturity": "大纲",
+    "missingItems": [
+      "人物｜消失的夜班车·失踪工人｜缺少失踪工人、提供委托的七校学员及外包劳务负责人的正式姓名",
+      "玩法｜消失的夜班车·证据链｜缺少考勤、班车、劳务单三类证据的具体矛盾项与错误判断反馈",
+      "对手｜消失的夜班车·异能掩护｜缺少受雇异能者的具体能力、限制与被识破方式"
+    ],
+    "parentKey": "world-1-glimmering-glance-jingjiang-seventh-ability-adaptation-school",
+    "series": "1-modern",
+    "side": false,
+    "sourceHashes": {
+      "json": "466a487e1098c7657ea5a68d0f92d33b6894ed41abef77fc5c84b79525bacc01",
+      "markdown": "9139dd08e6fe43c2fc81b173ca7892af8d1d9d96df72ceb63edbbef4057a6183"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
+    "summary": "七校学员的同住者在工业园下夜班后失踪，璃落从被篡改的考勤、反复更换的班车和外包劳务单追查跨厂转运链，在证据被销毁前截停车辆、救出失踪工人，并由此开始接受城市中的人为案件委托。",
+    "summarySource": "frontmatter.summary",
+    "title": "消失的夜班车",
     "type": "story-node",
     "world": "1-浮光掠影"
   },
@@ -1146,7 +1223,7 @@
     "series": "1-modern",
     "side": true,
     "sourceHashes": {
-      "json": "7dc97df25eb23b4a9b0e39ae6dcd8eb7c2ee666a498a53fb0bd0a6cfab255d84",
+      "json": "466a487e1098c7657ea5a68d0f92d33b6894ed41abef77fc5c84b79525bacc01",
       "markdown": "a06c9361e30f71059dc71f6eda7bf6039bdfc3a2fdc35df4ad9c79fb85432c23"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -1178,7 +1255,7 @@
     "series": "1-modern",
     "side": true,
     "sourceHashes": {
-      "json": "7dc97df25eb23b4a9b0e39ae6dcd8eb7c2ee666a498a53fb0bd0a6cfab255d84",
+      "json": "466a487e1098c7657ea5a68d0f92d33b6894ed41abef77fc5c84b79525bacc01",
       "markdown": "8ea49dbf878538b47f0fb0601a7d5884584b10ad9ea9d153b164f3704b10f5e1"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -1205,7 +1282,7 @@
     "series": "1-modern",
     "side": true,
     "sourceHashes": {
-      "json": "7dc97df25eb23b4a9b0e39ae6dcd8eb7c2ee666a498a53fb0bd0a6cfab255d84",
+      "json": "466a487e1098c7657ea5a68d0f92d33b6894ed41abef77fc5c84b79525bacc01",
       "markdown": "82d96efa0b679fc080dcf78b5f0d26ecfefa01c7edfb21c9b303e19c71148349"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -1227,7 +1304,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "7dc97df25eb23b4a9b0e39ae6dcd8eb7c2ee666a498a53fb0bd0a6cfab255d84"
+      "json": "466a487e1098c7657ea5a68d0f92d33b6894ed41abef77fc5c84b79525bacc01"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
     "summary": "旧都遗留的回声，把监狱风云之后的线索重新引向荆江市。",
@@ -1254,7 +1331,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "7dc97df25eb23b4a9b0e39ae6dcd8eb7c2ee666a498a53fb0bd0a6cfab255d84",
+      "json": "466a487e1098c7657ea5a68d0f92d33b6894ed41abef77fc5c84b79525bacc01",
       "markdown": "bb96b0b61428aee245bd1686daa4960ad3b24d9b586da6c3905bf4f560772ddc"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -1294,7 +1371,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "7dc97df25eb23b4a9b0e39ae6dcd8eb7c2ee666a498a53fb0bd0a6cfab255d84",
+      "json": "466a487e1098c7657ea5a68d0f92d33b6894ed41abef77fc5c84b79525bacc01",
       "markdown": "a67273f8a02f5d3162af535d8d256de982d5f6e8f63a1313ee578382fdfd2ce4"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -1326,7 +1403,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "7dc97df25eb23b4a9b0e39ae6dcd8eb7c2ee666a498a53fb0bd0a6cfab255d84",
+      "json": "466a487e1098c7657ea5a68d0f92d33b6894ed41abef77fc5c84b79525bacc01",
       "markdown": "56bcf219197802bc15acc6aefbedc1ebe9cce4d640863927f05315b3f06f6422"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -1355,7 +1432,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "7dc97df25eb23b4a9b0e39ae6dcd8eb7c2ee666a498a53fb0bd0a6cfab255d84",
+      "json": "466a487e1098c7657ea5a68d0f92d33b6894ed41abef77fc5c84b79525bacc01",
       "markdown": "dd3e3867786eae9db7607797f1ddca2d809eb40cddef6b1141a455305b990122"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -1382,7 +1459,7 @@
     "series": "1-modern",
     "side": true,
     "sourceHashes": {
-      "json": "7dc97df25eb23b4a9b0e39ae6dcd8eb7c2ee666a498a53fb0bd0a6cfab255d84",
+      "json": "466a487e1098c7657ea5a68d0f92d33b6894ed41abef77fc5c84b79525bacc01",
       "markdown": "28a582337b77122b588baf3a3c603d6df23af6e3ee4cbeffdab8d210e1b886ab"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -1411,7 +1488,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "7dc97df25eb23b4a9b0e39ae6dcd8eb7c2ee666a498a53fb0bd0a6cfab255d84",
+      "json": "466a487e1098c7657ea5a68d0f92d33b6894ed41abef77fc5c84b79525bacc01",
       "markdown": "20b96dfa93fdb958e79b70fb9a37f1b4029e1d9c32c8ec81c27bd04cda387ce5"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -1428,16 +1505,18 @@
     "id": "world-1-glimmering-glance-return-to-jingjiang",
     "indexVersion": 1,
     "key": "world-1-glimmering-glance-return-to-jingjiang",
+    "markdownPath": "src/game/data/story_outline/1-modern/4-重返荆江市.md",
     "maturity": "主线任务",
     "parentKey": "world-1-glimmering-glance-taisho-romance",
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "7dc97df25eb23b4a9b0e39ae6dcd8eb7c2ee666a498a53fb0bd0a6cfab255d84"
+      "json": "466a487e1098c7657ea5a68d0f92d33b6894ed41abef77fc5c84b79525bacc01",
+      "markdown": "9ec4a5255a43da1156977a6d2c99338b1cb26029660a3ea3fd1bad58a1245390"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
-    "summary": "与罪恶异能者组织的最终决战。",
-    "summarySource": "source-json.summary",
+    "summary": "璃落回到荆江市后，从地下异能者猎人、合法异能者社会和城市人为案件三条线重新认识故乡，逐步追查以企业和机构为外壳的罪恶异能者组织。",
+    "summarySource": "frontmatter.summary",
     "title": "重返荆江市",
     "type": "story-node",
     "world": "1-浮光掠影"
@@ -1461,7 +1540,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "7dc97df25eb23b4a9b0e39ae6dcd8eb7c2ee666a498a53fb0bd0a6cfab255d84",
+      "json": "466a487e1098c7657ea5a68d0f92d33b6894ed41abef77fc5c84b79525bacc01",
       "markdown": "549d6a88e7e3a21c8376fd156e0e559e9fd637320c00ddd663135451cf18473f"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -1503,7 +1582,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "7dc97df25eb23b4a9b0e39ae6dcd8eb7c2ee666a498a53fb0bd0a6cfab255d84",
+      "json": "466a487e1098c7657ea5a68d0f92d33b6894ed41abef77fc5c84b79525bacc01",
       "markdown": "851f448007d9814b609770a663e534406ccb6613c4d67b57d8caa28d2b96ba09"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -1535,7 +1614,7 @@
     "series": "1-modern",
     "side": true,
     "sourceHashes": {
-      "json": "7dc97df25eb23b4a9b0e39ae6dcd8eb7c2ee666a498a53fb0bd0a6cfab255d84",
+      "json": "466a487e1098c7657ea5a68d0f92d33b6894ed41abef77fc5c84b79525bacc01",
       "markdown": "446d2bf1c575a10d8cb711fc3a0b290ef32f13f500b7fe6bc78069e390a958ec"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -1564,7 +1643,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "7dc97df25eb23b4a9b0e39ae6dcd8eb7c2ee666a498a53fb0bd0a6cfab255d84",
+      "json": "466a487e1098c7657ea5a68d0f92d33b6894ed41abef77fc5c84b79525bacc01",
       "markdown": "b131083be9c7f4035cec052e6f845b103899cc510d965d368317f1b0f9af51c3"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -1594,7 +1673,7 @@
     "series": "1-modern",
     "side": true,
     "sourceHashes": {
-      "json": "7dc97df25eb23b4a9b0e39ae6dcd8eb7c2ee666a498a53fb0bd0a6cfab255d84",
+      "json": "466a487e1098c7657ea5a68d0f92d33b6894ed41abef77fc5c84b79525bacc01",
       "markdown": "b15a418b9a18fbb24d942ec003b45a6325fcf65d0f96250045e3ea1447c19a57"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -1623,7 +1702,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "7dc97df25eb23b4a9b0e39ae6dcd8eb7c2ee666a498a53fb0bd0a6cfab255d84",
+      "json": "466a487e1098c7657ea5a68d0f92d33b6894ed41abef77fc5c84b79525bacc01",
       "markdown": "ea7b7a2fcec8188296287796dab2b33bfe6eaddb1e7165d61105cb639bdb3691"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -1657,7 +1736,7 @@
     "series": "1-modern",
     "side": true,
     "sourceHashes": {
-      "json": "7dc97df25eb23b4a9b0e39ae6dcd8eb7c2ee666a498a53fb0bd0a6cfab255d84",
+      "json": "466a487e1098c7657ea5a68d0f92d33b6894ed41abef77fc5c84b79525bacc01",
       "markdown": "79c5e96f0f407b4f80cd5c4f16d3d467d70cc22d55b312d5f946590b957ac656"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -1687,7 +1766,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "7dc97df25eb23b4a9b0e39ae6dcd8eb7c2ee666a498a53fb0bd0a6cfab255d84",
+      "json": "466a487e1098c7657ea5a68d0f92d33b6894ed41abef77fc5c84b79525bacc01",
       "markdown": "4f747f6fcbf6fe0911e24e2902416fb9bdb3a299a1f7dd0daed2d23966536e6f"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -1714,7 +1793,7 @@
     "series": "1-modern",
     "side": true,
     "sourceHashes": {
-      "json": "7dc97df25eb23b4a9b0e39ae6dcd8eb7c2ee666a498a53fb0bd0a6cfab255d84",
+      "json": "466a487e1098c7657ea5a68d0f92d33b6894ed41abef77fc5c84b79525bacc01",
       "markdown": "53580d99089b6103077b4fa33567b82c3fa4eea73c52c79905982628103849f8"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -1743,7 +1822,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "7dc97df25eb23b4a9b0e39ae6dcd8eb7c2ee666a498a53fb0bd0a6cfab255d84",
+      "json": "466a487e1098c7657ea5a68d0f92d33b6894ed41abef77fc5c84b79525bacc01",
       "markdown": "ad5ed2a932ca410d2b526d618ee1be21d3788f79754fedbb48f1c4ac798f5e6f"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -1774,7 +1853,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "7dc97df25eb23b4a9b0e39ae6dcd8eb7c2ee666a498a53fb0bd0a6cfab255d84",
+      "json": "466a487e1098c7657ea5a68d0f92d33b6894ed41abef77fc5c84b79525bacc01",
       "markdown": "ac522049b1ccaa966271474e29f6fad99aa04af01a868abb5635b6b3cbf96edd"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -1803,7 +1882,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "7dc97df25eb23b4a9b0e39ae6dcd8eb7c2ee666a498a53fb0bd0a6cfab255d84",
+      "json": "466a487e1098c7657ea5a68d0f92d33b6894ed41abef77fc5c84b79525bacc01",
       "markdown": "7eddb17279f5ea4f76ef599690b1cdc01dc29cefce61ca13c8abbca6a043db26"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -1829,7 +1908,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "7dc97df25eb23b4a9b0e39ae6dcd8eb7c2ee666a498a53fb0bd0a6cfab255d84"
+      "json": "466a487e1098c7657ea5a68d0f92d33b6894ed41abef77fc5c84b79525bacc01"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
     "summary": "体验特色职业，享受绑架人生",
@@ -1858,7 +1937,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "7dc97df25eb23b4a9b0e39ae6dcd8eb7c2ee666a498a53fb0bd0a6cfab255d84",
+      "json": "466a487e1098c7657ea5a68d0f92d33b6894ed41abef77fc5c84b79525bacc01",
       "markdown": "74fbd94373601aae96f75491772d3137fb3e11040358fa23429c903fa9fc32b0"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -1880,7 +1959,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "7dc97df25eb23b4a9b0e39ae6dcd8eb7c2ee666a498a53fb0bd0a6cfab255d84"
+      "json": "466a487e1098c7657ea5a68d0f92d33b6894ed41abef77fc5c84b79525bacc01"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
     "summary": "世界科考队",
@@ -3122,7 +3201,7 @@
     "series": "5-science",
     "side": false,
     "sourceHashes": {
-      "json": "1a13548cccd8a9e517c582237bc91fd224ea2a8c9238747ccb0f55d0d01c8466"
+      "json": "363beb19e84a189659f46a6d55a9044891559e92f844992af7362f7b04356c6c"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/5-science.json",
     "summary": "在科技高度发达的星际文明，还有更多让人向往的旅途",
@@ -3143,7 +3222,7 @@
     "series": "5-science",
     "side": false,
     "sourceHashes": {
-      "json": "1a13548cccd8a9e517c582237bc91fd224ea2a8c9238747ccb0f55d0d01c8466"
+      "json": "363beb19e84a189659f46a6d55a9044891559e92f844992af7362f7b04356c6c"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/5-science.json",
     "summary": "荒矿小行星",
@@ -3160,11 +3239,11 @@
     "indexVersion": 1,
     "key": "world-5-star-weaving-dream-bionic-maze",
     "maturity": "主线任务",
-    "parentKey": "world-5-star-weaving-dream-restraint-paradise-shop",
+    "parentKey": "world-5-star-weaving-dream-reverse-immigration-prison",
     "series": "5-science",
     "side": false,
     "sourceHashes": {
-      "json": "1a13548cccd8a9e517c582237bc91fd224ea2a8c9238747ccb0f55d0d01c8466"
+      "json": "363beb19e84a189659f46a6d55a9044891559e92f844992af7362f7b04356c6c"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/5-science.json",
     "summary": "仿生迷途",
@@ -3185,7 +3264,7 @@
     "series": "5-science",
     "side": false,
     "sourceHashes": {
-      "json": "1a13548cccd8a9e517c582237bc91fd224ea2a8c9238747ccb0f55d0d01c8466"
+      "json": "363beb19e84a189659f46a6d55a9044891559e92f844992af7362f7b04356c6c"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/5-science.json",
     "summary": "克隆回廊",
@@ -3206,7 +3285,7 @@
     "series": "5-science",
     "side": false,
     "sourceHashes": {
-      "json": "1a13548cccd8a9e517c582237bc91fd224ea2a8c9238747ccb0f55d0d01c8466"
+      "json": "363beb19e84a189659f46a6d55a9044891559e92f844992af7362f7b04356c6c"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/5-science.json",
     "summary": "冷眠方舟",
@@ -3227,7 +3306,7 @@
     "series": "5-science",
     "side": false,
     "sourceHashes": {
-      "json": "1a13548cccd8a9e517c582237bc91fd224ea2a8c9238747ccb0f55d0d01c8466"
+      "json": "363beb19e84a189659f46a6d55a9044891559e92f844992af7362f7b04356c6c"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/5-science.json",
     "summary": "深蓝海卫",
@@ -3255,7 +3334,7 @@
     "series": "5-science",
     "side": false,
     "sourceHashes": {
-      "json": "1a13548cccd8a9e517c582237bc91fd224ea2a8c9238747ccb0f55d0d01c8466",
+      "json": "363beb19e84a189659f46a6d55a9044891559e92f844992af7362f7b04356c6c",
       "markdown": "5538fe3c45d92494bec1d7a92dfd0e88e537e6a6f41907a94e44913e7ef67138"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/5-science.json",
@@ -3277,7 +3356,7 @@
     "series": "5-science",
     "side": false,
     "sourceHashes": {
-      "json": "1a13548cccd8a9e517c582237bc91fd224ea2a8c9238747ccb0f55d0d01c8466"
+      "json": "363beb19e84a189659f46a6d55a9044891559e92f844992af7362f7b04356c6c"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/5-science.json",
     "summary": "异星初触",
@@ -3298,7 +3377,7 @@
     "series": "5-science",
     "side": false,
     "sourceHashes": {
-      "json": "1a13548cccd8a9e517c582237bc91fd224ea2a8c9238747ccb0f55d0d01c8466"
+      "json": "363beb19e84a189659f46a6d55a9044891559e92f844992af7362f7b04356c6c"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/5-science.json",
     "summary": "先驱遗迹",
@@ -3319,7 +3398,7 @@
     "series": "5-science",
     "side": false,
     "sourceHashes": {
-      "json": "1a13548cccd8a9e517c582237bc91fd224ea2a8c9238747ccb0f55d0d01c8466"
+      "json": "363beb19e84a189659f46a6d55a9044891559e92f844992af7362f7b04356c6c"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/5-science.json",
     "summary": "边境殖民星",
@@ -3340,7 +3419,7 @@
     "series": "5-science",
     "side": false,
     "sourceHashes": {
-      "json": "1a13548cccd8a9e517c582237bc91fd224ea2a8c9238747ccb0f55d0d01c8466"
+      "json": "363beb19e84a189659f46a6d55a9044891559e92f844992af7362f7b04356c6c"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/5-science.json",
     "summary": "群心蜂巢",
@@ -3361,7 +3440,7 @@
     "series": "5-science",
     "side": false,
     "sourceHashes": {
-      "json": "1a13548cccd8a9e517c582237bc91fd224ea2a8c9238747ccb0f55d0d01c8466"
+      "json": "363beb19e84a189659f46a6d55a9044891559e92f844992af7362f7b04356c6c"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/5-science.json",
     "summary": "星际黑市",
@@ -3382,7 +3461,7 @@
     "series": "5-science",
     "side": false,
     "sourceHashes": {
-      "json": "1a13548cccd8a9e517c582237bc91fd224ea2a8c9238747ccb0f55d0d01c8466"
+      "json": "363beb19e84a189659f46a6d55a9044891559e92f844992af7362f7b04356c6c"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/5-science.json",
     "summary": "镜域沉沦",
@@ -3403,7 +3482,7 @@
     "series": "5-science",
     "side": false,
     "sourceHashes": {
-      "json": "1a13548cccd8a9e517c582237bc91fd224ea2a8c9238747ccb0f55d0d01c8466"
+      "json": "363beb19e84a189659f46a6d55a9044891559e92f844992af7362f7b04356c6c"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/5-science.json",
     "summary": "熔铠战星",
@@ -3424,7 +3503,7 @@
     "series": "5-science",
     "side": false,
     "sourceHashes": {
-      "json": "1a13548cccd8a9e517c582237bc91fd224ea2a8c9238747ccb0f55d0d01c8466"
+      "json": "363beb19e84a189659f46a6d55a9044891559e92f844992af7362f7b04356c6c"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/5-science.json",
     "summary": "轨道庭院",
@@ -3435,21 +3514,23 @@
   },
   {
     "childKeys": [
-      "world-5-star-weaving-dream-restraint-paradise-shop"
+      "world-5-star-weaving-dream-restraint-school"
     ],
     "id": "world-5-star-weaving-dream-order-paradise",
     "indexVersion": 1,
     "key": "world-5-star-weaving-dream-order-paradise",
+    "markdownPath": "src/game/data/story_outline/5-science/3-律序乐园.md",
     "maturity": "主线任务",
     "parentKey": "world-5-star-weaving-dream-ringlock-stars",
     "series": "5-science",
     "side": false,
     "sourceHashes": {
-      "json": "1a13548cccd8a9e517c582237bc91fd224ea2a8c9238747ccb0f55d0d01c8466"
+      "json": "363beb19e84a189659f46a6d55a9044891559e92f844992af7362f7b04356c6c",
+      "markdown": "976cf76b4ec9acdd4881893b81fb2c9c493b9391d8e0474f1c917514d5aceb51"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/5-science.json",
-    "summary": "律序乐园",
-    "summarySource": "title-only",
+    "summary": "以精密法规、社会习惯与付费豁免共同维持秩序的紧缚文明；外来者从入境分类开始逐步发现，这座乐园温和而明确地排斥不愿被同化的人。",
+    "summarySource": "frontmatter.summary",
     "title": "律序乐园",
     "type": "story-node",
     "world": "5-星宇织梦"
@@ -3466,7 +3547,7 @@
     "series": "5-science",
     "side": false,
     "sourceHashes": {
-      "json": "1a13548cccd8a9e517c582237bc91fd224ea2a8c9238747ccb0f55d0d01c8466"
+      "json": "363beb19e84a189659f46a6d55a9044891559e92f844992af7362f7b04356c6c"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/5-science.json",
     "summary": "监狱行星",
@@ -3485,7 +3566,7 @@
     "series": "5-science",
     "side": false,
     "sourceHashes": {
-      "json": "1a13548cccd8a9e517c582237bc91fd224ea2a8c9238747ccb0f55d0d01c8466"
+      "json": "363beb19e84a189659f46a6d55a9044891559e92f844992af7362f7b04356c6c"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/5-science.json",
     "summary": "量子迷城",
@@ -3496,12 +3577,12 @@
   },
   {
     "childKeys": [
-      "world-5-star-weaving-dream-bionic-maze"
+      "world-5-star-weaving-dream-reverse-immigration-prison"
     ],
     "id": "world-5-star-weaving-dream-restraint-paradise-shop",
     "indexVersion": 1,
     "key": "world-5-star-weaving-dream-restraint-paradise-shop",
-    "markdownPath": "src/game/data/story_outline/5-science/3.1-拘束具店铺.md",
+    "markdownPath": "src/game/data/story_outline/5-science/3.2-拘束具店铺.md",
     "maturity": "大纲草稿",
     "missingItems": [
       "设计｜拘束具店铺·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
@@ -3509,17 +3590,102 @@
       "流程｜拘束具店铺·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
       "地图｜拘束具店铺·场景结构｜缺少实际地点、区域连接、道路限制与返回变化"
     ],
-    "parentKey": "world-5-star-weaving-dream-order-paradise",
+    "parentKey": "world-5-star-weaving-dream-restraint-school",
     "series": "5-science",
     "side": false,
     "sourceHashes": {
-      "json": "1a13548cccd8a9e517c582237bc91fd224ea2a8c9238747ccb0f55d0d01c8466",
+      "json": "363beb19e84a189659f46a6d55a9044891559e92f844992af7362f7b04356c6c",
       "markdown": "08a7d72c00068d047d3c5526aa74ac53b76771913ed53f49ac6a269842ff2e3c"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/5-science.json",
     "summary": "拘束用品店。",
     "summarySource": "frontmatter.summary",
     "title": "拘束具店铺",
+    "type": "story-node",
+    "world": "5-星宇织梦"
+  },
+  {
+    "characters": [
+      "璃落",
+      "入境审核员",
+      "紧缚学校教师",
+      "本地学生"
+    ],
+    "childKeys": [
+      "world-5-star-weaving-dream-restraint-paradise-shop"
+    ],
+    "id": "world-5-star-weaving-dream-restraint-school",
+    "indexVersion": 1,
+    "key": "world-5-star-weaving-dream-restraint-school",
+    "locations": [
+      "律序乐园入境大厅",
+      "紧缚学校教室",
+      "书写训练室",
+      "身体适应评估室"
+    ],
+    "markdownPath": "src/game/data/story_outline/5-science/3.1-紧缚学校.md",
+    "maturity": "大纲",
+    "missingItems": [
+      "设定｜紧缚学校·璃落入境身份｜缺少璃落申报游客还是定居、预计停留时长以及是否主动选择缴费豁免的最终决定",
+      "设定｜紧缚学校·身体改造边界｜缺少每周轻度改造的具体项目、可逆程度、毕业后保留效果与中止程序",
+      "规则｜紧缚学校·审美法律｜缺少貌美程度的法定指标、复核与申诉流程，以及不达标者进入监狱还是矫正机构的准确条件",
+      "玩法｜紧缚学校·学年压缩｜缺少一年课程在游戏中的周次抽样、必修课数量、考核失败恢复与跳课代价"
+    ],
+    "parentKey": "world-5-star-weaving-dream-order-paradise",
+    "series": "5-science",
+    "side": false,
+    "sourceHashes": {
+      "json": "363beb19e84a189659f46a6d55a9044891559e92f844992af7362f7b04356c6c",
+      "markdown": "96aa0648ec80f0211e9a726eff536ce587f4d3bfd25a7783e9c54ba771e8369c"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/5-science.json",
+    "summary": "璃落进入律序乐园时被要求申报游客或定居身份；预计停留超过一年的外来者原则上必须接受为期一年的紧缚学校教育，在学习被缚常识的同时每周接受轻度身体适应改造，富裕者则可以缴费豁免。",
+    "summarySource": "frontmatter.summary",
+    "title": "紧缚学校",
+    "type": "story-node",
+    "world": "5-星宇织梦"
+  },
+  {
+    "characters": [
+      "璃落",
+      "外星人口贩子",
+      "被抓捕的本地居民",
+      "狱警",
+      "成年女性囚犯"
+    ],
+    "childKeys": [
+      "world-5-star-weaving-dream-bionic-maze"
+    ],
+    "id": "world-5-star-weaving-dream-reverse-immigration-prison",
+    "indexVersion": 1,
+    "key": "world-5-star-weaving-dream-reverse-immigration-prison",
+    "locations": [
+      "律序乐园街道",
+      "涉外执法站",
+      "反向移民监狱",
+      "奴隶训练区",
+      "身体改造评估区"
+    ],
+    "markdownPath": "src/game/data/story_outline/5-science/3.3-反向移民监狱.md",
+    "maturity": "大纲",
+    "missingItems": [
+      "设定｜反向移民监狱·合规抓捕手续｜缺少外星购买者办理何种手续后可抓捕本地居民、居民是否曾签署同意以及手续能否被撤销",
+      "流程｜反向移民监狱·璃落出狱方式｜缺少璃落最终越狱、被转运、获外援救出还是通过法律漏洞离开的确定结局",
+      "设定｜反向移民监狱·女性消失机制｜缺少本星球几乎看不到老年女性究竟由外输、改造、身份注销或其他制度造成的准确答案",
+      "玩法｜反向移民监狱·训练循环｜缺少服从训练、身份剥夺、改造评估与反抗调查之间的具体操作循环及失败恢复规则",
+      "衔接｜反向移民监狱·仿生迷途｜缺少本模块结局如何把璃落或监狱证据引向后续“仿生迷途”的明确事件"
+    ],
+    "parentKey": "world-5-star-weaving-dream-restraint-paradise-shop",
+    "series": "5-science",
+    "side": false,
+    "sourceHashes": {
+      "json": "363beb19e84a189659f46a6d55a9044891559e92f844992af7362f7b04356c6c",
+      "markdown": "6dfc6e3650a2ce977882e31396093e3648daed16b946f430e8d525e602098fba"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/5-science.json",
+    "summary": "璃落因阻止持有合规手续的外星人口贩子抓捕本星球居民而触犯跨星球干涉法，在无法用金钱解决的涉外案件中被投入一座以奴隶训练、性器化改造和动物化改造为核心的监狱，并由此看见律序乐园鼓励居民以奴隶身份向外星定居的真正制度本质。",
+    "summarySource": "frontmatter.summary",
+    "title": "反向移民监狱",
     "type": "story-node",
     "world": "5-星宇织梦"
   },
@@ -3535,7 +3701,7 @@
     "series": "5-science",
     "side": false,
     "sourceHashes": {
-      "json": "1a13548cccd8a9e517c582237bc91fd224ea2a8c9238747ccb0f55d0d01c8466"
+      "json": "363beb19e84a189659f46a6d55a9044891559e92f844992af7362f7b04356c6c"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/5-science.json",
     "summary": "环锁群星",
@@ -3556,7 +3722,7 @@
     "series": "5-science",
     "side": false,
     "sourceHashes": {
-      "json": "1a13548cccd8a9e517c582237bc91fd224ea2a8c9238747ccb0f55d0d01c8466"
+      "json": "363beb19e84a189659f46a6d55a9044891559e92f844992af7362f7b04356c6c"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/5-science.json",
     "summary": "基序蛊城",
@@ -3577,7 +3743,7 @@
     "series": "5-science",
     "side": false,
     "sourceHashes": {
-      "json": "1a13548cccd8a9e517c582237bc91fd224ea2a8c9238747ccb0f55d0d01c8466"
+      "json": "363beb19e84a189659f46a6d55a9044891559e92f844992af7362f7b04356c6c"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/5-science.json",
     "summary": "逐星远航",
@@ -3598,7 +3764,7 @@
     "series": "5-science",
     "side": false,
     "sourceHashes": {
-      "json": "1a13548cccd8a9e517c582237bc91fd224ea2a8c9238747ccb0f55d0d01c8466"
+      "json": "363beb19e84a189659f46a6d55a9044891559e92f844992af7362f7b04356c6c"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/5-science.json",
     "summary": "星门港区",

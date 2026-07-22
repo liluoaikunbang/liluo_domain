@@ -1,0 +1,4 @@
+interface:
+  display_name: "外部虚构题材知识库"
+  short_description: "查询和维护外部虚构作品语料，并抽象为原创参考"
+  default_prompt: "Use $liluo-external-fiction-knowledge to search the external fiction reference library, extract abstract literary or visual patterns, combine them with the project's canonical knowledge, and verify that the result does not directly copy source wording."

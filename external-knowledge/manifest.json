@@ -1,0 +1,147 @@
+{
+  "schemaVersion": 1,
+  "knowledgeScope": "external-fiction-reference",
+  "canonical": false,
+  "generatedAt": "2026-07-22T07:21:48.164Z",
+  "mode": "source-level-incremental-with-global-index-rebuild",
+  "shards": [
+    {
+      "path": "index/segments/segments-001.json",
+      "count": 500
+    },
+    {
+      "path": "index/segments/segments-002.json",
+      "count": 500
+    },
+    {
+      "path": "index/segments/segments-003.json",
+      "count": 500
+    },
+    {
+      "path": "index/segments/segments-004.json",
+      "count": 500
+    },
+    {
+      "path": "index/segments/segments-005.json",
+      "count": 500
+    },
+    {
+      "path": "index/segments/segments-006.json",
+      "count": 500
+    },
+    {
+      "path": "index/segments/segments-007.json",
+      "count": 500
+    },
+    {
+      "path": "index/segments/segments-008.json",
+      "count": 500
+    },
+    {
+      "path": "index/segments/segments-009.json",
+      "count": 500
+    },
+    {
+      "path": "index/segments/segments-010.json",
+      "count": 500
+    },
+    {
+      "path": "index/segments/segments-011.json",
+      "count": 500
+    },
+    {
+      "path": "index/segments/segments-012.json",
+      "count": 500
+    },
+    {
+      "path": "index/segments/segments-013.json",
+      "count": 500
+    },
+    {
+      "path": "index/segments/segments-014.json",
+      "count": 500
+    },
+    {
+      "path": "index/segments/segments-015.json",
+      "count": 500
+    },
+    {
+      "path": "index/segments/segments-016.json",
+      "count": 500
+    },
+    {
+      "path": "index/segments/segments-017.json",
+      "count": 500
+    },
+    {
+      "path": "index/segments/segments-018.json",
+      "count": 500
+    },
+    {
+      "path": "index/segments/segments-019.json",
+      "count": 500
+    },
+    {
+      "path": "index/segments/segments-020.json",
+      "count": 500
+    },
+    {
+      "path": "index/segments/segments-021.json",
+      "count": 500
+    },
+    {
+      "path": "index/segments/segments-022.json",
+      "count": 500
+    },
+    {
+      "path": "index/segments/segments-023.json",
+      "count": 500
+    },
+    {
+      "path": "index/segments/segments-024.json",
+      "count": 500
+    },
+    {
+      "path": "index/segments/segments-025.json",
+      "count": 500
+    },
+    {
+      "path": "index/segments/segments-026.json",
+      "count": 500
+    },
+    {
+      "path": "index/segments/segments-027.json",
+      "count": 500
+    },
+    {
+      "path": "index/segments/segments-028.json",
+      "count": 500
+    },
+    {
+      "path": "index/segments/segments-029.json",
+      "count": 500
+    },
+    {
+      "path": "index/segments/segments-030.json",
+      "count": 500
+    },
+    {
+      "path": "index/segments/segments-031.json",
+      "count": 500
+    },
+    {
+      "path": "index/segments/segments-032.json",
+      "count": 500
+    },
+    {
+      "path": "index/segments/segments-033.json",
+      "count": 431
+    }
+  ],
+  "changes": {
+    "added": [],
+    "modified": [],
+    "deleted": [],
+    "renamed": []
+  }
+}

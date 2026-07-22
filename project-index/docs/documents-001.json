@@ -1529,9 +1529,31 @@
     "type": "document"
   },
   {
+    "id": "docs/功能更新/138-外部虚构题材知识库.md",
+    "indexVersion": 1,
+    "sourceHash": "335e9e23f302d7852f46e095747f7a8f9837084a42b7bd082eaeb5acdc87f470",
+    "sourcePath": "docs/功能更新/138-外部虚构题材知识库.md",
+    "subtype": "update",
+    "summary": "外部虚构题材知识库",
+    "summarySource": "title-only",
+    "title": "外部虚构题材知识库",
+    "type": "document"
+  },
+  {
+    "id": "docs/功能更新/139-项目文档与用户命令总入口.md",
+    "indexVersion": 1,
+    "sourceHash": "c891ed052530315c05786801ab3cec522d3680cf43af5b2de726e366f6af0a71",
+    "sourcePath": "docs/功能更新/139-项目文档与用户命令总入口.md",
+    "subtype": "update",
+    "summary": "项目文档与用户命令总入口",
+    "summarySource": "title-only",
+    "title": "项目文档与用户命令总入口",
+    "type": "document"
+  },
+  {
     "id": "docs/功能更新目录.md",
     "indexVersion": 1,
-    "sourceHash": "569390b98a068f7b6e0bb2f14aee9161c0bf0c384e58a74aa27c43d460be9f2a",
+    "sourceHash": "b33b47f6fb2b1aecc1673cc9e4e8855df8b6d0b40f39b287a646277720242d5b",
     "sourcePath": "docs/功能更新目录.md",
     "subtype": "other",
     "summary": "功能更新目录",
@@ -1570,6 +1592,17 @@
     "summary": "liluo-dialogue-event-authoring",
     "summarySource": "title-only",
     "title": "liluo-dialogue-event-authoring",
+    "type": "document"
+  },
+  {
+    "id": "docs/技能说明/liluo-external-fiction-knowledge.md",
+    "indexVersion": 1,
+    "sourceHash": "ee4d0619996b474432878f52938681a77861b33b198b4fa6994aba26ab3c4ed8",
+    "sourcePath": "docs/技能说明/liluo-external-fiction-knowledge.md",
+    "subtype": "skill",
+    "summary": "外部虚构题材知识库 Skill",
+    "summarySource": "title-only",
+    "title": "外部虚构题材知识库 Skill",
     "type": "document"
   },
   {
@@ -1839,7 +1872,7 @@
   {
     "id": "docs/系统说明/情节条目系统.md",
     "indexVersion": 1,
-    "sourceHash": "6cf5f5275f582bf34a36f412dbbde1f823107087a93ec8194c4da0599d381857",
+    "sourceHash": "1bc57c61959e6df0e3f651fed346533b00880efd4dfff9eb5c2a930793ec3c0c",
     "sourcePath": "docs/系统说明/情节条目系统.md",
     "subtype": "system",
     "summary": "情节条目系统",
@@ -1856,6 +1889,17 @@
     "summary": "事件与对话系统",
     "summarySource": "title-only",
     "title": "事件与对话系统",
+    "type": "document"
+  },
+  {
+    "id": "docs/系统说明/外部虚构题材知识库.md",
+    "indexVersion": 1,
+    "sourceHash": "b10da665cedf32f86420ef7569a9f27c9d069dea897e9bfea314c877f77c0c74",
+    "sourcePath": "docs/系统说明/外部虚构题材知识库.md",
+    "subtype": "system",
+    "summary": "外部虚构题材知识库",
+    "summarySource": "title-only",
+    "title": "外部虚构题材知识库",
     "type": "document"
   },
   {
@@ -1894,7 +1938,7 @@
   {
     "id": "docs/系统说明/README.md",
     "indexVersion": 1,
-    "sourceHash": "43a489612719fc4d19179900031701f9bd03597774a8246762f8145b0c42555e",
+    "sourceHash": "d6d860737cca3ed060c4f06f14702ab321fa0368688b709c610f881c990ea093",
     "sourcePath": "docs/系统说明/README.md",
     "subtype": "system",
     "summary": "系统说明",
@@ -1905,12 +1949,23 @@
   {
     "id": "docs/项目概览.md",
     "indexVersion": 1,
-    "sourceHash": "fcded4246b531f03b134209448e87482750dcc443a27b0c1ea7f402e790e460a",
+    "sourceHash": "a6311924647795a19b6587a0abaa78e74dbad13273db908d271f440fe73c9767",
     "sourcePath": "docs/项目概览.md",
     "subtype": "other",
     "summary": "项目概览",
     "summarySource": "title-only",
     "title": "项目概览",
+    "type": "document"
+  },
+  {
+    "id": "docs/用户命令目录.md",
+    "indexVersion": 1,
+    "sourceHash": "59d603ea5469e1dbf61a6a94e53924b1dd48462c48bf6083d3db6dbded09ad84",
+    "sourcePath": "docs/用户命令目录.md",
+    "subtype": "other",
+    "summary": "用户命令目录",
+    "summarySource": "title-only",
+    "title": "用户命令目录",
     "type": "document"
   },
   {
@@ -1993,7 +2048,7 @@
   {
     "id": "docs/README.md",
     "indexVersion": 1,
-    "sourceHash": "4e1f4e5ef6add109609e39b5d06610e3abb332888cd08ffe7a9867ab43695351",
+    "sourceHash": "cb7fe60a4a805babc25da37b531f5a6f65f8039a703dda1473ed40e74248f50a",
     "sourcePath": "docs/README.md",
     "subtype": "other",
     "summary": "璃落的城堡文档入口",

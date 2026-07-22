@@ -11,6 +11,7 @@ node_modules
 dist
 dist-ssr
 *.local
+external-knowledge/source-sync.local.json
 __pycache__/
 *.py[cod]
 vite.config.mjs.timestamp-*.mjs

@@ -641,7 +641,7 @@
       "world": "1-浮光掠影",
       "title": "重返荆江市",
       "status": "主线任务",
-      "summary": "与罪恶异能者组织的最终决战。",
+      "summary": "璃落回到荆江市后，从地下异能者猎人、合法异能者社会和城市人为案件三条线重新认识故乡，逐步追查以企业和机构为外壳的罪恶异能者组织。",
       "parentKey": "world-1-glimmering-glance-taisho-romance",
       "order": 10
     },
@@ -756,8 +756,65 @@
       "storyTags": [
         "幻域回声"
       ],
+      "parentKey": "world-1-glimmering-glance-missing-night-bus",
+      "order": 10
+    },
+    {
+      "key": "world-1-glimmering-glance-missing-night-bus",
+      "world": "1-浮光掠影",
+      "title": "消失的夜班车",
+      "summary": "七校学员的同住者在工业园下夜班后失踪，璃落从被篡改的考勤、反复更换的班车和外包劳务单追查跨厂转运链，在证据被销毁前截停车辆、救出失踪工人，并由此开始接受城市中的人为案件委托。",
+      "plotTags": [
+        "失踪调查",
+        "工业园",
+        "非法转运",
+        "企业犯罪",
+        "调查员起点"
+      ],
+      "characters": [
+        "璃落",
+        "苏婉儿",
+        "七校成年适应班学员",
+        "失踪工人",
+        "外包劳务负责人"
+      ],
+      "storyTags": [
+        "街景一隅"
+      ],
+      "status": "大纲",
       "parentKey": "world-1-glimmering-glance-jingjiang-seventh-ability-adaptation-school",
       "order": 10
+    },
+    {
+      "key": "world-1-glimmering-glance-city-investigator",
+      "world": "1-浮光掠影",
+      "title": "城市调查员",
+      "summary": "完成夜班车失踪案后，璃落以独立调查员身份接受城市人为案件委托，调查工厂、企业和地下运输链中的失踪、非法拘禁与异能滥用；异常灾害处理组织只在案件升级为异常区域或灾害时介入。",
+      "plotTags": [
+        "独立调查员",
+        "工厂调查",
+        "企业犯罪",
+        "委托支线"
+      ],
+      "bondageTags": [
+        "丝袜拘束",
+        "全身包裹",
+        "手铐",
+        "脚镣",
+        "锁链"
+      ],
+      "characters": [
+        "璃落",
+        "丝袜厂人员",
+        "金属厂人员"
+      ],
+      "storyTags": [
+        "街景一隅"
+      ],
+      "status": "大纲",
+      "branchLayout": "side",
+      "parentKey": "world-1-glimmering-glance-missing-night-bus",
+      "order": 20
     },
     {
       "key": "world-1-glimmering-glance-eternal-restraint-maze",

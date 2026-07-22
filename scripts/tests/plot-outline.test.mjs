@@ -59,7 +59,7 @@ test('groups urban kidnappings under DID while keeping thumb-maid raids in the l
   const littlePeopleGroup = plotOutline.groups.find((group) => group.title === '小人国');
   const entriesIn = (group) => plotOutline.entries.filter((entry) => entry.groupId === group?.id);
 
-  assert.deepEqual(entriesIn(urbanDidGroup).map((entry) => entry.id), ['plot-006', 'plot-007', 'plot-021', 'plot-024', 'plot-025']);
+  assert.deepEqual(entriesIn(urbanDidGroup).map((entry) => entry.id), ['plot-006', 'plot-007', 'plot-021', 'plot-024', 'plot-025', 'plot-052', 'plot-053']);
   assert.deepEqual(entriesIn(littlePeopleGroup).map((entry) => entry.title), ['苏婉儿等-拇指夜袭']);
 });
 
@@ -225,6 +225,49 @@ test('keeps the science-fiction internal tickling device under extreme torture w
   assert.equal(internalTicklingPlot?.isBondagePlot, false);
   assert.deepEqual(internalTicklingPlot?.bondageTags, []);
   assert.ok(internalTicklingPlot?.notes.includes('不描写可在现实模仿的植入步骤'));
+});
+
+test('groups nest-web, beeswax and internal-web restraints as separate animal-restraint plots', () => {
+  const animalGroup = plotOutline.groups.find((group) => group.title === '动物拘束');
+  const animalPlots = plotOutline.entries.filter((entry) => entry.groupId === animalGroup?.id);
+  const spiderPlot = animalPlots.find((entry) => entry.id === 'plot-049');
+  const beePlot = animalPlots.find((entry) => entry.id === 'plot-050');
+  const internalWebPlot = animalPlots.find((entry) => entry.id === 'plot-051');
+
+  assert.deepEqual(animalPlots.map((entry) => entry.id), ['plot-049', 'plot-050', 'plot-051']);
+  assert.deepEqual(spiderPlot?.bondageTags, ['蛛丝']);
+  assert.deepEqual(spiderPlot?.usedBy, ['world-3-mortal-dao-spider-valley']);
+  assert.ok(spiderPlot?.summary.includes('蛛网拘束系统'));
+  assert.equal(beePlot?.usageStatus, 'unused');
+  assert.ok(beePlot?.summary.includes('蜂蜡'));
+  assert.ok(beePlot?.summary.includes('接吻向她喂入信息素'));
+  assert.ok(beePlot?.summary.includes('身体完全包裹'));
+  assert.ok(beePlot?.summary.includes('体液长期喂养幼蜂'));
+  assert.ok(beePlot?.notes.includes('不在情节库中细写体液采集部位或露骨过程'));
+  assert.deepEqual(internalWebPlot?.bondageTags, ['蛛丝']);
+  assert.equal(internalWebPlot?.usageStatus, 'unused');
+  assert.ok(internalWebPlot?.summary.includes('把舌头固定'));
+  assert.ok(internalWebPlot?.summary.includes('从鼻孔爬出'));
+  assert.ok(internalWebPlot?.summary.includes('耳内织网封禁'));
+  assert.ok(internalWebPlot?.notes.includes('与 plot-049“茯丝-蛛丝巢穴拘束”分开'));
+});
+
+test('keeps stockings and welded metal restraints as city investigator factory plots', () => {
+  const stockingsPlot = plotOutline.entries.find((entry) => entry.id === 'plot-052');
+  const metalPlot = plotOutline.entries.find((entry) => entry.id === 'plot-053');
+
+  assert.equal(stockingsPlot?.groupId, 'plot-group-004');
+  assert.equal(stockingsPlot?.usageStatus, 'used');
+  assert.ok(stockingsPlot?.bondageTags.includes('丝袜拘束'));
+  assert.ok(stockingsPlot?.bondageTags.includes('全身包裹'));
+  assert.deepEqual(stockingsPlot?.usedBy, ['world-1-glimmering-glance-city-investigator']);
+
+  assert.equal(metalPlot?.groupId, 'plot-group-004');
+  assert.equal(metalPlot?.usageStatus, 'used');
+  assert.ok(metalPlot?.bondageTags.includes('手铐'));
+  assert.ok(metalPlot?.bondageTags.includes('脚镣'));
+  assert.ok(metalPlot?.bondageTags.includes('锁链'));
+  assert.deepEqual(metalPlot?.usedBy, ['world-1-glimmering-glance-city-investigator']);
 });
 
 test('exposes unique sorted ordinary and bondage tag options', () => {
