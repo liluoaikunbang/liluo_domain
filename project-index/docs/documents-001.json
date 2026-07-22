@@ -1595,9 +1595,20 @@
     "type": "document"
   },
   {
+    "id": "docs/功能更新/144-多文件离线发行与GitHub-Release上传.md",
+    "indexVersion": 1,
+    "sourceHash": "f736e5215196f9c4c901e45400e573146f63981145185d1fb22df0fd04c58cf3",
+    "sourcePath": "docs/功能更新/144-多文件离线发行与GitHub-Release上传.md",
+    "subtype": "update",
+    "summary": "144-多文件离线发行与 GitHub Release 上传",
+    "summarySource": "title-only",
+    "title": "144-多文件离线发行与 GitHub Release 上传",
+    "type": "document"
+  },
+  {
     "id": "docs/功能更新目录.md",
     "indexVersion": 1,
-    "sourceHash": "1fe7c2e3b8ea3f7af7a708b7b8a901d44418ac6bfb6a60366d58d90071d80812",
+    "sourceHash": "69eee9aa80bacd5a154edef1438827c81dc213dc12740dc6435f470dfd5fe374",
     "sourcePath": "docs/功能更新目录.md",
     "subtype": "other",
     "summary": "功能更新目录",
@@ -1713,6 +1724,17 @@
     "summary": "liluo-gameplay-loop-audit",
     "summarySource": "title-only",
     "title": "liluo-gameplay-loop-audit",
+    "type": "document"
+  },
+  {
+    "id": "docs/技能说明/liluo-offline-release-pipeline.md",
+    "indexVersion": 1,
+    "sourceHash": "c62b472a7ba6528ca6bbe777c55b2a889de1ab3bcd0ee1ced2bd7455e69ef8a8",
+    "sourcePath": "docs/技能说明/liluo-offline-release-pipeline.md",
+    "subtype": "skill",
+    "summary": "liluo-offline-release-pipeline",
+    "summarySource": "title-only",
+    "title": "liluo-offline-release-pipeline",
     "type": "document"
   },
   {
@@ -1922,6 +1944,17 @@
     "summary": "ADR-002：规范与设计记忆分层治理",
     "summarySource": "title-only",
     "title": "ADR-002：规范与设计记忆分层治理",
+    "type": "document"
+  },
+  {
+    "id": "docs/设计记忆/架构决策/ADR-003-离线发行采用本机回环启动器.md",
+    "indexVersion": 1,
+    "sourceHash": "aa3f36aedd722f6ec0314b66366812a389d6571d35ee5a1bda3d1d06a6bfb383",
+    "sourcePath": "docs/设计记忆/架构决策/ADR-003-离线发行采用本机回环启动器.md",
+    "subtype": "other",
+    "summary": "ADR-003：离线发行采用本机回环启动器",
+    "summarySource": "title-only",
+    "title": "ADR-003：离线发行采用本机回环启动器",
     "type": "document"
   },
   {
@@ -2321,6 +2354,17 @@
     "type": "document"
   },
   {
+    "id": "docs/系统说明/离线发行与GitHub-Release流程.md",
+    "indexVersion": 1,
+    "sourceHash": "c04ec31d7b2d6b660fb20944a3f0933331db6d18c08272a4dacd35c04ca65646",
+    "sourcePath": "docs/系统说明/离线发行与GitHub-Release流程.md",
+    "subtype": "system",
+    "summary": "离线发行与 GitHub Release 流程",
+    "summarySource": "title-only",
+    "title": "离线发行与 GitHub Release 流程",
+    "type": "document"
+  },
+  {
     "id": "docs/系统说明/璃落创作组人格与项目陪伴系统.md",
     "indexVersion": 1,
     "sourceHash": "c50698da390baf837d940d00f9678d69890da7bf3ee984ecf7a75d6055513292",
@@ -2411,7 +2455,7 @@
   {
     "id": "docs/系统说明/README.md",
     "indexVersion": 1,
-    "sourceHash": "cb1d6ada1f3fd292717d66156332b9623c5cbc3d14e8e93aea4f8950f12f0699",
+    "sourceHash": "181e9a8a63461fd3c0fe758768d8affe6a624b2ae8139b77e271f1e6f1ec5767",
     "sourcePath": "docs/系统说明/README.md",
     "subtype": "system",
     "summary": "系统说明",
@@ -2422,7 +2466,7 @@
   {
     "id": "docs/项目概览.md",
     "indexVersion": 1,
-    "sourceHash": "7f7de86f2acb45e8ee7502ab3eb488d6c95824e4b59462e0e35822013eb29c05",
+    "sourceHash": "67a531b31bbac89ce6aba0e58fa1301518ce9273c9e8fbd4c7b3e5f22f2c333d",
     "sourcePath": "docs/项目概览.md",
     "subtype": "other",
     "summary": "项目概览",
@@ -2433,7 +2477,7 @@
   {
     "id": "docs/用户命令目录.md",
     "indexVersion": 1,
-    "sourceHash": "e8985c0042b1c37ab3fd8df449a1c12411f72146d7e5cc88bdabc26715be8244",
+    "sourceHash": "3e739c08e6d62671abc65fc83766f78d248b22fed7136dd442936df68993d315",
     "sourcePath": "docs/用户命令目录.md",
     "subtype": "other",
     "summary": "用户命令目录",

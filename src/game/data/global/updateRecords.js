@@ -1,5 +1,11 @@
 export const updateRecords = Object.freeze([
     {
+        "id":  "144",
+        "date":  "2026-07-22",
+        "title":  "多文件离线发行与 GitHub Release 上传",
+        "summary":  "将超大单 HTML 改为带一键 Windows 本机启动器的多文件离线包，通过仅监听 127.0.0.1 的临时服务规避 file:// 的 Phaser/WebGL 跨源限制，并以 Skill 自动编排校验、ZIP 与 Release 上传。"
+    },
+    {
         "id":  "143",
         "date":  "2026-07-22",
         "title":  "璃落创作组雕龙文号体系",

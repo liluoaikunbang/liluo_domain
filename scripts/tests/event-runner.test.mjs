@@ -1170,7 +1170,7 @@ test('player character asset bundle preloads layered frame images without duplic
   assert.ok(manifestKeys.includes('LiLuo_head_down_idle'));
   assert.ok(manifestKeys.includes('bondage_body_up_down_idle'));
   assert.ok(manifestKeys.includes('bondage_body_down_down_idle'));
-  assert.ok(manifestKeys.includes('liluo_full_body_bondage'));
+  assert.ok(manifestKeys.includes('liluo_full_body_bondage_down_idle'));
 });
 
 test('switching current player appearance updates the generated runtime definition directly', () => {

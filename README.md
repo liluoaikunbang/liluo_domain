@@ -34,6 +34,7 @@ npm install
 npm run dev
 npm run build:web
 npm run build:offline
+npm run package:offline
 npm run docs:check-encoding
 npm run docs:governance:audit
 npm run project:index:check

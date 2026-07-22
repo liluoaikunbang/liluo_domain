@@ -25,6 +25,7 @@
 - 对话剧情事件：`liluo-dialogue-event-authoring`
 - 角色行走图：`liluo-sprite-pipeline`
 - 浏览器回归：`liluo-browser-game-regression`
+- 多文件离线发行与 Release 上传：`liluo-offline-release-pipeline`
 - 存档迁移：`liluo-save-data-migration`
 - 世界观连续性：`liluo-world-bible-continuity-audit`
 - 玩法循环：`liluo-gameplay-loop-audit`

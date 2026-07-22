@@ -9,6 +9,8 @@
     "prebuild:web": "npm run assets:build-liluo-character-frames",
     "build:web": "vite build",
     "build:offline": "vite build --mode offline",
+    "package:offline": "node scripts/release/offline-release.mjs package",
+    "release:offline": "node scripts/release/offline-release.mjs release",
     "preview": "vite preview",
     "docs:check-encoding": "node scripts/docs/check-doc-encoding.js",
     "docs:impact": "node scripts/document-governance/analyze-document-impact.mjs",

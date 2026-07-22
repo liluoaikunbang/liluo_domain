@@ -1,5 +1,5 @@
 ﻿import * as Phaser from 'phaser';
-import { type GameAssetBundle } from '../../../assets';
+import type { GameAssetBundle } from '../../../assets';
 
 const legacyFarmTilesetUrl = new URL('../../../../../assets/game/sucai/Farm_tileset.png', import.meta.url).href;
 const legacyFarmObjectUrl = new URL('../../../../../assets/game/sucai/Farm_object.png', import.meta.url).href;

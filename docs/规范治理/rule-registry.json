@@ -79,6 +79,14 @@
       "decision": "docs/设计记忆/架构决策/ADR-002-规范与设计记忆分层治理.md",
       "consumers": ["AGENTS.md", ".agents/skills/liluo-project/liluo-project-governance-memory/references/completion-gate.md", "docs/用户命令目录.md"],
       "status": "active"
+    },
+    {
+      "ruleId": "offline-release-loopback-launcher",
+      "title": "Windows 多文件离线发行使用本机回环启动器",
+      "authority": "docs/系统说明/离线发行与GitHub-Release流程.md",
+      "decision": "docs/设计记忆/架构决策/ADR-003-离线发行采用本机回环启动器.md",
+      "consumers": ["scripts/release/offline-release.mjs", ".agents/skills/liluo-project/liluo-offline-release-pipeline/SKILL.md", "docs/用户命令目录.md"],
+      "status": "active"
     }
   ]
 }

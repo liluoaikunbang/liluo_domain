@@ -303,10 +303,13 @@ test('full body bondage appearance is visual only and does not carry movement me
   );
 
   assert.ok(definition);
-  assert.equal(definition.textureKey, 'liluo_full_body_bondage');
+  assert.equal(definition.textureKey, 'liluo_full_body_bondage_down_idle');
   assert.equal(definition.movementStyle, 'normal');
   assert.equal(definition.movementSpeedMultiplier, 1);
   assert.equal(definition.canMove, true);
   assert.equal(definition.hopAmplitude, 0);
   assert.equal(definition.hopSpeed, 0);
+  assert.ok(definition.textureAssets.length > 1);
+  assert.ok(definition.textureAssets.every((asset) => asset.type === 'image'));
+  assert.ok(definition.textureAssets.every((asset) => !asset.url.includes('undefined')));
 });

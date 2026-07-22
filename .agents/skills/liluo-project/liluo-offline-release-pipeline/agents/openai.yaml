@@ -1,0 +1,4 @@
+interface:
+  display_name: "璃落离线发行流水线"
+  short_description: "构建、校验、压缩并安全上传带一键启动器的多文件离线发行包"
+  default_prompt: "Use $liluo-offline-release-pipeline to build, validate, package, and optionally publish the game's offline release."

@@ -15,7 +15,7 @@
         "../systems/map/MapLoader"
       ]
     },
-    "sourceHash": "2a8c97f510c94fb1a660f397d975667c15eafb882656d2d798abd85bf8e1eae6",
+    "sourceHash": "fab861cdf2aa079fbdba6bb8931e30aaba5db4be1c98d42947a29d5fecb04460",
     "sourcePath": "src/game/core/createPhaserGame.ts",
     "subtype": "module",
     "summary": "module：src/game/core/createPhaserGame.ts",
@@ -369,7 +369,7 @@
     "id": "src/game/data/global/updateRecords.js",
     "indexVersion": 1,
     "references": {},
-    "sourceHash": "f900ead3ed581fbb2bf720133b59ef6db5e5b12202e7f8a9b3f15424b81a56b0",
+    "sourceHash": "b6d6f630f6529d251f16968c16ab3a43ded57b5403fc986a543d138ca90d0c1d",
     "sourcePath": "src/game/data/global/updateRecords.js",
     "subtype": "module",
     "summary": "module：src/game/data/global/updateRecords.js",
@@ -567,7 +567,7 @@
         "../../../assets"
       ]
     },
-    "sourceHash": "a4593ce929b1d9f0f5219f5cde9ee8612bf98981738a3fa1fc09d5255e70b758",
+    "sourceHash": "963baaf6965940111616e71fae04a3b16e0acd8d3bc2dc863e9461da8388258d",
     "sourcePath": "src/game/data/maps/munika/liluo_estate/assets.ts",
     "subtype": "module",
     "summary": "module：src/game/data/maps/munika/liluo_estate/assets.ts",
@@ -762,7 +762,7 @@
         "../systems/animation/character/layeredCharacterTexture.ts"
       ]
     },
-    "sourceHash": "b4f7e96702b463f51fe9465923234e7c367d901dd6a7f3a2c82c70eccdcecd5f",
+    "sourceHash": "7d63246d447c5c48477b9ff7a2a4cce4855f92411014adc484d9517ebbafa069",
     "sourcePath": "src/game/data/playerCharacter.ts",
     "subtype": "module",
     "summary": "module：src/game/data/playerCharacter.ts",

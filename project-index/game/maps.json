@@ -41,7 +41,7 @@
     "id": "munika/liluo_estate",
     "indexVersion": 1,
     "mapId": "liluo_estate",
-    "sourceHash": "ea5cc3c8b6ff50cf29c0e79914ced09142bec330b7e235e1666c7ff41dd15510",
+    "sourceHash": "93173aaed17eacafaa45abd25fbc16989ea8b52f0d1ca005f890f0aa58673c29",
     "sourcePath": "src/game/data/maps/munika/liluo_estate",
     "sourcePaths": [
       "src/game/data/maps/munika/liluo_estate/animations.ts",

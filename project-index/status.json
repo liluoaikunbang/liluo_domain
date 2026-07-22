@@ -6,7 +6,7 @@
     "added": [],
     "deleted": [],
     "modified": [
-      "docs/智能体说明/项目子智能体体系.md"
+      "docs/功能更新/144-多文件离线发行与GitHub-Release上传.md"
     ],
     "renamed": []
   },
@@ -20,7 +20,7 @@
       "status": "current"
     },
     "docs": {
-      "entryCount": 232,
+      "entryCount": 236,
       "status": "current"
     },
     "game": {
@@ -40,11 +40,11 @@
       "status": "partial"
     }
   },
-  "generatedAt": "2026-07-22T10:13:28.579Z",
+  "generatedAt": "2026-07-22T12:51:08.826Z",
   "generatorVersion": "1.0.3",
   "mode": "changed",
   "schemaVersion": 1,
-  "sourceCommit": "85e7174a043d796fe22f96664ce91fc563283349",
+  "sourceCommit": "7b0acd3825cae158d3b6c8fa06b86a2d9a1f53a1",
   "sourceSnapshot": {
     "docs/README.md": "75344e179ec4bafcb1acce6a9e2b80be47c93db9b82c02add2f015b4ea090a26",
     "docs/功能更新/001-GameView三栏布局与地图贴合.md": "7a4664d575a6611eaf355dd13d304e4f22d3710cb8a2ce9ad3e9824388318b06",
@@ -191,7 +191,8 @@
     "docs/功能更新/141-璃落创作组人格与项目陪伴系统.md": "3894debc38c50c3bb141cff91551c85a0bf4c09b1bf314440441e2ed6795ea0d",
     "docs/功能更新/142-故事缺口发现与灵感补全系统.md": "15be60ae245d21eb5a623608a1b3578abaafb6aa86828c53cf16ae0cb06c6345",
     "docs/功能更新/143-璃落创作组雕龙文号体系.md": "2973dd58924bddc3463bb1f0049f82eb2e36a2445317a21a8fb6751502627301",
-    "docs/功能更新目录.md": "1fe7c2e3b8ea3f7af7a708b7b8a901d44418ac6bfb6a60366d58d90071d80812",
+    "docs/功能更新/144-多文件离线发行与GitHub-Release上传.md": "f736e5215196f9c4c901e45400e573146f63981145185d1fb22df0fd04c58cf3",
+    "docs/功能更新目录.md": "69eee9aa80bacd5a154edef1438827c81dc213dc12740dc6435f470dfd5fe374",
     "docs/大纲玩法总表整合规格.md": "e6ffc2c182c5d46b69bd8fe08bb3b13038d005c4d08a966ac329d0bb515ec40b",
     "docs/技能说明/liluo-asset-registry-audit.md": "111c0364090f89a05009239049e662b58a55f3fb6805fdf04e4b142d80ddf71b",
     "docs/技能说明/liluo-browser-game-regression.md": "2e10bbba405b34894531841197b4cf0e7a731aec4dd3c66758dfbb0f463a7244",
@@ -200,6 +201,7 @@
     "docs/技能说明/liluo-external-fiction-knowledge.md": "ec9913e97a576f96546125d4358900277dc7940b4809d121d6278a2ecf6745ad",
     "docs/技能说明/liluo-game-content-validator.md": "ade52b775323fb4db39a414d3274e082f2753f373834142a3dc985fe2ae5dea5",
     "docs/技能说明/liluo-gameplay-loop-audit.md": "18c0c02700009cdc9256179a94598bd13bf70dee1aee26bf1d2d5cae64a6e2ca",
+    "docs/技能说明/liluo-offline-release-pipeline.md": "c62b472a7ba6528ca6bbe777c55b2a889de1ab3bcd0ee1ced2bd7455e69ef8a8",
     "docs/技能说明/liluo-phaser-map-event-integration.md": "23914ac1655f8706098bc81658cc6d38ec594ce3dbf1cc8cd24e6a08c1dc0a75",
     "docs/技能说明/liluo-project-documentation-sync.md": "75231754802e521fd14ea51a1cc6e438eb24f5b57fdb4d4e3d36a9347cc1ca6c",
     "docs/技能说明/liluo-project-governance-memory.md": "1f4ed31a8061f1e570fe2c2036b7737f35f04faa6cf33e1323f16d94e2c67081",
@@ -220,8 +222,8 @@
     "docs/智能体说明/liluo_validation_runner.md": "5ac39e639315e1d9891f2f1649ac28f54397fc79b92ef59ee017dd000109d49c",
     "docs/智能体说明/项目子智能体体系.md": "ba2e0d621b3c741ddd94338c81706b6df377d43499dd0ec956e35bdbadd00304",
     "docs/游戏素材图片清单.md": "e5341d8739d710c663aacfde2b5eff3a482b0da6b3f4cd08424803493998cf93",
-    "docs/用户命令目录.md": "e8985c0042b1c37ab3fd8df449a1c12411f72146d7e5cc88bdabc26715be8244",
-    "docs/系统说明/README.md": "cb1d6ada1f3fd292717d66156332b9623c5cbc3d14e8e93aea4f8950f12f0699",
+    "docs/用户命令目录.md": "3e739c08e6d62671abc65fc83766f78d248b22fed7136dd442936df68993d315",
+    "docs/系统说明/README.md": "181e9a8a63461fd3c0fe758768d8affe6a624b2ae8139b77e271f1e6f1ec5767",
     "docs/系统说明/事件与对话系统.md": "ed901bcfbcd98b2e76af47457eedc15f031c7ea82ddab0bf5a749caee075989e",
     "docs/系统说明/互动小说副本.md": "8b3762dbee06377909ae57f8fc755398d018e0481373bcd3356262fdd0e52eb5",
     "docs/系统说明/像素行走图生成提示词模板.md": "150bef763cf631ffae5d9ced1108603144f2b0a1b7b483fd38f1b488d19a375a",
@@ -240,6 +242,7 @@
     "docs/系统说明/故事缺口发现与灵感补全系统.md": "d16ebc7df8b040cf0572a7023909c8a83317182917218734fdf3212a9a3c0e17",
     "docs/系统说明/游戏视图与模式.md": "cf54c683f485b54f2520b397dee8354e9b0cd23988c24a74c59a82bc9199d89e",
     "docs/系统说明/璃落创作组人格与项目陪伴系统.md": "c50698da390baf837d940d00f9678d69890da7bf3ee984ecf7a75d6055513292",
+    "docs/系统说明/离线发行与GitHub-Release流程.md": "c04ec31d7b2d6b660fb20944a3f0933331db6d18c08272a4dacd35c04ca65646",
     "docs/系统说明/角色外观与运行时状态.md": "3f8c31612e5162e2a7607612e191d2f54716cb1f3501ef28bf28b3524151ba5d",
     "docs/系统说明/项目知识索引系统.md": "58e5d82bb0f01bb90a29d1f7bdc1db0d6e68ae587de86d57cf334503b0c5e357",
     "docs/系统说明/项目规范治理与设计记忆系统.md": "0b67ede999d53298080e241c7d6583ca977a4989046e2df135fa54a6c4ca37a6",
@@ -256,6 +259,7 @@
     "docs/设计记忆/待确认决策.md": "ccd660a1ef35cb653e723f8fb6d0723d50ca88c7dc98b0d5fa4196ce9581705d",
     "docs/设计记忆/架构决策/ADR-001-项目知识采用分层索引.md": "e625f5bafb8c042f434fb9155946faab09089230417f87f4600587c7f5c7ff82",
     "docs/设计记忆/架构决策/ADR-002-规范与设计记忆分层治理.md": "561a21074c27a0c7cbf7d59ac228fb80a17c2872a4246e7d1a87c2548ec00530",
+    "docs/设计记忆/架构决策/ADR-003-离线发行采用本机回环启动器.md": "aa3f36aedd722f6ec0314b66366812a389d6571d35ee5a1bda3d1d06a6bfb383",
     "docs/设计记忆/架构决策/README.md": "d062446c7a3aaa5f704a5af168fb4d19146b2f210ee727e43c1aaede9d6bbafa",
     "docs/设计记忆/设计原则.md": "9f1646a30850245ea737130a53c0e6380afbb1c1ad516d9ac28987cf4b07211d",
     "docs/设计记忆/项目宪章.md": "c93bacf45ccb0bd6cc4f5e73fb532e8506f33c3a4cae7c5fb1f6e97aa7bd4b41",
@@ -277,7 +281,7 @@
     "docs/设计记忆/项目组灵魂/项目组手记/TEAM-NOTE-001-为什么我们要成为一个创作组.md": "b5915d503a57f815f7cc0b068cacb61bd2ef375b19fac95e3c21b244bf0cba4c",
     "docs/设计记忆/项目组灵魂/项目组手记/TEAM-NOTE-002-为什么我们的文号来自文心雕龙.md": "395ec3c1d61dd41aa15500dd0374b3ab3bc8b8ac27584be044629195ffc6bdab",
     "docs/设计记忆/项目组灵魂/项目组设定.md": "a44b8662ce2964b86fc160bf5357f02cee641dbf99c9ea6a8ab3bf40132f5fba",
-    "docs/项目概览.md": "7f7de86f2acb45e8ee7502ab3eb488d6c95824e4b59462e0e35822013eb29c05",
+    "docs/项目概览.md": "67a531b31bbac89ce6aba0e58fa1301518ce9273c9e8fbd4c7b3e5f22f2c333d",
     "src/assets/game/audio/sfx/leg_shackle.mp3": "dd29784d877bd70e6d70571c4112ae48bb7f623a1134f243bfb68c082ec5c0a5",
     "src/assets/game/audio/sfx/zip_tie_tighten_1.mp3": "d4eb32964f9c31a737e6fe250c8b923a7889587f13429d54235e01cffe700dfa",
     "src/assets/game/audio/sfx/zip_tie_tighten_2.mp3": "c96e3168cb6b982cb051d9c2e4847efe047d9d0aff108847f73202a05f2fb9b3",
@@ -971,7 +975,7 @@
     "src/assets/game/sucai_scenes/璃落的小窝-阁楼楼梯.jpg": "fb53546c927c96388ff65bd295195778e5ebb1ad8ab70e012a4934706d5aa11d",
     "src/game/core/EventRunner.ts": "32976599a676af44ff5fa3cb21d2d16a4bcd045b715fc22466558bbe12f493c4",
     "src/game/core/SceneKeys.ts": "8ea45da76e65d2f904b6aac3c3b069b9938cb17991769819dc76ee6cc41481a5",
-    "src/game/core/createPhaserGame.ts": "2a8c97f510c94fb1a660f397d975667c15eafb882656d2d798abd85bf8e1eae6",
+    "src/game/core/createPhaserGame.ts": "fab861cdf2aa079fbdba6bb8931e30aaba5db4be1c98d42947a29d5fecb04460",
     "src/game/core/dialogueExecution.ts": "ead699ab511d93e8d734e8a0fabede12c6e70966125769b8dfbc048b2ccf2d21",
     "src/game/core/directionPadGame.ts": "9b9198ed2a0fd305aa53abb307b669141e5088d21c17c795065c8453be758a06",
     "src/game/core/eventExecution.ts": "a30e7ffb45c6787add60f26ad459ee004d90c78f2d98ba07060f819e96092100",
@@ -993,7 +997,7 @@
     "src/game/data/global/cgVariantRules.ts": "a9be23c234f0c8a980f304256066538db732625a5fa49647b91b3b240a58e091",
     "src/game/data/global/gameMenuData.js": "549ad516de3df68f5628f912a08cf9d28dcfc52ef21e1d863bc11c3235bddb69",
     "src/game/data/global/updateRecordGroups.js": "ca9b92d0987ceb1890868ada15342a3d76e05657a319a92be851bde8efb64544",
-    "src/game/data/global/updateRecords.js": "f900ead3ed581fbb2bf720133b59ef6db5e5b12202e7f8a9b3f15424b81a56b0",
+    "src/game/data/global/updateRecords.js": "b6d6f630f6529d251f16968c16ab3a43ded57b5403fc986a543d138ca90d0c1d",
     "src/game/data/globalAssets.ts": "c8f61d63f69f0aed0fee4e821683bf4a2cee733104d4b48ab7f78d4879f4c17f",
     "src/game/data/interactive_fictions/asylum_for_lunatic/assets.ts": "a15be46e4a9841f1ea133a883c435b5fd799a858cde8a4ca44036650236c5a69",
     "src/game/data/interactive_fictions/asylum_for_lunatic/index.ts": "af405bbd76de80f5999d0f28a81a48b97a8219a3d050de42320247917c44c98b",
@@ -1013,7 +1017,7 @@
     "src/game/data/maps/munika/city_desire/map.json": "dd489f2f9c6193f51914d908d680fe167d0b88f6252a4a4a387a5d19db394f85",
     "src/game/data/maps/munika/city_desire/meta.ts": "b8d9bb677581ed41bee20b9581c3603708557b1e6aaf1765ebabd0a817056a3d",
     "src/game/data/maps/munika/liluo_estate/animations.ts": "2c64551aad81991c588b5097f10ab8c8a76ae4cc2b3c58d4ac930232929ff15f",
-    "src/game/data/maps/munika/liluo_estate/assets.ts": "a4593ce929b1d9f0f5219f5cde9ee8612bf98981738a3fa1fc09d5255e70b758",
+    "src/game/data/maps/munika/liluo_estate/assets.ts": "963baaf6965940111616e71fae04a3b16e0acd8d3bc2dc863e9461da8388258d",
     "src/game/data/maps/munika/liluo_estate/dialogues.json": "71d46678ad924cc08cacd0d0e5d3466ea4f7e1a76754f30d9dd2864cf547f65b",
     "src/game/data/maps/munika/liluo_estate/dialogues.ts": "62bc43c45e9891ec96b29279dc003a7b9ba43e6df368271a859c5a06822925ad",
     "src/game/data/maps/munika/liluo_estate/events.json": "e9ad0b829daa1f267e31dabd115a12c42f2d180f4836dbfd88cf769a03d0a59c",
@@ -1037,7 +1041,7 @@
     "src/game/data/maps/munika/mumu_room/meta.ts": "5640b1dbd73f2636ff06d2eee85a452b5b5a597fcd13b185e895594b94963d2b",
     "src/game/data/minigames/directionPadGames.ts": "ade6bdd485b76f9c7fe67cf1aa7afa289209f090d9d51d03637db0cdc0ae43d8",
     "src/game/data/playerAppearanceRegistry.ts": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "src/game/data/playerCharacter.ts": "b4f7e96702b463f51fe9465923234e7c367d901dd6a7f3a2c82c70eccdcecd5f",
+    "src/game/data/playerCharacter.ts": "7d63246d447c5c48477b9ff7a2a4cce4855f92411014adc484d9517ebbafa069",
     "src/game/data/playerMovementPresentationRules.ts": "4ce397fec7e93a6a5dcdaddcac3650f012293edb066e78405e2e0110f218248d",
     "src/game/data/playerStatus.ts": "a8dfbba221c8b5a6f2c0b9b55a650f15b3a8c143623d68f2d3812d5566c1fe60",
     "src/game/data/plot_outline/plotOutline.js": "e0c50192a9ae56f59fcdb29c2c1e71148800e336a583fc51ed03b7d4cc48f364",

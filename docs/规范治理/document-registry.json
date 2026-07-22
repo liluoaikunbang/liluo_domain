@@ -30,6 +30,16 @@
       "status": "active"
     },
     {
+      "documentId": "offline-release-system",
+      "path": "docs/系统说明/离线发行与GitHub-Release流程.md",
+      "type": "system-spec",
+      "authorityFor": ["offline-build", "offline-packaging", "offline-loopback-launcher", "github-release-upload"],
+      "consumers": ["package.json", "vite.config.mjs", "scripts/release/offline-release.mjs", ".agents/skills/liluo-project/liluo-offline-release-pipeline/SKILL.md", "docs/技能说明/liluo-offline-release-pipeline.md", "docs/用户命令目录.md", "docs/项目概览.md"],
+      "indexable": true,
+      "userFacing": true,
+      "status": "active"
+    },
+    {
       "documentId": "project-index-system",
       "path": "docs/系统说明/项目知识索引系统.md",
       "type": "system-spec",

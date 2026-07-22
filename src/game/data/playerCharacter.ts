@@ -111,19 +111,6 @@ const defaultLayeredPlayerAppearanceConfig = {
   walkCycleDistanceInTiles: 3.75
 } as const satisfies PlayerAppearanceConfig;
 
-const fullBodyBondageAnimationProfile: CharacterAnimationProfile = {
-  frameRate: {
-    walk: 8,
-    idle: 0
-  },
-  directions: {
-    down: { walk: [0], idle: 0 },
-    left: { walk: [1], idle: 1 },
-    right: { walk: [2], idle: 2 },
-    up: { walk: [3], idle: 3 }
-  }
-};
-
 export const playerAppearanceSpriteSheets = {
   default: defaultLayeredPlayerAppearanceConfig,
   bondage: {
@@ -196,22 +183,29 @@ export const playerAppearanceSpriteSheets = {
     walkCycleDistanceInTiles: undefined
   },
   full_body_bondage: {
-    textureKey: 'liluo_full_body_bondage',
-    spriteSheetFileName: 'liluo_full_body_bondage.png',
-    spriteSheetConfig: {
-      frameWidth: 32,
-      frameHeight: 32,
-      startFrame: 0,
-      endFrame: 3,
-      margin: 0,
-      spacing: 0
-    },
-    animationProfile: fullBodyBondageAnimationProfile,
+    ...defaultLayeredPlayerAppearanceConfig,
+    textureKey: 'liluo_full_body_bondage_down_idle',
+    frameTextureKeyPrefix: 'liluo_full_body_bondage',
+    layers: [
+      {
+        sourceTextureKeyPrefix: 'bondage_body_up',
+        mode: 'clear-base-side-pixels-within-layer-height'
+      },
+      {
+        sourceTextureKeyPrefix: 'LiLuo_head',
+        mode: 'overlay'
+      },
+      {
+        sourceTextureKeyPrefix: 'bondage_body_down',
+        mode: 'overlay'
+      }
+    ],
+    animationProfile: standingOnlyLayeredCharacterAnimationProfile,
     savePreview: {
-      frame: fullBodyBondageAnimationProfile.directions.down.idle,
-      columns: 4
+      frame: standingOnlyLayeredCharacterAnimationProfile.directions.down.idle,
+      columns: 5
     },
-    defaultMoveSpeed: 3.6
+    walkCycleDistanceInTiles: undefined
   }
 } as const satisfies Record<string, PlayerAppearanceConfig>;
 

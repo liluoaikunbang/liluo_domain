@@ -10,6 +10,8 @@ lerna-debug.log*
 node_modules
 .local/team-presence-state.json
 dist
+/dist-offline/
+/release/
 dist-ssr
 *.local
 external-knowledge/source-sync.local.json
