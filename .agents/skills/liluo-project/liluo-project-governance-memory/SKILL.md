@@ -28,6 +28,8 @@ Read [persistence-and-decisions.md](references/persistence-and-decisions.md) whe
 
 Do not copy the governance contract into every Skill or Agent. Do not save chat transcripts, hidden reasoning, temporary audit reports, or speculative philosophy. Do not auto-delete similar text or mass-renumber history.
 
+Treat any creative-team literary-name assignment, replacement, retirement, or source change as persistent, creative, user-facing identity governance. Its authority is `docs/设计记忆/项目组灵魂/文号体系/`; check the pool, roster, soul card, active Agent TOML and description, system summary, user commands, CDR, feature record, and project index before completion.
+
 ## Delegate selectively
 
 Use `liluo_project_memory_curator` only for cross-document authority tracing, ambiguous persistence, design-intent extraction, or deep duplication/conflict review. The curator is read-only; the main Codex owns all edits and final decisions.

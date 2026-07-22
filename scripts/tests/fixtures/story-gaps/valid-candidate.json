@@ -1,0 +1,16 @@
+{
+  "candidateId": "gap-candidate-modern-001",
+  "status": "proposed",
+  "scope": { "mode": "node", "targetKey": "1-modern:test", "targetTitle": "测试节点" },
+  "title": "移动环境观察",
+  "gapTypes": ["structure:transition"],
+  "gapEvidence": [{ "path": "AGENTS.md", "ref": "项目核心约束" }],
+  "coreIdea": "用移动探索承接相邻节点。",
+  "storyFunction": ["transition"],
+  "projectAdaptation": { "world": "modern", "characters": ["璃落"], "locations": [], "gameplay": ["observation"], "maps": [], "events": [], "cgOpportunities": [], "stateChanges": [] },
+  "differenceFromExisting": ["不采用重复的途中逃脱"],
+  "sourceAbstraction": { "usedExternalKnowledge": false, "externalPatterns": [], "sourceRefs": [], "directSourceDependence": "low" },
+  "scores": { "projectFit": 5, "gapCoverage": 4, "novelty": 4, "productionFeasibility": 4, "continuityRisk": 1, "sourceDependenceRisk": 1 },
+  "estimatedScope": "small",
+  "approvalOptions": ["accept", "accept-with-changes", "hold", "reject", "merge"]
+}

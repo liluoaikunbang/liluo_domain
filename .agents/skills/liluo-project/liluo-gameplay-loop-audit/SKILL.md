@@ -12,3 +12,5 @@ Use current gameplay/story/code indexes for complex localization, verify origina
 For each idea report the 10–30 second action loop, map carrier, input, pressure, success/failure/exit, state/save effects, story/CG links, differentiation, MVP, UI/AI/map/animation/audio needs, complexity and reusable modules. Grade: 可直接进入原型、需要补充规则、事件子玩法、大型副本、高度重合、不适合当前方向. Convert PVP pressure into enemies, environment, rivals or timers instead of rejecting it solely for origin.
 
 When needed, use `liluo_context_explorer` for existing gameplay/story requirements and `liluo_game_architecture_explorer` for current 2D pixel PVE feasibility. Do not turn ideation into a broad code survey.
+
+For story-gap candidates, verify that the proposed gameplay fills a real coverage gap, is not an existing loop with a new skin, has narrative causality, and changes story/runtime state or offers a meaningful alternate route.

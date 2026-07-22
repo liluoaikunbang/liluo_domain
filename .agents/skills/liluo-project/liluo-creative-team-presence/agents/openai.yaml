@@ -1,0 +1,4 @@
+interface:
+  display_name: "璃落创作组陪伴"
+  short_description: "为璃落长期项目提供稳定成员人格、真实讨论、重聚体验与专业边界"
+  default_prompt: "Use $liluo-creative-team-presence to let the relevant creative-team members discuss this project decision."

@@ -29,3 +29,5 @@ Read root `AGENTS.md`, `external-knowledge/INDEX.md`, and only the reference fil
 - Generated cards remain `candidate` until explicit review; cards contain abstractions and traceable refs, never copied prose.
 
 Read [knowledge-contract.md](references/knowledge-contract.md) for scope/data guarantees, [originality-rules.md](references/originality-rules.md) for formal writing, [card-types.md](references/card-types.md) when authoring cards, [query-guide.md](references/query-guide.md) for CLI usage, and [maintenance-guide.md](references/maintenance-guide.md) for rebuilds/upgrades.
+
+For `$liluo-story-gap-discovery`, provide abstract cards with `light` retrieval by default and do not generate or write formal project content. After an externally informed candidate becomes formal long text, run the copy-risk check before completion.

@@ -19,6 +19,12 @@
       "userCommands": false,
       "decision": false
     },
+    "agent-persona-change": {
+      "requiredChecks": ["docs/设计记忆/项目组灵魂/", "team-roster.json", "文号变更时检查文号体系来源与篇名池", "对应 Agent TOML 与说明", "创作组系统说明", "项目知识索引"],
+      "featureUpdate": true,
+      "userCommands": true,
+      "decision": "consider-CDR"
+    },
     "architecture-decision": {
       "requiredChecks": ["docs/设计记忆/架构决策/", "相关系统说明", "相关 Skill/Agent", "项目知识索引"],
       "featureUpdate": false,

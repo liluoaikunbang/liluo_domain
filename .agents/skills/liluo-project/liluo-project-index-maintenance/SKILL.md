@@ -20,6 +20,8 @@ Inspect the Git change scope, use [update-decision.md](references/update-decisio
 
 Index authoritative Markdown under `docs/设计记忆/` and `docs/规范治理/` through the existing docs domain. Treat registries and accepted ADR/CDR as navigable project records; do not treat temporary audit output as authority or add a parallel governance index.
 
+After an approved story-gap candidate is formally written, refresh the affected story/graph and any gameplay/game/docs domains. Do not add transient analysis or `planning/story-gaps/` candidates to the formal story index unless a future planning domain is explicitly designed.
+
 Index authoritative Markdown under `docs/设计记忆/` and `docs/规范治理/` through the existing docs domain. Treat registries and accepted ADR/CDR as navigable project records; do not treat temporary audit output as authority or add a parallel governance index.
 
 Use `npm run project:index:build` for schema/generator upgrades, broad moves, ID-system or relation-format changes, corruption, or an explicit full rebuild. Run build twice when determinism matters.

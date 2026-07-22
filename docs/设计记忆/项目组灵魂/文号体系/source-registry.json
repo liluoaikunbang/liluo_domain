@@ -1,0 +1,19 @@
+{
+  "sourceId": "classical-wenxin-diaolong",
+  "title": "文心雕龙",
+  "author": "刘勰",
+  "period": "南朝齐梁之际；作者为南朝文学理论家，作品一般归入南朝梁",
+  "sourceType": "classical-literary-theory",
+  "publicDomainOriginal": true,
+  "usedFor": ["team-literary-names", "creative-process-symbolism"],
+  "verificationDate": "2026-07-22",
+  "chapterCount": 50,
+  "projectOrthography": "现代简体规范字；保留篇次，不改篇名词义",
+  "references": [
+    { "title": "中国哲学书电子化计划：《文心雕龙》（《四部丛刊初编》本）", "url": "https://ctext.org/wenxin-diaolong/zhs", "type": "primary-text", "accessedAt": "2026-07-22" },
+    { "title": "中国哲学书电子化计划：《文心雕龙》目录及图文对照", "url": "https://ctext.org/wiki.pl?if=gb&remap=gb&res=221666", "type": "primary-text", "accessedAt": "2026-07-22" },
+    { "title": "北京大学图书馆：卢永璘《中国文论第一书——〈文心雕龙〉》", "url": "https://www.lib.pku.edu.cn/portal/cn/node/2124", "type": "institutional", "accessedAt": "2026-07-22" },
+    { "title": "浙江图书馆：《文心雕龙》馆藏介绍", "url": "https://www.zjlib.cn/zygytj/49791.htm", "type": "bibliographic", "accessedAt": "2026-07-22" }
+  ],
+  "notes": "项目内释义是创作性适配，不代表对原典的完整或唯一学术解释；未收录现代校注本、译文或长篇解读。"
+}

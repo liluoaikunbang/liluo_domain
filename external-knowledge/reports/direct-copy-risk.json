@@ -57,6 +57,14 @@
         }
       ],
       "disclaimer": "This is a conservative writing-similarity warning, not a legal copyright determination."
+    },
+    {
+      "checkedAt": "2026-07-22T09:39:32.921Z",
+      "input": "scripts/tests/fixtures/story-gaps/originality-low.md",
+      "risk": "low",
+      "rewriteRecommended": false,
+      "matches": [],
+      "disclaimer": "This is a conservative writing-similarity warning, not a legal copyright determination."
     }
   ]
 }

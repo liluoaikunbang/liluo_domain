@@ -1,0 +1,8 @@
+[
+  { "id": "missing-transition", "intentionalBlank": false, "coverage": { "opening": true, "transition": false, "ending": true }, "expected": ["structure:transition"] },
+  { "id": "missing-ending", "intentionalBlank": false, "coverage": { "opening": true, "transition": true, "ending": false }, "expected": ["structure:ending"] },
+  { "id": "unused-gameplay", "intentionalBlank": false, "coverage": { "opening": true, "transition": true, "ending": true }, "definedGameplay": ["stealth"], "usedGameplay": [], "expected": ["gameplay:unused"] },
+  { "id": "repeated-function", "intentionalBlank": false, "coverage": { "opening": true, "transition": true, "ending": true }, "functionFingerprints": ["押送|途中逃脱", "押送|途中逃脱"], "expected": ["redundancy:repeated-function"] },
+  { "id": "complete", "intentionalBlank": false, "coverage": { "opening": true, "transition": true, "ending": true }, "expected": [] },
+  { "id": "intentional-blank", "intentionalBlank": true, "coverage": { "opening": true, "transition": false, "ending": false }, "expected": [] }
+]

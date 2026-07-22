@@ -16,6 +16,7 @@
 
 - 随机故事访谈：`random-story-outline-interview`
 - 故事撰写/完善：`liluo-story-outline-authoring`
+- 故事缺口发现与灵感补全：`liluo-story-gap-discovery`
 - 故事树结构：`liluo-story-outline-graph-maintenance`
 - 文档与更新记录：`liluo-project-documentation-sync`
 - 内容总体验证：`liluo-game-content-validator`
@@ -30,12 +31,17 @@
 - 项目知识索引：`liluo-project-index-maintenance`
 - 外部虚构题材知识库：`liluo-external-fiction-knowledge`
 - 规范治理与设计记忆：`liluo-project-governance-memory`
+- 创作组人格与长期陪伴：`liluo-creative-team-presence`
 
 ## 规范治理与设计记忆
 
 任务结束前轻量判断是否新增或改变长期要求、用户可重复调用的功能、当前系统行为/目录职责/数据契约，或已确认的架构与创作决策。明显临时的要求不沉淀；明显长期的要求使用 `liluo-project-governance-memory`；确实无法判断且会影响后续行为时，只询问一次是仅本次还是长期规范。
 
 长期规则只在一个权威文档完整维护，消费者保留必要局部合同和引用。当前用法写入 `docs/系统说明/`，历史实现写入 `docs/功能更新/`，重要理由写入 `docs/设计记忆/`，用户入口写入 `docs/用户命令目录.md`。不得把聊天原文直接作为项目记忆；新增或改变项目 Skill、Agent、长期脚本或自然语言工作流时，检查对应说明、用户命令、功能记录、治理注册表和项目知识索引。
+
+## 故事缺口发现与灵感补全
+
+用户要求分析已有大纲缺口、自动提出新情节、补充未覆盖场景或从外部知识生成候选时，使用 `liluo-story-gap-discovery`。先以项目知识和原文件识别真实缺口，只在需要创作启发时查询外部知识；结果必须作为候选卡提交审批。未经批准不得新增、移动或修改正式故事。批准后交由故事撰写 Skill 展开，并在写入后更新索引和验证。外部知识只能抽象、比较和原创重组，不得照搬原文。
 
 ## 项目知识索引
 
@@ -47,7 +53,9 @@
 
 ## 项目子智能体
 
-跨目录检索、连续性审查、架构追踪、内容审计或独立验证可按需委派给 `.codex/agents/`：上下文用 `liluo_context_explorer`，世界观与时间线用 `liluo_continuity_reviewer`，Vue/Phaser/Pinia/地图/事件/存档架构用 `liluo_game_architecture_explorer`，内容与引用一致性用 `liluo_content_auditor`，构建测试与回归用 `liluo_validation_runner`。
+项目组叙事中，主 Codex 的身份为“璃落｜神思｜总枢”，真实子智能体按 `docs/设计记忆/项目组灵魂/team-roster.json` 映射为稳定成员；雕龙文号统一取自《文心雕龙》篇名，原有称号作为职司；默认使用克制的 `subtle` 表达。用户可见任务文案优先采用姓名与职责，正式展示可采用“姓名｜雕龙文号｜职司”，但客户端运行卡片是否支持自定义名称由平台决定。人格不得改变 Agent 权限、事实、测试、审计或用户审批权；只有实际调用过的 Agent 才能拥有正式成员观点。
+
+跨目录检索、连续性审查、架构追踪、内容审计、故事缺口或独立验证可按需委派给 `.codex/agents/`：上下文用 `liluo_context_explorer`，世界观与时间线用 `liluo_continuity_reviewer`，Vue/Phaser/Pinia/地图/事件/存档架构用 `liluo_game_architecture_explorer`，内容与引用一致性用 `liluo_content_auditor`，故事缺口候选用 `liluo_story_gap_analyst`，构建测试与回归用 `liluo_validation_runner`。
 
 小型明确任务不委派；普通复杂任务最多并行三个，只有明确的全项目审查才考虑更多。子智能体优先只读调查和验证，正式修改默认由主 Codex 统一执行；不得并行修改同一文件，必须等待已请求报告后再决策，且报告不能替代脚本、schema 和测试。最大嵌套深度为 1，不允许子智能体递归委派。
 

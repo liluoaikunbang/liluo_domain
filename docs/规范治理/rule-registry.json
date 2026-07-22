@@ -34,6 +34,37 @@
       "status": "active"
     },
     {
+      "ruleId": "story-gap-candidates-require-approval",
+      "title": "故事缺口候选未经审批不得写入正式大纲",
+      "authority": "docs/系统说明/故事缺口发现与灵感补全系统.md",
+      "consumers": ["AGENTS.md", ".agents/skills/liluo-project/liluo-story-gap-discovery/SKILL.md", ".codex/agents/liluo_story_gap_analyst.toml", ".agents/skills/liluo-project/liluo-story-outline-authoring/SKILL.md"],
+      "status": "active"
+    },
+    {
+      "ruleId": "persona-never-overrides-professional-contract",
+      "title": "人格与陪伴不得改变专业合同和事实结论",
+      "authority": "docs/设计记忆/项目组灵魂/项目组设定.md",
+      "decision": "docs/设计记忆/创作决策/CDR-003-将项目智能体组织为璃落创作组.md",
+      "consumers": ["AGENTS.md", ".agents/skills/liluo-project/liluo-creative-team-presence/SKILL.md", "docs/智能体说明/项目子智能体体系.md"],
+      "status": "active"
+    },
+    {
+      "ruleId": "team-literary-name-source",
+      "title": "创作组雕龙文号统一取自《文心雕龙》篇名",
+      "authority": "docs/设计记忆/项目组灵魂/文号体系/README.md",
+      "decision": "docs/设计记忆/创作决策/CDR-004-将文心雕龙篇名作为璃落创作组统一文号来源.md",
+      "consumers": ["AGENTS.md", ".agents/skills/liluo-project/liluo-creative-team-presence/SKILL.md", ".agents/skills/liluo-project/liluo-project-governance-memory/SKILL.md", "docs/智能体说明/项目子智能体体系.md"],
+      "status": "active"
+    },
+    {
+      "ruleId": "agent-views-require-real-participation",
+      "title": "成员正式观点必须来自真实 Agent 参与",
+      "authority": "docs/设计记忆/项目组灵魂/表达模式.md",
+      "decision": "docs/设计记忆/创作决策/CDR-003-将项目智能体组织为璃落创作组.md",
+      "consumers": ["AGENTS.md", ".agents/skills/liluo-project/liluo-creative-team-presence/SKILL.md"],
+      "status": "active"
+    },
+    {
       "ruleId": "single-authority",
       "title": "跨系统长期规则只完整维护一次",
       "authority": "docs/系统说明/项目规范治理与设计记忆系统.md",

@@ -48,11 +48,21 @@
       "status": "active"
     },
     {
+      "documentId": "story-gap-discovery-system",
+      "path": "docs/系统说明/故事缺口发现与灵感补全系统.md",
+      "type": "system-spec",
+      "authorityFor": ["story-gap-discovery", "story-gap-candidates", "story-gap-approval", "story-gap-retrieval-budget"],
+      "consumers": ["AGENTS.md", ".agents/skills/liluo-project/liluo-story-gap-discovery/SKILL.md", "docs/技能说明/liluo-story-gap-discovery.md", ".codex/agents/liluo_story_gap_analyst.toml", "docs/智能体说明/liluo_story_gap_analyst.md", "docs/用户命令目录.md"],
+      "indexable": true,
+      "userFacing": true,
+      "status": "active"
+    },
+    {
       "documentId": "project-agent-system",
       "path": "docs/智能体说明/项目子智能体体系.md",
       "type": "agent-system",
       "authorityFor": ["project-agent-roles"],
-      "consumers": ["AGENTS.md", ".codex/agents/liluo_context_explorer.toml", ".codex/agents/liluo_content_auditor.toml", ".codex/agents/liluo_validation_runner.toml"],
+      "consumers": ["AGENTS.md", ".codex/agents/liluo_context_explorer.toml", ".codex/agents/liluo_content_auditor.toml", ".codex/agents/liluo_story_gap_analyst.toml", ".codex/agents/liluo_validation_runner.toml"],
       "indexable": true,
       "status": "active"
     },
@@ -62,6 +72,35 @@
       "type": "system-spec",
       "authorityFor": ["documentation-governance", "design-memory-architecture"],
       "consumers": ["AGENTS.md", ".agents/skills/liluo-project/liluo-project-governance-memory/SKILL.md", "docs/技能说明/liluo-project-governance-memory.md", "docs/智能体说明/liluo_project_memory_curator.md", "docs/用户命令目录.md"],
+      "indexable": true,
+      "userFacing": true,
+      "status": "active"
+    },
+    {
+      "documentId": "creative-team-presence-system",
+      "path": "docs/系统说明/璃落创作组人格与项目陪伴系统.md",
+      "type": "system-spec",
+      "authorityFor": ["creative-team-presence", "persona-modes", "team-discussion", "reunion-state"],
+      "consumers": ["AGENTS.md", ".agents/skills/liluo-project/liluo-creative-team-presence/SKILL.md", "docs/技能说明/liluo-creative-team-presence.md", "docs/智能体说明/项目子智能体体系.md", "docs/用户命令目录.md"],
+      "indexable": true,
+      "userFacing": true,
+      "status": "active"
+    },
+    {
+      "documentId": "creative-team-soul",
+      "path": "docs/设计记忆/项目组灵魂/项目组设定.md",
+      "type": "design-memory",
+      "authorityFor": ["creative-team-identity", "thought-source-status", "reality-narrative-boundary"],
+      "consumers": ["docs/系统说明/璃落创作组人格与项目陪伴系统.md", "docs/设计记忆/项目组灵魂/team-roster.json"],
+      "indexable": true,
+      "status": "active"
+    },
+    {
+      "documentId": "creative-team-literary-names",
+      "path": "docs/设计记忆/项目组灵魂/文号体系/README.md",
+      "type": "design-memory",
+      "authorityFor": ["team-literary-name-source", "team-literary-name-assignment", "team-literary-name-status"],
+      "consumers": ["docs/设计记忆/项目组灵魂/team-roster.json", ".agents/skills/liluo-project/liluo-creative-team-presence/SKILL.md", ".agents/skills/liluo-project/liluo-project-governance-memory/SKILL.md", "docs/智能体说明/项目子智能体体系.md", "docs/用户命令目录.md"],
       "indexable": true,
       "userFacing": true,
       "status": "active"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "故事缺口发现与灵感补全"
+  short_description: "分析璃落宇宙现有大纲缺口并生成可审批的原创故事候选方案"
+  default_prompt: "Use $liluo-story-gap-discovery to analyze the selected story scope, identify evidence-backed gaps, and return ranked original candidates for user approval without editing formal story files."

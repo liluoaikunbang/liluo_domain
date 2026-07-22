@@ -1,5 +1,9 @@
 # 外部虚构题材知识库 Skill
 
+## 故事缺口候选接入
+
+为 `liluo-story-gap-discovery` 提供非 canon 抽象卡，默认轻量检索，不直接生成或写入正式项目内容；外部启发的正式长文本完成前运行照搬风险检查。
+
 `liluo-external-fiction-knowledge` 负责查询、同步、构建、增量更新、验证外部虚构题材语料，并把文学表达、画面结构、场景、虚构状态和题材模式抽象成可追溯的原创参考。本机权威源由 `external-knowledge/source-sync.local.json` 指向，仓库索引入口固定为其受控镜像 `external-knowledge/sources/fiction-bondage/`。
 
 ## 触发边界

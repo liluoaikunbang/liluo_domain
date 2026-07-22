@@ -1,5 +1,9 @@
 # liluo-story-outline-authoring
 
+## 故事缺口候选接入
+
+可接收 `liluo-story-gap-discovery` 中状态为 `accepted`、`accepted-with-changes` 或 `expanded` 的候选。写入前核验候选、目标节点与原始资料，不重复整套缺口分析；正式写入后记录真实 story key，并更新索引和相关验证。
+
 ## 项目索引协作
 
 复杂定位先查询 current 的 story/graph 索引，正式撰写前核验来源 JSON 与 Markdown；修改后运行领域级增量更新和索引验证。
