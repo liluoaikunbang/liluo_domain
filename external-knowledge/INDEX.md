@@ -6,7 +6,8 @@
 - 仓库镜像：`external-knowledge/sources/fiction-bondage/`（索引只读取这里，不反向修改权威源）
 - 支持文本：Markdown、TXT、Markdown Text；其他文件只编目，不读取二进制正文
 - 来源目录：`catalog/sources.json`；分段：`index/segments/`；关键词与标签：`index/keywords/`、`index/tags/`
-- 五类卡片：`cards/expression/`、`visual-structure/`、`scene-pattern/`、`fictional-state/`、`trope/`
+- 七类卡片：`cards/expression/`、`visual-structure/`、`scene-pattern/`、`fictional-state/`、`trope/`、`term/`、`plot-pattern/`
+- 候选规则：`card-rules.json`，按证据组和最小独立来源数生成术语卡与情节模式卡
 - 来源定位：`index/references/source-locations.json`；质量与重复报告：`reports/`
 - 当前统计与状态：`status.json`；构建清单：`manifest.json`
 
@@ -19,6 +20,8 @@ npm run external:knowledge:update
 npm run external:knowledge:build
 npm run external:knowledge:validate
 npm run external:knowledge:query -- --query "古堡 逃脱" --mode and --limit 8 --format markdown
+npm run external:knowledge:query -- --card-type term --query "送绑玩脱"
+npm run external:knowledge:query -- --card-type plot-pattern --query "保障失效 控制权转移" --mode and
 npm run external:knowledge:copy-check -- --input "docs/待检查文本.md"
 ```
 

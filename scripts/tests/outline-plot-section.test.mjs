@@ -34,6 +34,11 @@ test('plot panel exposes search, usage, world-bias and tag filters', () => {
   assert.match(plotPanelSource, /bondageTags/u);
   assert.match(plotPanelSource, /未使用/u);
   assert.match(plotPanelSource, /已使用/u);
+  assert.match(plotPanelSource, /核心前提/u);
+  assert.match(plotPanelSource, /升级链/u);
+  assert.match(plotPanelSource, /关键转折/u);
+  assert.match(plotPanelSource, /持续后果/u);
+  assert.doesNotMatch(plotPanelSource, /外部知识卡|sourceRefs|externalKnowledgeRefs/u);
 });
 
 test('plot panel presents groups, entries and details in three columns', () => {

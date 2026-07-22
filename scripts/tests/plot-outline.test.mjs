@@ -25,6 +25,9 @@ test('plot catalog uses unique stable ids and consistent usage state', () => {
     assert.equal(typeof entry.isBondagePlot, 'boolean');
     assert.ok(Array.isArray(entry.bondageTags));
     assert.equal(entry.usedByLabels.length, entry.usedBy.length);
+    assert.deepEqual(Object.keys(entry.development), ['premise', 'escalation', 'turn', 'consequence']);
+    assert.ok(Object.values(entry.development).every((value) => typeof value === 'string' && value.trim().length >= 8));
+    assert.doesNotMatch(JSON.stringify(entry.development), /fb-(?:term|plot-pattern|src)-/);
     assert.ok(groupIds.has(entry.groupId));
   });
 });
@@ -76,6 +79,14 @@ test('finds child entries when searching by a large plot title', () => {
     findPlotEntries(plotOutline, { query: '封闭规训机构' }).map((entry) => entry.title),
     ['沈芷-病房保护与辨灵', '伪证收治', '黑蔷薇监护']
   );
+});
+
+test('searches the original four-part development without exposing external references', () => {
+  assert.deepEqual(
+    findPlotEntries(plotOutline, { query: '数字同意教训' }).map((entry) => entry.id),
+    ['plot-023']
+  );
+  assert.equal(JSON.stringify(plotOutline.entries).includes('externalKnowledgeRefs'), false);
 });
 
 test('keeps the protection-fee meeting and later rescue in one linked plot', () => {

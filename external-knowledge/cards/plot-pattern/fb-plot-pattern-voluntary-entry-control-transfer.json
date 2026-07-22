@@ -1,0 +1,82 @@
+{
+  "cardId": "fb-plot-pattern-voluntary-entry-control-transfer",
+  "cardType": "plot-pattern",
+  "title": "主动进入—保障失效—控制权转移",
+  "aliases": [],
+  "distinctions": [],
+  "prerequisites": [
+    "角色相信自己保留退出权，或相信协助者、约定与工具能够兜底。",
+    "进入情境符合角色当时的动机，而不是无缘由地配合情节。"
+  ],
+  "progression": [
+    "角色主动或半主动进入受限情境。",
+    "原定保障出现缺口，角色先尝试按旧计划收场。",
+    "退出失败使控制权转移，事件从体验或试探升级为必须处理的困局。",
+    "角色通过观察、交涉、选择或外部关系寻找新的退出路径。"
+  ],
+  "reversals": [
+    "协助者并未背叛，但因信息差或环境变化无法履约。",
+    "角色成功脱离眼前状态，却暴露了身份、关系或更大的事件入口。"
+  ],
+  "outcomes": [
+    "脱身并承担关系、状态或资源上的后果。",
+    "困局转化为调查、营救或长期控制权支线。",
+    "失败不会只停留在原地，而会进入有新信息的新状态。"
+  ],
+  "concepts": [
+    "角色主动或半主动进入受限情境。",
+    "原定保障出现缺口，角色先尝试按旧计划收场。",
+    "退出失败使控制权转移，事件从体验或试探升级为必须处理的困局。",
+    "角色通过观察、交涉、选择或外部关系寻找新的退出路径。"
+  ],
+  "abstractPatterns": [
+    "角色主动或半主动进入受限情境。",
+    "原定保障出现缺口，角色先尝试按旧计划收场。",
+    "退出失败使控制权转移，事件从体验或试探升级为必须处理的困局。",
+    "角色通过观察、交涉、选择或外部关系寻找新的退出路径。"
+  ],
+  "tags": [
+    "环境:地牢",
+    "环境:都市",
+    "世界:奇幻",
+    "状态:受限",
+    "叙事:仪式",
+    "叙事:调查",
+    "氛围:悬疑",
+    "叙事:逃脱"
+  ],
+  "sourceRefs": [
+    {
+      "sourceId": "fb-src-000020",
+      "segmentId": "fb-src-000020-seg-00001",
+      "sourcePath": "external-knowledge/sources/fiction-bondage/不知道作者/魔王切茜娅的紧缚旅途.md",
+      "startLine": 3,
+      "endLine": 15
+    },
+    {
+      "sourceId": "fb-src-000001",
+      "segmentId": "fb-src-000001-seg-00008",
+      "sourcePath": "external-knowledge/sources/fiction-bondage/不知道作者/（完结）彼岸花开.md",
+      "startLine": 29,
+      "endLine": 36
+    },
+    {
+      "sourceId": "fb-src-000001",
+      "segmentId": "fb-src-000001-seg-00002",
+      "sourcePath": "external-knowledge/sources/fiction-bondage/不知道作者/（完结）彼岸花开.md",
+      "startLine": 7,
+      "endLine": 12
+    },
+    {
+      "sourceId": "fb-src-000002",
+      "segmentId": "fb-src-000002-seg-00001",
+      "sourcePath": "external-knowledge/sources/fiction-bondage/不知道作者/【崩坏3rd 脑洞同人文】—两人的结局.md",
+      "startLine": 3,
+      "endLine": 11
+    }
+  ],
+  "reviewStatus": "candidate",
+  "directQuoteIncluded": false,
+  "knowledgeScope": "external-fiction-reference",
+  "canonical": false
+}

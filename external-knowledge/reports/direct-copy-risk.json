@@ -1,4 +1,62 @@
 {
-  "note": "Generated on demand by external:knowledge:copy-check; no source text is stored here.",
-  "checks": []
+  "note": "Conservative writing-similarity warnings; not legal copyright determinations. Source prose is not copied into this report.",
+  "checks": [
+    {
+      "checkedAt": "2026-07-22T08:14:42.673Z",
+      "input": "src/game/data/plot_outline/catalog.json",
+      "risk": "low",
+      "rewriteRecommended": false,
+      "matches": [
+        {
+          "sourceId": "fb-src-000208",
+          "sourcePath": "external-knowledge/sources/fiction-bondage/作者,金主大大/gsgs3321（如梦）/关好门窗.md",
+          "startLine": 2361,
+          "endLine": 2378,
+          "longestSharedChars": 13,
+          "ngramOverlap": 0.0006
+        },
+        {
+          "sourceId": "fb-src-000138",
+          "sourcePath": "external-knowledge/sources/fiction-bondage/作者,金主大大/杨可/病娇色.md",
+          "startLine": 90,
+          "endLine": 91,
+          "longestSharedChars": 11,
+          "ngramOverlap": 0.0003
+        },
+        {
+          "sourceId": "fb-src-000138",
+          "sourcePath": "external-knowledge/sources/fiction-bondage/作者,金主大大/杨可/病娇色.md",
+          "startLine": 92,
+          "endLine": 100,
+          "longestSharedChars": 11,
+          "ngramOverlap": 0.0003
+        },
+        {
+          "sourceId": "fb-src-000001",
+          "sourcePath": "external-knowledge/sources/fiction-bondage/不知道作者/（完结）彼岸花开.md",
+          "startLine": 449,
+          "endLine": 462,
+          "longestSharedChars": 9,
+          "ngramOverlap": 0.0002
+        },
+        {
+          "sourceId": "fb-src-000061",
+          "sourcePath": "external-knowledge/sources/fiction-bondage/其他未分类/女侠被缚的故事.md",
+          "startLine": 27,
+          "endLine": 37,
+          "longestSharedChars": 8,
+          "ngramOverlap": 0.0001
+        },
+        {
+          "sourceId": "fb-src-000203",
+          "sourcePath": "external-knowledge/sources/fiction-bondage/作者,金主大大/en010272/自愿女囚岁月.md",
+          "startLine": 272,
+          "endLine": 308,
+          "longestSharedChars": 8,
+          "ngramOverlap": 0.0001
+        }
+      ],
+      "disclaimer": "This is a conservative writing-similarity warning, not a legal copyright determination."
+    }
+  ]
 }

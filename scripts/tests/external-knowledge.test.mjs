@@ -8,6 +8,7 @@ import { segmentText } from '../external-knowledge/lib/segmenter.mjs';
 import { matchQuery } from '../external-knowledge/lib/query.mjs';
 import { assessSimilarity } from '../external-knowledge/lib/similarity.mjs';
 import { createSyncPlan, syncAuthoritativeSource } from '../external-knowledge/lib/sync.mjs';
+import { createCandidateCards } from '../external-knowledge/lib/indexer.mjs';
 
 test('segmentText preserves headings and source line locations deterministically', () => {
   const text = '# 第一章\n\n雾气笼罩古堡。\n\n门在身后合拢。\n\n## 地下室\n\n她听见远处的钟声。';
@@ -125,4 +126,31 @@ test('syncAuthoritativeSource copies changes and automatically deletes only mana
   } finally {
     await fs.rm(root, { recursive: true, force: true });
   }
+});
+
+test('createCandidateCards emits traceable term and plot-pattern candidates only when every evidence group is present', () => {
+  const segments = [
+    { sourceId: 'fb-src-1', segmentId: 'seg-1', sourcePath: 'one.md', startLine: 3, endLine: 8, preview: '主动送绑后仍以为可以随时结束。', tags: ['状态:受限'] },
+    { sourceId: 'fb-src-2', segmentId: 'seg-2', sourcePath: 'two.md', startLine: 12, endLine: 18, preview: '局面玩脱，原先的保障失效。', tags: ['叙事:失控'] },
+    { sourceId: 'fb-src-3', segmentId: 'seg-3', sourcePath: 'three.md', startLine: 20, endLine: 24, preview: '控制权转移后才发现无法自行脱身。', tags: ['叙事:转折'] },
+  ];
+  const rules = {
+    terms: [{ id: 'voluntary-loss-of-control', title: '送绑玩脱', aliases: ['送绑', '玩脱'], evidenceGroups: [['送绑'], ['玩脱', '无法自行脱身']], definition: '角色主动进入自认为可控的受限情境，随后因保障失效而失去退出能力。', distinctions: ['不等同于从一开始就遭到强迫。'] }],
+    plotPatterns: [{ id: 'voluntary-entry-control-transfer', title: '主动进入—保障失效—控制权转移', evidenceGroups: [['主动', '送绑'], ['保障失效', '玩脱'], ['控制权转移', '无法自行脱身']], prerequisites: ['角色相信自己保有退出权。'], progression: ['主动进入', '保障失效', '控制权转移'], reversals: ['原本的参与条件不再成立。'], outcomes: ['脱身并承担后果', '进入长期支线'] }],
+  };
+
+  const cards = createCandidateCards(segments, rules);
+  const term = cards.find((card) => card.cardType === 'term');
+  const pattern = cards.find((card) => card.cardType === 'plot-pattern');
+
+  assert.equal(term.title, '送绑玩脱');
+  assert.deepEqual(term.aliases, ['送绑', '玩脱']);
+  assert.equal(pattern.progression.length, 3);
+  assert.ok(term.sourceRefs.length >= 2);
+  assert.ok(pattern.sourceRefs.length >= 2);
+  assert.ok(cards.every((card) => card.reviewStatus === 'candidate' && card.directQuoteIncluded === false && card.canonical === false));
+  assert.ok(cards.every((card) => card.sourceRefs.every((ref) => ref.sourcePath && ref.startLine <= ref.endLine)));
+
+  const missingEvidence = createCandidateCards(segments.slice(0, 1), rules);
+  assert.equal(missingEvidence.some((card) => card.title === '送绑玩脱'), false);
 });

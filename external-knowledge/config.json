@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "knowledgeScope": "external-fiction-reference",
   "canonical": false,
   "sourceRoots": ["external-knowledge/sources/fiction-bondage"],

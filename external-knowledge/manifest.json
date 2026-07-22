@@ -1,9 +1,9 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "knowledgeScope": "external-fiction-reference",
   "canonical": false,
-  "generatedAt": "2026-07-22T07:21:48.164Z",
-  "mode": "source-level-incremental-with-global-index-rebuild",
+  "generatedAt": "2026-07-22T07:57:30.308Z",
+  "mode": "full",
   "shards": [
     {
       "path": "index/segments/segments-001.json",

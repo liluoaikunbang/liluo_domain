@@ -369,7 +369,7 @@
     "id": "src/game/data/global/updateRecords.js",
     "indexVersion": 1,
     "references": {},
-    "sourceHash": "e94977bd2b96bdeb52fa2db6caa36b7ae25dc79c915d948611006d44ce05a94a",
+    "sourceHash": "a43743bed1eaca624c499f2d02a50d08f7963dab3698e52a853b7863b1610756",
     "sourcePath": "src/game/data/global/updateRecords.js",
     "subtype": "module",
     "summary": "module：src/game/data/global/updateRecords.js",
@@ -807,7 +807,7 @@
         "./catalog.json"
       ]
     },
-    "sourceHash": "cd6ab2ebc1935ac50e96a96fc61945ec563ae0ec610f6d8adebed287e6280343",
+    "sourceHash": "e0c50192a9ae56f59fcdb29c2c1e71148800e336a583fc51ed03b7d4cc48f364",
     "sourcePath": "src/game/data/plot_outline/plotOutline.js",
     "subtype": "module",
     "summary": "module：src/game/data/plot_outline/plotOutline.js",
@@ -1933,7 +1933,7 @@
         "./GameScrollArea.vue"
       ]
     },
-    "sourceHash": "76847d13162477bc0cae314beb326e97728503205cee19c17f2786ef1c8bb821",
+    "sourceHash": "89f163f1bc4f2e3c9aa651db745b8b36928887df9ed034f0753db654d6afc8ef",
     "sourcePath": "src/game/views/components/base/PlotOutlinePanel.vue",
     "subtype": "vue",
     "summary": "vue：src/game/views/components/base/PlotOutlinePanel.vue",

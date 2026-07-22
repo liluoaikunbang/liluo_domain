@@ -34,7 +34,49 @@ function versionGroups(sources) {
   for (const source of sources.filter((item) => item.indexStatus === 'indexed')) { const key = source.title.normalize('NFKC').replace(/[\s（(【[].*?[）)】\]]/g, '').toLocaleLowerCase(); if (!groups.has(key)) groups.set(key, []); groups.get(key).push(source); }
   return [...groups.values()].filter((group) => group.length > 1 && new Set(group.map((item) => item.normalizedContentHash)).size > 1).map((group) => ({ type: 'possible-version', titleKey: group[0].title, sourceIds: group.map((item) => item.sourceId), paths: group.map((item) => item.relativePath) }));
 }
-function createCandidateCards(segments) {
+const sourceRef = ({ sourceId, segmentId, sourcePath, startLine, endLine }) => ({ sourceId, segmentId, sourcePath, startLine, endLine });
+const evidenceText = (segment) => `${segment.evidenceText ?? segment.preview ?? ''} ${segment.headingPath?.join(' ') ?? ''} ${(segment.tags ?? []).join(' ')}`.toLocaleLowerCase();
+
+function ruleCard(rule, cardType, segments) {
+  const selected = [];
+  const allTerms = (rule.evidenceGroups ?? []).flat().map((term) => term.toLocaleLowerCase());
+  for (const group of rule.evidenceGroups ?? []) {
+    const terms = group.map((term) => term.toLocaleLowerCase());
+    const match = segments.find((segment) => terms.some((term) => evidenceText(segment).includes(term)));
+    if (!match) return null;
+    if (!selected.some((segment) => segment.segmentId === match.segmentId)) selected.push(match);
+  }
+  const minimumSources = Math.max(1, rule.minimumSources ?? 1);
+  for (const segment of segments) {
+    if (new Set(selected.map((item) => item.sourceId)).size >= minimumSources) break;
+    if (!allTerms.some((term) => evidenceText(segment).includes(term))) continue;
+    if (selected.some((item) => item.sourceId === segment.sourceId)) continue;
+    selected.push(segment);
+  }
+  if (new Set(selected.map((item) => item.sourceId)).size < minimumSources) return null;
+  return {
+    cardId: `fb-${cardType}-${rule.id}`,
+    cardType,
+    title: rule.title,
+    aliases: rule.aliases ?? [],
+    definition: rule.definition,
+    distinctions: rule.distinctions ?? [],
+    prerequisites: rule.prerequisites ?? [],
+    progression: rule.progression ?? [],
+    reversals: rule.reversals ?? [],
+    outcomes: rule.outcomes ?? [],
+    concepts: [...new Set([...(rule.aliases ?? []), ...(rule.progression ?? [])])],
+    abstractPatterns: rule.progression ?? [],
+    tags: [...new Set(selected.flatMap((segment) => segment.tags ?? []))],
+    sourceRefs: selected.map(sourceRef),
+    reviewStatus: 'candidate',
+    directQuoteIncluded: false,
+    knowledgeScope: SCOPE,
+    canonical: false,
+  };
+}
+
+export function createCandidateCards(segments, rules = {}) {
   const definitions = [
     ['expression', '环境压力与角色感知的交替表达', ['环境细节', '角色感知', '节奏递进']],
     ['visual-structure', '封闭空间中的人物与出口关系', ['人物轮廓', '空间边界', '出口视觉重心']],
@@ -44,9 +86,23 @@ function createCandidateCards(segments) {
   ];
   return definitions.map(([cardType, title, abstractPatterns], index) => {
     const selected = [], seenSources = new Set(); for (const segment of segments.filter((item) => item.tags.length).slice(index)) { if (seenSources.has(segment.sourceId)) continue; selected.push(segment); seenSources.add(segment.sourceId); if (selected.length === 3) break; }
-    const refs = selected.map(({ sourceId, segmentId, sourcePath, startLine, endLine }) => ({ sourceId, segmentId, sourcePath, startLine, endLine }));
+    const refs = selected.map(sourceRef);
     return { cardId: `fb-${cardType}-${String(index + 1).padStart(6, '0')}`, cardType, title, concepts: abstractPatterns, abstractPatterns, tags: [...new Set(refs.flatMap((ref) => segments.find((item) => item.segmentId === ref.segmentId)?.tags ?? []))], sourceRefs: refs, reviewStatus: 'candidate', directQuoteIncluded: false, knowledgeScope: SCOPE, canonical: false };
-  });
+  }).concat(
+    (rules.terms ?? []).map((rule) => ruleCard(rule, 'term', segments)).filter(Boolean),
+    (rules.plotPatterns ?? []).map((rule) => ruleCard(rule, 'plot-pattern', segments)).filter(Boolean),
+  );
+}
+
+async function hydrateCardEvidence(segments) {
+  const linesBySource = new Map();
+  return Promise.all(segments.map(async (segment) => {
+    if (!linesBySource.has(segment.sourcePath)) {
+      linesBySource.set(segment.sourcePath, fs.readFile(path.join(path.resolve(KNOWLEDGE_ROOT, '..'), segment.sourcePath), 'utf8').then((text) => text.split(/\r?\n/)));
+    }
+    const lines = await linesBySource.get(segment.sourcePath);
+    return { ...segment, evidenceText: lines.slice(segment.startLine - 1, segment.endLine).join(' ') };
+  }));
 }
 
 export async function buildKnowledge({ changedOnly = false } = {}) {
@@ -70,7 +126,9 @@ export async function buildKnowledge({ changedOnly = false } = {}) {
   }
   segments.sort((a, b) => a.sourceId.localeCompare(b.sourceId) || a.startLine - b.startLine);
   const changed = { added: sources.filter((item) => !oldSources.some((old) => old.sourceId === item.sourceId)).map((item) => item.relativePath), modified: sources.filter((item) => oldById.has(item.sourceId) && oldById.get(item.sourceId).contentHash !== item.contentHash).map((item) => item.relativePath), deleted: oldSources.filter((old) => !sources.some((item) => item.sourceId === old.sourceId)).map((item) => old.relativePath), renamed: sources.filter((item) => oldById.has(item.sourceId) && oldById.get(item.sourceId).relativePath !== item.relativePath).map((item) => ({ from: oldById.get(item.sourceId).relativePath, to: item.relativePath })) };
-  const duplicates = duplicateGroups(sources), versions = versionGroups(sources), cards = createCandidateCards(segments), stamp = new Date().toISOString();
+  const duplicates = duplicateGroups(sources), versions = versionGroups(sources);
+  const cardRules = await readJson(path.join(KNOWLEDGE_ROOT, 'card-rules.json'), {});
+  const cards = createCandidateCards(await hydrateCardEvidence(segments), cardRules), stamp = new Date().toISOString();
   const temp = path.join(KNOWLEDGE_ROOT, `.build-${process.pid}-${Date.now()}`); await fs.mkdir(temp, { recursive: true });
   await writeJson(path.join(temp, 'catalog', 'sources.json'), sources); await writeJson(path.join(temp, 'catalog', 'duplicates.json'), duplicates);
   const shards = []; for (let index = 0; index < segments.length; index += 500) { const name = `segments-${String(shards.length + 1).padStart(3, '0')}.json`; const shard = segments.slice(index, index + 500); await writeJson(path.join(temp, 'index', 'segments', name), shard); shards.push({ path: `index/segments/${name}`, count: shard.length }); }
@@ -87,7 +145,7 @@ export async function buildKnowledge({ changedOnly = false } = {}) {
   const metrics = { sourceFiles: sources.length, indexedFiles: sources.length - unsupported.length, unsupportedFiles: unsupported.length, parseFailures: 0, totalCharacters: sources.reduce((sum, item) => sum + item.characterCount, 0), totalSegments: segments.length, duplicateFiles: duplicates.reduce((sum, group) => sum + group.sourceIds.length - 1, 0), possibleVersions: versions.length, indexFiles: indexOutputFiles.length, indexSizeBytes: indexSizes.reduce((sum, size) => sum + size, 0), largestShardBytes: Math.max(0, ...indexSizes), largestShardRecords: Math.max(0, ...shards.map((item) => item.count)), status: 'current' };
   await writeJson(path.join(temp, 'reports', 'source-quality.json'), { unsupported: unsupported.map((item) => ({ sourceId: item.sourceId, path: item.relativePath, reason: 'unsupported-binary' })), parseFailures: [] });
   await writeJson(path.join(temp, 'reports', 'duplicate-report.json'), { groups: duplicates, possibleVersions: versions }); await writeJson(path.join(temp, 'reports', 'missing-metadata.json'), { missingAuthor: sources.filter((item) => item.author === null).map((item) => item.sourceId) }); await writeJson(path.join(temp, 'reports', 'direct-copy-risk.json'), { note: 'Generated on demand by external:knowledge:copy-check; no source text is stored here.', checks: [] });
-  await writeJson(path.join(temp, 'manifest.json'), { schemaVersion: 1, knowledgeScope: SCOPE, canonical: false, generatedAt: stamp, mode: changedOnly ? 'source-level-incremental-with-global-index-rebuild' : 'full', shards, changes: changed });
+  await writeJson(path.join(temp, 'manifest.json'), { schemaVersion: 2, knowledgeScope: SCOPE, canonical: false, generatedAt: stamp, mode: changedOnly ? 'source-level-incremental-with-global-index-rebuild' : 'full', shards, changes: changed });
   await writeJson(path.join(temp, 'status.json'), { status: 'current', checkedAt: stamp, metrics });
   for (const directory of ['catalog', 'index', 'cards', 'reports']) await publishDirectory(path.join(temp, directory), path.join(KNOWLEDGE_ROOT, directory));
   for (const file of ['manifest.json', 'status.json']) { const destination = path.join(KNOWLEDGE_ROOT, file), temporary = `${destination}.publishing`; await fs.copyFile(path.join(temp, file), temporary); await fs.rm(destination, { force: true }); await fs.rename(temporary, destination); }

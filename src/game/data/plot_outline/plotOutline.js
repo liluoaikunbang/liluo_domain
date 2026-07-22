@@ -17,7 +17,7 @@ export function findPlotEntries(outline = plotOutline, filters = {}) {
     if (filters.worldBias && !['all', 'general'].includes(filters.worldBias) && !entry.worldBiases.includes(filters.worldBias)) return false
     if (!keyword) return true
     const group = groupsById.get(entry.groupId)
-    return [entry.id, entry.number, entry.title, entry.summary, group?.id, group?.title, group?.summary, ...entry.worldBiases, ...entry.tags, ...entry.bondageTags, ...(entry.characters ?? []), ...entry.usedBy, ...(entry.usedByLabels ?? []), entry.notes]
+    return [entry.id, entry.number, entry.title, entry.summary, group?.id, group?.title, group?.summary, ...entry.worldBiases, ...entry.tags, ...entry.bondageTags, ...(entry.characters ?? []), ...entry.usedBy, ...(entry.usedByLabels ?? []), ...Object.values(entry.development ?? {}), entry.notes]
       .some((value) => normalize(value).includes(keyword))
   })
 }

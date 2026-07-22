@@ -1,0 +1,68 @@
+{
+  "cardId": "fb-plot-pattern-rescue-without-restored-agency",
+  "cardType": "plot-pattern",
+  "title": "获救但未恢复行动权",
+  "aliases": [],
+  "distinctions": [],
+  "prerequisites": [
+    "外部威胁与角色当前受限状态可以被分别解决。"
+  ],
+  "progression": [
+    "角色离开直接威胁或回到可信环境。",
+    "同伴确认安全，却发现行动权并未同步恢复。",
+    "事件目标从营救转为解除残留状态、追查关键条件或处理后果。"
+  ],
+  "reversals": [
+    "安全地点并不等于事件结束，原有状态成为下一段剧情的钥匙。"
+  ],
+  "outcomes": [
+    "形成短时照护、交涉或解谜场景。",
+    "把营救成功转化为新的调查线索，而不是重复制造同一危险。"
+  ],
+  "concepts": [
+    "角色离开直接威胁或回到可信环境。",
+    "同伴确认安全，却发现行动权并未同步恢复。",
+    "事件目标从营救转为解除残留状态、追查关键条件或处理后果。"
+  ],
+  "abstractPatterns": [
+    "角色离开直接威胁或回到可信环境。",
+    "同伴确认安全，却发现行动权并未同步恢复。",
+    "事件目标从营救转为解除残留状态、追查关键条件或处理后果。"
+  ],
+  "tags": [
+    "环境:地牢",
+    "叙事:逃脱",
+    "状态:受限",
+    "环境:都市",
+    "叙事:仪式",
+    "叙事:调查",
+    "氛围:悬疑"
+  ],
+  "sourceRefs": [
+    {
+      "sourceId": "fb-src-000002",
+      "segmentId": "fb-src-000002-seg-00001",
+      "sourcePath": "external-knowledge/sources/fiction-bondage/不知道作者/【崩坏3rd 脑洞同人文】—两人的结局.md",
+      "startLine": 3,
+      "endLine": 11
+    },
+    {
+      "sourceId": "fb-src-000001",
+      "segmentId": "fb-src-000001-seg-00008",
+      "sourcePath": "external-knowledge/sources/fiction-bondage/不知道作者/（完结）彼岸花开.md",
+      "startLine": 29,
+      "endLine": 36
+    },
+    {
+      "sourceId": "fb-src-000001",
+      "segmentId": "fb-src-000001-seg-00012",
+      "sourcePath": "external-knowledge/sources/fiction-bondage/不知道作者/（完结）彼岸花开.md",
+      "startLine": 60,
+      "endLine": 64
+    }
+  ],
+  "reviewStatus": "candidate",
+  "directQuoteIncluded": false,
+  "knowledgeScope": "external-fiction-reference",
+  "canonical": false
+}

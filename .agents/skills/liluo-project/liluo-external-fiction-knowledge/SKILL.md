@@ -16,6 +16,7 @@ Read root `AGENTS.md`, `external-knowledge/INDEX.md`, and only the reference fil
 5. Read the smallest relevant canonical domains through `project-index/INDEX.md`, then verify authoritative files.
 6. Recompose for the current 璃落 world, character, map, event and gameplay constraints. Never treat external results as canon.
 7. Before writing formal story/event/scene/CG/state content, run `npm run external:knowledge:copy-check -- --input <file>` and rewrite medium/high-risk passages.
+8. Keep the user-facing plot catalog simple: external cards and source refs stay backstage; write only the original recomposed result into the formal plot/story fields unless an audit explicitly requests provenance.
 
 ## Maintenance
 
@@ -24,6 +25,7 @@ Read root `AGENTS.md`, `external-knowledge/INDEX.md`, and only the reference fil
 - Use `external:knowledge:sync` only when mirror synchronization without indexing is explicitly needed. Inspect `sync-status.json` and `sync-manifest.json` for the exact plan.
 - Schema, segmentation, corrupt index, bulk moves, or explicit rebuild: run `external:knowledge:build`, then `validate`, `check`, targeted queries and tests.
 - Never edit, normalize, rename, move, or delete the authoritative source to satisfy an index check. Duplicate files remain sources and are only reported.
+- `card-rules.json` defines deterministic term and plot-pattern candidates. Add or refine rules there, require evidence groups and multiple independent sources where practical, then rebuild; do not hard-code source prose into cards.
 - Generated cards remain `candidate` until explicit review; cards contain abstractions and traceable refs, never copied prose.
 
 Read [knowledge-contract.md](references/knowledge-contract.md) for scope/data guarantees, [originality-rules.md](references/originality-rules.md) for formal writing, [card-types.md](references/card-types.md) when authoring cards, [query-guide.md](references/query-guide.md) for CLI usage, and [maintenance-guide.md](references/maintenance-guide.md) for rebuilds/upgrades.

@@ -10,9 +10,9 @@
 
 先运行新鲜度检查，再查询卡片或分段；默认只读取短预览、来源路径和行号，必要时少量核验原文。提取抽象机制后必须回到 `project-index/INDEX.md` 和权威项目文件，按当前世界、角色、地图、玩法与事件原创重组。外部结果始终为 `canonical: false`，不能作为璃落事实。正式写入故事、事件、场景、CG 提示词或状态描述前运行直接照搬检查。
 
-## 维护与五类卡片
+## 维护与七类卡片
 
-用户只维护本机权威源。`external:knowledge:update` 先用路径与 SHA-256 增量同步镜像，再执行来源级增量索引；普通删除无需询问并只删除受控镜像文件，一次删除超过清单 20% 时自动中止。同步绝不反向删除或改写权威源。schema、分段规则、索引格式、批量移动、损坏或用户明确要求时全量重建。五类卡为 `expression`、`visual-structure`、`scene-pattern`、`fictional-state`、`trope`；确定性生成内容只标 `candidate`，明确人工/Codex 审核后才可标 `reviewed`。
+用户只维护本机权威源。`external:knowledge:update` 先用路径与 SHA-256 增量同步镜像，再执行来源级增量索引；普通删除无需询问并只删除受控镜像文件，一次删除超过清单 20% 时自动中止。同步绝不反向删除或改写权威源。schema、分段规则、索引格式、批量移动、损坏或用户明确要求时全量重建。七类卡为 `expression`、`visual-structure`、`scene-pattern`、`fictional-state`、`trope`、`term`、`plot-pattern`。术语卡记录定义、别称和易混边界；情节模式卡记录前提、推进、控制/状态变化、反转和后果。两者由 `card-rules.json` 的证据组与最小来源数确定性生成；证据不足时跳过。自动内容只标 `candidate`，明确人工/Codex 审核后才可标 `reviewed`。
 
 ## 命令
 
@@ -23,6 +23,8 @@ npm run external:knowledge:update
 npm run external:knowledge:build
 npm run external:knowledge:validate
 npm run external:knowledge:query -- --query "古堡 逃脱" --mode and --limit 8
+npm run external:knowledge:query -- --card-type term --query "送绑玩脱"
+npm run external:knowledge:query -- --card-type plot-pattern --query "保障失效 控制权转移" --mode and
 npm run external:knowledge:copy-check -- --input "待检查文件.md"
 ```
 

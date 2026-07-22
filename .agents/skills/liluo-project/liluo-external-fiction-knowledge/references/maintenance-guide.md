@@ -7,3 +7,4 @@
 5. Use `external:knowledge:build` after schema/segmentation/index-format changes, bulk moves, corruption, or explicit request.
 6. Never hand-edit generated indexes to hide parser defects. Fix the generator and rebuild.
 7. For format upgrades, update schemas, generator, tests, system documentation and feature records together.
+8. To expand terminology or story mechanisms, edit `external-knowledge/card-rules.json`, require traceable evidence groups and preferably multiple sources, rebuild, validate, then query the exact candidate. Do not add a rule merely to force a desired definition into the library.

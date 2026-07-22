@@ -1487,7 +1487,7 @@
   {
     "id": "docs/功能更新/134-情节灵感目录与大纲Skill联动.md",
     "indexVersion": 1,
-    "sourceHash": "bba5db5719b4f5ccf4e1c660d0871e65725e226c79f40870267ebc2e87e28d04",
+    "sourceHash": "4fc2fe0c9383958b4d478310eb43c2d82a59f96a9da92ab9f065a1bb49b45527",
     "sourcePath": "docs/功能更新/134-情节灵感目录与大纲Skill联动.md",
     "subtype": "update",
     "summary": "情节灵感目录与大纲 Skill 联动",
@@ -1531,7 +1531,7 @@
   {
     "id": "docs/功能更新/138-外部虚构题材知识库.md",
     "indexVersion": 1,
-    "sourceHash": "335e9e23f302d7852f46e095747f7a8f9837084a42b7bd082eaeb5acdc87f470",
+    "sourceHash": "cab919a0ac1d74d4db9ce05b5865f8ef1bc4371a4d71e570d882b65e30fb9b28",
     "sourcePath": "docs/功能更新/138-外部虚构题材知识库.md",
     "subtype": "update",
     "summary": "外部虚构题材知识库",
@@ -1553,7 +1553,7 @@
   {
     "id": "docs/功能更新目录.md",
     "indexVersion": 1,
-    "sourceHash": "b33b47f6fb2b1aecc1673cc9e4e8855df8b6d0b40f39b287a646277720242d5b",
+    "sourceHash": "f2009d39ec24394f388bc6d289a2ea915821218330f036de461874073bd62090",
     "sourcePath": "docs/功能更新目录.md",
     "subtype": "other",
     "summary": "功能更新目录",
@@ -1597,7 +1597,7 @@
   {
     "id": "docs/技能说明/liluo-external-fiction-knowledge.md",
     "indexVersion": 1,
-    "sourceHash": "ee4d0619996b474432878f52938681a77861b33b198b4fa6994aba26ab3c4ed8",
+    "sourceHash": "f2e877b217806286de13ae12336cf8ee2e7e3b996d99d9405b79426beaa56c8c",
     "sourcePath": "docs/技能说明/liluo-external-fiction-knowledge.md",
     "subtype": "skill",
     "summary": "外部虚构题材知识库 Skill",
@@ -1872,7 +1872,7 @@
   {
     "id": "docs/系统说明/情节条目系统.md",
     "indexVersion": 1,
-    "sourceHash": "1bc57c61959e6df0e3f651fed346533b00880efd4dfff9eb5c2a930793ec3c0c",
+    "sourceHash": "f855bc3cb76cf62f36b11adba835b52ded093d13cb556b5829de8006b26d6d55",
     "sourcePath": "docs/系统说明/情节条目系统.md",
     "subtype": "system",
     "summary": "情节条目系统",
@@ -1894,7 +1894,7 @@
   {
     "id": "docs/系统说明/外部虚构题材知识库.md",
     "indexVersion": 1,
-    "sourceHash": "b10da665cedf32f86420ef7569a9f27c9d069dea897e9bfea314c877f77c0c74",
+    "sourceHash": "3540e67a33b70079623c301c85eff81a60be912b0a25df67092bcd20e57b1974",
     "sourcePath": "docs/系统说明/外部虚构题材知识库.md",
     "subtype": "system",
     "summary": "外部虚构题材知识库",
