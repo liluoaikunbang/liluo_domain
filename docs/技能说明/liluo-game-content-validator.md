@@ -20,3 +20,5 @@
 按范围解析 UTF-8/JSON，调用故事图检查，并复用项目已有 Node 测试。无法可靠解析范围时明确失败，不假装覆盖。实际修改由故事、地图、对话、素材或存档 Skill 负责。用三种 scope、缺少 world 参数和正常全量扫描验证脚本。
 
 大范围审查可委派 `liluo_content_auditor`，执行构建或测试可委派 `liluo_validation_runner`；确定性脚本仍是最终事实来源。
+
+当改动涉及治理系统、Skills、Agents、用户命令或设计记忆时，附加运行 `npm run docs:governance:audit`，并把文档结构问题与游戏内容问题分开报告；不自动压缩或删除文档。

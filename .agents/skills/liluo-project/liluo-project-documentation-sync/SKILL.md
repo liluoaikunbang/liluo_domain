@@ -17,3 +17,7 @@ Use the current docs index to localize records when helpful; after documentation
 6. Create or extend a feature-update record when the work implements playable maps/events/dialogues/gameplay, changes code or system behavior, establishes a project workflow or schema, delivers a meaningful asset batch, restructures a full main-line/content batch, or otherwise materially affects multiple content nodes. Prefer appending to the existing related record when the change extends the same feature.
 7. Run `node scripts/audit-documentation-sync.mjs --check` when the script exists, plus the encoding check and update-record test. If the documented audit script is absent, report it instead of claiming it passed.
 8. Never commit or push automatically.
+
+This Skill is the mechanical downstream of `liluo-project-governance-memory`. It does not decide whether a requirement is persistent, choose a rule authority, or create ADR/CDR rationale. For a new user-facing workflow, also synchronize `docs/用户命令目录.md`; after governance-system changes, run the applicable governance audit before refreshing the project index.
+
+This Skill is the mechanical downstream of `liluo-project-governance-memory`. It does not decide whether a requirement is persistent, choose a rule authority, or create ADR/CDR rationale. For a new user-facing workflow, also synchronize `docs/用户命令目录.md`; after governance-system changes, run the applicable governance audit before refreshing the project index.

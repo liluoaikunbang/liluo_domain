@@ -1,0 +1,4 @@
+interface:
+  display_name: "项目规范治理与设计记忆"
+  short_description: "判断长期要求、维护单一事实源并同步设计记忆与文档影响"
+  default_prompt: "Use $liluo-project-governance-memory to classify this requirement and update the smallest authoritative documentation set."

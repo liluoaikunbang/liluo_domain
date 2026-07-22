@@ -1551,14 +1551,58 @@
     "type": "document"
   },
   {
+    "id": "docs/功能更新/140-项目规范治理与设计记忆系统.md",
+    "indexVersion": 1,
+    "sourceHash": "c34c4c78ce88e1ae997a7e080ff77c0cfb7aceb7aab3a3b2c2d02f661265e495",
+    "sourcePath": "docs/功能更新/140-项目规范治理与设计记忆系统.md",
+    "subtype": "update",
+    "summary": "项目规范治理与设计记忆系统",
+    "summarySource": "title-only",
+    "title": "项目规范治理与设计记忆系统",
+    "type": "document"
+  },
+  {
     "id": "docs/功能更新目录.md",
     "indexVersion": 1,
-    "sourceHash": "f2009d39ec24394f388bc6d289a2ea915821218330f036de461874073bd62090",
+    "sourceHash": "5aaabec86ea1b0540018ae9f09679eabf5f128b2f8a696ccbe6ccdebbfe6b9fd",
     "sourcePath": "docs/功能更新目录.md",
     "subtype": "other",
     "summary": "功能更新目录",
     "summarySource": "title-only",
     "title": "功能更新目录",
+    "type": "document"
+  },
+  {
+    "id": "docs/规范治理/文档压缩规范.md",
+    "indexVersion": 1,
+    "sourceHash": "380f5981d7b1dcedc216ad27273f73ed3b94671b35e6eb98f940293b1a804bf9",
+    "sourcePath": "docs/规范治理/文档压缩规范.md",
+    "subtype": "other",
+    "summary": "文档压缩规范",
+    "summarySource": "title-only",
+    "title": "文档压缩规范",
+    "type": "document"
+  },
+  {
+    "id": "docs/规范治理/文档职责矩阵.md",
+    "indexVersion": 1,
+    "sourceHash": "5e4df0b83af551ca50068710f414376b5722458dd4fbfa653efd386b73f9e07b",
+    "sourcePath": "docs/规范治理/文档职责矩阵.md",
+    "subtype": "other",
+    "summary": "文档职责矩阵",
+    "summarySource": "title-only",
+    "title": "文档职责矩阵",
+    "type": "document"
+  },
+  {
+    "id": "docs/规范治理/README.md",
+    "indexVersion": 1,
+    "sourceHash": "429628ad090aab17f8d8235698a1e4182d8601493e41273df2c1c24f45675660",
+    "sourcePath": "docs/规范治理/README.md",
+    "subtype": "other",
+    "summary": "规范治理",
+    "summarySource": "title-only",
+    "title": "规范治理",
     "type": "document"
   },
   {
@@ -1608,7 +1652,7 @@
   {
     "id": "docs/技能说明/liluo-game-content-validator.md",
     "indexVersion": 1,
-    "sourceHash": "8f86788a9e995df54a326208e28f94d637297210fee219c16acf3a9115cabdab",
+    "sourceHash": "ade52b775323fb4db39a414d3274e082f2753f373834142a3dc985fe2ae5dea5",
     "sourcePath": "docs/技能说明/liluo-game-content-validator.md",
     "subtype": "skill",
     "summary": "liluo-game-content-validator",
@@ -1641,7 +1685,7 @@
   {
     "id": "docs/技能说明/liluo-project-documentation-sync.md",
     "indexVersion": 1,
-    "sourceHash": "fb834aa14a8a6670db244bc8c60295b6fef357f2109de41ead1f64a8be226fe1",
+    "sourceHash": "75231754802e521fd14ea51a1cc6e438eb24f5b57fdb4d4e3d36a9347cc1ca6c",
     "sourcePath": "docs/技能说明/liluo-project-documentation-sync.md",
     "subtype": "skill",
     "summary": "liluo-project-documentation-sync",
@@ -1650,9 +1694,20 @@
     "type": "document"
   },
   {
+    "id": "docs/技能说明/liluo-project-governance-memory.md",
+    "indexVersion": 1,
+    "sourceHash": "3c8b4aede75ce83b5d96ac63e2345796820b7b8f8ad5b9f895dcd54b698041b0",
+    "sourcePath": "docs/技能说明/liluo-project-governance-memory.md",
+    "subtype": "skill",
+    "summary": "liluo-project-governance-memory",
+    "summarySource": "title-only",
+    "title": "liluo-project-governance-memory",
+    "type": "document"
+  },
+  {
     "id": "docs/技能说明/liluo-project-index-maintenance.md",
     "indexVersion": 1,
-    "sourceHash": "fae01eb41145add29c932d52128b58f622ebd7a05b1a805c3c6b70f010c6b63f",
+    "sourceHash": "d5d1c7b3f00a71dd2f6ce9c7281c2e3cccd2349d0ccca158bde7f76632fbc892",
     "sourcePath": "docs/技能说明/liluo-project-index-maintenance.md",
     "subtype": "skill",
     "summary": "liluo-project-index-maintenance",
@@ -1724,6 +1779,116 @@
     "summary": "random-story-outline-interview",
     "summarySource": "title-only",
     "title": "random-story-outline-interview",
+    "type": "document"
+  },
+  {
+    "id": "docs/设计记忆/创作决策/CDR-001-像素冒险RPG作为核心体验载体.md",
+    "indexVersion": 1,
+    "sourceHash": "b28a7b04f4bc1adaa974cd8b5afb6f327040c6cc03ea3ba9dbf090ff37bc094d",
+    "sourcePath": "docs/设计记忆/创作决策/CDR-001-像素冒险RPG作为核心体验载体.md",
+    "subtype": "other",
+    "summary": "CDR-001：像素冒险 RPG 作为核心体验载体",
+    "summarySource": "title-only",
+    "title": "CDR-001：像素冒险 RPG 作为核心体验载体",
+    "type": "document"
+  },
+  {
+    "id": "docs/设计记忆/创作决策/CDR-002-外部知识只作原创转化参考.md",
+    "indexVersion": 1,
+    "sourceHash": "dc955e6ebd82536df0f105adefbcc0fd1ff06c00412e3d6fd0aec74f0a60a0f8",
+    "sourcePath": "docs/设计记忆/创作决策/CDR-002-外部知识只作原创转化参考.md",
+    "subtype": "other",
+    "summary": "CDR-002：外部知识只作原创转化参考",
+    "summarySource": "title-only",
+    "title": "CDR-002：外部知识只作原创转化参考",
+    "type": "document"
+  },
+  {
+    "id": "docs/设计记忆/创作决策/README.md",
+    "indexVersion": 1,
+    "sourceHash": "ebabaafa8e66ceedd6ff0cde541179bff337572fce9e5f717b10cddee836391a",
+    "sourcePath": "docs/设计记忆/创作决策/README.md",
+    "subtype": "other",
+    "summary": "创作决策记录",
+    "summarySource": "title-only",
+    "title": "创作决策记录",
+    "type": "document"
+  },
+  {
+    "id": "docs/设计记忆/待确认决策.md",
+    "indexVersion": 1,
+    "sourceHash": "ccd660a1ef35cb653e723f8fb6d0723d50ca88c7dc98b0d5fa4196ce9581705d",
+    "sourcePath": "docs/设计记忆/待确认决策.md",
+    "subtype": "other",
+    "summary": "待确认决策",
+    "summarySource": "title-only",
+    "title": "待确认决策",
+    "type": "document"
+  },
+  {
+    "id": "docs/设计记忆/架构决策/ADR-001-项目知识采用分层索引.md",
+    "indexVersion": 1,
+    "sourceHash": "e625f5bafb8c042f434fb9155946faab09089230417f87f4600587c7f5c7ff82",
+    "sourcePath": "docs/设计记忆/架构决策/ADR-001-项目知识采用分层索引.md",
+    "subtype": "other",
+    "summary": "ADR-001：项目知识采用分层索引",
+    "summarySource": "title-only",
+    "title": "ADR-001：项目知识采用分层索引",
+    "type": "document"
+  },
+  {
+    "id": "docs/设计记忆/架构决策/ADR-002-规范与设计记忆分层治理.md",
+    "indexVersion": 1,
+    "sourceHash": "561a21074c27a0c7cbf7d59ac228fb80a17c2872a4246e7d1a87c2548ec00530",
+    "sourcePath": "docs/设计记忆/架构决策/ADR-002-规范与设计记忆分层治理.md",
+    "subtype": "other",
+    "summary": "ADR-002：规范与设计记忆分层治理",
+    "summarySource": "title-only",
+    "title": "ADR-002：规范与设计记忆分层治理",
+    "type": "document"
+  },
+  {
+    "id": "docs/设计记忆/架构决策/README.md",
+    "indexVersion": 1,
+    "sourceHash": "d062446c7a3aaa5f704a5af168fb4d19146b2f210ee727e43c1aaede9d6bbafa",
+    "sourcePath": "docs/设计记忆/架构决策/README.md",
+    "subtype": "other",
+    "summary": "架构决策记录",
+    "summarySource": "title-only",
+    "title": "架构决策记录",
+    "type": "document"
+  },
+  {
+    "id": "docs/设计记忆/设计原则.md",
+    "indexVersion": 1,
+    "sourceHash": "9f1646a30850245ea737130a53c0e6380afbb1c1ad516d9ac28987cf4b07211d",
+    "sourcePath": "docs/设计记忆/设计原则.md",
+    "subtype": "other",
+    "summary": "设计原则",
+    "summarySource": "title-only",
+    "title": "设计原则",
+    "type": "document"
+  },
+  {
+    "id": "docs/设计记忆/项目宪章.md",
+    "indexVersion": 1,
+    "sourceHash": "c93bacf45ccb0bd6cc4f5e73fb532e8506f33c3a4cae7c5fb1f6e97aa7bd4b41",
+    "sourcePath": "docs/设计记忆/项目宪章.md",
+    "subtype": "other",
+    "summary": "项目宪章",
+    "summarySource": "title-only",
+    "title": "项目宪章",
+    "type": "document"
+  },
+  {
+    "id": "docs/设计记忆/README.md",
+    "indexVersion": 1,
+    "sourceHash": "61903813b2b334e7efe1f7a49f172fcddc2879e0e4e63aa8fa513c690f85e500",
+    "sourcePath": "docs/设计记忆/README.md",
+    "subtype": "other",
+    "summary": "设计记忆",
+    "summarySource": "title-only",
+    "title": "设计记忆",
     "type": "document"
   },
   {
@@ -1903,6 +2068,17 @@
     "type": "document"
   },
   {
+    "id": "docs/系统说明/项目规范治理与设计记忆系统.md",
+    "indexVersion": 1,
+    "sourceHash": "0b67ede999d53298080e241c7d6583ca977a4989046e2df135fa54a6c4ca37a6",
+    "sourcePath": "docs/系统说明/项目规范治理与设计记忆系统.md",
+    "subtype": "system",
+    "summary": "项目规范治理与设计记忆系统",
+    "summarySource": "title-only",
+    "title": "项目规范治理与设计记忆系统",
+    "type": "document"
+  },
+  {
     "id": "docs/系统说明/项目知识索引系统.md",
     "indexVersion": 1,
     "sourceHash": "58e5d82bb0f01bb90a29d1f7bdc1db0d6e68ae587de86d57cf334503b0c5e357",
@@ -1938,7 +2114,7 @@
   {
     "id": "docs/系统说明/README.md",
     "indexVersion": 1,
-    "sourceHash": "d6d860737cca3ed060c4f06f14702ab321fa0368688b709c610f881c990ea093",
+    "sourceHash": "09c77cda7640f9caa87b8c09bcfe6db38360e1f8a6723404262d129e8f6cdaa9",
     "sourcePath": "docs/系统说明/README.md",
     "subtype": "system",
     "summary": "系统说明",
@@ -1949,7 +2125,7 @@
   {
     "id": "docs/项目概览.md",
     "indexVersion": 1,
-    "sourceHash": "a6311924647795a19b6587a0abaa78e74dbad13273db908d271f440fe73c9767",
+    "sourceHash": "7f7de86f2acb45e8ee7502ab3eb488d6c95824e4b59462e0e35822013eb29c05",
     "sourcePath": "docs/项目概览.md",
     "subtype": "other",
     "summary": "项目概览",
@@ -1960,7 +2136,7 @@
   {
     "id": "docs/用户命令目录.md",
     "indexVersion": 1,
-    "sourceHash": "59d603ea5469e1dbf61a6a94e53924b1dd48462c48bf6083d3db6dbded09ad84",
+    "sourceHash": "607cbe3c19b127a89674cfc0127b723f60ac1874ff3426a4d21b3fe455cb6d7c",
     "sourcePath": "docs/用户命令目录.md",
     "subtype": "other",
     "summary": "用户命令目录",
@@ -1982,7 +2158,7 @@
   {
     "id": "docs/智能体说明/项目子智能体体系.md",
     "indexVersion": 1,
-    "sourceHash": "a793d3fd9e067969a843513df1fd4ac8a16efe1102447be6b14c025aa9b3e163",
+    "sourceHash": "ccc82cfa1f2549e41cd82c1045f44d712caccb6087532ce3580af6a1dc97a43a",
     "sourcePath": "docs/智能体说明/项目子智能体体系.md",
     "subtype": "agent",
     "summary": "项目子智能体体系",
@@ -2035,6 +2211,17 @@
     "type": "document"
   },
   {
+    "id": "docs/智能体说明/liluo_project_memory_curator.md",
+    "indexVersion": 1,
+    "sourceHash": "7c22067d00934116f57f01f4455dac2ff5c1e7a21f35e795f28d768268866890",
+    "sourcePath": "docs/智能体说明/liluo_project_memory_curator.md",
+    "subtype": "agent",
+    "summary": "liluo_project_memory_curator",
+    "summarySource": "title-only",
+    "title": "liluo_project_memory_curator",
+    "type": "document"
+  },
+  {
     "id": "docs/智能体说明/liluo_validation_runner.md",
     "indexVersion": 1,
     "sourceHash": "1ec64c6b0d68eab5d7110d206ef74a59e1f36797aa41f597f40601c07a904181",
@@ -2048,7 +2235,7 @@
   {
     "id": "docs/README.md",
     "indexVersion": 1,
-    "sourceHash": "cb7fe60a4a805babc25da37b531f5a6f65f8039a703dda1473ed40e74248f50a",
+    "sourceHash": "75344e179ec4bafcb1acce6a9e2b80be47c93db9b82c02add2f015b4ea090a26",
     "sourcePath": "docs/README.md",
     "subtype": "other",
     "summary": "璃落的城堡文档入口",

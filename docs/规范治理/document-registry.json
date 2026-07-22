@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "documents": [
+    {
+      "documentId": "project-core-rules",
+      "path": "AGENTS.md",
+      "type": "project-contract",
+      "authorityFor": ["project-routing", "global-development-boundaries"],
+      "consumers": ["README.md", "docs/项目概览.md", "docs/设计记忆/项目宪章.md"],
+      "indexable": true,
+      "status": "active"
+    },
+    {
+      "documentId": "project-documentation-entry",
+      "path": "docs/README.md",
+      "type": "documentation-entry",
+      "authorityFor": ["documentation-navigation"],
+      "consumers": ["README.md", "docs/项目概览.md"],
+      "indexable": true,
+      "status": "active"
+    },
+    {
+      "documentId": "user-command-catalog",
+      "path": "docs/用户命令目录.md",
+      "type": "user-entry",
+      "authorityFor": ["user-invokable-workflows"],
+      "consumers": ["README.md", "docs/README.md", "docs/项目概览.md"],
+      "indexable": true,
+      "userFacing": true,
+      "status": "active"
+    },
+    {
+      "documentId": "project-index-system",
+      "path": "docs/系统说明/项目知识索引系统.md",
+      "type": "system-spec",
+      "authorityFor": ["project-index-architecture"],
+      "consumers": ["AGENTS.md", ".agents/skills/liluo-project/liluo-project-index-maintenance/SKILL.md", "docs/技能说明/liluo-project-index-maintenance.md", "docs/用户命令目录.md"],
+      "indexable": true,
+      "status": "active"
+    },
+    {
+      "documentId": "external-knowledge-system",
+      "path": "docs/系统说明/外部虚构题材知识库.md",
+      "type": "system-spec",
+      "authorityFor": ["external-knowledge-architecture", "external-originality"],
+      "consumers": ["AGENTS.md", ".agents/skills/liluo-project/liluo-external-fiction-knowledge/SKILL.md", "docs/技能说明/liluo-external-fiction-knowledge.md", "docs/用户命令目录.md"],
+      "indexable": true,
+      "status": "active"
+    },
+    {
+      "documentId": "project-agent-system",
+      "path": "docs/智能体说明/项目子智能体体系.md",
+      "type": "agent-system",
+      "authorityFor": ["project-agent-roles"],
+      "consumers": ["AGENTS.md", ".codex/agents/liluo_context_explorer.toml", ".codex/agents/liluo_content_auditor.toml", ".codex/agents/liluo_validation_runner.toml"],
+      "indexable": true,
+      "status": "active"
+    },
+    {
+      "documentId": "governance-memory-system",
+      "path": "docs/系统说明/项目规范治理与设计记忆系统.md",
+      "type": "system-spec",
+      "authorityFor": ["documentation-governance", "design-memory-architecture"],
+      "consumers": ["AGENTS.md", ".agents/skills/liluo-project/liluo-project-governance-memory/SKILL.md", "docs/技能说明/liluo-project-governance-memory.md", "docs/智能体说明/liluo_project_memory_curator.md", "docs/用户命令目录.md"],
+      "indexable": true,
+      "userFacing": true,
+      "status": "active"
+    },
+    {
+      "documentId": "project-charter",
+      "path": "docs/设计记忆/项目宪章.md",
+      "type": "design-memory",
+      "authorityFor": ["project-soul"],
+      "consumers": ["AGENTS.md", "README.md", "docs/项目概览.md"],
+      "indexable": true,
+      "status": "active"
+    }
+  ]
+}

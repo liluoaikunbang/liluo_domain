@@ -12,3 +12,7 @@ For broad scopes, check project-index freshness first; distinguish source errors
 Reuse existing Node tests. Classify ERROR, WARNING and INFO. Never repair parent links, IDs, references, prose, maps or assets automatically. If scope cannot be resolved reliably, fail explicitly.
 
 Broad audits may use `liluo_content_auditor`; builds or tests may use `liluo_validation_runner`. Deterministic scripts remain the final fact source.
+
+When the change affects project governance, Skills, Agents, user commands, or design memory, also run `npm run docs:governance:audit`. Classify governance-structure findings separately from game-content findings; never auto-compress or delete documentation.
+
+When the change affects project governance, Skills, Agents, user commands, or design memory, also run `npm run docs:governance:audit`. Classify governance-structure findings separately from game-content findings; never auto-compress or delete documentation.

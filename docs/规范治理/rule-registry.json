@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "rules": [
+    {
+      "ruleId": "rpg-world-experience-first",
+      "title": "像素冒险 RPG 世界体验优先",
+      "authority": "docs/设计记忆/项目宪章.md",
+      "decision": "docs/设计记忆/创作决策/CDR-001-像素冒险RPG作为核心体验载体.md",
+      "consumers": ["AGENTS.md", "README.md", "docs/项目概览.md"],
+      "status": "active"
+    },
+    {
+      "ruleId": "index-is-navigation",
+      "title": "项目索引只作导航并需核验权威源",
+      "authority": "docs/系统说明/项目知识索引系统.md",
+      "decision": "docs/设计记忆/架构决策/ADR-001-项目知识采用分层索引.md",
+      "consumers": ["AGENTS.md", ".agents/skills/liluo-project/liluo-project-index-maintenance/SKILL.md"],
+      "status": "active"
+    },
+    {
+      "ruleId": "external-knowledge-separation",
+      "title": "正式项目知识与外部知识分离",
+      "authority": "docs/系统说明/外部虚构题材知识库.md",
+      "decision": "docs/设计记忆/创作决策/CDR-002-外部知识只作原创转化参考.md",
+      "consumers": ["AGENTS.md", ".agents/skills/liluo-project/liluo-external-fiction-knowledge/SKILL.md"],
+      "status": "active"
+    },
+    {
+      "ruleId": "external-originality",
+      "title": "外部来源只作抽象原创转化",
+      "authority": "docs/系统说明/外部虚构题材知识库.md",
+      "decision": "docs/设计记忆/创作决策/CDR-002-外部知识只作原创转化参考.md",
+      "consumers": [".agents/skills/liluo-project/liluo-external-fiction-knowledge/SKILL.md", "docs/技能说明/liluo-external-fiction-knowledge.md"],
+      "status": "active"
+    },
+    {
+      "ruleId": "single-authority",
+      "title": "跨系统长期规则只完整维护一次",
+      "authority": "docs/系统说明/项目规范治理与设计记忆系统.md",
+      "decision": "docs/设计记忆/架构决策/ADR-002-规范与设计记忆分层治理.md",
+      "consumers": ["AGENTS.md", ".agents/skills/liluo-project/liluo-project-governance-memory/SKILL.md"],
+      "status": "active"
+    },
+    {
+      "ruleId": "persistent-impact-gate",
+      "title": "长期与用户工作流变化执行轻量影响门禁",
+      "authority": "docs/系统说明/项目规范治理与设计记忆系统.md",
+      "decision": "docs/设计记忆/架构决策/ADR-002-规范与设计记忆分层治理.md",
+      "consumers": ["AGENTS.md", ".agents/skills/liluo-project/liluo-project-governance-memory/references/completion-gate.md", "docs/用户命令目录.md"],
+      "status": "active"
+    }
+  ]
+}

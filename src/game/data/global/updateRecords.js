@@ -1,5 +1,11 @@
 export const updateRecords = Object.freeze([
     {
+        "id":  "140",
+        "date":  "2026-07-22",
+        "title":  "项目规范治理与设计记忆系统",
+        "summary":  "建立低 token 的长期规范门禁、单一事实源注册、设计记忆、治理 Skill、只读策展 Agent 与确定性审计命令，避免长期要求和用户工作流漏同步。"
+    },
+    {
         "id":  "139",
         "date":  "2026-07-22",
         "title":  "项目文档与用户命令总入口",

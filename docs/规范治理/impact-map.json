@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "changeTypes": {
+    "persistent-rule": {
+      "requiredChecks": ["权威系统说明或项目宪章", "rule-registry.json", "直接消费者", "项目知识索引"],
+      "featureUpdate": false,
+      "userCommands": false,
+      "decision": false
+    },
+    "new-user-invokable-workflow": {
+      "requiredChecks": ["docs/用户命令目录.md", "对应 Skill/Agent/脚本", "对应说明", "当前系统说明", "功能更新", "项目知识索引"],
+      "featureUpdate": true,
+      "userCommands": true,
+      "decision": false
+    },
+    "agent-role-change": {
+      "requiredChecks": [".codex/agents/*.toml", "docs/智能体说明/", "docs/智能体说明/项目子智能体体系.md", "AGENTS.md", "项目知识索引"],
+      "featureUpdate": true,
+      "userCommands": false,
+      "decision": false
+    },
+    "architecture-decision": {
+      "requiredChecks": ["docs/设计记忆/架构决策/", "相关系统说明", "相关 Skill/Agent", "项目知识索引"],
+      "featureUpdate": false,
+      "userCommands": false,
+      "decision": "ADR"
+    },
+    "creative-decision": {
+      "requiredChecks": ["docs/设计记忆/创作决策/", "项目宪章或设计原则", "相关创作 Skill", "项目知识索引"],
+      "featureUpdate": false,
+      "userCommands": false,
+      "decision": "CDR"
+    },
+    "system-contract-change": {
+      "requiredChecks": ["相关系统说明", "对应 Skill/Agent", "schema 或测试", "功能更新", "项目知识索引"],
+      "featureUpdate": true,
+      "userCommands": false,
+      "decision": "consider-ADR"
+    },
+    "one-off-bug-fix": {
+      "requiredChecks": ["相关测试", "必要的当前说明"],
+      "featureUpdate": false,
+      "userCommands": false,
+      "decision": false
+    },
+    "documentation-compression": {
+      "requiredChecks": ["docs/规范治理/文档压缩规范.md", "权威来源", "消费者链接", "治理审计"],
+      "featureUpdate": false,
+      "userCommands": false,
+      "decision": false
+    }
+  }
+}

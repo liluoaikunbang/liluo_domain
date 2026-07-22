@@ -13,6 +13,8 @@
 - Skill：`.agents/skills/liluo-project/liluo-project-documentation-sync/`
 - reference：`documentation-contract.md`
 - script：`scripts/audit-documentation-sync.mjs`（只读；`--root`、`--check`）
+
+它是 `liluo-project-governance-memory` 的下游机械同步工具：负责功能编号、功能文档、目录、`updateRecords.js` 和 Skill 说明的一致性，不负责判断持久性、选择权威文档或记录 ADR/CDR。新增用户可调用工作流时还需同步用户命令目录；治理系统变化后运行治理审计。
 - 输入：实现范围、真实创建日期、当前摘要和历史记录
 - 输出：三方一致的编号/标题/日期/摘要与审计结果
 

@@ -18,6 +18,10 @@ Read `AGENTS.md`, `project-index/INDEX.md`, [index-contract.md](references/index
 
 Inspect the Git change scope, use [update-decision.md](references/update-decision.md), then run `npm run project:index:changed` and `npm run project:index:validate`. Check for unexpectedly large generated diffs. Never hand-edit generated index JSON.
 
+Index authoritative Markdown under `docs/设计记忆/` and `docs/规范治理/` through the existing docs domain. Treat registries and accepted ADR/CDR as navigable project records; do not treat temporary audit output as authority or add a parallel governance index.
+
+Index authoritative Markdown under `docs/设计记忆/` and `docs/规范治理/` through the existing docs domain. Treat registries and accepted ADR/CDR as navigable project records; do not treat temporary audit output as authority or add a parallel governance index.
+
 Use `npm run project:index:build` for schema/generator upgrades, broad moves, ID-system or relation-format changes, corruption, or an explicit full rebuild. Run build twice when determinism matters.
 
 ## Boundaries

@@ -8,6 +8,8 @@
 - [项目概览](docs/项目概览.md)
 - [用户命令目录](docs/用户命令目录.md)：向 Codex 下达的常用自然语言任务与对应命令
 - [当前系统说明](docs/系统说明/README.md)
+- [项目规范治理与设计记忆](docs/系统说明/项目规范治理与设计记忆系统.md)
+- [设计记忆](docs/设计记忆/README.md)
 - [项目 Skills 说明](docs/技能说明/)
 - [项目子智能体说明](docs/智能体说明/项目子智能体体系.md)
 - [功能更新目录](docs/功能更新目录.md)
@@ -32,6 +34,7 @@ npm run dev
 npm run build:web
 npm run build:offline
 npm run docs:check-encoding
+npm run docs:governance:audit
 npm run project:index:check
 npm run project:index:changed
 npm run project:index:validate

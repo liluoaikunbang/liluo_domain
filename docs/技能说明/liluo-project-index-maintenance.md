@@ -14,6 +14,8 @@ Skill 位于 `.agents/skills/liluo-project/liluo-project-index-maintenance/`，�
 
 索引 stale 时不得把摘要当事实，只能定位候选；无法更新时直接读取原文并报告。禁止手改生成 JSON、编造实体、安装向量/RAG 服务、调用外部模型批量摘要、启动服务或自动提交 Git。
 
+`docs/设计记忆/` 和 `docs/规范治理/` 通过现有 docs 领域参与索引；accepted ADR/CDR 与治理注册表可用于导航，但临时审计报告不作为权威知识，也不另建平行治理索引。
+
 ## 相邻 Skill 与 Agent
 
 本 Skill 只维护通用索引机制；故事、地图、素材、连续性、存档等判断仍由对应项目 Skill 完成。只读项目 Agent 优先用索引缩小证据集，最终结论核验原文；主 Codex 统一实施修改。
