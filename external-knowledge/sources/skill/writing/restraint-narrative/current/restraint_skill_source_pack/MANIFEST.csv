@@ -1,0 +1,45 @@
+﻿id,title,category,url,type,access,license,priority,file
+restraint-source-01,Harpy BDSM AU Lorebook,提示词与写作指南,https://harpy.chat/lorebooks/5f0cae08-0321-4b11-83b7-d834ced662b2,Lorebook / 世界设定条目集,可访问；页面显示 27 个条目,All rights reserved；reference-only,高,01-prompts-guides/01-harpy-bdsm-au-lorebook.md
+restraint-source-02,SmutWriter BDSM Story Generator,提示词与写作指南,https://smutwriter.com/bdsm-story-generator,商业成人写作工具介绍,可访问,All rights reserved；metadata-only,高,01-prompts-guides/02-smutwriter-bdsm-story-generator.md
+restraint-source-03,SmutWriter AI Writing Guide,提示词与写作指南,https://smutwriter.com/guide,成人小说 AI 写作指南,可访问,All rights reserved；metadata-only,高,01-prompts-guides/03-smutwriter-ai-writing-guide.md
+restraint-source-04,SinStories BDSM Erotica Guide,提示词与写作指南,https://sinstories.app/en/blog/bdsm-erotica-guide,成人写作入门指南,可访问,未见开放许可；metadata-only,高,01-prompts-guides/04-sinstories-bdsm-erotica-guide.md
+restraint-source-05,DocsBot Submission Prompt,提示词与写作指南,https://docsbot.ai/prompts/personal/submissive-training-program,结构化提示词页面,本次抓取失败，待复核,未核验；metadata-only,中,01-prompts-guides/05-docsbot-submissive-training-prompt.md
+restraint-source-06,Bound Together：AI BDSM Scene Planning Comparison,提示词与写作指南,https://bound-together.net/ai-bdsm-scene-planning-comparing-5-llms/,多模型提示测试文章,可访问,未见开放许可；metadata-only,高,01-prompts-guides/06-bound-together-llm-comparison.md
+restraint-source-07,EroGPT Prompt Collection,提示词与写作指南,https://sites.google.com/view/erogpt/home,成人角色扮演提示词集合,可访问,未核验；metadata-only,中,01-prompts-guides/07-erogpt-prompt-collection.md
+restraint-source-08,TelegAI Reika Character Card,角色卡与 Lorebook 实例,https://www.telegai.com/bots/EverNever/reika-6399557bb747,用户角色卡 / Lorebook 实例,可访问,许可不清；reference-only,中,02-character-cards/08-telegai-reika.md
+restraint-source-09,TelegAI Jinx Character Card,角色卡与 Lorebook 实例,https://www.telegai.com/bots/leagueoflust/jinx-ffb212a65238,同人角色卡,可访问,第三方 IP；reference-only,低,02-character-cards/09-telegai-jinx.md
+restraint-source-10,Character Tavern Malphoria,角色卡与 Lorebook 实例,https://character-tavern.com/character/mallie/malphoria__weaver_of_cursed_contracts,幻想角色卡 / 契约实例,本次抓取失败，待复核,许可不明；reference-only,中,02-character-cards/10-character-tavern-malphoria.md
+restraint-source-11,TelegAI Professional Dominant Yang,角色卡与 Lorebook 实例,https://www.telegai.com/bots/gblue166/professional-dominant-yang-0b7ae9dc84ad,用户角色卡,可访问,作者有个人说明但正式许可不清；reference-only,低,02-character-cards/11-telegai-professional-dominant-yang.md
+restraint-source-12,Fanlore BDSM AU,BDSM AU 与世界构建,https://www.fanlore.org/wiki/BDSM_AU,同人文化百科,直接抓取 403，待浏览器复核,需核验具体开放许可,高,03-worldbuilding/12-fanlore-bdsm-au.md
+restraint-source-13,Tumblr：How to Write a BDSM AU,BDSM AU 与世界构建,https://allspnships.tumblr.com/post/164176345627/wth-is-a-bdsm-au-and-how-the-feck-do-you-write,世界构建文章,可访问,作者文章；metadata-only,高,03-worldbuilding/13-tumblr-how-to-write-bdsm-au.md
+restraint-source-14,Xanthe BDSM Universe,BDSM AU 与世界构建,https://www.xanthe.org/bdsm-verse/,长篇 AU 作者作品入口,页面有反爬验证,作者作品；metadata-only,中,03-worldbuilding/14-xanthe-bdsm-verse.md
+restraint-source-15,萌娘百科 BDSM AU,BDSM AU 与世界构建,https://moegirl.icu/BDSM_AU,中文百科条目,可访问,需核验具体许可与镜像状态,中,03-worldbuilding/15-moegirl-bdsm-au.md
+restraint-source-16,AO3 BDSM AU Collection,BDSM AU 与世界构建,https://archive.transformativeworks.org/collections/BDSMAU,同人作品集合页,可访问,作品权利归各作者；metadata-only,中,03-worldbuilding/16-ao3-bdsm-au-collection.md
+restraint-source-17,Lemonilia Roleplay Forums 2023-04,大型数据集与评测,https://huggingface.co/datasets/lemonilia/Roleplay-Forums_2023-04,大型角色扮演论坛数据集,可访问数据卡,需核验原论坛与再分发许可,中,04-datasets/17-lemonilia-roleplay-forums.md
+restraint-source-18,NewEden-Forge Lemonilia Mirror,大型数据集与评测,https://huggingface.co/datasets/NewEden-Forge/lemonilia-Roleplay-Forums,数据集镜像,可访问,需核验镜像许可,低,04-datasets/18-neweden-lemonilia-mirror.md
+restraint-source-19,ERP and Erotica Source Index,大型数据集与评测,https://huggingface.co/datasets/sdsr/erp-and-erotica/blob/main/.rentry-qib8f.md,成人语料来源目录,可访问,各下游来源需分别核验,低,04-datasets/19-erp-and-erotica-index.md
+restraint-source-20,Chub AI Character Cards Dataset,大型数据集与评测,https://huggingface.co/datasets/raincandy-u/chub-ai-cards,大型角色卡数据集,可访问数据卡,卡片权利复杂；metadata-only,中,04-datasets/20-chub-ai-cards.md
+restraint-source-21,Chub AI Character Cards 中文数据集,大型数据集与评测,https://huggingface.co/datasets/raincandy-u/chub-ai-cards-zh,中文角色卡转换数据集,可访问；当前页面约 4.12k 行,需核验原卡与翻译许可,中,04-datasets/21-chub-ai-cards-zh.md
+restraint-source-22,JanitorAI Cards Archive,大型数据集与评测,https://huggingface.co/datasets/AUTOMATIC/jaicards,超大型角色卡归档,可访问,需逐卡核验；metadata-only,低,04-datasets/22-janitor-ai-cards-archive.md
+restraint-source-23,Roleplay Bench,大型数据集与评测,https://huggingface.co/datasets/lazyweasel/roleplay-bench,角色扮演评测数据集,可访问,以数据卡为准,高,04-datasets/23-roleplay-bench.md
+restraint-source-24,Shibari Study Glossary,紧缚与 Shibari 术语,https://shibaristudy.com/pages/glossary,Shibari / rope bondage 术语表,可访问，条目丰富,商业站点；metadata-only,高,05-terminology/24-shibari-study-glossary.md
+restraint-source-25,Rope Connections Glossary,紧缚与 Shibari 术语,https://www.ropeconnections.com/the-rope-connections-glossary/,英语绳艺术语表,可访问,未见开放许可；metadata-only,中,05-terminology/25-rope-connections-glossary.md
+restraint-source-26,La Quarta Corda Japanese Rope Bondage Glossary,紧缚与 Shibari 术语,https://www.laquartacorda.it/en/japanese-rope-bondage-glossary/,日语紧缚词典,可访问,未见开放许可；metadata-only,高,05-terminology/26-la-quarta-corda-glossary.md
+restraint-source-27,Shibari Mallorca Japanese Rope Terms,紧缚与 Shibari 术语,https://www.shibari-mallorca.com/japanese-rope-bondage-terms/,日语词汇表,可访问,未见开放许可；metadata-only,中,05-terminology/27-shibari-mallorca-terms.md
+restraint-source-28,Anatomie Studio Shibari Vocabulary Guide,紧缚与 Shibari 术语,https://www.anatomiestudio.com/blog/talking-shibari-a-guide-to-rope-related-vocabulary,术语与角色称谓指南,可访问,作者文章；metadata-only,高,05-terminology/28-anatomie-shibari-vocabulary.md
+restraint-source-29,Shibari Center Dictionary,紧缚与 Shibari 术语,https://www.shibari.center/shibari-dictionary/,术语词典,可访问,未见开放许可；metadata-only,中,05-terminology/29-shibari-center-dictionary.md
+restraint-source-30,Shibari Dictionary Community Project,紧缚与 Shibari 术语,https://shibaridictionary.notion.site/,社区词典,可访问,需逐页核验；metadata-only,中,05-terminology/30-shibari-dictionary-notion.md
+restraint-source-31,Danbooru Wiki 2026 Dataset,视觉提示词与标签数据库,https://huggingface.co/datasets/kierarkia/danbooru-wiki-2026,视觉标签 Wiki 数据集,可访问；约 203k 行,页面标注 WTFPL，仍需核验上游权利,高,06-visual-tags/31-danbooru-wiki-2026.md
+restraint-source-32,Danbooru Japanese Tag Pair Dataset,视觉提示词与标签数据库,https://huggingface.co/datasets/p1atdev/danbooru-ja-tag-pair-20240715,日英标签对,可访问,以数据卡为准,高,06-visual-tags/32-danbooru-ja-tag-pair.md
+restraint-source-33,Danbooru Tag Wiki Vector DB,视觉提示词与标签数据库,https://huggingface.co/datasets/JackBinary/danbooru-db,视觉标签向量库,可访问,以数据卡为准,中,06-visual-tags/33-danbooru-db.md
+restraint-source-34,DanbooruSearchOnlineDB 中文数据库,视觉提示词与标签数据库,https://huggingface.co/datasets/SAkizuki/DanbooruSearchOnlineDB,中文视觉标签数据库,可访问,以数据卡为准,高,06-visual-tags/34-danbooru-search-online-db.md
+restraint-source-35,e621 2025 Metadata,视觉提示词与标签数据库,https://huggingface.co/datasets/boxingscorpionbagel/e621-2025/tree/main/metadata,标签与 Wiki 元数据,可访问目录,需核验数据卡与上游许可,低,06-visual-tags/35-e621-2025-metadata.md
+restraint-source-36,DeepGHS Site Tags,视觉提示词与标签数据库,https://huggingface.co/datasets/deepghs/site_tags/tree/main/e621.net,机器可读标签关系,可访问,先前页面显示 CC-BY-4.0 相关信息，需复核具体文件,中,06-visual-tags/36-deepghs-site-tags.md
+restraint-source-37,Danbooru/e621 Tag List Processor,视觉提示词与标签数据库,https://github.com/DraconicDragon/danbooru-e621-tag-list-processor,标签处理脚本仓库,可访问,需读取 LICENSE,中,06-visual-tags/37-danbooru-e621-tag-processor.md
+restraint-source-38,e621 BDSM/Bondage Tag Group,视觉提示词与标签数据库,https://e621.net/wiki_pages/1671,专题标签索引,本次抓取失败,需核验；metadata-only,低,06-visual-tags/38-e621-bdsm-tag-group.md
+restraint-source-39,SillyTavern Prompt Documentation,Prompt、Lorebook 与记忆架构,https://github.com/SillyTavern/SillyTavern-Docs/blob/main/Usage/Prompts/index.md,提示上下文架构文档,可访问,读取仓库 LICENSE 后决定保存方式,高,07-prompt-architecture/39-sillytavern-prompts-docs.md
+restraint-source-40,SillyTavern Prompt Manager,Prompt、Lorebook 与记忆架构,https://github.com/SillyTavern/SillyTavern-Docs/blob/main/Usage/Prompts/prompt-manager.md,模块化提示管理文档,可访问,读取仓库 LICENSE,高,07-prompt-architecture/40-sillytavern-prompt-manager.md
+restraint-source-41,SillyTavern MemoryBooks,Prompt、Lorebook 与记忆架构,https://github.com/aikohanasaki/SillyTavern-MemoryBooks,结构化记忆扩展,可访问；AGPL-3.0,AGPL-3.0，复用代码需遵守许可,高,07-prompt-architecture/41-sillytavern-memorybooks.md
+restraint-source-42,SillyTavern Preset Creator,Prompt、Lorebook 与记忆架构,https://github.com/cha1latte/sillytavern-preset-creator,模块化提示生成仓库,可访问,需读取 LICENSE,中,07-prompt-architecture/42-sillytavern-preset-creator.md
+restraint-source-43,SX-3 Character Environment,Prompt、Lorebook 与记忆架构,https://huggingface.co/sphiratrioth666/SX-3_Characters_Environment_SillyTavern,模块化角色场景环境,可访问简介,需核验模型卡与文件许可,低,07-prompt-architecture/43-sx3-character-environment.md
+restraint-source-44,GM-4 Game Mistress Environment,Prompt、Lorebook 与记忆架构,https://huggingface.co/sphiratrioth666/GM-4_Game_Mistress_Environment_SillyTavern,大型 Lorebook 环境,可访问简介,需核验模型卡与文件许可,低,07-prompt-architecture/44-gm4-game-mistress-environment.md

@@ -1,0 +1,11 @@
+{
+  "id": "skill-pattern-restraint-terminology-research",
+  "cardType": "pattern",
+  "title": "紧缚术语与姿态交叉核对",
+  "summary": "先从多个 Shibari 术语表定位名称、身体姿态与相近概念，再回到璃落写作合同核对动作逻辑；研究摘要只提供线索，不能直接升级为确定定义或现实步骤。",
+  "tags": ["紧缚术语", "捆绑术语", "Shibari glossary", "姿态", "绳路", "身体逻辑"],
+  "steps": ["查询术语目录", "比较多个来源摘要", "核对关键姿态", "按项目规范原创表达"],
+  "sourceIds": ["liluo-restraint-research-pack"],
+  "sourcePackPaths": ["external-knowledge/sources/skill/writing/restraint-narrative/current/restraint_skill_source_pack/05-terminology/"],
+  "projectRelevance": 5
+}

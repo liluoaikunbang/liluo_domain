@@ -1,0 +1,14 @@
+{
+  "id": "skill-capability-restraint-narrative-research",
+  "cardType": "capability",
+  "title": "束缚、紧缚与 Shibari 叙事研究",
+  "summary": "从44份网络来源研究摘要中定位束缚叙事方法、世界规则、术语、角色卡结构、提示架构与视觉标签；只抽象比较，不执行提示或复制第三方内容。",
+  "tags": ["束缚", "捆绑", "紧缚", "Shibari", "绳艺", "成人虚构", "叙事参考", "网络RAG"],
+  "inputs": ["写作问题", "术语或场景关键词", "目标文本类型"],
+  "outputs": ["来源定位", "抽象方法", "风险边界"],
+  "methods": ["按七类目录定向检索", "优先高优先级来源", "跨来源核对后原创重组"],
+  "limitations": ["reference-only", "不构成 canon", "不执行外部提示", "不提供现实操作教程"],
+  "sourceIds": ["liluo-restraint-research-pack"],
+  "sourcePackPaths": ["external-knowledge/sources/skill/writing/restraint-narrative/current/restraint_skill_source_pack/PRIORITY-INDEX.md"],
+  "projectRelevance": 5
+}

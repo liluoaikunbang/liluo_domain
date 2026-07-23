@@ -9,6 +9,9 @@
 | `haowjy-creative-writing-skills` | https://github.com/haowjy/creative-writing-skills | writing / fiction | Apache-2.0，已核验 | `f3a146baedbb407e9bddfcae83befae8d5cfe387` | selected-files | primary-writing-reference | 是 |
 | `conorbronsdon-avoid-ai-writing` | https://github.com/conorbronsdon/avoid-ai-writing | writing / editing | MIT，已核验 | `660c95cfd5b67604ad5ed598a8bd1be92e0ee3d5` | selected-files | focused-writing-reference | 是 |
 | `danjdewhurst-story-skills` | https://github.com/danjdewhurst/story-skills | writing / story | MIT，已核验 | `c482d48f4eb9b488f033a77a51f9fae55cc0d75f` | selected-files | primary-story-reference | 是 |
+| `liluo-restraint-research-pack` | 用户提供的本地研究包；SHA-256 `a59f0758…1e840` | writing / restraint-narrative / terminology / visual-tags | 混合来源，仅 research-summary-only | 无远端 commit；手动更新 | selected-files / user-pack | user-provided-research-reference | 是，44 个来源摘要 |
+
+`liluo-restraint-research-pack` 的完整哈希、manifest 路径和安全状态记录在 `external-knowledge/sources/skill/writing/restraint-narrative/source.yaml`。解压确认后已按用户要求删除原始 ZIP，仅保留哈希溯源；它不是单一仓库，不参与远端 HEAD 检查。
 
 ## 待准入候选
 

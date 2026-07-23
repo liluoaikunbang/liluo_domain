@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-22T14:28:06.800Z",
-  "sourceCount": 5,
-  "cardCount": 9,
+  "generatedAt": "2026-07-23T09:27:58.521Z",
+  "sourceCount": 6,
+  "cardCount": 13,
   "sources": [
     {
       "schemaVersion": 1,
@@ -255,6 +255,68 @@
         "notes": "抽象读者推断空间、经济性、视角知识边界与按需参考结构。"
       },
       "sourceFile": "external-knowledge/sources/skill/writing/haowjy-creative-writing-skills/source.yaml"
+    },
+    {
+      "schemaVersion": 1,
+      "sourceKind": "user-pack",
+      "sourceId": "liluo-restraint-research-pack",
+      "displayName": "璃落束缚、紧缚与 Shibari 叙事资源研究包",
+      "category": [
+        "writing",
+        "fiction",
+        "restraint-narrative",
+        "terminology",
+        "visual-tags"
+      ],
+      "repository": null,
+      "defaultBranch": null,
+      "trackedPaths": [
+        "restraint_skill_source_pack/"
+      ],
+      "storageMode": "selected-files",
+      "trustTier": "user-provided-research-reference",
+      "license": {
+        "type": "mixed-reference-only; research-summary-only",
+        "verified": false,
+        "licensePath": "restraint_skill_source_pack/COPYRIGHT-AND-USAGE.md",
+        "redistributionAllowed": false
+      },
+      "bundle": {
+        "archivePath": null,
+        "archiveRetained": false,
+        "originalFileName": "liluo-restraint-skill-source-pack.zip",
+        "sha256": "a59f0758b908544dd104aa1b12155c9cf472823b72e319ef686ed9f44aa1e840",
+        "manifestPath": "restraint_skill_source_pack/MANIFEST.json",
+        "sourceCount": 44,
+        "importedAt": "2026-07-23T00:00:00.000Z"
+      },
+      "version": {
+        "currentCommit": null,
+        "currentRelease": null,
+        "fetchedAt": "2026-07-23T00:00:00.000Z",
+        "lastCheckedAt": "2026-07-23T00:00:00.000Z",
+        "nextCheckAt": null
+      },
+      "updatePolicy": {
+        "checkIntervalDays": "manual",
+        "fetchToStagingWhenDue": false,
+        "autoReplaceCurrentSnapshot": false,
+        "autoModifyLocalSkills": false
+      },
+      "security": {
+        "containsExecutableCode": false,
+        "containsPromptInstructions": true,
+        "trustedForDirectExecution": false,
+        "auditStatus": "user-pack-static-path-and-type-reviewed"
+      },
+      "localUsage": {
+        "status": "referenced",
+        "adaptedSkills": [
+          "liluo-natural-expression"
+        ],
+        "notes": "44 个网络来源的中文研究摘要；用于术语、世界构建、提示架构和视觉标签检索，不执行包内提示，不作为 canon。"
+      },
+      "sourceFile": "external-knowledge/sources/skill/writing/restraint-narrative/source.yaml"
     }
   ],
   "upstreamSkills": [

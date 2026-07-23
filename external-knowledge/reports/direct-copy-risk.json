@@ -197,6 +197,458 @@
         }
       ],
       "disclaimer": "This is a conservative writing-similarity warning, not a legal copyright determination."
+    },
+    {
+      "checkedAt": "2026-07-23T08:17:41.988Z",
+      "input": "src/game/data/story_outline/1-modern/1.2-加入紧缚社团.md",
+      "risk": "low",
+      "rewriteRecommended": false,
+      "matches": [
+        {
+          "sourceId": "fb-src-000026",
+          "sourcePath": "external-knowledge/sources/fiction-bondage/不知道作者/少女的赎罪空间.md",
+          "startLine": 801,
+          "endLine": 840,
+          "longestSharedChars": 10,
+          "ngramOverlap": 0.0015
+        },
+        {
+          "sourceId": "fb-src-000157",
+          "sourcePath": "external-knowledge/sources/fiction-bondage/作者,金主大大/杨可/坠落女王.md",
+          "startLine": 4756,
+          "endLine": 4772,
+          "longestSharedChars": 10,
+          "ngramOverlap": 0.0015
+        },
+        {
+          "sourceId": "fb-src-000157",
+          "sourcePath": "external-knowledge/sources/fiction-bondage/作者,金主大大/杨可/坠落女王.md",
+          "startLine": 9406,
+          "endLine": 9420,
+          "longestSharedChars": 9,
+          "ngramOverlap": 0.0012
+        },
+        {
+          "sourceId": "fb-src-000016",
+          "sourcePath": "external-knowledge/sources/fiction-bondage/不知道作者/克隆时代1-39.md",
+          "startLine": 864,
+          "endLine": 887,
+          "longestSharedChars": 8,
+          "ngramOverlap": 0.0009
+        },
+        {
+          "sourceId": "fb-src-000027",
+          "sourcePath": "external-knowledge/sources/fiction-bondage/不知道作者/神国降临.md",
+          "startLine": 1458,
+          "endLine": 1487,
+          "longestSharedChars": 8,
+          "ngramOverlap": 0.0009
+        },
+        {
+          "sourceId": "fb-src-000033",
+          "sourcePath": "external-knowledge/sources/fiction-bondage/不知道作者/无限拘束乐园.md",
+          "startLine": 1280,
+          "endLine": 1311,
+          "longestSharedChars": 8,
+          "ngramOverlap": 0.0009
+        },
+        {
+          "sourceId": "fb-src-000033",
+          "sourcePath": "external-knowledge/sources/fiction-bondage/不知道作者/无限拘束乐园.md",
+          "startLine": 4360,
+          "endLine": 4393,
+          "longestSharedChars": 8,
+          "ngramOverlap": 0.0009
+        },
+        {
+          "sourceId": "fb-src-000053",
+          "sourcePath": "external-knowledge/sources/fiction-bondage/其他未分类/柜中的监禁——二十四点（完结）-py（如梦）.md",
+          "startLine": 1210,
+          "endLine": 1227,
+          "longestSharedChars": 8,
+          "ngramOverlap": 0.0009
+        },
+        {
+          "sourceId": "fb-src-000075",
+          "sourcePath": "external-knowledge/sources/fiction-bondage/其他未分类/修女小姐的冒险之旅-yuxuanzzz（如梦）.md",
+          "startLine": 4928,
+          "endLine": 4961,
+          "longestSharedChars": 8,
+          "ngramOverlap": 0.0009
+        },
+        {
+          "sourceId": "fb-src-000075",
+          "sourcePath": "external-knowledge/sources/fiction-bondage/其他未分类/修女小姐的冒险之旅-yuxuanzzz（如梦）.md",
+          "startLine": 9748,
+          "endLine": 9779,
+          "longestSharedChars": 8,
+          "ngramOverlap": 0.0009
+        },
+        {
+          "sourceId": "fb-src-000110",
+          "sourcePath": "external-knowledge/sources/fiction-bondage/作者,金主大大/咚咚噹117（如梦）/舞台自缚，百万粉丝的捆绑献礼.md",
+          "startLine": 353,
+          "endLine": 374,
+          "longestSharedChars": 8,
+          "ngramOverlap": 0.0009
+        },
+        {
+          "sourceId": "fb-src-000146",
+          "sourcePath": "external-knowledge/sources/fiction-bondage/作者,金主大大/杨可/米兰妮斯陷落.md",
+          "startLine": 551,
+          "endLine": 567,
+          "longestSharedChars": 8,
+          "ngramOverlap": 0.0009
+        },
+        {
+          "sourceId": "fb-src-000150",
+          "sourcePath": "external-knowledge/sources/fiction-bondage/作者,金主大大/杨可/天天侦探社-全.md",
+          "startLine": 5,
+          "endLine": 16,
+          "longestSharedChars": 8,
+          "ngramOverlap": 0.0009
+        },
+        {
+          "sourceId": "fb-src-000169",
+          "sourcePath": "external-knowledge/sources/fiction-bondage/作者,金主大大/杨可/Miku（初音未来）的奇妙冒险.md",
+          "startLine": 2882,
+          "endLine": 2882,
+          "longestSharedChars": 8,
+          "ngramOverlap": 0.0009
+        },
+        {
+          "sourceId": "fb-src-000208",
+          "sourcePath": "external-knowledge/sources/fiction-bondage/作者,金主大大/gsgs3321（如梦）/关好门窗.md",
+          "startLine": 471,
+          "endLine": 484,
+          "longestSharedChars": 8,
+          "ngramOverlap": 0.0009
+        }
+      ],
+      "disclaimer": "This is a conservative writing-similarity warning, not a legal copyright determination."
+    },
+    {
+      "checkedAt": "2026-07-23T08:27:57.242Z",
+      "input": "src/game/data/story_outline/1-modern/1.2-加入紧缚社团.md",
+      "risk": "low",
+      "rewriteRecommended": false,
+      "matches": [
+        {
+          "sourceId": "fb-src-000026",
+          "sourcePath": "external-knowledge/sources/fiction-bondage/不知道作者/少女的赎罪空间.md",
+          "startLine": 801,
+          "endLine": 840,
+          "longestSharedChars": 10,
+          "ngramOverlap": 0.0015
+        },
+        {
+          "sourceId": "fb-src-000157",
+          "sourcePath": "external-knowledge/sources/fiction-bondage/作者,金主大大/杨可/坠落女王.md",
+          "startLine": 4756,
+          "endLine": 4772,
+          "longestSharedChars": 10,
+          "ngramOverlap": 0.0015
+        },
+        {
+          "sourceId": "fb-src-000157",
+          "sourcePath": "external-knowledge/sources/fiction-bondage/作者,金主大大/杨可/坠落女王.md",
+          "startLine": 9406,
+          "endLine": 9420,
+          "longestSharedChars": 9,
+          "ngramOverlap": 0.0012
+        },
+        {
+          "sourceId": "fb-src-000016",
+          "sourcePath": "external-knowledge/sources/fiction-bondage/不知道作者/克隆时代1-39.md",
+          "startLine": 864,
+          "endLine": 887,
+          "longestSharedChars": 8,
+          "ngramOverlap": 0.0009
+        },
+        {
+          "sourceId": "fb-src-000027",
+          "sourcePath": "external-knowledge/sources/fiction-bondage/不知道作者/神国降临.md",
+          "startLine": 1458,
+          "endLine": 1487,
+          "longestSharedChars": 8,
+          "ngramOverlap": 0.0009
+        },
+        {
+          "sourceId": "fb-src-000033",
+          "sourcePath": "external-knowledge/sources/fiction-bondage/不知道作者/无限拘束乐园.md",
+          "startLine": 1280,
+          "endLine": 1311,
+          "longestSharedChars": 8,
+          "ngramOverlap": 0.0009
+        },
+        {
+          "sourceId": "fb-src-000033",
+          "sourcePath": "external-knowledge/sources/fiction-bondage/不知道作者/无限拘束乐园.md",
+          "startLine": 4360,
+          "endLine": 4393,
+          "longestSharedChars": 8,
+          "ngramOverlap": 0.0009
+        },
+        {
+          "sourceId": "fb-src-000053",
+          "sourcePath": "external-knowledge/sources/fiction-bondage/其他未分类/柜中的监禁——二十四点（完结）-py（如梦）.md",
+          "startLine": 1210,
+          "endLine": 1227,
+          "longestSharedChars": 8,
+          "ngramOverlap": 0.0009
+        },
+        {
+          "sourceId": "fb-src-000075",
+          "sourcePath": "external-knowledge/sources/fiction-bondage/其他未分类/修女小姐的冒险之旅-yuxuanzzz（如梦）.md",
+          "startLine": 4928,
+          "endLine": 4961,
+          "longestSharedChars": 8,
+          "ngramOverlap": 0.0009
+        },
+        {
+          "sourceId": "fb-src-000075",
+          "sourcePath": "external-knowledge/sources/fiction-bondage/其他未分类/修女小姐的冒险之旅-yuxuanzzz（如梦）.md",
+          "startLine": 9748,
+          "endLine": 9779,
+          "longestSharedChars": 8,
+          "ngramOverlap": 0.0009
+        },
+        {
+          "sourceId": "fb-src-000110",
+          "sourcePath": "external-knowledge/sources/fiction-bondage/作者,金主大大/咚咚噹117（如梦）/舞台自缚，百万粉丝的捆绑献礼.md",
+          "startLine": 353,
+          "endLine": 374,
+          "longestSharedChars": 8,
+          "ngramOverlap": 0.0009
+        },
+        {
+          "sourceId": "fb-src-000146",
+          "sourcePath": "external-knowledge/sources/fiction-bondage/作者,金主大大/杨可/米兰妮斯陷落.md",
+          "startLine": 551,
+          "endLine": 567,
+          "longestSharedChars": 8,
+          "ngramOverlap": 0.0009
+        },
+        {
+          "sourceId": "fb-src-000150",
+          "sourcePath": "external-knowledge/sources/fiction-bondage/作者,金主大大/杨可/天天侦探社-全.md",
+          "startLine": 5,
+          "endLine": 16,
+          "longestSharedChars": 8,
+          "ngramOverlap": 0.0009
+        },
+        {
+          "sourceId": "fb-src-000169",
+          "sourcePath": "external-knowledge/sources/fiction-bondage/作者,金主大大/杨可/Miku（初音未来）的奇妙冒险.md",
+          "startLine": 2882,
+          "endLine": 2882,
+          "longestSharedChars": 8,
+          "ngramOverlap": 0.0009
+        },
+        {
+          "sourceId": "fb-src-000208",
+          "sourcePath": "external-knowledge/sources/fiction-bondage/作者,金主大大/gsgs3321（如梦）/关好门窗.md",
+          "startLine": 471,
+          "endLine": 484,
+          "longestSharedChars": 8,
+          "ngramOverlap": 0.0009
+        }
+      ],
+      "disclaimer": "This is a conservative writing-similarity warning, not a legal copyright determination."
+    },
+    {
+      "checkedAt": "2026-07-23T08:30:46.918Z",
+      "input": "src/game/data/story_outline/1-modern/1.2-加入紧缚社团.md",
+      "risk": "low",
+      "rewriteRecommended": false,
+      "matches": [
+        {
+          "sourceId": "fb-src-000026",
+          "sourcePath": "external-knowledge/sources/fiction-bondage/不知道作者/少女的赎罪空间.md",
+          "startLine": 801,
+          "endLine": 840,
+          "longestSharedChars": 10,
+          "ngramOverlap": 0.0015
+        },
+        {
+          "sourceId": "fb-src-000157",
+          "sourcePath": "external-knowledge/sources/fiction-bondage/作者,金主大大/杨可/坠落女王.md",
+          "startLine": 4756,
+          "endLine": 4772,
+          "longestSharedChars": 10,
+          "ngramOverlap": 0.0015
+        },
+        {
+          "sourceId": "fb-src-000157",
+          "sourcePath": "external-knowledge/sources/fiction-bondage/作者,金主大大/杨可/坠落女王.md",
+          "startLine": 9406,
+          "endLine": 9420,
+          "longestSharedChars": 9,
+          "ngramOverlap": 0.0012
+        },
+        {
+          "sourceId": "fb-src-000016",
+          "sourcePath": "external-knowledge/sources/fiction-bondage/不知道作者/克隆时代1-39.md",
+          "startLine": 864,
+          "endLine": 887,
+          "longestSharedChars": 8,
+          "ngramOverlap": 0.0009
+        },
+        {
+          "sourceId": "fb-src-000027",
+          "sourcePath": "external-knowledge/sources/fiction-bondage/不知道作者/神国降临.md",
+          "startLine": 1458,
+          "endLine": 1487,
+          "longestSharedChars": 8,
+          "ngramOverlap": 0.0009
+        },
+        {
+          "sourceId": "fb-src-000033",
+          "sourcePath": "external-knowledge/sources/fiction-bondage/不知道作者/无限拘束乐园.md",
+          "startLine": 1280,
+          "endLine": 1311,
+          "longestSharedChars": 8,
+          "ngramOverlap": 0.0009
+        },
+        {
+          "sourceId": "fb-src-000033",
+          "sourcePath": "external-knowledge/sources/fiction-bondage/不知道作者/无限拘束乐园.md",
+          "startLine": 4360,
+          "endLine": 4393,
+          "longestSharedChars": 8,
+          "ngramOverlap": 0.0009
+        },
+        {
+          "sourceId": "fb-src-000053",
+          "sourcePath": "external-knowledge/sources/fiction-bondage/其他未分类/柜中的监禁——二十四点（完结）-py（如梦）.md",
+          "startLine": 1210,
+          "endLine": 1227,
+          "longestSharedChars": 8,
+          "ngramOverlap": 0.0009
+        },
+        {
+          "sourceId": "fb-src-000075",
+          "sourcePath": "external-knowledge/sources/fiction-bondage/其他未分类/修女小姐的冒险之旅-yuxuanzzz（如梦）.md",
+          "startLine": 4928,
+          "endLine": 4961,
+          "longestSharedChars": 8,
+          "ngramOverlap": 0.0009
+        },
+        {
+          "sourceId": "fb-src-000075",
+          "sourcePath": "external-knowledge/sources/fiction-bondage/其他未分类/修女小姐的冒险之旅-yuxuanzzz（如梦）.md",
+          "startLine": 9748,
+          "endLine": 9779,
+          "longestSharedChars": 8,
+          "ngramOverlap": 0.0009
+        },
+        {
+          "sourceId": "fb-src-000110",
+          "sourcePath": "external-knowledge/sources/fiction-bondage/作者,金主大大/咚咚噹117（如梦）/舞台自缚，百万粉丝的捆绑献礼.md",
+          "startLine": 353,
+          "endLine": 374,
+          "longestSharedChars": 8,
+          "ngramOverlap": 0.0009
+        },
+        {
+          "sourceId": "fb-src-000146",
+          "sourcePath": "external-knowledge/sources/fiction-bondage/作者,金主大大/杨可/米兰妮斯陷落.md",
+          "startLine": 551,
+          "endLine": 567,
+          "longestSharedChars": 8,
+          "ngramOverlap": 0.0009
+        },
+        {
+          "sourceId": "fb-src-000150",
+          "sourcePath": "external-knowledge/sources/fiction-bondage/作者,金主大大/杨可/天天侦探社-全.md",
+          "startLine": 5,
+          "endLine": 16,
+          "longestSharedChars": 8,
+          "ngramOverlap": 0.0009
+        },
+        {
+          "sourceId": "fb-src-000169",
+          "sourcePath": "external-knowledge/sources/fiction-bondage/作者,金主大大/杨可/Miku（初音未来）的奇妙冒险.md",
+          "startLine": 2882,
+          "endLine": 2882,
+          "longestSharedChars": 8,
+          "ngramOverlap": 0.0009
+        },
+        {
+          "sourceId": "fb-src-000208",
+          "sourcePath": "external-knowledge/sources/fiction-bondage/作者,金主大大/gsgs3321（如梦）/关好门窗.md",
+          "startLine": 471,
+          "endLine": 484,
+          "longestSharedChars": 8,
+          "ngramOverlap": 0.0009
+        }
+      ],
+      "disclaimer": "This is a conservative writing-similarity warning, not a legal copyright determination."
+    },
+    {
+      "checkedAt": "2026-07-23T08:45:22.083Z",
+      "input": "src/game/data/story_outline/1-modern/1.2-加入紧缚社团.md",
+      "risk": "low",
+      "rewriteRecommended": false,
+      "matches": [
+        {
+          "sourceId": "fb-src-000026",
+          "sourcePath": "external-knowledge/sources/fiction-bondage/不知道作者/少女的赎罪空间.md",
+          "startLine": 801,
+          "endLine": 840,
+          "longestSharedChars": 10,
+          "ngramOverlap": 0.0015
+        },
+        {
+          "sourceId": "fb-src-000157",
+          "sourcePath": "external-knowledge/sources/fiction-bondage/作者,金主大大/杨可/坠落女王.md",
+          "startLine": 9406,
+          "endLine": 9420,
+          "longestSharedChars": 9,
+          "ngramOverlap": 0.0012
+        },
+        {
+          "sourceId": "fb-src-000033",
+          "sourcePath": "external-knowledge/sources/fiction-bondage/不知道作者/无限拘束乐园.md",
+          "startLine": 1280,
+          "endLine": 1311,
+          "longestSharedChars": 8,
+          "ngramOverlap": 0.0009
+        },
+        {
+          "sourceId": "fb-src-000033",
+          "sourcePath": "external-knowledge/sources/fiction-bondage/不知道作者/无限拘束乐园.md",
+          "startLine": 4360,
+          "endLine": 4393,
+          "longestSharedChars": 8,
+          "ngramOverlap": 0.0009
+        },
+        {
+          "sourceId": "fb-src-000053",
+          "sourcePath": "external-knowledge/sources/fiction-bondage/其他未分类/柜中的监禁——二十四点（完结）-py（如梦）.md",
+          "startLine": 1210,
+          "endLine": 1227,
+          "longestSharedChars": 8,
+          "ngramOverlap": 0.0009
+        },
+        {
+          "sourceId": "fb-src-000150",
+          "sourcePath": "external-knowledge/sources/fiction-bondage/作者,金主大大/杨可/天天侦探社-全.md",
+          "startLine": 5,
+          "endLine": 16,
+          "longestSharedChars": 8,
+          "ngramOverlap": 0.0009
+        },
+        {
+          "sourceId": "fb-src-000155",
+          "sourcePath": "external-knowledge/sources/fiction-bondage/作者,金主大大/杨可/杨可同人文.md",
+          "startLine": 835,
+          "endLine": 847,
+          "longestSharedChars": 8,
+          "ngramOverlap": 0.0009
+        }
+      ],
+      "disclaimer": "This is a conservative writing-similarity warning, not a legal copyright determination."
     }
   ]
 }

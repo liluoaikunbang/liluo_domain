@@ -1630,7 +1630,7 @@
   {
     "id": "docs/功能更新/145-外部Skill来源库项目能力演化与自然表达系统.md",
     "indexVersion": 1,
-    "sourceHash": "72fd7788c63bb11cd728a74eafe2c2a73244f3ed878957745f699df403ec2ea9",
+    "sourceHash": "1cc58d7d465cb55dc5bfa22e7a56169a2c0a7414354c2ada7450c366e0feb6c1",
     "sourcePath": "docs/功能更新/145-外部Skill来源库项目能力演化与自然表达系统.md",
     "subtype": "update",
     "summary": "145-外部 Skill 来源库、项目能力演化与自然表达系统",
@@ -1641,7 +1641,7 @@
   {
     "id": "docs/功能更新/146-Codex命令授权反馈持久化与规范闭环.md",
     "indexVersion": 1,
-    "sourceHash": "3f0347664d0bce33d2527e20842123f3d9f6a74e4a14ddef3e7e533e72298ff8",
+    "sourceHash": "fa733124495992083788308c1e2e72d3795bcd0eb3aa3f7f05260013db74686c",
     "sourcePath": "docs/功能更新/146-Codex命令授权反馈持久化与规范闭环.md",
     "subtype": "update",
     "summary": "146-Codex 命令授权反馈、持久化与规范闭环",
@@ -1663,7 +1663,7 @@
   {
     "id": "docs/功能更新目录.md",
     "indexVersion": 1,
-    "sourceHash": "880c934b10a23613e7d3168248a3a8092a8d87b94555877fa32c69fc0c4f835d",
+    "sourceHash": "7a5b29c274df8270cde5ef15bea874a13da30ca767f2c0b01c87216cf3664909",
     "sourcePath": "docs/功能更新目录.md",
     "subtype": "other",
     "summary": "功能更新目录",
@@ -1784,7 +1784,7 @@
   {
     "id": "docs/技能说明/liluo-game-content-validator.md",
     "indexVersion": 1,
-    "sourceHash": "ade52b775323fb4db39a414d3274e082f2753f373834142a3dc985fe2ae5dea5",
+    "sourceHash": "1a690420324759ad8eff628ab2a3eadbed7fc23275236934b06e489ae52f3591",
     "sourcePath": "docs/技能说明/liluo-game-content-validator.md",
     "subtype": "skill",
     "summary": "liluo-game-content-validator",
@@ -1817,7 +1817,7 @@
   {
     "id": "docs/技能说明/liluo-natural-expression.md",
     "indexVersion": 1,
-    "sourceHash": "12462809088ccbfe8720120306f40fd2e463b2992b481bf77909b9ff95c50da4",
+    "sourceHash": "47cf768f1aed8a78edbeb2fdd1f946f89c504172f7a6a4fff13837e0f6b8a851",
     "sourcePath": "docs/技能说明/liluo-natural-expression.md",
     "subtype": "skill",
     "summary": "liluo-natural-expression",
@@ -1861,7 +1861,7 @@
   {
     "id": "docs/技能说明/liluo-project-documentation-sync.md",
     "indexVersion": 1,
-    "sourceHash": "1bcd5cda49b6952c478a3a97b125c93b0781e023ec26a0768acf386380468a99",
+    "sourceHash": "2cae8ff51f45c587ae966dc1b27db1b34e4cb20d8d9241aae373fa7cf01061e4",
     "sourcePath": "docs/技能说明/liluo-project-documentation-sync.md",
     "subtype": "skill",
     "summary": "liluo-project-documentation-sync",
@@ -1872,7 +1872,7 @@
   {
     "id": "docs/技能说明/liluo-project-governance-memory.md",
     "indexVersion": 1,
-    "sourceHash": "f53b9134f0b267c1460f3bee5d3eeb5bc274079131d103b00ea04434edb4a977",
+    "sourceHash": "2c59ed05852ad0b4ca4448c60cc8429c6cf8f0d54bd7365c84e7ecda81d46b81",
     "sourcePath": "docs/技能说明/liluo-project-governance-memory.md",
     "subtype": "skill",
     "summary": "liluo-project-governance-memory",
@@ -1927,7 +1927,7 @@
   {
     "id": "docs/技能说明/liluo-story-outline-authoring.md",
     "indexVersion": 1,
-    "sourceHash": "a3c11778ed83167bd07130baac13725e29b562be2b421b77c55760bb9f628f92",
+    "sourceHash": "84b8ecbce317a9d32efe4e4c0f7e2ea8a216e8f30193bb51f4b04cd458ec47b7",
     "sourcePath": "docs/技能说明/liluo-story-outline-authoring.md",
     "subtype": "skill",
     "summary": "liluo-story-outline-authoring",
@@ -2026,7 +2026,7 @@
   {
     "id": "docs/设计记忆/创作决策/CDR-005-非技术文本默认应用璃落自然表达.md",
     "indexVersion": 1,
-    "sourceHash": "9e15fef590bc19dd634ec8930e02e495552f09c279a0c3f796ee67ae2258e576",
+    "sourceHash": "3b04a68b9785f8d5f2c72d57690d490fd5cd89ab98d375975ab65f62b2389289",
     "sourcePath": "docs/设计记忆/创作决策/CDR-005-非技术文本默认应用璃落自然表达.md",
     "subtype": "other",
     "summary": "CDR-005：非技术文本默认应用璃落自然表达",
@@ -2081,7 +2081,7 @@
   {
     "id": "docs/设计记忆/架构决策/ADR-002-规范与设计记忆分层治理.md",
     "indexVersion": 1,
-    "sourceHash": "4d4d1a959290375a6e874915467a68d2cee9d33c548b05463456c45798b2d35f",
+    "sourceHash": "5fbdd0ac967c1f567f725a99c6fe079cbc05396f1c564967355c0f770e877bdb",
     "sourcePath": "docs/设计记忆/架构决策/ADR-002-规范与设计记忆分层治理.md",
     "subtype": "other",
     "summary": "ADR-002：规范与设计记忆分层治理",
@@ -2103,7 +2103,7 @@
   {
     "id": "docs/设计记忆/架构决策/ADR-004-外部Skill采用非可信三层演化架构.md",
     "indexVersion": 1,
-    "sourceHash": "db3742386ac694f01327551311e74a0424c2deb06f5f77ccf46a1c5f0d8856b0",
+    "sourceHash": "e54138e120391db96497f5c097080931f48ad6fe2e64eab37c97f9d37e799f62",
     "sourcePath": "docs/设计记忆/架构决策/ADR-004-外部Skill采用非可信三层演化架构.md",
     "subtype": "other",
     "summary": "ADR-004：外部 Skill 采用非可信三层演化架构",
@@ -2354,6 +2354,17 @@
     "type": "document"
   },
   {
+    "id": "docs/设计记忆/项目组灵魂/项目组手记/TEAM-NOTE-004-让每次校准留下可复用的判断.md",
+    "indexVersion": 1,
+    "sourceHash": "eaf8282398cebf3b6ab4409d3ab528c262192a810409c718bcd41c7f28d3e517",
+    "sourcePath": "docs/设计记忆/项目组灵魂/项目组手记/TEAM-NOTE-004-让每次校准留下可复用的判断.md",
+    "subtype": "other",
+    "summary": "让每次校准留下可复用的判断",
+    "summarySource": "title-only",
+    "title": "让每次校准留下可复用的判断",
+    "type": "document"
+  },
+  {
     "id": "docs/设计记忆/项目组灵魂/重聚机制.md",
     "indexVersion": 1,
     "sourceHash": "2b29dc207c17ac188898e3d7663420374747f6e24f9748557c7308df80a9949f",
@@ -2400,7 +2411,7 @@
   {
     "id": "docs/外部来源/Skill来源目录.md",
     "indexVersion": 1,
-    "sourceHash": "9ee6371e24b02e550f14b3c3f445942f634bfc68bf63ff45b43f482447296a45",
+    "sourceHash": "5dea73aeb2afb392039bccaefa6acfaa1b796cf666b7ebd859c77c9171f8fdf3",
     "sourcePath": "docs/外部来源/Skill来源目录.md",
     "subtype": "other",
     "summary": "Skill 来源目录",
@@ -2411,7 +2422,7 @@
   {
     "id": "docs/外部来源/Skill许可证与保存策略.md",
     "indexVersion": 1,
-    "sourceHash": "4bc64fa7d1d62de4058f815059885fbabce5b2258ed3e00336d5630aa3622e72",
+    "sourceHash": "18498f5dc9c78c51a9198714ea470d8f6ecb9692128b5d8c6906ee57ba5308cd",
     "sourcePath": "docs/外部来源/Skill许可证与保存策略.md",
     "subtype": "other",
     "summary": "Skill 许可证与保存策略",
@@ -2609,7 +2620,7 @@
   {
     "id": "docs/系统说明/璃落自然表达与文气塑形系统.md",
     "indexVersion": 1,
-    "sourceHash": "7ae20882cccf5dcfa7e80e4b20ea36cb2fa0d586b6351a124db3fa30f8090bbd",
+    "sourceHash": "ec6e92494c5b58c007b16b14fcff809073f58218f8b625330de11d5aa7326e16",
     "sourcePath": "docs/系统说明/璃落自然表达与文气塑形系统.md",
     "subtype": "system",
     "summary": "璃落自然表达与文气塑形系统",
@@ -2664,7 +2675,7 @@
   {
     "id": "docs/系统说明/外部Skill来源库与项目能力演化系统.md",
     "indexVersion": 1,
-    "sourceHash": "9c31f356215ee671c2cb22ef824712033f0a0e9666980f6a3635eb7dc2ffb809",
+    "sourceHash": "c4c2e7238f77e66751d2582309a3e9d8ac41cf1cce872dbb751abca793a096c4",
     "sourcePath": "docs/系统说明/外部Skill来源库与项目能力演化系统.md",
     "subtype": "system",
     "summary": "外部 Skill 来源库与项目能力演化系统",
@@ -2675,7 +2686,7 @@
   {
     "id": "docs/系统说明/项目规范治理与设计记忆系统.md",
     "indexVersion": 1,
-    "sourceHash": "2c166983849690a0ff8370612496f6159cd47ddd6f3f89d04c089c914fe60d4c",
+    "sourceHash": "a511d860e8cad03206098d59a360d6d1c0c74186f10bbfa5415cf6609206a3f4",
     "sourcePath": "docs/系统说明/项目规范治理与设计记忆系统.md",
     "subtype": "system",
     "summary": "项目规范治理与设计记忆系统",
@@ -2736,17 +2747,6 @@
     "summary": "正式项目内容来源与版权写入门槛",
     "summarySource": "title-only",
     "title": "正式项目内容来源与版权写入门槛",
-    "type": "document"
-  },
-  {
-    "id": "docs/系统说明/Codex命令授权治理系统.md",
-    "indexVersion": 1,
-    "sourceHash": "0c3c38c7c11371ef661db0db014999a617d9192ee079bfc1ae78f61f06af9ad1",
-    "sourcePath": "docs/系统说明/Codex命令授权治理系统.md",
-    "subtype": "system",
-    "summary": "Codex 命令授权治理系统",
-    "summarySource": "title-only",
-    "title": "Codex 命令授权治理系统",
     "type": "document"
   }
 ]

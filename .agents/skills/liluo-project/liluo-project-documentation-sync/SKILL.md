@@ -18,4 +18,4 @@ Use the current docs index to localize records when helpful; after documentation
 7. Run only the validators directly affected by the synchronized records. Do not probe a documented script known to be absent, and do not run a Web build for documentation-only changes.
 8. Never commit or push automatically.
 
-This Skill is the mechanical downstream of `liluo-project-governance-memory`. It does not decide whether a requirement is persistent, choose a rule authority, or create ADR/CDR rationale. For a new user-facing workflow, also synchronize `docs/用户命令目录.md`; after governance-system changes, run the applicable governance audit before refreshing the project index.
+This Skill is the mechanical downstream of `liluo-project-governance-memory`. It does not decide whether a requirement is persistent, choose a rule authority, or create ADR/CDR rationale. For a new user-facing workflow, also synchronize `docs/用户命令目录.md`. Add only the smallest governance validator selected by the task's deduplicated verification plan; reserve the full governance audit for broad structural changes or an explicit audit request.

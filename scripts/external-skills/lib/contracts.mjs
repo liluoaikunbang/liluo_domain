@@ -11,13 +11,25 @@ export function parseSourceDocument(text) {
 
 export function validateSource(source) {
   const errors = [];
-  for (const field of ['schemaVersion', 'sourceId', 'displayName', 'category', 'repository', 'storageMode', 'trustTier', 'license', 'version', 'updatePolicy', 'security', 'localUsage']) {
+  for (const field of ['schemaVersion', 'sourceId', 'displayName', 'category', 'storageMode', 'trustTier', 'license', 'version', 'updatePolicy', 'security', 'localUsage']) {
     if (source?.[field] === undefined || source?.[field] === null) errors.push(`${field} is required`);
   }
+  const sourceKind = source?.sourceKind ?? 'repository';
   if (source?.schemaVersion !== 1) errors.push('schemaVersion must be 1');
   if (!SOURCE_ID_PATTERN.test(source?.sourceId ?? '')) errors.push('sourceId must be lowercase kebab-case');
   if (!Array.isArray(source?.category) || source.category.length === 0) errors.push('category must be a non-empty array');
-  if (!/^https:\/\/github\.com\/[A-Za-z0-9_.-]+\/[A-Za-z0-9_.-]+\/?$/.test(source?.repository ?? '')) errors.push('repository must be a public GitHub repository URL');
+  if (!['repository', 'user-pack'].includes(sourceKind)) errors.push('sourceKind is invalid');
+  if (sourceKind === 'repository' && !/^https:\/\/github\.com\/[A-Za-z0-9_.-]+\/[A-Za-z0-9_.-]+\/?$/.test(source?.repository ?? '')) errors.push('repository must be a public GitHub repository URL');
+  if (sourceKind === 'user-pack') {
+    if (source?.repository !== null) errors.push('user-pack repository must be null');
+    if (!/^[0-9a-f]{64}$/i.test(source?.bundle?.sha256 ?? '')) errors.push('user-pack bundle.sha256 must be a SHA-256 hash');
+    if (source?.bundle?.archiveRetained === false) {
+      if (source?.bundle?.archivePath !== null) errors.push('discarded user-pack bundle.archivePath must be null');
+    } else if (!source?.bundle?.archivePath || path.isAbsolute(source.bundle.archivePath) || source.bundle.archivePath.includes('..')) errors.push('user-pack bundle.archivePath must be a safe repository-relative path');
+    if (source?.version?.currentCommit !== null) errors.push('user-pack version.currentCommit must be null');
+    if (source?.updatePolicy?.checkIntervalDays !== 'manual') errors.push('user-pack updatePolicy.checkIntervalDays must be manual');
+    if (source?.updatePolicy?.fetchToStagingWhenDue !== false) errors.push('user-pack updatePolicy.fetchToStagingWhenDue must be false');
+  }
   if (!STORAGE_MODES.has(source?.storageMode)) errors.push('storageMode is invalid');
   if (source?.version?.currentCommit !== null && !COMMIT_PATTERN.test(source?.version?.currentCommit ?? '')) errors.push('version.currentCommit must be null or a 40-character Git commit');
   if (source?.updatePolicy?.autoReplaceCurrentSnapshot !== false) errors.push('updatePolicy.autoReplaceCurrentSnapshot must be false');

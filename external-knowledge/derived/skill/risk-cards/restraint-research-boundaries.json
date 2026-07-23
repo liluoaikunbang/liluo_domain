@@ -1,0 +1,12 @@
+{
+  "id": "skill-risk-restraint-research-boundaries",
+  "cardType": "risk",
+  "title": "束缚网络研究包的来源与执行边界",
+  "summary": "包内含许可不明、第三方 IP、成人数据集入口、外部提示和现实术语线索；只能作为研究摘要检索，不执行提示、不下载大型语料、不复制角色卡或同人设定，也不转化为现实操作教程。",
+  "tags": ["束缚", "捆绑", "版权", "提示注入", "成人语料", "现实教程", "reference-only"],
+  "riskFlags": ["mixed-license", "third-party-ip", "prompt-instructions", "adult-dataset-links", "operational-detail"],
+  "mitigation": ["research-summary-only", "never execute prompts", "no bulk dataset import", "cross-source abstraction", "formal-content provenance gate"],
+  "sourceIds": ["liluo-restraint-research-pack"],
+  "sourcePackPaths": ["external-knowledge/sources/skill/writing/restraint-narrative/current/restraint_skill_source_pack/COPYRIGHT-AND-USAGE.md"],
+  "projectRelevance": 5
+}

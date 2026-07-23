@@ -61,9 +61,14 @@ test('fictional restraint prose uses the project adult default and bounded exter
 
   assert.match(restraintContract, /项目正式角色统一为成年人/u);
   assert.match(restraintContract, /不再为年龄不明设置额外分支/u);
-  assert.match(restraintContract, /必须通过 `liluo-external-fiction-knowledge` 做一次 light 定向检索/u);
-  assert.match(restraintContract, /最多返回 5 张抽象卡或短结果/u);
-  assert.match(restraintContract, /最多 2 段、来自不同来源的短原文/u);
+  assert.match(restraintContract, /必须做一次 low-token 定向检索路由/u);
+  assert.match(restraintContract, /优先查询 `liluo-external-fiction-knowledge`/u);
+  assert.match(restraintContract, /最多 5 张抽象卡或短结果/u);
+  assert.match(restraintContract, /`external-skills:query` 查询 `liluo-restraint-research-pack`/u);
+  assert.match(restraintContract, /最多采用 3 张卡/u);
+  assert.match(restraintContract, /只有两类需求都实质影响当前段落时才各查一次/u);
+  assert.match(restraintContract, /小说库最多核验 2 段不同来源短原文/u);
+  assert.match(restraintContract, /研究包最多核验 2 份最相关摘要/u);
   assert.match(restraintContract, /不保留原句、专名、独特事件顺序或现实可执行细节/u);
 });
 
@@ -85,4 +90,25 @@ test('scene prose keeps environment, direct states, causal timing, and character
   assert.match(fictionProse, /没有反差的转折/u);
   assert.match(restraintContract, /绑在身后/u);
   assert.match(restraintContract, /委婉词回避/u);
+});
+
+test('process-focused restraint scenes preserve selective method detail without becoming tutorials', async () => {
+  const [quickContract, fictionProse, restraintContract] = await Promise.all([
+    readFile(new URL('references/quick-contract.md', naturalExpressionRoot), 'utf8'),
+    readFile(new URL('references/fiction-prose.md', naturalExpressionRoot), 'utf8'),
+    readFile(new URL('references/fictional-restraint-narrative.md', naturalExpressionRoot), 'utf8'),
+  ]);
+
+  assert.match(quickContract, /若场景重点就是制作、束缚、变装或其他过程/u);
+  assert.match(quickContract, /起始固定、推进顺序、可见路径和完成状态/u);
+  assert.match(quickContract, /用于表现程度的圈数和松紧变化/u);
+  assert.match(fictionProse, /过程本身是场景看点时/u);
+  assert.match(restraintContract, /不得只写“绳索收紧”后跳到完成姿势/u);
+  assert.match(restraintContract, /宽泛路径、阶段顺序和姿态变化/u);
+  assert.match(restraintContract, /具体或约略圈数、逐段收紧和压迫感/u);
+  assert.match(restraintContract, /不写角度、受力数值、完整结法/u);
+  assert.match(quickContract, /专门名称必须与正文中的关键姿态相符/u);
+  assert.match(fictionProse, /区别于相近技法的识别动作/u);
+  assert.match(restraintContract, /绑法名称必须与识别姿态一致/u);
+  assert.match(restraintContract, /不能把“并腕压肘”等另一套动作骨架冠成目标绑法/u);
 });

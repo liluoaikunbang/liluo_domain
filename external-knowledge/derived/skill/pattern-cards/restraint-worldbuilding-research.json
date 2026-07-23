@@ -1,0 +1,15 @@
+{
+  "id": "skill-pattern-restraint-worldbuilding-research",
+  "cardType": "pattern",
+  "title": "束缚题材世界构建与场景结构",
+  "summary": "比较 BDSM AU、角色卡、Lorebook 与提示架构中的规则表达、关系边界、场景阶段和记忆组织方法，再按璃落世界观重新设计，不沿用第三方人物或完整事件顺序。",
+  "tags": ["束缚世界观", "BDSM AU", "Lorebook", "角色卡", "场景结构", "提示架构"],
+  "steps": ["定位世界构建或角色卡摘要", "抽取通用机制", "过滤第三方设定", "结合项目 canon 重组"],
+  "sourceIds": ["liluo-restraint-research-pack"],
+  "sourcePackPaths": [
+    "external-knowledge/sources/skill/writing/restraint-narrative/current/restraint_skill_source_pack/02-character-cards/",
+    "external-knowledge/sources/skill/writing/restraint-narrative/current/restraint_skill_source_pack/03-worldbuilding/",
+    "external-knowledge/sources/skill/writing/restraint-narrative/current/restraint_skill_source_pack/07-prompt-architecture/"
+  ],
+  "projectRelevance": 4
+}

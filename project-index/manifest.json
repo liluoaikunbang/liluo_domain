@@ -20,7 +20,7 @@
     },
     "docs": {
       "enabled": true,
-      "entryCount": 265,
+      "entryCount": 266,
       "outputs": [
         "docs/documents-001.json",
         "docs/documents-002.json"

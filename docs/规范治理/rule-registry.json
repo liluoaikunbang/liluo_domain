@@ -145,6 +145,22 @@
       "status": "active"
     },
     {
+      "ruleId": "natural-expression-user-calibration",
+      "title": "可复用的用户写作校准在同一任务同步权威规范",
+      "authority": "docs/系统说明/璃落自然表达与文气塑形系统.md",
+      "decision": "docs/设计记忆/创作决策/CDR-005-非技术文本默认应用璃落自然表达.md",
+      "consumers": [".agents/skills/writing/liluo-natural-expression/references/quick-contract.md", ".agents/skills/writing/liluo-natural-expression/references/fiction-prose.md", ".agents/skills/writing/liluo-natural-expression/references/fictional-restraint-narrative.md", "docs/技能说明/liluo-natural-expression.md"],
+      "status": "active"
+    },
+    {
+      "ruleId": "restraint-technique-pose-consistency",
+      "title": "束缚绑法名称必须与识别姿态和动作骨架一致",
+      "authority": "docs/系统说明/璃落自然表达与文气塑形系统.md",
+      "decision": "docs/设计记忆/创作决策/CDR-005-非技术文本默认应用璃落自然表达.md",
+      "consumers": [".agents/skills/writing/liluo-natural-expression/references/quick-contract.md", ".agents/skills/writing/liluo-natural-expression/references/fiction-prose.md", ".agents/skills/writing/liluo-natural-expression/references/fictional-restraint-narrative.md", "docs/技能说明/liluo-natural-expression.md"],
+      "status": "active"
+    },
+    {
       "ruleId": "command-approval-project-scope",
       "title": "项目命令授权精确持久化且不自动修改用户级规则",
       "authority": "docs/系统说明/Codex命令授权治理系统.md",

@@ -82,6 +82,16 @@ async function validate() {
   const errors = [];
   for (const source of sources) {
     for (const error of validateSource(source)) errors.push(`${source.sourceFile}: ${error}`);
+    if ((source.sourceKind ?? 'repository') === 'user-pack' && source.bundle.archiveRetained !== false) {
+      const archive = path.resolve(ROOT, source.bundle.archivePath), root = path.resolve(ROOT);
+      if (!archive.startsWith(`${root}${path.sep}`)) errors.push(`${source.sourceFile}: bundle path escaped repository root`);
+      else {
+        try {
+          const actualHash = sha256(await fs.readFile(archive));
+          if (actualHash !== source.bundle.sha256) errors.push(`${source.sourceFile}: bundle SHA-256 mismatch`);
+        } catch { errors.push(`${source.sourceFile}: bundle archive missing`); }
+      }
+    }
     const currentRoot = path.join(path.dirname(path.join(ROOT, source.sourceFile)), 'current');
     if (!['catalog-only', 'metadata-only'].includes(source.storageMode)) {
       for (const trackedPath of source.trackedPaths) {
@@ -140,12 +150,24 @@ async function selectedSources() {
 
 async function check() {
   for (const source of await selectedSources()) {
+    if ((source.sourceKind ?? 'repository') === 'user-pack') {
+      if (source.bundle.archiveRetained === false) {
+        console.log(JSON.stringify({ sourceId: source.sourceId, sourceKind: 'user-pack', expectedHash: source.bundle.sha256, archiveRetained: false, verification: 'extracted-files-and-manifest' }));
+        continue;
+      }
+      const archive = path.resolve(ROOT, source.bundle.archivePath), root = path.resolve(ROOT);
+      if (!archive.startsWith(`${root}${path.sep}`)) throw new Error(`${source.sourceId}: bundle path escaped repository root`);
+      const currentHash = sha256(await fs.readFile(archive));
+      console.log(JSON.stringify({ sourceId: source.sourceId, sourceKind: 'user-pack', expectedHash: source.bundle.sha256, currentHash, changed: currentHash !== source.bundle.sha256 }));
+      continue;
+    }
     const remoteCommit = remoteHead(source);
     console.log(JSON.stringify({ sourceId: source.sourceId, currentCommit: source.version.currentCommit, remoteCommit, changed: remoteCommit !== source.version.currentCommit }));
   }
 }
 
 async function fetchToStaging(source) {
+  if ((source.sourceKind ?? 'repository') !== 'repository') throw new Error(`${source.sourceId}: user-pack sources are replaced manually and cannot be fetched`);
   if (!source.license.verified || source.license.redistributionAllowed !== true) throw new Error(`${source.sourceId}: license does not permit fetching content`);
   if (['catalog-only', 'metadata-only'].includes(source.storageMode)) throw new Error(`${source.sourceId}: ${source.storageMode} does not permit content fetching`);
   const commit = remoteHead(source), targetRoot = resolveStagingTarget(STAGING_ROOT, source.sourceId), target = path.join(targetRoot, 'incoming', commit);
