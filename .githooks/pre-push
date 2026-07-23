@@ -1,0 +1,8 @@
+#!/bin/sh
+
+npm run project:gate:prepush
+status=$?
+if [ "$status" -ne 0 ]; then
+  echo "Quality Gate failed. See reports/quality-gate/latest.md" >&2
+fi
+exit "$status"

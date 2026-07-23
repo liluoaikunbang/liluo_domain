@@ -35,3 +35,5 @@ s.trim()).filter(Boolean).map(Number)
 *.sw?
 evals/reports/*
 !evals/reports/.gitkeep
+reports/quality-gate/*
+!reports/quality-gate/.gitkeep

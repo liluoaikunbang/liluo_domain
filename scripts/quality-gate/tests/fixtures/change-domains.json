@@ -1,0 +1,12 @@
+[
+  ["docs/系统说明/example.md", "docs"],
+  [".agents/skills/example/SKILL.md", "skills-agents-governance"],
+  ["schemas/save.schema.json", "schemas-data"],
+  ["src/game/data/story_outline/sources/world.json", "story"],
+  ["src/game/data/maps/world/map/events.json", "maps-events-dialogues"],
+  ["src/game/systems/saveMigration.ts", "saves"],
+  ["src/game/scenes/WorldScene.ts", "runtime"],
+  ["src/assets/game/characters/liluo.png", "assets"],
+  ["vite.config.js", "build-config"],
+  ["docs/用户命令目录.md", "index-source"]
+]

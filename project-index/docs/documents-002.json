@@ -1,5 +1,16 @@
 [
   {
+    "id": "docs/系统说明/项目知识索引系统.md",
+    "indexVersion": 1,
+    "sourceHash": "58e5d82bb0f01bb90a29d1f7bdc1db0d6e68ae587de86d57cf334503b0c5e357",
+    "sourcePath": "docs/系统说明/项目知识索引系统.md",
+    "subtype": "system",
+    "summary": "项目知识索引系统",
+    "summarySource": "title-only",
+    "title": "项目知识索引系统",
+    "type": "document"
+  },
+  {
     "id": "docs/系统说明/像素行走图生成提示词模板.md",
     "indexVersion": 1,
     "sourceHash": "150bef763cf631ffae5d9ced1108603144f2b0a1b7b483fd38f1b488d19a375a",
@@ -44,6 +55,17 @@
     "type": "document"
   },
   {
+    "id": "docs/系统说明/Codex-Hooks与自动质量门禁系统.md",
+    "indexVersion": 1,
+    "sourceHash": "be5446193e88a3f52242fdfddf3b27a19a6d93cb8abcdff94495a06d51798e8a",
+    "sourcePath": "docs/系统说明/Codex-Hooks与自动质量门禁系统.md",
+    "subtype": "system",
+    "summary": "Codex Hooks 与自动质量门禁系统",
+    "summarySource": "title-only",
+    "title": "Codex Hooks 与自动质量门禁系统",
+    "type": "document"
+  },
+  {
     "id": "docs/系统说明/Codex命令授权治理系统.md",
     "indexVersion": 1,
     "sourceHash": "0c3c38c7c11371ef661db0db014999a617d9192ee079bfc1ae78f61f06af9ad1",
@@ -68,7 +90,7 @@
   {
     "id": "docs/系统说明/README.md",
     "indexVersion": 1,
-    "sourceHash": "752dd71b6b1ea918e3f35e9c969c62f2da822402d59557c14658341821d7cfb3",
+    "sourceHash": "9fdd6e147f6585b0b2ce357e9dc703fce831f2396b29e7ebda44696ee37a2b78",
     "sourcePath": "docs/系统说明/README.md",
     "subtype": "system",
     "summary": "系统说明",
@@ -112,7 +134,7 @@
   {
     "id": "docs/用户命令目录.md",
     "indexVersion": 1,
-    "sourceHash": "d969a22224c5cff6cb6ed538fdf39ee8d8ee9977f4c4c14401b72adb15a313d6",
+    "sourceHash": "f9ad9ea8f4c5aabd0e5a1833b55fb3c85636aca116fca15a1e78881d71e4765c",
     "sourcePath": "docs/用户命令目录.md",
     "subtype": "other",
     "summary": "用户命令目录",
@@ -233,7 +255,7 @@
   {
     "id": "docs/README.md",
     "indexVersion": 1,
-    "sourceHash": "5062b32bde865cee8cd055b08cbcf5d79b0d68a623efc7ca930ecc519f8e489b",
+    "sourceHash": "10f1547208967a84fe14b342b4bb95bd9f46a1c17d137ab6a91c9ab36ebc2a6b",
     "sourcePath": "docs/README.md",
     "subtype": "other",
     "summary": "璃落的城堡文档入口",

@@ -18,6 +18,7 @@
 - [项目知识索引](project-index/INDEX.md)
 - [JSON Schema 数据契约系统](docs/系统说明/JSON-Schema数据契约系统.md)
 - [Skill / Agent 能力回归评测系统](docs/系统说明/Skill与Agent能力回归评测系统.md)
+- [Codex Hooks 与自动质量门禁系统](docs/系统说明/Codex-Hooks与自动质量门禁系统.md)
 - [外部虚构题材知识库](external-knowledge/INDEX.md)
 
 ## 技术栈与目录
@@ -43,6 +44,9 @@ npm run data:contracts:check
 npm run data:contracts:test
 npm run evals:check
 npm run evals:smoke
+npm run project:gate:changed
+npm run project:gate:prepush
+npm run project:hooks:install
 npm run project:index:check
 npm run project:index:changed
 npm run project:index:validate

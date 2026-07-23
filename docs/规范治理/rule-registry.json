@@ -205,6 +205,13 @@
       "authority": "docs/系统说明/Skill与Agent能力回归评测系统.md",
       "consumers": ["AGENTS.md", "evals/registry.json", ".agents/skills/testing/liluo-capability-regression/SKILL.md", "scripts/evals/", "scripts/project-routine.mjs", "docs/用户命令目录.md"],
       "status": "active"
+    },
+    {
+      "ruleId": "automatic-quality-gate-minimal-scope",
+      "title": "自动门禁按改动范围去重且 live eval 不进入普通 CI",
+      "authority": "docs/系统说明/Codex-Hooks与自动质量门禁系统.md",
+      "consumers": [".codex/hooks.json", "scripts/quality-gate/", ".githooks/pre-push", ".github/workflows/quality-gate.yml", "package.json", "docs/用户命令目录.md"],
+      "status": "active"
     }
   ]
 }

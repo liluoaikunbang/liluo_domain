@@ -230,6 +230,16 @@
       "indexable": true,
       "userFacing": true,
       "status": "active"
+    },
+    {
+      "documentId": "automatic-quality-gate-system",
+      "path": "docs/系统说明/Codex-Hooks与自动质量门禁系统.md",
+      "type": "system-spec",
+      "authorityFor": ["codex-hooks", "changed-quality-gate", "git-pre-push-gate", "github-actions-quality-gate"],
+      "consumers": [".codex/hooks.json", ".codex/hooks/", "scripts/quality-gate/", ".githooks/pre-push", ".github/workflows/quality-gate.yml", "package.json", "README.md", "docs/README.md", "docs/系统说明/README.md", "docs/用户命令目录.md"],
+      "indexable": true,
+      "userFacing": true,
+      "status": "active"
     }
   ]
 }

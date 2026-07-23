@@ -1683,9 +1683,20 @@
     "type": "document"
   },
   {
+    "id": "docs/功能更新/150-Codex-Hooks与自动质量门禁系统.md",
+    "indexVersion": 1,
+    "sourceHash": "cf3dc794cf17a961b42ffeb86af3a17f5dbdd9c4e75a26c95ea5c0ccce6615ad",
+    "sourcePath": "docs/功能更新/150-Codex-Hooks与自动质量门禁系统.md",
+    "subtype": "update",
+    "summary": "150-Codex Hooks 与自动质量门禁系统",
+    "summarySource": "title-only",
+    "title": "150-Codex Hooks 与自动质量门禁系统",
+    "type": "document"
+  },
+  {
     "id": "docs/功能更新目录.md",
     "indexVersion": 1,
-    "sourceHash": "b72e90d993f7274e8187a66909dde8633e5dd19e911fed3c32716dfe50f1d1fa",
+    "sourceHash": "d5979661f33a2b7155c8ec38e03f2ea9425c7b93ac33c73f6b2a0895337de286",
     "sourcePath": "docs/功能更新目录.md",
     "subtype": "other",
     "summary": "功能更新目录",
@@ -2736,17 +2747,6 @@
     "summary": "项目规范治理与设计记忆系统",
     "summarySource": "title-only",
     "title": "项目规范治理与设计记忆系统",
-    "type": "document"
-  },
-  {
-    "id": "docs/系统说明/项目知识索引系统.md",
-    "indexVersion": 1,
-    "sourceHash": "58e5d82bb0f01bb90a29d1f7bdc1db0d6e68ae587de86d57cf334503b0c5e357",
-    "sourcePath": "docs/系统说明/项目知识索引系统.md",
-    "subtype": "system",
-    "summary": "项目知识索引系统",
-    "summarySource": "title-only",
-    "title": "项目知识索引系统",
     "type": "document"
   }
 ]

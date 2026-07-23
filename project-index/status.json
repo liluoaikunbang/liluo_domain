@@ -5,9 +5,8 @@
   ],
   "changes": {
     "added": [
-      "docs/功能更新/149-Skill与Agent能力回归评测系统.md",
-      "docs/技能说明/liluo-capability-regression.md",
-      "docs/系统说明/Skill与Agent能力回归评测系统.md"
+      "docs/功能更新/150-Codex-Hooks与自动质量门禁系统.md",
+      "docs/系统说明/Codex-Hooks与自动质量门禁系统.md"
     ],
     "deleted": [],
     "modified": [
@@ -29,7 +28,7 @@
       "status": "current"
     },
     "docs": {
-      "entryCount": 272,
+      "entryCount": 274,
       "status": "current"
     },
     "game": {
@@ -49,13 +48,13 @@
       "status": "partial"
     }
   },
-  "generatedAt": "2026-07-23T11:59:53.429Z",
+  "generatedAt": "2026-07-23T13:23:45.272Z",
   "generatorVersion": "1.0.3",
   "mode": "changed",
   "schemaVersion": 1,
-  "sourceCommit": "2113b1a497253a1479be6ad3ebe063ad996eea03",
+  "sourceCommit": "c3f3c3a76cb9233efeab2375cac26a2fc6a3013c",
   "sourceSnapshot": {
-    "docs/README.md": "5062b32bde865cee8cd055b08cbcf5d79b0d68a623efc7ca930ecc519f8e489b",
+    "docs/README.md": "10f1547208967a84fe14b342b4bb95bd9f46a1c17d137ab6a91c9ab36ebc2a6b",
     "docs/功能更新/001-GameView三栏布局与地图贴合.md": "7a4664d575a6611eaf355dd13d304e4f22d3710cb8a2ce9ad3e9824388318b06",
     "docs/功能更新/002-璃音对话框与Gal式分支对话模板.md": "5b7b32c498719322199306b5e20d1e954a2e811c9cbe1a05e04059fa2731abd6",
     "docs/功能更新/003-角色动画系统.md": "6f1b7c5466b72bddef674e0e41de16053522154f01162fc5689539a11aaebd15",
@@ -206,7 +205,8 @@
     "docs/功能更新/147-内容生产与可玩化基础系统.md": "d2088270c080e398e20cd5324c63420afe26def15eff403708cb2c648efa758c",
     "docs/功能更新/148-JSON-Schema数据契约系统.md": "b577c33dfa3f093329c252686cf8d7fb8e8193001cb8bfcc9e2375d66ed2c71a",
     "docs/功能更新/149-Skill与Agent能力回归评测系统.md": "a76652dbf7de55e636126281811ebd208f283bdb3223dbc51edde00ab44f2773",
-    "docs/功能更新目录.md": "b72e90d993f7274e8187a66909dde8633e5dd19e911fed3c32716dfe50f1d1fa",
+    "docs/功能更新/150-Codex-Hooks与自动质量门禁系统.md": "cf3dc794cf17a961b42ffeb86af3a17f5dbdd9c4e75a26c95ea5c0ccce6615ad",
+    "docs/功能更新目录.md": "d5979661f33a2b7155c8ec38e03f2ea9425c7b93ac33c73f6b2a0895337de286",
     "docs/外部来源/Skill来源目录.md": "5dea73aeb2afb392039bccaefa6acfaa1b796cf666b7ebd859c77c9171f8fdf3",
     "docs/外部来源/Skill许可证与保存策略.md": "18498f5dc9c78c51a9198714ea470d8f6ecb9692128b5d8c6906ee57ba5308cd",
     "docs/大纲玩法总表整合规格.md": "e6ffc2c182c5d46b69bd8fe08bb3b13038d005c4d08a966ac329d0bb515ec40b",
@@ -247,10 +247,11 @@
     "docs/智能体说明/liluo_validation_runner.md": "5ac39e639315e1d9891f2f1649ac28f54397fc79b92ef59ee017dd000109d49c",
     "docs/智能体说明/项目子智能体体系.md": "ba2e0d621b3c741ddd94338c81706b6df377d43499dd0ec956e35bdbadd00304",
     "docs/游戏素材图片清单.md": "e5341d8739d710c663aacfde2b5eff3a482b0da6b3f4cd08424803493998cf93",
-    "docs/用户命令目录.md": "d969a22224c5cff6cb6ed538fdf39ee8d8ee9977f4c4c14401b72adb15a313d6",
+    "docs/用户命令目录.md": "f9ad9ea8f4c5aabd0e5a1833b55fb3c85636aca116fca15a1e78881d71e4765c",
+    "docs/系统说明/Codex-Hooks与自动质量门禁系统.md": "be5446193e88a3f52242fdfddf3b27a19a6d93cb8abcdff94495a06d51798e8a",
     "docs/系统说明/Codex命令授权治理系统.md": "0c3c38c7c11371ef661db0db014999a617d9192ee079bfc1ae78f61f06af9ad1",
     "docs/系统说明/JSON-Schema数据契约系统.md": "a835837bba83cfcc29663c5112b985192db4618c075d34b6143b3e2a9b7c3c05",
-    "docs/系统说明/README.md": "752dd71b6b1ea918e3f35e9c969c62f2da822402d59557c14658341821d7cfb3",
+    "docs/系统说明/README.md": "9fdd6e147f6585b0b2ce357e9dc703fce831f2396b29e7ebda44696ee37a2b78",
     "docs/系统说明/Skill与Agent能力回归评测系统.md": "3b8efd064a728694e4b31e079a1d2aa052e2a78a4d4e5cbd446d56f1bc0b305e",
     "docs/系统说明/Windows命令与UTF-8编码规范.md": "85da2d880c40deef11a05d66d3891edfcf3acd5423131590025d8d4aa2e32557",
     "docs/系统说明/世界与系列生产覆盖统计系统.md": "ddfada609de7e343a6d05ea87cbb0ed68f2ca17a9f9f8d5f88c8533a69428865",
@@ -1042,7 +1043,7 @@
     "src/game/data/global/cgVariantRules.ts": "a9be23c234f0c8a980f304256066538db732625a5fa49647b91b3b240a58e091",
     "src/game/data/global/gameMenuData.js": "549ad516de3df68f5628f912a08cf9d28dcfc52ef21e1d863bc11c3235bddb69",
     "src/game/data/global/updateRecordGroups.js": "ca9b92d0987ceb1890868ada15342a3d76e05657a319a92be851bde8efb64544",
-    "src/game/data/global/updateRecords.js": "584ab488edf733a7d7673cba854748fd125872fa8b30a58d8a4da6018f394770",
+    "src/game/data/global/updateRecords.js": "3fdeda59603125c6d728f89ef2ab8579d179feeda209b756758446660cfa85ff",
     "src/game/data/globalAssets.ts": "c8f61d63f69f0aed0fee4e821683bf4a2cee733104d4b48ab7f78d4879f4c17f",
     "src/game/data/interactive_fictions/asylum_for_lunatic/assets.ts": "a15be46e4a9841f1ea133a883c435b5fd799a858cde8a4ca44036650236c5a69",
     "src/game/data/interactive_fictions/asylum_for_lunatic/index.ts": "af405bbd76de80f5999d0f28a81a48b97a8219a3d050de42320247917c44c98b",
