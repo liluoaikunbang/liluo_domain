@@ -31,12 +31,14 @@ For mixed documents, isolate narrative regions. Leave technical blocks unchanged
 
 Matching references are [fiction-prose.md](references/fiction-prose.md), [story-outline.md](references/story-outline.md), [game-dialogue.md](references/game-dialogue.md), [team-dialogue.md](references/team-dialogue.md), [project-notes.md](references/project-notes.md), [public-development-writing.md](references/public-development-writing.md), [fictional-restraint-narrative.md](references/fictional-restraint-narrative.md), and [character-voice.md](references/character-voice.md).
 
+For fictional restraint prose, `fictional-restraint-narrative.md` owns the mandatory low-token external-fiction retrieval step. Project canon already establishes that every participating character is an adult, so do not add a separate unknown-age branch. Keep retrieval targeted and separate from canon.
+
 ## Protect project truth and authorship
 
 - Do not decide story facts, add lore, perform continuity review, or replace the story-authoring Skills.
 - Do not claim a team member participated unless a real Agent output exists.
 - Do not imitate a living author or retain substantial copyrighted samples in style profiles.
 - Keep style profiles abstract and update them only from repeated, future-useful user preferences.
-- Query external Skill RAG only when this local Skill lacks a mode, repeated revisions still fail, an upgrade is being designed, or the user explicitly asks for comparison. External material remains non-authoritative.
+- Except for the mandatory light external-fiction retrieval used by fictional restraint prose, query external Skill RAG only when this local Skill lacks a mode, repeated revisions still fail, an upgrade is being designed, or the user explicitly asks for comparison. External material remains non-authoritative.
 
 Use [upstream-provenance.md](references/upstream-provenance.md) only when auditing or upgrading this Skill.

@@ -5,7 +5,7 @@
       "documentId": "project-core-rules",
       "path": "AGENTS.md",
       "type": "project-contract",
-      "authorityFor": ["project-routing", "global-development-boundaries"],
+      "authorityFor": ["project-routing", "global-development-boundaries", "adult-characters-only"],
       "consumers": ["README.md", "docs/项目概览.md", "docs/设计记忆/项目宪章.md"],
       "indexable": true,
       "status": "active"
@@ -138,7 +138,7 @@
       "documentId": "natural-expression-system",
       "path": "docs/系统说明/璃落自然表达与文气塑形系统.md",
       "type": "system-spec",
-      "authorityFor": ["natural-expression-routing", "natural-expression-intensity", "natural-expression-plausibility", "style-profile-boundary"],
+      "authorityFor": ["natural-expression-routing", "natural-expression-intensity", "natural-expression-plausibility", "restraint-prose-light-rag", "style-profile-boundary"],
       "consumers": ["AGENTS.md", ".agents/skills/writing/liluo-natural-expression/SKILL.md", "docs/技能说明/liluo-natural-expression.md", "docs/用户命令目录.md"],
       "indexable": true,
       "userFacing": true,

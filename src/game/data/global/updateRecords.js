@@ -15,7 +15,7 @@ export const updateRecords = Object.freeze([
         "id":  "145",
         "date":  "2026-07-22",
         "title":  "外部 Skill 来源库、项目能力演化与自然表达系统",
-        "summary":  "建立非可信外部 Skill 来源、派生 RAG、安全更新与本地能力谱系，并新增默认 light、保护事实锚点及动作与空间可信度的璃落自然表达 Skill。"
+        "summary":  "建立非可信外部 Skill 来源、派生 RAG、安全更新与本地能力谱系，并新增默认 light、可信动作门禁及束缚题材低 token 外部表达检索的璃落自然表达 Skill。"
     },
     {
         "id":  "144",

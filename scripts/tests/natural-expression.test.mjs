@@ -55,3 +55,34 @@ test('writing contracts require credible actions before stylistic cleverness', a
   assert.match(revisionDepth, /人物是否做得到/u);
   assert.ok(fixtures.cases.some(({ id }) => id === 'physical-plausibility'));
 });
+
+test('fictional restraint prose uses the project adult default and bounded external-fiction retrieval', async () => {
+  const restraintContract = await readFile(new URL('references/fictional-restraint-narrative.md', naturalExpressionRoot), 'utf8');
+
+  assert.match(restraintContract, /项目正式角色统一为成年人/u);
+  assert.match(restraintContract, /不再为年龄不明设置额外分支/u);
+  assert.match(restraintContract, /必须通过 `liluo-external-fiction-knowledge` 做一次 light 定向检索/u);
+  assert.match(restraintContract, /最多返回 5 张抽象卡或短结果/u);
+  assert.match(restraintContract, /最多 2 段、来自不同来源的短原文/u);
+  assert.match(restraintContract, /不保留原句、专名、独特事件顺序或现实可执行细节/u);
+});
+
+test('scene prose keeps environment, direct states, causal timing, and character-centered endings', async () => {
+  const [quickContract, fictionProse, restraintContract] = await Promise.all([
+    readFile(new URL('references/quick-contract.md', naturalExpressionRoot), 'utf8'),
+    readFile(new URL('references/fiction-prose.md', naturalExpressionRoot), 'utf8'),
+    readFile(new URL('references/fictional-restraint-narrative.md', naturalExpressionRoot), 'utf8'),
+  ]);
+
+  assert.match(quickContract, /环境必须在场/u);
+  assert.match(quickContract, /最小充分细节/u);
+  assert.match(quickContract, /“抱住”“扶稳”等普通动作已经清楚时/u);
+  assert.match(quickContract, /紧急场面可用“一把”“猛地”等一个短促修饰词提速/u);
+  assert.match(quickContract, /危险尚在发生时/u);
+  assert.match(fictionProse, /不要把“具体”误写成连续动作分解/u);
+  assert.match(fictionProse, /不要用多层副词代替节奏/u);
+  assert.match(fictionProse, /不跳到作者位置评价人物或概括主题/u);
+  assert.match(fictionProse, /没有反差的转折/u);
+  assert.match(restraintContract, /绑在身后/u);
+  assert.match(restraintContract, /委婉词回避/u);
+});

@@ -1,5 +1,16 @@
 [
   {
+    "id": "docs/系统说明/README.md",
+    "indexVersion": 1,
+    "sourceHash": "8feee154c5b8663f1bbe4f161cd1c49c61917245be9d71213b51b10bb2627cd5",
+    "sourcePath": "docs/系统说明/README.md",
+    "subtype": "system",
+    "summary": "系统说明",
+    "summarySource": "title-only",
+    "title": "系统说明",
+    "type": "document"
+  },
+  {
     "id": "docs/系统说明/Windows命令与UTF-8编码规范.md",
     "indexVersion": 1,
     "sourceHash": "a28cfb512ff2c98aecf885305909277fb6995155e39e6531f0b6287b54c38880",
@@ -24,7 +35,7 @@
   {
     "id": "docs/用户命令目录.md",
     "indexVersion": 1,
-    "sourceHash": "698b952b843a7bd1180a70a87d6dd6fca5b662e805c951824839c835cb79f2cf",
+    "sourceHash": "de966b1a396f0a6089e0c3baba9c9173ba2809510632487602f148227096b71b",
     "sourcePath": "docs/用户命令目录.md",
     "subtype": "other",
     "summary": "用户命令目录",

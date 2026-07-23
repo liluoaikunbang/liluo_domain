@@ -10,6 +10,14 @@
       "status": "active"
     },
     {
+      "ruleId": "adult-characters-only",
+      "title": "正式项目登场角色统一为成年人",
+      "authority": "AGENTS.md",
+      "decision": "docs/设计记忆/创作决策/CDR-006-正式项目角色统一为成年人.md",
+      "consumers": [".agents/skills/writing/liluo-natural-expression/SKILL.md", "docs/系统说明/璃落自然表达与文气塑形系统.md"],
+      "status": "active"
+    },
+    {
       "ruleId": "index-is-navigation",
       "title": "项目索引只作导航并需核验权威源",
       "authority": "docs/系统说明/项目知识索引系统.md",
@@ -126,6 +134,14 @@
       "authority": "docs/系统说明/璃落自然表达与文气塑形系统.md",
       "decision": "docs/设计记忆/创作决策/CDR-005-非技术文本默认应用璃落自然表达.md",
       "consumers": [".agents/skills/writing/liluo-natural-expression/SKILL.md", "docs/技能说明/liluo-natural-expression.md", "docs/用户命令目录.md"],
+      "status": "active"
+    },
+    {
+      "ruleId": "restraint-prose-light-rag",
+      "title": "虚构束缚场景写作前执行低 token 外部表达检索",
+      "authority": "docs/系统说明/璃落自然表达与文气塑形系统.md",
+      "decision": "docs/设计记忆/创作决策/CDR-005-非技术文本默认应用璃落自然表达.md",
+      "consumers": [".agents/skills/writing/liluo-natural-expression/SKILL.md", ".agents/skills/writing/liluo-natural-expression/references/fictional-restraint-narrative.md", "docs/技能说明/liluo-natural-expression.md", "docs/用户命令目录.md"],
       "status": "active"
     },
     {

@@ -1630,7 +1630,7 @@
   {
     "id": "docs/功能更新/145-外部Skill来源库项目能力演化与自然表达系统.md",
     "indexVersion": 1,
-    "sourceHash": "04cb80ecced731274452a62d45807ef1ebeded4b171ca2f8239b0361123d6a98",
+    "sourceHash": "72fd7788c63bb11cd728a74eafe2c2a73244f3ed878957745f699df403ec2ea9",
     "sourcePath": "docs/功能更新/145-外部Skill来源库项目能力演化与自然表达系统.md",
     "subtype": "update",
     "summary": "145-外部 Skill 来源库、项目能力演化与自然表达系统",
@@ -1663,7 +1663,7 @@
   {
     "id": "docs/功能更新目录.md",
     "indexVersion": 1,
-    "sourceHash": "7e0ca763d8e708ab5f66a12482b6b32b891b7d9dcf31f3085b56c6c2c7057ee4",
+    "sourceHash": "880c934b10a23613e7d3168248a3a8092a8d87b94555877fa32c69fc0c4f835d",
     "sourcePath": "docs/功能更新目录.md",
     "subtype": "other",
     "summary": "功能更新目录",
@@ -1817,7 +1817,7 @@
   {
     "id": "docs/技能说明/liluo-natural-expression.md",
     "indexVersion": 1,
-    "sourceHash": "bef771ff96c4853e2823f59a0ad59969211323b182ba9be7ca19157bd7515cb3",
+    "sourceHash": "12462809088ccbfe8720120306f40fd2e463b2992b481bf77909b9ff95c50da4",
     "sourcePath": "docs/技能说明/liluo-natural-expression.md",
     "subtype": "skill",
     "summary": "liluo-natural-expression",
@@ -2026,7 +2026,7 @@
   {
     "id": "docs/设计记忆/创作决策/CDR-005-非技术文本默认应用璃落自然表达.md",
     "indexVersion": 1,
-    "sourceHash": "43c867b23a63725116ee1f8800ea19cd96b2564a3978e083d48a4eb58184b522",
+    "sourceHash": "9e15fef590bc19dd634ec8930e02e495552f09c279a0c3f796ee67ae2258e576",
     "sourcePath": "docs/设计记忆/创作决策/CDR-005-非技术文本默认应用璃落自然表达.md",
     "subtype": "other",
     "summary": "CDR-005：非技术文本默认应用璃落自然表达",
@@ -2035,9 +2035,20 @@
     "type": "document"
   },
   {
+    "id": "docs/设计记忆/创作决策/CDR-006-正式项目角色统一为成年人.md",
+    "indexVersion": 1,
+    "sourceHash": "b49c5512dd4cb88827b7df0dda4a56f816626d9776336b221d1735159ab79234",
+    "sourcePath": "docs/设计记忆/创作决策/CDR-006-正式项目角色统一为成年人.md",
+    "subtype": "other",
+    "summary": "CDR-006：正式项目角色统一为成年人",
+    "summarySource": "title-only",
+    "title": "CDR-006：正式项目角色统一为成年人",
+    "type": "document"
+  },
+  {
     "id": "docs/设计记忆/创作决策/README.md",
     "indexVersion": 1,
-    "sourceHash": "43b3650e2809551a0df3b3d4d19f2227aa83efcb465c94d68233a351b9aab84d",
+    "sourceHash": "9cbfc03c806398f4fbcd76de057f48b8bfa6d2c5855f3277d93f9a16ab5546d5",
     "sourcePath": "docs/设计记忆/创作决策/README.md",
     "subtype": "other",
     "summary": "创作决策记录",
@@ -2598,7 +2609,7 @@
   {
     "id": "docs/系统说明/璃落自然表达与文气塑形系统.md",
     "indexVersion": 1,
-    "sourceHash": "613d1b6ce688fef56d3917fb295e72d5da8999e65dd29fcdce57a1db5261465e",
+    "sourceHash": "7ae20882cccf5dcfa7e80e4b20ea36cb2fa0d586b6351a124db3fa30f8090bbd",
     "sourcePath": "docs/系统说明/璃落自然表达与文气塑形系统.md",
     "subtype": "system",
     "summary": "璃落自然表达与文气塑形系统",
@@ -2736,17 +2747,6 @@
     "summary": "Codex 命令授权治理系统",
     "summarySource": "title-only",
     "title": "Codex 命令授权治理系统",
-    "type": "document"
-  },
-  {
-    "id": "docs/系统说明/README.md",
-    "indexVersion": 1,
-    "sourceHash": "8feee154c5b8663f1bbe4f161cd1c49c61917245be9d71213b51b10bb2627cd5",
-    "sourcePath": "docs/系统说明/README.md",
-    "subtype": "system",
-    "summary": "系统说明",
-    "summarySource": "title-only",
-    "title": "系统说明",
     "type": "document"
   }
 ]

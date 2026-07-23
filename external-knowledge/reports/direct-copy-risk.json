@@ -65,6 +65,138 @@
       "rewriteRecommended": false,
       "matches": [],
       "disclaimer": "This is a conservative writing-similarity warning, not a legal copyright determination."
+    },
+    {
+      "checkedAt": "2026-07-23T07:08:21.146Z",
+      "input": "src/game/data/story_outline/1-modern/3.3-锈盐.md",
+      "risk": "low",
+      "rewriteRecommended": false,
+      "matches": [
+        {
+          "sourceId": "fb-src-000045",
+          "sourcePath": "external-knowledge/sources/fiction-bondage/其他未分类/0-临时备忘录-1.md",
+          "startLine": 4355,
+          "endLine": 4368,
+          "longestSharedChars": 10,
+          "ngramOverlap": 0.0009
+        },
+        {
+          "sourceId": "fb-src-000092",
+          "sourcePath": "external-knowledge/sources/fiction-bondage/其他未分类/DID小说作品集-aertlk（P站）.md",
+          "startLine": 4355,
+          "endLine": 4368,
+          "longestSharedChars": 10,
+          "ngramOverlap": 0.0009
+        },
+        {
+          "sourceId": "fb-src-000207",
+          "sourcePath": "external-knowledge/sources/fiction-bondage/作者,金主大大/gsgs3321（如梦）/古墓丽影.md",
+          "startLine": 103,
+          "endLine": 119,
+          "longestSharedChars": 8,
+          "ngramOverlap": 0.0005
+        }
+      ],
+      "disclaimer": "This is a conservative writing-similarity warning, not a legal copyright determination."
+    },
+    {
+      "checkedAt": "2026-07-23T07:22:37.140Z",
+      "input": "src/game/data/story_outline/1-modern/3.3-锈盐.md",
+      "risk": "low",
+      "rewriteRecommended": false,
+      "matches": [
+        {
+          "sourceId": "fb-src-000045",
+          "sourcePath": "external-knowledge/sources/fiction-bondage/其他未分类/0-临时备忘录-1.md",
+          "startLine": 4355,
+          "endLine": 4368,
+          "longestSharedChars": 10,
+          "ngramOverlap": 0.0009
+        },
+        {
+          "sourceId": "fb-src-000092",
+          "sourcePath": "external-knowledge/sources/fiction-bondage/其他未分类/DID小说作品集-aertlk（P站）.md",
+          "startLine": 4355,
+          "endLine": 4368,
+          "longestSharedChars": 10,
+          "ngramOverlap": 0.0009
+        },
+        {
+          "sourceId": "fb-src-000207",
+          "sourcePath": "external-knowledge/sources/fiction-bondage/作者,金主大大/gsgs3321（如梦）/古墓丽影.md",
+          "startLine": 103,
+          "endLine": 119,
+          "longestSharedChars": 8,
+          "ngramOverlap": 0.0005
+        }
+      ],
+      "disclaimer": "This is a conservative writing-similarity warning, not a legal copyright determination."
+    },
+    {
+      "checkedAt": "2026-07-23T07:40:48.926Z",
+      "input": "src/game/data/story_outline/1-modern/3.3-锈盐.md",
+      "risk": "low",
+      "rewriteRecommended": false,
+      "matches": [
+        {
+          "sourceId": "fb-src-000045",
+          "sourcePath": "external-knowledge/sources/fiction-bondage/其他未分类/0-临时备忘录-1.md",
+          "startLine": 4355,
+          "endLine": 4368,
+          "longestSharedChars": 10,
+          "ngramOverlap": 0.0009
+        },
+        {
+          "sourceId": "fb-src-000092",
+          "sourcePath": "external-knowledge/sources/fiction-bondage/其他未分类/DID小说作品集-aertlk（P站）.md",
+          "startLine": 4355,
+          "endLine": 4368,
+          "longestSharedChars": 10,
+          "ngramOverlap": 0.0009
+        },
+        {
+          "sourceId": "fb-src-000207",
+          "sourcePath": "external-knowledge/sources/fiction-bondage/作者,金主大大/gsgs3321（如梦）/古墓丽影.md",
+          "startLine": 103,
+          "endLine": 119,
+          "longestSharedChars": 8,
+          "ngramOverlap": 0.0005
+        }
+      ],
+      "disclaimer": "This is a conservative writing-similarity warning, not a legal copyright determination."
+    },
+    {
+      "checkedAt": "2026-07-23T07:50:11.134Z",
+      "input": "src/game/data/story_outline/1-modern/3.3-锈盐.md",
+      "risk": "low",
+      "rewriteRecommended": false,
+      "matches": [
+        {
+          "sourceId": "fb-src-000045",
+          "sourcePath": "external-knowledge/sources/fiction-bondage/其他未分类/0-临时备忘录-1.md",
+          "startLine": 4355,
+          "endLine": 4368,
+          "longestSharedChars": 10,
+          "ngramOverlap": 0.0009
+        },
+        {
+          "sourceId": "fb-src-000092",
+          "sourcePath": "external-knowledge/sources/fiction-bondage/其他未分类/DID小说作品集-aertlk（P站）.md",
+          "startLine": 4355,
+          "endLine": 4368,
+          "longestSharedChars": 10,
+          "ngramOverlap": 0.0009
+        },
+        {
+          "sourceId": "fb-src-000207",
+          "sourcePath": "external-knowledge/sources/fiction-bondage/作者,金主大大/gsgs3321（如梦）/古墓丽影.md",
+          "startLine": 103,
+          "endLine": 119,
+          "longestSharedChars": 8,
+          "ngramOverlap": 0.0005
+        }
+      ],
+      "disclaimer": "This is a conservative writing-similarity warning, not a legal copyright determination."
     }
   ]
 }
