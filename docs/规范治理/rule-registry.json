@@ -65,6 +65,14 @@
       "status": "active"
     },
     {
+      "ruleId": "user-to-liluo-direction-is-one-way",
+      "title": "用户确认的指示可由璃落转述但璃落话语不反推用户授权",
+      "authority": "docs/设计记忆/项目组灵魂/项目组设定.md",
+      "decision": "docs/设计记忆/创作决策/CDR-003-将项目智能体组织为璃落创作组.md",
+      "consumers": ["AGENTS.md", ".agents/skills/liluo-project/liluo-creative-team-presence/SKILL.md", "scripts/team-presence/team-presence.mjs", "docs/设计记忆/项目组灵魂/项目组手记/README.md", "docs/用户命令目录.md"],
+      "status": "active"
+    },
+    {
       "ruleId": "single-authority",
       "title": "跨系统长期规则只完整维护一次",
       "authority": "docs/系统说明/项目规范治理与设计记忆系统.md",
@@ -78,6 +86,14 @@
       "authority": "docs/系统说明/项目规范治理与设计记忆系统.md",
       "decision": "docs/设计记忆/架构决策/ADR-002-规范与设计记忆分层治理.md",
       "consumers": ["AGENTS.md", ".agents/skills/liluo-project/liluo-project-governance-memory/references/completion-gate.md", "docs/用户命令目录.md"],
+      "status": "active"
+    },
+    {
+      "ruleId": "minimal-verification-budget",
+      "title": "普通任务按变化面执行最小验证并避免可预见失败",
+      "authority": "docs/系统说明/项目规范治理与设计记忆系统.md",
+      "decision": "docs/设计记忆/架构决策/ADR-002-规范与设计记忆分层治理.md",
+      "consumers": ["AGENTS.md", ".agents/skills/test-driven-development/SKILL.md", ".agents/skills/incremental-implementation/SKILL.md", ".agents/skills/code-review-and-quality/SKILL.md", ".agents/skills/liluo-project/liluo-project-governance-memory/references/completion-gate.md", "scripts/project-routine.mjs", "docs/系统说明/Codex命令授权治理系统.md"],
       "status": "active"
     },
     {
@@ -102,6 +118,14 @@
       "authority": "docs/系统说明/璃落自然表达与文气塑形系统.md",
       "decision": "docs/设计记忆/创作决策/CDR-005-非技术文本默认应用璃落自然表达.md",
       "consumers": ["AGENTS.md", ".agents/skills/writing/liluo-natural-expression/SKILL.md", "docs/用户命令目录.md"],
+      "status": "active"
+    },
+    {
+      "ruleId": "natural-expression-plausibility-first",
+      "title": "自然表达先保证动作与空间可信再处理文气",
+      "authority": "docs/系统说明/璃落自然表达与文气塑形系统.md",
+      "decision": "docs/设计记忆/创作决策/CDR-005-非技术文本默认应用璃落自然表达.md",
+      "consumers": [".agents/skills/writing/liluo-natural-expression/SKILL.md", "docs/技能说明/liluo-natural-expression.md", "docs/用户命令目录.md"],
       "status": "active"
     },
     {

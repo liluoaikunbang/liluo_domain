@@ -17,6 +17,16 @@ export function canAttributeFormalView({ agentCalled = false, reportReceived = f
   return agentCalled && reportReceived
 }
 
+export function hasUserInstructionAuthority(source) {
+  return source === 'user'
+}
+
+export function formatLiluoDirection(summary, { source, approved = false } = {}) {
+  if (!approved || !hasUserInstructionAuthority(source)) return null
+  const normalized = String(summary ?? '').replace(/\s+/g, ' ').trim()
+  return normalized ? `【璃落指出：${normalized}】` : null
+}
+
 export function thoughtStatus({ source, approved = false } = {}) {
   if (approved && source === 'user') return 'user-confirmed'
   if (source === 'team') return approved ? 'user-confirmed' : 'team-discussed'
@@ -57,6 +67,7 @@ export function validateNotes() {
     const source = text.match(/^sourceStatus:\s*(.+)$/m)?.[1]
     if (!id || ids.has(id)) errors.push(`missing or duplicate note id: ${file}`); else ids.add(id)
     if (!sourceStatuses.has(source)) errors.push(`invalid source status: ${file}`)
+    if (text.includes('【璃落指出：') && source !== 'user-confirmed') errors.push(`Liluo direction requires user-confirmed source: ${file}`)
     if (text.length > 12000) errors.push(`note is suspiciously long: ${file}`)
   }
   return errors

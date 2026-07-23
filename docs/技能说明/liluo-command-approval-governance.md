@@ -17,7 +17,7 @@
 
 `allow` 仅接受精确、稳定、低风险的项目 npm script。网络、Git 写入、依赖、删除、上传、发行、项目外目录、凭据、未知二进制、解释器和复杂 shell 保持 `prompt` / `forbidden`。Skill 不改变平台沙箱、管理员策略或更严格规则。
 
-常规执行入口优先收敛为 `npm run project:routine -- check|test|build|index|all`；项目 Skill 脚手架优先使用 `npm run project:skill:init -- ...`。两者有固定动作/参数白名单和正反测试，不等同于允许宽泛解释器。调用方应直接以沙箱外执行请求使用这两个已长期批准的精确前缀，避免先失败再重试。
+常规执行入口优先选择 `npm run project:routine -- docs|workflow|team-presence|natural-expression` 的最小固定 profile；只有跨域或完整交付才使用 `check|test|build|index|all`。项目 Skill 脚手架优先使用 `npm run project:skill:init -- ...`。两者有固定动作/参数白名单和正反测试，不等同于允许宽泛解释器。调用方应直接以沙箱外执行请求使用已长期批准的精确前缀，不得先制造可预见的沙箱失败再重试。
 
 ## 流程与数据
 

@@ -1586,7 +1586,7 @@
   {
     "id": "docs/功能更新/141-璃落创作组人格与项目陪伴系统.md",
     "indexVersion": 1,
-    "sourceHash": "3894debc38c50c3bb141cff91551c85a0bf4c09b1bf314440441e2ed6795ea0d",
+    "sourceHash": "248acbcc2317752c93cd4aa31040d5553a438d0a50e28b8a070889d15a7b03aa",
     "sourcePath": "docs/功能更新/141-璃落创作组人格与项目陪伴系统.md",
     "subtype": "update",
     "summary": "璃落创作组人格与项目陪伴系统",
@@ -1630,7 +1630,7 @@
   {
     "id": "docs/功能更新/145-外部Skill来源库项目能力演化与自然表达系统.md",
     "indexVersion": 1,
-    "sourceHash": "0b829254257077f92e8a9064ae1521654bece7065f9f0e44f34b92edfd3f0473",
+    "sourceHash": "04cb80ecced731274452a62d45807ef1ebeded4b171ca2f8239b0361123d6a98",
     "sourcePath": "docs/功能更新/145-外部Skill来源库项目能力演化与自然表达系统.md",
     "subtype": "update",
     "summary": "145-外部 Skill 来源库、项目能力演化与自然表达系统",
@@ -1641,7 +1641,7 @@
   {
     "id": "docs/功能更新/146-Codex命令授权反馈持久化与规范闭环.md",
     "indexVersion": 1,
-    "sourceHash": "f30d420a7d034739572b0daed3c5820b32975ecc770a2db7c49157b6194ec736",
+    "sourceHash": "3f0347664d0bce33d2527e20842123f3d9f6a74e4a14ddef3e7e533e72298ff8",
     "sourcePath": "docs/功能更新/146-Codex命令授权反馈持久化与规范闭环.md",
     "subtype": "update",
     "summary": "146-Codex 命令授权反馈、持久化与规范闭环",
@@ -1663,7 +1663,7 @@
   {
     "id": "docs/功能更新目录.md",
     "indexVersion": 1,
-    "sourceHash": "3566b8666c638eb10f9a0cda0575c6c178f9acc6bd2ed378f75bf6fec7e3dad8",
+    "sourceHash": "7e0ca763d8e708ab5f66a12482b6b32b891b7d9dcf31f3085b56c6c2c7057ee4",
     "sourcePath": "docs/功能更新目录.md",
     "subtype": "other",
     "summary": "功能更新目录",
@@ -1740,7 +1740,7 @@
   {
     "id": "docs/技能说明/liluo-command-approval-governance.md",
     "indexVersion": 1,
-    "sourceHash": "0d3998f0fa9e475f404b0cc94edbea19f49ed0ec036fbb703210acb0b3b24410",
+    "sourceHash": "265f3ebcdd6a6a5959ab3ed5c1e3b401437d0df608ed4fa418e559626ea3eb02",
     "sourcePath": "docs/技能说明/liluo-command-approval-governance.md",
     "subtype": "skill",
     "summary": "liluo-command-approval-governance",
@@ -1751,7 +1751,7 @@
   {
     "id": "docs/技能说明/liluo-creative-team-presence.md",
     "indexVersion": 1,
-    "sourceHash": "e4c79b74b93a7ebc19d95626c2aaa3023908f91caba8f82a293205614680f1d8",
+    "sourceHash": "279ebb9786e9258797820e66682b7e7aad903e63eba8104fde214ecc122da24e",
     "sourcePath": "docs/技能说明/liluo-creative-team-presence.md",
     "subtype": "skill",
     "summary": "liluo-creative-team-presence",
@@ -1817,7 +1817,7 @@
   {
     "id": "docs/技能说明/liluo-natural-expression.md",
     "indexVersion": 1,
-    "sourceHash": "f5689de4a20744f65492fc4c34cf8178656fbbd3d9f1157e783b0ee2fcdc7430",
+    "sourceHash": "bef771ff96c4853e2823f59a0ad59969211323b182ba9be7ca19157bd7515cb3",
     "sourcePath": "docs/技能说明/liluo-natural-expression.md",
     "subtype": "skill",
     "summary": "liluo-natural-expression",
@@ -1861,7 +1861,7 @@
   {
     "id": "docs/技能说明/liluo-project-documentation-sync.md",
     "indexVersion": 1,
-    "sourceHash": "75231754802e521fd14ea51a1cc6e438eb24f5b57fdb4d4e3d36a9347cc1ca6c",
+    "sourceHash": "1bcd5cda49b6952c478a3a97b125c93b0781e023ec26a0768acf386380468a99",
     "sourcePath": "docs/技能说明/liluo-project-documentation-sync.md",
     "subtype": "skill",
     "summary": "liluo-project-documentation-sync",
@@ -1872,7 +1872,7 @@
   {
     "id": "docs/技能说明/liluo-project-governance-memory.md",
     "indexVersion": 1,
-    "sourceHash": "1f4ed31a8061f1e570fe2c2036b7737f35f04faa6cf33e1323f16d94e2c67081",
+    "sourceHash": "f53b9134f0b267c1460f3bee5d3eeb5bc274079131d103b00ea04434edb4a977",
     "sourcePath": "docs/技能说明/liluo-project-governance-memory.md",
     "subtype": "skill",
     "summary": "liluo-project-governance-memory",
@@ -2004,7 +2004,7 @@
   {
     "id": "docs/设计记忆/创作决策/CDR-003-将项目智能体组织为璃落创作组.md",
     "indexVersion": 1,
-    "sourceHash": "224f80df83a387ac3691d0c8315af4cca661fc82e43c756c91e2d0be93699a47",
+    "sourceHash": "81fded599dad13f631a72cf792a991c21d9684056000af79dd32d1f331fbc20f",
     "sourcePath": "docs/设计记忆/创作决策/CDR-003-将项目智能体组织为璃落创作组.md",
     "subtype": "other",
     "summary": "CDR-003：将项目智能体组织为璃落创作组",
@@ -2026,7 +2026,7 @@
   {
     "id": "docs/设计记忆/创作决策/CDR-005-非技术文本默认应用璃落自然表达.md",
     "indexVersion": 1,
-    "sourceHash": "dbd2aab859c0230f782b38e49e8d4c3efefe6b593400a6a553c4cf06cc320ab7",
+    "sourceHash": "43c867b23a63725116ee1f8800ea19cd96b2564a3978e083d48a4eb58184b522",
     "sourcePath": "docs/设计记忆/创作决策/CDR-005-非技术文本默认应用璃落自然表达.md",
     "subtype": "other",
     "summary": "CDR-005：非技术文本默认应用璃落自然表达",
@@ -2070,7 +2070,7 @@
   {
     "id": "docs/设计记忆/架构决策/ADR-002-规范与设计记忆分层治理.md",
     "indexVersion": 1,
-    "sourceHash": "561a21074c27a0c7cbf7d59ac228fb80a17c2872a4246e7d1a87c2548ec00530",
+    "sourceHash": "4d4d1a959290375a6e874915467a68d2cee9d33c548b05463456c45798b2d35f",
     "sourcePath": "docs/设计记忆/架构决策/ADR-002-规范与设计记忆分层治理.md",
     "subtype": "other",
     "summary": "ADR-002：规范与设计记忆分层治理",
@@ -2103,7 +2103,7 @@
   {
     "id": "docs/设计记忆/架构决策/ADR-005-命令授权采用项目规则与决定注册分层治理.md",
     "indexVersion": 1,
-    "sourceHash": "2349057e52411d3d06f0e08a162b3038c4498d6e88ebc7317e91287511b06850",
+    "sourceHash": "709f3d4f9209a19c987762a6bced33dfa59de383caf6d04df58a5070160c493d",
     "sourcePath": "docs/设计记忆/架构决策/ADR-005-命令授权采用项目规则与决定注册分层治理.md",
     "subtype": "other",
     "summary": "ADR-005：命令授权采用项目规则与决定注册分层治理",
@@ -2290,7 +2290,7 @@
   {
     "id": "docs/设计记忆/项目组灵魂/项目组设定.md",
     "indexVersion": 1,
-    "sourceHash": "a44b8662ce2964b86fc160bf5357f02cee641dbf99c9ea6a8ab3bf40132f5fba",
+    "sourceHash": "5793617c77385f4621280b3038641119802b57d0a8da269eca218a7030b3c132",
     "sourcePath": "docs/设计记忆/项目组灵魂/项目组设定.md",
     "subtype": "other",
     "summary": "璃落诸界游戏创作组设定",
@@ -2301,7 +2301,7 @@
   {
     "id": "docs/设计记忆/项目组灵魂/项目组手记/README.md",
     "indexVersion": 1,
-    "sourceHash": "8f61314a038c945f09352d767f0b4059c927f0c034f88fa0a1afc8fd692e51ee",
+    "sourceHash": "7dc3f5d12147d5706fdebe9f9d0ee385d6e3e13957cbc32f181b2c9f763bb8bc",
     "sourcePath": "docs/设计记忆/项目组灵魂/项目组手记/README.md",
     "subtype": "other",
     "summary": "项目组手记",
@@ -2332,6 +2332,17 @@
     "type": "document"
   },
   {
+    "id": "docs/设计记忆/项目组灵魂/项目组手记/TEAM-NOTE-003-谁在创作组记录中说话.md",
+    "indexVersion": 1,
+    "sourceHash": "a57c2b92e7f2f1f0bd5bde2f84210c4d3dd52c881d47eab9a172772249666b91",
+    "sourcePath": "docs/设计记忆/项目组灵魂/项目组手记/TEAM-NOTE-003-谁在创作组记录中说话.md",
+    "subtype": "other",
+    "summary": "谁在创作组记录中说话",
+    "summarySource": "title-only",
+    "title": "谁在创作组记录中说话",
+    "type": "document"
+  },
+  {
     "id": "docs/设计记忆/项目组灵魂/重聚机制.md",
     "indexVersion": 1,
     "sourceHash": "2b29dc207c17ac188898e3d7663420374747f6e24f9748557c7308df80a9949f",
@@ -2345,7 +2356,7 @@
   {
     "id": "docs/设计记忆/项目组灵魂/README.md",
     "indexVersion": 1,
-    "sourceHash": "9cbacdb7d23bb9af566a532caf1859e41544c79ccff6125bba9add9cf2ccf3e9",
+    "sourceHash": "99ee9da7354bc2990e03317d568ec7eb23993c8b2ce0e99ba58dbfc73f23107e",
     "sourcePath": "docs/设计记忆/项目组灵魂/README.md",
     "subtype": "other",
     "summary": "璃落创作组灵魂",
@@ -2576,7 +2587,7 @@
   {
     "id": "docs/系统说明/璃落创作组人格与项目陪伴系统.md",
     "indexVersion": 1,
-    "sourceHash": "c50698da390baf837d940d00f9678d69890da7bf3ee984ecf7a75d6055513292",
+    "sourceHash": "28d921ecb667ee3f0fdb8e41eae79937047a3bfdf1a02337a61b01be9215a9f3",
     "sourcePath": "docs/系统说明/璃落创作组人格与项目陪伴系统.md",
     "subtype": "system",
     "summary": "璃落创作组人格与项目陪伴系统",
@@ -2587,7 +2598,7 @@
   {
     "id": "docs/系统说明/璃落自然表达与文气塑形系统.md",
     "indexVersion": 1,
-    "sourceHash": "d7dfc88aae01da95552431de7f1d01ac2f34899128cb3309a76c0c5271c35100",
+    "sourceHash": "613d1b6ce688fef56d3917fb295e72d5da8999e65dd29fcdce57a1db5261465e",
     "sourcePath": "docs/系统说明/璃落自然表达与文气塑形系统.md",
     "subtype": "system",
     "summary": "璃落自然表达与文气塑形系统",
@@ -2653,7 +2664,7 @@
   {
     "id": "docs/系统说明/项目规范治理与设计记忆系统.md",
     "indexVersion": 1,
-    "sourceHash": "f9191651bd05562abaa1268dfec967796e2b950afe29984e610f7db333a7e79c",
+    "sourceHash": "2c166983849690a0ff8370612496f6159cd47ddd6f3f89d04c089c914fe60d4c",
     "sourcePath": "docs/系统说明/项目规范治理与设计记忆系统.md",
     "subtype": "system",
     "summary": "项目规范治理与设计记忆系统",
@@ -2719,7 +2730,7 @@
   {
     "id": "docs/系统说明/Codex命令授权治理系统.md",
     "indexVersion": 1,
-    "sourceHash": "a4a792065b3a332e4969fec7e44c9c1f769a335da76b42b6a077e288b5250a44",
+    "sourceHash": "0c3c38c7c11371ef661db0db014999a617d9192ee079bfc1ae78f61f06af9ad1",
     "sourcePath": "docs/系统说明/Codex命令授权治理系统.md",
     "subtype": "system",
     "summary": "Codex 命令授权治理系统",
@@ -2736,17 +2747,6 @@
     "summary": "系统说明",
     "summarySource": "title-only",
     "title": "系统说明",
-    "type": "document"
-  },
-  {
-    "id": "docs/系统说明/Windows命令与UTF-8编码规范.md",
-    "indexVersion": 1,
-    "sourceHash": "a28cfb512ff2c98aecf885305909277fb6995155e39e6531f0b6287b54c38880",
-    "sourcePath": "docs/系统说明/Windows命令与UTF-8编码规范.md",
-    "subtype": "system",
-    "summary": "Windows 命令与 UTF-8 编码规范",
-    "summarySource": "title-only",
-    "title": "Windows 命令与 UTF-8 编码规范",
     "type": "document"
   }
 ]

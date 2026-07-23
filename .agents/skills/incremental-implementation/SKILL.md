@@ -1,6 +1,6 @@
 ---
 name: incremental-implementation
-description: Delivers changes incrementally. Use when implementing any feature or change that touches more than one file. Use when you're about to write a large amount of code at once, or when a task feels too big to land in one step.
+description: Deliver genuinely large, risky, or independently releasable changes in thin vertical slices. Use when work spans multiple functional layers or more than roughly 100 lines of substantive implementation; do not trigger for small multi-file synchronization, documentation, metadata, or a single coherent behavior change.
 ---
 
 # Incremental Implementation
@@ -11,12 +11,12 @@ Build in thin vertical slices — implement one piece, test it, verify it, then 
 
 ## When to Use
 
-- Implementing any multi-file change
+- Implementing a change across multiple functional layers
 - Building a new feature from a task breakdown
 - Refactoring existing code
 - Any time you're tempted to write more than ~100 lines before testing
 
-**When NOT to use:** Single-file, single-function changes where the scope is already minimal.
+**When NOT to use:** Small coherent changes even if several consumer files need mechanical synchronization.
 
 ## The Increment Cycle
 
@@ -36,9 +36,9 @@ Build in thin vertical slices — implement one piece, test it, verify it, then 
 For each slice:
 
 1. **Implement** the smallest complete piece of functionality
-2. **Test** — run the test suite (or write a test if none exists)
-3. **Verify** — confirm the slice works as expected (tests pass, build succeeds, manual check)
-4. **Commit** -- save your progress with a descriptive message (see `git-workflow-and-versioning` for atomic commit guidance)
+2. **Test** — run the smallest test that covers the slice
+3. **Verify** — add only the relevant build or manual check when the slice reaches that surface
+4. **Checkpoint** — keep the slice reviewable; commit only when the user requested Git work
 5. **Move to the next slice** — carry forward, don't restart
 
 ## Slicing Strategies
@@ -142,7 +142,7 @@ Each increment changes one logical thing. Don't mix concerns:
 
 ### Rule 2: Keep It Compilable
 
-After each increment, the project must build and existing tests must pass. Don't leave the codebase in a broken state between slices.
+After each increment, run the targeted verification that covers it. Run a build only when compilation, bundling, assets, or browser runtime can be affected. Do not run the full suite after every slice.
 
 ### Rule 3: Feature Flags for Incomplete Features
 
@@ -190,8 +190,8 @@ When directing an agent to implement incrementally:
 Start with just the database schema change and the API endpoint.
 Don't touch the UI yet — we'll do that in the next increment.
 
-After implementing, run `npm test` and `npm run build` to verify
-nothing is broken."
+After implementing, run the API target test. Add a build only if
+this slice changes compilation or bundling."
 ```
 
 Be explicit about what's in scope and what's NOT in scope for each increment.
@@ -201,12 +201,12 @@ Be explicit about what's in scope and what's NOT in scope for each increment.
 After each increment, verify:
 
 - [ ] The change does one thing and does it completely
-- [ ] All existing tests still pass (`npm test`)
-- [ ] The build succeeds (`npm run build`)
-- [ ] Type checking passes (`npx tsc --noEmit`)
-- [ ] Linting passes (`npm run lint`)
+- [ ] The directly affected tests pass
+- [ ] A build succeeds when this slice can affect the build surface
+- [ ] Type checking runs when types or compiled source changed
+- [ ] Linting runs when the changed surface is covered by lint
 - [ ] The new functionality works as expected
-- [ ] The change is committed with a descriptive message
+- [ ] A commit is created only when Git work is in scope
 
 ## Common Rationalizations
 
@@ -234,8 +234,8 @@ After each increment, verify:
 
 After completing all increments for a task:
 
-- [ ] Each increment was individually tested and committed
-- [ ] The full test suite passes
-- [ ] The build is clean
+- [ ] Each increment received the smallest relevant verification
+- [ ] Broader tests ran only when shared behavior was affected
+- [ ] The build ran only when the build surface was affected
 - [ ] The feature works end-to-end as specified
-- [ ] No uncommitted changes remain
+- [ ] Unrelated user changes remain untouched

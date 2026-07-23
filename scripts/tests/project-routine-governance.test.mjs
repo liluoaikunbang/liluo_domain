@@ -10,6 +10,22 @@ import { validateProjectSkillInitRequest } from '../init-project-skill.mjs'
 const root = path.resolve(import.meta.dirname, '..', '..')
 
 test('project routine exposes only fixed safe modes', () => {
+  assert.deepEqual(resolveRoutinePlan('docs').map((step) => step.id), [
+    'docs:check-encoding',
+    'docs:governance:validate',
+    'docs:memory:validate',
+    'docs:commands:validate',
+  ])
+  assert.deepEqual(resolveRoutinePlan('workflow').map((step) => step.id), [
+    'project-routine-governance',
+  ])
+  assert.deepEqual(resolveRoutinePlan('team-presence').map((step) => step.id), [
+    'team-presence-test',
+    'team-notes-validate',
+  ])
+  assert.deepEqual(resolveRoutinePlan('natural-expression').map((step) => step.id), [
+    'natural-expression-test',
+  ])
   assert.deepEqual(resolveRoutinePlan('check').map((step) => step.id), [
     'docs:check-encoding',
     'docs:governance:validate',

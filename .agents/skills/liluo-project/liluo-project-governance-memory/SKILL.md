@@ -24,7 +24,7 @@ Read [persistence-and-decisions.md](references/persistence-and-decisions.md) whe
 3. Update the authority; keep consumers to a local contract, concise summary, and link.
 4. Record architecture or creative rationale only when accepted or already demonstrably adopted. Put unresolved choices in `docs/设计记忆/待确认决策.md`.
 5. Use `liluo-project-documentation-sync` for mechanical feature-record synchronization.
-6. Run the smallest applicable governance commands, then refresh and validate the project index.
+6. Apply the verification budget in the authority document: one targeted verification and at most one related aggregate profile by default. Refresh the project index once at the end only when indexed sources changed.
 
 Do not copy the governance contract into every Skill or Agent. Do not save chat transcripts, hidden reasoning, temporary audit reports, or speculative philosophy. Do not auto-delete similar text or mass-renumber history.
 

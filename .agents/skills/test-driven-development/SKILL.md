@@ -1,23 +1,22 @@
 ---
 name: test-driven-development
-description: Drives development with tests. Use when implementing any logic, fixing any bug, or changing any behavior. Use when you need to prove that code works, when a bug report arrives, or when you're about to modify existing functionality.
+description: Use strict RED-GREEN-REFACTOR for regression bugs, ambiguous behavior, risky logic, or when the user explicitly requests TDD. Do not trigger merely because a small deterministic helper, documentation, configuration, metadata, or static content changes; those changes may use one targeted post-implementation test.
 ---
 
 # Test-Driven Development
 
 ## Overview
 
-Write a failing test before writing the code that makes it pass. For bug fixes, reproduce the bug with a test before attempting a fix. Tests are proof — "seems right" is not done. A codebase with good tests is an AI agent's superpower; a codebase without tests is a liability.
+Use a failing test when the failure itself proves something useful: it reproduces a reported bug, resolves uncertainty about current behavior, or protects risky logic. Do not manufacture a failing run merely to demonstrate that unimplemented code is absent.
 
 ## When to Use
 
-- Implementing any new logic or behavior
-- Fixing any bug (the Prove-It Pattern)
-- Modifying existing functionality
-- Adding edge case handling
-- Any change that could break existing behavior
+- Reproducing and fixing a reported bug
+- Changing ambiguous, stateful, security-sensitive, migration, or otherwise risky behavior
+- Protecting a subtle edge case whose current behavior must be demonstrated
+- Following an explicit user request for strict TDD
 
-**When NOT to use:** Pure configuration changes, documentation updates, or static content changes that have no behavioral impact.
+**When NOT to use:** Documentation, configuration, metadata, static content, straightforward wiring, or a small deterministic helper whose expected input/output is already clear. For those, write or update the targeted test alongside the implementation and run it once after the change.
 
 **Related:** For browser-based changes, combine TDD with runtime verification using Chrome DevTools MCP — see the Browser Testing section below.
 
@@ -32,9 +31,9 @@ Write a failing test before writing the code that makes it pass. For bug fixes, 
    Test FAILS        Test PASSES         Tests still PASS
 ```
 
-### Step 1: RED — Write a Failing Test
+### Step 1: RED — Reproduce a meaningful failure
 
-Write the test first. It must fail. A test that passes immediately proves nothing.
+Write the test first when the task qualifies for strict TDD. Confirm that it fails for the reported or uncertain behavior, not merely because a new symbol has not been created yet.
 
 ```typescript
 // RED: This test fails because createTask doesn't exist yet
@@ -99,7 +98,7 @@ Bug report arrives
   Test PASSES (proving the fix works)
        │
        ▼
-  Run full test suite (no regressions)
+  Run the directly affected regression set
 ```
 
 **Example:**
@@ -360,7 +359,7 @@ For detailed testing patterns, examples, and anti-patterns across frameworks, se
 ## Red Flags
 
 - Writing code without any corresponding tests
-- Tests that pass on the first run (they may not be testing what you think)
+- Claiming a regression was reproduced when no pre-fix failure was observed
 - "All tests pass" but no tests were actually run
 - Bug fixes without reproduction tests
 - Tests that test framework behavior instead of application behavior
@@ -371,9 +370,9 @@ For detailed testing patterns, examples, and anti-patterns across frameworks, se
 
 After completing any implementation:
 
-- [ ] Every new behavior has a corresponding test
-- [ ] All tests pass: `npm test`
-- [ ] Bug fixes include a reproduction test that failed before the fix
+- [ ] Risky or reusable behavior has appropriate targeted coverage
+- [ ] The targeted test passes; broader tests run only when shared behavior is affected
+- [ ] Regression bug fixes include a reproduction test that failed before the fix
 - [ ] Test names describe the behavior being verified
 - [ ] No tests were skipped or disabled
 - [ ] Coverage hasn't decreased (if tracked)

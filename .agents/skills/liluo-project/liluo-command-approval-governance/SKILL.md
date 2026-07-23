@@ -16,7 +16,7 @@ Read root `AGENTS.md`, `docs/系统说明/Codex命令授权治理系统.md`, and
 
 Use `npm run commands:approval:classify -- --text "..." --command "npm run ..."` for deterministic support; the main Codex owns the contextual decision. Use JSON `--pattern` only when an argument itself contains spaces.
 
-Prefer the already governed `npm run project:routine -- check|test|build|index|all` for ordinary project work and `npm run project:skill:init -- ...` for new `liluo-*` Skill scaffolds. Do not split these back into many interpreter-level approvals unless the fixed dispatcher cannot express the required action.
+Prefer the smallest governed `npm run project:routine -- docs|workflow|team-presence|natural-expression|check|test|build|index|all` profile and `npm run project:skill:init -- ...` for new `liluo-*` Skill scaffolds. Use `check`/`test`/`build`/`index`/`all` only when the actual change spans those surfaces. Do not split fixed profiles back into interpreter-level approvals, and never run a known child-process command in the sandbox merely to collect an expected `EPERM`.
 
 ## Persist a project decision
 

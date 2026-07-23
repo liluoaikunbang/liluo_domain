@@ -25,7 +25,7 @@ For mixed documents, isolate narrative regions. Leave technical blocks unchanged
 1. Identify the text type, audience, operation, and intensity.
 2. Extract immutable anchors: names, keys, values, states, order dependencies, locations, and explicit constraints.
 3. Load only the matching reference: fiction, outline, game dialogue, team dialogue, project notes, public development writing, fictional adult restraint narrative, or character voice.
-4. Diagnose by paragraph function, rhythm, narrative distance, voice, and subtext. Do not reduce diagnosis to banned-word replacement.
+4. Diagnose physical and behavioral plausibility first, then paragraph function, rhythm, narrative distance, voice, and subtext. Do not trade an ordinary credible action for an invented clever detail merely to imply character history or avoid direct expression.
 5. Change the smallest span that improves the passage. Preserve already-natural writing.
 6. In `deep`, run a second mechanical-pattern pass, compare every anchor with the source, and cut ornamental expansion.
 

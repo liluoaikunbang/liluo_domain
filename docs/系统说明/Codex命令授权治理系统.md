@@ -24,15 +24,28 @@ npm run project:routine -- test
 npm run project:routine -- build
 npm run project:routine -- index
 npm run project:routine -- all
+npm run project:routine -- docs
+npm run project:routine -- workflow
+npm run project:routine -- team-presence
+npm run project:routine -- natural-expression
 
 npm run project:skill:init -- --name liluo-example --area liluo-project --resources references,scripts
 ```
 
-`project:routine` 只接受 `check`、`test`、`build`、`index`、`all`；子命令表固定在 `scripts/project-routine.mjs`，拒绝附加参数和任意命令。`all` 先刷新索引，再检查、测试和构建。`project:skill:init` 只包装官方 `skill-creator`，名称必须为 `liluo-*`，目标只允许 `.agents/skills/liluo-project|writing|testing`，资源只允许 `references`、`scripts`、`assets`。
+`project:routine` 只接受固定 profile，拒绝附加参数和任意命令。`docs` 只检查文档编码、治理注册表、设计记忆与用户命令；`workflow` 只验证聚合入口和授权边界；`team-presence` 只运行创作组目标测试与手记验证；`natural-expression` 只运行自然表达目标测试。`check`、`test`、`build`、`index`、`all` 保留给确实跨域或完整交付的任务，`all` 不得作为普通结束门禁。`project:skill:init` 只包装官方 `skill-creator`，名称必须为 `liluo-*`，目标只允许 `.agents/skills/liluo-project|writing|testing`，资源只允许 `references`、`scripts`、`assets`。
 
 这两个精确前缀同时登记在项目规则和 Codex 客户端长期批准中。Agent 调用时应直接请求沙箱外执行已批准入口：这样内部 `codex execpolicy`、测试、构建及 `.agents` 写入不会先在沙箱内触发 `EPERM`，匹配已批准前缀时也不会再次逐条询问。这里批准的是固定 npm script，不是宽泛的 `npm`、`node`、Python 或 PowerShell。
 
-这两个精确前缀同时进入项目 execpolicy 与当前客户端批准前缀。前者负责仓库长期规则，后者减少当前平台实际弹窗。项目规则仍不能取消管理员强制策略；但常规测试子进程和 `.agents` 脚手架不再需要每个文件、每条解释器命令单独批准。
+这两个精确前缀同时进入项目 execpolicy 与当前客户端批准前缀。前者负责仓库长期规则，后者减少当前平台实际弹窗。项目规则仍不能取消管理员强制策略；但常规测试子进程和 `.agents` 脚手架不再需要每个文件、每条解释器命令单独批准。已知会创建子进程或写入受限目录的固定 profile 必须直接申请沙箱外执行；禁止先在沙箱内试跑、等待可预见的 `EPERM` 后再重试。
+
+## 选择 profile，而不是叠加命令
+
+- 优先选择最小 profile；一项 profile 已覆盖的子命令不再单独执行。
+- 文档或 Skill 规则变化默认不运行 Web 构建。
+- 未修改 roster 时不运行名单验证；未修改游戏内容时不运行内容总检。
+- 只有相关文件在验证后再次变化，才重跑对应 profile。
+- 已知存在无关历史问题的全量 audit 不作为普通任务结束步骤。
+- 严格 RED 只服务真实缺陷复现、行为不明或高风险逻辑；小型确定性新增不进行故意失败的预跑。
 
 目录和文本文件的普通创建/修改优先使用受控文件补丁；不为 `New-Item`、任意 `node`、任意 Python 或 PowerShell 建立宽泛 allow。网络、依赖、Git 写入、删除、发布和项目外写入继续逐次审批。
 
@@ -101,6 +114,10 @@ npm run project:routine -- test
 npm run project:routine -- build
 npm run project:routine -- index
 npm run project:routine -- all
+npm run project:routine -- docs
+npm run project:routine -- workflow
+npm run project:routine -- team-presence
+npm run project:routine -- natural-expression
 npm run project:skill:init -- --name liluo-example --area liluo-project --resources references,scripts
 npm run commands:approval:classify -- --text "这个项目以后允许" --command "npm run docs:check-encoding"
 npm run commands:approval:audit -- --input "$env:USERPROFILE\.codex\rules\default.rules"

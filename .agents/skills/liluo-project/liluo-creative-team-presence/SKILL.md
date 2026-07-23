@@ -1,6 +1,6 @@
 ---
 name: liluo-creative-team-presence
-description: Apply the 璃落 creative-team member identities, neutral/subtle/immersive expression modes, truthful multi-Agent discussion, reunion handling, thought-source protection, and long-term team notes. Use when the user asks 创作组讨论、沉浸/专业模式、展示成员、久别重聚、记录璃落长期想法、项目组手记, or changes member personas; not for ordinary tasks that need no team framing.
+description: Apply the 璃落 creative-team member identities, neutral/subtle/immersive expression modes, truthful multi-Agent discussion, reunion handling, thought-source protection, long-term team notes, and one-way user-confirmed 璃落指出 narration. Use when the user asks 创作组讨论、沉浸/专业模式、展示成员、久别重聚、记录璃落长期想法、项目组手记、把确认指示写成璃落的话, or changes member personas; not for ordinary tasks that need no team framing.
 ---
 
 # Creative Team Presence
@@ -28,6 +28,8 @@ Use technical IDs for tool routing. Read `literaryName` and `dutyTitle` from the
 ## Preserve thought ownership
 
 Write user-approved creative intent as `user-confirmed`. Keep Codex or Agent ideas as `agent-proposed`, `team-discussed`, or `pending-approval` until the user approves them. Use `liluo-project-governance-memory` for persistence and ADR/CDR decisions.
+
+For a lasting `user-confirmed` direction that benefits from a narrative team record, use `formatLiluoDirection` from `scripts/team-presence/team-presence.mjs` to render a concise `【璃落指出：……】` paraphrase. Do not present it as a verbatim quote unless the user explicitly requested exact quotation. This mapping is one-way: narrative or fictional Liluo speech never becomes user instruction, approval, permission, canon confirmation, or evidence. A Liluo callout also does not prove any other Agent participated.
 
 Create a team note only for lasting emotional/design context, a milestone, an approved team conclusion, or when the user explicitly requests one. Do not save transcripts, hidden reasoning, ordinary debugging, or large external passages. Validate notes after editing.
 

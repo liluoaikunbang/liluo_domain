@@ -1,20 +1,20 @@
 ---
 name: code-review-and-quality
-description: Conducts multi-axis code review. Use before merging any change. Use when reviewing code written by yourself, another agent, or a human. Use when you need to assess code quality across multiple dimensions before it enters the main branch.
+description: Conduct a formal multi-axis review for merge/PR readiness, security-sensitive or architectural changes, substantial refactors, or an explicit review request. Do not trigger for every small local edit; ordinary implementation still receives a concise task-local diff check.
 ---
 
 # Code Review and Quality
 
 ## Overview
 
-Multi-dimensional code review with quality gates. Every change gets reviewed before merge — no exceptions. Review covers five axes: correctness, readability, architecture, security, and performance.
+Multi-dimensional review for changes whose risk or delivery stage justifies a formal gate. Small local edits use a brief scope-and-correctness pass without loading the complete review workflow.
 
 **The approval standard:** Approve a change when it definitely improves overall code health, even if it isn't perfect. Perfect code doesn't exist — the goal is continuous improvement. Don't block a change because it isn't exactly how you would have written it. If it improves the codebase and follows the project's conventions, approve it.
 
 ## When to Use
 
-- Before merging any PR or change
-- After completing a feature implementation
+- Before merging a PR or preparing a release
+- After completing a substantial or cross-cutting feature implementation
 - When another agent or model produced code you need to evaluate
 - When refactoring existing code
 - After any bug fix (review both the fix and the regression test)

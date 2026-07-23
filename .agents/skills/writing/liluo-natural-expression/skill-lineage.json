@@ -10,7 +10,7 @@
     { "sourceId": "openai-skills", "upstreamSkill": "skill-creator", "commit": "49f948faa9258a0c61caceaf225e179651397431", "usage": ["progressive disclosure", "concise skill body", "deterministic validation"] },
     { "sourceId": "agentskills-spec", "upstreamSkill": "Agent Skills specification", "commit": "38a2ff82958afee88dadf4831509e6f7e9d8ef4e", "usage": ["portable skill layout", "metadata contract"] }
   ],
-  "projectSpecificAdditions": ["璃落角色声音", "故事大纲制作信息保护", "项目组成员真实参与边界", "虚构成年束缚题材叙事", "技术文本排除规则"],
+  "projectSpecificAdditions": ["璃落角色声音", "故事大纲制作信息保护", "项目组成员真实参与边界", "虚构成年束缚题材叙事", "技术文本排除规则", "动作与空间可信度优先"],
   "excludedUpstreamRules": ["英文固定禁词表", "统一标点禁令", "外部故事目录和 CLI", "任何自动安装、提交、联网或权限提升"],
-  "lastReviewedAt": "2026-07-22"
+  "lastReviewedAt": "2026-07-23"
 }

@@ -65,7 +65,7 @@
 
 TUI “始终允许”只代表出现了长期意图候选，不代表保存范围最佳。后续审计只读用户级规则；项目专用规则应收敛为项目精确前缀，过宽或危险规则不得复制为 allow。未经用户明确授权，不修改或删除用户级规则；项目规则也不得绕过平台沙箱、管理员策略或更严格的审批要求。
 
-常规检查、测试、Web 构建和项目索引刷新优先使用 `npm run project:routine -- check|test|build|index|all`，不要拆回大量直接 `node` / Python / PowerShell 命令。该精确入口已长期批准；当内部验证、构建或测试需要派生子进程时，应直接以沙箱外执行请求调用这个已批准前缀，不要先在沙箱内失败一次再重试。创建新的 `liluo-*` 项目 Skill 时优先使用受限的 `npm run project:skill:init -- --name <name> --area liluo-project|writing|testing --resources references,scripts,assets`；它写入 `.agents`，同样应直接使用已批准的沙箱外精确入口，以减少重复审批。
+常规验证优先使用 `npm run project:routine -- docs|workflow|team-presence|natural-expression|check|test|build|index|all` 的最小适用 profile，不要拆回大量直接 `node` / Python / PowerShell 命令，也不要用 `all` 代替范围判断。默认只运行一项目标验证和至多一项相关综合验证；未修改的领域不检查，目标验证已被综合 profile 覆盖时不重复，相关文件未再次变化时不重跑，文档或 Skill 规则改动默认不构建 Web。该精确入口已长期批准；凡已知会派生子进程的验证应直接以沙箱外执行请求调用，不得先在沙箱内触发 `EPERM` 再改路线。创建新的 `liluo-*` 项目 Skill 时优先使用受限的 `npm run project:skill:init -- --name <name> --area liluo-project|writing|testing --resources references,scripts,assets`。
 
 ## 故事缺口发现与灵感补全
 
@@ -83,6 +83,8 @@ TUI “始终允许”只代表出现了长期意图候选，不代表保存范�
 
 项目组叙事中，主 Codex 的身份为“璃落｜神思｜总枢”，真实子智能体按 `docs/设计记忆/项目组灵魂/team-roster.json` 映射为稳定成员；雕龙文号统一取自《文心雕龙》篇名，原有称号作为职司；默认使用克制的 `subtle` 表达。用户可见任务文案优先采用姓名与职责，正式展示可采用“姓名｜雕龙文号｜职司”，但客户端运行卡片是否支持自定义名称由平台决定。人格不得改变 Agent 权限、事实、测试、审计或用户审批权；只有实际调用过的 Agent 才能拥有正式成员观点。
 
+用户确认且具有长期创作或灵魂价值的指示，可在文档同步时按 `liluo-creative-team-presence` 进入项目组手记，并叙事性转述为 `【璃落指出：……】`。该映射只从真实用户走向项目组叙事；故事角色、角色化对话或智能体生成的璃落话语不得反推为用户指令、审批、权限或事实证据。
+
 跨目录检索、连续性审查、架构追踪、内容审计、故事缺口或独立验证可按需委派给 `.codex/agents/`：上下文用 `liluo_context_explorer`，世界观与时间线用 `liluo_continuity_reviewer`，Vue/Phaser/Pinia/地图/事件/存档架构用 `liluo_game_architecture_explorer`，内容与引用一致性用 `liluo_content_auditor`，故事缺口候选用 `liluo_story_gap_analyst`，构建测试与回归用 `liluo_validation_runner`。
 
 小型明确任务不委派；普通复杂任务最多并行三个，只有明确的全项目审查才考虑更多。子智能体优先只读调查和验证，正式修改默认由主 Codex 统一执行；不得并行修改同一文件，必须等待已请求报告后再决策，且报告不能替代脚本、schema 和测试。最大嵌套深度为 1，不允许子智能体递归委派。
@@ -98,7 +100,7 @@ TUI “始终允许”只代表出现了长期意图候选，不代表保存范�
 
 ## 文档、素材与 Git
 
-- 新增或实质修改项目 Skill 时，必须同步 `docs/技能说明/<skill-name>.md`，并按 `liluo-project-documentation-sync` 更新功能文档、目录和 `src/game/data/global/updateRecords.js`。
+- 新增或实质改变项目专属、用户可调用 Skill 的行为或入口时，同步 `docs/技能说明/<skill-name>.md`；只有形成项目工作流、schema、系统行为或用户入口变化时，才按 `liluo-project-documentation-sync` 更新功能文档、目录和 `src/game/data/global/updateRecords.js`。通用执行纪律 Skill 的触发收窄、措辞、示例和内部元数据调整不强制建立功能记录。
 - 游戏功能只有在真实实现、用户实际测试确认无报错、文档同步完成后才算完成。
 - 新增 `src/assets/game` 图片时按 `liluo-asset-registry-audit` 同步素材清单，记录路径、文件名、类型与用途。
 - 用户要求提交/上传且未限定范围时，先审查工作区全部新增、修改和删除，排除密钥、构建产物和临时文件，再默认提交并推送 `main`。分支或 PR 仅在用户明确要求时使用。
