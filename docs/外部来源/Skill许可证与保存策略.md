@@ -1,0 +1,12 @@
+# Skill 许可证与保存策略
+
+许可证按具体仓库、具体路径和固定 commit 核验，不能因为组织官方、仓库根许可证或相邻 Skill 的许可证相同就推断全部文件可再分发。
+
+- 许可明确且需差异跟踪：`selected-files` 或谨慎的 `full-snapshot`。
+- 聚合目录只作发现：`catalog-only`。
+- 许可证、维护质量或工具兼容性未确认：`metadata-only` 或候选清单，不复制正文。
+- 许可证变化：diff 立即 `blocked`，建议 `license-review`；不会自动接受。
+- 保存原始文件时同时保留对应 LICENSE、上游路径、commit、抓取时间和 SHA-256。
+- 来源删除或改名不会自动删除本地正式 Skill；上游更新也不会自动覆盖项目解释。
+
+本次 OpenAI 来源只核验并保存 `skills/.system/skill-creator/` 自带的 Apache-2.0 许可证与选取文件，不能把此结论扩展到仓库其他 Skill。

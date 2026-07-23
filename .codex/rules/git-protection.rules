@@ -1,0 +1,6 @@
+# match: ["git", "push", "origin", "main"] => prompt
+# not_match: ["git", "status"] => no project decision
+prefix_rule(pattern = ["git", ["commit", "push", "reset", "clean", "rebase"]], decision = "prompt", justification = "Git 写入、远端操作与历史改写必须保留用户审批。")
+# match: ["git", "push", "--force", "origin", "main"] => forbidden
+# not_match: ["git", "push", "origin", "main"] => prompt
+prefix_rule(pattern = ["git", "push", ["--force", "-f"]], decision = "forbidden", justification = "项目默认禁止强制推送；改变此规则需要明确修改长期规范。")

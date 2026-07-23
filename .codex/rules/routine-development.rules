@@ -1,0 +1,5 @@
+# 精确、低风险、项目内只读验证。match / not_match 由回归测试覆盖。
+# match: ["npm", "run", "docs:check-encoding"] => allow
+# not_match: ["npm", "run", "external-skills:fetch"] => prompt (project-escalations.rules)
+
+prefix_rule(pattern = ["npm", "run", ["docs:check-encoding", "docs:governance:validate", "docs:memory:validate", "docs:commands:validate", "project:index:check", "project:index:validate", "external-skills:catalog", "external-skills:validate", "commands:approval:validate", "commands:approval:test"]], decision = "allow", justification = "项目内确定性只读检查或单元测试，不访问网络、不写用户级配置。")

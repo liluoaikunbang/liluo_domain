@@ -1,0 +1,16 @@
+{
+  "localSkill": "liluo-natural-expression",
+  "category": "writing",
+  "origin": "project-adapted",
+  "projectAuthority": true,
+  "upstreamSources": [
+    { "sourceId": "haowjy-creative-writing-skills", "upstreamSkill": "writing-principles / creative-writing-craft", "commit": "f3a146baedbb407e9bddfcae83befae8d5cfe387", "usage": ["reader inference", "economy", "POV knowledge boundary", "progressive craft references"] },
+    { "sourceId": "conorbronsdon-avoid-ai-writing", "upstreamSkill": "avoid-ai-writing", "commit": "660c95cfd5b67604ad5ed598a8bd1be92e0ee3d5", "usage": ["diagnose/rewrite separation", "minimal edits", "second-pass audit", "preserve natural passages"] },
+    { "sourceId": "danjdewhurst-story-skills", "upstreamSkill": "revision-continuity", "commit": "c482d48f4eb9b488f033a77a51f9fae55cc0d75f", "usage": ["pre-revision continuity anchors", "post-revision dependent-state check"] },
+    { "sourceId": "openai-skills", "upstreamSkill": "skill-creator", "commit": "49f948faa9258a0c61caceaf225e179651397431", "usage": ["progressive disclosure", "concise skill body", "deterministic validation"] },
+    { "sourceId": "agentskills-spec", "upstreamSkill": "Agent Skills specification", "commit": "38a2ff82958afee88dadf4831509e6f7e9d8ef4e", "usage": ["portable skill layout", "metadata contract"] }
+  ],
+  "projectSpecificAdditions": ["璃落角色声音", "故事大纲制作信息保护", "项目组成员真实参与边界", "虚构成年束缚题材叙事", "技术文本排除规则"],
+  "excludedUpstreamRules": ["英文固定禁词表", "统一标点禁令", "外部故事目录和 CLI", "任何自动安装、提交、联网或权限提升"],
+  "lastReviewedAt": "2026-07-22"
+}

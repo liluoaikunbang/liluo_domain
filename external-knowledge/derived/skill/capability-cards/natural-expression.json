@@ -1,0 +1,3 @@
+{
+  "id": "skill-capability-natural-expression", "cardType": "capability", "title": "自然表达与机械味诊断", "summary": "在不改变事实与用途的前提下，诊断段落功能、节奏、人物声音、解释复写和模板化收束。", "triggers": ["故事润色", "对话润色", "只检查 AI 味"], "inputs": ["文本", "文本类型", "事实锚点"], "outputs": ["诊断或局部修订"], "methods": ["diagnose", "minimal revise", "second pass"], "limitations": ["不能证明作者身份", "不能替代连续性审计"], "sourceIds": ["haowjy-creative-writing-skills", "conorbronsdon-avoid-ai-writing"], "projectRelevance": 5
+}

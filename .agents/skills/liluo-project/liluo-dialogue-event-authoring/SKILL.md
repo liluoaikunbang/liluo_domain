@@ -12,3 +12,5 @@ Use current story/game indexes to locate references, verify original event/dialo
 Define how the player enters, acts, branches, changes state, succeeds/fails/exits and re-enters. Reuse actual schema and resource keys; never invent IDs or overwrite state unconditionally. Keep exploration and player action central rather than reducing the game to dialogue boxes. Validate JSON, registry references, event-runner/dialogue tests and build.
 
 For cross-file events, use `liluo_context_explorer` for story/gameplay evidence and `liluo_continuity_reviewer` when relationships or chronology are involved. Both remain read-only; the parent authors event data.
+
+Before formal dialogue, event, code, image or audio writes, apply `docs/系统说明/正式项目内容来源与版权写入门槛.md` and fail closed on unknown or reference-only inputs.

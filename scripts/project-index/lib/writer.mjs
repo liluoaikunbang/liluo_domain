@@ -10,7 +10,7 @@ export async function atomicReplaceDirectory(target, build) {
     const existing = []
     const visitExisting = (dir) => { for (const entry of fs.readdirSync(dir, { withFileTypes: true })) { if (entry.name.startsWith('.build-tmp-')) continue; const full = path.join(dir, entry.name); if (entry.isDirectory()) visitExisting(full); else existing.push(full) } }; visitExisting(target)
     for (const file of staged) { const relative = path.relative(temp, file); const destination = path.join(target, relative); fs.mkdirSync(path.dirname(destination), { recursive: true }); const swap = `${destination}.new`; fs.copyFileSync(file, swap); fs.renameSync(swap, destination) }
-    for (const file of existing) if (!stagedRelative.has(path.relative(target, file))) fs.rmSync(file)
+    for (const file of existing) if (!stagedRelative.has(path.relative(target, file))) fs.rmSync(file, { force: true })
     fs.rmSync(temp, { recursive: true, force: true })
   } catch (error) { if (fs.existsSync(temp)) fs.rmSync(temp, { recursive: true, force: true }); throw error }
 }

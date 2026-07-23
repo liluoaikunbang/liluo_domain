@@ -1,0 +1,3 @@
+{
+  "id": "skill-pattern-reader-inference-economy", "cardType": "pattern", "title": "读者推断与表达经济性", "summary": "在读者能从动作和处境推断时停止解释，让一个细节同时承担空间、人物和推进功能。", "steps": ["identify reader work", "remove duplicate explanation", "keep orientation"], "sourceIds": ["haowjy-creative-writing-skills"], "projectRelevance": 5
+}

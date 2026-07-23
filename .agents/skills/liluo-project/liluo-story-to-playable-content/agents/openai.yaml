@@ -1,0 +1,4 @@
+interface:
+  display_name: "璃落故事可玩化"
+  short_description: "把单个已批准故事节点转成可验证的制作计划或实现"
+  default_prompt: "使用 $liluo-story-to-playable-content 为指定故事节点生成保守的可玩化计划，核验真实引用并列出缺口。"

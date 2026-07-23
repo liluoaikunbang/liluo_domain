@@ -1,0 +1,515 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-22T14:28:06.800Z",
+  "sourceCount": 5,
+  "cardCount": 9,
+  "sources": [
+    {
+      "schemaVersion": 1,
+      "sourceId": "agentskills-spec",
+      "displayName": "Agent Skills Open Specification",
+      "category": [
+        "standards",
+        "agent-engineering"
+      ],
+      "repository": "https://github.com/agentskills/agentskills",
+      "defaultBranch": "main",
+      "trackedPaths": [
+        "LICENSE",
+        "docs/specification.mdx"
+      ],
+      "storageMode": "selected-files",
+      "trustTier": "authoritative-standard",
+      "license": {
+        "type": "Apache-2.0",
+        "verified": true,
+        "licensePath": "LICENSE",
+        "redistributionAllowed": true
+      },
+      "version": {
+        "currentCommit": "38a2ff82958afee88dadf4831509e6f7e9d8ef4e",
+        "currentRelease": null,
+        "fetchedAt": "2026-07-22T00:00:00.000Z",
+        "lastCheckedAt": "2026-07-22T00:00:00.000Z",
+        "nextCheckAt": "2026-08-21T00:00:00.000Z"
+      },
+      "updatePolicy": {
+        "checkIntervalDays": 30,
+        "fetchToStagingWhenDue": true,
+        "autoReplaceCurrentSnapshot": false,
+        "autoModifyLocalSkills": false
+      },
+      "security": {
+        "containsExecutableCode": false,
+        "containsPromptInstructions": false,
+        "trustedForDirectExecution": false,
+        "auditStatus": "reviewed"
+      },
+      "localUsage": {
+        "status": "referenced",
+        "adaptedSkills": [
+          "liluo-natural-expression"
+        ],
+        "notes": "格式与渐进披露规范；原始层不具备指令权。"
+      },
+      "sourceFile": "external-knowledge/sources/skill/standards/agentskills-spec/source.yaml"
+    },
+    {
+      "schemaVersion": 1,
+      "sourceId": "openai-skills",
+      "displayName": "OpenAI Skills Catalog",
+      "category": [
+        "standards",
+        "agent-engineering"
+      ],
+      "repository": "https://github.com/openai/skills",
+      "defaultBranch": "main",
+      "trackedPaths": [
+        "skills/.system/skill-creator/SKILL.md",
+        "skills/.system/skill-creator/LICENSE.txt"
+      ],
+      "storageMode": "selected-files",
+      "trustTier": "official-primary",
+      "license": {
+        "type": "Apache-2.0 (selected skill only)",
+        "verified": true,
+        "licensePath": "skills/.system/skill-creator/LICENSE.txt",
+        "redistributionAllowed": true
+      },
+      "version": {
+        "currentCommit": "49f948faa9258a0c61caceaf225e179651397431",
+        "currentRelease": null,
+        "fetchedAt": "2026-07-22T00:00:00.000Z",
+        "lastCheckedAt": "2026-07-22T00:00:00.000Z",
+        "nextCheckAt": "2026-07-29T00:00:00.000Z"
+      },
+      "updatePolicy": {
+        "checkIntervalDays": 7,
+        "fetchToStagingWhenDue": true,
+        "autoReplaceCurrentSnapshot": false,
+        "autoModifyLocalSkills": false
+      },
+      "security": {
+        "containsExecutableCode": false,
+        "containsPromptInstructions": true,
+        "trustedForDirectExecution": false,
+        "auditStatus": "reviewed-selected-files"
+      },
+      "localUsage": {
+        "status": "referenced",
+        "adaptedSkills": [
+          "liluo-natural-expression"
+        ],
+        "notes": "逐 Skill 许可证；用户列出的 develop-web-game 路径在本次 HEAD 中不存在，未编造快照。"
+      },
+      "sourceFile": "external-knowledge/sources/skill/standards/openai-skills/source.yaml"
+    },
+    {
+      "schemaVersion": 1,
+      "sourceId": "conorbronsdon-avoid-ai-writing",
+      "displayName": "Avoid AI Writing",
+      "category": [
+        "writing",
+        "editing"
+      ],
+      "repository": "https://github.com/conorbronsdon/avoid-ai-writing",
+      "defaultBranch": "main",
+      "trackedPaths": [
+        "LICENSE",
+        "SKILL.md"
+      ],
+      "storageMode": "selected-files",
+      "trustTier": "focused-writing-reference",
+      "license": {
+        "type": "MIT",
+        "verified": true,
+        "licensePath": "LICENSE",
+        "redistributionAllowed": true
+      },
+      "version": {
+        "currentCommit": "660c95cfd5b67604ad5ed598a8bd1be92e0ee3d5",
+        "currentRelease": null,
+        "fetchedAt": "2026-07-22T00:00:00.000Z",
+        "lastCheckedAt": "2026-07-22T00:00:00.000Z",
+        "nextCheckAt": "2026-08-21T00:00:00.000Z"
+      },
+      "updatePolicy": {
+        "checkIntervalDays": 30,
+        "fetchToStagingWhenDue": true,
+        "autoReplaceCurrentSnapshot": false,
+        "autoModifyLocalSkills": false
+      },
+      "security": {
+        "containsExecutableCode": false,
+        "containsPromptInstructions": true,
+        "trustedForDirectExecution": false,
+        "auditStatus": "reviewed-selected-files"
+      },
+      "localUsage": {
+        "status": "adapted",
+        "adaptedSkills": [
+          "liluo-natural-expression"
+        ],
+        "notes": "只吸收诊断、局部修改、二次检查和保护自然段落；不采用英文禁词表。"
+      },
+      "sourceFile": "external-knowledge/sources/skill/writing/conorbronsdon-avoid-ai-writing/source.yaml"
+    },
+    {
+      "schemaVersion": 1,
+      "sourceId": "danjdewhurst-story-skills",
+      "displayName": "Story Skills",
+      "category": [
+        "writing",
+        "story"
+      ],
+      "repository": "https://github.com/danjdewhurst/story-skills",
+      "defaultBranch": "main",
+      "trackedPaths": [
+        "LICENSE",
+        "skills/chapter-writing/",
+        "skills/revision-continuity/"
+      ],
+      "storageMode": "selected-files",
+      "trustTier": "primary-story-reference",
+      "license": {
+        "type": "MIT",
+        "verified": true,
+        "licensePath": "LICENSE",
+        "redistributionAllowed": true
+      },
+      "version": {
+        "currentCommit": "c482d48f4eb9b488f033a77a51f9fae55cc0d75f",
+        "currentRelease": null,
+        "fetchedAt": "2026-07-22T00:00:00.000Z",
+        "lastCheckedAt": "2026-07-22T00:00:00.000Z",
+        "nextCheckAt": "2026-08-21T00:00:00.000Z"
+      },
+      "updatePolicy": {
+        "checkIntervalDays": 30,
+        "fetchToStagingWhenDue": true,
+        "autoReplaceCurrentSnapshot": false,
+        "autoModifyLocalSkills": false
+      },
+      "security": {
+        "containsExecutableCode": false,
+        "containsPromptInstructions": true,
+        "trustedForDirectExecution": false,
+        "auditStatus": "reviewed-selected-files"
+      },
+      "localUsage": {
+        "status": "adapted",
+        "adaptedSkills": [
+          "liluo-natural-expression"
+        ],
+        "notes": "只吸收连续性锚点和修订后核对方法，不引入其故事目录与 CLI。"
+      },
+      "sourceFile": "external-knowledge/sources/skill/writing/danjdewhurst-story-skills/source.yaml"
+    },
+    {
+      "schemaVersion": 1,
+      "sourceId": "haowjy-creative-writing-skills",
+      "displayName": "Creative Writing Skills",
+      "category": [
+        "writing",
+        "fiction"
+      ],
+      "repository": "https://github.com/haowjy/creative-writing-skills",
+      "defaultBranch": "main",
+      "trackedPaths": [
+        "LICENSE",
+        "skills/writing-principles/",
+        "skills/creative-writing-craft/"
+      ],
+      "storageMode": "selected-files",
+      "trustTier": "primary-writing-reference",
+      "license": {
+        "type": "Apache-2.0",
+        "verified": true,
+        "licensePath": "LICENSE",
+        "redistributionAllowed": true
+      },
+      "version": {
+        "currentCommit": "f3a146baedbb407e9bddfcae83befae8d5cfe387",
+        "currentRelease": null,
+        "fetchedAt": "2026-07-22T00:00:00.000Z",
+        "lastCheckedAt": "2026-07-22T00:00:00.000Z",
+        "nextCheckAt": "2026-08-21T00:00:00.000Z"
+      },
+      "updatePolicy": {
+        "checkIntervalDays": 30,
+        "fetchToStagingWhenDue": true,
+        "autoReplaceCurrentSnapshot": false,
+        "autoModifyLocalSkills": false
+      },
+      "security": {
+        "containsExecutableCode": false,
+        "containsPromptInstructions": true,
+        "trustedForDirectExecution": false,
+        "auditStatus": "reviewed-selected-files"
+      },
+      "localUsage": {
+        "status": "adapted",
+        "adaptedSkills": [
+          "liluo-natural-expression"
+        ],
+        "notes": "抽象读者推断空间、经济性、视角知识边界与按需参考结构。"
+      },
+      "sourceFile": "external-knowledge/sources/skill/writing/haowjy-creative-writing-skills/source.yaml"
+    }
+  ],
+  "upstreamSkills": [
+    {
+      "upstreamSkillId": "agentskills-spec:specification",
+      "sourceId": "agentskills-spec",
+      "name": "Agent Skills specification",
+      "upstreamPath": "docs/specification.mdx",
+      "category": [
+        "standards",
+        "agent-engineering"
+      ],
+      "summary": "Skill 目录、元数据和渐进披露的开放格式规范。",
+      "inputs": [
+        "Skill package"
+      ],
+      "outputs": [
+        "portable skill contract"
+      ],
+      "coreMethods": [
+        "metadata-first discovery",
+        "progressive disclosure"
+      ],
+      "bundledScripts": [],
+      "externalDependencies": [],
+      "riskFlags": [],
+      "licenseStatus": "verified",
+      "projectRelevance": 5,
+      "qualityConfidence": 5,
+      "localSkillRelations": [
+        "liluo-natural-expression"
+      ],
+      "commit": "38a2ff82958afee88dadf4831509e6f7e9d8ef4e",
+      "contentHash": "256b16d790cf3aa251a9b7f8fdd9802301a7d010c52b8cd3d1b465d52c79cdbd"
+    },
+    {
+      "upstreamSkillId": "openai-skills:skill-creator",
+      "sourceId": "openai-skills",
+      "name": "skill-creator",
+      "upstreamPath": "skills/.system/skill-creator/SKILL.md",
+      "category": [
+        "agent-engineering"
+      ],
+      "summary": "通过简洁主体、按需 references、脚本验证和真实用例创建可维护 Skill。",
+      "inputs": [
+        "skill requirements"
+      ],
+      "outputs": [
+        "validated skill package"
+      ],
+      "coreMethods": [
+        "progressive disclosure",
+        "deterministic validation"
+      ],
+      "bundledScripts": [
+        "init_skill.py",
+        "quick_validate.py"
+      ],
+      "externalDependencies": [
+        "Python"
+      ],
+      "riskFlags": [
+        "bundled-executable-code"
+      ],
+      "licenseStatus": "verified",
+      "projectRelevance": 5,
+      "qualityConfidence": 5,
+      "localSkillRelations": [
+        "liluo-natural-expression"
+      ],
+      "commit": "49f948faa9258a0c61caceaf225e179651397431",
+      "contentHash": "02167b0ecf9f17bb3d2e3395c3d20fe0c356e4edc57a99fc3ad8a82ef82ccfe2"
+    },
+    {
+      "upstreamSkillId": "haowjy-creative-writing-skills:writing-principles",
+      "sourceId": "haowjy-creative-writing-skills",
+      "name": "writing-principles",
+      "upstreamPath": "skills/writing-principles/SKILL.md",
+      "category": [
+        "writing",
+        "fiction"
+      ],
+      "summary": "以读者推断、经济性、视角知识边界和阅读奖励诊断机械写作。",
+      "inputs": [
+        "draft prose"
+      ],
+      "outputs": [
+        "craft diagnosis"
+      ],
+      "coreMethods": [
+        "trust the reader",
+        "economy",
+        "POV knowledge boundary"
+      ],
+      "bundledScripts": [],
+      "externalDependencies": [],
+      "riskFlags": [
+        "prompt-instructions"
+      ],
+      "licenseStatus": "verified",
+      "projectRelevance": 5,
+      "qualityConfidence": 4,
+      "localSkillRelations": [
+        "liluo-natural-expression"
+      ],
+      "commit": "f3a146baedbb407e9bddfcae83befae8d5cfe387",
+      "contentHash": "59a0eda1e3171472eae28af3855f6a7d9625d3e18d58884794ef16245011c414"
+    },
+    {
+      "upstreamSkillId": "haowjy-creative-writing-skills:creative-writing-craft",
+      "sourceId": "haowjy-creative-writing-skills",
+      "name": "creative-writing-craft",
+      "upstreamPath": "skills/creative-writing-craft/SKILL.md",
+      "category": [
+        "writing",
+        "fiction"
+      ],
+      "summary": "按需加载视角、节奏、感知、场景和风格分析参考。",
+      "inputs": [
+        "writing task"
+      ],
+      "outputs": [
+        "targeted craft guidance"
+      ],
+      "coreMethods": [
+        "reference routing",
+        "scene craft"
+      ],
+      "bundledScripts": [],
+      "externalDependencies": [],
+      "riskFlags": [
+        "prompt-instructions"
+      ],
+      "licenseStatus": "verified",
+      "projectRelevance": 5,
+      "qualityConfidence": 4,
+      "localSkillRelations": [
+        "liluo-natural-expression"
+      ],
+      "commit": "f3a146baedbb407e9bddfcae83befae8d5cfe387",
+      "contentHash": "1007a6ec796b6e1ffd1494bc1191da632f92f9937584a2098123981853f11881"
+    },
+    {
+      "upstreamSkillId": "conorbronsdon-avoid-ai-writing:avoid-ai-writing",
+      "sourceId": "conorbronsdon-avoid-ai-writing",
+      "name": "avoid-ai-writing",
+      "upstreamPath": "SKILL.md",
+      "category": [
+        "writing",
+        "editing"
+      ],
+      "summary": "区分诊断与修改，以局部重写和二次审查减少模板化表达。",
+      "inputs": [
+        "reader-facing text",
+        "voice context"
+      ],
+      "outputs": [
+        "diagnosis or revision"
+      ],
+      "coreMethods": [
+        "detect then rewrite",
+        "minimal edit",
+        "second pass"
+      ],
+      "bundledScripts": [],
+      "externalDependencies": [],
+      "riskFlags": [
+        "english-specific-rules",
+        "over-broad-word-bans",
+        "prompt-instructions"
+      ],
+      "licenseStatus": "verified",
+      "projectRelevance": 5,
+      "qualityConfidence": 4,
+      "localSkillRelations": [
+        "liluo-natural-expression"
+      ],
+      "commit": "660c95cfd5b67604ad5ed598a8bd1be92e0ee3d5",
+      "contentHash": "3fe5a3a8f3cfa4e29338e9c19e41f0d06edec6fa4e2df8285ce178318023f2d1"
+    },
+    {
+      "upstreamSkillId": "danjdewhurst-story-skills:chapter-writing",
+      "sourceId": "danjdewhurst-story-skills",
+      "name": "chapter-writing",
+      "upstreamPath": "skills/chapter-writing/SKILL.md",
+      "category": [
+        "writing",
+        "story"
+      ],
+      "summary": "按大纲和连续性上下文撰写章节，并在写后更新依赖状态。",
+      "inputs": [
+        "story project",
+        "approved outline"
+      ],
+      "outputs": [
+        "chapter and state updates"
+      ],
+      "coreMethods": [
+        "outline first",
+        "post-write continuity update"
+      ],
+      "bundledScripts": [],
+      "externalDependencies": [
+        "optional Story CLI"
+      ],
+      "riskFlags": [
+        "foreign-directory-contract",
+        "optional-tool-installation"
+      ],
+      "licenseStatus": "verified",
+      "projectRelevance": 3,
+      "qualityConfidence": 4,
+      "localSkillRelations": [
+        "liluo-natural-expression"
+      ],
+      "commit": "c482d48f4eb9b488f033a77a51f9fae55cc0d75f",
+      "contentHash": "aa8cd379ca6e24af1cbfd9cf2ee8588aafbeaa13e929f5e451a2c7db3c26eb72"
+    },
+    {
+      "upstreamSkillId": "danjdewhurst-story-skills:revision-continuity",
+      "sourceId": "danjdewhurst-story-skills",
+      "name": "revision-continuity",
+      "upstreamPath": "skills/revision-continuity/SKILL.md",
+      "category": [
+        "writing",
+        "story"
+      ],
+      "summary": "修订前锁定人物、物件、知识和时间线状态，修改后更新依赖记录。",
+      "inputs": [
+        "existing prose",
+        "continuity context"
+      ],
+      "outputs": [
+        "targeted revision"
+      ],
+      "coreMethods": [
+        "revision plan",
+        "continuity anchors",
+        "dependent metadata check"
+      ],
+      "bundledScripts": [],
+      "externalDependencies": [
+        "optional Story CLI"
+      ],
+      "riskFlags": [
+        "foreign-directory-contract"
+      ],
+      "licenseStatus": "verified",
+      "projectRelevance": 4,
+      "qualityConfidence": 4,
+      "localSkillRelations": [
+        "liluo-natural-expression"
+      ],
+      "commit": "c482d48f4eb9b488f033a77a51f9fae55cc0d75f",
+      "contentHash": "df3f4ed75737cbd6ec1c556a6940c5cd4fbb54131082ad83ed70a88af5791855"
+    }
+  ]
+}

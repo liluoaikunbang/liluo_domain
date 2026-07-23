@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "sourceId": "haowjy-creative-writing-skills",
+  "displayName": "Creative Writing Skills",
+  "category": ["writing", "fiction"],
+  "repository": "https://github.com/haowjy/creative-writing-skills",
+  "defaultBranch": "main",
+  "trackedPaths": ["LICENSE", "skills/writing-principles/", "skills/creative-writing-craft/"],
+  "storageMode": "selected-files",
+  "trustTier": "primary-writing-reference",
+  "license": { "type": "Apache-2.0", "verified": true, "licensePath": "LICENSE", "redistributionAllowed": true },
+  "version": { "currentCommit": "f3a146baedbb407e9bddfcae83befae8d5cfe387", "currentRelease": null, "fetchedAt": "2026-07-22T00:00:00.000Z", "lastCheckedAt": "2026-07-22T00:00:00.000Z", "nextCheckAt": "2026-08-21T00:00:00.000Z" },
+  "updatePolicy": { "checkIntervalDays": 30, "fetchToStagingWhenDue": true, "autoReplaceCurrentSnapshot": false, "autoModifyLocalSkills": false },
+  "security": { "containsExecutableCode": false, "containsPromptInstructions": true, "trustedForDirectExecution": false, "auditStatus": "reviewed-selected-files" },
+  "localUsage": { "status": "adapted", "adaptedSkills": ["liluo-natural-expression"], "notes": "抽象读者推断空间、经济性、视角知识边界与按需参考结构。" }
+}

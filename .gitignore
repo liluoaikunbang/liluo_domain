@@ -9,12 +9,15 @@ lerna-debug.log*
 
 node_modules
 .local/team-presence-state.json
+.local/codex-user-rules-snapshot.json
 dist
 /dist-offline/
 /release/
 dist-ssr
 *.local
 external-knowledge/source-sync.local.json
+external-knowledge/staging/
+/docs.zip
 __pycache__/
 *.py[cod]
 vite.config.mjs.timestamp-*.mjs

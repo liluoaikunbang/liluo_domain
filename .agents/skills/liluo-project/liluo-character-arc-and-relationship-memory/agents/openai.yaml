@@ -1,0 +1,4 @@
+interface:
+  display_name: "璃落角色与关系记忆"
+  short_description: "维护有证据的长期角色成长与关系阶段"
+  default_prompt: "使用 $liluo-character-arc-and-relationship-memory 判断这项变化是否值得进入长期记忆，并核验正式证据。"

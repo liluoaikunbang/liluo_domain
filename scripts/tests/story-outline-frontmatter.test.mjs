@@ -49,6 +49,21 @@ const markdownModules = {
     'missingItems:',
     '  - CG｜病房苏醒·梦境种子植入｜缺少植入过程与记忆闪回的正式 CG',
     '  - 地图｜重返校园·校门口接管｜缺少校门口准确出生点配置',
+    'scope: 短篇',
+    'moduleType:',
+    '  - 探索',
+    'mapRefs:',
+    '  - city_jingjiang_school',
+    'eventRefs:',
+    '  - campus_arrival',
+    'dialogueRefs:',
+    '  - campus_guide',
+    'entryConditions:',
+    '  - hospital_awake',
+    'completionConditions:',
+    '  - club_area_reached',
+    'stateChanges:',
+    '  - campus_reopened',
     'cgRefs:',
     '  - 都市DID-KTV服务员',
     '  - 都市DID-保洁员',
@@ -95,6 +110,14 @@ assert.deepEqual(node.missingItems, [
   'CG｜病房苏醒·梦境种子植入｜缺少植入过程与记忆闪回的正式 CG',
   '地图｜重返校园·校门口接管｜缺少校门口准确出生点配置'
 ]);
+assert.equal(node.scope, '短篇');
+assert.deepEqual(node.moduleType, ['探索']);
+assert.deepEqual(node.mapRefs, ['city_jingjiang_school']);
+assert.deepEqual(node.eventRefs, ['campus_arrival']);
+assert.deepEqual(node.dialogueRefs, ['campus_guide']);
+assert.deepEqual(node.entryConditions, ['hospital_awake']);
+assert.deepEqual(node.completionConditions, ['club_area_reached']);
+assert.deepEqual(node.stateChanges, ['campus_reopened']);
 assert.deepEqual(node.cgRefs, ['都市DID-KTV服务员', '都市DID-保洁员']);
 assert.deepEqual(node.cgSequence, [
   '都市DID-KTV服务员｜夜班收尾｜璃落被留在最后一桌旁，窗外霓虹映入空荡包厢'

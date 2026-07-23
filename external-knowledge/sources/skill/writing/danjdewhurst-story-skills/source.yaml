@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "sourceId": "danjdewhurst-story-skills",
+  "displayName": "Story Skills",
+  "category": ["writing", "story"],
+  "repository": "https://github.com/danjdewhurst/story-skills",
+  "defaultBranch": "main",
+  "trackedPaths": ["LICENSE", "skills/chapter-writing/", "skills/revision-continuity/"],
+  "storageMode": "selected-files",
+  "trustTier": "primary-story-reference",
+  "license": { "type": "MIT", "verified": true, "licensePath": "LICENSE", "redistributionAllowed": true },
+  "version": { "currentCommit": "c482d48f4eb9b488f033a77a51f9fae55cc0d75f", "currentRelease": null, "fetchedAt": "2026-07-22T00:00:00.000Z", "lastCheckedAt": "2026-07-22T00:00:00.000Z", "nextCheckAt": "2026-08-21T00:00:00.000Z" },
+  "updatePolicy": { "checkIntervalDays": 30, "fetchToStagingWhenDue": true, "autoReplaceCurrentSnapshot": false, "autoModifyLocalSkills": false },
+  "security": { "containsExecutableCode": false, "containsPromptInstructions": true, "trustedForDirectExecution": false, "auditStatus": "reviewed-selected-files" },
+  "localUsage": { "status": "adapted", "adaptedSkills": ["liluo-natural-expression"], "notes": "只吸收连续性锚点和修订后核对方法，不引入其故事目录与 CLI。" }
+}

@@ -54,6 +54,30 @@
       "featureUpdate": false,
       "userCommands": false,
       "decision": false
+    },
+    "external-skill-system-change": {
+      "requiredChecks": ["外部 Skill 系统说明", "source schema", "更新脚本与测试", "许可证策略", "用户命令", "ADR-004", "项目知识索引"],
+      "featureUpdate": true,
+      "userCommands": true,
+      "decision": "ADR"
+    },
+    "natural-expression-change": {
+      "requiredChecks": ["自然表达系统说明", "writing Skill", "风格档案与 fixture", "用户命令", "CDR-005", "项目知识索引"],
+      "featureUpdate": true,
+      "userCommands": true,
+      "decision": "CDR"
+    },
+    "command-approval-change": {
+      "requiredChecks": ["Codex 命令授权系统说明", ".codex/rules", "批准决定注册表", "命令授权 Skill 与测试", "命令批准分级表", "用户命令", "ADR-005", "项目知识索引"],
+      "featureUpdate": "only-for-system-contract-change",
+      "userCommands": true,
+      "decision": "consider-ADR"
+    },
+    "content-production-change": {
+      "requiredChecks": ["故事转可玩系统说明", "路线验证与 fixture", "角色关系长期记忆", "正式来源门槛", "生产覆盖", "四个 Skill 与技能说明", "用户命令", "ADR-006", "功能更新", "项目知识索引"],
+      "featureUpdate": true,
+      "userCommands": true,
+      "decision": "ADR"
     }
   }
 }

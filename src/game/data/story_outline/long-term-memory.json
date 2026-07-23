@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "records": [
+    {
+      "id": "character:liluo:world-1-glimmering-glance-hospital-awakening",
+      "kind": "character",
+      "subjectId": "璃落",
+      "scope": "world",
+      "world": "1-浮光掠影",
+      "lasting": true,
+      "change": "掌握基础灵异辨识方法，能够区分现实人物、记忆残影与真正鬼魂。",
+      "effectiveFrom": "world-1-glimmering-glance-hospital-awakening",
+      "evidence": [
+        "src/game/data/story_outline/1-modern/1.0.1-病房苏醒.md"
+      ]
+    },
+    {
+      "id": "relationship:shenzhi:liluo:world-1-glimmering-glance-hospital-awakening",
+      "kind": "relationship",
+      "subjectId": "沈芷",
+      "counterpartId": "璃落",
+      "scope": "world",
+      "world": "1-浮光掠影",
+      "lasting": true,
+      "change": "沈芷从秘密救援组织者转为主要照护者，并以不污染记忆恢复为边界继续保护璃落。",
+      "effectiveFrom": "world-1-glimmering-glance-hospital-awakening",
+      "evidence": [
+        "src/game/data/story_outline/1-modern/1.0.1-病房苏醒.md"
+      ]
+    }
+  ]
+}

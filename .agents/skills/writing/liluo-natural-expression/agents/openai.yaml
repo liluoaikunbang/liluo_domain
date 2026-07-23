@@ -1,0 +1,4 @@
+interface:
+  display_name: "璃落自然表达与文气塑形"
+  short_description: "为故事、对话与项目叙事保留事实并改善节奏、声音和潜台词"
+  default_prompt: "Use $liluo-natural-expression to revise this reader-facing text in light mode while preserving every fact."

@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "decisions": [
+    {
+      "decisionId": "codex-approval-routine-validation",
+      "scope": "project",
+      "source": "user-explicit",
+      "commandClass": "project-validation",
+      "ruleFile": ".codex/rules/routine-development.rules",
+      "rulePattern": [
+        "npm",
+        "run",
+        "docs:check-encoding"
+      ],
+      "decision": "allow",
+      "reason": "项目内只读编码检查，属于可重复低风险验证",
+      "status": "active",
+      "createdAt": "2026-07-22",
+      "lastReviewedAt": "2026-07-22"
+    },
+    {
+      "decisionId": "codex-approval-git-write-prompt",
+      "scope": "project",
+      "source": "user-explicit",
+      "commandClass": "git-protection",
+      "ruleFile": ".codex/rules/git-protection.rules",
+      "rulePattern": [
+        "git",
+        "push"
+      ],
+      "decision": "prompt",
+      "reason": "Git 远端写入继续逐次审批，不从一次允许升级",
+      "status": "active",
+      "createdAt": "2026-07-22",
+      "lastReviewedAt": "2026-07-22"
+    },
+    {
+      "decisionId": "codex-approval-force-push-forbidden",
+      "scope": "project",
+      "source": "user-explicit",
+      "commandClass": "git-protection",
+      "ruleFile": ".codex/rules/git-protection.rules",
+      "rulePattern": [
+        "git",
+        "push",
+        "--force"
+      ],
+      "decision": "forbidden",
+      "reason": "项目默认禁止强制推送",
+      "status": "active",
+      "createdAt": "2026-07-22",
+      "lastReviewedAt": "2026-07-22"
+    },
+    {
+      "decisionId": "codex-approval-dependency-prompt",
+      "scope": "project",
+      "source": "user-explicit",
+      "commandClass": "dependency-and-network",
+      "ruleFile": ".codex/rules/dependency-and-network.rules",
+      "rulePattern": [
+        "npm",
+        "install"
+      ],
+      "decision": "prompt",
+      "reason": "依赖与供应链变更继续逐次审批",
+      "status": "active",
+      "createdAt": "2026-07-22",
+      "lastReviewedAt": "2026-07-22"
+    },
+    {
+      "decisionId": "codex-approval-68ffd3be803a",
+      "scope": "project",
+      "source": "user-explicit",
+      "commandClass": "project-routine",
+      "ruleFile": ".codex/rules/project-decisions.rules",
+      "rulePattern": [
+        "npm",
+        "run",
+        "project:routine"
+      ],
+      "decision": "allow",
+      "reason": "受测试的固定项目检查、测试、构建与索引模式，拒绝任意附加命令",
+      "status": "active",
+      "createdAt": "2026-07-23",
+      "lastReviewedAt": "2026-07-23"
+    },
+    {
+      "decisionId": "codex-approval-79688304f457",
+      "scope": "project",
+      "source": "user-explicit",
+      "commandClass": "project-skill-scaffold",
+      "ruleFile": ".codex/rules/project-decisions.rules",
+      "rulePattern": [
+        "npm",
+        "run",
+        "project:skill:init"
+      ],
+      "decision": "allow",
+      "reason": "受限包装官方 skill-creator，仅允许 liluo 项目 Skill 名称、固定区域与资源类型",
+      "status": "active",
+      "createdAt": "2026-07-23",
+      "lastReviewedAt": "2026-07-23"
+    }
+  ]
+}

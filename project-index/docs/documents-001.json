@@ -11,6 +11,28 @@
     "type": "document"
   },
   {
+    "id": "docs/待定设计/音频音乐与场景声景管线.md",
+    "indexVersion": 1,
+    "sourceHash": "bc9e277b4e9455dc845439a20e126fa5333f1deff885bb9f420de4af9723495c",
+    "sourcePath": "docs/待定设计/音频音乐与场景声景管线.md",
+    "subtype": "other",
+    "summary": "音频、音乐与场景声景管线（待定设计）",
+    "summarySource": "title-only",
+    "title": "音频、音乐与场景声景管线（待定设计）",
+    "type": "document"
+  },
+  {
+    "id": "docs/待定设计/README.md",
+    "indexVersion": 1,
+    "sourceHash": "370015484e28a5f267c6189fd52b2df4837f50e06d1b60937f6360c3bfe61f62",
+    "sourcePath": "docs/待定设计/README.md",
+    "subtype": "other",
+    "summary": "待定设计",
+    "summarySource": "title-only",
+    "title": "待定设计",
+    "type": "document"
+  },
+  {
     "id": "docs/功能更新/001-GameView三栏布局与地图贴合.md",
     "indexVersion": 1,
     "sourceHash": "7a4664d575a6611eaf355dd13d304e4f22d3710cb8a2ce9ad3e9824388318b06",
@@ -1606,9 +1628,42 @@
     "type": "document"
   },
   {
+    "id": "docs/功能更新/145-外部Skill来源库项目能力演化与自然表达系统.md",
+    "indexVersion": 1,
+    "sourceHash": "0b829254257077f92e8a9064ae1521654bece7065f9f0e44f34b92edfd3f0473",
+    "sourcePath": "docs/功能更新/145-外部Skill来源库项目能力演化与自然表达系统.md",
+    "subtype": "update",
+    "summary": "145-外部 Skill 来源库、项目能力演化与自然表达系统",
+    "summarySource": "title-only",
+    "title": "145-外部 Skill 来源库、项目能力演化与自然表达系统",
+    "type": "document"
+  },
+  {
+    "id": "docs/功能更新/146-Codex命令授权反馈持久化与规范闭环.md",
+    "indexVersion": 1,
+    "sourceHash": "f30d420a7d034739572b0daed3c5820b32975ecc770a2db7c49157b6194ec736",
+    "sourcePath": "docs/功能更新/146-Codex命令授权反馈持久化与规范闭环.md",
+    "subtype": "update",
+    "summary": "146-Codex 命令授权反馈、持久化与规范闭环",
+    "summarySource": "title-only",
+    "title": "146-Codex 命令授权反馈、持久化与规范闭环",
+    "type": "document"
+  },
+  {
+    "id": "docs/功能更新/147-内容生产与可玩化基础系统.md",
+    "indexVersion": 1,
+    "sourceHash": "d2088270c080e398e20cd5324c63420afe26def15eff403708cb2c648efa758c",
+    "sourcePath": "docs/功能更新/147-内容生产与可玩化基础系统.md",
+    "subtype": "update",
+    "summary": "147-内容生产与可玩化基础系统",
+    "summarySource": "title-only",
+    "title": "147-内容生产与可玩化基础系统",
+    "type": "document"
+  },
+  {
     "id": "docs/功能更新目录.md",
     "indexVersion": 1,
-    "sourceHash": "69eee9aa80bacd5a154edef1438827c81dc213dc12740dc6435f470dfd5fe374",
+    "sourceHash": "3566b8666c638eb10f9a0cda0575c6c178f9acc6bd2ed378f75bf6fec7e3dad8",
     "sourcePath": "docs/功能更新目录.md",
     "subtype": "other",
     "summary": "功能更新目录",
@@ -1672,6 +1727,28 @@
     "type": "document"
   },
   {
+    "id": "docs/技能说明/liluo-character-arc-and-relationship-memory.md",
+    "indexVersion": 1,
+    "sourceHash": "3383ef51ba0c46589b107ed4928c7b373ea78e5e8265256f3cd2e582a871568e",
+    "sourcePath": "docs/技能说明/liluo-character-arc-and-relationship-memory.md",
+    "subtype": "skill",
+    "summary": "liluo-character-arc-and-relationship-memory",
+    "summarySource": "title-only",
+    "title": "liluo-character-arc-and-relationship-memory",
+    "type": "document"
+  },
+  {
+    "id": "docs/技能说明/liluo-command-approval-governance.md",
+    "indexVersion": 1,
+    "sourceHash": "0d3998f0fa9e475f404b0cc94edbea19f49ed0ec036fbb703210acb0b3b24410",
+    "sourcePath": "docs/技能说明/liluo-command-approval-governance.md",
+    "subtype": "skill",
+    "summary": "liluo-command-approval-governance",
+    "summarySource": "title-only",
+    "title": "liluo-command-approval-governance",
+    "type": "document"
+  },
+  {
     "id": "docs/技能说明/liluo-creative-team-presence.md",
     "indexVersion": 1,
     "sourceHash": "e4c79b74b93a7ebc19d95626c2aaa3023908f91caba8f82a293205614680f1d8",
@@ -1727,6 +1804,28 @@
     "type": "document"
   },
   {
+    "id": "docs/技能说明/liluo-narrative-route-validation.md",
+    "indexVersion": 1,
+    "sourceHash": "07e15906bc7f8194144946c9f173a0fed957ca8375da664a71cee581fb2bc7e0",
+    "sourcePath": "docs/技能说明/liluo-narrative-route-validation.md",
+    "subtype": "skill",
+    "summary": "liluo-narrative-route-validation",
+    "summarySource": "title-only",
+    "title": "liluo-narrative-route-validation",
+    "type": "document"
+  },
+  {
+    "id": "docs/技能说明/liluo-natural-expression.md",
+    "indexVersion": 1,
+    "sourceHash": "f5689de4a20744f65492fc4c34cf8178656fbbd3d9f1157e783b0ee2fcdc7430",
+    "sourcePath": "docs/技能说明/liluo-natural-expression.md",
+    "subtype": "skill",
+    "summary": "liluo-natural-expression",
+    "summarySource": "title-only",
+    "title": "liluo-natural-expression",
+    "type": "document"
+  },
+  {
     "id": "docs/技能说明/liluo-offline-release-pipeline.md",
     "indexVersion": 1,
     "sourceHash": "c62b472a7ba6528ca6bbe777c55b2a889de1ab3bcd0ee1ced2bd7455e69ef8a8",
@@ -1746,6 +1845,17 @@
     "summary": "liluo-phaser-map-event-integration",
     "summarySource": "title-only",
     "title": "liluo-phaser-map-event-integration",
+    "type": "document"
+  },
+  {
+    "id": "docs/技能说明/liluo-production-coverage.md",
+    "indexVersion": 1,
+    "sourceHash": "23e8059df5f73d64268941f3c14a470feb07a176c89512930ce2cd1f3afa87df",
+    "sourcePath": "docs/技能说明/liluo-production-coverage.md",
+    "subtype": "skill",
+    "summary": "liluo-production-coverage",
+    "summarySource": "title-only",
+    "title": "liluo-production-coverage",
     "type": "document"
   },
   {
@@ -1837,6 +1947,17 @@
     "type": "document"
   },
   {
+    "id": "docs/技能说明/liluo-story-to-playable-content.md",
+    "indexVersion": 1,
+    "sourceHash": "3552301f1dfbefcb335670c33df99c1408049e4005c323df88c7139c6e6646c1",
+    "sourcePath": "docs/技能说明/liluo-story-to-playable-content.md",
+    "subtype": "skill",
+    "summary": "liluo-story-to-playable-content",
+    "summarySource": "title-only",
+    "title": "liluo-story-to-playable-content",
+    "type": "document"
+  },
+  {
     "id": "docs/技能说明/liluo-world-bible-continuity-audit.md",
     "indexVersion": 1,
     "sourceHash": "88da8891eea2ea936e868059b7e7e628a7353908e055bb7cd26dd3433aec5c48",
@@ -1903,9 +2024,20 @@
     "type": "document"
   },
   {
+    "id": "docs/设计记忆/创作决策/CDR-005-非技术文本默认应用璃落自然表达.md",
+    "indexVersion": 1,
+    "sourceHash": "dbd2aab859c0230f782b38e49e8d4c3efefe6b593400a6a553c4cf06cc320ab7",
+    "sourcePath": "docs/设计记忆/创作决策/CDR-005-非技术文本默认应用璃落自然表达.md",
+    "subtype": "other",
+    "summary": "CDR-005：非技术文本默认应用璃落自然表达",
+    "summarySource": "title-only",
+    "title": "CDR-005：非技术文本默认应用璃落自然表达",
+    "type": "document"
+  },
+  {
     "id": "docs/设计记忆/创作决策/README.md",
     "indexVersion": 1,
-    "sourceHash": "b6c49527ef810452b039ee3e010624b708c99285ab898a082805d5cc5ff9ee36",
+    "sourceHash": "43b3650e2809551a0df3b3d4d19f2227aa83efcb465c94d68233a351b9aab84d",
     "sourcePath": "docs/设计记忆/创作决策/README.md",
     "subtype": "other",
     "summary": "创作决策记录",
@@ -1958,9 +2090,42 @@
     "type": "document"
   },
   {
+    "id": "docs/设计记忆/架构决策/ADR-004-外部Skill采用非可信三层演化架构.md",
+    "indexVersion": 1,
+    "sourceHash": "db3742386ac694f01327551311e74a0424c2deb06f5f77ccf46a1c5f0d8856b0",
+    "sourcePath": "docs/设计记忆/架构决策/ADR-004-外部Skill采用非可信三层演化架构.md",
+    "subtype": "other",
+    "summary": "ADR-004：外部 Skill 采用非可信三层演化架构",
+    "summarySource": "title-only",
+    "title": "ADR-004：外部 Skill 采用非可信三层演化架构",
+    "type": "document"
+  },
+  {
+    "id": "docs/设计记忆/架构决策/ADR-005-命令授权采用项目规则与决定注册分层治理.md",
+    "indexVersion": 1,
+    "sourceHash": "2349057e52411d3d06f0e08a162b3038c4498d6e88ebc7317e91287511b06850",
+    "sourcePath": "docs/设计记忆/架构决策/ADR-005-命令授权采用项目规则与决定注册分层治理.md",
+    "subtype": "other",
+    "summary": "ADR-005：命令授权采用项目规则与决定注册分层治理",
+    "summarySource": "title-only",
+    "title": "ADR-005：命令授权采用项目规则与决定注册分层治理",
+    "type": "document"
+  },
+  {
+    "id": "docs/设计记忆/架构决策/ADR-006-内容生产采用证据派生与最小持久化.md",
+    "indexVersion": 1,
+    "sourceHash": "5ebb356a99ec6ac6a11b888a18f9e6fcc4875783c338b3ed7d08b06577587d12",
+    "sourcePath": "docs/设计记忆/架构决策/ADR-006-内容生产采用证据派生与最小持久化.md",
+    "subtype": "other",
+    "summary": "ADR-006：内容生产采用证据派生与最小持久化",
+    "summarySource": "title-only",
+    "title": "ADR-006：内容生产采用证据派生与最小持久化",
+    "type": "document"
+  },
+  {
     "id": "docs/设计记忆/架构决策/README.md",
     "indexVersion": 1,
-    "sourceHash": "d062446c7a3aaa5f704a5af168fb4d19146b2f210ee727e43c1aaede9d6bbafa",
+    "sourceHash": "12fb509f47d80709cf79738cdbedd2f9d913c2a38f57f4e0602807d4dd6f2dd4",
     "sourcePath": "docs/设计记忆/架构决策/README.md",
     "subtype": "other",
     "summary": "架构决策记录",
@@ -2211,6 +2376,28 @@
     "type": "document"
   },
   {
+    "id": "docs/外部来源/Skill来源目录.md",
+    "indexVersion": 1,
+    "sourceHash": "9ee6371e24b02e550f14b3c3f445942f634bfc68bf63ff45b43f482447296a45",
+    "sourcePath": "docs/外部来源/Skill来源目录.md",
+    "subtype": "other",
+    "summary": "Skill 来源目录",
+    "summarySource": "title-only",
+    "title": "Skill 来源目录",
+    "type": "document"
+  },
+  {
+    "id": "docs/外部来源/Skill许可证与保存策略.md",
+    "indexVersion": 1,
+    "sourceHash": "4bc64fa7d1d62de4058f815059885fbabce5b2258ed3e00336d5630aa3622e72",
+    "sourcePath": "docs/外部来源/Skill许可证与保存策略.md",
+    "subtype": "other",
+    "summary": "Skill 许可证与保存策略",
+    "summarySource": "title-only",
+    "title": "Skill 许可证与保存策略",
+    "type": "document"
+  },
+  {
     "id": "docs/系统说明/存读档系统.md",
     "indexVersion": 1,
     "sourceHash": "51c45dfbc009b080b6d084b3badc740481e11474828d59eaddc74cf391be31f6",
@@ -2230,6 +2417,17 @@
     "summary": "地图系统",
     "summarySource": "title-only",
     "title": "地图系统",
+    "type": "document"
+  },
+  {
+    "id": "docs/系统说明/故事大纲到可玩内容转化系统.md",
+    "indexVersion": 1,
+    "sourceHash": "d39abdae4f8c4295d88d781d8e7ae6484dda4f8d1696905e22e163a1ea200da9",
+    "sourcePath": "docs/系统说明/故事大纲到可玩内容转化系统.md",
+    "subtype": "system",
+    "summary": "故事大纲到可玩内容转化系统",
+    "summarySource": "title-only",
+    "title": "故事大纲到可玩内容转化系统",
     "type": "document"
   },
   {
@@ -2343,6 +2541,17 @@
     "type": "document"
   },
   {
+    "id": "docs/系统说明/角色成长与关系长期记忆系统.md",
+    "indexVersion": 1,
+    "sourceHash": "1e64ef8e0a9444baa245138ec6b51b01c83a76e6bca833504f2e518720ebde7c",
+    "sourcePath": "docs/系统说明/角色成长与关系长期记忆系统.md",
+    "subtype": "system",
+    "summary": "角色成长与关系长期记忆系统",
+    "summarySource": "title-only",
+    "title": "角色成长与关系长期记忆系统",
+    "type": "document"
+  },
+  {
     "id": "docs/系统说明/角色外观与运行时状态.md",
     "indexVersion": 1,
     "sourceHash": "3f8c31612e5162e2a7607612e191d2f54716cb1f3501ef28bf28b3524151ba5d",
@@ -2376,6 +2585,17 @@
     "type": "document"
   },
   {
+    "id": "docs/系统说明/璃落自然表达与文气塑形系统.md",
+    "indexVersion": 1,
+    "sourceHash": "d7dfc88aae01da95552431de7f1d01ac2f34899128cb3309a76c0c5271c35100",
+    "sourcePath": "docs/系统说明/璃落自然表达与文气塑形系统.md",
+    "subtype": "system",
+    "summary": "璃落自然表达与文气塑形系统",
+    "summarySource": "title-only",
+    "title": "璃落自然表达与文气塑形系统",
+    "type": "document"
+  },
+  {
     "id": "docs/系统说明/情节条目系统.md",
     "indexVersion": 1,
     "sourceHash": "f855bc3cb76cf62f36b11adba835b52ded093d13cb556b5829de8006b26d6d55",
@@ -2384,6 +2604,17 @@
     "summary": "情节条目系统",
     "summarySource": "title-only",
     "title": "情节条目系统",
+    "type": "document"
+  },
+  {
+    "id": "docs/系统说明/世界与系列生产覆盖统计系统.md",
+    "indexVersion": 1,
+    "sourceHash": "ddfada609de7e343a6d05ea87cbb0ed68f2ca17a9f9f8d5f88c8533a69428865",
+    "sourcePath": "docs/系统说明/世界与系列生产覆盖统计系统.md",
+    "subtype": "system",
+    "summary": "世界与系列生产覆盖统计系统",
+    "summarySource": "title-only",
+    "title": "世界与系列生产覆盖统计系统",
     "type": "document"
   },
   {
@@ -2409,9 +2640,20 @@
     "type": "document"
   },
   {
+    "id": "docs/系统说明/外部Skill来源库与项目能力演化系统.md",
+    "indexVersion": 1,
+    "sourceHash": "9c31f356215ee671c2cb22ef824712033f0a0e9666980f6a3635eb7dc2ffb809",
+    "sourcePath": "docs/系统说明/外部Skill来源库与项目能力演化系统.md",
+    "subtype": "system",
+    "summary": "外部 Skill 来源库与项目能力演化系统",
+    "summarySource": "title-only",
+    "title": "外部 Skill 来源库与项目能力演化系统",
+    "type": "document"
+  },
+  {
     "id": "docs/系统说明/项目规范治理与设计记忆系统.md",
     "indexVersion": 1,
-    "sourceHash": "0b67ede999d53298080e241c7d6583ca977a4989046e2df135fa54a6c4ca37a6",
+    "sourceHash": "f9191651bd05562abaa1268dfec967796e2b950afe29984e610f7db333a7e79c",
     "sourcePath": "docs/系统说明/项目规范治理与设计记忆系统.md",
     "subtype": "system",
     "summary": "项目规范治理与设计记忆系统",
@@ -2442,6 +2684,17 @@
     "type": "document"
   },
   {
+    "id": "docs/系统说明/叙事路线模拟与逻辑验证系统.md",
+    "indexVersion": 1,
+    "sourceHash": "dd0b8f8cd14518992177e2d512229327c085f904de96b19c99f9bc3bddb68784",
+    "sourcePath": "docs/系统说明/叙事路线模拟与逻辑验证系统.md",
+    "subtype": "system",
+    "summary": "叙事路线模拟与逻辑验证系统",
+    "summarySource": "title-only",
+    "title": "叙事路线模拟与逻辑验证系统",
+    "type": "document"
+  },
+  {
     "id": "docs/系统说明/游戏视图与模式.md",
     "indexVersion": 1,
     "sourceHash": "cf54c683f485b54f2520b397dee8354e9b0cd23988c24a74c59a82bc9199d89e",
@@ -2453,9 +2706,31 @@
     "type": "document"
   },
   {
+    "id": "docs/系统说明/正式项目内容来源与版权写入门槛.md",
+    "indexVersion": 1,
+    "sourceHash": "32a4ed46c9401a576fdd1caf153bded12d6287d91276eb6e876eb4e22904d9d4",
+    "sourcePath": "docs/系统说明/正式项目内容来源与版权写入门槛.md",
+    "subtype": "system",
+    "summary": "正式项目内容来源与版权写入门槛",
+    "summarySource": "title-only",
+    "title": "正式项目内容来源与版权写入门槛",
+    "type": "document"
+  },
+  {
+    "id": "docs/系统说明/Codex命令授权治理系统.md",
+    "indexVersion": 1,
+    "sourceHash": "a4a792065b3a332e4969fec7e44c9c1f769a335da76b42b6a077e288b5250a44",
+    "sourcePath": "docs/系统说明/Codex命令授权治理系统.md",
+    "subtype": "system",
+    "summary": "Codex 命令授权治理系统",
+    "summarySource": "title-only",
+    "title": "Codex 命令授权治理系统",
+    "type": "document"
+  },
+  {
     "id": "docs/系统说明/README.md",
     "indexVersion": 1,
-    "sourceHash": "181e9a8a63461fd3c0fe758768d8affe6a624b2ae8139b77e271f1e6f1ec5767",
+    "sourceHash": "3eb56fd535ac74f95019148dcc0549db9bf64267cfb72e3d627dc4f353429a9d",
     "sourcePath": "docs/系统说明/README.md",
     "subtype": "system",
     "summary": "系统说明",
@@ -2472,127 +2747,6 @@
     "summary": "项目概览",
     "summarySource": "title-only",
     "title": "项目概览",
-    "type": "document"
-  },
-  {
-    "id": "docs/用户命令目录.md",
-    "indexVersion": 1,
-    "sourceHash": "3e739c08e6d62671abc65fc83766f78d248b22fed7136dd442936df68993d315",
-    "sourcePath": "docs/用户命令目录.md",
-    "subtype": "other",
-    "summary": "用户命令目录",
-    "summarySource": "title-only",
-    "title": "用户命令目录",
-    "type": "document"
-  },
-  {
-    "id": "docs/游戏素材图片清单.md",
-    "indexVersion": 1,
-    "sourceHash": "e5341d8739d710c663aacfde2b5eff3a482b0da6b3f4cd08424803493998cf93",
-    "sourcePath": "docs/游戏素材图片清单.md",
-    "subtype": "other",
-    "summary": "游戏素材图片清单",
-    "summarySource": "title-only",
-    "title": "游戏素材图片清单",
-    "type": "document"
-  },
-  {
-    "id": "docs/智能体说明/项目子智能体体系.md",
-    "indexVersion": 1,
-    "sourceHash": "ba2e0d621b3c741ddd94338c81706b6df377d43499dd0ec956e35bdbadd00304",
-    "sourcePath": "docs/智能体说明/项目子智能体体系.md",
-    "subtype": "agent",
-    "summary": "项目子智能体体系",
-    "summarySource": "title-only",
-    "title": "项目子智能体体系",
-    "type": "document"
-  },
-  {
-    "id": "docs/智能体说明/liluo_content_auditor.md",
-    "indexVersion": 1,
-    "sourceHash": "5da77be99dc028329b7262e75b3903a7d87f1aaef630f91c48ae375ec0376fd0",
-    "sourcePath": "docs/智能体说明/liluo_content_auditor.md",
-    "subtype": "agent",
-    "summary": "璃落内容审查员",
-    "summarySource": "title-only",
-    "title": "璃落内容审查员",
-    "type": "document"
-  },
-  {
-    "id": "docs/智能体说明/liluo_context_explorer.md",
-    "indexVersion": 1,
-    "sourceHash": "f2097c741211a0b5562506b003c75907b0200346f5e74b128b14c32ed0d869c3",
-    "sourcePath": "docs/智能体说明/liluo_context_explorer.md",
-    "subtype": "agent",
-    "summary": "璃落项目上下文检索员",
-    "summarySource": "title-only",
-    "title": "璃落项目上下文检索员",
-    "type": "document"
-  },
-  {
-    "id": "docs/智能体说明/liluo_continuity_reviewer.md",
-    "indexVersion": 1,
-    "sourceHash": "100f5a29f06b3108b02dd2007c347bdbe0082b05f914c33f7277f7820001300d",
-    "sourcePath": "docs/智能体说明/liluo_continuity_reviewer.md",
-    "subtype": "agent",
-    "summary": "璃落宇宙连续性审查员",
-    "summarySource": "title-only",
-    "title": "璃落宇宙连续性审查员",
-    "type": "document"
-  },
-  {
-    "id": "docs/智能体说明/liluo_game_architecture_explorer.md",
-    "indexVersion": 1,
-    "sourceHash": "d078efca9a4c0285106fd8ff91a05707ca85a2981d88a4c2db22b0d2501404ea",
-    "sourcePath": "docs/智能体说明/liluo_game_architecture_explorer.md",
-    "subtype": "agent",
-    "summary": "璃落游戏架构分析员",
-    "summarySource": "title-only",
-    "title": "璃落游戏架构分析员",
-    "type": "document"
-  },
-  {
-    "id": "docs/智能体说明/liluo_project_memory_curator.md",
-    "indexVersion": 1,
-    "sourceHash": "ed79058d4f0f0599ca585344c407bde0c1672abbefe1cbdd51b77eb3d7016e3f",
-    "sourcePath": "docs/智能体说明/liluo_project_memory_curator.md",
-    "subtype": "agent",
-    "summary": "liluo_project_memory_curator",
-    "summarySource": "title-only",
-    "title": "liluo_project_memory_curator",
-    "type": "document"
-  },
-  {
-    "id": "docs/智能体说明/liluo_story_gap_analyst.md",
-    "indexVersion": 1,
-    "sourceHash": "4fee394bec8fed2193f315c0d95d1f9b4a00ab8612317878b111a44ea098492a",
-    "sourcePath": "docs/智能体说明/liluo_story_gap_analyst.md",
-    "subtype": "agent",
-    "summary": "璃落故事缺口分析员",
-    "summarySource": "title-only",
-    "title": "璃落故事缺口分析员",
-    "type": "document"
-  },
-  {
-    "id": "docs/智能体说明/liluo_validation_runner.md",
-    "indexVersion": 1,
-    "sourceHash": "5ac39e639315e1d9891f2f1649ac28f54397fc79b92ef59ee017dd000109d49c",
-    "sourcePath": "docs/智能体说明/liluo_validation_runner.md",
-    "subtype": "agent",
-    "summary": "璃落验证执行员",
-    "summarySource": "title-only",
-    "title": "璃落验证执行员",
-    "type": "document"
-  },
-  {
-    "id": "docs/README.md",
-    "indexVersion": 1,
-    "sourceHash": "75344e179ec4bafcb1acce6a9e2b80be47c93db9b82c02add2f015b4ea090a26",
-    "sourcePath": "docs/README.md",
-    "subtype": "other",
-    "summary": "璃落的城堡文档入口",
-    "summarySource": "title-only",
-    "title": "璃落的城堡文档入口",
     "type": "document"
   }
 ]

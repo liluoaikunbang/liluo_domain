@@ -1,0 +1,3 @@
+{
+  "id": "skill-risk-anti-ai-overcorrection", "cardType": "risk", "title": "去 AI 味过度校正", "summary": "固定禁词、统一标点禁令和故意制造错误会形成另一种模板腔，并可能损伤中文与角色声音。", "riskFlags": ["word-ban", "punctuation-dogma", "fake-casualness"], "mitigation": ["diagnose structure", "respect text type", "preserve natural passages"], "sourceIds": ["conorbronsdon-avoid-ai-writing", "haowjy-creative-writing-skills"], "projectRelevance": 5
+}

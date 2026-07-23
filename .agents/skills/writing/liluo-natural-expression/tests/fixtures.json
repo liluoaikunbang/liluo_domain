@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "cases": [
+    { "id": "mechanical-outline", "textType": "story-outline", "expectedOperation": "revise", "expectedIntensity": "light", "mustPreserve": ["eventKey", "地图", "状态"] },
+    { "id": "mechanical-fiction", "textType": "fiction-prose", "expectedOperation": "revise", "expectedIntensity": "deep", "checks": ["emotion-reexplained", "uniform-rhythm", "summary-ending"] },
+    { "id": "same-voice-dialogue", "textType": "game-dialogue", "expectedOperation": "revise", "expectedIntensity": "light", "checks": ["character-voice", "subtext", "choice-intent"] },
+    { "id": "all-members-speak", "textType": "team-dialogue", "expectedOperation": "diagnose", "expectedIntensity": "light", "checks": ["real-participation", "no-roster-rollcall"] },
+    { "id": "systematic-note", "textType": "project-note", "expectedOperation": "revise", "expectedIntensity": "light", "checks": ["real-cause", "choice-and-change"] },
+    { "id": "already-natural", "textType": "fiction-prose", "expectedOperation": "revise", "expectedIntensity": "light", "checks": ["leave-stable-passages-unchanged"] },
+    { "id": "mixed-technical", "textType": "public-development-writing", "expectedOperation": "revise", "expectedIntensity": "light", "checks": ["preserve-code-blocks", "preserve-paths"] },
+    { "id": "restraint-listing", "textType": "fiction-prose", "expectedOperation": "diagnose", "expectedIntensity": "deep", "checks": ["adult-fiction-only", "agency", "event-consequence", "not-equipment-list"] }
+  ]
+}

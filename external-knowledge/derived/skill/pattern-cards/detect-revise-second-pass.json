@@ -1,0 +1,3 @@
+{
+  "id": "skill-pattern-detect-revise-second-pass", "cardType": "pattern", "title": "诊断—局部重写—二次检查", "summary": "先指出具体结构问题，再只修改受影响部分，最后重新检查机械模式与事实锚点。", "steps": ["diagnose", "revise affected spans", "audit again", "verify anchors"], "sourceIds": ["conorbronsdon-avoid-ai-writing", "danjdewhurst-story-skills"], "projectRelevance": 5
+}

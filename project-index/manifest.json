@@ -20,9 +20,10 @@
     },
     "docs": {
       "enabled": true,
-      "entryCount": 236,
+      "entryCount": 262,
       "outputs": [
-        "docs/documents-001.json"
+        "docs/documents-001.json",
+        "docs/documents-002.json"
       ],
       "status": "current"
     },

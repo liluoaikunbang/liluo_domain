@@ -123,6 +123,83 @@
       "consumers": ["AGENTS.md", "README.md", "docs/项目概览.md"],
       "indexable": true,
       "status": "active"
+    },
+    {
+      "documentId": "external-skill-evolution-system",
+      "path": "docs/系统说明/外部Skill来源库与项目能力演化系统.md",
+      "type": "system-spec",
+      "authorityFor": ["external-skill-isolation", "external-skill-sources", "external-skill-rag", "external-skill-update", "local-skill-lineage"],
+      "consumers": ["AGENTS.md", "package.json", "scripts/external-skills/external-skills.mjs", "docs/外部来源/Skill来源目录.md", "docs/外部来源/Skill许可证与保存策略.md", "docs/用户命令目录.md"],
+      "indexable": true,
+      "userFacing": true,
+      "status": "active"
+    },
+    {
+      "documentId": "natural-expression-system",
+      "path": "docs/系统说明/璃落自然表达与文气塑形系统.md",
+      "type": "system-spec",
+      "authorityFor": ["natural-expression-routing", "natural-expression-intensity", "style-profile-boundary"],
+      "consumers": ["AGENTS.md", ".agents/skills/writing/liluo-natural-expression/SKILL.md", "docs/技能说明/liluo-natural-expression.md", "docs/用户命令目录.md"],
+      "indexable": true,
+      "userFacing": true,
+      "status": "active"
+    },
+    {
+      "documentId": "command-approval-governance-system",
+      "path": "docs/系统说明/Codex命令授权治理系统.md",
+      "type": "system-spec",
+      "authorityFor": ["command-approval-scope", "project-exec-rules", "approval-decision-lifecycle", "tui-rule-normalization"],
+      "consumers": ["AGENTS.md", ".codex/rules/routine-development.rules", ".codex/approval-decisions.json", ".agents/skills/liluo-project/liluo-command-approval-governance/SKILL.md", "scripts/command-approval/command-approval.mjs", "scripts/project-routine.mjs", "scripts/init-project-skill.mjs", "package.json", "docs/运行规范/Codex命令批准分级表.md", "docs/用户命令目录.md"],
+      "indexable": true,
+      "userFacing": true,
+      "status": "active"
+    },
+    {
+      "documentId": "story-to-playable-system",
+      "path": "docs/系统说明/故事大纲到可玩内容转化系统.md",
+      "type": "system-spec",
+      "authorityFor": ["story-to-playable-workflow", "playable-content-contract"],
+      "consumers": ["AGENTS.md", ".agents/skills/liluo-project/liluo-story-to-playable-content/SKILL.md", "scripts/content-production/content-production.mjs", "docs/用户命令目录.md"],
+      "indexable": true,
+      "userFacing": true,
+      "status": "active"
+    },
+    {
+      "documentId": "narrative-route-validation-system",
+      "path": "docs/系统说明/叙事路线模拟与逻辑验证系统.md",
+      "type": "system-spec",
+      "authorityFor": ["narrative-route-validation"],
+      "consumers": [".agents/skills/testing/liluo-narrative-route-validation/SKILL.md", "scripts/content-production/route-validation.mjs", "docs/用户命令目录.md"],
+      "indexable": true,
+      "status": "active"
+    },
+    {
+      "documentId": "character-relationship-memory-system",
+      "path": "docs/系统说明/角色成长与关系长期记忆系统.md",
+      "type": "system-spec",
+      "authorityFor": ["character-arc-memory", "relationship-memory"],
+      "consumers": [".agents/skills/liluo-project/liluo-character-arc-and-relationship-memory/SKILL.md", "src/game/data/story_outline/long-term-memory.json", "docs/用户命令目录.md"],
+      "indexable": true,
+      "status": "active"
+    },
+    {
+      "documentId": "formal-content-provenance-system",
+      "path": "docs/系统说明/正式项目内容来源与版权写入门槛.md",
+      "type": "system-spec",
+      "authorityFor": ["formal-content-source-gate"],
+      "consumers": ["AGENTS.md", "scripts/content-production/provenance.mjs", ".codex/agents/liluo_content_auditor.toml", ".agents/skills/liluo-project/liluo-story-outline-authoring/SKILL.md", ".agents/skills/liluo-project/liluo-dialogue-event-authoring/SKILL.md"],
+      "indexable": true,
+      "status": "active"
+    },
+    {
+      "documentId": "production-coverage-system",
+      "path": "docs/系统说明/世界与系列生产覆盖统计系统.md",
+      "type": "system-spec",
+      "authorityFor": ["world-series-production-coverage"],
+      "consumers": [".agents/skills/liluo-project/liluo-production-coverage/SKILL.md", "scripts/content-production/production-coverage.mjs", "docs/用户命令目录.md"],
+      "indexable": true,
+      "userFacing": true,
+      "status": "active"
     }
   ]
 }

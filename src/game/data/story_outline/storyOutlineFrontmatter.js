@@ -15,6 +15,15 @@ const FRONTMATTER_FIELD_KINDS = {
   detailLabel: 'scalar',
   isTemplated: 'boolean',
   missingItems: 'list',
+  scope: 'scalar',
+  moduleType: 'list',
+  estimatedPlaytime: 'scalar',
+  contentWarnings: 'list',
+  mapRefs: 'list',
+  eventRefs: 'list',
+  dialogueRefs: 'list',
+  assetRefs: 'list',
+  audioRefs: 'list',
   cgRefs: 'list',
   cgSequence: 'list',
   gameplayRefs: 'list',
@@ -25,6 +34,9 @@ const FRONTMATTER_FIELD_KINDS = {
   characters: 'list',
   requiredAbilities: 'list',
   locations: 'list',
+  entryConditions: 'list',
+  completionConditions: 'list',
+  stateChanges: 'list',
   reference: 'scalar'
 };
 

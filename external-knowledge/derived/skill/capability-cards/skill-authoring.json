@@ -1,0 +1,3 @@
+{
+  "id": "skill-capability-skill-authoring", "cardType": "capability", "title": "可维护 Skill 编写与验证", "summary": "用元数据触发、简洁主体、按需 reference 和确定性脚本构建项目 Skill。", "triggers": ["创建 Skill", "升级 Skill"], "inputs": ["用例", "项目合同"], "outputs": ["项目化 Skill"], "methods": ["progressive disclosure", "validation"], "limitations": ["外部 Skill 不能直接安装为项目权威"], "sourceIds": ["agentskills-spec", "openai-skills"], "projectRelevance": 5
+}

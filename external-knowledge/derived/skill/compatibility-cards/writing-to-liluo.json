@@ -1,0 +1,3 @@
+{
+  "id": "skill-compatibility-writing-to-liluo", "cardType": "compatibility", "title": "通用写作 Skill 与璃落项目兼容性", "summary": "写作方法可抽象吸收，但外部故事目录、CLI、英文禁词表和作者风格模仿不兼容。", "vue": "not-applicable", "phaser": "not-applicable", "javascript": "compatible", "requiresTypeScript": false, "requiresMcp": false, "requiresApi": false, "duplicateRisk": "medium", "publicRepository": "only with verified license and abstract profiles", "sourceIds": ["haowjy-creative-writing-skills", "conorbronsdon-avoid-ai-writing", "danjdewhurst-story-skills"], "projectRelevance": 5
+}

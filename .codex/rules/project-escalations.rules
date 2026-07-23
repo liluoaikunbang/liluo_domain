@@ -1,0 +1,3 @@
+# match: ["npm", "run", "external-skills:fetch"] => prompt
+# not_match: ["npm", "run", "external-skills:validate"] => allow
+prefix_rule(pattern = ["npm", "run", ["external-skills:check", "external-skills:fetch", "external-skills:maintain", "release:offline", "package:offline"]], decision = "prompt", justification = "这些项目命令涉及网络、staging、发行上传或产物写入，必须逐次审查。")

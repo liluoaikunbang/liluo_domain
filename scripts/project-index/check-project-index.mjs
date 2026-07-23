@@ -10,7 +10,8 @@ for (const relative of Object.keys(status.sourceSnapshot ?? {})) if (fs.existsSy
 const changes = compareSourceSnapshot(status.sourceSnapshot, current)
 const isSupportedSource = (relative) => relative.startsWith('docs/') && relative.endsWith('.md')
   || relative.startsWith('src/assets/game/')
-  || relative.startsWith('src/game/data/story_outline/') && ['.json', '.md'].some((extension) => relative.endsWith(extension))
+  || relative.startsWith('src/game/data/story_outline/sources/') && relative.endsWith('.json')
+  || relative.startsWith('src/game/data/story_outline/') && relative.endsWith('.md')
   || relative === 'src/game/data/gameplay_outline/catalog.json'
   || relative.startsWith('src/game/data/maps/') && ['.json', '.js', '.ts'].some((extension) => relative.endsWith(extension))
   || relative.startsWith('src/game/data/interactive_fictions/') && ['.json', '.js', '.ts'].some((extension) => relative.endsWith(extension))

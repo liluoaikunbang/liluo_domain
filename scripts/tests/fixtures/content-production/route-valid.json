@@ -1,0 +1,10 @@
+{
+  "routeId": "campus-arrival",
+  "entry": "gate",
+  "formalEntries": ["gate"],
+  "nodes": [
+    { "id": "gate", "transitions": [{ "to": "forum", "set": { "campusEntered": true } }] },
+    { "id": "forum", "transitions": [{ "to": "club", "requires": { "campusEntered": true }, "set": { "rumorRead": true } }] },
+    { "id": "club", "terminal": true, "requires": { "rumorRead": true } }
+  ]
+}

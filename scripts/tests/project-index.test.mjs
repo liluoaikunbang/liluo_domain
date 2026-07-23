@@ -77,3 +77,20 @@ test('atomic build helper leaves the existing directory untouched after a failed
   assert.equal(fs.readFileSync(path.join(target, 'marker.txt'), 'utf8'), 'old')
   fs.rmSync(root, { recursive: true, force: true })
 })
+
+test('atomic build helper recovers from a stale swap file left by an interrupted Windows rename', async () => {
+  const root = fs.mkdtempSync(path.join(os.tmpdir(), 'liluo-index-swap-test-'))
+  const target = path.join(root, 'project-index')
+  fs.mkdirSync(target)
+  fs.writeFileSync(path.join(target, 'marker.txt'), 'old')
+  fs.writeFileSync(path.join(target, 'marker.txt.new'), 'stale')
+  const { atomicReplaceDirectory } = await import('../project-index/lib/writer.mjs')
+
+  await atomicReplaceDirectory(target, async (temp) => {
+    fs.writeFileSync(path.join(temp, 'marker.txt'), 'new')
+  })
+
+  assert.equal(fs.readFileSync(path.join(target, 'marker.txt'), 'utf8'), 'new')
+  assert.equal(fs.existsSync(path.join(target, 'marker.txt.new')), false)
+  fs.rmSync(root, { recursive: true, force: true })
+})

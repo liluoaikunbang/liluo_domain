@@ -1,0 +1,3 @@
+{
+  "id": "skill-capability-continuity-safe-revision", "cardType": "capability", "title": "连续性安全的文本修订", "summary": "修订前锁定人物、状态、知识、时间和结构锚点，修订后逐项核对。", "triggers": ["章节修订", "关键剧情润色"], "inputs": ["原文", "连续性事实"], "outputs": ["事实稳定的修订稿"], "methods": ["anchor extraction", "post-revision verification"], "limitations": ["项目正式设定仍需读取璃落权威文件"], "sourceIds": ["danjdewhurst-story-skills"], "projectRelevance": 5
+}

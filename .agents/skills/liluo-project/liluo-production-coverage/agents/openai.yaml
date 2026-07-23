@@ -1,0 +1,4 @@
+interface:
+  display_name: "璃落生产覆盖"
+  short_description: "按真实证据统计世界与系列的制作覆盖和缺口"
+  default_prompt: "使用 $liluo-production-coverage 生成世界与系列生产覆盖报告，不从文件数量推断可玩。"

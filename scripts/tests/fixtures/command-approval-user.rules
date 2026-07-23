@@ -1,0 +1,5 @@
+prefix_rule(pattern = ["npm", "run", "docs:check-encoding"], decision = "allow")
+prefix_rule(pattern = ["npm"], decision = "allow")
+prefix_rule(pattern = ["powershell"], decision = "allow")
+prefix_rule(pattern = ["git", "status"], decision = "allow")
+prefix_rule(pattern = ["git", "push"], decision = "allow")

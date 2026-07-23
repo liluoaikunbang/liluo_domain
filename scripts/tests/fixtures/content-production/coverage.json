@@ -1,0 +1,24 @@
+{
+  "worlds": [
+    {
+      "id": "1-modern",
+      "title": "浮光掠影",
+      "series": [
+        {
+          "id": "campus",
+          "title": "校园线",
+          "evidence": {
+            "concept": ["story-key"],
+            "outline": ["outline.md"],
+            "productionDesign": ["mapRef"],
+            "skeleton": ["events.json"],
+            "graybox": [],
+            "partiallyPlayable": [],
+            "playable": [],
+            "validated": []
+          }
+        }
+      ]
+    }
+  ]
+}

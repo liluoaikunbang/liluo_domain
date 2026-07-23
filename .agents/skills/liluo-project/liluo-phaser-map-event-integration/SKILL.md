@@ -12,3 +12,5 @@ For cross-file localization, query current game/code indexes first; verify sourc
 Confirm real map ID/assets and name collisions. Extend `src/game/data/maps/<world>/<mapId>/` and existing `src/game/data/registry.ts`; do not create a parallel registry. Load map resources through MapLoadingScene, keep WorldScene organizational, and place reusable runtime logic in systems. Verify spawn, collision, pathfinding, camera, teleport, NPC/events and save re-entry. Avoid generated `map.json` edits unless necessary and disclosed. Run relevant Node tests and build.
 
 For work spanning Vue, Phaser, map registration, events, and saves, first use read-only `liluo_game_architecture_explorer` to trace calls and implementation points. The parent implements.
+
+Apply `docs/系统说明/正式项目内容来源与版权写入门槛.md` before integrating third-party map, code, image or audio material; a file's presence is not proof of reusable rights.

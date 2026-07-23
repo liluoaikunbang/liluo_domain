@@ -1,0 +1,12 @@
+{
+  "key": "world-1-glimmering-glance-campus-arrival",
+  "title": "重返校园",
+  "world": "1-浮光掠影",
+  "mapRefs": ["city_jingjiang_school"],
+  "eventRefs": ["campus_arrival"],
+  "dialogueRefs": ["campus_guide"],
+  "entryConditions": ["hospital_awake"],
+  "completionConditions": ["club_area_reached"],
+  "stateChanges": ["campus_reopened"],
+  "minimumPlayableVersion": ["校门到社团招新区主流程"]
+}

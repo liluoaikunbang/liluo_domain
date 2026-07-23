@@ -1,0 +1,11 @@
+{
+  "routeId": "broken-route",
+  "entry": "start",
+  "formalEntries": ["start"],
+  "nodes": [
+    { "id": "start", "transitions": [{ "to": "loop" }, { "to": "missing" }] },
+    { "id": "loop", "transitions": [{ "to": "loop" }] },
+    { "id": "orphan", "terminal": true },
+    { "id": "orphan", "terminal": true }
+  ]
+}

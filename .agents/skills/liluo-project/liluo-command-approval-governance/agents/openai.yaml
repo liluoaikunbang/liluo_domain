@@ -1,0 +1,4 @@
+interface:
+  display_name: "璃落命令授权治理"
+  short_description: "安全维护、审计、撤销并验证璃落项目的长期命令授权决定"
+  default_prompt: "Use $liluo-command-approval-governance to classify and safely maintain a precise project command authorization decision without changing user-level rules."

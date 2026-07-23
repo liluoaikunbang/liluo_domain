@@ -1,0 +1,4 @@
+interface:
+  display_name: "璃落叙事路线验证"
+  short_description: "静态检查、模拟和验证剧情路线存档重入"
+  default_prompt: "使用 $liluo-narrative-route-validation 检查这条剧情路线的可达性、条件、循环、结局与存档重入。"

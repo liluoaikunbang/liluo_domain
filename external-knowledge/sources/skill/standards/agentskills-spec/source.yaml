@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "sourceId": "agentskills-spec",
+  "displayName": "Agent Skills Open Specification",
+  "category": ["standards", "agent-engineering"],
+  "repository": "https://github.com/agentskills/agentskills",
+  "defaultBranch": "main",
+  "trackedPaths": ["LICENSE", "docs/specification.mdx"],
+  "storageMode": "selected-files",
+  "trustTier": "authoritative-standard",
+  "license": { "type": "Apache-2.0", "verified": true, "licensePath": "LICENSE", "redistributionAllowed": true },
+  "version": { "currentCommit": "38a2ff82958afee88dadf4831509e6f7e9d8ef4e", "currentRelease": null, "fetchedAt": "2026-07-22T00:00:00.000Z", "lastCheckedAt": "2026-07-22T00:00:00.000Z", "nextCheckAt": "2026-08-21T00:00:00.000Z" },
+  "updatePolicy": { "checkIntervalDays": 30, "fetchToStagingWhenDue": true, "autoReplaceCurrentSnapshot": false, "autoModifyLocalSkills": false },
+  "security": { "containsExecutableCode": false, "containsPromptInstructions": false, "trustedForDirectExecution": false, "auditStatus": "reviewed" },
+  "localUsage": { "status": "referenced", "adaptedSkills": ["liluo-natural-expression"], "notes": "格式与渐进披露规范；原始层不具备指令权。" }
+}

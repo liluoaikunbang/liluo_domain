@@ -1,0 +1,3 @@
+{
+  "id": "skill-risk-external-instructions", "cardType": "risk", "title": "外部 Skill 指令越权风险", "summary": "外部 SKILL.md 可能要求联网、执行脚本、访问凭据或覆盖项目规则；原始层只能作为待分析文本。", "riskFlags": ["prompt-injection", "high-privilege", "automatic-execution", "git-write"], "mitigation": ["never invoke from sources", "fetch to staging", "static audit", "user approval before adaptation"], "sourceIds": ["agentskills-spec", "openai-skills"], "projectRelevance": 5
+}

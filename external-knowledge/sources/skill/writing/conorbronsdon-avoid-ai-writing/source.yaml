@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "sourceId": "conorbronsdon-avoid-ai-writing",
+  "displayName": "Avoid AI Writing",
+  "category": ["writing", "editing"],
+  "repository": "https://github.com/conorbronsdon/avoid-ai-writing",
+  "defaultBranch": "main",
+  "trackedPaths": ["LICENSE", "SKILL.md"],
+  "storageMode": "selected-files",
+  "trustTier": "focused-writing-reference",
+  "license": { "type": "MIT", "verified": true, "licensePath": "LICENSE", "redistributionAllowed": true },
+  "version": { "currentCommit": "660c95cfd5b67604ad5ed598a8bd1be92e0ee3d5", "currentRelease": null, "fetchedAt": "2026-07-22T00:00:00.000Z", "lastCheckedAt": "2026-07-22T00:00:00.000Z", "nextCheckAt": "2026-08-21T00:00:00.000Z" },
+  "updatePolicy": { "checkIntervalDays": 30, "fetchToStagingWhenDue": true, "autoReplaceCurrentSnapshot": false, "autoModifyLocalSkills": false },
+  "security": { "containsExecutableCode": false, "containsPromptInstructions": true, "trustedForDirectExecution": false, "auditStatus": "reviewed-selected-files" },
+  "localUsage": { "status": "adapted", "adaptedSkills": ["liluo-natural-expression"], "notes": "只吸收诊断、局部修改、二次检查和保护自然段落；不采用英文禁词表。" }
+}

@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "sourceId": "openai-skills",
+  "displayName": "OpenAI Skills Catalog",
+  "category": ["standards", "agent-engineering"],
+  "repository": "https://github.com/openai/skills",
+  "defaultBranch": "main",
+  "trackedPaths": ["skills/.system/skill-creator/SKILL.md", "skills/.system/skill-creator/LICENSE.txt"],
+  "storageMode": "selected-files",
+  "trustTier": "official-primary",
+  "license": { "type": "Apache-2.0 (selected skill only)", "verified": true, "licensePath": "skills/.system/skill-creator/LICENSE.txt", "redistributionAllowed": true },
+  "version": { "currentCommit": "49f948faa9258a0c61caceaf225e179651397431", "currentRelease": null, "fetchedAt": "2026-07-22T00:00:00.000Z", "lastCheckedAt": "2026-07-22T00:00:00.000Z", "nextCheckAt": "2026-07-29T00:00:00.000Z" },
+  "updatePolicy": { "checkIntervalDays": 7, "fetchToStagingWhenDue": true, "autoReplaceCurrentSnapshot": false, "autoModifyLocalSkills": false },
+  "security": { "containsExecutableCode": false, "containsPromptInstructions": true, "trustedForDirectExecution": false, "auditStatus": "reviewed-selected-files" },
+  "localUsage": { "status": "referenced", "adaptedSkills": ["liluo-natural-expression"], "notes": "逐 Skill 许可证；用户列出的 develop-web-game 路径在本次 HEAD 中不存在，未编造快照。" }
+}

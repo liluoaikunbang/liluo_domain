@@ -1,0 +1,6 @@
+# match: ["npm", "install", "lodash"] => prompt
+# not_match: ["npm", "run", "docs:check-encoding"] => allow
+prefix_rule(pattern = ["npm", ["install", "update"]], decision = "prompt", justification = "依赖变更会修改 lockfile、node_modules 或供应链状态。")
+# match: ["npx", "unknown-package"] => prompt
+# not_match: ["npm", "run", "commands:approval:test"] => allow
+prefix_rule(pattern = [["npx", "curl", "wget"]], decision = "prompt", justification = "临时执行包与网络下载必须逐次审查来源和参数。")
