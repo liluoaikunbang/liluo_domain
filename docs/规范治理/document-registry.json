@@ -155,6 +155,16 @@
       "status": "active"
     },
     {
+      "documentId": "windows-utf8-command-system",
+      "path": "docs/系统说明/Windows命令与UTF-8编码规范.md",
+      "type": "system-spec",
+      "authorityFor": ["windows-utf8-file-reading", "windows-command-encoding-recovery"],
+      "consumers": ["AGENTS.md", "docs/系统说明/README.md", "docs/用户命令目录.md"],
+      "indexable": true,
+      "userFacing": true,
+      "status": "active"
+    },
+    {
       "documentId": "story-to-playable-system",
       "path": "docs/系统说明/故事大纲到可玩内容转化系统.md",
       "type": "system-spec",

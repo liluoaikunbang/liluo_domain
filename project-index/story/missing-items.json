@@ -1,27 +1,5 @@
 [
   {
-    "key": "world-1-glimmering-glance-anomaly-disaster-response-organization",
-    "markdownPath": "src/game/data/story_outline/1-modern/2.0.1-异常灾害处理组织.md",
-    "missingItems": [
-      "设计｜异常灾害处理组织·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
-      "玩法｜异常灾害处理组织·主要活动｜缺少主要游戏活动类型与可执行操作循环",
-      "流程｜异常灾害处理组织·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
-      "地图｜异常灾害处理组织·场景结构｜缺少实际地点、区域连接、道路限制与返回变化"
-    ],
-    "title": "异常灾害处理组织"
-  },
-  {
-    "key": "world-1-glimmering-glance-black-oak-night-hunt",
-    "markdownPath": "src/game/data/story_outline/1-modern/3.4.1-黑槲夜猎.md",
-    "missingItems": [
-      "设计｜黑槲夜猎·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
-      "玩法｜黑槲夜猎·主要活动｜缺少主要游戏活动类型与可执行操作循环",
-      "流程｜黑槲夜猎·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
-      "地图｜黑槲夜猎·场景结构｜缺少实际地点、区域连接、道路限制与返回变化"
-    ],
-    "title": "黑槲夜猎"
-  },
-  {
     "key": "world-1-glimmering-glance-black-rose-sanatorium",
     "markdownPath": "src/game/data/story_outline/1-modern/3.5.2.1-黑蔷薇疗养院.md",
     "missingItems": [
@@ -114,17 +92,6 @@
       "流程｜永拘迷宫·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解"
     ],
     "title": "永拘迷宫"
-  },
-  {
-    "key": "world-1-glimmering-glance-fantasy-world-adventure",
-    "markdownPath": "src/game/data/story_outline/1-modern/4.2.2-幻想世界冒险.md",
-    "missingItems": [
-      "设计｜幻想世界冒险·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
-      "玩法｜幻想世界冒险·主要活动｜缺少主要游戏活动类型与可执行操作循环",
-      "流程｜幻想世界冒险·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
-      "地图｜幻想世界冒险·场景结构｜缺少实际地点、区域连接、道路限制与返回变化"
-    ],
-    "title": "幻想世界冒险"
   },
   {
     "key": "world-1-glimmering-glance-flexibility",
@@ -523,17 +490,6 @@
     "title": "雪城列车"
   },
   {
-    "key": "world-1-glimmering-glance-stage-performance",
-    "markdownPath": "src/game/data/story_outline/1-modern/1.4-舞台表演.md",
-    "missingItems": [
-      "设计｜舞台表演·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
-      "玩法｜舞台表演·主要活动｜缺少主要游戏活动类型与可执行操作循环",
-      "流程｜舞台表演·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
-      "地图｜舞台表演·场景结构｜缺少实际地点、区域连接、道路限制与返回变化"
-    ],
-    "title": "舞台表演"
-  },
-  {
     "key": "world-1-glimmering-glance-strange-object-society-archive",
     "markdownPath": "src/game/data/story_outline/1-modern/2.0.1.1-诡物收录.md",
     "missingItems": [
@@ -575,17 +531,6 @@
       "地图｜极端高危女性囚犯运输终极约束方案·场景结构｜缺少实际地点、区域连接、道路限制与返回变化"
     ],
     "title": "极端高危女性囚犯运输终极约束方案"
-  },
-  {
-    "key": "world-1-glimmering-glance-variety-show-fright",
-    "markdownPath": "src/game/data/story_outline/1-modern/2.5.2-综艺惊魂.md",
-    "missingItems": [
-      "设计｜综艺惊魂·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
-      "玩法｜综艺惊魂·主要活动｜缺少主要游戏活动类型与可执行操作循环",
-      "流程｜综艺惊魂·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
-      "地图｜综艺惊魂·场景结构｜缺少实际地点、区域连接、道路限制与返回变化"
-    ],
-    "title": "综艺惊魂"
   },
   {
     "key": "world-2-silent-earth-dirge-fog-city",
@@ -643,36 +588,6 @@
     "title": "永世束缚"
   },
   {
-    "key": "world-3-mortal-dao-framed",
-    "markdownPath": "src/game/data/story_outline/3-ancient/5.3-陷害，入魔宗.md",
-    "missingItems": [
-      "设计｜陷害，入魔宗·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
-      "玩法｜陷害，入魔宗·主要活动｜缺少主要游戏活动类型与可执行操作循环",
-      "流程｜陷害，入魔宗·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解"
-    ],
-    "title": "陷害，入魔宗"
-  },
-  {
-    "key": "world-3-mortal-dao-no-master",
-    "markdownPath": "src/game/data/story_outline/3-ancient/5.2-无人收徒.md",
-    "missingItems": [
-      "设计｜无人收徒·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
-      "玩法｜无人收徒·主要活动｜缺少主要游戏活动类型与可执行操作循环",
-      "流程｜无人收徒·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解"
-    ],
-    "title": "无人收徒"
-  },
-  {
-    "key": "world-3-mortal-dao-rebuild",
-    "markdownPath": "src/game/data/story_outline/3-ancient/6.1-重新修炼.md",
-    "missingItems": [
-      "设计｜重新修炼·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
-      "玩法｜重新修炼·主要活动｜缺少主要游戏活动类型与可执行操作循环",
-      "流程｜重新修炼·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解"
-    ],
-    "title": "重新修炼"
-  },
-  {
     "key": "world-3-mortal-dao-royal-garden-beast-hunt",
     "markdownPath": "src/game/data/story_outline/3-ancient/1.1-王苑兽猎.md",
     "missingItems": [
@@ -704,17 +619,6 @@
       "地图｜围城求生·场景结构｜缺少实际地点、区域连接、道路限制与返回变化"
     ],
     "title": "围城求生"
-  },
-  {
-    "key": "world-3-mortal-dao-spider-valley",
-    "markdownPath": "src/game/data/story_outline/3-ancient/6.2-误入灵蛛谷.md",
-    "missingItems": [
-      "设计｜误入灵蛛谷·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
-      "玩法｜误入灵蛛谷·主要活动｜缺少主要游戏活动类型与可执行操作循环",
-      "流程｜误入灵蛛谷·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
-      "地图｜误入灵蛛谷·场景结构｜缺少实际地点、区域连接、道路限制与返回变化"
-    ],
-    "title": "误入灵蛛谷"
   },
   {
     "key": "world-3-mortal-dao-tile-kiln-disaster-sealing",

@@ -113,6 +113,13 @@
       "status": "active"
     },
     {
+      "ruleId": "windows-explicit-utf8",
+      "title": "Windows 中文文件读取显式使用 UTF-8",
+      "authority": "docs/系统说明/Windows命令与UTF-8编码规范.md",
+      "consumers": ["AGENTS.md", "docs/系统说明/README.md", "docs/用户命令目录.md"],
+      "status": "active"
+    },
+    {
       "ruleId": "formal-content-source-gate",
       "title": "正式内容写入必须通过统一来源与版权门槛",
       "authority": "docs/系统说明/正式项目内容来源与版权写入门槛.md",

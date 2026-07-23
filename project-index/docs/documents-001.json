@@ -2730,7 +2730,7 @@
   {
     "id": "docs/系统说明/README.md",
     "indexVersion": 1,
-    "sourceHash": "3eb56fd535ac74f95019148dcc0549db9bf64267cfb72e3d627dc4f353429a9d",
+    "sourceHash": "8feee154c5b8663f1bbe4f161cd1c49c61917245be9d71213b51b10bb2627cd5",
     "sourcePath": "docs/系统说明/README.md",
     "subtype": "system",
     "summary": "系统说明",
@@ -2739,14 +2739,14 @@
     "type": "document"
   },
   {
-    "id": "docs/项目概览.md",
+    "id": "docs/系统说明/Windows命令与UTF-8编码规范.md",
     "indexVersion": 1,
-    "sourceHash": "67a531b31bbac89ce6aba0e58fa1301518ce9273c9e8fbd4c7b3e5f22f2c333d",
-    "sourcePath": "docs/项目概览.md",
-    "subtype": "other",
-    "summary": "项目概览",
+    "sourceHash": "a28cfb512ff2c98aecf885305909277fb6995155e39e6531f0b6287b54c38880",
+    "sourcePath": "docs/系统说明/Windows命令与UTF-8编码规范.md",
+    "subtype": "system",
+    "summary": "Windows 命令与 UTF-8 编码规范",
     "summarySource": "title-only",
-    "title": "项目概览",
+    "title": "Windows 命令与 UTF-8 编码规范",
     "type": "document"
   }
 ]
