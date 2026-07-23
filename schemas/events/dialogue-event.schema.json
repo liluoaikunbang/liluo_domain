@@ -1,0 +1,479 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://liluo.local/schemas/events/dialogue-event.schema.json",
+  "title": "璃落对话事件",
+  "description": "地图 dialogues.json 中单句或分支对话的结构合同；普通台词节点与选项使用独立子结构。",
+  "type": "object",
+  "required": [
+    "id"
+  ],
+  "properties": {
+    "id": {
+      "$ref": "https://liluo.local/schemas/common/identifier.schema.json"
+    },
+    "speaker": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 100
+    },
+    "speakerSide": {
+      "type": "string",
+      "enum": [
+        "left",
+        "right"
+      ]
+    },
+    "npcPortrait": {
+      "$ref": "#/$defs/portrait"
+    },
+    "sceneImage": {
+      "$ref": "#/$defs/sceneImage"
+    },
+    "text": {
+      "type": "string",
+      "minLength": 1
+    },
+    "startNodeId": {
+      "$ref": "https://liluo.local/schemas/common/identifier.schema.json"
+    },
+    "nodes": {
+      "type": "object",
+      "minProperties": 1,
+      "propertyNames": {
+        "$ref": "https://liluo.local/schemas/common/identifier.schema.json"
+      },
+      "additionalProperties": {
+        "$ref": "#/$defs/node"
+      }
+    }
+  },
+  "oneOf": [
+    {
+      "title": "单句对话",
+      "required": [
+        "text"
+      ],
+      "not": {
+        "required": [
+          "nodes"
+        ]
+      }
+    },
+    {
+      "title": "分支对话",
+      "required": [
+        "nodes"
+      ],
+      "not": {
+        "required": [
+          "text"
+        ]
+      }
+    }
+  ],
+  "$defs": {
+    "node": {
+      "type": "object",
+      "required": [
+        "id",
+        "text"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "https://liluo.local/schemas/common/identifier.schema.json"
+        },
+        "speaker": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 100
+        },
+        "speakerSide": {
+          "type": "string",
+          "enum": [
+            "left",
+            "right"
+          ]
+        },
+        "npcPortrait": {
+          "$ref": "#/$defs/portrait"
+        },
+        "sceneImage": {
+          "$ref": "#/$defs/sceneImage"
+        },
+        "text": {
+          "type": "string",
+          "minLength": 1
+        },
+        "next": {
+          "$ref": "https://liluo.local/schemas/common/identifier.schema.json",
+          "description": "下一对话节点 ID；缺省且无选择时结束对话。"
+        },
+        "choices": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/choice"
+          },
+          "minItems": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "choice": {
+      "type": "object",
+      "required": [
+        "id",
+        "label"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "https://liluo.local/schemas/common/identifier.schema.json"
+        },
+        "label": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 300
+        },
+        "next": {
+          "$ref": "https://liluo.local/schemas/common/identifier.schema.json",
+          "description": "下一对话节点 ID；缺省表示选择后结束对话。"
+        },
+        "cutscene": {
+          "$ref": "#/$defs/cutscene"
+        },
+        "mapTransition": {
+          "$ref": "#/$defs/mapTransition"
+        },
+        "timeOfDayChange": {
+          "$ref": "#/$defs/timeOfDayChange"
+        },
+        "weatherChange": {
+          "$ref": "#/$defs/weatherChange"
+        },
+        "notification": {
+          "$ref": "#/$defs/notification"
+        },
+        "playerAppearanceChange": {
+          "$ref": "#/$defs/playerAppearanceChange"
+        },
+        "playerPortraitChange": {
+          "$ref": "#/$defs/playerPortraitChange"
+        },
+        "playerStatusChange": {
+          "$ref": "#/$defs/playerStatusChange"
+        },
+        "mapSessionFlagChange": {
+          "$ref": "#/$defs/mapSessionFlagChange"
+        },
+        "interactiveFictionStart": {
+          "$ref": "#/$defs/interactiveFictionStart"
+        },
+        "directionPadGameStart": {
+          "$ref": "#/$defs/directionPadGameStart"
+        },
+        "soundEffectPlay": {
+          "$ref": "#/$defs/soundEffectPlay"
+        }
+      },
+      "additionalProperties": false
+    },
+    "sceneImage": {
+      "type": "object",
+      "required": [
+        "assetKey"
+      ],
+      "properties": {
+        "assetKey": {
+          "$ref": "https://liluo.local/schemas/common/identifier.schema.json",
+          "description": "素材注册键引用。"
+        }
+      },
+      "additionalProperties": false
+    },
+    "portrait": {
+      "type": "object",
+      "required": [
+        "key"
+      ],
+      "properties": {
+        "key": {
+          "$ref": "https://liluo.local/schemas/common/identifier.schema.json"
+        },
+        "src": {
+          "type": "string",
+          "minLength": 1
+        },
+        "layers": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/portraitLayer"
+          }
+        },
+        "backLayers": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/portraitLayer"
+          }
+        },
+        "alt": {
+          "type": "string"
+        },
+        "statusText": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "portraitLayer": {
+      "type": "object",
+      "required": [
+        "key",
+        "src"
+      ],
+      "properties": {
+        "key": {
+          "$ref": "https://liluo.local/schemas/common/identifier.schema.json"
+        },
+        "src": {
+          "type": "string",
+          "minLength": 1
+        },
+        "alt": {
+          "type": "string"
+        },
+        "keywords": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "motionGroup": {
+          "type": "string",
+          "enum": [
+            "base",
+            "upperBody",
+            "lowerBody",
+            "feet",
+            "head",
+            "hair",
+            "expression",
+            "accessory",
+            "upperClothing",
+            "lowerClothing",
+            "binding"
+          ]
+        },
+        "motionPreset": {
+          "type": "string",
+          "enum": [
+            "idle",
+            "softStruggle",
+            "tightStruggle",
+            "hairSway",
+            "fixed"
+          ]
+        },
+        "zIndex": {
+          "type": "number"
+        }
+      },
+      "additionalProperties": false
+    },
+    "cutscene": {
+      "type": "object",
+      "required": [
+        "type",
+        "text"
+      ],
+      "properties": {
+        "type": {
+          "type": "string",
+          "const": "fade_message"
+        },
+        "text": {
+          "type": "string",
+          "minLength": 1
+        },
+        "holdMs": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "fadeInMs": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "fadeOutMs": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "additionalProperties": false
+    },
+    "mapTransition": {
+      "type": "object",
+      "required": [
+        "mapId"
+      ],
+      "properties": {
+        "mapId": {
+          "$ref": "https://liluo.local/schemas/common/identifier.schema.json"
+        },
+        "spawnId": {
+          "$ref": "https://liluo.local/schemas/common/identifier.schema.json"
+        }
+      },
+      "additionalProperties": false
+    },
+    "timeOfDayChange": {
+      "type": "object",
+      "required": [
+        "timeOfDayId"
+      ],
+      "properties": {
+        "timeOfDayId": {
+          "$ref": "https://liluo.local/schemas/common/identifier.schema.json"
+        }
+      },
+      "additionalProperties": false
+    },
+    "weatherChange": {
+      "type": "object",
+      "required": [
+        "weatherId"
+      ],
+      "properties": {
+        "weatherId": {
+          "$ref": "https://liluo.local/schemas/common/identifier.schema.json"
+        }
+      },
+      "additionalProperties": false
+    },
+    "notification": {
+      "type": "object",
+      "required": [
+        "text"
+      ],
+      "properties": {
+        "text": {
+          "type": "string",
+          "minLength": 1
+        },
+        "type": {
+          "type": "string",
+          "enum": [
+            "neutral",
+            "gain",
+            "loss"
+          ]
+        },
+        "duration": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "additionalProperties": false
+    },
+    "playerAppearanceChange": {
+      "type": "object",
+      "required": [
+        "appearanceId"
+      ],
+      "properties": {
+        "appearanceId": {
+          "$ref": "https://liluo.local/schemas/common/identifier.schema.json"
+        }
+      },
+      "additionalProperties": false
+    },
+    "playerPortraitChange": {
+      "type": "object",
+      "required": [
+        "portraitKey"
+      ],
+      "properties": {
+        "portraitKey": {
+          "$ref": "https://liluo.local/schemas/common/identifier.schema.json"
+        }
+      },
+      "additionalProperties": false
+    },
+    "playerStatusChange": {
+      "type": "object",
+      "required": [
+        "status"
+      ],
+      "properties": {
+        "status": {
+          "type": "array",
+          "items": {
+            "$ref": "https://liluo.local/schemas/common/identifier.schema.json"
+          },
+          "uniqueItems": true
+        },
+        "mode": {
+          "type": "string",
+          "enum": [
+            "set",
+            "append",
+            "remove"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "mapSessionFlagChange": {
+      "type": "object",
+      "required": [
+        "flagId",
+        "value"
+      ],
+      "properties": {
+        "flagId": {
+          "$ref": "https://liluo.local/schemas/common/identifier.schema.json"
+        },
+        "value": {
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": false
+    },
+    "interactiveFictionStart": {
+      "type": "object",
+      "required": [
+        "scenarioId"
+      ],
+      "properties": {
+        "scenarioId": {
+          "$ref": "https://liluo.local/schemas/common/identifier.schema.json"
+        }
+      },
+      "additionalProperties": false
+    },
+    "directionPadGameStart": {
+      "type": "object",
+      "required": [
+        "gameId"
+      ],
+      "properties": {
+        "gameId": {
+          "$ref": "https://liluo.local/schemas/common/identifier.schema.json"
+        }
+      },
+      "additionalProperties": false
+    },
+    "soundEffectPlay": {
+      "type": "object",
+      "required": [
+        "key"
+      ],
+      "properties": {
+        "key": {
+          "$ref": "https://liluo.local/schemas/common/identifier.schema.json"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

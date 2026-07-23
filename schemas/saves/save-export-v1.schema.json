@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://liluo.local/schemas/saves/save-export-v1.schema.json",
+  "title": "璃落存档导出包 v1",
+  "description": "全部本机存档下载文件的 v1 合同，与内部单档合同分离。",
+  "type": "object",
+  "required": [
+    "version",
+    "exportedAt",
+    "saves"
+  ],
+  "properties": {
+    "version": {
+      "type": "integer",
+      "const": 1
+    },
+    "exportedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "saves": {
+      "type": "object",
+      "propertyNames": {
+        "$ref": "https://liluo.local/schemas/common/identifier.schema.json"
+      },
+      "additionalProperties": {
+        "$ref": "https://liluo.local/schemas/saves/save-data-v1.schema.json"
+      }
+    }
+  },
+  "additionalProperties": false
+}

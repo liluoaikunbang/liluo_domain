@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "key": "world-1-example",
+  "title": "示例节点",
+  "world": "1-浮光掠影",
+  "series": "1-modern",
+  "nodeType": "story-node",
+  "status": "大纲",
+  "parentKey": null,
+  "source": {
+    "kind": "story",
+    "path": "src/game/data/story_outline/sources/1-modern.json"
+  },
+  "mapRefs": [],
+  "eventRefs": [],
+  "characterRefs": [
+    "璃落"
+  ],
+  "gameplayRefs": [],
+  "markdownBodyRef": null
+}

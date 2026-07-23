@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "story-gap-analyst-agent-positive-001",
+  "title": "liluo_story_gap_analyst 正向委派",
+  "targetType": "agent",
+  "target": "liluo_story_gap_analyst",
+  "status": "active",
+  "polarity": "positive",
+  "mode": "routing-plan",
+  "costTier": "smoke",
+  "userPrompt": "跨多个故事节点识别真实缺口并给出有证据的候选排序。",
+  "contextFiles": [],
+  "expected": {
+    "requiredSkills": [],
+    "allowedSkills": [],
+    "forbiddenSkills": [],
+    "requiredAgents": [
+      "liluo_story_gap_analyst"
+    ],
+    "forbiddenAgents": [],
+    "requiredReadPaths": [],
+    "allowedReadPaths": [],
+    "requiredWritePaths": [],
+    "allowedWritePaths": [],
+    "forbiddenActions": [
+      "自动提交",
+      "自动推送"
+    ],
+    "requiredValidationProfiles": [],
+    "forbiddenValidationProfiles": [
+      "all"
+    ],
+    "approvalExpectation": "not-required"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "dialogue-event-authoring-positive-001",
+  "title": "liluo-dialogue-event-authoring 正向路由",
+  "targetType": "skill",
+  "target": "liluo-dialogue-event-authoring",
+  "status": "active",
+  "polarity": "positive",
+  "mode": "routing-plan",
+  "costTier": "standard",
+  "userPrompt": "为已确认剧情编写可执行条件分支对话事件。",
+  "contextFiles": [],
+  "expected": {
+    "requiredSkills": [
+      "liluo-dialogue-event-authoring"
+    ],
+    "allowedSkills": [],
+    "forbiddenSkills": [],
+    "requiredAgents": [],
+    "forbiddenAgents": [],
+    "requiredReadPaths": [],
+    "allowedReadPaths": [],
+    "requiredWritePaths": [
+      "src/game/data/"
+    ],
+    "allowedWritePaths": [
+      "src/game/data/"
+    ],
+    "forbiddenActions": [
+      "自动提交",
+      "自动推送"
+    ],
+    "requiredValidationProfiles": [],
+    "forbiddenValidationProfiles": [
+      "all"
+    ],
+    "approvalExpectation": "not-required"
+  }
+}

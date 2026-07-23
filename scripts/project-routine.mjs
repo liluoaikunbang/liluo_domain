@@ -26,6 +26,8 @@ const ROUTINE_PLANS = Object.freeze({
     { id: 'docs:commands:validate', command: 'npm', args: ['run', 'docs:commands:validate'] },
     { id: 'commands:approval:validate', command: 'npm', args: ['run', 'commands:approval:validate'] },
     { id: 'project:index:check', command: 'npm', args: ['run', 'project:index:check'] },
+    { id: 'data:contracts:check', command: 'npm', args: ['run', 'data:contracts:check'] },
+    { id: 'evals:check', command: 'npm', args: ['run', 'evals:check'] },
     { id: 'game:content:validate', command: 'npm', args: ['run', 'game:content:validate'] },
   ]),
   test: Object.freeze([

@@ -1,5 +1,49 @@
 [
   {
+    "id": "docs/系统说明/像素行走图生成提示词模板.md",
+    "indexVersion": 1,
+    "sourceHash": "150bef763cf631ffae5d9ced1108603144f2b0a1b7b483fd38f1b488d19a375a",
+    "sourcePath": "docs/系统说明/像素行走图生成提示词模板.md",
+    "subtype": "system",
+    "summary": "像素行走图生成提示词模板",
+    "summarySource": "title-only",
+    "title": "像素行走图生成提示词模板",
+    "type": "document"
+  },
+  {
+    "id": "docs/系统说明/叙事路线模拟与逻辑验证系统.md",
+    "indexVersion": 1,
+    "sourceHash": "dd0b8f8cd14518992177e2d512229327c085f904de96b19c99f9bc3bddb68784",
+    "sourcePath": "docs/系统说明/叙事路线模拟与逻辑验证系统.md",
+    "subtype": "system",
+    "summary": "叙事路线模拟与逻辑验证系统",
+    "summarySource": "title-only",
+    "title": "叙事路线模拟与逻辑验证系统",
+    "type": "document"
+  },
+  {
+    "id": "docs/系统说明/游戏视图与模式.md",
+    "indexVersion": 1,
+    "sourceHash": "cf54c683f485b54f2520b397dee8354e9b0cd23988c24a74c59a82bc9199d89e",
+    "sourcePath": "docs/系统说明/游戏视图与模式.md",
+    "subtype": "system",
+    "summary": "游戏视图与模式",
+    "summarySource": "title-only",
+    "title": "游戏视图与模式",
+    "type": "document"
+  },
+  {
+    "id": "docs/系统说明/正式项目内容来源与版权写入门槛.md",
+    "indexVersion": 1,
+    "sourceHash": "32a4ed46c9401a576fdd1caf153bded12d6287d91276eb6e876eb4e22904d9d4",
+    "sourcePath": "docs/系统说明/正式项目内容来源与版权写入门槛.md",
+    "subtype": "system",
+    "summary": "正式项目内容来源与版权写入门槛",
+    "summarySource": "title-only",
+    "title": "正式项目内容来源与版权写入门槛",
+    "type": "document"
+  },
+  {
     "id": "docs/系统说明/Codex命令授权治理系统.md",
     "indexVersion": 1,
     "sourceHash": "0c3c38c7c11371ef661db0db014999a617d9192ee079bfc1ae78f61f06af9ad1",
@@ -11,9 +55,20 @@
     "type": "document"
   },
   {
+    "id": "docs/系统说明/JSON-Schema数据契约系统.md",
+    "indexVersion": 1,
+    "sourceHash": "a835837bba83cfcc29663c5112b985192db4618c075d34b6143b3e2a9b7c3c05",
+    "sourcePath": "docs/系统说明/JSON-Schema数据契约系统.md",
+    "subtype": "system",
+    "summary": "JSON Schema 数据契约系统",
+    "summarySource": "title-only",
+    "title": "JSON Schema 数据契约系统",
+    "type": "document"
+  },
+  {
     "id": "docs/系统说明/README.md",
     "indexVersion": 1,
-    "sourceHash": "8feee154c5b8663f1bbe4f161cd1c49c61917245be9d71213b51b10bb2627cd5",
+    "sourceHash": "752dd71b6b1ea918e3f35e9c969c62f2da822402d59557c14658341821d7cfb3",
     "sourcePath": "docs/系统说明/README.md",
     "subtype": "system",
     "summary": "系统说明",
@@ -22,9 +77,20 @@
     "type": "document"
   },
   {
+    "id": "docs/系统说明/Skill与Agent能力回归评测系统.md",
+    "indexVersion": 1,
+    "sourceHash": "3b8efd064a728694e4b31e079a1d2aa052e2a78a4d4e5cbd446d56f1bc0b305e",
+    "sourcePath": "docs/系统说明/Skill与Agent能力回归评测系统.md",
+    "subtype": "system",
+    "summary": "Skill 与 Agent 能力回归评测系统",
+    "summarySource": "title-only",
+    "title": "Skill 与 Agent 能力回归评测系统",
+    "type": "document"
+  },
+  {
     "id": "docs/系统说明/Windows命令与UTF-8编码规范.md",
     "indexVersion": 1,
-    "sourceHash": "a28cfb512ff2c98aecf885305909277fb6995155e39e6531f0b6287b54c38880",
+    "sourceHash": "85da2d880c40deef11a05d66d3891edfcf3acd5423131590025d8d4aa2e32557",
     "sourcePath": "docs/系统说明/Windows命令与UTF-8编码规范.md",
     "subtype": "system",
     "summary": "Windows 命令与 UTF-8 编码规范",
@@ -46,7 +112,7 @@
   {
     "id": "docs/用户命令目录.md",
     "indexVersion": 1,
-    "sourceHash": "f44306bcf1d59fe9335b1ed1ce1af1cf18540504471e26e21727b79bcde70e49",
+    "sourceHash": "d969a22224c5cff6cb6ed538fdf39ee8d8ee9977f4c4c14401b72adb15a313d6",
     "sourcePath": "docs/用户命令目录.md",
     "subtype": "other",
     "summary": "用户命令目录",
@@ -167,7 +233,7 @@
   {
     "id": "docs/README.md",
     "indexVersion": 1,
-    "sourceHash": "ba00f2f480973eb3be033c16dced436266a13f387d9c9519251e407e4341b3c7",
+    "sourceHash": "5062b32bde865cee8cd055b08cbcf5d79b0d68a623efc7ca930ecc519f8e489b",
     "sourcePath": "docs/README.md",
     "subtype": "other",
     "summary": "璃落的城堡文档入口",

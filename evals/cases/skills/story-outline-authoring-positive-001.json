@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "story-outline-authoring-positive-001",
+  "title": "liluo-story-outline-authoring 正向路由",
+  "targetType": "skill",
+  "target": "liluo-story-outline-authoring",
+  "status": "active",
+  "polarity": "positive",
+  "mode": "routing-plan",
+  "costTier": "smoke",
+  "userPrompt": "请完善这个已有故事节点，并写回正式大纲。",
+  "contextFiles": [],
+  "expected": {
+    "requiredSkills": [
+      "liluo-story-outline-authoring"
+    ],
+    "allowedSkills": [],
+    "forbiddenSkills": [],
+    "requiredAgents": [],
+    "forbiddenAgents": [],
+    "requiredReadPaths": [],
+    "allowedReadPaths": [],
+    "requiredWritePaths": [
+      "src/game/data/story_outline/"
+    ],
+    "allowedWritePaths": [
+      "src/game/data/story_outline/"
+    ],
+    "forbiddenActions": [
+      "自动提交",
+      "自动推送"
+    ],
+    "requiredValidationProfiles": [],
+    "forbiddenValidationProfiles": [
+      "all"
+    ],
+    "approvalExpectation": "not-required"
+  }
+}

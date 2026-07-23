@@ -49,6 +49,16 @@
       "status": "active"
     },
     {
+      "documentId": "json-schema-data-contract-system",
+      "path": "docs/系统说明/JSON-Schema数据契约系统.md",
+      "type": "system-spec",
+      "authorityFor": ["json-schema-contracts", "schema-registry", "structural-validation-boundary"],
+      "consumers": ["schemas/registry.json", "scripts/data-contracts/validate-schema-registry.mjs", "scripts/data-contracts/validate-data-contracts.mjs", "scripts/data-contracts/test-data-contracts.mjs", "scripts/project-routine.mjs", "package.json", "README.md", "docs/README.md", "docs/系统说明/README.md", "docs/用户命令目录.md"],
+      "indexable": true,
+      "userFacing": true,
+      "status": "active"
+    },
+    {
       "documentId": "external-knowledge-system",
       "path": "docs/系统说明/外部虚构题材知识库.md",
       "type": "system-spec",
@@ -80,7 +90,7 @@
       "documentId": "governance-memory-system",
       "path": "docs/系统说明/项目规范治理与设计记忆系统.md",
       "type": "system-spec",
-      "authorityFor": ["documentation-governance", "design-memory-architecture", "minimal-verification-budget"],
+      "authorityFor": ["documentation-governance", "design-memory-architecture", "minimal-verification-budget", "avoidable-friction-review"],
       "consumers": ["AGENTS.md", ".agents/skills/liluo-project/liluo-project-governance-memory/SKILL.md", "docs/技能说明/liluo-project-governance-memory.md", "docs/智能体说明/liluo_project_memory_curator.md", "docs/用户命令目录.md"],
       "indexable": true,
       "userFacing": true,
@@ -158,7 +168,7 @@
       "documentId": "windows-utf8-command-system",
       "path": "docs/系统说明/Windows命令与UTF-8编码规范.md",
       "type": "system-spec",
-      "authorityFor": ["windows-utf8-file-reading", "windows-command-encoding-recovery"],
+      "authorityFor": ["windows-utf8-file-reading", "windows-command-encoding-recovery", "git-chinese-path-output", "git-metadata-write-routing"],
       "consumers": ["AGENTS.md", "docs/系统说明/README.md", "docs/用户命令目录.md"],
       "indexable": true,
       "userFacing": true,
@@ -207,6 +217,16 @@
       "type": "system-spec",
       "authorityFor": ["world-series-production-coverage"],
       "consumers": [".agents/skills/liluo-project/liluo-production-coverage/SKILL.md", "scripts/content-production/production-coverage.mjs", "docs/用户命令目录.md"],
+      "indexable": true,
+      "userFacing": true,
+      "status": "active"
+    },
+    {
+      "documentId": "capability-regression-system",
+      "path": "docs/系统说明/Skill与Agent能力回归评测系统.md",
+      "type": "system-spec",
+      "authorityFor": ["skill-agent-capability-regression"],
+      "consumers": ["evals/README.md", "evals/registry.json", ".agents/skills/testing/liluo-capability-regression/SKILL.md", "docs/技能说明/liluo-capability-regression.md", "docs/用户命令目录.md", "scripts/project-routine.mjs"],
       "indexable": true,
       "userFacing": true,
       "status": "active"

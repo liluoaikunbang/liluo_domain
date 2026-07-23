@@ -1,0 +1,215 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://liluo.local/schemas/events/interactive-fiction.schema.json",
+  "title": "璃落互动小说副本",
+  "description": "互动小说 scenario.json 的结构合同，覆盖开始节点、文本节点、选项、状态写入、线索、任务和结局状态。",
+  "type": "object",
+  "required": [
+    "id",
+    "title",
+    "startNodeId",
+    "nodes"
+  ],
+  "properties": {
+    "id": {
+      "$ref": "https://liluo.local/schemas/common/identifier.schema.json"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "subtitle": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 300
+    },
+    "description": {
+      "type": "string",
+      "minLength": 1
+    },
+    "startNodeId": {
+      "$ref": "https://liluo.local/schemas/common/identifier.schema.json"
+    },
+    "defaultBackgroundKey": {
+      "$ref": "https://liluo.local/schemas/common/identifier.schema.json"
+    },
+    "defaultPortraitKey": {
+      "$ref": "https://liluo.local/schemas/common/identifier.schema.json"
+    },
+    "nodes": {
+      "type": "object",
+      "minProperties": 1,
+      "propertyNames": {
+        "$ref": "https://liluo.local/schemas/common/identifier.schema.json"
+      },
+      "additionalProperties": {
+        "$ref": "#/$defs/node"
+      }
+    },
+    "clues": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/clue"
+      }
+    },
+    "tasks": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/task"
+      }
+    },
+    "returnMap": {
+      "$ref": "#/$defs/returnMap"
+    }
+  },
+  "$defs": {
+    "node": {
+      "type": "object",
+      "required": [
+        "id",
+        "paragraphs"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "https://liluo.local/schemas/common/identifier.schema.json"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "backgroundKey": {
+          "$ref": "https://liluo.local/schemas/common/identifier.schema.json"
+        },
+        "portraitKey": {
+          "$ref": "https://liluo.local/schemas/common/identifier.schema.json"
+        },
+        "paragraphs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1
+        },
+        "choices": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/choice"
+          },
+          "minItems": 1
+        },
+        "setFlags": {
+          "type": "object",
+          "propertyNames": {
+            "$ref": "https://liluo.local/schemas/common/identifier.schema.json"
+          },
+          "additionalProperties": {
+            "type": [
+              "string",
+              "number",
+              "boolean"
+            ]
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "choice": {
+      "type": "object",
+      "required": [
+        "id",
+        "label"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "https://liluo.local/schemas/common/identifier.schema.json"
+        },
+        "label": {
+          "type": "string",
+          "minLength": 1
+        },
+        "next": {
+          "$ref": "https://liluo.local/schemas/common/identifier.schema.json"
+        },
+        "revealClues": {
+          "$ref": "#/$defs/idList"
+        },
+        "activateTasks": {
+          "$ref": "#/$defs/idList"
+        },
+        "completeTasks": {
+          "$ref": "#/$defs/idList"
+        }
+      },
+      "additionalProperties": false
+    },
+    "clue": {
+      "type": "object",
+      "required": [
+        "id",
+        "title",
+        "text"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "https://liluo.local/schemas/common/identifier.schema.json"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "text": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "task": {
+      "type": "object",
+      "required": [
+        "id",
+        "title",
+        "hint"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "https://liluo.local/schemas/common/identifier.schema.json"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "hint": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "idList": {
+      "type": "array",
+      "items": {
+        "$ref": "https://liluo.local/schemas/common/identifier.schema.json"
+      },
+      "uniqueItems": true
+    },
+    "returnMap": {
+      "type": "object",
+      "required": [
+        "mapId"
+      ],
+      "properties": {
+        "mapId": {
+          "$ref": "https://liluo.local/schemas/common/identifier.schema.json"
+        },
+        "spawnId": {
+          "$ref": "https://liluo.local/schemas/common/identifier.schema.json"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

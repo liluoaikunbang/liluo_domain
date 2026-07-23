@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "content-auditor-agent-negative-001",
+  "title": "liluo_content_auditor 负向委派",
+  "targetType": "agent",
+  "target": "liluo_content_auditor",
+  "status": "active",
+  "polarity": "negative",
+  "mode": "routing-plan",
+  "costTier": "standard",
+  "userPrompt": "只运行一个明确的单元测试，不做内容审计。",
+  "contextFiles": [],
+  "expected": {
+    "requiredSkills": [],
+    "allowedSkills": [],
+    "forbiddenSkills": [],
+    "requiredAgents": [],
+    "forbiddenAgents": [
+      "liluo_content_auditor"
+    ],
+    "requiredReadPaths": [],
+    "allowedReadPaths": [],
+    "requiredWritePaths": [],
+    "allowedWritePaths": [],
+    "forbiddenActions": [
+      "自动提交",
+      "自动推送"
+    ],
+    "requiredValidationProfiles": [],
+    "forbiddenValidationProfiles": [
+      "all"
+    ],
+    "approvalExpectation": "not-required"
+  }
+}

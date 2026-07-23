@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "project-index-maintenance-positive-001",
+  "title": "liluo-project-index-maintenance 正向路由",
+  "targetType": "skill",
+  "target": "liluo-project-index-maintenance",
+  "status": "active",
+  "polarity": "positive",
+  "mode": "routing-plan",
+  "costTier": "smoke",
+  "userPrompt": "被索引的 Skill 和系统说明已修改，请增量刷新并验证项目知识索引。",
+  "contextFiles": [],
+  "expected": {
+    "requiredSkills": [
+      "liluo-project-index-maintenance"
+    ],
+    "allowedSkills": [],
+    "forbiddenSkills": [],
+    "requiredAgents": [],
+    "forbiddenAgents": [],
+    "requiredReadPaths": [],
+    "allowedReadPaths": [],
+    "requiredWritePaths": [
+      "project-index/"
+    ],
+    "allowedWritePaths": [
+      "project-index/"
+    ],
+    "forbiddenActions": [
+      "自动提交",
+      "自动推送"
+    ],
+    "requiredValidationProfiles": [],
+    "forbiddenValidationProfiles": [
+      "all"
+    ],
+    "approvalExpectation": "not-required"
+  }
+}

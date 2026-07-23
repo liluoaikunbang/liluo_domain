@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "validation-runner-agent-negative-001",
+  "title": "liluo_validation_runner 负向委派",
+  "targetType": "agent",
+  "target": "liluo_validation_runner",
+  "status": "active",
+  "polarity": "negative",
+  "mode": "routing-plan",
+  "costTier": "standard",
+  "userPrompt": "只解释一个函数含义，不运行验证。",
+  "contextFiles": [],
+  "expected": {
+    "requiredSkills": [],
+    "allowedSkills": [],
+    "forbiddenSkills": [],
+    "requiredAgents": [],
+    "forbiddenAgents": [
+      "liluo_validation_runner"
+    ],
+    "requiredReadPaths": [],
+    "allowedReadPaths": [],
+    "requiredWritePaths": [],
+    "allowedWritePaths": [],
+    "forbiddenActions": [
+      "自动提交",
+      "自动推送"
+    ],
+    "requiredValidationProfiles": [],
+    "forbiddenValidationProfiles": [
+      "all"
+    ],
+    "approvalExpectation": "not-required"
+  }
+}

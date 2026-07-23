@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "assetId": "src/assets/game/backgrounds/Liluo_bed.png",
+  "filePath": "src/assets/game/backgrounds/Liluo_bed.png",
+  "fileName": "Liluo_bed.png",
+  "assetType": "事件背景",
+  "usage": "用于璃落房间床事件。",
+  "referenceStatus": "referenced",
+  "fileInfo": {
+    "extension": "png"
+  },
+  "provenance": {
+    "sourceStatus": "not-recorded",
+    "licenseStatus": "not-recorded"
+  }
+}

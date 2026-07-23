@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "story-gap-discovery-negative-001",
+  "title": "liluo-story-gap-discovery 负向路由",
+  "targetType": "skill",
+  "target": "liluo-story-gap-discovery",
+  "status": "active",
+  "polarity": "negative",
+  "mode": "routing-plan",
+  "costTier": "standard",
+  "userPrompt": "候选已经批准，请把它写回正式故事节点。",
+  "contextFiles": [],
+  "expected": {
+    "requiredSkills": [
+      "liluo-story-outline-authoring"
+    ],
+    "allowedSkills": [],
+    "forbiddenSkills": [
+      "liluo-story-gap-discovery"
+    ],
+    "requiredAgents": [],
+    "forbiddenAgents": [],
+    "requiredReadPaths": [],
+    "allowedReadPaths": [],
+    "requiredWritePaths": [],
+    "allowedWritePaths": [],
+    "forbiddenActions": [
+      "自动提交",
+      "自动推送"
+    ],
+    "requiredValidationProfiles": [],
+    "forbiddenValidationProfiles": [
+      "all"
+    ],
+    "approvalExpectation": "not-required"
+  }
+}

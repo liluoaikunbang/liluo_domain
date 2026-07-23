@@ -1,0 +1,29 @@
+{
+  "id": "example_story",
+  "title": "示例互动小说",
+  "startNodeId": "start",
+  "nodes": {
+    "start": {
+      "id": "start",
+      "paragraphs": [
+        "示例正文。"
+      ],
+      "choices": [
+        {
+          "id": "finish",
+          "label": "结束",
+          "next": "ending"
+        }
+      ]
+    },
+    "ending": {
+      "id": "ending",
+      "paragraphs": [
+        "示例结局。"
+      ],
+      "setFlags": {
+        "scenarioCompleted": true
+      }
+    }
+  }
+}

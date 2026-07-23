@@ -16,6 +16,8 @@
 - [功能更新目录](docs/功能更新目录.md)
 - [游戏素材图片清单](docs/游戏素材图片清单.md)
 - [项目知识索引](project-index/INDEX.md)
+- [JSON Schema 数据契约系统](docs/系统说明/JSON-Schema数据契约系统.md)
+- [Skill / Agent 能力回归评测系统](docs/系统说明/Skill与Agent能力回归评测系统.md)
 - [外部虚构题材知识库](external-knowledge/INDEX.md)
 
 ## 技术栈与目录
@@ -37,6 +39,10 @@ npm run build:offline
 npm run package:offline
 npm run docs:check-encoding
 npm run docs:governance:audit
+npm run data:contracts:check
+npm run data:contracts:test
+npm run evals:check
+npm run evals:smoke
 npm run project:index:check
 npm run project:index:changed
 npm run project:index:validate

@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "game-architecture-explorer-agent-positive-001",
+  "title": "liluo_game_architecture_explorer 正向委派",
+  "targetType": "agent",
+  "target": "liluo_game_architecture_explorer",
+  "status": "active",
+  "polarity": "positive",
+  "mode": "routing-plan",
+  "costTier": "smoke",
+  "userPrompt": "追踪 Vue、Phaser、Pinia、地图事件和存档的数据流与职责。",
+  "contextFiles": [],
+  "expected": {
+    "requiredSkills": [],
+    "allowedSkills": [],
+    "forbiddenSkills": [],
+    "requiredAgents": [
+      "liluo_game_architecture_explorer"
+    ],
+    "forbiddenAgents": [],
+    "requiredReadPaths": [],
+    "allowedReadPaths": [],
+    "requiredWritePaths": [],
+    "allowedWritePaths": [],
+    "forbiddenActions": [
+      "自动提交",
+      "自动推送"
+    ],
+    "requiredValidationProfiles": [],
+    "forbiddenValidationProfiles": [
+      "all"
+    ],
+    "approvalExpectation": "not-required"
+  }
+}

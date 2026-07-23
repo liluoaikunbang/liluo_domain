@@ -1,0 +1,191 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://liluo.local/schemas/story/story-node.schema.json",
+  "title": "璃落故事节点",
+  "description": "故事大纲 sources/*.json 中单个节点的结构合同；来源、系列、Markdown 与版本字段由验证器从注册表和文件上下文确定。",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "key",
+    "title",
+    "world",
+    "series",
+    "nodeType",
+    "status",
+    "parentKey",
+    "source",
+    "mapRefs",
+    "eventRefs",
+    "characterRefs",
+    "gameplayRefs",
+    "markdownBodyRef"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "integer",
+      "const": 1
+    },
+    "key": {
+      "$ref": "https://liluo.local/schemas/common/identifier.schema.json",
+      "description": "故事节点永久 ID。"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "world": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 100
+    },
+    "series": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 100
+    },
+    "nodeType": {
+      "type": "string",
+      "const": "story-node"
+    },
+    "status": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "minLength": 1,
+      "maxLength": 100
+    },
+    "parentKey": {
+      "anyOf": [
+        {
+          "$ref": "https://liluo.local/schemas/common/identifier.schema.json"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "description": "父故事节点 ID；根节点为 null。"
+    },
+    "source": {
+      "$ref": "https://liluo.local/schemas/common/source-reference.schema.json"
+    },
+    "mapRefs": {
+      "type": "array",
+      "items": {
+        "$ref": "https://liluo.local/schemas/common/identifier.schema.json",
+        "description": "地图 ID 引用。"
+      },
+      "uniqueItems": true
+    },
+    "eventRefs": {
+      "type": "array",
+      "items": {
+        "$ref": "https://liluo.local/schemas/common/identifier.schema.json",
+        "description": "事件 ID 引用。"
+      },
+      "uniqueItems": true
+    },
+    "characterRefs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 100,
+        "description": "人物名称或人物稳定 ID 引用。"
+      },
+      "uniqueItems": true
+    },
+    "gameplayRefs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 200,
+        "description": "玩法目录中的玩法 ID 引用。"
+      },
+      "uniqueItems": true
+    },
+    "markdownBodyRef": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 500,
+      "pattern": "^(?![A-Za-z]:)(?!/)(?!.*\\\\)(?!.*(?:^|/)\\.\\.(?:/|$)).+$"
+    },
+    "summary": {
+      "type": "string"
+    },
+    "order": {
+      "type": "number",
+      "minimum": 0
+    },
+    "questType": {
+      "type": "string",
+      "enum": [
+        "main",
+        "side"
+      ]
+    },
+    "branchLayout": {
+      "type": "string",
+      "enum": [
+        "side"
+      ]
+    },
+    "scope": {
+      "type": "string",
+      "minLength": 1
+    },
+    "reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "mapId": {
+      "$ref": "https://liluo.local/schemas/common/identifier.schema.json",
+      "description": "历史单地图引用；规范化后同时进入 mapRefs。"
+    },
+    "storyTags": {
+      "$ref": "#/$defs/stringList"
+    },
+    "plotTags": {
+      "$ref": "#/$defs/stringList"
+    },
+    "bondageTags": {
+      "$ref": "#/$defs/stringList"
+    },
+    "foreshadowing": {
+      "$ref": "#/$defs/stringList"
+    },
+    "locations": {
+      "$ref": "#/$defs/stringList"
+    },
+    "characters": {
+      "$ref": "#/$defs/stringList"
+    },
+    "specialGameplay": {
+      "$ref": "#/$defs/stringList"
+    },
+    "requiredAbilities": {
+      "$ref": "#/$defs/stringList"
+    },
+    "moduleType": {
+      "$ref": "#/$defs/stringList"
+    },
+    "missingItems": {
+      "$ref": "#/$defs/stringList"
+    }
+  },
+  "$defs": {
+    "stringList": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    }
+  },
+  "additionalProperties": false
+}

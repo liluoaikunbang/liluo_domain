@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "story-gap-discovery-positive-001",
+  "title": "liluo-story-gap-discovery 正向路由",
+  "targetType": "skill",
+  "target": "liluo-story-gap-discovery",
+  "status": "active",
+  "polarity": "positive",
+  "mode": "routing-plan",
+  "costTier": "smoke",
+  "userPrompt": "分析现有大纲的真实缺口并提交候选卡，未经批准不要写入正式故事。",
+  "contextFiles": [],
+  "expected": {
+    "requiredSkills": [
+      "liluo-story-gap-discovery"
+    ],
+    "allowedSkills": [],
+    "forbiddenSkills": [],
+    "requiredAgents": [],
+    "forbiddenAgents": [],
+    "requiredReadPaths": [],
+    "allowedReadPaths": [],
+    "requiredWritePaths": [],
+    "allowedWritePaths": [],
+    "forbiddenActions": [
+      "自动提交",
+      "自动推送"
+    ],
+    "requiredValidationProfiles": [],
+    "forbiddenValidationProfiles": [
+      "all"
+    ],
+    "approvalExpectation": "not-required"
+  }
+}

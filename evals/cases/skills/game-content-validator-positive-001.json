@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "game-content-validator-positive-001",
+  "title": "liluo-game-content-validator 正向路由",
+  "targetType": "skill",
+  "target": "liluo-game-content-validator",
+  "status": "active",
+  "polarity": "positive",
+  "mode": "routing-plan",
+  "costTier": "smoke",
+  "userPrompt": "对故事、地图、事件、对话与资源引用执行统一只读内容审计。",
+  "contextFiles": [],
+  "expected": {
+    "requiredSkills": [
+      "liluo-game-content-validator"
+    ],
+    "allowedSkills": [],
+    "forbiddenSkills": [],
+    "requiredAgents": [],
+    "forbiddenAgents": [],
+    "requiredReadPaths": [],
+    "allowedReadPaths": [],
+    "requiredWritePaths": [],
+    "allowedWritePaths": [],
+    "forbiddenActions": [
+      "自动提交",
+      "自动推送"
+    ],
+    "requiredValidationProfiles": [],
+    "forbiddenValidationProfiles": [
+      "all"
+    ],
+    "approvalExpectation": "not-required"
+  }
+}

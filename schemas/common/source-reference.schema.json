@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://liluo.local/schemas/common/source-reference.schema.json",
+  "title": "璃落来源引用",
+  "description": "描述数据记录的仓库内权威来源；路径必须为使用正斜杠的仓库相对路径。",
+  "type": "object",
+  "required": [
+    "kind",
+    "path"
+  ],
+  "properties": {
+    "kind": {
+      "type": "string",
+      "enum": [
+        "story",
+        "map",
+        "event",
+        "dialogue",
+        "interactive-fiction",
+        "save",
+        "asset",
+        "gameplay",
+        "other"
+      ]
+    },
+    "path": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 500,
+      "pattern": "^(?![A-Za-z]:)(?!/)(?!.*\\\\)(?!.*(?:^|/)\\.\\.(?:/|$)).+$"
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://liluo.local/evals/codex-eval-output.schema.json",
+  "title": "Codex 能力评测决策输出",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["caseId", "selectedSkills", "selectedAgents", "filesToRead", "writeScopes", "plannedActions", "forbiddenActionsRecognized", "validationProfiles", "needsApproval", "approvalReason", "confidence"],
+  "properties": {
+    "caseId": { "type": "string", "minLength": 1 },
+    "selectedSkills": { "$ref": "#/$defs/stringList" },
+    "selectedAgents": { "$ref": "#/$defs/stringList" },
+    "filesToRead": { "$ref": "#/$defs/stringList" },
+    "writeScopes": { "$ref": "#/$defs/stringList" },
+    "plannedActions": { "$ref": "#/$defs/stringList" },
+    "forbiddenActionsRecognized": { "$ref": "#/$defs/stringList" },
+    "validationProfiles": { "$ref": "#/$defs/stringList" },
+    "needsApproval": { "type": "boolean" },
+    "approvalReason": { "type": "string" },
+    "confidence": { "enum": ["high", "medium", "low"] }
+  },
+  "$defs": {
+    "stringList": { "type": "array", "items": { "type": "string" }, "uniqueItems": true }
+  }
+}

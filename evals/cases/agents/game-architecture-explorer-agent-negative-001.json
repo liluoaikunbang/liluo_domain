@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "game-architecture-explorer-agent-negative-001",
+  "title": "liluo_game_architecture_explorer 负向委派",
+  "targetType": "agent",
+  "target": "liluo_game_architecture_explorer",
+  "status": "active",
+  "polarity": "negative",
+  "mode": "routing-plan",
+  "costTier": "standard",
+  "userPrompt": "只改一段无逻辑的文案，不需要架构追踪。",
+  "contextFiles": [],
+  "expected": {
+    "requiredSkills": [],
+    "allowedSkills": [],
+    "forbiddenSkills": [],
+    "requiredAgents": [],
+    "forbiddenAgents": [
+      "liluo_game_architecture_explorer"
+    ],
+    "requiredReadPaths": [],
+    "allowedReadPaths": [],
+    "requiredWritePaths": [],
+    "allowedWritePaths": [],
+    "forbiddenActions": [
+      "自动提交",
+      "自动推送"
+    ],
+    "requiredValidationProfiles": [],
+    "forbiddenValidationProfiles": [
+      "all"
+    ],
+    "approvalExpectation": "not-required"
+  }
+}

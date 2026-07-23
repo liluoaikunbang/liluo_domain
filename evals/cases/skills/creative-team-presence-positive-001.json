@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "creative-team-presence-positive-001",
+  "title": "liluo-creative-team-presence 正向路由",
+  "targetType": "skill",
+  "target": "liluo-creative-team-presence",
+  "status": "active",
+  "polarity": "positive",
+  "mode": "routing-plan",
+  "costTier": "standard",
+  "userPrompt": "同步项目组成员身份与克制的 subtle 表达规则。",
+  "contextFiles": [],
+  "expected": {
+    "requiredSkills": [
+      "liluo-creative-team-presence"
+    ],
+    "allowedSkills": [],
+    "forbiddenSkills": [],
+    "requiredAgents": [],
+    "forbiddenAgents": [],
+    "requiredReadPaths": [],
+    "allowedReadPaths": [],
+    "requiredWritePaths": [
+      "docs/设计记忆/项目组灵魂/"
+    ],
+    "allowedWritePaths": [
+      "docs/设计记忆/项目组灵魂/"
+    ],
+    "forbiddenActions": [
+      "自动提交",
+      "自动推送"
+    ],
+    "requiredValidationProfiles": [],
+    "forbiddenValidationProfiles": [
+      "all"
+    ],
+    "approvalExpectation": "not-required"
+  }
+}

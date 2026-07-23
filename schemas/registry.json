@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "contracts": [
+    {
+      "id": "story-node",
+      "schema": "schemas/story/story-node.schema.json",
+      "sourceGlobs": [
+        "src/game/data/story_outline/sources/*.json"
+      ],
+      "mode": "story-node",
+      "owner": "story",
+      "requiredInChangedGate": true,
+      "allowsMissingEmbeddedSchemaVersion": true
+    },
+    {
+      "id": "map-metadata",
+      "schema": "schemas/maps/map-metadata.schema.json",
+      "sourceGlobs": [
+        "src/game/data/maps/*/*/meta.ts"
+      ],
+      "dependencyGlobs": [
+        "src/game/data/maps/*/*/events.json",
+        "src/game/data/maps/*/*/dialogues.json"
+      ],
+      "mode": "map-metadata",
+      "owner": "maps",
+      "requiredInChangedGate": true,
+      "allowsMissingEmbeddedSchemaVersion": true
+    },
+    {
+      "id": "map-event",
+      "schema": "schemas/events/map-event.schema.json",
+      "sourceGlobs": [
+        "src/game/data/maps/*/*/events.json"
+      ],
+      "mode": "map-event",
+      "owner": "events",
+      "requiredInChangedGate": true,
+      "allowsMissingEmbeddedSchemaVersion": true
+    },
+    {
+      "id": "dialogue-event",
+      "schema": "schemas/events/dialogue-event.schema.json",
+      "sourceGlobs": [
+        "src/game/data/maps/*/*/dialogues.json"
+      ],
+      "mode": "object-values",
+      "owner": "events",
+      "requiredInChangedGate": true,
+      "allowsMissingEmbeddedSchemaVersion": true
+    },
+    {
+      "id": "interactive-fiction",
+      "schema": "schemas/events/interactive-fiction.schema.json",
+      "sourceGlobs": [
+        "src/game/data/interactive_fictions/*/scenario.json"
+      ],
+      "mode": "file",
+      "owner": "events",
+      "requiredInChangedGate": true,
+      "allowsMissingEmbeddedSchemaVersion": true
+    },
+    {
+      "id": "save-data-v1",
+      "schema": "schemas/saves/save-data-v1.schema.json",
+      "sourceGlobs": [],
+      "mode": "file-or-array-item",
+      "owner": "saves",
+      "requiredInChangedGate": false,
+      "allowsMissingEmbeddedSchemaVersion": false,
+      "template": true
+    },
+    {
+      "id": "save-export-v1",
+      "schema": "schemas/saves/save-export-v1.schema.json",
+      "sourceGlobs": [],
+      "mode": "file-or-array-item",
+      "owner": "saves",
+      "requiredInChangedGate": false,
+      "allowsMissingEmbeddedSchemaVersion": false,
+      "template": true
+    },
+    {
+      "id": "asset-entry",
+      "schema": "schemas/assets/asset-entry.schema.json",
+      "sourceGlobs": [
+        "docs/游戏素材图片清单.md"
+      ],
+      "mode": "markdown-asset-table",
+      "owner": "assets",
+      "requiredInChangedGate": true,
+      "allowsMissingEmbeddedSchemaVersion": true
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "game-content-validator-negative-001",
+  "title": "liluo-game-content-validator 负向路由",
+  "targetType": "skill",
+  "target": "liluo-game-content-validator",
+  "status": "active",
+  "polarity": "negative",
+  "mode": "routing-plan",
+  "costTier": "standard",
+  "userPrompt": "只检查 Vite 能否编译，不做内容审计。",
+  "contextFiles": [],
+  "expected": {
+    "requiredSkills": [],
+    "allowedSkills": [],
+    "forbiddenSkills": [
+      "liluo-game-content-validator"
+    ],
+    "requiredAgents": [],
+    "forbiddenAgents": [],
+    "requiredReadPaths": [],
+    "allowedReadPaths": [],
+    "requiredWritePaths": [],
+    "allowedWritePaths": [],
+    "forbiddenActions": [
+      "自动提交",
+      "自动推送"
+    ],
+    "requiredValidationProfiles": [],
+    "forbiddenValidationProfiles": [
+      "all"
+    ],
+    "approvalExpectation": "not-required"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "random-story-outline-interview-positive-001",
+  "title": "random-story-outline-interview 正向路由",
+  "targetType": "skill",
+  "target": "random-story-outline-interview",
+  "status": "active",
+  "polarity": "positive",
+  "mode": "routing-plan",
+  "costTier": "standard",
+  "userPrompt": "随机抽取一个未完成故事节点并向我进行聚焦访谈。",
+  "contextFiles": [],
+  "expected": {
+    "requiredSkills": [
+      "random-story-outline-interview"
+    ],
+    "allowedSkills": [],
+    "forbiddenSkills": [],
+    "requiredAgents": [],
+    "forbiddenAgents": [],
+    "requiredReadPaths": [],
+    "allowedReadPaths": [],
+    "requiredWritePaths": [],
+    "allowedWritePaths": [],
+    "forbiddenActions": [
+      "自动提交",
+      "自动推送"
+    ],
+    "requiredValidationProfiles": [],
+    "forbiddenValidationProfiles": [
+      "all"
+    ],
+    "approvalExpectation": "not-required"
+  }
+}

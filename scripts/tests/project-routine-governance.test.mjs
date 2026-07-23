@@ -33,6 +33,8 @@ test('project routine exposes only fixed safe modes', () => {
     'docs:commands:validate',
     'commands:approval:validate',
     'project:index:check',
+    'data:contracts:check',
+    'evals:check',
     'game:content:validate',
   ])
   assert.deepEqual(resolveRoutinePlan('index').map((step) => step.id), [

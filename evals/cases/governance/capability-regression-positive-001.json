@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "capability-regression-positive-001",
+  "title": "liluo-capability-regression 正向路由",
+  "targetType": "skill",
+  "target": "liluo-capability-regression",
+  "status": "active",
+  "polarity": "positive",
+  "mode": "routing-plan",
+  "costTier": "smoke",
+  "userPrompt": "我修改了一个项目 Skill，请选择 changed 评测范围并分析结构化退化。",
+  "contextFiles": [],
+  "expected": {
+    "requiredSkills": [
+      "liluo-capability-regression"
+    ],
+    "allowedSkills": [],
+    "forbiddenSkills": [],
+    "requiredAgents": [],
+    "forbiddenAgents": [],
+    "requiredReadPaths": [],
+    "allowedReadPaths": [],
+    "requiredWritePaths": [
+      "evals/"
+    ],
+    "allowedWritePaths": [
+      "evals/"
+    ],
+    "forbiddenActions": [
+      "自动提交",
+      "自动推送"
+    ],
+    "requiredValidationProfiles": [
+      "changed"
+    ],
+    "forbiddenValidationProfiles": [
+      "all"
+    ],
+    "approvalExpectation": "not-required"
+  }
+}

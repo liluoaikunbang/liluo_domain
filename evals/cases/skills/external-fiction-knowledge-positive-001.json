@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "external-fiction-knowledge-positive-001",
+  "title": "liluo-external-fiction-knowledge 正向路由",
+  "targetType": "skill",
+  "target": "liluo-external-fiction-knowledge",
+  "status": "active",
+  "polarity": "positive",
+  "mode": "routing-plan",
+  "costTier": "standard",
+  "userPrompt": "查询外部虚构题材库，抽象比较类似场景机制，不写入正式故事。",
+  "contextFiles": [],
+  "expected": {
+    "requiredSkills": [
+      "liluo-external-fiction-knowledge"
+    ],
+    "allowedSkills": [],
+    "forbiddenSkills": [],
+    "requiredAgents": [],
+    "forbiddenAgents": [],
+    "requiredReadPaths": [],
+    "allowedReadPaths": [],
+    "requiredWritePaths": [],
+    "allowedWritePaths": [],
+    "forbiddenActions": [
+      "自动提交",
+      "自动推送"
+    ],
+    "requiredValidationProfiles": [],
+    "forbiddenValidationProfiles": [
+      "all"
+    ],
+    "approvalExpectation": "not-required"
+  }
+}

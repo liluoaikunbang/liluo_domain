@@ -1661,9 +1661,31 @@
     "type": "document"
   },
   {
+    "id": "docs/功能更新/148-JSON-Schema数据契约系统.md",
+    "indexVersion": 1,
+    "sourceHash": "b577c33dfa3f093329c252686cf8d7fb8e8193001cb8bfcc9e2375d66ed2c71a",
+    "sourcePath": "docs/功能更新/148-JSON-Schema数据契约系统.md",
+    "subtype": "update",
+    "summary": "148-JSON Schema 数据契约系统",
+    "summarySource": "title-only",
+    "title": "148-JSON Schema 数据契约系统",
+    "type": "document"
+  },
+  {
+    "id": "docs/功能更新/149-Skill与Agent能力回归评测系统.md",
+    "indexVersion": 1,
+    "sourceHash": "a76652dbf7de55e636126281811ebd208f283bdb3223dbc51edde00ab44f2773",
+    "sourcePath": "docs/功能更新/149-Skill与Agent能力回归评测系统.md",
+    "subtype": "update",
+    "summary": "149-Skill 与 Agent 能力回归评测系统",
+    "summarySource": "title-only",
+    "title": "149-Skill 与 Agent 能力回归评测系统",
+    "type": "document"
+  },
+  {
     "id": "docs/功能更新目录.md",
     "indexVersion": 1,
-    "sourceHash": "7a5b29c274df8270cde5ef15bea874a13da30ca767f2c0b01c87216cf3664909",
+    "sourceHash": "b72e90d993f7274e8187a66909dde8633e5dd19e911fed3c32716dfe50f1d1fa",
     "sourcePath": "docs/功能更新目录.md",
     "subtype": "other",
     "summary": "功能更新目录",
@@ -1724,6 +1746,17 @@
     "summary": "liluo-browser-game-regression",
     "summarySource": "title-only",
     "title": "liluo-browser-game-regression",
+    "type": "document"
+  },
+  {
+    "id": "docs/技能说明/liluo-capability-regression.md",
+    "indexVersion": 1,
+    "sourceHash": "c67e7e6b34846dac5f4c730154e0c106e613aadb3caa051b3beea2e010e3ce6f",
+    "sourcePath": "docs/技能说明/liluo-capability-regression.md",
+    "subtype": "skill",
+    "summary": "liluo-capability-regression",
+    "summarySource": "title-only",
+    "title": "liluo-capability-regression",
     "type": "document"
   },
   {
@@ -1872,7 +1905,7 @@
   {
     "id": "docs/技能说明/liluo-project-governance-memory.md",
     "indexVersion": 1,
-    "sourceHash": "2c59ed05852ad0b4ca4448c60cc8429c6cf8f0d54bd7365c84e7ecda81d46b81",
+    "sourceHash": "64f52ce9ea71b15129d42ae2ec44f63fbad603bfb7d4f3942ebfbaf57d185e1c",
     "sourcePath": "docs/技能说明/liluo-project-governance-memory.md",
     "subtype": "skill",
     "summary": "liluo-project-governance-memory",
@@ -2134,9 +2167,20 @@
     "type": "document"
   },
   {
+    "id": "docs/设计记忆/架构决策/ADR-007-结构合同采用JSON-Schema并与业务验证分层.md",
+    "indexVersion": 1,
+    "sourceHash": "b5d5ff726ff34cfa2f525d439112064939be3c63de28b270743a29e43164f3f2",
+    "sourcePath": "docs/设计记忆/架构决策/ADR-007-结构合同采用JSON-Schema并与业务验证分层.md",
+    "subtype": "other",
+    "summary": "ADR-007：结构合同采用 JSON Schema 并与业务验证分层",
+    "summarySource": "title-only",
+    "title": "ADR-007：结构合同采用 JSON Schema 并与业务验证分层",
+    "type": "document"
+  },
+  {
     "id": "docs/设计记忆/架构决策/README.md",
     "indexVersion": 1,
-    "sourceHash": "12fb509f47d80709cf79738cdbedd2f9d913c2a38f57f4e0602807d4dd6f2dd4",
+    "sourceHash": "814131811fdb8eed150e7b9a9dd25fd22f44078f22e6274835055d47fc9126a1",
     "sourcePath": "docs/设计记忆/架构决策/README.md",
     "subtype": "other",
     "summary": "架构决策记录",
@@ -2686,7 +2730,7 @@
   {
     "id": "docs/系统说明/项目规范治理与设计记忆系统.md",
     "indexVersion": 1,
-    "sourceHash": "a511d860e8cad03206098d59a360d6d1c0c74186f10bbfa5415cf6609206a3f4",
+    "sourceHash": "0f3e89726e2b14676d8398acdeea50e0f96b272b20aed84e6b162e4bf28328ea",
     "sourcePath": "docs/系统说明/项目规范治理与设计记忆系统.md",
     "subtype": "system",
     "summary": "项目规范治理与设计记忆系统",
@@ -2703,50 +2747,6 @@
     "summary": "项目知识索引系统",
     "summarySource": "title-only",
     "title": "项目知识索引系统",
-    "type": "document"
-  },
-  {
-    "id": "docs/系统说明/像素行走图生成提示词模板.md",
-    "indexVersion": 1,
-    "sourceHash": "150bef763cf631ffae5d9ced1108603144f2b0a1b7b483fd38f1b488d19a375a",
-    "sourcePath": "docs/系统说明/像素行走图生成提示词模板.md",
-    "subtype": "system",
-    "summary": "像素行走图生成提示词模板",
-    "summarySource": "title-only",
-    "title": "像素行走图生成提示词模板",
-    "type": "document"
-  },
-  {
-    "id": "docs/系统说明/叙事路线模拟与逻辑验证系统.md",
-    "indexVersion": 1,
-    "sourceHash": "dd0b8f8cd14518992177e2d512229327c085f904de96b19c99f9bc3bddb68784",
-    "sourcePath": "docs/系统说明/叙事路线模拟与逻辑验证系统.md",
-    "subtype": "system",
-    "summary": "叙事路线模拟与逻辑验证系统",
-    "summarySource": "title-only",
-    "title": "叙事路线模拟与逻辑验证系统",
-    "type": "document"
-  },
-  {
-    "id": "docs/系统说明/游戏视图与模式.md",
-    "indexVersion": 1,
-    "sourceHash": "cf54c683f485b54f2520b397dee8354e9b0cd23988c24a74c59a82bc9199d89e",
-    "sourcePath": "docs/系统说明/游戏视图与模式.md",
-    "subtype": "system",
-    "summary": "游戏视图与模式",
-    "summarySource": "title-only",
-    "title": "游戏视图与模式",
-    "type": "document"
-  },
-  {
-    "id": "docs/系统说明/正式项目内容来源与版权写入门槛.md",
-    "indexVersion": 1,
-    "sourceHash": "32a4ed46c9401a576fdd1caf153bded12d6287d91276eb6e876eb4e22904d9d4",
-    "sourcePath": "docs/系统说明/正式项目内容来源与版权写入门槛.md",
-    "subtype": "system",
-    "summary": "正式项目内容来源与版权写入门槛",
-    "summarySource": "title-only",
-    "title": "正式项目内容来源与版权写入门槛",
     "type": "document"
   }
 ]

@@ -1,0 +1,122 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://liluo.local/schemas/assets/asset-entry.schema.json",
+  "title": "璃落素材清单条目",
+  "description": "游戏素材图片清单中单文件条目的合同；来源和授权未在现有清单登记时显式标为 not-recorded。",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "assetId",
+    "filePath",
+    "fileName",
+    "assetType",
+    "usage",
+    "referenceStatus",
+    "fileInfo",
+    "provenance"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "integer",
+      "const": 1
+    },
+    "assetId": {
+      "$ref": "#/$defs/repositoryPath"
+    },
+    "filePath": {
+      "$ref": "#/$defs/repositoryPath"
+    },
+    "fileName": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 255,
+      "pattern": "^[^/\\\\]+$"
+    },
+    "assetType": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 100
+    },
+    "usage": {
+      "type": "string",
+      "minLength": 1
+    },
+    "referenceStatus": {
+      "type": "string",
+      "enum": [
+        "referenced",
+        "candidate",
+        "unreferenced",
+        "generated"
+      ]
+    },
+    "fileInfo": {
+      "type": "object",
+      "required": [
+        "extension"
+      ],
+      "properties": {
+        "extension": {
+          "type": "string",
+          "enum": [
+            "png",
+            "jpg",
+            "jpeg",
+            "webp",
+            "gif",
+            "bmp"
+          ]
+        },
+        "sizeBytes": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        }
+      },
+      "additionalProperties": false
+    },
+    "provenance": {
+      "type": "object",
+      "required": [
+        "sourceStatus",
+        "licenseStatus"
+      ],
+      "properties": {
+        "sourceStatus": {
+          "type": "string",
+          "enum": [
+            "first-party",
+            "verified-third-party",
+            "not-recorded"
+          ]
+        },
+        "licenseStatus": {
+          "type": "string",
+          "enum": [
+            "approved",
+            "restricted",
+            "unknown",
+            "not-recorded"
+          ]
+        },
+        "source": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "$defs": {
+    "repositoryPath": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 500,
+      "pattern": "^src/assets/game/(?!.*\\\\)(?!.*(?:^|/)\\.\\.(?:/|$)).+$"
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "player": {
+    "appearanceId": "default",
+    "portraitKey": "portrait_liluo_default"
+  },
+  "location": {
+    "mapId": "liluo_room",
+    "position": {
+      "x": 48,
+      "y": 64
+    }
+  }
+}

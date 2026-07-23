@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "mapId": "liluo_room",
+  "world": "munika",
+  "displayName": "璃落的房间",
+  "description": null,
+  "resourceDirectory": "src/game/data/maps/munika/liluo_room",
+  "mapJson": "src/game/data/maps/munika/liluo_room/map.json",
+  "defaultSpawnId": "role",
+  "connections": [],
+  "eventRegistry": "src/game/data/maps/munika/liluo_room/events.json",
+  "dialogueRegistry": null,
+  "playerScale": "large",
+  "camera": null,
+  "minimap": null,
+  "worldRender": null,
+  "worldHints": []
+}

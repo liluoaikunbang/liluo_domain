@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "offline-release-pipeline-positive-001",
+  "title": "liluo-offline-release-pipeline 正向路由",
+  "targetType": "skill",
+  "target": "liluo-offline-release-pipeline",
+  "status": "active",
+  "polarity": "positive",
+  "mode": "routing-plan",
+  "costTier": "standard",
+  "userPrompt": "构建、校验并打包多文件离线版本，但不要上传。",
+  "contextFiles": [],
+  "expected": {
+    "requiredSkills": [
+      "liluo-offline-release-pipeline"
+    ],
+    "allowedSkills": [],
+    "forbiddenSkills": [],
+    "requiredAgents": [],
+    "forbiddenAgents": [],
+    "requiredReadPaths": [],
+    "allowedReadPaths": [],
+    "requiredWritePaths": [
+      "dist/"
+    ],
+    "allowedWritePaths": [
+      "dist/"
+    ],
+    "forbiddenActions": [
+      "自动提交",
+      "自动推送"
+    ],
+    "requiredValidationProfiles": [],
+    "forbiddenValidationProfiles": [
+      "all"
+    ],
+    "approvalExpectation": "not-required"
+  }
+}

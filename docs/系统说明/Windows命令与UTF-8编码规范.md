@@ -37,6 +37,16 @@ $OutputEncoding = [Console]::OutputEncoding = [System.Text.UTF8Encoding]::new($f
 
 这只处理控制台输入输出；读取文件时仍必须显式指定 UTF-8。
 
+## Git 中文路径与仓库元数据写入
+
+在 Windows 上把 Git 输出继续交给 PowerShell 做文件检查时，必须避免把 Git 为显示而生成的带引号八进制转义文本当成真实路径：
+
+1. 面向人阅读的中文路径列表使用 `git -c core.quotepath=false ...`。
+2. 面向脚本逐项处理文件名时优先使用 Git 的 `-z` 输出，并用支持 NUL 分隔的方式解析；不得按空格、引号或反斜杠自行还原路径。
+3. 只需要数量、状态或扩展名判断时，优先让 Git 自身完成筛选，避免先输出路径再二次拼接。
+
+当当前执行环境已明确把 `.git` 标为只读或受限时，`git commit`、`merge`、`rebase`、`tag`、`stash` 等会写入仓库元数据的命令，首次执行就使用平台要求的精确 Git 写权限或已批准命令前缀；不得先在已知无写权限的沙箱中制造一次 `index.lock`、引用或对象写入失败。权限提升只覆盖当前必要的精确命令，不能绕过平台审批，也不等同于长期授权。
+
 ## 验证
 
 - 文档与中文文件编码检查：`npm run docs:check-encoding`

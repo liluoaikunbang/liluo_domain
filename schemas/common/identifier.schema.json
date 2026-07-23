@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://liluo.local/schemas/common/identifier.schema.json",
+  "title": "璃落稳定标识符",
+  "description": "用于故事、地图、事件、对话、素材和存档槽等稳定实体标识；不允许路径分隔符或空白。",
+  "type": "string",
+  "minLength": 1,
+  "maxLength": 160,
+  "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]*$"
+}

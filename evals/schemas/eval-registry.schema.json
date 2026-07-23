@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://liluo.local/evals/eval-registry.schema.json",
+  "title": "璃落能力评测注册表",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "targets"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "targets": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["type", "name", "path", "status", "tier", "caseGlobs"],
+        "properties": {
+          "type": { "enum": ["skill", "agent"] },
+          "name": { "type": "string", "minLength": 1 },
+          "path": { "type": "string", "minLength": 1 },
+          "status": { "enum": ["active", "planned", "retired"] },
+          "tier": { "enum": ["core", "standard", "specialized"] },
+          "caseGlobs": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 }, "uniqueItems": true }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "asset-registry-audit-positive-001",
+  "title": "liluo-asset-registry-audit 正向路由",
+  "targetType": "skill",
+  "target": "liluo-asset-registry-audit",
+  "status": "active",
+  "polarity": "positive",
+  "mode": "routing-plan",
+  "costTier": "standard",
+  "userPrompt": "审计素材清单、重复图片与缺失引用",
+  "contextFiles": [],
+  "expected": {
+    "requiredSkills": [
+      "liluo-asset-registry-audit"
+    ],
+    "allowedSkills": [],
+    "forbiddenSkills": [],
+    "requiredAgents": [],
+    "forbiddenAgents": [],
+    "requiredReadPaths": [],
+    "allowedReadPaths": [],
+    "requiredWritePaths": [
+      "docs/游戏素材图片清单.md"
+    ],
+    "allowedWritePaths": [
+      "docs/游戏素材图片清单.md"
+    ],
+    "forbiddenActions": [
+      "自动提交",
+      "自动推送"
+    ],
+    "requiredValidationProfiles": [],
+    "forbiddenValidationProfiles": [
+      "all"
+    ],
+    "approvalExpectation": "not-required"
+  }
+}

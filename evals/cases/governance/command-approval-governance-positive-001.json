@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "command-approval-governance-positive-001",
+  "title": "liluo-command-approval-governance 正向路由",
+  "targetType": "skill",
+  "target": "liluo-command-approval-governance",
+  "status": "active",
+  "polarity": "positive",
+  "mode": "routing-plan",
+  "costTier": "smoke",
+  "userPrompt": "以后在本项目长期允许 npm run evals:check，并同步精确规则与审计记录。",
+  "contextFiles": [],
+  "expected": {
+    "requiredSkills": [
+      "liluo-command-approval-governance"
+    ],
+    "allowedSkills": [],
+    "forbiddenSkills": [],
+    "requiredAgents": [],
+    "forbiddenAgents": [],
+    "requiredReadPaths": [],
+    "allowedReadPaths": [],
+    "requiredWritePaths": [
+      ".codex/rules/"
+    ],
+    "allowedWritePaths": [
+      ".codex/rules/"
+    ],
+    "forbiddenActions": [
+      "自动提交",
+      "自动推送"
+    ],
+    "requiredValidationProfiles": [],
+    "forbiddenValidationProfiles": [
+      "all"
+    ],
+    "approvalExpectation": "not-required"
+  }
+}

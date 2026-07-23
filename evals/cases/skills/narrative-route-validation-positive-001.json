@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "narrative-route-validation-positive-001",
+  "title": "liluo-narrative-route-validation 正向路由",
+  "targetType": "skill",
+  "target": "liluo-narrative-route-validation",
+  "status": "active",
+  "polarity": "positive",
+  "mode": "routing-plan",
+  "costTier": "standard",
+  "userPrompt": "静态验证并模拟这条叙事路线的分支、循环与存档恢复。",
+  "contextFiles": [],
+  "expected": {
+    "requiredSkills": [
+      "liluo-narrative-route-validation"
+    ],
+    "allowedSkills": [],
+    "forbiddenSkills": [],
+    "requiredAgents": [],
+    "forbiddenAgents": [],
+    "requiredReadPaths": [],
+    "allowedReadPaths": [],
+    "requiredWritePaths": [],
+    "allowedWritePaths": [],
+    "forbiddenActions": [
+      "自动提交",
+      "自动推送"
+    ],
+    "requiredValidationProfiles": [],
+    "forbiddenValidationProfiles": [
+      "all"
+    ],
+    "approvalExpectation": "not-required"
+  }
+}

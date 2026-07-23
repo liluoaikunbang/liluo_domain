@@ -33,3 +33,5 @@ s.trim()).filter(Boolean).map(Number)
 *.njsproj
 *.sln
 *.sw?
+evals/reports/*
+!evals/reports/.gitkeep

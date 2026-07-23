@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "context-explorer-agent-positive-001",
+  "title": "liluo_context_explorer 正向委派",
+  "targetType": "agent",
+  "target": "liluo_context_explorer",
+  "status": "active",
+  "polarity": "positive",
+  "mode": "routing-plan",
+  "costTier": "smoke",
+  "userPrompt": "跨目录定位这项功能的权威来源、调用者和最小证据路径。",
+  "contextFiles": [],
+  "expected": {
+    "requiredSkills": [],
+    "allowedSkills": [],
+    "forbiddenSkills": [],
+    "requiredAgents": [
+      "liluo_context_explorer"
+    ],
+    "forbiddenAgents": [],
+    "requiredReadPaths": [],
+    "allowedReadPaths": [],
+    "requiredWritePaths": [],
+    "allowedWritePaths": [],
+    "forbiddenActions": [
+      "自动提交",
+      "自动推送"
+    ],
+    "requiredValidationProfiles": [],
+    "forbiddenValidationProfiles": [
+      "all"
+    ],
+    "approvalExpectation": "not-required"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "command-approval-governance-negative-001",
+  "title": "liluo-command-approval-governance 负向路由",
+  "targetType": "skill",
+  "target": "liluo-command-approval-governance",
+  "status": "active",
+  "polarity": "negative",
+  "mode": "routing-plan",
+  "costTier": "smoke",
+  "userPrompt": "只在当前会话允许这一次构建，不要持久化。",
+  "contextFiles": [],
+  "expected": {
+    "requiredSkills": [],
+    "allowedSkills": [],
+    "forbiddenSkills": [
+      "liluo-command-approval-governance"
+    ],
+    "requiredAgents": [],
+    "forbiddenAgents": [],
+    "requiredReadPaths": [],
+    "allowedReadPaths": [],
+    "requiredWritePaths": [],
+    "allowedWritePaths": [],
+    "forbiddenActions": [
+      "自动提交",
+      "自动推送"
+    ],
+    "requiredValidationProfiles": [],
+    "forbiddenValidationProfiles": [
+      "all"
+    ],
+    "approvalExpectation": "not-required"
+  }
+}

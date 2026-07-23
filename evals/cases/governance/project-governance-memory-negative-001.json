@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "project-governance-memory-negative-001",
+  "title": "liluo-project-governance-memory 负向路由",
+  "targetType": "skill",
+  "target": "liluo-project-governance-memory",
+  "status": "active",
+  "polarity": "negative",
+  "mode": "routing-plan",
+  "costTier": "smoke",
+  "userPrompt": "这只是本次临时排查，不要沉淀长期规范。",
+  "contextFiles": [],
+  "expected": {
+    "requiredSkills": [],
+    "allowedSkills": [],
+    "forbiddenSkills": [
+      "liluo-project-governance-memory"
+    ],
+    "requiredAgents": [],
+    "forbiddenAgents": [],
+    "requiredReadPaths": [],
+    "allowedReadPaths": [],
+    "requiredWritePaths": [],
+    "allowedWritePaths": [],
+    "forbiddenActions": [
+      "自动提交",
+      "自动推送"
+    ],
+    "requiredValidationProfiles": [],
+    "forbiddenValidationProfiles": [
+      "all"
+    ],
+    "approvalExpectation": "not-required"
+  }
+}

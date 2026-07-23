@@ -1,0 +1,353 @@
+{
+  "schemaVersion": 1,
+  "targets": [
+    {
+      "type": "skill",
+      "name": "liluo-asset-registry-audit",
+      "path": ".agents/skills/liluo-project/liluo-asset-registry-audit/SKILL.md",
+      "status": "active",
+      "tier": "standard",
+      "caseGlobs": [
+        "evals/cases/skills/asset-registry-audit-positive-001.json"
+      ]
+    },
+    {
+      "type": "skill",
+      "name": "liluo-browser-game-regression",
+      "path": ".agents/skills/liluo-project/liluo-browser-game-regression/SKILL.md",
+      "status": "active",
+      "tier": "core",
+      "caseGlobs": [
+        "evals/cases/skills/browser-game-regression-positive-001.json",
+        "evals/cases/skills/browser-game-regression-negative-001.json"
+      ]
+    },
+    {
+      "type": "skill",
+      "name": "liluo-capability-regression",
+      "path": ".agents/skills/testing/liluo-capability-regression/SKILL.md",
+      "status": "active",
+      "tier": "core",
+      "caseGlobs": [
+        "evals/cases/governance/capability-regression-positive-001.json",
+        "evals/cases/governance/capability-regression-negative-001.json"
+      ]
+    },
+    {
+      "type": "skill",
+      "name": "liluo-character-arc-and-relationship-memory",
+      "path": ".agents/skills/liluo-project/liluo-character-arc-and-relationship-memory/SKILL.md",
+      "status": "active",
+      "tier": "standard",
+      "caseGlobs": [
+        "evals/cases/skills/character-arc-and-relationship-memory-positive-001.json"
+      ]
+    },
+    {
+      "type": "skill",
+      "name": "liluo-command-approval-governance",
+      "path": ".agents/skills/liluo-project/liluo-command-approval-governance/SKILL.md",
+      "status": "active",
+      "tier": "core",
+      "caseGlobs": [
+        "evals/cases/governance/command-approval-governance-positive-001.json",
+        "evals/cases/governance/command-approval-governance-negative-001.json"
+      ]
+    },
+    {
+      "type": "skill",
+      "name": "liluo-creative-team-presence",
+      "path": ".agents/skills/liluo-project/liluo-creative-team-presence/SKILL.md",
+      "status": "active",
+      "tier": "standard",
+      "caseGlobs": [
+        "evals/cases/skills/creative-team-presence-positive-001.json"
+      ]
+    },
+    {
+      "type": "skill",
+      "name": "liluo-dialogue-event-authoring",
+      "path": ".agents/skills/liluo-project/liluo-dialogue-event-authoring/SKILL.md",
+      "status": "active",
+      "tier": "standard",
+      "caseGlobs": [
+        "evals/cases/skills/dialogue-event-authoring-positive-001.json"
+      ]
+    },
+    {
+      "type": "skill",
+      "name": "liluo-external-fiction-knowledge",
+      "path": ".agents/skills/liluo-project/liluo-external-fiction-knowledge/SKILL.md",
+      "status": "active",
+      "tier": "standard",
+      "caseGlobs": [
+        "evals/cases/skills/external-fiction-knowledge-positive-001.json"
+      ]
+    },
+    {
+      "type": "skill",
+      "name": "liluo-game-content-validator",
+      "path": ".agents/skills/liluo-project/liluo-game-content-validator/SKILL.md",
+      "status": "active",
+      "tier": "core",
+      "caseGlobs": [
+        "evals/cases/skills/game-content-validator-positive-001.json",
+        "evals/cases/skills/game-content-validator-negative-001.json"
+      ]
+    },
+    {
+      "type": "skill",
+      "name": "liluo-gameplay-loop-audit",
+      "path": ".agents/skills/liluo-project/liluo-gameplay-loop-audit/SKILL.md",
+      "status": "active",
+      "tier": "standard",
+      "caseGlobs": [
+        "evals/cases/skills/gameplay-loop-audit-positive-001.json"
+      ]
+    },
+    {
+      "type": "skill",
+      "name": "liluo-narrative-route-validation",
+      "path": ".agents/skills/testing/liluo-narrative-route-validation/SKILL.md",
+      "status": "active",
+      "tier": "standard",
+      "caseGlobs": [
+        "evals/cases/skills/narrative-route-validation-positive-001.json"
+      ]
+    },
+    {
+      "type": "skill",
+      "name": "liluo-natural-expression",
+      "path": ".agents/skills/writing/liluo-natural-expression/SKILL.md",
+      "status": "active",
+      "tier": "core",
+      "caseGlobs": [
+        "evals/cases/skills/natural-expression-positive-001.json",
+        "evals/cases/skills/natural-expression-negative-001.json"
+      ]
+    },
+    {
+      "type": "skill",
+      "name": "liluo-offline-release-pipeline",
+      "path": ".agents/skills/liluo-project/liluo-offline-release-pipeline/SKILL.md",
+      "status": "active",
+      "tier": "standard",
+      "caseGlobs": [
+        "evals/cases/skills/offline-release-pipeline-positive-001.json"
+      ]
+    },
+    {
+      "type": "skill",
+      "name": "liluo-phaser-map-event-integration",
+      "path": ".agents/skills/liluo-project/liluo-phaser-map-event-integration/SKILL.md",
+      "status": "active",
+      "tier": "standard",
+      "caseGlobs": [
+        "evals/cases/skills/phaser-map-event-integration-positive-001.json"
+      ]
+    },
+    {
+      "type": "skill",
+      "name": "liluo-production-coverage",
+      "path": ".agents/skills/liluo-project/liluo-production-coverage/SKILL.md",
+      "status": "active",
+      "tier": "standard",
+      "caseGlobs": [
+        "evals/cases/skills/production-coverage-positive-001.json"
+      ]
+    },
+    {
+      "type": "skill",
+      "name": "liluo-project-documentation-sync",
+      "path": ".agents/skills/liluo-project/liluo-project-documentation-sync/SKILL.md",
+      "status": "active",
+      "tier": "core",
+      "caseGlobs": [
+        "evals/cases/skills/project-documentation-sync-positive-001.json",
+        "evals/cases/skills/project-documentation-sync-negative-001.json"
+      ]
+    },
+    {
+      "type": "skill",
+      "name": "liluo-project-governance-memory",
+      "path": ".agents/skills/liluo-project/liluo-project-governance-memory/SKILL.md",
+      "status": "active",
+      "tier": "core",
+      "caseGlobs": [
+        "evals/cases/governance/project-governance-memory-positive-001.json",
+        "evals/cases/governance/project-governance-memory-negative-001.json"
+      ]
+    },
+    {
+      "type": "skill",
+      "name": "liluo-project-index-maintenance",
+      "path": ".agents/skills/liluo-project/liluo-project-index-maintenance/SKILL.md",
+      "status": "active",
+      "tier": "core",
+      "caseGlobs": [
+        "evals/cases/skills/project-index-maintenance-positive-001.json",
+        "evals/cases/skills/project-index-maintenance-negative-001.json"
+      ]
+    },
+    {
+      "type": "skill",
+      "name": "liluo-save-data-migration",
+      "path": ".agents/skills/liluo-project/liluo-save-data-migration/SKILL.md",
+      "status": "active",
+      "tier": "core",
+      "caseGlobs": [
+        "evals/cases/skills/save-data-migration-positive-001.json",
+        "evals/cases/skills/save-data-migration-negative-001.json"
+      ]
+    },
+    {
+      "type": "skill",
+      "name": "liluo-sprite-pipeline",
+      "path": ".agents/skills/liluo-project/liluo-sprite-pipeline/SKILL.md",
+      "status": "active",
+      "tier": "standard",
+      "caseGlobs": [
+        "evals/cases/skills/sprite-pipeline-positive-001.json"
+      ]
+    },
+    {
+      "type": "skill",
+      "name": "liluo-story-gap-discovery",
+      "path": ".agents/skills/liluo-project/liluo-story-gap-discovery/SKILL.md",
+      "status": "active",
+      "tier": "core",
+      "caseGlobs": [
+        "evals/cases/skills/story-gap-discovery-positive-001.json",
+        "evals/cases/skills/story-gap-discovery-negative-001.json"
+      ]
+    },
+    {
+      "type": "skill",
+      "name": "liluo-story-outline-authoring",
+      "path": ".agents/skills/liluo-project/liluo-story-outline-authoring/SKILL.md",
+      "status": "active",
+      "tier": "core",
+      "caseGlobs": [
+        "evals/cases/skills/story-outline-authoring-positive-001.json",
+        "evals/cases/skills/story-outline-authoring-negative-001.json"
+      ]
+    },
+    {
+      "type": "skill",
+      "name": "liluo-story-outline-graph-maintenance",
+      "path": ".agents/skills/liluo-project/liluo-story-outline-graph-maintenance/SKILL.md",
+      "status": "active",
+      "tier": "standard",
+      "caseGlobs": [
+        "evals/cases/skills/story-outline-graph-maintenance-positive-001.json"
+      ]
+    },
+    {
+      "type": "skill",
+      "name": "liluo-story-to-playable-content",
+      "path": ".agents/skills/liluo-project/liluo-story-to-playable-content/SKILL.md",
+      "status": "active",
+      "tier": "standard",
+      "caseGlobs": [
+        "evals/cases/skills/story-to-playable-content-positive-001.json"
+      ]
+    },
+    {
+      "type": "skill",
+      "name": "liluo-world-bible-continuity-audit",
+      "path": ".agents/skills/liluo-project/liluo-world-bible-continuity-audit/SKILL.md",
+      "status": "active",
+      "tier": "standard",
+      "caseGlobs": [
+        "evals/cases/skills/world-bible-continuity-audit-positive-001.json"
+      ]
+    },
+    {
+      "type": "skill",
+      "name": "random-story-outline-interview",
+      "path": ".agents/skills/liluo-project/random-story-outline-interview/SKILL.md",
+      "status": "active",
+      "tier": "standard",
+      "caseGlobs": [
+        "evals/cases/skills/random-story-outline-interview-positive-001.json"
+      ]
+    },
+    {
+      "type": "agent",
+      "name": "liluo_context_explorer",
+      "path": ".codex/agents/liluo_context_explorer.toml",
+      "status": "active",
+      "tier": "core",
+      "caseGlobs": [
+        "evals/cases/agents/context-explorer-agent-positive-001.json",
+        "evals/cases/agents/context-explorer-agent-negative-001.json"
+      ]
+    },
+    {
+      "type": "agent",
+      "name": "liluo_continuity_reviewer",
+      "path": ".codex/agents/liluo_continuity_reviewer.toml",
+      "status": "active",
+      "tier": "core",
+      "caseGlobs": [
+        "evals/cases/agents/continuity-reviewer-agent-positive-001.json",
+        "evals/cases/agents/continuity-reviewer-agent-negative-001.json"
+      ]
+    },
+    {
+      "type": "agent",
+      "name": "liluo_game_architecture_explorer",
+      "path": ".codex/agents/liluo_game_architecture_explorer.toml",
+      "status": "active",
+      "tier": "core",
+      "caseGlobs": [
+        "evals/cases/agents/game-architecture-explorer-agent-positive-001.json",
+        "evals/cases/agents/game-architecture-explorer-agent-negative-001.json"
+      ]
+    },
+    {
+      "type": "agent",
+      "name": "liluo_content_auditor",
+      "path": ".codex/agents/liluo_content_auditor.toml",
+      "status": "active",
+      "tier": "core",
+      "caseGlobs": [
+        "evals/cases/agents/content-auditor-agent-positive-001.json",
+        "evals/cases/agents/content-auditor-agent-negative-001.json"
+      ]
+    },
+    {
+      "type": "agent",
+      "name": "liluo_story_gap_analyst",
+      "path": ".codex/agents/liluo_story_gap_analyst.toml",
+      "status": "active",
+      "tier": "core",
+      "caseGlobs": [
+        "evals/cases/agents/story-gap-analyst-agent-positive-001.json",
+        "evals/cases/agents/story-gap-analyst-agent-negative-001.json"
+      ]
+    },
+    {
+      "type": "agent",
+      "name": "liluo_validation_runner",
+      "path": ".codex/agents/liluo_validation_runner.toml",
+      "status": "active",
+      "tier": "core",
+      "caseGlobs": [
+        "evals/cases/agents/validation-runner-agent-positive-001.json",
+        "evals/cases/agents/validation-runner-agent-negative-001.json"
+      ]
+    },
+    {
+      "type": "agent",
+      "name": "liluo_project_memory_curator",
+      "path": ".codex/agents/liluo_project_memory_curator.toml",
+      "status": "active",
+      "tier": "core",
+      "caseGlobs": [
+        "evals/cases/agents/project-memory-curator-agent-positive-001.json",
+        "evals/cases/agents/project-memory-curator-agent-negative-001.json"
+      ]
+    }
+  ]
+}

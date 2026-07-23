@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "world-bible-continuity-audit-positive-001",
+  "title": "liluo-world-bible-continuity-audit 正向路由",
+  "targetType": "skill",
+  "target": "liluo-world-bible-continuity-audit",
+  "status": "active",
+  "polarity": "positive",
+  "mode": "routing-plan",
+  "costTier": "standard",
+  "userPrompt": "只读审计角色、时间线、命域规则与伏笔连续性。",
+  "contextFiles": [],
+  "expected": {
+    "requiredSkills": [
+      "liluo-world-bible-continuity-audit"
+    ],
+    "allowedSkills": [],
+    "forbiddenSkills": [],
+    "requiredAgents": [],
+    "forbiddenAgents": [],
+    "requiredReadPaths": [],
+    "allowedReadPaths": [],
+    "requiredWritePaths": [],
+    "allowedWritePaths": [],
+    "forbiddenActions": [
+      "自动提交",
+      "自动推送"
+    ],
+    "requiredValidationProfiles": [],
+    "forbiddenValidationProfiles": [
+      "all"
+    ],
+    "approvalExpectation": "not-required"
+  }
+}

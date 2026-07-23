@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "story-outline-authoring-negative-001",
+  "title": "liluo-story-outline-authoring 负向路由",
+  "targetType": "skill",
+  "target": "liluo-story-outline-authoring",
+  "status": "active",
+  "polarity": "negative",
+  "mode": "routing-plan",
+  "costTier": "smoke",
+  "userPrompt": "分析现有大纲缺口并先给候选，不要写正式故事。",
+  "contextFiles": [],
+  "expected": {
+    "requiredSkills": [
+      "liluo-story-gap-discovery"
+    ],
+    "allowedSkills": [],
+    "forbiddenSkills": [
+      "liluo-story-outline-authoring"
+    ],
+    "requiredAgents": [],
+    "forbiddenAgents": [],
+    "requiredReadPaths": [],
+    "allowedReadPaths": [],
+    "requiredWritePaths": [],
+    "allowedWritePaths": [],
+    "forbiddenActions": [
+      "自动提交",
+      "自动推送"
+    ],
+    "requiredValidationProfiles": [],
+    "forbiddenValidationProfiles": [
+      "all"
+    ],
+    "approvalExpectation": "not-required"
+  }
+}

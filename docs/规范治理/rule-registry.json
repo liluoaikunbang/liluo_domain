@@ -26,6 +26,14 @@
       "status": "active"
     },
     {
+      "ruleId": "json-schema-structural-contract",
+      "title": "JSON Schema 负责结构且业务验证器负责跨文件规则",
+      "authority": "docs/系统说明/JSON-Schema数据契约系统.md",
+      "decision": "docs/设计记忆/架构决策/ADR-007-结构合同采用JSON-Schema并与业务验证分层.md",
+      "consumers": ["schemas/registry.json", "scripts/data-contracts/validate-schema-registry.mjs", "scripts/data-contracts/validate-data-contracts.mjs", "scripts/data-contracts/test-data-contracts.mjs", "scripts/project-routine.mjs", "package.json", "docs/用户命令目录.md"],
+      "status": "active"
+    },
+    {
       "ruleId": "external-knowledge-separation",
       "title": "正式项目知识与外部知识分离",
       "authority": "docs/系统说明/外部虚构题材知识库.md",
@@ -94,6 +102,14 @@
       "authority": "docs/系统说明/项目规范治理与设计记忆系统.md",
       "decision": "docs/设计记忆/架构决策/ADR-002-规范与设计记忆分层治理.md",
       "consumers": ["AGENTS.md", ".agents/skills/liluo-project/liluo-project-governance-memory/references/completion-gate.md", "docs/用户命令目录.md"],
+      "status": "active"
+    },
+    {
+      "ruleId": "avoidable-friction-review",
+      "title": "实际出现可避免绕圈时只做一次有门槛的轻量复盘",
+      "authority": "docs/系统说明/项目规范治理与设计记忆系统.md",
+      "decision": "docs/设计记忆/架构决策/ADR-002-规范与设计记忆分层治理.md",
+      "consumers": ["AGENTS.md", ".agents/skills/liluo-project/liluo-project-governance-memory/SKILL.md", ".agents/skills/liluo-project/liluo-project-governance-memory/references/completion-gate.md"],
       "status": "active"
     },
     {
@@ -170,7 +186,7 @@
     },
     {
       "ruleId": "windows-explicit-utf8",
-      "title": "Windows 中文文件读取显式使用 UTF-8",
+      "title": "Windows 中文文件与 Git 中文路径采用确定性编码和解析",
       "authority": "docs/系统说明/Windows命令与UTF-8编码规范.md",
       "consumers": ["AGENTS.md", "docs/系统说明/README.md", "docs/用户命令目录.md"],
       "status": "active"
@@ -181,6 +197,13 @@
       "authority": "docs/系统说明/正式项目内容来源与版权写入门槛.md",
       "decision": "docs/设计记忆/架构决策/ADR-006-内容生产采用证据派生与最小持久化.md",
       "consumers": ["AGENTS.md", "scripts/content-production/provenance.mjs", ".codex/agents/liluo_content_auditor.toml", ".agents/skills/liluo-project/liluo-story-to-playable-content/SKILL.md"],
+      "status": "active"
+    },
+    {
+      "ruleId": "capability-regression-gate",
+      "title": "项目 Skill 与 Agent 变更必须保留静态覆盖并按最小范围回归",
+      "authority": "docs/系统说明/Skill与Agent能力回归评测系统.md",
+      "consumers": ["AGENTS.md", "evals/registry.json", ".agents/skills/testing/liluo-capability-regression/SKILL.md", "scripts/evals/", "scripts/project-routine.mjs", "docs/用户命令目录.md"],
       "status": "active"
     }
   ]

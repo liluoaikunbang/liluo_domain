@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "context-explorer-agent-negative-001",
+  "title": "liluo_context_explorer 负向委派",
+  "targetType": "agent",
+  "target": "liluo_context_explorer",
+  "status": "active",
+  "polarity": "negative",
+  "mode": "routing-plan",
+  "costTier": "standard",
+  "userPrompt": "只修改 README 中一个已知链接，不需要跨目录调查。",
+  "contextFiles": [],
+  "expected": {
+    "requiredSkills": [],
+    "allowedSkills": [],
+    "forbiddenSkills": [],
+    "requiredAgents": [],
+    "forbiddenAgents": [
+      "liluo_context_explorer"
+    ],
+    "requiredReadPaths": [],
+    "allowedReadPaths": [],
+    "requiredWritePaths": [],
+    "allowedWritePaths": [],
+    "forbiddenActions": [
+      "自动提交",
+      "自动推送"
+    ],
+    "requiredValidationProfiles": [],
+    "forbiddenValidationProfiles": [
+      "all"
+    ],
+    "approvalExpectation": "not-required"
+  }
+}

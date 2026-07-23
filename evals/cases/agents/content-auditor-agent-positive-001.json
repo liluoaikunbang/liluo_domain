@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "content-auditor-agent-positive-001",
+  "title": "liluo_content_auditor 正向委派",
+  "targetType": "agent",
+  "target": "liluo_content_auditor",
+  "status": "active",
+  "polarity": "positive",
+  "mode": "routing-plan",
+  "costTier": "smoke",
+  "userPrompt": "独立只读审计内容、元数据、链接、ID 与资源引用一致性。",
+  "contextFiles": [],
+  "expected": {
+    "requiredSkills": [],
+    "allowedSkills": [],
+    "forbiddenSkills": [],
+    "requiredAgents": [
+      "liluo_content_auditor"
+    ],
+    "forbiddenAgents": [],
+    "requiredReadPaths": [],
+    "allowedReadPaths": [],
+    "requiredWritePaths": [],
+    "allowedWritePaths": [],
+    "forbiddenActions": [
+      "自动提交",
+      "自动推送"
+    ],
+    "requiredValidationProfiles": [],
+    "forbiddenValidationProfiles": [
+      "all"
+    ],
+    "approvalExpectation": "not-required"
+  }
+}

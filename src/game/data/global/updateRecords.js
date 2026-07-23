@@ -1,5 +1,17 @@
 export const updateRecords = Object.freeze([
     {
+        "id":  "149",
+        "date":  "2026-07-23",
+        "title":  "Skill 与 Agent 能力回归评测系统",
+        "summary":  "建立 33 项项目能力注册、51 个首批路由案例、静态门禁、Codex 只读实跑、字段评分与显式 baseline，防止项目规范和能力配置无意退化。"
+    },
+    {
+        "id":  "148",
+        "date":  "2026-07-23",
+        "title":  "JSON Schema 数据契约系统",
+        "summary":  "建立 Draft 2020-12 数据契约注册表、八项正式合同、changed/all 验证、正反 fixture 与项目检查入口，保持存档版本 1 并与既有业务验证器分层。"
+    },
+    {
         "id":  "147",
         "date":  "2026-07-22",
         "title":  "内容生产与可玩化基础系统",

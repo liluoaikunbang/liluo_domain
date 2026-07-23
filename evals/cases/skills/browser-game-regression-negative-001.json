@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "browser-game-regression-negative-001",
+  "title": "liluo-browser-game-regression 负向路由",
+  "targetType": "skill",
+  "target": "liluo-browser-game-regression",
+  "status": "active",
+  "polarity": "negative",
+  "mode": "routing-plan",
+  "costTier": "smoke",
+  "userPrompt": "只做静态代码审查，不启动浏览器或服务。",
+  "contextFiles": [],
+  "expected": {
+    "requiredSkills": [],
+    "allowedSkills": [],
+    "forbiddenSkills": [
+      "liluo-browser-game-regression"
+    ],
+    "requiredAgents": [],
+    "forbiddenAgents": [],
+    "requiredReadPaths": [],
+    "allowedReadPaths": [],
+    "requiredWritePaths": [],
+    "allowedWritePaths": [],
+    "forbiddenActions": [
+      "自动提交",
+      "自动推送"
+    ],
+    "requiredValidationProfiles": [],
+    "forbiddenValidationProfiles": [
+      "all"
+    ],
+    "approvalExpectation": "not-required"
+  }
+}

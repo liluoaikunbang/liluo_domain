@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "project-governance-memory-positive-001",
+  "title": "liluo-project-governance-memory 正向路由",
+  "targetType": "skill",
+  "target": "liluo-project-governance-memory",
+  "status": "active",
+  "polarity": "positive",
+  "mode": "routing-plan",
+  "costTier": "smoke",
+  "userPrompt": "把这项可重复工作流确立为长期项目规范，并追踪权威来源和消费者。",
+  "contextFiles": [],
+  "expected": {
+    "requiredSkills": [
+      "liluo-project-governance-memory"
+    ],
+    "allowedSkills": [],
+    "forbiddenSkills": [],
+    "requiredAgents": [],
+    "forbiddenAgents": [],
+    "requiredReadPaths": [],
+    "allowedReadPaths": [],
+    "requiredWritePaths": [
+      "docs/规范治理/"
+    ],
+    "allowedWritePaths": [
+      "docs/规范治理/"
+    ],
+    "forbiddenActions": [
+      "自动提交",
+      "自动推送"
+    ],
+    "requiredValidationProfiles": [],
+    "forbiddenValidationProfiles": [
+      "all"
+    ],
+    "approvalExpectation": "not-required"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "continuity-reviewer-agent-positive-001",
+  "title": "liluo_continuity_reviewer 正向委派",
+  "targetType": "agent",
+  "target": "liluo_continuity_reviewer",
+  "status": "active",
+  "polarity": "positive",
+  "mode": "routing-plan",
+  "costTier": "smoke",
+  "userPrompt": "审查跨世界时间线、能力规则和角色知识是否矛盾。",
+  "contextFiles": [],
+  "expected": {
+    "requiredSkills": [],
+    "allowedSkills": [],
+    "forbiddenSkills": [],
+    "requiredAgents": [
+      "liluo_continuity_reviewer"
+    ],
+    "forbiddenAgents": [],
+    "requiredReadPaths": [],
+    "allowedReadPaths": [],
+    "requiredWritePaths": [],
+    "allowedWritePaths": [],
+    "forbiddenActions": [
+      "自动提交",
+      "自动推送"
+    ],
+    "requiredValidationProfiles": [],
+    "forbiddenValidationProfiles": [
+      "all"
+    ],
+    "approvalExpectation": "not-required"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "story-outline-graph-maintenance-positive-001",
+  "title": "liluo-story-outline-graph-maintenance 正向路由",
+  "targetType": "skill",
+  "target": "liluo-story-outline-graph-maintenance",
+  "status": "active",
+  "polarity": "positive",
+  "mode": "routing-plan",
+  "costTier": "standard",
+  "userPrompt": "把这个故事节点移动到新的父节点下并验证没有断链或循环。",
+  "contextFiles": [],
+  "expected": {
+    "requiredSkills": [
+      "liluo-story-outline-graph-maintenance"
+    ],
+    "allowedSkills": [],
+    "forbiddenSkills": [],
+    "requiredAgents": [],
+    "forbiddenAgents": [],
+    "requiredReadPaths": [],
+    "allowedReadPaths": [],
+    "requiredWritePaths": [
+      "src/game/data/story_outline/"
+    ],
+    "allowedWritePaths": [
+      "src/game/data/story_outline/"
+    ],
+    "forbiddenActions": [
+      "自动提交",
+      "自动推送"
+    ],
+    "requiredValidationProfiles": [],
+    "forbiddenValidationProfiles": [
+      "all"
+    ],
+    "approvalExpectation": "not-required"
+  }
+}

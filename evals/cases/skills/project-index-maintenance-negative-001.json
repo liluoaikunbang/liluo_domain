@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "project-index-maintenance-negative-001",
+  "title": "liluo-project-index-maintenance 负向路由",
+  "targetType": "skill",
+  "target": "liluo-project-index-maintenance",
+  "status": "active",
+  "polarity": "negative",
+  "mode": "routing-plan",
+  "costTier": "standard",
+  "userPrompt": "只讨论一个未写入仓库的临时想法，不刷新索引。",
+  "contextFiles": [],
+  "expected": {
+    "requiredSkills": [],
+    "allowedSkills": [],
+    "forbiddenSkills": [
+      "liluo-project-index-maintenance"
+    ],
+    "requiredAgents": [],
+    "forbiddenAgents": [],
+    "requiredReadPaths": [],
+    "allowedReadPaths": [],
+    "requiredWritePaths": [],
+    "allowedWritePaths": [],
+    "forbiddenActions": [
+      "自动提交",
+      "自动推送"
+    ],
+    "requiredValidationProfiles": [],
+    "forbiddenValidationProfiles": [
+      "all"
+    ],
+    "approvalExpectation": "not-required"
+  }
+}

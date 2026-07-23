@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "natural-expression-positive-001",
+  "title": "liluo-natural-expression 正向路由",
+  "targetType": "skill",
+  "target": "liluo-natural-expression",
+  "status": "active",
+  "polarity": "positive",
+  "mode": "routing-plan",
+  "costTier": "smoke",
+  "userPrompt": "润色这段面向玩家的剧情文字，保留事实与角色声音。",
+  "contextFiles": [],
+  "expected": {
+    "requiredSkills": [
+      "liluo-natural-expression"
+    ],
+    "allowedSkills": [],
+    "forbiddenSkills": [],
+    "requiredAgents": [],
+    "forbiddenAgents": [],
+    "requiredReadPaths": [],
+    "allowedReadPaths": [],
+    "requiredWritePaths": [
+      "docs/"
+    ],
+    "allowedWritePaths": [
+      "docs/"
+    ],
+    "forbiddenActions": [
+      "自动提交",
+      "自动推送"
+    ],
+    "requiredValidationProfiles": [],
+    "forbiddenValidationProfiles": [
+      "all"
+    ],
+    "approvalExpectation": "not-required"
+  }
+}

@@ -1,0 +1,142 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://liluo.local/schemas/saves/save-data-v1.schema.json",
+  "title": "璃落内部存档 v1",
+  "description": "浏览器内部单档的 v1 合同；兼容当前解析器允许缺省并归一化的非核心字段，拒绝未知版本和损坏类型。",
+  "type": "object",
+  "required": [
+    "version",
+    "player",
+    "location"
+  ],
+  "properties": {
+    "version": {
+      "type": "integer",
+      "const": 1
+    },
+    "savedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "global": {
+      "type": "object",
+      "required": [
+        "gold",
+        "desireCrystals"
+      ],
+      "properties": {
+        "gold": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "desireCrystals": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "additionalProperties": false
+    },
+    "player": {
+      "type": "object",
+      "required": [
+        "appearanceId",
+        "portraitKey"
+      ],
+      "properties": {
+        "appearanceId": {
+          "$ref": "https://liluo.local/schemas/common/identifier.schema.json"
+        },
+        "portraitKey": {
+          "$ref": "https://liluo.local/schemas/common/identifier.schema.json"
+        },
+        "status": {
+          "$ref": "#/$defs/idList"
+        },
+        "restraints": {
+          "$ref": "#/$defs/idList"
+        },
+        "inventory": {
+          "type": "object",
+          "propertyNames": {
+            "$ref": "https://liluo.local/schemas/common/identifier.schema.json"
+          },
+          "additionalProperties": {
+            "type": "integer",
+            "minimum": 1
+          }
+        },
+        "equipment": {
+          "type": "object",
+          "propertyNames": {
+            "$ref": "https://liluo.local/schemas/common/identifier.schema.json"
+          },
+          "additionalProperties": {
+            "$ref": "https://liluo.local/schemas/common/identifier.schema.json"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "location": {
+      "type": "object",
+      "required": [
+        "mapId",
+        "position"
+      ],
+      "properties": {
+        "mapId": {
+          "$ref": "https://liluo.local/schemas/common/identifier.schema.json"
+        },
+        "position": {
+          "type": "object",
+          "required": [
+            "x",
+            "y"
+          ],
+          "properties": {
+            "x": {
+              "type": "number"
+            },
+            "y": {
+              "type": "number"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "mapSession": {
+      "type": "object",
+      "required": [
+        "mapId",
+        "flags"
+      ],
+      "properties": {
+        "mapId": {
+          "$ref": "https://liluo.local/schemas/common/identifier.schema.json"
+        },
+        "flags": {
+          "type": "object",
+          "propertyNames": {
+            "$ref": "https://liluo.local/schemas/common/identifier.schema.json"
+          },
+          "additionalProperties": {
+            "type": "boolean"
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "$defs": {
+    "idList": {
+      "type": "array",
+      "items": {
+        "$ref": "https://liluo.local/schemas/common/identifier.schema.json"
+      },
+      "uniqueItems": true
+    }
+  },
+  "additionalProperties": false
+}

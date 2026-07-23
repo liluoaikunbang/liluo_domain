@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "sprite-pipeline-positive-001",
+  "title": "liluo-sprite-pipeline 正向路由",
+  "targetType": "skill",
+  "target": "liluo-sprite-pipeline",
+  "status": "active",
+  "polarity": "positive",
+  "mode": "routing-plan",
+  "costTier": "standard",
+  "userPrompt": "生成并接入 5×4 二十帧角色行走图，检查脚底基线。",
+  "contextFiles": [],
+  "expected": {
+    "requiredSkills": [
+      "liluo-sprite-pipeline"
+    ],
+    "allowedSkills": [],
+    "forbiddenSkills": [],
+    "requiredAgents": [],
+    "forbiddenAgents": [],
+    "requiredReadPaths": [],
+    "allowedReadPaths": [],
+    "requiredWritePaths": [
+      "src/assets/game/"
+    ],
+    "allowedWritePaths": [
+      "src/assets/game/"
+    ],
+    "forbiddenActions": [
+      "自动提交",
+      "自动推送"
+    ],
+    "requiredValidationProfiles": [],
+    "forbiddenValidationProfiles": [
+      "all"
+    ],
+    "approvalExpectation": "not-required"
+  }
+}

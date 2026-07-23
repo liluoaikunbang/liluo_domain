@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "production-coverage-positive-001",
+  "title": "liluo-production-coverage 正向路由",
+  "targetType": "skill",
+  "target": "liluo-production-coverage",
+  "status": "active",
+  "polarity": "positive",
+  "mode": "routing-plan",
+  "costTier": "standard",
+  "userPrompt": "基于真实故事、地图与事件证据计算保守生产覆盖。",
+  "contextFiles": [],
+  "expected": {
+    "requiredSkills": [
+      "liluo-production-coverage"
+    ],
+    "allowedSkills": [],
+    "forbiddenSkills": [],
+    "requiredAgents": [],
+    "forbiddenAgents": [],
+    "requiredReadPaths": [],
+    "allowedReadPaths": [],
+    "requiredWritePaths": [],
+    "allowedWritePaths": [],
+    "forbiddenActions": [
+      "自动提交",
+      "自动推送"
+    ],
+    "requiredValidationProfiles": [],
+    "forbiddenValidationProfiles": [
+      "all"
+    ],
+    "approvalExpectation": "not-required"
+  }
+}

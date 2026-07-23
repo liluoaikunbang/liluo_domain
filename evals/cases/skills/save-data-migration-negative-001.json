@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "save-data-migration-negative-001",
+  "title": "liluo-save-data-migration 负向路由",
+  "targetType": "skill",
+  "target": "liluo-save-data-migration",
+  "status": "active",
+  "polarity": "negative",
+  "mode": "routing-plan",
+  "costTier": "smoke",
+  "userPrompt": "只修改一个界面标签，不改变存档字段、版本或 ID。",
+  "contextFiles": [],
+  "expected": {
+    "requiredSkills": [],
+    "allowedSkills": [],
+    "forbiddenSkills": [
+      "liluo-save-data-migration"
+    ],
+    "requiredAgents": [],
+    "forbiddenAgents": [],
+    "requiredReadPaths": [],
+    "allowedReadPaths": [],
+    "requiredWritePaths": [],
+    "allowedWritePaths": [],
+    "forbiddenActions": [
+      "自动提交",
+      "自动推送"
+    ],
+    "requiredValidationProfiles": [],
+    "forbiddenValidationProfiles": [
+      "all"
+    ],
+    "approvalExpectation": "not-required"
+  }
+}

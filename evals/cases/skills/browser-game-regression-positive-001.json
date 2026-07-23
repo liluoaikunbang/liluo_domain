@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "browser-game-regression-positive-001",
+  "title": "liluo-browser-game-regression 正向路由",
+  "targetType": "skill",
+  "target": "liluo-browser-game-regression",
+  "status": "active",
+  "polarity": "positive",
+  "mode": "routing-plan",
+  "costTier": "smoke",
+  "userPrompt": "请规划真实浏览器回归，覆盖地图移动、对话、菜单和存档重进。",
+  "contextFiles": [],
+  "expected": {
+    "requiredSkills": [
+      "liluo-browser-game-regression"
+    ],
+    "allowedSkills": [],
+    "forbiddenSkills": [],
+    "requiredAgents": [],
+    "forbiddenAgents": [],
+    "requiredReadPaths": [],
+    "allowedReadPaths": [],
+    "requiredWritePaths": [],
+    "allowedWritePaths": [],
+    "forbiddenActions": [
+      "自动提交",
+      "自动推送"
+    ],
+    "requiredValidationProfiles": [],
+    "forbiddenValidationProfiles": [
+      "all"
+    ],
+    "approvalExpectation": "not-required"
+  }
+}

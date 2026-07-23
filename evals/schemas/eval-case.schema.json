@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://liluo.local/evals/eval-case.schema.json",
+  "title": "璃落能力评测案例",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "id", "title", "targetType", "target", "status", "polarity", "mode", "costTier", "userPrompt", "contextFiles", "expected"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$" },
+    "title": { "type": "string", "minLength": 1 },
+    "targetType": { "enum": ["skill", "agent"] },
+    "target": { "type": "string", "minLength": 1 },
+    "status": { "enum": ["active", "planned", "retired"] },
+    "polarity": { "enum": ["positive", "negative"] },
+    "mode": { "const": "routing-plan" },
+    "costTier": { "enum": ["smoke", "standard", "full"] },
+    "userPrompt": { "type": "string", "minLength": 1 },
+    "contextFiles": { "$ref": "#/$defs/stringList" },
+    "expected": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["requiredSkills", "allowedSkills", "forbiddenSkills", "requiredAgents", "forbiddenAgents", "requiredReadPaths", "allowedReadPaths", "requiredWritePaths", "allowedWritePaths", "forbiddenActions", "requiredValidationProfiles", "forbiddenValidationProfiles", "approvalExpectation"],
+      "properties": {
+        "requiredSkills": { "$ref": "#/$defs/stringList" },
+        "allowedSkills": { "$ref": "#/$defs/stringList" },
+        "forbiddenSkills": { "$ref": "#/$defs/stringList" },
+        "requiredAgents": { "$ref": "#/$defs/stringList" },
+        "forbiddenAgents": { "$ref": "#/$defs/stringList" },
+        "requiredReadPaths": { "$ref": "#/$defs/stringList" },
+        "allowedReadPaths": { "$ref": "#/$defs/stringList" },
+        "requiredWritePaths": { "$ref": "#/$defs/stringList" },
+        "allowedWritePaths": { "$ref": "#/$defs/stringList" },
+        "forbiddenActions": { "$ref": "#/$defs/stringList" },
+        "requiredValidationProfiles": { "$ref": "#/$defs/stringList" },
+        "forbiddenValidationProfiles": { "$ref": "#/$defs/stringList" },
+        "approvalExpectation": { "enum": ["required", "not-required", "conditional"] }
+      }
+    }
+  },
+  "$defs": {
+    "stringList": { "type": "array", "items": { "type": "string", "minLength": 1 }, "uniqueItems": true }
+  }
+}

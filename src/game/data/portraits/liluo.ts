@@ -15,22 +15,27 @@ const liLuoDefaultPortraitUrl = new URL('../../../assets/game/standee/LiLuo.png'
 const liLuoSleepPortraitUrl = new URL('../../../assets/game/standee/Liluo_sleep.png', import.meta.url).href;
 const liLuoSleepTiePortraitUrl = new URL('../../../assets/game/standee/Liluo_sleep_tie.png', import.meta.url).href;
 
-const defaultPlayerPortraitPartialModules = import.meta.glob([
-  '../../../assets/game/standee/partial/*素体-上身*.png',
-  '../../../assets/game/standee/partial/*素体-下身*.png',
-  '../../../assets/game/standee/partial/*素体-脚部-站立*.png',
-  '../../../assets/game/standee/partial/*表情-基准表情*.png',
-  '../../../assets/game/standee/partial/*通用-头部*.png'
-], {
-  eager: true,
-  import: 'default',
-  query: '?url'
-}) as Record<string, string>;
-const playerPortraitPartialModules = import.meta.glob('../../../assets/game/standee/partial/*.png', {
-  eager: true,
-  import: 'default',
-  query: '?url'
-}) as Record<string, string>;
+const isViteRuntime = Boolean(import.meta.env);
+const defaultPlayerPortraitPartialModules = isViteRuntime
+  ? import.meta.glob([
+      '../../../assets/game/standee/partial/*素体-上身*.png',
+      '../../../assets/game/standee/partial/*素体-下身*.png',
+      '../../../assets/game/standee/partial/*素体-脚部-站立*.png',
+      '../../../assets/game/standee/partial/*表情-基准表情*.png',
+      '../../../assets/game/standee/partial/*通用-头部*.png'
+    ], {
+      eager: true,
+      import: 'default',
+      query: '?url'
+    }) as Record<string, string>
+  : {};
+const playerPortraitPartialModules = isViteRuntime
+  ? import.meta.glob('../../../assets/game/standee/partial/*.png', {
+      eager: true,
+      import: 'default',
+      query: '?url'
+    }) as Record<string, string>
+  : {};
 
 const defaultPlayerPortraitLayerSources: DialoguePortraitLayerSource[] = Object.entries(defaultPlayerPortraitPartialModules)
   .map(([path, src]) => ({ path, src }));

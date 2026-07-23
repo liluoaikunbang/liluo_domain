@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "project-memory-curator-agent-positive-001",
+  "title": "liluo_project_memory_curator 正向委派",
+  "targetType": "agent",
+  "target": "liluo_project_memory_curator",
+  "status": "active",
+  "polarity": "positive",
+  "mode": "routing-plan",
+  "costTier": "smoke",
+  "userPrompt": "跨文档追踪长期规则的权威来源、消费者与重复冲突。",
+  "contextFiles": [],
+  "expected": {
+    "requiredSkills": [],
+    "allowedSkills": [],
+    "forbiddenSkills": [],
+    "requiredAgents": [
+      "liluo_project_memory_curator"
+    ],
+    "forbiddenAgents": [],
+    "requiredReadPaths": [],
+    "allowedReadPaths": [],
+    "requiredWritePaths": [],
+    "allowedWritePaths": [],
+    "forbiddenActions": [
+      "自动提交",
+      "自动推送"
+    ],
+    "requiredValidationProfiles": [],
+    "forbiddenValidationProfiles": [
+      "all"
+    ],
+    "approvalExpectation": "not-required"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "phaser-map-event-integration-positive-001",
+  "title": "liluo-phaser-map-event-integration 正向路由",
+  "targetType": "skill",
+  "target": "liluo-phaser-map-event-integration",
+  "status": "active",
+  "polarity": "positive",
+  "mode": "routing-plan",
+  "costTier": "standard",
+  "userPrompt": "把新地图、出生点、碰撞、NPC 和传送事件接入现有 Phaser 架构。",
+  "contextFiles": [],
+  "expected": {
+    "requiredSkills": [
+      "liluo-phaser-map-event-integration"
+    ],
+    "allowedSkills": [],
+    "forbiddenSkills": [],
+    "requiredAgents": [],
+    "forbiddenAgents": [],
+    "requiredReadPaths": [],
+    "allowedReadPaths": [],
+    "requiredWritePaths": [
+      "src/game/"
+    ],
+    "allowedWritePaths": [
+      "src/game/"
+    ],
+    "forbiddenActions": [
+      "自动提交",
+      "自动推送"
+    ],
+    "requiredValidationProfiles": [],
+    "forbiddenValidationProfiles": [
+      "all"
+    ],
+    "approvalExpectation": "not-required"
+  }
+}

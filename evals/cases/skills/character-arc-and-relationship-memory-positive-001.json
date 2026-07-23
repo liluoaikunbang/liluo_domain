@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "character-arc-and-relationship-memory-positive-001",
+  "title": "liluo-character-arc-and-relationship-memory 正向路由",
+  "targetType": "skill",
+  "target": "liluo-character-arc-and-relationship-memory",
+  "status": "active",
+  "polarity": "positive",
+  "mode": "routing-plan",
+  "costTier": "standard",
+  "userPrompt": "核验璃落与同伴跨章节关系阶段和长期代价是否有证据。",
+  "contextFiles": [],
+  "expected": {
+    "requiredSkills": [
+      "liluo-character-arc-and-relationship-memory"
+    ],
+    "allowedSkills": [],
+    "forbiddenSkills": [],
+    "requiredAgents": [],
+    "forbiddenAgents": [],
+    "requiredReadPaths": [],
+    "allowedReadPaths": [],
+    "requiredWritePaths": [
+      "docs/"
+    ],
+    "allowedWritePaths": [
+      "docs/"
+    ],
+    "forbiddenActions": [
+      "自动提交",
+      "自动推送"
+    ],
+    "requiredValidationProfiles": [],
+    "forbiddenValidationProfiles": [
+      "all"
+    ],
+    "approvalExpectation": "not-required"
+  }
+}

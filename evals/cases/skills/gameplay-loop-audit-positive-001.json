@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "gameplay-loop-audit-positive-001",
+  "title": "liluo-gameplay-loop-audit 正向路由",
+  "targetType": "skill",
+  "target": "liluo-gameplay-loop-audit",
+  "status": "active",
+  "polarity": "positive",
+  "mode": "routing-plan",
+  "costTier": "standard",
+  "userPrompt": "把这个竞技机制审计并转化为可开发的单人 PVE 循环。",
+  "contextFiles": [],
+  "expected": {
+    "requiredSkills": [
+      "liluo-gameplay-loop-audit"
+    ],
+    "allowedSkills": [],
+    "forbiddenSkills": [],
+    "requiredAgents": [],
+    "forbiddenAgents": [],
+    "requiredReadPaths": [],
+    "allowedReadPaths": [],
+    "requiredWritePaths": [],
+    "allowedWritePaths": [],
+    "forbiddenActions": [
+      "自动提交",
+      "自动推送"
+    ],
+    "requiredValidationProfiles": [],
+    "forbiddenValidationProfiles": [
+      "all"
+    ],
+    "approvalExpectation": "not-required"
+  }
+}

@@ -1,0 +1,352 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://liluo.local/schemas/maps/map-metadata.schema.json",
+  "title": "璃落地图元数据",
+  "description": "从各地图 meta.ts、目录位置和事件桥接文件确定的地图维护层合同；不约束 Tiled 生成的 map.json 内部结构。",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "mapId",
+    "world",
+    "displayName",
+    "description",
+    "resourceDirectory",
+    "mapJson",
+    "defaultSpawnId",
+    "connections",
+    "eventRegistry",
+    "dialogueRegistry",
+    "playerScale",
+    "camera",
+    "minimap",
+    "worldRender",
+    "worldHints"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "integer",
+      "const": 1
+    },
+    "mapId": {
+      "$ref": "https://liluo.local/schemas/common/identifier.schema.json"
+    },
+    "world": {
+      "$ref": "https://liluo.local/schemas/common/identifier.schema.json"
+    },
+    "displayName": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 100
+    },
+    "description": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 500
+    },
+    "resourceDirectory": {
+      "$ref": "#/$defs/repositoryPath"
+    },
+    "mapJson": {
+      "$ref": "#/$defs/repositoryPath"
+    },
+    "defaultSpawnId": {
+      "$ref": "https://liluo.local/schemas/common/identifier.schema.json"
+    },
+    "connections": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "eventId",
+          "targetMapId",
+          "spawnId"
+        ],
+        "properties": {
+          "eventId": {
+            "$ref": "https://liluo.local/schemas/common/identifier.schema.json",
+            "description": "负责该出口或入口的事件 ID。"
+          },
+          "targetMapId": {
+            "$ref": "https://liluo.local/schemas/common/identifier.schema.json",
+            "description": "目标地图 ID。"
+          },
+          "spawnId": {
+            "anyOf": [
+              {
+                "$ref": "https://liluo.local/schemas/common/identifier.schema.json"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "eventRegistry": {
+      "$ref": "#/$defs/repositoryPath"
+    },
+    "dialogueRegistry": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/repositoryPath"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "playerScale": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "exclusiveMinimum": 0,
+      "maximum": 10
+    },
+    "camera": {
+      "anyOf": [
+        {
+          "type": "object",
+          "required": [
+            "mode"
+          ],
+          "properties": {
+            "mode": {
+              "type": "string",
+              "enum": [
+                "follow-player",
+                "static-centered"
+              ]
+            }
+          },
+          "additionalProperties": false
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "minimap": {
+      "anyOf": [
+        {
+          "type": "object",
+          "required": [
+            "adaptiveFit"
+          ],
+          "properties": {
+            "adaptiveFit": {
+              "type": "boolean"
+            }
+          },
+          "additionalProperties": false
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "weather": {
+      "anyOf": [
+        {
+          "type": "object",
+          "required": [
+            "weatherId"
+          ],
+          "properties": {
+            "weatherId": {
+              "$ref": "https://liluo.local/schemas/common/identifier.schema.json"
+            }
+          },
+          "additionalProperties": false
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "time": {
+      "anyOf": [
+        {
+          "type": "object",
+          "required": [
+            "timeOfDayId"
+          ],
+          "properties": {
+            "timeOfDayId": {
+              "$ref": "https://liluo.local/schemas/common/identifier.schema.json"
+            }
+          },
+          "additionalProperties": false
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "worldRender": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/worldRender"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "worldHints": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/worldHint"
+      }
+    }
+  },
+  "$defs": {
+    "repositoryPath": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 500,
+      "pattern": "^(?![A-Za-z]:)(?!/)(?!.*\\\\)(?!.*(?:^|/)\\.\\.(?:/|$)).+$"
+    },
+    "worldRender": {
+      "type": "object",
+      "properties": {
+        "tilesets": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/tileset"
+          }
+        },
+        "npcReplacements": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/npcReplacement"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "tileset": {
+      "type": "object",
+      "required": [
+        "textureKey"
+      ],
+      "properties": {
+        "textureKey": {
+          "$ref": "https://liluo.local/schemas/common/identifier.schema.json"
+        },
+        "transparentTileLocalIds": {
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "uniqueItems": true
+        },
+        "match": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string",
+              "minLength": 1
+            },
+            "imageIncludes": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              },
+              "minItems": 1,
+              "uniqueItems": true
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "npcReplacement": {
+      "type": "object",
+      "required": [
+        "layerName",
+        "appearanceId",
+        "direction"
+      ],
+      "properties": {
+        "layerName": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sourceTextureKey": {
+          "type": "string",
+          "minLength": 1
+        },
+        "appearanceId": {
+          "$ref": "https://liluo.local/schemas/common/identifier.schema.json"
+        },
+        "direction": {
+          "type": "string",
+          "enum": [
+            "down",
+            "left",
+            "right",
+            "up"
+          ]
+        },
+        "state": {
+          "type": "string",
+          "enum": [
+            "idle",
+            "walk"
+          ]
+        },
+        "depth": {
+          "type": "number"
+        },
+        "scale": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        }
+      },
+      "additionalProperties": false
+    },
+    "worldHint": {
+      "type": "object",
+      "required": [
+        "id",
+        "layerName",
+        "icon"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "https://liluo.local/schemas/common/identifier.schema.json"
+        },
+        "layerName": {
+          "type": "string",
+          "minLength": 1
+        },
+        "icon": {
+          "type": "string",
+          "minLength": 1
+        },
+        "depth": {
+          "type": "number"
+        },
+        "offsetX": {
+          "type": "number"
+        },
+        "offsetY": {
+          "type": "number"
+        },
+        "offsetPercentX": {
+          "type": "number"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

@@ -78,6 +78,12 @@
       "featureUpdate": true,
       "userCommands": true,
       "decision": "ADR"
+    },
+    "capability-regression-change": {
+      "requiredChecks": ["能力回归系统说明", "评测 Schema 与注册表", "对应案例", "能力回归 Skill 与说明", "用户命令", "功能更新", "项目知识索引"],
+      "featureUpdate": true,
+      "userCommands": true,
+      "decision": "consider-ADR"
     }
   }
 }

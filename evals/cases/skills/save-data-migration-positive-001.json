@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "save-data-migration-positive-001",
+  "title": "liluo-save-data-migration 正向路由",
+  "targetType": "skill",
+  "target": "liluo-save-data-migration",
+  "status": "active",
+  "polarity": "positive",
+  "mode": "routing-plan",
+  "costTier": "smoke",
+  "userPrompt": "存档字段和事件 ID 要改名，请设计版本迁移并保证旧档不丢进度。",
+  "contextFiles": [],
+  "expected": {
+    "requiredSkills": [
+      "liluo-save-data-migration"
+    ],
+    "allowedSkills": [],
+    "forbiddenSkills": [],
+    "requiredAgents": [],
+    "forbiddenAgents": [],
+    "requiredReadPaths": [],
+    "allowedReadPaths": [],
+    "requiredWritePaths": [
+      "src/game/"
+    ],
+    "allowedWritePaths": [
+      "src/game/"
+    ],
+    "forbiddenActions": [
+      "自动提交",
+      "自动推送"
+    ],
+    "requiredValidationProfiles": [],
+    "forbiddenValidationProfiles": [
+      "all"
+    ],
+    "approvalExpectation": "not-required"
+  }
+}

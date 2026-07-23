@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "story-to-playable-content-positive-001",
+  "title": "liluo-story-to-playable-content 正向路由",
+  "targetType": "skill",
+  "target": "liluo-story-to-playable-content",
+  "status": "active",
+  "polarity": "positive",
+  "mode": "routing-plan",
+  "costTier": "standard",
+  "userPrompt": "把已批准故事节点转成可执行骨架和最小可玩实现。",
+  "contextFiles": [],
+  "expected": {
+    "requiredSkills": [
+      "liluo-story-to-playable-content"
+    ],
+    "allowedSkills": [],
+    "forbiddenSkills": [],
+    "requiredAgents": [],
+    "forbiddenAgents": [],
+    "requiredReadPaths": [],
+    "allowedReadPaths": [],
+    "requiredWritePaths": [
+      "src/game/"
+    ],
+    "allowedWritePaths": [
+      "src/game/"
+    ],
+    "forbiddenActions": [
+      "自动提交",
+      "自动推送"
+    ],
+    "requiredValidationProfiles": [],
+    "forbiddenValidationProfiles": [
+      "all"
+    ],
+    "approvalExpectation": "not-required"
+  }
+}

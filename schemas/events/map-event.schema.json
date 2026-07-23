@@ -1,0 +1,358 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://liluo.local/schemas/events/map-event.schema.json",
+  "title": "璃落地图事件",
+  "description": "地图 events.json 中单个事件的结构合同；mapId 与 schemaVersion 由源目录和注册表绑定。",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "eventId",
+    "mapId",
+    "triggerType"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "integer",
+      "const": 1
+    },
+    "eventId": {
+      "$ref": "https://liluo.local/schemas/common/identifier.schema.json"
+    },
+    "mapId": {
+      "$ref": "https://liluo.local/schemas/common/identifier.schema.json"
+    },
+    "triggerType": {
+      "type": "string"
+    },
+    "dialogueId": {
+      "$ref": "https://liluo.local/schemas/common/identifier.schema.json",
+      "description": "对话事件 ID 引用。"
+    },
+    "defaultPlayerPortraitRequired": {
+      "$ref": "#/$defs/defaultPlayerPortraitRequired"
+    },
+    "mapTransition": {
+      "$ref": "#/$defs/mapTransition"
+    },
+    "timeOfDayChange": {
+      "$ref": "#/$defs/timeOfDayChange"
+    },
+    "weatherChange": {
+      "$ref": "#/$defs/weatherChange"
+    },
+    "playerPortraitChange": {
+      "$ref": "#/$defs/playerPortraitChange"
+    },
+    "playerAppearanceChange": {
+      "$ref": "#/$defs/playerAppearanceChange"
+    },
+    "playerStatusChange": {
+      "$ref": "#/$defs/playerStatusChange"
+    },
+    "mapSessionFlagRequired": {
+      "$ref": "#/$defs/mapSessionFlagRequired"
+    },
+    "zone": {
+      "$ref": "#/$defs/zone"
+    },
+    "zones": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/zone"
+      },
+      "minItems": 1
+    },
+    "tileMarker": {
+      "$ref": "#/$defs/tileMarker"
+    },
+    "tileMarkers": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/tileMarker"
+      },
+      "minItems": 1
+    },
+    "panelActions": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/panelAction"
+      },
+      "minItems": 1
+    }
+  },
+  "oneOf": [
+    {
+      "title": "手动地图事件",
+      "properties": {
+        "triggerType": {
+          "const": "manual"
+        }
+      },
+      "anyOf": [
+        {
+          "required": [
+            "zone"
+          ]
+        },
+        {
+          "required": [
+            "zones"
+          ]
+        },
+        {
+          "required": [
+            "tileMarker"
+          ]
+        },
+        {
+          "required": [
+            "tileMarkers"
+          ]
+        }
+      ]
+    }
+  ],
+  "anyOf": [
+    {
+      "required": [
+        "dialogueId"
+      ]
+    },
+    {
+      "required": [
+        "mapTransition"
+      ]
+    },
+    {
+      "required": [
+        "timeOfDayChange"
+      ]
+    },
+    {
+      "required": [
+        "weatherChange"
+      ]
+    },
+    {
+      "required": [
+        "playerPortraitChange"
+      ]
+    },
+    {
+      "required": [
+        "playerAppearanceChange"
+      ]
+    },
+    {
+      "required": [
+        "playerStatusChange"
+      ]
+    }
+  ],
+  "$defs": {
+    "zone": {
+      "type": "object",
+      "required": [
+        "mapId",
+        "tileX",
+        "tileY"
+      ],
+      "properties": {
+        "mapId": {
+          "$ref": "https://liluo.local/schemas/common/identifier.schema.json"
+        },
+        "tileX": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "tileY": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "additionalProperties": false
+    },
+    "tileMarker": {
+      "type": "object",
+      "required": [
+        "mapId",
+        "layerName"
+      ],
+      "properties": {
+        "mapId": {
+          "$ref": "https://liluo.local/schemas/common/identifier.schema.json"
+        },
+        "layerName": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "panelAction": {
+      "type": "object",
+      "required": [
+        "actionId",
+        "label"
+      ],
+      "properties": {
+        "actionId": {
+          "$ref": "https://liluo.local/schemas/common/identifier.schema.json"
+        },
+        "label": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200
+        },
+        "description": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 500
+        }
+      },
+      "additionalProperties": false
+    },
+    "mapTransition": {
+      "type": "object",
+      "required": [
+        "mapId"
+      ],
+      "properties": {
+        "mapId": {
+          "$ref": "https://liluo.local/schemas/common/identifier.schema.json"
+        },
+        "spawnId": {
+          "$ref": "https://liluo.local/schemas/common/identifier.schema.json"
+        },
+        "spawnMarker": {
+          "type": "object",
+          "required": [
+            "layerName"
+          ],
+          "properties": {
+            "layerName": {
+              "type": "string",
+              "minLength": 1
+            },
+            "anchor": {
+              "type": "string",
+              "enum": [
+                "first",
+                "top-left",
+                "bottom-left",
+                "center"
+              ]
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "timeOfDayChange": {
+      "type": "object",
+      "required": [
+        "timeOfDayId"
+      ],
+      "properties": {
+        "timeOfDayId": {
+          "$ref": "https://liluo.local/schemas/common/identifier.schema.json"
+        }
+      },
+      "additionalProperties": false
+    },
+    "weatherChange": {
+      "type": "object",
+      "required": [
+        "weatherId"
+      ],
+      "properties": {
+        "weatherId": {
+          "$ref": "https://liluo.local/schemas/common/identifier.schema.json"
+        }
+      },
+      "additionalProperties": false
+    },
+    "playerPortraitChange": {
+      "type": "object",
+      "required": [
+        "portraitKey"
+      ],
+      "properties": {
+        "portraitKey": {
+          "$ref": "https://liluo.local/schemas/common/identifier.schema.json"
+        }
+      },
+      "additionalProperties": false
+    },
+    "playerAppearanceChange": {
+      "type": "object",
+      "required": [
+        "appearanceId"
+      ],
+      "properties": {
+        "appearanceId": {
+          "$ref": "https://liluo.local/schemas/common/identifier.schema.json"
+        }
+      },
+      "additionalProperties": false
+    },
+    "playerStatusChange": {
+      "type": "object",
+      "required": [
+        "status"
+      ],
+      "properties": {
+        "status": {
+          "type": "array",
+          "items": {
+            "$ref": "https://liluo.local/schemas/common/identifier.schema.json"
+          },
+          "uniqueItems": true
+        },
+        "mode": {
+          "type": "string",
+          "enum": [
+            "set",
+            "append",
+            "remove"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "defaultPlayerPortraitRequired": {
+      "type": "object",
+      "required": [
+        "fallbackDialogueId"
+      ],
+      "properties": {
+        "fallbackDialogueId": {
+          "$ref": "https://liluo.local/schemas/common/identifier.schema.json"
+        }
+      },
+      "additionalProperties": false
+    },
+    "mapSessionFlagRequired": {
+      "type": "object",
+      "required": [
+        "flagId",
+        "expected",
+        "fallbackDialogueId"
+      ],
+      "properties": {
+        "flagId": {
+          "$ref": "https://liluo.local/schemas/common/identifier.schema.json"
+        },
+        "expected": {
+          "type": "boolean"
+        },
+        "fallbackDialogueId": {
+          "$ref": "https://liluo.local/schemas/common/identifier.schema.json"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

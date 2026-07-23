@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "eventId": "liluo_room_bed_event",
+  "mapId": 3,
+  "triggerType": "manual",
+  "dialogueId": "liluo_room_bed_dialogue",
+  "tileMarker": {
+    "mapId": "liluo_room",
+    "layerName": "bed_event"
+  }
+}

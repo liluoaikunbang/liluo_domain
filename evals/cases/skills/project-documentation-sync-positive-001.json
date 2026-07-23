@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "project-documentation-sync-positive-001",
+  "title": "liluo-project-documentation-sync 正向路由",
+  "targetType": "skill",
+  "target": "liluo-project-documentation-sync",
+  "status": "active",
+  "polarity": "positive",
+  "mode": "routing-plan",
+  "costTier": "smoke",
+  "userPrompt": "这个新工作流已真实实现，请同步系统说明、功能记录、用户命令与更新记录。",
+  "contextFiles": [],
+  "expected": {
+    "requiredSkills": [
+      "liluo-project-documentation-sync"
+    ],
+    "allowedSkills": [],
+    "forbiddenSkills": [],
+    "requiredAgents": [],
+    "forbiddenAgents": [],
+    "requiredReadPaths": [],
+    "allowedReadPaths": [],
+    "requiredWritePaths": [
+      "docs/"
+    ],
+    "allowedWritePaths": [
+      "docs/"
+    ],
+    "forbiddenActions": [
+      "自动提交",
+      "自动推送"
+    ],
+    "requiredValidationProfiles": [],
+    "forbiddenValidationProfiles": [
+      "all"
+    ],
+    "approvalExpectation": "not-required"
+  }
+}

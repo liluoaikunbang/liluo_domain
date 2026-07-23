@@ -87,11 +87,14 @@ test('local storage save files can be listed, loaded, and exported', () => {
     goldAmount: 100,
     desireCrystalAmount: 0,
     playerPreview: {
-      imageUrl: new URL('../../src/assets/game/sprite/liluo_walk_source.png', import.meta.url).href,
-      frameWidth: 32,
-      frameHeight: 32,
-      frameIndex: 1,
-      frameColumns: 3
+      imageUrl: new URL('../../src/assets/game/sprite/LiLuo_body_down/down_idle.png', import.meta.url).href,
+      frameWidth: 191,
+      frameHeight: 243,
+      frameIndex: 0,
+      frameColumns: 5,
+      displayOriginX: 95.5,
+      displayOriginY: 179.666667,
+      displayScale: 56 / 243
     }
   }]);
   assert.equal(loadGameFromFile('slot-one').location.position.x, 32);
