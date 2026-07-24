@@ -6,7 +6,10 @@
     "added": [],
     "deleted": [],
     "modified": [
-      "docs/运行规范/Codex命令批准分级表.md"
+      "docs/功能更新/146-Codex命令授权反馈持久化与规范闭环.md",
+      "docs/技能说明/liluo-command-approval-governance.md",
+      "docs/用户命令目录.md",
+      "docs/系统说明/Codex命令授权治理系统.md"
     ],
     "renamed": []
   },
@@ -40,11 +43,11 @@
       "status": "partial"
     }
   },
-  "generatedAt": "2026-07-23T14:34:01.141Z",
+  "generatedAt": "2026-07-24T02:44:29.015Z",
   "generatorVersion": "1.0.3",
   "mode": "changed",
   "schemaVersion": 1,
-  "sourceCommit": "76fa2ee7d2978783e0f83ed7bdddc088b5292d9f",
+  "sourceCommit": "4f786700aae20c2ea84c6c0db7c6e684e195d0cc",
   "sourceSnapshot": {
     "docs/README.md": "10f1547208967a84fe14b342b4bb95bd9f46a1c17d137ab6a91c9ab36ebc2a6b",
     "docs/功能更新/001-GameView三栏布局与地图贴合.md": "7a4664d575a6611eaf355dd13d304e4f22d3710cb8a2ce9ad3e9824388318b06",
@@ -193,7 +196,7 @@
     "docs/功能更新/143-璃落创作组雕龙文号体系.md": "2973dd58924bddc3463bb1f0049f82eb2e36a2445317a21a8fb6751502627301",
     "docs/功能更新/144-多文件离线发行与GitHub-Release上传.md": "f736e5215196f9c4c901e45400e573146f63981145185d1fb22df0fd04c58cf3",
     "docs/功能更新/145-外部Skill来源库项目能力演化与自然表达系统.md": "1cc58d7d465cb55dc5bfa22e7a56169a2c0a7414354c2ada7450c366e0feb6c1",
-    "docs/功能更新/146-Codex命令授权反馈持久化与规范闭环.md": "fa733124495992083788308c1e2e72d3795bcd0eb3aa3f7f05260013db74686c",
+    "docs/功能更新/146-Codex命令授权反馈持久化与规范闭环.md": "716b0a03228477af91c0def6de08db75471cb9933e5751daccb9f5851176a61f",
     "docs/功能更新/147-内容生产与可玩化基础系统.md": "d2088270c080e398e20cd5324c63420afe26def15eff403708cb2c648efa758c",
     "docs/功能更新/148-JSON-Schema数据契约系统.md": "b577c33dfa3f093329c252686cf8d7fb8e8193001cb8bfcc9e2375d66ed2c71a",
     "docs/功能更新/149-Skill与Agent能力回归评测系统.md": "a76652dbf7de55e636126281811ebd208f283bdb3223dbc51edde00ab44f2773",
@@ -208,7 +211,7 @@
     "docs/技能说明/liluo-browser-game-regression.md": "2e10bbba405b34894531841197b4cf0e7a731aec4dd3c66758dfbb0f463a7244",
     "docs/技能说明/liluo-capability-regression.md": "c67e7e6b34846dac5f4c730154e0c106e613aadb3caa051b3beea2e010e3ce6f",
     "docs/技能说明/liluo-character-arc-and-relationship-memory.md": "3383ef51ba0c46589b107ed4928c7b373ea78e5e8265256f3cd2e582a871568e",
-    "docs/技能说明/liluo-command-approval-governance.md": "265f3ebcdd6a6a5959ab3ed5c1e3b401437d0df608ed4fa418e559626ea3eb02",
+    "docs/技能说明/liluo-command-approval-governance.md": "25c7218b005a94fc53f4e72bab68bdd676bd57d06b1298e42fb39a6a15299abc",
     "docs/技能说明/liluo-creative-team-presence.md": "279ebb9786e9258797820e66682b7e7aad903e63eba8104fde214ecc122da24e",
     "docs/技能说明/liluo-dialogue-event-authoring.md": "c496a42933a5233bff9fb5c068857c634d3e205fa6fbd3f053cc3f9c2eb2c4f7",
     "docs/技能说明/liluo-external-fiction-knowledge.md": "ec9913e97a576f96546125d4358900277dc7940b4809d121d6278a2ecf6745ad",
@@ -239,9 +242,9 @@
     "docs/智能体说明/liluo_validation_runner.md": "5ac39e639315e1d9891f2f1649ac28f54397fc79b92ef59ee017dd000109d49c",
     "docs/智能体说明/项目子智能体体系.md": "ba2e0d621b3c741ddd94338c81706b6df377d43499dd0ec956e35bdbadd00304",
     "docs/游戏素材图片清单.md": "e5341d8739d710c663aacfde2b5eff3a482b0da6b3f4cd08424803493998cf93",
-    "docs/用户命令目录.md": "f90127ffbbdfe1b42d2c1a9e298f27084d3e9e6bf0509cc3288a5b678cfb3d3f",
+    "docs/用户命令目录.md": "435efa1b35f3bc7c30d6433e0d47c8de8b2d145d283db0e1de6881516a6d0c66",
     "docs/系统说明/Codex-Hooks与自动质量门禁系统.md": "284742bc8b5b8986829d9d3e0a54fb9f5765394259bcf54da772edd663601143",
-    "docs/系统说明/Codex命令授权治理系统.md": "5c75f8cf3ab10b70dbdf0ce77a383dc8329f0624f69f7d10eeae5240ad41a79b",
+    "docs/系统说明/Codex命令授权治理系统.md": "caa17de78a4633c1f939bb8c2ce6ec3c5796dd36d972587f3a0ba731edda8b37",
     "docs/系统说明/JSON-Schema数据契约系统.md": "a835837bba83cfcc29663c5112b985192db4618c075d34b6143b3e2a9b7c3c05",
     "docs/系统说明/README.md": "9fdd6e147f6585b0b2ce357e9dc703fce831f2396b29e7ebda44696ee37a2b78",
     "docs/系统说明/Skill与Agent能力回归评测系统.md": "3b8efd064a728694e4b31e079a1d2aa052e2a78a4d4e5cbd446d56f1bc0b305e",

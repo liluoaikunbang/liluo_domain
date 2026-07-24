@@ -18,9 +18,13 @@ Use `npm run commands:approval:classify -- --text "..." --command "npm run ..."`
 
 Prefer the smallest governed `npm run project:routine -- docs|workflow|team-presence|natural-expression|check|test|build|index|all` profile and `npm run project:skill:init -- ...` for new `liluo-*` Skill scaffolds. Use `check`/`test`/`build`/`index`/`all` only when the actual change spans those surfaces. Do not split fixed profiles back into interpreter-level approvals, and never run a known child-process command in the sandbox merely to collect an expected `EPERM`.
 
+An explicit implementation, modification, repair, refactor, or synchronization request authorizes ordinary file writes within that task's repository scope. Do not ask separately before editing `.agents/**`, `.codex/agents/**`, project Skills, Agents, rules, or project config, and do not escalate a shell merely to perform a text edit; use the controlled patch tool. This task-level write intent does not authorize project-external paths, credentials, deletion outside the requested change, Git metadata, network, dependencies, or publication.
+
 ## Persist a project decision
 
 Inspect existing `.codex/rules/*.rules` and `.codex/approval-decisions.json`. Reject secrets, complex shell, wide interpreter/wrapper prefixes, and any `allow` that is not a precise project command. Keep network, Git writes, dependencies, deletion, releases, project-external paths and unknown binaries as `prompt` or `forbidden`.
+
+An explicit user request to commit or upload already establishes task-level intent for the scoped Git writes and target push. It does not create a persistent `allow`, but the delivery workflow must not add `git ls-remote`, fetch, or another network preflight solely to reconfirm the remote before the requested push. Let `git push` report non-fast-forward, authentication, or protection failures; after an unambiguous successful push, do not perform another remote verification.
 
 For an explicit safe project decision, run `commands:approval:record` with exact pattern, decision, reason, class and date. It updates only the managed project rule file, registry and generated documentation summary. Do not hand-edit `project-decisions.rules`.
 

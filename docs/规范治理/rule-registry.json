@@ -181,7 +181,7 @@
       "title": "项目命令授权精确持久化且不自动修改用户级规则",
       "authority": "docs/系统说明/Codex命令授权治理系统.md",
       "decision": "docs/设计记忆/架构决策/ADR-005-命令授权采用项目规则与决定注册分层治理.md",
-      "consumers": ["AGENTS.md", ".agents/skills/liluo-project/liluo-command-approval-governance/SKILL.md", ".codex/rules/routine-development.rules", "scripts/command-approval/command-approval.mjs", "scripts/project-routine.mjs", "scripts/init-project-skill.mjs", "docs/用户命令目录.md"],
+      "consumers": ["AGENTS.md", ".agents/skills/liluo-project/liluo-command-approval-governance/SKILL.md", ".agents/skills/code-review-and-quality/SKILL.md", ".codex/config.toml", ".codex/rules/routine-development.rules", "scripts/command-approval/command-approval.mjs", "scripts/project-routine.mjs", "scripts/init-project-skill.mjs", "docs/用户命令目录.md"],
       "status": "active"
     },
     {

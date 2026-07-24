@@ -73,6 +73,14 @@ test('direct edits protect generated and local-sensitive paths while allowing ex
     assert.equal(evaluateToolRequest({ tool_name: 'apply_patch', tool_input: { file_path } }, root).allowed, false, file_path)
   }
   assert.equal(evaluateToolRequest({ tool_name: 'Write', tool_input: { file_path: '.env.example' } }, root).allowed, true)
+  for (const file_path of [
+    '.agents/skills/liluo-project/example/SKILL.md',
+    '.codex/agents/example.toml',
+    '.codex/config.toml',
+    '.codex/rules/example.rules',
+  ]) {
+    assert.equal(evaluateToolRequest({ tool_name: 'apply_patch', tool_input: { file_path } }, root).allowed, true, file_path)
+  }
   const patch = '*** Begin Patch\n*** Update File: project-index/manifest.json\n@@\n-old\n+new\n*** End Patch\n'
   assert.equal(evaluateToolRequest({ tool_name: 'apply_patch', tool_input: { patch } }, root).allowed, false)
 })

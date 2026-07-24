@@ -345,3 +345,7 @@ After review is complete:
 - [ ] Tests pass
 - [ ] Build succeeds
 - [ ] The verification story is documented (what changed, how it was verified)
+
+## GitHub Delivery Boundary
+
+When the user explicitly asks to commit or upload the reviewed change, finish local scope, secret, diff, and status checks before the Git write sequence, then perform the requested target push directly. Do not run `git ls-remote`, fetch, or another network preflight merely to reconfirm the remote; a non-fast-forward or protected branch must fail safely at `git push`. Treat an unambiguous successful push result as sufficient delivery evidence and do not add a second remote verification. Repository guidance cannot suppress a platform-required confirmation for the external write.

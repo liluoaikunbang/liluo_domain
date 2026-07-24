@@ -70,7 +70,7 @@ TUI “始终允许”只代表出现了长期意图候选，不代表保存范�
 
 常规验证优先使用 `npm run project:routine -- docs|workflow|team-presence|natural-expression|check|test|build|index|all` 的最小适用 profile，不要拆回大量直接 `node` / Python / PowerShell 命令，也不要用 `all` 代替范围判断。默认只运行一项目标验证；仅当一项无法覆盖多个实质变化面且结果会影响完成结论时，才再运行至多一项相关综合验证。各 Skill 提出的检查是待合并候选，不得按 Skill 数量机械叠加；覆盖关系相同的测试、审计与 profile 只保留最小的一项。未修改的领域不检查，相关文件未再次变化时不重跑，纯正文修改不自动追加 frontmatter、全内容或治理审计，局部治理规则修改不自动运行历史功能文档全量审计，文档或 Skill 规则改动默认不构建 Web。外部来源原创性门禁和被索引源的末尾增量刷新仅在实际触发时保留，也不得借此追加其他检查。`project:routine`、`project:gate:changed|prepush|ci|explain` 与 `project:hooks:test` 的精确入口已在项目内长期批准；凡已知会派生子进程或写入忽略报告的验证，应首次就以精确前缀申请沙箱外执行，不得先在沙箱内触发 `EPERM` 再改路线。创建新的 `liluo-*` 项目 Skill 时优先使用受限的 `npm run project:skill:init -- --name <name> --area liluo-project|writing|testing --resources references,scripts,assets`。
 
-执行权限必须按动作而不是按“某个文件”解释：工作区内普通文本修改直接使用 `apply_patch`，不申请 shell 提权；`project-index/**`、报告和构建产物只走正式生成器；`.git` 元数据写入、网络、依赖、删除与发布保持精确审批。已知受限的 Git 写入或网络命令首次即走对应授权，不先失败重试；一条写命令不要与无关只读检查拼成复合 shell。`git push` 已明确返回成功时不再重复联网核验；只有输出不明确时才做一次沙箱外只读远端复查。
+执行权限必须按动作而不是按“某个文件”解释：用户明确要求实现、修改、修复、重构或同步某项仓库内容时，该请求已经授权任务范围内的普通文件创建与编辑；`src/**`、`docs/**`、`.agents/**`、`.codex/agents/**`、项目 Skill、Agent、规则和配置均直接使用 `apply_patch`，不得再按文件或目录逐项询问，也不得为普通编辑申请 shell 提权。只有任务范围确实不明、项目外路径、凭据、正式删除、`.git` 元数据、网络、依赖和发布继续按各自边界处理；`project-index/**`、报告和构建产物只走正式生成器。已知受限的 Git 写入或网络命令首次即走对应授权，不先失败重试；一条写命令不要与无关只读检查拼成复合 shell。用户已明确要求提交或上传 GitHub 时，该请求已提供任务层面的提交与推送意图；完成本地审查、暂存和提交后直接执行一次目标 `git push`，不得默认先用 `git ls-remote`、fetch 或其他联网命令预检远端。平台仍要求的外部写入确认不由仓库规则绕过。`git push` 已明确返回成功时不再重复联网核验；只有输出不明确时才做一次沙箱外只读远端复查。
 
 ## 故事缺口发现与灵感补全
 

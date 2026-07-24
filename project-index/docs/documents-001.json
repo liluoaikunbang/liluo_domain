@@ -1641,7 +1641,7 @@
   {
     "id": "docs/功能更新/146-Codex命令授权反馈持久化与规范闭环.md",
     "indexVersion": 1,
-    "sourceHash": "fa733124495992083788308c1e2e72d3795bcd0eb3aa3f7f05260013db74686c",
+    "sourceHash": "716b0a03228477af91c0def6de08db75471cb9933e5751daccb9f5851176a61f",
     "sourcePath": "docs/功能更新/146-Codex命令授权反馈持久化与规范闭环.md",
     "subtype": "update",
     "summary": "146-Codex 命令授权反馈、持久化与规范闭环",
@@ -1784,7 +1784,7 @@
   {
     "id": "docs/技能说明/liluo-command-approval-governance.md",
     "indexVersion": 1,
-    "sourceHash": "265f3ebcdd6a6a5959ab3ed5c1e3b401437d0df608ed4fa418e559626ea3eb02",
+    "sourceHash": "25c7218b005a94fc53f4e72bab68bdd676bd57d06b1298e42fb39a6a15299abc",
     "sourcePath": "docs/技能说明/liluo-command-approval-governance.md",
     "subtype": "skill",
     "summary": "liluo-command-approval-governance",

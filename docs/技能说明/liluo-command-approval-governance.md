@@ -17,6 +17,10 @@
 
 `allow` 仅接受精确、稳定、低风险的项目 npm script。网络、Git 写入、依赖、删除、上传、发行、项目外目录、凭据、未知二进制、解释器和复杂 shell 保持 `prompt` / `forbidden`。Skill 不改变平台沙箱、管理员策略或更严格规则。
 
+用户明确要求提交或上传时，该话语已经确认本次任务范围内的提交与目标推送意图，但不会升级为长期 Git/网络 `allow`。交付流程完成本地审查后直接执行目标 `git push`，不默认增加 `git ls-remote`、fetch 或其他联网预检；推送明确成功后也不重复联网确认。平台仍要求的外部写入确认必须保留。
+
+用户明确要求实现、修改、修复、重构或同步仓库内容时，也已经授权对应任务范围内的普通文件编辑。`.agents`、`.codex/agents`、项目 Skill、Agent、规则和项目配置不因目录名称而再次询问，统一走受控补丁工具；项目外路径、凭据、删除、`.git` 元数据和外部副作用仍按原边界处理。
+
 常规执行入口优先选择 `npm run project:routine -- docs|workflow|team-presence|natural-expression` 的最小固定 profile；只有跨域或完整交付才使用 `check|test|build|index|all`。项目 Skill 脚手架优先使用 `npm run project:skill:init -- ...`。两者有固定动作/参数白名单和正反测试，不等同于允许宽泛解释器。调用方应直接以沙箱外执行请求使用已长期批准的精确前缀，不得先制造可预见的沙箱失败再重试。
 
 ## 流程与数据

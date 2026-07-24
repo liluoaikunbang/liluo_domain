@@ -159,7 +159,7 @@
       "path": "docs/系统说明/Codex命令授权治理系统.md",
       "type": "system-spec",
       "authorityFor": ["command-approval-scope", "project-exec-rules", "approval-decision-lifecycle", "tui-rule-normalization", "fixed-verification-profiles"],
-      "consumers": ["AGENTS.md", ".codex/rules/routine-development.rules", ".codex/approval-decisions.json", ".agents/skills/liluo-project/liluo-command-approval-governance/SKILL.md", "scripts/command-approval/command-approval.mjs", "scripts/project-routine.mjs", "scripts/init-project-skill.mjs", "package.json", "docs/运行规范/Codex命令批准分级表.md", "docs/用户命令目录.md"],
+      "consumers": ["AGENTS.md", ".codex/config.toml", ".codex/rules/routine-development.rules", ".codex/approval-decisions.json", ".agents/skills/liluo-project/liluo-command-approval-governance/SKILL.md", ".agents/skills/code-review-and-quality/SKILL.md", "scripts/command-approval/command-approval.mjs", "scripts/project-routine.mjs", "scripts/init-project-skill.mjs", "package.json", "docs/运行规范/Codex命令批准分级表.md", "docs/用户命令目录.md"],
       "indexable": true,
       "userFacing": true,
       "status": "active"

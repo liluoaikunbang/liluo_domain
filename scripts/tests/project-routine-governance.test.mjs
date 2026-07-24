@@ -125,3 +125,38 @@ test('project index freshness detection matches the story indexer source boundar
   assert.match(checker, /story_outline\/sources\//)
   assert.doesNotMatch(checker, /story_outline\/'\) && \['\.json', '\.md'\]/)
 })
+
+test('explicit GitHub upload uses one target push without a remote preflight', async () => {
+  const [agents, approvalSystem, approvalSkill, reviewSkill, userCommands] = await Promise.all([
+    readFile(path.join(root, 'AGENTS.md'), 'utf8'),
+    readFile(path.join(root, 'docs', '系统说明', 'Codex命令授权治理系统.md'), 'utf8'),
+    readFile(path.join(root, '.agents', 'skills', 'liluo-project', 'liluo-command-approval-governance', 'SKILL.md'), 'utf8'),
+    readFile(path.join(root, '.agents', 'skills', 'code-review-and-quality', 'SKILL.md'), 'utf8'),
+    readFile(path.join(root, 'docs', '用户命令目录.md'), 'utf8'),
+  ])
+
+  assert.match(agents, /不得默认先用 `git ls-remote`、fetch/)
+  assert.match(approvalSystem, /默认不在推送前运行 `git ls-remote`、fetch/)
+  assert.match(approvalSkill, /must not add `git ls-remote`, fetch/)
+  assert.match(reviewSkill, /Do not run `git ls-remote`, fetch/)
+  assert.match(userCommands, /不先运行 `git ls-remote` 或 fetch/)
+  assert.match(approvalSystem, /不扩大为永久 Git 或网络 allow/)
+})
+
+test('project permission profile allows ordinary Skill and Agent edits without opening sensitive paths', async () => {
+  const [config, agents, approvalSystem] = await Promise.all([
+    readFile(path.join(root, '.codex', 'config.toml'), 'utf8'),
+    readFile(path.join(root, 'AGENTS.md'), 'utf8'),
+    readFile(path.join(root, 'docs', '系统说明', 'Codex命令授权治理系统.md'), 'utf8'),
+  ])
+
+  assert.match(config, /default_permissions = "liluo-project-edit"/)
+  assert.match(config, /extends = ":workspace"/)
+  assert.match(config, /\[permissions\.liluo-project-edit\.filesystem\.":workspace_roots"\]/)
+  assert.match(config, /"\.agents" = "write"/)
+  assert.match(config, /"\.codex" = "write"/)
+  assert.doesNotMatch(config, /"\.git" = "write"/)
+  assert.match(config, /\[permissions\.liluo-project-edit\.network\]\s+enabled = false/)
+  assert.match(agents, /项目 Skill、Agent、规则和配置均直接使用 `apply_patch`，不得再按文件或目录逐项询问/)
+  assert.match(approvalSystem, /“Skill\/Agent\/规则\/配置文件”不是单独的审批类别/)
+})

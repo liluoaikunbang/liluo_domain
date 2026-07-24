@@ -1,3 +1,16 @@
+default_permissions = "liluo-project-edit"
+
+[permissions.liluo-project-edit]
+description = "Allow ordinary edits across the trusted Liluo repository, including project Skills and Agents, while preserving sensitive-path and network boundaries."
+extends = ":workspace"
+
+[permissions.liluo-project-edit.filesystem.":workspace_roots"]
+".agents" = "write"
+".codex" = "write"
+
+[permissions.liluo-project-edit.network]
+enabled = false
+
 [agents]
 max_threads = 6
 max_depth = 1

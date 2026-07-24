@@ -68,7 +68,7 @@
   {
     "id": "docs/系统说明/Codex命令授权治理系统.md",
     "indexVersion": 1,
-    "sourceHash": "5c75f8cf3ab10b70dbdf0ce77a383dc8329f0624f69f7d10eeae5240ad41a79b",
+    "sourceHash": "caa17de78a4633c1f939bb8c2ce6ec3c5796dd36d972587f3a0ba731edda8b37",
     "sourcePath": "docs/系统说明/Codex命令授权治理系统.md",
     "subtype": "system",
     "summary": "Codex 命令授权治理系统",
@@ -134,7 +134,7 @@
   {
     "id": "docs/用户命令目录.md",
     "indexVersion": 1,
-    "sourceHash": "f90127ffbbdfe1b42d2c1a9e298f27084d3e9e6bf0509cc3288a5b678cfb3d3f",
+    "sourceHash": "435efa1b35f3bc7c30d6433e0d47c8de8b2d145d283db0e1de6881516a6d0c66",
     "sourcePath": "docs/用户命令目录.md",
     "subtype": "other",
     "summary": "用户命令目录",
