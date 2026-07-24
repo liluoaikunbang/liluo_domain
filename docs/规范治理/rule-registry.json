@@ -144,6 +144,14 @@
       "status": "active"
     },
     {
+      "ruleId": "external-source-monthly-tracking",
+      "title": "外部 Skill 与工具按月只读追踪并经用户批准后更新",
+      "authority": "docs/系统说明/外部Skill来源库与项目能力演化系统.md",
+      "decision": "docs/设计记忆/架构决策/ADR-004-外部Skill采用非可信三层演化架构.md",
+      "consumers": ["AGENTS.md", ".agents/skills/liluo-project/liluo-zhihu-novel-ingest/SKILL.md", "docs/技能说明/liluo-zhihu-novel-ingest.md", "docs/用户命令目录.md"],
+      "status": "active"
+    },
+    {
       "ruleId": "natural-expression-default-light",
       "title": "非技术读者文本默认 light 且技术文本不文学化",
       "authority": "docs/系统说明/璃落自然表达与文气塑形系统.md",

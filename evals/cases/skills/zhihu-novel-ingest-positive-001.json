@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "id": "zhihu-novel-ingest-positive-001",
+  "title": "liluo-zhihu-novel-ingest 正向路由",
+  "targetType": "skill",
+  "target": "liluo-zhihu-novel-ingest",
+  "status": "active",
+  "polarity": "positive",
+  "mode": "routing-plan",
+  "costTier": "standard",
+  "userPrompt": "下载这个知乎回答并存入外部知识 RAG，作为后续灵感参考。",
+  "contextFiles": [],
+  "expected": {
+    "requiredSkills": [
+      "liluo-zhihu-novel-ingest"
+    ],
+    "allowedSkills": [],
+    "forbiddenSkills": [],
+    "requiredAgents": [],
+    "forbiddenAgents": [],
+    "requiredReadPaths": [],
+    "allowedReadPaths": [],
+    "requiredWritePaths": [
+      "external-knowledge/sources/zhihu-novels"
+    ],
+    "allowedWritePaths": [
+      "external-knowledge/staging/zhihu-downloads",
+      "external-knowledge/sources/zhihu-novels",
+      "external-knowledge/catalog",
+      "external-knowledge/index",
+      "external-knowledge/reports"
+    ],
+    "forbiddenActions": [
+      "写入正式剧情",
+      "自动提交",
+      "自动推送"
+    ],
+    "requiredValidationProfiles": [],
+    "forbiddenValidationProfiles": [
+      "all"
+    ],
+    "approvalExpectation": "not-required"
+  }
+}

@@ -1630,7 +1630,7 @@
   {
     "id": "docs/功能更新/145-外部Skill来源库项目能力演化与自然表达系统.md",
     "indexVersion": 1,
-    "sourceHash": "de4d1e56d3980238ab611c33e9e454a06acbf06996857423cb4666063abe7794",
+    "sourceHash": "ae5f586886d258cef61da37fc4c3cb187d7c7c6dc96b62c1840455abb33f2084",
     "sourcePath": "docs/功能更新/145-外部Skill来源库项目能力演化与自然表达系统.md",
     "subtype": "update",
     "summary": "145-外部 Skill 来源库、项目能力演化与自然表达系统",
@@ -1707,7 +1707,7 @@
   {
     "id": "docs/功能更新目录.md",
     "indexVersion": 1,
-    "sourceHash": "d0adf20bbd79875412c7c30e368f4961bcf72f34f332b54502c8d690a2b8a27b",
+    "sourceHash": "02d53c31183243f52e140a77f588bdaa5c1ac589672a0707649a97a53f90e236",
     "sourcePath": "docs/功能更新目录.md",
     "subtype": "other",
     "summary": "功能更新目录",
@@ -2024,6 +2024,17 @@
     "type": "document"
   },
   {
+    "id": "docs/技能说明/liluo-zhihu-novel-ingest.md",
+    "indexVersion": 1,
+    "sourceHash": "b514ed8cec4645c155b0e9c63070ec2f03d4b1d95cb705d8b3adc54ca0732bdb",
+    "sourcePath": "docs/技能说明/liluo-zhihu-novel-ingest.md",
+    "subtype": "skill",
+    "summary": "liluo-zhihu-novel-ingest",
+    "summarySource": "title-only",
+    "title": "liluo-zhihu-novel-ingest",
+    "type": "document"
+  },
+  {
     "id": "docs/技能说明/random-story-outline-interview.md",
     "indexVersion": 1,
     "sourceHash": "2c34659f0baee33669a680db84ecfe539ebf35bd38c1cbd21276cebc4acf65af",
@@ -2158,7 +2169,7 @@
   {
     "id": "docs/设计记忆/架构决策/ADR-004-外部Skill采用非可信三层演化架构.md",
     "indexVersion": 1,
-    "sourceHash": "e54138e120391db96497f5c097080931f48ad6fe2e64eab37c97f9d37e799f62",
+    "sourceHash": "80535d4156192da7706c73c43b37e24bd2f3bcb07cf40087b7d7475a7bb488ef",
     "sourcePath": "docs/设计记忆/架构决策/ADR-004-外部Skill采用非可信三层演化架构.md",
     "subtype": "other",
     "summary": "ADR-004：外部 Skill 采用非可信三层演化架构",
@@ -2697,7 +2708,7 @@
   {
     "id": "docs/系统说明/情节条目系统.md",
     "indexVersion": 1,
-    "sourceHash": "f855bc3cb76cf62f36b11adba835b52ded093d13cb556b5829de8006b26d6d55",
+    "sourceHash": "25112dde5b7d0fec99700d614cd47b3ffc91b1d53fd4c1e5f796687917ae9329",
     "sourcePath": "docs/系统说明/情节条目系统.md",
     "subtype": "system",
     "summary": "情节条目系统",
@@ -2730,23 +2741,12 @@
   {
     "id": "docs/系统说明/外部虚构题材知识库.md",
     "indexVersion": 1,
-    "sourceHash": "3540e67a33b70079623c301c85eff81a60be912b0a25df67092bcd20e57b1974",
+    "sourceHash": "069b299eedf8874cc26fa58e337333ed63dad006d4014722f01b19950aaeb7f9",
     "sourcePath": "docs/系统说明/外部虚构题材知识库.md",
     "subtype": "system",
     "summary": "外部虚构题材知识库",
     "summarySource": "title-only",
     "title": "外部虚构题材知识库",
-    "type": "document"
-  },
-  {
-    "id": "docs/系统说明/外部Skill来源库与项目能力演化系统.md",
-    "indexVersion": 1,
-    "sourceHash": "c4c2e7238f77e66751d2582309a3e9d8ac41cf1cce872dbb751abca793a096c4",
-    "sourcePath": "docs/系统说明/外部Skill来源库与项目能力演化系统.md",
-    "subtype": "system",
-    "summary": "外部 Skill 来源库与项目能力演化系统",
-    "summarySource": "title-only",
-    "title": "外部 Skill 来源库与项目能力演化系统",
     "type": "document"
   }
 ]

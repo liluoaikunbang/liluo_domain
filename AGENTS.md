@@ -31,6 +31,7 @@
 - 玩法循环：`liluo-gameplay-loop-audit`
 - 项目知识索引：`liluo-project-index-maintenance`
 - 外部虚构题材知识库：`liluo-external-fiction-knowledge`
+- 知乎小说灵感下载入库：`liluo-zhihu-novel-ingest`
 - 规范治理与设计记忆：`liluo-project-governance-memory`
 - 命令授权决定与规则审计：`liluo-command-approval-governance`
 - 创作组人格与长期陪伴：`liluo-creative-team-presence`
@@ -40,7 +41,7 @@
 - 世界与系列生产覆盖：`liluo-production-coverage`
 - Skill / Agent 能力回归：`liluo-capability-regression`
 
-故事大纲默认在当前最贴近的既有节点或主线备忘中扩充；只有用户明确要求拆分，或内容确实需要独立的可玩范围与制作生命周期时，才新增子节点。具体判断以 `docs/系统说明/故事大纲条目模板.md` 为准。
+用户以“情节”“桥段”或“情节库”表述的内容，直接写入 `src/game/data/plot_outline/catalog.json`；用户以“大纲”“主线”或“节点”表述的内容，才进入故事大纲来源。不得因题材相近、叙事完整或可接入现有世界而擅自跨库、改写用户的表述或要求补充大纲；只有用户明确同时要求关联两库时，才分别处理。故事大纲默认在当前最贴近的既有节点或主线备忘中扩充；只有用户明确要求拆分，或内容确实需要独立的可玩范围与制作生命周期时，才新增子节点。具体判断以 `docs/系统说明/故事大纲条目模板.md` 为准。
 
 ## 外部 Skill 与本地私有化 Skill
 
@@ -49,6 +50,8 @@
 完全由璃落项目自身构建的 Skill 放入 `.agents/skills/liluo-project/`；由通用或外部能力私有化而来的 Skill 按 `writing`、`frontend`、`game-development`、`testing` 等专业类别存放。
 
 发现本地能力不足时，先查询外部 Skill 派生索引，再按需读取少量原始 Skill。未经用户批准，不得以外部更新自动覆盖项目 Skill。
+
+所有已接入的外部来源（Skill、工具及其上游仓库）默认每 30 天做一次只读更新跟踪；用户明确说明“不用更新”的来源除外。Codex 不声称后台运行：在下一次用户命令开始时发现来源到期，先检查并将有更新的差异、安全与适配分析写入 `external-knowledge/staging/update-reports/` 的临时文档，再询问用户是否要继续评估或更新。未经该次明确批准，不拉取覆盖本地工具、不修改正式 Skill 或项目内容；新增外部工具和 Skill 必须默认登记到这套追踪中。
 
 ## 自然表达
 

@@ -9,7 +9,7 @@
 | game | 45 | `game/SUMMARY.md` |
 | code | 148 | `code/SUMMARY.md` |
 | assets | 691 | `assets/SUMMARY.md` |
-| docs | 275 | `docs/SUMMARY.md` |
+| docs | 276 | `docs/SUMMARY.md` |
 | graph | 161 | `graph/SUMMARY.md` |
 
 ## 最小读取建议

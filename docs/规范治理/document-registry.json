@@ -147,7 +147,7 @@
       "documentId": "external-skill-evolution-system",
       "path": "docs/系统说明/外部Skill来源库与项目能力演化系统.md",
       "type": "system-spec",
-      "authorityFor": ["external-skill-isolation", "external-skill-sources", "external-skill-user-packs", "external-skill-rag", "external-skill-update", "local-skill-lineage"],
+      "authorityFor": ["external-skill-isolation", "external-skill-sources", "external-skill-user-packs", "external-skill-rag", "external-skill-update", "external-tool-update-tracking", "local-skill-lineage"],
       "consumers": ["AGENTS.md", "package.json", "scripts/external-skills/external-skills.mjs", "docs/外部来源/Skill来源目录.md", "docs/外部来源/Skill许可证与保存策略.md", "docs/用户命令目录.md"],
       "indexable": true,
       "userFacing": true,

@@ -16,6 +16,7 @@ dist
 dist-ssr
 *.local
 external-knowledge/source-sync.local.json
+external-knowledge/zhihu-cookie.local
 external-knowledge/staging/
 /docs.zip
 /README.zip

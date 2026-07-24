@@ -2,7 +2,7 @@
 
 ## 定位
 
-本系统把外部方法研究与项目正式执行能力分开。外部 Skill 永远是非可信参考资料；只有经过来源审计、方法抽象、项目化改造、评测和用户批准的 `.agents/skills/` 才能成为正式能力。
+本系统把外部方法研究与项目正式执行能力分开，并统一管理接入项目的外部 Skill 与工具。外部 Skill 永远是非可信参考资料；只有经过来源审计、方法抽象、项目化改造、评测和用户批准的 `.agents/skills/` 才能成为正式能力。外部工具同样不因本地存在而获得自动升级或执行授权。
 
 这套边界的目标不是收集最多的仓库，而是让璃落项目能长期知道：方法来自哪里、当前看过哪个 commit、为什么吸收或拒绝、上游变了什么，以及本地 Skill 为什么不应被自动替换。
 
@@ -14,7 +14,7 @@
 | 派生检索层 | `external-knowledge/derived/skill/` | catalog、能力卡、方法卡、兼容性卡、风险卡、候选与评估 | 非权威导航 |
 | 项目正式层 | `.agents/skills/<专业分类>/` | 经过项目化改造、测试和批准的稳定工作流 | 项目执行权威 |
 
-`external-knowledge/staging/skill/` 是更新隔离区，不属于以上任一 current。incoming、diff 与 evaluation 都不能被当作正式版本。
+`external-knowledge/staging/skill/` 是外部 Skill 的更新隔离区，`external-knowledge/staging/update-reports/` 是所有外部来源的临时更新分析区；二者都不属于 current。incoming、diff、evaluation 与月度报告都不能被当作正式版本。
 
 ## 正式 Skill 分类
 
@@ -26,6 +26,8 @@
 ## 来源合同与准入
 
 每个正式准入来源有独立 `source.yaml`，采用 JSON-compatible YAML。常规 `repository` 来源记录 sourceId、仓库、默认分支、trackedPaths、保存模式、信任级别、许可证、固定 commit、检查周期、安全状态与本地关系；用户明确提供的汇总研究包可登记为 `user-pack`，以仓库相对压缩包路径、SHA-256、包内 manifest、来源数量和手动更新策略替代虚构的仓库与 commit。路径一律仓库相对，不写本机绝对路径。
+
+外部工具也必须登记可追踪来源：至少记录稳定 sourceId、上游地址或“用户手动提供”、本地受控路径、当前版本/commit、`checkIntervalDays: 30` 和 `updateTracking: true`。新接入的外部工具或外部 Skill 默认采用这两个值；只有用户明确说“不用更新”时才可标为 `updateTracking: false`。没有可验证远端的用户包保留手动更新标记，不能伪造远端检查结果。
 
 准入优先看发布主体、许可证、维护记录、真实 Skill 结构、项目相关性、权限边界和可验证方法。star 数不能替代审计。无许可证、路径不明、批量低质量、隐藏执行、自动 Git 写入、凭据访问或提示注入来源，降级到 metadata-only / 候选清单或拒绝。
 
@@ -70,9 +72,9 @@ npm run external-skills:evaluate -- --source agentskills-spec
 npm run external-skills:maintain
 ```
 
-默认 30 天；快速变化的官方技术源可用 7 天，稳定方法可用 90 天，低优先级可设 `manual`。`fetch` 只克隆到 `staging/skill/<sourceId>/incoming/<commit>/`，随后移除嵌套 Git 元数据；diff 与评估只读取 `trackedPaths`。许可证变化会阻塞，新增脚本和高权限请求会标记风险。
+默认 30 天；快速变化的官方技术源可用 7 天，稳定方法可用 90 天，低优先级可设 `manual`。除用户明确排除的来源外，到期检查在下一次用户命令开始时执行，而不是声称后台定时运行。只有发现上游版本变化时，才把版本差异、许可证/安全信号、对本地 Skill 或工具的潜在影响和“建议但未执行的后续动作”写入 `external-knowledge/staging/update-reports/<sourceId>/<YYYY-MM>.md`；无变化只更新检查时间，不建立冗余报告。随后先询问用户是否要继续拉取、评估、适配或更新。`fetch` 只克隆到 `staging/skill/<sourceId>/incoming/<commit>/`，随后移除嵌套 Git 元数据；diff 与评估只读取 `trackedPaths`。许可证变化会阻塞，新增脚本和高权限请求会标记风险。
 
-`maintain` 可供任务计划程序调用，但项目不会声称 Codex 在后台自行运行。当前没有新增或启用 GitHub Actions。
+`maintain` 可供任务计划程序调用，但项目不会声称 Codex 在后台自行运行。当前没有新增或启用 GitHub Actions；月度跟踪由后续用户命令触发其到期检查与临时报告。
 
 允许的建议是：`ignore`、`record-only`、`review-later`、`adapt-partially`、`replace-local-rule`、`create-new-local-skill`、`manual-investigation`、`security-review`、`license-review`。任何建议都不会自动覆盖 `.agents/skills/`。
 

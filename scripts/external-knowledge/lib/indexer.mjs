@@ -1,6 +1,6 @@
-import fs from 'node:fs/promises';
+﻿import fs from 'node:fs/promises';
 import path from 'node:path';
-import { KNOWLEDGE_ROOT, SOURCE_ROOT, SCOPE, TEXT_EXTENSIONS, repoRelative } from './config.mjs';
+import { KNOWLEDGE_ROOT, SOURCE_ROOTS, SCOPE, TEXT_EXTENSIONS, repoRelative } from './config.mjs';
 import { normalizeText, sha256 } from './hashing.mjs';
 import { segmentText } from './segmenter.mjs';
 import { listFiles, publishDirectory, readJson, writeJson } from './store.mjs';
@@ -24,6 +24,15 @@ function assignSourceIds(records, oldRecords) {
   const byHash = new Map(oldRecords.map((item) => [item.contentHash, item]));
   let next = Math.max(0, ...oldRecords.map((item) => Number(item.sourceId?.match(/\d+$/)?.[0] ?? 0))) + 1;
   return records.map((record) => ({ ...record, sourceId: byPath.get(record.relativePath)?.sourceId ?? byHash.get(record.contentHash)?.sourceId ?? `fb-src-${String(next++).padStart(6, '0')}` }));
+}
+export function summarizeSourceChanges(sources, oldSources) {
+  const oldById = new Map(oldSources.map((item) => [item.sourceId, item]));
+  return {
+    added: sources.filter((item) => !oldById.has(item.sourceId)).map((item) => item.relativePath),
+    modified: sources.filter((item) => oldById.has(item.sourceId) && oldById.get(item.sourceId).contentHash !== item.contentHash).map((item) => item.relativePath),
+    deleted: oldSources.filter((item) => !sources.some((source) => source.sourceId === item.sourceId)).map((item) => item.relativePath),
+    renamed: sources.filter((item) => oldById.has(item.sourceId) && oldById.get(item.sourceId).relativePath !== item.relativePath).map((item) => ({ from: oldById.get(item.sourceId).relativePath, to: item.relativePath })),
+  };
 }
 function duplicateGroups(sources) {
   const groups = new Map(); for (const source of sources) { const key = source.normalizedContentHash || source.contentHash; if (!groups.has(key)) groups.set(key, []); groups.get(key).push(source); }
@@ -75,7 +84,6 @@ function ruleCard(rule, cardType, segments) {
     canonical: false,
   };
 }
-
 export function createCandidateCards(segments, rules = {}) {
   const definitions = [
     ['expression', '环境压力与角色感知的交替表达', ['环境细节', '角色感知', '节奏递进']],
@@ -109,7 +117,7 @@ export async function buildKnowledge({ changedOnly = false } = {}) {
   const oldSources = await readJson(path.join(KNOWLEDGE_ROOT, 'catalog', 'sources.json'), []);
   const oldSegments = changedOnly ? await loadExistingSegments() : [];
   const oldSegmentsBySource = new Map(); for (const segment of oldSegments) { if (!oldSegmentsBySource.has(segment.sourceId)) oldSegmentsBySource.set(segment.sourceId, []); oldSegmentsBySource.get(segment.sourceId).push(segment); }
-  const files = await listFiles(SOURCE_ROOT), records = [];
+  const files = (await Promise.all(SOURCE_ROOTS.map((root) => listFiles(root)))).flat(), records = [];
   for (const filePath of files) {
     const bytes = await fs.readFile(filePath), extension = path.extname(filePath).toLocaleLowerCase(), relativePath = repoRelative(filePath), contentHash = sha256(bytes);
     const text = TEXT_EXTENSIONS.has(extension) ? bytes.toString('utf8') : null;
@@ -125,7 +133,7 @@ export async function buildKnowledge({ changedOnly = false } = {}) {
     for (const segment of segmentText(text, { sourceId: source.sourceId, sourcePath: source.relativePath })) { const searchable = `${source.title} ${segment.headingPath.join(' ')} ${text.split(/\r?\n/).slice(segment.startLine - 1, segment.endLine).join(' ')}`; segment.tags = [...new Set([...source.tags, ...inferTags(searchable)])]; segment.keywords = tokenize(`${source.title} ${segment.headingPath.join(' ')} ${segment.tags.join(' ')}`); segments.push(segment); }
   }
   segments.sort((a, b) => a.sourceId.localeCompare(b.sourceId) || a.startLine - b.startLine);
-  const changed = { added: sources.filter((item) => !oldSources.some((old) => old.sourceId === item.sourceId)).map((item) => item.relativePath), modified: sources.filter((item) => oldById.has(item.sourceId) && oldById.get(item.sourceId).contentHash !== item.contentHash).map((item) => item.relativePath), deleted: oldSources.filter((old) => !sources.some((item) => item.sourceId === old.sourceId)).map((item) => old.relativePath), renamed: sources.filter((item) => oldById.has(item.sourceId) && oldById.get(item.sourceId).relativePath !== item.relativePath).map((item) => ({ from: oldById.get(item.sourceId).relativePath, to: item.relativePath })) };
+  const changed = summarizeSourceChanges(sources, oldSources);
   const duplicates = duplicateGroups(sources), versions = versionGroups(sources);
   const cardRules = await readJson(path.join(KNOWLEDGE_ROOT, 'card-rules.json'), {});
   const cards = createCandidateCards(await hydrateCardEvidence(segments), cardRules), stamp = new Date().toISOString();
@@ -154,7 +162,7 @@ export async function buildKnowledge({ changedOnly = false } = {}) {
 
 export async function freshness() {
   const indexed = await readJson(path.join(KNOWLEDGE_ROOT, 'catalog', 'sources.json'), []), indexedByPath = new Map(indexed.map((item) => [item.relativePath, item]));
-  const files = await listFiles(SOURCE_ROOT), current = [];
+  const files = (await Promise.all(SOURCE_ROOTS.map((root) => listFiles(root)))).flat(), current = [];
   for (const file of files) { const relativePath = repoRelative(file), contentHash = sha256(await fs.readFile(file)); current.push({ relativePath, contentHash }); }
   const added = current.filter((item) => !indexedByPath.has(item.relativePath)), modified = current.filter((item) => indexedByPath.has(item.relativePath) && indexedByPath.get(item.relativePath).contentHash !== item.contentHash), deleted = indexed.filter((item) => !current.some((value) => value.relativePath === item.relativePath));
   return { status: !indexed.length ? 'not-indexed' : added.length || modified.length || deleted.length ? 'stale' : 'current', added: added.map((item) => item.relativePath), modified: modified.map((item) => item.relativePath), deleted: deleted.map((item) => item.relativePath) };

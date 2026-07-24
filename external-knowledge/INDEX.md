@@ -3,9 +3,10 @@
 本库为文学表达、画面结构、场景、虚构状态与题材模式提供非正式创作参考。它独立于 `project-index/`，所有记录均为 `knowledgeScope: external-fiction-reference`、`canonical: false`，不得自动视为璃落宇宙设定。
 
 - 本机权威语料：由被 Git 忽略的 `source-sync.local.json` 指向，绝对路径不写入可移植索引
-- 仓库镜像：`external-knowledge/sources/fiction-bondage/`（索引只读取这里，不反向修改权威源）
+- 仓库镜像：`external-knowledge/sources/fiction-bondage/`（同步自本机权威语料，不反向修改权威源）
+- 知乎灵感源：`external-knowledge/sources/zhihu-novels/`（由 `liluo-zhihu-novel-ingest` 导入，索引为外部参考）
 - 支持文本：Markdown、TXT、Markdown Text；其他文件只编目，不读取二进制正文
-- 来源目录：`catalog/sources.json`；分段：`index/segments/`；关键词与标签：`index/keywords/`、`index/tags/`
+- 来源根目录由 `external-knowledge/config.json` 的 `sourceRoots` 控制；来源目录：`catalog/sources.json`；分段：`index/segments/`；关键词与标签：`index/keywords/`、`index/tags/`
 - 七类卡片：`cards/expression/`、`visual-structure/`、`scene-pattern/`、`fictional-state/`、`trope/`、`term/`、`plot-pattern/`
 - 候选规则：`card-rules.json`，按证据组和最小独立来源数生成术语卡与情节模式卡
 - 来源定位：`index/references/source-locations.json`；质量与重复报告：`reports/`

@@ -1,5 +1,16 @@
 [
   {
+    "id": "docs/系统说明/外部Skill来源库与项目能力演化系统.md",
+    "indexVersion": 1,
+    "sourceHash": "cb6debf37409fd5abcad538624e0c2f11f1ba3fe821495276818147f0e11789f",
+    "sourcePath": "docs/系统说明/外部Skill来源库与项目能力演化系统.md",
+    "subtype": "system",
+    "summary": "外部 Skill 来源库与项目能力演化系统",
+    "summarySource": "title-only",
+    "title": "外部 Skill 来源库与项目能力演化系统",
+    "type": "document"
+  },
+  {
     "id": "docs/系统说明/项目规范治理与设计记忆系统.md",
     "indexVersion": 1,
     "sourceHash": "13012ebe74394f57f08640bc04648ebbdee3ef10cf5756ffafc28f7aaa5affa7",
@@ -145,7 +156,7 @@
   {
     "id": "docs/用户命令目录.md",
     "indexVersion": 1,
-    "sourceHash": "8d33fee1537532f8739d4627fcae342435d2b299055404af3d7c6e080ca9bbb3",
+    "sourceHash": "a2dc9099f0d034f6fed54997aea54ee508e74c534f5a3fa63fa78e4b9f8df02a",
     "sourcePath": "docs/用户命令目录.md",
     "subtype": "other",
     "summary": "用户命令目录",

@@ -8,7 +8,8 @@ import { segmentText } from '../external-knowledge/lib/segmenter.mjs';
 import { matchQuery } from '../external-knowledge/lib/query.mjs';
 import { assessSimilarity } from '../external-knowledge/lib/similarity.mjs';
 import { createSyncPlan, syncAuthoritativeSource } from '../external-knowledge/lib/sync.mjs';
-import { createCandidateCards } from '../external-knowledge/lib/indexer.mjs';
+import { createCandidateCards, summarizeSourceChanges } from '../external-knowledge/lib/indexer.mjs';
+import { authorDirectoryName, sourceUrlFromMarkdown } from '../../.agents/skills/liluo-project/liluo-zhihu-novel-ingest/scripts/import-zhihu-markdown.mjs';
 
 test('segmentText preserves headings and source line locations deterministically', () => {
   const text = '# 第一章\n\n雾气笼罩古堡。\n\n门在身后合拢。\n\n## 地下室\n\n她听见远处的钟声。';
@@ -89,6 +90,23 @@ test('createSyncPlan detects additions, modifications, renames and managed mirro
   assert.deepEqual(plan.renamed, [{ from: 'old-name.md', to: 'renamed.md' }]);
   assert.deepEqual(plan.deleted, ['removed.md']);
   assert.equal(plan.blocked, false);
+});
+
+test('summarizeSourceChanges records a path-only source rename', () => {
+  const previous = [{ sourceId: 'fb-src-1', relativePath: 'zhihu-novels/2026-07-24-作者/文章.md', contentHash: 'same' }];
+  const current = [{ sourceId: 'fb-src-1', relativePath: 'zhihu-novels/作者/文章.md', contentHash: 'same' }];
+
+  assert.deepEqual(summarizeSourceChanges(current, previous), {
+    added: [], modified: [], deleted: [],
+    renamed: [{ from: 'zhihu-novels/2026-07-24-作者/文章.md', to: 'zhihu-novels/作者/文章.md' }],
+  });
+});
+
+test('Zhihu Markdown metadata parser accepts a bold label containing the colon', () => {
+  const markdown = '**Author:** [宫墙往事]\n\n**Link:** [https://www.zhihu.com/question/1/answer/2]';
+
+  assert.equal(authorDirectoryName(markdown), '宫墙往事');
+  assert.equal(sourceUrlFromMarkdown(markdown, 'fallback'), 'https://www.zhihu.com/question/1/answer/2');
 });
 
 test('createSyncPlan blocks abnormal mass deletion but permits routine automatic deletion', () => {

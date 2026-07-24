@@ -264,6 +264,16 @@
     },
     {
       "type": "skill",
+      "name": "liluo-zhihu-novel-ingest",
+      "path": ".agents/skills/liluo-project/liluo-zhihu-novel-ingest/SKILL.md",
+      "status": "active",
+      "tier": "standard",
+      "caseGlobs": [
+        "evals/cases/skills/zhihu-novel-ingest-positive-001.json"
+      ]
+    },
+    {
+      "type": "skill",
       "name": "random-story-outline-interview",
       "path": ".agents/skills/liluo-project/random-story-outline-interview/SKILL.md",
       "status": "active",

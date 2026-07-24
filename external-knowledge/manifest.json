@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "knowledgeScope": "external-fiction-reference",
   "canonical": false,
-  "generatedAt": "2026-07-22T07:57:30.308Z",
+  "generatedAt": "2026-07-24T14:06:15.474Z",
   "mode": "full",
   "shards": [
     {
@@ -135,13 +135,85 @@
     },
     {
       "path": "index/segments/segments-033.json",
-      "count": 431
+      "count": 500
+    },
+    {
+      "path": "index/segments/segments-034.json",
+      "count": 500
+    },
+    {
+      "path": "index/segments/segments-035.json",
+      "count": 500
+    },
+    {
+      "path": "index/segments/segments-036.json",
+      "count": 225
     }
   ],
   "changes": {
-    "added": [],
+    "added": [
+      "external-knowledge/sources/zhihu-novels/白框凉太子/(20230131)我带着我们全班同学的魂穿到了一名小糊咖身上_白框凉太子-993fdee2f84b.md",
+      "external-knowledge/sources/zhihu-novels/不酸的甜柚子/(20211008)如何以我渣了个上神此刻正在被追杀为开头写一篇文_不酸的甜柚子-04c03406a93d.md",
+      "external-knowledge/sources/zhihu-novels/草木木/(20240311)如何以师父亲手把我推下了诛仙台为开头写一个故事_草木木-10a3bf52276f.md",
+      "external-knowledge/sources/zhihu-novels/嘲嘲/(20240311)如何以父亲想让我替姐姐进宫为开头写一个故事_嘲嘲-709bf0e567fe.md",
+      "external-knowledge/sources/zhihu-novels/嘲嘲/(20240319)如何以父亲想让我替姐姐进宫为开头写一个故事_嘲嘲-d02c61da8239.md",
+      "external-knowledge/sources/zhihu-novels/楚辞/(20230213)有没有女主女配从始至终关系很好不抢男人的文_楚辞-c6d0fcb81b85.md",
+      "external-knowledge/sources/zhihu-novels/恩养/(20250423)有没有女主聪明淡定人间清醒的优质爽文_恩养-718d8df77ac7.md",
+      "external-knowledge/sources/zhihu-novels/宫墙往事/(20240311)有什么女主不作不婊不憨批不玛丽苏的小说吗_宫墙往事-29facaee80d6.md",
+      "external-knowledge/sources/zhihu-novels/宫墙往事/(20240319)当你发现自己是女配怎么办_宫墙往事-3be60260f4a3.md",
+      "external-knowledge/sources/zhihu-novels/宫墙往事/(20240319)有没有什么好看的搞笑沙雕文_宫墙往事-57778e733b79.md",
+      "external-knowledge/sources/zhihu-novels/宫墙往事/(20240319)有什么女主不作不婊不憨批不玛丽苏的小说吗_宫墙往事-a64083250e7e.md",
+      "external-knowledge/sources/zhihu-novels/宫墙往事/(20240403)有没有女主人间清醒的小说_宫墙往事-223c628e8095.md",
+      "external-knowledge/sources/zhihu-novels/宫墙往事/(20240709)有没有女主活的很清醒的文_宫墙往事-ae6c69331735.md",
+      "external-knowledge/sources/zhihu-novels/海泊蓝/(20250519)有没有不落俗套的真假千金文_海泊蓝-e0ab28a1e59b.md",
+      "external-knowledge/sources/zhihu-novels/和笑谦/(20230310)有哪些令人浑身发抖的故事_和笑谦-1b0cf8ca4d40.md",
+      "external-knowledge/sources/zhihu-novels/九天揽月/(20240403)有没有大女主爽文短文_九天揽月-b608cc2952a1.md",
+      "external-knowledge/sources/zhihu-novels/梦娃/(20200514)为什么后宫中嫔妃们一定要争宠_梦娃-b4b264697248.md",
+      "external-knowledge/sources/zhihu-novels/木奶果/(20230310)顶级绿茶穿进恐怖小说后被团宠了_木奶果-68846ce8a569.md",
+      "external-knowledge/sources/zhihu-novels/溺海/(20240311)如何以_我嫁给了一个太监_为开头写一个故事_溺海-42d072ad9155.md",
+      "external-knowledge/sources/zhihu-novels/糯米团子/(20230411)当霸道总裁文里出现沙雕女主会是怎样的情景_糯米团子-c4048605ec1d.md",
+      "external-knowledge/sources/zhihu-novels/山楂不酸/(20230522)捡到厉鬼结冥婚红绳我赚了20亿_山楂不酸-e076516ccf16.md",
+      "external-knowledge/sources/zhihu-novels/什么叫做梨子啊/(20240319)有没有又甜还短的小甜文_什么叫做梨子啊-15c77453e455.md",
+      "external-knowledge/sources/zhihu-novels/神仙研究所/(20240319)有没有女主人间清醒的小说_神仙研究所-dac6492f0534.md",
+      "external-knowledge/sources/zhihu-novels/沈一刀/(20260224)有哪些半小时以内可以看完的短篇小甜文_沈一刀-d330634f8098.md",
+      "external-knowledge/sources/zhihu-novels/小长一岁/(20240403)如果你是虐文里的女主你会怎么办_小长一岁-a39891ebcba3.md",
+      "external-knowledge/sources/zhihu-novels/盐言故事档案局/(20240311)如何以我不想侍寝为开头写一个故事_盐言故事档案局-6064922c7871.md",
+      "external-knowledge/sources/zhihu-novels/一叶寒秋/(20241128)古代嫡女的地位是不是被高估了_一叶寒秋-ba357b7cd4d6.md",
+      "external-knowledge/sources/zhihu-novels/月小半/(20230407)被敌国皇帝抓到后我听见了他的心声哭一下命给你_月小半-d7a7a28dbf89.md",
+      "external-knowledge/sources/zhihu-novels/Vn夜葵/(20240319)有没有女主活的很清醒的文_Vn夜葵-76f561ab99cc.md"
+    ],
     "modified": [],
-    "deleted": [],
+    "deleted": [
+      "external-knowledge/sources/zhihu-novels/[白框凉太子]/(20230131)我带着我们全班同学的魂穿到了一名小糊咖身上_白框凉太子-993fdee2f84b.md",
+      "external-knowledge/sources/zhihu-novels/[不酸的甜柚子]/(20211008)如何以我渣了个上神此刻正在被追杀为开头写一篇文_不酸的甜柚子-04c03406a93d.md",
+      "external-knowledge/sources/zhihu-novels/[草木木]/(20240311)如何以师父亲手把我推下了诛仙台为开头写一个故事_草木木-10a3bf52276f.md",
+      "external-knowledge/sources/zhihu-novels/[嘲嘲]/(20240311)如何以父亲想让我替姐姐进宫为开头写一个故事_嘲嘲-709bf0e567fe.md",
+      "external-knowledge/sources/zhihu-novels/[嘲嘲]/(20240319)如何以父亲想让我替姐姐进宫为开头写一个故事_嘲嘲-d02c61da8239.md",
+      "external-knowledge/sources/zhihu-novels/[楚辞]/(20230213)有没有女主女配从始至终关系很好不抢男人的文_楚辞-c6d0fcb81b85.md",
+      "external-knowledge/sources/zhihu-novels/[恩养]/(20250423)有没有女主聪明淡定人间清醒的优质爽文_恩养-718d8df77ac7.md",
+      "external-knowledge/sources/zhihu-novels/[宫墙往事]/(20240311)有什么女主不作不婊不憨批不玛丽苏的小说吗_宫墙往事-29facaee80d6.md",
+      "external-knowledge/sources/zhihu-novels/[宫墙往事]/(20240319)当你发现自己是女配怎么办_宫墙往事-3be60260f4a3.md",
+      "external-knowledge/sources/zhihu-novels/[宫墙往事]/(20240319)有没有什么好看的搞笑沙雕文_宫墙往事-57778e733b79.md",
+      "external-knowledge/sources/zhihu-novels/[宫墙往事]/(20240319)有什么女主不作不婊不憨批不玛丽苏的小说吗_宫墙往事-a64083250e7e.md",
+      "external-knowledge/sources/zhihu-novels/[宫墙往事]/(20240403)有没有女主人间清醒的小说_宫墙往事-223c628e8095.md",
+      "external-knowledge/sources/zhihu-novels/[宫墙往事]/(20240709)有没有女主活的很清醒的文_宫墙往事-ae6c69331735.md",
+      "external-knowledge/sources/zhihu-novels/[海泊蓝]/(20250519)有没有不落俗套的真假千金文_海泊蓝-e0ab28a1e59b.md",
+      "external-knowledge/sources/zhihu-novels/[和笑谦]/(20230310)有哪些令人浑身发抖的故事_和笑谦-1b0cf8ca4d40.md",
+      "external-knowledge/sources/zhihu-novels/[九天揽月]/(20240403)有没有大女主爽文短文_九天揽月-b608cc2952a1.md",
+      "external-knowledge/sources/zhihu-novels/[梦娃]/(20200514)为什么后宫中嫔妃们一定要争宠_梦娃-b4b264697248.md",
+      "external-knowledge/sources/zhihu-novels/[木奶果]/(20230310)顶级绿茶穿进恐怖小说后被团宠了_木奶果-68846ce8a569.md",
+      "external-knowledge/sources/zhihu-novels/[溺海]/(20240311)如何以_我嫁给了一个太监_为开头写一个故事_溺海-42d072ad9155.md",
+      "external-knowledge/sources/zhihu-novels/[糯米团子]/(20230411)当霸道总裁文里出现沙雕女主会是怎样的情景_糯米团子-c4048605ec1d.md",
+      "external-knowledge/sources/zhihu-novels/[山楂不酸]/(20230522)捡到厉鬼结冥婚红绳我赚了20亿_山楂不酸-e076516ccf16.md",
+      "external-knowledge/sources/zhihu-novels/[什么叫做梨子啊]/(20240319)有没有又甜还短的小甜文_什么叫做梨子啊-15c77453e455.md",
+      "external-knowledge/sources/zhihu-novels/[神仙研究所]/(20240319)有没有女主人间清醒的小说_神仙研究所-dac6492f0534.md",
+      "external-knowledge/sources/zhihu-novels/[沈一刀]/(20260224)有哪些半小时以内可以看完的短篇小甜文_沈一刀-d330634f8098.md",
+      "external-knowledge/sources/zhihu-novels/[小长一岁]/(20240403)如果你是虐文里的女主你会怎么办_小长一岁-a39891ebcba3.md",
+      "external-knowledge/sources/zhihu-novels/[盐言故事档案局]/(20240311)如何以我不想侍寝为开头写一个故事_盐言故事档案局-6064922c7871.md",
+      "external-knowledge/sources/zhihu-novels/[一叶寒秋]/(20241128)古代嫡女的地位是不是被高估了_一叶寒秋-ba357b7cd4d6.md",
+      "external-knowledge/sources/zhihu-novels/[月小半]/(20230407)被敌国皇帝抓到后我听见了他的心声哭一下命给你_月小半-d7a7a28dbf89.md",
+      "external-knowledge/sources/zhihu-novels/[Vn夜葵]/(20240319)有没有女主活的很清醒的文_Vn夜葵-76f561ab99cc.md"
+    ],
     "renamed": []
   }
 }

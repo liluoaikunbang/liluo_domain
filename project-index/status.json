@@ -1,17 +1,14 @@
 {
   "affectedDomains": [
-    "code",
     "docs"
   ],
   "changes": {
     "added": [],
     "deleted": [],
     "modified": [
-      "docs/功能更新/150-Codex-Hooks与自动质量门禁系统.md",
-      "docs/功能更新目录.md",
-      "docs/系统说明/Codex-Hooks与自动质量门禁系统.md",
-      "docs/系统说明/Codex命令授权治理系统.md",
-      "src/game/data/global/updateRecords.js"
+      "docs/技能说明/liluo-zhihu-novel-ingest.md",
+      "docs/用户命令目录.md",
+      "docs/系统说明/外部虚构题材知识库.md"
     ],
     "renamed": []
   },
@@ -25,7 +22,7 @@
       "status": "current"
     },
     "docs": {
-      "entryCount": 275,
+      "entryCount": 276,
       "status": "current"
     },
     "game": {
@@ -45,11 +42,11 @@
       "status": "partial"
     }
   },
-  "generatedAt": "2026-07-24T07:41:02.896Z",
+  "generatedAt": "2026-07-24T13:44:44.435Z",
   "generatorVersion": "1.0.3",
   "mode": "changed",
   "schemaVersion": 1,
-  "sourceCommit": "124ec5fd20fc5b29e5d03ef0ef8b0e4fb7b6bd09",
+  "sourceCommit": "fe2070fe82729df3648f70567f5b46f1751398a6",
   "sourceSnapshot": {
     "docs/README.md": "10f1547208967a84fe14b342b4bb95bd9f46a1c17d137ab6a91c9ab36ebc2a6b",
     "docs/功能更新/001-GameView三栏布局与地图贴合.md": "7a4664d575a6611eaf355dd13d304e4f22d3710cb8a2ce9ad3e9824388318b06",
@@ -197,14 +194,14 @@
     "docs/功能更新/142-故事缺口发现与灵感补全系统.md": "41eaeb706789d45dfa0733b6aef9c05c9c256df2fb7b458454e579cca094bf2f",
     "docs/功能更新/143-璃落创作组雕龙文号体系.md": "2973dd58924bddc3463bb1f0049f82eb2e36a2445317a21a8fb6751502627301",
     "docs/功能更新/144-多文件离线发行与GitHub-Release上传.md": "f736e5215196f9c4c901e45400e573146f63981145185d1fb22df0fd04c58cf3",
-    "docs/功能更新/145-外部Skill来源库项目能力演化与自然表达系统.md": "de4d1e56d3980238ab611c33e9e454a06acbf06996857423cb4666063abe7794",
+    "docs/功能更新/145-外部Skill来源库项目能力演化与自然表达系统.md": "ae5f586886d258cef61da37fc4c3cb187d7c7c6dc96b62c1840455abb33f2084",
     "docs/功能更新/146-Codex命令授权反馈持久化与规范闭环.md": "a6a12695f635e82dc707624ef23af179446b337b82acb2e0059e6e53a1d267e8",
     "docs/功能更新/147-内容生产与可玩化基础系统.md": "d2088270c080e398e20cd5324c63420afe26def15eff403708cb2c648efa758c",
     "docs/功能更新/148-JSON-Schema数据契约系统.md": "b577c33dfa3f093329c252686cf8d7fb8e8193001cb8bfcc9e2375d66ed2c71a",
     "docs/功能更新/149-Skill与Agent能力回归评测系统.md": "a76652dbf7de55e636126281811ebd208f283bdb3223dbc51edde00ab44f2773",
     "docs/功能更新/150-Codex-Hooks与自动质量门禁系统.md": "bf43409badd50c3dd421596c6d12d50b735b29a91bf126f64639f072de74894e",
     "docs/功能更新/151-故事大纲局部设定快速路径.md": "153b6bc5073e4384ca0e6fdaae046b99a1419b0fee05cd092c1a11871f93d646",
-    "docs/功能更新目录.md": "d0adf20bbd79875412c7c30e368f4961bcf72f34f332b54502c8d690a2b8a27b",
+    "docs/功能更新目录.md": "02d53c31183243f52e140a77f588bdaa5c1ac589672a0707649a97a53f90e236",
     "docs/外部来源/Skill来源目录.md": "5dea73aeb2afb392039bccaefa6acfaa1b796cf666b7ebd859c77c9171f8fdf3",
     "docs/外部来源/Skill许可证与保存策略.md": "18498f5dc9c78c51a9198714ea470d8f6ecb9692128b5d8c6906ee57ba5308cd",
     "docs/大纲玩法总表整合规格.md": "e6ffc2c182c5d46b69bd8fe08bb3b13038d005c4d08a966ac329d0bb515ec40b",
@@ -235,6 +232,7 @@
     "docs/技能说明/liluo-story-outline-graph-maintenance.md": "0f42df54eff3aae540bdd49296c042c0a7b6de767d9d560eb897fc3cd2a41bf0",
     "docs/技能说明/liluo-story-to-playable-content.md": "3552301f1dfbefcb335670c33df99c1408049e4005c323df88c7139c6e6646c1",
     "docs/技能说明/liluo-world-bible-continuity-audit.md": "88da8891eea2ea936e868059b7e7e628a7353908e055bb7cd26dd3433aec5c48",
+    "docs/技能说明/liluo-zhihu-novel-ingest.md": "b514ed8cec4645c155b0e9c63070ec2f03d4b1d95cb705d8b3adc54ca0732bdb",
     "docs/技能说明/random-story-outline-interview.md": "2c34659f0baee33669a680db84ecfe539ebf35bd38c1cbd21276cebc4acf65af",
     "docs/智能体说明/liluo_content_auditor.md": "eb303dec155b8f8449ca95e141318e6172964ee2196552968ae4d204b86b4fad",
     "docs/智能体说明/liluo_context_explorer.md": "f2097c741211a0b5562506b003c75907b0200346f5e74b128b14c32ed0d869c3",
@@ -245,7 +243,7 @@
     "docs/智能体说明/liluo_validation_runner.md": "5ac39e639315e1d9891f2f1649ac28f54397fc79b92ef59ee017dd000109d49c",
     "docs/智能体说明/项目子智能体体系.md": "ba2e0d621b3c741ddd94338c81706b6df377d43499dd0ec956e35bdbadd00304",
     "docs/游戏素材图片清单.md": "e5341d8739d710c663aacfde2b5eff3a482b0da6b3f4cd08424803493998cf93",
-    "docs/用户命令目录.md": "8d33fee1537532f8739d4627fcae342435d2b299055404af3d7c6e080ca9bbb3",
+    "docs/用户命令目录.md": "a2dc9099f0d034f6fed54997aea54ee508e74c534f5a3fa63fa78e4b9f8df02a",
     "docs/系统说明/Codex-Hooks与自动质量门禁系统.md": "8afca251678571819e9e2c57f7717593229ee70fcac6fbe17de85db919430607",
     "docs/系统说明/Codex命令授权治理系统.md": "60f75478cbea04e51b8da1b3da0e84764cb574e8c2b61bb62d3d26a698007e0b",
     "docs/系统说明/JSON-Schema数据契约系统.md": "a835837bba83cfcc29663c5112b985192db4618c075d34b6143b3e2a9b7c3c05",
@@ -258,10 +256,10 @@
     "docs/系统说明/像素行走图生成提示词模板.md": "150bef763cf631ffae5d9ced1108603144f2b0a1b7b483fd38f1b488d19a375a",
     "docs/系统说明/叙事路线模拟与逻辑验证系统.md": "dd0b8f8cd14518992177e2d512229327c085f904de96b19c99f9bc3bddb68784",
     "docs/系统说明/地图系统.md": "606e9d703a84c934a21193fc7a0435390a2d02977f3eb0f08a60301f75d5ecc6",
-    "docs/系统说明/外部Skill来源库与项目能力演化系统.md": "c4c2e7238f77e66751d2582309a3e9d8ac41cf1cce872dbb751abca793a096c4",
-    "docs/系统说明/外部虚构题材知识库.md": "3540e67a33b70079623c301c85eff81a60be912b0a25df67092bcd20e57b1974",
+    "docs/系统说明/外部Skill来源库与项目能力演化系统.md": "cb6debf37409fd5abcad538624e0c2f11f1ba3fe821495276818147f0e11789f",
+    "docs/系统说明/外部虚构题材知识库.md": "069b299eedf8874cc26fa58e337333ed63dad006d4014722f01b19950aaeb7f9",
     "docs/系统说明/存读档系统.md": "51c45dfbc009b080b6d084b3badc740481e11474828d59eaddc74cf391be31f6",
-    "docs/系统说明/情节条目系统.md": "f855bc3cb76cf62f36b11adba835b52ded093d13cb556b5829de8006b26d6d55",
+    "docs/系统说明/情节条目系统.md": "25112dde5b7d0fec99700d614cd47b3ffc91b1d53fd4c1e5f796687917ae9329",
     "docs/系统说明/故事大纲世界选项/0-munika.md": "f5e795d457e5690c977108dd92546d75a6b10e92e024fcbc41652be7132acd8e",
     "docs/系统说明/故事大纲世界选项/1-modern.md": "6624477f803b2c468a75790f69274f9ab6c2d5545d27b19aca3f1c78689959ad",
     "docs/系统说明/故事大纲世界选项/2-apocalypse.md": "c3e524717e6531eb6dce8856b267ef333adfd59e5a65e5ba3b2a19073e1717bf",
@@ -297,7 +295,7 @@
     "docs/设计记忆/架构决策/ADR-001-项目知识采用分层索引.md": "e625f5bafb8c042f434fb9155946faab09089230417f87f4600587c7f5c7ff82",
     "docs/设计记忆/架构决策/ADR-002-规范与设计记忆分层治理.md": "5fbdd0ac967c1f567f725a99c6fe079cbc05396f1c564967355c0f770e877bdb",
     "docs/设计记忆/架构决策/ADR-003-离线发行采用本机回环启动器.md": "aa3f36aedd722f6ec0314b66366812a389d6571d35ee5a1bda3d1d06a6bfb383",
-    "docs/设计记忆/架构决策/ADR-004-外部Skill采用非可信三层演化架构.md": "e54138e120391db96497f5c097080931f48ad6fe2e64eab37c97f9d37e799f62",
+    "docs/设计记忆/架构决策/ADR-004-外部Skill采用非可信三层演化架构.md": "80535d4156192da7706c73c43b37e24bd2f3bcb07cf40087b7d7475a7bb488ef",
     "docs/设计记忆/架构决策/ADR-005-命令授权采用项目规则与决定注册分层治理.md": "709f3d4f9209a19c987762a6bced33dfa59de383caf6d04df58a5070160c493d",
     "docs/设计记忆/架构决策/ADR-006-内容生产采用证据派生与最小持久化.md": "5ebb356a99ec6ac6a11b888a18f9e6fcc4875783c338b3ed7d08b06577587d12",
     "docs/设计记忆/架构决策/ADR-007-结构合同采用JSON-Schema并与业务验证分层.md": "b5d5ff726ff34cfa2f525d439112064939be3c63de28b270743a29e43164f3f2",
@@ -1041,7 +1039,7 @@
     "src/game/data/global/cgVariantRules.ts": "a9be23c234f0c8a980f304256066538db732625a5fa49647b91b3b240a58e091",
     "src/game/data/global/gameMenuData.js": "549ad516de3df68f5628f912a08cf9d28dcfc52ef21e1d863bc11c3235bddb69",
     "src/game/data/global/updateRecordGroups.js": "ca9b92d0987ceb1890868ada15342a3d76e05657a319a92be851bde8efb64544",
-    "src/game/data/global/updateRecords.js": "a1ef1120803c21f3b1f2af0dce13b7094e328b4b5476efd21db53e61ce3fa71f",
+    "src/game/data/global/updateRecords.js": "85fa27b7d08820c390b831078f6e22e94d443f938a30456625c8c8aff75b2d03",
     "src/game/data/globalAssets.ts": "c8f61d63f69f0aed0fee4e821683bf4a2cee733104d4b48ab7f78d4879f4c17f",
     "src/game/data/interactive_fictions/asylum_for_lunatic/assets.ts": "a15be46e4a9841f1ea133a883c435b5fd799a858cde8a4ca44036650236c5a69",
     "src/game/data/interactive_fictions/asylum_for_lunatic/index.ts": "af405bbd76de80f5999d0f28a81a48b97a8219a3d050de42320247917c44c98b",

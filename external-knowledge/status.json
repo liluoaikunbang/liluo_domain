@@ -1,18 +1,18 @@
 {
   "status": "current",
-  "checkedAt": "2026-07-22T07:57:30.308Z",
+  "checkedAt": "2026-07-24T14:06:15.474Z",
   "metrics": {
-    "sourceFiles": 219,
-    "indexedFiles": 180,
+    "sourceFiles": 249,
+    "indexedFiles": 210,
     "unsupportedFiles": 39,
     "parseFailures": 0,
-    "totalCharacters": 16119910,
-    "totalSegments": 16431,
+    "totalCharacters": 17191466,
+    "totalSegments": 17725,
     "duplicateFiles": 4,
     "possibleVersions": 3,
-    "indexFiles": 36,
-    "indexSizeBytes": 25055890,
-    "largestShardBytes": 3780484,
+    "indexFiles": 39,
+    "indexSizeBytes": 27082946,
+    "largestShardBytes": 4132916,
     "largestShardRecords": 500,
     "status": "current"
   }
