@@ -57,7 +57,7 @@
   {
     "id": "docs/系统说明/Codex-Hooks与自动质量门禁系统.md",
     "indexVersion": 1,
-    "sourceHash": "be5446193e88a3f52242fdfddf3b27a19a6d93cb8abcdff94495a06d51798e8a",
+    "sourceHash": "284742bc8b5b8986829d9d3e0a54fb9f5765394259bcf54da772edd663601143",
     "sourcePath": "docs/系统说明/Codex-Hooks与自动质量门禁系统.md",
     "subtype": "system",
     "summary": "Codex Hooks 与自动质量门禁系统",
@@ -68,7 +68,7 @@
   {
     "id": "docs/系统说明/Codex命令授权治理系统.md",
     "indexVersion": 1,
-    "sourceHash": "0c3c38c7c11371ef661db0db014999a617d9192ee079bfc1ae78f61f06af9ad1",
+    "sourceHash": "5c75f8cf3ab10b70dbdf0ce77a383dc8329f0624f69f7d10eeae5240ad41a79b",
     "sourcePath": "docs/系统说明/Codex命令授权治理系统.md",
     "subtype": "system",
     "summary": "Codex 命令授权治理系统",
@@ -112,7 +112,7 @@
   {
     "id": "docs/系统说明/Windows命令与UTF-8编码规范.md",
     "indexVersion": 1,
-    "sourceHash": "85da2d880c40deef11a05d66d3891edfcf3acd5423131590025d8d4aa2e32557",
+    "sourceHash": "5aafe52e89b6e3d423a2360f0c0338486e58ce12df841cd4086741774f54038c",
     "sourcePath": "docs/系统说明/Windows命令与UTF-8编码规范.md",
     "subtype": "system",
     "summary": "Windows 命令与 UTF-8 编码规范",
@@ -134,7 +134,7 @@
   {
     "id": "docs/用户命令目录.md",
     "indexVersion": 1,
-    "sourceHash": "f9ad9ea8f4c5aabd0e5a1833b55fb3c85636aca116fca15a1e78881d71e4765c",
+    "sourceHash": "f90127ffbbdfe1b42d2c1a9e298f27084d3e9e6bf0509cc3288a5b678cfb3d3f",
     "sourcePath": "docs/用户命令目录.md",
     "subtype": "other",
     "summary": "用户命令目录",
@@ -156,7 +156,7 @@
   {
     "id": "docs/运行规范/Codex命令批准分级表.md",
     "indexVersion": 1,
-    "sourceHash": "52075396f965c897696a327f26e51c21c0836f127f4dce4c5342dc3e6fb6fdc2",
+    "sourceHash": "cca823c7a5581390211c8f2a59e822764537bea26145ddc77eaf579bded059aa",
     "sourcePath": "docs/运行规范/Codex命令批准分级表.md",
     "subtype": "other",
     "summary": "Codex 命令批准分级表",

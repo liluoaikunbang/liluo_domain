@@ -18,6 +18,7 @@ dist-ssr
 external-knowledge/source-sync.local.json
 external-knowledge/staging/
 /docs.zip
+/README.zip
 __pycache__/
 *.py[cod]
 vite.config.mjs.timestamp-*.mjs

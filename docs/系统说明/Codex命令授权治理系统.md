@@ -16,7 +16,7 @@
 
 ## 减少沙箱循环的稳定入口
 
-常规工作不再直接散发大量 `node --test`、Python、PowerShell 和索引命令，而使用两个经过参数约束和回归测试的项目入口：
+常规工作不再直接散发大量 `node --test`、Python、PowerShell 和索引命令，而使用经过参数约束和回归测试的项目入口：
 
 ```powershell
 npm run project:routine -- check
@@ -30,13 +30,31 @@ npm run project:routine -- team-presence
 npm run project:routine -- natural-expression
 
 npm run project:skill:init -- --name liluo-example --area liluo-project --resources references,scripts
+
+npm run project:gate:explain
+npm run project:gate:changed
+npm run project:gate:prepush
+npm run project:gate:ci
+npm run project:hooks:test
 ```
 
-`project:routine` 只接受固定 profile，拒绝附加参数和任意命令。`docs` 只检查文档编码、治理注册表、设计记忆与用户命令；`workflow` 只验证聚合入口和授权边界；`team-presence` 只运行创作组目标测试与手记验证；`natural-expression` 只运行自然表达目标测试。`check`、`test`、`build`、`index`、`all` 保留给确实跨域或完整交付的任务，`all` 不得作为普通结束门禁。`project:skill:init` 只包装官方 `skill-creator`，名称必须为 `liluo-*`，目标只允许 `.agents/skills/liluo-project|writing|testing`，资源只允许 `references`、`scripts`、`assets`。
+`project:routine` 只接受固定 profile，拒绝附加参数和任意命令。`docs` 只检查文档编码、治理注册表、设计记忆与用户命令；`workflow` 只验证聚合入口和授权边界；`team-presence` 只运行创作组目标测试与手记验证；`natural-expression` 只运行自然表达目标测试。`check`、`test`、`build`、`index`、`all` 保留给确实跨域或完整交付的任务，`all` 不得作为普通结束门禁。`project:skill:init` 只包装官方 `skill-creator`。质量门禁入口只运行仓库内确定性检查，不运行 live eval、提交或发布，因此以各自完整 npm script 名称精确登记为项目 allow；`project:hooks:install` 会写入 `.git/config`，仍保持 prompt。
 
-这两个精确前缀同时登记在项目规则和 Codex 客户端长期批准中。Agent 调用时应直接请求沙箱外执行已批准入口：这样内部 `codex execpolicy`、测试、构建及 `.agents` 写入不会先在沙箱内触发 `EPERM`，匹配已批准前缀时也不会再次逐条询问。这里批准的是固定 npm script，不是宽泛的 `npm`、`node`、Python 或 PowerShell。
+这些精确前缀登记在项目规则中；客户端已存在同一精确批准前缀时，可以减少实际弹窗。Agent 调用会派生子进程、写入忽略报告或构建产物的聚合入口时，应首次直接申请沙箱外执行，避免先在已知受限的沙箱内触发 `EPERM`。这里批准的是固定 npm script，不是宽泛的 `npm`、`node`、Python 或 PowerShell。
 
-这两个精确前缀同时进入项目 execpolicy 与当前客户端批准前缀。前者负责仓库长期规则，后者减少当前平台实际弹窗。项目规则仍不能取消管理员强制策略；但常规测试子进程和 `.agents` 脚手架不再需要每个文件、每条解释器命令单独批准。已知会创建子进程或写入受限目录的固定 profile 必须直接申请沙箱外执行；禁止先在沙箱内试跑、等待可预见的 `EPERM` 后再重试。
+项目规则仍不能取消管理员强制策略，也不能自动修改用户级规则。精确入口只消除重复的项目决策，不保证所有客户端都免除平台审批。
+
+## 低绕圈执行路线
+
+| 动作 | 首次路线 | 原因 |
+| --- | --- | --- |
+| 工作区内普通源码、文档修改 | 直接 `apply_patch` | 不需要 shell，也不把普通编辑描述成系统权限提升 |
+| `project:routine`、质量门禁与 Hook 测试 | 精确 npm 前缀直接申请沙箱外执行 | 会派生子进程或写入忽略报告；项目决定已是 allow |
+| `project-index/**`、报告、构建产物 | 正式生成器或构建脚本 | 禁止手工 patch 生成结果 |
+| `.git` 元数据写入 | 精确 Git 命令保持 prompt，并首次走沙箱外 | `.git` 在受限环境中不可写，先试跑只会制造 `index.lock` 失败 |
+| 网络、依赖、删除、发布 | 精确命令保持 prompt | 需要逐次核对目标和外部副作用 |
+
+不要把 Git 写命令和无关只读检查拼成一条复合 shell；这会让审批目标变得含混。`git push` 已明确返回成功时，不再为了“再确认一次”重复联网；只有输出缺失或含混时，才做一次沙箱外只读远端复查。
 
 ## 选择 profile，而不是叠加命令
 

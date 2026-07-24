@@ -22,6 +22,13 @@ test('Skill changes trigger static eval but never live eval', () => {
   assert.ok(!commands.some((command) => command.includes('evals:smoke')))
 })
 
+test('command approval governance changes run their own checks without a Web build', () => {
+  const commands = commandsFor(['scripts/command-approval/lib/approval-governance.mjs'])
+  assert.ok(commands.includes('npm run commands:approval:test'))
+  assert.ok(commands.includes('npm run commands:approval:validate'))
+  assert.ok(!commands.includes('npm run build:web'))
+})
+
 test('save changes trigger contracts and tests', () => {
   const commands = commandsFor(['src/game/systems/saveMigration.ts'])
   assert.ok(commands.includes('npm run data:contracts:check'))

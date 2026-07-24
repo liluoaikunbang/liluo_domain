@@ -1,20 +1,12 @@
 {
   "affectedDomains": [
-    "code",
     "docs"
   ],
   "changes": {
-    "added": [
-      "docs/功能更新/150-Codex-Hooks与自动质量门禁系统.md",
-      "docs/系统说明/Codex-Hooks与自动质量门禁系统.md"
-    ],
+    "added": [],
     "deleted": [],
     "modified": [
-      "docs/README.md",
-      "docs/功能更新目录.md",
-      "docs/用户命令目录.md",
-      "docs/系统说明/README.md",
-      "src/game/data/global/updateRecords.js"
+      "docs/运行规范/Codex命令批准分级表.md"
     ],
     "renamed": []
   },
@@ -48,11 +40,11 @@
       "status": "partial"
     }
   },
-  "generatedAt": "2026-07-23T13:23:45.272Z",
+  "generatedAt": "2026-07-23T14:34:01.141Z",
   "generatorVersion": "1.0.3",
   "mode": "changed",
   "schemaVersion": 1,
-  "sourceCommit": "c3f3c3a76cb9233efeab2375cac26a2fc6a3013c",
+  "sourceCommit": "76fa2ee7d2978783e0f83ed7bdddc088b5292d9f",
   "sourceSnapshot": {
     "docs/README.md": "10f1547208967a84fe14b342b4bb95bd9f46a1c17d137ab6a91c9ab36ebc2a6b",
     "docs/功能更新/001-GameView三栏布局与地图贴合.md": "7a4664d575a6611eaf355dd13d304e4f22d3710cb8a2ce9ad3e9824388318b06",
@@ -205,7 +197,7 @@
     "docs/功能更新/147-内容生产与可玩化基础系统.md": "d2088270c080e398e20cd5324c63420afe26def15eff403708cb2c648efa758c",
     "docs/功能更新/148-JSON-Schema数据契约系统.md": "b577c33dfa3f093329c252686cf8d7fb8e8193001cb8bfcc9e2375d66ed2c71a",
     "docs/功能更新/149-Skill与Agent能力回归评测系统.md": "a76652dbf7de55e636126281811ebd208f283bdb3223dbc51edde00ab44f2773",
-    "docs/功能更新/150-Codex-Hooks与自动质量门禁系统.md": "cf3dc794cf17a961b42ffeb86af3a17f5dbdd9c4e75a26c95ea5c0ccce6615ad",
+    "docs/功能更新/150-Codex-Hooks与自动质量门禁系统.md": "36bc0b17fef51d471a64464baa0d8a92088dd2961b360ef8153ef1d08ef979ac",
     "docs/功能更新目录.md": "d5979661f33a2b7155c8ec38e03f2ea9425c7b93ac33c73f6b2a0895337de286",
     "docs/外部来源/Skill来源目录.md": "5dea73aeb2afb392039bccaefa6acfaa1b796cf666b7ebd859c77c9171f8fdf3",
     "docs/外部来源/Skill许可证与保存策略.md": "18498f5dc9c78c51a9198714ea470d8f6ecb9692128b5d8c6906ee57ba5308cd",
@@ -247,13 +239,13 @@
     "docs/智能体说明/liluo_validation_runner.md": "5ac39e639315e1d9891f2f1649ac28f54397fc79b92ef59ee017dd000109d49c",
     "docs/智能体说明/项目子智能体体系.md": "ba2e0d621b3c741ddd94338c81706b6df377d43499dd0ec956e35bdbadd00304",
     "docs/游戏素材图片清单.md": "e5341d8739d710c663aacfde2b5eff3a482b0da6b3f4cd08424803493998cf93",
-    "docs/用户命令目录.md": "f9ad9ea8f4c5aabd0e5a1833b55fb3c85636aca116fca15a1e78881d71e4765c",
-    "docs/系统说明/Codex-Hooks与自动质量门禁系统.md": "be5446193e88a3f52242fdfddf3b27a19a6d93cb8abcdff94495a06d51798e8a",
-    "docs/系统说明/Codex命令授权治理系统.md": "0c3c38c7c11371ef661db0db014999a617d9192ee079bfc1ae78f61f06af9ad1",
+    "docs/用户命令目录.md": "f90127ffbbdfe1b42d2c1a9e298f27084d3e9e6bf0509cc3288a5b678cfb3d3f",
+    "docs/系统说明/Codex-Hooks与自动质量门禁系统.md": "284742bc8b5b8986829d9d3e0a54fb9f5765394259bcf54da772edd663601143",
+    "docs/系统说明/Codex命令授权治理系统.md": "5c75f8cf3ab10b70dbdf0ce77a383dc8329f0624f69f7d10eeae5240ad41a79b",
     "docs/系统说明/JSON-Schema数据契约系统.md": "a835837bba83cfcc29663c5112b985192db4618c075d34b6143b3e2a9b7c3c05",
     "docs/系统说明/README.md": "9fdd6e147f6585b0b2ce357e9dc703fce831f2396b29e7ebda44696ee37a2b78",
     "docs/系统说明/Skill与Agent能力回归评测系统.md": "3b8efd064a728694e4b31e079a1d2aa052e2a78a4d4e5cbd446d56f1bc0b305e",
-    "docs/系统说明/Windows命令与UTF-8编码规范.md": "85da2d880c40deef11a05d66d3891edfcf3acd5423131590025d8d4aa2e32557",
+    "docs/系统说明/Windows命令与UTF-8编码规范.md": "5aafe52e89b6e3d423a2360f0c0338486e58ce12df841cd4086741774f54038c",
     "docs/系统说明/世界与系列生产覆盖统计系统.md": "ddfada609de7e343a6d05ea87cbb0ed68f2ca17a9f9f8d5f88c8533a69428865",
     "docs/系统说明/事件与对话系统.md": "ed901bcfbcd98b2e76af47457eedc15f031c7ea82ddab0bf5a749caee075989e",
     "docs/系统说明/互动小说副本.md": "8b3762dbee06377909ae57f8fc755398d018e0481373bcd3356262fdd0e52eb5",
@@ -326,7 +318,7 @@
     "docs/设计记忆/项目组灵魂/项目组手记/TEAM-NOTE-003-谁在创作组记录中说话.md": "a57c2b92e7f2f1f0bd5bde2f84210c4d3dd52c881d47eab9a172772249666b91",
     "docs/设计记忆/项目组灵魂/项目组手记/TEAM-NOTE-004-让每次校准留下可复用的判断.md": "eaf8282398cebf3b6ab4409d3ab528c262192a810409c718bcd41c7f28d3e517",
     "docs/设计记忆/项目组灵魂/项目组设定.md": "5793617c77385f4621280b3038641119802b57d0a8da269eca218a7030b3c132",
-    "docs/运行规范/Codex命令批准分级表.md": "52075396f965c897696a327f26e51c21c0836f127f4dce4c5342dc3e6fb6fdc2",
+    "docs/运行规范/Codex命令批准分级表.md": "cca823c7a5581390211c8f2a59e822764537bea26145ddc77eaf579bded059aa",
     "docs/项目概览.md": "67a531b31bbac89ce6aba0e58fa1301518ce9273c9e8fbd4c7b3e5f22f2c333d",
     "src/assets/game/audio/sfx/leg_shackle.mp3": "dd29784d877bd70e6d70571c4112ae48bb7f623a1134f243bfb68c082ec5c0a5",
     "src/assets/game/audio/sfx/zip_tie_tighten_1.mp3": "d4eb32964f9c31a737e6fe250c8b923a7889587f13429d54235e01cffe700dfa",

@@ -14,9 +14,15 @@
 <!-- BEGIN GENERATED APPROVAL DECISIONS -->
 | 精确前缀 | 决策 | 范围 | 类别 | 理由 |
 | --- | --- | --- | --- | --- |
+| `npm run project:hooks:install` | prompt | project | git-protection | 安装本地 Hook 会写入当前仓库 .git/config，必须保留精确审批 |
+| `npm run project:gate:explain` | allow | project | project-quality-gate | 固定质量门禁入口仅执行仓库内确定性检查；参数由项目脚本约束，不运行 live eval，不提交或发布 |
+| `npm run project:hooks:test` | allow | project | project-quality-gate | 固定质量门禁入口仅执行仓库内确定性检查；参数由项目脚本约束，不运行 live eval，不提交或发布 |
 | `npm run project:routine` | allow | project | project-routine | 受测试的固定项目检查、测试、构建与索引模式，拒绝任意附加命令 |
 | `npm run project:skill:init` | allow | project | project-skill-scaffold | 受限包装官方 skill-creator，仅允许 liluo 项目 Skill 名称、固定区域与资源类型 |
+| `npm run project:gate:prepush` | allow | project | project-quality-gate | 固定质量门禁入口仅执行仓库内确定性检查；参数由项目脚本约束，不运行 live eval，不提交或发布 |
+| `npm run project:gate:changed` | allow | project | project-quality-gate | 固定质量门禁入口仅执行仓库内确定性检查；参数由项目脚本约束，不运行 live eval，不提交或发布 |
 | `npm install` | prompt | project | dependency-and-network | 依赖与供应链变更继续逐次审批 |
+| `npm run project:gate:ci` | allow | project | project-quality-gate | 固定质量门禁入口仅执行仓库内确定性检查；参数由项目脚本约束，不运行 live eval，不提交或发布 |
 | `git push --force` | forbidden | project | git-protection | 项目默认禁止强制推送 |
 | `git push` | prompt | project | git-protection | Git 远端写入继续逐次审批，不从一次允许升级 |
 | `npm run docs:check-encoding` | allow | project | project-validation | 项目内只读编码检查，属于可重复低风险验证 |

@@ -23,3 +23,9 @@
 - `.githooks/pre-push`
 - `.github/workflows/quality-gate.yml`
 - `docs/系统说明/Codex-Hooks与自动质量门禁系统.md`
+
+## 2026-07-23 升级：授权与执行路线收敛
+
+将 `project:gate:changed|prepush|ci|explain` 与 `project:hooks:test` 以完整 npm script 名称登记为项目长期 allow，同时保持 `project:hooks:install`、Git 写入、网络、依赖、删除和发布逐次审批。固定验证入口首次直接走精确的沙箱外路线，普通工作区文件继续使用受控补丁，不再先制造可预见的 `.git/index.lock`、子进程或网络沙箱失败。
+
+改动分类器现将 `.gitignore` 识别为 `build-config`，避免实际推送成功但 pre-push 报告仍因仓库配置文件显示 WARNING。成功的 `git push` 输出作为完成证据，不再默认追加一次重复联网核验。

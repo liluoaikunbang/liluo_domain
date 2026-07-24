@@ -100,6 +100,108 @@
       "status": "active",
       "createdAt": "2026-07-23",
       "lastReviewedAt": "2026-07-23"
+    },
+    {
+      "decisionId": "codex-approval-a22ef647c0a9",
+      "scope": "project",
+      "source": "user-explicit",
+      "commandClass": "project-quality-gate",
+      "ruleFile": ".codex/rules/project-decisions.rules",
+      "rulePattern": [
+        "npm",
+        "run",
+        "project:gate:changed"
+      ],
+      "decision": "allow",
+      "reason": "固定质量门禁入口仅执行仓库内确定性检查；参数由项目脚本约束，不运行 live eval，不提交或发布",
+      "status": "active",
+      "createdAt": "2026-07-23",
+      "lastReviewedAt": "2026-07-23"
+    },
+    {
+      "decisionId": "codex-approval-981a7d887c67",
+      "scope": "project",
+      "source": "user-explicit",
+      "commandClass": "project-quality-gate",
+      "ruleFile": ".codex/rules/project-decisions.rules",
+      "rulePattern": [
+        "npm",
+        "run",
+        "project:gate:prepush"
+      ],
+      "decision": "allow",
+      "reason": "固定质量门禁入口仅执行仓库内确定性检查；参数由项目脚本约束，不运行 live eval，不提交或发布",
+      "status": "active",
+      "createdAt": "2026-07-23",
+      "lastReviewedAt": "2026-07-23"
+    },
+    {
+      "decisionId": "codex-approval-ee08e5c19c02",
+      "scope": "project",
+      "source": "user-explicit",
+      "commandClass": "project-quality-gate",
+      "ruleFile": ".codex/rules/project-decisions.rules",
+      "rulePattern": [
+        "npm",
+        "run",
+        "project:gate:ci"
+      ],
+      "decision": "allow",
+      "reason": "固定质量门禁入口仅执行仓库内确定性检查；参数由项目脚本约束，不运行 live eval，不提交或发布",
+      "status": "active",
+      "createdAt": "2026-07-23",
+      "lastReviewedAt": "2026-07-23"
+    },
+    {
+      "decisionId": "codex-approval-44393be20e0b",
+      "scope": "project",
+      "source": "user-explicit",
+      "commandClass": "project-quality-gate",
+      "ruleFile": ".codex/rules/project-decisions.rules",
+      "rulePattern": [
+        "npm",
+        "run",
+        "project:gate:explain"
+      ],
+      "decision": "allow",
+      "reason": "固定质量门禁入口仅执行仓库内确定性检查；参数由项目脚本约束，不运行 live eval，不提交或发布",
+      "status": "active",
+      "createdAt": "2026-07-23",
+      "lastReviewedAt": "2026-07-23"
+    },
+    {
+      "decisionId": "codex-approval-53e01a90b0e8",
+      "scope": "project",
+      "source": "user-explicit",
+      "commandClass": "project-quality-gate",
+      "ruleFile": ".codex/rules/project-decisions.rules",
+      "rulePattern": [
+        "npm",
+        "run",
+        "project:hooks:test"
+      ],
+      "decision": "allow",
+      "reason": "固定质量门禁入口仅执行仓库内确定性检查；参数由项目脚本约束，不运行 live eval，不提交或发布",
+      "status": "active",
+      "createdAt": "2026-07-23",
+      "lastReviewedAt": "2026-07-23"
+    },
+    {
+      "decisionId": "codex-approval-13d6c23d008b",
+      "scope": "project",
+      "source": "user-explicit",
+      "commandClass": "git-protection",
+      "ruleFile": ".codex/rules/project-decisions.rules",
+      "rulePattern": [
+        "npm",
+        "run",
+        "project:hooks:install"
+      ],
+      "decision": "prompt",
+      "reason": "安装本地 Hook 会写入当前仓库 .git/config，必须保留精确审批",
+      "status": "active",
+      "createdAt": "2026-07-23",
+      "lastReviewedAt": "2026-07-23"
     }
   ]
 }

@@ -12,7 +12,15 @@ const SECRET_PATTERN = /(token|password|passwd|secret|api[_-]?key|authorization|
 const COMPLEX_SHELL_PATTERN = /[|;&<>`$*?]|\$\(|%[^%]+%/
 const RISKY_PROJECT_SCRIPT = /(^|:)(release|package|fetch|maintain|install|update|sync|upload|publish|deploy|delete|remove|clean|migrate|changed|build)(:|$)/i
 const SAFE_PROJECT_SCRIPT = /(^|:)(validate|check-encoding|test|catalog|list|query|status|available|report)(:|$)/i
-const GOVERNED_PROJECT_SCRIPT = new Set(['project:routine', 'project:skill:init'])
+const GOVERNED_PROJECT_SCRIPT = new Set([
+  'project:routine',
+  'project:skill:init',
+  'project:gate:changed',
+  'project:gate:prepush',
+  'project:gate:ci',
+  'project:gate:explain',
+  'project:hooks:test',
+])
 
 function normalizedPattern(pattern) {
   if (!Array.isArray(pattern) || pattern.length === 0 || pattern.some((part) => typeof part !== 'string' || !part.trim())) {

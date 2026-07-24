@@ -19,14 +19,14 @@ GitHub Actions 只能检查已经推送的提交；真正能在推送发生前�
 | 领域 | 典型范围 | 最小验证 |
 | --- | --- | --- |
 | `docs` | README、AGENTS、`docs/**` | 文档编码；治理目录、注册表、用户命令或功能记录变化时追加相应治理检查 |
-| `skills-agents-governance` | `.agents/**`、Agent、Codex rules 与批准注册表 | `evals:check`，不自动运行 live eval |
+| `skills-agents-governance` | `.agents/**`、Agent、Codex rules、批准注册表与授权治理脚本 | `evals:check`；授权治理改动追加自身 test/validate，不自动运行 live eval |
 | `schemas-data` | `schemas/**`、游戏 JSON/YAML | 数据契约；游戏内容数据再进入项目 check |
 | `story` | 故事源、Markdown 与注册表 | 数据契约、项目 check、索引增量与验证 |
 | `maps-events-dialogues` | 地图、事件、对话、互动小说与注册表 | 数据契约、项目 check、索引增量与验证 |
 | `saves` | 存档代码、版本、迁移、导入导出与 Schema | 数据契约与现有项目测试 |
 | `runtime` | `src/game/**` 运行时代码 | 项目 check 与 tests；构建面仅在 pre-push/CI 追加 Web build |
 | `assets` | `src/assets/game/**` | 现有素材审计、索引增量与验证 |
-| `build-config` | package、Vite、TS、GitHub workflow 与门禁自身 | 项目 check、tests 与 Web build；Hook 模式始终移除 build |
+| `build-config` | package、Vite、TS、`.gitignore`、GitHub workflow 与门禁自身 | 项目 check、tests 与 Web build；Hook 模式始终移除 build |
 | `index-source` | 被项目索引消费的权威源 | 作为索引影响标记，由具体内容领域决定最小索引命令 |
 
 多领域命令顺序是：静态结构与注册表、数据契约、文档编码、内容和代码 check、tests、索引增量与验证、build。同一命令每次计划只出现一次，不默认运行 `project:routine -- all`。
@@ -66,6 +66,8 @@ npm run project:gate:ci
 ```
 
 安装命令只在当前仓库设置 `core.hooksPath=.githooks`，不修改用户级 Git 配置。可用 `git config --local --get core.hooksPath` 核验。
+
+`project:gate:changed|prepush|ci|explain` 与 `project:hooks:test` 已按完整 npm script 名称登记为项目长期 allow；它们只执行确定性检查。由于运行时会派生子进程或写入被忽略的报告，Agent 应首次就按精确前缀走沙箱外执行，不先制造可预见的权限失败。`project:hooks:install` 会写 `.git/config`，因此仍逐次审批。
 
 Git 原生 `git push --no-verify` 可以临时绕过本地 pre-push，但只应在已经明确知道失败原因、愿意承担推送后由 CI 继续阻断的情况下使用；它不会绕过 GitHub Actions 或分支保护。
 

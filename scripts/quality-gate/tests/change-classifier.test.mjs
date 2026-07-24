@@ -17,3 +17,8 @@ test('classification is stable, normalized and de-duplicated', () => {
   assert.deepEqual(result.files, ['docs/README.md'])
   assert.deepEqual([...result.domains].sort(), result.domains)
 })
+
+test('repository configuration files do not create unclassified warnings', () => {
+  const result = classifyChanges(['.gitignore'])
+  assert.deepEqual(result.warnings, [])
+})

@@ -89,9 +89,19 @@ test('project skill initializer restricts names, areas and resources', () => {
   )
 })
 
-test('project rules allow only the two governed entry points, not broad npm run', async () => {
-  assert.equal(classifyRulePattern(['npm', 'run', 'project:routine']).allowEligible, true)
-  assert.equal(classifyRulePattern(['npm', 'run', 'project:skill:init']).allowEligible, true)
+test('project rules allow only governed entry points, not broad npm run', async () => {
+  const governedCommands = [
+    'project:routine',
+    'project:skill:init',
+    'project:gate:changed',
+    'project:gate:prepush',
+    'project:gate:ci',
+    'project:gate:explain',
+    'project:hooks:test',
+  ]
+  for (const command of governedCommands) {
+    assert.equal(classifyRulePattern(['npm', 'run', command]).allowEligible, true, command)
+  }
 
   const rulesDirectory = path.join(root, '.codex', 'rules')
   const ruleFiles = (await readdir(rulesDirectory)).filter((name) => name.endsWith('.rules'))
@@ -100,8 +110,10 @@ test('project rules allow only the two governed entry points, not broad npm run'
   ).flat()
   const allowed = parsed.filter((rule) => rule.decision === 'allow').map((rule) => rule.pattern.join(' '))
 
-  assert.ok(allowed.includes('npm run project:routine'))
-  assert.ok(allowed.includes('npm run project:skill:init'))
+  for (const command of governedCommands) {
+    assert.ok(allowed.includes(`npm run ${command}`), command)
+  }
+  assert.ok(!allowed.includes('npm run project:hooks:install'))
   assert.ok(!allowed.includes('npm run'))
   assert.ok(!allowed.includes('node'))
   assert.ok(!allowed.includes('python'))

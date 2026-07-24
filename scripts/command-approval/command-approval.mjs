@@ -212,6 +212,12 @@ async function validate() {
     { command: ['npm', 'run', 'external-skills:fetch'], expected: 'prompt' },
     { command: ['npm', 'run', 'project:routine'], expected: 'allow' },
     { command: ['npm', 'run', 'project:skill:init'], expected: 'allow' },
+    { command: ['npm', 'run', 'project:gate:changed'], expected: 'allow' },
+    { command: ['npm', 'run', 'project:gate:prepush'], expected: 'allow' },
+    { command: ['npm', 'run', 'project:gate:ci'], expected: 'allow' },
+    { command: ['npm', 'run', 'project:gate:explain'], expected: 'allow' },
+    { command: ['npm', 'run', 'project:hooks:test'], expected: 'allow' },
+    { command: ['npm', 'run', 'project:hooks:install'], expected: 'prompt' },
   ]
   for (const policyCase of policyCases) {
     const result = spawnSync(codex, ['execpolicy', 'check', ...ruleArgs, '--', ...policyCase.command], { encoding: 'utf8' })

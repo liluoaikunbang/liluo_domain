@@ -6,6 +6,8 @@ const ASSET_AUDIT = 'node .agents/skills/liluo-project/liluo-asset-registry-audi
 const ORDER = [
   'npm run data:contracts:registry',
   'npm run project:hooks:test',
+  'npm run commands:approval:test',
+  'npm run commands:approval:validate',
   'npm run evals:check',
   'npm run evals:static:all',
   ASSET_AUDIT,
@@ -43,6 +45,10 @@ function addForDomains(selected, classification, mode) {
     if (classification.files.includes('docs/用户命令目录.md')) selected.add('npm run docs:commands:validate')
   }
   if (domains.has('skills-agents-governance')) selected.add('npm run evals:check')
+  if (requires.has('command-approval-tests')) {
+    selected.add('npm run commands:approval:test')
+    selected.add('npm run commands:approval:validate')
+  }
   if (domains.has('schemas-data')) selected.add('npm run data:contracts:check')
   if (domains.has('schemas-data') && requires.has('game-content-check')) selected.add('npm run project:routine -- check')
   if (domains.has('story') || domains.has('maps-events-dialogues')) {

@@ -45,11 +45,23 @@ export function classifyChanges(inputFiles = []) {
 
   for (const file of files) {
     const fileDomains = new Set()
+    const isCommandApprovalGovernance = file.startsWith('scripts/command-approval/')
+      || [
+        'scripts/tests/command-approval-governance.test.mjs',
+        'scripts/tests/project-routine-governance.test.mjs',
+      ].includes(file)
     const isDocs = file === 'README.md' || file === 'AGENTS.md' || file.startsWith('docs/')
     const isStructuredData = file.startsWith('schemas/')
       || file.startsWith('src/game/data/') && DATA_EXTENSION.test(file)
     const isPureGameData = file.startsWith('src/game/data/') && (DATA_EXTENSION.test(file) || file.endsWith('.md'))
-    const isBuildConfig = ['package.json', 'package-lock.json'].includes(file)
+    const isBuildConfig = [
+      '.gitattributes',
+      '.gitignore',
+      '.npmrc',
+      '.nvmrc',
+      'package.json',
+      'package-lock.json',
+    ].includes(file)
       || /^vite\.config\./.test(file)
       || /^tsconfig[^/]*\.json$/.test(file)
       || file.startsWith('.github/')
@@ -63,6 +75,7 @@ export function classifyChanges(inputFiles = []) {
       || file.startsWith('.codex/agents/')
       || file.startsWith('.codex/rules/')
       || file === '.codex/approval-decisions.json'
+      || isCommandApprovalGovernance
     ) fileDomains.add('skills-agents-governance')
     if (isStructuredData) fileDomains.add('schemas-data')
     if (isStory(file)) fileDomains.add('story')
@@ -90,6 +103,7 @@ export function classifyChanges(inputFiles = []) {
       || file.startsWith('.githooks/')
       || file.startsWith('scripts/quality-gate/')
     ) requires.add('quality-gate-tests')
+    if (isCommandApprovalGovernance) requires.add('command-approval-tests')
 
     for (const domain of fileDomains) domains.add(domain)
     if (fileDomains.size === 0 && !file.startsWith('project-index/') && !file.startsWith('reports/')) {

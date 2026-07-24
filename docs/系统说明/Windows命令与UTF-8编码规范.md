@@ -47,6 +47,8 @@ $OutputEncoding = [Console]::OutputEncoding = [System.Text.UTF8Encoding]::new($f
 
 当当前执行环境已明确把 `.git` 标为只读或受限时，`git commit`、`merge`、`rebase`、`tag`、`stash` 等会写入仓库元数据的命令，首次执行就使用平台要求的精确 Git 写权限或已批准命令前缀；不得先在已知无写权限的沙箱中制造一次 `index.lock`、引用或对象写入失败。权限提升只覆盖当前必要的精确命令，不能绕过平台审批，也不等同于长期授权。
 
+Git 写命令不要和 `status`、`diff`、`log` 等无关只读命令拼接成一条复合 shell。网络访问已知受限时，`git ls-remote` 等远端读取也应首次走精确的沙箱外路线；但 `git push` 已明确返回成功后不再重复远端核验，除非输出缺失或含混。
+
 ## 验证
 
 - 文档与中文文件编码检查：`npm run docs:check-encoding`
