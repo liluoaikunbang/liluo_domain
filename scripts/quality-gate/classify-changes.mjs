@@ -46,10 +46,8 @@ export function classifyChanges(inputFiles = []) {
   for (const file of files) {
     const fileDomains = new Set()
     const isCommandApprovalGovernance = file.startsWith('scripts/command-approval/')
-      || [
-        'scripts/tests/command-approval-governance.test.mjs',
-        'scripts/tests/project-routine-governance.test.mjs',
-      ].includes(file)
+      || file === 'scripts/tests/command-approval-governance.test.mjs'
+    const isProjectRoutineGovernance = file === 'scripts/tests/project-routine-governance.test.mjs'
     const isDocs = file === 'README.md' || file === 'AGENTS.md' || file.startsWith('docs/')
     const isStructuredData = file.startsWith('schemas/')
       || file.startsWith('src/game/data/') && DATA_EXTENSION.test(file)
@@ -76,6 +74,7 @@ export function classifyChanges(inputFiles = []) {
       || file.startsWith('.codex/rules/')
       || file === '.codex/approval-decisions.json'
       || isCommandApprovalGovernance
+      || isProjectRoutineGovernance
     ) fileDomains.add('skills-agents-governance')
     if (isStructuredData) fileDomains.add('schemas-data')
     if (isStory(file)) fileDomains.add('story')

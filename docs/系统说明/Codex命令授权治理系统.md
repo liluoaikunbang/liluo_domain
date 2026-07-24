@@ -38,7 +38,7 @@ npm run project:gate:ci
 npm run project:hooks:test
 ```
 
-`project:routine` 只接受固定 profile，拒绝附加参数和任意命令。`docs` 只检查文档编码、治理注册表、设计记忆与用户命令；`workflow` 只验证聚合入口和授权边界；`team-presence` 只运行创作组目标测试与手记验证；`natural-expression` 只运行自然表达目标测试。`check`、`test`、`build`、`index`、`all` 保留给确实跨域或完整交付的任务，`all` 不得作为普通结束门禁。`project:skill:init` 只包装官方 `skill-creator`。质量门禁入口只运行仓库内确定性检查，不运行 live eval、提交或发布，因此以各自完整 npm script 名称精确登记为项目 allow；`project:hooks:install` 会写入 `.git/config`，仍保持 prompt。
+`project:routine` 只接受固定 profile，拒绝附加参数和任意命令。`docs` 只检查文档编码、治理注册表、设计记忆与用户命令；`workflow` 只验证聚合入口和授权边界；`team-presence` 只运行创作组目标测试与手记验证；`natural-expression` 只运行自然表达目标测试。`check`、`test`、`build`、`index`、`all` 保留给确实跨域或完整交付的任务，`all` 不得作为普通结束门禁。`check` 不再包含 `commands:approval:validate`；该校验仅在命令授权文件或其专属测试实际变化时由质量门禁加入。`project:skill:init` 只包装官方 `skill-creator`。质量门禁入口只运行仓库内确定性检查，不运行 live eval、提交或发布，因此以各自完整 npm script 名称精确登记为项目 allow；`project:hooks:install` 会写入 `.git/config`，仍保持 prompt。
 
 这些精确前缀登记在项目规则中；客户端已存在同一精确批准前缀时，可以减少实际弹窗。Agent 调用会派生子进程、写入忽略报告或构建产物的聚合入口时，应首次直接申请沙箱外执行，避免先在已知受限的沙箱内触发 `EPERM`。这里批准的是固定 npm script，不是宽泛的 `npm`、`node`、Python 或 PowerShell。
 

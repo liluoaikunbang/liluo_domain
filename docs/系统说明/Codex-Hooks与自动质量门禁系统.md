@@ -31,6 +31,8 @@ GitHub Actions 只能检查已经推送的提交；真正能在推送发生前�
 
 多领域命令顺序是：静态结构与注册表、数据契约、文档编码、内容和代码 check、tests、索引增量与验证、build。同一命令每次计划只出现一次，不默认运行 `project:routine -- all`。
 
+“工作流治理测试”与“命令授权治理”是两个独立范围。只有 `scripts/command-approval/**`、批准注册表/规则及其专属测试变化时，才运行 `commands:approval:test` 与 `commands:approval:validate`；普通 `project-routine`、Skill、文档或质量门禁测试不能被误归类为命令授权变更，更不能因此要求在 Node 子进程中二次启动 Codex。
+
 ## 模式与报告
 
 - `hook`：Stop Hook 收尾检查；最轻量，永不构建。

@@ -29,6 +29,11 @@ test('command approval governance changes run their own checks without a Web bui
   assert.ok(!commands.includes('npm run build:web'))
 })
 
+test('project routine governance tests do not require Codex execpolicy validation', () => {
+  const commands = commandsFor(['scripts/tests/project-routine-governance.test.mjs'])
+  assert.ok(!commands.includes('npm run commands:approval:validate'))
+})
+
 test('save changes trigger contracts and tests', () => {
   const commands = commandsFor(['src/game/systems/saveMigration.ts'])
   assert.ok(commands.includes('npm run data:contracts:check'))

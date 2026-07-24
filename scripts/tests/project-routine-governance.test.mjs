@@ -31,7 +31,6 @@ test('project routine exposes only fixed safe modes', () => {
     'docs:governance:validate',
     'docs:memory:validate',
     'docs:commands:validate',
-    'commands:approval:validate',
     'project:index:check',
     'data:contracts:check',
     'evals:check',

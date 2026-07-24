@@ -9,7 +9,7 @@ export const updateRecords = Object.freeze([
         "id":  "150",
         "date":  "2026-07-23",
         "title":  "Codex Hooks 与自动质量门禁系统",
-        "summary":  "建立 Codex 生命周期 Hooks、按改动范围去重的统一门禁、本地 pre-push 与 Windows GitHub Actions CI，并以 ERROR 阻断、WARNING 报告和双格式运行报告统一收口确定性验证。"
+        "summary":  "建立 Codex 生命周期 Hooks、按改动范围去重的统一门禁、本地 pre-push 与 Windows GitHub Actions CI；工作流治理与命令授权校验按实际改动分开触发。"
     },
     {
         "id":  "149",
