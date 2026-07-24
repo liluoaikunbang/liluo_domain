@@ -463,7 +463,8 @@
   },
   {
     "childKeys": [
-      "world-1-glimmering-glance-old-dormitory"
+      "world-1-glimmering-glance-old-dormitory",
+      "world-1-glimmering-glance-supernatural-games"
     ],
     "key": "world-1-glimmering-glance-rope-spirit-game",
     "parentKey": "world-1-glimmering-glance-stage-performance",
@@ -545,6 +546,14 @@
     "parentKey": "world-1-glimmering-glance-anomaly-disaster-response-organization",
     "side": true,
     "title": "诡物收录",
+    "world": "1-浮光掠影"
+  },
+  {
+    "childKeys": [],
+    "key": "world-1-glimmering-glance-supernatural-games",
+    "parentKey": "world-1-glimmering-glance-rope-spirit-game",
+    "side": true,
+    "title": "灵异游戏",
     "world": "1-浮光掠影"
   },
   {

@@ -8,9 +8,10 @@
     { "sourceId": "conorbronsdon-avoid-ai-writing", "upstreamSkill": "avoid-ai-writing", "commit": "660c95cfd5b67604ad5ed598a8bd1be92e0ee3d5", "usage": ["diagnose/rewrite separation", "minimal edits", "second-pass audit", "preserve natural passages"] },
     { "sourceId": "danjdewhurst-story-skills", "upstreamSkill": "revision-continuity", "commit": "c482d48f4eb9b488f033a77a51f9fae55cc0d75f", "usage": ["pre-revision continuity anchors", "post-revision dependent-state check"] },
     { "sourceId": "openai-skills", "upstreamSkill": "skill-creator", "commit": "49f948faa9258a0c61caceaf225e179651397431", "usage": ["progressive disclosure", "concise skill body", "deterministic validation"] },
-    { "sourceId": "agentskills-spec", "upstreamSkill": "Agent Skills specification", "commit": "38a2ff82958afee88dadf4831509e6f7e9d8ef4e", "usage": ["portable skill layout", "metadata contract"] }
+    { "sourceId": "agentskills-spec", "upstreamSkill": "Agent Skills specification", "commit": "38a2ff82958afee88dadf4831509e6f7e9d8ef4e", "usage": ["portable skill layout", "metadata contract"] },
+    { "sourceId": "hardikpandya-stop-slop", "upstreamSkill": "stop-slop", "commit": "8da1f030185bdfe8471220585162991eaeb970e9", "usage": ["identify rhetorical questions used as unsupported mystery or false weight"] }
   ],
-  "projectSpecificAdditions": ["璃落角色声音", "故事大纲制作信息保护", "项目组成员真实参与边界", "虚构束缚题材叙事", "技术文本排除规则", "动作与空间可信度优先"],
+  "projectSpecificAdditions": ["璃落角色声音", "故事大纲制作信息保护", "项目组成员真实参与边界", "虚构束缚题材叙事", "技术文本排除规则", "动作与空间可信度优先", "设问必须具有可回答对象或行动落点"],
   "excludedUpstreamRules": ["英文固定禁词表", "统一标点禁令", "外部故事目录和 CLI", "任何自动安装、提交、联网或权限提升"],
-  "lastReviewedAt": "2026-07-23"
+  "lastReviewedAt": "2026-07-24"
 }

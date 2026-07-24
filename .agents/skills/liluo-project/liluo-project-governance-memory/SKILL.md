@@ -23,9 +23,10 @@ Read [persistence-and-decisions.md](references/persistence-and-decisions.md) whe
 2. Use `docs/规范治理/document-registry.json`, `rule-registry.json`, and `impact-map.json` to locate consumers.
 3. Update the authority; keep consumers to a local contract, concise summary, and link.
 4. Record architecture or creative rationale only when accepted or already demonstrably adopted. Put unresolved choices in `docs/设计记忆/待确认决策.md`.
-5. Use `liluo-project-documentation-sync` for mechanical feature-record synchronization.
-6. Build one deduplicated verification plan for the whole task. Checks named by loaded Skills are candidates, not cumulative obligations: run one targeted verification by default, and add one aggregate profile only when the target cannot cover another material change whose result affects completion. Refresh the project index once at the end only when indexed sources changed.
-7. If the task actually incurred an avoidable failure, redundant read/check, or ineffective retry, perform one end-of-task friction review. Persist only a confirmed, reusable, small rule in its existing authority; ignore transient, unexplained, and one-off mistakes. Do not recursively review the review or add a second validation budget.
+5. When the user asks only to install an external Skill or to add a narrow local rule, do not promote it into a system-wide change by default. Install or update the requested local Skill, record the smallest necessary provenance, and run one targeted check. Add feature records, user-command changes, CDR/ADR updates, registries, or index refresh only when the requested change actually alters those authorities or consumers.
+6. Use `liluo-project-documentation-sync` for mechanical feature-record synchronization.
+7. Build one deduplicated verification plan for the whole task. Checks named by loaded Skills are candidates, not cumulative obligations: run one targeted verification by default, and add one aggregate profile only when the target cannot cover another material change whose result affects completion. Refresh the project index once at the end only when indexed sources changed.
+8. If the task actually incurred an avoidable failure, redundant read/check, or ineffective retry, perform one end-of-task friction review. Persist only a confirmed, reusable, small rule in its existing authority; ignore transient, unexplained, and one-off mistakes. Do not recursively review the review or add a second validation budget.
 
 Do not copy the governance contract into every Skill or Agent. Do not save chat transcripts, hidden reasoning, temporary audit reports, or speculative philosophy. Do not auto-delete similar text or mass-renumber history.
 

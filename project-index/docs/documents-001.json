@@ -1355,7 +1355,7 @@
   {
     "id": "docs/功能更新/120-故事大纲游戏化模板与世界选项库.md",
     "indexVersion": 1,
-    "sourceHash": "2e97f071e823f38cfcc929e84902e9bb8e5c144e5e38e9e8b127fab3f3905506",
+    "sourceHash": "bacf72ff54741d687092ff1a5f63b3d59eec4e00ba0293a78a3ce0ad13ad0ccc",
     "sourcePath": "docs/功能更新/120-故事大纲游戏化模板与世界选项库.md",
     "subtype": "update",
     "summary": "故事大纲游戏化模板与世界选项库",
@@ -1597,7 +1597,7 @@
   {
     "id": "docs/功能更新/142-故事缺口发现与灵感补全系统.md",
     "indexVersion": 1,
-    "sourceHash": "15be60ae245d21eb5a623608a1b3578abaafb6aa86828c53cf16ae0cb06c6345",
+    "sourceHash": "41eaeb706789d45dfa0733b6aef9c05c9c256df2fb7b458454e579cca094bf2f",
     "sourcePath": "docs/功能更新/142-故事缺口发现与灵感补全系统.md",
     "subtype": "update",
     "summary": "故事缺口发现与灵感补全系统",
@@ -1630,7 +1630,7 @@
   {
     "id": "docs/功能更新/145-外部Skill来源库项目能力演化与自然表达系统.md",
     "indexVersion": 1,
-    "sourceHash": "1cc58d7d465cb55dc5bfa22e7a56169a2c0a7414354c2ada7450c366e0feb6c1",
+    "sourceHash": "de4d1e56d3980238ab611c33e9e454a06acbf06996857423cb4666063abe7794",
     "sourcePath": "docs/功能更新/145-外部Skill来源库项目能力演化与自然表达系统.md",
     "subtype": "update",
     "summary": "145-外部 Skill 来源库、项目能力演化与自然表达系统",
@@ -1641,7 +1641,7 @@
   {
     "id": "docs/功能更新/146-Codex命令授权反馈持久化与规范闭环.md",
     "indexVersion": 1,
-    "sourceHash": "716b0a03228477af91c0def6de08db75471cb9933e5751daccb9f5851176a61f",
+    "sourceHash": "a6a12695f635e82dc707624ef23af179446b337b82acb2e0059e6e53a1d267e8",
     "sourcePath": "docs/功能更新/146-Codex命令授权反馈持久化与规范闭环.md",
     "subtype": "update",
     "summary": "146-Codex 命令授权反馈、持久化与规范闭环",
@@ -1694,9 +1694,20 @@
     "type": "document"
   },
   {
+    "id": "docs/功能更新/151-故事大纲局部设定快速路径.md",
+    "indexVersion": 1,
+    "sourceHash": "153b6bc5073e4384ca0e6fdaae046b99a1419b0fee05cd092c1a11871f93d646",
+    "sourcePath": "docs/功能更新/151-故事大纲局部设定快速路径.md",
+    "subtype": "update",
+    "summary": "151-故事大纲局部设定快速路径",
+    "summarySource": "title-only",
+    "title": "151-故事大纲局部设定快速路径",
+    "type": "document"
+  },
+  {
     "id": "docs/功能更新目录.md",
     "indexVersion": 1,
-    "sourceHash": "d5979661f33a2b7155c8ec38e03f2ea9425c7b93ac33c73f6b2a0895337de286",
+    "sourceHash": "df1aceb5066cef0c3e6aa3a49cf4141c16a8f53b3e7ad33a92c89a0434de90e3",
     "sourcePath": "docs/功能更新目录.md",
     "subtype": "other",
     "summary": "功能更新目录",
@@ -1861,7 +1872,7 @@
   {
     "id": "docs/技能说明/liluo-natural-expression.md",
     "indexVersion": 1,
-    "sourceHash": "47cf768f1aed8a78edbeb2fdd1f946f89c504172f7a6a4fff13837e0f6b8a851",
+    "sourceHash": "5741bdceb544ad6a49f031b64affc5392d414a714adf6303ae5f6d99657b81dd",
     "sourcePath": "docs/技能说明/liluo-natural-expression.md",
     "subtype": "skill",
     "summary": "liluo-natural-expression",
@@ -1960,7 +1971,7 @@
   {
     "id": "docs/技能说明/liluo-story-gap-discovery.md",
     "indexVersion": 1,
-    "sourceHash": "ec312b310d40a8090b26faa2d5e63ae1cbb8756e46f9e8cb966345b8dbb1da86",
+    "sourceHash": "495f08173c1c7e2995527c627bd63db3130754f223c2d2d6b16f540391d7a04d",
     "sourcePath": "docs/技能说明/liluo-story-gap-discovery.md",
     "subtype": "skill",
     "summary": "liluo-story-gap-discovery",
@@ -1971,7 +1982,7 @@
   {
     "id": "docs/技能说明/liluo-story-outline-authoring.md",
     "indexVersion": 1,
-    "sourceHash": "84b8ecbce317a9d32efe4e4c0f7e2ea8a216e8f30193bb51f4b04cd458ec47b7",
+    "sourceHash": "afca13a5ca3c3649568c48523a52ff34008b6452915e593d6e6fc136d567ea25",
     "sourcePath": "docs/技能说明/liluo-story-outline-authoring.md",
     "subtype": "skill",
     "summary": "liluo-story-outline-authoring",
@@ -2070,7 +2081,7 @@
   {
     "id": "docs/设计记忆/创作决策/CDR-005-非技术文本默认应用璃落自然表达.md",
     "indexVersion": 1,
-    "sourceHash": "3b04a68b9785f8d5f2c72d57690d490fd5cd89ab98d375975ab65f62b2389289",
+    "sourceHash": "d78af29523020716ca4a1e5afbb6adeddf6b9cdc028170ee0e898e283703cf58",
     "sourcePath": "docs/设计记忆/创作决策/CDR-005-非技术文本默认应用璃落自然表达.md",
     "subtype": "other",
     "summary": "CDR-005：非技术文本默认应用璃落自然表达",
@@ -2598,7 +2609,7 @@
   {
     "id": "docs/系统说明/故事大纲条目模板.md",
     "indexVersion": 1,
-    "sourceHash": "8dbe995cfab69db3b5ef80d03683a2d8389133542306c2f7665e3fc64ce8e0fe",
+    "sourceHash": "5ea947b439485be12ce9e14d67a08bc2a355903a3d3800163014b682a4c24642",
     "sourcePath": "docs/系统说明/故事大纲条目模板.md",
     "subtype": "system",
     "summary": "故事大纲条目模板",
@@ -2609,7 +2620,7 @@
   {
     "id": "docs/系统说明/故事缺口发现与灵感补全系统.md",
     "indexVersion": 1,
-    "sourceHash": "d16ebc7df8b040cf0572a7023909c8a83317182917218734fdf3212a9a3c0e17",
+    "sourceHash": "9b20471fd2b926b8768fa825184e537410deddbff5bac77bd2db06215627a20c",
     "sourcePath": "docs/系统说明/故事缺口发现与灵感补全系统.md",
     "subtype": "system",
     "summary": "故事缺口发现与灵感补全系统",
@@ -2675,7 +2686,7 @@
   {
     "id": "docs/系统说明/璃落自然表达与文气塑形系统.md",
     "indexVersion": 1,
-    "sourceHash": "ec6e92494c5b58c007b16b14fcff809073f58218f8b625330de11d5aa7326e16",
+    "sourceHash": "aaae9bb0d8c249c63b0dc9e80d52cbde7ad54bd68124185293a29fe13734ee04",
     "sourcePath": "docs/系统说明/璃落自然表达与文气塑形系统.md",
     "subtype": "system",
     "summary": "璃落自然表达与文气塑形系统",
@@ -2736,17 +2747,6 @@
     "summary": "外部 Skill 来源库与项目能力演化系统",
     "summarySource": "title-only",
     "title": "外部 Skill 来源库与项目能力演化系统",
-    "type": "document"
-  },
-  {
-    "id": "docs/系统说明/项目规范治理与设计记忆系统.md",
-    "indexVersion": 1,
-    "sourceHash": "0f3e89726e2b14676d8398acdeea50e0f96b272b20aed84e6b162e4bf28328ea",
-    "sourcePath": "docs/系统说明/项目规范治理与设计记忆系统.md",
-    "subtype": "system",
-    "summary": "项目规范治理与设计记忆系统",
-    "summarySource": "title-only",
-    "title": "项目规范治理与设计记忆系统",
     "type": "document"
   }
 ]

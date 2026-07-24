@@ -29,6 +29,8 @@ For mixed documents, isolate narrative regions. Leave technical blocks unchanged
 5. Change the smallest span that improves the passage. Preserve already-natural writing.
 6. In `deep`, run a second mechanical-pattern pass, compare every anchor with the source, and cut ornamental expansion.
 
+Before delivering reader-facing prose, apply the meaning check: do not add a rhetorical question merely to create mystery, weight, or a quotable ending. Keep a question only when the text establishes who can answer it and the answer changes a character's judgment, a player's investigation, or a real next action. Otherwise state the confirmed fact or the concrete unresolved issue directly.
+
 Matching references are [fiction-prose.md](references/fiction-prose.md), [story-outline.md](references/story-outline.md), [game-dialogue.md](references/game-dialogue.md), [team-dialogue.md](references/team-dialogue.md), [project-notes.md](references/project-notes.md), [public-development-writing.md](references/public-development-writing.md), [fictional-restraint-narrative.md](references/fictional-restraint-narrative.md), and [character-voice.md](references/character-voice.md).
 
 For fictional restraint prose, `fictional-restraint-narrative.md` owns the mandatory low-token retrieval route. Use the external-fiction library for prose and scene mechanisms; use the imported restraint research cards for terminology, named poses, worldbuilding, prompt architecture or visual tags. Query both only when both needs are material. Project canon already establishes that every participating character is an adult, so do not add a separate unknown-age branch. Keep retrieval targeted and separate from canon.

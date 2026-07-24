@@ -1,5 +1,16 @@
 [
   {
+    "id": "docs/系统说明/项目规范治理与设计记忆系统.md",
+    "indexVersion": 1,
+    "sourceHash": "13012ebe74394f57f08640bc04648ebbdee3ef10cf5756ffafc28f7aaa5affa7",
+    "sourcePath": "docs/系统说明/项目规范治理与设计记忆系统.md",
+    "subtype": "system",
+    "summary": "项目规范治理与设计记忆系统",
+    "summarySource": "title-only",
+    "title": "项目规范治理与设计记忆系统",
+    "type": "document"
+  },
+  {
     "id": "docs/系统说明/项目知识索引系统.md",
     "indexVersion": 1,
     "sourceHash": "58e5d82bb0f01bb90a29d1f7bdc1db0d6e68ae587de86d57cf334503b0c5e357",
@@ -68,7 +79,7 @@
   {
     "id": "docs/系统说明/Codex命令授权治理系统.md",
     "indexVersion": 1,
-    "sourceHash": "caa17de78a4633c1f939bb8c2ce6ec3c5796dd36d972587f3a0ba731edda8b37",
+    "sourceHash": "e097d1f639028e0f842177af716bddaa9bb0973fe0906b883107822f20cd717e",
     "sourcePath": "docs/系统说明/Codex命令授权治理系统.md",
     "subtype": "system",
     "summary": "Codex 命令授权治理系统",
@@ -134,7 +145,7 @@
   {
     "id": "docs/用户命令目录.md",
     "indexVersion": 1,
-    "sourceHash": "435efa1b35f3bc7c30d6433e0d47c8de8b2d145d283db0e1de6881516a6d0c66",
+    "sourceHash": "8d33fee1537532f8739d4627fcae342435d2b299055404af3d7c6e080ca9bbb3",
     "sourcePath": "docs/用户命令目录.md",
     "subtype": "other",
     "summary": "用户命令目录",

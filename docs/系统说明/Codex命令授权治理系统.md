@@ -66,7 +66,7 @@ npm run project:hooks:test
 - 已知存在无关历史问题的全量 audit 不作为普通任务结束步骤。
 - 严格 RED 只服务真实缺陷复现、行为不明或高风险逻辑；小型确定性新增不进行故意失败的预跑。
 
-目录和文本文件的普通创建/修改优先使用受控文件补丁；“Skill/Agent/规则/配置文件”不是单独的审批类别，用户已经要求相关实现或升级时直接修改任务范围内文件，不按路径逐项征求许可。项目采用 `.codex/config.toml` 中的 `liluo-project-edit` 权限档案：继承官方 `:workspace` 基线，只对 `.agents` 和 `.codex` 增加精确写权限；`.git` 等内置保护保持不变，网络保持关闭。宿主或管理员的更严格策略仍可能覆盖项目配置，且配置变更通常需要新会话加载。不为 `New-Item`、任意 `node`、任意 Python 或 PowerShell 建立宽泛 allow。网络、依赖、Git 写入、删除、发布和项目外写入继续逐次审批。
+目录和文本文件的普通创建/修改优先使用受控文件补丁；“Skill/Agent/规则/配置文件”不是单独的审批类别，用户已经要求相关实现或升级时直接修改任务范围内文件，不按路径逐项征求许可。项目采用 `.codex/config.toml` 中的 `liluo-project-edit` 权限档案：继承官方 `:workspace` 基线，并显式允许常用项目源目录 `.github`、`.githooks`、`.agents`、`.codex`、`docs`、`evals`、`planning`、`public`、`schemas`、`scripts` 与 `src` 写入，避免文档、Skill、Agent、代码、测试与项目配置被逐文件重复确认。生成物、依赖、本机规则快照和 Git 元数据不因此获得直接编辑权限；`.git` 等内置保护保持不变，网络保持关闭。宿主或管理员的更严格策略仍可能覆盖项目配置，且配置变更通常需要新会话加载。不为 `New-Item`、任意 `node`、任意 Python 或 PowerShell 建立宽泛 allow。网络、依赖、Git 写入、删除、发布和项目外写入继续逐次审批。
 
 ## 授权等级
 

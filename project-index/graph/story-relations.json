@@ -280,6 +280,11 @@
     "to": "world-1-glimmering-glance-anomaly-disaster-response-organization"
   },
   {
+    "from": "world-1-glimmering-glance-supernatural-games",
+    "relationType": "parent",
+    "to": "world-1-glimmering-glance-rope-spirit-game"
+  },
+  {
     "from": "world-1-glimmering-glance-taisho-romance",
     "relationType": "parent",
     "to": "world-1-glimmering-glance-black-rose-sanatorium"

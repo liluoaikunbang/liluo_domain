@@ -170,11 +170,11 @@
       "key": "world-1-glimmering-glance-old-dormitory",
       "world": "1-浮光掠影",
       "title": "宿舍旧楼",
-      "summary": "璃落与林沐遥调查宿舍旧楼和废弃厂房，恢复校园霸凌旧案记忆，并被一名因漏写保护费收据而折返的黄毛女孩阴差阳错救下。",
+      "summary": "璃落与林沐遥通过宿舍旧楼电梯进入曾名为荆江大学的不同年代，调查校园霸凌旧案，并在废弃厂房追出荆锁会线索。",
       "missingItems": [
         "设计｜宿舍旧楼·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
         "玩法｜宿舍旧楼·主要活动｜缺少主要游戏活动类型与可执行操作循环",
-        "流程｜宿舍旧楼·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+        "流程｜宿舍旧楼·时间电梯调查｜缺少各年代停靠条件、可调查证据、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
         "支线｜黄毛女孩·后续友情趣事｜已确认璃落会与黄毛女孩成为朋友并发展趣事支线，缺少正式姓名、进入条件、具体事件与结局"
       ],
       "foreshadowing": [
@@ -183,14 +183,17 @@
         "黄毛女孩与璃落后续成为朋友"
       ],
       "plotTags": [
-        "霸凌"
+        "霸凌",
+        "时间层",
+        "旧案调查"
       ],
       "bondageTags": [
         "气味系"
       ],
       "specialGameplay": [
         "小黑屋",
-        "语言羞辱"
+        "语言羞辱",
+        "电梯纵向时间线"
       ],
       "characters": [
         "林沐遥",
@@ -199,6 +202,7 @@
       "locations": [
         "荆江市",
         "荆南大学",
+        "荆江大学（旧校名）",
         "宿舍旧楼",
         "废弃厂房"
       ],
@@ -213,7 +217,19 @@
       "key": "world-1-glimmering-glance-rope-spirit-game",
       "world": "1-浮光掠影",
       "title": "绳仙游戏",
+      "storyTags": [
+        "诡影侵临"
+      ],
       "status": "大纲",
+      "summary": "校园流行的绳仙游戏，只是荆锁会遗留的众多灵异游戏之一。",
+      "foreshadowing": [
+        "绳仙游戏只是荆锁会遗留灵异游戏中的一项"
+      ],
+      "plotTags": [
+        "校园怪谈",
+        "仪式",
+        "封印"
+      ],
       "parentKey": "world-1-glimmering-glance-stage-performance",
       "order": 10
     },
@@ -225,8 +241,40 @@
         "诡影侵临"
       ],
       "status": "灵感",
+      "summary": "荆锁会事件完结，璃落与校园地下的满怨古树缠斗；荆锁会遗留的一组灵异游戏共同压制着它。",
+      "foreshadowing": [
+        "荆锁会遗留的灵异游戏共同压制满怨古树"
+      ],
+      "plotTags": [
+        "校园怪谈",
+        "仪式残留"
+      ],
       "parentKey": "world-1-glimmering-glance-old-dormitory",
       "order": 10
+    },
+    {
+      "key": "world-1-glimmering-glance-supernatural-games",
+      "world": "1-浮光掠影",
+      "title": "灵异游戏",
+      "storyTags": [
+        "诡影侵临"
+      ],
+      "status": "灵感",
+      "summary": "荆锁会遗留的灵异游戏支线；每项小任务都是压制满怨古树的一环。",
+      "foreshadowing": [
+        "荆锁会遗留的灵异游戏共同压制满怨古树"
+      ],
+      "plotTags": [
+        "校园怪谈",
+        "仪式",
+        "支线任务集合"
+      ],
+      "locations": [
+        "荆南大学"
+      ],
+      "branchLayout": "side",
+      "parentKey": "world-1-glimmering-glance-rope-spirit-game",
+      "order": 20
     },
     {
       "key": "world-1-glimmering-glance-urban-rumors",

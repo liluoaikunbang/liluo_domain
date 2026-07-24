@@ -31,6 +31,11 @@ test('mechanical diagnosis detects uniform explanation without treating keywords
   assert.ok(findings.every((finding) => finding.evidence && finding.suggestion));
 });
 
+test('mechanical diagnosis flags a rhetorical question that only performs mystery', () => {
+  const findings = diagnoseMechanicalPatterns('电梯究竟是在带人回到过去，还是在带人进入某人坚持要留下的过去？', 'story-outline');
+  assert.ok(findings.some((finding) => finding.code === 'unsupported-rhetorical-question'));
+});
+
 test('revision anchor validation protects keys, numbers and named states', () => {
   const before = 'eventKey: room_escape，信任值 +2，状态：蒙眼。';
   assert.deepEqual(validateRevisionAnchors(before, 'eventKey: room_escape，信任值 +2，状态：蒙眼。她停了一会儿。'), []);

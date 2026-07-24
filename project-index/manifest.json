@@ -20,7 +20,7 @@
     },
     "docs": {
       "enabled": true,
-      "entryCount": 274,
+      "entryCount": 275,
       "outputs": [
         "docs/documents-001.json",
         "docs/documents-002.json"
@@ -64,7 +64,7 @@
     },
     "story": {
       "enabled": true,
-      "entryCount": 160,
+      "entryCount": 161,
       "outputs": [
         "story/nodes/nodes-001.json"
       ],
@@ -83,7 +83,7 @@
   "generatorVersion": "1.0.3",
   "graph": {
     "enabled": true,
-    "entryCount": 160,
+    "entryCount": 161,
     "outputs": [
       "graph/story-relations.json",
       "graph/reverse-references/all.json"

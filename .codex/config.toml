@@ -5,8 +5,17 @@ description = "Allow ordinary edits across the trusted Liluo repository, includi
 extends = ":workspace"
 
 [permissions.liluo-project-edit.filesystem.":workspace_roots"]
+".github" = "write"
+".githooks" = "write"
 ".agents" = "write"
 ".codex" = "write"
+"docs" = "write"
+"evals" = "write"
+"planning" = "write"
+"public" = "write"
+"schemas" = "write"
+"scripts" = "write"
+"src" = "write"
 
 [permissions.liluo-project-edit.network]
 enabled = false

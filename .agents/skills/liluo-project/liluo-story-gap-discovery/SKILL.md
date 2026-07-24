@@ -9,7 +9,8 @@ Read root `AGENTS.md`, project-index status and the smallest relevant story/grap
 
 ## Run the workflow
 
-1. Choose `node`, `series`, or `world` mode. Do not broaden scope silently.
+0. Triage before selecting a mode. When the user has already named an existing target and only asks whether a concrete idea can belong to it, use a directed-fit path: locate the target through the smallest index lookup, open that one authoritative source, and return a concise fit confirmation plus an approval request. Do not enter `node`/`series`/`world` analysis, create a scored candidate card, retrieve external knowledge, or inspect relatives unless the target source leaves the fit genuinely ambiguous. After approval, prefer adding the high-level direction to the existing node or mainline memo; do not create a child node unless the user explicitly requests a split or independent production scope is established.
+1. Choose `node`, `series`, or `world` mode only when gap analysis is actually needed. Do not broaden scope silently.
 2. Check `npm run project:index:check`; query the smallest `story`, `graph`, `gameplay`, `game`, `assets`, and `docs` slices needed. Treat indexes as navigation and open original files.
 3. Reconstruct existing coverage before proposing gaps: target, up to two parents, direct children, at most three relevant siblings, necessary characters/world rules/gameplay/maps/events/CG links, reverse references, `missingItems`, and similar functions.
 4. Separate confirmed gaps, possible gaps, intentional brevity, production deferral, and repeated story functions. Frequency alone never proves a gap.

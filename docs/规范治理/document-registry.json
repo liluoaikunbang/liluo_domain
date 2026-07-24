@@ -78,6 +78,15 @@
       "status": "active"
     },
     {
+      "documentId": "story-outline-template-system",
+      "path": "docs/系统说明/故事大纲条目模板.md",
+      "type": "system-spec",
+      "authorityFor": ["story-outline-template", "story-node-granularity", "mainline-memo-boundary"],
+      "consumers": ["AGENTS.md", ".agents/skills/liluo-project/liluo-story-outline-authoring/SKILL.md", "docs/技能说明/liluo-story-outline-authoring.md"],
+      "indexable": true,
+      "status": "active"
+    },
+    {
       "documentId": "project-agent-system",
       "path": "docs/智能体说明/项目子智能体体系.md",
       "type": "agent-system",

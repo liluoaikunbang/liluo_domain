@@ -57,6 +57,13 @@
       "status": "active"
     },
     {
+      "ruleId": "story-outline-default-expand",
+      "title": "故事内容默认扩充既有节点并控制子节点增长",
+      "authority": "docs/系统说明/故事大纲条目模板.md",
+      "consumers": ["AGENTS.md", ".agents/skills/liluo-project/liluo-story-outline-authoring/SKILL.md", "docs/技能说明/liluo-story-outline-authoring.md"],
+      "status": "active"
+    },
+    {
       "ruleId": "persona-never-overrides-professional-contract",
       "title": "人格与陪伴不得改变专业合同和事实结论",
       "authority": "docs/设计记忆/项目组灵魂/项目组设定.md",
@@ -166,6 +173,14 @@
       "authority": "docs/系统说明/璃落自然表达与文气塑形系统.md",
       "decision": "docs/设计记忆/创作决策/CDR-005-非技术文本默认应用璃落自然表达.md",
       "consumers": [".agents/skills/writing/liluo-natural-expression/references/quick-contract.md", ".agents/skills/writing/liluo-natural-expression/references/fiction-prose.md", ".agents/skills/writing/liluo-natural-expression/references/fictional-restraint-narrative.md", "docs/技能说明/liluo-natural-expression.md"],
+      "status": "active"
+    },
+    {
+      "ruleId": "natural-expression-meaning-first",
+      "title": "悬念与设问必须具有可回答对象或行动落点",
+      "authority": "docs/系统说明/璃落自然表达与文气塑形系统.md",
+      "decision": "docs/设计记忆/创作决策/CDR-005-非技术文本默认应用璃落自然表达.md",
+      "consumers": [".agents/skills/writing/liluo-natural-expression/SKILL.md", ".agents/skills/writing/liluo-natural-expression/references/quick-contract.md", ".agents/skills/writing/liluo-natural-expression/scripts/expression-contract.mjs", "docs/技能说明/liluo-natural-expression.md", "docs/用户命令目录.md"],
       "status": "active"
     },
     {

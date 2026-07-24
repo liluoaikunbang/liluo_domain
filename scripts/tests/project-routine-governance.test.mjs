@@ -126,6 +126,16 @@ test('project index freshness detection matches the story indexer source boundar
   assert.doesNotMatch(checker, /story_outline\/'\) && \['\.json', '\.md'\]/)
 })
 
+test('narrow Skill installation and local-rule changes stay within a light governance scope', async () => {
+  const [governanceSkill, governanceSystem] = await Promise.all([
+    readFile(path.join(root, '.agents', 'skills', 'liluo-project', 'liluo-project-governance-memory', 'SKILL.md'), 'utf8'),
+    readFile(path.join(root, 'docs', '系统说明', '项目规范治理与设计记忆系统.md'), 'utf8'),
+  ])
+
+  assert.match(governanceSkill, /do not promote it into a system-wide change by default/u)
+  assert.match(governanceSystem, /不得仅因“写入规范”而自动追加功能更新、用户命令、CDR\/ADR、治理注册表、全量文档读取或索引刷新/u)
+})
+
 test('explicit GitHub upload uses one target push without a remote preflight', async () => {
   const [agents, approvalSystem, approvalSkill, reviewSkill, userCommands] = await Promise.all([
     readFile(path.join(root, 'AGENTS.md'), 'utf8'),
@@ -153,10 +163,13 @@ test('project permission profile allows ordinary Skill and Agent edits without o
   assert.match(config, /default_permissions = "liluo-project-edit"/)
   assert.match(config, /extends = ":workspace"/)
   assert.match(config, /\[permissions\.liluo-project-edit\.filesystem\.":workspace_roots"\]/)
-  assert.match(config, /"\.agents" = "write"/)
-  assert.match(config, /"\.codex" = "write"/)
+  for (const directory of ['.github', '.githooks', '.agents', '.codex', 'docs', 'evals', 'planning', 'public', 'schemas', 'scripts', 'src']) {
+    assert.match(config, new RegExp(`"${directory.replace('.', '\\.') }" = "write"`), directory)
+  }
   assert.doesNotMatch(config, /"\.git" = "write"/)
   assert.match(config, /\[permissions\.liluo-project-edit\.network\]\s+enabled = false/)
   assert.match(agents, /项目 Skill、Agent、规则和配置均直接使用 `apply_patch`，不得再按文件或目录逐项询问/)
   assert.match(approvalSystem, /“Skill\/Agent\/规则\/配置文件”不是单独的审批类别/)
+  assert.match(approvalSystem, /显式允许常用项目源目录/)
+  assert.match(approvalSystem, /生成物、依赖、本机规则快照和 Git 元数据不因此获得直接编辑权限/)
 })
