@@ -1,21 +1,16 @@
 {
   "affectedDomains": [
-    "code",
-    "docs"
+    "graph",
+    "story"
   ],
   "changes": {
-    "added": [
-      "docs/功能更新/158-Cursor与Codex协同规则分层.md",
-      "docs/系统说明/AI协同文件与规则分层.md",
-      "docs/设计记忆/架构决策/ADR-010-Cursor与Codex采用共享事实源和专属适配层.md"
-    ],
+    "added": [],
     "deleted": [],
     "modified": [
-      "docs/README.md",
-      "docs/功能更新目录.md",
-      "docs/系统说明/README.md",
-      "docs/系统说明/项目规范治理与设计记忆系统.md",
-      "src/game/data/global/updateRecords.js"
+      "src/game/data/story_outline/1-modern/1.5-宿舍旧楼.md",
+      "src/game/data/story_outline/1-modern/1.7-旧案.md",
+      "src/game/data/story_outline/1-modern/3.1-水泥鞋.md",
+      "src/game/data/story_outline/sources/1-modern.json"
     ],
     "renamed": []
   },
@@ -49,11 +44,11 @@
       "status": "partial"
     }
   },
-  "generatedAt": "2026-07-25T16:05:47.154Z",
+  "generatedAt": "2026-07-25T16:43:14.876Z",
   "generatorVersion": "1.0.3",
   "mode": "changed",
   "schemaVersion": 1,
-  "sourceCommit": "a2a1e04163c2e8234821f8d7b5a6bef7a3098c95",
+  "sourceCommit": "1018b3130ee88fd384b5fba47d4275da5b722846",
   "sourceSnapshot": {
     "docs/CG待制作清单.md": "81996a1dd752cbf2e9c5a9fc68bb4a480e556d2d76ec35afa9b4b6894f067f8b",
     "docs/README.md": "d6e3ab985252937ff4927d09ad17708ddc4a5684aa830e0d9d15754bd4a0bbd6",
@@ -1138,11 +1133,11 @@
     "src/game/data/story_outline/1-modern/1.4.1-镜中人.md": "c5b217a1f8a498e7d9b214943676bff3c4e2d1938e4001cb710a81c3293813df",
     "src/game/data/story_outline/1-modern/1.4.2-绳仙游戏.md": "f1d44a6fe202dcd0cbcded6b34a6aaa4a2893b2a743793a08e61d6045507b995",
     "src/game/data/story_outline/1-modern/1.4.2.1-灵异游戏.md": "207d56e0345578bde312704613733cfe6c9b96ee8a97854974d28d5cb8804487",
-    "src/game/data/story_outline/1-modern/1.5-宿舍旧楼.md": "291be21c3a7171d0c8908b880a725c387a227fea83fa3d6b4e76228eed6eed30",
+    "src/game/data/story_outline/1-modern/1.5-宿舍旧楼.md": "f20f9c8df966cf1e21f1e051a0c743e279c2de03c57d76c298a57400515902fc",
     "src/game/data/story_outline/1-modern/1.5.1-感官试炼.md": "446d2bf1c575a10d8cb711fc3a0b290ef32f13f500b7fe6bc78069e390a958ec",
     "src/game/data/story_outline/1-modern/1.6-满怨古树.md": "15d670fb40611a4f8c68d6f6a0af0b9c59a7dfc99193682ab5c773afab1524c4",
     "src/game/data/story_outline/1-modern/1.6.1-夜校怪谈.md": "82d96efa0b679fc080dcf78b5f0d26ecfefa01c7edfb21c9b303e19c71148349",
-    "src/game/data/story_outline/1-modern/1.7-旧案.md": "bb96b0b61428aee245bd1686daa4960ad3b24d9b586da6c3905bf4f560772ddc",
+    "src/game/data/story_outline/1-modern/1.7-旧案.md": "42d333642ae31cfa19e0e6e380be752ad14fc68791dbc00c41d76f768fb8d651",
     "src/game/data/story_outline/1-modern/1.8-温泉度假酒店.md": "8629d0e1bcd0ad2293346d37a6cb98444244722cf200371728d3ffd3beedc0a2",
     "src/game/data/story_outline/1-modern/19-感官试炼.md": "0db8be41f7f6573c06b9f146a9b78f743eb0d50630e4131c187d306e81a74a2f",
     "src/game/data/story_outline/1-modern/2-都市异闻.md": "9438c49581f5bd2e309e8d29554c6843e4d82c0894bb63397752a63dee017beb",
@@ -1166,7 +1161,7 @@
     "src/game/data/story_outline/1-modern/2.6.1-雾海孤岛探险.md": "c46ad84e214d509496888f842967db3ee66abf2c8c9c17b6a794d28a488439be",
     "src/game/data/story_outline/1-modern/2.6.2-天坑雨林远征.md": "ea7b7a2fcec8188296287796dab2b33bfe6eaddb1e7165d61105cb639bdb3691",
     "src/game/data/story_outline/1-modern/3-灰巷历险.md": "361590ab6e5391e84990bd49c99353dbef7223c19e7ba830fc101b7e362ce47c",
-    "src/game/data/story_outline/1-modern/3.1-水泥鞋.md": "3adef71345e80e28487fcacdab1c5d7e4d449130d3b22d75831eccca7d4e3e4e",
+    "src/game/data/story_outline/1-modern/3.1-水泥鞋.md": "7fb39cb1e82379e95328526ae9da0328c18f032d6efc95a2e2b0c23210341a12",
     "src/game/data/story_outline/1-modern/3.2-失联.md": "97039a1206cfcfd63950ff8df4af1b7461ab635fd4f625e8d91cbe2df67ec440",
     "src/game/data/story_outline/1-modern/3.3-锈盐.md": "4d5a9824eb69b87b9e4bcaa9fe39c4e1b1a4a3defe5ec238d1a5085520c39d55",
     "src/game/data/story_outline/1-modern/3.3.1-沉默见证.md": "b15a418b9a18fbb24d942ec003b45a6325fcf65d0f96250045e3ea1447c19a57",
@@ -1278,7 +1273,7 @@
     "src/game/data/story_outline/5-science/8-冷眠方舟.md": "a10e4b619d4e1ca951383bae271f97606db71b57158227fd6a7856fca650aa5f",
     "src/game/data/story_outline/5-science/9-轨道庭院.md": "a6bee012a1b71917bfa3141629faaccc8f5aae99b4828ad2d73d3026bbbe051c",
     "src/game/data/story_outline/sources/0-munika.json": "fceeed726f6dd22c1d9b6585fd5cbbbff7e4f8689452570c41d12014b20f1187",
-    "src/game/data/story_outline/sources/1-modern.json": "9ce968fa78780e8b60ecc5f69e3a71387ccf852d87b7931299acadb469742dfb",
+    "src/game/data/story_outline/sources/1-modern.json": "ba2b516d16bb566075d74283ca8c0c3fe33eb18f3a0e1769fff3cf8ad8db40ee",
     "src/game/data/story_outline/sources/2-apocalypse.json": "93fae676403758f164e0e6f7e56a8312a9cd844e3d0777b32241707b938f01dc",
     "src/game/data/story_outline/sources/3-ancient.json": "229dc716c01ff860f9ab1acafb2b97d45101365da95896d9006dcbbb1f58faa5",
     "src/game/data/story_outline/sources/4-fantasy.json": "4e1c769ea844b609836f62434071df8f989cfa9b40209faa736690170ad61bcd",
