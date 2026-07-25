@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "sourceId": "hardikpandya-stop-slop",
+  "displayName": "Stop Slop",
+  "category": ["writing", "editing"],
+  "repository": "https://github.com/hardikpandya/stop-slop",
+  "defaultBranch": "main",
+  "trackedPaths": ["LICENSE", "SKILL.md"],
+  "storageMode": "selected-files",
+  "trustTier": "focused-writing-reference",
+  "license": { "type": "MIT", "verified": true, "licensePath": "LICENSE", "redistributionAllowed": true },
+  "version": { "currentCommit": "8da1f030185bdfe8471220585162991eaeb970e9", "currentRelease": null, "fetchedAt": "2026-07-24T00:00:00.000Z", "lastCheckedAt": "2026-07-25T00:00:00.000Z", "nextCheckAt": "2026-08-24T00:00:00.000Z" },
+  "updatePolicy": { "checkIntervalDays": 30, "fetchToStagingWhenDue": true, "autoReplaceCurrentSnapshot": false, "autoModifyLocalSkills": false },
+  "security": { "containsExecutableCode": false, "containsPromptInstructions": true, "trustedForDirectExecution": false, "auditStatus": "reviewed-selected-files" },
+  "localUsage": { "status": "adapted", "adaptedSkills": ["liluo-natural-expression"], "notes": "仅吸收无落点设问、伪神秘和空泛修辞诊断；不采用英文固定禁词、无副词、统一主动语态、破折号禁令或上游评分。" }
+}

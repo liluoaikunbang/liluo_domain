@@ -37,6 +37,16 @@ $OutputEncoding = [Console]::OutputEncoding = [System.Text.UTF8Encoding]::new($f
 
 这只处理控制台输入输出；读取文件时仍必须显式指定 UTF-8。
 
+## Markdown 与 PowerShell 语法边界
+
+Markdown 的反引号用于阅读呈现，PowerShell 的反引号则是转义字符；两者不得在同一条待执行命令字符串中混用。所有命令都遵循“展示层与执行层分离”：给用户展示时可以使用 Markdown 行内代码或代码块，交给 shell、工具调用或 `powershell -Command` 的只能是未携带 Markdown 定界符的纯命令文本。
+
+1. 不把 Markdown 行内反引号、代码围栏或从聊天复制的格式符拼进 PowerShell 命令、脚本参数或 shell 工具调用；需要展示与执行同一命令时，分别构造展示文本和执行参数。
+2. 不为保留 Markdown 外观而在 PowerShell 中嵌套反引号转义；优先改用参数化工具调用、单引号字面量、`-LiteralPath` 或无反引号的等价写法。
+3. 出现反引号、引号或变量插值导致的解析/转义异常时，先将命令还原为纯 PowerShell 文本并最小化复现一次；不要反复叠加转义字符试探，也不要把 Markdown 标记当作 PowerShell 语法修补。
+
+此规则只约束命令的组装与传递，不限制 Markdown 文档正常使用反引号说明命令、路径或标识符。
+
 ## Git 中文路径与仓库元数据写入
 
 在 Windows 上把 Git 输出继续交给 PowerShell 做文件检查时，必须避免把 Git 为显示而生成的带引号八进制转义文本当成真实路径：

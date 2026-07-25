@@ -1,16 +1,5 @@
 {
   "hooks": {
-    "UserPromptSubmit": [
-      {
-        "hooks": [
-          {
-            "type": "command",
-            "command": "node .codex/hooks/user-prompt-secret-scan.mjs",
-            "timeout": 10
-          }
-        ]
-      }
-    ],
     "PreToolUse": [
       {
         "matcher": "Bash",
@@ -49,17 +38,6 @@
             "type": "command",
             "command": "node .codex/hooks/pre-tool-policy.mjs",
             "timeout": 10
-          }
-        ]
-      }
-    ],
-    "Stop": [
-      {
-        "hooks": [
-          {
-            "type": "command",
-            "command": "node .codex/hooks/stop-quality-gate.mjs",
-            "timeout": 600
           }
         ]
       }

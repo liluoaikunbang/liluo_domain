@@ -1,0 +1,10 @@
+{
+  "localSkill": "liluo-purpose-driven-ideation",
+  "category": "liluo-project",
+  "origin": "project-adapted",
+  "projectAuthority": true,
+  "upstreamSources": [{ "sourceId": "phuryn-pm-skills", "upstreamSkill": "brainstorm-ideas-existing / identify-assumptions-existing / prioritize-features / opportunity-solution-tree", "commit": "18468a95b427e70e258b51389796367c6f684e7d", "usage": ["existing-content ideation", "assumption mapping", "candidate prioritization", "outcome-opportunity-solution structure"] }],
+  "projectSpecificAdditions": ["任务规模分级", "内容工作定义", "六项硬测试", "新增预算", "选项因果合同", "璃落工作流边界", "最终表达顺序"],
+  "excludedUpstreamRules": ["Claude 命令与插件", "产品指标和市场术语", "上游实验流程", "自动写入、自动提交和外部脚本执行"],
+  "lastReviewedAt": "2026-07-25"
+}

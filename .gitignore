@@ -17,6 +17,7 @@ dist-ssr
 *.local
 external-knowledge/source-sync.local.json
 external-knowledge/zhihu-cookie.local
+external-knowledge/tools/
 external-knowledge/staging/
 /docs.zip
 /README.zip
@@ -28,6 +29,7 @@ s.trim()).filter(Boolean).map(Number)
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
+!.vscode/settings.json
 .idea
 .DS_Store
 *.suo

@@ -2,7 +2,7 @@
   "domains": {
     "assets": {
       "enabled": true,
-      "entryCount": 691,
+      "entryCount": 694,
       "outputs": [
         "assets/runtime/assets-001.json",
         "assets/runtime/assets-002.json",
@@ -20,7 +20,7 @@
     },
     "docs": {
       "enabled": true,
-      "entryCount": 281,
+      "entryCount": 286,
       "outputs": [
         "docs/documents-001.json",
         "docs/documents-002.json"

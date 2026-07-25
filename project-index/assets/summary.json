@@ -1,7 +1,7 @@
 {
   "byType": {
     "jpeg": 2,
-    "jpg": 244,
+    "jpg": 247,
     "jsx": 2,
     "md": 1,
     "mp3": 5,
@@ -11,6 +11,6 @@
     "unknown": 1,
     "webp": 1
   },
-  "entryCount": 691,
-  "totalBytes": 546498617
+  "entryCount": 694,
+  "totalBytes": 549301176
 }

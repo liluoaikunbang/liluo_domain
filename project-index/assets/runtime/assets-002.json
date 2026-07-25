@@ -1,6 +1,45 @@
 [
   {
     "assetType": "jpg",
+    "id": "src/assets/game/mode/缩小玩法之一.jpg",
+    "indexVersion": 1,
+    "size": 861857,
+    "sourceHash": "4fdd753c14a260ecfba4d88ab65bba3719387ebb456fba3146e7401210072d09",
+    "sourcePath": "src/assets/game/mode/缩小玩法之一.jpg",
+    "status": "runtime",
+    "summary": "缩小玩法之一.jpg",
+    "summarySource": "title-only",
+    "title": "缩小玩法之一.jpg",
+    "type": "asset"
+  },
+  {
+    "assetType": "jpg",
+    "id": "src/assets/game/mode/淘宝店铺.jpg",
+    "indexVersion": 1,
+    "size": 1655781,
+    "sourceHash": "aadb1170bf4f43d74eb80f17036551185af3111442c0a6ed8b0cab8d42cc018d",
+    "sourcePath": "src/assets/game/mode/淘宝店铺.jpg",
+    "status": "runtime",
+    "summary": "淘宝店铺.jpg",
+    "summarySource": "title-only",
+    "title": "淘宝店铺.jpg",
+    "type": "asset"
+  },
+  {
+    "assetType": "jpg",
+    "id": "src/assets/game/mode/校园-鞋带绑在桌子上.jpg",
+    "indexVersion": 1,
+    "size": 1099343,
+    "sourceHash": "3c1489a97a4cdeccf00a26cbe68ea4d8e0d7437ca02a6b67c5a5d0b2da371fe1",
+    "sourcePath": "src/assets/game/mode/校园-鞋带绑在桌子上.jpg",
+    "status": "runtime",
+    "summary": "校园-鞋带绑在桌子上.jpg",
+    "summarySource": "title-only",
+    "title": "校园-鞋带绑在桌子上.jpg",
+    "type": "asset"
+  },
+  {
+    "assetType": "jpg",
     "id": "src/assets/game/mode/婴儿化拘束，无指手套，脚套，奶嘴口塞，纸尿布等.jpg",
     "indexVersion": 1,
     "size": 357329,
@@ -3208,45 +3247,6 @@
     "summary": "cage.png",
     "summarySource": "title-only",
     "title": "cage.png",
-    "type": "asset"
-  },
-  {
-    "assetType": "png",
-    "id": "src/assets/game/states/gag.png",
-    "indexVersion": 1,
-    "size": 63882,
-    "sourceHash": "3f960ca2fa9fb2a9206a60601972ef74439de5588397905ea6288dafe043adbc",
-    "sourcePath": "src/assets/game/states/gag.png",
-    "status": "runtime",
-    "summary": "gag.png",
-    "summarySource": "title-only",
-    "title": "gag.png",
-    "type": "asset"
-  },
-  {
-    "assetType": "png",
-    "id": "src/assets/game/states/no_shoes.png",
-    "indexVersion": 1,
-    "size": 181609,
-    "sourceHash": "6f44019dd11819b2f0bcf7bc9b7c16676f6ebfb44777bb31f208a0698fcee828",
-    "sourcePath": "src/assets/game/states/no_shoes.png",
-    "status": "runtime",
-    "summary": "no_shoes.png",
-    "summarySource": "title-only",
-    "title": "no_shoes.png",
-    "type": "asset"
-  },
-  {
-    "assetType": "png",
-    "id": "src/assets/game/states/tie_arm.png",
-    "indexVersion": 1,
-    "size": 440624,
-    "sourceHash": "3ee718db2260bc49500e2515d5de47a0ed4c19d50158e73d5b5e4df3e137843e",
-    "sourcePath": "src/assets/game/states/tie_arm.png",
-    "status": "runtime",
-    "summary": "tie_arm.png",
-    "summarySource": "title-only",
-    "title": "tie_arm.png",
     "type": "asset"
   }
 ]

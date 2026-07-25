@@ -1,5 +1,11 @@
 export const updateRecords = Object.freeze([
     {
+        "id":  "153",
+        "date":  "2026-07-25",
+        "title":  "效用导向灵感与细节构思系统",
+        "summary":  "引入受控上游方法与璃落薄适配层，以六项硬测试筛选故事、互动和玩法候选，允许不新增。"
+    },
+    {
         "id":  "152",
         "date":  "2026-07-25",
         "title":  "项目能力、缺口与行动导航系统",
@@ -15,7 +21,7 @@ export const updateRecords = Object.freeze([
         "id":  "150",
         "date":  "2026-07-23",
         "title":  "Codex Hooks 与自动质量门禁系统",
-        "summary":  "建立 Codex 生命周期 Hooks、按改动范围去重的统一门禁、本地 pre-push 与 Windows GitHub Actions CI；工作流治理与命令授权校验按实际改动分开触发。"
+        "summary":  "保留非阻塞的工具调用前策略 Hook；质量门禁仅显式运行或在本地 pre-push、GitHub Actions 执行，避免会话收尾阻塞。"
     },
     {
         "id":  "149",
@@ -45,7 +51,7 @@ export const updateRecords = Object.freeze([
         "id":  "145",
         "date":  "2026-07-22",
         "title":  "外部 Skill 来源库、项目能力演化与自然表达系统",
-        "summary":  "建立非可信外部 Skill 来源、派生 RAG、安全更新与本地能力谱系；外部工具和 Skill 默认按月只读追踪、以临时分析等待用户批准。"
+        "summary":  "建立非可信外部 Skill 来源、派生 RAG、安全更新与本地能力谱系；外部工具副本不上传、可在用户确认后于本机重建，并默认按月只读追踪。"
     },
     {
         "id":  "144",

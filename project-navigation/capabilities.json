@@ -1960,6 +1960,31 @@
       "evalStatus": "not-applicable"
     },
     {
+      "id": "skill-brainstorm-ideas-existing",
+      "kind": "skill",
+      "title": "brainstorm-ideas-existing",
+      "domain": "general",
+      "status": "available",
+      "maturity": "standard",
+      "summary": "私有化的上游既有产品构思方法；只由璃落效用导向构思编排层调用，从既有事实生成少量候选，不单独处理用户的故事或玩法请求。",
+      "userCanSay": [],
+      "userMustProvide": [],
+      "aiCanDo": [],
+      "aiMustNotDo": [],
+      "skills": [
+        "brainstorm-ideas-existing"
+      ],
+      "agents": [],
+      "commands": [],
+      "outputs": [],
+      "sourceRefs": [
+        ".agents\\skills\\liluo-project\\brainstorm-ideas-existing\\SKILL.md"
+      ],
+      "userEffort": "low",
+      "lastVerified": null,
+      "evalStatus": "unknown"
+    },
+    {
       "id": "skill-code-review-and-quality",
       "kind": "skill",
       "title": "code-review-and-quality",
@@ -2054,6 +2079,31 @@
       "outputs": [],
       "sourceRefs": [
         ".agents\\skills\\frontend-ui-engineering\\SKILL.md"
+      ],
+      "userEffort": "low",
+      "lastVerified": null,
+      "evalStatus": "unknown"
+    },
+    {
+      "id": "skill-identify-assumptions-existing",
+      "kind": "skill",
+      "title": "identify-assumptions-existing",
+      "domain": "general",
+      "status": "available",
+      "maturity": "standard",
+      "summary": "私有化的上游既有内容假设识别方法；只由璃落效用导向构思编排层调用，用于检查候选价值、可理解性、世界契合和制作可行性。",
+      "userCanSay": [],
+      "userMustProvide": [],
+      "aiCanDo": [],
+      "aiMustNotDo": [],
+      "skills": [
+        "identify-assumptions-existing"
+      ],
+      "agents": [],
+      "commands": [],
+      "outputs": [],
+      "sourceRefs": [
+        ".agents\\skills\\liluo-project\\identify-assumptions-existing\\SKILL.md"
       ],
       "userEffort": "low",
       "lastVerified": null,
@@ -2560,6 +2610,31 @@
       "evalStatus": "unknown"
     },
     {
+      "id": "skill-liluo-purpose-driven-ideation",
+      "kind": "skill",
+      "title": "liluo-purpose-driven-ideation",
+      "domain": "project",
+      "status": "available",
+      "maturity": "standard",
+      "summary": "为璃落既有故事、事件、对话、地图互动、道具、CG、玩法与文案生成并筛选效用导向候选。用户要求想方案、补细节、设计选项、比较可行方案、找灵感或检查候选价值时使用；不用于已确定内容的机械改写、错别字、代码修复、迁移或 Schema 校验。",
+      "userCanSay": [],
+      "userMustProvide": [],
+      "aiCanDo": [],
+      "aiMustNotDo": [],
+      "skills": [
+        "liluo-purpose-driven-ideation"
+      ],
+      "agents": [],
+      "commands": [],
+      "outputs": [],
+      "sourceRefs": [
+        ".agents\\skills\\liluo-project\\liluo-purpose-driven-ideation\\SKILL.md"
+      ],
+      "userEffort": "low",
+      "lastVerified": null,
+      "evalStatus": "unknown"
+    },
+    {
       "id": "skill-liluo-save-data-migration",
       "kind": "skill",
       "title": "liluo-save-data-migration",
@@ -2760,6 +2835,31 @@
       "evalStatus": "unknown"
     },
     {
+      "id": "skill-opportunity-solution-tree",
+      "kind": "skill",
+      "title": "opportunity-solution-tree",
+      "domain": "general",
+      "status": "available",
+      "maturity": "standard",
+      "summary": "私有化的上游机会—方案树方法；只由璃落效用导向构思编排层用于大型构思，将目标、真实缺口与候选连接起来。",
+      "userCanSay": [],
+      "userMustProvide": [],
+      "aiCanDo": [],
+      "aiMustNotDo": [],
+      "skills": [
+        "opportunity-solution-tree"
+      ],
+      "agents": [],
+      "commands": [],
+      "outputs": [],
+      "sourceRefs": [
+        ".agents\\skills\\liluo-project\\opportunity-solution-tree\\SKILL.md"
+      ],
+      "userEffort": "low",
+      "lastVerified": null,
+      "evalStatus": "unknown"
+    },
+    {
       "id": "skill-planning-and-task-breakdown",
       "kind": "skill",
       "title": "planning-and-task-breakdown",
@@ -2779,6 +2879,31 @@
       "outputs": [],
       "sourceRefs": [
         ".agents\\skills\\planning-and-task-breakdown\\SKILL.md"
+      ],
+      "userEffort": "low",
+      "lastVerified": null,
+      "evalStatus": "unknown"
+    },
+    {
+      "id": "skill-prioritize-features",
+      "kind": "skill",
+      "title": "prioritize-features",
+      "domain": "general",
+      "status": "available",
+      "maturity": "standard",
+      "summary": "私有化的上游候选优先级方法；只由璃落效用导向构思编排层调用，比较价值、差异、风险和成本，不把新颖度当作独立优先级。",
+      "userCanSay": [],
+      "userMustProvide": [],
+      "aiCanDo": [],
+      "aiMustNotDo": [],
+      "skills": [
+        "prioritize-features"
+      ],
+      "agents": [],
+      "commands": [],
+      "outputs": [],
+      "sourceRefs": [
+        ".agents\\skills\\liluo-project\\prioritize-features\\SKILL.md"
       ],
       "userEffort": "low",
       "lastVerified": null,

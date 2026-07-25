@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "id": "zhihu-novel-ingest-missing-tool-002",
+  "title": "liluo-zhihu-novel-ingest 缺失本机工具时请求下载确认",
+  "targetType": "skill",
+  "target": "liluo-zhihu-novel-ingest",
+  "status": "active",
+  "polarity": "positive",
+  "mode": "routing-plan",
+  "costTier": "standard",
+  "userPrompt": "新电脑上没有知乎下载器。下载这个知乎回答并存入外部知识 RAG，作为后续灵感参考。",
+  "contextFiles": [],
+  "expected": {
+    "requiredSkills": [
+      "liluo-zhihu-novel-ingest"
+    ],
+    "allowedSkills": [],
+    "forbiddenSkills": [],
+    "requiredAgents": [],
+    "forbiddenAgents": [],
+    "requiredReadPaths": [],
+    "allowedReadPaths": [],
+    "requiredWritePaths": [],
+    "allowedWritePaths": [
+      "external-knowledge/tools/zhihu-download",
+      "external-knowledge/staging/zhihu-downloads",
+      "external-knowledge/sources/zhihu-novels",
+      "external-knowledge/catalog",
+      "external-knowledge/index",
+      "external-knowledge/reports"
+    ],
+    "forbiddenActions": [
+      "未经确认自动下载",
+      "写入正式剧情",
+      "自动提交",
+      "自动推送"
+    ],
+    "requiredValidationProfiles": [],
+    "forbiddenValidationProfiles": [
+      "all"
+    ],
+    "approvalExpectation": "required"
+  }
+}

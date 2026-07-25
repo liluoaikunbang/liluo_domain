@@ -152,6 +152,13 @@
       "status": "active"
     },
     {
+      "ruleId": "external-tool-local-clones",
+      "title": "外部工具副本本机可重建且不随项目上传",
+      "authority": "docs/系统说明/外部Skill来源库与项目能力演化系统.md",
+      "consumers": [".gitignore", ".agents/skills/liluo-project/liluo-zhihu-novel-ingest/SKILL.md", "docs/技能说明/liluo-zhihu-novel-ingest.md"],
+      "status": "active"
+    },
+    {
       "ruleId": "natural-expression-default-light",
       "title": "非技术读者文本默认 light 且技术文本不文学化",
       "authority": "docs/系统说明/璃落自然表达与文气塑形系统.md",
@@ -231,9 +238,17 @@
     },
     {
       "ruleId": "automatic-quality-gate-minimal-scope",
-      "title": "自动门禁按改动范围去重且 live eval 不进入普通 CI",
+      "title": "交互生命周期 Hook 保持输入级轻量，质量门禁只在显式或推送/CI入口执行",
       "authority": "docs/系统说明/Codex-Hooks与自动质量门禁系统.md",
-      "consumers": [".codex/hooks.json", "scripts/quality-gate/", ".githooks/pre-push", ".github/workflows/quality-gate.yml", "package.json", "docs/用户命令目录.md"],
+      "decision": "docs/设计记忆/架构决策/ADR-008-交互生命周期Hook与质量门禁分离.md",
+      "consumers": ["AGENTS.md", ".codex/hooks.json", "scripts/quality-gate/", ".githooks/pre-push", ".github/workflows/quality-gate.yml", "package.json", "docs/用户命令目录.md"],
+      "status": "active"
+    },
+    {
+      "ruleId": "purpose-driven-ideation",
+      "title": "构思候选必须以真实缺口、可观察因果和成本依据筛选，并允许不新增",
+      "authority": "docs/系统说明/效用导向灵感与细节构思系统.md",
+      "consumers": ["AGENTS.md", ".agents/skills/liluo-project/liluo-purpose-driven-ideation/SKILL.md", "docs/技能说明/liluo-purpose-driven-ideation.md", "docs/用户命令目录.md", "evals/registry.json"],
       "status": "active"
     }
   ]

@@ -7,7 +7,7 @@
       "title": "项目 Agents",
       "status": "current",
       "location": ".codex/agents/",
-      "checkedAt": "2026-07-25T07:02:26.355Z"
+      "checkedAt": "2026-07-25T08:16:35.422Z"
     },
     {
       "id": "source-gameplay-catalog",
@@ -15,7 +15,7 @@
       "title": "玩法目录",
       "status": "current",
       "location": "src/game/data/gameplay_outline/catalog.json",
-      "checkedAt": "2026-07-25T07:02:26.355Z"
+      "checkedAt": "2026-07-25T08:16:35.422Z"
     },
     {
       "id": "source-plot-catalog",
@@ -23,7 +23,7 @@
       "title": "情节库",
       "status": "current",
       "location": "src/game/data/plot_outline/catalog.json",
-      "checkedAt": "2026-07-25T07:02:26.355Z"
+      "checkedAt": "2026-07-25T08:16:35.422Z"
     },
     {
       "id": "source-skills",
@@ -31,7 +31,7 @@
       "title": "项目 Skills",
       "status": "current",
       "location": ".agents/skills/",
-      "checkedAt": "2026-07-25T07:02:26.355Z"
+      "checkedAt": "2026-07-25T08:16:35.422Z"
     },
     {
       "id": "source-story-missing-items",
@@ -39,7 +39,7 @@
       "title": "故事缺口派生索引",
       "status": "current",
       "location": "project-index/story/missing-items.json",
-      "checkedAt": "2026-07-25T07:02:26.355Z"
+      "checkedAt": "2026-07-25T08:16:35.422Z"
     }
   ]
 }

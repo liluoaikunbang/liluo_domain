@@ -8,8 +8,8 @@
 | gameplay | 108 | `gameplay/SUMMARY.md` |
 | game | 45 | `game/SUMMARY.md` |
 | code | 148 | `code/SUMMARY.md` |
-| assets | 691 | `assets/SUMMARY.md` |
-| docs | 281 | `docs/SUMMARY.md` |
+| assets | 694 | `assets/SUMMARY.md` |
+| docs | 286 | `docs/SUMMARY.md` |
 | graph | 161 | `graph/SUMMARY.md` |
 
 ## 最小读取建议

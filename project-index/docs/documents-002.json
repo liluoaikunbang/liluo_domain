@@ -1,5 +1,38 @@
 [
   {
+    "id": "docs/系统说明/璃落创作组人格与项目陪伴系统.md",
+    "indexVersion": 1,
+    "sourceHash": "28d921ecb667ee3f0fdb8e41eae79937047a3bfdf1a02337a61b01be9215a9f3",
+    "sourcePath": "docs/系统说明/璃落创作组人格与项目陪伴系统.md",
+    "subtype": "system",
+    "summary": "璃落创作组人格与项目陪伴系统",
+    "summarySource": "title-only",
+    "title": "璃落创作组人格与项目陪伴系统",
+    "type": "document"
+  },
+  {
+    "id": "docs/系统说明/璃落自然表达与文气塑形系统.md",
+    "indexVersion": 1,
+    "sourceHash": "aaae9bb0d8c249c63b0dc9e80d52cbde7ad54bd68124185293a29fe13734ee04",
+    "sourcePath": "docs/系统说明/璃落自然表达与文气塑形系统.md",
+    "subtype": "system",
+    "summary": "璃落自然表达与文气塑形系统",
+    "summarySource": "title-only",
+    "title": "璃落自然表达与文气塑形系统",
+    "type": "document"
+  },
+  {
+    "id": "docs/系统说明/情节条目系统.md",
+    "indexVersion": 1,
+    "sourceHash": "25112dde5b7d0fec99700d614cd47b3ffc91b1d53fd4c1e5f796687917ae9329",
+    "sourcePath": "docs/系统说明/情节条目系统.md",
+    "subtype": "system",
+    "summary": "情节条目系统",
+    "summarySource": "title-only",
+    "title": "情节条目系统",
+    "type": "document"
+  },
+  {
     "id": "docs/系统说明/世界与系列生产覆盖统计系统.md",
     "indexVersion": 1,
     "sourceHash": "ddfada609de7e343a6d05ea87cbb0ed68f2ca17a9f9f8d5f88c8533a69428865",
@@ -35,7 +68,7 @@
   {
     "id": "docs/系统说明/外部Skill来源库与项目能力演化系统.md",
     "indexVersion": 1,
-    "sourceHash": "cb6debf37409fd5abcad538624e0c2f11f1ba3fe821495276818147f0e11789f",
+    "sourceHash": "70e897d2ac35199d557129b0f96e5c7e8bd1d76bb533ef0044d99a7153b20e1f",
     "sourcePath": "docs/系统说明/外部Skill来源库与项目能力演化系统.md",
     "subtype": "system",
     "summary": "外部 Skill 来源库与项目能力演化系统",
@@ -88,6 +121,17 @@
     "type": "document"
   },
   {
+    "id": "docs/系统说明/效用导向灵感与细节构思系统.md",
+    "indexVersion": 1,
+    "sourceHash": "3c60b1a3118b9af074efb5523602c4c67a44f5bd6e7a5c72a45632191ff33537",
+    "sourcePath": "docs/系统说明/效用导向灵感与细节构思系统.md",
+    "subtype": "system",
+    "summary": "效用导向灵感与细节构思系统",
+    "summarySource": "title-only",
+    "title": "效用导向灵感与细节构思系统",
+    "type": "document"
+  },
+  {
     "id": "docs/系统说明/叙事路线模拟与逻辑验证系统.md",
     "indexVersion": 1,
     "sourceHash": "dd0b8f8cd14518992177e2d512229327c085f904de96b19c99f9bc3bddb68784",
@@ -123,7 +167,7 @@
   {
     "id": "docs/系统说明/Codex-Hooks与自动质量门禁系统.md",
     "indexVersion": 1,
-    "sourceHash": "8afca251678571819e9e2c57f7717593229ee70fcac6fbe17de85db919430607",
+    "sourceHash": "a7946fd6bdde2f69095a527168c3b1fda5513a5bf3af97a50f1350d7e2ae11ba",
     "sourcePath": "docs/系统说明/Codex-Hooks与自动质量门禁系统.md",
     "subtype": "system",
     "summary": "Codex Hooks 与自动质量门禁系统",
@@ -156,7 +200,7 @@
   {
     "id": "docs/系统说明/README.md",
     "indexVersion": 1,
-    "sourceHash": "ad47f5c39e5104bd7f5d46be8aa553609075cec79ffa6fba11e010dcdfc251b0",
+    "sourceHash": "c1cc00aaceb743e07ca47491c2a29e09e9a5980528f9452504a543d9e041193e",
     "sourcePath": "docs/系统说明/README.md",
     "subtype": "system",
     "summary": "系统说明",
@@ -178,7 +222,7 @@
   {
     "id": "docs/系统说明/Windows命令与UTF-8编码规范.md",
     "indexVersion": 1,
-    "sourceHash": "5aafe52e89b6e3d423a2360f0c0338486e58ce12df841cd4086741774f54038c",
+    "sourceHash": "2e262815daddceb5fa2f31229dea9475b674f4d5027bd1581ecc51f899f50bdc",
     "sourcePath": "docs/系统说明/Windows命令与UTF-8编码规范.md",
     "subtype": "system",
     "summary": "Windows 命令与 UTF-8 编码规范",
@@ -189,7 +233,7 @@
   {
     "id": "docs/项目概览.md",
     "indexVersion": 1,
-    "sourceHash": "67a531b31bbac89ce6aba0e58fa1301518ce9273c9e8fbd4c7b3e5f22f2c333d",
+    "sourceHash": "9649a8cce8f7d9711c66e4a1c988ca0c8c7289bc79205a26745b11baccc4215e",
     "sourcePath": "docs/项目概览.md",
     "subtype": "other",
     "summary": "项目概览",
@@ -200,7 +244,7 @@
   {
     "id": "docs/项目能力、缺口与行动总览.md",
     "indexVersion": 1,
-    "sourceHash": "ffc495ae0ed77adc3a1b79ae219810546db8412867356319daff243adb94a61e",
+    "sourceHash": "0d69f5a705c922bc69ce95f5b47c70f632126c05cf63ceecd53dc133060b3b94",
     "sourcePath": "docs/项目能力、缺口与行动总览.md",
     "subtype": "other",
     "summary": "项目能力、缺口与行动总览",
@@ -211,7 +255,7 @@
   {
     "id": "docs/用户命令目录.md",
     "indexVersion": 1,
-    "sourceHash": "b7010fe5f5a9c603b426e6ddf24cb49acd057ce77b057a252c3132f39495a57c",
+    "sourceHash": "11c7dc6c5e22f522d3704cee82668911ee10a6658219122018467209c0975ab1",
     "sourcePath": "docs/用户命令目录.md",
     "subtype": "other",
     "summary": "用户命令目录",
@@ -330,9 +374,20 @@
     "type": "document"
   },
   {
+    "id": "docs/CG待制作清单.md",
+    "indexVersion": 1,
+    "sourceHash": "81996a1dd752cbf2e9c5a9fc68bb4a480e556d2d76ec35afa9b4b6894f067f8b",
+    "sourcePath": "docs/CG待制作清单.md",
+    "subtype": "other",
+    "summary": "CG 待制作清单",
+    "summarySource": "title-only",
+    "title": "CG 待制作清单",
+    "type": "document"
+  },
+  {
     "id": "docs/README.md",
     "indexVersion": 1,
-    "sourceHash": "10f1547208967a84fe14b342b4bb95bd9f46a1c17d137ab6a91c9ab36ebc2a6b",
+    "sourceHash": "4b2122ad42f428f1eb16d4fb7a96bd82d2bed0a5fa7a3aece91f1279d3dd36cf",
     "sourcePath": "docs/README.md",
     "subtype": "other",
     "summary": "璃落的城堡文档入口",

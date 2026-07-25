@@ -1,6 +1,45 @@
 [
   {
     "assetType": "png",
+    "id": "src/assets/game/states/gag.png",
+    "indexVersion": 1,
+    "size": 63882,
+    "sourceHash": "3f960ca2fa9fb2a9206a60601972ef74439de5588397905ea6288dafe043adbc",
+    "sourcePath": "src/assets/game/states/gag.png",
+    "status": "runtime",
+    "summary": "gag.png",
+    "summarySource": "title-only",
+    "title": "gag.png",
+    "type": "asset"
+  },
+  {
+    "assetType": "png",
+    "id": "src/assets/game/states/no_shoes.png",
+    "indexVersion": 1,
+    "size": 181609,
+    "sourceHash": "6f44019dd11819b2f0bcf7bc9b7c16676f6ebfb44777bb31f208a0698fcee828",
+    "sourcePath": "src/assets/game/states/no_shoes.png",
+    "status": "runtime",
+    "summary": "no_shoes.png",
+    "summarySource": "title-only",
+    "title": "no_shoes.png",
+    "type": "asset"
+  },
+  {
+    "assetType": "png",
+    "id": "src/assets/game/states/tie_arm.png",
+    "indexVersion": 1,
+    "size": 440624,
+    "sourceHash": "3ee718db2260bc49500e2515d5de47a0ed4c19d50158e73d5b5e4df3e137843e",
+    "sourcePath": "src/assets/game/states/tie_arm.png",
+    "status": "runtime",
+    "summary": "tie_arm.png",
+    "summarySource": "title-only",
+    "title": "tie_arm.png",
+    "type": "asset"
+  },
+  {
+    "assetType": "png",
     "id": "src/assets/game/states/tie_leg.png",
     "indexVersion": 1,
     "size": 394370,

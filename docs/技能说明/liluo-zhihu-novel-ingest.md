@@ -7,6 +7,7 @@
 - 导入内容一律是外部虚构参考：`canonical: false`。
 - 不得把原文、近似改写、专有名称或完整事件顺序直接写入正式剧情。
 - Cookie 默认保存在 Git 忽略的 `external-knowledge/zhihu-cookie.local`，供本机下载器自动读取；不写入仓库、Skill、RAG、构建产物或日志。`--cookies` 与 `ZHIHU_COOKIE` 可作为单次覆盖。
+- `external-knowledge/tools/zhihu-download/` 是仅本机使用、Git 忽略的工具副本，不上传、不开子模块。新电脑首次使用时，若目录缺失，Codex 必须先说明需要下载该工具及其上游来源；用户确认后才由 Codex 下载到该路径。
 - zhihu-download 按统一外部来源规则处理：每 30 天到期后由下一次用户命令触发只读跟踪；发现更新才写入临时分析报告，正式更新必须等用户批准。
 - 来源按作者名归档到 `zhihu-novels/<作者>/`；不以日期建目录。归档日期写入 Markdown 的 `archivedOn` 元数据，无法识别作者时归入 `未署名/`。
 

@@ -148,7 +148,7 @@
       "path": "docs/系统说明/外部Skill来源库与项目能力演化系统.md",
       "type": "system-spec",
       "authorityFor": ["external-skill-isolation", "external-skill-sources", "external-skill-user-packs", "external-skill-rag", "external-skill-update", "external-tool-update-tracking", "local-skill-lineage"],
-      "consumers": ["AGENTS.md", "package.json", "scripts/external-skills/external-skills.mjs", "docs/外部来源/Skill来源目录.md", "docs/外部来源/Skill许可证与保存策略.md", "docs/用户命令目录.md"],
+      "consumers": ["AGENTS.md", ".gitignore", "package.json", "scripts/external-skills/external-skills.mjs", ".agents/skills/liluo-project/liluo-zhihu-novel-ingest/SKILL.md", "docs/技能说明/liluo-zhihu-novel-ingest.md", "docs/外部来源/Skill来源目录.md", "docs/外部来源/Skill许可证与保存策略.md", "docs/用户命令目录.md"],
       "indexable": true,
       "userFacing": true,
       "status": "active"
@@ -245,7 +245,7 @@
       "path": "docs/系统说明/Codex-Hooks与自动质量门禁系统.md",
       "type": "system-spec",
       "authorityFor": ["codex-hooks", "changed-quality-gate", "git-pre-push-gate", "github-actions-quality-gate"],
-      "consumers": [".codex/hooks.json", ".codex/hooks/", "scripts/quality-gate/", ".githooks/pre-push", ".github/workflows/quality-gate.yml", "package.json", "README.md", "docs/README.md", "docs/系统说明/README.md", "docs/用户命令目录.md"],
+      "consumers": [".codex/hooks.json", ".codex/hooks/", ".githooks/pre-push", ".github/workflows/quality-gate.yml", ".vscode/settings.json", "scripts/quality-gate/", ".gitignore", "package.json", "README.md", "docs/README.md", "docs/系统说明/README.md", "docs/用户命令目录.md"],
       "indexable": true,
       "userFacing": true,
       "status": "active"

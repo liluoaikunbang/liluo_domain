@@ -1630,7 +1630,7 @@
   {
     "id": "docs/功能更新/145-外部Skill来源库项目能力演化与自然表达系统.md",
     "indexVersion": 1,
-    "sourceHash": "ae5f586886d258cef61da37fc4c3cb187d7c7c6dc96b62c1840455abb33f2084",
+    "sourceHash": "81bc709421e7086a473f89522d8d0f4810ad54410fd0dba995ec32ca067518ae",
     "sourcePath": "docs/功能更新/145-外部Skill来源库项目能力演化与自然表达系统.md",
     "subtype": "update",
     "summary": "145-外部 Skill 来源库、项目能力演化与自然表达系统",
@@ -1685,7 +1685,7 @@
   {
     "id": "docs/功能更新/150-Codex-Hooks与自动质量门禁系统.md",
     "indexVersion": 1,
-    "sourceHash": "bf43409badd50c3dd421596c6d12d50b735b29a91bf126f64639f072de74894e",
+    "sourceHash": "4e55cd12066b8b4b034e9bfe7e57e34e26799f3adf925b5d0375a7fc96edb53e",
     "sourcePath": "docs/功能更新/150-Codex-Hooks与自动质量门禁系统.md",
     "subtype": "update",
     "summary": "150-Codex Hooks 与自动质量门禁系统",
@@ -1716,9 +1716,20 @@
     "type": "document"
   },
   {
+    "id": "docs/功能更新/153-效用导向灵感与细节构思系统.md",
+    "indexVersion": 1,
+    "sourceHash": "07ab353eee63d15a2887e35a1025f5f5660ea852837b202555f1f8d1fe886c7d",
+    "sourcePath": "docs/功能更新/153-效用导向灵感与细节构思系统.md",
+    "subtype": "update",
+    "summary": "153-效用导向灵感与细节构思系统",
+    "summarySource": "title-only",
+    "title": "153-效用导向灵感与细节构思系统",
+    "type": "document"
+  },
+  {
     "id": "docs/功能更新目录.md",
     "indexVersion": 1,
-    "sourceHash": "845d008c08b872e8c45a568c7de9a6fd78947ded2a450e52e55c2bc17de00b1e",
+    "sourceHash": "7d3004a5aa75a94891654e592ff764da1cba6bc25bce2c132cd55d5f2e58229d",
     "sourcePath": "docs/功能更新目录.md",
     "subtype": "other",
     "summary": "功能更新目录",
@@ -1969,6 +1980,17 @@
     "type": "document"
   },
   {
+    "id": "docs/技能说明/liluo-purpose-driven-ideation.md",
+    "indexVersion": 1,
+    "sourceHash": "7380f9001e4add855d9bd1befdf83a645e5be9ebcf5865a5bbad25e21836689e",
+    "sourcePath": "docs/技能说明/liluo-purpose-driven-ideation.md",
+    "subtype": "skill",
+    "summary": "liluo-purpose-driven-ideation",
+    "summarySource": "title-only",
+    "title": "liluo-purpose-driven-ideation",
+    "type": "document"
+  },
+  {
     "id": "docs/技能说明/liluo-save-data-migration.md",
     "indexVersion": 1,
     "sourceHash": "b2d025507894005ac824f6ab6a37e04092a647ab52bc401f798122299da38626",
@@ -2048,7 +2070,7 @@
   {
     "id": "docs/技能说明/liluo-zhihu-novel-ingest.md",
     "indexVersion": 1,
-    "sourceHash": "b514ed8cec4645c155b0e9c63070ec2f03d4b1d95cb705d8b3adc54ca0732bdb",
+    "sourceHash": "e3e52895bd7a703583ba565456e8f452dc38586f08e335058770c11a48dadfbb",
     "sourcePath": "docs/技能说明/liluo-zhihu-novel-ingest.md",
     "subtype": "skill",
     "summary": "liluo-zhihu-novel-ingest",
@@ -2233,9 +2255,20 @@
     "type": "document"
   },
   {
+    "id": "docs/设计记忆/架构决策/ADR-008-交互生命周期Hook与质量门禁分离.md",
+    "indexVersion": 1,
+    "sourceHash": "472ffdac627e262c2c7d1a3e9413cc4675a29a8655397388c4b7c90bf5fb669d",
+    "sourcePath": "docs/设计记忆/架构决策/ADR-008-交互生命周期Hook与质量门禁分离.md",
+    "subtype": "other",
+    "summary": "ADR-008：交互生命周期 Hook 与质量门禁分离",
+    "summarySource": "title-only",
+    "title": "ADR-008：交互生命周期 Hook 与质量门禁分离",
+    "type": "document"
+  },
+  {
     "id": "docs/设计记忆/架构决策/README.md",
     "indexVersion": 1,
-    "sourceHash": "814131811fdb8eed150e7b9a9dd25fd22f44078f22e6274835055d47fc9126a1",
+    "sourceHash": "3afc9268a77b2770bea457773aa8660bb4843d5c2e52ab27049c0acf4d6e70f5",
     "sourcePath": "docs/设计记忆/架构决策/README.md",
     "subtype": "other",
     "summary": "架构决策记录",
@@ -2653,7 +2686,7 @@
   {
     "id": "docs/系统说明/故事大纲条目模板.md",
     "indexVersion": 1,
-    "sourceHash": "5ea947b439485be12ce9e14d67a08bc2a355903a3d3800163014b682a4c24642",
+    "sourceHash": "de43c153b9913901910e0fbab8082c5e5ef9a9d70db76f971eee8c6c2915b599",
     "sourcePath": "docs/系统说明/故事大纲条目模板.md",
     "subtype": "system",
     "summary": "故事大纲条目模板",
@@ -2714,39 +2747,6 @@
     "summary": "离线发行与 GitHub Release 流程",
     "summarySource": "title-only",
     "title": "离线发行与 GitHub Release 流程",
-    "type": "document"
-  },
-  {
-    "id": "docs/系统说明/璃落创作组人格与项目陪伴系统.md",
-    "indexVersion": 1,
-    "sourceHash": "28d921ecb667ee3f0fdb8e41eae79937047a3bfdf1a02337a61b01be9215a9f3",
-    "sourcePath": "docs/系统说明/璃落创作组人格与项目陪伴系统.md",
-    "subtype": "system",
-    "summary": "璃落创作组人格与项目陪伴系统",
-    "summarySource": "title-only",
-    "title": "璃落创作组人格与项目陪伴系统",
-    "type": "document"
-  },
-  {
-    "id": "docs/系统说明/璃落自然表达与文气塑形系统.md",
-    "indexVersion": 1,
-    "sourceHash": "aaae9bb0d8c249c63b0dc9e80d52cbde7ad54bd68124185293a29fe13734ee04",
-    "sourcePath": "docs/系统说明/璃落自然表达与文气塑形系统.md",
-    "subtype": "system",
-    "summary": "璃落自然表达与文气塑形系统",
-    "summarySource": "title-only",
-    "title": "璃落自然表达与文气塑形系统",
-    "type": "document"
-  },
-  {
-    "id": "docs/系统说明/情节条目系统.md",
-    "indexVersion": 1,
-    "sourceHash": "25112dde5b7d0fec99700d614cd47b3ffc91b1d53fd4c1e5f796687917ae9329",
-    "sourcePath": "docs/系统说明/情节条目系统.md",
-    "subtype": "system",
-    "summary": "情节条目系统",
-    "summarySource": "title-only",
-    "title": "情节条目系统",
     "type": "document"
   }
 ]

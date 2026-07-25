@@ -19,6 +19,7 @@
 - [JSON Schema 数据契约系统](docs/系统说明/JSON-Schema数据契约系统.md)
 - [Skill / Agent 能力回归评测系统](docs/系统说明/Skill与Agent能力回归评测系统.md)
 - [Codex Hooks 与自动质量门禁系统](docs/系统说明/Codex-Hooks与自动质量门禁系统.md)
+- [效用导向灵感与细节构思系统](docs/系统说明/效用导向灵感与细节构思系统.md)
 - [外部虚构题材知识库](external-knowledge/INDEX.md)
 
 ## 技术栈与目录

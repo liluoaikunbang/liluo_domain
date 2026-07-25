@@ -139,6 +139,14 @@
     },
     {
       "type": "skill",
+      "name": "liluo-purpose-driven-ideation",
+      "path": ".agents/skills/liluo-project/liluo-purpose-driven-ideation/SKILL.md",
+      "status": "active",
+      "tier": "core",
+      "caseGlobs": ["evals/cases/skills/*.json"]
+    },
+    {
+      "type": "skill",
       "name": "liluo-offline-release-pipeline",
       "path": ".agents/skills/liluo-project/liluo-offline-release-pipeline/SKILL.md",
       "status": "active",
@@ -280,7 +288,8 @@
       "status": "active",
       "tier": "standard",
       "caseGlobs": [
-        "evals/cases/skills/zhihu-novel-ingest-positive-001.json"
+        "evals/cases/skills/zhihu-novel-ingest-positive-001.json",
+        "evals/cases/skills/zhihu-novel-ingest-missing-tool-002.json"
       ]
     },
     {

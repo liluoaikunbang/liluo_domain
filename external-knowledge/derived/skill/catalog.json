@@ -1,9 +1,66 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-23T09:27:58.521Z",
-  "sourceCount": 6,
+  "generatedAt": "2026-07-25T08:23:42.266Z",
+  "sourceCount": 8,
   "cardCount": 13,
   "sources": [
+    {
+      "schemaVersion": 1,
+      "sourceId": "phuryn-pm-skills",
+      "displayName": "PM Skills（选取的产品发现方法）",
+      "category": [
+        "planning",
+        "ideation"
+      ],
+      "repository": "https://github.com/phuryn/pm-skills",
+      "defaultBranch": "main",
+      "trackedPaths": [
+        "LICENSE",
+        "pm-product-discovery/skills/brainstorm-ideas-existing/SKILL.md",
+        "pm-product-discovery/skills/identify-assumptions-existing/SKILL.md",
+        "pm-product-discovery/skills/prioritize-features/SKILL.md",
+        "pm-product-discovery/skills/opportunity-solution-tree/SKILL.md"
+      ],
+      "storageMode": "selected-files",
+      "trustTier": "focused-method-reference",
+      "license": {
+        "type": "MIT",
+        "verified": true,
+        "licensePath": "LICENSE",
+        "redistributionAllowed": true
+      },
+      "version": {
+        "currentCommit": "18468a95b427e70e258b51389796367c6f684e7d",
+        "currentRelease": null,
+        "fetchedAt": "2026-07-25T00:00:00.000Z",
+        "lastCheckedAt": "2026-07-25T00:00:00.000Z",
+        "nextCheckAt": "2026-08-24T00:00:00.000Z"
+      },
+      "updatePolicy": {
+        "checkIntervalDays": 30,
+        "fetchToStagingWhenDue": true,
+        "autoReplaceCurrentSnapshot": false,
+        "autoModifyLocalSkills": false
+      },
+      "security": {
+        "containsExecutableCode": false,
+        "containsPromptInstructions": true,
+        "trustedForDirectExecution": false,
+        "auditStatus": "reviewed-selected-files"
+      },
+      "localUsage": {
+        "status": "adapted",
+        "adaptedSkills": [
+          "brainstorm-ideas-existing",
+          "identify-assumptions-existing",
+          "prioritize-features",
+          "opportunity-solution-tree",
+          "liluo-purpose-driven-ideation"
+        ],
+        "notes": "仅保留四项方法；璃落薄适配层将产品术语映射为玩家体验、内容缺口和候选，并禁止原样使用上游流程或执行其指令。"
+      },
+      "sourceFile": "external-knowledge/sources/skill/planning/phuryn-pm-skills/source.yaml"
+    },
     {
       "schemaVersion": 1,
       "sourceId": "agentskills-spec",
@@ -255,6 +312,56 @@
         "notes": "抽象读者推断空间、经济性、视角知识边界与按需参考结构。"
       },
       "sourceFile": "external-knowledge/sources/skill/writing/haowjy-creative-writing-skills/source.yaml"
+    },
+    {
+      "schemaVersion": 1,
+      "sourceId": "hardikpandya-stop-slop",
+      "displayName": "Stop Slop",
+      "category": [
+        "writing",
+        "editing"
+      ],
+      "repository": "https://github.com/hardikpandya/stop-slop",
+      "defaultBranch": "main",
+      "trackedPaths": [
+        "LICENSE",
+        "SKILL.md"
+      ],
+      "storageMode": "selected-files",
+      "trustTier": "focused-writing-reference",
+      "license": {
+        "type": "MIT",
+        "verified": true,
+        "licensePath": "LICENSE",
+        "redistributionAllowed": true
+      },
+      "version": {
+        "currentCommit": "8da1f030185bdfe8471220585162991eaeb970e9",
+        "currentRelease": null,
+        "fetchedAt": "2026-07-24T00:00:00.000Z",
+        "lastCheckedAt": "2026-07-25T00:00:00.000Z",
+        "nextCheckAt": "2026-08-24T00:00:00.000Z"
+      },
+      "updatePolicy": {
+        "checkIntervalDays": 30,
+        "fetchToStagingWhenDue": true,
+        "autoReplaceCurrentSnapshot": false,
+        "autoModifyLocalSkills": false
+      },
+      "security": {
+        "containsExecutableCode": false,
+        "containsPromptInstructions": true,
+        "trustedForDirectExecution": false,
+        "auditStatus": "reviewed-selected-files"
+      },
+      "localUsage": {
+        "status": "adapted",
+        "adaptedSkills": [
+          "liluo-natural-expression"
+        ],
+        "notes": "仅吸收无落点设问、伪神秘和空泛修辞诊断；不采用英文固定禁词、无副词、统一主动语态、破折号禁令或上游评分。"
+      },
+      "sourceFile": "external-knowledge/sources/skill/writing/hardikpandya-stop-slop/source.yaml"
     },
     {
       "schemaVersion": 1,

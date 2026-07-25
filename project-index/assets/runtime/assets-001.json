@@ -3225,6 +3225,19 @@
   },
   {
     "assetType": "jpg",
+    "id": "src/assets/game/mode/人桩.jpg",
+    "indexVersion": 1,
+    "size": 841359,
+    "sourceHash": "2429dbbb1c29c2774ac554304c1160e0ecb2ead231b4f221b655e686f5148664",
+    "sourcePath": "src/assets/game/mode/人桩.jpg",
+    "status": "runtime",
+    "summary": "人桩.jpg",
+    "summarySource": "title-only",
+    "title": "人桩.jpg",
+    "type": "asset"
+  },
+  {
+    "assetType": "jpg",
     "id": "src/assets/game/mode/柔韧课，腰部柔韧性练习.jpg",
     "indexVersion": 1,
     "size": 291427,
@@ -3234,19 +3247,6 @@
     "summary": "柔韧课，腰部柔韧性练习.jpg",
     "summarySource": "title-only",
     "title": "柔韧课，腰部柔韧性练习.jpg",
-    "type": "asset"
-  },
-  {
-    "assetType": "jpg",
-    "id": "src/assets/game/mode/淘宝店铺.jpg",
-    "indexVersion": 1,
-    "size": 1655781,
-    "sourceHash": "aadb1170bf4f43d74eb80f17036551185af3111442c0a6ed8b0cab8d42cc018d",
-    "sourcePath": "src/assets/game/mode/淘宝店铺.jpg",
-    "status": "runtime",
-    "summary": "淘宝店铺.jpg",
-    "summarySource": "title-only",
-    "title": "淘宝店铺.jpg",
     "type": "asset"
   }
 ]
