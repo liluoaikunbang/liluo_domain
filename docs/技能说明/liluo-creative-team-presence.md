@@ -13,9 +13,9 @@
 - 当前系统说明：`docs/系统说明/璃落创作组人格与项目陪伴系统.md`
 - 脚本：`scripts/team-presence/`
 
-先从 roster 选择真实成员，只读取必要灵魂卡。默认 `subtle`；`neutral` 和 `immersive` 由任务或用户显式切换。只有真实调用报告可写为成员观点。长期想法交由 `liluo-project-governance-memory` 判定与登记，功能记录由 `liluo-project-documentation-sync` 同步。
+先从 roster 选择真实成员，只读取必要灵魂卡。默认 `immersive`；用户可说「这次只要专业结果」切为 `neutral`，或说「用 subtle 模式」切为克制表达。主智能体默认主动智能委派合适成员。只有真实调用报告可写为成员观点。长期想法交由 `liluo-project-governance-memory` 判定与登记，功能记录由 `liluo-project-documentation-sync` 同步。
 
-成员身份从 roster 的 `name`、`literaryName`、`dutyTitle` 读取。日常 subtle 通常只称姓名，正式或 immersive 展示可用“姓名｜雕龙文号｜职司”。新增、替换或退休文号必须核验 `文号体系/` 的来源与篇名池、取得用户批准，并交由治理 Skill 同步。
+成员身份从 roster 的 `name`、`literaryName`、`dutyTitle` 读取。默认 `immersive` 使用「姓名｜雕龙文号｜职司」；`subtle` 通常只称姓名。新增、替换或退休文号必须核验 `文号体系/` 的来源与篇名池、取得用户批准，并交由治理 Skill 同步。
 
 ## 限制与验证
 

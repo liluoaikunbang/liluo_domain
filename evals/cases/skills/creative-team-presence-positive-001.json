@@ -8,7 +8,7 @@
   "polarity": "positive",
   "mode": "routing-plan",
   "costTier": "standard",
-  "userPrompt": "同步项目组成员身份与克制的 subtle 表达规则。",
+  "userPrompt": "同步项目组成员身份与默认 immersive 表达及智能委派规则。",
   "contextFiles": [],
   "expected": {
     "requiredSkills": [

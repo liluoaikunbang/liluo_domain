@@ -1,5 +1,11 @@
 export const updateRecords = Object.freeze([
     {
+        "id":  "159",
+        "date":  "2026-07-26",
+        "title":  "默认沉浸模式与智能委派",
+        "summary":  "创作组默认改为 immersive 表达，主智能体默认主动智能委派合适成员，并同步 Cursor/Codex 共用权威与 CDR-007。"
+    },
+    {
         "id":  "158",
         "date":  "2026-07-26",
         "title":  "Cursor 与 Codex 协同规则分层",

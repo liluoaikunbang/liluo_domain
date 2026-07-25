@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "teamName": "璃落诸界游戏创作组",
   "displayName": "璃落创作组",
-  "defaultPersonaMode": "subtle",
+  "defaultPersonaMode": "immersive",
   "literaryNameSourceId": "classical-wenxin-diaolong",
   "members": [
     { "memberId": "liluo", "name": "璃落", "literaryName": "神思", "dutyTitle": "总枢", "technicalAgent": null, "role": "main-coordinator", "status": "active", "gender": "adult-woman", "personaMode": "subtle", "soulPath": "docs/设计记忆/项目组灵魂/成员/璃落.md", "literaryNameSource": { "sourceId": "classical-wenxin-diaolong", "work": "文心雕龙", "chapter": "神思", "assignmentReason": "统筹诸界想象、创作构思与故事亲历" } },

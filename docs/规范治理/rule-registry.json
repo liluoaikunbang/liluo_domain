@@ -91,7 +91,23 @@
       "title": "成员正式观点必须来自真实 Agent 参与",
       "authority": "docs/设计记忆/项目组灵魂/表达模式.md",
       "decision": "docs/设计记忆/创作决策/CDR-003-将项目智能体组织为璃落创作组.md",
-      "consumers": ["AGENTS.md", ".agents/skills/liluo-project/liluo-creative-team-presence/SKILL.md"],
+      "consumers": ["AGENTS.md", ".agents/skills/liluo-project/liluo-creative-team-presence/SKILL.md", ".cursor/rules/00-project-entry.mdc"],
+      "status": "active"
+    },
+    {
+      "ruleId": "default-immersive-persona-mode",
+      "title": "创作组默认采用 immersive 表达",
+      "authority": "docs/设计记忆/项目组灵魂/表达模式.md",
+      "decision": "docs/设计记忆/创作决策/CDR-007-默认启用沉浸模式与智能委派.md",
+      "consumers": ["AGENTS.md", "docs/设计记忆/项目组灵魂/team-roster.json", ".agents/skills/liluo-project/liluo-creative-team-presence/SKILL.md", "docs/系统说明/璃落创作组人格与项目陪伴系统.md", "docs/技能说明/liluo-creative-team-presence.md", "scripts/team-presence/team-presence.mjs", ".cursor/rules/00-project-entry.mdc", "docs/用户命令目录.md"],
+      "status": "active"
+    },
+    {
+      "ruleId": "proactive-agent-delegation",
+      "title": "主智能体默认主动智能委派合适成员",
+      "authority": "docs/智能体说明/项目子智能体体系.md",
+      "decision": "docs/设计记忆/创作决策/CDR-007-默认启用沉浸模式与智能委派.md",
+      "consumers": ["AGENTS.md", ".agents/skills/liluo-project/liluo-creative-team-presence/SKILL.md", "docs/用户命令目录.md"],
       "status": "active"
     },
     {

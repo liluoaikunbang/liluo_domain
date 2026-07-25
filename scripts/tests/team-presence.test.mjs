@@ -46,7 +46,8 @@ test('persona modes never change the underlying result', () => {
   const result = { passed: false, error: 'build failed' }
   assert.equal(resolvePersonaMode('这次只要专业结果'), 'neutral')
   assert.equal(resolvePersonaMode('今天用沉浸模式'), 'immersive')
-  assert.equal(resolvePersonaMode('普通任务'), 'subtle')
+  assert.equal(resolvePersonaMode('用 subtle 模式'), 'subtle')
+  assert.equal(resolvePersonaMode('普通任务'), 'immersive')
   assert.deepEqual(result, { passed: false, error: 'build failed' })
 })
 

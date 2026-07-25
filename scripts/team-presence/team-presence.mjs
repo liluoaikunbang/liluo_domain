@@ -7,8 +7,20 @@ const rosterPath = path.join(root, 'docs/设计记忆/项目组灵魂/team-roste
 const statePath = path.join(root, '.local/team-presence-state.json')
 const sourceStatuses = new Set(['user-confirmed', 'user-implied-persistent', 'agent-proposed', 'team-discussed', 'pending-approval', 'superseded'])
 
-export function resolvePersonaMode(request = '', fallback = 'subtle') {
+function readDefaultPersonaMode() {
+  try {
+    const roster = JSON.parse(fs.readFileSync(rosterPath, 'utf8'))
+    return roster.defaultPersonaMode === 'neutral' || roster.defaultPersonaMode === 'subtle' || roster.defaultPersonaMode === 'immersive'
+      ? roster.defaultPersonaMode
+      : 'immersive'
+  } catch {
+    return 'immersive'
+  }
+}
+
+export function resolvePersonaMode(request = '', fallback = readDefaultPersonaMode()) {
   if (/只要专业结果|neutral|不要人格|仅结果/.test(request)) return 'neutral'
+  if (/subtle|克制模式|克制表达/.test(request)) return 'subtle'
   if (/沉浸模式|immersive/.test(request)) return 'immersive'
   return fallback
 }
@@ -34,12 +46,12 @@ export function thoughtStatus({ source, approved = false } = {}) {
 }
 
 export function presenceFor(lastActivity, now = new Date(), reunionShown = false) {
-  if (!lastActivity) return { status: 'normal', daysSinceLastActivity: null, shouldShowPresence: false, recommendedMode: 'subtle', initialized: false }
+  if (!lastActivity) return { status: 'normal', daysSinceLastActivity: null, shouldShowPresence: false, recommendedMode: readDefaultPersonaMode(), initialized: false }
   const lastTime = new Date(lastActivity).getTime()
-  if (!Number.isFinite(lastTime)) return { status: 'normal', daysSinceLastActivity: null, shouldShowPresence: false, recommendedMode: 'subtle', initialized: false, error: 'invalid-last-activity' }
+  if (!Number.isFinite(lastTime)) return { status: 'normal', daysSinceLastActivity: null, shouldShowPresence: false, recommendedMode: readDefaultPersonaMode(), initialized: false, error: 'invalid-last-activity' }
   const days = Math.max(0, Math.floor((now.getTime() - lastTime) / 86400000))
   const status = days <= 7 ? 'normal' : days <= 30 ? 'returning' : days <= 90 ? 'reunion' : 'long-reunion'
-  return { status, daysSinceLastActivity: days, shouldShowPresence: status !== 'normal' && !reunionShown, recommendedMode: 'subtle', initialized: true }
+  return { status, daysSinceLastActivity: days, shouldShowPresence: status !== 'normal' && !reunionShown, recommendedMode: readDefaultPersonaMode(), initialized: true }
 }
 
 export function validateRoster(roster = JSON.parse(fs.readFileSync(rosterPath, 'utf8'))) {
