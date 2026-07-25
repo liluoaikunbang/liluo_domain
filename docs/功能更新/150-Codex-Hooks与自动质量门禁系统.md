@@ -3,17 +3,20 @@
 - 更新日期：2026-07-23
 - 更新日期：2026-07-24（拆分工作流治理与命令授权分类，避免无关 pre-push 校验二次启动 Codex）
 - 更新日期：2026-07-25（移除会阻塞会话收尾的 Stop Hook，质量门禁改为显式或推送前执行）
-- 当前摘要：保留 Codex 工具调用前策略 Hook、按改动范围去重的统一门禁、本地 pre-push 与 Windows GitHub Actions CI，并以 ERROR 阻断、WARNING 报告和双格式运行报告统一收口确定性验证。
+- 更新日期：2026-07-25（取消剩余 PreToolUse，项目 Hook 配置改为空，避免生命周期集成链阻塞工具调用）
+- 当前摘要：项目不注册 Codex 生命周期 Hook；按改动范围去重的统一门禁、本地 pre-push 与 Windows GitHub Actions CI 继续以 ERROR 阻断、WARNING 报告和双格式运行报告收口确定性验证，并要求异常耗时向用户闭环说明。
 
 ## 已实现
 
-初始实现曾新增仓库级 `UserPromptSubmit`、`PreToolUse` 和 `Stop` Hooks；现仅保留非阻塞的 `PreToolUse` 策略 Hook。新增 Git 改动分类、最小命令计划、跨平台命令执行与 JSON/Markdown 报告。质量门禁通过显式的 changed、prepush、ci 模式统一去重现有数据契约、能力静态评测、内容检查、测试、索引、素材审计与 Web 构建入口。
+初始实现曾新增仓库级 `UserPromptSubmit`、`PreToolUse` 和 `Stop` Hooks；现已全部取消，`.codex/hooks.json` 保持空配置。新增 Git 改动分类、最小命令计划、跨平台命令执行与 JSON/Markdown 报告。质量门禁通过显式的 changed、prepush、ci 模式统一去重现有数据契约、能力静态评测、内容检查、测试、索引、素材审计与 Web 构建入口。
 
 本地 `.githooks/pre-push` 只调用统一 prepush 门禁，GitHub Actions 在 `windows-latest`、Node 22 与 `npm ci` 后只调用统一 CI 入口。live Codex eval、浏览器回归、离线打包、Release、自动修复、自动提交和推送均未接入。
 
 ## 安全与失败边界
 
-工具 Hook 只拦截明确危险命令和受保护路径，不替代平台沙箱、项目批准规则或用户级策略。提示词扫描与 Stop 自动门禁均已移除，避免它们在对话提交或收尾阶段阻塞 Codex；需要完整检查时显式运行质量门禁，推送时由 pre-push 执行。
+项目不以生命周期 Hook 拦截危险命令或受保护路径，改由平台沙箱、项目批准规则和 `.codex/rules` 承担对应边界。提示词扫描、工具调用前策略和 Stop 自动门禁均已移除，避免它们在对话提交、工具调度或收尾阶段阻塞 Codex；需要完整检查时显式运行质量门禁，推送时由 pre-push 执行。
+
+复现显示，`git status --short` 与 `PreToolUse` 策略脚本本体均约 150 ms 内完成，但经 Codex 工具层返回偶发耗时约 48–50 秒；因此不再把脚本本体快等同于生命周期集成安全。后续发现工具或命令明显异常耗时，必须告知用户观察结果、核查范围和是否已解决。
 
 门禁自身异常按 ERROR 处理，WARNING 默认不阻断。运行报告进入被忽略的 `reports/quality-gate/`，不纳入版本控制。
 

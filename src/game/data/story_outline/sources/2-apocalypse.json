@@ -54,7 +54,7 @@
       ],
       "status": "大纲草稿",
       "parentKey": "world-2-silent-earth-dirge-red-line",
-      "order": 20
+      "order": 10
     },
     {
       "key": "world-2-silent-earth-dirge-eerie-apocalypse",
@@ -62,7 +62,7 @@
       "title": "异诡临界",
       "status": "主线任务",
       "parentKey": "world-2-silent-earth-dirge-omega",
-      "order": 20
+      "order": 10
     },
     {
       "key": "world-2-silent-earth-dirge-fog-city",
@@ -90,7 +90,7 @@
       "title": "天灾异像",
       "status": "主线任务",
       "parentKey": "world-2-silent-earth-dirge-fog-city",
-      "order": 30
+      "order": 10
     },
     {
       "key": "world-2-silent-earth-dirge-plague-ruined-city",
@@ -98,7 +98,7 @@
       "title": "疫病残城",
       "status": "主线任务",
       "parentKey": "world-2-silent-earth-dirge-disaster-anomaly",
-      "order": 40
+      "order": 10
     },
     {
       "key": "world-2-silent-earth-dirge-ecology-devouring-city",
@@ -106,7 +106,7 @@
       "title": "生态吞城",
       "status": "主线任务",
       "parentKey": "world-2-silent-earth-dirge-plague-ruined-city",
-      "order": 50
+      "order": 10
     },
     {
       "key": "world-2-silent-earth-dirge-beast-treading-land",
@@ -114,7 +114,7 @@
       "title": "异兽踏陆",
       "status": "主线任务",
       "parentKey": "world-2-silent-earth-dirge-ecology-devouring-city",
-      "order": 60
+      "order": 10
     },
     {
       "key": "world-2-silent-earth-dirge-insect-hive-border",
@@ -122,7 +122,7 @@
       "title": "虫巢边境",
       "status": "主线任务",
       "parentKey": "world-2-silent-earth-dirge-beast-treading-land",
-      "order": 70
+      "order": 10
     },
     {
       "key": "world-2-silent-earth-dirge-deep-sea-drifting-land",
@@ -130,7 +130,8 @@
       "title": "深海漂陆",
       "status": "主线任务",
       "parentKey": "world-2-silent-earth-dirge-insect-hive-border",
-      "order": 80
+      "order": 20,
+      "branchLayout": "side"
     },
     {
       "key": "world-2-silent-earth-dirge-eternal-winter-white-realm",
@@ -138,7 +139,7 @@
       "title": "永冬白境",
       "status": "主线任务",
       "parentKey": "world-2-silent-earth-dirge-deep-sea-drifting-land",
-      "order": 90
+      "order": 10
     },
     {
       "key": "world-2-silent-earth-dirge-lone-sand-sea",
@@ -146,15 +147,15 @@
       "title": "沙海孤途",
       "status": "主线任务",
       "parentKey": "world-2-silent-earth-dirge-eternal-winter-white-realm",
-      "order": 100
+      "order": 10
     },
     {
       "key": "world-2-silent-earth-dirge-mechanical-afterglow",
       "world": "2-寂土挽歌",
       "title": "机械余晖",
       "status": "主线任务",
-      "parentKey": "world-2-silent-earth-dirge-lone-sand-sea",
-      "order": 110
+      "parentKey": "world-2-silent-earth-dirge-insect-hive-border",
+      "order": 10
     },
     {
       "key": "world-2-silent-earth-dirge-ark-ghost-cage",
@@ -162,7 +163,7 @@
       "title": "方舟幽笼",
       "status": "主线任务",
       "parentKey": "world-2-silent-earth-dirge-mechanical-afterglow",
-      "order": 120
+      "order": 10
     },
     {
       "key": "world-2-silent-earth-dirge-wasteland-court",
@@ -170,7 +171,7 @@
       "title": "废土王庭",
       "status": "主线任务",
       "parentKey": "world-2-silent-earth-dirge-ark-ghost-cage",
-      "order": 130
+      "order": 10
     },
     {
       "key": "world-2-silent-earth-dirge-apocalypse-holy-judgment",
@@ -178,15 +179,15 @@
       "title": "末日圣裁",
       "status": "主线任务",
       "parentKey": "world-2-silent-earth-dirge-wasteland-court",
-      "order": 140
+      "order": 10
     },
     {
       "key": "world-2-silent-earth-dirge-dream-city-slumber",
       "world": "2-寂土挽歌",
       "title": "梦城沉眠",
       "status": "主线任务",
-      "parentKey": "world-2-silent-earth-dirge-apocalypse-holy-judgment",
-      "order": 150
+      "parentKey": "world-2-silent-earth-dirge-lone-sand-sea",
+      "order": 10
     },
     {
       "key": "world-2-silent-earth-dirge-looping-final-day",
@@ -194,7 +195,7 @@
       "title": "循时终日",
       "status": "主线任务",
       "parentKey": "world-2-silent-earth-dirge-dream-city-slumber",
-      "order": 160
+      "order": 10
     },
     {
       "key": "world-2-silent-earth-dirge-forgotten-river-gray-world",
@@ -202,15 +203,15 @@
       "title": "忘川灰世",
       "status": "主线任务",
       "parentKey": "world-2-silent-earth-dirge-looping-final-day",
-      "order": 170
+      "order": 10
     },
     {
       "key": "world-2-silent-earth-dirge-rift-disaster",
       "world": "2-寂土挽歌",
       "title": "裂界灾临",
       "status": "主线任务",
-      "parentKey": "world-2-silent-earth-dirge-forgotten-river-gray-world",
-      "order": 180
+      "parentKey": "world-2-silent-earth-dirge-apocalypse-holy-judgment",
+      "order": 10
     },
     {
       "key": "world-2-silent-earth-dirge-solo-smart-rv-trader",
@@ -219,7 +220,7 @@
       "summary": "末日主线最终结束后，璃落作为车上唯一的人类，驾驶全车智能房车与房车 AI 独自旅行；她穿行重建聚居地、末世遗址及裂界边境，到站后打开后门展开流动商铺，通过卖货、捎货与传递消息重新连接灾后的世界。",
       "status": "主线任务",
       "parentKey": "world-2-silent-earth-dirge-rift-disaster",
-      "order": 190
+      "order": 10
     }
   ]
 }

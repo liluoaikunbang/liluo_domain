@@ -152,21 +152,16 @@ test('explicit GitHub upload uses one target push without a remote preflight', a
   assert.match(approvalSystem, /不扩大为永久 Git 或网络 allow/)
 })
 
-test('project permission profile allows ordinary Skill and Agent edits without opening sensitive paths', async () => {
+test('project config leaves permission policy to the managed workspace context', async () => {
   const [config, agents, approvalSystem] = await Promise.all([
     readFile(path.join(root, '.codex', 'config.toml'), 'utf8'),
     readFile(path.join(root, 'AGENTS.md'), 'utf8'),
     readFile(path.join(root, 'docs', '系统说明', 'Codex命令授权治理系统.md'), 'utf8'),
   ])
 
-  assert.match(config, /default_permissions = "liluo-project-edit"/)
-  assert.match(config, /extends = ":workspace"/)
-  assert.match(config, /\[permissions\.liluo-project-edit\.filesystem\.":workspace_roots"\]/)
-  for (const directory of ['.github', '.githooks', '.agents', '.codex', 'docs', 'evals', 'planning', 'public', 'schemas', 'scripts', 'src']) {
-    assert.match(config, new RegExp(`"${directory.replace('.', '\\.') }" = "write"`), directory)
-  }
-  assert.doesNotMatch(config, /"\.git" = "write"/)
-  assert.match(config, /\[permissions\.liluo-project-edit\.network\]\s+enabled = false/)
+  assert.match(config, /^\[agents\]\s*$/m)
+  assert.doesNotMatch(config, /default_permissions/)
+  assert.doesNotMatch(config, /^\[permissions\./m)
   assert.match(agents, /项目 Skill、Agent、规则和配置均直接使用 `apply_patch`，不得再按文件或目录逐项询问/)
   assert.match(approvalSystem, /“Skill\/Agent\/规则\/配置文件”不是单独的审批类别/)
   assert.match(approvalSystem, /显式允许常用项目源目录/)

@@ -12,6 +12,138 @@
       "sourceRefs": ["璃落项目能力与行动导航基础设施包.zip"],
       "completionCriteria": ["导航命令可扫描、校验、生成和推荐", "用户行动页由注册表生成"],
       "nextAction": "完成首版治理与回归接入"
+    },
+    {
+      "id": "gap-silent-earth-history-timeline",
+      "title": "寂土挽歌正史时间线因果",
+      "domain": "story",
+      "origin": "user-confirmed",
+      "status": "open",
+      "priority": "high",
+      "description": "正史阶段已重构，灾变年份、阶段因果与终局解决方式尚未由原文确认。",
+      "sourceRefs": ["docs/系统说明/三世界主线阶段与灵感挂载系统.md"],
+      "completionCriteria": ["阶段之间的必要因果由用户确认并写入对应正式主线备忘"],
+      "nextAction": "选择相邻两个正史阶段，确认它们之间真正必须成立的状态变化。"
+    },
+    {
+      "id": "gap-silent-earth-loops-entry-rules",
+      "title": "寂土挽歌末日轮回入口与规则",
+      "domain": "story",
+      "origin": "user-confirmed",
+      "status": "open",
+      "priority": "high",
+      "description": "末日轮回已作为独立容器保留，进入、结算、携带与正史关系仍未确认。",
+      "sourceRefs": ["docs/系统说明/三世界主线阶段与灵感挂载系统.md"],
+      "completionCriteria": ["至少确认入口、完成后返回关系和可保留状态的边界"],
+      "nextAction": "决定一个轮回世界如何被璃落发现，而不预设其制造者。"
+    },
+    {
+      "id": "gap-silent-earth-anomaly-domains",
+      "title": "寂土挽歌异常灾域定位",
+      "domain": "story",
+      "origin": "user-confirmed",
+      "status": "open",
+      "priority": "medium",
+      "description": "异诡临界与诡雾迷城已脱离正史必经链，但与正史的开放时点和关系未定。",
+      "sourceRefs": ["src/game/data/story_outline/sources/2-apocalypse.json"],
+      "completionCriteria": ["确认异常灾域是正史局部异常、独立灾域还是轮回入口"],
+      "nextAction": "为异常灾域选择一项不涉及具体幕后原因的开放条件。"
+    },
+    {
+      "id": "gap-cursebound-trigger-event",
+      "title": "咒缚回响古咒触发事件",
+      "domain": "story",
+      "origin": "user-confirmed",
+      "status": "open",
+      "priority": "highest",
+      "description": "秘塔长歌是触发锚点，但施咒者、机关与第一次咒缚表现尚未确认。",
+      "sourceRefs": ["src/game/data/story_outline/sources/4-fantasy.json"],
+      "completionCriteria": ["确认触发条件、首次可见后果与不应提前解释的部分"],
+      "nextAction": "先确定璃落在秘塔中触碰的风险类型，不决定古咒来源。"
+    },
+    {
+      "id": "gap-cursebound-stage-rules",
+      "title": "咒缚回响诅咒阶段规则",
+      "domain": "story",
+      "origin": "user-confirmed",
+      "status": "open",
+      "priority": "high",
+      "description": "需要把未中咒至自主掌控的阶段转化为可供新灵感挂载的规则，避免机械按章节加深。",
+      "sourceRefs": ["docs/系统说明/三世界主线阶段与灵感挂载系统.md"],
+      "completionCriteria": ["每个阶段有触发、可见影响和可逆性边界"],
+      "nextAction": "从初次显现与可控发作两阶段开始确认。"
+    },
+    {
+      "id": "gap-cursebound-false-cure-anchor",
+      "title": "咒缚回响错误治疗节点",
+      "domain": "story",
+      "origin": "user-confirmed",
+      "status": "open",
+      "priority": "high",
+      "description": "女巫沼泽、龙眠山脉、骸骨王座和熔辉机城都是候选，尚未选定不可逆的中期转折承载节点。",
+      "sourceRefs": ["src/game/data/story_outline/sources/4-fantasy.json"],
+      "completionCriteria": ["选择或否决一个候选，并记录治疗如何只改变咒缚表达"],
+      "nextAction": "比较四个候选与各自原文主题的适配度。"
+    },
+    {
+      "id": "gap-cursebound-region-functions",
+      "title": "咒缚回响地区卷主线功能",
+      "domain": "story",
+      "origin": "user-confirmed",
+      "status": "open",
+      "priority": "medium",
+      "description": "带咒远行已改为区域池；各卷是否提供知识、压制、盟友或受限玩法仍需逐项依据原文确认。",
+      "sourceRefs": ["src/game/data/story_outline/sources/4-fantasy.json"],
+      "completionCriteria": ["至少完成一个地区卷的功能确认且不覆盖其原始灵感"],
+      "nextAction": "从熔辉机城或女巫沼泽选择一个进行最小功能核验。"
+    },
+    {
+      "id": "gap-star-weaving-long-range-travel",
+      "title": "星宇织梦长期航行方式",
+      "domain": "story",
+      "origin": "user-confirmed",
+      "status": "open",
+      "priority": "highest",
+      "description": "逐星远航已成为航程锚点，但固定星舰、长期搭乘或其他方式尚未确认。",
+      "sourceRefs": ["src/game/data/story_outline/sources/5-science.json"],
+      "completionCriteria": ["确认长期航行方式与返回据点的最小事实"],
+      "nextAction": "确定璃落获得的是何种持续跨星区行动资格。"
+    },
+    {
+      "id": "gap-star-weaving-first-frontier-anchor",
+      "title": "星宇织梦首个边境锚点",
+      "domain": "story",
+      "origin": "user-confirmed",
+      "status": "open",
+      "priority": "high",
+      "description": "熔铠战星与边境殖民星均为候选，尚未选择首次正式进入边境星区的锚点。",
+      "sourceRefs": ["src/game/data/story_outline/sources/5-science.json"],
+      "completionCriteria": ["确认或否决一个候选，保留另一个完整区域篇地位"],
+      "nextAction": "比较两个候选如何改变璃落的航程状态。"
+    },
+    {
+      "id": "gap-star-weaving-voyage-state-returns",
+      "title": "星宇织梦航程状态与返回地点",
+      "domain": "story",
+      "origin": "user-confirmed",
+      "status": "open",
+      "priority": "medium",
+      "description": "独立篇章可留下联系人、权限、航路或返回地点，但具体长期变化尚不能由结构推断。",
+      "sourceRefs": ["docs/系统说明/三世界主线阶段与灵感挂载系统.md"],
+      "completionCriteria": ["为一个已知星域篇确认一个真实长期变化"],
+      "nextAction": "选择一个独立篇章，确认其完成后允许璃落带走的关系或权限。"
+    },
+    {
+      "id": "gap-mainline-unfiled-inspiration-cleanup",
+      "title": "待归档灵感清理",
+      "domain": "story",
+      "origin": "user-confirmed",
+      "status": "open",
+      "priority": "medium",
+      "description": "新灵感可先挂阶段；需要定期审查哪些已获得足够证据进入具体节点，哪些仍应保持候选。",
+      "sourceRefs": ["src/game/data/story_outline/mainline-restructure-preservation.json"],
+      "completionCriteria": ["每次审查都记录已分配、保留候选和仍缺的信息"],
+      "nextAction": "从一个新灵感开始，仅决定阶段容器与待确认信息。"
     }
   ]
 }

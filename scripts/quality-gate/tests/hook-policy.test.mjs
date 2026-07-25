@@ -108,8 +108,7 @@ test('hook input reader handles legal and malformed stdin without throwing', asy
   assert.equal(empty.ok, false)
 })
 
-test('hooks.json retains only the non-blocking PreToolUse policy hooks', () => {
+test('hooks.json does not register project lifecycle hooks', () => {
   const config = JSON.parse(fs.readFileSync(new URL('../../../.codex/hooks.json', import.meta.url), 'utf8'))
-  assert.deepEqual(Object.keys(config.hooks), ['PreToolUse'])
-  assert.deepEqual(config.hooks.PreToolUse.map((entry) => entry.matcher), ['Bash', 'apply_patch', 'Edit', 'Write'])
+  assert.deepEqual(config.hooks, {})
 })

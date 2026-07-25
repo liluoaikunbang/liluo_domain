@@ -1685,7 +1685,7 @@
   {
     "id": "docs/功能更新/150-Codex-Hooks与自动质量门禁系统.md",
     "indexVersion": 1,
-    "sourceHash": "4e55cd12066b8b4b034e9bfe7e57e34e26799f3adf925b5d0375a7fc96edb53e",
+    "sourceHash": "99a6f7a56a4f486d58809e66a21da94b0c8bd4d8f17b178d4336e2ceea9d0830",
     "sourcePath": "docs/功能更新/150-Codex-Hooks与自动质量门禁系统.md",
     "subtype": "update",
     "summary": "150-Codex Hooks 与自动质量门禁系统",
@@ -1727,9 +1727,53 @@
     "type": "document"
   },
   {
+    "id": "docs/功能更新/154-三世界主线阶段重构.md",
+    "indexVersion": 1,
+    "sourceHash": "2480b1790d986ecdc973a6467c4dd843fdb08602fdd3c3944d03762f7dac5071",
+    "sourcePath": "docs/功能更新/154-三世界主线阶段重构.md",
+    "subtype": "update",
+    "summary": "154-三世界主线阶段重构",
+    "summarySource": "title-only",
+    "title": "154-三世界主线阶段重构",
+    "type": "document"
+  },
+  {
+    "id": "docs/功能更新/155-Agent上下文分层与最小任务包.md",
+    "indexVersion": 1,
+    "sourceHash": "a968e3f2345db494c1eb4b8529c4404d00c8912c49bccc8ded428bc9f526d52a",
+    "sourcePath": "docs/功能更新/155-Agent上下文分层与最小任务包.md",
+    "subtype": "update",
+    "summary": "155-Agent 上下文分层与最小任务包",
+    "summarySource": "title-only",
+    "title": "155-Agent 上下文分层与最小任务包",
+    "type": "document"
+  },
+  {
+    "id": "docs/功能更新/156-Codex会话提交异常持续记录.md",
+    "indexVersion": 1,
+    "sourceHash": "fdee8fd00b3ea872d3a82557013deda4a663193ce31ac04a72d5c3b4b40711d7",
+    "sourcePath": "docs/功能更新/156-Codex会话提交异常持续记录.md",
+    "subtype": "update",
+    "summary": "156-Codex 会话提交异常持续记录",
+    "summarySource": "title-only",
+    "title": "156-Codex 会话提交异常持续记录",
+    "type": "document"
+  },
+  {
+    "id": "docs/功能更新/157-文档职责导航与问题归档.md",
+    "indexVersion": 1,
+    "sourceHash": "4699a079bbc48f7fa30bcf105677ac5e5d12a800b85e7564ec43b91188d4f805",
+    "sourcePath": "docs/功能更新/157-文档职责导航与问题归档.md",
+    "subtype": "update",
+    "summary": "157-文档职责导航与问题归档",
+    "summarySource": "title-only",
+    "title": "157-文档职责导航与问题归档",
+    "type": "document"
+  },
+  {
     "id": "docs/功能更新目录.md",
     "indexVersion": 1,
-    "sourceHash": "7d3004a5aa75a94891654e592ff764da1cba6bc25bce2c132cd55d5f2e58229d",
+    "sourceHash": "7309826ab300259be6bc200c066d271d15123ebdcbd65ea7133ca6e66d10947f",
     "sourcePath": "docs/功能更新目录.md",
     "subtype": "other",
     "summary": "功能更新目录",
@@ -2257,7 +2301,7 @@
   {
     "id": "docs/设计记忆/架构决策/ADR-008-交互生命周期Hook与质量门禁分离.md",
     "indexVersion": 1,
-    "sourceHash": "472ffdac627e262c2c7d1a3e9413cc4675a29a8655397388c4b7c90bf5fb669d",
+    "sourceHash": "f652a2c7a77bd61b7b5fed69286e0b2bd3969575f50839d373bdaed6a79d9310",
     "sourcePath": "docs/设计记忆/架构决策/ADR-008-交互生命周期Hook与质量门禁分离.md",
     "subtype": "other",
     "summary": "ADR-008：交互生命周期 Hook 与质量门禁分离",
@@ -2266,9 +2310,20 @@
     "type": "document"
   },
   {
+    "id": "docs/设计记忆/架构决策/ADR-009-取消项目级Codex生命周期Hook.md",
+    "indexVersion": 1,
+    "sourceHash": "0ea15789f38ee0f2a7a9111222f49e8d47e87882210053d29fd703166708e3e1",
+    "sourcePath": "docs/设计记忆/架构决策/ADR-009-取消项目级Codex生命周期Hook.md",
+    "subtype": "other",
+    "summary": "ADR-009：取消项目级 Codex 生命周期 Hook",
+    "summarySource": "title-only",
+    "title": "ADR-009：取消项目级 Codex 生命周期 Hook",
+    "type": "document"
+  },
+  {
     "id": "docs/设计记忆/架构决策/README.md",
     "indexVersion": 1,
-    "sourceHash": "3afc9268a77b2770bea457773aa8660bb4843d5c2e52ab27049c0acf4d6e70f5",
+    "sourceHash": "f9004fead885305a1971c21235e3f4c0ac76fa29e16637d065bf1b2802358639",
     "sourcePath": "docs/设计记忆/架构决策/README.md",
     "subtype": "other",
     "summary": "架构决策记录",
@@ -2565,7 +2620,7 @@
   {
     "id": "docs/我现在可以做什么.md",
     "indexVersion": 1,
-    "sourceHash": "808ae9c3dcfc19d95db9b14e4eab18fb78d84301a4468aab8146ec284574f31a",
+    "sourceHash": "93e356b6883134e78dd95c72dee5f2d1776d43b7d26ce5bbfd03ca90de07d755",
     "sourcePath": "docs/我现在可以做什么.md",
     "subtype": "other",
     "summary": "我现在可以做什么",
@@ -2692,61 +2747,6 @@
     "summary": "故事大纲条目模板",
     "summarySource": "title-only",
     "title": "故事大纲条目模板",
-    "type": "document"
-  },
-  {
-    "id": "docs/系统说明/故事缺口发现与灵感补全系统.md",
-    "indexVersion": 1,
-    "sourceHash": "9b20471fd2b926b8768fa825184e537410deddbff5bac77bd2db06215627a20c",
-    "sourcePath": "docs/系统说明/故事缺口发现与灵感补全系统.md",
-    "subtype": "system",
-    "summary": "故事缺口发现与灵感补全系统",
-    "summarySource": "title-only",
-    "title": "故事缺口发现与灵感补全系统",
-    "type": "document"
-  },
-  {
-    "id": "docs/系统说明/互动小说副本.md",
-    "indexVersion": 1,
-    "sourceHash": "8b3762dbee06377909ae57f8fc755398d018e0481373bcd3356262fdd0e52eb5",
-    "sourcePath": "docs/系统说明/互动小说副本.md",
-    "subtype": "system",
-    "summary": "互动小说副本",
-    "summarySource": "title-only",
-    "title": "互动小说副本",
-    "type": "document"
-  },
-  {
-    "id": "docs/系统说明/角色成长与关系长期记忆系统.md",
-    "indexVersion": 1,
-    "sourceHash": "1e64ef8e0a9444baa245138ec6b51b01c83a76e6bca833504f2e518720ebde7c",
-    "sourcePath": "docs/系统说明/角色成长与关系长期记忆系统.md",
-    "subtype": "system",
-    "summary": "角色成长与关系长期记忆系统",
-    "summarySource": "title-only",
-    "title": "角色成长与关系长期记忆系统",
-    "type": "document"
-  },
-  {
-    "id": "docs/系统说明/角色外观与运行时状态.md",
-    "indexVersion": 1,
-    "sourceHash": "3f8c31612e5162e2a7607612e191d2f54716cb1f3501ef28bf28b3524151ba5d",
-    "sourcePath": "docs/系统说明/角色外观与运行时状态.md",
-    "subtype": "system",
-    "summary": "角色外观与运行时状态",
-    "summarySource": "title-only",
-    "title": "角色外观与运行时状态",
-    "type": "document"
-  },
-  {
-    "id": "docs/系统说明/离线发行与GitHub-Release流程.md",
-    "indexVersion": 1,
-    "sourceHash": "c04ec31d7b2d6b660fb20944a3f0933331db6d18c08272a4dacd35c04ca65646",
-    "sourcePath": "docs/系统说明/离线发行与GitHub-Release流程.md",
-    "subtype": "system",
-    "summary": "离线发行与 GitHub Release 流程",
-    "summarySource": "title-only",
-    "title": "离线发行与 GitHub Release 流程",
     "type": "document"
   }
 ]

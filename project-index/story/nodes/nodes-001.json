@@ -1970,7 +1970,7 @@
     "series": "2-apocalypse",
     "side": false,
     "sourceHashes": {
-      "json": "554d4ba1120898e4a7114ae2c7340d842d7be93b1fbfe72a9d0fd695d5278297"
+      "json": "93fae676403758f164e0e6f7e56a8312a9cd844e3d0777b32241707b938f01dc"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/2-apocalypse.json",
     "summary": "丧尸、诡异、极端天气……这个世界似乎陷入了无尽的启示录循环。",
@@ -1981,7 +1981,7 @@
   },
   {
     "childKeys": [
-      "world-2-silent-earth-dirge-dream-city-slumber"
+      "world-2-silent-earth-dirge-rift-disaster"
     ],
     "id": "world-2-silent-earth-dirge-apocalypse-holy-judgment",
     "indexVersion": 1,
@@ -1991,7 +1991,7 @@
     "series": "2-apocalypse",
     "side": false,
     "sourceHashes": {
-      "json": "554d4ba1120898e4a7114ae2c7340d842d7be93b1fbfe72a9d0fd695d5278297"
+      "json": "93fae676403758f164e0e6f7e56a8312a9cd844e3d0777b32241707b938f01dc"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/2-apocalypse.json",
     "summary": "末日圣裁",
@@ -2012,7 +2012,7 @@
     "series": "2-apocalypse",
     "side": false,
     "sourceHashes": {
-      "json": "554d4ba1120898e4a7114ae2c7340d842d7be93b1fbfe72a9d0fd695d5278297"
+      "json": "93fae676403758f164e0e6f7e56a8312a9cd844e3d0777b32241707b938f01dc"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/2-apocalypse.json",
     "summary": "方舟幽笼",
@@ -2033,7 +2033,7 @@
     "series": "2-apocalypse",
     "side": false,
     "sourceHashes": {
-      "json": "554d4ba1120898e4a7114ae2c7340d842d7be93b1fbfe72a9d0fd695d5278297"
+      "json": "93fae676403758f164e0e6f7e56a8312a9cd844e3d0777b32241707b938f01dc"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/2-apocalypse.json",
     "summary": "异兽踏陆",
@@ -2052,9 +2052,9 @@
     "maturity": "主线任务",
     "parentKey": "world-2-silent-earth-dirge-insect-hive-border",
     "series": "2-apocalypse",
-    "side": false,
+    "side": true,
     "sourceHashes": {
-      "json": "554d4ba1120898e4a7114ae2c7340d842d7be93b1fbfe72a9d0fd695d5278297"
+      "json": "93fae676403758f164e0e6f7e56a8312a9cd844e3d0777b32241707b938f01dc"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/2-apocalypse.json",
     "summary": "深海漂陆",
@@ -2075,7 +2075,7 @@
     "series": "2-apocalypse",
     "side": false,
     "sourceHashes": {
-      "json": "554d4ba1120898e4a7114ae2c7340d842d7be93b1fbfe72a9d0fd695d5278297"
+      "json": "93fae676403758f164e0e6f7e56a8312a9cd844e3d0777b32241707b938f01dc"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/2-apocalypse.json",
     "summary": "天灾异像",
@@ -2092,11 +2092,11 @@
     "indexVersion": 1,
     "key": "world-2-silent-earth-dirge-dream-city-slumber",
     "maturity": "主线任务",
-    "parentKey": "world-2-silent-earth-dirge-apocalypse-holy-judgment",
+    "parentKey": "world-2-silent-earth-dirge-lone-sand-sea",
     "series": "2-apocalypse",
     "side": false,
     "sourceHashes": {
-      "json": "554d4ba1120898e4a7114ae2c7340d842d7be93b1fbfe72a9d0fd695d5278297"
+      "json": "93fae676403758f164e0e6f7e56a8312a9cd844e3d0777b32241707b938f01dc"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/2-apocalypse.json",
     "summary": "梦城沉眠",
@@ -2117,7 +2117,7 @@
     "series": "2-apocalypse",
     "side": false,
     "sourceHashes": {
-      "json": "554d4ba1120898e4a7114ae2c7340d842d7be93b1fbfe72a9d0fd695d5278297"
+      "json": "93fae676403758f164e0e6f7e56a8312a9cd844e3d0777b32241707b938f01dc"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/2-apocalypse.json",
     "summary": "生态吞城",
@@ -2138,7 +2138,7 @@
     "series": "2-apocalypse",
     "side": false,
     "sourceHashes": {
-      "json": "554d4ba1120898e4a7114ae2c7340d842d7be93b1fbfe72a9d0fd695d5278297"
+      "json": "93fae676403758f164e0e6f7e56a8312a9cd844e3d0777b32241707b938f01dc"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/2-apocalypse.json",
     "summary": "异诡临界",
@@ -2159,7 +2159,7 @@
     "series": "2-apocalypse",
     "side": false,
     "sourceHashes": {
-      "json": "554d4ba1120898e4a7114ae2c7340d842d7be93b1fbfe72a9d0fd695d5278297"
+      "json": "93fae676403758f164e0e6f7e56a8312a9cd844e3d0777b32241707b938f01dc"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/2-apocalypse.json",
     "summary": "永冬白境",
@@ -2191,7 +2191,7 @@
     "series": "2-apocalypse",
     "side": false,
     "sourceHashes": {
-      "json": "554d4ba1120898e4a7114ae2c7340d842d7be93b1fbfe72a9d0fd695d5278297",
+      "json": "93fae676403758f164e0e6f7e56a8312a9cd844e3d0777b32241707b938f01dc",
       "markdown": "6b9dd7868db6a0bbc2183da3e3c86860cc133fe580e30147b5b820b5aba3202d"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/2-apocalypse.json",
@@ -2202,9 +2202,7 @@
     "world": "2-寂土挽歌"
   },
   {
-    "childKeys": [
-      "world-2-silent-earth-dirge-rift-disaster"
-    ],
+    "childKeys": [],
     "id": "world-2-silent-earth-dirge-forgotten-river-gray-world",
     "indexVersion": 1,
     "key": "world-2-silent-earth-dirge-forgotten-river-gray-world",
@@ -2213,7 +2211,7 @@
     "series": "2-apocalypse",
     "side": false,
     "sourceHashes": {
-      "json": "554d4ba1120898e4a7114ae2c7340d842d7be93b1fbfe72a9d0fd695d5278297"
+      "json": "93fae676403758f164e0e6f7e56a8312a9cd844e3d0777b32241707b938f01dc"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/2-apocalypse.json",
     "summary": "忘川灰世",
@@ -2224,7 +2222,8 @@
   },
   {
     "childKeys": [
-      "world-2-silent-earth-dirge-deep-sea-drifting-land"
+      "world-2-silent-earth-dirge-deep-sea-drifting-land",
+      "world-2-silent-earth-dirge-mechanical-afterglow"
     ],
     "id": "world-2-silent-earth-dirge-insect-hive-border",
     "indexVersion": 1,
@@ -2234,7 +2233,7 @@
     "series": "2-apocalypse",
     "side": false,
     "sourceHashes": {
-      "json": "554d4ba1120898e4a7114ae2c7340d842d7be93b1fbfe72a9d0fd695d5278297"
+      "json": "93fae676403758f164e0e6f7e56a8312a9cd844e3d0777b32241707b938f01dc"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/2-apocalypse.json",
     "summary": "虫巢边境",
@@ -2245,7 +2244,7 @@
   },
   {
     "childKeys": [
-      "world-2-silent-earth-dirge-mechanical-afterglow"
+      "world-2-silent-earth-dirge-dream-city-slumber"
     ],
     "id": "world-2-silent-earth-dirge-lone-sand-sea",
     "indexVersion": 1,
@@ -2255,7 +2254,7 @@
     "series": "2-apocalypse",
     "side": false,
     "sourceHashes": {
-      "json": "554d4ba1120898e4a7114ae2c7340d842d7be93b1fbfe72a9d0fd695d5278297"
+      "json": "93fae676403758f164e0e6f7e56a8312a9cd844e3d0777b32241707b938f01dc"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/2-apocalypse.json",
     "summary": "沙海孤途",
@@ -2276,7 +2275,7 @@
     "series": "2-apocalypse",
     "side": false,
     "sourceHashes": {
-      "json": "554d4ba1120898e4a7114ae2c7340d842d7be93b1fbfe72a9d0fd695d5278297"
+      "json": "93fae676403758f164e0e6f7e56a8312a9cd844e3d0777b32241707b938f01dc"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/2-apocalypse.json",
     "summary": "循时终日",
@@ -2293,11 +2292,11 @@
     "indexVersion": 1,
     "key": "world-2-silent-earth-dirge-mechanical-afterglow",
     "maturity": "主线任务",
-    "parentKey": "world-2-silent-earth-dirge-lone-sand-sea",
+    "parentKey": "world-2-silent-earth-dirge-insect-hive-border",
     "series": "2-apocalypse",
     "side": false,
     "sourceHashes": {
-      "json": "554d4ba1120898e4a7114ae2c7340d842d7be93b1fbfe72a9d0fd695d5278297"
+      "json": "93fae676403758f164e0e6f7e56a8312a9cd844e3d0777b32241707b938f01dc"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/2-apocalypse.json",
     "summary": "机械余晖",
@@ -2325,7 +2324,7 @@
     "series": "2-apocalypse",
     "side": false,
     "sourceHashes": {
-      "json": "554d4ba1120898e4a7114ae2c7340d842d7be93b1fbfe72a9d0fd695d5278297",
+      "json": "93fae676403758f164e0e6f7e56a8312a9cd844e3d0777b32241707b938f01dc",
       "markdown": "0067b4d2ed909426d0dd79c42324c5f679b9088dcf912b0597278c46b0658cb7"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/2-apocalypse.json",
@@ -2347,7 +2346,7 @@
     "series": "2-apocalypse",
     "side": false,
     "sourceHashes": {
-      "json": "554d4ba1120898e4a7114ae2c7340d842d7be93b1fbfe72a9d0fd695d5278297"
+      "json": "93fae676403758f164e0e6f7e56a8312a9cd844e3d0777b32241707b938f01dc"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/2-apocalypse.json",
     "summary": "疫病残城",
@@ -2375,7 +2374,7 @@
     "series": "2-apocalypse",
     "side": false,
     "sourceHashes": {
-      "json": "554d4ba1120898e4a7114ae2c7340d842d7be93b1fbfe72a9d0fd695d5278297",
+      "json": "93fae676403758f164e0e6f7e56a8312a9cd844e3d0777b32241707b938f01dc",
       "markdown": "9df15a571252db6dc5f0fb002cd77b32bbc3781c0bb16664d8513453ad6928db"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/2-apocalypse.json",
@@ -2393,11 +2392,11 @@
     "indexVersion": 1,
     "key": "world-2-silent-earth-dirge-rift-disaster",
     "maturity": "主线任务",
-    "parentKey": "world-2-silent-earth-dirge-forgotten-river-gray-world",
+    "parentKey": "world-2-silent-earth-dirge-apocalypse-holy-judgment",
     "series": "2-apocalypse",
     "side": false,
     "sourceHashes": {
-      "json": "554d4ba1120898e4a7114ae2c7340d842d7be93b1fbfe72a9d0fd695d5278297"
+      "json": "93fae676403758f164e0e6f7e56a8312a9cd844e3d0777b32241707b938f01dc"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/2-apocalypse.json",
     "summary": "裂界灾临",
@@ -2417,7 +2416,7 @@
     "series": "2-apocalypse",
     "side": false,
     "sourceHashes": {
-      "json": "554d4ba1120898e4a7114ae2c7340d842d7be93b1fbfe72a9d0fd695d5278297",
+      "json": "93fae676403758f164e0e6f7e56a8312a9cd844e3d0777b32241707b938f01dc",
       "markdown": "d10a33079819d8c7968f4e964f8178c659ffc5353b76df05b7256af84943d24e"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/2-apocalypse.json",
@@ -2439,7 +2438,7 @@
     "series": "2-apocalypse",
     "side": false,
     "sourceHashes": {
-      "json": "554d4ba1120898e4a7114ae2c7340d842d7be93b1fbfe72a9d0fd695d5278297"
+      "json": "93fae676403758f164e0e6f7e56a8312a9cd844e3d0777b32241707b938f01dc"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/2-apocalypse.json",
     "summary": "废土王庭",
@@ -2460,7 +2459,7 @@
     "series": "2-apocalypse",
     "side": false,
     "sourceHashes": {
-      "json": "554d4ba1120898e4a7114ae2c7340d842d7be93b1fbfe72a9d0fd695d5278297"
+      "json": "93fae676403758f164e0e6f7e56a8312a9cd844e3d0777b32241707b938f01dc"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/2-apocalypse.json",
     "summary": "尸潮噬世",
@@ -3163,7 +3162,7 @@
     "series": "5-science",
     "side": false,
     "sourceHashes": {
-      "json": "363beb19e84a189659f46a6d55a9044891559e92f844992af7362f7b04356c6c"
+      "json": "15ef3d8acbcd5b7bee635f3844c6795111c51e395e1ddfdc49810832a7846b2f"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/5-science.json",
     "summary": "在科技高度发达的星际文明，还有更多让人向往的旅途",
@@ -3184,7 +3183,7 @@
     "series": "5-science",
     "side": false,
     "sourceHashes": {
-      "json": "363beb19e84a189659f46a6d55a9044891559e92f844992af7362f7b04356c6c"
+      "json": "15ef3d8acbcd5b7bee635f3844c6795111c51e395e1ddfdc49810832a7846b2f"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/5-science.json",
     "summary": "荒矿小行星",
@@ -3201,11 +3200,11 @@
     "indexVersion": 1,
     "key": "world-5-star-weaving-dream-bionic-maze",
     "maturity": "主线任务",
-    "parentKey": "world-5-star-weaving-dream-reverse-immigration-prison",
+    "parentKey": "world-5-star-weaving-dream-star-voyage",
     "series": "5-science",
     "side": false,
     "sourceHashes": {
-      "json": "363beb19e84a189659f46a6d55a9044891559e92f844992af7362f7b04356c6c"
+      "json": "15ef3d8acbcd5b7bee635f3844c6795111c51e395e1ddfdc49810832a7846b2f"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/5-science.json",
     "summary": "仿生迷途",
@@ -3226,7 +3225,7 @@
     "series": "5-science",
     "side": false,
     "sourceHashes": {
-      "json": "363beb19e84a189659f46a6d55a9044891559e92f844992af7362f7b04356c6c"
+      "json": "15ef3d8acbcd5b7bee635f3844c6795111c51e395e1ddfdc49810832a7846b2f"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/5-science.json",
     "summary": "克隆回廊",
@@ -3243,11 +3242,11 @@
     "indexVersion": 1,
     "key": "world-5-star-weaving-dream-cryosleep-ark",
     "maturity": "主线任务",
-    "parentKey": "world-5-star-weaving-dream-star-voyage",
+    "parentKey": "world-5-star-weaving-dream-sequence-gu-city",
     "series": "5-science",
     "side": false,
     "sourceHashes": {
-      "json": "363beb19e84a189659f46a6d55a9044891559e92f844992af7362f7b04356c6c"
+      "json": "15ef3d8acbcd5b7bee635f3844c6795111c51e395e1ddfdc49810832a7846b2f"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/5-science.json",
     "summary": "冷眠方舟",
@@ -3268,7 +3267,7 @@
     "series": "5-science",
     "side": false,
     "sourceHashes": {
-      "json": "363beb19e84a189659f46a6d55a9044891559e92f844992af7362f7b04356c6c"
+      "json": "15ef3d8acbcd5b7bee635f3844c6795111c51e395e1ddfdc49810832a7846b2f"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/5-science.json",
     "summary": "深蓝海卫",
@@ -3296,7 +3295,7 @@
     "series": "5-science",
     "side": false,
     "sourceHashes": {
-      "json": "363beb19e84a189659f46a6d55a9044891559e92f844992af7362f7b04356c6c",
+      "json": "15ef3d8acbcd5b7bee635f3844c6795111c51e395e1ddfdc49810832a7846b2f",
       "markdown": "5538fe3c45d92494bec1d7a92dfd0e88e537e6a6f41907a94e44913e7ef67138"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/5-science.json",
@@ -3318,7 +3317,7 @@
     "series": "5-science",
     "side": false,
     "sourceHashes": {
-      "json": "363beb19e84a189659f46a6d55a9044891559e92f844992af7362f7b04356c6c"
+      "json": "15ef3d8acbcd5b7bee635f3844c6795111c51e395e1ddfdc49810832a7846b2f"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/5-science.json",
     "summary": "异星初触",
@@ -3339,7 +3338,7 @@
     "series": "5-science",
     "side": false,
     "sourceHashes": {
-      "json": "363beb19e84a189659f46a6d55a9044891559e92f844992af7362f7b04356c6c"
+      "json": "15ef3d8acbcd5b7bee635f3844c6795111c51e395e1ddfdc49810832a7846b2f"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/5-science.json",
     "summary": "先驱遗迹",
@@ -3360,7 +3359,7 @@
     "series": "5-science",
     "side": false,
     "sourceHashes": {
-      "json": "363beb19e84a189659f46a6d55a9044891559e92f844992af7362f7b04356c6c"
+      "json": "15ef3d8acbcd5b7bee635f3844c6795111c51e395e1ddfdc49810832a7846b2f"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/5-science.json",
     "summary": "边境殖民星",
@@ -3381,7 +3380,7 @@
     "series": "5-science",
     "side": false,
     "sourceHashes": {
-      "json": "363beb19e84a189659f46a6d55a9044891559e92f844992af7362f7b04356c6c"
+      "json": "15ef3d8acbcd5b7bee635f3844c6795111c51e395e1ddfdc49810832a7846b2f"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/5-science.json",
     "summary": "群心蜂巢",
@@ -3402,7 +3401,7 @@
     "series": "5-science",
     "side": false,
     "sourceHashes": {
-      "json": "363beb19e84a189659f46a6d55a9044891559e92f844992af7362f7b04356c6c"
+      "json": "15ef3d8acbcd5b7bee635f3844c6795111c51e395e1ddfdc49810832a7846b2f"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/5-science.json",
     "summary": "星际黑市",
@@ -3423,7 +3422,7 @@
     "series": "5-science",
     "side": false,
     "sourceHashes": {
-      "json": "363beb19e84a189659f46a6d55a9044891559e92f844992af7362f7b04356c6c"
+      "json": "15ef3d8acbcd5b7bee635f3844c6795111c51e395e1ddfdc49810832a7846b2f"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/5-science.json",
     "summary": "镜域沉沦",
@@ -3444,7 +3443,7 @@
     "series": "5-science",
     "side": false,
     "sourceHashes": {
-      "json": "363beb19e84a189659f46a6d55a9044891559e92f844992af7362f7b04356c6c"
+      "json": "15ef3d8acbcd5b7bee635f3844c6795111c51e395e1ddfdc49810832a7846b2f"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/5-science.json",
     "summary": "熔铠战星",
@@ -3465,7 +3464,7 @@
     "series": "5-science",
     "side": false,
     "sourceHashes": {
-      "json": "363beb19e84a189659f46a6d55a9044891559e92f844992af7362f7b04356c6c"
+      "json": "15ef3d8acbcd5b7bee635f3844c6795111c51e395e1ddfdc49810832a7846b2f"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/5-science.json",
     "summary": "轨道庭院",
@@ -3487,7 +3486,7 @@
     "series": "5-science",
     "side": false,
     "sourceHashes": {
-      "json": "363beb19e84a189659f46a6d55a9044891559e92f844992af7362f7b04356c6c",
+      "json": "15ef3d8acbcd5b7bee635f3844c6795111c51e395e1ddfdc49810832a7846b2f",
       "markdown": "976cf76b4ec9acdd4881893b81fb2c9c493b9391d8e0474f1c917514d5aceb51"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/5-science.json",
@@ -3509,7 +3508,7 @@
     "series": "5-science",
     "side": false,
     "sourceHashes": {
-      "json": "363beb19e84a189659f46a6d55a9044891559e92f844992af7362f7b04356c6c"
+      "json": "15ef3d8acbcd5b7bee635f3844c6795111c51e395e1ddfdc49810832a7846b2f"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/5-science.json",
     "summary": "监狱行星",
@@ -3528,7 +3527,7 @@
     "series": "5-science",
     "side": false,
     "sourceHashes": {
-      "json": "363beb19e84a189659f46a6d55a9044891559e92f844992af7362f7b04356c6c"
+      "json": "15ef3d8acbcd5b7bee635f3844c6795111c51e395e1ddfdc49810832a7846b2f"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/5-science.json",
     "summary": "量子迷城",
@@ -3556,7 +3555,7 @@
     "series": "5-science",
     "side": false,
     "sourceHashes": {
-      "json": "363beb19e84a189659f46a6d55a9044891559e92f844992af7362f7b04356c6c",
+      "json": "15ef3d8acbcd5b7bee635f3844c6795111c51e395e1ddfdc49810832a7846b2f",
       "markdown": "08a7d72c00068d047d3c5526aa74ac53b76771913ed53f49ac6a269842ff2e3c"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/5-science.json",
@@ -3597,7 +3596,7 @@
     "series": "5-science",
     "side": false,
     "sourceHashes": {
-      "json": "363beb19e84a189659f46a6d55a9044891559e92f844992af7362f7b04356c6c",
+      "json": "15ef3d8acbcd5b7bee635f3844c6795111c51e395e1ddfdc49810832a7846b2f",
       "markdown": "96aa0648ec80f0211e9a726eff536ce587f4d3bfd25a7783e9c54ba771e8369c"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/5-science.json",
@@ -3616,7 +3615,7 @@
       "成年女性囚犯"
     ],
     "childKeys": [
-      "world-5-star-weaving-dream-bionic-maze"
+      "world-5-star-weaving-dream-star-voyage"
     ],
     "id": "world-5-star-weaving-dream-reverse-immigration-prison",
     "indexVersion": 1,
@@ -3641,7 +3640,7 @@
     "series": "5-science",
     "side": false,
     "sourceHashes": {
-      "json": "363beb19e84a189659f46a6d55a9044891559e92f844992af7362f7b04356c6c",
+      "json": "15ef3d8acbcd5b7bee635f3844c6795111c51e395e1ddfdc49810832a7846b2f",
       "markdown": "6dfc6e3650a2ce977882e31396093e3648daed16b946f430e8d525e602098fba"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/5-science.json",
@@ -3663,7 +3662,7 @@
     "series": "5-science",
     "side": false,
     "sourceHashes": {
-      "json": "363beb19e84a189659f46a6d55a9044891559e92f844992af7362f7b04356c6c"
+      "json": "15ef3d8acbcd5b7bee635f3844c6795111c51e395e1ddfdc49810832a7846b2f"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/5-science.json",
     "summary": "环锁群星",
@@ -3674,7 +3673,7 @@
   },
   {
     "childKeys": [
-      "world-5-star-weaving-dream-star-voyage"
+      "world-5-star-weaving-dream-cryosleep-ark"
     ],
     "id": "world-5-star-weaving-dream-sequence-gu-city",
     "indexVersion": 1,
@@ -3684,7 +3683,7 @@
     "series": "5-science",
     "side": false,
     "sourceHashes": {
-      "json": "363beb19e84a189659f46a6d55a9044891559e92f844992af7362f7b04356c6c"
+      "json": "15ef3d8acbcd5b7bee635f3844c6795111c51e395e1ddfdc49810832a7846b2f"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/5-science.json",
     "summary": "基序蛊城",
@@ -3695,17 +3694,17 @@
   },
   {
     "childKeys": [
-      "world-5-star-weaving-dream-cryosleep-ark"
+      "world-5-star-weaving-dream-bionic-maze"
     ],
     "id": "world-5-star-weaving-dream-star-voyage",
     "indexVersion": 1,
     "key": "world-5-star-weaving-dream-star-voyage",
     "maturity": "主线任务",
-    "parentKey": "world-5-star-weaving-dream-sequence-gu-city",
+    "parentKey": "world-5-star-weaving-dream-reverse-immigration-prison",
     "series": "5-science",
     "side": false,
     "sourceHashes": {
-      "json": "363beb19e84a189659f46a6d55a9044891559e92f844992af7362f7b04356c6c"
+      "json": "15ef3d8acbcd5b7bee635f3844c6795111c51e395e1ddfdc49810832a7846b2f"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/5-science.json",
     "summary": "逐星远航",
@@ -3726,7 +3725,7 @@
     "series": "5-science",
     "side": false,
     "sourceHashes": {
-      "json": "363beb19e84a189659f46a6d55a9044891559e92f844992af7362f7b04356c6c"
+      "json": "15ef3d8acbcd5b7bee635f3844c6795111c51e395e1ddfdc49810832a7846b2f"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/5-science.json",
     "summary": "星门港区",
@@ -3746,7 +3745,7 @@
     "series": "4-fantasy",
     "side": false,
     "sourceHashes": {
-      "json": "83334ad666ea180d0a739a447cc48e78d5ddc52fb5206372ab596bcbdf361acd"
+      "json": "4e1c769ea844b609836f62434071df8f989cfa9b40209faa736690170ad61bcd"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/4-fantasy.json",
     "summary": "魔法与斗气主导的世界，各个种族共同生存的魔幻大陆。",
@@ -3765,7 +3764,7 @@
     "series": "4-fantasy",
     "side": false,
     "sourceHashes": {
-      "json": "83334ad666ea180d0a739a447cc48e78d5ddc52fb5206372ab596bcbdf361acd"
+      "json": "4e1c769ea844b609836f62434071df8f989cfa9b40209faa736690170ad61bcd"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/4-fantasy.json",
     "summary": "深渊契约",
@@ -3786,7 +3785,7 @@
     "series": "4-fantasy",
     "side": false,
     "sourceHashes": {
-      "json": "83334ad666ea180d0a739a447cc48e78d5ddc52fb5206372ab596bcbdf361acd"
+      "json": "4e1c769ea844b609836f62434071df8f989cfa9b40209faa736690170ad61bcd"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/4-fantasy.json",
     "summary": "星界裂门",
@@ -3807,7 +3806,7 @@
     "series": "4-fantasy",
     "side": false,
     "sourceHashes": {
-      "json": "83334ad666ea180d0a739a447cc48e78d5ddc52fb5206372ab596bcbdf361acd"
+      "json": "4e1c769ea844b609836f62434071df8f989cfa9b40209faa736690170ad61bcd"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/4-fantasy.json",
     "summary": "骸骨王座",
@@ -3828,7 +3827,7 @@
     "series": "4-fantasy",
     "side": false,
     "sourceHashes": {
-      "json": "83334ad666ea180d0a739a447cc48e78d5ddc52fb5206372ab596bcbdf361acd"
+      "json": "4e1c769ea844b609836f62434071df8f989cfa9b40209faa736690170ad61bcd"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/4-fantasy.json",
     "summary": "晶沙王庭",
@@ -3849,7 +3848,7 @@
     "series": "4-fantasy",
     "side": false,
     "sourceHashes": {
-      "json": "83334ad666ea180d0a739a447cc48e78d5ddc52fb5206372ab596bcbdf361acd"
+      "json": "4e1c769ea844b609836f62434071df8f989cfa9b40209faa736690170ad61bcd"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/4-fantasy.json",
     "summary": "幽暗城池",
@@ -3866,11 +3865,11 @@
     "indexVersion": 1,
     "key": "world-6-cursebound-echoes-darkmoon-castle",
     "maturity": "主线任务",
-    "parentKey": "world-6-cursebound-echoes-tiny-liluo-adventure",
+    "parentKey": "world-6-cursebound-echoes-forest-oath-fey-realm",
     "series": "4-fantasy",
     "side": false,
     "sourceHashes": {
-      "json": "83334ad666ea180d0a739a447cc48e78d5ddc52fb5206372ab596bcbdf361acd"
+      "json": "4e1c769ea844b609836f62434071df8f989cfa9b40209faa736690170ad61bcd"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/4-fantasy.json",
     "summary": "暗月古堡",
@@ -3881,7 +3880,7 @@
   },
   {
     "childKeys": [
-      "world-6-cursebound-echoes-secret-tower-long-song"
+      "world-6-cursebound-echoes-locked-horn-wasteland"
     ],
     "id": "world-6-cursebound-echoes-dragon-sleep-mountains",
     "indexVersion": 1,
@@ -3891,7 +3890,7 @@
     "series": "4-fantasy",
     "side": false,
     "sourceHashes": {
-      "json": "83334ad666ea180d0a739a447cc48e78d5ddc52fb5206372ab596bcbdf361acd"
+      "json": "4e1c769ea844b609836f62434071df8f989cfa9b40209faa736690170ad61bcd"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/4-fantasy.json",
     "summary": "龙眠山脉",
@@ -3912,7 +3911,7 @@
     "series": "4-fantasy",
     "side": false,
     "sourceHashes": {
-      "json": "83334ad666ea180d0a739a447cc48e78d5ddc52fb5206372ab596bcbdf361acd"
+      "json": "4e1c769ea844b609836f62434071df8f989cfa9b40209faa736690170ad61bcd"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/4-fantasy.json",
     "summary": "逐梦大陆",
@@ -3923,6 +3922,7 @@
   },
   {
     "childKeys": [
+      "world-6-cursebound-echoes-darkmoon-castle",
       "world-6-cursebound-echoes-tiny-liluo-adventure"
     ],
     "id": "world-6-cursebound-echoes-forest-oath-fey-realm",
@@ -3933,7 +3933,7 @@
     "series": "4-fantasy",
     "side": false,
     "sourceHashes": {
-      "json": "83334ad666ea180d0a739a447cc48e78d5ddc52fb5206372ab596bcbdf361acd"
+      "json": "4e1c769ea844b609836f62434071df8f989cfa9b40209faa736690170ad61bcd"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/4-fantasy.json",
     "summary": "森誓妖境",
@@ -3950,11 +3950,11 @@
     "indexVersion": 1,
     "key": "world-6-cursebound-echoes-holy-seal-islands",
     "maturity": "主线任务",
-    "parentKey": "world-6-cursebound-echoes-secret-rune-academy",
+    "parentKey": "world-6-cursebound-echoes-secret-tower-long-song",
     "series": "4-fantasy",
     "side": false,
     "sourceHashes": {
-      "json": "83334ad666ea180d0a739a447cc48e78d5ddc52fb5206372ab596bcbdf361acd"
+      "json": "4e1c769ea844b609836f62434071df8f989cfa9b40209faa736690170ad61bcd"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/4-fantasy.json",
     "summary": "圣印群岛",
@@ -3971,11 +3971,11 @@
     "indexVersion": 1,
     "key": "world-6-cursebound-echoes-locked-horn-wasteland",
     "maturity": "主线任务",
-    "parentKey": "world-6-cursebound-echoes-secret-tower-long-song",
+    "parentKey": "world-6-cursebound-echoes-dragon-sleep-mountains",
     "series": "4-fantasy",
     "side": false,
     "sourceHashes": {
-      "json": "83334ad666ea180d0a739a447cc48e78d5ddc52fb5206372ab596bcbdf361acd"
+      "json": "4e1c769ea844b609836f62434071df8f989cfa9b40209faa736690170ad61bcd"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/4-fantasy.json",
     "summary": "锁角荒原",
@@ -3996,7 +3996,7 @@
     "series": "4-fantasy",
     "side": false,
     "sourceHashes": {
-      "json": "83334ad666ea180d0a739a447cc48e78d5ddc52fb5206372ab596bcbdf361acd"
+      "json": "4e1c769ea844b609836f62434071df8f989cfa9b40209faa736690170ad61bcd"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/4-fantasy.json",
     "summary": "逐潮孤海",
@@ -4017,7 +4017,7 @@
     "series": "4-fantasy",
     "side": false,
     "sourceHashes": {
-      "json": "83334ad666ea180d0a739a447cc48e78d5ddc52fb5206372ab596bcbdf361acd"
+      "json": "4e1c769ea844b609836f62434071df8f989cfa9b40209faa736690170ad61bcd"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/4-fantasy.json",
     "summary": "熔辉机城",
@@ -4038,7 +4038,7 @@
     "series": "4-fantasy",
     "side": false,
     "sourceHashes": {
-      "json": "83334ad666ea180d0a739a447cc48e78d5ddc52fb5206372ab596bcbdf361acd"
+      "json": "4e1c769ea844b609836f62434071df8f989cfa9b40209faa736690170ad61bcd"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/4-fantasy.json",
     "summary": "北境霜冠",
@@ -4049,7 +4049,7 @@
   },
   {
     "childKeys": [
-      "world-6-cursebound-echoes-holy-seal-islands"
+      "world-6-cursebound-echoes-secret-tower-long-song"
     ],
     "id": "world-6-cursebound-echoes-secret-rune-academy",
     "indexVersion": 1,
@@ -4059,7 +4059,7 @@
     "series": "4-fantasy",
     "side": false,
     "sourceHashes": {
-      "json": "83334ad666ea180d0a739a447cc48e78d5ddc52fb5206372ab596bcbdf361acd"
+      "json": "4e1c769ea844b609836f62434071df8f989cfa9b40209faa736690170ad61bcd"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/4-fantasy.json",
     "summary": "秘纹学院",
@@ -4070,17 +4070,17 @@
   },
   {
     "childKeys": [
-      "world-6-cursebound-echoes-locked-horn-wasteland"
+      "world-6-cursebound-echoes-holy-seal-islands"
     ],
     "id": "world-6-cursebound-echoes-secret-tower-long-song",
     "indexVersion": 1,
     "key": "world-6-cursebound-echoes-secret-tower-long-song",
     "maturity": "主线任务",
-    "parentKey": "world-6-cursebound-echoes-dragon-sleep-mountains",
+    "parentKey": "world-6-cursebound-echoes-secret-rune-academy",
     "series": "4-fantasy",
     "side": false,
     "sourceHashes": {
-      "json": "83334ad666ea180d0a739a447cc48e78d5ddc52fb5206372ab596bcbdf361acd"
+      "json": "4e1c769ea844b609836f62434071df8f989cfa9b40209faa736690170ad61bcd"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/4-fantasy.json",
     "summary": "秘塔长歌",
@@ -4101,7 +4101,7 @@
     "series": "4-fantasy",
     "side": false,
     "sourceHashes": {
-      "json": "83334ad666ea180d0a739a447cc48e78d5ddc52fb5206372ab596bcbdf361acd"
+      "json": "4e1c769ea844b609836f62434071df8f989cfa9b40209faa736690170ad61bcd"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/4-fantasy.json",
     "summary": "盗影城邦",
@@ -4129,7 +4129,7 @@
     "series": "4-fantasy",
     "side": false,
     "sourceHashes": {
-      "json": "83334ad666ea180d0a739a447cc48e78d5ddc52fb5206372ab596bcbdf361acd",
+      "json": "4e1c769ea844b609836f62434071df8f989cfa9b40209faa736690170ad61bcd",
       "markdown": "fac30d22760dd143dac63ca1751674cdd9870249ef377f1969cc2ef946415431"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/4-fantasy.json",
@@ -4151,7 +4151,7 @@
     "series": "4-fantasy",
     "side": false,
     "sourceHashes": {
-      "json": "83334ad666ea180d0a739a447cc48e78d5ddc52fb5206372ab596bcbdf361acd"
+      "json": "4e1c769ea844b609836f62434071df8f989cfa9b40209faa736690170ad61bcd"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/4-fantasy.json",
     "summary": "银冠王都",
@@ -4161,9 +4161,7 @@
     "world": "6-咒缚回响"
   },
   {
-    "childKeys": [
-      "world-6-cursebound-echoes-darkmoon-castle"
-    ],
+    "childKeys": [],
     "id": "world-6-cursebound-echoes-tiny-liluo-adventure",
     "indexVersion": 1,
     "key": "world-6-cursebound-echoes-tiny-liluo-adventure",
@@ -4177,9 +4175,9 @@
     ],
     "parentKey": "world-6-cursebound-echoes-forest-oath-fey-realm",
     "series": "4-fantasy",
-    "side": false,
+    "side": true,
     "sourceHashes": {
-      "json": "83334ad666ea180d0a739a447cc48e78d5ddc52fb5206372ab596bcbdf361acd",
+      "json": "4e1c769ea844b609836f62434071df8f989cfa9b40209faa736690170ad61bcd",
       "markdown": "38d6a2c2c0a56b243068902aeeae70e32c76a94e4573df12d982509b09f8595b"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/4-fantasy.json",
@@ -4201,7 +4199,7 @@
     "series": "4-fantasy",
     "side": false,
     "sourceHashes": {
-      "json": "83334ad666ea180d0a739a447cc48e78d5ddc52fb5206372ab596bcbdf361acd"
+      "json": "4e1c769ea844b609836f62434071df8f989cfa9b40209faa736690170ad61bcd"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/4-fantasy.json",
     "summary": "女巫沼泽",

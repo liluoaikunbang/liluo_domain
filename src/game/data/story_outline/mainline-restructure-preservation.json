@@ -1,0 +1,1126 @@
+{
+  "schemaVersion": 1,
+  "purpose": "寂土挽歌、咒缚回响与星宇织梦主线重构的旧节点原文保全与迁移去向清单。哈希排除 parentKey 与 order，仅允许本轮调整结构位置。",
+  "entries": [
+    {
+      "key": "world-2-silent-earth-dirge",
+      "world": "2-寂土挽歌",
+      "title": "寂土挽歌（末日）",
+      "sourceFile": "src/game/data/story_outline/sources/2-apocalypse.json",
+      "markdownPath": null,
+      "sourceContentHash": "5466012be2ca9f5f553f3e3179d97900d24d912dd73716c9c441e9b249e669b3",
+      "markdownHash": null,
+      "missingItems": [],
+      "oldParentKey": null,
+      "oldOrder": 30,
+      "destination": {
+        "container": null,
+        "type": "世界分类"
+      }
+    },
+    {
+      "key": "world-2-silent-earth-dirge-zombie-apocalypse",
+      "world": "2-寂土挽歌",
+      "title": "尸潮噬世",
+      "sourceFile": "src/game/data/story_outline/sources/2-apocalypse.json",
+      "markdownPath": "src/game/data/story_outline/2-apocalypse/1-尸潮噬世.md",
+      "sourceContentHash": "95445cdf5f711ca437946ce3279786b0b51de4a3cf2385bb99b101fc7e19f10b",
+      "markdownHash": "00b0f1645a4f1a2b20954ff0c95210759b6f4964d73eb8786e417ce796bf3f2e",
+      "missingItems": [],
+      "oldParentKey": "world-2-silent-earth-dirge",
+      "oldOrder": 10,
+      "destination": {
+        "container": "world-2-silent-earth-dirge-phase-outbreak",
+        "type": "主线锚点"
+      }
+    },
+    {
+      "key": "world-2-silent-earth-dirge-red-line",
+      "world": "2-寂土挽歌",
+      "title": "红线鬼域",
+      "sourceFile": "src/game/data/story_outline/sources/2-apocalypse.json",
+      "markdownPath": "src/game/data/story_outline/2-apocalypse/1.1-红线鬼域.md",
+      "sourceContentHash": "e03c930495dadbe88370e625d7d43f11c57631ba1c4566a3e42248906e950cad",
+      "markdownHash": "9df15a571252db6dc5f0fb002cd77b32bbc3781c0bb16664d8513453ad6928db",
+      "missingItems": [],
+      "oldParentKey": "world-2-silent-earth-dirge-zombie-apocalypse",
+      "oldOrder": 10,
+      "destination": {
+        "container": "world-2-silent-earth-dirge-phase-outbreak",
+        "type": "早期区域线"
+      }
+    },
+    {
+      "key": "world-2-silent-earth-dirge-omega",
+      "world": "2-寂土挽歌",
+      "title": "Ω级禁忌束缚套装",
+      "sourceFile": "src/game/data/story_outline/sources/2-apocalypse.json",
+      "markdownPath": "src/game/data/story_outline/2-apocalypse/1.2-Ω级禁忌束缚套装.md",
+      "sourceContentHash": "a5a0f6d504eb8ba5f18fbebe085ffb783f5c99129ace0fefac1348211fabc1ec",
+      "markdownHash": "0067b4d2ed909426d0dd79c42324c5f679b9088dcf912b0597278c46b0658cb7",
+      "missingItems": [],
+      "oldParentKey": "world-2-silent-earth-dirge-red-line",
+      "oldOrder": 20,
+      "destination": {
+        "container": "world-2-silent-earth-dirge-phase-outbreak",
+        "type": "状态分界"
+      }
+    },
+    {
+      "key": "world-2-silent-earth-dirge-eerie-apocalypse",
+      "world": "2-寂土挽歌",
+      "title": "异诡临界",
+      "sourceFile": "src/game/data/story_outline/sources/2-apocalypse.json",
+      "markdownPath": "src/game/data/story_outline/2-apocalypse/2-异诡临界.md",
+      "sourceContentHash": "7fc4611b93f8fbaac889896e38d9c13447964bb3956f577751faca82ad69d710",
+      "markdownHash": "b6ae081284c272984589ba4b4abe08c9aa25294858ba5c93f9302f686a4d22c8",
+      "missingItems": [],
+      "oldParentKey": "world-2-silent-earth-dirge-omega",
+      "oldOrder": 20,
+      "destination": {
+        "container": "world-2-silent-earth-dirge-anomaly-domains",
+        "type": "异常灾域支线"
+      }
+    },
+    {
+      "key": "world-2-silent-earth-dirge-fog-city",
+      "world": "2-寂土挽歌",
+      "title": "诡雾迷城",
+      "sourceFile": "src/game/data/story_outline/sources/2-apocalypse.json",
+      "markdownPath": "src/game/data/story_outline/2-apocalypse/2.1-诡雾迷城.md",
+      "sourceContentHash": "5529ea32a928bf6413424ffd6f8926d945b37e677299088e17f44c0bf4d33229",
+      "markdownHash": "6b9dd7868db6a0bbc2183da3e3c86860cc133fe580e30147b5b820b5aba3202d",
+      "missingItems": [],
+      "oldParentKey": "world-2-silent-earth-dirge-eerie-apocalypse",
+      "oldOrder": 10,
+      "destination": {
+        "container": "world-2-silent-earth-dirge-anomaly-domains",
+        "type": "异常灾域支线"
+      }
+    },
+    {
+      "key": "world-2-silent-earth-dirge-disaster-anomaly",
+      "world": "2-寂土挽歌",
+      "title": "天灾异像",
+      "sourceFile": "src/game/data/story_outline/sources/2-apocalypse.json",
+      "markdownPath": "src/game/data/story_outline/2-apocalypse/3-天灾异像.md",
+      "sourceContentHash": "255e65371eb64825a0ed3f896b46af369e2566b25325fdc20446c606c03c7736",
+      "markdownHash": "956025d112fd975a1f9e924859edd733e14bf26378d772289b8d5e4814fc179b",
+      "missingItems": [],
+      "oldParentKey": "world-2-silent-earth-dirge-fog-city",
+      "oldOrder": 30,
+      "destination": {
+        "container": "world-2-silent-earth-dirge-phase-city-collapse",
+        "type": "阶段区域线"
+      }
+    },
+    {
+      "key": "world-2-silent-earth-dirge-plague-ruined-city",
+      "world": "2-寂土挽歌",
+      "title": "疫病残城",
+      "sourceFile": "src/game/data/story_outline/sources/2-apocalypse.json",
+      "markdownPath": "src/game/data/story_outline/2-apocalypse/4-疫病残城.md",
+      "sourceContentHash": "33e1a8f6f0fc926a4de96536c10d4d0a5aee60385f2dd4d9fd6f0900c35666ef",
+      "markdownHash": "5bcac1648f89546309431c580f26dbb8919d5ede49ccd16db046c327491b358f",
+      "missingItems": [],
+      "oldParentKey": "world-2-silent-earth-dirge-disaster-anomaly",
+      "oldOrder": 40,
+      "destination": {
+        "container": "world-2-silent-earth-dirge-phase-city-collapse",
+        "type": "阶段区域线"
+      }
+    },
+    {
+      "key": "world-2-silent-earth-dirge-ecology-devouring-city",
+      "world": "2-寂土挽歌",
+      "title": "生态吞城",
+      "sourceFile": "src/game/data/story_outline/sources/2-apocalypse.json",
+      "markdownPath": "src/game/data/story_outline/2-apocalypse/5-生态吞城.md",
+      "sourceContentHash": "a83c48391942c915b15bb7073f4f2ea12e63e8bbb5872251bad6dbfc57c3f1a6",
+      "markdownHash": "48baba78a9a2362d94e5345ea15b56391d794c82447a388d8cc03db8b618da05",
+      "missingItems": [],
+      "oldParentKey": "world-2-silent-earth-dirge-plague-ruined-city",
+      "oldOrder": 50,
+      "destination": {
+        "container": "world-2-silent-earth-dirge-phase-city-collapse",
+        "type": "阶段区域线"
+      }
+    },
+    {
+      "key": "world-2-silent-earth-dirge-beast-treading-land",
+      "world": "2-寂土挽歌",
+      "title": "异兽踏陆",
+      "sourceFile": "src/game/data/story_outline/sources/2-apocalypse.json",
+      "markdownPath": "src/game/data/story_outline/2-apocalypse/6-异兽踏陆.md",
+      "sourceContentHash": "36ca1de03cc92fce193b5bb0bd93cfd5c412d2bd88492cde60df0e4280324a5c",
+      "markdownHash": "e45532d92a037827698fe6df15984a1f636b199d228086e8840d262b182fc5d5",
+      "missingItems": [],
+      "oldParentKey": "world-2-silent-earth-dirge-ecology-devouring-city",
+      "oldOrder": 60,
+      "destination": {
+        "container": "world-2-silent-earth-dirge-phase-wilderness",
+        "type": "阶段区域线"
+      }
+    },
+    {
+      "key": "world-2-silent-earth-dirge-insect-hive-border",
+      "world": "2-寂土挽歌",
+      "title": "虫巢边境",
+      "sourceFile": "src/game/data/story_outline/sources/2-apocalypse.json",
+      "markdownPath": "src/game/data/story_outline/2-apocalypse/7-虫巢边境.md",
+      "sourceContentHash": "74ba85d75e1dec9420cc46b317211c239222adb9ee9e51b178f53ab00c3218a4",
+      "markdownHash": "8b0cf37356669f4f499d40f822410e11872cfd277618d6405c00ccbb1efe8aa5",
+      "missingItems": [],
+      "oldParentKey": "world-2-silent-earth-dirge-beast-treading-land",
+      "oldOrder": 70,
+      "destination": {
+        "container": "world-2-silent-earth-dirge-phase-wilderness",
+        "type": "阶段区域线"
+      }
+    },
+    {
+      "key": "world-2-silent-earth-dirge-deep-sea-drifting-land",
+      "world": "2-寂土挽歌",
+      "title": "深海漂陆",
+      "sourceFile": "src/game/data/story_outline/sources/2-apocalypse.json",
+      "markdownPath": "src/game/data/story_outline/2-apocalypse/8-深海漂陆.md",
+      "sourceContentHash": "8570c60404ddfed378384add549cdd75e7d5cc1c054d0933f9880f8c2f9ec0a3",
+      "markdownHash": "4854b3bd8833c3eadae924ae156608c308f02d2f2ea3eac7c310b2c64859ad90",
+      "missingItems": [],
+      "oldParentKey": "world-2-silent-earth-dirge-insect-hive-border",
+      "oldOrder": 80,
+      "destination": {
+        "container": "world-2-silent-earth-dirge-apocalypse-loops",
+        "type": "末日轮回"
+      }
+    },
+    {
+      "key": "world-2-silent-earth-dirge-eternal-winter-white-realm",
+      "world": "2-寂土挽歌",
+      "title": "永冬白境",
+      "sourceFile": "src/game/data/story_outline/sources/2-apocalypse.json",
+      "markdownPath": "src/game/data/story_outline/2-apocalypse/9-永冬白境.md",
+      "sourceContentHash": "62f0e49f39b142f393b4860de1395ddd61ddcba1e5673583e5bfef26da11da69",
+      "markdownHash": "00d539724f10be1c557307c88bfb55364b7d98f6315722c0ce13f2c69324a73d",
+      "missingItems": [],
+      "oldParentKey": "world-2-silent-earth-dirge-deep-sea-drifting-land",
+      "oldOrder": 90,
+      "destination": {
+        "container": "world-2-silent-earth-dirge-apocalypse-loops",
+        "type": "末日轮回"
+      }
+    },
+    {
+      "key": "world-2-silent-earth-dirge-lone-sand-sea",
+      "world": "2-寂土挽歌",
+      "title": "沙海孤途",
+      "sourceFile": "src/game/data/story_outline/sources/2-apocalypse.json",
+      "markdownPath": "src/game/data/story_outline/2-apocalypse/10-沙海孤途.md",
+      "sourceContentHash": "34baccdcba4b295d4c672a3e572f680e7dd1c9a4323c3337dd2b0c7ca20a9b4c",
+      "markdownHash": "e3b692bbd73e503e7392db65fa450b591d5ac43176f7c4f6e197ab07ac8ccf2f",
+      "missingItems": [],
+      "oldParentKey": "world-2-silent-earth-dirge-eternal-winter-white-realm",
+      "oldOrder": 100,
+      "destination": {
+        "container": "world-2-silent-earth-dirge-apocalypse-loops",
+        "type": "末日轮回"
+      }
+    },
+    {
+      "key": "world-2-silent-earth-dirge-mechanical-afterglow",
+      "world": "2-寂土挽歌",
+      "title": "机械余晖",
+      "sourceFile": "src/game/data/story_outline/sources/2-apocalypse.json",
+      "markdownPath": "src/game/data/story_outline/2-apocalypse/11-机械余晖.md",
+      "sourceContentHash": "785aeb8269640ddaf22be5f08abdff806a4c422f45ce814e440c4c32a8828843",
+      "markdownHash": "033a4cbc5e30d849b087f13821a1a3a53f93a5247c49cb29ecbbb06a3824d067",
+      "missingItems": [],
+      "oldParentKey": "world-2-silent-earth-dirge-lone-sand-sea",
+      "oldOrder": 110,
+      "destination": {
+        "container": "world-2-silent-earth-dirge-phase-refuge",
+        "type": "阶段区域线"
+      }
+    },
+    {
+      "key": "world-2-silent-earth-dirge-ark-ghost-cage",
+      "world": "2-寂土挽歌",
+      "title": "方舟幽笼",
+      "sourceFile": "src/game/data/story_outline/sources/2-apocalypse.json",
+      "markdownPath": "src/game/data/story_outline/2-apocalypse/12-方舟幽笼.md",
+      "sourceContentHash": "26a9230e3f57754144a70f654dbe18dfc86035437c3578d13b2b8d375be4b8d5",
+      "markdownHash": "96e674571f59407004313876db2425676041f88590dfc40b6491cedbf50aba44",
+      "missingItems": [],
+      "oldParentKey": "world-2-silent-earth-dirge-mechanical-afterglow",
+      "oldOrder": 120,
+      "destination": {
+        "container": "world-2-silent-earth-dirge-phase-refuge",
+        "type": "阶段区域线"
+      }
+    },
+    {
+      "key": "world-2-silent-earth-dirge-wasteland-court",
+      "world": "2-寂土挽歌",
+      "title": "废土王庭",
+      "sourceFile": "src/game/data/story_outline/sources/2-apocalypse.json",
+      "markdownPath": "src/game/data/story_outline/2-apocalypse/13-废土王庭.md",
+      "sourceContentHash": "46adb223166fa0bfacbf586d5e41e0234121d7ae2f094bd9fd8c755b8102140e",
+      "markdownHash": "be332a2bf80fd49b1a8703f0b52b07e4448ce1ed8ea83e32fd8fae8bbfd3e8ea",
+      "missingItems": [],
+      "oldParentKey": "world-2-silent-earth-dirge-ark-ghost-cage",
+      "oldOrder": 130,
+      "destination": {
+        "container": "world-2-silent-earth-dirge-phase-new-order",
+        "type": "阶段区域线"
+      }
+    },
+    {
+      "key": "world-2-silent-earth-dirge-apocalypse-holy-judgment",
+      "world": "2-寂土挽歌",
+      "title": "末日圣裁",
+      "sourceFile": "src/game/data/story_outline/sources/2-apocalypse.json",
+      "markdownPath": "src/game/data/story_outline/2-apocalypse/14-末日圣裁.md",
+      "sourceContentHash": "3aa31a84c7f7b453e10bbe948cd89912d5cadeaccb8c3c6591b4f59e0ab921d5",
+      "markdownHash": "a84495c39ae10cca6460d7d42d664ab1e3ea6651e646fbfef7b2189441487d3c",
+      "missingItems": [],
+      "oldParentKey": "world-2-silent-earth-dirge-wasteland-court",
+      "oldOrder": 140,
+      "destination": {
+        "container": "world-2-silent-earth-dirge-phase-new-order",
+        "type": "阶段区域线"
+      }
+    },
+    {
+      "key": "world-2-silent-earth-dirge-dream-city-slumber",
+      "world": "2-寂土挽歌",
+      "title": "梦城沉眠",
+      "sourceFile": "src/game/data/story_outline/sources/2-apocalypse.json",
+      "markdownPath": "src/game/data/story_outline/2-apocalypse/15-梦城沉眠.md",
+      "sourceContentHash": "b97a205b521f37b6aff4f38bbca16a36f1d978538e883993464c42c29ec93d11",
+      "markdownHash": "c9bc4e94d9b82ac776f65371dc1d830fd98a8a252ac5279bc282f0f0ab75499e",
+      "missingItems": [],
+      "oldParentKey": "world-2-silent-earth-dirge-apocalypse-holy-judgment",
+      "oldOrder": 150,
+      "destination": {
+        "container": "world-2-silent-earth-dirge-apocalypse-loops",
+        "type": "末日轮回"
+      }
+    },
+    {
+      "key": "world-2-silent-earth-dirge-looping-final-day",
+      "world": "2-寂土挽歌",
+      "title": "循时终日",
+      "sourceFile": "src/game/data/story_outline/sources/2-apocalypse.json",
+      "markdownPath": "src/game/data/story_outline/2-apocalypse/16-循时终日.md",
+      "sourceContentHash": "4950fd64aa1601cf24f5ebf66fd28f1012721777729544d51a5184db85e410d1",
+      "markdownHash": "6d2f858b5966bf67a02ebab75c47841da1dbf9526c206fac73fa0425d2dffb8b",
+      "missingItems": [],
+      "oldParentKey": "world-2-silent-earth-dirge-dream-city-slumber",
+      "oldOrder": 160,
+      "destination": {
+        "container": "world-2-silent-earth-dirge-apocalypse-loops",
+        "type": "末日轮回"
+      }
+    },
+    {
+      "key": "world-2-silent-earth-dirge-forgotten-river-gray-world",
+      "world": "2-寂土挽歌",
+      "title": "忘川灰世",
+      "sourceFile": "src/game/data/story_outline/sources/2-apocalypse.json",
+      "markdownPath": "src/game/data/story_outline/2-apocalypse/17-忘川灰世.md",
+      "sourceContentHash": "cc68cd7c7ef2be7296615a834f57b54fee82690a8e729a98989e025bfe4cf2e2",
+      "markdownHash": "803ce445d977d01dce4d7115b1f3a9ee06eed52b621819324accfd42b9fc229a",
+      "missingItems": [],
+      "oldParentKey": "world-2-silent-earth-dirge-looping-final-day",
+      "oldOrder": 170,
+      "destination": {
+        "container": "world-2-silent-earth-dirge-apocalypse-loops",
+        "type": "末日轮回"
+      }
+    },
+    {
+      "key": "world-2-silent-earth-dirge-rift-disaster",
+      "world": "2-寂土挽歌",
+      "title": "裂界灾临",
+      "sourceFile": "src/game/data/story_outline/sources/2-apocalypse.json",
+      "markdownPath": "src/game/data/story_outline/2-apocalypse/18-裂界灾临.md",
+      "sourceContentHash": "89c347c22ea955577577851cfb4141ffbfdf1d4153d947d7a32518664e7d356f",
+      "markdownHash": "9a01562eece6b25b5e640ec4998637a8e492360c00573f9337274f95cf5a4655",
+      "missingItems": [],
+      "oldParentKey": "world-2-silent-earth-dirge-forgotten-river-gray-world",
+      "oldOrder": 180,
+      "destination": {
+        "container": "world-2-silent-earth-dirge-phase-rift",
+        "type": "主线锚点"
+      }
+    },
+    {
+      "key": "world-2-silent-earth-dirge-solo-smart-rv-trader",
+      "world": "2-寂土挽歌",
+      "title": "独行房车商旅",
+      "sourceFile": "src/game/data/story_outline/sources/2-apocalypse.json",
+      "markdownPath": "src/game/data/story_outline/2-apocalypse/19-独行房车商旅.md",
+      "sourceContentHash": "1df92eecf75318d61bda74eca44befbdd5c54ce738c1d2a8557aa0787d2bda89",
+      "markdownHash": "d10a33079819d8c7968f4e964f8178c659ffc5353b76df05b7256af84943d24e",
+      "missingItems": [],
+      "oldParentKey": "world-2-silent-earth-dirge-rift-disaster",
+      "oldOrder": 190,
+      "destination": {
+        "container": "world-2-silent-earth-dirge-phase-epilogue",
+        "type": "长期后日谈"
+      }
+    },
+    {
+      "key": "world-6-cursebound-echoes",
+      "world": "6-咒缚回响",
+      "title": "咒缚回响（魔幻）",
+      "sourceFile": "src/game/data/story_outline/sources/4-fantasy.json",
+      "markdownPath": null,
+      "sourceContentHash": "ba7f19b9a70ede9cea64f7c96af41f53065a71b41ff8536a68dc92e5a8d91824",
+      "markdownHash": null,
+      "missingItems": [],
+      "oldParentKey": null,
+      "oldOrder": 50,
+      "destination": {
+        "container": null,
+        "type": "世界分类"
+      }
+    },
+    {
+      "key": "world-6-cursebound-echoes-dreambound-continent",
+      "world": "6-咒缚回响",
+      "title": "逐梦大陆",
+      "sourceFile": "src/game/data/story_outline/sources/4-fantasy.json",
+      "markdownPath": "src/game/data/story_outline/4-fantasy/1-逐梦大陆.md",
+      "sourceContentHash": "09225954d45faff80c847deb3686cdcce16a163b78767cd2762429cdf559ec76",
+      "markdownHash": "cdd14a1c2c7b262354399d1ab181f99bc2e258611f64001c82d7e6fe3e2f4a41",
+      "missingItems": [],
+      "oldParentKey": "world-6-cursebound-echoes",
+      "oldOrder": 10,
+      "destination": {
+        "container": "world-6-cursebound-echoes-phase-ascension",
+        "type": "主线锚点"
+      }
+    },
+    {
+      "key": "world-6-cursebound-echoes-silver-crown-capital",
+      "world": "6-咒缚回响",
+      "title": "银冠王都",
+      "sourceFile": "src/game/data/story_outline/sources/4-fantasy.json",
+      "markdownPath": "src/game/data/story_outline/4-fantasy/2-银冠王都.md",
+      "sourceContentHash": "3a7523f7fca88f46382c7167042bd614ea10bb056eca404bbd97395bac8dfd2a",
+      "markdownHash": "3a7c322549b35f550a2e0323f7f43994470b55eaeb6933c8b08121486facaabe",
+      "missingItems": [],
+      "oldParentKey": "world-6-cursebound-echoes-dreambound-continent",
+      "oldOrder": 20,
+      "destination": {
+        "container": "world-6-cursebound-echoes-phase-ascension",
+        "type": "主线锚点"
+      }
+    },
+    {
+      "key": "world-6-cursebound-echoes-secret-rune-academy",
+      "world": "6-咒缚回响",
+      "title": "秘纹学院",
+      "sourceFile": "src/game/data/story_outline/sources/4-fantasy.json",
+      "markdownPath": "src/game/data/story_outline/4-fantasy/3-秘纹学院.md",
+      "sourceContentHash": "cc8530a533bb98668f13647264f221c58c589b1c9078201bd969510d78e90487",
+      "markdownHash": "512f7db14b06b8ad26d3ca298b8d542b034b7589df8624c11d79e42786e8a37f",
+      "missingItems": [],
+      "oldParentKey": "world-6-cursebound-echoes-silent-rite-court",
+      "oldOrder": 30,
+      "destination": {
+        "container": "world-6-cursebound-echoes-phase-ascension",
+        "type": "主线锚点"
+      }
+    },
+    {
+      "key": "world-6-cursebound-echoes-silent-rite-court",
+      "world": "6-咒缚回响",
+      "title": "缄礼宫廷",
+      "sourceFile": "src/game/data/story_outline/sources/4-fantasy.json",
+      "markdownPath": "src/game/data/story_outline/4-fantasy/2.1-缄礼宫廷.md",
+      "sourceContentHash": "775346e87d0a0d4be507d383241eca7333eb40bcab88182122c2d868e78de3d7",
+      "markdownHash": "fac30d22760dd143dac63ca1751674cdd9870249ef377f1969cc2ef946415431",
+      "missingItems": [],
+      "oldParentKey": "world-6-cursebound-echoes-silver-crown-capital",
+      "oldOrder": 10,
+      "destination": {
+        "container": "world-6-cursebound-echoes-phase-ascension",
+        "type": "王都区域支线"
+      }
+    },
+    {
+      "key": "world-6-cursebound-echoes-holy-seal-islands",
+      "world": "6-咒缚回响",
+      "title": "圣印群岛",
+      "sourceFile": "src/game/data/story_outline/sources/4-fantasy.json",
+      "markdownPath": "src/game/data/story_outline/4-fantasy/4-圣印群岛.md",
+      "sourceContentHash": "b4009db21bcdd5b15bec8d65033c13818e6993273e6f01766078e9a6f6d7f6e9",
+      "markdownHash": "e61fff996eb48f75a2c7a5b1d7408419f730e0b76e7550fe9bebb31cffd86862",
+      "missingItems": [],
+      "oldParentKey": "world-6-cursebound-echoes-secret-rune-academy",
+      "oldOrder": 40,
+      "destination": {
+        "container": "world-6-cursebound-echoes-phase-diagnosis",
+        "type": "主线锚点"
+      }
+    },
+    {
+      "key": "world-6-cursebound-echoes-lone-tide-sea",
+      "world": "6-咒缚回响",
+      "title": "逐潮孤海",
+      "sourceFile": "src/game/data/story_outline/sources/4-fantasy.json",
+      "markdownPath": "src/game/data/story_outline/4-fantasy/5-逐潮孤海.md",
+      "sourceContentHash": "f928697fda4882b44a33aae85a5df893cd2bf364554135ebfab5b82e70515e4c",
+      "markdownHash": "6471c0bfd452ac1caf9f58c4a564898e95470316c8dc477b6c65dfc14b9d80cb",
+      "missingItems": [],
+      "oldParentKey": "world-6-cursebound-echoes-holy-seal-islands",
+      "oldOrder": 50,
+      "destination": {
+        "container": "world-6-cursebound-echoes-phase-journey",
+        "type": "地区卷"
+      }
+    },
+    {
+      "key": "world-6-cursebound-echoes-molten-glow-machine-city",
+      "world": "6-咒缚回响",
+      "title": "熔辉机城",
+      "sourceFile": "src/game/data/story_outline/sources/4-fantasy.json",
+      "markdownPath": "src/game/data/story_outline/4-fantasy/6-熔辉机城.md",
+      "sourceContentHash": "e76ffebfab2ab28acd07d4ce5b056982801f5c2c2ed633350d0ff4513247517e",
+      "markdownHash": "8931941515eb0fa424a6c985404edf52259ebda4c90ef431ba634c6983d2885d",
+      "missingItems": [],
+      "oldParentKey": "world-6-cursebound-echoes-lone-tide-sea",
+      "oldOrder": 60,
+      "destination": {
+        "container": "world-6-cursebound-echoes-phase-journey",
+        "type": "地区卷"
+      }
+    },
+    {
+      "key": "world-6-cursebound-echoes-forest-oath-fey-realm",
+      "world": "6-咒缚回响",
+      "title": "森誓妖境",
+      "sourceFile": "src/game/data/story_outline/sources/4-fantasy.json",
+      "markdownPath": "src/game/data/story_outline/4-fantasy/7-森誓妖境.md",
+      "sourceContentHash": "fad8e9c6ea164a2c8235603bdd598cc013c52291a6b10c5169cdc6b44b8f5426",
+      "markdownHash": "821aef0704181f9f686fa4cc2aab421dffc8ad87b8c5ae2a85e649355cf8963e",
+      "missingItems": [],
+      "oldParentKey": "world-6-cursebound-echoes-molten-glow-machine-city",
+      "oldOrder": 70,
+      "destination": {
+        "container": "world-6-cursebound-echoes-phase-journey",
+        "type": "地区卷"
+      }
+    },
+    {
+      "key": "world-6-cursebound-echoes-darkmoon-castle",
+      "world": "6-咒缚回响",
+      "title": "暗月古堡",
+      "sourceFile": "src/game/data/story_outline/sources/4-fantasy.json",
+      "markdownPath": "src/game/data/story_outline/4-fantasy/8-暗月古堡.md",
+      "sourceContentHash": "70984c2aafa093b626bbbbebc41f75af4ac71221379dcbf69da8d6294e9aa8ff",
+      "markdownHash": "4705d92ae9e1a4390148627f1c15cd56797c02a2f516e98033818902cff722ac",
+      "missingItems": [],
+      "oldParentKey": "world-6-cursebound-echoes-tiny-liluo-adventure",
+      "oldOrder": 80,
+      "destination": {
+        "container": "world-6-cursebound-echoes-phase-journey",
+        "type": "地区卷"
+      }
+    },
+    {
+      "key": "world-6-cursebound-echoes-tiny-liluo-adventure",
+      "world": "6-咒缚回响",
+      "title": "小小璃落大冒险",
+      "sourceFile": "src/game/data/story_outline/sources/4-fantasy.json",
+      "markdownPath": "src/game/data/story_outline/4-fantasy/7.1-小小璃落大冒险.md",
+      "sourceContentHash": "b7fc68f28d62c1f5d091a05d566a65064daf1175007fc89bf9af804e783964de",
+      "markdownHash": "38d6a2c2c0a56b243068902aeeae70e32c76a94e4573df12d982509b09f8595b",
+      "missingItems": [],
+      "oldParentKey": "world-6-cursebound-echoes-forest-oath-fey-realm",
+      "oldOrder": 80,
+      "destination": {
+        "container": "world-6-cursebound-echoes-phase-journey",
+        "type": "森誓妖境相关支线"
+      }
+    },
+    {
+      "key": "world-6-cursebound-echoes-bone-throne",
+      "world": "6-咒缚回响",
+      "title": "骸骨王座",
+      "sourceFile": "src/game/data/story_outline/sources/4-fantasy.json",
+      "markdownPath": "src/game/data/story_outline/4-fantasy/9-骸骨王座.md",
+      "sourceContentHash": "4e55278e6a7d8d8efc9467702fd77dba959f9ebc83c40de6f2f3509f551a3363",
+      "markdownHash": "3d219d82f2c1d5a662a374a49a85ec40308d2acde0e7ac518dd6499d46ac71d3",
+      "missingItems": [],
+      "oldParentKey": "world-6-cursebound-echoes-darkmoon-castle",
+      "oldOrder": 90,
+      "destination": {
+        "container": "world-6-cursebound-echoes-phase-journey",
+        "type": "地区卷"
+      }
+    },
+    {
+      "key": "world-6-cursebound-echoes-dragon-sleep-mountains",
+      "world": "6-咒缚回响",
+      "title": "龙眠山脉",
+      "sourceFile": "src/game/data/story_outline/sources/4-fantasy.json",
+      "markdownPath": "src/game/data/story_outline/4-fantasy/10-龙眠山脉.md",
+      "sourceContentHash": "0ba30c61418a0b0eed30eb52521301563ccfe2041cecc84bafb555bc4f44b7d9",
+      "markdownHash": "8a5592537a813daf54dc7cead7b2419ba107ffc66a5982340889edf8ea7763b3",
+      "missingItems": [],
+      "oldParentKey": "world-6-cursebound-echoes-bone-throne",
+      "oldOrder": 100,
+      "destination": {
+        "container": "world-6-cursebound-echoes-phase-journey",
+        "type": "地区卷"
+      }
+    },
+    {
+      "key": "world-6-cursebound-echoes-secret-tower-long-song",
+      "world": "6-咒缚回响",
+      "title": "秘塔长歌",
+      "sourceFile": "src/game/data/story_outline/sources/4-fantasy.json",
+      "markdownPath": "src/game/data/story_outline/4-fantasy/11-秘塔长歌.md",
+      "sourceContentHash": "e39ff8706d521367df2c7746dc84230e68932eae188772f26d650d5221248f4a",
+      "markdownHash": "8f89dfb52644769a4253ac12c5f4ff2eb4ce5fa008b40689b0f23f03aa6fa941",
+      "missingItems": [],
+      "oldParentKey": "world-6-cursebound-echoes-dragon-sleep-mountains",
+      "oldOrder": 110,
+      "destination": {
+        "container": "world-6-cursebound-echoes-phase-trigger",
+        "type": "主线锚点"
+      }
+    },
+    {
+      "key": "world-6-cursebound-echoes-locked-horn-wasteland",
+      "world": "6-咒缚回响",
+      "title": "锁角荒原",
+      "sourceFile": "src/game/data/story_outline/sources/4-fantasy.json",
+      "markdownPath": "src/game/data/story_outline/4-fantasy/12-锁角荒原.md",
+      "sourceContentHash": "b9d4c70521ca4d5f030dc0b5285fb8ba56420d22ed3f3e573dc84fb5f1046a6a",
+      "markdownHash": "9dd223d34293d673705651a5dbac978c5856e743d204ad09e5a514364a187534",
+      "missingItems": [],
+      "oldParentKey": "world-6-cursebound-echoes-secret-tower-long-song",
+      "oldOrder": 120,
+      "destination": {
+        "container": "world-6-cursebound-echoes-phase-journey",
+        "type": "地区卷"
+      }
+    },
+    {
+      "key": "world-6-cursebound-echoes-dark-underground-city",
+      "world": "6-咒缚回响",
+      "title": "幽暗城池",
+      "sourceFile": "src/game/data/story_outline/sources/4-fantasy.json",
+      "markdownPath": "src/game/data/story_outline/4-fantasy/13-幽暗城池.md",
+      "sourceContentHash": "61cb952415042883439d33be2ff5a772bda63eda0bf5fc4d6c883c06e364e40e",
+      "markdownHash": "2f7e5935d3e7e7145e1e2e2515bb5653ddad252283605323f3473e37bd97e41c",
+      "missingItems": [],
+      "oldParentKey": "world-6-cursebound-echoes-locked-horn-wasteland",
+      "oldOrder": 130,
+      "destination": {
+        "container": "world-6-cursebound-echoes-phase-journey",
+        "type": "地区卷"
+      }
+    },
+    {
+      "key": "world-6-cursebound-echoes-crystal-sand-court",
+      "world": "6-咒缚回响",
+      "title": "晶沙王庭",
+      "sourceFile": "src/game/data/story_outline/sources/4-fantasy.json",
+      "markdownPath": "src/game/data/story_outline/4-fantasy/14-晶沙王庭.md",
+      "sourceContentHash": "41ece94ea99df0966486ddcb6c5db0beed1cf8a1bae5af702d1389a424051a71",
+      "markdownHash": "94181fad2f8d6ac3a0f614f0f80ec11b5a7b4d7c7bd6d7a417d129eb37e8011b",
+      "missingItems": [],
+      "oldParentKey": "world-6-cursebound-echoes-dark-underground-city",
+      "oldOrder": 140,
+      "destination": {
+        "container": "world-6-cursebound-echoes-phase-journey",
+        "type": "地区卷"
+      }
+    },
+    {
+      "key": "world-6-cursebound-echoes-northern-frost-crown",
+      "world": "6-咒缚回响",
+      "title": "北境霜冠",
+      "sourceFile": "src/game/data/story_outline/sources/4-fantasy.json",
+      "markdownPath": "src/game/data/story_outline/4-fantasy/15-北境霜冠.md",
+      "sourceContentHash": "1a3502243978bbb11971f8d5b2f55b732c655e3d9bba746fa1935ac7d62efa8e",
+      "markdownHash": "36ab9c16944f3e0f0804fc66785cc325d8b003d6b5a38f8bc918f8c91df8ddd3",
+      "missingItems": [],
+      "oldParentKey": "world-6-cursebound-echoes-crystal-sand-court",
+      "oldOrder": 150,
+      "destination": {
+        "container": "world-6-cursebound-echoes-phase-journey",
+        "type": "地区卷"
+      }
+    },
+    {
+      "key": "world-6-cursebound-echoes-shadow-thief-city-state",
+      "world": "6-咒缚回响",
+      "title": "盗影城邦",
+      "sourceFile": "src/game/data/story_outline/sources/4-fantasy.json",
+      "markdownPath": "src/game/data/story_outline/4-fantasy/16-盗影城邦.md",
+      "sourceContentHash": "f9734e17e9adbee8241f66206207a00f412363a648e4ed6e823d7001f71d63ff",
+      "markdownHash": "58916f12bac8a1c739a0f5c0edfb62d8e237490b003b4ca4e7e07ae80b8e72d6",
+      "missingItems": [],
+      "oldParentKey": "world-6-cursebound-echoes-northern-frost-crown",
+      "oldOrder": 160,
+      "destination": {
+        "container": "world-6-cursebound-echoes-phase-journey",
+        "type": "地区卷"
+      }
+    },
+    {
+      "key": "world-6-cursebound-echoes-witch-swamp",
+      "world": "6-咒缚回响",
+      "title": "女巫沼泽",
+      "sourceFile": "src/game/data/story_outline/sources/4-fantasy.json",
+      "markdownPath": "src/game/data/story_outline/4-fantasy/17-女巫沼泽.md",
+      "sourceContentHash": "2f8c0ff34fbf66f6744af327b83b710d9b261364e093395154304ba0d164b633",
+      "markdownHash": "74c0472ce16901b159e8ed5302e9a1d6db09fb93f42c8099fd6e00fcd028484a",
+      "missingItems": [],
+      "oldParentKey": "world-6-cursebound-echoes-shadow-thief-city-state",
+      "oldOrder": 170,
+      "destination": {
+        "container": "world-6-cursebound-echoes-phase-journey",
+        "type": "地区卷"
+      }
+    },
+    {
+      "key": "world-6-cursebound-echoes-astral-rift-gate",
+      "world": "6-咒缚回响",
+      "title": "星界裂门",
+      "sourceFile": "src/game/data/story_outline/sources/4-fantasy.json",
+      "markdownPath": "src/game/data/story_outline/4-fantasy/18-星界裂门.md",
+      "sourceContentHash": "dbbdd0031c8b078a71647e7882162d1ee694b4aa28e8cbea3bdd0b0185536508",
+      "markdownHash": "43e6a025d9dfd757101fa84cb71690472d2462d48aed0a31fc06f4aa0a2ed8d7",
+      "missingItems": [],
+      "oldParentKey": "world-6-cursebound-echoes-witch-swamp",
+      "oldOrder": 180,
+      "destination": {
+        "container": "world-6-cursebound-echoes-phase-astral",
+        "type": "主线锚点"
+      }
+    },
+    {
+      "key": "world-6-cursebound-echoes-abyss-contract",
+      "world": "6-咒缚回响",
+      "title": "深渊契约",
+      "sourceFile": "src/game/data/story_outline/sources/4-fantasy.json",
+      "markdownPath": "src/game/data/story_outline/4-fantasy/19-深渊契约.md",
+      "sourceContentHash": "47bd0f21853531bb929146f300b97eb7a58feaeaa0098c67defc1b83a173f7f3",
+      "markdownHash": "ed5ad6d6f9c8cee397e633959bd788cef03f5ba7605fd9a32d0b993e58cf8aea",
+      "missingItems": [],
+      "oldParentKey": "world-6-cursebound-echoes-astral-rift-gate",
+      "oldOrder": 190,
+      "destination": {
+        "container": "world-6-cursebound-echoes-phase-sovereignty",
+        "type": "主线锚点"
+      }
+    },
+    {
+      "key": "world-5-star-weaving-dream",
+      "world": "5-星宇织梦",
+      "title": "星宇织梦（科幻）",
+      "sourceFile": "src/game/data/story_outline/sources/5-science.json",
+      "markdownPath": null,
+      "sourceContentHash": "b7160334880b056d2206076a34eeb30d9808c98757535b7fefbaaecf4e4e62c4",
+      "markdownHash": null,
+      "missingItems": [],
+      "oldParentKey": null,
+      "oldOrder": 60,
+      "destination": {
+        "container": null,
+        "type": "世界分类"
+      }
+    },
+    {
+      "key": "world-5-star-weaving-dream-stargate-port",
+      "world": "5-星宇织梦",
+      "title": "星门港区",
+      "sourceFile": "src/game/data/story_outline/sources/5-science.json",
+      "markdownPath": "src/game/data/story_outline/5-science/1-星门港区.md",
+      "sourceContentHash": "913bf6ed52435a8f3dc45c21cb2beb933f954a4188c0c1d4b51428c36dc0fdb6",
+      "markdownHash": "1cb2e4b283e7dd84677ab9e543cf94801b96b23b89cad19072c5459e0cb40c3d",
+      "missingItems": [],
+      "oldParentKey": "world-5-star-weaving-dream",
+      "oldOrder": 10,
+      "destination": {
+        "container": "world-5-star-weaving-dream-voyage-unregistered",
+        "type": "航程锚点"
+      }
+    },
+    {
+      "key": "world-5-star-weaving-dream-ringlock-stars",
+      "world": "5-星宇织梦",
+      "title": "环锁群星",
+      "sourceFile": "src/game/data/story_outline/sources/5-science.json",
+      "markdownPath": "src/game/data/story_outline/5-science/2-环锁群星.md",
+      "sourceContentHash": "51a1034209222886e432ec8d9629865d132bfa5bee2b20f44fd98084eed74da8",
+      "markdownHash": "e2e6189e71f0b71170932024200bf1ff702db3adbe12b8c8111e304396d764e6",
+      "missingItems": [],
+      "oldParentKey": "world-5-star-weaving-dream-stargate-port",
+      "oldOrder": 20,
+      "destination": {
+        "container": "world-5-star-weaving-dream-voyage-unregistered",
+        "type": "航程锚点"
+      }
+    },
+    {
+      "key": "world-5-star-weaving-dream-bionic-maze",
+      "world": "5-星宇织梦",
+      "title": "仿生迷途",
+      "sourceFile": "src/game/data/story_outline/sources/5-science.json",
+      "markdownPath": "src/game/data/story_outline/5-science/4-仿生迷途.md",
+      "sourceContentHash": "c1bb6c72756b9fa5f333285c8a845ac0145be9ed3024d0a610f69248337de5b9",
+      "markdownHash": "bb9ce960b8994f7323c30b1fde91d60969773578e91248f3903fb03847d258a6",
+      "missingItems": [],
+      "oldParentKey": "world-5-star-weaving-dream-reverse-immigration-prison",
+      "oldOrder": 30,
+      "destination": {
+        "container": "world-5-star-weaving-dream-known-worlds",
+        "type": "独立篇章"
+      }
+    },
+    {
+      "key": "world-5-star-weaving-dream-order-paradise",
+      "world": "5-星宇织梦",
+      "title": "律序乐园",
+      "sourceFile": "src/game/data/story_outline/sources/5-science.json",
+      "markdownPath": "src/game/data/story_outline/5-science/3-律序乐园.md",
+      "sourceContentHash": "7c76f6917189bdf71421ed3952ec0a420b02b75542390602b00ce540fc8c6b72",
+      "markdownHash": "976cf76b4ec9acdd4881893b81fb2c9c493b9391d8e0474f1c917514d5aceb51",
+      "missingItems": [],
+      "oldParentKey": "world-5-star-weaving-dream-ringlock-stars",
+      "oldOrder": 25,
+      "destination": {
+        "container": "world-5-star-weaving-dream-voyage-unregistered",
+        "type": "完整制度文明篇"
+      }
+    },
+    {
+      "key": "world-5-star-weaving-dream-restraint-paradise-shop",
+      "world": "5-星宇织梦",
+      "title": "拘束具店铺",
+      "sourceFile": "src/game/data/story_outline/sources/5-science.json",
+      "markdownPath": "src/game/data/story_outline/5-science/3.2-拘束具店铺.md",
+      "sourceContentHash": "dc1e75039a983c556db3e82fcb59cb7c29fe4d379a1b1a40d2325d3cf07310de",
+      "markdownHash": "08a7d72c00068d047d3c5526aa74ac53b76771913ed53f49ac6a269842ff2e3c",
+      "missingItems": [],
+      "oldParentKey": "world-5-star-weaving-dream-restraint-school",
+      "oldOrder": 27,
+      "destination": {
+        "container": "world-5-star-weaving-dream-voyage-unregistered",
+        "type": "律序乐园内部篇"
+      }
+    },
+    {
+      "key": "world-5-star-weaving-dream-restraint-school",
+      "world": "5-星宇织梦",
+      "title": "紧缚学校",
+      "sourceFile": "src/game/data/story_outline/sources/5-science.json",
+      "markdownPath": "src/game/data/story_outline/5-science/3.1-紧缚学校.md",
+      "sourceContentHash": "53b4635398d7ec5e8dba44ebb30363435136920465d0edd4b14b3be79e424482",
+      "markdownHash": "96aa0648ec80f0211e9a726eff536ce587f4d3bfd25a7783e9c54ba771e8369c",
+      "missingItems": [],
+      "oldParentKey": "world-5-star-weaving-dream-order-paradise",
+      "oldOrder": 26,
+      "destination": {
+        "container": "world-5-star-weaving-dream-voyage-unregistered",
+        "type": "律序乐园内部篇"
+      }
+    },
+    {
+      "key": "world-5-star-weaving-dream-reverse-immigration-prison",
+      "world": "5-星宇织梦",
+      "title": "反向移民监狱",
+      "sourceFile": "src/game/data/story_outline/sources/5-science.json",
+      "markdownPath": "src/game/data/story_outline/5-science/3.3-反向移民监狱.md",
+      "sourceContentHash": "00ce4defbac09d4986e50e5c09b2371bbb224f921bf312ec4614b9d47ae3a925",
+      "markdownHash": "6dfc6e3650a2ce977882e31396093e3648daed16b946f430e8d525e602098fba",
+      "missingItems": [],
+      "oldParentKey": "world-5-star-weaving-dream-restraint-paradise-shop",
+      "oldOrder": 28,
+      "destination": {
+        "container": "world-5-star-weaving-dream-voyage-unregistered",
+        "type": "律序乐园内部篇"
+      }
+    },
+    {
+      "key": "world-5-star-weaving-dream-mirror-domain",
+      "world": "5-星宇织梦",
+      "title": "镜域沉沦",
+      "sourceFile": "src/game/data/story_outline/sources/5-science.json",
+      "markdownPath": "src/game/data/story_outline/5-science/5-镜域沉沦.md",
+      "sourceContentHash": "b14dc38d845a5c783680af671533c881ce2dfa47cbf333660b5da396f641422d",
+      "markdownHash": "e2627b6dcc96a023e8c68f3ef94caab8ae2e574ac04a44dbeb320d9cbfa74c25",
+      "missingItems": [],
+      "oldParentKey": "world-5-star-weaving-dream-bionic-maze",
+      "oldOrder": 40,
+      "destination": {
+        "container": "world-5-star-weaving-dream-known-worlds",
+        "type": "独立篇章"
+      }
+    },
+    {
+      "key": "world-5-star-weaving-dream-sequence-gu-city",
+      "world": "5-星宇织梦",
+      "title": "基序蛊城",
+      "sourceFile": "src/game/data/story_outline/sources/5-science.json",
+      "markdownPath": "src/game/data/story_outline/5-science/6-基序蛊城.md",
+      "sourceContentHash": "c95888882d943600fdc24be5b3c6a3c652ba99131c6f732feb57f048d23153c0",
+      "markdownHash": "205480f290bb759ea087541a4ba883dc908647b6db8f595b787925b7146916ae",
+      "missingItems": [],
+      "oldParentKey": "world-5-star-weaving-dream-mirror-domain",
+      "oldOrder": 50,
+      "destination": {
+        "container": "world-5-star-weaving-dream-known-worlds",
+        "type": "独立篇章"
+      }
+    },
+    {
+      "key": "world-5-star-weaving-dream-star-voyage",
+      "world": "5-星宇织梦",
+      "title": "逐星远航",
+      "sourceFile": "src/game/data/story_outline/sources/5-science.json",
+      "markdownPath": "src/game/data/story_outline/5-science/7-逐星远航.md",
+      "sourceContentHash": "28323c00a0cbf299265beaef06a6439ddf31772c70f347d2a6abf6be6072c034",
+      "markdownHash": "1658b847ab6636c4275c6b1c3859b3ef77b4d650ba1259545299e9ae72e85209",
+      "missingItems": [],
+      "oldParentKey": "world-5-star-weaving-dream-sequence-gu-city",
+      "oldOrder": 60,
+      "destination": {
+        "container": "world-5-star-weaving-dream-voyage-long-range",
+        "type": "航程锚点"
+      }
+    },
+    {
+      "key": "world-5-star-weaving-dream-cryosleep-ark",
+      "world": "5-星宇织梦",
+      "title": "冷眠方舟",
+      "sourceFile": "src/game/data/story_outline/sources/5-science.json",
+      "markdownPath": "src/game/data/story_outline/5-science/8-冷眠方舟.md",
+      "sourceContentHash": "752e39066e6e6bab2ef7a0a01daa61cc58c3a82ea96b7bdd1c1926b9709446e4",
+      "markdownHash": "a10e4b619d4e1ca951383bae271f97606db71b57158227fd6a7856fca650aa5f",
+      "missingItems": [],
+      "oldParentKey": "world-5-star-weaving-dream-star-voyage",
+      "oldOrder": 70,
+      "destination": {
+        "container": "world-5-star-weaving-dream-known-worlds",
+        "type": "飞船或方舟篇"
+      }
+    },
+    {
+      "key": "world-5-star-weaving-dream-orbital-garden",
+      "world": "5-星宇织梦",
+      "title": "轨道庭院",
+      "sourceFile": "src/game/data/story_outline/sources/5-science.json",
+      "markdownPath": "src/game/data/story_outline/5-science/9-轨道庭院.md",
+      "sourceContentHash": "d94b142e34ea141d28e27a18301a0b111cafd911d7e913d691b646a37c1076db",
+      "markdownHash": "a6bee012a1b71917bfa3141629faaccc8f5aae99b4828ad2d73d3026bbbe051c",
+      "missingItems": [],
+      "oldParentKey": "world-5-star-weaving-dream-cryosleep-ark",
+      "oldOrder": 80,
+      "destination": {
+        "container": "world-5-star-weaving-dream-known-worlds",
+        "type": "轨道设施篇"
+      }
+    },
+    {
+      "key": "world-5-star-weaving-dream-molten-armor-warstar",
+      "world": "5-星宇织梦",
+      "title": "熔铠战星",
+      "sourceFile": "src/game/data/story_outline/sources/5-science.json",
+      "markdownPath": "src/game/data/story_outline/5-science/10-熔铠战星.md",
+      "sourceContentHash": "f135acb93fcbe83a759310c2182920d877eba114db0c1398cbaa37d299566a0b",
+      "markdownHash": "56e82d5563ab35bb08bb97592bed65cd577f0fb7dfbf0fe89581609a42a463c4",
+      "missingItems": [],
+      "oldParentKey": "world-5-star-weaving-dream-orbital-garden",
+      "oldOrder": 90,
+      "destination": {
+        "container": "world-5-star-weaving-dream-frontier-voyage",
+        "type": "边境候选锚点"
+      }
+    },
+    {
+      "key": "world-5-star-weaving-dream-frontier-colony",
+      "world": "5-星宇织梦",
+      "title": "边境殖民星",
+      "sourceFile": "src/game/data/story_outline/sources/5-science.json",
+      "markdownPath": "src/game/data/story_outline/5-science/11-边境殖民星.md",
+      "sourceContentHash": "885fa00d5f8831605e94ea78fbb298e8b2f77183799be3bd862e8b848c107ca8",
+      "markdownHash": "b4f30fae78dfc03331a6045840b5c961c0d5d564020d16f921231ded2091d606",
+      "missingItems": [],
+      "oldParentKey": "world-5-star-weaving-dream-molten-armor-warstar",
+      "oldOrder": 100,
+      "destination": {
+        "container": "world-5-star-weaving-dream-frontier-voyage",
+        "type": "边境候选锚点"
+      }
+    },
+    {
+      "key": "world-5-star-weaving-dream-dome-hunt",
+      "world": "5-星宇织梦",
+      "title": "穹顶狩猎",
+      "sourceFile": "src/game/data/story_outline/sources/5-science.json",
+      "markdownPath": "src/game/data/story_outline/5-science/11.1-穹顶狩猎.md",
+      "sourceContentHash": "4ad0ca487a9da746ed776052dbaf15f0ef6eb65c7e7742ad6b1034eda6e084c1",
+      "markdownHash": "5538fe3c45d92494bec1d7a92dfd0e88e537e6a6f41907a94e44913e7ef67138",
+      "missingItems": [],
+      "oldParentKey": "world-5-star-weaving-dream-frontier-colony",
+      "oldOrder": 105,
+      "destination": {
+        "container": "world-5-star-weaving-dream-frontier-voyage",
+        "type": "边境殖民星相关篇"
+      }
+    },
+    {
+      "key": "world-5-star-weaving-dream-barren-mining-asteroid",
+      "world": "5-星宇织梦",
+      "title": "荒矿小行星",
+      "sourceFile": "src/game/data/story_outline/sources/5-science.json",
+      "markdownPath": "src/game/data/story_outline/5-science/12-荒矿小行星.md",
+      "sourceContentHash": "f64a664035463bbed5c882a804f079d040de7837c501e1b62a126c1798a889d7",
+      "markdownHash": "bd59d71ff7959faf12903aa4f012b22e257099aadff806773a85c24146c1f89c",
+      "missingItems": [],
+      "oldParentKey": "world-5-star-weaving-dream-dome-hunt",
+      "oldOrder": 110,
+      "destination": {
+        "container": "world-5-star-weaving-dream-frontier-voyage",
+        "type": "边境篇"
+      }
+    },
+    {
+      "key": "world-5-star-weaving-dream-deep-blue-moon",
+      "world": "5-星宇织梦",
+      "title": "深蓝海卫",
+      "sourceFile": "src/game/data/story_outline/sources/5-science.json",
+      "markdownPath": "src/game/data/story_outline/5-science/13-深蓝海卫.md",
+      "sourceContentHash": "3c4ac334307ad9763ee2e410908af17f3348f0f7e7c54cf5e7dd8292902ce30d",
+      "markdownHash": "58fd3e1594a7624ab0310d3cf00d1b61dcfe65f29a6c638203df604d5878cd33",
+      "missingItems": [],
+      "oldParentKey": "world-5-star-weaving-dream-barren-mining-asteroid",
+      "oldOrder": 120,
+      "destination": {
+        "container": "world-5-star-weaving-dream-frontier-voyage",
+        "type": "边境篇"
+      }
+    },
+    {
+      "key": "world-5-star-weaving-dream-interstellar-black-market",
+      "world": "5-星宇织梦",
+      "title": "星际黑市",
+      "sourceFile": "src/game/data/story_outline/sources/5-science.json",
+      "markdownPath": "src/game/data/story_outline/5-science/14-星际黑市.md",
+      "sourceContentHash": "cab552c7ac4932ee17c7a9e7be406ee4dd66c1a2ddaddfabbd5d244958ff8e10",
+      "markdownHash": "e2a69b97bd0f33c20f202ee9669240a2ce6f531a654cc0ceefde2e7745a765da",
+      "missingItems": [],
+      "oldParentKey": "world-5-star-weaving-dream-deep-blue-moon",
+      "oldOrder": 130,
+      "destination": {
+        "container": "world-5-star-weaving-dream-frontier-voyage",
+        "type": "边境篇"
+      }
+    },
+    {
+      "key": "world-5-star-weaving-dream-prison-planet",
+      "world": "5-星宇织梦",
+      "title": "监狱行星",
+      "sourceFile": "src/game/data/story_outline/sources/5-science.json",
+      "markdownPath": "src/game/data/story_outline/5-science/15-监狱行星.md",
+      "sourceContentHash": "ca3a116ab1f79e0f75959cee4f5888bc31df21fa419e726f76ecef2a1a00f64d",
+      "markdownHash": "7e6d49ad369519ae4fb980334e39fb32a6f377143057638c7eb5b3d3e8bfbe42",
+      "missingItems": [],
+      "oldParentKey": "world-5-star-weaving-dream-interstellar-black-market",
+      "oldOrder": 140,
+      "destination": {
+        "container": "world-5-star-weaving-dream-frontier-voyage",
+        "type": "边境篇"
+      }
+    },
+    {
+      "key": "world-5-star-weaving-dream-clone-corridor",
+      "world": "5-星宇织梦",
+      "title": "克隆回廊",
+      "sourceFile": "src/game/data/story_outline/sources/5-science.json",
+      "markdownPath": "src/game/data/story_outline/5-science/16-克隆回廊.md",
+      "sourceContentHash": "8c3daab86a899efed7257e73b16b65b21beda4f93923da04efe44c39796f6b93",
+      "markdownHash": "31a1fd1ba4fb7db457add950134364efafa6b54bd36b45e14fa57cc870439331",
+      "missingItems": [],
+      "oldParentKey": "world-5-star-weaving-dream-prison-planet",
+      "oldOrder": 150,
+      "destination": {
+        "container": "world-5-star-weaving-dream-deep-space",
+        "type": "深空篇"
+      }
+    },
+    {
+      "key": "world-5-star-weaving-dream-hivemind-hive",
+      "world": "5-星宇织梦",
+      "title": "群心蜂巢",
+      "sourceFile": "src/game/data/story_outline/sources/5-science.json",
+      "markdownPath": "src/game/data/story_outline/5-science/16-群心蜂巢.md",
+      "sourceContentHash": "1692adba6d10c54fd8a0c0e4af9e0035ac86d78001da0e09727ac59409746fcc",
+      "markdownHash": "1ccf7384f56cf676793c8a0498a4395e9533cec7dce55971c349b12ab12505da",
+      "missingItems": [],
+      "oldParentKey": "world-5-star-weaving-dream-clone-corridor",
+      "oldOrder": 160,
+      "destination": {
+        "container": "world-5-star-weaving-dream-deep-space",
+        "type": "深空篇"
+      }
+    },
+    {
+      "key": "world-5-star-weaving-dream-first-contact",
+      "world": "5-星宇织梦",
+      "title": "异星初触",
+      "sourceFile": "src/game/data/story_outline/sources/5-science.json",
+      "markdownPath": "src/game/data/story_outline/5-science/17-异星初触.md",
+      "sourceContentHash": "9471354f127817da0e7a6a36b75028229916e5c93052294852768a1b35538cb4",
+      "markdownHash": "fcbb9dec1fa68f695dee038fb6d736e05ea732ecb3c9dd27992b18aa4f4e08e8",
+      "missingItems": [],
+      "oldParentKey": "world-5-star-weaving-dream-hivemind-hive",
+      "oldOrder": 170,
+      "destination": {
+        "container": "world-5-star-weaving-dream-deep-space",
+        "type": "航程锚点"
+      }
+    },
+    {
+      "key": "world-5-star-weaving-dream-forerunner-ruins",
+      "world": "5-星宇织梦",
+      "title": "先驱遗迹",
+      "sourceFile": "src/game/data/story_outline/sources/5-science.json",
+      "markdownPath": "src/game/data/story_outline/5-science/19-先驱遗迹.md",
+      "sourceContentHash": "2458a85d98250d1b1bc658a4f11fb7d1de24215145f8a09d9058844603f809a0",
+      "markdownHash": "13742dfd4022ca71ec9c9458ad2c2a98cb09a1be1b061d9d67cbd2e8305a6ac5",
+      "missingItems": [],
+      "oldParentKey": "world-5-star-weaving-dream-first-contact",
+      "oldOrder": 180,
+      "destination": {
+        "container": "world-5-star-weaving-dream-deep-space",
+        "type": "航程锚点"
+      }
+    },
+    {
+      "key": "world-5-star-weaving-dream-quantum-maze",
+      "world": "5-星宇织梦",
+      "title": "量子迷城",
+      "sourceFile": "src/game/data/story_outline/sources/5-science.json",
+      "markdownPath": "src/game/data/story_outline/5-science/20-量子迷城.md",
+      "sourceContentHash": "e0f54a7c49d6305d48c925145b974d80822ce37752f6cd92ae57e30cc73f8357",
+      "markdownHash": "c7143d9c18a17093db2ef3efbcce2fec7a8b3050f373ab6ae81a15eb64c34615",
+      "missingItems": [],
+      "oldParentKey": "world-5-star-weaving-dream-forerunner-ruins",
+      "oldOrder": 190,
+      "destination": {
+        "container": "world-5-star-weaving-dream-deep-space",
+        "type": "阶段性高潮"
+      }
+    }
+  ]
+}

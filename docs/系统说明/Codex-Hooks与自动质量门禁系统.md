@@ -6,7 +6,7 @@
 
 | 层级 | 入口 | 作用 | 明确不做 |
 | --- | --- | --- | --- |
-| Codex Hook | `.codex/hooks.json` | 工具调用前拦截明确危险操作 | 不扫描提示词、不在任务停止时运行门禁、不复制 Skill 或业务验证 |
+| Codex Hook | `.codex/hooks.json`（保持空配置） | 不接入项目级生命周期拦截；安全由平台与显式边界承担 | 不扫描提示词、不拦截工具调用、不在任务停止时运行门禁、不复制 Skill 或业务验证 |
 | 本地 pre-push | `.githooks/pre-push` | 按准备推送的提交范围运行必要检查、测试与构建；ERROR 阻止推送 | 不安装依赖，不改文件，不上传内容 |
 | GitHub Actions | `.github/workflows/quality-gate.yml` | 在 Windows、Node 22 和干净 checkout 上运行全部确定性基础合同 | 不运行 live eval、Playwright、离线打包或 Release |
 
@@ -45,17 +45,19 @@ GitHub Actions 只能检查已经推送的提交；真正能在推送发生前�
 - `WARNING`：范围无法完全分类或存在非阻断问题；报告但默认不阻断。
 - `INFO`：执行范围、计数和耗时等记录。
 
-## Codex Hooks 策略
+## Codex 生命周期 Hook 策略
 
 ### 生命周期性能边界（强制）
 
-提示提交、工具调用和任务停止等 Codex 生命周期 Hook 处在用户交互关键路径。它们只能依据当前 Hook 输入进行确定性、常数时间的策略判断；不得遍历工作区、读取 Git 改动范围、运行质量门禁、构建、索引、测试、联网或等待其他长任务。项目不得注册 `Stop` Hook，也不得借 `UserPromptSubmit`、`PreToolUse` 或未来生命周期事件变相执行这些工作。
+提示提交、工具调用和任务停止等 Codex 生命周期 Hook 处在用户交互关键路径。即使 Hook 脚本本体很快，Codex 客户端、插件调度与 Hook 集成链也可能在这些路径上产生不可预期的阻塞。因此项目不得注册任何 Codex 生命周期 Hook；`.codex/hooks.json` 必须保持 `{"hooks": {}}`。不得借 `UserPromptSubmit`、`PreToolUse`、`Stop` 或未来生命周期事件执行策略检查、工作区扫描、质量门禁、构建、索引、测试、联网或等待其他长任务。
 
-需要仓库范围判断或可能耗时的验证，必须由用户或 Agent 显式运行 `project:gate:*`，或由本地 pre-push、GitHub Actions 执行。新增生命周期 Hook 前，必须在 `project:hooks:test` 中证明其配置未扩大交互关键路径；此边界的理由与重新评估条件见 [ADR-008](../设计记忆/架构决策/ADR-008-交互生命周期Hook与质量门禁分离.md)。
+需要仓库范围判断或可能耗时的验证，必须由用户或 Agent 显式运行 `project:gate:*`，或由本地 pre-push、GitHub Actions 执行。只有平台提供可证明不阻塞交互、隔离执行且可取消的机制，且项目有针对性回归保护时，才可重新评估此禁令；理由与重新评估条件见 [ADR-009](../设计记忆/架构决策/ADR-009-取消项目级Codex生命周期Hook.md)。
 
-`PreToolUse` 分别匹配 `Bash`、`apply_patch`、`Edit` 和 `Write`。Shell 侧只拦截明确危险的整仓丢弃、强制清理、强制推送、仓库根目录或关键目录递归删除、直接改写 `.git/`、读取认证文件、输出密钥变量，以及把 `.env` 或认证文件加入 Git。普通单文件 `git restore` 和明确临时测试目录删除允许继续。
+受保护路径与危险操作由平台沙箱、审批系统、现有 `.codex/rules` 和 Agent 的任务内检查共同处理；提示词不由项目 Hook 扫描，任务结束也不自动运行质量门禁。完整检查只通过显式的 `project:gate:*` 或本地 pre-push 执行。
 
-直接编辑侧保护 `.git/**`、`node_modules/**`、`dist/**`、`reports/**`、`.env`、本地认证、真实存档导出和 `project-index/**` 生成结果。`.env.example`、测试假密钥 fixture 和正式索引生成命令仍允许。提示词不再由项目 Hook 扫描，任务结束也不再自动运行质量门禁；完整检查只通过显式的 `project:gate:*` 或本地 pre-push 执行。Hooks 是额外防护层，不替代平台沙箱、审批系统或现有 `.codex/rules`，也不声称绝对安全。
+### 异常耗时的核查与告知
+
+工具或命令返回若明显超过其命令本体耗时，或无预期地持续约 30 秒以上，Agent 必须把它视作待核查的交互异常：先区分命令本体、Git/构建等显式门禁与客户端/插件/生命周期集成链，再向用户说明观察到的耗时、已采取或建议的修复，以及问题是否已经解决。没有完成核查或无法确认解决时，必须明确标为未解决；不得因任务继续推进而省略告知。
 
 ### 工作区性能边界
 

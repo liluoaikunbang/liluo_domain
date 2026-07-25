@@ -1,5 +1,60 @@
 [
   {
+    "id": "docs/系统说明/故事缺口发现与灵感补全系统.md",
+    "indexVersion": 1,
+    "sourceHash": "9b20471fd2b926b8768fa825184e537410deddbff5bac77bd2db06215627a20c",
+    "sourcePath": "docs/系统说明/故事缺口发现与灵感补全系统.md",
+    "subtype": "system",
+    "summary": "故事缺口发现与灵感补全系统",
+    "summarySource": "title-only",
+    "title": "故事缺口发现与灵感补全系统",
+    "type": "document"
+  },
+  {
+    "id": "docs/系统说明/互动小说副本.md",
+    "indexVersion": 1,
+    "sourceHash": "8b3762dbee06377909ae57f8fc755398d018e0481373bcd3356262fdd0e52eb5",
+    "sourcePath": "docs/系统说明/互动小说副本.md",
+    "subtype": "system",
+    "summary": "互动小说副本",
+    "summarySource": "title-only",
+    "title": "互动小说副本",
+    "type": "document"
+  },
+  {
+    "id": "docs/系统说明/角色成长与关系长期记忆系统.md",
+    "indexVersion": 1,
+    "sourceHash": "1e64ef8e0a9444baa245138ec6b51b01c83a76e6bca833504f2e518720ebde7c",
+    "sourcePath": "docs/系统说明/角色成长与关系长期记忆系统.md",
+    "subtype": "system",
+    "summary": "角色成长与关系长期记忆系统",
+    "summarySource": "title-only",
+    "title": "角色成长与关系长期记忆系统",
+    "type": "document"
+  },
+  {
+    "id": "docs/系统说明/角色外观与运行时状态.md",
+    "indexVersion": 1,
+    "sourceHash": "3f8c31612e5162e2a7607612e191d2f54716cb1f3501ef28bf28b3524151ba5d",
+    "sourcePath": "docs/系统说明/角色外观与运行时状态.md",
+    "subtype": "system",
+    "summary": "角色外观与运行时状态",
+    "summarySource": "title-only",
+    "title": "角色外观与运行时状态",
+    "type": "document"
+  },
+  {
+    "id": "docs/系统说明/离线发行与GitHub-Release流程.md",
+    "indexVersion": 1,
+    "sourceHash": "c04ec31d7b2d6b660fb20944a3f0933331db6d18c08272a4dacd35c04ca65646",
+    "sourcePath": "docs/系统说明/离线发行与GitHub-Release流程.md",
+    "subtype": "system",
+    "summary": "离线发行与 GitHub Release 流程",
+    "summarySource": "title-only",
+    "title": "离线发行与 GitHub Release 流程",
+    "type": "document"
+  },
+  {
     "id": "docs/系统说明/璃落创作组人格与项目陪伴系统.md",
     "indexVersion": 1,
     "sourceHash": "28d921ecb667ee3f0fdb8e41eae79937047a3bfdf1a02337a61b01be9215a9f3",
@@ -30,6 +85,17 @@
     "summary": "情节条目系统",
     "summarySource": "title-only",
     "title": "情节条目系统",
+    "type": "document"
+  },
+  {
+    "id": "docs/系统说明/三世界主线阶段与灵感挂载系统.md",
+    "indexVersion": 1,
+    "sourceHash": "5091517ba2a91d6ee17122a81d2db66a63c7f25878d87016c983a3fc1c25eebb",
+    "sourcePath": "docs/系统说明/三世界主线阶段与灵感挂载系统.md",
+    "subtype": "system",
+    "summary": "三世界主线阶段与灵感挂载系统",
+    "summarySource": "title-only",
+    "title": "三世界主线阶段与灵感挂载系统",
     "type": "document"
   },
   {
@@ -167,12 +233,23 @@
   {
     "id": "docs/系统说明/Codex-Hooks与自动质量门禁系统.md",
     "indexVersion": 1,
-    "sourceHash": "a7946fd6bdde2f69095a527168c3b1fda5513a5bf3af97a50f1350d7e2ae11ba",
+    "sourceHash": "1453eca0a03acc0116acdf5e4e026bc5f203cd2cc1d7b4f6ede94b96879bef56",
     "sourcePath": "docs/系统说明/Codex-Hooks与自动质量门禁系统.md",
     "subtype": "system",
     "summary": "Codex Hooks 与自动质量门禁系统",
     "summarySource": "title-only",
     "title": "Codex Hooks 与自动质量门禁系统",
+    "type": "document"
+  },
+  {
+    "id": "docs/系统说明/Codex会话提交异常与上下文预算问题.md",
+    "indexVersion": 1,
+    "sourceHash": "6b080853be7407df3a8d926656b945882c9adfc0da0a381a4e47f3952d5f8a0b",
+    "sourcePath": "docs/系统说明/Codex会话提交异常与上下文预算问题.md",
+    "subtype": "system",
+    "summary": "已迁移：Codex 会话提交异常与上下文预算问题",
+    "summarySource": "title-only",
+    "title": "已迁移：Codex 会话提交异常与上下文预算问题",
     "type": "document"
   },
   {
@@ -200,7 +277,7 @@
   {
     "id": "docs/系统说明/README.md",
     "indexVersion": 1,
-    "sourceHash": "c1cc00aaceb743e07ca47491c2a29e09e9a5980528f9452504a543d9e041193e",
+    "sourceHash": "7ac847fa39248a4f0433cae4b2ca4f271d7f6f8ae44735d6ac027d1828d3ccee",
     "sourcePath": "docs/系统说明/README.md",
     "subtype": "system",
     "summary": "系统说明",
@@ -244,7 +321,7 @@
   {
     "id": "docs/项目能力、缺口与行动总览.md",
     "indexVersion": 1,
-    "sourceHash": "0d69f5a705c922bc69ce95f5b47c70f632126c05cf63ceecd53dc133060b3b94",
+    "sourceHash": "b60708a7a0e13336c7ce22fe79740a60a54796128f3ac4b457d49537bf18910f",
     "sourcePath": "docs/项目能力、缺口与行动总览.md",
     "subtype": "other",
     "summary": "项目能力、缺口与行动总览",
@@ -255,7 +332,7 @@
   {
     "id": "docs/用户命令目录.md",
     "indexVersion": 1,
-    "sourceHash": "11c7dc6c5e22f522d3704cee82668911ee10a6658219122018467209c0975ab1",
+    "sourceHash": "4d1a3545856e36b1028c65d1218372a3f3a34202162db626b1ac0a7ef78c8aa7",
     "sourcePath": "docs/用户命令目录.md",
     "subtype": "other",
     "summary": "用户命令目录",
@@ -275,6 +352,28 @@
     "type": "document"
   },
   {
+    "id": "docs/运行规范/未解决问题/Codex会话提交异常与上下文预算问题.md",
+    "indexVersion": 1,
+    "sourceHash": "c58700e69e954a0712ee33d2caf13cc9f27b99d3807781cde3558267a8dc4c45",
+    "sourcePath": "docs/运行规范/未解决问题/Codex会话提交异常与上下文预算问题.md",
+    "subtype": "other",
+    "summary": "Codex 会话提交异常与上下文预算问题",
+    "summarySource": "title-only",
+    "title": "Codex 会话提交异常与上下文预算问题",
+    "type": "document"
+  },
+  {
+    "id": "docs/运行规范/未解决问题/README.md",
+    "indexVersion": 1,
+    "sourceHash": "575c8b96154664441dacd947f1e0cd6a2d9702454325e0db67d6551aecdabd22",
+    "sourcePath": "docs/运行规范/未解决问题/README.md",
+    "subtype": "other",
+    "summary": "未解决问题",
+    "summarySource": "title-only",
+    "title": "未解决问题",
+    "type": "document"
+  },
+  {
     "id": "docs/运行规范/Codex命令批准分级表.md",
     "indexVersion": 1,
     "sourceHash": "cca823c7a5581390211c8f2a59e822764537bea26145ddc77eaf579bded059aa",
@@ -288,7 +387,7 @@
   {
     "id": "docs/智能体说明/项目子智能体体系.md",
     "indexVersion": 1,
-    "sourceHash": "ba2e0d621b3c741ddd94338c81706b6df377d43499dd0ec956e35bdbadd00304",
+    "sourceHash": "d428632d8b82ccba2009c64fa7f39404a09d3300ff40e00dedd96f26bdce9a44",
     "sourcePath": "docs/智能体说明/项目子智能体体系.md",
     "subtype": "agent",
     "summary": "项目子智能体体系",

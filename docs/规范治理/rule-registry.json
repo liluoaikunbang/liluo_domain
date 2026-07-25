@@ -2,6 +2,13 @@
   "schemaVersion": 1,
   "rules": [
     {
+      "ruleId": "codex-submission-incident-continuity",
+      "title": "反复出现的会话提交异常先查档案并追加新证据",
+      "authority": "docs/运行规范/未解决问题/Codex会话提交异常与上下文预算问题.md",
+      "consumers": ["AGENTS.md", "docs/用户命令目录.md"],
+      "status": "active"
+    },
+    {
       "ruleId": "rpg-world-experience-first",
       "title": "像素冒险 RPG 世界体验优先",
       "authority": "docs/设计记忆/项目宪章.md",
@@ -238,10 +245,18 @@
     },
     {
       "ruleId": "automatic-quality-gate-minimal-scope",
-      "title": "交互生命周期 Hook 保持输入级轻量，质量门禁只在显式或推送/CI入口执行",
+      "title": "项目不注册 Codex 生命周期 Hook，质量门禁只在显式或推送/CI入口执行",
       "authority": "docs/系统说明/Codex-Hooks与自动质量门禁系统.md",
-      "decision": "docs/设计记忆/架构决策/ADR-008-交互生命周期Hook与质量门禁分离.md",
+      "decision": "docs/设计记忆/架构决策/ADR-009-取消项目级Codex生命周期Hook.md",
       "consumers": ["AGENTS.md", ".codex/hooks.json", "scripts/quality-gate/", ".githooks/pre-push", ".github/workflows/quality-gate.yml", "package.json", "docs/用户命令目录.md"],
+      "status": "active"
+    },
+    {
+      "ruleId": "abnormal-tool-latency-disclosure",
+      "title": "工具或命令异常耗时必须核查、告知并明确解决状态",
+      "authority": "docs/系统说明/Codex-Hooks与自动质量门禁系统.md",
+      "decision": "docs/设计记忆/架构决策/ADR-009-取消项目级Codex生命周期Hook.md",
+      "consumers": ["AGENTS.md", ".agents/skills/liluo-project/liluo-project-governance-memory/SKILL.md"],
       "status": "active"
     },
     {

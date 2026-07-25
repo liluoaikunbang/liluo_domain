@@ -342,7 +342,7 @@
   {
     "from": "world-2-silent-earth-dirge-dream-city-slumber",
     "relationType": "parent",
-    "to": "world-2-silent-earth-dirge-apocalypse-holy-judgment"
+    "to": "world-2-silent-earth-dirge-lone-sand-sea"
   },
   {
     "from": "world-2-silent-earth-dirge-ecology-devouring-city",
@@ -387,7 +387,7 @@
   {
     "from": "world-2-silent-earth-dirge-mechanical-afterglow",
     "relationType": "parent",
-    "to": "world-2-silent-earth-dirge-lone-sand-sea"
+    "to": "world-2-silent-earth-dirge-insect-hive-border"
   },
   {
     "from": "world-2-silent-earth-dirge-omega",
@@ -407,7 +407,7 @@
   {
     "from": "world-2-silent-earth-dirge-rift-disaster",
     "relationType": "parent",
-    "to": "world-2-silent-earth-dirge-forgotten-river-gray-world"
+    "to": "world-2-silent-earth-dirge-apocalypse-holy-judgment"
   },
   {
     "from": "world-2-silent-earth-dirge-solo-smart-rv-trader",
@@ -557,7 +557,7 @@
   {
     "from": "world-5-star-weaving-dream-bionic-maze",
     "relationType": "parent",
-    "to": "world-5-star-weaving-dream-reverse-immigration-prison"
+    "to": "world-5-star-weaving-dream-star-voyage"
   },
   {
     "from": "world-5-star-weaving-dream-clone-corridor",
@@ -567,7 +567,7 @@
   {
     "from": "world-5-star-weaving-dream-cryosleep-ark",
     "relationType": "parent",
-    "to": "world-5-star-weaving-dream-star-voyage"
+    "to": "world-5-star-weaving-dream-sequence-gu-city"
   },
   {
     "from": "world-5-star-weaving-dream-deep-blue-moon",
@@ -662,7 +662,7 @@
   {
     "from": "world-5-star-weaving-dream-star-voyage",
     "relationType": "parent",
-    "to": "world-5-star-weaving-dream-sequence-gu-city"
+    "to": "world-5-star-weaving-dream-reverse-immigration-prison"
   },
   {
     "from": "world-5-star-weaving-dream-stargate-port",
@@ -697,7 +697,7 @@
   {
     "from": "world-6-cursebound-echoes-darkmoon-castle",
     "relationType": "parent",
-    "to": "world-6-cursebound-echoes-tiny-liluo-adventure"
+    "to": "world-6-cursebound-echoes-forest-oath-fey-realm"
   },
   {
     "from": "world-6-cursebound-echoes-dragon-sleep-mountains",
@@ -717,12 +717,12 @@
   {
     "from": "world-6-cursebound-echoes-holy-seal-islands",
     "relationType": "parent",
-    "to": "world-6-cursebound-echoes-secret-rune-academy"
+    "to": "world-6-cursebound-echoes-secret-tower-long-song"
   },
   {
     "from": "world-6-cursebound-echoes-locked-horn-wasteland",
     "relationType": "parent",
-    "to": "world-6-cursebound-echoes-secret-tower-long-song"
+    "to": "world-6-cursebound-echoes-dragon-sleep-mountains"
   },
   {
     "from": "world-6-cursebound-echoes-lone-tide-sea",
@@ -747,7 +747,7 @@
   {
     "from": "world-6-cursebound-echoes-secret-tower-long-song",
     "relationType": "parent",
-    "to": "world-6-cursebound-echoes-dragon-sleep-mountains"
+    "to": "world-6-cursebound-echoes-secret-rune-academy"
   },
   {
     "from": "world-6-cursebound-echoes-shadow-thief-city-state",

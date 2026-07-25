@@ -629,7 +629,7 @@
   },
   {
     "childKeys": [
-      "world-2-silent-earth-dirge-dream-city-slumber"
+      "world-2-silent-earth-dirge-rift-disaster"
     ],
     "key": "world-2-silent-earth-dirge-apocalypse-holy-judgment",
     "parentKey": "world-2-silent-earth-dirge-wasteland-court",
@@ -663,7 +663,7 @@
     ],
     "key": "world-2-silent-earth-dirge-deep-sea-drifting-land",
     "parentKey": "world-2-silent-earth-dirge-insect-hive-border",
-    "side": false,
+    "side": true,
     "title": "深海漂陆",
     "world": "2-寂土挽歌"
   },
@@ -682,7 +682,7 @@
       "world-2-silent-earth-dirge-looping-final-day"
     ],
     "key": "world-2-silent-earth-dirge-dream-city-slumber",
-    "parentKey": "world-2-silent-earth-dirge-apocalypse-holy-judgment",
+    "parentKey": "world-2-silent-earth-dirge-lone-sand-sea",
     "side": false,
     "title": "梦城沉眠",
     "world": "2-寂土挽歌"
@@ -728,9 +728,7 @@
     "world": "2-寂土挽歌"
   },
   {
-    "childKeys": [
-      "world-2-silent-earth-dirge-rift-disaster"
-    ],
+    "childKeys": [],
     "key": "world-2-silent-earth-dirge-forgotten-river-gray-world",
     "parentKey": "world-2-silent-earth-dirge-looping-final-day",
     "side": false,
@@ -739,7 +737,8 @@
   },
   {
     "childKeys": [
-      "world-2-silent-earth-dirge-deep-sea-drifting-land"
+      "world-2-silent-earth-dirge-deep-sea-drifting-land",
+      "world-2-silent-earth-dirge-mechanical-afterglow"
     ],
     "key": "world-2-silent-earth-dirge-insect-hive-border",
     "parentKey": "world-2-silent-earth-dirge-beast-treading-land",
@@ -749,7 +748,7 @@
   },
   {
     "childKeys": [
-      "world-2-silent-earth-dirge-mechanical-afterglow"
+      "world-2-silent-earth-dirge-dream-city-slumber"
     ],
     "key": "world-2-silent-earth-dirge-lone-sand-sea",
     "parentKey": "world-2-silent-earth-dirge-eternal-winter-white-realm",
@@ -772,7 +771,7 @@
       "world-2-silent-earth-dirge-ark-ghost-cage"
     ],
     "key": "world-2-silent-earth-dirge-mechanical-afterglow",
-    "parentKey": "world-2-silent-earth-dirge-lone-sand-sea",
+    "parentKey": "world-2-silent-earth-dirge-insect-hive-border",
     "side": false,
     "title": "机械余晖",
     "world": "2-寂土挽歌"
@@ -812,7 +811,7 @@
       "world-2-silent-earth-dirge-solo-smart-rv-trader"
     ],
     "key": "world-2-silent-earth-dirge-rift-disaster",
-    "parentKey": "world-2-silent-earth-dirge-forgotten-river-gray-world",
+    "parentKey": "world-2-silent-earth-dirge-apocalypse-holy-judgment",
     "side": false,
     "title": "裂界灾临",
     "world": "2-寂土挽歌"
@@ -1132,7 +1131,7 @@
       "world-5-star-weaving-dream-mirror-domain"
     ],
     "key": "world-5-star-weaving-dream-bionic-maze",
-    "parentKey": "world-5-star-weaving-dream-reverse-immigration-prison",
+    "parentKey": "world-5-star-weaving-dream-star-voyage",
     "side": false,
     "title": "仿生迷途",
     "world": "5-星宇织梦"
@@ -1152,7 +1151,7 @@
       "world-5-star-weaving-dream-orbital-garden"
     ],
     "key": "world-5-star-weaving-dream-cryosleep-ark",
-    "parentKey": "world-5-star-weaving-dream-star-voyage",
+    "parentKey": "world-5-star-weaving-dream-sequence-gu-city",
     "side": false,
     "title": "冷眠方舟",
     "world": "5-星宇织梦"
@@ -1307,7 +1306,7 @@
   },
   {
     "childKeys": [
-      "world-5-star-weaving-dream-bionic-maze"
+      "world-5-star-weaving-dream-star-voyage"
     ],
     "key": "world-5-star-weaving-dream-reverse-immigration-prison",
     "parentKey": "world-5-star-weaving-dream-restraint-paradise-shop",
@@ -1327,7 +1326,7 @@
   },
   {
     "childKeys": [
-      "world-5-star-weaving-dream-star-voyage"
+      "world-5-star-weaving-dream-cryosleep-ark"
     ],
     "key": "world-5-star-weaving-dream-sequence-gu-city",
     "parentKey": "world-5-star-weaving-dream-mirror-domain",
@@ -1337,10 +1336,10 @@
   },
   {
     "childKeys": [
-      "world-5-star-weaving-dream-cryosleep-ark"
+      "world-5-star-weaving-dream-bionic-maze"
     ],
     "key": "world-5-star-weaving-dream-star-voyage",
-    "parentKey": "world-5-star-weaving-dream-sequence-gu-city",
+    "parentKey": "world-5-star-weaving-dream-reverse-immigration-prison",
     "side": false,
     "title": "逐星远航",
     "world": "5-星宇织梦"
@@ -1417,14 +1416,14 @@
       "world-6-cursebound-echoes-bone-throne"
     ],
     "key": "world-6-cursebound-echoes-darkmoon-castle",
-    "parentKey": "world-6-cursebound-echoes-tiny-liluo-adventure",
+    "parentKey": "world-6-cursebound-echoes-forest-oath-fey-realm",
     "side": false,
     "title": "暗月古堡",
     "world": "6-咒缚回响"
   },
   {
     "childKeys": [
-      "world-6-cursebound-echoes-secret-tower-long-song"
+      "world-6-cursebound-echoes-locked-horn-wasteland"
     ],
     "key": "world-6-cursebound-echoes-dragon-sleep-mountains",
     "parentKey": "world-6-cursebound-echoes-bone-throne",
@@ -1444,6 +1443,7 @@
   },
   {
     "childKeys": [
+      "world-6-cursebound-echoes-darkmoon-castle",
       "world-6-cursebound-echoes-tiny-liluo-adventure"
     ],
     "key": "world-6-cursebound-echoes-forest-oath-fey-realm",
@@ -1457,7 +1457,7 @@
       "world-6-cursebound-echoes-lone-tide-sea"
     ],
     "key": "world-6-cursebound-echoes-holy-seal-islands",
-    "parentKey": "world-6-cursebound-echoes-secret-rune-academy",
+    "parentKey": "world-6-cursebound-echoes-secret-tower-long-song",
     "side": false,
     "title": "圣印群岛",
     "world": "6-咒缚回响"
@@ -1467,7 +1467,7 @@
       "world-6-cursebound-echoes-dark-underground-city"
     ],
     "key": "world-6-cursebound-echoes-locked-horn-wasteland",
-    "parentKey": "world-6-cursebound-echoes-secret-tower-long-song",
+    "parentKey": "world-6-cursebound-echoes-dragon-sleep-mountains",
     "side": false,
     "title": "锁角荒原",
     "world": "6-咒缚回响"
@@ -1504,7 +1504,7 @@
   },
   {
     "childKeys": [
-      "world-6-cursebound-echoes-holy-seal-islands"
+      "world-6-cursebound-echoes-secret-tower-long-song"
     ],
     "key": "world-6-cursebound-echoes-secret-rune-academy",
     "parentKey": "world-6-cursebound-echoes-silent-rite-court",
@@ -1514,10 +1514,10 @@
   },
   {
     "childKeys": [
-      "world-6-cursebound-echoes-locked-horn-wasteland"
+      "world-6-cursebound-echoes-holy-seal-islands"
     ],
     "key": "world-6-cursebound-echoes-secret-tower-long-song",
-    "parentKey": "world-6-cursebound-echoes-dragon-sleep-mountains",
+    "parentKey": "world-6-cursebound-echoes-secret-rune-academy",
     "side": false,
     "title": "秘塔长歌",
     "world": "6-咒缚回响"
@@ -1553,12 +1553,10 @@
     "world": "6-咒缚回响"
   },
   {
-    "childKeys": [
-      "world-6-cursebound-echoes-darkmoon-castle"
-    ],
+    "childKeys": [],
     "key": "world-6-cursebound-echoes-tiny-liluo-adventure",
     "parentKey": "world-6-cursebound-echoes-forest-oath-fey-realm",
-    "side": false,
+    "side": true,
     "title": "小小璃落大冒险",
     "world": "6-咒缚回响"
   },

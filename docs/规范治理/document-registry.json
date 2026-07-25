@@ -87,6 +87,16 @@
       "status": "active"
     },
     {
+      "documentId": "codex-session-submission-incident",
+      "path": "docs/运行规范/未解决问题/Codex会话提交异常与上下文预算问题.md",
+      "type": "system-spec",
+      "authorityFor": ["codex-session-submission-incident", "incident-evidence-continuity"],
+      "consumers": ["AGENTS.md", "docs/用户命令目录.md", "docs/功能更新/156-Codex会话提交异常持续记录.md"],
+      "indexable": true,
+      "userFacing": true,
+      "status": "active"
+    },
+    {
       "documentId": "project-agent-system",
       "path": "docs/智能体说明/项目子智能体体系.md",
       "type": "agent-system",
