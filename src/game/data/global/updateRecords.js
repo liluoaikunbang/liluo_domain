@@ -1,5 +1,11 @@
 export const updateRecords = Object.freeze([
     {
+        "id":  "158",
+        "date":  "2026-07-26",
+        "title":  "Cursor 与 Codex 协同规则分层",
+        "summary":  "建立共用权威文件与工具专属适配层，并要求大段双端派生配置先经用户确认、使用源文件加生成/校验脚本。"
+    },
+    {
         "id":  "157",
         "date":  "2026-07-25",
         "title":  "文档职责导航与问题归档",

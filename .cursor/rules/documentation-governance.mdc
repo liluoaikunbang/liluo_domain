@@ -1,0 +1,9 @@
+---
+description: 修改项目文档、规范或长期工作流时的单一事实源与同步要求。
+globs: docs/**
+alwaysApply: false
+---
+
+- 长期规则、系统契约和已确认架构决定遵循 `liluo-project-governance-memory`，完整维护一次，并更新必要消费者、设计理由和索引。
+- 系统当前用法写入 `docs/系统说明/`，历史实现写入 `docs/功能更新/`，理由写入 `docs/设计记忆/`；不要复制完整正文或保存聊天流水账。
+- Cursor/Codex 协同边界及双端派生配置规则以 `docs/系统说明/AI协同文件与规则分层.md` 为准。

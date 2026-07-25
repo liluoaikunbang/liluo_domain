@@ -1,0 +1,9 @@
+---
+description: 修改璃落 Vue、Phaser 或游戏运行时代码时的架构入口。
+globs: src/game/**
+alwaysApply: false
+---
+
+- 读取根 `AGENTS.md` 的“技术与架构”后再改动游戏代码。
+- 保持 `core/`、`scenes/`、`systems/`、`data/`、`views/` 的既有职责；地图内容进入 `src/game/data/maps/<world>/<mapId>/`，并接入现有注册表。
+- 优先保持可玩主流程与可扩展性；不要为 Cursor 新建平行入口或绕开既有测试、数据合同和项目流程。

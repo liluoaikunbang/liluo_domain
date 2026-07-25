@@ -1,0 +1,8 @@
+---
+description: 在请求验证、提交、发布或大范围改动时显式应用璃落的检查与 Git 边界。
+alwaysApply: false
+---
+
+- 按根 `AGENTS.md` 选择 `npm run project:routine -- <最小适用 profile>`，根据变化面去重；不以全量检查替代范围判断。
+- 不自动启动持续服务、提交、推送、发布、安装依赖或更改 Git 元数据；这些操作必须由用户请求并遵守既有边界。
+- 在 Windows 上处理中文文档和 Git 路径时，遵循 `docs/系统说明/Windows命令与UTF-8编码规范.md`。

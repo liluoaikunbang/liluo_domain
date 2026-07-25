@@ -1771,9 +1771,20 @@
     "type": "document"
   },
   {
+    "id": "docs/功能更新/158-Cursor与Codex协同规则分层.md",
+    "indexVersion": 1,
+    "sourceHash": "446d8342597559734e1203691f08a115e14363c9e7d0e61cbfc45a524ee45753",
+    "sourcePath": "docs/功能更新/158-Cursor与Codex协同规则分层.md",
+    "subtype": "update",
+    "summary": "158-Cursor 与 Codex 协同规则分层",
+    "summarySource": "title-only",
+    "title": "158-Cursor 与 Codex 协同规则分层",
+    "type": "document"
+  },
+  {
     "id": "docs/功能更新目录.md",
     "indexVersion": 1,
-    "sourceHash": "7309826ab300259be6bc200c066d271d15123ebdcbd65ea7133ca6e66d10947f",
+    "sourceHash": "ed7e6556a8739e0880b09b90708f92cdd6d696b4890757f26e6d1ba8ffa262be",
     "sourcePath": "docs/功能更新目录.md",
     "subtype": "other",
     "summary": "功能更新目录",
@@ -2321,6 +2332,17 @@
     "type": "document"
   },
   {
+    "id": "docs/设计记忆/架构决策/ADR-010-Cursor与Codex采用共享事实源和专属适配层.md",
+    "indexVersion": 1,
+    "sourceHash": "3ceba2f01d05dd975772276111dbfb4f96ec8acfe30f6ae85cc259ae33641be8",
+    "sourcePath": "docs/设计记忆/架构决策/ADR-010-Cursor与Codex采用共享事实源和专属适配层.md",
+    "subtype": "other",
+    "summary": "ADR-010：Cursor 与 Codex 采用共享事实源和专属适配层",
+    "summarySource": "title-only",
+    "title": "ADR-010：Cursor 与 Codex 采用共享事实源和专属适配层",
+    "type": "document"
+  },
+  {
     "id": "docs/设计记忆/架构决策/README.md",
     "indexVersion": 1,
     "sourceHash": "f9004fead885305a1971c21235e3f4c0ac76fa29e16637d065bf1b2802358639",
@@ -2725,28 +2747,6 @@
     "summary": "星宇织梦故事大纲选项",
     "summarySource": "title-only",
     "title": "星宇织梦故事大纲选项",
-    "type": "document"
-  },
-  {
-    "id": "docs/系统说明/故事大纲随机提问模板.md",
-    "indexVersion": 1,
-    "sourceHash": "3b6fa6b650b4cd3b26ba530d4ac78012474faffd7606a5f1f3aa8411412eff9e",
-    "sourcePath": "docs/系统说明/故事大纲随机提问模板.md",
-    "subtype": "system",
-    "summary": "故事大纲随机提问模板",
-    "summarySource": "title-only",
-    "title": "故事大纲随机提问模板",
-    "type": "document"
-  },
-  {
-    "id": "docs/系统说明/故事大纲条目模板.md",
-    "indexVersion": 1,
-    "sourceHash": "de43c153b9913901910e0fbab8082c5e5ef9a9d70db76f971eee8c6c2915b599",
-    "sourcePath": "docs/系统说明/故事大纲条目模板.md",
-    "subtype": "system",
-    "summary": "故事大纲条目模板",
-    "summarySource": "title-only",
-    "title": "故事大纲条目模板",
     "type": "document"
   }
 ]

@@ -95,9 +95,9 @@ test('keeps the protection-fee meeting and later rescue in one linked plot', () 
   assert.equal(receiptPlot?.usageStatus, 'partial');
   assert.match(receiptPlot?.summary ?? '', /保护费/u);
   assert.match(receiptPlot?.summary ?? '', /水泥鞋/u);
-  assert.equal(receiptPlot?.title, '黄毛女孩-保护费与救援');
+  assert.equal(receiptPlot?.title, 'Macy-保护费与救援');
   assert.deepEqual(receiptPlot?.usedByLabels, ['浮光掠影-荆锁会事件-宿舍旧楼']);
-  assert.deepEqual(receiptPlot?.characters, ['璃落', '黄毛女孩']);
+  assert.deepEqual(receiptPlot?.characters, ['璃落', 'Macy']);
   assert.equal(receiptPlot?.isBondagePlot, false);
   assert.deepEqual(receiptPlot?.bondageTags, []);
 });

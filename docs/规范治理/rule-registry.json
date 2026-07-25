@@ -111,6 +111,14 @@
       "status": "active"
     },
     {
+      "ruleId": "ai-shared-authority-and-derived-config",
+      "title": "Cursor 与 Codex 共用权威文件、专属适配分层且大段派生配置须先提示用户采用源文件加生成/校验脚本",
+      "authority": "docs/系统说明/AI协同文件与规则分层.md",
+      "decision": "docs/设计记忆/架构决策/ADR-010-Cursor与Codex采用共享事实源和专属适配层.md",
+      "consumers": ["AGENTS.md", ".cursor/rules/00-project-entry.mdc", ".cursor/rules/documentation-governance.mdc"],
+      "status": "active"
+    },
+    {
       "ruleId": "persistent-impact-gate",
       "title": "长期与用户工作流变化执行轻量影响门禁",
       "authority": "docs/系统说明/项目规范治理与设计记忆系统.md",

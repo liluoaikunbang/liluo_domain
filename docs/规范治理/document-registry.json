@@ -116,6 +116,15 @@
       "status": "active"
     },
     {
+      "documentId": "ai-collaboration-file-layering",
+      "path": "docs/系统说明/AI协同文件与规则分层.md",
+      "type": "system-spec",
+      "authorityFor": ["ai-tool-shared-authority", "cursor-rule-layering", "tool-specific-adapter-boundary", "derived-dual-tool-config"],
+      "consumers": ["AGENTS.md", ".cursor/rules/00-project-entry.mdc", ".cursor/rules/game-architecture.mdc", ".cursor/rules/content-authoring.mdc", ".cursor/rules/documentation-governance.mdc", ".cursor/rules/verification-and-git.mdc", "docs/系统说明/README.md", "docs/README.md"],
+      "indexable": true,
+      "status": "active"
+    },
+    {
       "documentId": "creative-team-presence-system",
       "path": "docs/系统说明/璃落创作组人格与项目陪伴系统.md",
       "type": "system-spec",

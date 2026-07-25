@@ -5,17 +5,16 @@
   ],
   "changes": {
     "added": [
-      "docs/功能更新/157-文档职责导航与问题归档.md",
-      "docs/运行规范/未解决问题/Codex会话提交异常与上下文预算问题.md",
-      "docs/运行规范/未解决问题/README.md"
+      "docs/功能更新/158-Cursor与Codex协同规则分层.md",
+      "docs/系统说明/AI协同文件与规则分层.md",
+      "docs/设计记忆/架构决策/ADR-010-Cursor与Codex采用共享事实源和专属适配层.md"
     ],
     "deleted": [],
     "modified": [
-      "docs/功能更新/156-Codex会话提交异常持续记录.md",
+      "docs/README.md",
       "docs/功能更新目录.md",
-      "docs/用户命令目录.md",
-      "docs/系统说明/Codex会话提交异常与上下文预算问题.md",
       "docs/系统说明/README.md",
+      "docs/系统说明/项目规范治理与设计记忆系统.md",
       "src/game/data/global/updateRecords.js"
     ],
     "renamed": []
@@ -30,7 +29,7 @@
       "status": "current"
     },
     "docs": {
-      "entryCount": 295,
+      "entryCount": 298,
       "status": "current"
     },
     "game": {
@@ -50,14 +49,14 @@
       "status": "partial"
     }
   },
-  "generatedAt": "2026-07-25T15:38:52.550Z",
+  "generatedAt": "2026-07-25T16:05:47.154Z",
   "generatorVersion": "1.0.3",
   "mode": "changed",
   "schemaVersion": 1,
-  "sourceCommit": "73a570b5e5919c0e7a08f9ab80229c7b0f2f4884",
+  "sourceCommit": "a2a1e04163c2e8234821f8d7b5a6bef7a3098c95",
   "sourceSnapshot": {
     "docs/CG待制作清单.md": "81996a1dd752cbf2e9c5a9fc68bb4a480e556d2d76ec35afa9b4b6894f067f8b",
-    "docs/README.md": "4b2122ad42f428f1eb16d4fb7a96bd82d2bed0a5fa7a3aece91f1279d3dd36cf",
+    "docs/README.md": "d6e3ab985252937ff4927d09ad17708ddc4a5684aa830e0d9d15754bd4a0bbd6",
     "docs/功能更新/001-GameView三栏布局与地图贴合.md": "7a4664d575a6611eaf355dd13d304e4f22d3710cb8a2ce9ad3e9824388318b06",
     "docs/功能更新/002-璃音对话框与Gal式分支对话模板.md": "5b7b32c498719322199306b5e20d1e954a2e811c9cbe1a05e04059fa2731abd6",
     "docs/功能更新/003-角色动画系统.md": "6f1b7c5466b72bddef674e0e41de16053522154f01162fc5689539a11aaebd15",
@@ -216,7 +215,8 @@
     "docs/功能更新/155-Agent上下文分层与最小任务包.md": "a968e3f2345db494c1eb4b8529c4404d00c8912c49bccc8ded428bc9f526d52a",
     "docs/功能更新/156-Codex会话提交异常持续记录.md": "fdee8fd00b3ea872d3a82557013deda4a663193ce31ac04a72d5c3b4b40711d7",
     "docs/功能更新/157-文档职责导航与问题归档.md": "4699a079bbc48f7fa30bcf105677ac5e5d12a800b85e7564ec43b91188d4f805",
-    "docs/功能更新目录.md": "7309826ab300259be6bc200c066d271d15123ebdcbd65ea7133ca6e66d10947f",
+    "docs/功能更新/158-Cursor与Codex协同规则分层.md": "446d8342597559734e1203691f08a115e14363c9e7d0e61cbfc45a524ee45753",
+    "docs/功能更新目录.md": "ed7e6556a8739e0880b09b90708f92cdd6d696b4890757f26e6d1ba8ffa262be",
     "docs/外部来源/Skill来源目录.md": "5dea73aeb2afb392039bccaefa6acfaa1b796cf666b7ebd859c77c9171f8fdf3",
     "docs/外部来源/Skill许可证与保存策略.md": "18498f5dc9c78c51a9198714ea470d8f6ecb9692128b5d8c6906ee57ba5308cd",
     "docs/大纲玩法总表整合规格.md": "e6ffc2c182c5d46b69bd8fe08bb3b13038d005c4d08a966ac329d0bb515ec40b",
@@ -262,11 +262,12 @@
     "docs/智能体说明/项目子智能体体系.md": "d428632d8b82ccba2009c64fa7f39404a09d3300ff40e00dedd96f26bdce9a44",
     "docs/游戏素材图片清单.md": "e5341d8739d710c663aacfde2b5eff3a482b0da6b3f4cd08424803493998cf93",
     "docs/用户命令目录.md": "4d1a3545856e36b1028c65d1218372a3f3a34202162db626b1ac0a7ef78c8aa7",
+    "docs/系统说明/AI协同文件与规则分层.md": "4c862f85cbe341d9be1500b94d38b44fa985cdb34bbd5007eebeb22b351a9da0",
     "docs/系统说明/Codex-Hooks与自动质量门禁系统.md": "1453eca0a03acc0116acdf5e4e026bc5f203cd2cc1d7b4f6ede94b96879bef56",
     "docs/系统说明/Codex会话提交异常与上下文预算问题.md": "6b080853be7407df3a8d926656b945882c9adfc0da0a381a4e47f3952d5f8a0b",
     "docs/系统说明/Codex命令授权治理系统.md": "60f75478cbea04e51b8da1b3da0e84764cb574e8c2b61bb62d3d26a698007e0b",
     "docs/系统说明/JSON-Schema数据契约系统.md": "a835837bba83cfcc29663c5112b985192db4618c075d34b6143b3e2a9b7c3c05",
-    "docs/系统说明/README.md": "7ac847fa39248a4f0433cae4b2ca4f271d7f6f8ae44735d6ac027d1828d3ccee",
+    "docs/系统说明/README.md": "c60f011af27f5cf7b714f75fddd31f14fa7bfd10641f446fa1cf873f0be1c88e",
     "docs/系统说明/Skill与Agent能力回归评测系统.md": "3b8efd064a728694e4b31e079a1d2aa052e2a78a4d4e5cbd446d56f1bc0b305e",
     "docs/系统说明/Windows命令与UTF-8编码规范.md": "2e262815daddceb5fa2f31229dea9475b674f4d5027bd1581ecc51f899f50bdc",
     "docs/系统说明/三世界主线阶段与灵感挂载系统.md": "5091517ba2a91d6ee17122a81d2db66a63c7f25878d87016c983a3fc1c25eebb",
@@ -300,7 +301,7 @@
     "docs/系统说明/角色成长与关系长期记忆系统.md": "1e64ef8e0a9444baa245138ec6b51b01c83a76e6bca833504f2e518720ebde7c",
     "docs/系统说明/项目知识索引系统.md": "58e5d82bb0f01bb90a29d1f7bdc1db0d6e68ae587de86d57cf334503b0c5e357",
     "docs/系统说明/项目能力缺口与行动导航系统.md": "4a39415bb808ecf888051de7a2d0192423f078367d9bbdb52ed14da726657908",
-    "docs/系统说明/项目规范治理与设计记忆系统.md": "13012ebe74394f57f08640bc04648ebbdee3ef10cf5756ffafc28f7aaa5affa7",
+    "docs/系统说明/项目规范治理与设计记忆系统.md": "b09c77288e852ff914beeb45bd80951f07d7358f04e2c6518ea5744873e598d1",
     "docs/素材制作策略.md": "42637da7703139df56d638e64e9ccaf2ba7dc707ea89a8f6f19367fdeb225ffa",
     "docs/规范治理/README.md": "429628ad090aab17f8d8235698a1e4182d8601493e41273df2c1c24f45675660",
     "docs/规范治理/文档压缩规范.md": "380f5981d7b1dcedc216ad27273f73ed3b94671b35e6eb98f940293b1a804bf9",
@@ -323,6 +324,7 @@
     "docs/设计记忆/架构决策/ADR-007-结构合同采用JSON-Schema并与业务验证分层.md": "b5d5ff726ff34cfa2f525d439112064939be3c63de28b270743a29e43164f3f2",
     "docs/设计记忆/架构决策/ADR-008-交互生命周期Hook与质量门禁分离.md": "f652a2c7a77bd61b7b5fed69286e0b2bd3969575f50839d373bdaed6a79d9310",
     "docs/设计记忆/架构决策/ADR-009-取消项目级Codex生命周期Hook.md": "0ea15789f38ee0f2a7a9111222f49e8d47e87882210053d29fd703166708e3e1",
+    "docs/设计记忆/架构决策/ADR-010-Cursor与Codex采用共享事实源和专属适配层.md": "3ceba2f01d05dd975772276111dbfb4f96ec8acfe30f6ae85cc259ae33641be8",
     "docs/设计记忆/架构决策/README.md": "f9004fead885305a1971c21235e3f4c0ac76fa29e16637d065bf1b2802358639",
     "docs/设计记忆/设计原则.md": "9f1646a30850245ea737130a53c0e6380afbb1c1ad516d9ac28987cf4b07211d",
     "docs/设计记忆/项目宪章.md": "c93bacf45ccb0bd6cc4f5e73fb532e8506f33c3a4cae7c5fb1f6e97aa7bd4b41",
@@ -1069,7 +1071,7 @@
     "src/game/data/global/cgVariantRules.ts": "a9be23c234f0c8a980f304256066538db732625a5fa49647b91b3b240a58e091",
     "src/game/data/global/gameMenuData.js": "549ad516de3df68f5628f912a08cf9d28dcfc52ef21e1d863bc11c3235bddb69",
     "src/game/data/global/updateRecordGroups.js": "ca9b92d0987ceb1890868ada15342a3d76e05657a319a92be851bde8efb64544",
-    "src/game/data/global/updateRecords.js": "4a59efa364d4fc7cbbf1c1745655e7fc35fe5d2172f2bbba1b87f5c58b6ccce4",
+    "src/game/data/global/updateRecords.js": "96ac6e603c1e71fdae3cb76a02f98047b9d4fe983dfb954f51daccfcb5fbddb0",
     "src/game/data/globalAssets.ts": "c8f61d63f69f0aed0fee4e821683bf4a2cee733104d4b48ab7f78d4879f4c17f",
     "src/game/data/interactive_fictions/asylum_for_lunatic/assets.ts": "a15be46e4a9841f1ea133a883c435b5fd799a858cde8a4ca44036650236c5a69",
     "src/game/data/interactive_fictions/asylum_for_lunatic/index.ts": "af405bbd76de80f5999d0f28a81a48b97a8219a3d050de42320247917c44c98b",

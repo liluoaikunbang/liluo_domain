@@ -15,6 +15,7 @@
 - [JSON Schema 数据契约系统](./JSON-Schema数据契约系统.md)
 - [Skill 与 Agent 能力回归评测系统](./Skill与Agent能力回归评测系统.md)
 - [Codex Hooks 与自动质量门禁系统](./Codex-Hooks与自动质量门禁系统.md)
+- [AI 协同文件与规则分层](./AI协同文件与规则分层.md)
 
 ### 内容生产与外部参考
 

@@ -1,5 +1,27 @@
 [
   {
+    "id": "docs/系统说明/故事大纲随机提问模板.md",
+    "indexVersion": 1,
+    "sourceHash": "3b6fa6b650b4cd3b26ba530d4ac78012474faffd7606a5f1f3aa8411412eff9e",
+    "sourcePath": "docs/系统说明/故事大纲随机提问模板.md",
+    "subtype": "system",
+    "summary": "故事大纲随机提问模板",
+    "summarySource": "title-only",
+    "title": "故事大纲随机提问模板",
+    "type": "document"
+  },
+  {
+    "id": "docs/系统说明/故事大纲条目模板.md",
+    "indexVersion": 1,
+    "sourceHash": "de43c153b9913901910e0fbab8082c5e5ef9a9d70db76f971eee8c6c2915b599",
+    "sourcePath": "docs/系统说明/故事大纲条目模板.md",
+    "subtype": "system",
+    "summary": "故事大纲条目模板",
+    "summarySource": "title-only",
+    "title": "故事大纲条目模板",
+    "type": "document"
+  },
+  {
     "id": "docs/系统说明/故事缺口发现与灵感补全系统.md",
     "indexVersion": 1,
     "sourceHash": "9b20471fd2b926b8768fa825184e537410deddbff5bac77bd2db06215627a20c",
@@ -145,7 +167,7 @@
   {
     "id": "docs/系统说明/项目规范治理与设计记忆系统.md",
     "indexVersion": 1,
-    "sourceHash": "13012ebe74394f57f08640bc04648ebbdee3ef10cf5756ffafc28f7aaa5affa7",
+    "sourceHash": "b09c77288e852ff914beeb45bd80951f07d7358f04e2c6518ea5744873e598d1",
     "sourcePath": "docs/系统说明/项目规范治理与设计记忆系统.md",
     "subtype": "system",
     "summary": "项目规范治理与设计记忆系统",
@@ -231,6 +253,17 @@
     "type": "document"
   },
   {
+    "id": "docs/系统说明/AI协同文件与规则分层.md",
+    "indexVersion": 1,
+    "sourceHash": "4c862f85cbe341d9be1500b94d38b44fa985cdb34bbd5007eebeb22b351a9da0",
+    "sourcePath": "docs/系统说明/AI协同文件与规则分层.md",
+    "subtype": "system",
+    "summary": "AI 协同文件与规则分层",
+    "summarySource": "title-only",
+    "title": "AI 协同文件与规则分层",
+    "type": "document"
+  },
+  {
     "id": "docs/系统说明/Codex-Hooks与自动质量门禁系统.md",
     "indexVersion": 1,
     "sourceHash": "1453eca0a03acc0116acdf5e4e026bc5f203cd2cc1d7b4f6ede94b96879bef56",
@@ -277,7 +310,7 @@
   {
     "id": "docs/系统说明/README.md",
     "indexVersion": 1,
-    "sourceHash": "7ac847fa39248a4f0433cae4b2ca4f271d7f6f8ae44735d6ac027d1828d3ccee",
+    "sourceHash": "c60f011af27f5cf7b714f75fddd31f14fa7bfd10641f446fa1cf873f0be1c88e",
     "sourcePath": "docs/系统说明/README.md",
     "subtype": "system",
     "summary": "系统说明",
@@ -486,7 +519,7 @@
   {
     "id": "docs/README.md",
     "indexVersion": 1,
-    "sourceHash": "4b2122ad42f428f1eb16d4fb7a96bd82d2bed0a5fa7a3aece91f1279d3dd36cf",
+    "sourceHash": "d6e3ab985252937ff4927d09ad17708ddc4a5684aa830e0d9d15754bd4a0bbd6",
     "sourcePath": "docs/README.md",
     "subtype": "other",
     "summary": "璃落的城堡文档入口",
