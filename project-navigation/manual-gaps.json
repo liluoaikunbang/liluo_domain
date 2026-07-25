@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "gaps": [
+    {
+      "id": "gap-project-capability-navigation",
+      "title": "项目能力、缺口与行动导航系统",
+      "domain": "navigation",
+      "origin": "user-confirmed",
+      "status": "in-progress",
+      "priority": "highest",
+      "description": "建立可验证的能力、工作流、缺口和来源导航，并生成用户行动页。",
+      "sourceRefs": ["璃落项目能力与行动导航基础设施包.zip"],
+      "completionCriteria": ["导航命令可扫描、校验、生成和推荐", "用户行动页由注册表生成"],
+      "nextAction": "完成首版治理与回归接入"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "capabilities": "project-navigation/capabilities.json",
+  "workflows": "project-navigation/workflows.json",
+  "gaps": "project-navigation/gaps.json",
+  "sources": "project-navigation/sources.json",
+  "generatedDocs": [
+    "docs/项目能力、缺口与行动总览.md",
+    "docs/我现在可以做什么.md"
+  ],
+  "generatedAt": null,
+  "sourceSnapshot": {}
+}

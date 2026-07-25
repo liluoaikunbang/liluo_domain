@@ -1705,9 +1705,20 @@
     "type": "document"
   },
   {
+    "id": "docs/功能更新/152-项目能力缺口与行动导航系统.md",
+    "indexVersion": 1,
+    "sourceHash": "adfe353c4801f18ae2ee7758980e71213efd9d3fba2f0bac0845f68b350f5110",
+    "sourcePath": "docs/功能更新/152-项目能力缺口与行动导航系统.md",
+    "subtype": "update",
+    "summary": "152-项目能力缺口与行动导航系统",
+    "summarySource": "title-only",
+    "title": "152-项目能力缺口与行动导航系统",
+    "type": "document"
+  },
+  {
     "id": "docs/功能更新目录.md",
     "indexVersion": 1,
-    "sourceHash": "02d53c31183243f52e140a77f588bdaa5c1ac589672a0707649a97a53f90e236",
+    "sourceHash": "845d008c08b872e8c45a568c7de9a6fd78947ded2a450e52e55c2bc17de00b1e",
     "sourcePath": "docs/功能更新目录.md",
     "subtype": "other",
     "summary": "功能更新目录",
@@ -1911,6 +1922,17 @@
     "summary": "liluo-production-coverage",
     "summarySource": "title-only",
     "title": "liluo-production-coverage",
+    "type": "document"
+  },
+  {
+    "id": "docs/技能说明/liluo-project-capability-navigation.md",
+    "indexVersion": 1,
+    "sourceHash": "359bbfa6de0438c3037811c04326847ba890ba850bf4a0895684a375f6900460",
+    "sourcePath": "docs/技能说明/liluo-project-capability-navigation.md",
+    "subtype": "skill",
+    "summary": "项目能力与行动导航",
+    "summarySource": "title-only",
+    "title": "项目能力与行动导航",
     "type": "document"
   },
   {
@@ -2508,6 +2530,17 @@
     "type": "document"
   },
   {
+    "id": "docs/我现在可以做什么.md",
+    "indexVersion": 1,
+    "sourceHash": "808ae9c3dcfc19d95db9b14e4eab18fb78d84301a4468aab8146ec284574f31a",
+    "sourcePath": "docs/我现在可以做什么.md",
+    "subtype": "other",
+    "summary": "我现在可以做什么",
+    "summarySource": "title-only",
+    "title": "我现在可以做什么",
+    "type": "document"
+  },
+  {
     "id": "docs/系统说明/存读档系统.md",
     "indexVersion": 1,
     "sourceHash": "51c45dfbc009b080b6d084b3badc740481e11474828d59eaddc74cf391be31f6",
@@ -2714,39 +2747,6 @@
     "summary": "情节条目系统",
     "summarySource": "title-only",
     "title": "情节条目系统",
-    "type": "document"
-  },
-  {
-    "id": "docs/系统说明/世界与系列生产覆盖统计系统.md",
-    "indexVersion": 1,
-    "sourceHash": "ddfada609de7e343a6d05ea87cbb0ed68f2ca17a9f9f8d5f88c8533a69428865",
-    "sourcePath": "docs/系统说明/世界与系列生产覆盖统计系统.md",
-    "subtype": "system",
-    "summary": "世界与系列生产覆盖统计系统",
-    "summarySource": "title-only",
-    "title": "世界与系列生产覆盖统计系统",
-    "type": "document"
-  },
-  {
-    "id": "docs/系统说明/事件与对话系统.md",
-    "indexVersion": 1,
-    "sourceHash": "ed901bcfbcd98b2e76af47457eedc15f031c7ea82ddab0bf5a749caee075989e",
-    "sourcePath": "docs/系统说明/事件与对话系统.md",
-    "subtype": "system",
-    "summary": "事件与对话系统",
-    "summarySource": "title-only",
-    "title": "事件与对话系统",
-    "type": "document"
-  },
-  {
-    "id": "docs/系统说明/外部虚构题材知识库.md",
-    "indexVersion": 1,
-    "sourceHash": "069b299eedf8874cc26fa58e337333ed63dad006d4014722f01b19950aaeb7f9",
-    "sourcePath": "docs/系统说明/外部虚构题材知识库.md",
-    "subtype": "system",
-    "summary": "外部虚构题材知识库",
-    "summarySource": "title-only",
-    "title": "外部虚构题材知识库",
     "type": "document"
   }
 ]

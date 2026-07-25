@@ -1,0 +1,229 @@
+{
+  "schemaVersion": 1,
+  "workflows": [
+    {
+      "id": "workflow-bondage-rag-expansion",
+      "title": "用紧缚小说扩充紧缚元素 RAG",
+      "domain": "knowledge",
+      "status": "available",
+      "summary": "把用户有权提供的外部紧缚小说作为非正式参考，抽象检索紧缚元素与叙事机制。",
+      "userCanSay": [
+        "把这篇紧缚小说收进紧缚元素 RAG",
+        "从紧缚小说里找某种元素的抽象参考"
+      ],
+      "userMustProvide": [
+        "可处理的来源链接或文件，以及希望检索的元素"
+      ],
+      "steps": [
+        "确认来源与非正典边界",
+        "导入或查询外部知识",
+        "返回抽象卡与来源定位",
+        "需要正式写入时再做原创重组"
+      ],
+      "approvalPoints": [
+        "外部来源导入与任何正式内容采用前"
+      ],
+      "completionEvidence": [
+        "来源状态与可检索抽象卡"
+      ],
+      "capabilityIds": [
+        "skill-liluo-external-fiction-knowledge"
+      ],
+      "sourceRefs": [
+        "docs/用户命令目录.md"
+      ]
+    },
+    {
+      "id": "workflow-plot-to-outline",
+      "title": "把情节候选补充进大纲",
+      "domain": "story",
+      "status": "available",
+      "summary": "用户确认某个情节候选后，写入最贴近的既有节点并同步情节库使用状态。",
+      "userCanSay": [
+        "把 plot-xxx 作为候选给这个节点看看",
+        "采用这个情节补充到大纲"
+      ],
+      "userMustProvide": [
+        "目标节点与明确采用/调整决定"
+      ],
+      "steps": [
+        "核验候选与目标适配",
+        "用户批准",
+        "同步故事 JSON/Markdown",
+        "更新 plot usedBy 与 usageStatus",
+        "最小验证"
+      ],
+      "approvalPoints": [
+        "必须先明确采用"
+      ],
+      "completionEvidence": [
+        "故事来源与情节库引用同步"
+      ],
+      "capabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "sourceRefs": [
+        "src/game/data/plot_outline/catalog.json"
+      ]
+    },
+    {
+      "id": "workflow-story-gap-to-outline",
+      "title": "从故事缺口到正式大纲",
+      "domain": "story",
+      "status": "available",
+      "summary": "先提出候选、取得批准，再写回故事来源。",
+      "userCanSay": [
+        "分析这个节点还缺什么",
+        "完善这个故事节点"
+      ],
+      "userMustProvide": [
+        "目标节点或缺口"
+      ],
+      "steps": [
+        "核验 missingItems",
+        "提出候选",
+        "用户批准",
+        "写回并最小验证"
+      ],
+      "approvalPoints": [
+        "候选转为正式故事前"
+      ],
+      "completionEvidence": [
+        "来源 JSON/Markdown 与验证结果"
+      ],
+      "capabilityIds": [
+        "skill-liluo-story-gap-discovery",
+        "skill-liluo-story-outline-authoring"
+      ],
+      "sourceRefs": [
+        "docs/用户命令目录.md"
+      ]
+    },
+    {
+      "id": "workflow-story-to-playable",
+      "title": "从故事节点到可玩内容",
+      "domain": "production",
+      "status": "available",
+      "summary": "把已确认故事转为地图、事件、对话和验证范围。",
+      "userCanSay": [
+        "把这个故事节点转成可玩计划",
+        "实现这个节点的最小可玩版本"
+      ],
+      "userMustProvide": [
+        "已确认的故事节点"
+      ],
+      "steps": [
+        "核验故事",
+        "选择生产模式",
+        "产出计划或实现",
+        "运行对应验证"
+      ],
+      "approvalPoints": [
+        "新玩法关联或扩大制作范围前"
+      ],
+      "completionEvidence": [
+        "正式数据/代码与验证"
+      ],
+      "capabilityIds": [
+        "skill-liluo-story-to-playable-content"
+      ],
+      "sourceRefs": [
+        "docs/用户命令目录.md"
+      ]
+    },
+    {
+      "id": "workflow-task-recommendation",
+      "title": "按时间与兴趣推荐下一步",
+      "domain": "navigation",
+      "status": "available",
+      "summary": "从未阻塞的真实缺口中推荐可完成任务。",
+      "userCanSay": [
+        "我只有20分钟，今天能做什么？",
+        "今天不想画地图，推荐一个能推进项目的任务。"
+      ],
+      "userMustProvide": [
+        "可用时间、偏好或想避开的领域（可选）"
+      ],
+      "steps": [
+        "筛选未阻塞缺口",
+        "说明用户输入与完成影响",
+        "返回一至三项任务或明确无可推荐项"
+      ],
+      "approvalPoints": [],
+      "completionEvidence": [
+        "用户选择并推进其中一项任务"
+      ],
+      "capabilityIds": [
+        "skill-liluo-project-capability-navigation"
+      ],
+      "sourceRefs": [
+        "project-navigation/workflows.json"
+      ]
+    },
+    {
+      "id": "workflow-unused-plot-audit",
+      "title": "盘点未应用情节库",
+      "domain": "story",
+      "status": "available",
+      "summary": "筛出未使用或仅部分使用的情节，按当前世界、人物、地点和玩家流程给出适配候选。",
+      "userCanSay": [
+        "列出情节库中还没应用过的情节",
+        "给这个节点找几个未用情节库候选"
+      ],
+      "userMustProvide": [
+        "目标世界、节点或筛选偏好（可选）"
+      ],
+      "steps": [
+        "读取情节库 usageStatus",
+        "核验目标节点的已确认事实",
+        "筛出真实匹配条目",
+        "展示可审批选项"
+      ],
+      "approvalPoints": [
+        "将候选写入大纲前"
+      ],
+      "completionEvidence": [
+        "用户选择或明确暂不采用"
+      ],
+      "capabilityIds": [
+        "skill-liluo-story-gap-discovery",
+        "skill-liluo-story-outline-authoring"
+      ],
+      "sourceRefs": [
+        "src/game/data/plot_outline/catalog.json"
+      ]
+    },
+    {
+      "id": "workflow-zhihu-fiction-ingest",
+      "title": "从知乎小说扩充外部 RAG",
+      "domain": "knowledge",
+      "status": "available",
+      "summary": "下载用户给出的知乎小说，隔离保存并建立可检索的非正式参考。",
+      "userCanSay": [
+        "下载这个知乎小说链接并存入 RAG",
+        "把这个知乎回答作为灵感来源收进外部小说素材"
+      ],
+      "userMustProvide": [
+        "知乎文章、回答或专栏链接"
+      ],
+      "steps": [
+        "检查知识库状态",
+        "下载到 staging",
+        "导入 external-fiction RAG",
+        "检索验证"
+      ],
+      "approvalPoints": [
+        "遇到登录或 Cookie 时"
+      ],
+      "completionEvidence": [
+        "导入路径与可检索结果"
+      ],
+      "capabilityIds": [
+        "skill-liluo-zhihu-novel-ingest"
+      ],
+      "sourceRefs": [
+        "docs/用户命令目录.md"
+      ]
+    }
+  ]
+}

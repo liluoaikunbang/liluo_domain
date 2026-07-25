@@ -1,0 +1,1085 @@
+{
+  "schemaVersion": 1,
+  "gameplay": [
+    {
+      "id": "gameplay-001",
+      "title": "房间式地牢探索",
+      "categoryId": "gameplay-group-01",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-002",
+      "title": "连续迷宫探索",
+      "categoryId": "gameplay-group-01",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-003",
+      "title": "开放区域冒险",
+      "categoryId": "gameplay-group-01",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-004",
+      "title": "能力门控探索",
+      "categoryId": "gameplay-group-01",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-005",
+      "title": "近战动作战斗",
+      "categoryId": "gameplay-group-02",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-006",
+      "title": "俯视角射击",
+      "categoryId": "gameplay-group-02",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-007",
+      "title": "弹幕战斗",
+      "categoryId": "gameplay-group-02",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-008",
+      "title": "自动火力生存",
+      "categoryId": "gameplay-group-02",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-009",
+      "title": "横版平台动作",
+      "categoryId": "gameplay-group-02",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-010",
+      "title": "随机地牢远征",
+      "categoryId": "gameplay-group-03",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-011",
+      "title": "随机远征构筑",
+      "categoryId": "gameplay-group-03",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-012",
+      "title": "层级远征",
+      "categoryId": "gameplay-group-03",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-013",
+      "title": "风险选择事件",
+      "categoryId": "gameplay-group-03",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-014",
+      "title": "搜打撤远征",
+      "categoryId": "gameplay-group-03",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-018",
+      "title": "收缩安全区生存",
+      "categoryId": "gameplay-group-04",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-019",
+      "title": "阶段淘汰挑战",
+      "categoryId": "gameplay-group-04",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-021",
+      "title": "波次尸潮",
+      "categoryId": "gameplay-group-04",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-022",
+      "title": "感染度管理",
+      "categoryId": "gameplay-group-04",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-023",
+      "title": "疫情防控",
+      "categoryId": "gameplay-group-04",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-024",
+      "title": "区域争夺",
+      "categoryId": "gameplay-group-05",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-025",
+      "title": "爆破攻防",
+      "categoryId": "gameplay-group-05",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-026",
+      "title": "移动目标护卫",
+      "categoryId": "gameplay-group-05",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-027",
+      "title": "目标物争夺",
+      "categoryId": "gameplay-group-05",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-028",
+      "title": "金库突袭",
+      "categoryId": "gameplay-group-05",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-029",
+      "title": "通信任务",
+      "categoryId": "gameplay-group-05",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-030",
+      "title": "兵线推进战场",
+      "categoryId": "gameplay-group-05",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-032",
+      "title": "中立资源争夺",
+      "categoryId": "gameplay-group-05",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-033",
+      "title": "核心保卫",
+      "categoryId": "gameplay-group-05",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-034",
+      "title": "路径塔防",
+      "categoryId": "gameplay-group-05",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-036",
+      "title": "地牢经营防御",
+      "categoryId": "gameplay-group-05",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-037",
+      "title": "防线突破",
+      "categoryId": "gameplay-group-05",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-038",
+      "title": "小规模即时战略",
+      "categoryId": "gameplay-group-06",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-039",
+      "title": "昼夜基地攻防",
+      "categoryId": "gameplay-group-05",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-040",
+      "title": "战线推进",
+      "categoryId": "gameplay-group-06",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-041",
+      "title": "实时暂停战术",
+      "categoryId": "gameplay-group-06",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-042",
+      "title": "回合制战棋",
+      "categoryId": "gameplay-group-06",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-043",
+      "title": "室内突击",
+      "categoryId": "gameplay-group-06",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-044",
+      "title": "小队生存远征",
+      "categoryId": "gameplay-group-06",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-045",
+      "title": "基础潜行",
+      "categoryId": "gameplay-group-06",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-046",
+      "title": "社会潜行",
+      "categoryId": "gameplay-group-06",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-047",
+      "title": "追猎逃生",
+      "categoryId": "gameplay-group-06",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-049",
+      "title": "人员撤离",
+      "categoryId": "gameplay-group-06",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-052",
+      "title": "多阶段首领战",
+      "categoryId": "gameplay-group-02",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-053",
+      "title": "怪物狩猎",
+      "categoryId": "gameplay-group-02",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-054",
+      "title": "团队型大型副本",
+      "categoryId": "gameplay-group-02",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-055",
+      "title": "连续首领挑战",
+      "categoryId": "gameplay-group-02",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-056",
+      "title": "环境机关解谜",
+      "categoryId": "gameplay-group-07",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-057",
+      "title": "密室逃脱",
+      "categoryId": "gameplay-group-07",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-058",
+      "title": "时序分身解谜",
+      "categoryId": "gameplay-group-07",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-059",
+      "title": "战斗解谜",
+      "categoryId": "gameplay-group-07",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-060",
+      "title": "现场调查",
+      "categoryId": "gameplay-group-07",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-061",
+      "title": "证词审查",
+      "categoryId": "gameplay-group-07",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-062",
+      "title": "NPC群像社交推理",
+      "categoryId": "gameplay-group-07",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-063",
+      "title": "司法裁决",
+      "categoryId": "gameplay-group-07",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-064",
+      "title": "生存恐怖",
+      "categoryId": "gameplay-group-08",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-065",
+      "title": "规则怪谈",
+      "categoryId": "gameplay-group-08",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-066",
+      "title": "异常辨识",
+      "categoryId": "gameplay-group-08",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-067",
+      "title": "精神侵蚀",
+      "categoryId": "gameplay-group-08",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-068",
+      "title": "固定时间循环",
+      "categoryId": "gameplay-group-08",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-069",
+      "title": "战斗回溯",
+      "categoryId": "gameplay-group-08",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-070",
+      "title": "周目因果演化",
+      "categoryId": "gameplay-group-08",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-071",
+      "title": "即时动作角色扮演",
+      "categoryId": "gameplay-group-09",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-072",
+      "title": "指令式回合角色扮演",
+      "categoryId": "gameplay-group-09",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-073",
+      "title": "伙伴捕育",
+      "categoryId": "gameplay-group-09",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-074",
+      "title": "随机远征卡牌构筑",
+      "categoryId": "gameplay-group-09",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-075",
+      "title": "地图行动卡牌",
+      "categoryId": "gameplay-group-09",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-076",
+      "title": "概率构筑",
+      "categoryId": "gameplay-group-09",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-077",
+      "title": "干预式自走棋",
+      "categoryId": "gameplay-group-09",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-079",
+      "title": "荒野生存管理",
+      "categoryId": "gameplay-group-04",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-082",
+      "title": "资源采集",
+      "categoryId": "gameplay-group-10",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-083",
+      "title": "物品制作",
+      "categoryId": "gameplay-group-10",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-084",
+      "title": "装备构筑",
+      "categoryId": "gameplay-group-10",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-085",
+      "title": "基地发展",
+      "categoryId": "gameplay-group-10",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-086",
+      "title": "区域重建",
+      "categoryId": "gameplay-group-10",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-087",
+      "title": "移动据点运营",
+      "categoryId": "gameplay-group-10",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-088",
+      "title": "商店经营",
+      "categoryId": "gameplay-group-10",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-089",
+      "title": "农场经营",
+      "categoryId": "gameplay-group-10",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-090",
+      "title": "冒险组织经营",
+      "categoryId": "gameplay-group-10",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-091",
+      "title": "专业设施管理",
+      "categoryId": "gameplay-group-10",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-092",
+      "title": "运输线路管理",
+      "categoryId": "gameplay-group-10",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-093",
+      "title": "自动化生产",
+      "categoryId": "gameplay-group-10",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-094",
+      "title": "徒步竞速",
+      "categoryId": "gameplay-group-11",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-095",
+      "title": "载具驾驶",
+      "categoryId": "gameplay-group-11",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-096",
+      "title": "载具攻防",
+      "categoryId": "gameplay-group-11",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-097",
+      "title": "节奏战斗",
+      "categoryId": "gameplay-group-11",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-098",
+      "title": "时机判定",
+      "categoryId": "gameplay-group-11",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-099",
+      "title": "竞技场挑战",
+      "categoryId": "gameplay-group-11",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-100",
+      "title": "节庆竞赛",
+      "categoryId": "gameplay-group-11",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-101",
+      "title": "垂钓",
+      "categoryId": "gameplay-group-11",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-102",
+      "title": "地下采掘",
+      "categoryId": "gameplay-group-11",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-103",
+      "title": "配方调制",
+      "categoryId": "gameplay-group-11",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-104",
+      "title": "分支对话",
+      "categoryId": "gameplay-group-12",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-105",
+      "title": "阵营声望",
+      "categoryId": "gameplay-group-12",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-106",
+      "title": "伙伴羁绊",
+      "categoryId": "gameplay-group-12",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-107",
+      "title": "多解任务",
+      "categoryId": "gameplay-group-12",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-108",
+      "title": "系统互动沙盒",
+      "categoryId": "gameplay-group-12",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-109",
+      "title": "动态世界日程",
+      "categoryId": "gameplay-group-12",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-110",
+      "title": "世界图鉴",
+      "categoryId": "gameplay-group-13",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-111",
+      "title": "现场记录",
+      "categoryId": "gameplay-group-13",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-112",
+      "title": "系列收藏",
+      "categoryId": "gameplay-group-13",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-113",
+      "title": "队伍派遣",
+      "categoryId": "gameplay-group-14",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-114",
+      "title": "计时发展",
+      "categoryId": "gameplay-group-14",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-115",
+      "title": "关卡评分",
+      "categoryId": "gameplay-group-15",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-116",
+      "title": "规则变异挑战",
+      "categoryId": "gameplay-group-15",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-117",
+      "title": "周期挑战",
+      "categoryId": "gameplay-group-15",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-118",
+      "title": "命运人生推演",
+      "categoryId": "gameplay-group-12",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-119",
+      "title": "互动小说",
+      "categoryId": "gameplay-group-12",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-120",
+      "title": "职业小镇经营",
+      "categoryId": "gameplay-group-10",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    }
+  ]
+}

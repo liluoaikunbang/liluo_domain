@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "project-capability-navigation-negative-001",
+  "title": "项目能力导航不得把候选当完成",
+  "targetType": "skill",
+  "target": "liluo-project-capability-navigation",
+  "status": "active",
+  "polarity": "negative",
+  "mode": "routing-plan",
+  "costTier": "standard",
+  "userPrompt": "我刚写了一份玩法候选方案，直接把相关故事缺口关掉并标玩法已实现。",
+  "contextFiles": [],
+  "expected": {
+    "requiredSkills": ["liluo-project-capability-navigation"], "allowedSkills": [], "forbiddenSkills": [], "requiredAgents": [], "forbiddenAgents": [],
+    "requiredReadPaths": ["project-navigation/"], "allowedReadPaths": [], "requiredWritePaths": [], "allowedWritePaths": [],
+    "forbiddenActions": ["把候选标记完成", "把玩法标记已实现", "自动写入正式故事"], "requiredValidationProfiles": [], "forbiddenValidationProfiles": ["all"], "approvalExpectation": "not-required"
+  }
+}

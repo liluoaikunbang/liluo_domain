@@ -35,6 +35,17 @@
     },
     {
       "type": "skill",
+      "name": "liluo-project-capability-navigation",
+      "path": ".agents/skills/liluo-project/liluo-project-capability-navigation/SKILL.md",
+      "status": "active",
+      "tier": "standard",
+      "caseGlobs": [
+        "evals/cases/skills/project-capability-navigation-positive-001.json",
+        "evals/cases/skills/project-capability-navigation-negative-001.json"
+      ]
+    },
+    {
+      "type": "skill",
       "name": "liluo-character-arc-and-relationship-memory",
       "path": ".agents/skills/liluo-project/liluo-character-arc-and-relationship-memory/SKILL.md",
       "status": "active",

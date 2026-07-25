@@ -1,0 +1,5443 @@
+{
+  "schemaVersion": 1,
+  "gaps": [
+    {
+      "id": "gap-project-capability-navigation",
+      "title": "项目能力、缺口与行动导航系统",
+      "domain": "navigation",
+      "origin": "user-confirmed",
+      "status": "in-progress",
+      "priority": "highest",
+      "description": "建立可验证的能力、工作流、缺口和来源导航，并生成用户行动页。",
+      "sourceRefs": [
+        "璃落项目能力与行动导航基础设施包.zip"
+      ],
+      "completionCriteria": [
+        "导航命令可扫描、校验、生成和推荐",
+        "用户行动页由注册表生成"
+      ],
+      "nextAction": "完成首版治理与回归接入",
+      "lastSeenAt": "2026-07-25T07:02:26.351Z"
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-black-rose-sanatorium-地图-黑蔷薇疗养院-场景结构-9bd2f52366",
+      "title": "黑蔷薇疗养院·场景结构",
+      "domain": "map",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少实际地点、区域连接、道路限制与返回变化",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-black-rose-sanatorium",
+        "src/game/data/story_outline/1-modern/3.5.2.1-黑蔷薇疗养院.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.349Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-black-rose-sanatorium-流程-黑蔷薇疗养院-玩家流程-37426e16cb",
+      "title": "黑蔷薇疗养院·玩家流程",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-black-rose-sanatorium",
+        "src/game/data/story_outline/1-modern/3.5.2.1-黑蔷薇疗养院.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.349Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-black-rose-sanatorium-玩法-黑蔷薇疗养院-主要活动-9c2fae901a",
+      "title": "黑蔷薇疗养院·主要活动",
+      "domain": "gameplay",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少主要游戏活动类型与可执行操作循环",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-black-rose-sanatorium",
+        "src/game/data/story_outline/1-modern/3.5.2.1-黑蔷薇疗养院.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "确认玩家活动后筛选可落地玩法候选。",
+      "relatedCapabilityIds": [
+        "skill-liluo-gameplay-loop-audit",
+        "skill-liluo-story-gap-discovery"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.349Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-black-rose-sanatorium-设计-黑蔷薇疗养院-故事体量-14f28e3f7b",
+      "title": "黑蔷薇疗养院·故事体量",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少故事体量、主要区域数量与核心机制差异说明",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-black-rose-sanatorium",
+        "src/game/data/story_outline/1-modern/3.5.2.1-黑蔷薇疗养院.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.347Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-bound-world-tour-流程-紧缚环游世界-首批目的地-6f4c8066a1",
+      "title": "紧缚环游世界·首批目的地",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少第一批旅行地点、抵达顺序及每站的核心风土事件",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-bound-world-tour",
+        "src/game/data/story_outline/1-modern/5.2-紧缚环游世界.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.349Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-bound-world-tour-状态-紧缚环游世界-长期旅行记录-0839c8394d",
+      "title": "紧缚环游世界·长期旅行记录",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少照片墙、目的地进度、角色来信与同行关系的具体存档字段",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-bound-world-tour",
+        "src/game/data/story_outline/1-modern/5.2-紧缚环游世界.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.349Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-bound-world-tour-玩法-紧缚环游世界-摄影循环-abab7e9f4c",
+      "title": "紧缚环游世界·摄影循环",
+      "domain": "gameplay",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少取景、时机、照片评价与错过后补拍规则",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-bound-world-tour",
+        "src/game/data/story_outline/1-modern/5.2-紧缚环游世界.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "确认玩家活动后筛选可落地玩法候选。",
+      "relatedCapabilityIds": [
+        "skill-liluo-gameplay-loop-audit",
+        "skill-liluo-story-gap-discovery"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.349Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-bound-world-tour-设定-紧缚环游世界-旧旅行中断原因-02f4ac14a8",
+      "title": "紧缚环游世界·旧旅行中断原因",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少姐姐当年准备旅行却未能出发的具体事件与时间点",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-bound-world-tour",
+        "src/game/data/story_outline/1-modern/5.2-紧缚环游世界.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.349Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-campus-arrival-事件-重返校园-校园论坛浏览-7b37338a1c",
+      "title": "重返校园·校园论坛浏览",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少打开论坛、记录异常传闻和完成浏览的正式事件 ID",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-campus-arrival",
+        "src/game/data/story_outline/1-modern/1.1-重返校园.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.349Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-campus-arrival-事件-重返校园-社团招新区抵达-8e24f9bf54",
+      "title": "重返校园·社团招新区抵达",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少进入招新区域并衔接“加入紧缚社团”的正式事件 ID",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-campus-arrival",
+        "src/game/data/story_outline/1-modern/1.1-重返校园.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.349Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-campus-arrival-地图-重返校园-校门口接管-9916e2fa79",
+      "title": "重返校园·校门口接管",
+      "domain": "map",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少 city_jingjiang_school 校门口准确出生点配置",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-campus-arrival",
+        "src/game/data/story_outline/1-modern/1.1-重返校园.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.349Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-campus-arrival-对话-重返校园-复学导览-d6c8155a56",
+      "title": "重返校园·复学导览",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少校园功能 NPC 与璃落的正式导览台词及对话 ID",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-campus-arrival",
+        "src/game/data/story_outline/1-modern/1.1-重返校园.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.349Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-cement-shoes-流程-水泥鞋-玩家流程-0c14d80d4d",
+      "title": "水泥鞋·玩家流程",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-cement-shoes",
+        "src/game/data/story_outline/1-modern/3.1-水泥鞋.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.349Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-cement-shoes-玩法-水泥鞋-主要活动-89057b65f8",
+      "title": "水泥鞋·主要活动",
+      "domain": "gameplay",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少主要游戏活动类型与可执行操作循环",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-cement-shoes",
+        "src/game/data/story_outline/1-modern/3.1-水泥鞋.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "确认玩家活动后筛选可落地玩法候选。",
+      "relatedCapabilityIds": [
+        "skill-liluo-gameplay-loop-audit",
+        "skill-liluo-story-gap-discovery"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.349Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-cement-shoes-衔接-水泥鞋-黄毛女孩救援灵感-8626e8fd2e",
+      "title": "水泥鞋·黄毛女孩救援灵感",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "黄毛女孩可能在救下璃落的过程中发挥重要作用，具体介入原因、行动和结果尚未确认",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-cement-shoes",
+        "src/game/data/story_outline/1-modern/3.1-水泥鞋.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.349Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-cement-shoes-设计-水泥鞋-故事体量-1f83f7baf1",
+      "title": "水泥鞋·故事体量",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少故事体量、主要区域数量与核心机制差异说明",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-cement-shoes",
+        "src/game/data/story_outline/1-modern/3.1-水泥鞋.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.349Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-city-investigator-内容-城市调查员-工厂委托-d39ada5f85",
+      "title": "城市调查员·工厂委托",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "金属厂及其他工厂案件只有方向，仍缺各自独立的犯罪问题与调查机制",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-city-investigator",
+        "src/game/data/story_outline/1-modern/4.1.2-S1-城市调查员.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.349Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-city-investigator-玩法-城市调查员-调查评级-9966574b07",
+      "title": "城市调查员·调查评级",
+      "domain": "gameplay",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少证据保全、受害者安全和幕后追查三项结算的具体反馈规则",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-city-investigator",
+        "src/game/data/story_outline/1-modern/4.1.2-S1-城市调查员.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "确认玩家活动后筛选可落地玩法候选。",
+      "relatedCapabilityIds": [
+        "skill-liluo-gameplay-loop-audit",
+        "skill-liluo-story-gap-discovery"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.349Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-city-investigator-系统-城市调查员-委托渠道-0232f2b1b6",
+      "title": "城市调查员·委托渠道",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少记者、警方外围关系、受害者转介与匿名线索的首版开放顺序",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-city-investigator",
+        "src/game/data/story_outline/1-modern/4.1.2-S1-城市调查员.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.349Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-club-流程-加入紧缚社团-玩家流程-45612d32bb",
+      "title": "加入紧缚社团·玩家流程",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-club",
+        "src/game/data/story_outline/1-modern/1.2-加入紧缚社团.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.349Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-club-玩法-加入紧缚社团-主要活动-752a6d70c1",
+      "title": "加入紧缚社团·主要活动",
+      "domain": "gameplay",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少主要游戏活动类型与可执行操作循环",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-club",
+        "src/game/data/story_outline/1-modern/1.2-加入紧缚社团.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "确认玩家活动后筛选可落地玩法候选。",
+      "relatedCapabilityIds": [
+        "skill-liluo-gameplay-loop-audit",
+        "skill-liluo-story-gap-discovery"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.349Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-club-设计-加入紧缚社团-故事体量-475d737fae",
+      "title": "加入紧缚社团·故事体量",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少故事体量、主要区域数量与核心机制差异说明",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-club",
+        "src/game/data/story_outline/1-modern/1.2-加入紧缚社团.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.349Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-cruise-流程-游轮-玩家流程-02abd19052",
+      "title": "游轮·玩家流程",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-cruise",
+        "src/game/data/story_outline/1-modern/1.3.1-游轮.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.349Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-cruise-玩法-游轮-主要活动-52e4d8c6fd",
+      "title": "游轮·主要活动",
+      "domain": "gameplay",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少主要游戏活动类型与可执行操作循环",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-cruise",
+        "src/game/data/story_outline/1-modern/1.3.1-游轮.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "确认玩家活动后筛选可落地玩法候选。",
+      "relatedCapabilityIds": [
+        "skill-liluo-gameplay-loop-audit",
+        "skill-liluo-story-gap-discovery"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.349Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-cruise-设计-游轮-故事体量-6f1c2ead3c",
+      "title": "游轮·故事体量",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少故事体量、主要区域数量与核心机制差异说明",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-cruise",
+        "src/game/data/story_outline/1-modern/1.3.1-游轮.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.349Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-dance-classroom-流程-舞蹈教室-玩家流程-c0c7f98281",
+      "title": "舞蹈教室·玩家流程",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-dance-classroom",
+        "src/game/data/story_outline/1-modern/1.3-舞蹈教室.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.349Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-dance-classroom-玩法-舞蹈教室-主要活动-ca98d13b17",
+      "title": "舞蹈教室·主要活动",
+      "domain": "gameplay",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少主要游戏活动类型与可执行操作循环",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-dance-classroom",
+        "src/game/data/story_outline/1-modern/1.3-舞蹈教室.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "确认玩家活动后筛选可落地玩法候选。",
+      "relatedCapabilityIds": [
+        "skill-liluo-gameplay-loop-audit",
+        "skill-liluo-story-gap-discovery"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.349Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-dance-classroom-设计-舞蹈教室-故事体量-898e9da0a7",
+      "title": "舞蹈教室·故事体量",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少故事体量、主要区域数量与核心机制差异说明",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-dance-classroom",
+        "src/game/data/story_outline/1-modern/1.3-舞蹈教室.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.349Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-eternal-restraint-maze-流程-永拘迷宫-玩家流程-84684dfcf4",
+      "title": "永拘迷宫·玩家流程",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-eternal-restraint-maze",
+        "src/game/data/story_outline/1-modern/4.3-永拘迷宫.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.349Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-eternal-restraint-maze-玩法-永拘迷宫-主要活动-047a711457",
+      "title": "永拘迷宫·主要活动",
+      "domain": "gameplay",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少主要游戏活动类型与可执行操作循环",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-eternal-restraint-maze",
+        "src/game/data/story_outline/1-modern/4.3-永拘迷宫.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "确认玩家活动后筛选可落地玩法候选。",
+      "relatedCapabilityIds": [
+        "skill-liluo-gameplay-loop-audit",
+        "skill-liluo-story-gap-discovery"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.349Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-eternal-restraint-maze-设计-永拘迷宫-故事体量-5f575acf1f",
+      "title": "永拘迷宫·故事体量",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少故事体量、主要区域数量与核心机制差异说明",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-eternal-restraint-maze",
+        "src/game/data/story_outline/1-modern/4.3-永拘迷宫.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.349Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-flexibility-地图-柔韧性练习-场景结构-f64a390c6a",
+      "title": "柔韧性练习·场景结构",
+      "domain": "map",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少实际地点、区域连接、道路限制与返回变化",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-flexibility",
+        "src/game/data/story_outline/1-modern/1.2.1-柔韧性练习.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.349Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-flexibility-流程-柔韧性练习-玩家流程-6280917aac",
+      "title": "柔韧性练习·玩家流程",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-flexibility",
+        "src/game/data/story_outline/1-modern/1.2.1-柔韧性练习.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.349Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-flexibility-玩法-柔韧性练习-主要活动-801174b8fc",
+      "title": "柔韧性练习·主要活动",
+      "domain": "gameplay",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少主要游戏活动类型与可执行操作循环",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-flexibility",
+        "src/game/data/story_outline/1-modern/1.2.1-柔韧性练习.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "确认玩家活动后筛选可落地玩法候选。",
+      "relatedCapabilityIds": [
+        "skill-liluo-gameplay-loop-audit",
+        "skill-liluo-story-gap-discovery"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.349Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-flexibility-设计-柔韧性练习-故事体量-0853262044",
+      "title": "柔韧性练习·故事体量",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少故事体量、主要区域数量与核心机制差异说明",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-flexibility",
+        "src/game/data/story_outline/1-modern/1.2.1-柔韧性练习.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.349Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-fog-capital-strangeness-地图-雾都怪奇-场景结构-8b8de6bf91",
+      "title": "雾都怪奇·场景结构",
+      "domain": "map",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少实际地点、区域连接、道路限制与返回变化",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-fog-capital-strangeness",
+        "src/game/data/story_outline/1-modern/3.5.2-雾都怪奇.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.349Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-fog-capital-strangeness-流程-雾都怪奇-玩家流程-fb185aeb1a",
+      "title": "雾都怪奇·玩家流程",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-fog-capital-strangeness",
+        "src/game/data/story_outline/1-modern/3.5.2-雾都怪奇.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.349Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-fog-capital-strangeness-玩法-雾都怪奇-主要活动-ea1a6949e3",
+      "title": "雾都怪奇·主要活动",
+      "domain": "gameplay",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少主要游戏活动类型与可执行操作循环",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-fog-capital-strangeness",
+        "src/game/data/story_outline/1-modern/3.5.2-雾都怪奇.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "确认玩家活动后筛选可落地玩法候选。",
+      "relatedCapabilityIds": [
+        "skill-liluo-gameplay-loop-audit",
+        "skill-liluo-story-gap-discovery"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.349Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-fog-capital-strangeness-设计-雾都怪奇-故事体量-eae54feef5",
+      "title": "雾都怪奇·故事体量",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少故事体量、主要区域数量与核心机制差异说明",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-fog-capital-strangeness",
+        "src/game/data/story_outline/1-modern/3.5.2-雾都怪奇.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.349Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-fog-sea-lone-island-expedition-地图-雾海孤岛探险-场景结构-4f850c22f0",
+      "title": "雾海孤岛探险·场景结构",
+      "domain": "map",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少实际地点、区域连接、道路限制与返回变化",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-fog-sea-lone-island-expedition",
+        "src/game/data/story_outline/1-modern/2.6.1-雾海孤岛探险.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.349Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-fog-sea-lone-island-expedition-流程-雾海孤岛探险-玩家流程-45d6a6661b",
+      "title": "雾海孤岛探险·玩家流程",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-fog-sea-lone-island-expedition",
+        "src/game/data/story_outline/1-modern/2.6.1-雾海孤岛探险.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.349Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-fog-sea-lone-island-expedition-玩法-雾海孤岛探险-主要活动-5770d8b04c",
+      "title": "雾海孤岛探险·主要活动",
+      "domain": "gameplay",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少主要游戏活动类型与可执行操作循环",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-fog-sea-lone-island-expedition",
+        "src/game/data/story_outline/1-modern/2.6.1-雾海孤岛探险.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "确认玩家活动后筛选可落地玩法候选。",
+      "relatedCapabilityIds": [
+        "skill-liluo-gameplay-loop-audit",
+        "skill-liluo-story-gap-discovery"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.349Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-fog-sea-lone-island-expedition-设计-雾海孤岛探险-故事体量-3008fb49da",
+      "title": "雾海孤岛探险·故事体量",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少故事体量、主要区域数量与核心机制差异说明",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-fog-sea-lone-island-expedition",
+        "src/game/data/story_outline/1-modern/2.6.1-雾海孤岛探险.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.349Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-grudge-ancient-tree-地图-满怨古树-场景结构-ad1987e948",
+      "title": "满怨古树·场景结构",
+      "domain": "map",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少实际地点、区域连接、道路限制与返回变化",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-grudge-ancient-tree",
+        "src/game/data/story_outline/1-modern/1.6-满怨古树.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.349Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-grudge-ancient-tree-流程-满怨古树-玩家流程-09f3453854",
+      "title": "满怨古树·玩家流程",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-grudge-ancient-tree",
+        "src/game/data/story_outline/1-modern/1.6-满怨古树.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.349Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-grudge-ancient-tree-玩法-满怨古树-主要活动-5b358b598c",
+      "title": "满怨古树·主要活动",
+      "domain": "gameplay",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少主要游戏活动类型与可执行操作循环",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-grudge-ancient-tree",
+        "src/game/data/story_outline/1-modern/1.6-满怨古树.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "确认玩家活动后筛选可落地玩法候选。",
+      "relatedCapabilityIds": [
+        "skill-liluo-gameplay-loop-audit",
+        "skill-liluo-story-gap-discovery"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.349Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-grudge-ancient-tree-设计-满怨古树-故事体量-b2353ea452",
+      "title": "满怨古树·故事体量",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少故事体量、主要区域数量与核心机制差异说明",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-grudge-ancient-tree",
+        "src/game/data/story_outline/1-modern/1.6-满怨古树.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.349Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-hospital-awakening-可制作-病房苏醒-梦境种子植入闪回-5a2fb2f48b",
+      "title": "病房苏醒·梦境种子植入闪回",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "素材已齐，可用代码光效、失真与切镜串联霸凌系列 CG 快速闪回，表现植入和创伤记忆被短暂激活",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-hospital-awakening",
+        "src/game/data/story_outline/1-modern/1.0.1-病房苏醒.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.349Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-hospital-awakening-场景图-病房苏醒-医院场景-70e3ae3bd0",
+      "title": "病房苏醒·医院场景",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少市医院单人病房、封闭活动区与室外庭院三组正式场景图；它们用于互动小说背景切换，不是可行走地图",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-hospital-awakening",
+        "src/game/data/story_outline/1-modern/1.0.1-病房苏醒.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.349Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-hospital-awakening-对话-病房苏醒-灵异辨识训练-a4659a8c5a",
+      "title": "病房苏醒·灵异辨识训练",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少璃落、沈芷、许知遥与无名女鬼的正式台词及对应对话 ID",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-hospital-awakening",
+        "src/game/data/story_outline/1-modern/1.0.1-病房苏醒.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.349Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-hospital-awakening-立绘-病房苏醒-恢复评估-478ffddda8",
+      "title": "病房苏醒·恢复评估",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少年轻女医生许知遥和无名女鬼的正式外观设定与立绘",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-hospital-awakening",
+        "src/game/data/story_outline/1-modern/1.0.1-病房苏醒.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.349Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-hospital-awakening-音频-病房苏醒-鬼魂接近与记忆切换-e98d097cb0",
+      "title": "病房苏醒·鬼魂接近与记忆切换",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少环境声减弱、耳鸣、低语、梦境切换和恢复提示的音效需求确认",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-hospital-awakening",
+        "src/game/data/story_outline/1-modern/1.0.1-病房苏醒.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.349Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-hot-spring-流程-温泉度假酒店-玩家流程-40dcb3bed7",
+      "title": "温泉度假酒店·玩家流程",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-hot-spring",
+        "src/game/data/story_outline/1-modern/1.8-温泉度假酒店.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.349Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-hot-spring-玩法-温泉度假酒店-主要活动-19b4992aac",
+      "title": "温泉度假酒店·主要活动",
+      "domain": "gameplay",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少主要游戏活动类型与可执行操作循环",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-hot-spring",
+        "src/game/data/story_outline/1-modern/1.8-温泉度假酒店.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "确认玩家活动后筛选可落地玩法候选。",
+      "relatedCapabilityIds": [
+        "skill-liluo-gameplay-loop-audit",
+        "skill-liluo-story-gap-discovery"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.349Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-hot-spring-设计-温泉度假酒店-故事体量-c6ed540acd",
+      "title": "温泉度假酒店·故事体量",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少故事体量、主要区域数量与核心机制差异说明",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-hot-spring",
+        "src/game/data/story_outline/1-modern/1.8-温泉度假酒店.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.349Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-hotel-fright-流程-酒店惊魂-玩家流程-2b83dbcb84",
+      "title": "酒店惊魂·玩家流程",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-hotel-fright",
+        "src/game/data/story_outline/1-modern/2.3-酒店惊魂.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.349Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-hotel-fright-玩法-酒店惊魂-主要活动-43e3cbc938",
+      "title": "酒店惊魂·主要活动",
+      "domain": "gameplay",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少主要游戏活动类型与可执行操作循环",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-hotel-fright",
+        "src/game/data/story_outline/1-modern/2.3-酒店惊魂.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "确认玩家活动后筛选可落地玩法候选。",
+      "relatedCapabilityIds": [
+        "skill-liluo-gameplay-loop-audit",
+        "skill-liluo-story-gap-discovery"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.349Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-hotel-fright-设计-酒店惊魂-故事体量-d1e6e68d97",
+      "title": "酒店惊魂·故事体量",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少故事体量、主要区域数量与核心机制差异说明",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-hotel-fright",
+        "src/game/data/story_outline/1-modern/2.3-酒店惊魂.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.349Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-huaiwan-village-流程-槐湾村-玩家流程-736787658e",
+      "title": "槐湾村·玩家流程",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-huaiwan-village",
+        "src/game/data/story_outline/1-modern/2.5-槐湾村.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.349Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-huaiwan-village-玩法-槐湾村-主要活动-7b38fd15a8",
+      "title": "槐湾村·主要活动",
+      "domain": "gameplay",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少主要游戏活动类型与可执行操作循环",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-huaiwan-village",
+        "src/game/data/story_outline/1-modern/2.5-槐湾村.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "确认玩家活动后筛选可落地玩法候选。",
+      "relatedCapabilityIds": [
+        "skill-liluo-gameplay-loop-audit",
+        "skill-liluo-story-gap-discovery"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.349Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-huaiwan-village-设计-槐湾村-故事体量-842f9d56e5",
+      "title": "槐湾村·故事体量",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少故事体量、主要区域数量与核心机制差异说明",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-huaiwan-village",
+        "src/game/data/story_outline/1-modern/2.5-槐湾村.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.349Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-inflatable-castle-流程-充气城堡-玩家流程-972c04d0af",
+      "title": "充气城堡·玩家流程",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-inflatable-castle",
+        "src/game/data/story_outline/1-modern/2.2.2-充气城堡.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-inflatable-castle-玩法-充气城堡-主要活动-85ea0c72c8",
+      "title": "充气城堡·主要活动",
+      "domain": "gameplay",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少主要游戏活动类型与可执行操作循环",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-inflatable-castle",
+        "src/game/data/story_outline/1-modern/2.2.2-充气城堡.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "确认玩家活动后筛选可落地玩法候选。",
+      "relatedCapabilityIds": [
+        "skill-liluo-gameplay-loop-audit",
+        "skill-liluo-story-gap-discovery"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-inflatable-castle-设计-充气城堡-故事体量-c01846dbc3",
+      "title": "充气城堡·故事体量",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少故事体量、主要区域数量与核心机制差异说明",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-inflatable-castle",
+        "src/game/data/story_outline/1-modern/2.2.2-充气城堡.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.349Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-jingjiang-geomancy-地图-荆江堪舆-场景结构-2c150feb19",
+      "title": "荆江堪舆·场景结构",
+      "domain": "map",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少实际地点、区域连接、道路限制与返回变化",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-jingjiang-geomancy",
+        "src/game/data/story_outline/1-modern/2.5.1.1-荆江堪舆.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-jingjiang-geomancy-流程-荆江堪舆-玩家流程-5f09803af2",
+      "title": "荆江堪舆·玩家流程",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-jingjiang-geomancy",
+        "src/game/data/story_outline/1-modern/2.5.1.1-荆江堪舆.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-jingjiang-geomancy-玩法-荆江堪舆-主要活动-9ca664417d",
+      "title": "荆江堪舆·主要活动",
+      "domain": "gameplay",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少主要游戏活动类型与可执行操作循环",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-jingjiang-geomancy",
+        "src/game/data/story_outline/1-modern/2.5.1.1-荆江堪舆.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "确认玩家活动后筛选可落地玩法候选。",
+      "relatedCapabilityIds": [
+        "skill-liluo-gameplay-loop-audit",
+        "skill-liluo-story-gap-discovery"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-jingjiang-geomancy-设计-荆江堪舆-故事体量-e4a7a959a9",
+      "title": "荆江堪舆·故事体量",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少故事体量、主要区域数量与核心机制差异说明",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-jingjiang-geomancy",
+        "src/game/data/story_outline/1-modern/2.5.1.1-荆江堪舆.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-jingjiang-seventh-ability-adaptation-school-人物-第七异能适应学校-成年适应班-fdf1ad1293",
+      "title": "荆江第七异能适应学校·成年适应班",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少主要学员姓名、各自能力边界及发起课堂整蛊的组织者",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-jingjiang-seventh-ability-adaptation-school",
+        "src/game/data/story_outline/1-modern/4.1.1-荆江第七异能适应学校.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-jingjiang-seventh-ability-adaptation-school-玩法-第七异能适应学校-课堂控制权-fb13d63938",
+      "title": "荆江第七异能适应学校·课堂控制权",
+      "domain": "gameplay",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少各类异能整蛊的识别线索、错误判断反馈和课堂失控阈值表",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-jingjiang-seventh-ability-adaptation-school",
+        "src/game/data/story_outline/1-modern/4.1.1-荆江第七异能适应学校.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "确认玩家活动后筛选可落地玩法候选。",
+      "relatedCapabilityIds": [
+        "skill-liluo-gameplay-loop-audit",
+        "skill-liluo-story-gap-discovery"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-jingjiang-seventh-ability-adaptation-school-衔接-第七异能适应学校-课后求助-71af4232dc",
+      "title": "荆江第七异能适应学校·课后求助",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少提出同住者失踪委托的学员姓名及其与失踪工人的关系细节",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-jingjiang-seventh-ability-adaptation-school",
+        "src/game/data/story_outline/1-modern/4.1.1-荆江第七异能适应学校.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-liminal-space-人物-阈限空间-永拘迷宫建立者-c215b3c885",
+      "title": "阈限空间·永拘迷宫建立者",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "已确认其受国外夜栈会及其国内扶持的大型企业犯罪链驱动，缺少具体身份、国内企业名称及其收藏异能者的实际用途",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-liminal-space",
+        "src/game/data/story_outline/1-modern/4.3.1-阈限空间.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-liminal-space-流程-阈限空间-群像救援分工-c28e8141bb",
+      "title": "阈限空间·群像救援分工",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "已确认异常灾害处理组织稳定入口、紧缚社团寻找并照顾受害者、获救异能者提供内部情报，缺少首版救援阶段目标与玩家实际操作",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-liminal-space",
+        "src/game/data/story_outline/1-modern/4.3.1-阈限空间.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-liminal-space-流程-阈限空间-长期进入方式-ad6586f751",
+      "title": "阈限空间·长期进入方式",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "已确认失控后的永久拘束标记只保留空间坐标功能，璃落后续不必从该坐标进入，缺少其他稳定或随机入口的开放规则",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-liminal-space",
+        "src/game/data/story_outline/1-modern/4.3.1-阈限空间.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-liminal-space-玩法-阈限空间-拘束差异-53af6cbd74",
+      "title": "阈限空间·拘束差异",
+      "domain": "gameplay",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "不同拘束组合的具体操作差异由用户明确保留待定",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-liminal-space",
+        "src/game/data/story_outline/1-modern/4.3.1-阈限空间.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "确认玩家活动后筛选可落地玩法候选。",
+      "relatedCapabilityIds": [
+        "skill-liluo-gameplay-loop-audit",
+        "skill-liluo-story-gap-discovery"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-liminal-space-结局-阈限空间-受害者与长期boss追捕-6d9d3190a5",
+      "title": "阈限空间·受害者与长期Boss追捕",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "已确认建立者失去永拘迷宫控制权并成为后续支线长期 Boss，本次救出的受害者范围、首次追捕线索与后续交锋阶段均保留待定",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-liminal-space",
+        "src/game/data/story_outline/1-modern/4.3.1-阈限空间.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-liminal-space-设计-阈限空间-泳池空间规则-b1bba8bd40",
+      "title": "阈限空间·泳池空间规则",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "首层规则由用户明确保留待定，仍缺水位变化、漂浮物操作、出口辨识与本层结束点",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-liminal-space",
+        "src/game/data/story_outline/1-modern/4.3.1-阈限空间.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-little-maid-team-cg-小小女仆团-转运路线-0e6d5abecb",
+      "title": "小小女仆团·转运路线",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少五张已规划转运 CG 的正式美术资源",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-little-maid-team",
+        "src/game/data/story_outline/1-modern/4.1-小小女仆团.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-little-prisoner-流程-小囚犯出圈记-玩家流程-b780eb6eb4",
+      "title": "小囚犯出圈记·玩家流程",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-little-prisoner",
+        "src/game/data/story_outline/1-modern/2.1-小囚犯出圈记.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-little-prisoner-玩法-小囚犯出圈记-主要活动-254c218922",
+      "title": "小囚犯出圈记·主要活动",
+      "domain": "gameplay",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少主要游戏活动类型与可执行操作循环",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-little-prisoner",
+        "src/game/data/story_outline/1-modern/2.1-小囚犯出圈记.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "确认玩家活动后筛选可落地玩法候选。",
+      "relatedCapabilityIds": [
+        "skill-liluo-gameplay-loop-audit",
+        "skill-liluo-story-gap-discovery"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-little-prisoner-设计-小囚犯出圈记-故事体量-363a450f32",
+      "title": "小囚犯出圈记·故事体量",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少故事体量、主要区域数量与核心机制差异说明",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-little-prisoner",
+        "src/game/data/story_outline/1-modern/2.1-小囚犯出圈记.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-luxury-theater-地图-浮华剧场-场景结构-8059d10ac5",
+      "title": "浮华剧场·场景结构",
+      "domain": "map",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少实际地点、区域连接、道路限制与返回变化",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-luxury-theater",
+        "src/game/data/story_outline/1-modern/4.2-浮华剧场.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-luxury-theater-流程-浮华剧场-玩家流程-2b02d59a72",
+      "title": "浮华剧场·玩家流程",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-luxury-theater",
+        "src/game/data/story_outline/1-modern/4.2-浮华剧场.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-luxury-theater-玩法-浮华剧场-主要活动-2952c64854",
+      "title": "浮华剧场·主要活动",
+      "domain": "gameplay",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少主要游戏活动类型与可执行操作循环",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-luxury-theater",
+        "src/game/data/story_outline/1-modern/4.2-浮华剧场.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "确认玩家活动后筛选可落地玩法候选。",
+      "relatedCapabilityIds": [
+        "skill-liluo-gameplay-loop-audit",
+        "skill-liluo-story-gap-discovery"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-luxury-theater-设计-浮华剧场-故事体量-5cd5251942",
+      "title": "浮华剧场·故事体量",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少故事体量、主要区域数量与核心机制差异说明",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-luxury-theater",
+        "src/game/data/story_outline/1-modern/4.2-浮华剧场.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-maid-hotel-地图-女仆酒店-场景结构-02a8148d8c",
+      "title": "女仆酒店·场景结构",
+      "domain": "map",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少实际地点、区域连接、道路限制与返回变化",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-maid-hotel",
+        "src/game/data/story_outline/1-modern/2.2-女仆酒店.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-maid-hotel-流程-女仆酒店-玩家流程-83e294db0d",
+      "title": "女仆酒店·玩家流程",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-maid-hotel",
+        "src/game/data/story_outline/1-modern/2.2-女仆酒店.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-maid-hotel-玩法-女仆酒店-主要活动-a3dab407d2",
+      "title": "女仆酒店·主要活动",
+      "domain": "gameplay",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少主要游戏活动类型与可执行操作循环",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-maid-hotel",
+        "src/game/data/story_outline/1-modern/2.2-女仆酒店.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "确认玩家活动后筛选可落地玩法候选。",
+      "relatedCapabilityIds": [
+        "skill-liluo-gameplay-loop-audit",
+        "skill-liluo-story-gap-discovery"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-maid-hotel-设计-女仆酒店-故事体量-246e68903b",
+      "title": "女仆酒店·故事体量",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少故事体量、主要区域数量与核心机制差异说明",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-maid-hotel",
+        "src/game/data/story_outline/1-modern/2.2-女仆酒店.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-maid-massage-shop-地图-女仆按摩店-场景结构-2de2251ffd",
+      "title": "女仆按摩店·场景结构",
+      "domain": "map",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少实际地点、区域连接、道路限制与返回变化",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-maid-massage-shop",
+        "src/game/data/story_outline/1-modern/2.3.1-女仆按摩店.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-maid-massage-shop-流程-女仆按摩店-玩家流程-cb8a828f10",
+      "title": "女仆按摩店·玩家流程",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-maid-massage-shop",
+        "src/game/data/story_outline/1-modern/2.3.1-女仆按摩店.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-maid-massage-shop-玩法-女仆按摩店-主要活动-07067bab0e",
+      "title": "女仆按摩店·主要活动",
+      "domain": "gameplay",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少主要游戏活动类型与可执行操作循环",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-maid-massage-shop",
+        "src/game/data/story_outline/1-modern/2.3.1-女仆按摩店.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "确认玩家活动后筛选可落地玩法候选。",
+      "relatedCapabilityIds": [
+        "skill-liluo-gameplay-loop-audit",
+        "skill-liluo-story-gap-discovery"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-maid-massage-shop-设计-女仆按摩店-故事体量-8b8a5ab288",
+      "title": "女仆按摩店·故事体量",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少故事体量、主要区域数量与核心机制差异说明",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-maid-massage-shop",
+        "src/game/data/story_outline/1-modern/2.3.1-女仆按摩店.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-midnight-city-exploration-流程-深夜城市探险-玩家流程-e1f763aa5e",
+      "title": "深夜城市探险·玩家流程",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-midnight-city-exploration",
+        "src/game/data/story_outline/1-modern/2.1-深夜城市探险.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-midnight-city-exploration-玩法-深夜城市探险-主要活动-5ec794bb4a",
+      "title": "深夜城市探险·主要活动",
+      "domain": "gameplay",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少主要游戏活动类型与可执行操作循环",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-midnight-city-exploration",
+        "src/game/data/story_outline/1-modern/2.1-深夜城市探险.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "确认玩家活动后筛选可落地玩法候选。",
+      "relatedCapabilityIds": [
+        "skill-liluo-gameplay-loop-audit",
+        "skill-liluo-story-gap-discovery"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-midnight-city-exploration-设计-深夜城市探险-故事体量-4336587009",
+      "title": "深夜城市探险·故事体量",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少故事体量、主要区域数量与核心机制差异说明",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-midnight-city-exploration",
+        "src/game/data/story_outline/1-modern/2.1-深夜城市探险.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-mirror-person-地图-镜中人-场景结构-e571ac12dc",
+      "title": "镜中人·场景结构",
+      "domain": "map",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少实际地点、区域连接、道路限制与返回变化",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-mirror-person",
+        "src/game/data/story_outline/1-modern/1.4.1-镜中人.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-mirror-person-流程-镜中人-玩家流程-48885adf74",
+      "title": "镜中人·玩家流程",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-mirror-person",
+        "src/game/data/story_outline/1-modern/1.4.1-镜中人.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-mirror-person-玩法-镜中人-主要活动-afe453d507",
+      "title": "镜中人·主要活动",
+      "domain": "gameplay",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少主要游戏活动类型与可执行操作循环",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-mirror-person",
+        "src/game/data/story_outline/1-modern/1.4.1-镜中人.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "确认玩家活动后筛选可落地玩法候选。",
+      "relatedCapabilityIds": [
+        "skill-liluo-gameplay-loop-audit",
+        "skill-liluo-story-gap-discovery"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-mirror-person-设计-镜中人-故事体量-92730b9982",
+      "title": "镜中人·故事体量",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少故事体量、主要区域数量与核心机制差异说明",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-mirror-person",
+        "src/game/data/story_outline/1-modern/1.4.1-镜中人.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-missing-night-bus-人物-消失的夜班车-失踪工人-a2f12538c7",
+      "title": "消失的夜班车·失踪工人",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少失踪工人、提供委托的七校学员及外包劳务负责人的正式姓名",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-missing-night-bus",
+        "src/game/data/story_outline/1-modern/4.1.2-消失的夜班车.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-missing-night-bus-对手-消失的夜班车-异能掩护-d32a9467f4",
+      "title": "消失的夜班车·异能掩护",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少受雇异能者的具体能力、限制与被识破方式",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-missing-night-bus",
+        "src/game/data/story_outline/1-modern/4.1.2-消失的夜班车.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-missing-night-bus-玩法-消失的夜班车-证据链-114c2af115",
+      "title": "消失的夜班车·证据链",
+      "domain": "gameplay",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少考勤、班车、劳务单三类证据的具体矛盾项与错误判断反馈",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-missing-night-bus",
+        "src/game/data/story_outline/1-modern/4.1.2-消失的夜班车.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "确认玩家活动后筛选可落地玩法候选。",
+      "relatedCapabilityIds": [
+        "skill-liluo-gameplay-loop-audit",
+        "skill-liluo-story-gap-discovery"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-missing-人物-失联-欣雨被捕-893c98fdb8",
+      "title": "失联·欣雨被捕",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少欣雨从《游轮》之后落入人口贩运链的原因、被捕时间及她与璃落重逢时的状态",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-missing",
+        "src/game/data/story_outline/1-modern/3.2-失联.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-missing-流程-失联-折返营救-922b80ad92",
+      "title": "失联·折返营救",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少璃落折返后采用的救人办法、为何失败，以及她具体如何受伤并被重新抓获",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-missing",
+        "src/game/data/story_outline/1-modern/3.2-失联.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-missing-流程-失联-独自脱逃-e9bf6e2b6e",
+      "title": "失联·独自脱逃",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少璃落从绑架车辆或转运点脱身的具体方式，以及她在看见欣雨前已经逃到哪一步",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-missing",
+        "src/game/data/story_outline/1-modern/3.2-失联.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-missing-玩法-失联-主要活动-7e80d27016",
+      "title": "失联·主要活动",
+      "domain": "gameplay",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少主要游戏活动类型与可执行操作循环",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-missing",
+        "src/game/data/story_outline/1-modern/3.2-失联.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "确认玩家活动后筛选可落地玩法候选。",
+      "relatedCapabilityIds": [
+        "skill-liluo-gameplay-loop-audit",
+        "skill-liluo-story-gap-discovery"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-missing-设计-失联-章节边界-a7a66175b2",
+      "title": "失联·章节边界",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "已确认为完整主线章节，仍缺少主要区域数量与核心机制差异说明",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-missing",
+        "src/game/data/story_outline/1-modern/3.2-失联.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-model-流程-紧缚模特-玩家流程-44aaf7357d",
+      "title": "紧缚模特·玩家流程",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-model",
+        "src/game/data/story_outline/1-modern/2.1.1-紧缚模特.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-model-玩法-紧缚模特-主要活动-fbb632c3bc",
+      "title": "紧缚模特·主要活动",
+      "domain": "gameplay",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少主要游戏活动类型与可执行操作循环",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-model",
+        "src/game/data/story_outline/1-modern/2.1.1-紧缚模特.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "确认玩家活动后筛选可落地玩法候选。",
+      "relatedCapabilityIds": [
+        "skill-liluo-gameplay-loop-audit",
+        "skill-liluo-story-gap-discovery"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-model-设计-紧缚模特-故事体量-083df1942b",
+      "title": "紧缚模特·故事体量",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少故事体量、主要区域数量与核心机制差异说明",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-model",
+        "src/game/data/story_outline/1-modern/2.1.1-紧缚模特.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-movie-bound-stand-in-流程-电影绑替兼职-玩家流程-6a06a2f007",
+      "title": "电影绑替兼职·玩家流程",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-movie-bound-stand-in",
+        "src/game/data/story_outline/1-modern/2.2.1-电影绑替兼职.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-movie-bound-stand-in-玩法-电影绑替兼职-主要活动-6d951a726f",
+      "title": "电影绑替兼职·主要活动",
+      "domain": "gameplay",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少主要游戏活动类型与可执行操作循环",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-movie-bound-stand-in",
+        "src/game/data/story_outline/1-modern/2.2.1-电影绑替兼职.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "确认玩家活动后筛选可落地玩法候选。",
+      "relatedCapabilityIds": [
+        "skill-liluo-gameplay-loop-audit",
+        "skill-liluo-story-gap-discovery"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-movie-bound-stand-in-设计-电影绑替兼职-故事体量-123b249884",
+      "title": "电影绑替兼职·故事体量",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少故事体量、主要区域数量与核心机制差异说明",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-movie-bound-stand-in",
+        "src/game/data/story_outline/1-modern/2.2.1-电影绑替兼职.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-night-school-ghost-stories-地图-夜校怪谈-场景结构-15b2b2da45",
+      "title": "夜校怪谈·场景结构",
+      "domain": "map",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少实际地点、区域连接、道路限制与返回变化",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-night-school-ghost-stories",
+        "src/game/data/story_outline/1-modern/1.6.1-夜校怪谈.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-night-school-ghost-stories-流程-夜校怪谈-玩家流程-63373e36b4",
+      "title": "夜校怪谈·玩家流程",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-night-school-ghost-stories",
+        "src/game/data/story_outline/1-modern/1.6.1-夜校怪谈.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-night-school-ghost-stories-玩法-夜校怪谈-主要活动-12b7647a91",
+      "title": "夜校怪谈·主要活动",
+      "domain": "gameplay",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少主要游戏活动类型与可执行操作循环",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-night-school-ghost-stories",
+        "src/game/data/story_outline/1-modern/1.6.1-夜校怪谈.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "确认玩家活动后筛选可落地玩法候选。",
+      "relatedCapabilityIds": [
+        "skill-liluo-gameplay-loop-audit",
+        "skill-liluo-story-gap-discovery"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-night-school-ghost-stories-设计-夜校怪谈-故事体量-54279e62cd",
+      "title": "夜校怪谈·故事体量",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少故事体量、主要区域数量与核心机制差异说明",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-night-school-ghost-stories",
+        "src/game/data/story_outline/1-modern/1.6.1-夜校怪谈.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-old-case-流程-旧案-玩家流程-541d07568e",
+      "title": "旧案·玩家流程",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-old-case",
+        "src/game/data/story_outline/1-modern/1.7-旧案.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-old-case-玩法-旧案-主要活动-2187180a66",
+      "title": "旧案·主要活动",
+      "domain": "gameplay",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少主要游戏活动类型与可执行操作循环",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-old-case",
+        "src/game/data/story_outline/1-modern/1.7-旧案.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "确认玩家活动后筛选可落地玩法候选。",
+      "relatedCapabilityIds": [
+        "skill-liluo-gameplay-loop-audit",
+        "skill-liluo-story-gap-discovery"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-old-case-设计-旧案-故事体量-f40a488176",
+      "title": "旧案·故事体量",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少故事体量、主要区域数量与核心机制差异说明",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-old-case",
+        "src/game/data/story_outline/1-modern/1.7-旧案.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-old-dormitory-支线-黄毛女孩-后续友情趣事-8e1b251884",
+      "title": "宿舍旧楼·后续友情趣事",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "已确认璃落会与黄毛女孩成为朋友并发展趣事支线，缺少正式姓名、进入条件、具体事件与结局",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-old-dormitory",
+        "src/game/data/story_outline/1-modern/1.5-宿舍旧楼.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-old-dormitory-流程-宿舍旧楼-时间电梯调查-b964b07f3b",
+      "title": "宿舍旧楼·时间电梯调查",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少各年代停靠条件、可调查证据、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-old-dormitory",
+        "src/game/data/story_outline/1-modern/1.5-宿舍旧楼.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-old-dormitory-玩法-宿舍旧楼-主要活动-0c27c8882a",
+      "title": "宿舍旧楼·主要活动",
+      "domain": "gameplay",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少主要游戏活动类型与可执行操作循环",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-old-dormitory",
+        "src/game/data/story_outline/1-modern/1.5-宿舍旧楼.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "确认玩家活动后筛选可落地玩法候选。",
+      "relatedCapabilityIds": [
+        "skill-liluo-gameplay-loop-audit",
+        "skill-liluo-story-gap-discovery"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-old-dormitory-设计-宿舍旧楼-故事体量-0fb583fa36",
+      "title": "宿舍旧楼·故事体量",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少故事体量、主要区域数量与核心机制差异说明",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-old-dormitory",
+        "src/game/data/story_outline/1-modern/1.5-宿舍旧楼.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-prison-storm-流程-监狱风云-玩家流程-46bea2ef6a",
+      "title": "监狱风云·玩家流程",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-prison-storm",
+        "src/game/data/story_outline/1-modern/3.4-监狱风云.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-prison-storm-玩法-监狱风云-主要活动-23b823c6c9",
+      "title": "监狱风云·主要活动",
+      "domain": "gameplay",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少主要游戏活动类型与可执行操作循环",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-prison-storm",
+        "src/game/data/story_outline/1-modern/3.4-监狱风云.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "确认玩家活动后筛选可落地玩法候选。",
+      "relatedCapabilityIds": [
+        "skill-liluo-gameplay-loop-audit",
+        "skill-liluo-story-gap-discovery"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-prison-storm-设计-监狱风云-故事体量-ff4eecfc9f",
+      "title": "监狱风云·故事体量",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少故事体量、主要区域数量与核心机制差异说明",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-prison-storm",
+        "src/game/data/story_outline/1-modern/3.4-监狱风云.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-rainy-ancient-city-地图-烟雨古城-场景结构-3ff2718dda",
+      "title": "烟雨古城·场景结构",
+      "domain": "map",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少实际地点、区域连接、道路限制与返回变化",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-rainy-ancient-city",
+        "src/game/data/story_outline/1-modern/3.5.1-烟雨古城.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-rainy-ancient-city-流程-烟雨古城-玩家流程-da23487a2c",
+      "title": "烟雨古城·玩家流程",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-rainy-ancient-city",
+        "src/game/data/story_outline/1-modern/3.5.1-烟雨古城.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-rainy-ancient-city-玩法-烟雨古城-主要活动-96ab617dee",
+      "title": "烟雨古城·主要活动",
+      "domain": "gameplay",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少主要游戏活动类型与可执行操作循环",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-rainy-ancient-city",
+        "src/game/data/story_outline/1-modern/3.5.1-烟雨古城.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "确认玩家活动后筛选可落地玩法候选。",
+      "relatedCapabilityIds": [
+        "skill-liluo-gameplay-loop-audit",
+        "skill-liluo-story-gap-discovery"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-rainy-ancient-city-设计-烟雨古城-故事体量-e79b1d0ff6",
+      "title": "烟雨古城·故事体量",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少故事体量、主要区域数量与核心机制差异说明",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-rainy-ancient-city",
+        "src/game/data/story_outline/1-modern/3.5.1-烟雨古城.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-reality-show-地图-真人秀-场景结构-8192e0e2e9",
+      "title": "真人秀·场景结构",
+      "domain": "map",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少实际地点、区域连接、道路限制与返回变化",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-reality-show",
+        "src/game/data/story_outline/1-modern/2.5.2.1-真人秀.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-reality-show-流程-真人秀-玩家流程-16ca5e8e2d",
+      "title": "真人秀·玩家流程",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-reality-show",
+        "src/game/data/story_outline/1-modern/2.5.2.1-真人秀.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-reality-show-玩法-真人秀-主要活动-1810935daf",
+      "title": "真人秀·主要活动",
+      "domain": "gameplay",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少主要游戏活动类型与可执行操作循环",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-reality-show",
+        "src/game/data/story_outline/1-modern/2.5.2.1-真人秀.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "确认玩家活动后筛选可落地玩法候选。",
+      "relatedCapabilityIds": [
+        "skill-liluo-gameplay-loop-audit",
+        "skill-liluo-story-gap-discovery"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-reality-show-设计-真人秀-故事体量-1ab27e713d",
+      "title": "真人秀·故事体量",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少故事体量、主要区域数量与核心机制差异说明",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-reality-show",
+        "src/game/data/story_outline/1-modern/2.5.2.1-真人秀.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-red-white-marriage-contract-地图-赤白婚契-场景结构-067996d61d",
+      "title": "赤白婚契·场景结构",
+      "domain": "map",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少实际地点、区域连接、道路限制与返回变化",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-red-white-marriage-contract",
+        "src/game/data/story_outline/1-modern/3.5.1.1-赤白婚契.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-red-white-marriage-contract-流程-赤白婚契-玩家流程-d5bdbb27ca",
+      "title": "赤白婚契·玩家流程",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-red-white-marriage-contract",
+        "src/game/data/story_outline/1-modern/3.5.1.1-赤白婚契.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-red-white-marriage-contract-玩法-赤白婚契-主要活动-b19719b660",
+      "title": "赤白婚契·主要活动",
+      "domain": "gameplay",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少主要游戏活动类型与可执行操作循环",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-red-white-marriage-contract",
+        "src/game/data/story_outline/1-modern/3.5.1.1-赤白婚契.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "确认玩家活动后筛选可落地玩法候选。",
+      "relatedCapabilityIds": [
+        "skill-liluo-gameplay-loop-audit",
+        "skill-liluo-story-gap-discovery"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-red-white-marriage-contract-设计-赤白婚契-故事体量-a7d1f6a12f",
+      "title": "赤白婚契·故事体量",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少故事体量、主要区域数量与核心机制差异说明",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-red-white-marriage-contract",
+        "src/game/data/story_outline/1-modern/3.5.1.1-赤白婚契.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-rope-spirit-game-地图-绳仙游戏-场景结构-94462e2923",
+      "title": "绳仙游戏·场景结构",
+      "domain": "map",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少实际地点、区域连接、道路限制与返回变化",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-rope-spirit-game",
+        "src/game/data/story_outline/1-modern/1.4.2-绳仙游戏.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-rope-spirit-game-流程-绳仙游戏-玩家流程-8d3816e036",
+      "title": "绳仙游戏·玩家流程",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-rope-spirit-game",
+        "src/game/data/story_outline/1-modern/1.4.2-绳仙游戏.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-rope-spirit-game-玩法-绳仙游戏-主要活动-c80d4e9bd0",
+      "title": "绳仙游戏·主要活动",
+      "domain": "gameplay",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少主要游戏活动类型与可执行操作循环",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-rope-spirit-game",
+        "src/game/data/story_outline/1-modern/1.4.2-绳仙游戏.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "确认玩家活动后筛选可落地玩法候选。",
+      "relatedCapabilityIds": [
+        "skill-liluo-gameplay-loop-audit",
+        "skill-liluo-story-gap-discovery"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-rope-spirit-game-设计-绳仙游戏-故事体量-5ebf196101",
+      "title": "绳仙游戏·故事体量",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少故事体量、主要区域数量与核心机制差异说明",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-rope-spirit-game",
+        "src/game/data/story_outline/1-modern/1.4.2-绳仙游戏.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-rust-salt-流程-锈盐-海岸至灰巷-20163f6d03",
+      "title": "锈盐·海岸至灰巷",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少 Rin 救起璃落后到藏卡完成之间的玩家目标、可执行活动与失败反馈",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-rust-salt",
+        "src/game/data/story_outline/1-modern/3.3-锈盐.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-rust-salt-流程-锈盐-甲板追逐与失败恢复-ebfe5d55ee",
+      "title": "锈盐·甲板追逐与失败恢复",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少追逐路线危险、看守追击规则、跳海成功条件及再次被抓后的补救流程",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-rust-salt",
+        "src/game/data/story_outline/1-modern/3.3-锈盐.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-rust-salt-状态-锈盐-章节状态写入-815f4a2b3b",
+      "title": "锈盐·章节状态写入",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少伤势与约束变化、存储卡状态、Rin 关系、女孩去向及进入《监狱风云》的存档字段设计",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-rust-salt",
+        "src/game/data/story_outline/1-modern/3.3-锈盐.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-rust-salt-玩法-锈盐-唐人街与填埋场-dcf4f3e52e",
+      "title": "锈盐·唐人街与填埋场",
+      "domain": "gameplay",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少交易、出卖、逼供、活埋救援和官方收网阶段的玩家参与方式与阶段目标",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-rust-salt",
+        "src/game/data/story_outline/1-modern/3.3-锈盐.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "确认玩家活动后筛选可落地玩法候选。",
+      "relatedCapabilityIds": [
+        "skill-liluo-gameplay-loop-audit",
+        "skill-liluo-story-gap-discovery"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-rust-salt-玩法-锈盐-船舱脱困工具链-f8d864f0bb",
+      "title": "锈盐·船舱脱困工具链",
+      "domain": "gameplay",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少可搜集小工具、分阶段解除步骤及每一步解锁的具体操作",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-rust-salt",
+        "src/game/data/story_outline/1-modern/3.3-锈盐.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "确认玩家活动后筛选可落地玩法候选。",
+      "relatedCapabilityIds": [
+        "skill-liluo-gameplay-loop-audit",
+        "skill-liluo-story-gap-discovery"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-rust-salt-调查-锈盐-值班区证据筛选-2da0e4dd94",
+      "title": "锈盐·值班区证据筛选",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少可调查文件与物件、有效证据判定、错误选择反馈及存储卡提示方式",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-rust-salt",
+        "src/game/data/story_outline/1-modern/3.3-锈盐.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-sensory-trial-流程-感官试炼-玩家流程-e2ab7c2221",
+      "title": "感官试炼·玩家流程",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-sensory-trial",
+        "src/game/data/story_outline/1-modern/1.5.1-感官试炼.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-sensory-trial-玩法-感官试炼-主要活动-25ce0e2c72",
+      "title": "感官试炼·主要活动",
+      "domain": "gameplay",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少主要游戏活动类型与可执行操作循环",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-sensory-trial",
+        "src/game/data/story_outline/1-modern/1.5.1-感官试炼.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "确认玩家活动后筛选可落地玩法候选。",
+      "relatedCapabilityIds": [
+        "skill-liluo-gameplay-loop-audit",
+        "skill-liluo-story-gap-discovery"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-sensory-trial-设计-感官试炼-故事体量-283bb20808",
+      "title": "感官试炼·故事体量",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少故事体量、主要区域数量与核心机制差异说明",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-sensory-trial",
+        "src/game/data/story_outline/1-modern/1.5.1-感官试炼.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-silent-correction-center-地图-静默矫治中心-场景结构-95874696cf",
+      "title": "静默矫治中心·场景结构",
+      "domain": "map",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少实际地点、区域连接、道路限制与返回变化",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-silent-correction-center",
+        "src/game/data/story_outline/1-modern/4.2.1-静默矫治中心.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-silent-correction-center-流程-静默矫治中心-玩家流程-e13584da29",
+      "title": "静默矫治中心·玩家流程",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-silent-correction-center",
+        "src/game/data/story_outline/1-modern/4.2.1-静默矫治中心.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-silent-correction-center-玩法-静默矫治中心-主要活动-455534cec4",
+      "title": "静默矫治中心·主要活动",
+      "domain": "gameplay",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少主要游戏活动类型与可执行操作循环",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-silent-correction-center",
+        "src/game/data/story_outline/1-modern/4.2.1-静默矫治中心.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "确认玩家活动后筛选可落地玩法候选。",
+      "relatedCapabilityIds": [
+        "skill-liluo-gameplay-loop-audit",
+        "skill-liluo-story-gap-discovery"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-silent-correction-center-设计-静默矫治中心-故事体量-b3f6e016be",
+      "title": "静默矫治中心·故事体量",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少故事体量、主要区域数量与核心机制差异说明",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-silent-correction-center",
+        "src/game/data/story_outline/1-modern/4.2.1-静默矫治中心.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-silent-witness-地图-沉默见证-场景结构-5bdf360d44",
+      "title": "沉默见证·场景结构",
+      "domain": "map",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少实际地点、区域连接、道路限制与返回变化",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-silent-witness",
+        "src/game/data/story_outline/1-modern/3.3.1-沉默见证.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-silent-witness-流程-沉默见证-玩家流程-b8b7b9ac57",
+      "title": "沉默见证·玩家流程",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-silent-witness",
+        "src/game/data/story_outline/1-modern/3.3.1-沉默见证.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-silent-witness-玩法-沉默见证-主要活动-cbb7c4e8e0",
+      "title": "沉默见证·主要活动",
+      "domain": "gameplay",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少主要游戏活动类型与可执行操作循环",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-silent-witness",
+        "src/game/data/story_outline/1-modern/3.3.1-沉默见证.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "确认玩家活动后筛选可落地玩法候选。",
+      "relatedCapabilityIds": [
+        "skill-liluo-gameplay-loop-audit",
+        "skill-liluo-story-gap-discovery"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-silent-witness-设计-沉默见证-故事体量-b2f8e5f90b",
+      "title": "沉默见证·故事体量",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少故事体量、主要区域数量与核心机制差异说明",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-silent-witness",
+        "src/game/data/story_outline/1-modern/3.3.1-沉默见证.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-sinkhole-rainforest-expedition-地图-天坑雨林远征-场景结构-64c5c29a5d",
+      "title": "天坑雨林远征·场景结构",
+      "domain": "map",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少实际地点、区域连接、道路限制与返回变化",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-sinkhole-rainforest-expedition",
+        "src/game/data/story_outline/1-modern/2.6.2-天坑雨林远征.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-sinkhole-rainforest-expedition-流程-天坑雨林远征-玩家流程-ae08194e53",
+      "title": "天坑雨林远征·玩家流程",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-sinkhole-rainforest-expedition",
+        "src/game/data/story_outline/1-modern/2.6.2-天坑雨林远征.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-sinkhole-rainforest-expedition-玩法-天坑雨林远征-主要活动-6e17770943",
+      "title": "天坑雨林远征·主要活动",
+      "domain": "gameplay",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少主要游戏活动类型与可执行操作循环",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-sinkhole-rainforest-expedition",
+        "src/game/data/story_outline/1-modern/2.6.2-天坑雨林远征.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "确认玩家活动后筛选可落地玩法候选。",
+      "relatedCapabilityIds": [
+        "skill-liluo-gameplay-loop-audit",
+        "skill-liluo-story-gap-discovery"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-sinkhole-rainforest-expedition-设计-天坑雨林远征-故事体量-3917dd25a3",
+      "title": "天坑雨林远征·故事体量",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少故事体量、主要区域数量与核心机制差异说明",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-sinkhole-rainforest-expedition",
+        "src/game/data/story_outline/1-modern/2.6.2-天坑雨林远征.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-snow-train-流程-雪城列车-玩家流程-3346002035",
+      "title": "雪城列车·玩家流程",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-snow-train",
+        "src/game/data/story_outline/1-modern/2.5.1-雪城列车.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-snow-train-玩法-雪城列车-主要活动-16716ab0c0",
+      "title": "雪城列车·主要活动",
+      "domain": "gameplay",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少主要游戏活动类型与可执行操作循环",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-snow-train",
+        "src/game/data/story_outline/1-modern/2.5.1-雪城列车.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "确认玩家活动后筛选可落地玩法候选。",
+      "relatedCapabilityIds": [
+        "skill-liluo-gameplay-loop-audit",
+        "skill-liluo-story-gap-discovery"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-snow-train-设计-雪城列车-故事体量-bdc2083908",
+      "title": "雪城列车·故事体量",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少故事体量、主要区域数量与核心机制差异说明",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-snow-train",
+        "src/game/data/story_outline/1-modern/2.5.1-雪城列车.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-strange-object-society-archive-地图-诡物收录-场景结构-5caa24182e",
+      "title": "诡物收录·场景结构",
+      "domain": "map",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少实际地点、区域连接、道路限制与返回变化",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-strange-object-society-archive",
+        "src/game/data/story_outline/1-modern/2.0.1.1-诡物收录.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-strange-object-society-archive-流程-诡物收录-玩家流程-8e0d06cede",
+      "title": "诡物收录·玩家流程",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-strange-object-society-archive",
+        "src/game/data/story_outline/1-modern/2.0.1.1-诡物收录.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-strange-object-society-archive-玩法-诡物收录-主要活动-e71641d5cd",
+      "title": "诡物收录·主要活动",
+      "domain": "gameplay",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少主要游戏活动类型与可执行操作循环",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-strange-object-society-archive",
+        "src/game/data/story_outline/1-modern/2.0.1.1-诡物收录.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "确认玩家活动后筛选可落地玩法候选。",
+      "relatedCapabilityIds": [
+        "skill-liluo-gameplay-loop-audit",
+        "skill-liluo-story-gap-discovery"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-strange-object-society-archive-设计-诡物收录-故事体量-064d06f2d2",
+      "title": "诡物收录·故事体量",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少故事体量、主要区域数量与核心机制差异说明",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-strange-object-society-archive",
+        "src/game/data/story_outline/1-modern/2.0.1.1-诡物收录.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-supernatural-games-地图-灵异游戏-仪式地点-45a3af0d53",
+      "title": "灵异游戏·仪式地点",
+      "domain": "map",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少各游戏对应的校园区域、异常空间与返回变化",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-supernatural-games",
+        "src/game/data/story_outline/1-modern/1.4.2.1-灵异游戏.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-supernatural-games-流程-灵异游戏-支线开放-2d608ea09d",
+      "title": "灵异游戏·支线开放",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少各小任务的进入条件、完成条件与重复挑战规则",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-supernatural-games",
+        "src/game/data/story_outline/1-modern/1.4.2.1-灵异游戏.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-supernatural-games-设计-灵异游戏-任务目录-790ae98b30",
+      "title": "灵异游戏·任务目录",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少首批灵异游戏的名称、独立规则与各自的压制作用",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-supernatural-games",
+        "src/game/data/story_outline/1-modern/1.4.2.1-灵异游戏.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-taisho-romance-地图-大正浪漫-场景结构-5a1648118f",
+      "title": "大正浪漫·场景结构",
+      "domain": "map",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少实际地点、区域连接、道路限制与返回变化",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-taisho-romance",
+        "src/game/data/story_outline/1-modern/3.5.3-大正浪漫.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-taisho-romance-流程-大正浪漫-玩家流程-b91b6540a1",
+      "title": "大正浪漫·玩家流程",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-taisho-romance",
+        "src/game/data/story_outline/1-modern/3.5.3-大正浪漫.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-taisho-romance-玩法-大正浪漫-主要活动-75e055e1b3",
+      "title": "大正浪漫·主要活动",
+      "domain": "gameplay",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少主要游戏活动类型与可执行操作循环",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-taisho-romance",
+        "src/game/data/story_outline/1-modern/3.5.3-大正浪漫.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "确认玩家活动后筛选可落地玩法候选。",
+      "relatedCapabilityIds": [
+        "skill-liluo-gameplay-loop-audit",
+        "skill-liluo-story-gap-discovery"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-taisho-romance-设计-大正浪漫-故事体量-49e2627fef",
+      "title": "大正浪漫·故事体量",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少故事体量、主要区域数量与核心机制差异说明",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-taisho-romance",
+        "src/game/data/story_outline/1-modern/3.5.3-大正浪漫.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-trafficker-流程-人贩子-玩家流程-b82b49d0f8",
+      "title": "人贩子·玩家流程",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-trafficker",
+        "src/game/data/story_outline/1-modern/2.4-人贩子.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-trafficker-玩法-人贩子-主要活动-7d61fb0018",
+      "title": "人贩子·主要活动",
+      "domain": "gameplay",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少主要游戏活动类型与可执行操作循环",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-trafficker",
+        "src/game/data/story_outline/1-modern/2.4-人贩子.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "确认玩家活动后筛选可落地玩法候选。",
+      "relatedCapabilityIds": [
+        "skill-liluo-gameplay-loop-audit",
+        "skill-liluo-story-gap-discovery"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-trafficker-设计-人贩子-故事体量-28af2e6aed",
+      "title": "人贩子·故事体量",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少故事体量、主要区域数量与核心机制差异说明",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-trafficker",
+        "src/game/data/story_outline/1-modern/2.4-人贩子.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-ultimate-restraint-地图-极端高危女性囚犯运输终极约束方案-场景结构-dbce39910d",
+      "title": "极端高危女性囚犯运输终极约束方案·场景结构",
+      "domain": "map",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少实际地点、区域连接、道路限制与返回变化",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-ultimate-restraint",
+        "src/game/data/story_outline/1-modern/5.1-极端高危女性囚犯运输终极约束方案.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-ultimate-restraint-流程-极端高危女性囚犯运输终极约束方案-玩家流程-ab48560d2d",
+      "title": "极端高危女性囚犯运输终极约束方案·玩家流程",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-ultimate-restraint",
+        "src/game/data/story_outline/1-modern/5.1-极端高危女性囚犯运输终极约束方案.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-ultimate-restraint-玩法-极端高危女性囚犯运输终极约束方案-主要活动-500d2a8d90",
+      "title": "极端高危女性囚犯运输终极约束方案·主要活动",
+      "domain": "gameplay",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少主要游戏活动类型与可执行操作循环",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-ultimate-restraint",
+        "src/game/data/story_outline/1-modern/5.1-极端高危女性囚犯运输终极约束方案.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "确认玩家活动后筛选可落地玩法候选。",
+      "relatedCapabilityIds": [
+        "skill-liluo-gameplay-loop-audit",
+        "skill-liluo-story-gap-discovery"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-ultimate-restraint-设计-极端高危女性囚犯运输终极约束方案-故事体量-f230ac3aee",
+      "title": "极端高危女性囚犯运输终极约束方案·故事体量",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少故事体量、主要区域数量与核心机制差异说明",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-ultimate-restraint",
+        "src/game/data/story_outline/1-modern/5.1-极端高危女性囚犯运输终极约束方案.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-2-silent-earth-dirge-fog-city-地图-诡雾迷城-场景结构-dba7dd3135",
+      "title": "诡雾迷城·场景结构",
+      "domain": "map",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少实际地点、区域连接、道路限制与返回变化",
+      "sourceRefs": [
+        "story-key:world-2-silent-earth-dirge-fog-city",
+        "src/game/data/story_outline/2-apocalypse/2.1-诡雾迷城.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-2-silent-earth-dirge-fog-city-流程-诡雾迷城-玩家流程-1a220456df",
+      "title": "诡雾迷城·玩家流程",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "sourceRefs": [
+        "story-key:world-2-silent-earth-dirge-fog-city",
+        "src/game/data/story_outline/2-apocalypse/2.1-诡雾迷城.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-2-silent-earth-dirge-fog-city-玩法-诡雾迷城-主要活动-4bfa765837",
+      "title": "诡雾迷城·主要活动",
+      "domain": "gameplay",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少主要游戏活动类型与可执行操作循环",
+      "sourceRefs": [
+        "story-key:world-2-silent-earth-dirge-fog-city",
+        "src/game/data/story_outline/2-apocalypse/2.1-诡雾迷城.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "确认玩家活动后筛选可落地玩法候选。",
+      "relatedCapabilityIds": [
+        "skill-liluo-gameplay-loop-audit",
+        "skill-liluo-story-gap-discovery"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-2-silent-earth-dirge-fog-city-设计-诡雾迷城-故事体量-f6bcc63cef",
+      "title": "诡雾迷城·故事体量",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少故事体量、主要区域数量与核心机制差异说明",
+      "sourceRefs": [
+        "story-key:world-2-silent-earth-dirge-fog-city",
+        "src/game/data/story_outline/2-apocalypse/2.1-诡雾迷城.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-2-silent-earth-dirge-omega-地图-级禁忌束缚套装-场景结构-65e69480d4",
+      "title": "Ω级禁忌束缚套装·场景结构",
+      "domain": "map",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少实际地点、区域连接、道路限制与返回变化",
+      "sourceRefs": [
+        "story-key:world-2-silent-earth-dirge-omega",
+        "src/game/data/story_outline/2-apocalypse/1.2-Ω级禁忌束缚套装.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-2-silent-earth-dirge-omega-流程-级禁忌束缚套装-玩家流程-8b427bfcf3",
+      "title": "Ω级禁忌束缚套装·玩家流程",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "sourceRefs": [
+        "story-key:world-2-silent-earth-dirge-omega",
+        "src/game/data/story_outline/2-apocalypse/1.2-Ω级禁忌束缚套装.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-2-silent-earth-dirge-omega-玩法-级禁忌束缚套装-主要活动-c6020bda45",
+      "title": "Ω级禁忌束缚套装·主要活动",
+      "domain": "gameplay",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少主要游戏活动类型与可执行操作循环",
+      "sourceRefs": [
+        "story-key:world-2-silent-earth-dirge-omega",
+        "src/game/data/story_outline/2-apocalypse/1.2-Ω级禁忌束缚套装.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "确认玩家活动后筛选可落地玩法候选。",
+      "relatedCapabilityIds": [
+        "skill-liluo-gameplay-loop-audit",
+        "skill-liluo-story-gap-discovery"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-2-silent-earth-dirge-omega-设计-级禁忌束缚套装-故事体量-46bf6be578",
+      "title": "Ω级禁忌束缚套装·故事体量",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少故事体量、主要区域数量与核心机制差异说明",
+      "sourceRefs": [
+        "story-key:world-2-silent-earth-dirge-omega",
+        "src/game/data/story_outline/2-apocalypse/1.2-Ω级禁忌束缚套装.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-2-silent-earth-dirge-red-line-地图-红线鬼域-场景结构-a8d1f6a087",
+      "title": "红线鬼域·场景结构",
+      "domain": "map",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少实际地点、区域连接、道路限制与返回变化",
+      "sourceRefs": [
+        "story-key:world-2-silent-earth-dirge-red-line",
+        "src/game/data/story_outline/2-apocalypse/1.1-红线鬼域.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-2-silent-earth-dirge-red-line-流程-红线鬼域-玩家流程-76f7eaaaa7",
+      "title": "红线鬼域·玩家流程",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "sourceRefs": [
+        "story-key:world-2-silent-earth-dirge-red-line",
+        "src/game/data/story_outline/2-apocalypse/1.1-红线鬼域.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-2-silent-earth-dirge-red-line-玩法-红线鬼域-主要活动-60730ca895",
+      "title": "红线鬼域·主要活动",
+      "domain": "gameplay",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少主要游戏活动类型与可执行操作循环",
+      "sourceRefs": [
+        "story-key:world-2-silent-earth-dirge-red-line",
+        "src/game/data/story_outline/2-apocalypse/1.1-红线鬼域.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "确认玩家活动后筛选可落地玩法候选。",
+      "relatedCapabilityIds": [
+        "skill-liluo-gameplay-loop-audit",
+        "skill-liluo-story-gap-discovery"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-2-silent-earth-dirge-red-line-设计-红线鬼域-故事体量-2999841359",
+      "title": "红线鬼域·故事体量",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少故事体量、主要区域数量与核心机制差异说明",
+      "sourceRefs": [
+        "story-key:world-2-silent-earth-dirge-red-line",
+        "src/game/data/story_outline/2-apocalypse/1.1-红线鬼域.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-3-mortal-dao-counterattack-地图-缚身反杀-场景结构-2b3bcca45c",
+      "title": "缚身反杀·场景结构",
+      "domain": "map",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少实际地点、区域连接、道路限制与返回变化",
+      "sourceRefs": [
+        "story-key:world-3-mortal-dao-counterattack",
+        "src/game/data/story_outline/3-ancient/5.1-缚身反杀.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-3-mortal-dao-counterattack-流程-缚身反杀-玩家流程-b993077045",
+      "title": "缚身反杀·玩家流程",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "sourceRefs": [
+        "story-key:world-3-mortal-dao-counterattack",
+        "src/game/data/story_outline/3-ancient/5.1-缚身反杀.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-3-mortal-dao-counterattack-玩法-缚身反杀-主要活动-b1fde0c93d",
+      "title": "缚身反杀·主要活动",
+      "domain": "gameplay",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少主要游戏活动类型与可执行操作循环",
+      "sourceRefs": [
+        "story-key:world-3-mortal-dao-counterattack",
+        "src/game/data/story_outline/3-ancient/5.1-缚身反杀.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "确认玩家活动后筛选可落地玩法候选。",
+      "relatedCapabilityIds": [
+        "skill-liluo-gameplay-loop-audit",
+        "skill-liluo-story-gap-discovery"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-3-mortal-dao-counterattack-设计-缚身反杀-故事体量-fcf88d3b74",
+      "title": "缚身反杀·故事体量",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少故事体量、主要区域数量与核心机制差异说明",
+      "sourceRefs": [
+        "story-key:world-3-mortal-dao-counterattack",
+        "src/game/data/story_outline/3-ancient/5.1-缚身反杀.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-3-mortal-dao-eternal-地图-永世束缚-场景结构-63226e1775",
+      "title": "永世束缚·场景结构",
+      "domain": "map",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少实际地点、区域连接、道路限制与返回变化",
+      "sourceRefs": [
+        "story-key:world-3-mortal-dao-eternal",
+        "src/game/data/story_outline/3-ancient/7.1-永世束缚.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-3-mortal-dao-eternal-流程-永世束缚-玩家流程-bf7f265a79",
+      "title": "永世束缚·玩家流程",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "sourceRefs": [
+        "story-key:world-3-mortal-dao-eternal",
+        "src/game/data/story_outline/3-ancient/7.1-永世束缚.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-3-mortal-dao-eternal-玩法-永世束缚-主要活动-356423777a",
+      "title": "永世束缚·主要活动",
+      "domain": "gameplay",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少主要游戏活动类型与可执行操作循环",
+      "sourceRefs": [
+        "story-key:world-3-mortal-dao-eternal",
+        "src/game/data/story_outline/3-ancient/7.1-永世束缚.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "确认玩家活动后筛选可落地玩法候选。",
+      "relatedCapabilityIds": [
+        "skill-liluo-gameplay-loop-audit",
+        "skill-liluo-story-gap-discovery"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-3-mortal-dao-eternal-设计-永世束缚-故事体量-edf56781c0",
+      "title": "永世束缚·故事体量",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少故事体量、主要区域数量与核心机制差异说明",
+      "sourceRefs": [
+        "story-key:world-3-mortal-dao-eternal",
+        "src/game/data/story_outline/3-ancient/7.1-永世束缚.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-3-mortal-dao-royal-garden-beast-hunt-地图-王苑兽猎-场景结构-6c3193c3ea",
+      "title": "王苑兽猎·场景结构",
+      "domain": "map",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少实际地点、区域连接、道路限制与返回变化",
+      "sourceRefs": [
+        "story-key:world-3-mortal-dao-royal-garden-beast-hunt",
+        "src/game/data/story_outline/3-ancient/1.1-王苑兽猎.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-3-mortal-dao-royal-garden-beast-hunt-流程-王苑兽猎-玩家流程-7a5c9bb14d",
+      "title": "王苑兽猎·玩家流程",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "sourceRefs": [
+        "story-key:world-3-mortal-dao-royal-garden-beast-hunt",
+        "src/game/data/story_outline/3-ancient/1.1-王苑兽猎.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-3-mortal-dao-royal-garden-beast-hunt-玩法-王苑兽猎-主要活动-525a5ecac4",
+      "title": "王苑兽猎·主要活动",
+      "domain": "gameplay",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少主要游戏活动类型与可执行操作循环",
+      "sourceRefs": [
+        "story-key:world-3-mortal-dao-royal-garden-beast-hunt",
+        "src/game/data/story_outline/3-ancient/1.1-王苑兽猎.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "确认玩家活动后筛选可落地玩法候选。",
+      "relatedCapabilityIds": [
+        "skill-liluo-gameplay-loop-audit",
+        "skill-liluo-story-gap-discovery"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-3-mortal-dao-royal-garden-beast-hunt-设计-王苑兽猎-故事体量-9c144aeffe",
+      "title": "王苑兽猎·故事体量",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少故事体量、主要区域数量与核心机制差异说明",
+      "sourceRefs": [
+        "story-key:world-3-mortal-dao-royal-garden-beast-hunt",
+        "src/game/data/story_outline/3-ancient/1.1-王苑兽猎.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-3-mortal-dao-sakura-storm-shogunate-地图-樱岚幕府-场景结构-dce90ddb46",
+      "title": "樱岚幕府·场景结构",
+      "domain": "map",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少实际地点、区域连接、道路限制与返回变化",
+      "sourceRefs": [
+        "story-key:world-3-mortal-dao-sakura-storm-shogunate",
+        "src/game/data/story_outline/3-ancient/4.0.1-樱岚幕府.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-3-mortal-dao-sakura-storm-shogunate-流程-樱岚幕府-玩家流程-9b03b904d5",
+      "title": "樱岚幕府·玩家流程",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "sourceRefs": [
+        "story-key:world-3-mortal-dao-sakura-storm-shogunate",
+        "src/game/data/story_outline/3-ancient/4.0.1-樱岚幕府.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-3-mortal-dao-sakura-storm-shogunate-玩法-樱岚幕府-主要活动-3e11d3e3e5",
+      "title": "樱岚幕府·主要活动",
+      "domain": "gameplay",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少主要游戏活动类型与可执行操作循环",
+      "sourceRefs": [
+        "story-key:world-3-mortal-dao-sakura-storm-shogunate",
+        "src/game/data/story_outline/3-ancient/4.0.1-樱岚幕府.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "确认玩家活动后筛选可落地玩法候选。",
+      "relatedCapabilityIds": [
+        "skill-liluo-gameplay-loop-audit",
+        "skill-liluo-story-gap-discovery"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-3-mortal-dao-sakura-storm-shogunate-设计-樱岚幕府-故事体量-2d6480c7ff",
+      "title": "樱岚幕府·故事体量",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少故事体量、主要区域数量与核心机制差异说明",
+      "sourceRefs": [
+        "story-key:world-3-mortal-dao-sakura-storm-shogunate",
+        "src/game/data/story_outline/3-ancient/4.0.1-樱岚幕府.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-3-mortal-dao-siege-survival-地图-围城求生-场景结构-53e46e906c",
+      "title": "围城求生·场景结构",
+      "domain": "map",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少实际地点、区域连接、道路限制与返回变化",
+      "sourceRefs": [
+        "story-key:world-3-mortal-dao-siege-survival",
+        "src/game/data/story_outline/3-ancient/4.1-围城求生.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-3-mortal-dao-siege-survival-流程-围城求生-玩家流程-eae82aefd1",
+      "title": "围城求生·玩家流程",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "sourceRefs": [
+        "story-key:world-3-mortal-dao-siege-survival",
+        "src/game/data/story_outline/3-ancient/4.1-围城求生.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-3-mortal-dao-siege-survival-玩法-围城求生-主要活动-fc7c08cd34",
+      "title": "围城求生·主要活动",
+      "domain": "gameplay",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少主要游戏活动类型与可执行操作循环",
+      "sourceRefs": [
+        "story-key:world-3-mortal-dao-siege-survival",
+        "src/game/data/story_outline/3-ancient/4.1-围城求生.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "确认玩家活动后筛选可落地玩法候选。",
+      "relatedCapabilityIds": [
+        "skill-liluo-gameplay-loop-audit",
+        "skill-liluo-story-gap-discovery"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-3-mortal-dao-siege-survival-设计-围城求生-故事体量-9aa29ec569",
+      "title": "围城求生·故事体量",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少故事体量、主要区域数量与核心机制差异说明",
+      "sourceRefs": [
+        "story-key:world-3-mortal-dao-siege-survival",
+        "src/game/data/story_outline/3-ancient/4.1-围城求生.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-3-mortal-dao-tile-kiln-disaster-sealing-地图-瓦窑封灾-场景结构-e8eaa7ef6d",
+      "title": "瓦窑封灾·场景结构",
+      "domain": "map",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少实际地点、区域连接、道路限制与返回变化",
+      "sourceRefs": [
+        "story-key:world-3-mortal-dao-tile-kiln-disaster-sealing",
+        "src/game/data/story_outline/3-ancient/4.0-瓦窑封灾.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-3-mortal-dao-tile-kiln-disaster-sealing-流程-瓦窑封灾-玩家流程-bbb6d549f1",
+      "title": "瓦窑封灾·玩家流程",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "sourceRefs": [
+        "story-key:world-3-mortal-dao-tile-kiln-disaster-sealing",
+        "src/game/data/story_outline/3-ancient/4.0-瓦窑封灾.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-3-mortal-dao-tile-kiln-disaster-sealing-玩法-瓦窑封灾-主要活动-ca615a1752",
+      "title": "瓦窑封灾·主要活动",
+      "domain": "gameplay",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少主要游戏活动类型与可执行操作循环",
+      "sourceRefs": [
+        "story-key:world-3-mortal-dao-tile-kiln-disaster-sealing",
+        "src/game/data/story_outline/3-ancient/4.0-瓦窑封灾.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "确认玩家活动后筛选可落地玩法候选。",
+      "relatedCapabilityIds": [
+        "skill-liluo-gameplay-loop-audit",
+        "skill-liluo-story-gap-discovery"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-3-mortal-dao-tile-kiln-disaster-sealing-设计-瓦窑封灾-故事体量-0ebb0b0ecb",
+      "title": "瓦窑封灾·故事体量",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少故事体量、主要区域数量与核心机制差异说明",
+      "sourceRefs": [
+        "story-key:world-3-mortal-dao-tile-kiln-disaster-sealing",
+        "src/game/data/story_outline/3-ancient/4.0-瓦窑封灾.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-4-monica-empire-life-simulator-地图-人生模拟器-场景结构-de6e3db491",
+      "title": "人生模拟器·场景结构",
+      "domain": "map",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少实际地点、区域连接、道路限制与返回变化",
+      "sourceRefs": [
+        "story-key:world-4-monica-empire-life-simulator",
+        "src/game/data/story_outline/0-munika/1.1-人生模拟器.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-4-monica-empire-life-simulator-流程-人生模拟器-玩家流程-0b3be9f060",
+      "title": "人生模拟器·玩家流程",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "sourceRefs": [
+        "story-key:world-4-monica-empire-life-simulator",
+        "src/game/data/story_outline/0-munika/1.1-人生模拟器.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-4-monica-empire-life-simulator-玩法-人生模拟器-主要活动-089c8de3df",
+      "title": "人生模拟器·主要活动",
+      "domain": "gameplay",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少主要游戏活动类型与可执行操作循环",
+      "sourceRefs": [
+        "story-key:world-4-monica-empire-life-simulator",
+        "src/game/data/story_outline/0-munika/1.1-人生模拟器.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "确认玩家活动后筛选可落地玩法候选。",
+      "relatedCapabilityIds": [
+        "skill-liluo-gameplay-loop-audit",
+        "skill-liluo-story-gap-discovery"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-4-monica-empire-life-simulator-设计-人生模拟器-故事体量-5cc5d4c565",
+      "title": "人生模拟器·故事体量",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少故事体量、主要区域数量与核心机制差异说明",
+      "sourceRefs": [
+        "story-key:world-4-monica-empire-life-simulator",
+        "src/game/data/story_outline/0-munika/1.1-人生模拟器.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-4-monica-empire-silly-lilili-town-地图-笨璃璃小镇-场景结构-fa9c5158ae",
+      "title": "笨璃璃小镇·场景结构",
+      "domain": "map",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少实际地点、区域连接、道路限制与返回变化",
+      "sourceRefs": [
+        "story-key:world-4-monica-empire-silly-lilili-town",
+        "src/game/data/story_outline/0-munika/1-笨璃璃小镇.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.351Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-4-monica-empire-silly-lilili-town-流程-笨璃璃小镇-玩家流程-67dd793906",
+      "title": "笨璃璃小镇·玩家流程",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "sourceRefs": [
+        "story-key:world-4-monica-empire-silly-lilili-town",
+        "src/game/data/story_outline/0-munika/1-笨璃璃小镇.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.351Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-4-monica-empire-silly-lilili-town-玩法-笨璃璃小镇-主要活动-5a954ee0cd",
+      "title": "笨璃璃小镇·主要活动",
+      "domain": "gameplay",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少主要游戏活动类型与可执行操作循环",
+      "sourceRefs": [
+        "story-key:world-4-monica-empire-silly-lilili-town",
+        "src/game/data/story_outline/0-munika/1-笨璃璃小镇.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "确认玩家活动后筛选可落地玩法候选。",
+      "relatedCapabilityIds": [
+        "skill-liluo-gameplay-loop-audit",
+        "skill-liluo-story-gap-discovery"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.351Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-4-monica-empire-silly-lilili-town-设计-笨璃璃小镇-故事体量-0e65173fbd",
+      "title": "笨璃璃小镇·故事体量",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少故事体量、主要区域数量与核心机制差异说明",
+      "sourceRefs": [
+        "story-key:world-4-monica-empire-silly-lilili-town",
+        "src/game/data/story_outline/0-munika/1-笨璃璃小镇.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.350Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-5-star-weaving-dream-dome-hunt-地图-穹顶狩猎-场景结构-8af846de19",
+      "title": "穹顶狩猎·场景结构",
+      "domain": "map",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少实际地点、区域连接、道路限制与返回变化",
+      "sourceRefs": [
+        "story-key:world-5-star-weaving-dream-dome-hunt",
+        "src/game/data/story_outline/5-science/11.1-穹顶狩猎.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.351Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-5-star-weaving-dream-dome-hunt-流程-穹顶狩猎-玩家流程-5bbddd535e",
+      "title": "穹顶狩猎·玩家流程",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "sourceRefs": [
+        "story-key:world-5-star-weaving-dream-dome-hunt",
+        "src/game/data/story_outline/5-science/11.1-穹顶狩猎.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.351Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-5-star-weaving-dream-dome-hunt-玩法-穹顶狩猎-主要活动-fa24f6a87b",
+      "title": "穹顶狩猎·主要活动",
+      "domain": "gameplay",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少主要游戏活动类型与可执行操作循环",
+      "sourceRefs": [
+        "story-key:world-5-star-weaving-dream-dome-hunt",
+        "src/game/data/story_outline/5-science/11.1-穹顶狩猎.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "确认玩家活动后筛选可落地玩法候选。",
+      "relatedCapabilityIds": [
+        "skill-liluo-gameplay-loop-audit",
+        "skill-liluo-story-gap-discovery"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.351Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-5-star-weaving-dream-dome-hunt-设计-穹顶狩猎-故事体量-85faedcd1e",
+      "title": "穹顶狩猎·故事体量",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少故事体量、主要区域数量与核心机制差异说明",
+      "sourceRefs": [
+        "story-key:world-5-star-weaving-dream-dome-hunt",
+        "src/game/data/story_outline/5-science/11.1-穹顶狩猎.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.351Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-5-star-weaving-dream-restraint-paradise-shop-地图-拘束具店铺-场景结构-1bc953811e",
+      "title": "拘束具店铺·场景结构",
+      "domain": "map",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少实际地点、区域连接、道路限制与返回变化",
+      "sourceRefs": [
+        "story-key:world-5-star-weaving-dream-restraint-paradise-shop",
+        "src/game/data/story_outline/5-science/3.2-拘束具店铺.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.351Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-5-star-weaving-dream-restraint-paradise-shop-流程-拘束具店铺-玩家流程-2db9e82da2",
+      "title": "拘束具店铺·玩家流程",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "sourceRefs": [
+        "story-key:world-5-star-weaving-dream-restraint-paradise-shop",
+        "src/game/data/story_outline/5-science/3.2-拘束具店铺.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.351Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-5-star-weaving-dream-restraint-paradise-shop-玩法-拘束具店铺-主要活动-6861571f6d",
+      "title": "拘束具店铺·主要活动",
+      "domain": "gameplay",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少主要游戏活动类型与可执行操作循环",
+      "sourceRefs": [
+        "story-key:world-5-star-weaving-dream-restraint-paradise-shop",
+        "src/game/data/story_outline/5-science/3.2-拘束具店铺.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "确认玩家活动后筛选可落地玩法候选。",
+      "relatedCapabilityIds": [
+        "skill-liluo-gameplay-loop-audit",
+        "skill-liluo-story-gap-discovery"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.351Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-5-star-weaving-dream-restraint-paradise-shop-设计-拘束具店铺-故事体量-3927321055",
+      "title": "拘束具店铺·故事体量",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少故事体量、主要区域数量与核心机制差异说明",
+      "sourceRefs": [
+        "story-key:world-5-star-weaving-dream-restraint-paradise-shop",
+        "src/game/data/story_outline/5-science/3.2-拘束具店铺.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.351Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-5-star-weaving-dream-restraint-school-玩法-紧缚学校-学年压缩-19f113af91",
+      "title": "紧缚学校·学年压缩",
+      "domain": "gameplay",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少一年课程在游戏中的周次抽样、必修课数量、考核失败恢复与跳课代价",
+      "sourceRefs": [
+        "story-key:world-5-star-weaving-dream-restraint-school",
+        "src/game/data/story_outline/5-science/3.1-紧缚学校.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "确认玩家活动后筛选可落地玩法候选。",
+      "relatedCapabilityIds": [
+        "skill-liluo-gameplay-loop-audit",
+        "skill-liluo-story-gap-discovery"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.351Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-5-star-weaving-dream-restraint-school-规则-紧缚学校-审美法律-4a2e99e8d1",
+      "title": "紧缚学校·审美法律",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少貌美程度的法定指标、复核与申诉流程，以及不达标者进入监狱还是矫正机构的准确条件",
+      "sourceRefs": [
+        "story-key:world-5-star-weaving-dream-restraint-school",
+        "src/game/data/story_outline/5-science/3.1-紧缚学校.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.351Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-5-star-weaving-dream-restraint-school-设定-紧缚学校-璃落入境身份-31d8316536",
+      "title": "紧缚学校·璃落入境身份",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少璃落申报游客还是定居、预计停留时长以及是否主动选择缴费豁免的最终决定",
+      "sourceRefs": [
+        "story-key:world-5-star-weaving-dream-restraint-school",
+        "src/game/data/story_outline/5-science/3.1-紧缚学校.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.351Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-5-star-weaving-dream-restraint-school-设定-紧缚学校-身体改造边界-d2cccae9eb",
+      "title": "紧缚学校·身体改造边界",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少每周轻度改造的具体项目、可逆程度、毕业后保留效果与中止程序",
+      "sourceRefs": [
+        "story-key:world-5-star-weaving-dream-restraint-school",
+        "src/game/data/story_outline/5-science/3.1-紧缚学校.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.351Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-5-star-weaving-dream-reverse-immigration-prison-流程-反向移民监狱-璃落出狱方式-75dc0274b7",
+      "title": "反向移民监狱·璃落出狱方式",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少璃落最终越狱、被转运、获外援救出还是通过法律漏洞离开的确定结局",
+      "sourceRefs": [
+        "story-key:world-5-star-weaving-dream-reverse-immigration-prison",
+        "src/game/data/story_outline/5-science/3.3-反向移民监狱.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.351Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-5-star-weaving-dream-reverse-immigration-prison-玩法-反向移民监狱-训练循环-88c2b1a06c",
+      "title": "反向移民监狱·训练循环",
+      "domain": "gameplay",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少服从训练、身份剥夺、改造评估与反抗调查之间的具体操作循环及失败恢复规则",
+      "sourceRefs": [
+        "story-key:world-5-star-weaving-dream-reverse-immigration-prison",
+        "src/game/data/story_outline/5-science/3.3-反向移民监狱.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "确认玩家活动后筛选可落地玩法候选。",
+      "relatedCapabilityIds": [
+        "skill-liluo-gameplay-loop-audit",
+        "skill-liluo-story-gap-discovery"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.351Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-5-star-weaving-dream-reverse-immigration-prison-衔接-反向移民监狱-仿生迷途-04c7fce558",
+      "title": "反向移民监狱·仿生迷途",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少本模块结局如何把璃落或监狱证据引向后续“仿生迷途”的明确事件",
+      "sourceRefs": [
+        "story-key:world-5-star-weaving-dream-reverse-immigration-prison",
+        "src/game/data/story_outline/5-science/3.3-反向移民监狱.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.351Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-5-star-weaving-dream-reverse-immigration-prison-设定-反向移民监狱-合规抓捕手续-c87da4ac7b",
+      "title": "反向移民监狱·合规抓捕手续",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少外星购买者办理何种手续后可抓捕本地居民、居民是否曾签署同意以及手续能否被撤销",
+      "sourceRefs": [
+        "story-key:world-5-star-weaving-dream-reverse-immigration-prison",
+        "src/game/data/story_outline/5-science/3.3-反向移民监狱.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.351Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-5-star-weaving-dream-reverse-immigration-prison-设定-反向移民监狱-女性消失机制-73686e7d98",
+      "title": "反向移民监狱·女性消失机制",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少本星球几乎看不到老年女性究竟由外输、改造、身份注销或其他制度造成的准确答案",
+      "sourceRefs": [
+        "story-key:world-5-star-weaving-dream-reverse-immigration-prison",
+        "src/game/data/story_outline/5-science/3.3-反向移民监狱.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.351Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-6-cursebound-echoes-silent-rite-court-地图-缄礼宫廷-场景结构-fe9a59f0a1",
+      "title": "缄礼宫廷·场景结构",
+      "domain": "map",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少实际地点、区域连接、道路限制与返回变化",
+      "sourceRefs": [
+        "story-key:world-6-cursebound-echoes-silent-rite-court",
+        "src/game/data/story_outline/4-fantasy/2.1-缄礼宫廷.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.351Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-6-cursebound-echoes-silent-rite-court-流程-缄礼宫廷-玩家流程-a0c495df64",
+      "title": "缄礼宫廷·玩家流程",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "sourceRefs": [
+        "story-key:world-6-cursebound-echoes-silent-rite-court",
+        "src/game/data/story_outline/4-fantasy/2.1-缄礼宫廷.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.351Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-6-cursebound-echoes-silent-rite-court-玩法-缄礼宫廷-主要活动-08b5891706",
+      "title": "缄礼宫廷·主要活动",
+      "domain": "gameplay",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少主要游戏活动类型与可执行操作循环",
+      "sourceRefs": [
+        "story-key:world-6-cursebound-echoes-silent-rite-court",
+        "src/game/data/story_outline/4-fantasy/2.1-缄礼宫廷.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "确认玩家活动后筛选可落地玩法候选。",
+      "relatedCapabilityIds": [
+        "skill-liluo-gameplay-loop-audit",
+        "skill-liluo-story-gap-discovery"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.351Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-6-cursebound-echoes-silent-rite-court-设计-缄礼宫廷-故事体量-99a83af7c4",
+      "title": "缄礼宫廷·故事体量",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少故事体量、主要区域数量与核心机制差异说明",
+      "sourceRefs": [
+        "story-key:world-6-cursebound-echoes-silent-rite-court",
+        "src/game/data/story_outline/4-fantasy/2.1-缄礼宫廷.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.351Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-6-cursebound-echoes-tiny-liluo-adventure-地图-小小璃落大冒险-场景结构-b0b7bc3d79",
+      "title": "小小璃落大冒险·场景结构",
+      "domain": "map",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少实际地点、区域连接、道路限制与返回变化",
+      "sourceRefs": [
+        "story-key:world-6-cursebound-echoes-tiny-liluo-adventure",
+        "src/game/data/story_outline/4-fantasy/7.1-小小璃落大冒险.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.351Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-6-cursebound-echoes-tiny-liluo-adventure-流程-小小璃落大冒险-玩家流程-f3ff38c0e3",
+      "title": "小小璃落大冒险·玩家流程",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "sourceRefs": [
+        "story-key:world-6-cursebound-echoes-tiny-liluo-adventure",
+        "src/game/data/story_outline/4-fantasy/7.1-小小璃落大冒险.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.351Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-6-cursebound-echoes-tiny-liluo-adventure-玩法-小小璃落大冒险-主要活动-c4bdbe1cfc",
+      "title": "小小璃落大冒险·主要活动",
+      "domain": "gameplay",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少主要游戏活动类型与可执行操作循环",
+      "sourceRefs": [
+        "story-key:world-6-cursebound-echoes-tiny-liluo-adventure",
+        "src/game/data/story_outline/4-fantasy/7.1-小小璃落大冒险.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "确认玩家活动后筛选可落地玩法候选。",
+      "relatedCapabilityIds": [
+        "skill-liluo-gameplay-loop-audit",
+        "skill-liluo-story-gap-discovery"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.351Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-6-cursebound-echoes-tiny-liluo-adventure-设计-小小璃落大冒险-故事体量-8597e2b259",
+      "title": "小小璃落大冒险·故事体量",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少故事体量、主要区域数量与核心机制差异说明",
+      "sourceRefs": [
+        "story-key:world-6-cursebound-echoes-tiny-liluo-adventure",
+        "src/game/data/story_outline/4-fantasy/7.1-小小璃落大冒险.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-25T07:02:26.351Z",
+      "resolvedAt": null
+    }
+  ]
+}

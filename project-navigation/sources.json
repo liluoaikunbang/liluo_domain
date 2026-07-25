@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "sources": [
+    {
+      "id": "source-agents",
+      "type": "repository-file",
+      "title": "项目 Agents",
+      "status": "current",
+      "location": ".codex/agents/",
+      "checkedAt": "2026-07-25T07:02:26.355Z"
+    },
+    {
+      "id": "source-gameplay-catalog",
+      "type": "repository-file",
+      "title": "玩法目录",
+      "status": "current",
+      "location": "src/game/data/gameplay_outline/catalog.json",
+      "checkedAt": "2026-07-25T07:02:26.355Z"
+    },
+    {
+      "id": "source-plot-catalog",
+      "type": "repository-file",
+      "title": "情节库",
+      "status": "current",
+      "location": "src/game/data/plot_outline/catalog.json",
+      "checkedAt": "2026-07-25T07:02:26.355Z"
+    },
+    {
+      "id": "source-skills",
+      "type": "repository-file",
+      "title": "项目 Skills",
+      "status": "current",
+      "location": ".agents/skills/",
+      "checkedAt": "2026-07-25T07:02:26.355Z"
+    },
+    {
+      "id": "source-story-missing-items",
+      "type": "generated-index",
+      "title": "故事缺口派生索引",
+      "status": "current",
+      "location": "project-index/story/missing-items.json",
+      "checkedAt": "2026-07-25T07:02:26.355Z"
+    }
+  ]
+}

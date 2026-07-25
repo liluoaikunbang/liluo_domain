@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "project-capability-navigation-positive-001",
+  "title": "项目能力导航短时推荐",
+  "targetType": "skill",
+  "target": "liluo-project-capability-navigation",
+  "status": "active",
+  "polarity": "positive",
+  "mode": "routing-plan",
+  "costTier": "standard",
+  "userPrompt": "我只有20分钟，今天不想画地图，现在还能做什么？",
+  "contextFiles": [],
+  "expected": {
+    "requiredSkills": ["liluo-project-capability-navigation"], "allowedSkills": [], "forbiddenSkills": [], "requiredAgents": [], "forbiddenAgents": [],
+    "requiredReadPaths": ["docs/我现在可以做什么.md"], "allowedReadPaths": ["project-navigation/"], "requiredWritePaths": [], "allowedWritePaths": [],
+    "forbiddenActions": ["全量扫描", "自动写入正式故事"], "requiredValidationProfiles": [], "forbiddenValidationProfiles": ["all"], "approvalExpectation": "not-required"
+  }
+}

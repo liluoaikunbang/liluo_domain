@@ -9,6 +9,7 @@
 - [用户命令目录](../用户命令目录.md)
 - [离线发行与 GitHub Release 流程](./离线发行与GitHub-Release流程.md)
 - [项目知识索引系统](./项目知识索引系统.md)
+- [项目能力、缺口与行动导航系统](./项目能力缺口与行动导航系统.md)
 - [JSON Schema 数据契约系统](./JSON-Schema数据契约系统.md)
 - [Skill 与 Agent 能力回归评测系统](./Skill与Agent能力回归评测系统.md)
 - [Codex Hooks 与自动质量门禁系统](./Codex-Hooks与自动质量门禁系统.md)
