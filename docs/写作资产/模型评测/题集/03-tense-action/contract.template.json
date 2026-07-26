@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "requestId": "fp-eval-03-tense-action",
+  "status": "draft",
+  "textType": "fiction-prose",
+  "purpose": "评测：紧张行动与空间连续性",
+  "canonSources": ["docs/写作资产/模型评测/题集/03-tense-action/README.md"],
+  "immutableFacts": ["双方均为成年人", "本场景为合成评测，不进入正史"],
+  "characters": [{ "id": "lead", "stateBefore": [], "knowledgeBoundary": [], "voiceNotes": [] }],
+  "scene": {
+    "world": "neutral-synthetic",
+    "location": "待填",
+    "time": "待填",
+    "pov": "third-person-limited",
+    "narrativeFocus": "紧张行动与空间连续性",
+    "goal": "完成该类评测最小段落",
+    "requiredBeats": [],
+    "forbiddenAdditions": ["正式世界专有名词", "未批准组织"],
+    "stateAfter": []
+  },
+  "expression": {
+    "targetChineseCharacters": { "min": 400, "max": 800 },
+    "intensity": "deep",
+    "styleReferenceIds": [],
+    "specialConstraints": []
+  },
+  "output": { "format": "markdown-prose-only", "includeTitle": false, "includeExplanation": false }
+}

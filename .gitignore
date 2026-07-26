@@ -50,3 +50,11 @@ project-workflows/runs/briefs/*
 project-workflows/runs/reports/*
 !project-workflows/runs/reports/.gitkeep
 !project-workflows/runs/reports/run-story-mainline-restructure-example.md
+
+# Writing model local credentials and informal workspace drafts
+.env.writing.local
+docs/写作资产/工作区/*
+!docs/写作资产/工作区/README.md
+!docs/写作资产/工作区/.gitignore
+!docs/写作资产/工作区/requests/
+!docs/写作资产/工作区/requests/**

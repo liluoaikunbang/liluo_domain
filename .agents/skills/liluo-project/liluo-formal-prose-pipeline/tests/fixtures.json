@@ -1,0 +1,13 @@
+{
+  "skill": "liluo-formal-prose-pipeline",
+  "fixtures": [
+    "scripts/writing-model/fixtures/mock-dsr1-response.json",
+    "scripts/writing-model/fixtures/mock-qwen3-response.json",
+    "docs/写作资产/工作区/requests/example.json"
+  ],
+  "forbidden": [
+    "style-rag-implementation",
+    "auto-canon-write",
+    "auto-skill-upgrade-from-single-pair"
+  ]
+}

@@ -21,6 +21,11 @@ const ROUTINE_PLANS = Object.freeze({
   'natural-expression': Object.freeze([
     { id: 'natural-expression-test', command: process.execPath, args: ['--test', 'scripts/tests/natural-expression.test.mjs'] },
   ]),
+  writing: Object.freeze([
+    { id: 'writing-models-validate', command: 'npm', args: ['run', 'writing:models:validate'] },
+    { id: 'writing-assets-validate', command: 'npm', args: ['run', 'writing:assets:validate'] },
+    { id: 'writing-pipeline-test', command: 'npm', args: ['run', 'writing:pipeline:test'] },
+  ]),
   check: Object.freeze([
     { id: 'docs:check-encoding', command: 'npm', args: ['run', 'docs:check-encoding'] },
     { id: 'docs:governance:validate', command: 'npm', args: ['run', 'docs:governance:validate'] },
@@ -51,7 +56,7 @@ export function resolveRoutinePlan(mode = 'check', extraArgs = []) {
   if (extraArgs.length > 0) throw new Error('项目常规模式不接受附加参数。')
   if (mode === 'all') return ['index', 'check', 'test', 'build'].flatMap((name) => ROUTINE_PLANS[name])
   const plan = ROUTINE_PLANS[mode]
-  if (!plan) throw new Error(`不支持的项目常规模式：${mode}。仅允许 docs、workflow、team-presence、natural-expression、check、test、index、build、all。`)
+  if (!plan) throw new Error(`不支持的项目常规模式：${mode}。仅允许 docs、workflow、team-presence、natural-expression、writing、check、test、index、build、all。`)
   return [...plan]
 }
 

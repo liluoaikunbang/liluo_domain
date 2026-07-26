@@ -120,6 +120,26 @@
       "editMode": "governed"
     },
     {
+      "id": "writing-models",
+      "globs": ["project-navigation/writing-models.json"],
+      "layer": "L2",
+      "role": "writing-model-registry",
+      "loadMode": "task-on-demand",
+      "editMode": "governed"
+    },
+    {
+      "id": "writing-assets",
+      "globs": [
+        "docs/写作资产/registry.json",
+        "docs/写作资产/模板/**",
+        "docs/写作资产/README.md"
+      ],
+      "layer": "L2",
+      "role": "writing-asset-authority",
+      "loadMode": "task-on-demand",
+      "editMode": "governed"
+    },
+    {
       "id": "project-navigation",
       "globs": [
         "project-navigation/registry.json",
@@ -159,6 +179,14 @@
       "role": "history",
       "loadMode": "never-default",
       "editMode": "append-through-governance"
+    },
+    {
+      "id": "writing-workspace",
+      "globs": ["docs/写作资产/工作区/**"],
+      "layer": "L4",
+      "role": "informal-writing-workspace",
+      "loadMode": "never-default",
+      "editMode": "generator-aware"
     },
     {
       "id": "generated-workflows",

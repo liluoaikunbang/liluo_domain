@@ -1,6 +1,6 @@
 ---
 name: random-story-outline-interview
-description: Randomly select an incomplete 璃落 story-outline node, reconstruct confirmed JSON/Markdown context, and ask a focused interview. Use for 随机抽取、按世界访谈、继续随机提问；do not use for directly drafting or restructuring a specified node.
+description: Randomly select an incomplete 璃落 story-outline node, reconstruct confirmed JSON/Markdown context, and ask a focused interview. Use for 随机抽取、按世界访谈、继续随机提问；do not use for plot-first placement from the plot catalog, or for directly drafting or restructuring a specified node.
 ---
 
 # Random Story Outline Interview

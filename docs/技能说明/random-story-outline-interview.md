@@ -15,6 +15,8 @@
 - 先给出某个不完整条目的上下文，再根据缺失内容访谈用户。
 - 重复进行故事大纲灵感访谈。
 
+从情节库出发选落点并访谈时，改用 `liluo-plot-placement-interview`，不要与本 Skill 混用。
+
 ## 文件路径与引用资源
 
 - Skill 主体：`.agents/skills/liluo-project/random-story-outline-interview/SKILL.md`
@@ -90,7 +92,7 @@ node scripts\tests\validate-project-skills.mjs
 预期结果：
 
 ```text
-Validated 13 project skills.
+Validated 15 project skills.
 ```
 
 同时运行：

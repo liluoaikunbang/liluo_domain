@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "requestId": "fp-example-neutral-001",
+  "status": "draft",
+  "textType": "fiction-prose",
+  "purpose": "合成中性场景：两人在黄昏茶室短暂对峙后决定是否继续谈话。不涉及璃落正式正史。",
+  "canonSources": [
+    "docs/写作资产/模板/正式正文写作合同说明.md"
+  ],
+  "immutableFacts": [
+    "双方均为成年人",
+    "地点是室内茶室",
+    "时间是黄昏",
+    "尚未发生肢体冲突"
+  ],
+  "characters": [
+    {
+      "id": "speaker-a",
+      "stateBefore": ["疲惫但清醒"],
+      "knowledgeBoundary": ["不知道对方今晚是否会离开"],
+      "voiceNotes": ["短句，少解释"]
+    },
+    {
+      "id": "speaker-b",
+      "stateBefore": ["警惕"],
+      "knowledgeBoundary": ["只知道对方约了这里"],
+      "voiceNotes": ["先观察再开口"]
+    }
+  ],
+  "scene": {
+    "world": "neutral-synthetic",
+    "location": "黄昏茶室",
+    "time": "黄昏",
+    "pov": "third-person-limited",
+    "narrativeFocus": "speaker-a 的感知与距离感",
+    "goal": "写出一次可停可续的对峙开场",
+    "requiredBeats": [
+      "建立室内空间",
+      "出现一句可拒绝的问话",
+      "结束在尚未作答处"
+    ],
+    "forbiddenAdditions": [
+      "新组织",
+      "超能力",
+      "武器",
+      "第三人突然闯入"
+    ],
+    "stateAfter": [
+      "谈话尚未开始或刚被提出",
+      "双方仍在同一房间"
+    ]
+  },
+  "expression": {
+    "targetChineseCharacters": {
+      "min": 200,
+      "max": 400
+    },
+    "intensity": "deep",
+    "styleReferenceIds": [],
+    "specialConstraints": [
+      "只输出正文",
+      "不要标题与作者说明"
+    ]
+  },
+  "output": {
+    "format": "markdown-prose-only",
+    "includeTitle": false,
+    "includeExplanation": false
+  }
+}

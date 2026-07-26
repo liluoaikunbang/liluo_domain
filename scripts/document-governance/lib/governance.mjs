@@ -162,6 +162,9 @@ export function auditDocumentation({ root, documentRegistry, ruleRegistry }) {
   const recordsText = fs.readFileSync(path.join(root, 'src', 'game', 'data', 'global', 'updateRecords.js'), 'utf8');
   const records = [...recordsText.matchAll(/"id"\s*:\s*"(\d{3}(?:-[a-z])?)"/g)].map((match) => match[1]);
   errors.push(...compareFeatureIdSets({ documents, catalog, records }));
+  const commands = validateUserCommands({ root });
+  errors.push(...commands.errors);
+  warnings.push(...(commands.warnings ?? []));
   return { errors: [...new Set(errors)], warnings: [...new Set(warnings)], info: [`featureDocuments=${documents.length}`, `designDecisions=${memory.records}`] };
 }
 

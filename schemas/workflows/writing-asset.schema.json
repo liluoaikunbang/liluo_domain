@@ -1,0 +1,141 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://liluo.local/schemas/workflows/writing-asset.schema.json",
+  "title": "璃落写作资产元数据",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "assetId",
+    "assetType",
+    "status",
+    "title",
+    "path",
+    "ownership",
+    "classification",
+    "provenance",
+    "authority",
+    "qualityNotes",
+    "hash",
+    "createdAt",
+    "updatedAt"
+  ],
+  "properties": {
+    "schemaVersion": { "type": "integer", "const": 1 },
+    "assetId": { "type": "string", "pattern": "^wa-.+" },
+    "assetType": {
+      "type": "string",
+      "enum": [
+        "personal-history",
+        "golden-candidate",
+        "golden-approved",
+        "calibration-pair",
+        "external-style-card",
+        "evaluation-prompt",
+        "model-archive-record"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "placeholder",
+        "awaiting-user-input",
+        "candidate",
+        "reviewed",
+        "approved",
+        "superseded",
+        "rejected"
+      ]
+    },
+    "title": { "type": "string" },
+    "path": { "type": "string" },
+    "ownership": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["category", "source", "permissionNote"],
+      "properties": {
+        "category": {
+          "type": "string",
+          "enum": ["user-owned", "project-owned", "external-reference", "unknown"]
+        },
+        "source": { "type": "string" },
+        "permissionNote": { "type": "string" }
+      }
+    },
+    "classification": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "sceneFunction",
+        "worldTypes",
+        "pov",
+        "dialogueDensity",
+        "actionDensity",
+        "tensionLevel"
+      ],
+      "properties": {
+        "sceneFunction": { "type": "array", "items": { "type": "string" } },
+        "worldTypes": { "type": "array", "items": { "type": "string" } },
+        "pov": { "type": "string" },
+        "dialogueDensity": { "type": "string" },
+        "actionDensity": { "type": "string" },
+        "tensionLevel": { "type": "string" }
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "sourceModel",
+        "modelRunId",
+        "requestContractId",
+        "humanEdited",
+        "approvedByUser",
+        "approvalBasis",
+        "approvedAt"
+      ],
+      "properties": {
+        "sourceModel": { "type": ["string", "null"] },
+        "modelRunId": { "type": ["string", "null"] },
+        "requestContractId": { "type": ["string", "null"] },
+        "humanEdited": { "type": "boolean" },
+        "approvedByUser": { "type": "boolean" },
+        "approvalBasis": {
+          "type": ["string", "null"],
+          "enum": ["explicit-user-approval", "existing-canon", null]
+        },
+        "approvedAt": { "type": ["string", "null"] }
+      }
+    },
+    "authority": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["canonStatus", "styleRecommendation", "sourceOfTruthPath"],
+      "properties": {
+        "canonStatus": {
+          "type": "string",
+          "enum": ["official", "non-canon", "unknown"]
+        },
+        "styleRecommendation": {
+          "type": "string",
+          "enum": ["recommended", "excluded", "unreviewed"]
+        },
+        "sourceOfTruthPath": { "type": "string" }
+      }
+    },
+    "qualityNotes": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["strengths", "limitations", "usableFor", "notFor"],
+      "properties": {
+        "strengths": { "type": "array", "items": { "type": "string" } },
+        "limitations": { "type": "array", "items": { "type": "string" } },
+        "usableFor": { "type": "array", "items": { "type": "string" } },
+        "notFor": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "hash": { "type": "string" },
+    "createdAt": { "type": "string" },
+    "updatedAt": { "type": "string" }
+  }
+}

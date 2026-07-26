@@ -22,6 +22,17 @@ test('Skill changes trigger static eval but never live eval', () => {
   assert.ok(!commands.some((command) => command.includes('evals:smoke')))
 })
 
+test('liluo-project Skill changes require user-command catalog sync validation', () => {
+  const commands = commandsFor(['.agents/skills/liluo-project/liluo-plot-placement-interview/SKILL.md'])
+  assert.ok(commands.includes('npm run docs:commands:validate'))
+  assert.ok(commands.includes('npm run evals:check'))
+})
+
+test('user command catalog edits alone still require commands validate', () => {
+  const commands = commandsFor(['docs/用户命令目录.md'])
+  assert.ok(commands.includes('npm run docs:commands:validate'))
+})
+
 test('command approval governance changes run their own checks without a Web build', () => {
   const commands = commandsFor(['scripts/command-approval/lib/approval-governance.mjs'])
   assert.ok(commands.includes('npm run commands:approval:test'))

@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-07-26T00:00:00.000Z",
+  "policy": {
+    "styleRagStatus": "deferred",
+    "allowExistingCanonMigration": false,
+    "autoPromotePersonalHistoryToGolden": false,
+    "autoApproveByModel": false,
+    "syncApprovedCanonToGolden": true
+  },
+  "counts": {
+    "total": 0,
+    "approved": 0,
+    "goldenApproved": 0,
+    "personalHistory": 0,
+    "calibrationPairs": 0
+  },
+  "assets": []
+}

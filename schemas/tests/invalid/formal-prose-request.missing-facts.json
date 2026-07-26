@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "requestId": "fp-missing-facts",
+  "status": "draft",
+  "textType": "fiction-prose",
+  "purpose": "x",
+  "canonSources": [],
+  "immutableFacts": [],
+  "characters": [],
+  "scene": {
+    "world": "n",
+    "location": "l",
+    "time": "t",
+    "pov": "third-person-limited",
+    "narrativeFocus": "f",
+    "goal": "g",
+    "requiredBeats": [],
+    "forbiddenAdditions": [],
+    "stateAfter": []
+  },
+  "expression": {
+    "targetChineseCharacters": { "min": 10, "max": 20 },
+    "intensity": "light",
+    "styleReferenceIds": [],
+    "specialConstraints": []
+  },
+  "output": {
+    "format": "markdown-prose-only",
+    "includeTitle": false,
+    "includeExplanation": true
+  }
+}

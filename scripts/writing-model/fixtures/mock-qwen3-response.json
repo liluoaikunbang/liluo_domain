@@ -1,0 +1,21 @@
+{
+  "id": "mock-qwen3-001",
+  "object": "chat.completion",
+  "created": 1720000001,
+  "model": "Zhihu-ai/Zhi-Create-Qwen3-32B",
+  "choices": [
+    {
+      "index": 0,
+      "finish_reason": "stop",
+      "message": {
+        "role": "assistant",
+        "content": "走廊尽头的灯只亮了一半。璃音停在门槛外，先听了听里面有没有脚步，再抬手敲了两下。她把问题压得很短：“你还要站多久？”——不是催促，更像给对方一个可以拒绝的出口。"
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 110,
+    "completion_tokens": 70,
+    "total_tokens": 180
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "formal-prose-pipeline-positive-001",
+  "title": "正式正文写作管线路由",
+  "targetType": "skill",
+  "target": "liluo-formal-prose-pipeline",
+  "status": "active",
+  "polarity": "positive",
+  "mode": "routing-plan",
+  "costTier": "standard",
+  "userPrompt": "用 DSR1 和 Qwen3 对照写一段正式正文候选，先不要写入故事大纲。",
+  "contextFiles": [],
+  "expected": {
+    "requiredSkills": ["liluo-formal-prose-pipeline"],
+    "allowedSkills": ["liluo-natural-expression"],
+    "forbiddenSkills": [],
+    "requiredAgents": [],
+    "forbiddenAgents": [],
+    "requiredReadPaths": [".agents/skills/liluo-project/liluo-formal-prose-pipeline/SKILL.md"],
+    "allowedReadPaths": [
+      "project-navigation/writing-models.json",
+      "docs/写作资产/",
+      "docs/系统说明/开放权重双模型写作管线.md",
+      "scripts/writing-model/"
+    ],
+    "requiredWritePaths": [],
+    "allowedWritePaths": ["docs/写作资产/工作区/"],
+    "forbiddenActions": ["直接写入正式故事大纲", "自动 StyleRAG", "静默双模型计费", "把 API Key 写入仓库"],
+    "requiredValidationProfiles": [],
+    "forbiddenValidationProfiles": ["all"],
+    "approvalExpectation": "required"
+  }
+}

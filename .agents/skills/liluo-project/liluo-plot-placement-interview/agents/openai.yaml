@@ -1,0 +1,4 @@
+interface:
+  display_name: "情节安置访谈"
+  short_description: "从情节库抽取条目，对照大纲建议主线/支线落点，批准后再聚焦提问"
+  default_prompt: "Use $liluo-plot-placement-interview to pick a plot entry, propose outline placement, then interview after approval."

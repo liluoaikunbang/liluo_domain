@@ -1509,7 +1509,7 @@
   {
     "id": "docs/功能更新/134-情节灵感目录与大纲Skill联动.md",
     "indexVersion": 1,
-    "sourceHash": "4fc2fe0c9383958b4d478310eb43c2d82a59f96a9da92ab9f065a1bb49b45527",
+    "sourceHash": "1d802edfbc03d04a0b79d4107dd983c0659bd3a60c02056739e6a27ff0f33924",
     "sourcePath": "docs/功能更新/134-情节灵感目录与大纲Skill联动.md",
     "subtype": "update",
     "summary": "情节灵感目录与大纲 Skill 联动",
@@ -1848,9 +1848,31 @@
     "type": "document"
   },
   {
+    "id": "docs/功能更新/165-情节优先安置访谈Skill.md",
+    "indexVersion": 1,
+    "sourceHash": "460fdac80efbed304aa404962e93607354db68dfa15f9bb382189be244edee80",
+    "sourcePath": "docs/功能更新/165-情节优先安置访谈Skill.md",
+    "subtype": "update",
+    "summary": "165-情节优先安置访谈 Skill",
+    "summarySource": "title-only",
+    "title": "165-情节优先安置访谈 Skill",
+    "type": "document"
+  },
+  {
+    "id": "docs/功能更新/166-开放权重双模型写作管线与文风资产基础设施.md",
+    "indexVersion": 1,
+    "sourceHash": "7faaa8f77e89d1919c127c040fae2dd4d129f3084a953099b2cb686b03503a0b",
+    "sourcePath": "docs/功能更新/166-开放权重双模型写作管线与文风资产基础设施.md",
+    "subtype": "update",
+    "summary": "166-开放权重双模型写作管线与文风资产基础设施",
+    "summarySource": "title-only",
+    "title": "166-开放权重双模型写作管线与文风资产基础设施",
+    "type": "document"
+  },
+  {
     "id": "docs/功能更新目录.md",
     "indexVersion": 1,
-    "sourceHash": "c1b0ef31b84162d53d7ff8f18ee6fd739013d58e5a5f78d741d2eaf338803b19",
+    "sourceHash": "23b7c2191fab40bae07db37c6048e2f561873f6c92a3d19ce83b8d7f8bd997ce",
     "sourcePath": "docs/功能更新目录.md",
     "subtype": "other",
     "summary": "功能更新目录",
@@ -1991,6 +2013,17 @@
     "type": "document"
   },
   {
+    "id": "docs/技能说明/liluo-formal-prose-pipeline.md",
+    "indexVersion": 1,
+    "sourceHash": "04daec77f119d51d3b4bc1b75b850b85bc929cbee500c559729788ad2fcb1716",
+    "sourcePath": "docs/技能说明/liluo-formal-prose-pipeline.md",
+    "subtype": "skill",
+    "summary": "正式正文写作管线（liluo-formal-prose-pipeline）",
+    "summarySource": "title-only",
+    "title": "正式正文写作管线（liluo-formal-prose-pipeline）",
+    "type": "document"
+  },
+  {
     "id": "docs/技能说明/liluo-game-content-validator.md",
     "indexVersion": 1,
     "sourceHash": "1a690420324759ad8eff628ab2a3eadbed7fc23275236934b06e489ae52f3591",
@@ -2057,6 +2090,17 @@
     "type": "document"
   },
   {
+    "id": "docs/技能说明/liluo-plot-placement-interview.md",
+    "indexVersion": 1,
+    "sourceHash": "76293203c1ac38fc70127c6a22e95d480b4e4fc5ac19be5c62cc17999d4159b6",
+    "sourcePath": "docs/技能说明/liluo-plot-placement-interview.md",
+    "subtype": "skill",
+    "summary": "liluo-plot-placement-interview",
+    "summarySource": "title-only",
+    "title": "liluo-plot-placement-interview",
+    "type": "document"
+  },
+  {
     "id": "docs/技能说明/liluo-production-coverage.md",
     "indexVersion": 1,
     "sourceHash": "23e8059df5f73d64268941f3c14a470feb07a176c89512930ce2cd1f3afa87df",
@@ -2092,7 +2136,7 @@
   {
     "id": "docs/技能说明/liluo-project-documentation-sync.md",
     "indexVersion": 1,
-    "sourceHash": "cdaea6016b348f8e97e15c9f13cdd07ef50fe357027faf1ab82880bd339e21bb",
+    "sourceHash": "299b200a1e92a3f9b75afbb7f21905219d42f110a889ebfba509b5d3d38ddc1e",
     "sourcePath": "docs/技能说明/liluo-project-documentation-sync.md",
     "subtype": "skill",
     "summary": "liluo-project-documentation-sync",
@@ -2224,7 +2268,7 @@
   {
     "id": "docs/技能说明/random-story-outline-interview.md",
     "indexVersion": 1,
-    "sourceHash": "2c34659f0baee33669a680db84ecfe539ebf35bd38c1cbd21276cebc4acf65af",
+    "sourceHash": "9901d6f9cea73b68ce832b6621c6bbffbe1a4ce7d47c359ac886a19a984c6572",
     "sourcePath": "docs/技能说明/random-story-outline-interview.md",
     "subtype": "skill",
     "summary": "random-story-outline-interview",
@@ -2464,6 +2508,17 @@
     "type": "document"
   },
   {
+    "id": "docs/设计记忆/架构决策/ADR-013-开放权重双模型与人工校准写作管线.md",
+    "indexVersion": 1,
+    "sourceHash": "9cff089dea8a46ace3128f81f7e900cdf7249e98ae537a3de1d1c2323ee5747d",
+    "sourcePath": "docs/设计记忆/架构决策/ADR-013-开放权重双模型与人工校准写作管线.md",
+    "subtype": "other",
+    "summary": "ADR-013：开放权重双模型与人工校准写作管线",
+    "summarySource": "title-only",
+    "title": "ADR-013：开放权重双模型与人工校准写作管线",
+    "type": "document"
+  },
+  {
     "id": "docs/设计记忆/架构决策/README.md",
     "indexVersion": 1,
     "sourceHash": "f9004fead885305a1971c21235e3f4c0ac76fa29e16637d065bf1b2802358639",
@@ -2692,61 +2747,6 @@
     "summary": "让每次校准留下可复用的判断",
     "summarySource": "title-only",
     "title": "让每次校准留下可复用的判断",
-    "type": "document"
-  },
-  {
-    "id": "docs/设计记忆/项目组灵魂/重聚机制.md",
-    "indexVersion": 1,
-    "sourceHash": "2b29dc207c17ac188898e3d7663420374747f6e24f9748557c7308df80a9949f",
-    "sourcePath": "docs/设计记忆/项目组灵魂/重聚机制.md",
-    "subtype": "other",
-    "summary": "久别重聚机制",
-    "summarySource": "title-only",
-    "title": "久别重聚机制",
-    "type": "document"
-  },
-  {
-    "id": "docs/设计记忆/项目组灵魂/README.md",
-    "indexVersion": 1,
-    "sourceHash": "2afd9b2869ddcc34605a3df24fea2b4d4afd174400de51ae897349700ee4f293",
-    "sourcePath": "docs/设计记忆/项目组灵魂/README.md",
-    "subtype": "other",
-    "summary": "璃落创作组灵魂",
-    "summarySource": "title-only",
-    "title": "璃落创作组灵魂",
-    "type": "document"
-  },
-  {
-    "id": "docs/设计记忆/README.md",
-    "indexVersion": 1,
-    "sourceHash": "6b2663ae2c61394d64f26a6b789c7d6621d3e88650507158f3e91512ff96acab",
-    "sourcePath": "docs/设计记忆/README.md",
-    "subtype": "other",
-    "summary": "设计记忆",
-    "summarySource": "title-only",
-    "title": "设计记忆",
-    "type": "document"
-  },
-  {
-    "id": "docs/素材制作策略.md",
-    "indexVersion": 1,
-    "sourceHash": "42637da7703139df56d638e64e9ccaf2ba7dc707ea89a8f6f19367fdeb225ffa",
-    "sourcePath": "docs/素材制作策略.md",
-    "subtype": "other",
-    "summary": "素材制作策略",
-    "summarySource": "title-only",
-    "title": "素材制作策略",
-    "type": "document"
-  },
-  {
-    "id": "docs/外部来源/Skill来源目录.md",
-    "indexVersion": 1,
-    "sourceHash": "5dea73aeb2afb392039bccaefa6acfaa1b796cf666b7ebd859c77c9171f8fdf3",
-    "sourcePath": "docs/外部来源/Skill来源目录.md",
-    "subtype": "other",
-    "summary": "Skill 来源目录",
-    "summarySource": "title-only",
-    "title": "Skill 来源目录",
     "type": "document"
   }
 ]

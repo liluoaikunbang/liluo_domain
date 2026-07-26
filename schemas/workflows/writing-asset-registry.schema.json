@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://liluo.local/schemas/workflows/writing-asset-registry.schema.json",
+  "title": "璃落写作资产注册表",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "assets", "counts"],
+  "properties": {
+    "schemaVersion": { "type": "integer", "const": 1 },
+    "updatedAt": { "type": "string" },
+    "policy": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "styleRagStatus": { "type": "string", "const": "deferred" },
+        "allowExistingCanonMigration": { "type": "boolean", "const": false },
+        "autoPromotePersonalHistoryToGolden": { "type": "boolean", "const": false },
+        "autoApproveByModel": { "type": "boolean", "const": false },
+        "syncApprovedCanonToGolden": { "type": "boolean", "const": true }
+      }
+    },
+    "counts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["total", "approved", "goldenApproved", "personalHistory", "calibrationPairs"],
+      "properties": {
+        "total": { "type": "integer", "minimum": 0 },
+        "approved": { "type": "integer", "minimum": 0 },
+        "goldenApproved": { "type": "integer", "minimum": 0 },
+        "personalHistory": { "type": "integer", "minimum": 0 },
+        "calibrationPairs": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "assets": {
+      "type": "array",
+      "items": { "type": "object" }
+    }
+  }
+}

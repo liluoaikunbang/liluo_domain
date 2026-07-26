@@ -222,6 +222,41 @@
       "status": "active"
     },
     {
+      "documentId": "formal-prose-pipeline-system",
+      "path": "docs/系统说明/开放权重双模型写作管线.md",
+      "type": "system-spec",
+      "authorityFor": ["formal-prose-pipeline", "open-weight-writing-models", "writing-asset-layers", "writing-model-workspace-only"],
+      "consumers": [
+        "AGENTS.md",
+        ".agents/skills/liluo-project/liluo-formal-prose-pipeline/SKILL.md",
+        "docs/技能说明/liluo-formal-prose-pipeline.md",
+        "docs/系统说明/写作模型API配置与用户操作指南.md",
+        "project-navigation/writing-models.json",
+        "docs/写作资产/registry.json",
+        "scripts/writing-model/writing-model.mjs",
+        "docs/用户命令目录.md",
+        "package.json"
+      ],
+      "indexable": true,
+      "userFacing": true,
+      "status": "active"
+    },
+    {
+      "documentId": "writing-model-api-guide",
+      "path": "docs/系统说明/写作模型API配置与用户操作指南.md",
+      "type": "system-spec",
+      "authorityFor": ["writing-model-credential-onboarding", "writing-model-endpoint-setup", "writing-model-live-preflight"],
+      "consumers": [
+        ".agents/skills/liluo-project/liluo-formal-prose-pipeline/SKILL.md",
+        "docs/技能说明/liluo-formal-prose-pipeline.md",
+        ".env.writing.example",
+        "docs/用户命令目录.md"
+      ],
+      "indexable": true,
+      "userFacing": true,
+      "status": "active"
+    },
+    {
       "documentId": "command-approval-governance-system",
       "path": "docs/系统说明/Codex命令授权治理系统.md",
       "type": "system-spec",

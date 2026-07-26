@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "pairId": "cp-",
+  "status": "awaiting-user-input",
+  "sourceModel": "",
+  "modelRunId": null,
+  "requestContractId": null,
+  "beforePath": "",
+  "afterPath": "",
+  "diffSummary": "",
+  "changeCategories": [],
+  "changeReasons": [],
+  "suitableForSkillUpgrade": false,
+  "upgradeSuggestionStatus": "none",
+  "relatedSkillHints": ["liluo-natural-expression"],
+  "approvedByUser": false,
+  "createdAt": "",
+  "updatedAt": ""
+}

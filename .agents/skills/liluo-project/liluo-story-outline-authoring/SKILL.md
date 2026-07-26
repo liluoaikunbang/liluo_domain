@@ -1,6 +1,6 @@
 ---
 name: liluo-story-outline-authoring
-description: Create, expand, or template-refactor a specified 璃落 story node while synchronizing source JSON and Markdown. Use for 新增故事条目、完善大纲、灵感升级、补齐地图事件玩法状态；not for random interviews, graph-only moves, audits, or map implementation.
+description: Create, expand, or template-refactor a specified 璃落 story node while synchronizing source JSON and Markdown. Use for 新增故事条目、完善大纲、灵感升级、补齐地图事件玩法状态；not for outline-first random interviews, plot-first placement interviews, graph-only moves, audits, or map implementation.
 ---
 
 # Story Outline Authoring

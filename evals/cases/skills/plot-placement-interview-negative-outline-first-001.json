@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "plot-placement-interview-negative-outline-first-001",
+  "title": "大纲优先随机访谈不得误路由为情节安置",
+  "targetType": "skill",
+  "target": "liluo-plot-placement-interview",
+  "status": "active",
+  "polarity": "negative",
+  "mode": "routing-plan",
+  "costTier": "standard",
+  "userPrompt": "随机抽一个未完善故事问我。",
+  "contextFiles": [],
+  "expected": {
+    "requiredSkills": [
+      "random-story-outline-interview"
+    ],
+    "allowedSkills": [],
+    "forbiddenSkills": [
+      "liluo-plot-placement-interview"
+    ],
+    "requiredAgents": [],
+    "forbiddenAgents": [],
+    "requiredReadPaths": [],
+    "allowedReadPaths": [],
+    "requiredWritePaths": [],
+    "allowedWritePaths": [],
+    "forbiddenActions": [
+      "自动提交",
+      "自动推送"
+    ],
+    "requiredValidationProfiles": [],
+    "forbiddenValidationProfiles": [
+      "all"
+    ],
+    "approvalExpectation": "not-required"
+  }
+}

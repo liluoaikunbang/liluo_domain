@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "id": "plot-placement-interview-positive-001",
+  "title": "liluo-plot-placement-interview 正向路由",
+  "targetType": "skill",
+  "target": "liluo-plot-placement-interview",
+  "status": "active",
+  "polarity": "positive",
+  "mode": "routing-plan",
+  "costTier": "standard",
+  "userPrompt": "随机抽一个未用情节，对照大纲看适合加到哪个节点、是主线还是支线，再问我把情节补丰。",
+  "contextFiles": [],
+  "expected": {
+    "requiredSkills": [
+      "liluo-plot-placement-interview"
+    ],
+    "allowedSkills": [
+      "liluo-story-outline-authoring"
+    ],
+    "forbiddenSkills": [
+      "random-story-outline-interview"
+    ],
+    "requiredAgents": [],
+    "forbiddenAgents": [],
+    "requiredReadPaths": [
+      "docs/系统说明/情节安置提问模板.md"
+    ],
+    "allowedReadPaths": [
+      "src/game/data/plot_outline/catalog.json",
+      "docs/系统说明/情节条目系统.md",
+      "docs/系统说明/故事大纲随机提问模板.md"
+    ],
+    "requiredWritePaths": [],
+    "allowedWritePaths": [],
+    "forbiddenActions": [
+      "落点未批准就写回大纲",
+      "自动提交",
+      "自动推送"
+    ],
+    "requiredValidationProfiles": [],
+    "forbiddenValidationProfiles": [
+      "all"
+    ],
+    "approvalExpectation": "required"
+  }
+}

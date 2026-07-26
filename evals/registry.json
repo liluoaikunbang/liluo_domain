@@ -56,6 +56,17 @@
     },
     {
       "type": "skill",
+      "name": "liluo-formal-prose-pipeline",
+      "path": ".agents/skills/liluo-project/liluo-formal-prose-pipeline/SKILL.md",
+      "status": "active",
+      "tier": "standard",
+      "caseGlobs": [
+        "evals/cases/skills/formal-prose-pipeline-positive-001.json",
+        "evals/cases/skills/formal-prose-pipeline-negative-001.json"
+      ]
+    },
+    {
+      "type": "skill",
       "name": "liluo-character-arc-and-relationship-memory",
       "path": ".agents/skills/liluo-project/liluo-character-arc-and-relationship-memory/SKILL.md",
       "status": "active",
@@ -320,6 +331,17 @@
       "tier": "standard",
       "caseGlobs": [
         "evals/cases/skills/random-story-outline-interview-positive-001.json"
+      ]
+    },
+    {
+      "type": "skill",
+      "name": "liluo-plot-placement-interview",
+      "path": ".agents/skills/liluo-project/liluo-plot-placement-interview/SKILL.md",
+      "status": "active",
+      "tier": "standard",
+      "caseGlobs": [
+        "evals/cases/skills/plot-placement-interview-positive-001.json",
+        "evals/cases/skills/plot-placement-interview-negative-outline-first-001.json"
       ]
     },
     {

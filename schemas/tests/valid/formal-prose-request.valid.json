@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "requestId": "fp-valid-001",
+  "status": "draft",
+  "textType": "fiction-prose",
+  "purpose": "合成评测",
+  "canonSources": ["docs/写作资产/模板/正式正文写作合同说明.md"],
+  "immutableFacts": ["双方均为成年人"],
+  "characters": [
+    {
+      "id": "a",
+      "stateBefore": [],
+      "knowledgeBoundary": [],
+      "voiceNotes": []
+    }
+  ],
+  "scene": {
+    "world": "neutral",
+    "location": "room",
+    "time": "dusk",
+    "pov": "third-person-limited",
+    "narrativeFocus": "a",
+    "goal": "open",
+    "requiredBeats": [],
+    "forbiddenAdditions": [],
+    "stateAfter": []
+  },
+  "expression": {
+    "targetChineseCharacters": { "min": 100, "max": 200 },
+    "intensity": "light",
+    "styleReferenceIds": [],
+    "specialConstraints": []
+  },
+  "output": {
+    "format": "markdown-prose-only",
+    "includeTitle": false,
+    "includeExplanation": false
+  }
+}

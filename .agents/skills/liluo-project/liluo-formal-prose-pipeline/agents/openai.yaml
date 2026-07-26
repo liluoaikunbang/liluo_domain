@@ -1,0 +1,3 @@
+interface:
+  display_name: "正式正文写作管线"
+  short_description: "开放权重双模型正式正文合同、候选生成、批准归档与校准"

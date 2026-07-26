@@ -118,7 +118,19 @@
     "character:memory:validate": "node scripts/content-production/content-production.mjs memory-validate",
     "production:coverage": "node scripts/content-production/content-production.mjs coverage",
     "map:trim-empty-border": "node scripts/maps/trim-empty-map-border.js",
-    "assets:build-liluo-character-frames": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts\\assets\\build-liluo-character-frames.ps1"
+    "assets:build-liluo-character-frames": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts\\assets\\build-liluo-character-frames.ps1",
+    "writing:models:validate": "node scripts/writing-model/writing-model.mjs validate",
+    "writing:models:status": "node scripts/writing-model/writing-model.mjs status",
+    "writing:models:health": "node scripts/writing-model/writing-model.mjs health",
+    "writing:prose:draft": "node scripts/writing-model/writing-model.mjs draft",
+    "writing:prose:compare": "node scripts/writing-model/writing-model.mjs compare",
+    "writing:assets:validate": "node scripts/writing-model/writing-model.mjs assets-validate",
+    "writing:assets:register": "node scripts/writing-model/writing-model.mjs assets-register",
+    "writing:calibration:create": "node scripts/writing-model/writing-model.mjs calibration-create",
+    "writing:models:pin": "node scripts/writing-model/writing-model.mjs pin",
+    "writing:gaps:remind": "node scripts/writing-model/writing-model.mjs remind-gaps",
+    "writing:golden:sync": "node scripts/writing-model/writing-model.mjs sync-golden",
+    "writing:pipeline:test": "node --test scripts/tests/writing-model-pipeline.test.mjs"
   },
   "dependencies": {
     "clipboard": "^2.0.11",

@@ -112,6 +112,41 @@
       "owner": "navigation",
       "requiredInChangedGate": true,
       "allowsMissingEmbeddedSchemaVersion": true
+    },
+    {
+      "id": "writing-models",
+      "schema": "schemas/workflows/writing-models.schema.json",
+      "sourceGlobs": [
+        "project-navigation/writing-models.json"
+      ],
+      "mode": "file",
+      "owner": "writing",
+      "requiredInChangedGate": true,
+      "allowsMissingEmbeddedSchemaVersion": true
+    },
+    {
+      "id": "writing-asset-registry",
+      "schema": "schemas/workflows/writing-asset-registry.schema.json",
+      "sourceGlobs": [
+        "docs/写作资产/registry.json"
+      ],
+      "mode": "file",
+      "owner": "writing",
+      "requiredInChangedGate": true,
+      "allowsMissingEmbeddedSchemaVersion": true
+    },
+    {
+      "id": "formal-prose-request",
+      "schema": "schemas/workflows/formal-prose-request.schema.json",
+      "sourceGlobs": [
+        "docs/写作资产/工作区/requests/*.json",
+        "docs/写作资产/模板/正式正文写作合同模板.json"
+      ],
+      "mode": "file",
+      "owner": "writing",
+      "requiredInChangedGate": false,
+      "allowsMissingEmbeddedSchemaVersion": true,
+      "template": true
     }
   ]
 }

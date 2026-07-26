@@ -1,0 +1,157 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://liluo.local/schemas/workflows/writing-models.schema.json",
+  "title": "璃落开放权重写作模型注册表",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "policyId", "status", "protocol", "defaults", "models"],
+  "properties": {
+    "schemaVersion": { "type": "integer", "const": 1 },
+    "policyId": { "type": "string", "const": "liluo-open-weight-writing-models" },
+    "status": {
+      "type": "string",
+      "enum": ["unconfigured", "configured", "healthy", "degraded", "failed"]
+    },
+    "protocol": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type", "endpoint", "modelsEndpoint", "remoteHttpsRequired", "localhostHttpAllowed"],
+      "properties": {
+        "type": { "type": "string", "const": "openai-compatible" },
+        "endpoint": { "type": "string", "minLength": 1 },
+        "modelsEndpoint": { "type": "string", "minLength": 1 },
+        "remoteHttpsRequired": { "type": "boolean" },
+        "localhostHttpAllowed": { "type": "boolean" }
+      }
+    },
+    "defaults": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "singleDraftRequiresExplicitModel",
+        "compareUsesBothModels",
+        "automaticCanonWrite",
+        "automaticSkillUpdate",
+        "storeReasoningContent",
+        "liveNetworkCallsInRoutineTests"
+      ],
+      "properties": {
+        "singleDraftRequiresExplicitModel": { "type": "boolean", "const": true },
+        "compareUsesBothModels": { "type": "boolean", "const": true },
+        "automaticCanonWrite": { "type": "boolean", "const": false },
+        "automaticSkillUpdate": { "type": "boolean", "const": false },
+        "storeReasoningContent": { "type": "boolean", "const": false },
+        "liveNetworkCallsInRoutineTests": { "type": "boolean", "const": false },
+        "productionDefault": { "type": ["string", "null"] },
+        "comparisonModels": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "minItems": 2,
+          "maxItems": 2
+        },
+        "routingStatus": {
+          "type": "string",
+          "enum": ["awaiting-calibration", "calibrated", "deferred"]
+        }
+      }
+    },
+    "timeouts": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "connectMs": { "type": "integer", "minimum": 1000 },
+        "requestMs": { "type": "integer", "minimum": 1000 }
+      }
+    },
+    "retry": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "maxAttempts": { "type": "integer", "minimum": 0, "maximum": 5 },
+        "backoffMs": {
+          "type": "array",
+          "items": { "type": "integer", "minimum": 0 }
+        },
+        "retryStatusCodes": {
+          "type": "array",
+          "items": { "type": "integer" }
+        }
+      }
+    },
+    "models": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2,
+      "items": { "$ref": "#/$defs/modelEntry" }
+    }
+  },
+  "$defs": {
+    "modelEntry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "displayName",
+        "repository",
+        "baseModel",
+        "license",
+        "role",
+        "env",
+        "defaultServedModel",
+        "generation",
+        "thinking"
+      ],
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "displayName": { "type": "string", "minLength": 1 },
+        "repository": { "type": "string", "minLength": 1 },
+        "baseModel": { "type": "string", "minLength": 1 },
+        "license": { "type": "string", "const": "apache-2.0" },
+        "role": { "type": "string", "minLength": 1 },
+        "aliases": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "env": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["baseUrl", "apiKey", "servedModel"],
+          "properties": {
+            "baseUrl": { "type": "string", "minLength": 1 },
+            "apiKey": { "type": "string", "minLength": 1 },
+            "servedModel": { "type": "string", "minLength": 1 }
+          }
+        },
+        "defaultServedModel": { "type": "string", "minLength": 1 },
+        "generation": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["temperature", "topP", "maxTokens", "stream"],
+          "properties": {
+            "temperature": { "type": "number", "minimum": 0, "maximum": 2 },
+            "topP": { "type": "number", "minimum": 0, "maximum": 1 },
+            "maxTokens": { "type": "integer", "minimum": 1 },
+            "stream": { "type": "boolean", "const": false }
+          }
+        },
+        "thinking": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["mode", "excludeFromDraft", "excludeFromArchive"],
+          "properties": {
+            "mode": {
+              "type": "string",
+              "enum": ["provider-default", "configurable", "disabled"]
+            },
+            "excludeFromDraft": { "type": "boolean", "const": true },
+            "excludeFromArchive": { "type": "boolean", "const": true }
+          }
+        },
+        "extraBodyAllowlist": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 }
+        }
+      }
+    }
+  }
+}

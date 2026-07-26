@@ -1,5 +1,17 @@
 export const updateRecords = Object.freeze([
     {
+        "id":  "166",
+        "date":  "2026-07-26",
+        "title":  "开放权重双模型写作管线与文风资产基础设施",
+        "summary":  "固定 DSR1-14B/Qwen3-32B，OpenAI-compatible 管线、写作合同、文风资产与缺口登记；StyleRAG 暂缓；Running 后约 5 分钟再双模型 health。"
+    },
+    {
+        "id":  "165",
+        "date":  "2026-07-26",
+        "title":  "情节优先安置访谈 Skill",
+        "summary":  "从情节库抽取或指定情节，对照大纲建议主线/支线落点，批准后再聚焦访谈；项目 Skill 变更强制校验用户命令目录。"
+    },
+    {
         "id":  "164",
         "date":  "2026-07-26",
         "title":  "项目上下文分层与创作组有效参与",

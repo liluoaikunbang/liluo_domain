@@ -132,6 +132,44 @@
       "status": "active"
     },
     {
+      "ruleId": "formal-prose-external-models-no-canon-write",
+      "title": "外部写作模型不得直接写入正式 canon",
+      "authority": "docs/系统说明/开放权重双模型写作管线.md",
+      "decision": "docs/设计记忆/架构决策/ADR-013-开放权重双模型与人工校准写作管线.md",
+      "consumers": ["AGENTS.md", ".agents/skills/liluo-project/liluo-formal-prose-pipeline/SKILL.md", "scripts/writing-model/writing-model.mjs", "docs/用户命令目录.md"],
+      "status": "active"
+    },
+    {
+      "ruleId": "writing-model-api-first",
+      "title": "写作模型仅通过 OpenAI-compatible 接入且不绑定供应商 SDK",
+      "authority": "docs/系统说明/开放权重双模型写作管线.md",
+      "decision": "docs/设计记忆/架构决策/ADR-013-开放权重双模型与人工校准写作管线.md",
+      "consumers": ["project-navigation/writing-models.json", "scripts/writing-model/", ".env.writing.example"],
+      "status": "active"
+    },
+    {
+      "ruleId": "writing-model-live-preflight-wake-endpoints",
+      "title": "Live 前须 Running，默认再等约 5 分钟后对双模型做 health",
+      "authority": "docs/系统说明/写作模型API配置与用户操作指南.md",
+      "decision": "docs/设计记忆/架构决策/ADR-013-开放权重双模型与人工校准写作管线.md",
+      "consumers": [
+        ".agents/skills/liluo-project/liluo-formal-prose-pipeline/SKILL.md",
+        ".agents/skills/liluo-project/liluo-formal-prose-pipeline/references/credential-onboarding.md",
+        "docs/系统说明/开放权重双模型写作管线.md",
+        "docs/技能说明/liluo-formal-prose-pipeline.md",
+        "docs/用户命令目录.md"
+      ],
+      "status": "active"
+    },
+    {
+      "ruleId": "style-rag-deferred",
+      "title": "StyleRAG 与向量检索暂缓，仅允许显式样本引用",
+      "authority": "docs/系统说明/开放权重双模型写作管线.md",
+      "decision": "docs/设计记忆/架构决策/ADR-013-开放权重双模型与人工校准写作管线.md",
+      "consumers": [".agents/skills/liluo-project/liluo-formal-prose-pipeline/references/style-rag-deferred-boundary.md", "docs/写作资产/registry.json"],
+      "status": "active"
+    },
+    {
       "ruleId": "user-to-liluo-direction-is-one-way",
       "title": "用户确认的指示可由璃落转述但璃落话语不反推用户授权",
       "authority": "docs/设计记忆/项目组灵魂/项目组设定.md",

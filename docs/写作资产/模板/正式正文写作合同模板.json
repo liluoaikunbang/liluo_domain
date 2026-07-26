@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "requestId": "fp-template-placeholder",
+  "status": "draft",
+  "textType": "fiction-prose",
+  "purpose": "（填写本次正文目的）",
+  "canonSources": [
+    "docs/写作资产/模板/正式正文写作合同说明.md"
+  ],
+  "immutableFacts": [
+    "（填写不可改写事实）"
+  ],
+  "characters": [
+    {
+      "id": "character-id",
+      "stateBefore": [],
+      "knowledgeBoundary": [],
+      "voiceNotes": []
+    }
+  ],
+  "scene": {
+    "world": "world-id",
+    "location": "location",
+    "time": "time",
+    "pov": "third-person-limited",
+    "narrativeFocus": "focus",
+    "goal": "goal",
+    "requiredBeats": [],
+    "forbiddenAdditions": [],
+    "stateAfter": []
+  },
+  "expression": {
+    "targetChineseCharacters": {
+      "min": 800,
+      "max": 1400
+    },
+    "intensity": "deep",
+    "styleReferenceIds": [],
+    "specialConstraints": []
+  },
+  "output": {
+    "format": "markdown-prose-only",
+    "includeTitle": false,
+    "includeExplanation": false
+  }
+}

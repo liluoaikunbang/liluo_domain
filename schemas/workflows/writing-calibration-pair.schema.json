@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://liluo.local/schemas/workflows/writing-calibration-pair.schema.json",
+  "title": "璃落写作修改对照",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "pairId",
+    "status",
+    "sourceModel",
+    "modelRunId",
+    "requestContractId",
+    "beforePath",
+    "afterPath",
+    "changeCategories",
+    "changeReasons",
+    "suitableForSkillUpgrade",
+    "relatedSkillHints",
+    "approvedByUser",
+    "createdAt",
+    "updatedAt"
+  ],
+  "properties": {
+    "schemaVersion": { "type": "integer", "const": 1 },
+    "pairId": { "type": "string", "pattern": "^cp-.+" },
+    "status": {
+      "type": "string",
+      "enum": ["awaiting-user-input", "candidate", "reviewed", "approved", "superseded", "rejected"]
+    },
+    "sourceModel": { "type": "string", "minLength": 1 },
+    "modelRunId": { "type": ["string", "null"] },
+    "requestContractId": { "type": ["string", "null"] },
+    "beforePath": { "type": "string", "minLength": 1 },
+    "afterPath": { "type": "string", "minLength": 1 },
+    "diffSummary": { "type": "string" },
+    "changeCategories": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "事实与连续性",
+          "人物声音",
+          "动作与空间",
+          "节奏与段落",
+          "AI式表达",
+          "修辞与用词",
+          "其他"
+        ]
+      }
+    },
+    "changeReasons": { "type": "array", "items": { "type": "string" } },
+    "suitableForSkillUpgrade": { "type": "boolean" },
+    "upgradeSuggestionStatus": {
+      "type": "string",
+      "enum": ["none", "suggested", "deferred", "applied"]
+    },
+    "relatedSkillHints": { "type": "array", "items": { "type": "string" } },
+    "approvedByUser": { "type": "boolean" },
+    "createdAt": { "type": "string" },
+    "updatedAt": { "type": "string" }
+  }
+}

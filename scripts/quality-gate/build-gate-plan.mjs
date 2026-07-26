@@ -10,6 +10,7 @@ const ORDER = [
   'npm run commands:approval:validate',
   'npm run project:workflow:validate',
   'npm run project:routine -- workflow',
+  'npm run project:routine -- writing',
   'npm run evals:check',
   'npm run evals:static:all',
   ASSET_AUDIT,
@@ -44,8 +45,11 @@ function addForDomains(selected, classification, mode) {
   if (domains.has('docs')) selected.add('npm run docs:check-encoding')
   if (requires.has('docs-governance')) {
     selected.add('npm run docs:governance:validate')
-    if (classification.files.includes('docs/用户命令目录.md')) selected.add('npm run docs:commands:validate')
+    if (classification.files.includes('docs/用户命令目录.md') || requires.has('user-command-sync')) {
+      selected.add('npm run docs:commands:validate')
+    }
   }
+  if (requires.has('user-command-sync')) selected.add('npm run docs:commands:validate')
   if (domains.has('skills-agents-governance')) selected.add('npm run evals:check')
   if (requires.has('command-approval-tests')) {
     selected.add('npm run commands:approval:test')
@@ -56,6 +60,9 @@ function addForDomains(selected, classification, mode) {
   }
   if (requires.has('executable-workflow-check')) {
     selected.add('npm run project:workflow:validate')
+  }
+  if (requires.has('writing-pipeline-tests')) {
+    selected.add('npm run project:routine -- writing')
   }
   if (domains.has('schemas-data')) selected.add('npm run data:contracts:check')
   if (domains.has('schemas-data') && requires.has('game-content-check')) selected.add('npm run project:routine -- check')

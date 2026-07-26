@@ -1,0 +1,20 @@
+---
+name: liluo-plot-placement-interview
+description: Select a 璃落 plot-catalog entry (random unused/partial or specified), propose outline placement by world bias with mainline vs side judgment, then interview after user approval. Use for 从情节库抽取、未用情节安置、指定情节对照大纲、主线还是支线；not for outline-first random interview, listing unused plots without placement, or writing plot-only catalog entries.
+---
+
+# Plot Placement Interview
+
+Read `docs/系统说明/情节安置提问模板.md` completely. Read `docs/系统说明/情节条目系统.md` only for data-contract questions. For write-back after placement approval, follow `$liluo-story-outline-authoring` and the outline template it requires. Question style and post-answer write-back loop reuse `docs/系统说明/故事大纲随机提问模板.md` sections on questions and answers; do not start from outline `missingItems`.
+
+1. Build the plot candidate pool from `src/game/data/plot_outline/catalog.json`: default `usageStatus` of `unused` or `partial` (for `partial`, only unresolved remainder). Exclude fully `used` entries unless the user names a specific `plot-xxx`. Apply optional filters: world bias, group, bondage/ordinary tags, keyword, or recently-asked exclusion.
+2. When the user names `plot-xxx` or a unique title, select that entry. For “随机”“随便”“抽一个未用情节” with no comparison request, draw locally with a random number; do not invoke a subagent. Report filters and seed when present.
+3. Read only the selected plot entry (and its group title when needed). Do not scan the whole catalog again after selection.
+4. Resolve placement worlds from `worldBiases`: non-empty list → search those worlds first; empty → treat as cross-world and state that explicitly. Prefer existing ordinary nodes or mainline memos that share confirmed characters, conflict, location, or player flow with the plot. Propose 1–3 placements; each must state: target key/title path, expand-existing vs new-child, mainline vs side (`side`), and evidence. Default to expand-existing; propose a new child only when independent playable scope is needed or the user asks. Never invent nodes or keys.
+5. Stop for placement approval before any interview or outline write. Present placements as options the user may combine, revise, or reject. Do not write story sources or update `usedBy` until the user confirms a placement (or explicitly rejects all and stops).
+6. After approval, reconstruct the target node's confirmed context from its source JSON/Markdown (and nearest mainline memo when under a mainline). Output in order: 选定情节、批准落点、已确认节点上下文、情节与节点的衔接缺口、4–7 个具体问题、回写时预计涉及的文件.
+7. Prefer questions that bind the plot's premise/escalation/turn/consequence into the node's goals, entry/exit, relationships, states, branches and gameplay. Give each question distinct, context-compatible inspiration options. Options are not single-choice; only the user's explicit direction becomes confirmed. If options conflict with each other, the plot, or accumulated context, name the conflict and ask the user to resolve it.
+8. After each user answer, write newly confirmed content through `$liluo-story-outline-authoring`, preserve unresolved decisions as concrete `missingItems`, then continue the interview loop when needed. On first successful adoption write-back, append the real story key to the plot's `usedBy`, set matching `usedByLabels` as `世界名-主线名-节点名`, and set `usageStatus` to `partial` or `used` according to remaining gaps. Keep causally linked setup and payoff in one plot entry.
+9. Do not route outline-first “随机抽一个未完善故事问我” here; that remains `$random-story-outline-interview`. Do not stop at unused-plot listing; listing without placement intent uses gap/navigation workflows. Pure plot-catalog registration without outline association stays in the plot catalog only.
+
+If no plot or placement candidate survives, report pool counts and filters. Never invent a plot ID, story key, or confirmed context.

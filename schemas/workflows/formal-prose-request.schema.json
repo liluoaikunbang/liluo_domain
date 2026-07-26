@@ -1,0 +1,123 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://liluo.local/schemas/workflows/formal-prose-request.schema.json",
+  "title": "璃落正式正文写作合同",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "requestId",
+    "status",
+    "textType",
+    "purpose",
+    "canonSources",
+    "immutableFacts",
+    "characters",
+    "scene",
+    "expression",
+    "output"
+  ],
+  "properties": {
+    "schemaVersion": { "type": "integer", "const": 1 },
+    "requestId": { "type": "string", "pattern": "^fp-.+" },
+    "status": {
+      "type": "string",
+      "enum": ["draft", "ready", "submitted", "approved", "rejected", "superseded"]
+    },
+    "textType": {
+      "type": "string",
+      "enum": ["fiction-prose", "dialogue-prose", "scene-bridge"]
+    },
+    "purpose": { "type": "string", "minLength": 1 },
+    "canonSources": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "pattern": "^(?!([A-Za-z]:\\\\|/)).+"
+      }
+    },
+    "immutableFacts": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "characters": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "stateBefore", "knowledgeBoundary", "voiceNotes"],
+        "properties": {
+          "id": { "type": "string", "minLength": 1 },
+          "stateBefore": { "type": "array", "items": { "type": "string" } },
+          "knowledgeBoundary": { "type": "array", "items": { "type": "string" } },
+          "voiceNotes": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    },
+    "scene": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "world",
+        "location",
+        "time",
+        "pov",
+        "narrativeFocus",
+        "goal",
+        "requiredBeats",
+        "forbiddenAdditions",
+        "stateAfter"
+      ],
+      "properties": {
+        "world": { "type": "string", "minLength": 1 },
+        "location": { "type": "string", "minLength": 1 },
+        "time": { "type": "string", "minLength": 1 },
+        "pov": {
+          "type": "string",
+          "enum": ["third-person-limited", "third-person-omniscient", "first-person"]
+        },
+        "narrativeFocus": { "type": "string", "minLength": 1 },
+        "goal": { "type": "string", "minLength": 1 },
+        "requiredBeats": { "type": "array", "items": { "type": "string" } },
+        "forbiddenAdditions": { "type": "array", "items": { "type": "string" } },
+        "stateAfter": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "expression": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["targetChineseCharacters", "intensity", "styleReferenceIds", "specialConstraints"],
+      "properties": {
+        "targetChineseCharacters": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["min", "max"],
+          "properties": {
+            "min": { "type": "integer", "minimum": 1 },
+            "max": { "type": "integer", "minimum": 1 }
+          }
+        },
+        "intensity": { "type": "string", "enum": ["light", "deep"] },
+        "styleReferenceIds": {
+          "type": "array",
+          "maxItems": 3,
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "specialConstraints": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "output": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["format", "includeTitle", "includeExplanation"],
+      "properties": {
+        "format": { "type": "string", "const": "markdown-prose-only" },
+        "includeTitle": { "type": "boolean" },
+        "includeExplanation": { "type": "boolean", "const": false }
+      }
+    }
+  }
+}

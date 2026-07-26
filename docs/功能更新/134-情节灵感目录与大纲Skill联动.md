@@ -6,6 +6,7 @@
 
 ## 更新时间记录
 
+- 2026-07-26：新增情节优先安置访谈 Skill（`liluo-plot-placement-interview`），从情节库出发选落点后再提问，与大纲优先随机访谈分界。
 - 2026-07-22：为现有 50 条小情节逐条补齐核心前提、升级链、关键转折和持续后果；详情页与搜索接入正式结果，外部知识卡和来源仅留在后台审查链路。
 - 2026-07-21：新增跨世界情节灵感目录、使用状态与世界偏向筛选，并让随机访谈和故事撰写 Skill 优先参考匹配的未使用条目。
 - 2026-07-21：将保护费初遇与《水泥鞋》后续救援合并为一个具有前因回收关系的“部分使用”情节，并增加紧缚情节分类与筛选。
@@ -44,8 +45,10 @@
 - `src/game/views/components/base/PlotOutlinePanel.vue`
 - `src/game/views/components/base/OutlineMenuPanel.vue`
 - `.agents/skills/liluo-project/random-story-outline-interview/SKILL.md`
+- `.agents/skills/liluo-project/liluo-plot-placement-interview/SKILL.md`
 - `.agents/skills/liluo-project/liluo-story-outline-authoring/SKILL.md`
 - `docs/系统说明/情节条目系统.md`
+- `docs/系统说明/情节安置提问模板.md`
 
 ## 验证
 

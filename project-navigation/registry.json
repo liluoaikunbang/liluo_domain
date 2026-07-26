@@ -6,6 +6,8 @@
   "sources": "project-navigation/sources.json",
   "contextPolicy": "project-navigation/context-policy.json",
   "teamRouting": "project-navigation/team-routing.json",
+  "writingModels": "project-navigation/writing-models.json",
+  "writingAssets": "docs/写作资产/registry.json",
   "generatedDocs": [
     "docs/项目能力、缺口与行动总览.md",
     "docs/我现在可以做什么.md"

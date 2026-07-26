@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://liluo.local/schemas/workflows/writing-model-run.schema.json",
+  "title": "璃落写作模型运行清单",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "runId",
+    "modelProfile",
+    "servedModel",
+    "provider",
+    "createdAt",
+    "requestContractId",
+    "parameters",
+    "mode",
+    "workspacePaths",
+    "reasoningStored"
+  ],
+  "properties": {
+    "schemaVersion": { "type": "integer", "const": 1 },
+    "runId": { "type": "string", "pattern": "^wr-.+" },
+    "modelProfile": { "type": "string", "minLength": 1 },
+    "servedModel": { "type": "string" },
+    "provider": { "type": "string", "const": "openai-compatible" },
+    "createdAt": { "type": "string" },
+    "requestContractId": { "type": ["string", "null"] },
+    "parameters": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["temperature", "topP", "maxTokens", "thinkingMode"],
+      "properties": {
+        "temperature": { "type": "number" },
+        "topP": { "type": "number" },
+        "maxTokens": { "type": "integer" },
+        "thinkingMode": { "type": "string" }
+      }
+    },
+    "mode": { "type": "string", "enum": ["mock", "live"] },
+    "endpointHostSummary": { "type": "string" },
+    "styleReferenceIds": { "type": "array", "items": { "type": "string" } },
+    "inputSources": { "type": "array", "items": { "type": "string" } },
+    "workspacePaths": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "draft": { "type": "string" },
+        "rawResponse": { "type": "string" },
+        "manifest": { "type": "string" }
+      }
+    },
+    "usage": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "promptTokens": { "type": ["integer", "null"] },
+        "completionTokens": { "type": ["integer", "null"] },
+        "totalTokens": { "type": ["integer", "null"] }
+      }
+    },
+    "reasoningStored": { "type": "boolean", "const": false },
+    "warnings": { "type": "array", "items": { "type": "string" } },
+    "responseMetadata": { "type": "object" },
+    "compareGroupId": { "type": ["string", "null"] },
+    "blindLabel": { "type": ["string", "null"] }
+  }
+}

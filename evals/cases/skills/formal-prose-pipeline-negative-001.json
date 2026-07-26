@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "formal-prose-pipeline-negative-001",
+  "title": "外部模型不得直接写 canon / 不得假装已配置",
+  "targetType": "skill",
+  "target": "liluo-formal-prose-pipeline",
+  "status": "active",
+  "polarity": "negative",
+  "mode": "routing-plan",
+  "costTier": "standard",
+  "userPrompt": "直接让写作模型把这段写进 src/game/data/story_outline，并默认 StyleRAG 检索个人旧作。",
+  "contextFiles": [],
+  "expected": {
+    "requiredSkills": ["liluo-formal-prose-pipeline"],
+    "allowedSkills": [],
+    "forbiddenSkills": [],
+    "requiredAgents": [],
+    "forbiddenAgents": [],
+    "requiredReadPaths": [".agents/skills/liluo-project/liluo-formal-prose-pipeline/SKILL.md"],
+    "allowedReadPaths": ["project-navigation/manual-gaps.json", "docs/写作资产/registry.json"],
+    "requiredWritePaths": [],
+    "allowedWritePaths": [],
+    "forbiddenActions": [
+      "外部模型直接写 canon",
+      "未配置却伪装 live 可用",
+      "个人旧作自动升黄金样本",
+      "实现 StyleRAG",
+      "单次修改自动升级 Skill"
+    ],
+    "requiredValidationProfiles": [],
+    "forbiddenValidationProfiles": [],
+    "approvalExpectation": "required"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "assetId": "wa-style-",
+  "assetType": "external-style-card",
+  "status": "awaiting-user-input",
+  "title": "",
+  "sourceRegistryPath": "docs/写作资产/外部风格研究/来源登记/",
+  "rightsStatus": "unknown",
+  "bibliographicNote": "",
+  "abstractTechniques": [],
+  "forbiddenConcreteBorrowings": [
+    "来源特有措辞",
+    "人物名",
+    "道具",
+    "意象序列",
+    "情节顺序"
+  ],
+  "fullTextStored": false
+}

@@ -2608,6 +2608,330 @@
       "evalStatus": "not-applicable"
     },
     {
+      "id": "command-writing-assets-register",
+      "kind": "command",
+      "title": "npm run writing:assets:register",
+      "domain": "writing",
+      "status": "available",
+      "maturity": "standard",
+      "summary": "node scripts/writing-model/writing-model.mjs assets-register",
+      "userCanSay": [],
+      "userMustProvide": [],
+      "aiCanDo": [
+        "运行对应的确定性项目命令。"
+      ],
+      "aiMustNotDo": [],
+      "skills": [],
+      "agents": [],
+      "commands": [
+        "npm run writing:assets:register"
+      ],
+      "outputs": [],
+      "sourceRefs": [
+        "package.json"
+      ],
+      "userEffort": "none",
+      "lastVerified": null,
+      "evalStatus": "not-applicable"
+    },
+    {
+      "id": "command-writing-assets-validate",
+      "kind": "command",
+      "title": "npm run writing:assets:validate",
+      "domain": "writing",
+      "status": "available",
+      "maturity": "standard",
+      "summary": "node scripts/writing-model/writing-model.mjs assets-validate",
+      "userCanSay": [],
+      "userMustProvide": [],
+      "aiCanDo": [
+        "运行对应的确定性项目命令。"
+      ],
+      "aiMustNotDo": [],
+      "skills": [],
+      "agents": [],
+      "commands": [
+        "npm run writing:assets:validate"
+      ],
+      "outputs": [],
+      "sourceRefs": [
+        "package.json"
+      ],
+      "userEffort": "none",
+      "lastVerified": null,
+      "evalStatus": "not-applicable"
+    },
+    {
+      "id": "command-writing-calibration-create",
+      "kind": "command",
+      "title": "npm run writing:calibration:create",
+      "domain": "writing",
+      "status": "available",
+      "maturity": "standard",
+      "summary": "node scripts/writing-model/writing-model.mjs calibration-create",
+      "userCanSay": [],
+      "userMustProvide": [],
+      "aiCanDo": [
+        "运行对应的确定性项目命令。"
+      ],
+      "aiMustNotDo": [],
+      "skills": [],
+      "agents": [],
+      "commands": [
+        "npm run writing:calibration:create"
+      ],
+      "outputs": [],
+      "sourceRefs": [
+        "package.json"
+      ],
+      "userEffort": "none",
+      "lastVerified": null,
+      "evalStatus": "not-applicable"
+    },
+    {
+      "id": "command-writing-gaps-remind",
+      "kind": "command",
+      "title": "npm run writing:gaps:remind",
+      "domain": "writing",
+      "status": "available",
+      "maturity": "standard",
+      "summary": "node scripts/writing-model/writing-model.mjs remind-gaps",
+      "userCanSay": [],
+      "userMustProvide": [],
+      "aiCanDo": [
+        "运行对应的确定性项目命令。"
+      ],
+      "aiMustNotDo": [],
+      "skills": [],
+      "agents": [],
+      "commands": [
+        "npm run writing:gaps:remind"
+      ],
+      "outputs": [],
+      "sourceRefs": [
+        "package.json"
+      ],
+      "userEffort": "none",
+      "lastVerified": null,
+      "evalStatus": "not-applicable"
+    },
+    {
+      "id": "command-writing-golden-sync",
+      "kind": "command",
+      "title": "npm run writing:golden:sync",
+      "domain": "writing",
+      "status": "available",
+      "maturity": "standard",
+      "summary": "node scripts/writing-model/writing-model.mjs sync-golden",
+      "userCanSay": [],
+      "userMustProvide": [],
+      "aiCanDo": [
+        "运行对应的确定性项目命令。"
+      ],
+      "aiMustNotDo": [],
+      "skills": [],
+      "agents": [],
+      "commands": [
+        "npm run writing:golden:sync"
+      ],
+      "outputs": [],
+      "sourceRefs": [
+        "package.json"
+      ],
+      "userEffort": "none",
+      "lastVerified": null,
+      "evalStatus": "not-applicable"
+    },
+    {
+      "id": "command-writing-models-health",
+      "kind": "command",
+      "title": "npm run writing:models:health",
+      "domain": "writing",
+      "status": "available",
+      "maturity": "standard",
+      "summary": "node scripts/writing-model/writing-model.mjs health",
+      "userCanSay": [],
+      "userMustProvide": [],
+      "aiCanDo": [
+        "运行对应的确定性项目命令。"
+      ],
+      "aiMustNotDo": [],
+      "skills": [],
+      "agents": [],
+      "commands": [
+        "npm run writing:models:health"
+      ],
+      "outputs": [],
+      "sourceRefs": [
+        "package.json"
+      ],
+      "userEffort": "none",
+      "lastVerified": null,
+      "evalStatus": "not-applicable"
+    },
+    {
+      "id": "command-writing-models-pin",
+      "kind": "command",
+      "title": "npm run writing:models:pin",
+      "domain": "writing",
+      "status": "available",
+      "maturity": "standard",
+      "summary": "node scripts/writing-model/writing-model.mjs pin",
+      "userCanSay": [],
+      "userMustProvide": [],
+      "aiCanDo": [
+        "运行对应的确定性项目命令。"
+      ],
+      "aiMustNotDo": [],
+      "skills": [],
+      "agents": [],
+      "commands": [
+        "npm run writing:models:pin"
+      ],
+      "outputs": [],
+      "sourceRefs": [
+        "package.json"
+      ],
+      "userEffort": "none",
+      "lastVerified": null,
+      "evalStatus": "not-applicable"
+    },
+    {
+      "id": "command-writing-models-status",
+      "kind": "command",
+      "title": "npm run writing:models:status",
+      "domain": "writing",
+      "status": "available",
+      "maturity": "standard",
+      "summary": "node scripts/writing-model/writing-model.mjs status",
+      "userCanSay": [],
+      "userMustProvide": [],
+      "aiCanDo": [
+        "运行对应的确定性项目命令。"
+      ],
+      "aiMustNotDo": [],
+      "skills": [],
+      "agents": [],
+      "commands": [
+        "npm run writing:models:status"
+      ],
+      "outputs": [],
+      "sourceRefs": [
+        "package.json"
+      ],
+      "userEffort": "none",
+      "lastVerified": null,
+      "evalStatus": "not-applicable"
+    },
+    {
+      "id": "command-writing-models-validate",
+      "kind": "command",
+      "title": "npm run writing:models:validate",
+      "domain": "writing",
+      "status": "available",
+      "maturity": "standard",
+      "summary": "node scripts/writing-model/writing-model.mjs validate",
+      "userCanSay": [],
+      "userMustProvide": [],
+      "aiCanDo": [
+        "运行对应的确定性项目命令。"
+      ],
+      "aiMustNotDo": [],
+      "skills": [],
+      "agents": [],
+      "commands": [
+        "npm run writing:models:validate"
+      ],
+      "outputs": [],
+      "sourceRefs": [
+        "package.json"
+      ],
+      "userEffort": "none",
+      "lastVerified": null,
+      "evalStatus": "not-applicable"
+    },
+    {
+      "id": "command-writing-pipeline-test",
+      "kind": "command",
+      "title": "npm run writing:pipeline:test",
+      "domain": "writing",
+      "status": "available",
+      "maturity": "standard",
+      "summary": "node --test scripts/tests/writing-model-pipeline.test.mjs",
+      "userCanSay": [],
+      "userMustProvide": [],
+      "aiCanDo": [
+        "运行对应的确定性项目命令。"
+      ],
+      "aiMustNotDo": [],
+      "skills": [],
+      "agents": [],
+      "commands": [
+        "npm run writing:pipeline:test"
+      ],
+      "outputs": [],
+      "sourceRefs": [
+        "package.json"
+      ],
+      "userEffort": "none",
+      "lastVerified": null,
+      "evalStatus": "not-applicable"
+    },
+    {
+      "id": "command-writing-prose-compare",
+      "kind": "command",
+      "title": "npm run writing:prose:compare",
+      "domain": "writing",
+      "status": "available",
+      "maturity": "standard",
+      "summary": "node scripts/writing-model/writing-model.mjs compare",
+      "userCanSay": [],
+      "userMustProvide": [],
+      "aiCanDo": [
+        "运行对应的确定性项目命令。"
+      ],
+      "aiMustNotDo": [],
+      "skills": [],
+      "agents": [],
+      "commands": [
+        "npm run writing:prose:compare"
+      ],
+      "outputs": [],
+      "sourceRefs": [
+        "package.json"
+      ],
+      "userEffort": "none",
+      "lastVerified": null,
+      "evalStatus": "not-applicable"
+    },
+    {
+      "id": "command-writing-prose-draft",
+      "kind": "command",
+      "title": "npm run writing:prose:draft",
+      "domain": "writing",
+      "status": "available",
+      "maturity": "standard",
+      "summary": "node scripts/writing-model/writing-model.mjs draft",
+      "userCanSay": [],
+      "userMustProvide": [],
+      "aiCanDo": [
+        "运行对应的确定性项目命令。"
+      ],
+      "aiMustNotDo": [],
+      "skills": [],
+      "agents": [],
+      "commands": [
+        "npm run writing:prose:draft"
+      ],
+      "outputs": [],
+      "sourceRefs": [
+        "package.json"
+      ],
+      "userEffort": "none",
+      "lastVerified": null,
+      "evalStatus": "not-applicable"
+    },
+    {
       "id": "skill-brainstorm-ideas-existing",
       "kind": "skill",
       "title": "brainstorm-ideas-existing",
@@ -3008,6 +3332,31 @@
       "evalStatus": "unknown"
     },
     {
+      "id": "skill-liluo-formal-prose-pipeline",
+      "kind": "skill",
+      "title": "liluo-formal-prose-pipeline",
+      "domain": "project",
+      "status": "available",
+      "maturity": "standard",
+      "summary": "Run the 璃落 open-weight dual-model formal prose pipeline with writing contracts, mock/live OpenAI-compatible calls, workspace drafts, natural-expression checks, user approval, golden/calibration archival, and gap reminders. Use for 正式正文、双模型对照、写作模型 API、个人旧作导入、黄金正文归档、修改对照、模型校准或 pin；not for ordinary one-line polish (use liluo-natural-expression), StyleRAG, or letting external models write canon.",
+      "userCanSay": [],
+      "userMustProvide": [],
+      "aiCanDo": [],
+      "aiMustNotDo": [],
+      "skills": [
+        "liluo-formal-prose-pipeline"
+      ],
+      "agents": [],
+      "commands": [],
+      "outputs": [],
+      "sourceRefs": [
+        ".agents\\skills\\liluo-project\\liluo-formal-prose-pipeline\\SKILL.md"
+      ],
+      "userEffort": "low",
+      "lastVerified": null,
+      "evalStatus": "unknown"
+    },
+    {
       "id": "skill-liluo-game-content-validator",
       "kind": "skill",
       "title": "liluo-game-content-validator",
@@ -3158,6 +3507,31 @@
       "evalStatus": "unknown"
     },
     {
+      "id": "skill-liluo-plot-placement-interview",
+      "kind": "skill",
+      "title": "liluo-plot-placement-interview",
+      "domain": "project",
+      "status": "available",
+      "maturity": "standard",
+      "summary": "Select a 璃落 plot-catalog entry (random unused/partial or specified), propose outline placement by world bias with mainline vs side judgment, then interview after user approval. Use for 从情节库抽取、未用情节安置、指定情节对照大纲、主线还是支线；not for outline-first random interview, listing unused plots without placement, or writing plot-only catalog entries.",
+      "userCanSay": [],
+      "userMustProvide": [],
+      "aiCanDo": [],
+      "aiMustNotDo": [],
+      "skills": [
+        "liluo-plot-placement-interview"
+      ],
+      "agents": [],
+      "commands": [],
+      "outputs": [],
+      "sourceRefs": [
+        ".agents\\skills\\liluo-project\\liluo-plot-placement-interview\\SKILL.md"
+      ],
+      "userEffort": "low",
+      "lastVerified": null,
+      "evalStatus": "unknown"
+    },
+    {
       "id": "skill-liluo-production-coverage",
       "kind": "skill",
       "title": "liluo-production-coverage",
@@ -3239,7 +3613,7 @@
       "domain": "project",
       "status": "available",
       "maturity": "standard",
-      "summary": "Synchronize 璃落 feature docs, 功能更新目录, updateRecords.js, and project/user-facing 技能说明 while preserving dates and IDs. Use after material feature, workflow, schema, behavior, or user-facing Skill changes; do not trigger for wording-only Skill edits, internal metadata, typo fixes, or routine content maintenance.",
+      "summary": "Synchronize 璃落 feature docs, 功能更新目录, updateRecords.js, and project/user-facing 技能说明 while preserving dates and IDs. Use after material feature, workflow, schema, behavior, or user-facing Skill changes, and before claiming such a task complete; do not skip because docs feel optional. Do not trigger for wording-only Skill edits, internal metadata, typo fixes, or routine content maintenance.",
       "userCanSay": [],
       "userMustProvide": [],
       "aiCanDo": [],
@@ -3414,7 +3788,7 @@
       "domain": "project",
       "status": "available",
       "maturity": "standard",
-      "summary": "Create, expand, or template-refactor a specified 璃落 story node while synchronizing source JSON and Markdown. Use for 新增故事条目、完善大纲、灵感升级、补齐地图事件玩法状态；not for random interviews, graph-only moves, audits, or map implementation.",
+      "summary": "Create, expand, or template-refactor a specified 璃落 story node while synchronizing source JSON and Markdown. Use for 新增故事条目、完善大纲、灵感升级、补齐地图事件玩法状态；not for outline-first random interviews, plot-first placement interviews, graph-only moves, audits, or map implementation.",
       "userCanSay": [],
       "userMustProvide": [],
       "aiCanDo": [],
@@ -3614,7 +3988,7 @@
       "domain": "general",
       "status": "available",
       "maturity": "standard",
-      "summary": "Randomly select an incomplete 璃落 story-outline node, reconstruct confirmed JSON/Markdown context, and ask a focused interview. Use for 随机抽取、按世界访谈、继续随机提问；do not use for directly drafting or restructuring a specified node.",
+      "summary": "Randomly select an incomplete 璃落 story-outline node, reconstruct confirmed JSON/Markdown context, and ask a focused interview. Use for 随机抽取、按世界访谈、继续随机提问；do not use for plot-first placement from the plot catalog, or for directly drafting or restructuring a specified node.",
       "userCanSay": [],
       "userMustProvide": [],
       "aiCanDo": [],

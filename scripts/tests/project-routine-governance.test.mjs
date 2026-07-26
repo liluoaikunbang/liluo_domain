@@ -28,6 +28,11 @@ test('project routine exposes only fixed safe modes', () => {
   assert.deepEqual(resolveRoutinePlan('natural-expression').map((step) => step.id), [
     'natural-expression-test',
   ])
+  assert.deepEqual(resolveRoutinePlan('writing').map((step) => step.id), [
+    'writing-models-validate',
+    'writing-assets-validate',
+    'writing-pipeline-test',
+  ])
   assert.deepEqual(resolveRoutinePlan('check').map((step) => step.id), [
     'docs:check-encoding',
     'docs:governance:validate',

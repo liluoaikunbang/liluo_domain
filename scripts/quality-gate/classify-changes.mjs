@@ -48,6 +48,16 @@ export function classifyChanges(inputFiles = []) {
     const isCommandApprovalGovernance = file.startsWith('scripts/command-approval/')
       || file === 'scripts/tests/command-approval-governance.test.mjs'
     const isProjectRoutineGovernance = file === 'scripts/tests/project-routine-governance.test.mjs'
+      || file === 'scripts/project-routine.mjs'
+    const isWritingPipeline = file.startsWith('scripts/writing-model/')
+      || file === 'scripts/tests/writing-model-pipeline.test.mjs'
+      || file === 'project-navigation/writing-models.json'
+      || file === '.env.writing.example'
+    const isProjectNavigation = file.startsWith('project-navigation/')
+      || file.startsWith('scripts/project-navigation/')
+    const isEvalsRegistry = file.startsWith('evals/')
+    const isCursorAdapter = file.startsWith('.cursor/rules/')
+    const isDocumentGovernanceScripts = file.startsWith('scripts/document-governance/')
     const isExecutableWorkflow = file.startsWith('project-workflows/')
       || file.startsWith('scripts/project-workflows/')
       || file === 'scripts/tests/project-workflows.test.mjs'
@@ -63,6 +73,7 @@ export function classifyChanges(inputFiles = []) {
       '.nvmrc',
       'package.json',
       'package-lock.json',
+      '.env.writing.example',
     ].includes(file)
       || /^vite\.config\./.test(file)
       || /^tsconfig[^/]*\.json$/.test(file)
@@ -80,8 +91,16 @@ export function classifyChanges(inputFiles = []) {
       || isCommandApprovalGovernance
       || isProjectRoutineGovernance
       || isExecutableWorkflow
+      || isWritingPipeline
+      || isProjectNavigation
+      || isEvalsRegistry
+      || isCursorAdapter
+      || isDocumentGovernanceScripts
     ) fileDomains.add('skills-agents-governance')
-    if (isStructuredData || file.startsWith('schemas/workflows/')) fileDomains.add('schemas-data')
+    if (isWritingPipeline) {
+      requires.add('writing-pipeline-tests')
+      requires.add('docs-governance')
+    }    if (isStructuredData || file.startsWith('schemas/workflows/')) fileDomains.add('schemas-data')
     // 定义/运行时脚本变更：完整 workflow 校验+测试。不在此自动重生成文档。
     if (isExecutableWorkflow) requires.add('executable-workflow-tests')
     // Skill/Agent 变更：只做轻量引用校验（不重生成图，避免频繁写生成物）。
@@ -117,6 +136,11 @@ export function classifyChanges(inputFiles = []) {
       || file.startsWith('scripts/quality-gate/')
     ) requires.add('quality-gate-tests')
     if (isCommandApprovalGovernance) requires.add('command-approval-tests')
+    // 项目 Skill 变更必须核对用户命令目录是否已登记；不能只在改目录文件时才校验。
+    if (file.startsWith('.agents/skills/liluo-project/') && file.endsWith('/SKILL.md')) {
+      requires.add('user-command-sync')
+      requires.add('docs-governance')
+    }
 
     for (const domain of fileDomains) domains.add(domain)
     if (fileDomains.size === 0 && !file.startsWith('project-index/') && !file.startsWith('reports/')) {

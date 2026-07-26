@@ -8,3 +8,4 @@ alwaysApply: false
 - “情节、桥段、情节库”写入 `src/game/data/plot_outline/catalog.json`；“大纲、主线、节点”才进入故事大纲来源，除非用户明确要求关联两库。
 - 候选灵感未经用户批准不得写入正式内容；结构性数据修改使用现有 schema、验证器和最小适用检查。
 - 正式阅读向内容的成员复核按 `project-navigation/team-routing.json` 路由，不读取全员灵魂卡。
+- 开放权重正式正文候选走 `liluo-formal-prose-pipeline`，只写入 `docs/写作资产/工作区/`；批准后由现有故事/对话 Skill 写入正式文件。

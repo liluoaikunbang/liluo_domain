@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "requestId": "bad-id",
+  "status": "draft",
+  "textType": "fiction-prose",
+  "purpose": "x",
+  "canonSources": ["docs/写作资产/模板/正式正文写作合同说明.md"],
+  "immutableFacts": ["a"],
+  "characters": [],
+  "scene": {
+    "world": "n",
+    "location": "l",
+    "time": "t",
+    "pov": "third-person-limited",
+    "narrativeFocus": "f",
+    "goal": "g",
+    "requiredBeats": [],
+    "forbiddenAdditions": [],
+    "stateAfter": []
+  },
+  "expression": {
+    "targetChineseCharacters": { "min": 10, "max": 20 },
+    "intensity": "light",
+    "styleReferenceIds": [],
+    "specialConstraints": []
+  },
+  "output": {
+    "format": "markdown-prose-only",
+    "includeTitle": false,
+    "includeExplanation": false
+  }
+}

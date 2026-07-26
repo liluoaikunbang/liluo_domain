@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "models": [
+    {
+      "id": "zhi-create-dsr1-14b",
+      "repository": "Zhihu-ai/Zhi-Create-DSR1-14B",
+      "revision": null,
+      "license": "apache-2.0",
+      "metadataStatus": "awaiting-pin",
+      "weightsArchiveStatus": "not-downloaded",
+      "modelCardSnapshot": null,
+      "licenseSnapshot": null
+    },
+    {
+      "id": "zhi-create-qwen3-32b",
+      "repository": "Zhihu-ai/Zhi-Create-Qwen3-32B",
+      "revision": null,
+      "license": "apache-2.0",
+      "metadataStatus": "awaiting-pin",
+      "weightsArchiveStatus": "not-downloaded",
+      "modelCardSnapshot": null,
+      "licenseSnapshot": null
+    }
+  ]
+}

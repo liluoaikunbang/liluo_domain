@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "policyId": "liluo-open-weight-writing-models",
+  "status": "unconfigured",
+  "protocol": {
+    "type": "openai-compatible",
+    "endpoint": "/v1/chat/completions",
+    "modelsEndpoint": "/v1/models",
+    "remoteHttpsRequired": true,
+    "localhostHttpAllowed": true
+  },
+  "defaults": {
+    "singleDraftRequiresExplicitModel": true,
+    "compareUsesBothModels": true,
+    "automaticCanonWrite": false,
+    "automaticSkillUpdate": false,
+    "storeReasoningContent": false,
+    "liveNetworkCallsInRoutineTests": false,
+    "productionDefault": null,
+    "comparisonModels": [
+      "zhi-create-dsr1-14b",
+      "zhi-create-qwen3-32b"
+    ],
+    "routingStatus": "awaiting-calibration"
+  },
+  "timeouts": {
+    "connectMs": 15000,
+    "requestMs": 120000
+  },
+  "retry": {
+    "maxAttempts": 2,
+    "backoffMs": [500, 1500],
+    "retryStatusCodes": [429, 500, 502, 503, 504]
+  },
+  "models": [
+    {
+      "id": "zhi-create-dsr1-14b",
+      "displayName": "Zhi-Create-DSR1-14B",
+      "repository": "Zhihu-ai/Zhi-Create-DSR1-14B",
+      "baseModel": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+      "license": "apache-2.0",
+      "role": "deepseek-distilled-writing-candidate",
+      "aliases": ["dsr1", "dsr1-14b"],
+      "env": {
+        "baseUrl": "LILUO_WRITER_DSR1_BASE_URL",
+        "apiKey": "LILUO_WRITER_DSR1_API_KEY",
+        "servedModel": "LILUO_WRITER_DSR1_MODEL"
+      },
+      "defaultServedModel": "Zhihu-ai/Zhi-Create-DSR1-14B",
+      "generation": {
+        "temperature": 0.6,
+        "topP": 0.95,
+        "maxTokens": 4096,
+        "stream": false
+      },
+      "thinking": {
+        "mode": "provider-default",
+        "excludeFromDraft": true,
+        "excludeFromArchive": true
+      },
+      "extraBodyAllowlist": ["chat_template_kwargs", "enable_thinking", "thinking"]
+    },
+    {
+      "id": "zhi-create-qwen3-32b",
+      "displayName": "Zhi-Create-Qwen3-32B",
+      "repository": "Zhihu-ai/Zhi-Create-Qwen3-32B",
+      "baseModel": "Qwen/Qwen3-32B",
+      "license": "apache-2.0",
+      "role": "large-writing-quality-candidate",
+      "aliases": ["qwen3", "qwen3-32b"],
+      "env": {
+        "baseUrl": "LILUO_WRITER_QWEN3_BASE_URL",
+        "apiKey": "LILUO_WRITER_QWEN3_API_KEY",
+        "servedModel": "LILUO_WRITER_QWEN3_MODEL"
+      },
+      "defaultServedModel": "Zhihu-ai/Zhi-Create-Qwen3-32B",
+      "generation": {
+        "temperature": 0.6,
+        "topP": 0.95,
+        "maxTokens": 4096,
+        "stream": false
+      },
+      "thinking": {
+        "mode": "configurable",
+        "excludeFromDraft": true,
+        "excludeFromArchive": true
+      },
+      "extraBodyAllowlist": ["chat_template_kwargs", "enable_thinking", "thinking"]
+    }
+  ]
+}

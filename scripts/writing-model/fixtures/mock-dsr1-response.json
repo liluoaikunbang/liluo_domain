@@ -1,0 +1,22 @@
+{
+  "id": "mock-dsr1-001",
+  "object": "chat.completion",
+  "created": 1720000000,
+  "model": "Zhihu-ai/Zhi-Create-DSR1-14B",
+  "choices": [
+    {
+      "index": 0,
+      "finish_reason": "stop",
+      "message": {
+        "role": "assistant",
+        "reasoning_content": "先想节奏，再写动作，这段推理不应进入正文。",
+        "content": "<think>内部思考，应被剥离。</think>暮色落进窗沿时，璃落把茶杯推向桌心。杯底轻轻一响，像把白天的喧闹按了下去。她没有立刻说话，只看着对面那人尚未收拢的袖口，确认自己还站在自己选过的距离里。"
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 120,
+    "completion_tokens": 80,
+    "total_tokens": 200
+  }
+}

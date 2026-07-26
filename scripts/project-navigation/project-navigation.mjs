@@ -56,7 +56,7 @@ export async function scanNavigation(root = ROOT) {
     capabilities.push({ id: `agent-${fallback.replaceAll('_', '-')}`, kind: 'agent', title: name, domain: 'project', status: 'available', maturity: 'standard', summary: description, userCanSay: [], userMustProvide: [], aiCanDo: ['在主 Codex 的调度下进行只读调查或验证。'], aiMustNotDo: ['不直接写入正式项目文件。'], skills: [], agents: [fallback], commands: [], outputs: [], sourceRefs: [file], userEffort: 'none', lastVerified: null, evalStatus: 'unknown' })
   }
   const packageJson = await readJson(path.join(root, 'package.json'))
-  for (const [name, command] of Object.entries(packageJson.scripts ?? {})) if (/^(project:|story:|game:|docs:|external:|external-skills:|data:contracts:|evals:|team:)/.test(name)) capabilities.push({ id: `command-${name.replaceAll(':', '-')}`, kind: 'command', title: `npm run ${name}`, domain: name.split(':')[0], status: 'available', maturity: 'standard', summary: String(command), userCanSay: [], userMustProvide: [], aiCanDo: ['运行对应的确定性项目命令。'], aiMustNotDo: [], skills: [], agents: [], commands: [`npm run ${name}`], outputs: [], sourceRefs: ['package.json'], userEffort: 'none', lastVerified: null, evalStatus: 'not-applicable' })
+  for (const [name, command] of Object.entries(packageJson.scripts ?? {})) if (/^(project:|story:|game:|docs:|external:|external-skills:|data:contracts:|evals:|team:|writing:)/.test(name)) capabilities.push({ id: `command-${name.replaceAll(':', '-')}`, kind: 'command', title: `npm run ${name}`, domain: name.split(':')[0], status: 'available', maturity: 'standard', summary: String(command), userCanSay: [], userMustProvide: [], aiCanDo: ['运行对应的确定性项目命令。'], aiMustNotDo: [], skills: [], agents: [], commands: [`npm run ${name}`], outputs: [], sourceRefs: ['package.json'], userEffort: 'none', lastVerified: null, evalStatus: 'not-applicable' })
   const gaps = []
   for (const node of await readJson(path.join(root, 'project-index/story/missing-items.json'), [])) for (const item of node.missingItems ?? []) { const derived = gapFromMissingItem(node, item); const prior = previous.get(derived.id); gaps.push({ ...derived, ...prior, status: prior?.status === 'completed' && !prior.completionEvidence ? 'needs-review' : prior?.status ?? derived.status, lastSeenAt: now() }) }
   for (const gap of (await readJson(path.join(nav, 'manual-gaps.json'), { gaps: [] })).gaps ?? []) gaps.push({ ...gap, ...previous.get(gap.id), lastSeenAt: now() })
@@ -70,7 +70,9 @@ export async function scanNavigation(root = ROOT) {
     { id: 'workflow-zhihu-fiction-ingest', title: '从知乎小说扩充外部 RAG', domain: 'knowledge', status: 'available', summary: '下载用户给出的知乎小说，隔离保存并建立可检索的非正式参考。', userCanSay: ['下载这个知乎小说链接并存入 RAG', '把这个知乎回答作为灵感来源收进外部小说素材'], userMustProvide: ['知乎文章、回答或专栏链接'], steps: ['检查知识库状态', '下载到 staging', '导入 external-fiction RAG', '检索验证'], approvalPoints: ['遇到登录或 Cookie 时'], completionEvidence: ['导入路径与可检索结果'], capabilityIds: ['skill-liluo-zhihu-novel-ingest'], sourceRefs: ['docs/用户命令目录.md'] },
     { id: 'workflow-bondage-rag-expansion', title: '用紧缚小说扩充紧缚元素 RAG', domain: 'knowledge', status: 'available', summary: '把用户有权提供的外部紧缚小说作为非正式参考，抽象检索紧缚元素与叙事机制。', userCanSay: ['把这篇紧缚小说收进紧缚元素 RAG', '从紧缚小说里找某种元素的抽象参考'], userMustProvide: ['可处理的来源链接或文件，以及希望检索的元素'], steps: ['确认来源与非正典边界', '导入或查询外部知识', '返回抽象卡与来源定位', '需要正式写入时再做原创重组'], approvalPoints: ['外部来源导入与任何正式内容采用前'], completionEvidence: ['来源状态与可检索抽象卡'], capabilityIds: ['skill-liluo-external-fiction-knowledge'], sourceRefs: ['docs/用户命令目录.md'] },
     { id: 'workflow-unused-plot-audit', title: '盘点未应用情节库', domain: 'story', status: 'available', summary: '筛出未使用或仅部分使用的情节，按当前世界、人物、地点和玩家流程给出适配候选。', userCanSay: ['列出情节库中还没应用过的情节', '给这个节点找几个未用情节库候选'], userMustProvide: ['目标世界、节点或筛选偏好（可选）'], steps: ['读取情节库 usageStatus', '核验目标节点的已确认事实', '筛出真实匹配条目', '展示可审批选项'], approvalPoints: ['将候选写入大纲前'], completionEvidence: ['用户选择或明确暂不采用'], capabilityIds: ['skill-liluo-story-gap-discovery', 'skill-liluo-story-outline-authoring'], sourceRefs: ['src/game/data/plot_outline/catalog.json'] },
-    { id: 'workflow-plot-to-outline', title: '把情节候选补充进大纲', domain: 'story', status: 'available', summary: '用户确认某个情节候选后，写入最贴近的既有节点并同步情节库使用状态。', userCanSay: ['把 plot-xxx 作为候选给这个节点看看', '采用这个情节补充到大纲'], userMustProvide: ['目标节点与明确采用/调整决定'], steps: ['核验候选与目标适配', '用户批准', '同步故事 JSON/Markdown', '更新 plot usedBy 与 usageStatus', '最小验证'], approvalPoints: ['必须先明确采用'], completionEvidence: ['故事来源与情节库引用同步'], capabilityIds: ['skill-liluo-story-outline-authoring'], sourceRefs: ['src/game/data/plot_outline/catalog.json'] }
+    { id: 'workflow-plot-placement-interview', title: '从情节库安置并访谈', domain: 'story', status: 'available', summary: '从情节库抽取未用或指定情节，按世界偏向对照大纲建议主线/支线落点，批准后再聚焦提问并写回。', userCanSay: ['随机抽一个未用情节，看适合加到哪', '把 plot-xxx 对照大纲，建议主线还是支线，再问我', '按都市偏向找一个未用情节安置并访谈'], userMustProvide: ['指定情节、世界偏向或随机偏好（可选）'], steps: ['选取情节条目', '按世界偏向提出落点', '用户批准落点', '聚焦访谈', '写回大纲并更新 usedBy'], approvalPoints: ['落点写入与访谈开始前'], completionEvidence: ['批准落点、访谈写回与情节引用同步'], capabilityIds: ['skill-liluo-plot-placement-interview', 'skill-liluo-story-outline-authoring'], sourceRefs: ['src/game/data/plot_outline/catalog.json', 'docs/系统说明/情节安置提问模板.md'] },
+    { id: 'workflow-plot-to-outline', title: '把情节候选补充进大纲', domain: 'story', status: 'available', summary: '用户确认某个情节候选后，写入最贴近的既有节点并同步情节库使用状态。', userCanSay: ['把 plot-xxx 作为候选给这个节点看看', '采用这个情节补充到大纲'], userMustProvide: ['目标节点与明确采用/调整决定'], steps: ['核验候选与目标适配', '用户批准', '同步故事 JSON/Markdown', '更新 plot usedBy 与 usageStatus', '最小验证'], approvalPoints: ['必须先明确采用'], completionEvidence: ['故事来源与情节库引用同步'], capabilityIds: ['skill-liluo-story-outline-authoring'], sourceRefs: ['src/game/data/plot_outline/catalog.json'] },
+    { id: 'workflow-formal-prose-pipeline', title: '开放权重正式正文写作', domain: 'writing', status: 'available', summary: '按写作合同调用 DSR1/Qwen3 生成工作区候选，经自然表达检查与用户批准后再写入正式内容。', userCanSay: ['用写作模型写正式正文候选', 'DSR1 和 Qwen3 对照这段', '检查写作模型 API', '归档黄金正文或修改对照'], userMustProvide: ['场景事实或写作合同；live 时需本地 .env.writing.local'], steps: ['核验正史', '填写合同', '显式选模型或对照', '工作区候选', '自然表达检查', '用户批准', '故事 Skill 写入并同步黄金资产'], approvalPoints: ['写入正式内容前', 'live 调用前'], completionEvidence: ['工作区 run manifest 与用户批准记录'], capabilityIds: ['skill-liluo-formal-prose-pipeline', 'skill-liluo-natural-expression'], sourceRefs: ['docs/系统说明/开放权重双模型写作管线.md', 'project-navigation/writing-models.json'] }
   )
   // Merge machine-readable executable workflows (authoritative under project-workflows/).
   try {
@@ -99,7 +101,9 @@ export async function scanNavigation(root = ROOT) {
     { id: 'source-plot-catalog', type: 'repository-file', title: '情节库', status: 'current', location: 'src/game/data/plot_outline/catalog.json', checkedAt: now() },
     { id: 'source-executable-workflows', type: 'repository-file', title: '可执行工作流定义', status: 'current', location: 'project-workflows/definitions/', checkedAt: now() },
     { id: 'source-context-policy', type: 'repository-file', title: '上下文装载策略', status: 'current', location: 'project-navigation/context-policy.json', checkedAt: now() },
-    { id: 'source-team-routing', type: 'repository-file', title: '创作组路由策略', status: 'current', location: 'project-navigation/team-routing.json', checkedAt: now() }
+    { id: 'source-team-routing', type: 'repository-file', title: '创作组路由策略', status: 'current', location: 'project-navigation/team-routing.json', checkedAt: now() },
+    { id: 'source-writing-models', type: 'repository-file', title: '开放权重写作模型注册表', status: 'current', location: 'project-navigation/writing-models.json', checkedAt: now() },
+    { id: 'source-writing-assets', type: 'repository-file', title: '写作资产注册表', status: 'current', location: 'docs/写作资产/registry.json', checkedAt: now() }
   ]
   const status = { schemaVersion: 1, scannedAt: now(), counts: { capabilities: capabilities.length, workflows: workflows.length, gaps: gaps.length, gameplay: gameplay.length, plots: plotCounts } }
   await Promise.all([writeJson(path.join(nav, 'capabilities.json'), { schemaVersion: 1, capabilities: sortById(capabilities) }), writeJson(path.join(nav, 'workflows.json'), { schemaVersion: 1, workflows: sortById(workflows) }), writeJson(path.join(nav, 'gaps.json'), { schemaVersion: 1, gaps: sortById(gaps) }), writeJson(path.join(nav, 'gameplay-coverage.json'), { schemaVersion: 1, gameplay: sortById(gameplay) }), writeJson(path.join(nav, 'sources.json'), { schemaVersion: 1, sources: sortById(sources) }), writeJson(path.join(nav, 'status.json'), status)])
@@ -121,6 +125,8 @@ export async function buildDocs(root = ROOT) {
     '从情节库里挑适合当前世界或节点的内容；先给你选项，你决定后才补进大纲。', '',
     '- “给《某节点》找 3 个还没用过的情节。”',
     '- “列出适合浮光掠影的未用紧缚情节。”',
+    '- “随机抽一个未用情节，看适合加到哪，再问我。”',
+    '- “把 plot-xxx 对照大纲，建议主线还是支线，再问我。”',
     '- “我采用 plot-xxx，把它补充到这个节点。”', '',
     '## 2. 我不知道故事下一步该补什么', '',
     '从现有大纲里找真正缺的内容，给你几个可选方向，而不是替你定剧情。', '',
@@ -153,7 +159,7 @@ export async function buildDocs(root = ROOT) {
 export async function validateNavigation(root = ROOT) {
   const errors = []
   const nav = path.join(root, 'project-navigation')
-  for (const name of ['registry.json', 'capabilities.json', 'workflows.json', 'gaps.json', 'gameplay-coverage.json', 'sources.json', 'status.json', 'context-policy.json', 'team-routing.json']) {
+  for (const name of ['registry.json', 'capabilities.json', 'workflows.json', 'gaps.json', 'gameplay-coverage.json', 'sources.json', 'status.json', 'context-policy.json', 'team-routing.json', 'writing-models.json', 'manual-gaps.json']) {
     if (!await exists(path.join(nav, name))) errors.push(`missing project-navigation/${name}`)
   }
   if (errors.length) return { ok: false, errors }

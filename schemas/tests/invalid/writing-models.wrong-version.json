@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 2,
+  "policyId": "liluo-open-weight-writing-models",
+  "status": "unconfigured",
+  "protocol": {
+    "type": "openai-compatible",
+    "endpoint": "/v1/chat/completions",
+    "modelsEndpoint": "/v1/models",
+    "remoteHttpsRequired": true,
+    "localhostHttpAllowed": true
+  },
+  "defaults": {
+    "singleDraftRequiresExplicitModel": true,
+    "compareUsesBothModels": true,
+    "automaticCanonWrite": false,
+    "automaticSkillUpdate": false,
+    "storeReasoningContent": false,
+    "liveNetworkCallsInRoutineTests": false
+  },
+  "models": []
+}

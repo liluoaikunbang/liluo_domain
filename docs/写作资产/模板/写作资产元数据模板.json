@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "assetId": "wa-",
+  "assetType": "golden-approved",
+  "status": "awaiting-user-input",
+  "title": "",
+  "path": "",
+  "ownership": {
+    "category": "user-owned",
+    "source": "",
+    "permissionNote": ""
+  },
+  "classification": {
+    "sceneFunction": [],
+    "worldTypes": [],
+    "pov": "",
+    "dialogueDensity": "",
+    "actionDensity": "",
+    "tensionLevel": ""
+  },
+  "provenance": {
+    "sourceModel": null,
+    "modelRunId": null,
+    "requestContractId": null,
+    "humanEdited": true,
+    "approvedByUser": false,
+    "approvalBasis": null,
+    "approvedAt": null
+  },
+  "authority": {
+    "canonStatus": "unknown",
+    "styleRecommendation": "unreviewed",
+    "sourceOfTruthPath": ""
+  },
+  "qualityNotes": {
+    "strengths": [],
+    "limitations": [],
+    "usableFor": [],
+    "notFor": []
+  },
+  "hash": "",
+  "createdAt": "",
+  "updatedAt": ""
+}

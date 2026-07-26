@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "requestId": "fp-eval-01-urban-daily",
+  "status": "draft",
+  "textType": "fiction-prose",
+  "purpose": "评测：都市日常与人物互动",
+  "canonSources": ["docs/写作资产/模型评测/题集/01-urban-daily/README.md"],
+  "immutableFacts": ["双方均为成年人", "本场景为合成评测，不进入正史"],
+  "characters": [{ "id": "lead", "stateBefore": [], "knowledgeBoundary": [], "voiceNotes": [] }],
+  "scene": {
+    "world": "neutral-synthetic",
+    "location": "待填",
+    "time": "待填",
+    "pov": "third-person-limited",
+    "narrativeFocus": "都市日常与人物互动",
+    "goal": "完成该类评测最小段落",
+    "requiredBeats": [],
+    "forbiddenAdditions": ["正式世界专有名词", "未批准组织"],
+    "stateAfter": []
+  },
+  "expression": {
+    "targetChineseCharacters": { "min": 400, "max": 800 },
+    "intensity": "deep",
+    "styleReferenceIds": [],
+    "specialConstraints": []
+  },
+  "output": { "format": "markdown-prose-only", "includeTitle": false, "includeExplanation": false }
+}
