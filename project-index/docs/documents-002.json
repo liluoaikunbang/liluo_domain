@@ -1,5 +1,27 @@
 [
   {
+    "id": "docs/系统说明/故事大纲世界选项/4-fantasy.md",
+    "indexVersion": 1,
+    "sourceHash": "5a1eee1a9cf7accd2338d4cb313c7683a8e61830fd31793740c5381a596e4af3",
+    "sourcePath": "docs/系统说明/故事大纲世界选项/4-fantasy.md",
+    "subtype": "system",
+    "summary": "咒缚回响故事大纲选项",
+    "summarySource": "title-only",
+    "title": "咒缚回响故事大纲选项",
+    "type": "document"
+  },
+  {
+    "id": "docs/系统说明/故事大纲世界选项/5-science.md",
+    "indexVersion": 1,
+    "sourceHash": "d826fea11dfec353159f95476fa05cc00db89f0fc3451d9eedb798b72fd039e5",
+    "sourcePath": "docs/系统说明/故事大纲世界选项/5-science.md",
+    "subtype": "system",
+    "summary": "星宇织梦故事大纲选项",
+    "summarySource": "title-only",
+    "title": "星宇织梦故事大纲选项",
+    "type": "document"
+  },
+  {
     "id": "docs/系统说明/故事大纲随机提问模板.md",
     "indexVersion": 1,
     "sourceHash": "3b6fa6b650b4cd3b26ba530d4ac78012474faffd7606a5f1f3aa8411412eff9e",
@@ -79,7 +101,7 @@
   {
     "id": "docs/系统说明/璃落创作组人格与项目陪伴系统.md",
     "indexVersion": 1,
-    "sourceHash": "28d921ecb667ee3f0fdb8e41eae79937047a3bfdf1a02337a61b01be9215a9f3",
+    "sourceHash": "dfaee2a53c61b29344d21cfcfe92afeb4dc2d96aed61dacd98bb4d14d6c4605f",
     "sourcePath": "docs/系统说明/璃落创作组人格与项目陪伴系统.md",
     "subtype": "system",
     "summary": "璃落创作组人格与项目陪伴系统",
@@ -365,7 +387,7 @@
   {
     "id": "docs/用户命令目录.md",
     "indexVersion": 1,
-    "sourceHash": "4d1a3545856e36b1028c65d1218372a3f3a34202162db626b1ac0a7ef78c8aa7",
+    "sourceHash": "a384391d1583e324f7f63595685429cd99f3645e806339a622cd21d4601d0bab",
     "sourcePath": "docs/用户命令目录.md",
     "subtype": "other",
     "summary": "用户命令目录",
@@ -409,7 +431,7 @@
   {
     "id": "docs/运行规范/Codex命令批准分级表.md",
     "indexVersion": 1,
-    "sourceHash": "cca823c7a5581390211c8f2a59e822764537bea26145ddc77eaf579bded059aa",
+    "sourceHash": "a8d65590a534888f5a4746ad87a077714b006285aae1c7f7e10adcc50ff4a6be",
     "sourcePath": "docs/运行规范/Codex命令批准分级表.md",
     "subtype": "other",
     "summary": "Codex 命令批准分级表",
@@ -420,7 +442,7 @@
   {
     "id": "docs/智能体说明/项目子智能体体系.md",
     "indexVersion": 1,
-    "sourceHash": "d428632d8b82ccba2009c64fa7f39404a09d3300ff40e00dedd96f26bdce9a44",
+    "sourceHash": "df30057be0b355f9df67cf66bce44dac309f39ba2ee1a6388ce65ef56d351e3a",
     "sourcePath": "docs/智能体说明/项目子智能体体系.md",
     "subtype": "agent",
     "summary": "项目子智能体体系",

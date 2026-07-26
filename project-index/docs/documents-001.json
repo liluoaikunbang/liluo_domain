@@ -1782,9 +1782,20 @@
     "type": "document"
   },
   {
+    "id": "docs/功能更新/159-默认沉浸模式与智能委派.md",
+    "indexVersion": 1,
+    "sourceHash": "a84b88cbd30ae9b8680c5aaf6d283f06a3b68bd0e53f099af3da50a93a8f050f",
+    "sourcePath": "docs/功能更新/159-默认沉浸模式与智能委派.md",
+    "subtype": "update",
+    "summary": "159-默认沉浸模式与智能委派",
+    "summarySource": "title-only",
+    "title": "159-默认沉浸模式与智能委派",
+    "type": "document"
+  },
+  {
     "id": "docs/功能更新目录.md",
     "indexVersion": 1,
-    "sourceHash": "ed7e6556a8739e0880b09b90708f92cdd6d696b4890757f26e6d1ba8ffa262be",
+    "sourceHash": "85639b144ce5bb7fc44810d0b6325d2180e92bc1bbc87e55a8c53d1eac42eb59",
     "sourcePath": "docs/功能更新目录.md",
     "subtype": "other",
     "summary": "功能更新目录",
@@ -1883,7 +1894,7 @@
   {
     "id": "docs/技能说明/liluo-creative-team-presence.md",
     "indexVersion": 1,
-    "sourceHash": "279ebb9786e9258797820e66682b7e7aad903e63eba8104fde214ecc122da24e",
+    "sourceHash": "8e76cc93433da683d410de3a7d3a0b6b48b46dca2ab7991282a82b649faa379e",
     "sourcePath": "docs/技能说明/liluo-creative-team-presence.md",
     "subtype": "skill",
     "summary": "liluo-creative-team-presence",
@@ -2169,7 +2180,7 @@
   {
     "id": "docs/设计记忆/创作决策/CDR-003-将项目智能体组织为璃落创作组.md",
     "indexVersion": 1,
-    "sourceHash": "81fded599dad13f631a72cf792a991c21d9684056000af79dd32d1f331fbc20f",
+    "sourceHash": "322e0d4ffba8a50f463f5f809088146c1342a41ef67b393d95fb786faea2e8c7",
     "sourcePath": "docs/设计记忆/创作决策/CDR-003-将项目智能体组织为璃落创作组.md",
     "subtype": "other",
     "summary": "CDR-003：将项目智能体组织为璃落创作组",
@@ -2208,6 +2219,17 @@
     "summary": "CDR-006：正式项目角色统一为成年人",
     "summarySource": "title-only",
     "title": "CDR-006：正式项目角色统一为成年人",
+    "type": "document"
+  },
+  {
+    "id": "docs/设计记忆/创作决策/CDR-007-默认启用沉浸模式与智能委派.md",
+    "indexVersion": 1,
+    "sourceHash": "5468b5649b270c7b93c81849cb53fa03a7408f7dedd187e85ffd57734525e324",
+    "sourcePath": "docs/设计记忆/创作决策/CDR-007-默认启用沉浸模式与智能委派.md",
+    "subtype": "other",
+    "summary": "CDR-007：默认启用沉浸模式与智能委派",
+    "summarySource": "title-only",
+    "title": "CDR-007：默认启用沉浸模式与智能委派",
     "type": "document"
   },
   {
@@ -2378,7 +2400,7 @@
   {
     "id": "docs/设计记忆/项目组灵魂/表达模式.md",
     "indexVersion": 1,
-    "sourceHash": "9d3c23ed320a402b0b9b256b76c708a3a618ccfdea5959aa3f02ddfb32410d03",
+    "sourceHash": "1f5826dc9e1d58431ad68dbbc013212654e69aea02157003bf692b15507571a1",
     "sourcePath": "docs/设计记忆/项目组灵魂/表达模式.md",
     "subtype": "other",
     "summary": "表达模式",
@@ -2725,28 +2747,6 @@
     "summary": "尘寰问道故事大纲选项",
     "summarySource": "title-only",
     "title": "尘寰问道故事大纲选项",
-    "type": "document"
-  },
-  {
-    "id": "docs/系统说明/故事大纲世界选项/4-fantasy.md",
-    "indexVersion": 1,
-    "sourceHash": "5a1eee1a9cf7accd2338d4cb313c7683a8e61830fd31793740c5381a596e4af3",
-    "sourcePath": "docs/系统说明/故事大纲世界选项/4-fantasy.md",
-    "subtype": "system",
-    "summary": "咒缚回响故事大纲选项",
-    "summarySource": "title-only",
-    "title": "咒缚回响故事大纲选项",
-    "type": "document"
-  },
-  {
-    "id": "docs/系统说明/故事大纲世界选项/5-science.md",
-    "indexVersion": 1,
-    "sourceHash": "d826fea11dfec353159f95476fa05cc00db89f0fc3451d9eedb798b72fd039e5",
-    "sourcePath": "docs/系统说明/故事大纲世界选项/5-science.md",
-    "subtype": "system",
-    "summary": "星宇织梦故事大纲选项",
-    "summarySource": "title-only",
-    "title": "星宇织梦故事大纲选项",
     "type": "document"
   }
 ]

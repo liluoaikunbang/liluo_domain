@@ -1,16 +1,24 @@
 {
   "affectedDomains": [
-    "graph",
-    "story"
+    "code",
+    "docs"
   ],
   "changes": {
-    "added": [],
+    "added": [
+      "docs/功能更新/159-默认沉浸模式与智能委派.md",
+      "docs/设计记忆/创作决策/CDR-007-默认启用沉浸模式与智能委派.md"
+    ],
     "deleted": [],
     "modified": [
-      "src/game/data/story_outline/1-modern/1.5-宿舍旧楼.md",
-      "src/game/data/story_outline/1-modern/1.7-旧案.md",
-      "src/game/data/story_outline/1-modern/3.1-水泥鞋.md",
-      "src/game/data/story_outline/sources/1-modern.json"
+      "docs/功能更新目录.md",
+      "docs/技能说明/liluo-creative-team-presence.md",
+      "docs/智能体说明/项目子智能体体系.md",
+      "docs/用户命令目录.md",
+      "docs/系统说明/璃落创作组人格与项目陪伴系统.md",
+      "docs/设计记忆/创作决策/CDR-003-将项目智能体组织为璃落创作组.md",
+      "docs/设计记忆/项目组灵魂/表达模式.md",
+      "docs/运行规范/Codex命令批准分级表.md",
+      "src/game/data/global/updateRecords.js"
     ],
     "renamed": []
   },
@@ -24,7 +32,7 @@
       "status": "current"
     },
     "docs": {
-      "entryCount": 298,
+      "entryCount": 300,
       "status": "current"
     },
     "game": {
@@ -44,11 +52,11 @@
       "status": "partial"
     }
   },
-  "generatedAt": "2026-07-25T16:43:14.876Z",
+  "generatedAt": "2026-07-26T05:38:27.749Z",
   "generatorVersion": "1.0.3",
   "mode": "changed",
   "schemaVersion": 1,
-  "sourceCommit": "1018b3130ee88fd384b5fba47d4275da5b722846",
+  "sourceCommit": "cd385373d84f2c3106d73765ad845e15235201ae",
   "sourceSnapshot": {
     "docs/CG待制作清单.md": "81996a1dd752cbf2e9c5a9fc68bb4a480e556d2d76ec35afa9b4b6894f067f8b",
     "docs/README.md": "d6e3ab985252937ff4927d09ad17708ddc4a5684aa830e0d9d15754bd4a0bbd6",
@@ -211,7 +219,8 @@
     "docs/功能更新/156-Codex会话提交异常持续记录.md": "fdee8fd00b3ea872d3a82557013deda4a663193ce31ac04a72d5c3b4b40711d7",
     "docs/功能更新/157-文档职责导航与问题归档.md": "4699a079bbc48f7fa30bcf105677ac5e5d12a800b85e7564ec43b91188d4f805",
     "docs/功能更新/158-Cursor与Codex协同规则分层.md": "446d8342597559734e1203691f08a115e14363c9e7d0e61cbfc45a524ee45753",
-    "docs/功能更新目录.md": "ed7e6556a8739e0880b09b90708f92cdd6d696b4890757f26e6d1ba8ffa262be",
+    "docs/功能更新/159-默认沉浸模式与智能委派.md": "a84b88cbd30ae9b8680c5aaf6d283f06a3b68bd0e53f099af3da50a93a8f050f",
+    "docs/功能更新目录.md": "85639b144ce5bb7fc44810d0b6325d2180e92bc1bbc87e55a8c53d1eac42eb59",
     "docs/外部来源/Skill来源目录.md": "5dea73aeb2afb392039bccaefa6acfaa1b796cf666b7ebd859c77c9171f8fdf3",
     "docs/外部来源/Skill许可证与保存策略.md": "18498f5dc9c78c51a9198714ea470d8f6ecb9692128b5d8c6906ee57ba5308cd",
     "docs/大纲玩法总表整合规格.md": "e6ffc2c182c5d46b69bd8fe08bb3b13038d005c4d08a966ac329d0bb515ec40b",
@@ -223,7 +232,7 @@
     "docs/技能说明/liluo-capability-regression.md": "c67e7e6b34846dac5f4c730154e0c106e613aadb3caa051b3beea2e010e3ce6f",
     "docs/技能说明/liluo-character-arc-and-relationship-memory.md": "3383ef51ba0c46589b107ed4928c7b373ea78e5e8265256f3cd2e582a871568e",
     "docs/技能说明/liluo-command-approval-governance.md": "25c7218b005a94fc53f4e72bab68bdd676bd57d06b1298e42fb39a6a15299abc",
-    "docs/技能说明/liluo-creative-team-presence.md": "279ebb9786e9258797820e66682b7e7aad903e63eba8104fde214ecc122da24e",
+    "docs/技能说明/liluo-creative-team-presence.md": "8e76cc93433da683d410de3a7d3a0b6b48b46dca2ab7991282a82b649faa379e",
     "docs/技能说明/liluo-dialogue-event-authoring.md": "c496a42933a5233bff9fb5c068857c634d3e205fa6fbd3f053cc3f9c2eb2c4f7",
     "docs/技能说明/liluo-external-fiction-knowledge.md": "ec9913e97a576f96546125d4358900277dc7940b4809d121d6278a2ecf6745ad",
     "docs/技能说明/liluo-game-content-validator.md": "1a690420324759ad8eff628ab2a3eadbed7fc23275236934b06e489ae52f3591",
@@ -254,9 +263,9 @@
     "docs/智能体说明/liluo_project_memory_curator.md": "ed79058d4f0f0599ca585344c407bde0c1672abbefe1cbdd51b77eb3d7016e3f",
     "docs/智能体说明/liluo_story_gap_analyst.md": "4fee394bec8fed2193f315c0d95d1f9b4a00ab8612317878b111a44ea098492a",
     "docs/智能体说明/liluo_validation_runner.md": "5ac39e639315e1d9891f2f1649ac28f54397fc79b92ef59ee017dd000109d49c",
-    "docs/智能体说明/项目子智能体体系.md": "d428632d8b82ccba2009c64fa7f39404a09d3300ff40e00dedd96f26bdce9a44",
+    "docs/智能体说明/项目子智能体体系.md": "df30057be0b355f9df67cf66bce44dac309f39ba2ee1a6388ce65ef56d351e3a",
     "docs/游戏素材图片清单.md": "e5341d8739d710c663aacfde2b5eff3a482b0da6b3f4cd08424803493998cf93",
-    "docs/用户命令目录.md": "4d1a3545856e36b1028c65d1218372a3f3a34202162db626b1ac0a7ef78c8aa7",
+    "docs/用户命令目录.md": "a384391d1583e324f7f63595685429cd99f3645e806339a622cd21d4601d0bab",
     "docs/系统说明/AI协同文件与规则分层.md": "4c862f85cbe341d9be1500b94d38b44fa985cdb34bbd5007eebeb22b351a9da0",
     "docs/系统说明/Codex-Hooks与自动质量门禁系统.md": "1453eca0a03acc0116acdf5e4e026bc5f203cd2cc1d7b4f6ede94b96879bef56",
     "docs/系统说明/Codex会话提交异常与上下文预算问题.md": "6b080853be7407df3a8d926656b945882c9adfc0da0a381a4e47f3952d5f8a0b",
@@ -289,7 +298,7 @@
     "docs/系统说明/效用导向灵感与细节构思系统.md": "3c60b1a3118b9af074efb5523602c4c67a44f5bd6e7a5c72a45632191ff33537",
     "docs/系统说明/正式项目内容来源与版权写入门槛.md": "32a4ed46c9401a576fdd1caf153bded12d6287d91276eb6e876eb4e22904d9d4",
     "docs/系统说明/游戏视图与模式.md": "cf54c683f485b54f2520b397dee8354e9b0cd23988c24a74c59a82bc9199d89e",
-    "docs/系统说明/璃落创作组人格与项目陪伴系统.md": "28d921ecb667ee3f0fdb8e41eae79937047a3bfdf1a02337a61b01be9215a9f3",
+    "docs/系统说明/璃落创作组人格与项目陪伴系统.md": "dfaee2a53c61b29344d21cfcfe92afeb4dc2d96aed61dacd98bb4d14d6c4605f",
     "docs/系统说明/璃落自然表达与文气塑形系统.md": "aaae9bb0d8c249c63b0dc9e80d52cbde7ad54bd68124185293a29fe13734ee04",
     "docs/系统说明/离线发行与GitHub-Release流程.md": "c04ec31d7b2d6b660fb20944a3f0933331db6d18c08272a4dacd35c04ca65646",
     "docs/系统说明/角色外观与运行时状态.md": "3f8c31612e5162e2a7607612e191d2f54716cb1f3501ef28bf28b3524151ba5d",
@@ -304,10 +313,11 @@
     "docs/设计记忆/README.md": "6b2663ae2c61394d64f26a6b789c7d6621d3e88650507158f3e91512ff96acab",
     "docs/设计记忆/创作决策/CDR-001-像素冒险RPG作为核心体验载体.md": "b28a7b04f4bc1adaa974cd8b5afb6f327040c6cc03ea3ba9dbf090ff37bc094d",
     "docs/设计记忆/创作决策/CDR-002-外部知识只作原创转化参考.md": "dc955e6ebd82536df0f105adefbcc0fd1ff06c00412e3d6fd0aec74f0a60a0f8",
-    "docs/设计记忆/创作决策/CDR-003-将项目智能体组织为璃落创作组.md": "81fded599dad13f631a72cf792a991c21d9684056000af79dd32d1f331fbc20f",
+    "docs/设计记忆/创作决策/CDR-003-将项目智能体组织为璃落创作组.md": "322e0d4ffba8a50f463f5f809088146c1342a41ef67b393d95fb786faea2e8c7",
     "docs/设计记忆/创作决策/CDR-004-将文心雕龙篇名作为璃落创作组统一文号来源.md": "6c23195b43b8f1ea442892bc93b198957ba5ea1a0774a569d4fc7314f955e9a9",
     "docs/设计记忆/创作决策/CDR-005-非技术文本默认应用璃落自然表达.md": "d78af29523020716ca4a1e5afbb6adeddf6b9cdc028170ee0e898e283703cf58",
     "docs/设计记忆/创作决策/CDR-006-正式项目角色统一为成年人.md": "b49c5512dd4cb88827b7df0dda4a56f816626d9776336b221d1735159ab79234",
+    "docs/设计记忆/创作决策/CDR-007-默认启用沉浸模式与智能委派.md": "5468b5649b270c7b93c81849cb53fa03a7408f7dedd187e85ffd57734525e324",
     "docs/设计记忆/创作决策/README.md": "9cbfc03c806398f4fbcd76de057f48b8bfa6d2c5855f3277d93f9a16ab5546d5",
     "docs/设计记忆/待确认决策.md": "ccd660a1ef35cb653e723f8fb6d0723d50ca88c7dc98b0d5fa4196ce9581705d",
     "docs/设计记忆/架构决策/ADR-001-项目知识采用分层索引.md": "e625f5bafb8c042f434fb9155946faab09089230417f87f4600587c7f5c7ff82",
@@ -335,7 +345,7 @@
     "docs/设计记忆/项目组灵魂/成员/言澈.md": "86b7f76424a15bc6a1bf65bf7b93f76f34cac06bd2fb4b0be60b41a4b8e06cc8",
     "docs/设计记忆/项目组灵魂/成员关系.md": "05bac21bcad06d945b6f00a3b7682d86e1b3527984a61ba2a507e7d84de6225c",
     "docs/设计记忆/项目组灵魂/文号体系/README.md": "a69ed3d85d0eefd72d0af55d7188659d9625e29796089c11d2cee2de970c4e38",
-    "docs/设计记忆/项目组灵魂/表达模式.md": "9d3c23ed320a402b0b9b256b76c708a3a618ccfdea5959aa3f02ddfb32410d03",
+    "docs/设计记忆/项目组灵魂/表达模式.md": "1f5826dc9e1d58431ad68dbbc013212654e69aea02157003bf692b15507571a1",
     "docs/设计记忆/项目组灵魂/重聚机制.md": "2b29dc207c17ac188898e3d7663420374747f6e24f9748557c7308df80a9949f",
     "docs/设计记忆/项目组灵魂/项目组手记/README.md": "7dc3f5d12147d5706fdebe9f9d0ee385d6e3e13957cbc32f181b2c9f763bb8bc",
     "docs/设计记忆/项目组灵魂/项目组手记/TEAM-NOTE-001-为什么我们要成为一个创作组.md": "b5915d503a57f815f7cc0b068cacb61bd2ef375b19fac95e3c21b244bf0cba4c",
@@ -343,7 +353,7 @@
     "docs/设计记忆/项目组灵魂/项目组手记/TEAM-NOTE-003-谁在创作组记录中说话.md": "a57c2b92e7f2f1f0bd5bde2f84210c4d3dd52c881d47eab9a172772249666b91",
     "docs/设计记忆/项目组灵魂/项目组手记/TEAM-NOTE-004-让每次校准留下可复用的判断.md": "eaf8282398cebf3b6ab4409d3ab528c262192a810409c718bcd41c7f28d3e517",
     "docs/设计记忆/项目组灵魂/项目组设定.md": "5793617c77385f4621280b3038641119802b57d0a8da269eca218a7030b3c132",
-    "docs/运行规范/Codex命令批准分级表.md": "cca823c7a5581390211c8f2a59e822764537bea26145ddc77eaf579bded059aa",
+    "docs/运行规范/Codex命令批准分级表.md": "a8d65590a534888f5a4746ad87a077714b006285aae1c7f7e10adcc50ff4a6be",
     "docs/运行规范/未解决问题/Codex会话提交异常与上下文预算问题.md": "c58700e69e954a0712ee33d2caf13cc9f27b99d3807781cde3558267a8dc4c45",
     "docs/运行规范/未解决问题/README.md": "575c8b96154664441dacd947f1e0cd6a2d9702454325e0db67d6551aecdabd22",
     "docs/项目概览.md": "9649a8cce8f7d9711c66e4a1c988ca0c8c7289bc79205a26745b11baccc4215e",
@@ -1066,7 +1076,7 @@
     "src/game/data/global/cgVariantRules.ts": "a9be23c234f0c8a980f304256066538db732625a5fa49647b91b3b240a58e091",
     "src/game/data/global/gameMenuData.js": "549ad516de3df68f5628f912a08cf9d28dcfc52ef21e1d863bc11c3235bddb69",
     "src/game/data/global/updateRecordGroups.js": "ca9b92d0987ceb1890868ada15342a3d76e05657a319a92be851bde8efb64544",
-    "src/game/data/global/updateRecords.js": "96ac6e603c1e71fdae3cb76a02f98047b9d4fe983dfb954f51daccfcb5fbddb0",
+    "src/game/data/global/updateRecords.js": "e2a30bf3daf3e779e65600938d8e355ba9425bb42f4a358fbe3df37e02b1bdaf",
     "src/game/data/globalAssets.ts": "c8f61d63f69f0aed0fee4e821683bf4a2cee733104d4b48ab7f78d4879f4c17f",
     "src/game/data/interactive_fictions/asylum_for_lunatic/assets.ts": "a15be46e4a9841f1ea133a883c435b5fd799a858cde8a4ca44036650236c5a69",
     "src/game/data/interactive_fictions/asylum_for_lunatic/index.ts": "af405bbd76de80f5999d0f28a81a48b97a8219a3d050de42320247917c44c98b",
