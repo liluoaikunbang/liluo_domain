@@ -1,15 +1,12 @@
 {
   "affectedDomains": [
-    "code",
     "docs"
   ],
   "changes": {
     "added": [],
     "deleted": [],
     "modified": [
-      "docs/功能更新/164-项目上下文分层与创作组有效参与.md",
-      "docs/功能更新目录.md",
-      "src/game/data/global/updateRecords.js"
+      "docs/技能说明/liluo-project-documentation-sync.md"
     ],
     "renamed": []
   },
@@ -43,11 +40,11 @@
       "status": "partial"
     }
   },
-  "generatedAt": "2026-07-26T12:32:29.003Z",
+  "generatedAt": "2026-07-26T12:34:26.594Z",
   "generatorVersion": "1.0.3",
   "mode": "changed",
   "schemaVersion": 1,
-  "sourceCommit": "c7b6b913d54b02c239bb44764d4bfa5d0e583f39",
+  "sourceCommit": "078056a6efcad12fdf3cb3a1933b26006df6818a",
   "sourceSnapshot": {
     "docs/CG待制作清单.md": "81996a1dd752cbf2e9c5a9fc68bb4a480e556d2d76ec35afa9b4b6894f067f8b",
     "docs/README.md": "2aa6b20d41023db2c49b481d920c137a94b2d36d9b4dde8878381dcb59315b3c",
@@ -241,7 +238,7 @@
     "docs/技能说明/liluo-production-coverage.md": "23e8059df5f73d64268941f3c14a470feb07a176c89512930ce2cd1f3afa87df",
     "docs/技能说明/liluo-project-capability-navigation.md": "359bbfa6de0438c3037811c04326847ba890ba850bf4a0895684a375f6900460",
     "docs/技能说明/liluo-project-context-pack.md": "a92bf8a17cc64501ab18dc04e2bf5771ed937d4f72db377e0b003a335026bb80",
-    "docs/技能说明/liluo-project-documentation-sync.md": "2cae8ff51f45c587ae966dc1b27db1b34e4cb20d8d9241aae373fa7cf01061e4",
+    "docs/技能说明/liluo-project-documentation-sync.md": "cdaea6016b348f8e97e15c9f13cdd07ef50fe357027faf1ab82880bd339e21bb",
     "docs/技能说明/liluo-project-governance-memory.md": "64f52ce9ea71b15129d42ae2ec44f63fbad603bfb7d4f3942ebfbaf57d185e1c",
     "docs/技能说明/liluo-project-index-maintenance.md": "5031bb5571441f0174b428273b901b50d81be8c4693f74db3e5a7410deddfb65",
     "docs/技能说明/liluo-purpose-driven-ideation.md": "7380f9001e4add855d9bd1befdf83a645e5be9ebcf5865a5bbad25e21836689e",
