@@ -7,7 +7,23 @@
       "title": "项目 Agents",
       "status": "current",
       "location": ".codex/agents/",
-      "checkedAt": "2026-07-25T13:48:21.578Z"
+      "checkedAt": "2026-07-26T12:17:40.861Z"
+    },
+    {
+      "id": "source-context-policy",
+      "type": "repository-file",
+      "title": "上下文装载策略",
+      "status": "current",
+      "location": "project-navigation/context-policy.json",
+      "checkedAt": "2026-07-26T12:17:40.861Z"
+    },
+    {
+      "id": "source-executable-workflows",
+      "type": "repository-file",
+      "title": "可执行工作流定义",
+      "status": "current",
+      "location": "project-workflows/definitions/",
+      "checkedAt": "2026-07-26T12:17:40.861Z"
     },
     {
       "id": "source-gameplay-catalog",
@@ -15,7 +31,7 @@
       "title": "玩法目录",
       "status": "current",
       "location": "src/game/data/gameplay_outline/catalog.json",
-      "checkedAt": "2026-07-25T13:48:21.578Z"
+      "checkedAt": "2026-07-26T12:17:40.861Z"
     },
     {
       "id": "source-plot-catalog",
@@ -23,7 +39,7 @@
       "title": "情节库",
       "status": "current",
       "location": "src/game/data/plot_outline/catalog.json",
-      "checkedAt": "2026-07-25T13:48:21.578Z"
+      "checkedAt": "2026-07-26T12:17:40.861Z"
     },
     {
       "id": "source-skills",
@@ -31,7 +47,7 @@
       "title": "项目 Skills",
       "status": "current",
       "location": ".agents/skills/",
-      "checkedAt": "2026-07-25T13:48:21.578Z"
+      "checkedAt": "2026-07-26T12:17:40.861Z"
     },
     {
       "id": "source-story-missing-items",
@@ -39,7 +55,15 @@
       "title": "故事缺口派生索引",
       "status": "current",
       "location": "project-index/story/missing-items.json",
-      "checkedAt": "2026-07-25T13:48:21.578Z"
+      "checkedAt": "2026-07-26T12:17:40.861Z"
+    },
+    {
+      "id": "source-team-routing",
+      "type": "repository-file",
+      "title": "创作组路由策略",
+      "status": "current",
+      "location": "project-navigation/team-routing.json",
+      "checkedAt": "2026-07-26T12:17:40.861Z"
     }
   ]
 }

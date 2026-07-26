@@ -100,6 +100,56 @@
       ]
     },
     {
+      "id": "workflow-story-mainline-restructure",
+      "title": "故事主线重构（三世界阶段容器）",
+      "domain": "story",
+      "status": "available",
+      "summary": "以机器可读节点驱动主线重构：原文保全、独立审查、脚本校验与导航收尾；默认 dry-run。",
+      "userCanSay": [
+        "按可执行工作流做一次主线重构演练",
+        "启动故事主线重构工作流（只演练不迁移）",
+        "给我当前主线重构节点的任务书"
+      ],
+      "userMustProvide": [
+        "目标世界/系列范围",
+        "live 写入前的明确批准（演练可不提供）"
+      ],
+      "steps": [
+        "确认范围与模式",
+        "定位正式源与保全清单",
+        "原文保全校验",
+        "独立内容与连续性审查",
+        "执行结构迁移或演练跳过",
+        "结构与内容校验",
+        "同步能力导航与缺口",
+        "生成运行报告"
+      ],
+      "approvalPoints": [
+        "live 模式写入正式故事源前"
+      ],
+      "completionEvidence": [
+        "运行记录完成门禁通过",
+        "运行报告已生成",
+        "独立审查采用决定已记录"
+      ],
+      "capabilityIds": [
+        "skill-liluo-executable-workflow",
+        "skill-liluo-story-outline-graph-maintenance",
+        "skill-liluo-project-capability-navigation",
+        "agent-liluo-content-auditor",
+        "agent-liluo-continuity-reviewer",
+        "command-project-workflow-validate",
+        "skill-liluo-story-outline-authoring",
+        "command-project-navigation-check",
+        "command-project-workflow-report"
+      ],
+      "sourceRefs": [
+        "project-workflows/definitions/wf-story-mainline-restructure.v1.0.0.json"
+      ],
+      "executableWorkflowId": "wf-story-mainline-restructure",
+      "executableWorkflowVersion": "1.0.0"
+    },
+    {
       "id": "workflow-story-to-playable",
       "title": "从故事节点到可玩内容",
       "domain": "production",

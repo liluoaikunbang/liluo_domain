@@ -11,6 +11,8 @@ const ROUTINE_PLANS = Object.freeze({
   ]),
   workflow: Object.freeze([
     { id: 'project-routine-governance', command: process.execPath, args: ['--test', 'scripts/tests/project-routine-governance.test.mjs'] },
+    { id: 'project-workflow-validate', command: 'npm', args: ['run', 'project:workflow:validate'] },
+    { id: 'project-workflow-test', command: 'npm', args: ['run', 'project:workflow:test'] },
   ]),
   'team-presence': Object.freeze([
     { id: 'team-presence-test', command: process.execPath, args: ['--test', 'scripts/tests/team-presence.test.mjs'] },

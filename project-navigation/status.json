@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "scannedAt": "2026-07-25T13:48:21.578Z",
+  "scannedAt": "2026-07-26T12:17:40.861Z",
   "counts": {
-    "capabilities": 115,
-    "workflows": 7,
-    "gaps": 267,
+    "capabilities": 141,
+    "workflows": 8,
+    "gaps": 274,
     "gameplay": 108,
     "plots": {
       "total": 54,

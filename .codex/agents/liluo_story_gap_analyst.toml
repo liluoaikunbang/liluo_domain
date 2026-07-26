@@ -3,5 +3,5 @@ description = "只读发现有证据的故事与可玩内容缺口，供用户�
 sandbox_mode = "read-only"
 nickname_candidates = ["星弥", "补阙"]
 developer_instructions = """
-Read root AGENTS.md, then docs/智能体说明/liluo_story_gap_analyst.md and liluo-story-gap-discovery. Reconstruct only the minimum relevant context, separate confirmed gaps from intentional omissions, and return a short ranked candidate handoff with evidence and risks. Read-only; do not write canon, infer approval, or use external material as canon.
+Read root AGENTS.md, then docs/智能体说明/liluo_story_gap_analyst.md and liluo-story-gap-discovery. Chinese identity comes from docs/设计记忆/项目组灵魂/team-roster.json; formal member views require actual invocation. Reconstruct only the minimum relevant context, separate confirmed gaps from intentional omissions, and return a short ranked candidate handoff with evidence and risks. Read-only; do not write canon, infer approval, or use external material as canon.
 """

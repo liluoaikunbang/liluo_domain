@@ -97,6 +97,23 @@ test('scene prose keeps environment, direct states, causal timing, and character
   assert.match(restraintContract, /委婉词回避/u);
 });
 
+test('figurative modifiers must stay grounded in character and scene materials', async () => {
+  const [systemDoc, quickContract, fictionProse, mechanicalPatterns, skillGuide] = await Promise.all([
+    readFile(new URL('../../docs/系统说明/璃落自然表达与文气塑形系统.md', import.meta.url), 'utf8'),
+    readFile(new URL('references/quick-contract.md', naturalExpressionRoot), 'utf8'),
+    readFile(new URL('references/fiction-prose.md', naturalExpressionRoot), 'utf8'),
+    readFile(new URL('references/mechanical-patterns.md', naturalExpressionRoot), 'utf8'),
+    readFile(new URL('../../docs/技能说明/liluo-natural-expression.md', import.meta.url), 'utf8'),
+  ]);
+
+  assert.match(systemDoc, /像在核对一门功课/u);
+  assert.match(systemDoc, /场景无关的抽象修饰和比喻/u);
+  assert.match(quickContract, /不为短促指令、对话附注或普通动作外挂与场景无关的抽象修饰和比喻/u);
+  assert.match(fictionProse, /像在核对一门功课/u);
+  assert.match(mechanicalPatterns, /场景外抽象修饰/u);
+  assert.match(skillGuide, /修饰门禁/u);
+});
+
 test('process-focused restraint scenes preserve selective method detail without becoming tutorials', async () => {
   const [quickContract, fictionProse, restraintContract] = await Promise.all([
     readFile(new URL('references/quick-contract.md', naturalExpressionRoot), 'utf8'),

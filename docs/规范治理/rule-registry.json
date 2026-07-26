@@ -33,6 +33,19 @@
       "status": "active"
     },
     {
+      "ruleId": "descriptive-context-pack-excludes-runtime",
+      "title": "描述性上下文包排除运行时实现与素材",
+      "authority": "docs/系统说明/项目描述性上下文打包系统.md",
+      "consumers": [
+        "AGENTS.md",
+        ".agents/skills/liluo-project/liluo-project-context-pack/SKILL.md",
+        "docs/技能说明/liluo-project-context-pack.md",
+        "docs/用户命令目录.md",
+        "scripts/project-context-pack/catalog.json"
+      ],
+      "status": "active"
+    },
+    {
       "ruleId": "json-schema-structural-contract",
       "title": "JSON Schema 负责结构且业务验证器负责跨文件规则",
       "authority": "docs/系统说明/JSON-Schema数据契约系统.md",
@@ -96,18 +109,26 @@
     },
     {
       "ruleId": "default-immersive-persona-mode",
-      "title": "创作组默认采用 immersive 表达",
+      "title": "创作组默认 immersive 人格、compact 密度与 actual-call-only 参与",
       "authority": "docs/设计记忆/项目组灵魂/表达模式.md",
-      "decision": "docs/设计记忆/创作决策/CDR-007-默认启用沉浸模式与智能委派.md",
-      "consumers": ["AGENTS.md", "docs/设计记忆/项目组灵魂/team-roster.json", ".agents/skills/liluo-project/liluo-creative-team-presence/SKILL.md", "docs/系统说明/璃落创作组人格与项目陪伴系统.md", "docs/技能说明/liluo-creative-team-presence.md", "scripts/team-presence/team-presence.mjs", ".cursor/rules/00-project-entry.mdc", "docs/用户命令目录.md"],
+      "decision": "docs/设计记忆/架构决策/ADR-012-上下文分层与创作组有效参与机制.md",
+      "consumers": ["AGENTS.md", "docs/设计记忆/项目组灵魂/team-roster.json", "project-navigation/team-routing.json", ".agents/skills/liluo-project/liluo-creative-team-presence/SKILL.md", "docs/系统说明/璃落创作组人格与项目陪伴系统.md", "docs/技能说明/liluo-creative-team-presence.md", "scripts/team-presence/team-presence.mjs", ".cursor/rules/00-project-entry.mdc", "docs/用户命令目录.md"],
       "status": "active"
     },
     {
       "ruleId": "proactive-agent-delegation",
-      "title": "主智能体默认主动智能委派合适成员",
+      "title": "主智能体按三档路由委派，不以演对话为由空转",
       "authority": "docs/智能体说明/项目子智能体体系.md",
-      "decision": "docs/设计记忆/创作决策/CDR-007-默认启用沉浸模式与智能委派.md",
-      "consumers": ["AGENTS.md", ".agents/skills/liluo-project/liluo-creative-team-presence/SKILL.md", "docs/用户命令目录.md"],
+      "decision": "docs/设计记忆/架构决策/ADR-012-上下文分层与创作组有效参与机制.md",
+      "consumers": ["AGENTS.md", "project-navigation/team-routing.json", ".agents/skills/liluo-project/liluo-creative-team-presence/SKILL.md", "docs/用户命令目录.md"],
+      "status": "active"
+    },
+    {
+      "ruleId": "context-load-layers",
+      "title": "项目上下文按 L0–L4 装载，索引与历史默认不注入",
+      "authority": "docs/系统说明/项目上下文装载与配置分层系统.md",
+      "decision": "docs/设计记忆/架构决策/ADR-012-上下文分层与创作组有效参与机制.md",
+      "consumers": ["AGENTS.md", "project-navigation/context-policy.json", ".cursor/rules/00-project-entry.mdc", "docs/系统说明/AI协同文件与规则分层.md", "docs/用户命令目录.md", "package.json"],
       "status": "active"
     },
     {
@@ -194,7 +215,31 @@
       "title": "非技术读者文本默认 light 且技术文本不文学化",
       "authority": "docs/系统说明/璃落自然表达与文气塑形系统.md",
       "decision": "docs/设计记忆/创作决策/CDR-005-非技术文本默认应用璃落自然表达.md",
-      "consumers": ["AGENTS.md", ".agents/skills/writing/liluo-natural-expression/SKILL.md", "docs/用户命令目录.md"],
+      "consumers": ["AGENTS.md", ".agents/skills/writing/liluo-natural-expression/SKILL.md", "docs/用户命令目录.md", ".cursor/rules/00-project-entry.mdc"],
+      "status": "active"
+    },
+    {
+      "ruleId": "skill-agent-routing-before-work",
+      "title": "命中 Skill 或 Agent 时须在实质工作前加载或委派",
+      "authority": "AGENTS.md",
+      "decision": "docs/设计记忆/创作决策/CDR-005-非技术文本默认应用璃落自然表达.md",
+      "consumers": ["docs/智能体说明/项目子智能体体系.md", "docs/系统说明/璃落自然表达与文气塑形系统.md", ".cursor/rules/00-project-entry.mdc", "docs/用户命令目录.md"],
+      "status": "active"
+    },
+    {
+      "ruleId": "executable-workflow-single-source",
+      "title": "成熟复杂任务以机器可读工作流定义为唯一过程真源",
+      "authority": "docs/系统说明/机器可读工作流与可视化执行规范系统.md",
+      "decision": "docs/设计记忆/架构决策/ADR-011-成熟复杂任务采用机器可读工作流门禁.md",
+      "consumers": [
+        "AGENTS.md",
+        ".agents/skills/liluo-project/liluo-executable-workflow/SKILL.md",
+        "docs/技能说明/liluo-executable-workflow.md",
+        "docs/用户命令目录.md",
+        "project-workflows/registry.json",
+        "scripts/project-workflows/project-workflows.mjs",
+        "package.json"
+      ],
       "status": "active"
     },
     {
@@ -235,6 +280,14 @@
       "authority": "docs/系统说明/璃落自然表达与文气塑形系统.md",
       "decision": "docs/设计记忆/创作决策/CDR-005-非技术文本默认应用璃落自然表达.md",
       "consumers": [".agents/skills/writing/liluo-natural-expression/references/quick-contract.md", ".agents/skills/writing/liluo-natural-expression/references/fiction-prose.md", ".agents/skills/writing/liluo-natural-expression/references/fictional-restraint-narrative.md", "docs/技能说明/liluo-natural-expression.md"],
+      "status": "active"
+    },
+    {
+      "ruleId": "natural-expression-grounded-figurative",
+      "title": "修饰与比喻须锚定人物经验与场景材料",
+      "authority": "docs/系统说明/璃落自然表达与文气塑形系统.md",
+      "decision": "docs/设计记忆/创作决策/CDR-005-非技术文本默认应用璃落自然表达.md",
+      "consumers": [".agents/skills/writing/liluo-natural-expression/references/quick-contract.md", ".agents/skills/writing/liluo-natural-expression/references/fiction-prose.md", ".agents/skills/writing/liluo-natural-expression/references/mechanical-patterns.md", "docs/技能说明/liluo-natural-expression.md", "docs/用户命令目录.md"],
       "status": "active"
     },
     {

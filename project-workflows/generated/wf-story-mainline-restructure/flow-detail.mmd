@@ -1,0 +1,48 @@
+flowchart TD
+  subgraph S0["prepare"]
+    prepare-scope["确认范围与模式"]
+    locate-sources["定位正式源与保全清单"]
+  end
+  subgraph S1["protect"]
+    preserve-text["原文保全校验"]
+  end
+  subgraph S2["review"]
+    independent-review["独立内容与连续性审查"]
+    repair-review-gaps["按审查意见修补计划"]
+  end
+  subgraph S3["execute"]
+    approve-live-migrate["人工批准 live 迁移"]
+    migrate-structure["执行结构迁移或演练跳过"]
+    validate-structure["结构与内容校验"]
+  end
+  subgraph S4["close"]
+    sync-navigation["同步能力导航与缺口"]
+    final-report["生成运行报告"]
+  end
+  prepare-scope -->|success| locate-sources
+  locate-sources -->|success| preserve-text
+  preserve-text -->|success| independent-review
+  independent-review -->|审查接受| migrate-structure
+  independent-review -->|审查返工| repair-review-gaps
+  repair-review-gaps -->|重新审查| independent-review
+  independent-review -->|需要 live 批准| approve-live-migrate
+  approve-live-migrate -->|用户批准| migrate-structure
+  migrate-structure -->|success| validate-structure
+  validate-structure -->|success| sync-navigation
+  sync-navigation -->|success| final-report
+  prepare_scope_skill_skill_liluo_executable_workflow(["S:liluo-executable-workflow"])
+  prepare-scope -.-> prepare_scope_skill_skill_liluo_executable_workflow
+  locate_sources_skill_skill_liluo_story_outline_graph_maintenance(["S:liluo-story-outline-graph-maintenance"])
+  locate-sources -.-> locate_sources_skill_skill_liluo_story_outline_graph_maintenance
+  independent_review_agent_agent_liluo_content_auditor(["A:liluo-content-auditor"])
+  independent-review -.-> independent_review_agent_agent_liluo_content_auditor
+  independent_review_agent_agent_liluo_continuity_reviewer(["A:liluo-continuity-reviewer"])
+  independent-review -.-> independent_review_agent_agent_liluo_continuity_reviewer
+  repair_review_gaps_skill_skill_liluo_story_outline_authoring(["S:liluo-story-outline-authoring"])
+  repair-review-gaps -.-> repair_review_gaps_skill_skill_liluo_story_outline_authoring
+  approve_live_migrate_approval_approval_live_mainline_migrate(["approval-live-mainline-migrate"])
+  approve-live-migrate -.-> approve_live_migrate_approval_approval_live_mainline_migrate
+  migrate_structure_skill_skill_liluo_executable_workflow(["S:liluo-executable-workflow"])
+  migrate-structure -.-> migrate_structure_skill_skill_liluo_executable_workflow
+  sync_navigation_skill_skill_liluo_project_capability_navigation(["S:liluo-project-capability-navigation"])
+  sync-navigation -.-> sync_navigation_skill_skill_liluo_project_capability_navigation

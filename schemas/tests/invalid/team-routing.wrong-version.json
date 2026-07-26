@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 2,
+  "policyId": "wrong",
+  "roster": "docs/设计记忆/项目组灵魂/team-roster.json",
+  "defaults": {
+    "tier": "solo",
+    "maxParallelAgents": 3,
+    "maxNestedDepth": 1,
+    "formalViewRequiresActualInvocation": true
+  },
+  "tiers": [],
+  "aggregation": {
+    "withinRiskGroup": "max",
+    "acrossRiskGroups": "sum",
+    "mechanicalOnlyForcesSolo": true
+  },
+  "signals": [],
+  "agentPriority": ["liluo_context_explorer"],
+  "display": {
+    "solo": "no-member-view",
+    "micro-consult": "one-compact-member-view",
+    "council": "two-or-three-compact-member-views-then-coordinator-conclusion",
+    "uncalledMemberDisplay": "none"
+  }
+}

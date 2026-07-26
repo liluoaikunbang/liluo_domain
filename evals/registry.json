@@ -46,6 +46,16 @@
     },
     {
       "type": "skill",
+      "name": "liluo-project-context-pack",
+      "path": ".agents/skills/liluo-project/liluo-project-context-pack/SKILL.md",
+      "status": "active",
+      "tier": "standard",
+      "caseGlobs": [
+        "evals/cases/skills/project-context-pack-positive-001.json"
+      ]
+    },
+    {
+      "type": "skill",
       "name": "liluo-character-arc-and-relationship-memory",
       "path": ".agents/skills/liluo-project/liluo-character-arc-and-relationship-memory/SKILL.md",
       "status": "active",
@@ -83,6 +93,16 @@
       "tier": "standard",
       "caseGlobs": [
         "evals/cases/skills/dialogue-event-authoring-positive-001.json"
+      ]
+    },
+    {
+      "type": "skill",
+      "name": "liluo-executable-workflow",
+      "path": ".agents/skills/liluo-project/liluo-executable-workflow/SKILL.md",
+      "status": "active",
+      "tier": "standard",
+      "caseGlobs": [
+        "evals/cases/skills/executable-workflow-positive-001.json"
       ]
     },
     {

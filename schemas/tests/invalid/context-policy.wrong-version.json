@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 2,
+  "policyId": "wrong-id",
+  "precedence": [],
+  "budget": {
+    "maxAlwaysFiles": 0,
+    "maxPathAttachedFiles": 0,
+    "maxSkills": 0,
+    "maxAgentCards": 0,
+    "maxEvidenceFiles": 0
+  },
+  "classes": []
+}

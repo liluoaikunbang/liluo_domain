@@ -1,0 +1,3 @@
+interface:
+  display_name: "项目描述性上下文打包"
+  short_description: "把配置、文档、索引与描述性资料打成供其他 AI 分析的临时 zip"

@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>璃落可执行工作流 · 交互大图</title>
+  <link rel="stylesheet" href="./viewer.css" />
+</head>
+<body>
+  <div id="app">
+    <header class="topbar">
+      <div class="brand">
+        <strong>可执行工作流大图</strong>
+        <span id="generatedAt" class="muted"></span>
+      </div>
+      <div class="controls">
+        <label>
+          视图
+          <select id="modeSelect">
+            <option value="flow">单流程节点图</option>
+            <option value="overview">能力总览图</option>
+          </select>
+        </label>
+        <label id="workflowLabel">
+          流程
+          <select id="workflowSelect"></select>
+        </label>
+        <label id="detailLabel">
+          细节
+          <select id="detailSelect">
+            <option value="simple">简图</option>
+            <option value="detail" selected>详图（含资源）</option>
+          </select>
+        </label>
+        <label id="runLabel">
+          运行叠加
+          <select id="runSelect">
+            <option value="">（仅定义）</option>
+          </select>
+        </label>
+        <button type="button" id="fitBtn">适应窗口</button>
+        <button type="button" id="resetBtn">重置视角</button>
+      </div>
+    </header>
+    <main class="workspace">
+      <section class="canvas-wrap">
+        <svg id="graph" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="工作流交互图"></svg>
+        <div class="hint">滚轮缩放 · 拖空白平移 · 点节点看详情 · 运行态节点会呼吸闪动</div>
+      </section>
+      <aside class="panel" id="panel">
+        <h2>详情</h2>
+        <div id="panelBody" class="panel-body muted">选择一个节点或资源。</div>
+      </aside>
+    </main>
+  </div>
+  <script src="./data.js"></script>
+  <script src="./viewer.js"></script>
+</body>
+</html>

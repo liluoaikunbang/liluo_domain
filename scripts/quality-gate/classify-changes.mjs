@@ -48,6 +48,10 @@ export function classifyChanges(inputFiles = []) {
     const isCommandApprovalGovernance = file.startsWith('scripts/command-approval/')
       || file === 'scripts/tests/command-approval-governance.test.mjs'
     const isProjectRoutineGovernance = file === 'scripts/tests/project-routine-governance.test.mjs'
+    const isExecutableWorkflow = file.startsWith('project-workflows/')
+      || file.startsWith('scripts/project-workflows/')
+      || file === 'scripts/tests/project-workflows.test.mjs'
+      || file.startsWith('schemas/workflows/')
     const isDocs = file === 'README.md' || file === 'AGENTS.md' || file.startsWith('docs/')
     const isStructuredData = file.startsWith('schemas/')
       || file.startsWith('src/game/data/') && DATA_EXTENSION.test(file)
@@ -75,8 +79,18 @@ export function classifyChanges(inputFiles = []) {
       || file === '.codex/approval-decisions.json'
       || isCommandApprovalGovernance
       || isProjectRoutineGovernance
+      || isExecutableWorkflow
     ) fileDomains.add('skills-agents-governance')
-    if (isStructuredData) fileDomains.add('schemas-data')
+    if (isStructuredData || file.startsWith('schemas/workflows/')) fileDomains.add('schemas-data')
+    // 定义/运行时脚本变更：完整 workflow 校验+测试。不在此自动重生成文档。
+    if (isExecutableWorkflow) requires.add('executable-workflow-tests')
+    // Skill/Agent 变更：只做轻量引用校验（不重生成图，避免频繁写生成物）。
+    if (
+      !isExecutableWorkflow
+      && (file.startsWith('.agents/skills/') || file.startsWith('.codex/agents/'))
+    ) {
+      requires.add('executable-workflow-check')
+    }
     if (isStory(file)) fileDomains.add('story')
     if (isMapEventDialogue(file)) fileDomains.add('maps-events-dialogues')
     if (isSave(file)) fileDomains.add('saves')

@@ -1,5 +1,104 @@
 [
   {
+    "id": "docs/外部来源/Skill许可证与保存策略.md",
+    "indexVersion": 1,
+    "sourceHash": "18498f5dc9c78c51a9198714ea470d8f6ecb9692128b5d8c6906ee57ba5308cd",
+    "sourcePath": "docs/外部来源/Skill许可证与保存策略.md",
+    "subtype": "other",
+    "summary": "Skill 许可证与保存策略",
+    "summarySource": "title-only",
+    "title": "Skill 许可证与保存策略",
+    "type": "document"
+  },
+  {
+    "id": "docs/我现在可以做什么.md",
+    "indexVersion": 1,
+    "sourceHash": "93e356b6883134e78dd95c72dee5f2d1776d43b7d26ce5bbfd03ca90de07d755",
+    "sourcePath": "docs/我现在可以做什么.md",
+    "subtype": "other",
+    "summary": "我现在可以做什么",
+    "summarySource": "title-only",
+    "title": "我现在可以做什么",
+    "type": "document"
+  },
+  {
+    "id": "docs/系统说明/存读档系统.md",
+    "indexVersion": 1,
+    "sourceHash": "51c45dfbc009b080b6d084b3badc740481e11474828d59eaddc74cf391be31f6",
+    "sourcePath": "docs/系统说明/存读档系统.md",
+    "subtype": "system",
+    "summary": "存读档系统",
+    "summarySource": "title-only",
+    "title": "存读档系统",
+    "type": "document"
+  },
+  {
+    "id": "docs/系统说明/地图系统.md",
+    "indexVersion": 1,
+    "sourceHash": "8f8a40d3d2d5bbf9f8e21d73c8244581ab9f7235d4738653647c789609611132",
+    "sourcePath": "docs/系统说明/地图系统.md",
+    "subtype": "system",
+    "summary": "地图系统",
+    "summarySource": "title-only",
+    "title": "地图系统",
+    "type": "document"
+  },
+  {
+    "id": "docs/系统说明/故事大纲到可玩内容转化系统.md",
+    "indexVersion": 1,
+    "sourceHash": "d39abdae4f8c4295d88d781d8e7ae6484dda4f8d1696905e22e163a1ea200da9",
+    "sourcePath": "docs/系统说明/故事大纲到可玩内容转化系统.md",
+    "subtype": "system",
+    "summary": "故事大纲到可玩内容转化系统",
+    "summarySource": "title-only",
+    "title": "故事大纲到可玩内容转化系统",
+    "type": "document"
+  },
+  {
+    "id": "docs/系统说明/故事大纲世界选项/0-munika.md",
+    "indexVersion": 1,
+    "sourceHash": "f5e795d457e5690c977108dd92546d75a6b10e92e024fcbc41652be7132acd8e",
+    "sourcePath": "docs/系统说明/故事大纲世界选项/0-munika.md",
+    "subtype": "system",
+    "summary": "慕妮卡帝国故事大纲选项",
+    "summarySource": "title-only",
+    "title": "慕妮卡帝国故事大纲选项",
+    "type": "document"
+  },
+  {
+    "id": "docs/系统说明/故事大纲世界选项/1-modern.md",
+    "indexVersion": 1,
+    "sourceHash": "6624477f803b2c468a75790f69274f9ab6c2d5545d27b19aca3f1c78689959ad",
+    "sourcePath": "docs/系统说明/故事大纲世界选项/1-modern.md",
+    "subtype": "system",
+    "summary": "浮光掠影故事大纲选项",
+    "summarySource": "title-only",
+    "title": "浮光掠影故事大纲选项",
+    "type": "document"
+  },
+  {
+    "id": "docs/系统说明/故事大纲世界选项/2-apocalypse.md",
+    "indexVersion": 1,
+    "sourceHash": "c3e524717e6531eb6dce8856b267ef333adfd59e5a65e5ba3b2a19073e1717bf",
+    "sourcePath": "docs/系统说明/故事大纲世界选项/2-apocalypse.md",
+    "subtype": "system",
+    "summary": "寂土挽歌故事大纲选项",
+    "summarySource": "title-only",
+    "title": "寂土挽歌故事大纲选项",
+    "type": "document"
+  },
+  {
+    "id": "docs/系统说明/故事大纲世界选项/3-ancient.md",
+    "indexVersion": 1,
+    "sourceHash": "381a99ccc09f6d908fe04c4669d9317bae03c34310eb0fab477f07cf69028309",
+    "sourcePath": "docs/系统说明/故事大纲世界选项/3-ancient.md",
+    "subtype": "system",
+    "summary": "尘寰问道故事大纲选项",
+    "summarySource": "title-only",
+    "title": "尘寰问道故事大纲选项",
+    "type": "document"
+  },
+  {
     "id": "docs/系统说明/故事大纲世界选项/4-fantasy.md",
     "indexVersion": 1,
     "sourceHash": "5a1eee1a9cf7accd2338d4cb313c7683a8e61830fd31793740c5381a596e4af3",
@@ -66,6 +165,17 @@
     "type": "document"
   },
   {
+    "id": "docs/系统说明/机器可读工作流与可视化执行规范系统.md",
+    "indexVersion": 1,
+    "sourceHash": "10dd81e32fb9c6a3d5914e8eb57882129765f0d2151872da6b45704c39c82d94",
+    "sourcePath": "docs/系统说明/机器可读工作流与可视化执行规范系统.md",
+    "subtype": "system",
+    "summary": "机器可读工作流与可视化执行规范系统",
+    "summarySource": "title-only",
+    "title": "机器可读工作流与可视化执行规范系统",
+    "type": "document"
+  },
+  {
     "id": "docs/系统说明/角色成长与关系长期记忆系统.md",
     "indexVersion": 1,
     "sourceHash": "1e64ef8e0a9444baa245138ec6b51b01c83a76e6bca833504f2e518720ebde7c",
@@ -101,7 +211,7 @@
   {
     "id": "docs/系统说明/璃落创作组人格与项目陪伴系统.md",
     "indexVersion": 1,
-    "sourceHash": "dfaee2a53c61b29344d21cfcfe92afeb4dc2d96aed61dacd98bb4d14d6c4605f",
+    "sourceHash": "12174ff4b6e68e54d872b647d6d70249bd5ae493ef92173a570668ed962d0a15",
     "sourcePath": "docs/系统说明/璃落创作组人格与项目陪伴系统.md",
     "subtype": "system",
     "summary": "璃落创作组人格与项目陪伴系统",
@@ -112,7 +222,7 @@
   {
     "id": "docs/系统说明/璃落自然表达与文气塑形系统.md",
     "indexVersion": 1,
-    "sourceHash": "aaae9bb0d8c249c63b0dc9e80d52cbde7ad54bd68124185293a29fe13734ee04",
+    "sourceHash": "76c613742d6d9ff8b61560073229cf401f67415dbce12423529e61f5d7bc45e8",
     "sourcePath": "docs/系统说明/璃落自然表达与文气塑形系统.md",
     "subtype": "system",
     "summary": "璃落自然表达与文气塑形系统",
@@ -198,14 +308,36 @@
     "type": "document"
   },
   {
+    "id": "docs/系统说明/项目描述性上下文打包系统.md",
+    "indexVersion": 1,
+    "sourceHash": "f96d6d6f2b0ae1099d01d56db9db5a6a4def0a221b5df70c33404f9e09d2bf6c",
+    "sourcePath": "docs/系统说明/项目描述性上下文打包系统.md",
+    "subtype": "system",
+    "summary": "项目描述性上下文打包系统",
+    "summarySource": "title-only",
+    "title": "项目描述性上下文打包系统",
+    "type": "document"
+  },
+  {
     "id": "docs/系统说明/项目能力缺口与行动导航系统.md",
     "indexVersion": 1,
-    "sourceHash": "4a39415bb808ecf888051de7a2d0192423f078367d9bbdb52ed14da726657908",
+    "sourceHash": "25b51f9324a2c29107417a972fee4ad957fc813746eda3644839ecdb8618e7cc",
     "sourcePath": "docs/系统说明/项目能力缺口与行动导航系统.md",
     "subtype": "system",
     "summary": "项目能力、缺口与行动导航系统",
     "summarySource": "title-only",
     "title": "项目能力、缺口与行动导航系统",
+    "type": "document"
+  },
+  {
+    "id": "docs/系统说明/项目上下文装载与配置分层系统.md",
+    "indexVersion": 1,
+    "sourceHash": "f6372e1caf3b9543b90d21e8e127b786c9de7b0d4e91e45628bf03402c23001f",
+    "sourcePath": "docs/系统说明/项目上下文装载与配置分层系统.md",
+    "subtype": "system",
+    "summary": "项目上下文装载与配置分层系统",
+    "summarySource": "title-only",
+    "title": "项目上下文装载与配置分层系统",
     "type": "document"
   },
   {
@@ -277,7 +409,7 @@
   {
     "id": "docs/系统说明/AI协同文件与规则分层.md",
     "indexVersion": 1,
-    "sourceHash": "4c862f85cbe341d9be1500b94d38b44fa985cdb34bbd5007eebeb22b351a9da0",
+    "sourceHash": "abca92dab3abd3182416f758078547f5c16f0b59336df97757dfdb93d098053f",
     "sourcePath": "docs/系统说明/AI协同文件与规则分层.md",
     "subtype": "system",
     "summary": "AI 协同文件与规则分层",
@@ -332,7 +464,7 @@
   {
     "id": "docs/系统说明/README.md",
     "indexVersion": 1,
-    "sourceHash": "c60f011af27f5cf7b714f75fddd31f14fa7bfd10641f446fa1cf873f0be1c88e",
+    "sourceHash": "c6a8973e1f9eb13651b573a2b7a3152f9cb0d2aa8f9a1407bd3762e5258e1c97",
     "sourcePath": "docs/系统说明/README.md",
     "subtype": "system",
     "summary": "系统说明",
@@ -376,7 +508,7 @@
   {
     "id": "docs/项目能力、缺口与行动总览.md",
     "indexVersion": 1,
-    "sourceHash": "b60708a7a0e13336c7ce22fe79740a60a54796128f3ac4b457d49537bf18910f",
+    "sourceHash": "4ea87cea8f3ad3a4bcc399be0c58ef6cce1e084cd967c3852da673bc1117b012",
     "sourcePath": "docs/项目能力、缺口与行动总览.md",
     "subtype": "other",
     "summary": "项目能力、缺口与行动总览",
@@ -387,7 +519,7 @@
   {
     "id": "docs/用户命令目录.md",
     "indexVersion": 1,
-    "sourceHash": "a384391d1583e324f7f63595685429cd99f3645e806339a622cd21d4601d0bab",
+    "sourceHash": "7425a2ef0664d6ee490fb312b25a04183cd1e7e22ba8d99488ae116e5f6548ec",
     "sourcePath": "docs/用户命令目录.md",
     "subtype": "other",
     "summary": "用户命令目录",
@@ -442,7 +574,7 @@
   {
     "id": "docs/智能体说明/项目子智能体体系.md",
     "indexVersion": 1,
-    "sourceHash": "df30057be0b355f9df67cf66bce44dac309f39ba2ee1a6388ce65ef56d351e3a",
+    "sourceHash": "bef536acbfb587877b2a8b222a172fffc7280415599343193f0a539e30e703c2",
     "sourcePath": "docs/智能体说明/项目子智能体体系.md",
     "subtype": "agent",
     "summary": "项目子智能体体系",
@@ -541,7 +673,7 @@
   {
     "id": "docs/README.md",
     "indexVersion": 1,
-    "sourceHash": "d6e3ab985252937ff4927d09ad17708ddc4a5684aa830e0d9d15754bd4a0bbd6",
+    "sourceHash": "2aa6b20d41023db2c49b481d920c137a94b2d36d9b4dde8878381dcb59315b3c",
     "sourcePath": "docs/README.md",
     "subtype": "other",
     "summary": "璃落的城堡文档入口",

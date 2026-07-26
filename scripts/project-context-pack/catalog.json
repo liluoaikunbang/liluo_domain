@@ -1,0 +1,351 @@
+{
+  "schemaVersion": 1,
+  "purpose": "Describe 璃落的城堡 for external AI analysis: configs, docs, indexes, and content catalogs — not runtime code or assets.",
+  "output": {
+    "dir": ".local/project-context-pack",
+    "stagingDir": ".local/project-context-pack/staging",
+    "archiveNamePrefix": "liluo-project-context"
+  },
+  "watchParents": [
+    {
+      "path": ".",
+      "depth": 1,
+      "nameAllow": [
+        "AGENTS.md",
+        "README.md",
+        "package.json",
+        "docs",
+        "schemas",
+        "project-index",
+        "project-navigation",
+        "project-workflows",
+        ".agents"
+      ],
+      "reason": "仓库根：配置、文档与机器可读注册表"
+    },
+    {
+      "path": "src/game/data",
+      "depth": 1,
+      "reason": "游戏内容数据根：大纲/情节/玩法/互动小说等描述性数据"
+    },
+    {
+      "path": "docs",
+      "depth": 1,
+      "reason": "文档根：新增主题目录应自动探测"
+    },
+    {
+      "path": "schemas",
+      "depth": 1,
+      "reason": "数据契约 Schema"
+    },
+    {
+      "path": "external-knowledge",
+      "depth": 1,
+      "nameAllow": [
+        "README.md",
+        "manifest.json",
+        "registry.json",
+        "indexes",
+        "derived"
+      ],
+      "reason": "外部知识仅纳入清单/派生索引，不打包 sources 全文"
+    }
+  ],
+  "entries": [
+    {
+      "path": ".agents/skills",
+      "mode": "tree",
+      "reason": "项目 Skill 合同与引用说明（不含实现脚本）",
+      "include": {
+        "extensions": [
+          ".md",
+          ".json",
+          ".yaml",
+          ".yml"
+        ]
+      },
+      "exclude": {
+        "extensions": [
+          ".mjs",
+          ".js",
+          ".cjs",
+          ".ts"
+        ]
+      }
+    },
+    {
+      "path": "AGENTS.md",
+      "mode": "file",
+      "reason": "项目最高层约束与工作流路由"
+    },
+    {
+      "path": "docs",
+      "mode": "tree",
+      "reason": "当前系统说明、技能说明、用户入口与设计记忆（排除历史功能更新流水）",
+      "exclude": {
+        "pathPrefixes": [
+          "docs/功能更新/"
+        ],
+        "basenames": [
+          "功能更新目录.md"
+        ]
+      }
+    },
+    {
+      "path": "external-knowledge/derived",
+      "mode": "tree",
+      "reason": "外部知识派生索引卡（非全文）",
+      "include": {
+        "extensions": [
+          ".json",
+          ".md"
+        ]
+      },
+      "auto": true
+    },
+    {
+      "path": "external-knowledge/manifest.json",
+      "mode": "file",
+      "reason": "外部知识清单",
+      "auto": true
+    },
+    {
+      "path": "package.json",
+      "mode": "file",
+      "reason": "npm 脚本与依赖概览"
+    },
+    {
+      "path": "project-index",
+      "mode": "tree",
+      "reason": "项目知识索引（RAG 定位层）"
+    },
+    {
+      "path": "project-navigation",
+      "mode": "tree",
+      "reason": "能力、缺口与行动导航注册表"
+    },
+    {
+      "path": "project-workflows/definitions",
+      "mode": "tree",
+      "reason": "可执行工作流定义"
+    },
+    {
+      "path": "project-workflows/generated",
+      "mode": "tree",
+      "reason": "工作流规范与流程图生成物"
+    },
+    {
+      "path": "project-workflows/registry.json",
+      "mode": "file",
+      "reason": "可执行工作流注册表"
+    },
+    {
+      "path": "project-workflows/templates",
+      "mode": "tree",
+      "reason": "工作流模板"
+    },
+    {
+      "path": "project-workflows/viewer/README.md",
+      "mode": "file",
+      "reason": "工作流大图说明",
+      "optional": true
+    },
+    {
+      "path": "README.md",
+      "mode": "file",
+      "reason": "仓库入口说明",
+      "optional": true
+    },
+    {
+      "path": "schemas",
+      "mode": "tree",
+      "reason": "JSON Schema 数据契约"
+    },
+    {
+      "path": "scripts/project-context-pack/catalog.json",
+      "mode": "file",
+      "reason": "本打包目录自身（便于外部 AI 理解纳入范围）"
+    },
+    {
+      "path": "src/game/data/gameplay_outline",
+      "mode": "tree",
+      "reason": "玩法大纲与目录",
+      "include": {
+        "extensions": [
+          ".json",
+          ".md"
+        ]
+      }
+    },
+    {
+      "path": "src/game/data/global",
+      "mode": "tree",
+      "reason": "全局资料与功能更新记录",
+      "include": {
+        "extensions": [
+          ".json",
+          ".js",
+          ".md"
+        ]
+      }
+    },
+    {
+      "path": "src/game/data/interactive_fictions",
+      "mode": "tree",
+      "reason": "互动小说场景描述数据",
+      "include": {
+        "extensions": [
+          ".json",
+          ".md"
+        ]
+      }
+    },
+    {
+      "path": "src/game/data/maps",
+      "mode": "tree",
+      "reason": "地图事件与对话等描述配置（排除 tilemap map.json）",
+      "include": {
+        "extensions": [
+          ".json",
+          ".md"
+        ]
+      }
+    },
+    {
+      "path": "src/game/data/plot_outline",
+      "mode": "tree",
+      "reason": "情节库",
+      "include": {
+        "extensions": [
+          ".json",
+          ".md"
+        ]
+      }
+    },
+    {
+      "path": "src/game/data/story_outline",
+      "mode": "tree",
+      "reason": "故事大纲 JSON/Markdown 权威内容",
+      "include": {
+        "extensions": [
+          ".json",
+          ".md"
+        ]
+      }
+    }
+  ],
+  "globalExclude": {
+    "dirNames": [
+      "node_modules",
+      "dist",
+      "dist-offline",
+      "dist-ssr",
+      "release",
+      ".git",
+      ".local",
+      "__pycache__",
+      "frames",
+      "cache"
+    ],
+    "extensions": [
+      ".png",
+      ".jpg",
+      ".jpeg",
+      ".webp",
+      ".gif",
+      ".mp3",
+      ".wav",
+      ".ogg",
+      ".mp4",
+      ".webm",
+      ".psd",
+      ".aseprite",
+      ".ttf",
+      ".woff",
+      ".woff2",
+      ".exe",
+      ".dll",
+      ".zip"
+    ],
+    "basenames": [
+      "map.json",
+      "package-lock.json"
+    ],
+    "pathPrefixes": [
+      "src/assets/",
+      "src/game/core/",
+      "src/game/scenes/",
+      "src/game/systems/",
+      "src/views/",
+      "src/components/",
+      "src/router/",
+      "external-knowledge/corpus/",
+      "external-knowledge/mirrors/",
+      "external-knowledge/staging/",
+      "external-knowledge/tools/",
+      "external-knowledge/sources/",
+      "project-workflows/runs/",
+      "project-workflows/viewer/data"
+    ]
+  },
+  "probe": {
+    "headLines": 16,
+    "maxSampleFiles": 3,
+    "positiveNamePatterns": [
+      "outline",
+      "catalog",
+      "story",
+      "plot",
+      "gameplay",
+      "bible",
+      "schema",
+      "registry",
+      "index",
+      "workflow",
+      "gap",
+      "navigation",
+      "memory",
+      "continuity",
+      "manifest",
+      "capability",
+      "skill",
+      "agents",
+      "docs",
+      "设计",
+      "规范",
+      "系统说明"
+    ],
+    "positiveContentPatterns": [
+      "schemaVersion",
+      "\"entries\"",
+      "parentKey",
+      "missingItems",
+      "gameplay",
+      "plot",
+      "story",
+      "authority",
+      "SKILL.md",
+      "AGENTS"
+    ],
+    "negativeNamePatterns": [
+      "node_modules",
+      "dist",
+      "assets",
+      "sprite",
+      "frames",
+      "vendor",
+      "coverage",
+      "offline"
+    ],
+    "preferExtensions": [
+      ".md",
+      ".json",
+      ".mmd",
+      ".yaml",
+      ".yml",
+      ".toml",
+      ".txt"
+    ]
+  },
+  "lastRefreshedAt": "2026-07-26T11:14:58.169Z"
+}

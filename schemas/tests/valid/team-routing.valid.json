@@ -1,0 +1,273 @@
+{
+  "schemaVersion": 1,
+  "policyId": "liluo-creative-team-routing",
+  "roster": "docs/设计记忆/项目组灵魂/team-roster.json",
+  "defaults": {
+    "tier": "solo",
+    "maxParallelAgents": 3,
+    "maxNestedDepth": 1,
+    "formalViewRequiresActualInvocation": true
+  },
+  "tiers": [
+    {
+      "id": "solo",
+      "minScore": 0,
+      "maxScore": 1,
+      "minAgents": 0,
+      "maxAgents": 0
+    },
+    {
+      "id": "micro-consult",
+      "minScore": 2,
+      "maxScore": 3,
+      "minAgents": 1,
+      "maxAgents": 1
+    },
+    {
+      "id": "council",
+      "minScore": 4,
+      "maxScore": null,
+      "minAgents": 2,
+      "maxAgents": 3
+    }
+  ],
+  "aggregation": {
+    "withinRiskGroup": "max",
+    "acrossRiskGroups": "sum",
+    "mechanicalOnlyForcesSolo": true
+  },
+  "signals": [
+    {
+      "id": "canon-continuity",
+      "riskGroup": "story-integrity",
+      "score": 2,
+      "preferredAgents": [
+        "liluo_continuity_reviewer"
+      ],
+      "match": {
+        "taskAny": [
+          "正史",
+          "角色状态",
+          "时间线",
+          "时间关系",
+          "世界规则",
+          "连续性",
+          "统一.*时间",
+          "跨世界.*关系"
+        ],
+        "pathAny": []
+      }
+    },
+    {
+      "id": "reader-facing-audit",
+      "riskGroup": "story-integrity",
+      "score": 2,
+      "preferredAgents": [
+        "liluo_content_auditor"
+      ],
+      "match": {
+        "taskAny": [
+          "正式段落",
+          "正式.*内容",
+          "阅读向",
+          "文案质量",
+          "自然表达",
+          "补写.*段落",
+          "故事节点.*正式",
+          "正式故事"
+        ],
+        "pathAny": [
+          "src/game/data/story_outline/**",
+          "src/game/data/maps/**/dialogues.json"
+        ]
+      },
+      "excludeTaskAny": [
+        "错别字",
+        "错字",
+        "格式修正",
+        "纯格式"
+      ]
+    },
+    {
+      "id": "story-gap-analysis",
+      "riskGroup": "story-integrity",
+      "score": 2,
+      "preferredAgents": [
+        "liluo_story_gap_analyst"
+      ],
+      "match": {
+        "taskAny": [
+          "故事缺口",
+          "覆盖不足",
+          "未利用节点",
+          "缺口分析",
+          "还缺什么"
+        ],
+        "pathAny": []
+      }
+    },
+    {
+      "id": "game-architecture",
+      "riskGroup": "architecture",
+      "score": 2,
+      "preferredAgents": [
+        "liluo_game_architecture_explorer"
+      ],
+      "match": {
+        "taskAny": [
+          "游戏架构",
+          "模块边界",
+          "数据流",
+          "Pinia",
+          "Phaser",
+          "Vue/Phaser",
+          "地图事件.*状态"
+        ],
+        "pathAny": [
+          "src/game/core/**",
+          "src/game/systems/**",
+          "src/game/scenes/**"
+        ]
+      }
+    },
+    {
+      "id": "authority-tracing",
+      "riskGroup": "authority",
+      "score": 2,
+      "preferredAgents": [
+        "liluo_context_explorer"
+      ],
+      "match": {
+        "taskAny": [
+          "权威来源",
+          "出处不清",
+          "跨多个文件",
+          "追踪事实",
+          "核验来源"
+        ],
+        "pathAny": []
+      }
+    },
+    {
+      "id": "governance-write",
+      "riskGroup": "governance",
+      "score": 2,
+      "preferredAgents": [
+        "liluo_project_memory_curator"
+      ],
+      "match": {
+        "taskAny": [
+          "长期规则",
+          "设计记忆",
+          "治理体系",
+          "写入.*规则",
+          "ADR",
+          "规范治理"
+        ],
+        "pathAny": [
+          "docs/规范治理/**",
+          "docs/设计记忆/**",
+          "docs/系统说明/**"
+        ]
+      }
+    },
+    {
+      "id": "explicit-validation",
+      "riskGroup": "validation",
+      "score": 2,
+      "preferredAgents": [
+        "liluo_validation_runner"
+      ],
+      "match": {
+        "taskAny": [
+          "独立验证",
+          "浏览器回归",
+          "回归测试",
+          "请.*审计",
+          "正式审计"
+        ],
+        "pathAny": []
+      }
+    },
+    {
+      "id": "ordinary-tests",
+      "riskGroup": "validation",
+      "score": 1,
+      "preferredAgents": [
+        "liluo_validation_runner"
+      ],
+      "match": {
+        "taskAny": [
+          "需要测试",
+          "跑测试",
+          "验证一下",
+          "单测"
+        ],
+        "pathAny": []
+      }
+    },
+    {
+      "id": "cross-scope",
+      "riskGroup": "scope",
+      "score": 2,
+      "preferredAgents": [],
+      "match": {
+        "taskAny": [
+          "三个世界",
+          "跨世界",
+          "跨系统",
+          "跨三个",
+          "多个职责"
+        ],
+        "pathAny": []
+      }
+    },
+    {
+      "id": "mechanical-edit",
+      "riskGroup": "mechanical",
+      "score": 0,
+      "preferredAgents": [],
+      "forceSoloWhenAlone": true,
+      "match": {
+        "taskAny": [
+          "错别字",
+          "错字",
+          "格式",
+          "命名",
+          "机械修改",
+          "无逻辑变化"
+        ],
+        "pathAny": []
+      }
+    }
+  ],
+  "agentPriority": [
+    "liluo_context_explorer",
+    "liluo_continuity_reviewer",
+    "liluo_game_architecture_explorer",
+    "liluo_project_memory_curator",
+    "liluo_story_gap_analyst",
+    "liluo_content_auditor",
+    "liluo_validation_runner"
+  ],
+  "display": {
+    "solo": "no-member-view",
+    "micro-consult": "one-compact-member-view",
+    "council": "two-or-three-compact-member-views-then-coordinator-conclusion",
+    "uncalledMemberDisplay": "none"
+  },
+  "userOverrides": {
+    "councilPhrases": [
+      "创作组讨论",
+      "开会讨论",
+      "让创作组",
+      "项目组讨论"
+    ],
+    "neutralPhrases": [
+      "只要专业结果",
+      "只要结果",
+      "不要人格",
+      "仅结果"
+    ]
+  }
+}

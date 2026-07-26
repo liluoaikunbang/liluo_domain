@@ -1,0 +1,216 @@
+{
+  "schemaVersion": 1,
+  "policyId": "liluo-project-context-policy",
+  "precedence": [
+    "current-user-instruction",
+    "AGENTS.md",
+    "path-current-authority",
+    "task-skill",
+    "system-documentation",
+    "design-memory",
+    "generated-index",
+    "external-reference",
+    "history"
+  ],
+  "budget": {
+    "maxAlwaysFiles": 2,
+    "maxPathAttachedFiles": 3,
+    "maxSkills": 2,
+    "maxAgentCards": 3,
+    "maxEvidenceFiles": 8
+  },
+  "classes": [
+    {
+      "id": "root-entry",
+      "globs": [
+        "AGENTS.md"
+      ],
+      "layer": "L0",
+      "role": "entry-authority",
+      "loadMode": "always",
+      "editMode": "governed"
+    },
+    {
+      "id": "context-policy",
+      "globs": [
+        "project-navigation/context-policy.json"
+      ],
+      "layer": "L0",
+      "role": "load-policy",
+      "loadMode": "always",
+      "editMode": "governed"
+    },
+    {
+      "id": "readme-navigation",
+      "globs": [
+        "README.md",
+        "docs/README.md"
+      ],
+      "layer": "L1",
+      "role": "navigation",
+      "loadMode": "path-or-explicit",
+      "editMode": "governed"
+    },
+    {
+      "id": "tool-adapters",
+      "globs": [
+        ".cursor/**",
+        ".codex/**"
+      ],
+      "layer": "L1",
+      "role": "tool-adapter",
+      "loadMode": "runtime-only",
+      "editMode": "tool-specific"
+    },
+    {
+      "id": "skills",
+      "globs": [
+        ".agents/skills/**"
+      ],
+      "layer": "L2",
+      "role": "workflow-authority",
+      "loadMode": "task-on-demand",
+      "editMode": "governed"
+    },
+    {
+      "id": "agent-contracts",
+      "globs": [
+        "docs/智能体说明/**",
+        "docs/设计记忆/项目组灵魂/成员/**"
+      ],
+      "layer": "L2",
+      "role": "agent-contract",
+      "loadMode": "selected-agent-only",
+      "editMode": "governed"
+    },
+    {
+      "id": "current-system-docs",
+      "globs": [
+        "docs/系统说明/**"
+      ],
+      "layer": "L2",
+      "role": "current-authority",
+      "loadMode": "task-on-demand",
+      "editMode": "governed"
+    },
+    {
+      "id": "design-memory",
+      "globs": [
+        "docs/设计记忆/**"
+      ],
+      "layer": "L2",
+      "role": "decision-rationale",
+      "loadMode": "decision-or-trace-only",
+      "editMode": "governed"
+    },
+    {
+      "id": "runtime-source",
+      "globs": [
+        "src/game/**"
+      ],
+      "layer": "L2",
+      "role": "runtime-authority",
+      "loadMode": "path-or-task",
+      "editMode": "direct"
+    },
+    {
+      "id": "data-contracts",
+      "globs": [
+        "schemas/**"
+      ],
+      "layer": "L2",
+      "role": "contract-authority",
+      "loadMode": "contract-task-only",
+      "editMode": "governed"
+    },
+    {
+      "id": "workflow-definitions",
+      "globs": [
+        "project-workflows/definitions/**"
+      ],
+      "layer": "L2",
+      "role": "workflow-definition",
+      "loadMode": "workflow-task-only",
+      "editMode": "governed"
+    },
+    {
+      "id": "team-routing",
+      "globs": [
+        "project-navigation/team-routing.json"
+      ],
+      "layer": "L2",
+      "role": "team-routing-policy",
+      "loadMode": "task-on-demand",
+      "editMode": "governed"
+    },
+    {
+      "id": "project-navigation",
+      "globs": [
+        "project-navigation/registry.json",
+        "project-navigation/capabilities.json",
+        "project-navigation/workflows.json",
+        "project-navigation/gaps.json",
+        "project-navigation/sources.json",
+        "project-navigation/status.json",
+        "project-navigation/gameplay-coverage.json",
+        "project-navigation/manual-gaps.json"
+      ],
+      "layer": "L3",
+      "role": "machine-navigation",
+      "loadMode": "query-or-small-direct",
+      "editMode": "generator-aware"
+    },
+    {
+      "id": "project-index",
+      "globs": [
+        "project-index/**"
+      ],
+      "layer": "L3",
+      "role": "generated-index",
+      "loadMode": "query-only",
+      "editMode": "generator-only"
+    },
+    {
+      "id": "external-knowledge",
+      "globs": [
+        "external-knowledge/**"
+      ],
+      "layer": "L3",
+      "role": "untrusted-external-reference",
+      "loadMode": "query-only",
+      "editMode": "pipeline-only"
+    },
+    {
+      "id": "history",
+      "globs": [
+        "docs/功能更新/**"
+      ],
+      "layer": "L4",
+      "role": "history",
+      "loadMode": "never-default",
+      "editMode": "append-through-governance"
+    },
+    {
+      "id": "generated-workflows",
+      "globs": [
+        "project-workflows/generated/**"
+      ],
+      "layer": "L4",
+      "role": "generated-output",
+      "loadMode": "never-default",
+      "editMode": "generator-only"
+    },
+    {
+      "id": "context-pack-artifacts",
+      "globs": [
+        "PACK-MANIFEST.json",
+        "LINK-STATE.json",
+        "scripts/project-context-pack/catalog.json"
+      ],
+      "layer": "L4",
+      "role": "pack-metadata",
+      "loadMode": "never-default",
+      "editMode": "generator-only"
+    }
+  ]
+}

@@ -90,6 +90,28 @@
       "owner": "assets",
       "requiredInChangedGate": true,
       "allowsMissingEmbeddedSchemaVersion": true
+    },
+    {
+      "id": "context-policy",
+      "schema": "schemas/workflows/context-policy.schema.json",
+      "sourceGlobs": [
+        "project-navigation/context-policy.json"
+      ],
+      "mode": "file",
+      "owner": "navigation",
+      "requiredInChangedGate": true,
+      "allowsMissingEmbeddedSchemaVersion": true
+    },
+    {
+      "id": "team-routing",
+      "schema": "schemas/workflows/team-routing.schema.json",
+      "sourceGlobs": [
+        "project-navigation/team-routing.json"
+      ],
+      "mode": "file",
+      "owner": "navigation",
+      "requiredInChangedGate": true,
+      "allowsMissingEmbeddedSchemaVersion": true
     }
   ]
 }

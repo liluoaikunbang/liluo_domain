@@ -9,7 +9,7 @@ test('update records use unique document numbers and newest-first dates', () => 
   assert.ok(updateRecords.length >= 100);
 
   for (const record of updateRecords) {
-    assert.match(record.id, /^\d{3}$/);
+    assert.match(record.id, /^\d{3}(?:-[a-z])?$/);
     assert.match(record.date, /^\d{4}-\d{2}-\d{2}$/);
     assert.ok(record.title.trim().length > 0);
     assert.ok(record.summary.trim().length >= 12);

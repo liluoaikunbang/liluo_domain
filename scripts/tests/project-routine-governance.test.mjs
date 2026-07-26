@@ -18,6 +18,8 @@ test('project routine exposes only fixed safe modes', () => {
   ])
   assert.deepEqual(resolveRoutinePlan('workflow').map((step) => step.id), [
     'project-routine-governance',
+    'project-workflow-validate',
+    'project-workflow-test',
   ])
   assert.deepEqual(resolveRoutinePlan('team-presence').map((step) => step.id), [
     'team-presence-test',

@@ -156,11 +156,11 @@ export function auditDocumentation({ root, documentRegistry, ruleRegistry }) {
   const errors = [...registry.errors, ...memory.errors];
   const warnings = [...registry.warnings, ...memory.warnings];
   const featureDir = path.join(root, 'docs', '功能更新');
-  const documents = fs.readdirSync(featureDir).map((name) => name.match(/^(\d+)-/)?.[1]).filter(Boolean);
+  const documents = fs.readdirSync(featureDir).map((name) => name.match(/^(\d{3}(?:-[a-z])?)-/)?.[1]).filter(Boolean);
   const catalogText = fs.readFileSync(path.join(root, 'docs', '功能更新目录.md'), 'utf8');
-  const catalog = [...catalogText.matchAll(/^\|\s*(\d+)\s*\|/gm)].map((match) => match[1]);
+  const catalog = [...catalogText.matchAll(/^\|\s*(\d{3}(?:-[a-z])?)\s*\|/gm)].map((match) => match[1]);
   const recordsText = fs.readFileSync(path.join(root, 'src', 'game', 'data', 'global', 'updateRecords.js'), 'utf8');
-  const records = [...recordsText.matchAll(/"id"\s*:\s*"(\d+)"/g)].map((match) => match[1]);
+  const records = [...recordsText.matchAll(/"id"\s*:\s*"(\d{3}(?:-[a-z])?)"/g)].map((match) => match[1]);
   errors.push(...compareFeatureIdSets({ documents, catalog, records }));
   return { errors: [...new Set(errors)], warnings: [...new Set(warnings)], info: [`featureDocuments=${documents.length}`, `designDecisions=${memory.records}`] };
 }

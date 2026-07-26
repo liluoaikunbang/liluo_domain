@@ -1,0 +1,1518 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-26T12:24:48.627Z",
+  "workflows": [
+    {
+      "id": "wf-story-mainline-restructure",
+      "version": "1.0.0",
+      "title": "故事主线重构（三世界阶段容器）",
+      "purpose": "在保全旧节点原文的前提下，规划并校验三世界主线阶段重构；正式迁移仅在 live 模式且用户明确批准后执行。本定义同时作为可执行工作流基建的试点。",
+      "domain": "story",
+      "status": "active",
+      "maturity": "pilot",
+      "ownerSkill": "liluo-executable-workflow",
+      "tags": [
+        "story",
+        "mainline",
+        "high-risk",
+        "pilot"
+      ],
+      "entryNodeId": "prepare-scope",
+      "completionGate": {
+        "requiredNodeIds": [
+          "prepare-scope",
+          "locate-sources",
+          "preserve-text",
+          "independent-review",
+          "migrate-structure",
+          "validate-structure",
+          "sync-navigation",
+          "final-report"
+        ],
+        "requiredArtifacts": [],
+        "forbidOpenBlockers": true
+      },
+      "invariants": [
+        {
+          "id": "preserve-source-text",
+          "statement": "用户原文与已确认节点正文不得被导出快照或重构脚本改写。",
+          "fatal": true,
+          "waiverAllowed": false
+        },
+        {
+          "id": "no-silent-live-migrate",
+          "statement": "dry-run 不得触碰正式故事源迁移；live 迁移前必须有人工批准。",
+          "fatal": true,
+          "waiverAllowed": false
+        },
+        {
+          "id": "no-auto-git",
+          "statement": "不自动提交或推送 Git。",
+          "fatal": true,
+          "waiverAllowed": false
+        }
+      ],
+      "visualization": {
+        "stages": [
+          {
+            "id": "prepare",
+            "title": "准备",
+            "criticalPath": true
+          },
+          {
+            "id": "protect",
+            "title": "保全",
+            "criticalPath": true
+          },
+          {
+            "id": "review",
+            "title": "独立审查",
+            "criticalPath": true
+          },
+          {
+            "id": "execute",
+            "title": "执行与校验",
+            "criticalPath": true
+          },
+          {
+            "id": "close",
+            "title": "收尾",
+            "criticalPath": true
+          }
+        ],
+        "simpleNodeIds": [
+          "prepare-scope",
+          "locate-sources",
+          "preserve-text",
+          "independent-review",
+          "migrate-structure",
+          "validate-structure",
+          "sync-navigation",
+          "final-report"
+        ]
+      },
+      "nodes": [
+        {
+          "id": "prepare-scope",
+          "title": "确认范围与模式",
+          "type": "prepare",
+          "stage": "prepare",
+          "why": "先固定 dry-run/live 与目标世界，避免半途扩大迁移面。",
+          "actor": "main-agent",
+          "risk": "medium",
+          "actions": [
+            "确认目标世界/系列",
+            "确认 mode=dry-run 或已获 live 批准",
+            "记录 inputSummary 与 flags.dryRun"
+          ],
+          "resources": [
+            {
+              "requirement": "required",
+              "kind": "skill",
+              "ref": "skill-liluo-executable-workflow",
+              "selfExecutionAllowed": true,
+              "evidence": [
+                "invocation",
+                "success-or-explicit-failure",
+                "result-summary",
+                "main-read",
+                "adoption-decision",
+                "downstream-use"
+              ],
+              "onFailure": "block",
+              "waiverAllowed": false
+            }
+          ],
+          "expectedOutputs": [
+            "范围与模式摘要"
+          ],
+          "completion": {
+            "requireResourceEvidence": true,
+            "notes": "必须写明 dry-run 或 live。"
+          },
+          "failure": {
+            "strategy": "block",
+            "notes": "范围不清不得继续。"
+          },
+          "criticalPath": true
+        },
+        {
+          "id": "locate-sources",
+          "title": "定位正式源与保全清单",
+          "type": "agent-task",
+          "stage": "prepare",
+          "why": "重构只能改结构位置，必须先锚定正式源与既有保全文件。",
+          "actor": "main-agent",
+          "risk": "high",
+          "actions": [
+            "定位 story_outline 正式源",
+            "核对 mainline-restructure-preservation.json 是否存在",
+            "列出将触达的脚本与测试"
+          ],
+          "resources": [
+            {
+              "requirement": "required",
+              "kind": "skill",
+              "ref": "skill-liluo-story-outline-graph-maintenance",
+              "selfExecutionAllowed": true,
+              "evidence": [
+                "invocation",
+                "success-or-explicit-failure",
+                "result-summary",
+                "main-read",
+                "adoption-decision",
+                "downstream-use"
+              ],
+              "onFailure": "block"
+            },
+            {
+              "requirement": "required",
+              "kind": "doc",
+              "ref": "src/game/data/story_outline/mainline-restructure-preservation.json",
+              "selfExecutionAllowed": true,
+              "evidence": [
+                "invocation",
+                "success-or-explicit-failure",
+                "result-summary",
+                "artifacts",
+                "main-read",
+                "adoption-decision"
+              ],
+              "onFailure": "block",
+              "fatal": true
+            }
+          ],
+          "expectedOutputs": [
+            "正式源路径列表",
+            "保全清单路径"
+          ],
+          "completion": {
+            "requireResourceEvidence": true,
+            "artifactPaths": []
+          },
+          "failure": {
+            "strategy": "block"
+          },
+          "criticalPath": true
+        },
+        {
+          "id": "preserve-text",
+          "title": "原文保全校验",
+          "type": "script",
+          "stage": "protect",
+          "why": "哈希保全是重构的硬门禁，不能靠模型口头保证。",
+          "actor": "script",
+          "risk": "critical",
+          "actions": [
+            "运行原文保全相关测试或只读校验",
+            "记录哈希/覆盖结果摘要"
+          ],
+          "resources": [
+            {
+              "requirement": "required",
+              "kind": "script",
+              "ref": "scripts/tests/three-world-mainline-restructure-preservation.test.mjs",
+              "selfExecutionAllowed": false,
+              "evidence": [
+                "invocation",
+                "success-or-explicit-failure",
+                "result-summary",
+                "main-read",
+                "adoption-decision",
+                "downstream-use"
+              ],
+              "onFailure": "block",
+              "fatal": true,
+              "waiverAllowed": false
+            }
+          ],
+          "expectedOutputs": [
+            "保全校验摘要"
+          ],
+          "completion": {
+            "requireResourceEvidence": true
+          },
+          "failure": {
+            "strategy": "terminate",
+            "notes": "保全失败立即终止。"
+          },
+          "criticalPath": true
+        },
+        {
+          "id": "independent-review",
+          "title": "独立内容与连续性审查",
+          "type": "review",
+          "stage": "review",
+          "why": "主线重构属于高风险结构变更，必须有独立审查且结果被主流程采用。",
+          "actor": "subagent",
+          "risk": "critical",
+          "actions": [
+            "委派内容审计子智能体",
+            "委派连续性审查子智能体",
+            "主流程阅读双方结论并给出采用决定"
+          ],
+          "resources": [
+            {
+              "requirement": "required",
+              "kind": "agent",
+              "ref": "agent-liluo-content-auditor",
+              "selfExecutionAllowed": false,
+              "evidence": [
+                "invocation",
+                "success-or-explicit-failure",
+                "result-summary",
+                "main-read",
+                "adoption-decision",
+                "downstream-use"
+              ],
+              "onFailure": "block",
+              "fatal": true,
+              "waiverAllowed": false
+            },
+            {
+              "requirement": "required",
+              "kind": "agent",
+              "ref": "agent-liluo-continuity-reviewer",
+              "selfExecutionAllowed": false,
+              "evidence": [
+                "invocation",
+                "success-or-explicit-failure",
+                "result-summary",
+                "main-read",
+                "adoption-decision",
+                "downstream-use"
+              ],
+              "onFailure": "block",
+              "fatal": true,
+              "waiverAllowed": false
+            }
+          ],
+          "expectedOutputs": [
+            "审查摘要",
+            "采用决定"
+          ],
+          "completion": {
+            "requireResourceEvidence": true,
+            "requireAdoptionForRequiredAgents": true,
+            "notes": "主 Agent 不得自称已完成独立审查。"
+          },
+          "failure": {
+            "strategy": "repair",
+            "repairNodeId": "repair-review-gaps",
+            "notes": "审查拒绝或要求返工时进入修补节点。"
+          },
+          "criticalPath": true
+        },
+        {
+          "id": "repair-review-gaps",
+          "title": "按审查意见修补计划",
+          "type": "agent-task",
+          "stage": "review",
+          "why": "返工闭环，避免审查意见被忽略后强行继续。",
+          "actor": "main-agent",
+          "risk": "high",
+          "criticalPath": false,
+          "actions": [
+            "根据审查意见调整迁移计划",
+            "必要时更新保全核对范围",
+            "重新提交独立审查"
+          ],
+          "resources": [
+            {
+              "requirement": "required",
+              "kind": "skill",
+              "ref": "skill-liluo-story-outline-authoring",
+              "selfExecutionAllowed": true,
+              "evidence": [
+                "invocation",
+                "success-or-explicit-failure",
+                "result-summary",
+                "main-read",
+                "adoption-decision",
+                "downstream-use"
+              ],
+              "onFailure": "block"
+            }
+          ],
+          "expectedOutputs": [
+            "修补说明"
+          ],
+          "completion": {
+            "requireResourceEvidence": true
+          },
+          "failure": {
+            "strategy": "block"
+          }
+        },
+        {
+          "id": "approve-live-migrate",
+          "title": "人工批准 live 迁移",
+          "type": "approval",
+          "stage": "execute",
+          "why": "只有用户明确批准才能离开 dry-run 写入正式源。",
+          "actor": "human",
+          "risk": "critical",
+          "criticalPath": false,
+          "actions": [
+            "展示迁移计划与风险",
+            "取得用户 approve/reject"
+          ],
+          "resources": [
+            {
+              "requirement": "required",
+              "kind": "approval",
+              "ref": "approval-live-mainline-migrate",
+              "selfExecutionAllowed": false,
+              "evidence": [
+                "invocation",
+                "success-or-explicit-failure",
+                "result-summary",
+                "main-read",
+                "adoption-decision"
+              ],
+              "onFailure": "block",
+              "fatal": true,
+              "waiverAllowed": false
+            }
+          ],
+          "expectedOutputs": [
+            "批准记录"
+          ],
+          "completion": {
+            "requireResourceEvidence": true
+          },
+          "failure": {
+            "strategy": "terminate"
+          }
+        },
+        {
+          "id": "migrate-structure",
+          "title": "执行结构迁移或演练跳过",
+          "type": "script",
+          "stage": "execute",
+          "why": "正式迁移由脚本完成；dry-run 仅记录“已演练跳过写入”。",
+          "actor": "script",
+          "risk": "critical",
+          "actions": [
+            "若 flags.dryRun：记录跳过正式迁移的证据",
+            "若 live 且已批准：运行主线重构脚本"
+          ],
+          "resources": [
+            {
+              "requirement": "conditional",
+              "kind": "script",
+              "ref": "scripts/story-outline/apply-three-world-mainline-restructure.mjs",
+              "condition": "flag:liveMigrate",
+              "selfExecutionAllowed": false,
+              "evidence": [
+                "invocation",
+                "success-or-explicit-failure",
+                "result-summary",
+                "artifacts",
+                "main-read",
+                "adoption-decision",
+                "downstream-use"
+              ],
+              "onFailure": "block",
+              "fatal": true
+            },
+            {
+              "requirement": "required",
+              "kind": "skill",
+              "ref": "skill-liluo-executable-workflow",
+              "selfExecutionAllowed": true,
+              "evidence": [
+                "invocation",
+                "success-or-explicit-failure",
+                "result-summary",
+                "main-read",
+                "adoption-decision",
+                "downstream-use"
+              ],
+              "onFailure": "block"
+            }
+          ],
+          "expectedOutputs": [
+            "迁移或 dry-run 跳过摘要"
+          ],
+          "completion": {
+            "requireResourceEvidence": true,
+            "notes": "dry-run 必须明确记录未写入正式源。"
+          },
+          "failure": {
+            "strategy": "terminate"
+          },
+          "criticalPath": true
+        },
+        {
+          "id": "validate-structure",
+          "title": "结构与内容校验",
+          "type": "gate",
+          "stage": "execute",
+          "why": "确定性校验证明节点图与保全仍然成立。",
+          "actor": "script",
+          "risk": "high",
+          "actions": [
+            "运行保全测试或等价只读校验",
+            "必要时委派验证子智能体解读失败"
+          ],
+          "resources": [
+            {
+              "requirement": "required",
+              "kind": "script",
+              "ref": "scripts/tests/three-world-mainline-restructure-preservation.test.mjs",
+              "selfExecutionAllowed": false,
+              "evidence": [
+                "invocation",
+                "success-or-explicit-failure",
+                "result-summary",
+                "main-read",
+                "adoption-decision",
+                "downstream-use"
+              ],
+              "onFailure": "block",
+              "fatal": true
+            },
+            {
+              "requirement": "optional",
+              "kind": "agent",
+              "ref": "agent-liluo-validation-runner",
+              "selfExecutionAllowed": false,
+              "evidence": [
+                "invocation",
+                "success-or-explicit-failure",
+                "result-summary",
+                "main-read",
+                "adoption-decision"
+              ],
+              "onFailure": "human"
+            }
+          ],
+          "expectedOutputs": [
+            "校验通过摘要"
+          ],
+          "completion": {
+            "requireResourceEvidence": true
+          },
+          "failure": {
+            "strategy": "block"
+          },
+          "criticalPath": true
+        },
+        {
+          "id": "sync-navigation",
+          "title": "同步能力导航与缺口",
+          "type": "agent-task",
+          "stage": "close",
+          "why": "重构后的可执行入口与缺口状态应反映到导航层。",
+          "actor": "main-agent",
+          "risk": "medium",
+          "actions": [
+            "按变化面更新 project-navigation",
+            "确认可执行工作流投影可见"
+          ],
+          "resources": [
+            {
+              "requirement": "required",
+              "kind": "skill",
+              "ref": "skill-liluo-project-capability-navigation",
+              "selfExecutionAllowed": true,
+              "evidence": [
+                "invocation",
+                "success-or-explicit-failure",
+                "result-summary",
+                "main-read",
+                "adoption-decision",
+                "downstream-use"
+              ],
+              "onFailure": "block"
+            },
+            {
+              "requirement": "required",
+              "kind": "command",
+              "ref": "command-project-navigation-check",
+              "selfExecutionAllowed": false,
+              "evidence": [
+                "invocation",
+                "success-or-explicit-failure",
+                "result-summary",
+                "main-read",
+                "adoption-decision"
+              ],
+              "onFailure": "block"
+            }
+          ],
+          "expectedOutputs": [
+            "导航检查摘要"
+          ],
+          "completion": {
+            "requireResourceEvidence": true
+          },
+          "failure": {
+            "strategy": "retry",
+            "notes": "导航失败可重试一次，仍失败则阻塞。"
+          },
+          "criticalPath": true
+        },
+        {
+          "id": "final-report",
+          "title": "生成运行报告",
+          "type": "report",
+          "stage": "close",
+          "why": "关闭流程前留下可审计报告与状态图。",
+          "actor": "system",
+          "risk": "low",
+          "actions": [
+            "运行 finish 生成报告",
+            "核对完成门禁"
+          ],
+          "resources": [
+            {
+              "requirement": "required",
+              "kind": "command",
+              "ref": "command-project-workflow-report",
+              "selfExecutionAllowed": false,
+              "evidence": [
+                "invocation",
+                "success-or-explicit-failure",
+                "result-summary",
+                "artifacts",
+                "main-read",
+                "adoption-decision",
+                "downstream-use"
+              ],
+              "onFailure": "block"
+            }
+          ],
+          "expectedOutputs": [
+            "运行报告 Markdown"
+          ],
+          "completion": {
+            "requireResourceEvidence": true,
+            "notes": "先写报告，再由 finish 检查流程门禁。"
+          },
+          "failure": {
+            "strategy": "block"
+          },
+          "criticalPath": true
+        }
+      ],
+      "edges": [
+        {
+          "id": "e-prepare-locate",
+          "from": "prepare-scope",
+          "to": "locate-sources",
+          "when": "success"
+        },
+        {
+          "id": "e-locate-preserve",
+          "from": "locate-sources",
+          "to": "preserve-text",
+          "when": "success"
+        },
+        {
+          "id": "e-preserve-review",
+          "from": "preserve-text",
+          "to": "independent-review",
+          "when": "success"
+        },
+        {
+          "id": "e-review-migrate-dry",
+          "from": "independent-review",
+          "to": "migrate-structure",
+          "when": "condition",
+          "condition": {
+            "expression": "adoption:accepted"
+          },
+          "label": "审查接受"
+        },
+        {
+          "id": "e-review-repair",
+          "from": "independent-review",
+          "to": "repair-review-gaps",
+          "when": "rework",
+          "label": "审查返工"
+        },
+        {
+          "id": "e-repair-review",
+          "from": "repair-review-gaps",
+          "to": "independent-review",
+          "when": "success",
+          "label": "重新审查"
+        },
+        {
+          "id": "e-review-approve-live",
+          "from": "independent-review",
+          "to": "approve-live-migrate",
+          "when": "condition",
+          "condition": {
+            "expression": "flag:liveMigrate"
+          },
+          "label": "需要 live 批准"
+        },
+        {
+          "id": "e-approve-migrate",
+          "from": "approve-live-migrate",
+          "to": "migrate-structure",
+          "when": "human-decision",
+          "condition": {
+            "expression": "decision:approve"
+          },
+          "label": "用户批准"
+        },
+        {
+          "id": "e-migrate-validate",
+          "from": "migrate-structure",
+          "to": "validate-structure",
+          "when": "success"
+        },
+        {
+          "id": "e-validate-sync",
+          "from": "validate-structure",
+          "to": "sync-navigation",
+          "when": "success"
+        },
+        {
+          "id": "e-sync-report",
+          "from": "sync-navigation",
+          "to": "final-report",
+          "when": "success"
+        }
+      ],
+      "resources": [
+        {
+          "nodeId": "prepare-scope",
+          "requirement": "required",
+          "kind": "skill",
+          "ref": "skill-liluo-executable-workflow",
+          "selfExecutionAllowed": true,
+          "fatal": false
+        },
+        {
+          "nodeId": "locate-sources",
+          "requirement": "required",
+          "kind": "skill",
+          "ref": "skill-liluo-story-outline-graph-maintenance",
+          "selfExecutionAllowed": true,
+          "fatal": false
+        },
+        {
+          "nodeId": "locate-sources",
+          "requirement": "required",
+          "kind": "doc",
+          "ref": "src/game/data/story_outline/mainline-restructure-preservation.json",
+          "selfExecutionAllowed": true,
+          "fatal": true
+        },
+        {
+          "nodeId": "preserve-text",
+          "requirement": "required",
+          "kind": "script",
+          "ref": "scripts/tests/three-world-mainline-restructure-preservation.test.mjs",
+          "selfExecutionAllowed": false,
+          "fatal": true
+        },
+        {
+          "nodeId": "independent-review",
+          "requirement": "required",
+          "kind": "agent",
+          "ref": "agent-liluo-content-auditor",
+          "selfExecutionAllowed": false,
+          "fatal": true
+        },
+        {
+          "nodeId": "independent-review",
+          "requirement": "required",
+          "kind": "agent",
+          "ref": "agent-liluo-continuity-reviewer",
+          "selfExecutionAllowed": false,
+          "fatal": true
+        },
+        {
+          "nodeId": "repair-review-gaps",
+          "requirement": "required",
+          "kind": "skill",
+          "ref": "skill-liluo-story-outline-authoring",
+          "selfExecutionAllowed": true,
+          "fatal": false
+        },
+        {
+          "nodeId": "approve-live-migrate",
+          "requirement": "required",
+          "kind": "approval",
+          "ref": "approval-live-mainline-migrate",
+          "selfExecutionAllowed": false,
+          "fatal": true
+        },
+        {
+          "nodeId": "migrate-structure",
+          "requirement": "conditional",
+          "kind": "script",
+          "ref": "scripts/story-outline/apply-three-world-mainline-restructure.mjs",
+          "selfExecutionAllowed": false,
+          "fatal": true
+        },
+        {
+          "nodeId": "migrate-structure",
+          "requirement": "required",
+          "kind": "skill",
+          "ref": "skill-liluo-executable-workflow",
+          "selfExecutionAllowed": true,
+          "fatal": false
+        },
+        {
+          "nodeId": "validate-structure",
+          "requirement": "required",
+          "kind": "script",
+          "ref": "scripts/tests/three-world-mainline-restructure-preservation.test.mjs",
+          "selfExecutionAllowed": false,
+          "fatal": true
+        },
+        {
+          "nodeId": "validate-structure",
+          "requirement": "optional",
+          "kind": "agent",
+          "ref": "agent-liluo-validation-runner",
+          "selfExecutionAllowed": false,
+          "fatal": false
+        },
+        {
+          "nodeId": "sync-navigation",
+          "requirement": "required",
+          "kind": "skill",
+          "ref": "skill-liluo-project-capability-navigation",
+          "selfExecutionAllowed": true,
+          "fatal": false
+        },
+        {
+          "nodeId": "sync-navigation",
+          "requirement": "required",
+          "kind": "command",
+          "ref": "command-project-navigation-check",
+          "selfExecutionAllowed": false,
+          "fatal": false
+        },
+        {
+          "nodeId": "final-report",
+          "requirement": "required",
+          "kind": "command",
+          "ref": "command-project-workflow-report",
+          "selfExecutionAllowed": false,
+          "fatal": false
+        }
+      ],
+      "mermaid": {
+        "simple": "flowchart TD\n  subgraph S0[\"prepare\"]\n    prepare-scope[\"确认范围与模式\"]\n    locate-sources[\"定位正式源与保全清单\"]\n  end\n  subgraph S1[\"protect\"]\n    preserve-text[\"原文保全校验\"]\n  end\n  subgraph S2[\"review\"]\n    independent-review[\"独立内容与连续性审查\"]\n  end\n  subgraph S3[\"execute\"]\n    migrate-structure[\"执行结构迁移或演练跳过\"]\n    validate-structure[\"结构与内容校验\"]\n  end\n  subgraph S4[\"close\"]\n    sync-navigation[\"同步能力导航与缺口\"]\n    final-report[\"生成运行报告\"]\n  end\n  prepare-scope -->|success| locate-sources\n  locate-sources -->|success| preserve-text\n  preserve-text -->|success| independent-review\n  independent-review -->|审查接受| migrate-structure\n  migrate-structure -->|success| validate-structure\n  validate-structure -->|success| sync-navigation\n  sync-navigation -->|success| final-report\n",
+        "detail": "flowchart TD\n  subgraph S0[\"prepare\"]\n    prepare-scope[\"确认范围与模式\"]\n    locate-sources[\"定位正式源与保全清单\"]\n  end\n  subgraph S1[\"protect\"]\n    preserve-text[\"原文保全校验\"]\n  end\n  subgraph S2[\"review\"]\n    independent-review[\"独立内容与连续性审查\"]\n    repair-review-gaps[\"按审查意见修补计划\"]\n  end\n  subgraph S3[\"execute\"]\n    approve-live-migrate[\"人工批准 live 迁移\"]\n    migrate-structure[\"执行结构迁移或演练跳过\"]\n    validate-structure[\"结构与内容校验\"]\n  end\n  subgraph S4[\"close\"]\n    sync-navigation[\"同步能力导航与缺口\"]\n    final-report[\"生成运行报告\"]\n  end\n  prepare-scope -->|success| locate-sources\n  locate-sources -->|success| preserve-text\n  preserve-text -->|success| independent-review\n  independent-review -->|审查接受| migrate-structure\n  independent-review -->|审查返工| repair-review-gaps\n  repair-review-gaps -->|重新审查| independent-review\n  independent-review -->|需要 live 批准| approve-live-migrate\n  approve-live-migrate -->|用户批准| migrate-structure\n  migrate-structure -->|success| validate-structure\n  validate-structure -->|success| sync-navigation\n  sync-navigation -->|success| final-report\n  prepare_scope_skill_skill_liluo_executable_workflow([\"S:liluo-executable-workflow\"])\n  prepare-scope -.-> prepare_scope_skill_skill_liluo_executable_workflow\n  locate_sources_skill_skill_liluo_story_outline_graph_maintenance([\"S:liluo-story-outline-graph-maintenance\"])\n  locate-sources -.-> locate_sources_skill_skill_liluo_story_outline_graph_maintenance\n  independent_review_agent_agent_liluo_content_auditor([\"A:liluo-content-auditor\"])\n  independent-review -.-> independent_review_agent_agent_liluo_content_auditor\n  independent_review_agent_agent_liluo_continuity_reviewer([\"A:liluo-continuity-reviewer\"])\n  independent-review -.-> independent_review_agent_agent_liluo_continuity_reviewer\n  repair_review_gaps_skill_skill_liluo_story_outline_authoring([\"S:liluo-story-outline-authoring\"])\n  repair-review-gaps -.-> repair_review_gaps_skill_skill_liluo_story_outline_authoring\n  approve_live_migrate_approval_approval_live_mainline_migrate([\"approval-live-mainline-migrate\"])\n  approve-live-migrate -.-> approve_live_migrate_approval_approval_live_mainline_migrate\n  migrate_structure_skill_skill_liluo_executable_workflow([\"S:liluo-executable-workflow\"])\n  migrate-structure -.-> migrate_structure_skill_skill_liluo_executable_workflow\n  sync_navigation_skill_skill_liluo_project_capability_navigation([\"S:liluo-project-capability-navigation\"])\n  sync-navigation -.-> sync_navigation_skill_skill_liluo_project_capability_navigation\n"
+      },
+      "definitionPath": "project-workflows/definitions/wf-story-mainline-restructure.v1.0.0.json"
+    }
+  ],
+  "runs": [
+    {
+      "runId": "run-story-mainline-restructure-example",
+      "workflowId": "wf-story-mainline-restructure",
+      "workflowVersion": "1.0.0",
+      "status": "completed",
+      "mode": "dry-run",
+      "createdAt": "2026-07-26T12:24:26.210Z",
+      "updatedAt": "2026-07-26T12:24:26.211Z",
+      "activeNodeIds": [],
+      "nodes": {
+        "prepare-scope": {
+          "status": "completed",
+          "attempts": 1,
+          "artifactPaths": [],
+          "completionChecks": [
+            {
+              "id": "evidence-invocation:skill-liluo-executable-workflow",
+              "ok": true,
+              "detail": "已记录调用"
+            },
+            {
+              "id": "evidence-status:skill-liluo-executable-workflow",
+              "ok": true,
+              "detail": "调用状态 succeeded"
+            },
+            {
+              "id": "evidence-summary:skill-liluo-executable-workflow",
+              "ok": true,
+              "detail": "已有结果摘要"
+            },
+            {
+              "id": "evidence-main-read:skill-liluo-executable-workflow",
+              "ok": true,
+              "detail": "主流程已读取结果"
+            },
+            {
+              "id": "evidence-adoption:skill-liluo-executable-workflow",
+              "ok": true,
+              "detail": "采用决定：accepted"
+            },
+            {
+              "id": "evidence-downstream:skill-liluo-executable-workflow",
+              "ok": true,
+              "detail": "已记录下游使用"
+            }
+          ],
+          "startedAt": "2026-07-26T12:24:26.210Z",
+          "endedAt": "2026-07-26T12:24:26.210Z"
+        },
+        "locate-sources": {
+          "status": "completed",
+          "attempts": 1,
+          "artifactPaths": [],
+          "completionChecks": [
+            {
+              "id": "evidence-invocation:skill-liluo-story-outline-graph-maintenance",
+              "ok": true,
+              "detail": "已记录调用"
+            },
+            {
+              "id": "evidence-status:skill-liluo-story-outline-graph-maintenance",
+              "ok": true,
+              "detail": "调用状态 succeeded"
+            },
+            {
+              "id": "evidence-summary:skill-liluo-story-outline-graph-maintenance",
+              "ok": true,
+              "detail": "已有结果摘要"
+            },
+            {
+              "id": "evidence-main-read:skill-liluo-story-outline-graph-maintenance",
+              "ok": true,
+              "detail": "主流程已读取结果"
+            },
+            {
+              "id": "evidence-adoption:skill-liluo-story-outline-graph-maintenance",
+              "ok": true,
+              "detail": "采用决定：accepted"
+            },
+            {
+              "id": "evidence-downstream:skill-liluo-story-outline-graph-maintenance",
+              "ok": true,
+              "detail": "已记录下游使用"
+            },
+            {
+              "id": "evidence-invocation:src/game/data/story_outline/mainline-restructure-preservation.json",
+              "ok": true,
+              "detail": "已记录调用"
+            },
+            {
+              "id": "evidence-status:src/game/data/story_outline/mainline-restructure-preservation.json",
+              "ok": true,
+              "detail": "调用状态 succeeded"
+            },
+            {
+              "id": "evidence-summary:src/game/data/story_outline/mainline-restructure-preservation.json",
+              "ok": true,
+              "detail": "已有结果摘要"
+            },
+            {
+              "id": "evidence-artifacts:src/game/data/story_outline/mainline-restructure-preservation.json",
+              "ok": true,
+              "detail": "产物 1 项"
+            },
+            {
+              "id": "evidence-main-read:src/game/data/story_outline/mainline-restructure-preservation.json",
+              "ok": true,
+              "detail": "主流程已读取结果"
+            },
+            {
+              "id": "evidence-adoption:src/game/data/story_outline/mainline-restructure-preservation.json",
+              "ok": true,
+              "detail": "采用决定：accepted"
+            }
+          ],
+          "startedAt": "2026-07-26T12:24:26.210Z",
+          "endedAt": "2026-07-26T12:24:26.210Z"
+        },
+        "preserve-text": {
+          "status": "completed",
+          "attempts": 1,
+          "artifactPaths": [],
+          "completionChecks": [
+            {
+              "id": "evidence-invocation:scripts/tests/three-world-mainline-restructure-preservation.test.mjs",
+              "ok": true,
+              "detail": "已记录调用"
+            },
+            {
+              "id": "evidence-status:scripts/tests/three-world-mainline-restructure-preservation.test.mjs",
+              "ok": true,
+              "detail": "调用状态 succeeded"
+            },
+            {
+              "id": "evidence-summary:scripts/tests/three-world-mainline-restructure-preservation.test.mjs",
+              "ok": true,
+              "detail": "已有结果摘要"
+            },
+            {
+              "id": "evidence-main-read:scripts/tests/three-world-mainline-restructure-preservation.test.mjs",
+              "ok": true,
+              "detail": "主流程已读取结果"
+            },
+            {
+              "id": "evidence-adoption:scripts/tests/three-world-mainline-restructure-preservation.test.mjs",
+              "ok": true,
+              "detail": "采用决定：accepted"
+            },
+            {
+              "id": "evidence-downstream:scripts/tests/three-world-mainline-restructure-preservation.test.mjs",
+              "ok": true,
+              "detail": "已记录下游使用"
+            }
+          ],
+          "startedAt": "2026-07-26T12:24:26.211Z",
+          "endedAt": "2026-07-26T12:24:26.211Z"
+        },
+        "independent-review": {
+          "status": "completed",
+          "attempts": 1,
+          "artifactPaths": [],
+          "completionChecks": [
+            {
+              "id": "evidence-invocation:agent-liluo-content-auditor",
+              "ok": true,
+              "detail": "已记录调用"
+            },
+            {
+              "id": "evidence-status:agent-liluo-content-auditor",
+              "ok": true,
+              "detail": "调用状态 succeeded"
+            },
+            {
+              "id": "evidence-summary:agent-liluo-content-auditor",
+              "ok": true,
+              "detail": "已有结果摘要"
+            },
+            {
+              "id": "evidence-main-read:agent-liluo-content-auditor",
+              "ok": true,
+              "detail": "主流程已读取结果"
+            },
+            {
+              "id": "evidence-adoption:agent-liluo-content-auditor",
+              "ok": true,
+              "detail": "采用决定：accepted"
+            },
+            {
+              "id": "evidence-downstream:agent-liluo-content-auditor",
+              "ok": true,
+              "detail": "已记录下游使用"
+            },
+            {
+              "id": "evidence-invocation:agent-liluo-continuity-reviewer",
+              "ok": true,
+              "detail": "已记录调用"
+            },
+            {
+              "id": "evidence-status:agent-liluo-continuity-reviewer",
+              "ok": true,
+              "detail": "调用状态 succeeded"
+            },
+            {
+              "id": "evidence-summary:agent-liluo-continuity-reviewer",
+              "ok": true,
+              "detail": "已有结果摘要"
+            },
+            {
+              "id": "evidence-main-read:agent-liluo-continuity-reviewer",
+              "ok": true,
+              "detail": "主流程已读取结果"
+            },
+            {
+              "id": "evidence-adoption:agent-liluo-continuity-reviewer",
+              "ok": true,
+              "detail": "采用决定：accepted"
+            },
+            {
+              "id": "evidence-downstream:agent-liluo-continuity-reviewer",
+              "ok": true,
+              "detail": "已记录下游使用"
+            }
+          ],
+          "adoption": "accepted",
+          "endedAt": "2026-07-26T12:24:26.211Z"
+        },
+        "repair-review-gaps": {
+          "status": "pending",
+          "attempts": 0,
+          "artifactPaths": [],
+          "completionChecks": []
+        },
+        "approve-live-migrate": {
+          "status": "pending",
+          "attempts": 0,
+          "artifactPaths": [],
+          "completionChecks": []
+        },
+        "migrate-structure": {
+          "status": "completed",
+          "attempts": 1,
+          "artifactPaths": [],
+          "completionChecks": [
+            {
+              "id": "evidence-invocation:skill-liluo-executable-workflow",
+              "ok": true,
+              "detail": "已记录调用"
+            },
+            {
+              "id": "evidence-status:skill-liluo-executable-workflow",
+              "ok": true,
+              "detail": "调用状态 succeeded"
+            },
+            {
+              "id": "evidence-summary:skill-liluo-executable-workflow",
+              "ok": true,
+              "detail": "已有结果摘要"
+            },
+            {
+              "id": "evidence-main-read:skill-liluo-executable-workflow",
+              "ok": true,
+              "detail": "主流程已读取结果"
+            },
+            {
+              "id": "evidence-adoption:skill-liluo-executable-workflow",
+              "ok": true,
+              "detail": "采用决定：accepted"
+            },
+            {
+              "id": "evidence-downstream:skill-liluo-executable-workflow",
+              "ok": true,
+              "detail": "已记录下游使用"
+            }
+          ],
+          "startedAt": "2026-07-26T12:24:26.211Z",
+          "endedAt": "2026-07-26T12:24:26.211Z"
+        },
+        "validate-structure": {
+          "status": "completed",
+          "attempts": 1,
+          "artifactPaths": [],
+          "completionChecks": [
+            {
+              "id": "evidence-invocation:scripts/tests/three-world-mainline-restructure-preservation.test.mjs",
+              "ok": true,
+              "detail": "已记录调用"
+            },
+            {
+              "id": "evidence-status:scripts/tests/three-world-mainline-restructure-preservation.test.mjs",
+              "ok": true,
+              "detail": "调用状态 succeeded"
+            },
+            {
+              "id": "evidence-summary:scripts/tests/three-world-mainline-restructure-preservation.test.mjs",
+              "ok": true,
+              "detail": "已有结果摘要"
+            },
+            {
+              "id": "evidence-main-read:scripts/tests/three-world-mainline-restructure-preservation.test.mjs",
+              "ok": true,
+              "detail": "主流程已读取结果"
+            },
+            {
+              "id": "evidence-adoption:scripts/tests/three-world-mainline-restructure-preservation.test.mjs",
+              "ok": true,
+              "detail": "采用决定：accepted"
+            },
+            {
+              "id": "evidence-downstream:scripts/tests/three-world-mainline-restructure-preservation.test.mjs",
+              "ok": true,
+              "detail": "已记录下游使用"
+            }
+          ],
+          "startedAt": "2026-07-26T12:24:26.211Z",
+          "endedAt": "2026-07-26T12:24:26.211Z"
+        },
+        "sync-navigation": {
+          "status": "completed",
+          "attempts": 1,
+          "artifactPaths": [],
+          "completionChecks": [
+            {
+              "id": "evidence-invocation:skill-liluo-project-capability-navigation",
+              "ok": true,
+              "detail": "已记录调用"
+            },
+            {
+              "id": "evidence-status:skill-liluo-project-capability-navigation",
+              "ok": true,
+              "detail": "调用状态 succeeded"
+            },
+            {
+              "id": "evidence-summary:skill-liluo-project-capability-navigation",
+              "ok": true,
+              "detail": "已有结果摘要"
+            },
+            {
+              "id": "evidence-main-read:skill-liluo-project-capability-navigation",
+              "ok": true,
+              "detail": "主流程已读取结果"
+            },
+            {
+              "id": "evidence-adoption:skill-liluo-project-capability-navigation",
+              "ok": true,
+              "detail": "采用决定：accepted"
+            },
+            {
+              "id": "evidence-downstream:skill-liluo-project-capability-navigation",
+              "ok": true,
+              "detail": "已记录下游使用"
+            },
+            {
+              "id": "evidence-invocation:command-project-navigation-check",
+              "ok": true,
+              "detail": "已记录调用"
+            },
+            {
+              "id": "evidence-status:command-project-navigation-check",
+              "ok": true,
+              "detail": "调用状态 succeeded"
+            },
+            {
+              "id": "evidence-summary:command-project-navigation-check",
+              "ok": true,
+              "detail": "已有结果摘要"
+            },
+            {
+              "id": "evidence-main-read:command-project-navigation-check",
+              "ok": true,
+              "detail": "主流程已读取结果"
+            },
+            {
+              "id": "evidence-adoption:command-project-navigation-check",
+              "ok": true,
+              "detail": "采用决定：accepted"
+            }
+          ],
+          "startedAt": "2026-07-26T12:24:26.211Z",
+          "endedAt": "2026-07-26T12:24:26.211Z"
+        },
+        "final-report": {
+          "status": "completed",
+          "attempts": 1,
+          "artifactPaths": [],
+          "completionChecks": [
+            {
+              "id": "evidence-invocation:command-project-workflow-report",
+              "ok": true,
+              "detail": "已记录调用"
+            },
+            {
+              "id": "evidence-status:command-project-workflow-report",
+              "ok": true,
+              "detail": "调用状态 succeeded"
+            },
+            {
+              "id": "evidence-summary:command-project-workflow-report",
+              "ok": true,
+              "detail": "已有结果摘要"
+            },
+            {
+              "id": "evidence-artifacts:command-project-workflow-report",
+              "ok": true,
+              "detail": "产物 1 项"
+            },
+            {
+              "id": "evidence-main-read:command-project-workflow-report",
+              "ok": true,
+              "detail": "主流程已读取结果"
+            },
+            {
+              "id": "evidence-adoption:command-project-workflow-report",
+              "ok": true,
+              "detail": "采用决定：accepted"
+            },
+            {
+              "id": "evidence-downstream:command-project-workflow-report",
+              "ok": true,
+              "detail": "已记录下游使用"
+            }
+          ],
+          "startedAt": "2026-07-26T12:24:26.211Z",
+          "endedAt": "2026-07-26T12:24:26.211Z"
+        }
+      },
+      "invocations": [
+        {
+          "invocationId": "inv-1",
+          "nodeId": "prepare-scope",
+          "startedAt": "2026-07-26T12:24:26.210Z",
+          "endedAt": "2026-07-26T12:24:26.210Z",
+          "status": "succeeded",
+          "resultSummary": "确认 dry-run 与目标三世界",
+          "mainRead": true,
+          "adoption": "accepted",
+          "downstreamUse": "写入 inputSummary/flags",
+          "artifactPaths": [],
+          "selfExecuted": false,
+          "kind": "skill",
+          "ref": "skill-liluo-executable-workflow"
+        },
+        {
+          "invocationId": "inv-2",
+          "nodeId": "locate-sources",
+          "startedAt": "2026-07-26T12:24:26.210Z",
+          "endedAt": "2026-07-26T12:24:26.210Z",
+          "status": "succeeded",
+          "resultSummary": "定位正式源",
+          "mainRead": true,
+          "adoption": "accepted",
+          "downstreamUse": "进入保全校验",
+          "artifactPaths": [],
+          "selfExecuted": false,
+          "kind": "skill",
+          "ref": "skill-liluo-story-outline-graph-maintenance"
+        },
+        {
+          "invocationId": "inv-3",
+          "nodeId": "locate-sources",
+          "startedAt": "2026-07-26T12:24:26.210Z",
+          "endedAt": "2026-07-26T12:24:26.210Z",
+          "status": "succeeded",
+          "resultSummary": "保全清单存在",
+          "mainRead": true,
+          "adoption": "accepted",
+          "downstreamUse": "作为保全输入",
+          "artifactPaths": [
+            "src/game/data/story_outline/mainline-restructure-preservation.json"
+          ],
+          "selfExecuted": false,
+          "kind": "doc",
+          "ref": "src/game/data/story_outline/mainline-restructure-preservation.json"
+        },
+        {
+          "invocationId": "inv-4",
+          "nodeId": "preserve-text",
+          "startedAt": "2026-07-26T12:24:26.211Z",
+          "endedAt": "2026-07-26T12:24:26.211Z",
+          "status": "succeeded",
+          "resultSummary": "保全测试通过（演练记录）",
+          "mainRead": true,
+          "adoption": "accepted",
+          "downstreamUse": "允许进入独立审查",
+          "artifactPaths": [],
+          "selfExecuted": false,
+          "kind": "script",
+          "ref": "scripts/tests/three-world-mainline-restructure-preservation.test.mjs"
+        },
+        {
+          "invocationId": "inv-5",
+          "nodeId": "independent-review",
+          "startedAt": "2026-07-26T12:24:26.211Z",
+          "endedAt": "2026-07-26T12:24:26.211Z",
+          "status": "succeeded",
+          "resultSummary": "结构风险可接受（演练）",
+          "mainRead": true,
+          "adoption": "accepted",
+          "downstreamUse": "继续迁移演练节点",
+          "artifactPaths": [],
+          "selfExecuted": false,
+          "kind": "agent",
+          "ref": "agent-liluo-content-auditor"
+        },
+        {
+          "invocationId": "inv-6",
+          "nodeId": "independent-review",
+          "startedAt": "2026-07-26T12:24:26.211Z",
+          "endedAt": "2026-07-26T12:24:26.211Z",
+          "status": "succeeded",
+          "resultSummary": "连续性无阻塞（演练）",
+          "mainRead": true,
+          "adoption": "accepted",
+          "downstreamUse": "继续迁移演练节点",
+          "artifactPaths": [],
+          "selfExecuted": false,
+          "kind": "agent",
+          "ref": "agent-liluo-continuity-reviewer"
+        },
+        {
+          "invocationId": "inv-7",
+          "nodeId": "migrate-structure",
+          "startedAt": "2026-07-26T12:24:26.211Z",
+          "endedAt": "2026-07-26T12:24:26.211Z",
+          "status": "succeeded",
+          "resultSummary": "dry-run：跳过正式源写入",
+          "mainRead": true,
+          "adoption": "accepted",
+          "downstreamUse": "进入校验节点",
+          "artifactPaths": [],
+          "selfExecuted": false,
+          "kind": "skill",
+          "ref": "skill-liluo-executable-workflow"
+        },
+        {
+          "invocationId": "inv-8",
+          "nodeId": "validate-structure",
+          "startedAt": "2026-07-26T12:24:26.211Z",
+          "endedAt": "2026-07-26T12:24:26.211Z",
+          "status": "succeeded",
+          "resultSummary": "演练校验通过",
+          "mainRead": true,
+          "adoption": "accepted",
+          "downstreamUse": "进入导航同步",
+          "artifactPaths": [],
+          "selfExecuted": false,
+          "kind": "script",
+          "ref": "scripts/tests/three-world-mainline-restructure-preservation.test.mjs"
+        },
+        {
+          "invocationId": "inv-9",
+          "nodeId": "sync-navigation",
+          "startedAt": "2026-07-26T12:24:26.211Z",
+          "endedAt": "2026-07-26T12:24:26.211Z",
+          "status": "succeeded",
+          "resultSummary": "导航投影已规划",
+          "mainRead": true,
+          "adoption": "accepted",
+          "downstreamUse": "运行 navigation check（演练记录）",
+          "artifactPaths": [],
+          "selfExecuted": false,
+          "kind": "skill",
+          "ref": "skill-liluo-project-capability-navigation"
+        },
+        {
+          "invocationId": "inv-10",
+          "nodeId": "sync-navigation",
+          "startedAt": "2026-07-26T12:24:26.211Z",
+          "endedAt": "2026-07-26T12:24:26.211Z",
+          "status": "succeeded",
+          "resultSummary": "navigation check ok（演练）",
+          "mainRead": true,
+          "adoption": "accepted",
+          "downstreamUse": "进入报告",
+          "artifactPaths": [],
+          "selfExecuted": false,
+          "kind": "command",
+          "ref": "command-project-navigation-check"
+        },
+        {
+          "invocationId": "inv-11",
+          "nodeId": "final-report",
+          "startedAt": "2026-07-26T12:24:26.211Z",
+          "endedAt": "2026-07-26T12:24:26.211Z",
+          "status": "succeeded",
+          "resultSummary": "报告已生成",
+          "mainRead": true,
+          "adoption": "accepted",
+          "downstreamUse": "供 finish 门禁使用",
+          "artifactPaths": [
+            "project-workflows/runs/reports/run-story-mainline-restructure-example.md"
+          ],
+          "selfExecuted": false,
+          "kind": "command",
+          "ref": "command-project-workflow-report"
+        }
+      ],
+      "completionGate": {
+        "passed": true,
+        "checkedAt": "2026-07-26T12:24:26.212Z",
+        "checks": [
+          {
+            "id": "required-node:prepare-scope",
+            "ok": true,
+            "detail": "节点 prepare-scope 状态=completed"
+          },
+          {
+            "id": "required-node:locate-sources",
+            "ok": true,
+            "detail": "节点 locate-sources 状态=completed"
+          },
+          {
+            "id": "required-node:preserve-text",
+            "ok": true,
+            "detail": "节点 preserve-text 状态=completed"
+          },
+          {
+            "id": "required-node:independent-review",
+            "ok": true,
+            "detail": "节点 independent-review 状态=completed"
+          },
+          {
+            "id": "required-node:migrate-structure",
+            "ok": true,
+            "detail": "节点 migrate-structure 状态=completed"
+          },
+          {
+            "id": "required-node:validate-structure",
+            "ok": true,
+            "detail": "节点 validate-structure 状态=completed"
+          },
+          {
+            "id": "required-node:sync-navigation",
+            "ok": true,
+            "detail": "节点 sync-navigation 状态=completed"
+          },
+          {
+            "id": "required-node:final-report",
+            "ok": true,
+            "detail": "节点 final-report 状态=completed"
+          },
+          {
+            "id": "no-open-blockers",
+            "ok": true,
+            "detail": "无开放阻塞"
+          }
+        ]
+      },
+      "reportPath": "project-workflows/runs/reports/run-story-mainline-restructure-example.md",
+      "path": "project-workflows/runs/examples/run-story-mainline-restructure-example.json"
+    }
+  ],
+  "overview": {
+    "skills": [
+      {
+        "id": "skill-liluo-executable-workflow",
+        "workflowIds": [
+          "wf-story-mainline-restructure"
+        ],
+        "nodeCount": 2
+      },
+      {
+        "id": "skill-liluo-story-outline-graph-maintenance",
+        "workflowIds": [
+          "wf-story-mainline-restructure"
+        ],
+        "nodeCount": 1
+      },
+      {
+        "id": "skill-liluo-story-outline-authoring",
+        "workflowIds": [
+          "wf-story-mainline-restructure"
+        ],
+        "nodeCount": 1
+      },
+      {
+        "id": "skill-liluo-project-capability-navigation",
+        "workflowIds": [
+          "wf-story-mainline-restructure"
+        ],
+        "nodeCount": 1
+      }
+    ],
+    "agents": [
+      {
+        "id": "agent-liluo-content-auditor",
+        "workflowIds": [
+          "wf-story-mainline-restructure"
+        ],
+        "nodeCount": 1
+      },
+      {
+        "id": "agent-liluo-continuity-reviewer",
+        "workflowIds": [
+          "wf-story-mainline-restructure"
+        ],
+        "nodeCount": 1
+      },
+      {
+        "id": "agent-liluo-validation-runner",
+        "workflowIds": [
+          "wf-story-mainline-restructure"
+        ],
+        "nodeCount": 1
+      }
+    ]
+  }
+}

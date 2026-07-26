@@ -8,7 +8,7 @@
       "domain": "project",
       "status": "available",
       "maturity": "standard",
-      "summary": "砚秋｜指瑕｜衡鉴。Read-only auditor for content, metadata, links, gameplay references, maps, events, dialogues, assets, docs, and IDs.",
+      "summary": "只读审计内容、元数据、引用、ID 与确定性校验结果。",
       "userCanSay": [],
       "userMustProvide": [],
       "aiCanDo": [
@@ -37,7 +37,7 @@
       "domain": "project",
       "status": "available",
       "maturity": "standard",
-      "summary": "知遥｜宗经｜寻迹。Read-only project context specialist for authoritative project context and evidence paths.",
+      "summary": "只读定位最小权威上下文与证据路径。",
       "userCanSay": [],
       "userMustProvide": [],
       "aiCanDo": [
@@ -66,7 +66,7 @@
       "domain": "project",
       "status": "available",
       "maturity": "standard",
-      "summary": "言澈｜正纬｜经纬。Read-only continuity reviewer for characters, chronology, world rules, organizations, locations, abilities, and foreshadowing.",
+      "summary": "只读核验角色、时间线与世界规则的一致性。",
       "userCanSay": [],
       "userMustProvide": [],
       "aiCanDo": [
@@ -95,7 +95,7 @@
       "domain": "project",
       "status": "available",
       "maturity": "standard",
-      "summary": "时雨｜熔裁｜机枢。Read-only architecture specialist for Vue, Phaser, Pinia, maps, events, runtime state, assets, saves, and tests.",
+      "summary": "只读追踪 Vue、Phaser、Pinia 与游戏运行时的数据流。",
       "userCanSay": [],
       "userMustProvide": [],
       "aiCanDo": [
@@ -124,7 +124,7 @@
       "domain": "project",
       "status": "available",
       "maturity": "standard",
-      "summary": "怀月｜序志｜藏忆。Read-only governance and design-memory specialist for persistence, authority, document impact, duplication, and rationale.",
+      "summary": "只读追踪长期规则的权威来源、影响面与重复冲突。",
       "userCanSay": [],
       "userMustProvide": [],
       "aiCanDo": [
@@ -153,7 +153,7 @@
       "domain": "project",
       "status": "available",
       "maturity": "standard",
-      "summary": "星弥｜隐秀｜补阙。Read-only story gap analyst for evidence-backed missing functions, repeated patterns, underused gameplay and production opportunities, producing ranked original candidates for user approval.",
+      "summary": "只读发现有证据的故事与可玩内容缺口，供用户审批。",
       "userCanSay": [],
       "userMustProvide": [],
       "aiCanDo": [
@@ -182,7 +182,7 @@
       "domain": "project",
       "status": "available",
       "maturity": "standard",
-      "summary": "凌音｜程器｜验行。Validation specialist for targeted builds, tests, content validators, regression checks, and exact result reporting.",
+      "summary": "运行最小适用的既有验证并如实报告结果。",
       "userCanSay": [],
       "userMustProvide": [],
       "aiCanDo": [
@@ -1177,6 +1177,168 @@
       "evalStatus": "not-applicable"
     },
     {
+      "id": "command-project-context-audit",
+      "kind": "command",
+      "title": "npm run project:context:audit",
+      "domain": "project",
+      "status": "available",
+      "maturity": "standard",
+      "summary": "node scripts/project-navigation/project-navigation.mjs context-check",
+      "userCanSay": [],
+      "userMustProvide": [],
+      "aiCanDo": [
+        "运行对应的确定性项目命令。"
+      ],
+      "aiMustNotDo": [],
+      "skills": [],
+      "agents": [],
+      "commands": [
+        "npm run project:context:audit"
+      ],
+      "outputs": [],
+      "sourceRefs": [
+        "package.json"
+      ],
+      "userEffort": "none",
+      "lastVerified": null,
+      "evalStatus": "not-applicable"
+    },
+    {
+      "id": "command-project-context-pack",
+      "kind": "command",
+      "title": "npm run project:context-pack",
+      "domain": "project",
+      "status": "available",
+      "maturity": "standard",
+      "summary": "node scripts/project-context-pack/project-context-pack.mjs",
+      "userCanSay": [],
+      "userMustProvide": [],
+      "aiCanDo": [
+        "运行对应的确定性项目命令。"
+      ],
+      "aiMustNotDo": [],
+      "skills": [],
+      "agents": [],
+      "commands": [
+        "npm run project:context-pack"
+      ],
+      "outputs": [],
+      "sourceRefs": [
+        "package.json"
+      ],
+      "userEffort": "none",
+      "lastVerified": null,
+      "evalStatus": "not-applicable"
+    },
+    {
+      "id": "command-project-context-pack-dry-run",
+      "kind": "command",
+      "title": "npm run project:context-pack:dry-run",
+      "domain": "project",
+      "status": "available",
+      "maturity": "standard",
+      "summary": "node scripts/project-context-pack/project-context-pack.mjs --dry-run",
+      "userCanSay": [],
+      "userMustProvide": [],
+      "aiCanDo": [
+        "运行对应的确定性项目命令。"
+      ],
+      "aiMustNotDo": [],
+      "skills": [],
+      "agents": [],
+      "commands": [
+        "npm run project:context-pack:dry-run"
+      ],
+      "outputs": [],
+      "sourceRefs": [
+        "package.json"
+      ],
+      "userEffort": "none",
+      "lastVerified": null,
+      "evalStatus": "not-applicable"
+    },
+    {
+      "id": "command-project-context-pack-test",
+      "kind": "command",
+      "title": "npm run project:context-pack:test",
+      "domain": "project",
+      "status": "available",
+      "maturity": "standard",
+      "summary": "node --test scripts/tests/project-context-pack.test.mjs",
+      "userCanSay": [],
+      "userMustProvide": [],
+      "aiCanDo": [
+        "运行对应的确定性项目命令。"
+      ],
+      "aiMustNotDo": [],
+      "skills": [],
+      "agents": [],
+      "commands": [
+        "npm run project:context-pack:test"
+      ],
+      "outputs": [],
+      "sourceRefs": [
+        "package.json"
+      ],
+      "userEffort": "none",
+      "lastVerified": null,
+      "evalStatus": "not-applicable"
+    },
+    {
+      "id": "command-project-context-resolve",
+      "kind": "command",
+      "title": "npm run project:context:resolve",
+      "domain": "project",
+      "status": "available",
+      "maturity": "standard",
+      "summary": "node scripts/project-navigation/project-navigation.mjs context",
+      "userCanSay": [],
+      "userMustProvide": [],
+      "aiCanDo": [
+        "运行对应的确定性项目命令。"
+      ],
+      "aiMustNotDo": [],
+      "skills": [],
+      "agents": [],
+      "commands": [
+        "npm run project:context:resolve"
+      ],
+      "outputs": [],
+      "sourceRefs": [
+        "package.json"
+      ],
+      "userEffort": "none",
+      "lastVerified": null,
+      "evalStatus": "not-applicable"
+    },
+    {
+      "id": "command-project-context-test",
+      "kind": "command",
+      "title": "npm run project:context:test",
+      "domain": "project",
+      "status": "available",
+      "maturity": "standard",
+      "summary": "node --test scripts/tests/project-context-routing.test.mjs",
+      "userCanSay": [],
+      "userMustProvide": [],
+      "aiCanDo": [
+        "运行对应的确定性项目命令。"
+      ],
+      "aiMustNotDo": [],
+      "skills": [],
+      "agents": [],
+      "commands": [
+        "npm run project:context:test"
+      ],
+      "outputs": [],
+      "sourceRefs": [
+        "package.json"
+      ],
+      "userEffort": "none",
+      "lastVerified": null,
+      "evalStatus": "not-applicable"
+    },
+    {
       "id": "command-project-gate-changed",
       "kind": "command",
       "title": "npm run project:gate:changed",
@@ -1680,6 +1842,492 @@
       "agents": [],
       "commands": [
         "npm run project:skill:init"
+      ],
+      "outputs": [],
+      "sourceRefs": [
+        "package.json"
+      ],
+      "userEffort": "none",
+      "lastVerified": null,
+      "evalStatus": "not-applicable"
+    },
+    {
+      "id": "command-project-workflow-approve",
+      "kind": "command",
+      "title": "npm run project:workflow:approve",
+      "domain": "project",
+      "status": "available",
+      "maturity": "standard",
+      "summary": "node scripts/project-workflows/project-workflows.mjs approve",
+      "userCanSay": [],
+      "userMustProvide": [],
+      "aiCanDo": [
+        "运行对应的确定性项目命令。"
+      ],
+      "aiMustNotDo": [],
+      "skills": [],
+      "agents": [],
+      "commands": [
+        "npm run project:workflow:approve"
+      ],
+      "outputs": [],
+      "sourceRefs": [
+        "package.json"
+      ],
+      "userEffort": "none",
+      "lastVerified": null,
+      "evalStatus": "not-applicable"
+    },
+    {
+      "id": "command-project-workflow-brief",
+      "kind": "command",
+      "title": "npm run project:workflow:brief",
+      "domain": "project",
+      "status": "available",
+      "maturity": "standard",
+      "summary": "node scripts/project-workflows/project-workflows.mjs brief",
+      "userCanSay": [],
+      "userMustProvide": [],
+      "aiCanDo": [
+        "运行对应的确定性项目命令。"
+      ],
+      "aiMustNotDo": [],
+      "skills": [],
+      "agents": [],
+      "commands": [
+        "npm run project:workflow:brief"
+      ],
+      "outputs": [],
+      "sourceRefs": [
+        "package.json"
+      ],
+      "userEffort": "none",
+      "lastVerified": null,
+      "evalStatus": "not-applicable"
+    },
+    {
+      "id": "command-project-workflow-complete-node",
+      "kind": "command",
+      "title": "npm run project:workflow:complete-node",
+      "domain": "project",
+      "status": "available",
+      "maturity": "standard",
+      "summary": "node scripts/project-workflows/project-workflows.mjs complete-node",
+      "userCanSay": [],
+      "userMustProvide": [],
+      "aiCanDo": [
+        "运行对应的确定性项目命令。"
+      ],
+      "aiMustNotDo": [],
+      "skills": [],
+      "agents": [],
+      "commands": [
+        "npm run project:workflow:complete-node"
+      ],
+      "outputs": [],
+      "sourceRefs": [
+        "package.json"
+      ],
+      "userEffort": "none",
+      "lastVerified": null,
+      "evalStatus": "not-applicable"
+    },
+    {
+      "id": "command-project-workflow-create-run",
+      "kind": "command",
+      "title": "npm run project:workflow:create-run",
+      "domain": "project",
+      "status": "available",
+      "maturity": "standard",
+      "summary": "node scripts/project-workflows/project-workflows.mjs create-run",
+      "userCanSay": [],
+      "userMustProvide": [],
+      "aiCanDo": [
+        "运行对应的确定性项目命令。"
+      ],
+      "aiMustNotDo": [],
+      "skills": [],
+      "agents": [],
+      "commands": [
+        "npm run project:workflow:create-run"
+      ],
+      "outputs": [],
+      "sourceRefs": [
+        "package.json"
+      ],
+      "userEffort": "none",
+      "lastVerified": null,
+      "evalStatus": "not-applicable"
+    },
+    {
+      "id": "command-project-workflow-fail-node",
+      "kind": "command",
+      "title": "npm run project:workflow:fail-node",
+      "domain": "project",
+      "status": "available",
+      "maturity": "standard",
+      "summary": "node scripts/project-workflows/project-workflows.mjs fail-node",
+      "userCanSay": [],
+      "userMustProvide": [],
+      "aiCanDo": [
+        "运行对应的确定性项目命令。"
+      ],
+      "aiMustNotDo": [],
+      "skills": [],
+      "agents": [],
+      "commands": [
+        "npm run project:workflow:fail-node"
+      ],
+      "outputs": [],
+      "sourceRefs": [
+        "package.json"
+      ],
+      "userEffort": "none",
+      "lastVerified": null,
+      "evalStatus": "not-applicable"
+    },
+    {
+      "id": "command-project-workflow-finish",
+      "kind": "command",
+      "title": "npm run project:workflow:finish",
+      "domain": "project",
+      "status": "available",
+      "maturity": "standard",
+      "summary": "node scripts/project-workflows/project-workflows.mjs finish",
+      "userCanSay": [],
+      "userMustProvide": [],
+      "aiCanDo": [
+        "运行对应的确定性项目命令。"
+      ],
+      "aiMustNotDo": [],
+      "skills": [],
+      "agents": [],
+      "commands": [
+        "npm run project:workflow:finish"
+      ],
+      "outputs": [],
+      "sourceRefs": [
+        "package.json"
+      ],
+      "userEffort": "none",
+      "lastVerified": null,
+      "evalStatus": "not-applicable"
+    },
+    {
+      "id": "command-project-workflow-generate",
+      "kind": "command",
+      "title": "npm run project:workflow:generate",
+      "domain": "project",
+      "status": "available",
+      "maturity": "standard",
+      "summary": "node scripts/project-workflows/project-workflows.mjs generate",
+      "userCanSay": [],
+      "userMustProvide": [],
+      "aiCanDo": [
+        "运行对应的确定性项目命令。"
+      ],
+      "aiMustNotDo": [],
+      "skills": [],
+      "agents": [],
+      "commands": [
+        "npm run project:workflow:generate"
+      ],
+      "outputs": [],
+      "sourceRefs": [
+        "package.json"
+      ],
+      "userEffort": "none",
+      "lastVerified": null,
+      "evalStatus": "not-applicable"
+    },
+    {
+      "id": "command-project-workflow-generate-all",
+      "kind": "command",
+      "title": "npm run project:workflow:generate:all",
+      "domain": "project",
+      "status": "available",
+      "maturity": "standard",
+      "summary": "node scripts/project-workflows/project-workflows.mjs generate --all",
+      "userCanSay": [],
+      "userMustProvide": [],
+      "aiCanDo": [
+        "运行对应的确定性项目命令。"
+      ],
+      "aiMustNotDo": [],
+      "skills": [],
+      "agents": [],
+      "commands": [
+        "npm run project:workflow:generate:all"
+      ],
+      "outputs": [],
+      "sourceRefs": [
+        "package.json"
+      ],
+      "userEffort": "none",
+      "lastVerified": null,
+      "evalStatus": "not-applicable"
+    },
+    {
+      "id": "command-project-workflow-list",
+      "kind": "command",
+      "title": "npm run project:workflow:list",
+      "domain": "project",
+      "status": "available",
+      "maturity": "standard",
+      "summary": "node scripts/project-workflows/project-workflows.mjs list",
+      "userCanSay": [],
+      "userMustProvide": [],
+      "aiCanDo": [
+        "运行对应的确定性项目命令。"
+      ],
+      "aiMustNotDo": [],
+      "skills": [],
+      "agents": [],
+      "commands": [
+        "npm run project:workflow:list"
+      ],
+      "outputs": [],
+      "sourceRefs": [
+        "package.json"
+      ],
+      "userEffort": "none",
+      "lastVerified": null,
+      "evalStatus": "not-applicable"
+    },
+    {
+      "id": "command-project-workflow-mermaid",
+      "kind": "command",
+      "title": "npm run project:workflow:mermaid",
+      "domain": "project",
+      "status": "available",
+      "maturity": "standard",
+      "summary": "node scripts/project-workflows/project-workflows.mjs mermaid",
+      "userCanSay": [],
+      "userMustProvide": [],
+      "aiCanDo": [
+        "运行对应的确定性项目命令。"
+      ],
+      "aiMustNotDo": [],
+      "skills": [],
+      "agents": [],
+      "commands": [
+        "npm run project:workflow:mermaid"
+      ],
+      "outputs": [],
+      "sourceRefs": [
+        "package.json"
+      ],
+      "userEffort": "none",
+      "lastVerified": null,
+      "evalStatus": "not-applicable"
+    },
+    {
+      "id": "command-project-workflow-projection",
+      "kind": "command",
+      "title": "npm run project:workflow:projection",
+      "domain": "project",
+      "status": "available",
+      "maturity": "standard",
+      "summary": "node scripts/project-workflows/project-workflows.mjs projection",
+      "userCanSay": [],
+      "userMustProvide": [],
+      "aiCanDo": [
+        "运行对应的确定性项目命令。"
+      ],
+      "aiMustNotDo": [],
+      "skills": [],
+      "agents": [],
+      "commands": [
+        "npm run project:workflow:projection"
+      ],
+      "outputs": [],
+      "sourceRefs": [
+        "package.json"
+      ],
+      "userEffort": "none",
+      "lastVerified": null,
+      "evalStatus": "not-applicable"
+    },
+    {
+      "id": "command-project-workflow-record-invocation",
+      "kind": "command",
+      "title": "npm run project:workflow:record-invocation",
+      "domain": "project",
+      "status": "available",
+      "maturity": "standard",
+      "summary": "node scripts/project-workflows/project-workflows.mjs record-invocation",
+      "userCanSay": [],
+      "userMustProvide": [],
+      "aiCanDo": [
+        "运行对应的确定性项目命令。"
+      ],
+      "aiMustNotDo": [],
+      "skills": [],
+      "agents": [],
+      "commands": [
+        "npm run project:workflow:record-invocation"
+      ],
+      "outputs": [],
+      "sourceRefs": [
+        "package.json"
+      ],
+      "userEffort": "none",
+      "lastVerified": null,
+      "evalStatus": "not-applicable"
+    },
+    {
+      "id": "command-project-workflow-report",
+      "kind": "command",
+      "title": "npm run project:workflow:report",
+      "domain": "project",
+      "status": "available",
+      "maturity": "standard",
+      "summary": "node scripts/project-workflows/project-workflows.mjs report",
+      "userCanSay": [],
+      "userMustProvide": [],
+      "aiCanDo": [
+        "运行对应的确定性项目命令。"
+      ],
+      "aiMustNotDo": [],
+      "skills": [],
+      "agents": [],
+      "commands": [
+        "npm run project:workflow:report"
+      ],
+      "outputs": [],
+      "sourceRefs": [
+        "package.json"
+      ],
+      "userEffort": "none",
+      "lastVerified": null,
+      "evalStatus": "not-applicable"
+    },
+    {
+      "id": "command-project-workflow-start-node",
+      "kind": "command",
+      "title": "npm run project:workflow:start-node",
+      "domain": "project",
+      "status": "available",
+      "maturity": "standard",
+      "summary": "node scripts/project-workflows/project-workflows.mjs start-node",
+      "userCanSay": [],
+      "userMustProvide": [],
+      "aiCanDo": [
+        "运行对应的确定性项目命令。"
+      ],
+      "aiMustNotDo": [],
+      "skills": [],
+      "agents": [],
+      "commands": [
+        "npm run project:workflow:start-node"
+      ],
+      "outputs": [],
+      "sourceRefs": [
+        "package.json"
+      ],
+      "userEffort": "none",
+      "lastVerified": null,
+      "evalStatus": "not-applicable"
+    },
+    {
+      "id": "command-project-workflow-status",
+      "kind": "command",
+      "title": "npm run project:workflow:status",
+      "domain": "project",
+      "status": "available",
+      "maturity": "standard",
+      "summary": "node scripts/project-workflows/project-workflows.mjs status",
+      "userCanSay": [],
+      "userMustProvide": [],
+      "aiCanDo": [
+        "运行对应的确定性项目命令。"
+      ],
+      "aiMustNotDo": [],
+      "skills": [],
+      "agents": [],
+      "commands": [
+        "npm run project:workflow:status"
+      ],
+      "outputs": [],
+      "sourceRefs": [
+        "package.json"
+      ],
+      "userEffort": "none",
+      "lastVerified": null,
+      "evalStatus": "not-applicable"
+    },
+    {
+      "id": "command-project-workflow-test",
+      "kind": "command",
+      "title": "npm run project:workflow:test",
+      "domain": "project",
+      "status": "available",
+      "maturity": "standard",
+      "summary": "node --test scripts/tests/project-workflows.test.mjs",
+      "userCanSay": [],
+      "userMustProvide": [],
+      "aiCanDo": [
+        "运行对应的确定性项目命令。"
+      ],
+      "aiMustNotDo": [],
+      "skills": [],
+      "agents": [],
+      "commands": [
+        "npm run project:workflow:test"
+      ],
+      "outputs": [],
+      "sourceRefs": [
+        "package.json"
+      ],
+      "userEffort": "none",
+      "lastVerified": null,
+      "evalStatus": "not-applicable"
+    },
+    {
+      "id": "command-project-workflow-validate",
+      "kind": "command",
+      "title": "npm run project:workflow:validate",
+      "domain": "project",
+      "status": "available",
+      "maturity": "standard",
+      "summary": "node scripts/project-workflows/project-workflows.mjs validate",
+      "userCanSay": [],
+      "userMustProvide": [],
+      "aiCanDo": [
+        "运行对应的确定性项目命令。"
+      ],
+      "aiMustNotDo": [],
+      "skills": [],
+      "agents": [],
+      "commands": [
+        "npm run project:workflow:validate"
+      ],
+      "outputs": [],
+      "sourceRefs": [
+        "package.json"
+      ],
+      "userEffort": "none",
+      "lastVerified": null,
+      "evalStatus": "not-applicable"
+    },
+    {
+      "id": "command-project-workflow-viewer-build",
+      "kind": "command",
+      "title": "npm run project:workflow:viewer:build",
+      "domain": "project",
+      "status": "available",
+      "maturity": "standard",
+      "summary": "node scripts/project-workflows/project-workflows.mjs viewer-build",
+      "userCanSay": [],
+      "userMustProvide": [],
+      "aiCanDo": [
+        "运行对应的确定性项目命令。"
+      ],
+      "aiMustNotDo": [],
+      "skills": [],
+      "agents": [],
+      "commands": [
+        "npm run project:workflow:viewer:build"
       ],
       "outputs": [],
       "sourceRefs": [
@@ -2266,7 +2914,7 @@
       "domain": "project",
       "status": "available",
       "maturity": "standard",
-      "summary": "Apply the 璃落 creative-team member identities, neutral/subtle/immersive expression modes, truthful multi-Agent discussion, reunion handling, thought-source protection, long-term team notes, and one-way user-confirmed 璃落指出 narration. Use when the user asks 创作组讨论、沉浸/专业模式、展示成员、久别重聚、记录璃落长期想法、项目组手记、把确认指示写成璃落的话, or changes member personas; not for ordinary tasks that need no team framing.",
+      "summary": "Apply the 璃落 creative-team identities with immersive personaMode, compact displayDensity, and actual-call-only participation; route solo/micro-consult/council via team-routing.json. Use when the user asks 创作组讨论、沉浸/专业/克制模式、展示成员、久别重聚、记录璃落长期想法、项目组手记、把确认指示写成璃落的话, or changes member personas; apply proactively for ordinary project tasks that benefit from truthful team presence.",
       "userCanSay": [],
       "userMustProvide": [],
       "aiCanDo": [],
@@ -2304,6 +2952,31 @@
       "outputs": [],
       "sourceRefs": [
         ".agents\\skills\\liluo-project\\liluo-dialogue-event-authoring\\SKILL.md"
+      ],
+      "userEffort": "low",
+      "lastVerified": null,
+      "evalStatus": "unknown"
+    },
+    {
+      "id": "skill-liluo-executable-workflow",
+      "kind": "skill",
+      "title": "liluo-executable-workflow",
+      "domain": "project",
+      "status": "available",
+      "maturity": "standard",
+      "summary": "Run mature 璃落 tasks from machine-readable workflow JSON with per-node briefs, required Skill/Agent evidence, adoption checks, and fail-closed completion gates. Use for 可执行工作流、流程演练、节点任务书、主线重构工作流、漏调用门禁 or when a repeated multi-Skill/Agent process needs auditability; not for one-off tiny edits, open brainstorming, or replacing authoritative content Skills.",
+      "userCanSay": [],
+      "userMustProvide": [],
+      "aiCanDo": [],
+      "aiMustNotDo": [],
+      "skills": [
+        "liluo-executable-workflow"
+      ],
+      "agents": [],
+      "commands": [],
+      "outputs": [],
+      "sourceRefs": [
+        ".agents\\skills\\liluo-project\\liluo-executable-workflow\\SKILL.md"
       ],
       "userEffort": "low",
       "lastVerified": null,
@@ -2416,7 +3089,7 @@
       "domain": "project",
       "status": "available",
       "maturity": "standard",
-      "summary": "Improve natural expression, narrative rhythm, character voice, subtext, and reader-facing clarity without changing facts. Use by default in light mode for 璃落 story-outline prose, fiction, game dialogue, character interiority, scene text, creative-team dialogue, project notes, player-facing copy, and public development narratives; use deep mode for important chapters or scenes, diagnose for analysis-only requests, and do not use on code, schemas, paths, logs, exact quotations, or other precision-first technical text.",
+      "summary": "Improve natural expression, narrative rhythm, character voice, subtext, and reader-facing clarity without changing facts. Use by default in light mode for 璃落 story-outline prose, fiction, game dialogue, character interiority, scene text, creative-team dialogue, project notes, player-facing copy, public development narratives, and user-requested writing tests or drafts (including named restraint poses); the main agent must read this Skill before composing or revising such text. Use deep mode for important chapters or scenes, diagnose for analysis-only requests or pre-delivery self-check, and do not use on code, schemas, paths, logs, exact quotations, or other precision-first technical text.",
       "userCanSay": [],
       "userMustProvide": [],
       "aiCanDo": [],
@@ -2529,6 +3202,31 @@
       "outputs": [],
       "sourceRefs": [
         ".agents\\skills\\liluo-project\\liluo-project-capability-navigation\\SKILL.md"
+      ],
+      "userEffort": "low",
+      "lastVerified": null,
+      "evalStatus": "unknown"
+    },
+    {
+      "id": "skill-liluo-project-context-pack",
+      "kind": "skill",
+      "title": "liluo-project-context-pack",
+      "domain": "project",
+      "status": "available",
+      "maturity": "standard",
+      "summary": "Build a gitignored descriptive context pack for uploading to other AIs. Use for 项目上下文打包、导出给其他AI分析、描述性资料压缩包；not for offline game release or packaging runtime code/assets.",
+      "userCanSay": [],
+      "userMustProvide": [],
+      "aiCanDo": [],
+      "aiMustNotDo": [],
+      "skills": [
+        "liluo-project-context-pack"
+      ],
+      "agents": [],
+      "commands": [],
+      "outputs": [],
+      "sourceRefs": [
+        ".agents\\skills\\liluo-project\\liluo-project-context-pack\\SKILL.md"
       ],
       "userEffort": "low",
       "lastVerified": null,

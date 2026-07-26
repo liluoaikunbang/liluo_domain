@@ -7,15 +7,32 @@ const rosterPath = path.join(root, 'docs/设计记忆/项目组灵魂/team-roste
 const statePath = path.join(root, '.local/team-presence-state.json')
 const sourceStatuses = new Set(['user-confirmed', 'user-implied-persistent', 'agent-proposed', 'team-discussed', 'pending-approval', 'superseded'])
 
-function readDefaultPersonaMode() {
+function readPresencePolicy() {
   try {
     const roster = JSON.parse(fs.readFileSync(rosterPath, 'utf8'))
-    return roster.defaultPersonaMode === 'neutral' || roster.defaultPersonaMode === 'subtle' || roster.defaultPersonaMode === 'immersive'
-      ? roster.defaultPersonaMode
-      : 'immersive'
+    return roster.presencePolicy ?? {
+      personaMode: 'immersive',
+      displayDensity: 'compact',
+      participationPolicy: 'actual-call-only',
+      formalViewRequiresInvocation: true
+    }
   } catch {
-    return 'immersive'
+    return {
+      personaMode: 'immersive',
+      displayDensity: 'compact',
+      participationPolicy: 'actual-call-only',
+      formalViewRequiresInvocation: true
+    }
   }
+}
+
+function readDefaultPersonaMode() {
+  const mode = readPresencePolicy().personaMode
+  return mode === 'neutral' || mode === 'subtle' || mode === 'immersive' ? mode : 'immersive'
+}
+
+export function readDisplayDensity() {
+  return readPresencePolicy().displayDensity === 'expanded' ? 'expanded' : 'compact'
 }
 
 export function resolvePersonaMode(request = '', fallback = readDefaultPersonaMode()) {
@@ -56,12 +73,24 @@ export function presenceFor(lastActivity, now = new Date(), reunionShown = false
 
 export function validateRoster(roster = JSON.parse(fs.readFileSync(rosterPath, 'utf8'))) {
   const errors = []
+  if (roster.schemaVersion !== 3) errors.push('roster schemaVersion must be 3')
+  if (roster.defaultPersonaMode !== undefined) errors.push('legacy defaultPersonaMode must be removed')
+  const policy = roster.presencePolicy
+  if (!policy) errors.push('missing presencePolicy')
+  else {
+    if (policy.personaMode !== 'immersive') errors.push('presencePolicy.personaMode must default to immersive')
+    if (policy.displayDensity !== 'compact') errors.push('presencePolicy.displayDensity must default to compact')
+    if (policy.participationPolicy !== 'actual-call-only') errors.push('presencePolicy.participationPolicy must be actual-call-only')
+    if (policy.formalViewRequiresInvocation !== true) errors.push('presencePolicy.formalViewRequiresInvocation must be true')
+    if (policy.uncalledMemberDisplay !== 'none') errors.push('presencePolicy.uncalledMemberDisplay must be none')
+  }
   const unique = (key) => roster.members.map((m) => m[key]).filter(Boolean).filter((v, i, a) => a.indexOf(v) !== i)
   for (const key of ['memberId', 'name', 'technicalAgent']) for (const value of new Set(unique(key))) errors.push(`duplicate ${key}: ${value}`)
   const agentIds = new Set(fs.readdirSync(path.join(root, '.codex/agents')).filter((f) => f.endsWith('.toml')).map((f) => f.slice(0, -5)))
   const mainMembers = roster.members.filter((member) => member.status === 'active' && member.technicalAgent === null)
   if (mainMembers.length !== 1 || mainMembers[0]?.memberId !== 'liluo') errors.push('main Codex must map uniquely to active member liluo')
   for (const member of roster.members) {
+    if (Object.hasOwn(member, 'personaMode')) errors.push(`member must not define personaMode: ${member.memberId}`)
     if (member.gender !== 'adult-woman') errors.push(`invalid gender: ${member.memberId}`)
     if (!member.literaryName || !member.dutyTitle || member.penName) errors.push(`invalid literary identity: ${member.memberId}`)
     if (member.status === 'active' && member.technicalAgent && !agentIds.has(member.technicalAgent)) errors.push(`missing active agent: ${member.technicalAgent}`)

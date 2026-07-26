@@ -29,6 +29,21 @@ test('command approval governance changes run their own checks without a Web bui
   assert.ok(!commands.includes('npm run build:web'))
 })
 
+test('executable workflow changes run the workflow routine without a Web build', () => {
+  const commands = commandsFor(['project-workflows/definitions/wf-story-mainline-restructure.v1.0.0.json'])
+  assert.ok(commands.includes('npm run project:routine -- workflow'))
+  assert.ok(!commands.includes('npm run build:web'))
+})
+
+test('Skill or Agent changes only light-check workflow refs without full regenerate routine', () => {
+  const skillCommands = commandsFor(['.agents/skills/liluo-project/liluo-executable-workflow/SKILL.md'])
+  assert.ok(skillCommands.includes('npm run project:workflow:validate'))
+  assert.ok(!skillCommands.includes('npm run project:routine -- workflow'))
+  const agentCommands = commandsFor(['.codex/agents/liluo_content_auditor.toml'])
+  assert.ok(agentCommands.includes('npm run project:workflow:validate'))
+  assert.ok(!agentCommands.includes('npm run project:routine -- workflow'))
+})
+
 test('project routine governance tests do not require Codex execpolicy validation', () => {
   const commands = commandsFor(['scripts/tests/project-routine-governance.test.mjs'])
   assert.ok(!commands.includes('npm run commands:approval:validate'))

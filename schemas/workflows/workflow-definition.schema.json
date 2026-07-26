@@ -1,0 +1,366 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://liluo.local/schemas/workflows/workflow-definition.schema.json",
+  "title": "璃落可执行工作流定义",
+  "description": "成熟复杂任务的机器可读过程定义；是过程规范、门禁、可视化与运行记录的唯一事实来源。",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "id",
+    "version",
+    "title",
+    "purpose",
+    "domain",
+    "status",
+    "maturity",
+    "ownerSkill",
+    "inputs",
+    "outputs",
+    "invariants",
+    "entryNodeId",
+    "completionGate",
+    "nodes",
+    "edges"
+  ],
+  "properties": {
+    "schemaVersion": { "type": "integer", "const": 1 },
+    "id": {
+      "type": "string",
+      "pattern": "^wf-[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+    },
+    "title": { "type": "string", "minLength": 1, "maxLength": 120 },
+    "purpose": { "type": "string", "minLength": 1, "maxLength": 1000 },
+    "domain": {
+      "type": "string",
+      "enum": ["story", "map", "gameplay", "knowledge", "assets", "governance", "navigation", "release", "general"]
+    },
+    "status": {
+      "type": "string",
+      "enum": ["draft", "active", "deprecated", "retired"]
+    },
+    "maturity": {
+      "type": "string",
+      "enum": ["pilot", "standard", "stable"],
+      "description": "pilot=验证基建；standard=可重复正式流程；stable=长期默认入口。"
+    },
+    "ownerSkill": { "type": "string", "minLength": 1 },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "uniqueItems": true,
+      "default": []
+    },
+    "inputs": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/namedArtifact" }
+    },
+    "outputs": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/namedArtifact" }
+    },
+    "invariants": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/invariant" }
+    },
+    "entryNodeId": { "$ref": "#/$defs/nodeId" },
+    "completionGate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["requiredNodeIds", "forbidOpenBlockers"],
+      "properties": {
+        "requiredNodeIds": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/nodeId" },
+          "uniqueItems": true
+        },
+        "requiredArtifacts": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "uniqueItems": true,
+          "default": []
+        },
+        "forbidOpenBlockers": { "type": "boolean" }
+      }
+    },
+    "subprocessRefs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["workflowId", "version"],
+        "properties": {
+          "workflowId": { "type": "string" },
+          "version": { "type": "string" },
+          "optional": { "type": "boolean", "default": false }
+        }
+      },
+      "default": []
+    },
+    "visualization": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "stages": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["id", "title"],
+            "properties": {
+              "id": { "type": "string", "minLength": 1 },
+              "title": { "type": "string", "minLength": 1 },
+              "criticalPath": { "type": "boolean", "default": true }
+            }
+          }
+        },
+        "simpleNodeIds": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/nodeId" },
+          "uniqueItems": true
+        }
+      }
+    },
+    "navigation": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "summary": { "type": "string" },
+        "userCanSay": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "userMustProvide": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "capabilityIds": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "approvalPoints": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "completionEvidence": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    },
+    "metadata": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "nodes": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/node" }
+    },
+    "edges": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/edge" }
+    }
+  },
+  "$defs": {
+    "nodeId": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+    },
+    "namedArtifact": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "description"],
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "description": { "type": "string", "minLength": 1 },
+        "pathHint": { "type": "string" }
+      }
+    },
+    "invariant": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "statement", "fatal"],
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "statement": { "type": "string", "minLength": 1 },
+        "fatal": { "type": "boolean" },
+        "waiverAllowed": { "type": "boolean", "default": false }
+      }
+    },
+    "resourceRequirement": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["requirement", "kind", "ref", "selfExecutionAllowed", "evidence", "onFailure"],
+      "properties": {
+        "requirement": {
+          "type": "string",
+          "enum": ["required", "optional", "conditional", "forbidden"]
+        },
+        "kind": {
+          "type": "string",
+          "enum": ["skill", "agent", "command", "script", "hook", "schema", "doc", "approval", "tool"]
+        },
+        "ref": {
+          "type": "string",
+          "minLength": 1,
+          "description": "稳定资源 ID：skill-<name>、agent-<kebab>、command-<kebab>、脚本/文档相对路径，或审批点 ID。"
+        },
+        "condition": { "type": "string", "description": "conditional 时的可判断条件说明。" },
+        "selfExecutionAllowed": {
+          "type": "boolean",
+          "description": "false 时主 Agent 不得自称已完成该资源职责。"
+        },
+        "evidence": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "enum": [
+              "invocation",
+              "success-or-explicit-failure",
+              "result-summary",
+              "artifacts",
+              "main-read",
+              "adoption-decision",
+              "downstream-use"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "onFailure": {
+          "type": "string",
+          "enum": ["retry", "fallback", "repair", "human", "block", "terminate", "skip-with-waiver"]
+        },
+        "fallbackRef": { "type": "string" },
+        "repairNodeId": { "$ref": "#/$defs/nodeId" },
+        "waiverAllowed": { "type": "boolean", "default": false },
+        "fatal": { "type": "boolean", "default": false },
+        "maxAttempts": { "type": "integer", "minimum": 1, "default": 1 }
+      }
+    },
+    "node": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "title",
+        "type",
+        "stage",
+        "why",
+        "actor",
+        "risk",
+        "actions",
+        "resources",
+        "expectedOutputs",
+        "completion",
+        "failure"
+      ],
+      "properties": {
+        "id": { "$ref": "#/$defs/nodeId" },
+        "title": { "type": "string", "minLength": 1 },
+        "type": {
+          "type": "string",
+          "enum": ["prepare", "agent-task", "script", "review", "approval", "gate", "report", "subprocess"]
+        },
+        "stage": { "type": "string", "minLength": 1 },
+        "why": { "type": "string", "minLength": 1 },
+        "actor": {
+          "type": "string",
+          "enum": ["main-agent", "subagent", "script", "human", "system"]
+        },
+        "risk": {
+          "type": "string",
+          "enum": ["low", "medium", "high", "critical"]
+        },
+        "preconditions": {
+          "type": "array",
+          "items": { "type": "string" },
+          "default": []
+        },
+        "inputs": {
+          "type": "array",
+          "items": { "type": "string" },
+          "default": []
+        },
+        "actions": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "resources": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/resourceRequirement" }
+        },
+        "expectedOutputs": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "completion": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["requireResourceEvidence"],
+          "properties": {
+            "requireResourceEvidence": { "type": "boolean" },
+            "requireAdoptionForRequiredAgents": { "type": "boolean", "default": true },
+            "artifactPaths": {
+              "type": "array",
+              "items": { "type": "string" },
+              "default": []
+            },
+            "notes": { "type": "string" }
+          }
+        },
+        "timeoutHintMinutes": { "type": "integer", "minimum": 1 },
+        "maxAttempts": { "type": "integer", "minimum": 1, "default": 1 },
+        "failure": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["strategy"],
+          "properties": {
+            "strategy": {
+              "type": "string",
+              "enum": ["retry", "fallback", "repair", "human", "block", "terminate", "skip-with-waiver"]
+            },
+            "repairNodeId": { "$ref": "#/$defs/nodeId" },
+            "notes": { "type": "string" }
+          }
+        },
+        "visualGroup": { "type": "string" },
+        "criticalPath": { "type": "boolean", "default": true }
+      }
+    },
+    "edge": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "from", "to", "when"],
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "from": { "$ref": "#/$defs/nodeId" },
+        "to": { "$ref": "#/$defs/nodeId" },
+        "when": {
+          "type": "string",
+          "enum": ["success", "failure", "rework", "condition", "human-decision"]
+        },
+        "condition": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["expression"],
+          "properties": {
+            "expression": {
+              "type": "string",
+              "description": "可判断表达式，如 adoption:accepted、flag:dryRun、decision:approve。"
+            }
+          }
+        },
+        "label": { "type": "string" }
+      }
+    }
+  }
+}

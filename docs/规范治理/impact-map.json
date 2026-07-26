@@ -20,10 +20,16 @@
       "decision": false
     },
     "agent-persona-change": {
-      "requiredChecks": ["docs/设计记忆/项目组灵魂/", "team-roster.json", "文号变更时检查文号体系来源与篇名池", "对应 Agent TOML 与说明", "创作组系统说明", "项目知识索引"],
+      "requiredChecks": ["docs/设计记忆/项目组灵魂/", "team-roster.json", "project-navigation/team-routing.json", "文号变更时检查文号体系来源与篇名池", "对应 Agent TOML 与说明", "创作组系统说明", "项目知识索引"],
       "featureUpdate": true,
       "userCommands": true,
       "decision": "consider-CDR"
+    },
+    "context-load-policy-change": {
+      "requiredChecks": ["project-navigation/context-policy.json", "schemas/workflows/context-policy.schema.json", "docs/系统说明/项目上下文装载与配置分层系统.md", ".cursor/rules/00-project-entry.mdc", "project:context:audit", "项目知识索引"],
+      "featureUpdate": true,
+      "userCommands": true,
+      "decision": "consider-ADR"
     },
     "architecture-decision": {
       "requiredChecks": ["docs/设计记忆/架构决策/", "相关系统说明", "相关 Skill/Agent", "项目知识索引"],

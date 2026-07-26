@@ -1,9 +1,12 @@
 ---
-description: 修改项目文档、规范或长期工作流时的单一事实源与同步要求。
-globs: docs/**
+description: 修改项目文档、规范、Skill、Schema 或长期工作流时的单一事实源与同步要求。
+globs: docs/**,.agents/skills/**,schemas/**,package.json,project-navigation/**,project-workflows/**
 alwaysApply: false
 ---
 
 - 长期规则、系统契约和已确认架构决定遵循 `liluo-project-governance-memory`，完整维护一次，并更新必要消费者、设计理由和索引。
 - 系统当前用法写入 `docs/系统说明/`，历史实现写入 `docs/功能更新/`，理由写入 `docs/设计记忆/`；不要复制完整正文或保存聊天流水账。
+- 命中本规则作用域的实质变更，完成前必须读取并执行 `liluo-project-documentation-sync`：核对/更新功能文档、`docs/功能更新目录.md`、`src/game/data/global/updateRecords.js`，以及用户可感知的技能说明；延续同一功能时追加原记录“更新时间”，不另起编号。
+- 文档同步不是生命周期 Hook，也不会在改文件时自动运行；主智能体必须主动加载 Skill。可用 `npm run docs:governance:audit` 检查三方编号是否一致。
 - Cursor/Codex 协同边界及双端派生配置规则以 `docs/系统说明/AI协同文件与规则分层.md` 为准。
+- 上下文装载分层以 `project-navigation/context-policy.json` 与 `docs/系统说明/项目上下文装载与配置分层系统.md` 为准；功能更新与生成索引默认不作为当前规则来源。

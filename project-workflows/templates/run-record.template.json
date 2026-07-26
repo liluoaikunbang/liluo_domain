@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "runId": "run-example-name-YYYYMMDDHHMMSS-abcdef",
+  "workflowId": "wf-example-name",
+  "workflowVersion": "1.0.0",
+  "createdAt": "2026-01-01T00:00:00.000Z",
+  "updatedAt": "2026-01-01T00:00:00.000Z",
+  "status": "running",
+  "mode": "dry-run",
+  "inputSummary": "输入摘要",
+  "flags": { "dryRun": true },
+  "activeNodeIds": ["prepare"],
+  "nodes": {
+    "prepare": {
+      "status": "ready",
+      "attempts": 0,
+      "artifactPaths": [],
+      "completionChecks": []
+    }
+  },
+  "invocations": [],
+  "waivers": [],
+  "approvals": [],
+  "errors": [],
+  "completionGate": {
+    "passed": false,
+    "checks": []
+  },
+  "reportPath": null,
+  "notes": "运行状态不得写回定义文件。"
+}

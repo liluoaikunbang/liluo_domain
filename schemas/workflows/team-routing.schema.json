@@ -1,0 +1,135 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://liluo.local/schemas/workflows/team-routing.schema.json",
+  "title": "璃落创作组团队路由策略",
+  "description": "创作组三档参与（solo / micro-consult / council）的机器可读路由策略。",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "policyId",
+    "roster",
+    "defaults",
+    "tiers",
+    "aggregation",
+    "signals",
+    "agentPriority",
+    "display"
+  ],
+  "properties": {
+    "schemaVersion": { "type": "integer", "const": 1 },
+    "policyId": { "type": "string", "const": "liluo-creative-team-routing" },
+    "roster": { "type": "string", "minLength": 1 },
+    "defaults": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["tier", "maxParallelAgents", "maxNestedDepth", "formalViewRequiresActualInvocation"],
+      "properties": {
+        "tier": { "type": "string", "enum": ["solo", "micro-consult", "council"] },
+        "maxParallelAgents": { "type": "integer", "minimum": 1, "maximum": 3 },
+        "maxNestedDepth": { "type": "integer", "const": 1 },
+        "formalViewRequiresActualInvocation": { "type": "boolean", "const": true }
+      }
+    },
+    "tiers": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "minScore", "maxScore", "minAgents", "maxAgents"],
+        "properties": {
+          "id": { "type": "string", "enum": ["solo", "micro-consult", "council"] },
+          "minScore": { "type": "integer", "minimum": 0 },
+          "maxScore": { "type": ["integer", "null"], "minimum": 0 },
+          "minAgents": { "type": "integer", "minimum": 0, "maximum": 3 },
+          "maxAgents": { "type": "integer", "minimum": 0, "maximum": 3 }
+        }
+      }
+    },
+    "aggregation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["withinRiskGroup", "acrossRiskGroups", "mechanicalOnlyForcesSolo"],
+      "properties": {
+        "withinRiskGroup": { "type": "string", "const": "max" },
+        "acrossRiskGroups": { "type": "string", "const": "sum" },
+        "mechanicalOnlyForcesSolo": { "type": "boolean", "const": true }
+      }
+    },
+    "signals": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "riskGroup", "score", "preferredAgents", "match"],
+        "properties": {
+          "id": { "type": "string", "minLength": 1 },
+          "riskGroup": {
+            "type": "string",
+            "enum": ["story-integrity", "architecture", "authority", "governance", "validation", "scope", "mechanical"]
+          },
+          "score": { "type": "integer", "minimum": 0 },
+          "preferredAgents": {
+            "type": "array",
+            "items": { "type": "string", "minLength": 1 },
+            "uniqueItems": true
+          },
+          "forceSoloWhenAlone": { "type": "boolean" },
+          "excludeTaskAny": {
+            "type": "array",
+            "items": { "type": "string", "minLength": 1 }
+          },
+          "match": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["taskAny", "pathAny"],
+            "properties": {
+              "taskAny": {
+                "type": "array",
+                "items": { "type": "string", "minLength": 1 }
+              },
+              "pathAny": {
+                "type": "array",
+                "items": { "type": "string", "minLength": 1 }
+              }
+            }
+          }
+        }
+      }
+    },
+    "agentPriority": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string", "minLength": 1 },
+      "uniqueItems": true
+    },
+    "display": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["solo", "micro-consult", "council", "uncalledMemberDisplay"],
+      "properties": {
+        "solo": { "type": "string", "minLength": 1 },
+        "micro-consult": { "type": "string", "minLength": 1 },
+        "council": { "type": "string", "minLength": 1 },
+        "uncalledMemberDisplay": { "type": "string", "const": "none" }
+      }
+    },
+    "userOverrides": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "councilPhrases": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "neutralPhrases": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 }
+        }
+      }
+    }
+  }
+}

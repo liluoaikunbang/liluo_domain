@@ -1,0 +1,83 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://liluo.local/schemas/workflows/context-policy.schema.json",
+  "title": "璃落项目上下文装载策略",
+  "description": "五层上下文装载、权威优先级与预算裁剪的唯一机器可读策略。",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "policyId", "precedence", "budget", "classes"],
+  "properties": {
+    "schemaVersion": { "type": "integer", "const": 1 },
+    "policyId": { "type": "string", "const": "liluo-project-context-policy" },
+    "precedence": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string", "minLength": 1 },
+      "uniqueItems": true
+    },
+    "budget": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["maxAlwaysFiles", "maxPathAttachedFiles", "maxSkills", "maxAgentCards", "maxEvidenceFiles"],
+      "properties": {
+        "maxAlwaysFiles": { "type": "integer", "minimum": 1 },
+        "maxPathAttachedFiles": { "type": "integer", "minimum": 1 },
+        "maxSkills": { "type": "integer", "minimum": 1 },
+        "maxAgentCards": { "type": "integer", "minimum": 1 },
+        "maxEvidenceFiles": { "type": "integer", "minimum": 1 }
+      }
+    },
+    "classes": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/classEntry" }
+    }
+  },
+  "$defs": {
+    "classEntry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "globs", "layer", "role", "loadMode", "editMode"],
+      "properties": {
+        "id": { "type": "string", "minLength": 1, "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+        "globs": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string", "minLength": 1 },
+          "uniqueItems": true
+        },
+        "layer": { "type": "string", "enum": ["L0", "L1", "L2", "L3", "L4"] },
+        "role": { "type": "string", "minLength": 1 },
+        "loadMode": {
+          "type": "string",
+          "enum": [
+            "always",
+            "path-or-explicit",
+            "runtime-only",
+            "task-on-demand",
+            "selected-agent-only",
+            "decision-or-trace-only",
+            "path-or-task",
+            "contract-task-only",
+            "workflow-task-only",
+            "query-or-small-direct",
+            "query-only",
+            "never-default"
+          ]
+        },
+        "editMode": {
+          "type": "string",
+          "enum": [
+            "governed",
+            "tool-specific",
+            "direct",
+            "generator-aware",
+            "generator-only",
+            "pipeline-only",
+            "append-through-governance"
+          ]
+        }
+      }
+    }
+  }
+}

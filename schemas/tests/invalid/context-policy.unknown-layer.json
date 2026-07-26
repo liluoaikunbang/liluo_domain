@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "policyId": "liluo-project-context-policy",
+  "precedence": ["AGENTS.md"],
+  "budget": {
+    "maxAlwaysFiles": 2,
+    "maxPathAttachedFiles": 3,
+    "maxSkills": 2,
+    "maxAgentCards": 3,
+    "maxEvidenceFiles": 8
+  },
+  "classes": [
+    {
+      "id": "broken",
+      "globs": ["AGENTS.md"],
+      "layer": "L9",
+      "role": "entry-authority",
+      "loadMode": "always",
+      "editMode": "governed"
+    }
+  ]
+}

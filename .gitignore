@@ -10,6 +10,7 @@ lerna-debug.log*
 node_modules
 .local/team-presence-state.json
 .local/codex-user-rules-snapshot.json
+.local/project-context-pack/
 dist
 /dist-offline/
 /release/
@@ -24,7 +25,6 @@ external-knowledge/staging/
 __pycache__/
 *.py[cod]
 vite.config.mjs.timestamp-*.mjs
-s.trim()).filter(Boolean).map(Number)
 
 # Editor directories and files
 .vscode/*
@@ -41,3 +41,12 @@ evals/reports/*
 !evals/reports/.gitkeep
 reports/quality-gate/*
 !reports/quality-gate/.gitkeep
+project-workflows/runs/*
+!project-workflows/runs/.gitkeep
+!project-workflows/runs/examples/
+!project-workflows/runs/examples/**
+project-workflows/runs/briefs/*
+!project-workflows/runs/briefs/.gitkeep
+project-workflows/runs/reports/*
+!project-workflows/runs/reports/.gitkeep
+!project-workflows/runs/reports/run-story-mainline-restructure-example.md

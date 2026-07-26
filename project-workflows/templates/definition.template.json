@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "id": "wf-example-name",
+  "version": "1.0.0",
+  "title": "示例工作流标题",
+  "purpose": "一句话说明这项成熟任务要完成什么。",
+  "domain": "general",
+  "status": "draft",
+  "maturity": "pilot",
+  "ownerSkill": "liluo-executable-workflow",
+  "tags": [],
+  "inputs": [
+    { "id": "scope", "description": "任务范围" }
+  ],
+  "outputs": [
+    { "id": "report", "description": "运行报告" }
+  ],
+  "invariants": [
+    {
+      "id": "no-auto-git",
+      "statement": "不自动提交或推送 Git。",
+      "fatal": true,
+      "waiverAllowed": false
+    }
+  ],
+  "entryNodeId": "prepare",
+  "completionGate": {
+    "requiredNodeIds": ["prepare", "finish-report"],
+    "requiredArtifacts": [],
+    "forbidOpenBlockers": true
+  },
+  "visualization": {
+    "simpleNodeIds": ["prepare", "finish-report"]
+  },
+  "navigation": {
+    "summary": "短摘要",
+    "userCanSay": ["启动示例工作流"],
+    "userMustProvide": ["范围"],
+    "capabilityIds": ["skill-liluo-executable-workflow"],
+    "approvalPoints": [],
+    "completionEvidence": ["运行门禁通过"]
+  },
+  "nodes": [
+    {
+      "id": "prepare",
+      "title": "准备",
+      "type": "prepare",
+      "stage": "prepare",
+      "why": "固定范围",
+      "actor": "main-agent",
+      "risk": "low",
+      "actions": ["确认输入"],
+      "resources": [
+        {
+          "requirement": "required",
+          "kind": "skill",
+          "ref": "skill-liluo-executable-workflow",
+          "selfExecutionAllowed": true,
+          "evidence": ["invocation", "success-or-explicit-failure", "result-summary", "main-read", "adoption-decision", "downstream-use"],
+          "onFailure": "block"
+        }
+      ],
+      "expectedOutputs": ["范围摘要"],
+      "completion": { "requireResourceEvidence": true },
+      "failure": { "strategy": "block" },
+      "criticalPath": true
+    },
+    {
+      "id": "finish-report",
+      "title": "生成报告",
+      "type": "report",
+      "stage": "close",
+      "why": "留下审计材料",
+      "actor": "system",
+      "risk": "low",
+      "actions": ["写报告"],
+      "resources": [
+        {
+          "requirement": "required",
+          "kind": "command",
+          "ref": "command-project-workflow-report",
+          "selfExecutionAllowed": false,
+          "evidence": ["invocation", "success-or-explicit-failure", "result-summary", "artifacts", "main-read", "adoption-decision", "downstream-use"],
+          "onFailure": "block"
+        }
+      ],
+      "expectedOutputs": ["报告"],
+      "completion": { "requireResourceEvidence": true },
+      "failure": { "strategy": "block" },
+      "criticalPath": true
+    }
+  ],
+  "edges": [
+    { "id": "e1", "from": "prepare", "to": "finish-report", "when": "success" }
+  ]
+}

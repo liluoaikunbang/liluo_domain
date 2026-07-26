@@ -2,6 +2,8 @@
   ["docs/系统说明/example.md", "docs"],
   [".agents/skills/example/SKILL.md", "skills-agents-governance"],
   ["scripts/command-approval/lib/approval-governance.mjs", "skills-agents-governance"],
+  ["project-workflows/definitions/wf-story-mainline-restructure.v1.0.0.json", "skills-agents-governance"],
+  ["schemas/workflows/workflow-definition.schema.json", "schemas-data"],
   ["schemas/save.schema.json", "schemas-data"],
   ["src/game/data/story_outline/sources/world.json", "story"],
   ["src/game/data/maps/world/map/events.json", "maps-events-dialogues"],

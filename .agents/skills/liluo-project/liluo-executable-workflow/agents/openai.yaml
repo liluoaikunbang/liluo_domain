@@ -1,0 +1,3 @@
+interface:
+  display_name: "可执行工作流"
+  short_description: "按机器可读节点执行成熟流程并强制 Skill/Agent 调用证据"

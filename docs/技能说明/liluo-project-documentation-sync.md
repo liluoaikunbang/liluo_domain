@@ -8,6 +8,8 @@
 
 同步功能文档、功能更新目录、界面更新记录及项目专属/用户可调用技能说明。未实现/未确认的游戏功能不据此伪造完成记录，也不负责 Git 提交。普通单个故事大纲完善、访谈写回、错字、内部元数据或通用执行纪律 Skill 的措辞和触发收窄不占用新的功能更新编号。
 
+**不会自动运行**：本 Skill 不是生命周期 Hook。实质变更后由主智能体在完成前主动加载；可用 `npm run docs:governance:audit` 核对三方编号。
+
 ## 路径、输入与输出
 
 - Skill：`.agents/skills/liluo-project/liluo-project-documentation-sync/`

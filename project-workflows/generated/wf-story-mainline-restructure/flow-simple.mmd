@@ -1,0 +1,26 @@
+flowchart TD
+  subgraph S0["prepare"]
+    prepare-scope["确认范围与模式"]
+    locate-sources["定位正式源与保全清单"]
+  end
+  subgraph S1["protect"]
+    preserve-text["原文保全校验"]
+  end
+  subgraph S2["review"]
+    independent-review["独立内容与连续性审查"]
+  end
+  subgraph S3["execute"]
+    migrate-structure["执行结构迁移或演练跳过"]
+    validate-structure["结构与内容校验"]
+  end
+  subgraph S4["close"]
+    sync-navigation["同步能力导航与缺口"]
+    final-report["生成运行报告"]
+  end
+  prepare-scope -->|success| locate-sources
+  locate-sources -->|success| preserve-text
+  preserve-text -->|success| independent-review
+  independent-review -->|审查接受| migrate-structure
+  migrate-structure -->|success| validate-structure
+  validate-structure -->|success| sync-navigation
+  sync-navigation -->|success| final-report

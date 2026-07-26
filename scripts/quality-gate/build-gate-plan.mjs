@@ -8,6 +8,8 @@ const ORDER = [
   'npm run project:hooks:test',
   'npm run commands:approval:test',
   'npm run commands:approval:validate',
+  'npm run project:workflow:validate',
+  'npm run project:routine -- workflow',
   'npm run evals:check',
   'npm run evals:static:all',
   ASSET_AUDIT,
@@ -48,6 +50,12 @@ function addForDomains(selected, classification, mode) {
   if (requires.has('command-approval-tests')) {
     selected.add('npm run commands:approval:test')
     selected.add('npm run commands:approval:validate')
+  }
+  if (requires.has('executable-workflow-tests')) {
+    selected.add('npm run project:routine -- workflow')
+  }
+  if (requires.has('executable-workflow-check')) {
+    selected.add('npm run project:workflow:validate')
   }
   if (domains.has('schemas-data')) selected.add('npm run data:contracts:check')
   if (domains.has('schemas-data') && requires.has('game-content-check')) selected.add('npm run project:routine -- check')

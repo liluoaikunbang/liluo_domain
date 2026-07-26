@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-07-26T12:24:48.614Z",
+  "workflows": [
+    {
+      "id": "wf-story-mainline-restructure",
+      "title": "故事主线重构（三世界阶段容器）",
+      "domain": "story",
+      "status": "active",
+      "maturity": "pilot",
+      "activeVersion": "1.0.0",
+      "ownerSkill": "liluo-executable-workflow",
+      "definitionPath": "project-workflows/definitions/wf-story-mainline-restructure.v1.0.0.json",
+      "generatedDir": "project-workflows/generated/wf-story-mainline-restructure",
+      "navigationId": "workflow-story-mainline-restructure"
+    }
+  ]
+}

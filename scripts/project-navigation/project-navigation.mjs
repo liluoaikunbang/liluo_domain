@@ -3,6 +3,7 @@ import { constants } from 'node:fs'
 import path from 'node:path'
 import { createHash } from 'node:crypto'
 import { pathToFileURL } from 'node:url'
+import { auditContextPolicies, loadPolicies, resolveContext } from './lib/context-routing.mjs'
 
 const ROOT = path.resolve(import.meta.dirname, '..', '..')
 const now = () => new Date().toISOString()
@@ -71,7 +72,35 @@ export async function scanNavigation(root = ROOT) {
     { id: 'workflow-unused-plot-audit', title: '盘点未应用情节库', domain: 'story', status: 'available', summary: '筛出未使用或仅部分使用的情节，按当前世界、人物、地点和玩家流程给出适配候选。', userCanSay: ['列出情节库中还没应用过的情节', '给这个节点找几个未用情节库候选'], userMustProvide: ['目标世界、节点或筛选偏好（可选）'], steps: ['读取情节库 usageStatus', '核验目标节点的已确认事实', '筛出真实匹配条目', '展示可审批选项'], approvalPoints: ['将候选写入大纲前'], completionEvidence: ['用户选择或明确暂不采用'], capabilityIds: ['skill-liluo-story-gap-discovery', 'skill-liluo-story-outline-authoring'], sourceRefs: ['src/game/data/plot_outline/catalog.json'] },
     { id: 'workflow-plot-to-outline', title: '把情节候选补充进大纲', domain: 'story', status: 'available', summary: '用户确认某个情节候选后，写入最贴近的既有节点并同步情节库使用状态。', userCanSay: ['把 plot-xxx 作为候选给这个节点看看', '采用这个情节补充到大纲'], userMustProvide: ['目标节点与明确采用/调整决定'], steps: ['核验候选与目标适配', '用户批准', '同步故事 JSON/Markdown', '更新 plot usedBy 与 usageStatus', '最小验证'], approvalPoints: ['必须先明确采用'], completionEvidence: ['故事来源与情节库引用同步'], capabilityIds: ['skill-liluo-story-outline-authoring'], sourceRefs: ['src/game/data/plot_outline/catalog.json'] }
   )
-  const sources = [{ id: 'source-skills', type: 'repository-file', title: '项目 Skills', status: 'current', location: '.agents/skills/', checkedAt: now() }, { id: 'source-agents', type: 'repository-file', title: '项目 Agents', status: 'current', location: '.codex/agents/', checkedAt: now() }, { id: 'source-story-missing-items', type: 'generated-index', title: '故事缺口派生索引', status: 'current', location: 'project-index/story/missing-items.json', checkedAt: now() }, { id: 'source-gameplay-catalog', type: 'repository-file', title: '玩法目录', status: 'current', location: 'src/game/data/gameplay_outline/catalog.json', checkedAt: now() }, { id: 'source-plot-catalog', type: 'repository-file', title: '情节库', status: 'current', location: 'src/game/data/plot_outline/catalog.json', checkedAt: now() }]
+  // Merge machine-readable executable workflows (authoritative under project-workflows/).
+  try {
+    const { loadAllDefinitions } = await import('../project-workflows/lib/registry.mjs')
+    const { navigationProjection } = await import('../project-workflows/lib/generate-docs.mjs')
+    const existingIds = new Set(workflows.map((item) => item.id))
+    for (const { definition } of await loadAllDefinitions(root)) {
+      if (definition.status !== 'active') continue
+      const item = navigationProjection(definition)
+      if (existingIds.has(item.id)) {
+        const index = workflows.findIndex((entry) => entry.id === item.id)
+        workflows[index] = { ...workflows[index], ...item, status: item.status ?? workflows[index].status }
+      } else {
+        workflows.push(item)
+        existingIds.add(item.id)
+      }
+    }
+  } catch {
+    // Executable workflow projection is optional during bootstrap.
+  }
+  const sources = [
+    { id: 'source-skills', type: 'repository-file', title: '项目 Skills', status: 'current', location: '.agents/skills/', checkedAt: now() },
+    { id: 'source-agents', type: 'repository-file', title: '项目 Agents', status: 'current', location: '.codex/agents/', checkedAt: now() },
+    { id: 'source-story-missing-items', type: 'generated-index', title: '故事缺口派生索引', status: 'current', location: 'project-index/story/missing-items.json', checkedAt: now() },
+    { id: 'source-gameplay-catalog', type: 'repository-file', title: '玩法目录', status: 'current', location: 'src/game/data/gameplay_outline/catalog.json', checkedAt: now() },
+    { id: 'source-plot-catalog', type: 'repository-file', title: '情节库', status: 'current', location: 'src/game/data/plot_outline/catalog.json', checkedAt: now() },
+    { id: 'source-executable-workflows', type: 'repository-file', title: '可执行工作流定义', status: 'current', location: 'project-workflows/definitions/', checkedAt: now() },
+    { id: 'source-context-policy', type: 'repository-file', title: '上下文装载策略', status: 'current', location: 'project-navigation/context-policy.json', checkedAt: now() },
+    { id: 'source-team-routing', type: 'repository-file', title: '创作组路由策略', status: 'current', location: 'project-navigation/team-routing.json', checkedAt: now() }
+  ]
   const status = { schemaVersion: 1, scannedAt: now(), counts: { capabilities: capabilities.length, workflows: workflows.length, gaps: gaps.length, gameplay: gameplay.length, plots: plotCounts } }
   await Promise.all([writeJson(path.join(nav, 'capabilities.json'), { schemaVersion: 1, capabilities: sortById(capabilities) }), writeJson(path.join(nav, 'workflows.json'), { schemaVersion: 1, workflows: sortById(workflows) }), writeJson(path.join(nav, 'gaps.json'), { schemaVersion: 1, gaps: sortById(gaps) }), writeJson(path.join(nav, 'gameplay-coverage.json'), { schemaVersion: 1, gameplay: sortById(gameplay) }), writeJson(path.join(nav, 'sources.json'), { schemaVersion: 1, sources: sortById(sources) }), writeJson(path.join(nav, 'status.json'), status)])
   return { capabilities, workflows, gaps, gameplay, sources, status }
@@ -121,7 +150,99 @@ export async function buildDocs(root = ROOT) {
   await writeFile(path.join(root, 'docs/我现在可以做什么.md'), lines.join('\n'), 'utf8')
   return { actions: 6 }
 }
-export async function validateNavigation(root = ROOT) { const errors = []; const nav = path.join(root, 'project-navigation'); for (const name of ['registry.json', 'capabilities.json', 'workflows.json', 'gaps.json', 'gameplay-coverage.json', 'sources.json', 'status.json']) if (!await exists(path.join(nav, name))) errors.push(`missing project-navigation/${name}`); if (errors.length) return { ok: false, errors }; const data = await loadNavigation(root); const ids = new Set(); for (const entry of [...data.capabilities, ...data.workflows, ...data.gaps]) { if (ids.has(entry.id)) errors.push(`duplicate id ${entry.id}`); ids.add(entry.id); for (const ref of entry.sourceRefs ?? []) if (!ref.startsWith('story-key:') && !ref.endsWith('.zip') && !await exists(path.join(root, ref))) errors.push(`missing source ${ref} for ${entry.id}`) } for (const file of await walk(root, '.agents/skills', (name) => name === 'SKILL.md')) { const name = frontmatter(await readFile(path.join(root, file), 'utf8')).name; if (name && !data.capabilities.some((entry) => entry.id === `skill-${name}`)) errors.push(`unregistered skill ${name}`) } for (const node of await readJson(path.join(root, 'project-index/story/missing-items.json'), [])) for (const item of node.missingItems ?? []) { const id = gapFromMissingItem(node, item).id; if (!data.gaps.some((gap) => gap.id === id)) errors.push(`missing story gap ${id}`) } for (const item of (await readJson(path.join(root, 'src/game/data/gameplay_outline/catalog.json'), { entries: [] })).entries ?? []) if (!data.gameplay.some((entry) => entry.id === item.id)) errors.push(`missing gameplay coverage ${item.id}`); return { ok: errors.length === 0, errors, counts: data.status.counts } }
-function args(argv) { const options = {}; for (let index = 0; index < argv.length; index += 1) { const value = argv[index]; if (value.startsWith('--')) options[value.slice(2)] = argv[index + 1]?.startsWith('--') ? true : argv[++index] ?? true; else (options._ ??= []).push(value) } return options }
-async function main() { const [command = 'check'] = process.argv.slice(2); const options = args(process.argv.slice(3)); if (['scan', 'changed', 'rescan'].includes(command)) { await scanNavigation(); await buildDocs(); const result = await validateNavigation(); console.log(JSON.stringify(result, null, 2)); if (!result.ok) process.exitCode = 1; return } if (command === 'build') { await buildDocs(); return } if (command === 'check') { const result = await validateNavigation(); console.log(JSON.stringify(result, null, 2)); if (!result.ok) process.exitCode = 1; return } if (command === 'next' || command === 'list') { const data = await loadNavigation(); const result = command === 'next' ? recommend(data.gaps, options) : data.gaps.filter((gap) => (!options.domain || gap.domain === options.domain) && (!options.status || gap.status === options.status)); console.log(JSON.stringify(result, null, 2)); return } throw new Error(`Unknown project navigation command: ${command}`) }
+export async function validateNavigation(root = ROOT) {
+  const errors = []
+  const nav = path.join(root, 'project-navigation')
+  for (const name of ['registry.json', 'capabilities.json', 'workflows.json', 'gaps.json', 'gameplay-coverage.json', 'sources.json', 'status.json', 'context-policy.json', 'team-routing.json']) {
+    if (!await exists(path.join(nav, name))) errors.push(`missing project-navigation/${name}`)
+  }
+  if (errors.length) return { ok: false, errors }
+  const data = await loadNavigation(root)
+  const ids = new Set()
+  for (const entry of [...data.capabilities, ...data.workflows, ...data.gaps]) {
+    if (ids.has(entry.id)) errors.push(`duplicate id ${entry.id}`)
+    ids.add(entry.id)
+    for (const ref of entry.sourceRefs ?? []) if (!ref.startsWith('story-key:') && !ref.endsWith('.zip') && !await exists(path.join(root, ref))) errors.push(`missing source ${ref} for ${entry.id}`)
+  }
+  for (const file of await walk(root, '.agents/skills', (name) => name === 'SKILL.md')) {
+    const name = frontmatter(await readFile(path.join(root, file), 'utf8')).name
+    if (name && !data.capabilities.some((entry) => entry.id === `skill-${name}`)) errors.push(`unregistered skill ${name}`)
+  }
+  for (const node of await readJson(path.join(root, 'project-index/story/missing-items.json'), [])) {
+    for (const item of node.missingItems ?? []) {
+      const id = gapFromMissingItem(node, item).id
+      if (!data.gaps.some((gap) => gap.id === id)) errors.push(`missing story gap ${id}`)
+    }
+  }
+  for (const item of (await readJson(path.join(root, 'src/game/data/gameplay_outline/catalog.json'), { entries: [] })).entries ?? []) {
+    if (!data.gameplay.some((entry) => entry.id === item.id)) errors.push(`missing gameplay coverage ${item.id}`)
+  }
+  return { ok: errors.length === 0, errors, counts: data.status.counts }
+}
+
+export async function resolveProjectContext(root = ROOT, options = {}) {
+  const policies = await loadPolicies(root)
+  return resolveContext({
+    task: options.task ?? '',
+    paths: options.paths ?? [],
+    ...policies
+  })
+}
+
+export async function checkContextPolicies(root = ROOT) {
+  return auditContextPolicies(root)
+}
+
+function args(argv) {
+  const options = {}
+  for (let index = 0; index < argv.length; index += 1) {
+    const value = argv[index]
+    if (value.startsWith('--')) options[value.slice(2)] = argv[index + 1]?.startsWith('--') ? true : argv[++index] ?? true
+    else (options._ ??= []).push(value)
+  }
+  return options
+}
+
+async function main() {
+  const [command = 'check'] = process.argv.slice(2)
+  const options = args(process.argv.slice(3))
+  if (['scan', 'changed', 'rescan'].includes(command)) {
+    await scanNavigation()
+    await buildDocs()
+    const result = await validateNavigation()
+    console.log(JSON.stringify(result, null, 2))
+    if (!result.ok) process.exitCode = 1
+    return
+  }
+  if (command === 'build') {
+    await buildDocs()
+    return
+  }
+  if (command === 'check') {
+    const result = await validateNavigation()
+    console.log(JSON.stringify(result, null, 2))
+    if (!result.ok) process.exitCode = 1
+    return
+  }
+  if (command === 'context') {
+    const result = await resolveProjectContext(ROOT, options)
+    console.log(JSON.stringify(result, null, 2))
+    return
+  }
+  if (command === 'context-check') {
+    const result = await checkContextPolicies(ROOT)
+    console.log(JSON.stringify(result, null, 2))
+    if (!result.ok) process.exitCode = 1
+    return
+  }
+  if (command === 'next' || command === 'list') {
+    const data = await loadNavigation()
+    const result = command === 'next'
+      ? recommend(data.gaps, options)
+      : data.gaps.filter((gap) => (!options.domain || gap.domain === options.domain) && (!options.status || gap.status === options.status))
+    console.log(JSON.stringify(result, null, 2))
+    return
+  }
+  throw new Error(`Unknown project navigation command: ${command}`)
+}
 if (process.argv[1] && import.meta.url === pathToFileURL(path.resolve(process.argv[1])).href) main().catch((error) => { console.error(`ERROR ${error.message}`); process.exitCode = 1 })

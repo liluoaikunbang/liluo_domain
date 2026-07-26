@@ -1,6 +1,6 @@
 ---
 name: liluo-natural-expression
-description: Improve natural expression, narrative rhythm, character voice, subtext, and reader-facing clarity without changing facts. Use by default in light mode for 璃落 story-outline prose, fiction, game dialogue, character interiority, scene text, creative-team dialogue, project notes, player-facing copy, and public development narratives; use deep mode for important chapters or scenes, diagnose for analysis-only requests, and do not use on code, schemas, paths, logs, exact quotations, or other precision-first technical text.
+description: Improve natural expression, narrative rhythm, character voice, subtext, and reader-facing clarity without changing facts. Use by default in light mode for 璃落 story-outline prose, fiction, game dialogue, character interiority, scene text, creative-team dialogue, project notes, player-facing copy, public development narratives, and user-requested writing tests or drafts (including named restraint poses); the main agent must read this Skill before composing or revising such text. Use deep mode for important chapters or scenes, diagnose for analysis-only requests or pre-delivery self-check, and do not use on code, schemas, paths, logs, exact quotations, or other precision-first technical text.
 ---
 
 # 璃落自然表达与文气塑形
@@ -8,6 +8,8 @@ description: Improve natural expression, narrative rhythm, character voice, subt
 Treat other Skills and authoritative project files as the source of **what is true**. This Skill controls only **how reader-facing language is expressed**. Never invent facts, states, keys, numbers, world rules, Agent participation, or story continuity.
 
 ## Route the task
+
+Before any substantive compose or revise of reader-facing prose, read this Skill and the matching reference. Do not skip because the request is informal, a test, or a short draft.
 
 Choose one operation and one intensity:
 

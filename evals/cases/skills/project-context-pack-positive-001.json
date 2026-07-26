@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "project-context-pack-positive-001",
+  "title": "项目描述性上下文打包路由",
+  "targetType": "skill",
+  "target": "liluo-project-context-pack",
+  "status": "active",
+  "polarity": "positive",
+  "mode": "routing-plan",
+  "costTier": "standard",
+  "userPrompt": "把项目描述性资料打成 zip，方便上传给其他 AI 分析，不要打运行时代码。",
+  "contextFiles": [],
+  "expected": {
+    "requiredSkills": ["liluo-project-context-pack"],
+    "allowedSkills": [],
+    "forbiddenSkills": ["liluo-offline-release-pipeline"],
+    "requiredAgents": [],
+    "forbiddenAgents": [],
+    "requiredReadPaths": [],
+    "allowedReadPaths": ["scripts/project-context-pack/", "docs/系统说明/项目描述性上下文打包系统.md"],
+    "requiredWritePaths": [],
+    "allowedWritePaths": [".local/project-context-pack/"],
+    "forbiddenActions": ["打包运行时实现", "全仓扫描", "自动上传"],
+    "requiredValidationProfiles": [],
+    "forbiddenValidationProfiles": ["all"],
+    "approvalExpectation": "not-required"
+  }
+}

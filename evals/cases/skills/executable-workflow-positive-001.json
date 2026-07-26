@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "executable-workflow-positive-001",
+  "title": "可执行工作流路由",
+  "targetType": "skill",
+  "target": "liluo-executable-workflow",
+  "status": "active",
+  "polarity": "positive",
+  "mode": "routing-plan",
+  "costTier": "standard",
+  "userPrompt": "按可执行工作流做一次主线重构演练，先给我当前节点任务书。",
+  "contextFiles": [],
+  "expected": {
+    "requiredSkills": ["liluo-executable-workflow"],
+    "allowedSkills": [],
+    "forbiddenSkills": [],
+    "requiredAgents": [],
+    "forbiddenAgents": [],
+    "requiredReadPaths": ["project-workflows/"],
+    "allowedReadPaths": ["project-workflows/", "docs/系统说明/机器可读工作流与可视化执行规范系统.md"],
+    "requiredWritePaths": [],
+    "allowedWritePaths": ["project-workflows/runs/"],
+    "forbiddenActions": ["跳过必需 Agent", "把 dry-run 写成已迁移"],
+    "requiredValidationProfiles": [],
+    "forbiddenValidationProfiles": ["all"],
+    "approvalExpectation": "not-required"
+  }
+}

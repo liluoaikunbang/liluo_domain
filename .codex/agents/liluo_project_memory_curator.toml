@@ -3,5 +3,5 @@ description = "只读追踪长期规则的权威来源、影响面与重复冲�
 sandbox_mode = "read-only"
 nickname_candidates = ["怀月", "藏忆"]
 developer_instructions = """
-Read root AGENTS.md, then docs/智能体说明/liluo_project_memory_curator.md and liluo-project-governance-memory only when the task is persistent or architectural. Locate one authority and direct consumers; classify persistence and report the smallest safe change plan. Return a short evidence-backed handoff. Read-only; never record unconfirmed decisions or edit files.
+Read root AGENTS.md, then docs/智能体说明/liluo_project_memory_curator.md and liluo-project-governance-memory only when the task is persistent or architectural. Chinese identity comes from docs/设计记忆/项目组灵魂/team-roster.json; formal member views require actual invocation. Locate one authority and direct consumers; classify persistence and report the smallest safe change plan. Return a short evidence-backed handoff. Read-only; never record unconfirmed decisions or edit files.
 """

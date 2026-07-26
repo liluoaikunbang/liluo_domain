@@ -49,6 +49,45 @@
       "status": "active"
     },
     {
+      "documentId": "project-context-pack-system",
+      "path": "docs/系统说明/项目描述性上下文打包系统.md",
+      "type": "system-spec",
+      "authorityFor": ["project-context-pack", "descriptive-export-for-external-ai"],
+      "consumers": [
+        "AGENTS.md",
+        ".agents/skills/liluo-project/liluo-project-context-pack/SKILL.md",
+        "docs/技能说明/liluo-project-context-pack.md",
+        "docs/用户命令目录.md",
+        "scripts/project-context-pack/catalog.json",
+        "scripts/project-context-pack/project-context-pack.mjs",
+        "package.json"
+      ],
+      "indexable": true,
+      "userFacing": true,
+      "status": "active"
+    },
+    {
+      "documentId": "project-context-load-system",
+      "path": "docs/系统说明/项目上下文装载与配置分层系统.md",
+      "type": "system-spec",
+      "authorityFor": ["context-load-layers", "context-budget", "context-resolve-audit"],
+      "consumers": [
+        "AGENTS.md",
+        "project-navigation/context-policy.json",
+        "project-navigation/team-routing.json",
+        "schemas/workflows/context-policy.schema.json",
+        "schemas/workflows/team-routing.schema.json",
+        "scripts/project-navigation/lib/context-routing.mjs",
+        ".cursor/rules/00-project-entry.mdc",
+        "docs/系统说明/AI协同文件与规则分层.md",
+        "docs/用户命令目录.md",
+        "package.json"
+      ],
+      "indexable": true,
+      "userFacing": true,
+      "status": "active"
+    },
+    {
       "documentId": "json-schema-data-contract-system",
       "path": "docs/系统说明/JSON-Schema数据契约系统.md",
       "type": "system-spec",
@@ -128,8 +167,8 @@
       "documentId": "creative-team-presence-system",
       "path": "docs/系统说明/璃落创作组人格与项目陪伴系统.md",
       "type": "system-spec",
-      "authorityFor": ["creative-team-presence", "persona-modes", "team-discussion", "reunion-state"],
-      "consumers": ["AGENTS.md", ".agents/skills/liluo-project/liluo-creative-team-presence/SKILL.md", "docs/技能说明/liluo-creative-team-presence.md", "docs/智能体说明/项目子智能体体系.md", "docs/用户命令目录.md"],
+      "authorityFor": ["creative-team-presence", "persona-modes", "display-density", "team-routing-tiers", "team-discussion", "reunion-state"],
+      "consumers": ["AGENTS.md", ".agents/skills/liluo-project/liluo-creative-team-presence/SKILL.md", "docs/技能说明/liluo-creative-team-presence.md", "docs/智能体说明/项目子智能体体系.md", "project-navigation/team-routing.json", "docs/用户命令目录.md"],
       "indexable": true,
       "userFacing": true,
       "status": "active"
@@ -176,7 +215,7 @@
       "documentId": "natural-expression-system",
       "path": "docs/系统说明/璃落自然表达与文气塑形系统.md",
       "type": "system-spec",
-      "authorityFor": ["natural-expression-routing", "natural-expression-intensity", "natural-expression-plausibility", "natural-expression-user-calibration", "restraint-prose-light-rag", "restraint-technique-pose-consistency", "style-profile-boundary"],
+      "authorityFor": ["natural-expression-routing", "natural-expression-intensity", "natural-expression-plausibility", "natural-expression-user-calibration", "natural-expression-grounded-figurative", "restraint-prose-light-rag", "restraint-technique-pose-consistency", "style-profile-boundary"],
       "consumers": ["AGENTS.md", ".agents/skills/writing/liluo-natural-expression/SKILL.md", "docs/技能说明/liluo-natural-expression.md", "docs/用户命令目录.md"],
       "indexable": true,
       "userFacing": true,
@@ -265,6 +304,28 @@
       "type": "system-spec",
       "authorityFor": ["codex-hooks", "changed-quality-gate", "git-pre-push-gate", "github-actions-quality-gate"],
       "consumers": [".codex/hooks.json", ".codex/hooks/", ".githooks/pre-push", ".github/workflows/quality-gate.yml", ".vscode/settings.json", "scripts/quality-gate/", ".gitignore", "package.json", "README.md", "docs/README.md", "docs/系统说明/README.md", "docs/用户命令目录.md"],
+      "indexable": true,
+      "userFacing": true,
+      "status": "active"
+    },
+    {
+      "documentId": "executable-workflow-system",
+      "path": "docs/系统说明/机器可读工作流与可视化执行规范系统.md",
+      "type": "system-spec",
+      "authorityFor": ["executable-workflows", "workflow-run-records", "workflow-resource-gates"],
+      "decision": "docs/设计记忆/架构决策/ADR-011-成熟复杂任务采用机器可读工作流门禁.md",
+      "consumers": [
+        "AGENTS.md",
+        ".agents/skills/liluo-project/liluo-executable-workflow/SKILL.md",
+        "docs/技能说明/liluo-executable-workflow.md",
+        "docs/用户命令目录.md",
+        "project-workflows/",
+        "schemas/workflows/",
+        "scripts/project-workflows/",
+        "package.json",
+        "scripts/project-routine.mjs",
+        "scripts/project-navigation/project-navigation.mjs"
+      ],
       "indexable": true,
       "userFacing": true,
       "status": "active"

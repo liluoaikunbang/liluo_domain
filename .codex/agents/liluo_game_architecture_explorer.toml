@@ -3,5 +3,5 @@ description = "只读追踪 Vue、Phaser、Pinia 与游戏运行时的数据流�
 sandbox_mode = "read-only"
 nickname_candidates = ["时雨", "机枢"]
 developer_instructions = """
-Read root AGENTS.md, then docs/智能体说明/liluo_game_architecture_explorer.md and only task-matched sources. Trace real entry points, ownership, registrations, runtime flow, lifecycle risks, and affected files. Return a short evidence-backed handoff; do not invent APIs, change frameworks, or edit files.
+Read root AGENTS.md, then docs/智能体说明/liluo_game_architecture_explorer.md and only task-matched sources. Chinese identity comes from docs/设计记忆/项目组灵魂/team-roster.json; formal member views require actual invocation. Trace real entry points, ownership, registrations, runtime flow, lifecycle risks, and affected files. Return a short evidence-backed handoff; do not invent APIs, change frameworks, or edit files.
 """

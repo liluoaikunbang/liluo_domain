@@ -1,0 +1,248 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://liluo.local/schemas/workflows/workflow-run.schema.json",
+  "title": "璃落工作流运行记录",
+  "description": "单次工作流执行的状态、证据、采用决定与报告路径；不得写回定义文件。",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "runId",
+    "workflowId",
+    "workflowVersion",
+    "createdAt",
+    "status",
+    "mode",
+    "inputSummary",
+    "activeNodeIds",
+    "nodes",
+    "invocations",
+    "completionGate"
+  ],
+  "properties": {
+    "schemaVersion": { "type": "integer", "const": 1 },
+    "runId": {
+      "type": "string",
+      "pattern": "^run-[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "workflowId": { "type": "string" },
+    "workflowVersion": { "type": "string" },
+    "createdAt": { "type": "string", "format": "date-time" },
+    "updatedAt": { "type": "string", "format": "date-time" },
+    "status": {
+      "type": "string",
+      "enum": ["pending", "running", "blocked", "completed", "failed", "cancelled"]
+    },
+    "mode": {
+      "type": "string",
+      "enum": ["live", "dry-run"],
+      "description": "dry-run 只验证门禁与记录，不触碰正式业务迁移。"
+    },
+    "inputSummary": { "type": "string" },
+    "flags": {
+      "type": "object",
+      "additionalProperties": {
+        "type": ["string", "boolean", "number", "null"]
+      },
+      "default": {}
+    },
+    "activeNodeIds": {
+      "type": "array",
+      "items": { "type": "string" },
+      "uniqueItems": true
+    },
+    "nodes": {
+      "type": "object",
+      "additionalProperties": { "$ref": "#/$defs/nodeState" }
+    },
+    "invocations": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/invocation" }
+    },
+    "waivers": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/waiver" },
+      "default": []
+    },
+    "approvals": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/approval" },
+      "default": []
+    },
+    "errors": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["at", "message"],
+        "properties": {
+          "at": { "type": "string", "format": "date-time" },
+          "nodeId": { "type": "string" },
+          "message": { "type": "string" }
+        }
+      },
+      "default": []
+    },
+    "completionGate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["passed", "checks"],
+      "properties": {
+        "passed": { "type": "boolean" },
+        "checkedAt": { "type": "string", "format": "date-time" },
+        "checks": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["id", "ok", "detail"],
+            "properties": {
+              "id": { "type": "string" },
+              "ok": { "type": "boolean" },
+              "detail": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    "reportPath": { "type": "string" },
+    "notes": { "type": "string" }
+  },
+  "$defs": {
+    "nodeStatus": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "ready",
+        "running",
+        "completed",
+        "blocked",
+        "failed",
+        "skipped-with-waiver",
+        "cancelled"
+      ]
+    },
+    "adoptionDecision": {
+      "type": "string",
+      "enum": ["accepted", "rejected", "rework", "fallback", "pending"]
+    },
+    "nodeState": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "attempts"],
+      "properties": {
+        "status": { "$ref": "#/$defs/nodeStatus" },
+        "startedAt": { "type": "string", "format": "date-time" },
+        "endedAt": { "type": "string", "format": "date-time" },
+        "attempts": { "type": "integer", "minimum": 0 },
+        "inputSummary": { "type": "string" },
+        "outputSummary": { "type": "string" },
+        "artifactPaths": {
+          "type": "array",
+          "items": { "type": "string" },
+          "default": []
+        },
+        "completionChecks": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["id", "ok", "detail"],
+            "properties": {
+              "id": { "type": "string" },
+              "ok": { "type": "boolean" },
+              "detail": { "type": "string" }
+            }
+          },
+          "default": []
+        },
+        "blockReason": { "type": "string" },
+        "error": { "type": "string" },
+        "reworkOf": { "type": "string" },
+        "adoption": { "$ref": "#/$defs/adoptionDecision" },
+        "adoptionReason": { "type": "string" }
+      }
+    },
+    "invocation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "invocationId",
+        "nodeId",
+        "kind",
+        "ref",
+        "startedAt",
+        "status"
+      ],
+      "properties": {
+        "invocationId": { "type": "string", "minLength": 1 },
+        "nodeId": { "type": "string" },
+        "kind": {
+          "type": "string",
+          "enum": ["skill", "agent", "command", "script", "hook", "schema", "doc", "approval", "tool"]
+        },
+        "ref": { "type": "string" },
+        "startedAt": { "type": "string", "format": "date-time" },
+        "endedAt": { "type": "string", "format": "date-time" },
+        "status": {
+          "type": "string",
+          "enum": ["started", "succeeded", "failed", "blocked", "waived"]
+        },
+        "inputSummary": { "type": "string" },
+        "inputHash": { "type": "string" },
+        "outputSummary": { "type": "string" },
+        "outputHash": { "type": "string" },
+        "artifactPaths": {
+          "type": "array",
+          "items": { "type": "string" },
+          "default": []
+        },
+        "resultSummary": { "type": "string" },
+        "mainRead": { "type": "boolean", "default": false },
+        "adoption": { "$ref": "#/$defs/adoptionDecision" },
+        "adoptionReason": { "type": "string" },
+        "downstreamUse": { "type": "string" },
+        "selfExecuted": {
+          "type": "boolean",
+          "default": false,
+          "description": "true 表示主 Agent 自称替代执行；对 selfExecutionAllowed=false 的资源会被门禁拒绝。"
+        },
+        "waiverId": { "type": "string" }
+      }
+    },
+    "waiver": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["waiverId", "nodeId", "ref", "approvedBy", "reason", "risk", "remediation", "allowsContinue"],
+      "properties": {
+        "waiverId": { "type": "string" },
+        "nodeId": { "type": "string" },
+        "ref": { "type": "string" },
+        "approvedBy": { "type": "string" },
+        "reason": { "type": "string" },
+        "risk": { "type": "string" },
+        "remediation": { "type": "string" },
+        "createsGap": { "type": "boolean", "default": false },
+        "gapId": { "type": "string" },
+        "allowsContinue": { "type": "boolean" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      }
+    },
+    "approval": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["approvalId", "nodeId", "decision", "decidedBy", "decidedAt"],
+      "properties": {
+        "approvalId": { "type": "string" },
+        "nodeId": { "type": "string" },
+        "decision": {
+          "type": "string",
+          "enum": ["approve", "reject", "rework", "defer"]
+        },
+        "decidedBy": { "type": "string" },
+        "decidedAt": { "type": "string", "format": "date-time" },
+        "notes": { "type": "string" }
+      }
+    }
+  }
+}

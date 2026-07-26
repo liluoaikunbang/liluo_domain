@@ -13,8 +13,8 @@ import {
 } from '../document-governance/lib/governance.mjs';
 
 test('feature record comparison reports missing and duplicate IDs', () => {
-  const result = compareFeatureIdSets({ documents: ['017', '017', '118'], catalog: ['017'], records: ['017'] });
-  assert.ok(result.some((issue) => issue.includes('duplicate feature document id 017')));
+  const result = compareFeatureIdSets({ documents: ['017-a', '017-a', '118'], catalog: ['017-a'], records: ['017-a'] });
+  assert.ok(result.some((issue) => issue.includes('duplicate feature document id 017-a')));
   assert.ok(result.some((issue) => issue.includes('feature id 118 presence=true/false/false')));
 });
 

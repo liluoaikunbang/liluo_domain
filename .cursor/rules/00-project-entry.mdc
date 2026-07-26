@@ -1,10 +1,11 @@
 ---
-description: 璃落项目的跨工具入口、权威来源与专属适配边界。
+description: 璃落项目的跨工具入口、权威来源与上下文装载边界。
 alwaysApply: true
 ---
 
-- 先遵循仓库根目录 `AGENTS.md`；它是 Cursor 与 Codex 共用的最高层项目约束和工作流路由。
-- 创作组默认 `immersive` 表达与智能委派；权威见 `docs/设计记忆/项目组灵魂/表达模式.md` 与 `docs/智能体说明/项目子智能体体系.md`。
-- 权威事实在普通项目文件中维护：`docs/系统说明/`、`.agents/skills/`、脚本、schema 与测试。项目索引只用于定位，修改前必须核验原始权威文件。
-- `.cursor/` 只放 Cursor 规则和命令；不得复制或编辑 `.codex/` 的授权、Agent 或运行时配置来实现兼容。
-- 需要为两个工具维护大段派生配置时，先向用户说明应采用一个普通源文件及生成/校验脚本；未经用户确认，不创建双端大段副本或文件系统链接。
+- 先读仓库根目录 `AGENTS.md`；它是 Cursor 与 Codex 共用的最高层项目约束与工作流路由。
+- 按 `project-navigation/context-policy.json` 控制上下文装载：L0 常驻入口、L1 路径规则、L2 任务能力、L3 查询型证据、L4 历史/生成物默认不装载。
+- 任务命中 Skill / Agent 时，须在实质答复或改文件前加载或委派；成熟多步任务走 `liluo-executable-workflow`。
+- 实质改变系统行为、Skill、Schema、用户入口或数据契约后，完成前必须加载 `liluo-project-documentation-sync`，同步功能更新、目录与 `updateRecords.js`；不得只改代码不落历史。
+- 共用规则只维护在普通权威文件中，不在 `.cursor/` 复制 Skill、灵魂卡或系统说明正文。
+- `.cursor/` 与 `.codex/` 必须长期并存；修改任一侧时不得删除或覆盖另一侧专属内容。

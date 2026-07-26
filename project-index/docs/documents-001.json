@@ -209,10 +209,10 @@
     "type": "document"
   },
   {
-    "id": "docs/功能更新/017-地图环境遮罩扩展与璃音时间天气切换.md",
+    "id": "docs/功能更新/017-a-地图环境遮罩扩展与璃音时间天气切换.md",
     "indexVersion": 1,
     "sourceHash": "53143f507a2947f7063946fbd2d3268eb5313d77f60ba21e96546a9bcbb6f94a",
-    "sourcePath": "docs/功能更新/017-地图环境遮罩扩展与璃音时间天气切换.md",
+    "sourcePath": "docs/功能更新/017-a-地图环境遮罩扩展与璃音时间天气切换.md",
     "subtype": "update",
     "summary": "地图环境遮罩扩展与璃音时间天气切换",
     "summarySource": "title-only",
@@ -220,10 +220,10 @@
     "type": "document"
   },
   {
-    "id": "docs/功能更新/017-地图时间遮罩切换与黄昏事件接入.md",
+    "id": "docs/功能更新/017-b-地图时间遮罩切换与黄昏事件接入.md",
     "indexVersion": 1,
     "sourceHash": "ffe8881d0ecdf0131192db949cf6dfdfb5c9b9b27ad4cb9d7845266189bc2e19",
-    "sourcePath": "docs/功能更新/017-地图时间遮罩切换与黄昏事件接入.md",
+    "sourcePath": "docs/功能更新/017-b-地图时间遮罩切换与黄昏事件接入.md",
     "subtype": "update",
     "summary": "地图时间遮罩切换与黄昏事件接入",
     "summarySource": "title-only",
@@ -1630,7 +1630,7 @@
   {
     "id": "docs/功能更新/145-外部Skill来源库项目能力演化与自然表达系统.md",
     "indexVersion": 1,
-    "sourceHash": "81bc709421e7086a473f89522d8d0f4810ad54410fd0dba995ec32ca067518ae",
+    "sourceHash": "ad32b02dba47cc4233f6e3b54713da8f9eff5be46cf5f35ace732f8764fc3195",
     "sourcePath": "docs/功能更新/145-外部Skill来源库项目能力演化与自然表达系统.md",
     "subtype": "update",
     "summary": "145-外部 Skill 来源库、项目能力演化与自然表达系统",
@@ -1793,9 +1793,64 @@
     "type": "document"
   },
   {
+    "id": "docs/功能更新/160-Codex与Cursor双端并存及审批分层.md",
+    "indexVersion": 1,
+    "sourceHash": "f6e7fc308655345199f46d7df08743e706cf3196bc7c653822e32d362df82aac",
+    "sourcePath": "docs/功能更新/160-Codex与Cursor双端并存及审批分层.md",
+    "subtype": "update",
+    "summary": "160-Codex与Cursor双端并存及审批分层",
+    "summarySource": "title-only",
+    "title": "160-Codex与Cursor双端并存及审批分层",
+    "type": "document"
+  },
+  {
+    "id": "docs/功能更新/161-Skill与Agent路由执行门禁.md",
+    "indexVersion": 1,
+    "sourceHash": "25012cca3973d378c2aca3844d40b5c1dcbc7af90c9dd867cfaa5a3c8d2e4e1e",
+    "sourcePath": "docs/功能更新/161-Skill与Agent路由执行门禁.md",
+    "subtype": "update",
+    "summary": "161-Skill与Agent路由执行门禁",
+    "summarySource": "title-only",
+    "title": "161-Skill与Agent路由执行门禁",
+    "type": "document"
+  },
+  {
+    "id": "docs/功能更新/162-机器可读工作流与可视化执行规范系统.md",
+    "indexVersion": 1,
+    "sourceHash": "663cf8e8a8fcfe1672756c8e70a934af2eb6a1955b718b5248cda1d57dbc0a9a",
+    "sourcePath": "docs/功能更新/162-机器可读工作流与可视化执行规范系统.md",
+    "subtype": "update",
+    "summary": "162-机器可读工作流与可视化执行规范系统",
+    "summarySource": "title-only",
+    "title": "162-机器可读工作流与可视化执行规范系统",
+    "type": "document"
+  },
+  {
+    "id": "docs/功能更新/163-项目描述性上下文打包.md",
+    "indexVersion": 1,
+    "sourceHash": "302634f54500f55f41367fa7126ea8ad699e096fdd84fc5dfef0c1e46bfc6b49",
+    "sourcePath": "docs/功能更新/163-项目描述性上下文打包.md",
+    "subtype": "update",
+    "summary": "163-项目描述性上下文打包",
+    "summarySource": "title-only",
+    "title": "163-项目描述性上下文打包",
+    "type": "document"
+  },
+  {
+    "id": "docs/功能更新/164-项目上下文分层与创作组有效参与.md",
+    "indexVersion": 1,
+    "sourceHash": "c273e8f948846861d863a4c79b485c6264a1266f0509c123632ca34bfd7d54b9",
+    "sourcePath": "docs/功能更新/164-项目上下文分层与创作组有效参与.md",
+    "subtype": "update",
+    "summary": "164-项目上下文分层与创作组有效参与",
+    "summarySource": "title-only",
+    "title": "164-项目上下文分层与创作组有效参与",
+    "type": "document"
+  },
+  {
     "id": "docs/功能更新目录.md",
     "indexVersion": 1,
-    "sourceHash": "85639b144ce5bb7fc44810d0b6325d2180e92bc1bbc87e55a8c53d1eac42eb59",
+    "sourceHash": "c1b0ef31b84162d53d7ff8f18ee6fd739013d58e5a5f78d741d2eaf338803b19",
     "sourcePath": "docs/功能更新目录.md",
     "subtype": "other",
     "summary": "功能更新目录",
@@ -1894,7 +1949,7 @@
   {
     "id": "docs/技能说明/liluo-creative-team-presence.md",
     "indexVersion": 1,
-    "sourceHash": "8e76cc93433da683d410de3a7d3a0b6b48b46dca2ab7991282a82b649faa379e",
+    "sourceHash": "25e702eddc814151c19260dd2dc315f9d4ef0c61ea28189db8da9da2b5a23af2",
     "sourcePath": "docs/技能说明/liluo-creative-team-presence.md",
     "subtype": "skill",
     "summary": "liluo-creative-team-presence",
@@ -1911,6 +1966,17 @@
     "summary": "liluo-dialogue-event-authoring",
     "summarySource": "title-only",
     "title": "liluo-dialogue-event-authoring",
+    "type": "document"
+  },
+  {
+    "id": "docs/技能说明/liluo-executable-workflow.md",
+    "indexVersion": 1,
+    "sourceHash": "7b4dfb2383d72face05e7272d7576190a0fa3ec28d839f45a0c0a356aba251c6",
+    "sourcePath": "docs/技能说明/liluo-executable-workflow.md",
+    "subtype": "skill",
+    "summary": "可执行工作流",
+    "summarySource": "title-only",
+    "title": "可执行工作流",
     "type": "document"
   },
   {
@@ -1960,7 +2026,7 @@
   {
     "id": "docs/技能说明/liluo-natural-expression.md",
     "indexVersion": 1,
-    "sourceHash": "5741bdceb544ad6a49f031b64affc5392d414a714adf6303ae5f6d99657b81dd",
+    "sourceHash": "5a588b99af792e88b2a1bcc34da4180c9147c1f0190a254fe0586b9cb6132908",
     "sourcePath": "docs/技能说明/liluo-natural-expression.md",
     "subtype": "skill",
     "summary": "liluo-natural-expression",
@@ -2010,6 +2076,17 @@
     "summary": "项目能力与行动导航",
     "summarySource": "title-only",
     "title": "项目能力与行动导航",
+    "type": "document"
+  },
+  {
+    "id": "docs/技能说明/liluo-project-context-pack.md",
+    "indexVersion": 1,
+    "sourceHash": "a92bf8a17cc64501ab18dc04e2bf5771ed937d4f72db377e0b003a335026bb80",
+    "sourcePath": "docs/技能说明/liluo-project-context-pack.md",
+    "subtype": "skill",
+    "summary": "liluo-project-context-pack",
+    "summarySource": "title-only",
+    "title": "liluo-project-context-pack",
     "type": "document"
   },
   {
@@ -2202,7 +2279,7 @@
   {
     "id": "docs/设计记忆/创作决策/CDR-005-非技术文本默认应用璃落自然表达.md",
     "indexVersion": 1,
-    "sourceHash": "d78af29523020716ca4a1e5afbb6adeddf6b9cdc028170ee0e898e283703cf58",
+    "sourceHash": "e514e6b2a74c0bf32d6bb85e80e0c5f16db690d7d0ef6922603cd14da4c07f3b",
     "sourcePath": "docs/设计记忆/创作决策/CDR-005-非技术文本默认应用璃落自然表达.md",
     "subtype": "other",
     "summary": "CDR-005：非技术文本默认应用璃落自然表达",
@@ -2356,12 +2433,34 @@
   {
     "id": "docs/设计记忆/架构决策/ADR-010-Cursor与Codex采用共享事实源和专属适配层.md",
     "indexVersion": 1,
-    "sourceHash": "3ceba2f01d05dd975772276111dbfb4f96ec8acfe30f6ae85cc259ae33641be8",
+    "sourceHash": "e8347df3ab0ff4410ee0b6ab81a72a78ce81824480995c5a78033c5e954ebfba",
     "sourcePath": "docs/设计记忆/架构决策/ADR-010-Cursor与Codex采用共享事实源和专属适配层.md",
     "subtype": "other",
     "summary": "ADR-010：Cursor 与 Codex 采用共享事实源和专属适配层",
     "summarySource": "title-only",
     "title": "ADR-010：Cursor 与 Codex 采用共享事实源和专属适配层",
+    "type": "document"
+  },
+  {
+    "id": "docs/设计记忆/架构决策/ADR-011-成熟复杂任务采用机器可读工作流门禁.md",
+    "indexVersion": 1,
+    "sourceHash": "35c01356c7623523cd1a6cdc09bbecdff4b89c66dd2bde2081cd0e78f2c22cce",
+    "sourcePath": "docs/设计记忆/架构决策/ADR-011-成熟复杂任务采用机器可读工作流门禁.md",
+    "subtype": "other",
+    "summary": "ADR-011：成熟复杂任务采用机器可读工作流门禁",
+    "summarySource": "title-only",
+    "title": "ADR-011：成熟复杂任务采用机器可读工作流门禁",
+    "type": "document"
+  },
+  {
+    "id": "docs/设计记忆/架构决策/ADR-012-上下文分层与创作组有效参与机制.md",
+    "indexVersion": 1,
+    "sourceHash": "cab2ae3d3f5fd48dd0bdb92458d3e25f554a7f77c4d049e8a82985f8f823a952",
+    "sourcePath": "docs/设计记忆/架构决策/ADR-012-上下文分层与创作组有效参与机制.md",
+    "subtype": "other",
+    "summary": "ADR-012：上下文分层与创作组有效参与机制",
+    "summarySource": "title-only",
+    "title": "ADR-012：上下文分层与创作组有效参与机制",
     "type": "document"
   },
   {
@@ -2400,7 +2499,7 @@
   {
     "id": "docs/设计记忆/项目组灵魂/表达模式.md",
     "indexVersion": 1,
-    "sourceHash": "1f5826dc9e1d58431ad68dbbc013212654e69aea02157003bf692b15507571a1",
+    "sourceHash": "a7a9b9ef3ac9321380e98dd049d9371464234aedd0880ee23f53d9e089b76bee",
     "sourcePath": "docs/设计记忆/项目组灵魂/表达模式.md",
     "subtype": "other",
     "summary": "表达模式",
@@ -2411,7 +2510,7 @@
   {
     "id": "docs/设计记忆/项目组灵魂/成员/怀月.md",
     "indexVersion": 1,
-    "sourceHash": "93c701689c1a298e846e07f0fde2ea29a49b0985cd93a4be638ed19be3ce50d0",
+    "sourceHash": "7532e0519dc7d26a5f5f11b5d4f1dccd5316093d878dbbfbc99479ab925c85db",
     "sourcePath": "docs/设计记忆/项目组灵魂/成员/怀月.md",
     "subtype": "other",
     "summary": "怀月｜序志｜藏忆",
@@ -2422,7 +2521,7 @@
   {
     "id": "docs/设计记忆/项目组灵魂/成员/璃落.md",
     "indexVersion": 1,
-    "sourceHash": "8b0c352380fa6566f78803925aa8ffd755cab8fdfea63ec33dcb6134442585e7",
+    "sourceHash": "eac2b46e6b2d56aea9d42ea2415a6f4b042df19f6dc8805cada07f92ce94dfff",
     "sourcePath": "docs/设计记忆/项目组灵魂/成员/璃落.md",
     "subtype": "other",
     "summary": "璃落｜神思｜总枢",
@@ -2433,7 +2532,7 @@
   {
     "id": "docs/设计记忆/项目组灵魂/成员/凌音.md",
     "indexVersion": 1,
-    "sourceHash": "98a2f6dc832bfa87ef4ab10ba34ddea20d442cf86cadea28f8cb42506a2a209e",
+    "sourceHash": "b8e5d397cfac7808be0f621c1c45020583a55336d544814033bf6405206647d5",
     "sourcePath": "docs/设计记忆/项目组灵魂/成员/凌音.md",
     "subtype": "other",
     "summary": "凌音｜程器｜验行",
@@ -2444,7 +2543,7 @@
   {
     "id": "docs/设计记忆/项目组灵魂/成员/时雨.md",
     "indexVersion": 1,
-    "sourceHash": "bf2debc90319890d6c025478e0ba07444897edcfd4f08cd58c2f1d0078fcc59e",
+    "sourceHash": "ec48c43080e5445618604ff92179deeac7a7ac00d53c5403dc7d8c53cbedbe9d",
     "sourcePath": "docs/设计记忆/项目组灵魂/成员/时雨.md",
     "subtype": "other",
     "summary": "时雨｜熔裁｜机枢",
@@ -2455,7 +2554,7 @@
   {
     "id": "docs/设计记忆/项目组灵魂/成员/书晴.md",
     "indexVersion": 1,
-    "sourceHash": "d710b3092367f4e5875bda4c9436a5ee2963b0bf1dc8af2023572e0aa0ff8c2c",
+    "sourceHash": "3a99ac6c007a4d58068dd8de547cf498025417732d19e6e4b9b1fd190c006593",
     "sourcePath": "docs/设计记忆/项目组灵魂/成员/书晴.md",
     "subtype": "other",
     "summary": "书晴｜事类｜拾影",
@@ -2466,7 +2565,7 @@
   {
     "id": "docs/设计记忆/项目组灵魂/成员/星弥.md",
     "indexVersion": 1,
-    "sourceHash": "b18044a3e598fadce5b934acea4f3720d00babb669c5c00bbaa7274d847ffe75",
+    "sourceHash": "014421309fd01653b99253802adaf2e189b27aa6d4aaa191b5d2ed10fb9a4ecf",
     "sourcePath": "docs/设计记忆/项目组灵魂/成员/星弥.md",
     "subtype": "other",
     "summary": "星弥｜隐秀｜补阙",
@@ -2477,7 +2576,7 @@
   {
     "id": "docs/设计记忆/项目组灵魂/成员/言澈.md",
     "indexVersion": 1,
-    "sourceHash": "86b7f76424a15bc6a1bf65bf7b93f76f34cac06bd2fb4b0be60b41a4b8e06cc8",
+    "sourceHash": "480d633933fb8bed8e2e4a38699877c2022b90788fa115c06067d6fcc28a6327",
     "sourcePath": "docs/设计记忆/项目组灵魂/成员/言澈.md",
     "subtype": "other",
     "summary": "言澈｜正纬｜经纬",
@@ -2488,7 +2587,7 @@
   {
     "id": "docs/设计记忆/项目组灵魂/成员/砚秋.md",
     "indexVersion": 1,
-    "sourceHash": "ec5ad78f0dbbf31f35bfd4a34147368f8ea17579071f26453fb71b9ef8abfcff",
+    "sourceHash": "32ff17f62b45bd130bed1418750138f6a9cc0bc94a23ad72eb5aecbb4af25ed0",
     "sourcePath": "docs/设计记忆/项目组灵魂/成员/砚秋.md",
     "subtype": "other",
     "summary": "砚秋｜指瑕｜衡鉴",
@@ -2499,7 +2598,7 @@
   {
     "id": "docs/设计记忆/项目组灵魂/成员/知遥.md",
     "indexVersion": 1,
-    "sourceHash": "d2f822c8de859f7159737f63f4dd10af35140768fd4a2078200ac0416a2acfa2",
+    "sourceHash": "0056184e7c59b88b22750fcc803bf1bd8910d2a7401f4666531ccbf3ac0e7790",
     "sourcePath": "docs/设计记忆/项目组灵魂/成员/知遥.md",
     "subtype": "other",
     "summary": "知遥｜宗经｜寻迹",
@@ -2521,7 +2620,7 @@
   {
     "id": "docs/设计记忆/项目组灵魂/文号体系/README.md",
     "indexVersion": 1,
-    "sourceHash": "a69ed3d85d0eefd72d0af55d7188659d9625e29796089c11d2cee2de970c4e38",
+    "sourceHash": "81a4aef96b50299b275648bafc12515e30f2ac90325bfbd9fe98ca5719925d68",
     "sourcePath": "docs/设计记忆/项目组灵魂/文号体系/README.md",
     "subtype": "other",
     "summary": "璃落创作组雕龙文号体系",
@@ -2587,7 +2686,7 @@
   {
     "id": "docs/设计记忆/项目组灵魂/项目组手记/TEAM-NOTE-004-让每次校准留下可复用的判断.md",
     "indexVersion": 1,
-    "sourceHash": "eaf8282398cebf3b6ab4409d3ab528c262192a810409c718bcd41c7f28d3e517",
+    "sourceHash": "da75437413ff715bbda558dc0c70aa4c11306f878d08c9f74907cdaca21709e0",
     "sourcePath": "docs/设计记忆/项目组灵魂/项目组手记/TEAM-NOTE-004-让每次校准留下可复用的判断.md",
     "subtype": "other",
     "summary": "让每次校准留下可复用的判断",
@@ -2609,7 +2708,7 @@
   {
     "id": "docs/设计记忆/项目组灵魂/README.md",
     "indexVersion": 1,
-    "sourceHash": "99ee9da7354bc2990e03317d568ec7eb23993c8b2ce0e99ba58dbfc73f23107e",
+    "sourceHash": "2afd9b2869ddcc34605a3df24fea2b4d4afd174400de51ae897349700ee4f293",
     "sourcePath": "docs/设计记忆/项目组灵魂/README.md",
     "subtype": "other",
     "summary": "璃落创作组灵魂",
@@ -2648,105 +2747,6 @@
     "summary": "Skill 来源目录",
     "summarySource": "title-only",
     "title": "Skill 来源目录",
-    "type": "document"
-  },
-  {
-    "id": "docs/外部来源/Skill许可证与保存策略.md",
-    "indexVersion": 1,
-    "sourceHash": "18498f5dc9c78c51a9198714ea470d8f6ecb9692128b5d8c6906ee57ba5308cd",
-    "sourcePath": "docs/外部来源/Skill许可证与保存策略.md",
-    "subtype": "other",
-    "summary": "Skill 许可证与保存策略",
-    "summarySource": "title-only",
-    "title": "Skill 许可证与保存策略",
-    "type": "document"
-  },
-  {
-    "id": "docs/我现在可以做什么.md",
-    "indexVersion": 1,
-    "sourceHash": "93e356b6883134e78dd95c72dee5f2d1776d43b7d26ce5bbfd03ca90de07d755",
-    "sourcePath": "docs/我现在可以做什么.md",
-    "subtype": "other",
-    "summary": "我现在可以做什么",
-    "summarySource": "title-only",
-    "title": "我现在可以做什么",
-    "type": "document"
-  },
-  {
-    "id": "docs/系统说明/存读档系统.md",
-    "indexVersion": 1,
-    "sourceHash": "51c45dfbc009b080b6d084b3badc740481e11474828d59eaddc74cf391be31f6",
-    "sourcePath": "docs/系统说明/存读档系统.md",
-    "subtype": "system",
-    "summary": "存读档系统",
-    "summarySource": "title-only",
-    "title": "存读档系统",
-    "type": "document"
-  },
-  {
-    "id": "docs/系统说明/地图系统.md",
-    "indexVersion": 1,
-    "sourceHash": "606e9d703a84c934a21193fc7a0435390a2d02977f3eb0f08a60301f75d5ecc6",
-    "sourcePath": "docs/系统说明/地图系统.md",
-    "subtype": "system",
-    "summary": "地图系统",
-    "summarySource": "title-only",
-    "title": "地图系统",
-    "type": "document"
-  },
-  {
-    "id": "docs/系统说明/故事大纲到可玩内容转化系统.md",
-    "indexVersion": 1,
-    "sourceHash": "d39abdae4f8c4295d88d781d8e7ae6484dda4f8d1696905e22e163a1ea200da9",
-    "sourcePath": "docs/系统说明/故事大纲到可玩内容转化系统.md",
-    "subtype": "system",
-    "summary": "故事大纲到可玩内容转化系统",
-    "summarySource": "title-only",
-    "title": "故事大纲到可玩内容转化系统",
-    "type": "document"
-  },
-  {
-    "id": "docs/系统说明/故事大纲世界选项/0-munika.md",
-    "indexVersion": 1,
-    "sourceHash": "f5e795d457e5690c977108dd92546d75a6b10e92e024fcbc41652be7132acd8e",
-    "sourcePath": "docs/系统说明/故事大纲世界选项/0-munika.md",
-    "subtype": "system",
-    "summary": "慕妮卡帝国故事大纲选项",
-    "summarySource": "title-only",
-    "title": "慕妮卡帝国故事大纲选项",
-    "type": "document"
-  },
-  {
-    "id": "docs/系统说明/故事大纲世界选项/1-modern.md",
-    "indexVersion": 1,
-    "sourceHash": "6624477f803b2c468a75790f69274f9ab6c2d5545d27b19aca3f1c78689959ad",
-    "sourcePath": "docs/系统说明/故事大纲世界选项/1-modern.md",
-    "subtype": "system",
-    "summary": "浮光掠影故事大纲选项",
-    "summarySource": "title-only",
-    "title": "浮光掠影故事大纲选项",
-    "type": "document"
-  },
-  {
-    "id": "docs/系统说明/故事大纲世界选项/2-apocalypse.md",
-    "indexVersion": 1,
-    "sourceHash": "c3e524717e6531eb6dce8856b267ef333adfd59e5a65e5ba3b2a19073e1717bf",
-    "sourcePath": "docs/系统说明/故事大纲世界选项/2-apocalypse.md",
-    "subtype": "system",
-    "summary": "寂土挽歌故事大纲选项",
-    "summarySource": "title-only",
-    "title": "寂土挽歌故事大纲选项",
-    "type": "document"
-  },
-  {
-    "id": "docs/系统说明/故事大纲世界选项/3-ancient.md",
-    "indexVersion": 1,
-    "sourceHash": "381a99ccc09f6d908fe04c4669d9317bae03c34310eb0fab477f07cf69028309",
-    "sourcePath": "docs/系统说明/故事大纲世界选项/3-ancient.md",
-    "subtype": "system",
-    "summary": "尘寰问道故事大纲选项",
-    "summarySource": "title-only",
-    "title": "尘寰问道故事大纲选项",
     "type": "document"
   }
 ]
