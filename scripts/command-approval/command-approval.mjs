@@ -206,7 +206,7 @@ async function validate() {
   const ruleArgs = files.flatMap((name) => ['--rules', path.join(rulesDir, name)])
   const policyCases = [
     { command: ['npm', 'run', 'docs:check-encoding'], expected: 'allow' },
-    { command: ['git', 'push', 'origin', 'main'], expected: 'prompt' },
+    { command: ['git', 'push', 'origin', 'main'], expected: 'allow' },
     { command: ['git', 'push', '--force', 'origin', 'main'], expected: 'forbidden' },
     { command: ['npm', 'install', 'lodash'], expected: 'prompt' },
     { command: ['npm', 'run', 'external-skills:fetch'], expected: 'prompt' },

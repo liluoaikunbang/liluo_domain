@@ -202,6 +202,24 @@
       "status": "active",
       "createdAt": "2026-07-23",
       "lastReviewedAt": "2026-07-23"
+    },
+    {
+      "decisionId": "codex-approval-18efe0fe0b19",
+      "scope": "project",
+      "source": "user-explicit",
+      "commandClass": "git-protection",
+      "ruleFile": ".codex/rules/project-decisions.rules",
+      "rulePattern": [
+        "git",
+        "push",
+        "origin",
+        "main"
+      ],
+      "decision": "allow",
+      "reason": "用户明确授权本项目 main 分支常规推送长期 allow；强制推送仍 forbidden。",
+      "status": "active",
+      "createdAt": "2026-07-26",
+      "lastReviewedAt": "2026-07-26"
     }
   ]
 }

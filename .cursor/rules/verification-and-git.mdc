@@ -5,4 +5,5 @@ alwaysApply: false
 
 - 按根 `AGENTS.md` 选择 `npm run project:routine -- <最小适用 profile>`，根据变化面去重；不以全量检查替代范围判断。
 - 不自动启动持续服务、提交、推送、发布、安装依赖或更改 Git 元数据；这些操作必须由用户请求并遵守既有边界。
+- 用户已授权本项目 `git push origin main` 为长期 allow（见 `.codex/approval-decisions.json`）；常规非强制 main 推送不再重复询问；`git push --force` 仍 forbidden。
 - 在 Windows 上处理中文文档和 Git 路径时，遵循 `docs/系统说明/Windows命令与UTF-8编码规范.md`。

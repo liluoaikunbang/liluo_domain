@@ -79,6 +79,14 @@ export function classifyRulePattern(input) {
     return { classification: 'dangerous', recommendedScope: 'none', reason: '复杂 shell、变量、通配符或重定向不得自动持久化。' }
   }
   if (DANGEROUS_PREFIXES.some((prefix) => startsWith(lower, prefix))) {
+    if (lower[0] === 'git' && lower[1] === 'push' && lower[2] === 'origin' && lower[3] === 'main' && pattern.length === 4) {
+      return {
+        classification: 'project-specific',
+        recommendedScope: 'project',
+        allowEligible: true,
+        reason: '精确的非强制 main 推送，可在用户明确授权后登记为项目 allow。',
+      }
+    }
     return { classification: 'dangerous', recommendedScope: 'project', reason: '该命令类别有外部副作用或破坏风险，应保持 prompt/forbidden。' }
   }
   if (BROAD_PATTERNS.has(joined) || (INTERPRETERS.has(lower[0]) && pattern.length < 3)) {

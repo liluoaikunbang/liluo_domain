@@ -15,6 +15,7 @@
 | 精确前缀 | 决策 | 范围 | 类别 | 理由 |
 | --- | --- | --- | --- | --- |
 | `npm run project:hooks:install` | prompt | project | git-protection | 安装本地 Hook 会写入当前仓库 .git/config，必须保留精确审批 |
+| `git push origin main` | allow | project | git-protection | 用户明确授权本项目 main 分支常规推送长期 allow；强制推送仍 forbidden。 |
 | `npm run project:gate:explain` | allow | project | project-quality-gate | 固定质量门禁入口仅执行仓库内确定性检查；参数由项目脚本约束，不运行 live eval，不提交或发布 |
 | `npm run project:hooks:test` | allow | project | project-quality-gate | 固定质量门禁入口仅执行仓库内确定性检查；参数由项目脚本约束，不运行 live eval，不提交或发布 |
 | `npm run project:routine` | allow | project | project-routine | 受测试的固定项目检查、测试、构建与索引模式，拒绝任意附加命令 |

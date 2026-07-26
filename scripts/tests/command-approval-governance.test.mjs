@@ -38,6 +38,8 @@ test('recognizes project-specific, overbroad and dangerous patterns', () => {
   assert.equal(classifyRulePattern(['npm', 'run']).classification, 'overbroad')
   assert.equal(classifyRulePattern(['powershell']).classification, 'overbroad')
   assert.equal(classifyRulePattern(['git', 'push']).classification, 'dangerous')
+  assert.equal(classifyRulePattern(['git', 'push', 'origin', 'main']).classification, 'project-specific')
+  assert.equal(classifyRulePattern(['git', 'push', 'origin', 'main']).allowEligible, true)
   assert.equal(classifyRulePattern(['npm', 'install']).classification, 'dangerous')
   assert.equal(classifyRulePattern(['npm', 'run', 'release:offline']).classification, 'dangerous')
   assert.equal(classifyRulePattern(['git', 'status']).classification, 'safe-global')

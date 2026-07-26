@@ -10,6 +10,15 @@ prefix_rule(
     justification = "安装本地 Hook 会写入当前仓库 .git/config，必须保留精确审批",
 )
 
+# decision_id: codex-approval-18efe0fe0b19
+# match: ["git", "push", "origin", "main"]
+# not_match: []
+prefix_rule(
+    pattern = ["git", "push", "origin", "main"],
+    decision = "allow",
+    justification = "用户明确授权本项目 main 分支常规推送长期 allow；强制推送仍 forbidden。",
+)
+
 # decision_id: codex-approval-44393be20e0b
 # match: ["npm", "run", "project:gate:explain"]
 # not_match: []
