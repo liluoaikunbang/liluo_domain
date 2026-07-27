@@ -8,6 +8,11 @@
   "teamRouting": "project-navigation/team-routing.json",
   "writingModels": "project-navigation/writing-models.json",
   "writingAssets": "docs/写作资产/registry.json",
+  "styleRagPolicy": "project-navigation/style-rag-policy.json",
+  "styleTaxonomy": "project-navigation/style-taxonomy.json",
+  "externalStyleSources": "project-navigation/external-style-sources.json",
+  "ragAuditPolicy": "project-navigation/rag-audit-policy.json",
+  "ragAuditRegistry": "docs/知识检索校准/registry.json",
   "generatedDocs": [
     "docs/项目能力、缺口与行动总览.md",
     "docs/我现在可以做什么.md"

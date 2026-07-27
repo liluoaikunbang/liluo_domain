@@ -1,0 +1,287 @@
+{
+  "schemaVersion": 1,
+  "batchId": "rab-ms2ubk7w",
+  "channel": "all",
+  "channels": [
+    "rag",
+    "style-rag",
+    "concept",
+    "plot"
+  ],
+  "mode": "random",
+  "exportedAt": "2026-07-27T06:22:55.772Z",
+  "count": 8,
+  "remainingPool": 533,
+  "items": [
+    {
+      "index": 1,
+      "channel": "rag",
+      "assetId": "fb-src-000155",
+      "title": "杨可同人文",
+      "author": "杨可",
+      "themeDomain": "restraint-themed",
+      "path": "external-knowledge/sources/fiction-bondage/作者,金主大大/杨可/杨可同人文.md",
+      "lowConfidence": false,
+      "hitCount": 0,
+      "currentResult": {
+        "assetKind": "source",
+        "sourceId": "fb-src-000155",
+        "tags": [
+          "环境:校园",
+          "环境:都市",
+          "氛围:悬疑",
+          "世界:奇幻",
+          "世界:科幻",
+          "状态:受限"
+        ],
+        "title": "杨可同人文",
+        "author": "杨可",
+        "knowledgeScope": "external-fiction-reference",
+        "canonical": false
+      }
+    },
+    {
+      "index": 2,
+      "channel": "rag",
+      "assetId": "fb-src-000199",
+      "title": "大航海时代的女船长和她的教女",
+      "author": "en010272",
+      "themeDomain": "restraint-themed",
+      "path": "external-knowledge/sources/fiction-bondage/作者,金主大大/en010272/大航海时代的女船长和她的教女.md",
+      "lowConfidence": false,
+      "hitCount": 0,
+      "currentResult": {
+        "assetKind": "source",
+        "sourceId": "fb-src-000199",
+        "tags": [
+          "环境:古堡",
+          "环境:都市",
+          "叙事:逃脱",
+          "叙事:仪式",
+          "世界:奇幻",
+          "世界:科幻",
+          "状态:受限"
+        ],
+        "title": "大航海时代的女船长和她的教女",
+        "author": "en010272",
+        "knowledgeScope": "external-fiction-reference",
+        "canonical": false
+      }
+    },
+    {
+      "index": 3,
+      "channel": "style-rag",
+      "assetId": "ea-6a736ad10e7c",
+      "title": "无限战争",
+      "author": "杨可",
+      "themeDomain": "restraint-themed",
+      "path": "external-knowledge/sources/fiction-bondage/作者,金主大大/杨可/无限战争.md",
+      "lowConfidence": false,
+      "hitCount": 0,
+      "currentResult": {
+        "themeDomain": "restraint-themed",
+        "review": {
+          "status": "unreviewed",
+          "overallWeight": null,
+          "writingQuality": null,
+          "liluoSuitability": null,
+          "restraintWritingQuality": null,
+          "dialogueQuality": null,
+          "actionSpatialQuality": null,
+          "atmosphereQuality": null,
+          "notes": "",
+          "reviewedAt": null
+        },
+        "productionUse": {
+          "styleRecommendation": "unreviewed",
+          "representation": "source-only",
+          "contentLeakageRisk": "unknown",
+          "mappedAssetId": null
+        },
+        "title": {
+          "value": "无限战争",
+          "confidence": "high",
+          "extractedFrom": "body"
+        },
+        "author": {
+          "authorId": "author-fbb5709bce",
+          "displayName": "杨可",
+          "confidence": "medium",
+          "extractedFrom": "folder"
+        }
+      }
+    },
+    {
+      "index": 4,
+      "channel": "style-rag",
+      "assetId": "ea-eccf2fcc0ee5",
+      "title": "人偶纺织机",
+      "author": "苏攻子",
+      "themeDomain": "restraint-themed",
+      "path": "external-knowledge/sources/fiction-bondage/作者,金主大大/苏攻子/人偶纺织机.md",
+      "lowConfidence": false,
+      "hitCount": 0,
+      "currentResult": {
+        "themeDomain": "restraint-themed",
+        "review": {
+          "status": "unreviewed",
+          "overallWeight": null,
+          "writingQuality": null,
+          "liluoSuitability": null,
+          "restraintWritingQuality": null,
+          "dialogueQuality": null,
+          "actionSpatialQuality": null,
+          "atmosphereQuality": null,
+          "notes": "",
+          "reviewedAt": null
+        },
+        "productionUse": {
+          "styleRecommendation": "unreviewed",
+          "representation": "source-only",
+          "contentLeakageRisk": "unknown",
+          "mappedAssetId": null
+        },
+        "title": {
+          "value": "人偶纺织机",
+          "confidence": "high",
+          "extractedFrom": "body"
+        },
+        "author": {
+          "authorId": "author-7dc70709ab",
+          "displayName": "苏攻子",
+          "confidence": "medium",
+          "extractedFrom": "folder"
+        }
+      }
+    },
+    {
+      "index": 5,
+      "channel": "concept",
+      "assetId": "restraint.escape.attempt",
+      "title": "脱困尝试",
+      "author": "seed",
+      "themeDomain": "restraint-themed",
+      "path": "src/game/data/outline_relation_graph/conceptRegistry.js",
+      "lowConfidence": true,
+      "hitCount": 0,
+      "currentResult": {
+        "assetKind": "concept",
+        "conceptId": "restraint.escape.attempt",
+        "canonicalName": "脱困尝试",
+        "aliases": [
+          "挣脱",
+          "尝试脱困"
+        ],
+        "parentConcepts": [],
+        "visibility": {
+          "primaryTag": true,
+          "detailPanel": true,
+          "graph": true,
+          "searchable": true,
+          "ragRetrievable": true
+        },
+        "summary": "角色尝试恢复行动权或退出受限状态。"
+      }
+    },
+    {
+      "index": 6,
+      "channel": "concept",
+      "assetId": "restraint.detail.mobility-range",
+      "title": "身体活动范围",
+      "author": "seed",
+      "themeDomain": "restraint-themed",
+      "path": "src/game/data/outline_relation_graph/conceptRegistry.js",
+      "lowConfidence": true,
+      "hitCount": 0,
+      "currentResult": {
+        "assetKind": "concept",
+        "conceptId": "restraint.detail.mobility-range",
+        "canonicalName": "身体活动范围",
+        "aliases": [
+          "活动范围"
+        ],
+        "parentConcepts": [
+          "restraint.pose.fixed"
+        ],
+        "visibility": {
+          "primaryTag": false,
+          "detailPanel": true,
+          "graph": true,
+          "searchable": true,
+          "ragRetrievable": true
+        },
+        "summary": "受限状态下身体仍可活动的幅度。"
+      }
+    },
+    {
+      "index": 7,
+      "channel": "plot",
+      "assetId": "plot-022",
+      "title": "公开猎场反播",
+      "author": "plot-catalog",
+      "themeDomain": "general-prose",
+      "path": "src/game/data/plot_outline/catalog.json",
+      "lowConfidence": false,
+      "hitCount": 0,
+      "currentResult": {
+        "assetKind": "plot",
+        "id": "plot-022",
+        "title": "公开猎场反播",
+        "summary": "璃落被误登记、顶替或贩卖进直播生存竞技，发现平台会用积分、观众投票和动态猎人机制逼选手制造冲突。她利用维修通道和系统预测盲点联合其他选手伪造淘汰、篡改定位并劫持镜头，把后台操纵补给、灾害和自愿记录的证据直播出去，使争夺冠军的逃亡转化为对整个平台的公开审判。",
+        "groupId": "plot-group-013",
+        "tags": [
+          "生存竞技",
+          "强制直播",
+          "动态追猎",
+          "算法操控",
+          "选手结盟",
+          "反向曝光"
+        ],
+        "bondageTags": [],
+        "characters": [
+          "璃落",
+          "参赛者",
+          "平台管理者"
+        ],
+        "usedBy": [
+          "world-5-star-weaving-dream-dome-hunt"
+        ]
+      }
+    },
+    {
+      "index": 8,
+      "channel": "plot",
+      "assetId": "plot-056",
+      "title": "脑机梦狱-意识监牢",
+      "author": "plot-catalog",
+      "themeDomain": "general-prose",
+      "path": "src/game/data/plot_outline/catalog.json",
+      "lowConfidence": true,
+      "hitCount": 0,
+      "currentResult": {
+        "assetKind": "plot",
+        "id": "plot-056",
+        "title": "脑机梦狱-意识监牢",
+        "summary": "在科幻世界中，囚犯的身体被维生系统维持在沉睡状态，意识却经由脑机接口接入一座可被反复重置的虚拟监狱。璃落在其中醒来时，感官、时间流逝与环境规则都由狱方定义；每一次越狱失败、求助或试图证明现实，都会被系统归档为行为数据，并成为下一轮更精确的限制条件。她必须分辨哪些痛苦只是模拟、哪些记忆正在被系统改写，并在肉身无法行动的情况下，设法把一段无法被重置的证据送回现实。",
+        "groupId": "plot-group-014",
+        "tags": [
+          "科幻",
+          "脑机接口",
+          "虚拟监狱",
+          "意识监牢",
+          "肉身沉睡",
+          "时间循环",
+          "记忆校验",
+          "越狱",
+          "罐中脑"
+        ],
+        "bondageTags": [],
+        "characters": [
+          "璃落",
+          "虚拟监狱系统"
+        ],
+        "usedBy": []
+      }
+    }
+  ]
+}

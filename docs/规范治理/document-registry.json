@@ -102,7 +102,7 @@
       "path": "docs/系统说明/外部虚构题材知识库.md",
       "type": "system-spec",
       "authorityFor": ["external-knowledge-architecture", "external-originality"],
-      "consumers": ["AGENTS.md", ".agents/skills/liluo-project/liluo-external-fiction-knowledge/SKILL.md", "docs/技能说明/liluo-external-fiction-knowledge.md", "docs/用户命令目录.md"],
+      "consumers": ["AGENTS.md", ".agents/skills/liluo-project/liluo-external-fiction-knowledge/SKILL.md", "docs/技能说明/liluo-external-fiction-knowledge.md", "docs/用户命令目录.md", ".agents/skills/writing/liluo-natural-expression/SKILL.md"],
       "indexable": true,
       "status": "active"
     },
@@ -216,7 +216,7 @@
       "path": "docs/系统说明/璃落自然表达与文气塑形系统.md",
       "type": "system-spec",
       "authorityFor": ["natural-expression-routing", "natural-expression-intensity", "natural-expression-plausibility", "natural-expression-user-calibration", "natural-expression-grounded-figurative", "restraint-prose-light-rag", "restraint-technique-pose-consistency", "style-profile-boundary"],
-      "consumers": ["AGENTS.md", ".agents/skills/writing/liluo-natural-expression/SKILL.md", "docs/技能说明/liluo-natural-expression.md", "docs/用户命令目录.md"],
+      "consumers": ["AGENTS.md", ".agents/skills/writing/liluo-natural-expression/SKILL.md", "docs/技能说明/liluo-natural-expression.md", "docs/用户命令目录.md", ".cursor/rules/content-authoring.mdc", ".agents/skills/liluo-project/liluo-external-fiction-knowledge/SKILL.md", ".agents/skills/liluo-project/liluo-style-rag/SKILL.md", "docs/系统说明/知识检索抽查校准系统.md", "docs/系统说明/Style-RAG元数据检索与文风包系统.md", "docs/系统说明/外部虚构题材知识库.md"],
       "indexable": true,
       "userFacing": true,
       "status": "active"
@@ -225,7 +225,7 @@
       "documentId": "formal-prose-pipeline-system",
       "path": "docs/系统说明/开放权重双模型写作管线.md",
       "type": "system-spec",
-      "authorityFor": ["formal-prose-pipeline", "open-weight-writing-models", "writing-asset-layers", "writing-model-workspace-only"],
+      "authorityFor": ["formal-prose-pipeline", "open-weight-writing-models", "writing-asset-layers", "writing-model-workspace-only", "writing-model-pending-candidates"],
       "consumers": [
         "AGENTS.md",
         ".agents/skills/liluo-project/liluo-formal-prose-pipeline/SKILL.md",
@@ -233,6 +233,7 @@
         "docs/系统说明/写作模型API配置与用户操作指南.md",
         "project-navigation/writing-models.json",
         "docs/写作资产/registry.json",
+        "docs/写作资产/模型归档/pending-candidates.json",
         "scripts/writing-model/writing-model.mjs",
         "docs/用户命令目录.md",
         "package.json"
@@ -251,6 +252,78 @@
         "docs/技能说明/liluo-formal-prose-pipeline.md",
         ".env.writing.example",
         "docs/用户命令目录.md"
+      ],
+      "indexable": true,
+      "userFacing": true,
+      "status": "active"
+    },
+    {
+      "documentId": "style-rag-metadata-system",
+      "path": "docs/系统说明/Style-RAG元数据检索与文风包系统.md",
+      "type": "system-spec",
+      "authorityFor": ["style-rag-v0-v1", "style-pack", "canon-style-separation", "style-query"],
+      "consumers": [
+        "AGENTS.md",
+        ".agents/skills/liluo-project/liluo-style-rag/SKILL.md",
+        "docs/技能说明/liluo-style-rag.md",
+        "project-navigation/style-rag-policy.json",
+        "scripts/writing-model/writing-model.mjs",
+        "docs/用户命令目录.md",
+        ".agents/skills/writing/liluo-natural-expression/SKILL.md",
+        "docs/系统说明/Style-RAG用户操作指南.md"
+      ],
+      "indexable": true,
+      "userFacing": true,
+      "status": "active"
+    },
+    {
+      "documentId": "external-article-review-system",
+      "path": "docs/系统说明/外部文章清单与用户评权系统.md",
+      "type": "system-spec",
+      "authorityFor": ["external-article-inventory", "external-author-prior", "user-article-scoring"],
+      "consumers": [
+        ".agents/skills/liluo-project/liluo-style-rag/SKILL.md",
+        "project-navigation/external-style-sources.json",
+        "docs/写作资产/外部风格研究/article-registry.json",
+        ".agents/skills/writing/liluo-natural-expression/SKILL.md",
+        "docs/用户命令目录.md"
+      ],
+      "indexable": true,
+      "userFacing": true,
+      "status": "active"
+    },
+    {
+      "documentId": "rag-audit-calibration-system",
+      "path": "docs/系统说明/知识检索抽查校准系统.md",
+      "type": "system-spec",
+      "authorityFor": ["rag-audit-calibration", "style-rag-audit", "affected-index-rebuild-gate"],
+      "consumers": [
+        "AGENTS.md",
+        "docs/技能说明/知识检索抽查校准.md",
+        "project-navigation/rag-audit-policy.json",
+        "scripts/rag-audit/rag-audit.mjs",
+        "docs/用户命令目录.md",
+        ".agents/skills/writing/liluo-natural-expression/SKILL.md",
+        ".agents/skills/liluo-project/liluo-external-fiction-knowledge/SKILL.md",
+        ".agents/skills/liluo-project/liluo-style-rag/SKILL.md"
+      ],
+      "indexable": true,
+      "userFacing": true,
+      "status": "active"
+    },
+    {
+      "documentId": "outline-relation-graph-system",
+      "path": "docs/系统说明/大纲关联图谱系统.md",
+      "type": "system-spec",
+      "authorityFor": ["outline-relation-graph", "outline-graph-projection", "graph-audit-discovery"],
+      "consumers": [
+        "AGENTS.md",
+        "src/game/views/components/base/RelationGraphPanel.vue",
+        "src/game/data/outline_relation_graph/",
+        "scripts/outline-graph/outline-graph.mjs",
+        "docs/用户命令目录.md",
+        "docs/系统说明/知识检索抽查校准系统.md",
+        "docs/系统说明/Style-RAG元数据检索与文风包系统.md"
       ],
       "indexable": true,
       "userFacing": true,

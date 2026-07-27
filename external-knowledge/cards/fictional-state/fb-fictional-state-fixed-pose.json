@@ -1,0 +1,70 @@
+{
+  "cardId": "fb-fictional-state-fixed-pose",
+  "cardType": "fictional-state",
+  "title": "固定姿态",
+  "aliases": [
+    "定姿",
+    "强制姿势"
+  ],
+  "definition": "虚构状态卡：角色被维持在某一可识别身体姿态上，叙事重点在姿态本身带来的行动边界、视觉反馈与场景功能，而不是现实操作指南。",
+  "distinctions": [
+    "固定姿态强调“被维持在某一形态”，不等于短暂按住或瞬间失衡。",
+    "可与上肢受限并存，但也可单独由家具、空间或规则造成。"
+  ],
+  "prerequisites": [
+    "场景需要读者立刻读出姿态对行动选项的影响。"
+  ],
+  "progression": [
+    "先给出可识别姿态轮廓。",
+    "再落到该姿态下仍可执行的少数动作。",
+    "用姿态变化或退出条件推动下一段选择。"
+  ],
+  "reversals": [
+    "姿态表面固定，实际仍保留一条读者尚未察觉的微调空间。"
+  ],
+  "outcomes": [
+    "形成短时对峙、观察或交涉场景。",
+    "把姿态本身变成线索、谈判筹码或转场触发。"
+  ],
+  "concepts": [
+    "固定姿态",
+    "定姿",
+    "强制姿势"
+  ],
+  "abstractPatterns": [
+    "可识别姿态",
+    "行动边界可视化"
+  ],
+  "tags": [
+    "状态:受限",
+    "叙事:仪式",
+    "氛围:悬疑"
+  ],
+  "sourceRefs": [
+    {
+      "sourceId": "fb-src-000001",
+      "segmentId": "fb-src-000001-seg-00004",
+      "sourcePath": "external-knowledge/sources/fiction-bondage/不知道作者/（完结）彼岸花开.md",
+      "startLine": 15,
+      "endLine": 15
+    },
+    {
+      "sourceId": "fb-src-000002",
+      "segmentId": "fb-src-000002-seg-00001",
+      "sourcePath": "external-knowledge/sources/fiction-bondage/不知道作者/【崩坏3rd 脑洞同人文】—两人的结局.md",
+      "startLine": 3,
+      "endLine": 11
+    },
+    {
+      "sourceId": "fb-src-000004",
+      "segmentId": "fb-src-000004-seg-00017",
+      "sourcePath": "external-knowledge/sources/fiction-bondage/不知道作者/芭蕾师生.md",
+      "startLine": 84,
+      "endLine": 84
+    }
+  ],
+  "reviewStatus": "candidate",
+  "directQuoteIncluded": false,
+  "knowledgeScope": "external-fiction-reference",
+  "canonical": false
+}

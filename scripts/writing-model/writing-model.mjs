@@ -31,6 +31,32 @@ import {
 } from './lib/assets.mjs'
 import { ASSET_ROOT, ENV_EXAMPLE_FILE, ENV_LOCAL_FILE, ROOT, WORKSPACE_ROOT, repoPath, toPosixRelative } from './lib/paths.mjs'
 import { redactText, summarizeHost } from './lib/redaction.mjs'
+import { scanExternalInventory } from './lib/external-inventory.mjs'
+import {
+  exportReviewBatch,
+  importReviewBatch,
+  validateExternalRegistries,
+} from './lib/external-review.mjs'
+import { loadAuthorRegistry, listAuthors, applyAuthorPrior, saveAuthorRegistry } from './lib/external-author-registry.mjs'
+import {
+  createStyleQueryFromContract,
+  loadStyleRagPolicy,
+  loadStyleTaxonomy,
+  validateScoringWeights,
+  validateStyleQuery,
+} from './lib/style-query.mjs'
+import { runStylePack, runStyleSearch } from './lib/style-search.mjs'
+import { explainSearchResult } from './lib/style-explain.mjs'
+import { recordStyleFeedback } from './lib/style-feedback.mjs'
+import { approveWritingSheet, draftWritingSheet, loadWritingSheet } from './lib/writing-sheet.mjs'
+import {
+  STYLE_RAG_POLICY_PATH,
+  STYLE_TAXONOMY_PATH,
+  EXTERNAL_STYLE_SOURCES_PATH,
+  EXTERNAL_ARTICLE_REGISTRY_PATH,
+  EXTERNAL_AUTHOR_REGISTRY_PATH,
+  WRITING_SHEET_CURRENT_PATH,
+} from './lib/paths.mjs'
 
 function parseArgs(argv) {
   const args = { _: [], flags: {} }
@@ -78,10 +104,22 @@ async function commandValidate() {
     'schemas/workflows/writing-calibration-pair.schema.json',
     'schemas/workflows/writing-model-run.schema.json',
     'schemas/workflows/writing-asset-registry.schema.json',
+    'schemas/workflows/style-rag-policy.schema.json',
+    'schemas/workflows/style-taxonomy.schema.json',
+    'schemas/workflows/style-query.schema.json',
+    'schemas/workflows/style-pack.schema.json',
+    'schemas/workflows/external-style-sources.schema.json',
+    'schemas/workflows/external-article.schema.json',
+    'schemas/workflows/external-author.schema.json',
+    STYLE_RAG_POLICY_PATH,
+    STYLE_TAXONOMY_PATH,
+    EXTERNAL_STYLE_SOURCES_PATH,
     '.agents/skills/liluo-project/liluo-formal-prose-pipeline/SKILL.md',
+    '.agents/skills/liluo-project/liluo-style-rag/SKILL.md',
     'docs/写作资产/registry.json',
     'docs/写作资产/模型归档/model-lock.json',
     'docs/写作资产/工作区/README.md',
+    WRITING_SHEET_CURRENT_PATH,
     '.cursor',
     '.codex',
   ]
@@ -91,19 +129,29 @@ async function commandValidate() {
   const deps = { ...packageJson.dependencies, ...packageJson.devDependencies }
   const banned = ['chromadb', 'faiss', '@xenova/transformers', 'openai', '@huggingface/inference']
   const introduced = banned.filter((name) => deps[name])
+  const policy = await loadStyleRagPolicy()
+  const weightCheck = validateScoringWeights(policy)
   const errors = [
     ...shapeErrors,
     ...schema.errors.map((item) => `schema: ${item}`),
     ...asset.errors.map((item) => `assets: ${item}`),
     ...missing.map((item) => `missing: ${item}`),
     ...introduced.map((item) => `banned dependency introduced: ${item}`),
+    ...weightCheck.errors,
   ]
+  if (!policy.enabledModes?.includes('metadata') || !policy.enabledModes?.includes('explicit')) {
+    errors.push('style-rag-policy 必须启用 explicit 与 metadata')
+  }
+  if (!policy.deferredModes?.includes('embedding')) {
+    errors.push('embedding 必须仍在 deferredModes')
+  }
   const result = {
     ok: errors.length === 0,
     status: (await computeRuntimeStatus({ registry })).status,
     errors,
     goldenApprovedCount: asset.registry.counts.goldenApproved,
     styleRag: asset.registry.policy.styleRagStatus,
+    styleRagStage: policy.implementationStage,
   }
   printJson(result)
   if (!result.ok) process.exitCode = 1
@@ -206,6 +254,23 @@ async function commandDraft(flags) {
     .filter(Boolean)
     .slice(0, 3)
   const snippets = await loadStyleSnippets(styleIds)
+  let stylePackMarkdown = null
+  let stylePackMeta = null
+  if (flags['style-query'] || flags['style-pack'] === true || contract.expression?.styleQueryPath) {
+    const queryPath = flags['style-query'] ?? contract.expression.styleQueryPath
+    let query
+    if (queryPath) {
+      query = JSON.parse(await readFile(repoPath(String(queryPath)), 'utf8'))
+    } else {
+      query = createStyleQueryFromContract(contract, {
+        targetModel: modelId,
+        mode: styleIds.length ? 'hybrid-explicit' : 'metadata',
+      })
+    }
+    const packed = await runStylePack(query)
+    stylePackMarkdown = packed.pack.renderedMarkdown
+    stylePackMeta = { packId: packed.pack.packId, status: packed.pack.status, selected: packed.pack.selectedAssets }
+  }
   const mode = flags.live ? 'live' : 'mock'
   if (mode === 'live') {
     console.error(`将 live 调用模型 ${modelId}（不显示 Key）`)
@@ -214,7 +279,7 @@ async function commandDraft(flags) {
     registry,
     modelId,
     mode,
-    messages: buildChatMessages(contract, snippets),
+    messages: buildChatMessages(contract, snippets, stylePackMarkdown),
     requestContractId: contract.requestId,
     styleReferenceIds: styleIds,
     inputSources: [toPosixRelative(absolutePath), ...styleIds],
@@ -234,6 +299,7 @@ async function commandDraft(flags) {
     modelProfile: persisted.modelProfile,
     draftPath: persisted.workspacePaths.draft,
     manifestPath: persisted.workspacePaths.manifest,
+    stylePack: stylePackMeta,
     warnings: persisted.warnings,
     note: '候选正文仅在工作区，未写入正式 canon',
   })
@@ -391,6 +457,214 @@ async function commandSyncGolden(flags) {
   printJson(result)
 }
 
+async function loadQueryFromFlags(flags) {
+  if (flags.query) {
+    return JSON.parse(await readFile(repoPath(String(flags.query)), 'utf8'))
+  }
+  if (flags.contract) {
+    const { data } = await loadFormalProseRequest(flags.contract)
+    return createStyleQueryFromContract(data, {
+      targetModel: flags.model ?? null,
+      mode: flags.mode ?? 'metadata',
+    })
+  }
+  throw new Error('需要 --query 或 --contract')
+}
+
+async function commandStyleValidate() {
+  const policy = await loadStyleRagPolicy()
+  const taxonomy = await loadStyleTaxonomy()
+  const weightCheck = validateScoringWeights(policy)
+  const policySchema = await validateAgainstSchema(policy, 'schemas/workflows/style-rag-policy.schema.json')
+  const taxSchema = await validateAgainstSchema(taxonomy, 'schemas/workflows/style-taxonomy.schema.json')
+  const sources = JSON.parse(await readFile(repoPath(EXTERNAL_STYLE_SOURCES_PATH), 'utf8'))
+  const sourcesSchema = await validateAgainstSchema(sources, 'schemas/workflows/external-style-sources.schema.json')
+  const sheet = await loadWritingSheet()
+  const errors = [
+    ...weightCheck.errors,
+    ...policySchema.errors.map((e) => `policy: ${e}`),
+    ...taxSchema.errors.map((e) => `taxonomy: ${e}`),
+    ...sourcesSchema.errors.map((e) => `sources: ${e}`),
+  ]
+  if (policy.deferredModes.includes('embedding') === false) errors.push('embedding 必须暂缓')
+  const result = {
+    ok: errors.length === 0,
+    errors,
+    implementationStage: policy.implementationStage,
+    enabledModes: policy.enabledModes,
+    deferredModes: policy.deferredModes,
+    writingSheetStatus: sheet.status,
+    scoringWeightSum: weightCheck.sum,
+  }
+  printJson(result)
+  if (!result.ok) process.exitCode = 1
+}
+
+async function commandStyleQuery(flags) {
+  const query = await loadQueryFromFlags(flags)
+  const check = await validateStyleQuery(query)
+  printJson({ ok: check.ok, errors: check.errors, query })
+  if (!check.ok) process.exitCode = 1
+}
+
+async function commandStyleSearch(flags) {
+  const query = await loadQueryFromFlags(flags)
+  const result = await runStyleSearch(query)
+  printJson({
+    ok: true,
+    queryId: result.query.queryId,
+    selected: result.selected.map((s) => ({
+      assetId: s.candidate.assetId,
+      assetType: s.candidate.assetType,
+      score: s.score,
+      themeDomain: s.candidate.themeDomain,
+      userQuality: s.candidate.userQuality,
+    })),
+    explanations: result.explanations,
+    eligibleCount: result.eligibleCount,
+    candidateCount: result.candidateCount,
+  })
+}
+
+async function commandStylePack(flags) {
+  const query = await loadQueryFromFlags(flags)
+  const { search, pack } = await runStylePack(query)
+  if (flags.out) {
+    await writeJsonSafe(repoPath(String(flags.out)), pack)
+  }
+  printJson({
+    ok: true,
+    packId: pack.packId,
+    status: pack.status,
+    selectedAssets: pack.selectedAssets,
+    characterBudget: pack.characterBudget,
+    explanations: search.explanations,
+    renderedMarkdown: flags['include-markdown'] ? pack.renderedMarkdown : undefined,
+    out: flags.out ?? null,
+  })
+}
+
+async function commandStyleExplain(flags) {
+  const query = await loadQueryFromFlags(flags)
+  const search = await runStyleSearch(query)
+  const policy = await loadStyleRagPolicy()
+  printJson({
+    ok: true,
+    lines: explainSearchResult({
+      query,
+      selected: search.selected,
+      rejected: search.rejected,
+      policy,
+    }),
+  })
+}
+
+async function commandStyleFeedback(flags) {
+  const record = await recordStyleFeedback({
+    assetId: flags.asset,
+    modelId: flags.model,
+    humanScore: Number(flags.score),
+    editRatio: flags['edit-ratio'] != null ? Number(flags['edit-ratio']) : null,
+    queryId: flags.query ?? null,
+    packId: flags.pack ?? null,
+    notes: flags.notes ?? '',
+    modelSelfScore: flags['model-self-score'],
+  })
+  printJson({ ok: true, record })
+}
+
+async function commandStyleSheetDraft(flags) {
+  const result = await draftWritingSheet({
+    principles: [].concat(flags.principle ?? []).flat(),
+    preferredPatterns: [].concat(flags.prefer ?? []).flat(),
+    avoidedPatterns: [].concat(flags.avoid ?? []).flat(),
+    evidenceAssetIds: [].concat(flags.evidence ?? []).flat(),
+    notes: flags.notes ?? undefined,
+  })
+  printJson({ ok: true, ...result })
+}
+
+async function commandStyleSheetApprove(flags) {
+  const result = await approveWritingSheet({
+    userApproved: flags['user-approved'] === true,
+    draftPath: flags.draft,
+  })
+  printJson({ ok: true, ...result })
+}
+
+async function commandExternalInventory(flags) {
+  const result = await scanExternalInventory({ dryRun: flags['dry-run'] === true })
+  printJson({
+    ok: true,
+    dryRun: result.dryRun,
+    counts: result.counts,
+    articleCount: result.articleCount,
+    authorCount: result.authorCount,
+    duplicateGroups: result.duplicateGroups,
+    missingRoots: result.missingRoots,
+    articleRegistry: EXTERNAL_ARTICLE_REGISTRY_PATH,
+    authorRegistry: EXTERNAL_AUTHOR_REGISTRY_PATH,
+  })
+}
+
+async function commandExternalReviewExport(flags) {
+  const result = await exportReviewBatch({
+    unreviewedOnly: flags['unreviewed-only'] !== false,
+    theme: flags.theme,
+    author: flags.author,
+    sourceId: flags.source,
+    batchSize: flags['batch-size'] ?? 30,
+    format: flags.format ?? 'markdown',
+  })
+  printJson({ ok: true, ...result })
+}
+
+async function commandExternalReviewImport(flags) {
+  if (!flags.input) {
+    printJson({ ok: false, error: '需要 --input' })
+    process.exitCode = 1
+    return
+  }
+  const result = await importReviewBatch(String(flags.input), {
+    dryRun: flags['dry-run'] === true,
+    strict: flags.strict !== false,
+  })
+  printJson({ ok: result.errors.length === 0, ...result })
+  if (result.errors.length) process.exitCode = 1
+}
+
+async function commandExternalAuthors(flags) {
+  const registry = await loadAuthorRegistry()
+  if (flags.set && flags.weight != null) {
+    applyAuthorPrior(registry, String(flags.set), Number(flags.weight), flags.notes ?? '')
+    if (flags.commit === true) await saveAuthorRegistry(registry)
+    printJson({ ok: true, authorId: flags.set, weight: Number(flags.weight), committed: flags.commit === true })
+    return
+  }
+  const authors = listAuthors(registry, {
+    unreviewedOnly: flags['unreviewed-only'] === true,
+    excludeUnknown: flags['exclude-unknown'] === true,
+  })
+  printJson({
+    ok: true,
+    count: authors.length,
+    authors: authors.slice(0, Number(flags.limit ?? 50)).map((a) => ({
+      authorId: a.authorId,
+      displayName: a.displayName,
+      articleCount: a.articleIds.length,
+      themeDomainCounts: a.derivedStatistics.themeDomainCounts,
+      meanArticleWeight: a.derivedStatistics.meanArticleWeight,
+      userPrior: a.userPrior,
+    })),
+  })
+}
+
+async function commandExternalValidate() {
+  const result = await validateExternalRegistries()
+  printJson(result)
+  if (!result.ok) process.exitCode = 1
+}
+
 async function main() {
   const args = parseArgs(process.argv.slice(2))
   const command = args._[0]
@@ -417,9 +691,35 @@ async function main() {
       return commandRemind(args.flags)
     case 'sync-golden':
       return commandSyncGolden(args.flags)
+    case 'style-validate':
+      return commandStyleValidate()
+    case 'style-query':
+      return commandStyleQuery(args.flags)
+    case 'style-search':
+      return commandStyleSearch(args.flags)
+    case 'style-pack':
+      return commandStylePack(args.flags)
+    case 'style-explain':
+      return commandStyleExplain(args.flags)
+    case 'style-feedback':
+      return commandStyleFeedback(args.flags)
+    case 'style-sheet-draft':
+      return commandStyleSheetDraft(args.flags)
+    case 'style-sheet-approve':
+      return commandStyleSheetApprove(args.flags)
+    case 'external-inventory':
+      return commandExternalInventory(args.flags)
+    case 'external-review-export':
+      return commandExternalReviewExport(args.flags)
+    case 'external-review-import':
+      return commandExternalReviewImport(args.flags)
+    case 'external-authors':
+      return commandExternalAuthors(args.flags)
+    case 'external-validate':
+      return commandExternalValidate()
     default:
       console.error(`未知命令：${command ?? '(empty)'}
-用法: node scripts/writing-model/writing-model.mjs <validate|status|health|draft|compare|assets-validate|assets-register|calibration-create|pin|remind-gaps|sync-golden>`)
+用法: node scripts/writing-model/writing-model.mjs <validate|status|health|draft|compare|assets-*|calibration-create|pin|remind-gaps|sync-golden|style-*|external-*>`)
       process.exitCode = 1
   }
 }

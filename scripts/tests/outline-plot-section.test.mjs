@@ -18,6 +18,7 @@ test('places plot entries between story and gameplay', () => {
   );
   assert.match(outlinePanelSource, /activeSection === 'plot'/u);
   assert.match(outlinePanelSource, /PlotOutlinePanel/u);
+  assert.match(outlinePanelSource, /\{ key: 'relation-graph', label: '关联图谱' \}/u);
 });
 
 test('plot panel exposes search, usage, world-bias and tag filters', () => {

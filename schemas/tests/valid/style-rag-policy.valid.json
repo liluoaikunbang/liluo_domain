@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "policyId": "liluo-style-rag-v1",
+  "implementationStage": "metadata-rag",
+  "enabledModes": [
+    "explicit",
+    "metadata",
+    "hybrid-explicit"
+  ],
+  "deferredModes": [
+    "embedding",
+    "learned-reranker",
+    "model-training"
+  ],
+  "production": {
+    "approvedAssetsOnly": true,
+    "allowCanonFactsInStyleQuery": false,
+    "allowAutomaticApproval": false,
+    "allowAutomaticSkillUpdate": false,
+    "allowUnreviewedExternalArticle": false,
+    "minimumArticleOverallWeightForProduction": 3
+  },
+  "packLimits": {
+    "maxGoldenExamples": 2,
+    "maxPersonalHistoryExamples": 1,
+    "maxExternalArticles": 2,
+    "maxCalibrationPairs": 1,
+    "maxExternalStyleCards": 1,
+    "maxHardRules": 8,
+    "maxRawReferenceChineseCharacters": 1800,
+    "maxSourcesFromSameWork": 1,
+    "maxSourcesFromSameAuthor": 1
+  },
+  "sourcePrior": {
+    "golden-approved": 1.0,
+    "calibration-pair": 0.9,
+    "personal-history": 0.6,
+    "external-article": 0.5,
+    "external-style-card": 0.45
+  },
+  "externalQuality": {
+    "articleScoreWeight": 0.7,
+    "authorPriorWeight": 0.3,
+    "unratedArticleScore": 0.5,
+    "unratedAuthorPrior": 0.5,
+    "minimumRatedUsesForModelEffect": 3
+  },
+  "scoring": {
+    "sceneFunction": 0.18,
+    "pov": 0.07,
+    "narrativeDistance": 0.08,
+    "tensionLevel": 0.06,
+    "actionDensity": 0.06,
+    "dialogueDensity": 0.06,
+    "psychologicalDensity": 0.04,
+    "informationRelease": 0.07,
+    "sentenceRhythm": 0.07,
+    "worldType": 0.04,
+    "themeDomain": 0.08,
+    "userQuality": 0.08,
+    "modelEffectiveness": 0.06,
+    "assetQuality": 0.05
+  },
+  "selection": {
+    "minimumScore": 0.45,
+    "diversityPenalty": 0.15,
+    "missingFieldScore": 0.0,
+    "unknownModelEffectivenessScore": 0.5,
+    "requireExplanation": true
+  },
+  "themeDomainMatch": {
+    "restraint-themed": {
+      "restraint-themed": 1.0,
+      "mixed": 0.8,
+      "general-prose": 0.4,
+      "unknown": 0.0
+    },
+    "general-prose": {
+      "general-prose": 1.0,
+      "mixed": 0.7,
+      "restraint-themed": 0.3,
+      "unknown": 0.0
+    },
+    "mixed": {
+      "mixed": 1.0,
+      "restraint-themed": 0.7,
+      "general-prose": 0.7,
+      "unknown": 0.0
+    },
+    "unknown": {
+      "restraint-themed": 0.0,
+      "general-prose": 0.0,
+      "mixed": 0.0,
+      "unknown": 0.0
+    }
+  },
+  "orderedLevels": {
+    "none": 0,
+    "low": 1,
+    "medium": 2,
+    "high": 3
+  },
+  "canonForbiddenInStyleQuery": [
+    "characterNames",
+    "locationNames",
+    "organizationNames",
+    "itemNames",
+    "abilityNames",
+    "plotBeats",
+    "worldRulesText",
+    "dialogueQuotes",
+    "apiKeys",
+    "absolutePaths"
+  ]
+}

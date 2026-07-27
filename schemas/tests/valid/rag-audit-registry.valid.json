@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-07-26T00:00:00.000Z",
+  "counts": {
+    "total": 0,
+    "open": 0,
+    "rag": 0,
+    "styleRag": 0,
+    "concept": 0,
+    "plot": 0,
+    "needsRebuild": 0,
+    "skillUpgradeSuggested": 0
+  },
+  "records": [],
+  "patternGroups": []
+}

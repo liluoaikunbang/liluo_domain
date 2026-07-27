@@ -1,0 +1,120 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://liluo.local/schemas/workflows/rag-audit-record.schema.json",
+  "title": "知识检索抽查记录（RAG / Style-RAG / 细节概念 / 情节）",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "auditId",
+    "channel",
+    "sourceAssetId",
+    "sourcePath",
+    "currentResult",
+    "reportedIssue",
+    "correctResult",
+    "issueCategories",
+    "isSingleCase",
+    "mayBecomeGeneralRule",
+    "relatedSkills",
+    "fixStatus",
+    "needsIndexRebuild",
+    "createdAt",
+    "updatedAt"
+  ],
+  "properties": {
+    "schemaVersion": { "type": "integer", "const": 1 },
+    "auditId": { "type": "string", "pattern": "^ra-.+" },
+    "channel": { "type": "string", "enum": ["rag", "style-rag", "concept", "plot"] },
+    "batchId": { "type": ["string", "null"] },
+    "sourceAssetId": { "type": "string", "minLength": 1 },
+    "sourcePath": { "type": "string" },
+    "sourceTitle": { "type": "string" },
+    "sourceAuthor": { "type": "string" },
+    "themeDomain": {
+      "type": ["string", "null"],
+      "enum": ["restraint-themed", "general-prose", "mixed", "unknown", null]
+    },
+    "currentResult": {
+      "type": "object",
+      "additionalProperties": true,
+      "description": "当时 RAG/Style-RAG 给出的索引或检索摘要（不含全文）"
+    },
+    "reportedIssue": { "type": "string", "minLength": 1 },
+    "correctResult": { "type": "string", "minLength": 1 },
+    "issueCategories": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string" }
+    },
+    "isSingleCase": { "type": "boolean" },
+    "mayBecomeGeneralRule": { "type": "boolean" },
+    "relatedSkills": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "fixStatus": {
+      "type": "string",
+      "enum": [
+        "open",
+        "recorded",
+        "awaiting-skill-decision",
+        "skill-updated",
+        "rebuild-pending",
+        "rebuild-done",
+        "verified",
+        "wont-fix",
+        "deferred"
+      ]
+    },
+    "needsIndexRebuild": { "type": "boolean" },
+    "rebuildScope": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "sourcePaths": { "type": "array", "items": { "type": "string" } },
+        "assetIds": { "type": "array", "items": { "type": "string" } },
+        "fields": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "skillUpgradeDecision": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "suggested": { "type": "boolean" },
+        "reason": { "type": "string" },
+        "patternGroupId": { "type": ["string", "null"] },
+        "userExplicitRuleRequest": { "type": "boolean" },
+        "approvedByUser": { "type": "boolean" }
+      }
+    },
+    "hitCountHint": { "type": ["integer", "null"], "minimum": 0 },
+    "confidenceNotes": { "type": "string" },
+    "notes": { "type": "string" },
+    "relatedReviewComplete": { "type": "boolean" },
+    "relatedAdjustments": {
+      "type": "array",
+      "description": "改主条目时一并检查的关联项；有需要则同步调整",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["channel", "assetId"],
+        "properties": {
+          "channel": { "type": "string", "enum": ["rag", "style-rag", "concept", "plot"] },
+          "assetId": { "type": "string", "minLength": 1 },
+          "title": { "type": "string" },
+          "path": { "type": "string" },
+          "relation": { "type": "string" },
+          "action": {
+            "type": "string",
+            "enum": ["needed", "checked-no-change", "adjusted", "deferred"]
+          },
+          "note": { "type": "string" }
+        }
+      }
+    },
+    "createdAt": { "type": "string" },
+    "updatedAt": { "type": "string" },
+    "reviewedAt": { "type": ["string", "null"] }
+  }
+}

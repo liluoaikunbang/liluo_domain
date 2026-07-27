@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "policyId": "x",
+  "channels": [
+    "rag"
+  ],
+  "skillUpgrade": {
+    "minIndependentRecordsForPattern": 3,
+    "forbidSingleIncidentSkillPatch": false,
+    "requireAbstractRulePlusExamples": true
+  },
+  "rebuild": {
+    "requireDryRunFirst": true,
+    "forbidFullRebuildByDefault": true,
+    "forbidModifySourceArticles": true,
+    "forbidAutoMarkHumanApproved": true
+  }
+}

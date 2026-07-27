@@ -1,0 +1,57 @@
+{
+  "cardId": "fb-term-state-change",
+  "cardType": "term",
+  "title": "状态变化",
+  "aliases": [
+    "受限状态变化"
+  ],
+  "definition": "描述受限强度、姿态、固定关系或退出条件随情节推进发生的可观察改变。它是把静态束缚写成事件链条的关键术语。",
+  "distinctions": [
+    "状态变化强调前后对比，不等于单纯情绪波动。",
+    "可以变紧、变松、换姿或换退出条件，不必然等于脱困。"
+  ],
+  "prerequisites": [],
+  "progression": [],
+  "reversals": [],
+  "outcomes": [],
+  "concepts": [
+    "状态变化",
+    "受限状态变化"
+  ],
+  "abstractPatterns": [
+    "前后状态对照",
+    "退出条件改写"
+  ],
+  "tags": [
+    "状态:受限",
+    "叙事:逃脱",
+    "叙事:调查"
+  ],
+  "sourceRefs": [
+    {
+      "sourceId": "fb-src-000001",
+      "segmentId": "fb-src-000001-seg-00005",
+      "sourcePath": "external-knowledge/sources/fiction-bondage/不知道作者/（完结）彼岸花开.md",
+      "startLine": 16,
+      "endLine": 17
+    },
+    {
+      "sourceId": "fb-src-000002",
+      "segmentId": "fb-src-000002-seg-00003",
+      "sourcePath": "external-knowledge/sources/fiction-bondage/不知道作者/【崩坏3rd 脑洞同人文】—两人的结局.md",
+      "startLine": 16,
+      "endLine": 16
+    },
+    {
+      "sourceId": "fb-src-000003",
+      "segmentId": "fb-src-000003-seg-00003",
+      "sourcePath": "external-knowledge/sources/fiction-bondage/不知道作者/0-临时备忘录-1.md",
+      "startLine": 16,
+      "endLine": 16
+    }
+  ],
+  "reviewStatus": "candidate",
+  "directQuoteIncluded": false,
+  "knowledgeScope": "external-fiction-reference",
+  "canonical": false
+}

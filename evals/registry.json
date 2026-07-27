@@ -67,6 +67,17 @@
     },
     {
       "type": "skill",
+      "name": "liluo-style-rag",
+      "path": ".agents/skills/liluo-project/liluo-style-rag/SKILL.md",
+      "status": "active",
+      "tier": "standard",
+      "caseGlobs": [
+        "evals/cases/skills/style-rag-positive-001.json",
+        "evals/cases/skills/style-rag-negative-001.json"
+      ]
+    },
+    {
+      "type": "skill",
       "name": "liluo-character-arc-and-relationship-memory",
       "path": ".agents/skills/liluo-project/liluo-character-arc-and-relationship-memory/SKILL.md",
       "status": "active",

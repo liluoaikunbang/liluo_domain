@@ -1861,7 +1861,7 @@
   {
     "id": "docs/功能更新/166-开放权重双模型写作管线与文风资产基础设施.md",
     "indexVersion": 1,
-    "sourceHash": "cdab15463f7a88285728e748044ba71cfac89c97ac727f3600358e2882f7243a",
+    "sourceHash": "fdd3c6740ea3e5d93086551218c6717511ca5405d61bd4d50652edf271fe1422",
     "sourcePath": "docs/功能更新/166-开放权重双模型写作管线与文风资产基础设施.md",
     "subtype": "update",
     "summary": "166-开放权重双模型写作管线与文风资产基础设施",
@@ -1870,9 +1870,42 @@
     "type": "document"
   },
   {
+    "id": "docs/功能更新/167-Style-RAG元数据检索与外部文章评权.md",
+    "indexVersion": 1,
+    "sourceHash": "b3838b15b7def9b6ca11dc4ffaac7f79f290198ab150bfd90c75dcbfcbfcb7fe",
+    "sourcePath": "docs/功能更新/167-Style-RAG元数据检索与外部文章评权.md",
+    "subtype": "update",
+    "summary": "167 - Style-RAG 元数据检索、外部文章评权与文风包",
+    "summarySource": "title-only",
+    "title": "167 - Style-RAG 元数据检索、外部文章评权与文风包",
+    "type": "document"
+  },
+  {
+    "id": "docs/功能更新/168-知识检索抽查校准闭环.md",
+    "indexVersion": 1,
+    "sourceHash": "f7f2962a36329e0fbd126c54547933be28f908999aa27dfa22dd3d3cd628bd80",
+    "sourcePath": "docs/功能更新/168-知识检索抽查校准闭环.md",
+    "subtype": "update",
+    "summary": "168 - 知识检索抽查校准闭环",
+    "summarySource": "title-only",
+    "title": "168 - 知识检索抽查校准闭环",
+    "type": "document"
+  },
+  {
+    "id": "docs/功能更新/169-大纲关联图谱视图.md",
+    "indexVersion": 1,
+    "sourceHash": "a501b8351a6c384ca7226730127fd70298608f353596cbb66668f77b9990246d",
+    "sourcePath": "docs/功能更新/169-大纲关联图谱视图.md",
+    "subtype": "update",
+    "summary": "169 - 大纲关联图谱视图",
+    "summarySource": "title-only",
+    "title": "169 - 大纲关联图谱视图",
+    "type": "document"
+  },
+  {
     "id": "docs/功能更新目录.md",
     "indexVersion": 1,
-    "sourceHash": "e497fbbb12b355e42b7bfb72d6d4417a74ffa2f389f124ae329e8a8bb25f9e5a",
+    "sourceHash": "10004d3b3ccd1835efa59ad2a5570f38e5112fbd5a66af23c9294815be6feb94",
     "sourcePath": "docs/功能更新目录.md",
     "subtype": "other",
     "summary": "功能更新目录",
@@ -1911,6 +1944,17 @@
     "summary": "规范治理",
     "summarySource": "title-only",
     "title": "规范治理",
+    "type": "document"
+  },
+  {
+    "id": "docs/技能说明/知识检索抽查校准.md",
+    "indexVersion": 1,
+    "sourceHash": "7afff00790090e68c2a7a0dae1bd9e0ebba16cb1d8ac05bee07a28190469d8fe",
+    "sourcePath": "docs/技能说明/知识检索抽查校准.md",
+    "subtype": "skill",
+    "summary": "liluo 知识检索抽查校准",
+    "summarySource": "title-only",
+    "title": "liluo 知识检索抽查校准",
     "type": "document"
   },
   {
@@ -2004,7 +2048,7 @@
   {
     "id": "docs/技能说明/liluo-external-fiction-knowledge.md",
     "indexVersion": 1,
-    "sourceHash": "ec9913e97a576f96546125d4358900277dc7940b4809d121d6278a2ecf6745ad",
+    "sourceHash": "b59ab0b1d6499da1cecb51b4d35d6dfb6f20d7346116898e3bbb157165d8b850",
     "sourcePath": "docs/技能说明/liluo-external-fiction-knowledge.md",
     "subtype": "skill",
     "summary": "外部虚构题材知识库 Skill",
@@ -2015,7 +2059,7 @@
   {
     "id": "docs/技能说明/liluo-formal-prose-pipeline.md",
     "indexVersion": 1,
-    "sourceHash": "9698b7652fa0ed1d7a1459e4da1a4506fefeefb31c08f25e136bcfdac56441ed",
+    "sourceHash": "0cd5240b002d041f5334f61631fc647ebd289a7ef324fbb39d4c38a3196f20f1",
     "sourcePath": "docs/技能说明/liluo-formal-prose-pipeline.md",
     "subtype": "skill",
     "summary": "正式正文写作管线（liluo-formal-prose-pipeline）",
@@ -2059,7 +2103,7 @@
   {
     "id": "docs/技能说明/liluo-natural-expression.md",
     "indexVersion": 1,
-    "sourceHash": "5a588b99af792e88b2a1bcc34da4180c9147c1f0190a254fe0586b9cb6132908",
+    "sourceHash": "7a3fa7e2e26d86fad0cbd78d5a2db9970d8dbba9b6db0d20ec6d764b6026aff8",
     "sourcePath": "docs/技能说明/liluo-natural-expression.md",
     "subtype": "skill",
     "summary": "liluo-natural-expression",
@@ -2244,6 +2288,17 @@
     "type": "document"
   },
   {
+    "id": "docs/技能说明/liluo-style-rag.md",
+    "indexVersion": 1,
+    "sourceHash": "a6b973acc9cabb2695c4d6f80cce5743228ca38d6c5efb993b557abe90d260c5",
+    "sourcePath": "docs/技能说明/liluo-style-rag.md",
+    "subtype": "skill",
+    "summary": "Style-RAG 文风检索（liluo-style-rag）",
+    "summarySource": "title-only",
+    "title": "Style-RAG 文风检索（liluo-style-rag）",
+    "type": "document"
+  },
+  {
     "id": "docs/技能说明/liluo-world-bible-continuity-audit.md",
     "indexVersion": 1,
     "sourceHash": "88da8891eea2ea936e868059b7e7e628a7353908e055bb7cd26dd3433aec5c48",
@@ -2323,7 +2378,7 @@
   {
     "id": "docs/设计记忆/创作决策/CDR-005-非技术文本默认应用璃落自然表达.md",
     "indexVersion": 1,
-    "sourceHash": "e514e6b2a74c0bf32d6bb85e80e0c5f16db690d7d0ef6922603cd14da4c07f3b",
+    "sourceHash": "73355dec0e0d3171722024812cced57fd2fdf8f19d281f4e95034596207a17b4",
     "sourcePath": "docs/设计记忆/创作决策/CDR-005-非技术文本默认应用璃落自然表达.md",
     "subtype": "other",
     "summary": "CDR-005：非技术文本默认应用璃落自然表达",
@@ -2510,12 +2565,23 @@
   {
     "id": "docs/设计记忆/架构决策/ADR-013-开放权重双模型与人工校准写作管线.md",
     "indexVersion": 1,
-    "sourceHash": "9cff089dea8a46ace3128f81f7e900cdf7249e98ae537a3de1d1c2323ee5747d",
+    "sourceHash": "b5c0499c0056e6b622a31c5403dc7faed08d341f028d088f2bfb570aface1b73",
     "sourcePath": "docs/设计记忆/架构决策/ADR-013-开放权重双模型与人工校准写作管线.md",
     "subtype": "other",
     "summary": "ADR-013：开放权重双模型与人工校准写作管线",
     "summarySource": "title-only",
     "title": "ADR-013：开放权重双模型与人工校准写作管线",
+    "type": "document"
+  },
+  {
+    "id": "docs/设计记忆/架构决策/ADR-014-Style-RAG元数据检索与Canon风格隔离.md",
+    "indexVersion": 1,
+    "sourceHash": "7cad61bd85b5cfb6236969f0fa95cf2480eb74bb806b82f0e19128b757c72dbe",
+    "sourcePath": "docs/设计记忆/架构决策/ADR-014-Style-RAG元数据检索与Canon风格隔离.md",
+    "subtype": "other",
+    "summary": "ADR-014：Style-RAG 元数据检索与 Canon 风格隔离",
+    "summarySource": "title-only",
+    "title": "ADR-014：Style-RAG 元数据检索与 Canon 风格隔离",
     "type": "document"
   },
   {
@@ -2681,72 +2747,6 @@
     "summary": "璃落创作组雕龙文号体系",
     "summarySource": "title-only",
     "title": "璃落创作组雕龙文号体系",
-    "type": "document"
-  },
-  {
-    "id": "docs/设计记忆/项目组灵魂/项目组设定.md",
-    "indexVersion": 1,
-    "sourceHash": "5793617c77385f4621280b3038641119802b57d0a8da269eca218a7030b3c132",
-    "sourcePath": "docs/设计记忆/项目组灵魂/项目组设定.md",
-    "subtype": "other",
-    "summary": "璃落诸界游戏创作组设定",
-    "summarySource": "title-only",
-    "title": "璃落诸界游戏创作组设定",
-    "type": "document"
-  },
-  {
-    "id": "docs/设计记忆/项目组灵魂/项目组手记/README.md",
-    "indexVersion": 1,
-    "sourceHash": "7dc3f5d12147d5706fdebe9f9d0ee385d6e3e13957cbc32f181b2c9f763bb8bc",
-    "sourcePath": "docs/设计记忆/项目组灵魂/项目组手记/README.md",
-    "subtype": "other",
-    "summary": "项目组手记",
-    "summarySource": "title-only",
-    "title": "项目组手记",
-    "type": "document"
-  },
-  {
-    "id": "docs/设计记忆/项目组灵魂/项目组手记/TEAM-NOTE-001-为什么我们要成为一个创作组.md",
-    "indexVersion": 1,
-    "sourceHash": "b5915d503a57f815f7cc0b068cacb61bd2ef375b19fac95e3c21b244bf0cba4c",
-    "sourcePath": "docs/设计记忆/项目组灵魂/项目组手记/TEAM-NOTE-001-为什么我们要成为一个创作组.md",
-    "subtype": "other",
-    "summary": "为什么我们要成为一个创作组",
-    "summarySource": "title-only",
-    "title": "为什么我们要成为一个创作组",
-    "type": "document"
-  },
-  {
-    "id": "docs/设计记忆/项目组灵魂/项目组手记/TEAM-NOTE-002-为什么我们的文号来自文心雕龙.md",
-    "indexVersion": 1,
-    "sourceHash": "395ec3c1d61dd41aa15500dd0374b3ab3bc8b8ac27584be044629195ffc6bdab",
-    "sourcePath": "docs/设计记忆/项目组灵魂/项目组手记/TEAM-NOTE-002-为什么我们的文号来自文心雕龙.md",
-    "subtype": "other",
-    "summary": "为什么我们的文号来自《文心雕龙》",
-    "summarySource": "title-only",
-    "title": "为什么我们的文号来自《文心雕龙》",
-    "type": "document"
-  },
-  {
-    "id": "docs/设计记忆/项目组灵魂/项目组手记/TEAM-NOTE-003-谁在创作组记录中说话.md",
-    "indexVersion": 1,
-    "sourceHash": "a57c2b92e7f2f1f0bd5bde2f84210c4d3dd52c881d47eab9a172772249666b91",
-    "sourcePath": "docs/设计记忆/项目组灵魂/项目组手记/TEAM-NOTE-003-谁在创作组记录中说话.md",
-    "subtype": "other",
-    "summary": "谁在创作组记录中说话",
-    "summarySource": "title-only",
-    "title": "谁在创作组记录中说话",
-    "type": "document"
-  },
-  {
-    "id": "docs/设计记忆/项目组灵魂/项目组手记/TEAM-NOTE-004-让每次校准留下可复用的判断.md",
-    "indexVersion": 1,
-    "sourceHash": "da75437413ff715bbda558dc0c70aa4c11306f878d08c9f74907cdaca21709e0",
-    "sourcePath": "docs/设计记忆/项目组灵魂/项目组手记/TEAM-NOTE-004-让每次校准留下可复用的判断.md",
-    "subtype": "other",
-    "summary": "让每次校准留下可复用的判断",
-    "summarySource": "title-only",
-    "title": "让每次校准留下可复用的判断",
     "type": "document"
   }
 ]

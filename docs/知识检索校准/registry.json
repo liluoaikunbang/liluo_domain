@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-07-27T07:41:47.989Z",
+  "counts": {
+    "total": 10,
+    "open": 10,
+    "rag": 0,
+    "styleRag": 6,
+    "concept": 4,
+    "plot": 0,
+    "needsRebuild": 0,
+    "skillUpgradeSuggested": 0
+  },
+  "records": [
+    {
+      "auditId": "ra-37ad8f093f",
+      "channel": "style-rag",
+      "sourceAssetId": "ea-audit-test-fixture",
+      "issueCategories": [
+        "author-info-error",
+        "model-unauthorized-completion"
+      ],
+      "fixStatus": "recorded",
+      "needsIndexRebuild": false,
+      "mayBecomeGeneralRule": true,
+      "skillUpgradeSuggested": false,
+      "path": "docs/知识检索校准/records/style-rag/ra-37ad8f093f.json"
+    },
+    {
+      "auditId": "ra-35ceea6b56",
+      "channel": "style-rag",
+      "sourceAssetId": "ea-audit-test-fixture",
+      "issueCategories": [
+        "author-info-error",
+        "model-unauthorized-completion"
+      ],
+      "fixStatus": "recorded",
+      "needsIndexRebuild": false,
+      "mayBecomeGeneralRule": true,
+      "skillUpgradeSuggested": false,
+      "path": "docs/知识检索校准/records/style-rag/ra-35ceea6b56.json"
+    },
+    {
+      "auditId": "ra-0a4bcea9fa",
+      "channel": "style-rag",
+      "sourceAssetId": "ea-audit-test-fixture",
+      "issueCategories": [
+        "author-info-error",
+        "model-unauthorized-completion"
+      ],
+      "fixStatus": "recorded",
+      "needsIndexRebuild": false,
+      "mayBecomeGeneralRule": true,
+      "skillUpgradeSuggested": false,
+      "path": "docs/知识检索校准/records/style-rag/ra-0a4bcea9fa.json"
+    },
+    {
+      "auditId": "ra-763a31b6bb",
+      "channel": "concept",
+      "sourceAssetId": "restraint.pose.houshou-guanyin",
+      "issueCategories": [
+        "missing-rag-link"
+      ],
+      "fixStatus": "recorded",
+      "needsIndexRebuild": false,
+      "mayBecomeGeneralRule": false,
+      "skillUpgradeSuggested": false,
+      "path": "docs/知识检索校准/records/concept/ra-763a31b6bb.json"
+    },
+    {
+      "auditId": "ra-c10a8e2cfa",
+      "channel": "style-rag",
+      "sourceAssetId": "ea-audit-test-fixture",
+      "issueCategories": [
+        "author-info-error",
+        "model-unauthorized-completion"
+      ],
+      "fixStatus": "recorded",
+      "needsIndexRebuild": false,
+      "mayBecomeGeneralRule": true,
+      "skillUpgradeSuggested": false,
+      "path": "docs/知识检索校准/records/style-rag/ra-c10a8e2cfa.json"
+    },
+    {
+      "auditId": "ra-cb7eead65c",
+      "channel": "concept",
+      "sourceAssetId": "restraint.pose.houshou-guanyin",
+      "issueCategories": [
+        "missing-rag-link",
+        "naming-inconsistency"
+      ],
+      "fixStatus": "recorded",
+      "needsIndexRebuild": false,
+      "mayBecomeGeneralRule": false,
+      "skillUpgradeSuggested": false,
+      "path": "docs/知识检索校准/records/concept/ra-cb7eead65c.json"
+    },
+    {
+      "auditId": "ra-5bdbff1494",
+      "channel": "style-rag",
+      "sourceAssetId": "ea-audit-test-fixture",
+      "issueCategories": [
+        "author-info-error",
+        "model-unauthorized-completion"
+      ],
+      "fixStatus": "recorded",
+      "needsIndexRebuild": false,
+      "mayBecomeGeneralRule": true,
+      "skillUpgradeSuggested": false,
+      "path": "docs/知识检索校准/records/style-rag/ra-5bdbff1494.json"
+    },
+    {
+      "auditId": "ra-94575bdd6a",
+      "channel": "concept",
+      "sourceAssetId": "restraint.pose.houshou-guanyin",
+      "issueCategories": [
+        "missing-rag-link",
+        "naming-inconsistency"
+      ],
+      "fixStatus": "recorded",
+      "needsIndexRebuild": false,
+      "mayBecomeGeneralRule": false,
+      "skillUpgradeSuggested": false,
+      "path": "docs/知识检索校准/records/concept/ra-94575bdd6a.json"
+    },
+    {
+      "auditId": "ra-3acf505be3",
+      "channel": "style-rag",
+      "sourceAssetId": "ea-audit-test-fixture",
+      "issueCategories": [
+        "author-info-error",
+        "model-unauthorized-completion"
+      ],
+      "fixStatus": "recorded",
+      "needsIndexRebuild": false,
+      "mayBecomeGeneralRule": true,
+      "skillUpgradeSuggested": false,
+      "path": "docs/知识检索校准/records/style-rag/ra-3acf505be3.json"
+    },
+    {
+      "auditId": "ra-3514339560",
+      "channel": "concept",
+      "sourceAssetId": "restraint.pose.houshou-guanyin",
+      "issueCategories": [
+        "missing-rag-link",
+        "naming-inconsistency"
+      ],
+      "fixStatus": "recorded",
+      "needsIndexRebuild": false,
+      "mayBecomeGeneralRule": false,
+      "skillUpgradeSuggested": false,
+      "path": "docs/知识检索校准/records/concept/ra-3514339560.json"
+    }
+  ],
+  "patternGroups": [
+    {
+      "patternGroupId": "pg-8c6f91a7",
+      "category": "author-info-error",
+      "channel": "style-rag",
+      "auditIds": [
+        "ra-37ad8f093f",
+        "ra-35ceea6b56",
+        "ra-0a4bcea9fa",
+        "ra-c10a8e2cfa",
+        "ra-5bdbff1494",
+        "ra-3acf505be3"
+      ],
+      "independentCount": 1,
+      "skillUpgradeSuggested": false,
+      "abstractRuleDraft": ""
+    },
+    {
+      "patternGroupId": "pg-a4bd910a",
+      "category": "model-unauthorized-completion",
+      "channel": "style-rag",
+      "auditIds": [
+        "ra-37ad8f093f",
+        "ra-35ceea6b56",
+        "ra-0a4bcea9fa",
+        "ra-c10a8e2cfa",
+        "ra-5bdbff1494",
+        "ra-3acf505be3"
+      ],
+      "independentCount": 1,
+      "skillUpgradeSuggested": false,
+      "abstractRuleDraft": ""
+    }
+  ]
+}

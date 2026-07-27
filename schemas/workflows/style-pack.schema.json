@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://liluo.local/schemas/workflows/style-pack.schema.json",
+  "title": "Style Pack（只控制表达）",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "packId",
+    "queryId",
+    "status",
+    "mode",
+    "sections",
+    "selectedAssets",
+    "explanations",
+    "characterBudget",
+    "createdAt"
+  ],
+  "properties": {
+    "schemaVersion": { "type": "integer", "const": 1 },
+    "packId": { "type": "string", "pattern": "^sp-.+" },
+    "queryId": { "type": "string" },
+    "requestContractId": { "type": ["string", "null"] },
+    "status": {
+      "type": "string",
+      "enum": ["ready", "awaiting-assets", "partial", "blocked"]
+    },
+    "mode": {
+      "type": "string",
+      "enum": ["explicit", "metadata", "hybrid-explicit"]
+    },
+    "sections": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "writingSheet": { "type": ["string", "null"] },
+        "hardRules": { "type": "array", "items": { "type": "string" } },
+        "positiveExamples": { "type": "array", "items": { "type": "object" } },
+        "externalReferences": { "type": "array", "items": { "type": "object" } },
+        "calibrationPairs": { "type": "array", "items": { "type": "object" } },
+        "modelFailureModes": { "type": "array", "items": { "type": "string" } },
+        "strictBoundaries": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "selectedAssets": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["assetId", "assetType", "score"],
+        "properties": {
+          "assetId": { "type": "string" },
+          "assetType": { "type": "string" },
+          "score": { "type": "number" },
+          "sourceRecordId": { "type": ["string", "null"] },
+          "reasons": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    },
+    "explanations": { "type": "array", "items": { "type": "string" } },
+    "characterBudget": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["used", "limit"],
+      "properties": {
+        "used": { "type": "integer", "minimum": 0 },
+        "limit": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "renderedMarkdown": { "type": "string" },
+    "createdAt": { "type": "string" }
+  }
+}

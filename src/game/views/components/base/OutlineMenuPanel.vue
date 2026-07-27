@@ -30,8 +30,11 @@
       :selected-gameplay-id="selectedGameplayId"
     />
     <CharacterOutlinePanel
-      v-else
+      v-else-if="activeSection === 'character'"
       :catalog="storyCharacterOutline"
+    />
+    <RelationGraphPanel
+      v-else-if="activeSection === 'relation-graph'"
     />
   </section>
 </template>
@@ -44,6 +47,7 @@ import { storyCharacterOutline } from '../../../data/story_outline/storyCharacte
 import CharacterOutlinePanel from './CharacterOutlinePanel.vue';
 import GameplayMenuPanel from './GameplayMenuPanel.vue';
 import PlotOutlinePanel from './PlotOutlinePanel.vue';
+import RelationGraphPanel from './RelationGraphPanel.vue';
 import StoryMenuPanel from './StoryMenuPanel.vue';
 
 const props = defineProps({
@@ -57,7 +61,8 @@ const sections = [
   { key: 'story', label: '故事' },
   { key: 'plot', label: '情节' },
   { key: 'gameplay', label: '玩法' },
-  { key: 'character', label: '人物/组织' }
+  { key: 'character', label: '人物/组织' },
+  { key: 'relation-graph', label: '关联图谱' }
 ];
 const activeSection = ref('story');
 const selectedGameplayId = ref('');

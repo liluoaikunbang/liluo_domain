@@ -180,11 +180,11 @@ test('draft requires explicit model; compare creates blind A/B', async () => {
   assert.notEqual(mapping.a.modelProfile, mapping.b.modelProfile)
 })
 
-test('asset registry starts empty; no forged approved; StyleRAG deferred', async () => {
+test('asset registry starts empty; no forged approved; StyleRAG metadata-rag', async () => {
   const registry = await loadAssetRegistry()
   assert.equal(registry.counts.goldenApproved, 0)
   assert.equal(registry.assets.length, 0)
-  assert.equal(registry.policy.styleRagStatus, 'deferred')
+  assert.equal(registry.policy.styleRagStatus, 'metadata-rag')
   assert.equal(registry.policy.allowExistingCanonMigration, false)
   const validation = await validateAssetRegistry(registry)
   assert.equal(validation.ok, true, validation.errors.join('\n'))

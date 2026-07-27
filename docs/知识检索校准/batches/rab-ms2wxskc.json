@@ -1,0 +1,303 @@
+{
+  "schemaVersion": 1,
+  "batchId": "rab-ms2wxskc",
+  "channel": "rag",
+  "channels": [
+    "rag"
+  ],
+  "mode": "low-confidence",
+  "exportedAt": "2026-07-27T07:36:12.252Z",
+  "count": 5,
+  "remainingPool": 11,
+  "ragSample": {
+    "includeCards": true,
+    "includeSources": false
+  },
+  "items": [
+    {
+      "index": 1,
+      "channel": "rag",
+      "assetId": "fb-fictional-state-fixed-pose",
+      "title": "固定姿态",
+      "author": "card",
+      "themeDomain": "unknown",
+      "path": "external-knowledge/cards/fictional-state/fb-fictional-state-fixed-pose.json",
+      "lowConfidence": true,
+      "hitCount": 0,
+      "currentResult": {
+        "assetKind": "card",
+        "cardType": "fictional-state",
+        "definition": "虚构状态卡：角色被维持在某一可识别身体姿态上，叙事重点在姿态本身带来的行动边界、视觉反馈与场景功能，而不是现实操作指南。",
+        "distinctions": [
+          "固定姿态强调“被维持在某一形态”，不等于短暂按住或瞬间失衡。",
+          "可与上肢受限并存，但也可单独由家具、空间或规则造成。"
+        ],
+        "concepts": [
+          "固定姿态",
+          "定姿",
+          "强制姿势"
+        ],
+        "prerequisites": [
+          "场景需要读者立刻读出姿态对行动选项的影响。"
+        ],
+        "progression": [
+          "先给出可识别姿态轮廓。",
+          "再落到该姿态下仍可执行的少数动作。",
+          "用姿态变化或退出条件推动下一段选择。"
+        ],
+        "tags": [
+          "状态:受限",
+          "叙事:仪式",
+          "氛围:悬疑"
+        ],
+        "reviewStatus": "candidate",
+        "sourceRefCount": 3,
+        "knowledgeScope": "external-fiction-reference",
+        "canonical": false,
+        "sameTypePeers": [
+          {
+            "assetId": "fb-fictional-state-000004",
+            "title": "叙事受限状态与行动选择",
+            "hasDefinition": true
+          }
+        ]
+      }
+    },
+    {
+      "index": 2,
+      "channel": "rag",
+      "assetId": "fb-plot-pattern-rescue-without-restored-agency",
+      "title": "获救但未恢复行动权",
+      "author": "card",
+      "themeDomain": "unknown",
+      "path": "external-knowledge/cards/plot-pattern/fb-plot-pattern-rescue-without-restored-agency.json",
+      "lowConfidence": true,
+      "hitCount": 0,
+      "currentResult": {
+        "assetKind": "card",
+        "cardType": "plot-pattern",
+        "definition": "",
+        "distinctions": [],
+        "concepts": [
+          "角色离开直接威胁或回到可信环境。",
+          "同伴确认安全，却发现行动权并未同步恢复。",
+          "事件目标从营救转为解除残留状态、追查关键条件或处理后果。"
+        ],
+        "prerequisites": [
+          "外部威胁与角色当前受限状态可以被分别解决。"
+        ],
+        "progression": [
+          "角色离开直接威胁或回到可信环境。",
+          "同伴确认安全，却发现行动权并未同步恢复。",
+          "事件目标从营救转为解除残留状态、追查关键条件或处理后果。"
+        ],
+        "tags": [
+          "环境:地牢",
+          "叙事:逃脱",
+          "状态:受限",
+          "环境:都市",
+          "叙事:仪式",
+          "叙事:调查",
+          "氛围:悬疑"
+        ],
+        "reviewStatus": "candidate",
+        "sourceRefCount": 3,
+        "knowledgeScope": "external-fiction-reference",
+        "canonical": false,
+        "sameTypePeers": [
+          {
+            "assetId": "fb-plot-pattern-voluntary-entry-control-transfer",
+            "title": "主动进入—保障失效—控制权转移",
+            "hasDefinition": false
+          }
+        ]
+      }
+    },
+    {
+      "index": 3,
+      "channel": "rag",
+      "assetId": "fb-term-state-change",
+      "title": "状态变化",
+      "author": "card",
+      "themeDomain": "unknown",
+      "path": "external-knowledge/cards/term/fb-term-state-change.json",
+      "lowConfidence": true,
+      "hitCount": 0,
+      "currentResult": {
+        "assetKind": "card",
+        "cardType": "term",
+        "definition": "描述受限强度、姿态、固定关系或退出条件随情节推进发生的可观察改变。它是把静态束缚写成事件链条的关键术语。",
+        "distinctions": [
+          "状态变化强调前后对比，不等于单纯情绪波动。",
+          "可以变紧、变松、换姿或换退出条件，不必然等于脱困。"
+        ],
+        "concepts": [
+          "状态变化",
+          "受限状态变化"
+        ],
+        "prerequisites": [],
+        "progression": [],
+        "tags": [
+          "状态:受限",
+          "叙事:逃脱",
+          "叙事:调查"
+        ],
+        "reviewStatus": "candidate",
+        "sourceRefCount": 3,
+        "knowledgeScope": "external-fiction-reference",
+        "canonical": false,
+        "sameTypePeers": [
+          {
+            "assetId": "fb-term-behind-back-arms",
+            "title": "身后束手",
+            "hasDefinition": true
+          },
+          {
+            "assetId": "fb-term-houshou-guanyin",
+            "title": "后手观音",
+            "hasDefinition": true
+          },
+          {
+            "assetId": "fb-term-mobility-range",
+            "title": "身体活动范围",
+            "hasDefinition": true
+          },
+          {
+            "assetId": "fb-term-upper-body-restricted",
+            "title": "上肢受限",
+            "hasDefinition": true
+          },
+          {
+            "assetId": "fb-term-voluntary-entry-loss-of-control",
+            "title": "送绑玩脱",
+            "hasDefinition": true
+          },
+          {
+            "assetId": "fb-term-wuhuada-bang",
+            "title": "五花大绑",
+            "hasDefinition": true
+          }
+        ]
+      }
+    },
+    {
+      "index": 4,
+      "channel": "rag",
+      "assetId": "fb-term-wuhuada-bang",
+      "title": "五花大绑",
+      "author": "card",
+      "themeDomain": "unknown",
+      "path": "external-knowledge/cards/term/fb-term-wuhuada-bang.json",
+      "lowConfidence": true,
+      "hitCount": 0,
+      "currentResult": {
+        "assetKind": "card",
+        "cardType": "term",
+        "definition": "中文虚构文本中常见的综合性上身反绑称呼，重点通常落在上肢、肩背与躯干同时受限所形成的整体姿态和叙事状态；不同来源所指的具体绳路并不完全一致。",
+        "distinctions": [
+          "它是宽泛题材术语，不应据名称推断唯一、固定的现实操作方法。",
+          "它不等同于单纯反绑，也不天然表示某一种强度、目的或安全程度。"
+        ],
+        "concepts": [
+          "五花绑",
+          "中式五花大绑"
+        ],
+        "prerequisites": [],
+        "progression": [],
+        "tags": [
+          "环境:地牢",
+          "叙事:逃脱",
+          "状态:受限",
+          "叙事:调查",
+          "氛围:悬疑"
+        ],
+        "reviewStatus": "candidate",
+        "sourceRefCount": 3,
+        "knowledgeScope": "external-fiction-reference",
+        "canonical": false,
+        "sameTypePeers": [
+          {
+            "assetId": "fb-term-behind-back-arms",
+            "title": "身后束手",
+            "hasDefinition": true
+          },
+          {
+            "assetId": "fb-term-houshou-guanyin",
+            "title": "后手观音",
+            "hasDefinition": true
+          },
+          {
+            "assetId": "fb-term-mobility-range",
+            "title": "身体活动范围",
+            "hasDefinition": true
+          },
+          {
+            "assetId": "fb-term-state-change",
+            "title": "状态变化",
+            "hasDefinition": true
+          },
+          {
+            "assetId": "fb-term-upper-body-restricted",
+            "title": "上肢受限",
+            "hasDefinition": true
+          },
+          {
+            "assetId": "fb-term-voluntary-entry-loss-of-control",
+            "title": "送绑玩脱",
+            "hasDefinition": true
+          }
+        ]
+      }
+    },
+    {
+      "index": 5,
+      "channel": "rag",
+      "assetId": "fb-scene-pattern-escape-attempt",
+      "title": "脱困尝试",
+      "author": "card",
+      "themeDomain": "unknown",
+      "path": "external-knowledge/cards/scene-pattern/fb-scene-pattern-escape-attempt.json",
+      "lowConfidence": true,
+      "hitCount": 0,
+      "currentResult": {
+        "assetKind": "card",
+        "cardType": "scene-pattern",
+        "definition": "场景模式：角色在受限状态下尝试恢复行动权或退出条件。重点是尝试过程暴露信息、关系与失败代价，而不是保证立刻成功脱身。",
+        "distinctions": [
+          "脱困尝试是过程，不等于脱困成功。",
+          "可发生在营救前后，也可单独成为调查或交涉的触发器。"
+        ],
+        "concepts": [
+          "脱困尝试",
+          "挣脱",
+          "尝试脱困"
+        ],
+        "prerequisites": [
+          "角色仍保有至少一种可尝试的退出路径或误判路径。"
+        ],
+        "progression": [
+          "角色按原计划尝试退出。",
+          "环境、身体状态或协助条件给出反馈。",
+          "成功、部分成功或失败把事件推入新的选择面。"
+        ],
+        "tags": [
+          "叙事:逃脱",
+          "状态:受限",
+          "氛围:悬疑",
+          "叙事:调查"
+        ],
+        "reviewStatus": "candidate",
+        "sourceRefCount": 3,
+        "knowledgeScope": "external-fiction-reference",
+        "canonical": false,
+        "sameTypePeers": [
+          {
+            "assetId": "fb-scene-pattern-000003",
+            "title": "封闭场景的探索与转场",
+            "hasDefinition": true
+          }
+        ]
+      }
+    }
+  ]
+}

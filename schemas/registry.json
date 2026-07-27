@@ -147,6 +147,51 @@
       "requiredInChangedGate": false,
       "allowsMissingEmbeddedSchemaVersion": true,
       "template": true
+    },
+    {
+      "id": "style-rag-policy",
+      "schema": "schemas/workflows/style-rag-policy.schema.json",
+      "sourceGlobs": ["project-navigation/style-rag-policy.json"],
+      "mode": "file",
+      "owner": "writing",
+      "requiredInChangedGate": true,
+      "allowsMissingEmbeddedSchemaVersion": true
+    },
+    {
+      "id": "style-taxonomy",
+      "schema": "schemas/workflows/style-taxonomy.schema.json",
+      "sourceGlobs": ["project-navigation/style-taxonomy.json"],
+      "mode": "file",
+      "owner": "writing",
+      "requiredInChangedGate": true,
+      "allowsMissingEmbeddedSchemaVersion": true
+    },
+    {
+      "id": "external-style-sources",
+      "schema": "schemas/workflows/external-style-sources.schema.json",
+      "sourceGlobs": ["project-navigation/external-style-sources.json"],
+      "mode": "file",
+      "owner": "writing",
+      "requiredInChangedGate": true,
+      "allowsMissingEmbeddedSchemaVersion": true
+    },
+    {
+      "id": "rag-audit-policy",
+      "schema": "schemas/workflows/rag-audit-policy.schema.json",
+      "sourceGlobs": ["project-navigation/rag-audit-policy.json"],
+      "mode": "file",
+      "owner": "knowledge",
+      "requiredInChangedGate": true,
+      "allowsMissingEmbeddedSchemaVersion": true
+    },
+    {
+      "id": "rag-audit-registry",
+      "schema": "schemas/workflows/rag-audit-registry.schema.json",
+      "sourceGlobs": ["docs/知识检索校准/registry.json"],
+      "mode": "file",
+      "owner": "knowledge",
+      "requiredInChangedGate": false,
+      "allowsMissingEmbeddedSchemaVersion": true
     }
   ]
 }

@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://liluo.local/schemas/workflows/external-style-sources.schema.json",
+  "title": "外部文风来源映射",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "sources"],
+  "properties": {
+    "schemaVersion": { "type": "integer", "const": 1 },
+    "updatedAt": { "type": "string" },
+    "notes": { "type": "string" },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "root", "themeDomain", "classificationBasis", "defaultRepresentation"],
+        "properties": {
+          "id": { "type": "string", "minLength": 1 },
+          "root": { "type": "string", "minLength": 1 },
+          "themeDomain": {
+            "type": "string",
+            "enum": ["restraint-themed", "general-prose", "mixed", "unknown"]
+          },
+          "classificationBasis": { "type": "string", "enum": ["folder", "manual", "mixed"] },
+          "defaultRepresentation": {
+            "type": "string",
+            "enum": ["abstract-style-card", "style-safe-excerpt", "raw-excerpt", "source-only"]
+          },
+          "includeGlobs": { "type": "array", "items": { "type": "string" } },
+          "excludeGlobs": { "type": "array", "items": { "type": "string" } },
+          "authorExtractionHints": { "type": "object", "additionalProperties": true }
+        }
+      }
+    }
+  }
+}

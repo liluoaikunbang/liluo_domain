@@ -1,0 +1,128 @@
+{
+  "schemaVersion": 1,
+  "batchId": "rab-ms2uga65",
+  "channel": "plot",
+  "channels": [
+    "plot"
+  ],
+  "mode": "graph-gap",
+  "exportedAt": "2026-07-27T06:26:36.029Z",
+  "count": 3,
+  "remainingPool": 51,
+  "items": [
+    {
+      "index": 1,
+      "channel": "plot",
+      "assetId": "plot-045",
+      "title": "施害者-开口器固定灌酒",
+      "author": "plot-catalog",
+      "themeDomain": "general-prose",
+      "path": "src/game/data/plot_outline/catalog.json",
+      "lowConfidence": true,
+      "hitCount": 0,
+      "currentResult": {
+        "assetKind": "plot",
+        "id": "plot-045",
+        "title": "施害者-开口器固定灌酒",
+        "summary": "施害者用医用开口器固定受害者持续张嘴，使其失去闭口和拒绝吞咽的能力，再强行灌酒，逼迫其在意识、动作与表达逐渐失控的过程中出丑或服从。情节核心不是正式刑罚，而是借器具剥夺拒绝权，把醉态、呛咳、失言或站立不稳当作取乐和羞辱的结果。",
+        "groupId": "plot-group-025",
+        "tags": [
+          "霸凌",
+          "强迫羞辱",
+          "医用开口器",
+          "固定张嘴",
+          "强行灌酒",
+          "剥夺拒绝权",
+          "强迫失态",
+          "酒精风险"
+        ],
+        "bondageTags": [],
+        "characters": [
+          "受害者",
+          "施害者"
+        ],
+        "usedBy": []
+      }
+    },
+    {
+      "index": 2,
+      "channel": "plot",
+      "assetId": "plot-047",
+      "title": "璃落等-社团雪地玩耍",
+      "author": "plot-catalog",
+      "themeDomain": "restraint-themed",
+      "path": "src/game/data/plot_outline/catalog.json",
+      "lowConfidence": true,
+      "hitCount": 0,
+      "currentResult": {
+        "assetKind": "plot",
+        "id": "plot-047",
+        "title": "璃落等-社团雪地玩耍",
+        "summary": "紧缚社团冬日外出时，穿着厚羽绒服、显得圆滚滚像“小土豆”的璃落兴冲冲跑向室外，刚踏进雪地便华丽地摔了个屁股蹲，成为整场活动的轻喜剧开场。随后社团在雪场组织捆绑打雪仗：璃落穿着羽绒服被五花大绑，在行动受限的状态下躲避雪球并设法反击；部分轮次还会加入下身被扒光的暴露惩罚，使寒冷、羞耻和团队玩闹叠加。活动压轴是在经过能力加固和安全确认的异常深雪区，从数层楼左右的高度跃入巨大雪堆，由社团成员与场地保护措施共同接应。",
+        "groupId": "plot-group-017",
+        "tags": [
+          "社团活动",
+          "冬日出游",
+          "雪地玩耍",
+          "羽绒服",
+          "小土豆",
+          "屁股蹲",
+          "捆绑打雪仗",
+          "五花大绑",
+          "暴露惩罚",
+          "高处跳雪",
+          "轻喜剧"
+        ],
+        "bondageTags": [
+          "游戏"
+        ],
+        "characters": [
+          "璃落",
+          "紧缚社团成员"
+        ],
+        "usedBy": []
+      }
+    },
+    {
+      "index": 3,
+      "channel": "plot",
+      "assetId": "plot-054",
+      "title": "魔女之夜-猎巫裁判与月夜集会",
+      "author": "plot-catalog",
+      "themeDomain": "general-prose",
+      "path": "src/game/data/plot_outline/catalog.json",
+      "lowConfidence": true,
+      "hitCount": 0,
+      "currentResult": {
+        "assetKind": "plot",
+        "id": "plot-054",
+        "title": "魔女之夜-猎巫裁判与月夜集会",
+        "summary": "璃落在边境小镇追查一桩由诅咒引发的异变，却被猎巫官以药草、黑猫和月夜出没等证据列为魔女同党。公开裁判准备将她送上火刑架；她一面在女巫学院遗址寻找能证明诅咒来源的线索，一面潜入月夜集会，发现集会既非传闻中的邪恶仪式，也并非无辜者的避难所。她必须决定公开真相、借助魔女的规则反制猎巫制度，或阻止真正施咒者借审判掩盖自己的目的。",
+        "groupId": "plot-group-027",
+        "tags": [
+          "西幻",
+          "魔女",
+          "猎巫",
+          "宗教裁判",
+          "月夜集会",
+          "药草",
+          "诅咒",
+          "黑猫",
+          "火刑架",
+          "女巫学院",
+          "真相调查",
+          "制度反制"
+        ],
+        "bondageTags": [],
+        "characters": [
+          "璃落",
+          "猎巫官",
+          "成年女巫",
+          "黑猫引路人",
+          "女巫学院院长"
+        ],
+        "usedBy": []
+      }
+    }
+  ]
+}

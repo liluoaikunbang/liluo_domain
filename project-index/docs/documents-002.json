@@ -1,5 +1,71 @@
 [
   {
+    "id": "docs/设计记忆/项目组灵魂/项目组设定.md",
+    "indexVersion": 1,
+    "sourceHash": "5793617c77385f4621280b3038641119802b57d0a8da269eca218a7030b3c132",
+    "sourcePath": "docs/设计记忆/项目组灵魂/项目组设定.md",
+    "subtype": "other",
+    "summary": "璃落诸界游戏创作组设定",
+    "summarySource": "title-only",
+    "title": "璃落诸界游戏创作组设定",
+    "type": "document"
+  },
+  {
+    "id": "docs/设计记忆/项目组灵魂/项目组手记/README.md",
+    "indexVersion": 1,
+    "sourceHash": "7dc3f5d12147d5706fdebe9f9d0ee385d6e3e13957cbc32f181b2c9f763bb8bc",
+    "sourcePath": "docs/设计记忆/项目组灵魂/项目组手记/README.md",
+    "subtype": "other",
+    "summary": "项目组手记",
+    "summarySource": "title-only",
+    "title": "项目组手记",
+    "type": "document"
+  },
+  {
+    "id": "docs/设计记忆/项目组灵魂/项目组手记/TEAM-NOTE-001-为什么我们要成为一个创作组.md",
+    "indexVersion": 1,
+    "sourceHash": "b5915d503a57f815f7cc0b068cacb61bd2ef375b19fac95e3c21b244bf0cba4c",
+    "sourcePath": "docs/设计记忆/项目组灵魂/项目组手记/TEAM-NOTE-001-为什么我们要成为一个创作组.md",
+    "subtype": "other",
+    "summary": "为什么我们要成为一个创作组",
+    "summarySource": "title-only",
+    "title": "为什么我们要成为一个创作组",
+    "type": "document"
+  },
+  {
+    "id": "docs/设计记忆/项目组灵魂/项目组手记/TEAM-NOTE-002-为什么我们的文号来自文心雕龙.md",
+    "indexVersion": 1,
+    "sourceHash": "395ec3c1d61dd41aa15500dd0374b3ab3bc8b8ac27584be044629195ffc6bdab",
+    "sourcePath": "docs/设计记忆/项目组灵魂/项目组手记/TEAM-NOTE-002-为什么我们的文号来自文心雕龙.md",
+    "subtype": "other",
+    "summary": "为什么我们的文号来自《文心雕龙》",
+    "summarySource": "title-only",
+    "title": "为什么我们的文号来自《文心雕龙》",
+    "type": "document"
+  },
+  {
+    "id": "docs/设计记忆/项目组灵魂/项目组手记/TEAM-NOTE-003-谁在创作组记录中说话.md",
+    "indexVersion": 1,
+    "sourceHash": "a57c2b92e7f2f1f0bd5bde2f84210c4d3dd52c881d47eab9a172772249666b91",
+    "sourcePath": "docs/设计记忆/项目组灵魂/项目组手记/TEAM-NOTE-003-谁在创作组记录中说话.md",
+    "subtype": "other",
+    "summary": "谁在创作组记录中说话",
+    "summarySource": "title-only",
+    "title": "谁在创作组记录中说话",
+    "type": "document"
+  },
+  {
+    "id": "docs/设计记忆/项目组灵魂/项目组手记/TEAM-NOTE-004-让每次校准留下可复用的判断.md",
+    "indexVersion": 1,
+    "sourceHash": "da75437413ff715bbda558dc0c70aa4c11306f878d08c9f74907cdaca21709e0",
+    "sourcePath": "docs/设计记忆/项目组灵魂/项目组手记/TEAM-NOTE-004-让每次校准留下可复用的判断.md",
+    "subtype": "other",
+    "summary": "让每次校准留下可复用的判断",
+    "summarySource": "title-only",
+    "title": "让每次校准留下可复用的判断",
+    "type": "document"
+  },
+  {
     "id": "docs/设计记忆/项目组灵魂/重聚机制.md",
     "indexVersion": 1,
     "sourceHash": "2b29dc207c17ac188898e3d7663420374747f6e24f9748557c7308df80a9949f",
@@ -68,7 +134,7 @@
   {
     "id": "docs/我现在可以做什么.md",
     "indexVersion": 1,
-    "sourceHash": "d56a3f89c182fc4b1862d57a9cd3f4bcd8fbaa21e75e100a4a2b9e09b644429f",
+    "sourceHash": "41e993fb760de36e234ff0805ae1e0b05f9ab137e84491738a88459da0071df2",
     "sourcePath": "docs/我现在可以做什么.md",
     "subtype": "other",
     "summary": "我现在可以做什么",
@@ -85,6 +151,17 @@
     "summary": "存读档系统",
     "summarySource": "title-only",
     "title": "存读档系统",
+    "type": "document"
+  },
+  {
+    "id": "docs/系统说明/大纲关联图谱系统.md",
+    "indexVersion": 1,
+    "sourceHash": "2e2552bb91876e59afc3814d54377b01ecdf4910df1ceb109a2d89b60cc73a0b",
+    "sourcePath": "docs/系统说明/大纲关联图谱系统.md",
+    "subtype": "system",
+    "summary": "大纲关联图谱系统",
+    "summarySource": "title-only",
+    "title": "大纲关联图谱系统",
     "type": "document"
   },
   {
@@ -255,7 +332,7 @@
   {
     "id": "docs/系统说明/开放权重双模型写作管线.md",
     "indexVersion": 1,
-    "sourceHash": "4b6c2987cf6d60df836890c852abab345565ac46fd87afab7b88eb0e8034d149",
+    "sourceHash": "f57f676cd749658e5621d5022d37f84b76caffbc06937aabad0b1b6615c2de81",
     "sourcePath": "docs/系统说明/开放权重双模型写作管线.md",
     "subtype": "system",
     "summary": "开放权重双模型写作管线",
@@ -286,9 +363,20 @@
     "type": "document"
   },
   {
+    "id": "docs/系统说明/璃落写作表与文风资产生命周期.md",
+    "indexVersion": 1,
+    "sourceHash": "cee416e3964c0d5ef155509c903fff72c0a5a366d2aa4840bb6b39aae1cc31d8",
+    "sourcePath": "docs/系统说明/璃落写作表与文风资产生命周期.md",
+    "subtype": "system",
+    "summary": "璃落写作表与文风资产生命周期",
+    "summarySource": "title-only",
+    "title": "璃落写作表与文风资产生命周期",
+    "type": "document"
+  },
+  {
     "id": "docs/系统说明/璃落自然表达与文气塑形系统.md",
     "indexVersion": 1,
-    "sourceHash": "76c613742d6d9ff8b61560073229cf401f67415dbce12423529e61f5d7bc45e8",
+    "sourceHash": "f07c949edc6b46dd21fb6c0f972781fe002fee47553c212c783f830684b6f05a",
     "sourcePath": "docs/系统说明/璃落自然表达与文气塑形系统.md",
     "subtype": "system",
     "summary": "璃落自然表达与文气塑形系统",
@@ -310,7 +398,7 @@
   {
     "id": "docs/系统说明/情节条目系统.md",
     "indexVersion": 1,
-    "sourceHash": "5fb74cf72543c94c310926082e7665624e1f82c042f5f7d0dba36d93b8b159e0",
+    "sourceHash": "1cbdef9d0bbdf2c7c7a080d7c74bc0a05fdaa2d37ca1c7137091ab521d221e81",
     "sourcePath": "docs/系统说明/情节条目系统.md",
     "subtype": "system",
     "summary": "情节条目系统",
@@ -352,9 +440,20 @@
     "type": "document"
   },
   {
+    "id": "docs/系统说明/外部文章清单与用户评权系统.md",
+    "indexVersion": 1,
+    "sourceHash": "78f0408153b6883374fb1639913e746b37f5e58eb6303b4555c437d5716a5ccb",
+    "sourcePath": "docs/系统说明/外部文章清单与用户评权系统.md",
+    "subtype": "system",
+    "summary": "外部文章清单与用户评权系统",
+    "summarySource": "title-only",
+    "title": "外部文章清单与用户评权系统",
+    "type": "document"
+  },
+  {
     "id": "docs/系统说明/外部虚构题材知识库.md",
     "indexVersion": 1,
-    "sourceHash": "069b299eedf8874cc26fa58e337333ed63dad006d4014722f01b19950aaeb7f9",
+    "sourceHash": "6056a0ed5d2dcc5f9e5376190d51449e790312d7161427d3de67a9fc795f1a2c",
     "sourcePath": "docs/系统说明/外部虚构题材知识库.md",
     "subtype": "system",
     "summary": "外部虚构题材知识库",
@@ -495,6 +594,28 @@
     "type": "document"
   },
   {
+    "id": "docs/系统说明/知识检索抽查校准系统.md",
+    "indexVersion": 1,
+    "sourceHash": "ba010554d61dbcff111c5d0ed0b4932d4b36c4117fec048363d56c4974a04833",
+    "sourcePath": "docs/系统说明/知识检索抽查校准系统.md",
+    "subtype": "system",
+    "summary": "知识检索抽查校准系统",
+    "summarySource": "title-only",
+    "title": "知识检索抽查校准系统",
+    "type": "document"
+  },
+  {
+    "id": "docs/系统说明/知识检索抽查用户操作指南.md",
+    "indexVersion": 1,
+    "sourceHash": "86eb5825737eb81ca8ea994aadf8cf8b6f2b2c1802f13c05d6a4c7c2cfb9069b",
+    "sourcePath": "docs/系统说明/知识检索抽查用户操作指南.md",
+    "subtype": "system",
+    "summary": "知识检索抽查用户操作指南",
+    "summarySource": "title-only",
+    "title": "知识检索抽查用户操作指南",
+    "type": "document"
+  },
+  {
     "id": "docs/系统说明/AI协同文件与规则分层.md",
     "indexVersion": 1,
     "sourceHash": "abca92dab3abd3182416f758078547f5c16f0b59336df97757dfdb93d098053f",
@@ -552,7 +673,7 @@
   {
     "id": "docs/系统说明/README.md",
     "indexVersion": 1,
-    "sourceHash": "8e2d5f0ef9e55e8cfc4a83e543a65e9bdaa3218bb47ea66269893924feca69c5",
+    "sourceHash": "c20b1bd5827322b2b79272b37156ac43966fc0770a4c3d83a1fbf30fbab43368",
     "sourcePath": "docs/系统说明/README.md",
     "subtype": "system",
     "summary": "系统说明",
@@ -569,6 +690,28 @@
     "summary": "Skill 与 Agent 能力回归评测系统",
     "summarySource": "title-only",
     "title": "Skill 与 Agent 能力回归评测系统",
+    "type": "document"
+  },
+  {
+    "id": "docs/系统说明/Style-RAG用户操作指南.md",
+    "indexVersion": 1,
+    "sourceHash": "d7ac3425c1ee1a399871ccb207d84084b257b687f6c5d540799277254597d407",
+    "sourcePath": "docs/系统说明/Style-RAG用户操作指南.md",
+    "subtype": "system",
+    "summary": "Style-RAG 用户操作指南",
+    "summarySource": "title-only",
+    "title": "Style-RAG 用户操作指南",
+    "type": "document"
+  },
+  {
+    "id": "docs/系统说明/Style-RAG元数据检索与文风包系统.md",
+    "indexVersion": 1,
+    "sourceHash": "cf23d75da941a8c62e73a06c128e65d24dc5f8b5b582848b0d555fc65edf5722",
+    "sourcePath": "docs/系统说明/Style-RAG元数据检索与文风包系统.md",
+    "subtype": "system",
+    "summary": "Style-RAG 元数据检索与文风包系统",
+    "summarySource": "title-only",
+    "title": "Style-RAG 元数据检索与文风包系统",
     "type": "document"
   },
   {
@@ -596,7 +739,7 @@
   {
     "id": "docs/项目能力、缺口与行动总览.md",
     "indexVersion": 1,
-    "sourceHash": "eaadaddc62098a1106f29761877a6d1f227affe9aa6e372dfe0daf7fc8f05885",
+    "sourceHash": "104e5bd20b593fcb274f91df073778961fd0b5ff602a12c231282b0547f280d9",
     "sourcePath": "docs/项目能力、缺口与行动总览.md",
     "subtype": "other",
     "summary": "项目能力、缺口与行动总览",
@@ -748,6 +891,28 @@
     "type": "document"
   },
   {
+    "id": "docs/写作资产/工作区/compare/cg-636b96c2-3/candidate-a.md",
+    "indexVersion": 1,
+    "sourceHash": "7bcba2bd72550ef95988cdea51d4d18a78903f3ea285333edaf317457c03b78d",
+    "sourcePath": "docs/写作资产/工作区/compare/cg-636b96c2-3/candidate-a.md",
+    "subtype": "other",
+    "summary": "candidate-a",
+    "summarySource": "title-only",
+    "title": "candidate-a",
+    "type": "document"
+  },
+  {
+    "id": "docs/写作资产/工作区/compare/cg-636b96c2-3/candidate-b.md",
+    "indexVersion": 1,
+    "sourceHash": "a1b77224f895957bb89d0e52cd1bba2c614088954b7274b7a818f6eb1e5edf9e",
+    "sourcePath": "docs/写作资产/工作区/compare/cg-636b96c2-3/candidate-b.md",
+    "subtype": "other",
+    "summary": "candidate-b",
+    "summarySource": "title-only",
+    "title": "candidate-b",
+    "type": "document"
+  },
+  {
     "id": "docs/写作资产/工作区/compare/cg-6afc16af-3/candidate-a.md",
     "indexVersion": 1,
     "sourceHash": "cd5ddc461671235a26e21ecb7d168229b371ba36d02ef86f0d093d0d73583a61",
@@ -792,6 +957,28 @@
     "type": "document"
   },
   {
+    "id": "docs/写作资产/工作区/compare/cg-b5500cf9-f/candidate-a.md",
+    "indexVersion": 1,
+    "sourceHash": "7bcba2bd72550ef95988cdea51d4d18a78903f3ea285333edaf317457c03b78d",
+    "sourcePath": "docs/写作资产/工作区/compare/cg-b5500cf9-f/candidate-a.md",
+    "subtype": "other",
+    "summary": "candidate-a",
+    "summarySource": "title-only",
+    "title": "candidate-a",
+    "type": "document"
+  },
+  {
+    "id": "docs/写作资产/工作区/compare/cg-b5500cf9-f/candidate-b.md",
+    "indexVersion": 1,
+    "sourceHash": "a1b77224f895957bb89d0e52cd1bba2c614088954b7274b7a818f6eb1e5edf9e",
+    "sourcePath": "docs/写作资产/工作区/compare/cg-b5500cf9-f/candidate-b.md",
+    "subtype": "other",
+    "summary": "candidate-b",
+    "summarySource": "title-only",
+    "title": "candidate-b",
+    "type": "document"
+  },
+  {
     "id": "docs/写作资产/工作区/compare/cg-c1248a6a-0/candidate-a.md",
     "indexVersion": 1,
     "sourceHash": "7bcba2bd72550ef95988cdea51d4d18a78903f3ea285333edaf317457c03b78d",
@@ -829,6 +1016,28 @@
     "indexVersion": 1,
     "sourceHash": "a1b77224f895957bb89d0e52cd1bba2c614088954b7274b7a818f6eb1e5edf9e",
     "sourcePath": "docs/写作资产/工作区/compare/cg-cb44b47a-3/candidate-b.md",
+    "subtype": "other",
+    "summary": "candidate-b",
+    "summarySource": "title-only",
+    "title": "candidate-b",
+    "type": "document"
+  },
+  {
+    "id": "docs/写作资产/工作区/compare/cg-d673b17c-a/candidate-a.md",
+    "indexVersion": 1,
+    "sourceHash": "7bcba2bd72550ef95988cdea51d4d18a78903f3ea285333edaf317457c03b78d",
+    "sourcePath": "docs/写作资产/工作区/compare/cg-d673b17c-a/candidate-a.md",
+    "subtype": "other",
+    "summary": "candidate-a",
+    "summarySource": "title-only",
+    "title": "candidate-a",
+    "type": "document"
+  },
+  {
+    "id": "docs/写作资产/工作区/compare/cg-d673b17c-a/candidate-b.md",
+    "indexVersion": 1,
+    "sourceHash": "a1b77224f895957bb89d0e52cd1bba2c614088954b7274b7a818f6eb1e5edf9e",
+    "sourcePath": "docs/写作资产/工作区/compare/cg-d673b17c-a/candidate-b.md",
     "subtype": "other",
     "summary": "candidate-b",
     "summarySource": "title-only",
@@ -1122,6 +1331,204 @@
     "type": "document"
   },
   {
+    "id": "docs/写作资产/工作区/drafts/wr-20260726135729-bf8312b6.md",
+    "indexVersion": 1,
+    "sourceHash": "7bcba2bd72550ef95988cdea51d4d18a78903f3ea285333edaf317457c03b78d",
+    "sourcePath": "docs/写作资产/工作区/drafts/wr-20260726135729-bf8312b6.md",
+    "subtype": "other",
+    "summary": "wr-20260726135729-bf8312b6",
+    "summarySource": "title-only",
+    "title": "wr-20260726135729-bf8312b6",
+    "type": "document"
+  },
+  {
+    "id": "docs/写作资产/工作区/drafts/wr-20260726135730-0735595a.md",
+    "indexVersion": 1,
+    "sourceHash": "7bcba2bd72550ef95988cdea51d4d18a78903f3ea285333edaf317457c03b78d",
+    "sourcePath": "docs/写作资产/工作区/drafts/wr-20260726135730-0735595a.md",
+    "subtype": "other",
+    "summary": "wr-20260726135730-0735595a",
+    "summarySource": "title-only",
+    "title": "wr-20260726135730-0735595a",
+    "type": "document"
+  },
+  {
+    "id": "docs/写作资产/工作区/drafts/wr-20260726135730-20de52bf.md",
+    "indexVersion": 1,
+    "sourceHash": "a1b77224f895957bb89d0e52cd1bba2c614088954b7274b7a818f6eb1e5edf9e",
+    "sourcePath": "docs/写作资产/工作区/drafts/wr-20260726135730-20de52bf.md",
+    "subtype": "other",
+    "summary": "wr-20260726135730-20de52bf",
+    "summarySource": "title-only",
+    "title": "wr-20260726135730-20de52bf",
+    "type": "document"
+  },
+  {
+    "id": "docs/写作资产/工作区/drafts/wr-20260726135730-d2aed7b8.md",
+    "indexVersion": 1,
+    "sourceHash": "a1b77224f895957bb89d0e52cd1bba2c614088954b7274b7a818f6eb1e5edf9e",
+    "sourcePath": "docs/写作资产/工作区/drafts/wr-20260726135730-d2aed7b8.md",
+    "subtype": "other",
+    "summary": "wr-20260726135730-d2aed7b8",
+    "summarySource": "title-only",
+    "title": "wr-20260726135730-d2aed7b8",
+    "type": "document"
+  },
+  {
+    "id": "docs/写作资产/工作区/drafts/wr-20260726141935-357d6207.md",
+    "indexVersion": 1,
+    "sourceHash": "a1b77224f895957bb89d0e52cd1bba2c614088954b7274b7a818f6eb1e5edf9e",
+    "sourcePath": "docs/写作资产/工作区/drafts/wr-20260726141935-357d6207.md",
+    "subtype": "other",
+    "summary": "wr-20260726141935-357d6207",
+    "summarySource": "title-only",
+    "title": "wr-20260726141935-357d6207",
+    "type": "document"
+  },
+  {
+    "id": "docs/写作资产/工作区/drafts/wr-20260726141935-6bdacee8.md",
+    "indexVersion": 1,
+    "sourceHash": "a1b77224f895957bb89d0e52cd1bba2c614088954b7274b7a818f6eb1e5edf9e",
+    "sourcePath": "docs/写作资产/工作区/drafts/wr-20260726141935-6bdacee8.md",
+    "subtype": "other",
+    "summary": "wr-20260726141935-6bdacee8",
+    "summarySource": "title-only",
+    "title": "wr-20260726141935-6bdacee8",
+    "type": "document"
+  },
+  {
+    "id": "docs/写作资产/工作区/drafts/wr-20260726141935-81055b5b.md",
+    "indexVersion": 1,
+    "sourceHash": "7bcba2bd72550ef95988cdea51d4d18a78903f3ea285333edaf317457c03b78d",
+    "sourcePath": "docs/写作资产/工作区/drafts/wr-20260726141935-81055b5b.md",
+    "subtype": "other",
+    "summary": "wr-20260726141935-81055b5b",
+    "summarySource": "title-only",
+    "title": "wr-20260726141935-81055b5b",
+    "type": "document"
+  },
+  {
+    "id": "docs/写作资产/工作区/drafts/wr-20260726141935-c1e10bfb.md",
+    "indexVersion": 1,
+    "sourceHash": "7bcba2bd72550ef95988cdea51d4d18a78903f3ea285333edaf317457c03b78d",
+    "sourcePath": "docs/写作资产/工作区/drafts/wr-20260726141935-c1e10bfb.md",
+    "subtype": "other",
+    "summary": "wr-20260726141935-c1e10bfb",
+    "summarySource": "title-only",
+    "title": "wr-20260726141935-c1e10bfb",
+    "type": "document"
+  },
+  {
+    "id": "docs/写作资产/工作区/drafts/wr-20260726142017-714c0f31.md",
+    "indexVersion": 1,
+    "sourceHash": "7bcba2bd72550ef95988cdea51d4d18a78903f3ea285333edaf317457c03b78d",
+    "sourcePath": "docs/写作资产/工作区/drafts/wr-20260726142017-714c0f31.md",
+    "subtype": "other",
+    "summary": "wr-20260726142017-714c0f31",
+    "summarySource": "title-only",
+    "title": "wr-20260726142017-714c0f31",
+    "type": "document"
+  },
+  {
+    "id": "docs/写作资产/工作区/drafts/wr-20260726142017-7d87fe24.md",
+    "indexVersion": 1,
+    "sourceHash": "7bcba2bd72550ef95988cdea51d4d18a78903f3ea285333edaf317457c03b78d",
+    "sourcePath": "docs/写作资产/工作区/drafts/wr-20260726142017-7d87fe24.md",
+    "subtype": "other",
+    "summary": "wr-20260726142017-7d87fe24",
+    "summarySource": "title-only",
+    "title": "wr-20260726142017-7d87fe24",
+    "type": "document"
+  },
+  {
+    "id": "docs/写作资产/工作区/drafts/wr-20260726142017-b803d05a.md",
+    "indexVersion": 1,
+    "sourceHash": "a1b77224f895957bb89d0e52cd1bba2c614088954b7274b7a818f6eb1e5edf9e",
+    "sourcePath": "docs/写作资产/工作区/drafts/wr-20260726142017-b803d05a.md",
+    "subtype": "other",
+    "summary": "wr-20260726142017-b803d05a",
+    "summarySource": "title-only",
+    "title": "wr-20260726142017-b803d05a",
+    "type": "document"
+  },
+  {
+    "id": "docs/写作资产/工作区/drafts/wr-20260726142017-f1b8ebfd.md",
+    "indexVersion": 1,
+    "sourceHash": "a1b77224f895957bb89d0e52cd1bba2c614088954b7274b7a818f6eb1e5edf9e",
+    "sourcePath": "docs/写作资产/工作区/drafts/wr-20260726142017-f1b8ebfd.md",
+    "subtype": "other",
+    "summary": "wr-20260726142017-f1b8ebfd",
+    "summarySource": "title-only",
+    "title": "wr-20260726142017-f1b8ebfd",
+    "type": "document"
+  },
+  {
+    "id": "docs/写作资产/工作区/external-review/erb-ms1vnduq.md",
+    "indexVersion": 1,
+    "sourceHash": "a7c9bebb0edeaad65a9e4cee6445373f106fcdfa79229c5b12308edaa2df2a32",
+    "sourcePath": "docs/写作资产/工作区/external-review/erb-ms1vnduq.md",
+    "subtype": "other",
+    "summary": "外部文章评审批次 erb-ms1vnduq",
+    "summarySource": "title-only",
+    "title": "外部文章评审批次 erb-ms1vnduq",
+    "type": "document"
+  },
+  {
+    "id": "docs/写作资产/工作区/external-review/erb-ms1vnpl0.md",
+    "indexVersion": 1,
+    "sourceHash": "9a3e7ea7145a7191b6b6414b3e9bc9624b826fcb364edfab91ef23462436ff76",
+    "sourcePath": "docs/写作资产/工作区/external-review/erb-ms1vnpl0.md",
+    "subtype": "other",
+    "summary": "外部文章评审批次 erb-ms1vnpl0",
+    "summarySource": "title-only",
+    "title": "外部文章评审批次 erb-ms1vnpl0",
+    "type": "document"
+  },
+  {
+    "id": "docs/写作资产/工作区/external-review/erb-ms1vqs3g.md",
+    "indexVersion": 1,
+    "sourceHash": "76e820a2c429fb30e7f4f985f3f79887023c7bafa80dc6dd0766799e06b9d231",
+    "sourcePath": "docs/写作资产/工作区/external-review/erb-ms1vqs3g.md",
+    "subtype": "other",
+    "summary": "外部文章评审批次 erb-ms1vqs3g",
+    "summarySource": "title-only",
+    "title": "外部文章评审批次 erb-ms1vqs3g",
+    "type": "document"
+  },
+  {
+    "id": "docs/写作资产/工作区/external-review/erb-ms1vsqul.md",
+    "indexVersion": 1,
+    "sourceHash": "9cc6e5e2e693a134b47d9922d9f0d397eeef57c304fcee3e77dc2719bd480c9c",
+    "sourcePath": "docs/写作资产/工作区/external-review/erb-ms1vsqul.md",
+    "subtype": "other",
+    "summary": "外部文章评审批次 erb-ms1vsqul",
+    "summarySource": "title-only",
+    "title": "外部文章评审批次 erb-ms1vsqul",
+    "type": "document"
+  },
+  {
+    "id": "docs/写作资产/工作区/external-review/erb-ms1vvax9.md",
+    "indexVersion": 1,
+    "sourceHash": "5e300437dab6c55d1a58b5934fddbeef6a1fa0971ddac5bba2d858f06d1a3133",
+    "sourcePath": "docs/写作资产/工作区/external-review/erb-ms1vvax9.md",
+    "subtype": "other",
+    "summary": "外部文章评审批次 erb-ms1vvax9",
+    "summarySource": "title-only",
+    "title": "外部文章评审批次 erb-ms1vvax9",
+    "type": "document"
+  },
+  {
+    "id": "docs/写作资产/工作区/external-review/erb-ms1vwupz.md",
+    "indexVersion": 1,
+    "sourceHash": "bd0671b84816ced685740eb047a2b9c90ca9e742caf9924d3aecf2cbce0dfd75",
+    "sourcePath": "docs/写作资产/工作区/external-review/erb-ms1vwupz.md",
+    "subtype": "other",
+    "summary": "外部文章评审批次 erb-ms1vwupz",
+    "summarySource": "title-only",
+    "title": "外部文章评审批次 erb-ms1vwupz",
+    "type": "document"
+  },
+  {
     "id": "docs/写作资产/工作区/README.md",
     "indexVersion": 1,
     "sourceHash": "bc1e777f1e1e9bfaa9f681bc09684d2446fc43f6d56c6af33f8e2c3f7339acf8",
@@ -1243,6 +1650,50 @@
     "type": "document"
   },
   {
+    "id": "docs/写作资产/璃落写作表/drafts/README.md",
+    "indexVersion": 1,
+    "sourceHash": "4ce4ed598b4a5a6dd3695d45e1a705d6e4e44f6ae75111ab9223968834cbadb9",
+    "sourcePath": "docs/写作资产/璃落写作表/drafts/README.md",
+    "subtype": "other",
+    "summary": "drafts",
+    "summarySource": "title-only",
+    "title": "drafts",
+    "type": "document"
+  },
+  {
+    "id": "docs/写作资产/璃落写作表/evidence/README.md",
+    "indexVersion": 1,
+    "sourceHash": "f3721539ac1f0a08d293524fdb888fbd4ac87ac5d57529813758337ec3a5da6b",
+    "sourcePath": "docs/写作资产/璃落写作表/evidence/README.md",
+    "subtype": "other",
+    "summary": "evidence",
+    "summarySource": "title-only",
+    "title": "evidence",
+    "type": "document"
+  },
+  {
+    "id": "docs/写作资产/璃落写作表/README.md",
+    "indexVersion": 1,
+    "sourceHash": "802b391ce22199b6b8b5b7593a7ee1fc709306ea793a70f5acb7e3d60df2c6a7",
+    "sourcePath": "docs/写作资产/璃落写作表/README.md",
+    "subtype": "other",
+    "summary": "璃落写作表",
+    "summarySource": "title-only",
+    "title": "璃落写作表",
+    "type": "document"
+  },
+  {
+    "id": "docs/写作资产/璃落写作表/versions/README.md",
+    "indexVersion": 1,
+    "sourceHash": "2126a5a68d8b3518c50f327d49af283244e4494fd45931097804d84b5a83a08e",
+    "sourcePath": "docs/写作资产/璃落写作表/versions/README.md",
+    "subtype": "other",
+    "summary": "versions",
+    "summarySource": "title-only",
+    "title": "versions",
+    "type": "document"
+  },
+  {
     "id": "docs/写作资产/模板/黄金正文审批模板.md",
     "indexVersion": 1,
     "sourceHash": "14fd6cb4b9b1657a239fb967841dfb27c544ad4a12dc3c26485cd694cf353274",
@@ -1276,6 +1727,28 @@
     "type": "document"
   },
   {
+    "id": "docs/写作资产/模板/Style查询说明.md",
+    "indexVersion": 1,
+    "sourceHash": "68e02cb83f29e88ca8b620c4ebecd101195690c05a786552fd2030b15328e895",
+    "sourcePath": "docs/写作资产/模板/Style查询说明.md",
+    "subtype": "other",
+    "summary": "Style 查询说明",
+    "summarySource": "title-only",
+    "title": "Style 查询说明",
+    "type": "document"
+  },
+  {
+    "id": "docs/写作资产/模板/Style文风包说明.md",
+    "indexVersion": 1,
+    "sourceHash": "8c53aadb00411925d63118d8572f8184f4c6d8bbec1cc20fb4fe6d1980ef057e",
+    "sourcePath": "docs/写作资产/模板/Style文风包说明.md",
+    "subtype": "other",
+    "summary": "Style 文风包说明",
+    "summarySource": "title-only",
+    "title": "Style 文风包说明",
+    "type": "document"
+  },
+  {
     "id": "docs/写作资产/模型归档/模型卡快照/README.md",
     "indexVersion": 1,
     "sourceHash": "6389df92b2cac5aa0c7bc791f5d285d1ba5c15e06974b3bd940086309ab7bd12",
@@ -1300,7 +1773,7 @@
   {
     "id": "docs/写作资产/模型归档/README.md",
     "indexVersion": 1,
-    "sourceHash": "77381a920de90981646f9dc0cf395e0d5afdd8367eb60eb3777340a88cf9fa24",
+    "sourceHash": "82dbaf42595392e4e953be38d6b601950bb0ac08d14a31322bb85030551e1472",
     "sourcePath": "docs/写作资产/模型归档/README.md",
     "subtype": "other",
     "summary": "模型归档",
@@ -1443,7 +1916,7 @@
   {
     "id": "docs/写作资产/外部风格研究/README.md",
     "indexVersion": 1,
-    "sourceHash": "0958480e7e869452438b3f6e9ef17577d366221f29dfadc12f3fb3b1111ec8bf",
+    "sourceHash": "4be6dbf007e221b78c25fd439b92b7b2f7eba6031db905a6a14d4465d5e274b3",
     "sourcePath": "docs/写作资产/外部风格研究/README.md",
     "subtype": "other",
     "summary": "外部风格研究",
@@ -1564,7 +2037,7 @@
   {
     "id": "docs/写作资产/README.md",
     "indexVersion": 1,
-    "sourceHash": "4f5e1393ef385cec66a152ef4820ced9b2829a1ab70d15030f5c053741d3b6bc",
+    "sourceHash": "15585fcf17a1e681ca960b01619217dd83b0e67ae0d46bc336f6fa52d867b32a",
     "sourcePath": "docs/写作资产/README.md",
     "subtype": "other",
     "summary": "写作资产",
@@ -1575,7 +2048,7 @@
   {
     "id": "docs/用户命令目录.md",
     "indexVersion": 1,
-    "sourceHash": "d1c38200ac666f6cee982bc75e073fd452a60712d7e5ff8a43323bf3e70c8984",
+    "sourceHash": "b39719567573c308250b9f46d9c9740759ed51420861b0829790176eb40cc71b",
     "sourcePath": "docs/用户命令目录.md",
     "subtype": "other",
     "summary": "用户命令目录",
@@ -1625,6 +2098,501 @@
     "summary": "Codex 命令批准分级表",
     "summarySource": "title-only",
     "title": "Codex 命令批准分级表",
+    "type": "document"
+  },
+  {
+    "id": "docs/知识检索校准/batches/rab-ms1w5p0d.md",
+    "indexVersion": 1,
+    "sourceHash": "48bee80fbe01977d9f1e2f88f6645457c56ddb5697d824ac641dbef6518a19c2",
+    "sourcePath": "docs/知识检索校准/batches/rab-ms1w5p0d.md",
+    "subtype": "other",
+    "summary": "Style-RAG 抽查批次 rab-ms1w5p0d",
+    "summarySource": "title-only",
+    "title": "Style-RAG 抽查批次 rab-ms1w5p0d",
+    "type": "document"
+  },
+  {
+    "id": "docs/知识检索校准/batches/rab-ms1w5p0o.md",
+    "indexVersion": 1,
+    "sourceHash": "90793d3204272b138fd89bbe0482649e8113ca860156b161da18b410c1c40a86",
+    "sourcePath": "docs/知识检索校准/batches/rab-ms1w5p0o.md",
+    "subtype": "other",
+    "summary": "普通 RAG 抽查批次 rab-ms1w5p0o",
+    "summarySource": "title-only",
+    "title": "普通 RAG 抽查批次 rab-ms1w5p0o",
+    "type": "document"
+  },
+  {
+    "id": "docs/知识检索校准/batches/rab-ms1w5p0w.md",
+    "indexVersion": 1,
+    "sourceHash": "751bc01183492bfcf6d5982d269f63b0ddc2da0a4bbe4a2046a7626226a86c0c",
+    "sourcePath": "docs/知识检索校准/batches/rab-ms1w5p0w.md",
+    "subtype": "other",
+    "summary": "普通 RAG 抽查批次 rab-ms1w5p0w",
+    "summarySource": "title-only",
+    "title": "普通 RAG 抽查批次 rab-ms1w5p0w",
+    "type": "document"
+  },
+  {
+    "id": "docs/知识检索校准/batches/rab-ms1w5pjz.md",
+    "indexVersion": 1,
+    "sourceHash": "8791c52fce21cb4233cb6787a8880bbf86acc52ed1dd04431883f2527ed87a0b",
+    "sourcePath": "docs/知识检索校准/batches/rab-ms1w5pjz.md",
+    "subtype": "other",
+    "summary": "Style-RAG 抽查批次 rab-ms1w5pjz",
+    "summarySource": "title-only",
+    "title": "Style-RAG 抽查批次 rab-ms1w5pjz",
+    "type": "document"
+  },
+  {
+    "id": "docs/知识检索校准/batches/rab-ms1w6rkn.md",
+    "indexVersion": 1,
+    "sourceHash": "4e9220fd223723d1472e791ee86e9d6c635deca16b16d0e6ab67e77a064d82ac",
+    "sourcePath": "docs/知识检索校准/batches/rab-ms1w6rkn.md",
+    "subtype": "other",
+    "summary": "Style-RAG 抽查批次 rab-ms1w6rkn",
+    "summarySource": "title-only",
+    "title": "Style-RAG 抽查批次 rab-ms1w6rkn",
+    "type": "document"
+  },
+  {
+    "id": "docs/知识检索校准/batches/rab-ms1w6rky.md",
+    "indexVersion": 1,
+    "sourceHash": "54c0e3ffe879fe5d7322c6f0139c3c85cb22dae6f5a3bea39c0248e6485339d7",
+    "sourcePath": "docs/知识检索校准/batches/rab-ms1w6rky.md",
+    "subtype": "other",
+    "summary": "普通 RAG 抽查批次 rab-ms1w6rky",
+    "summarySource": "title-only",
+    "title": "普通 RAG 抽查批次 rab-ms1w6rky",
+    "type": "document"
+  },
+  {
+    "id": "docs/知识检索校准/batches/rab-ms1w6rl5.md",
+    "indexVersion": 1,
+    "sourceHash": "e8bf6ed19e920919fcb074b1bfeb3e7c422c84d893c34602b5cf6a84fafe522d",
+    "sourcePath": "docs/知识检索校准/batches/rab-ms1w6rl5.md",
+    "subtype": "other",
+    "summary": "普通 RAG 抽查批次 rab-ms1w6rl5",
+    "summarySource": "title-only",
+    "title": "普通 RAG 抽查批次 rab-ms1w6rl5",
+    "type": "document"
+  },
+  {
+    "id": "docs/知识检索校准/batches/rab-ms2ubk4z.md",
+    "indexVersion": 1,
+    "sourceHash": "7c23da506d16cded66f6bfaa8623f0c5b6c9853cf48c29f9cce3100a3e982487",
+    "sourcePath": "docs/知识检索校准/batches/rab-ms2ubk4z.md",
+    "subtype": "other",
+    "summary": "Style-RAG 抽查批次 rab-ms2ubk4z",
+    "summarySource": "title-only",
+    "title": "Style-RAG 抽查批次 rab-ms2ubk4z",
+    "type": "document"
+  },
+  {
+    "id": "docs/知识检索校准/batches/rab-ms2ubk5l.md",
+    "indexVersion": 1,
+    "sourceHash": "ac97a0b0fa29846b3915f15473fb771933d3d5f048d3a8478bba128a9a139a37",
+    "sourcePath": "docs/知识检索校准/batches/rab-ms2ubk5l.md",
+    "subtype": "other",
+    "summary": "普通 RAG 抽查批次 rab-ms2ubk5l",
+    "summarySource": "title-only",
+    "title": "普通 RAG 抽查批次 rab-ms2ubk5l",
+    "type": "document"
+  },
+  {
+    "id": "docs/知识检索校准/batches/rab-ms2ubk60.md",
+    "indexVersion": 1,
+    "sourceHash": "9e87b66d40842762836763736525cb74264300cdc17e08d77b7c90175058958f",
+    "sourcePath": "docs/知识检索校准/batches/rab-ms2ubk60.md",
+    "subtype": "other",
+    "summary": "普通 RAG 抽查批次 rab-ms2ubk60",
+    "summarySource": "title-only",
+    "title": "普通 RAG 抽查批次 rab-ms2ubk60",
+    "type": "document"
+  },
+  {
+    "id": "docs/知识检索校准/batches/rab-ms2ubk72.md",
+    "indexVersion": 1,
+    "sourceHash": "644cad6f4c12a738305373fdd3bba56950783475977fb321dfb6cd7b2230ffa5",
+    "sourcePath": "docs/知识检索校准/batches/rab-ms2ubk72.md",
+    "subtype": "other",
+    "summary": "细节概念 抽查批次 rab-ms2ubk72",
+    "summarySource": "title-only",
+    "title": "细节概念 抽查批次 rab-ms2ubk72",
+    "type": "document"
+  },
+  {
+    "id": "docs/知识检索校准/batches/rab-ms2ubk7a.md",
+    "indexVersion": 1,
+    "sourceHash": "e6b5e192a5599490f4aa8fb9cbf4980873b5233b132c7e3392377468f9224dab",
+    "sourcePath": "docs/知识检索校准/batches/rab-ms2ubk7a.md",
+    "subtype": "other",
+    "summary": "情节 抽查批次 rab-ms2ubk7a",
+    "summarySource": "title-only",
+    "title": "情节 抽查批次 rab-ms2ubk7a",
+    "type": "document"
+  },
+  {
+    "id": "docs/知识检索校准/batches/rab-ms2ubk7w.md",
+    "indexVersion": 1,
+    "sourceHash": "e7f59d712a5aad2b22f0b02a975e9695d0e269dad3fa7953f5009fd566447e0a",
+    "sourcePath": "docs/知识检索校准/batches/rab-ms2ubk7w.md",
+    "subtype": "other",
+    "summary": "综合（RAG / Style-RAG / 细节概念 / 情节） 抽查批次 rab-ms2ubk7w",
+    "summarySource": "title-only",
+    "title": "综合（RAG / Style-RAG / 细节概念 / 情节） 抽查批次 rab-ms2ubk7w",
+    "type": "document"
+  },
+  {
+    "id": "docs/知识检索校准/batches/rab-ms2uga3f.md",
+    "indexVersion": 1,
+    "sourceHash": "843bf4a42c66005d543404e0076310a48c337de7f7bc484a9c2556650d8cf073",
+    "sourcePath": "docs/知识检索校准/batches/rab-ms2uga3f.md",
+    "subtype": "other",
+    "summary": "Style-RAG 抽查批次 rab-ms2uga3f",
+    "summarySource": "title-only",
+    "title": "Style-RAG 抽查批次 rab-ms2uga3f",
+    "type": "document"
+  },
+  {
+    "id": "docs/知识检索校准/batches/rab-ms2uga42.md",
+    "indexVersion": 1,
+    "sourceHash": "af42e233165a60cb0d1e9245b3d27e82a8acafe934552a10c24376f912a71fda",
+    "sourcePath": "docs/知识检索校准/batches/rab-ms2uga42.md",
+    "subtype": "other",
+    "summary": "普通 RAG 抽查批次 rab-ms2uga42",
+    "summarySource": "title-only",
+    "title": "普通 RAG 抽查批次 rab-ms2uga42",
+    "type": "document"
+  },
+  {
+    "id": "docs/知识检索校准/batches/rab-ms2uga4k.md",
+    "indexVersion": 1,
+    "sourceHash": "5a23d1617dac912b31eebe12e7c76cce763ad47e73706a0528b73da11f6f4377",
+    "sourcePath": "docs/知识检索校准/batches/rab-ms2uga4k.md",
+    "subtype": "other",
+    "summary": "普通 RAG 抽查批次 rab-ms2uga4k",
+    "summarySource": "title-only",
+    "title": "普通 RAG 抽查批次 rab-ms2uga4k",
+    "type": "document"
+  },
+  {
+    "id": "docs/知识检索校准/batches/rab-ms2uga5w.md",
+    "indexVersion": 1,
+    "sourceHash": "e311bb8cc1b428abd00a1601d3e4c48a86dc45dac9a991e715f0c434f1e562c4",
+    "sourcePath": "docs/知识检索校准/batches/rab-ms2uga5w.md",
+    "subtype": "other",
+    "summary": "细节概念 抽查批次 rab-ms2uga5w",
+    "summarySource": "title-only",
+    "title": "细节概念 抽查批次 rab-ms2uga5w",
+    "type": "document"
+  },
+  {
+    "id": "docs/知识检索校准/batches/rab-ms2uga65.md",
+    "indexVersion": 1,
+    "sourceHash": "2fb8fecb733bedba9afa7e588207820fdd772a2e7817dbbdf10548b107f921bc",
+    "sourcePath": "docs/知识检索校准/batches/rab-ms2uga65.md",
+    "subtype": "other",
+    "summary": "情节 抽查批次 rab-ms2uga65",
+    "summarySource": "title-only",
+    "title": "情节 抽查批次 rab-ms2uga65",
+    "type": "document"
+  },
+  {
+    "id": "docs/知识检索校准/batches/rab-ms2uga6o.md",
+    "indexVersion": 1,
+    "sourceHash": "8c72d977dfd4a25ad1e241286786be8667d051833ee5f9d2822499a67fd9427f",
+    "sourcePath": "docs/知识检索校准/batches/rab-ms2uga6o.md",
+    "subtype": "other",
+    "summary": "综合（RAG / Style-RAG / 细节概念 / 情节） 抽查批次 rab-ms2uga6o",
+    "summarySource": "title-only",
+    "title": "综合（RAG / Style-RAG / 细节概念 / 情节） 抽查批次 rab-ms2uga6o",
+    "type": "document"
+  },
+  {
+    "id": "docs/知识检索校准/batches/rab-ms2vg6hy.md",
+    "indexVersion": 1,
+    "sourceHash": "cc78db44aeaec5f42fdf777b98e83befab7a4b1c710be21cb080ee58723035a2",
+    "sourcePath": "docs/知识检索校准/batches/rab-ms2vg6hy.md",
+    "subtype": "other",
+    "summary": "综合（RAG / Style-RAG / 细节概念 / 情节） 抽查批次 rab-ms2vg6hy",
+    "summarySource": "title-only",
+    "title": "综合（RAG / Style-RAG / 细节概念 / 情节） 抽查批次 rab-ms2vg6hy",
+    "type": "document"
+  },
+  {
+    "id": "docs/知识检索校准/batches/rab-ms2vzi2k.md",
+    "indexVersion": 1,
+    "sourceHash": "6028f1fe0aca5f7502d4d88ff6366880ab1febf8e8e8dbab8c7ca8de23ae8e37",
+    "sourcePath": "docs/知识检索校准/batches/rab-ms2vzi2k.md",
+    "subtype": "other",
+    "summary": "普通 RAG 抽查批次 rab-ms2vzi2k",
+    "summarySource": "title-only",
+    "title": "普通 RAG 抽查批次 rab-ms2vzi2k",
+    "type": "document"
+  },
+  {
+    "id": "docs/知识检索校准/batches/rab-ms2wxsjf.md",
+    "indexVersion": 1,
+    "sourceHash": "fa45d9d3950db4ba5c8b28349d704a6f692fb38c0a8bcaf7689fcebf7a699636",
+    "sourcePath": "docs/知识检索校准/batches/rab-ms2wxsjf.md",
+    "subtype": "other",
+    "summary": "Style-RAG 抽查批次 rab-ms2wxsjf",
+    "summarySource": "title-only",
+    "title": "Style-RAG 抽查批次 rab-ms2wxsjf",
+    "type": "document"
+  },
+  {
+    "id": "docs/知识检索校准/batches/rab-ms2wxskc.md",
+    "indexVersion": 1,
+    "sourceHash": "eb008d138ad708d29d5c91a2556ee57fe834216ad2bc181592aa5a06c354dd68",
+    "sourcePath": "docs/知识检索校准/batches/rab-ms2wxskc.md",
+    "subtype": "other",
+    "summary": "普通 RAG 抽查批次 rab-ms2wxskc",
+    "summarySource": "title-only",
+    "title": "普通 RAG 抽查批次 rab-ms2wxskc",
+    "type": "document"
+  },
+  {
+    "id": "docs/知识检索校准/batches/rab-ms2wxsks.md",
+    "indexVersion": 1,
+    "sourceHash": "88a4987eacbde05925061b6f51ba5940344901a58ea6a9fe76248a966df63001",
+    "sourcePath": "docs/知识检索校准/batches/rab-ms2wxsks.md",
+    "subtype": "other",
+    "summary": "普通 RAG 抽查批次 rab-ms2wxsks",
+    "summarySource": "title-only",
+    "title": "普通 RAG 抽查批次 rab-ms2wxsks",
+    "type": "document"
+  },
+  {
+    "id": "docs/知识检索校准/batches/rab-ms2wxsle.md",
+    "indexVersion": 1,
+    "sourceHash": "e035e8ea4e51da5cf003e09bdec1ad3a20949122c2f83fed42265c3d2ad141e5",
+    "sourcePath": "docs/知识检索校准/batches/rab-ms2wxsle.md",
+    "subtype": "other",
+    "summary": "普通 RAG 抽查批次 rab-ms2wxsle",
+    "summarySource": "title-only",
+    "title": "普通 RAG 抽查批次 rab-ms2wxsle",
+    "type": "document"
+  },
+  {
+    "id": "docs/知识检索校准/batches/rab-ms2wxsly.md",
+    "indexVersion": 1,
+    "sourceHash": "98365ce670132a31f4453a3c1738c69e9bd62b86c2ba24c512127f477e9f026a",
+    "sourcePath": "docs/知识检索校准/batches/rab-ms2wxsly.md",
+    "subtype": "other",
+    "summary": "普通 RAG 抽查批次 rab-ms2wxsly",
+    "summarySource": "title-only",
+    "title": "普通 RAG 抽查批次 rab-ms2wxsly",
+    "type": "document"
+  },
+  {
+    "id": "docs/知识检索校准/batches/rab-ms2wxsns.md",
+    "indexVersion": 1,
+    "sourceHash": "2ebb04335291f893496bfc27aa9e0bbb2e5910dea5caac7a0719e0f9b68f2511",
+    "sourcePath": "docs/知识检索校准/batches/rab-ms2wxsns.md",
+    "subtype": "other",
+    "summary": "细节概念 抽查批次 rab-ms2wxsns",
+    "summarySource": "title-only",
+    "title": "细节概念 抽查批次 rab-ms2wxsns",
+    "type": "document"
+  },
+  {
+    "id": "docs/知识检索校准/batches/rab-ms2wxsnz.md",
+    "indexVersion": 1,
+    "sourceHash": "1d7e7373288c9757a3aba75ea260830b50b880085dfbab9064cebbc7e0e66a0d",
+    "sourcePath": "docs/知识检索校准/batches/rab-ms2wxsnz.md",
+    "subtype": "other",
+    "summary": "情节 抽查批次 rab-ms2wxsnz",
+    "summarySource": "title-only",
+    "title": "情节 抽查批次 rab-ms2wxsnz",
+    "type": "document"
+  },
+  {
+    "id": "docs/知识检索校准/batches/rab-ms2wxsol.md",
+    "indexVersion": 1,
+    "sourceHash": "9abaa7fd7c8f064f357f0edf70a2d9d72b4090caac78d315db541399f20c4fc0",
+    "sourcePath": "docs/知识检索校准/batches/rab-ms2wxsol.md",
+    "subtype": "other",
+    "summary": "综合（RAG / Style-RAG / 细节概念 / 情节） 抽查批次 rab-ms2wxsol",
+    "summarySource": "title-only",
+    "title": "综合（RAG / Style-RAG / 细节概念 / 情节） 抽查批次 rab-ms2wxsol",
+    "type": "document"
+  },
+  {
+    "id": "docs/知识检索校准/batches/rab-ms2x4z78.md",
+    "indexVersion": 1,
+    "sourceHash": "eed2c960f38a8a6e54e5e4e4f9b43a6d1639b67e16c523bfd5e3206262e49533",
+    "sourcePath": "docs/知识检索校准/batches/rab-ms2x4z78.md",
+    "subtype": "other",
+    "summary": "Style-RAG 抽查批次 rab-ms2x4z78",
+    "summarySource": "title-only",
+    "title": "Style-RAG 抽查批次 rab-ms2x4z78",
+    "type": "document"
+  },
+  {
+    "id": "docs/知识检索校准/batches/rab-ms2x4z88.md",
+    "indexVersion": 1,
+    "sourceHash": "88853bce53c7002d38244441ddb7cf6beca27c532390bc7ada6b1d67fd9c85a8",
+    "sourcePath": "docs/知识检索校准/batches/rab-ms2x4z88.md",
+    "subtype": "other",
+    "summary": "普通 RAG 抽查批次 rab-ms2x4z88",
+    "summarySource": "title-only",
+    "title": "普通 RAG 抽查批次 rab-ms2x4z88",
+    "type": "document"
+  },
+  {
+    "id": "docs/知识检索校准/batches/rab-ms2x4z8r.md",
+    "indexVersion": 1,
+    "sourceHash": "779c65d573b42023a6de642dcfeedccca7cb95b65dbd04ead7b35a79135ac05d",
+    "sourcePath": "docs/知识检索校准/batches/rab-ms2x4z8r.md",
+    "subtype": "other",
+    "summary": "普通 RAG 抽查批次 rab-ms2x4z8r",
+    "summarySource": "title-only",
+    "title": "普通 RAG 抽查批次 rab-ms2x4z8r",
+    "type": "document"
+  },
+  {
+    "id": "docs/知识检索校准/batches/rab-ms2x4z9d.md",
+    "indexVersion": 1,
+    "sourceHash": "ce06b99d6fa45e1cd84601b0c36b8c5ef423a72c6860632c92e5413f109ce96e",
+    "sourcePath": "docs/知识检索校准/batches/rab-ms2x4z9d.md",
+    "subtype": "other",
+    "summary": "普通 RAG 抽查批次 rab-ms2x4z9d",
+    "summarySource": "title-only",
+    "title": "普通 RAG 抽查批次 rab-ms2x4z9d",
+    "type": "document"
+  },
+  {
+    "id": "docs/知识检索校准/batches/rab-ms2x4z9x.md",
+    "indexVersion": 1,
+    "sourceHash": "e6992ffe5a13672b978da4fe32e39a2bc7a43c09a4d65930b33387540af518ce",
+    "sourcePath": "docs/知识检索校准/batches/rab-ms2x4z9x.md",
+    "subtype": "other",
+    "summary": "普通 RAG 抽查批次 rab-ms2x4z9x",
+    "summarySource": "title-only",
+    "title": "普通 RAG 抽查批次 rab-ms2x4z9x",
+    "type": "document"
+  },
+  {
+    "id": "docs/知识检索校准/batches/rab-ms2x4zbm.md",
+    "indexVersion": 1,
+    "sourceHash": "ed1db2b49b18e2fa477b3147262df3ea245ae562b85078bdb94212d5b8b0bdcf",
+    "sourcePath": "docs/知识检索校准/batches/rab-ms2x4zbm.md",
+    "subtype": "other",
+    "summary": "细节概念 抽查批次 rab-ms2x4zbm",
+    "summarySource": "title-only",
+    "title": "细节概念 抽查批次 rab-ms2x4zbm",
+    "type": "document"
+  },
+  {
+    "id": "docs/知识检索校准/batches/rab-ms2x4zbt.md",
+    "indexVersion": 1,
+    "sourceHash": "2e33dbdb4766e0abfdb644f698011b52b13b8f073d39fb080decf03271c1d6a0",
+    "sourcePath": "docs/知识检索校准/batches/rab-ms2x4zbt.md",
+    "subtype": "other",
+    "summary": "情节 抽查批次 rab-ms2x4zbt",
+    "summarySource": "title-only",
+    "title": "情节 抽查批次 rab-ms2x4zbt",
+    "type": "document"
+  },
+  {
+    "id": "docs/知识检索校准/batches/rab-ms2x4zcj.md",
+    "indexVersion": 1,
+    "sourceHash": "e0ce279c1e862a8230f553f1b063ca9cb7d747e28eb04b1f9050607d699dad24",
+    "sourcePath": "docs/知识检索校准/batches/rab-ms2x4zcj.md",
+    "subtype": "other",
+    "summary": "综合（RAG / Style-RAG / 细节概念 / 情节） 抽查批次 rab-ms2x4zcj",
+    "summarySource": "title-only",
+    "title": "综合（RAG / Style-RAG / 细节概念 / 情节） 抽查批次 rab-ms2x4zcj",
+    "type": "document"
+  },
+  {
+    "id": "docs/知识检索校准/batches/rab-ms2x503f.md",
+    "indexVersion": 1,
+    "sourceHash": "585981491cfd4b6c82fa789c5aeeffc584ce3cb43b6e93049e2fab65e8f5e223",
+    "sourcePath": "docs/知识检索校准/batches/rab-ms2x503f.md",
+    "subtype": "other",
+    "summary": "普通 RAG 抽查批次 rab-ms2x503f",
+    "summarySource": "title-only",
+    "title": "普通 RAG 抽查批次 rab-ms2x503f",
+    "type": "document"
+  },
+  {
+    "id": "docs/知识检索校准/batches/README.md",
+    "indexVersion": 1,
+    "sourceHash": "4aa487cdc9bad30e184e6412f8953fc3bf941aad3edf3690a2330ae54b8bad09",
+    "sourcePath": "docs/知识检索校准/batches/README.md",
+    "subtype": "other",
+    "summary": "batches",
+    "summarySource": "title-only",
+    "title": "batches",
+    "type": "document"
+  },
+  {
+    "id": "docs/知识检索校准/README.md",
+    "indexVersion": 1,
+    "sourceHash": "81056b1b7060d999ac8ddcc502584d7a160959d23f5460b48ececb055cd38859",
+    "sourcePath": "docs/知识检索校准/README.md",
+    "subtype": "other",
+    "summary": "知识检索校准（RAG + Style-RAG + 细节概念 + 情节）",
+    "summarySource": "title-only",
+    "title": "知识检索校准（RAG + Style-RAG + 细节概念 + 情节）",
+    "type": "document"
+  },
+  {
+    "id": "docs/知识检索校准/rebuild-logs/README.md",
+    "indexVersion": 1,
+    "sourceHash": "3a8239a7e82bb188a628a655f8a1a839dcfe71693fb10c86073d27ab154ba6e8",
+    "sourcePath": "docs/知识检索校准/rebuild-logs/README.md",
+    "subtype": "other",
+    "summary": "rebuild-logs",
+    "summarySource": "title-only",
+    "title": "rebuild-logs",
+    "type": "document"
+  },
+  {
+    "id": "docs/知识检索校准/records/concept/README.md",
+    "indexVersion": 1,
+    "sourceHash": "0db692d5b5ae8ed44d56b03c12a73a8dc38315e36cb1b8215d59e27218058da7",
+    "sourcePath": "docs/知识检索校准/records/concept/README.md",
+    "subtype": "other",
+    "summary": "细节概念抽查记录",
+    "summarySource": "title-only",
+    "title": "细节概念抽查记录",
+    "type": "document"
+  },
+  {
+    "id": "docs/知识检索校准/records/plot/README.md",
+    "indexVersion": 1,
+    "sourceHash": "ea054f53f90ea5cc98e3bd3219d2f7f6c981fbac61cabc32080e35a397b75854",
+    "sourcePath": "docs/知识检索校准/records/plot/README.md",
+    "subtype": "other",
+    "summary": "情节抽查记录",
+    "summarySource": "title-only",
+    "title": "情节抽查记录",
+    "type": "document"
+  },
+  {
+    "id": "docs/知识检索校准/records/rag/README.md",
+    "indexVersion": 1,
+    "sourceHash": "9d6101b96563c1d2600bacc631b894d1657513f3c904f5ba646cf7756198079d",
+    "sourcePath": "docs/知识检索校准/records/rag/README.md",
+    "subtype": "other",
+    "summary": "records/rag",
+    "summarySource": "title-only",
+    "title": "records/rag",
+    "type": "document"
+  },
+  {
+    "id": "docs/知识检索校准/records/style-rag/README.md",
+    "indexVersion": 1,
+    "sourceHash": "aa793c39692de1d302707ebebaee644e4cb540ebde4d825c930143d39e953f83",
+    "sourcePath": "docs/知识检索校准/records/style-rag/README.md",
+    "subtype": "other",
+    "summary": "records/style-rag",
+    "summarySource": "title-only",
+    "title": "records/style-rag",
     "type": "document"
   },
   {

@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://liluo.local/schemas/workflows/style-query.schema.json",
+  "title": "Style Query（无剧情事实）",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "queryId",
+    "mode",
+    "primarySceneFunction",
+    "themeDomain"
+  ],
+  "properties": {
+    "schemaVersion": { "type": "integer", "const": 1 },
+    "queryId": { "type": "string", "pattern": "^sq-.+" },
+    "requestContractId": { "type": ["string", "null"] },
+    "targetModel": { "type": ["string", "null"] },
+    "mode": {
+      "type": "string",
+      "enum": ["explicit", "metadata", "hybrid-explicit"]
+    },
+    "primarySceneFunction": { "type": "string" },
+    "sceneFunctions": { "type": "array", "items": { "type": "string" } },
+    "worldType": { "type": "string" },
+    "themeDomain": {
+      "type": "string",
+      "enum": ["restraint-themed", "general-prose", "mixed", "unknown"]
+    },
+    "restraintFunctions": { "type": "array", "items": { "type": "string" } },
+    "pov": { "type": "string" },
+    "narrativeDistance": { "type": "string" },
+    "tensionLevel": { "type": "string" },
+    "actionDensity": { "type": "string" },
+    "dialogueDensity": { "type": "string" },
+    "psychologicalDensity": { "type": "string" },
+    "descriptionDensity": { "type": "string" },
+    "informationRelease": { "type": "string" },
+    "sentenceRhythm": { "type": "string" },
+    "emotionExpression": { "type": "string" },
+    "sensoryPriority": { "type": "array", "items": { "type": "string" } },
+    "languageIntensity": { "type": "string" },
+    "endingMode": { "type": "string" },
+    "explicitReferenceIds": { "type": "array", "items": { "type": "string" } },
+    "excludedAssetIds": { "type": "array", "items": { "type": "string" } },
+    "hardRules": { "type": "array", "items": { "type": "string" }, "maxItems": 8 },
+    "modelKnownFailureModes": { "type": "array", "items": { "type": "string" } }
+  }
+}

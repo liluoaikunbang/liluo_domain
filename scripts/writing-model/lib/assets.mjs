@@ -38,7 +38,9 @@ export async function validateAssetRegistry(registry = null) {
   const validate = ajv.compile(schema)
   const ok = validate(data)
   const errors = ok ? [] : (validate.errors ?? []).map((item) => `${item.instancePath || '/'} ${item.message}`)
-  if (data.policy?.styleRagStatus !== 'deferred') errors.push('StyleRAG 必须保持 deferred')
+  if (!['metadata-rag', 'explicit-only'].includes(data.policy?.styleRagStatus)) {
+    errors.push('StyleRAG 状态必须是 metadata-rag 或 explicit-only（embedding/向量检索仍属 V2+ 暂缓）')
+  }
   if (data.policy?.allowExistingCanonMigration !== false) errors.push('不得启用既有正文迁移')
   if (data.policy?.autoApproveByModel !== false) errors.push('不得允许模型自动批准')
   if (data.counts.goldenApproved > 0 && data.assets.every((item) => item.assetType !== 'golden-approved')) {

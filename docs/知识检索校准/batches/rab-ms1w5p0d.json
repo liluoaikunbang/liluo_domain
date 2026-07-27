@@ -1,0 +1,221 @@
+{
+  "schemaVersion": 1,
+  "batchId": "rab-ms1w5p0d",
+  "channel": "style-rag",
+  "mode": "low-confidence",
+  "exportedAt": "2026-07-26T14:26:35.101Z",
+  "count": 5,
+  "remainingPool": 205,
+  "items": [
+    {
+      "index": 1,
+      "assetId": "ea-306c49a0e222",
+      "title": "密室逃脱",
+      "author": "unknown",
+      "themeDomain": "restraint-themed",
+      "path": "external-knowledge/sources/fiction-bondage/不知道作者/密室逃脱.md",
+      "lowConfidence": true,
+      "hitCount": 0,
+      "currentResult": {
+        "themeDomain": "restraint-themed",
+        "review": {
+          "status": "unreviewed",
+          "overallWeight": null,
+          "writingQuality": null,
+          "liluoSuitability": null,
+          "restraintWritingQuality": null,
+          "dialogueQuality": null,
+          "actionSpatialQuality": null,
+          "atmosphereQuality": null,
+          "notes": "",
+          "reviewedAt": null
+        },
+        "productionUse": {
+          "styleRecommendation": "unreviewed",
+          "representation": "source-only",
+          "contentLeakageRisk": "unknown",
+          "mappedAssetId": null
+        },
+        "title": {
+          "value": "密室逃脱",
+          "confidence": "high",
+          "extractedFrom": "body"
+        },
+        "author": {
+          "authorId": "author-b23a6a8439",
+          "displayName": "unknown",
+          "confidence": "unknown",
+          "extractedFrom": "folder"
+        }
+      }
+    },
+    {
+      "index": 2,
+      "assetId": "ea-39ad6163a88d",
+      "title": "魔王切茜娅的紧缚旅途",
+      "author": "unknown",
+      "themeDomain": "restraint-themed",
+      "path": "external-knowledge/sources/fiction-bondage/不知道作者/魔王切茜娅的紧缚旅途.md",
+      "lowConfidence": true,
+      "hitCount": 0,
+      "currentResult": {
+        "themeDomain": "restraint-themed",
+        "review": {
+          "status": "unreviewed",
+          "overallWeight": null,
+          "writingQuality": null,
+          "liluoSuitability": null,
+          "restraintWritingQuality": null,
+          "dialogueQuality": null,
+          "actionSpatialQuality": null,
+          "atmosphereQuality": null,
+          "notes": "",
+          "reviewedAt": null
+        },
+        "productionUse": {
+          "styleRecommendation": "unreviewed",
+          "representation": "source-only",
+          "contentLeakageRisk": "unknown",
+          "mappedAssetId": null
+        },
+        "title": {
+          "value": "魔王切茜娅的紧缚旅途",
+          "confidence": "medium",
+          "extractedFrom": "filename"
+        },
+        "author": {
+          "authorId": "author-b23a6a8439",
+          "displayName": "unknown",
+          "confidence": "unknown",
+          "extractedFrom": "folder"
+        }
+      }
+    },
+    {
+      "index": 3,
+      "assetId": "ea-6e6c2ab86e26",
+      "title": "原创同人小说：穿越从海贼王开始",
+      "author": "unknown",
+      "themeDomain": "restraint-themed",
+      "path": "external-knowledge/sources/fiction-bondage/不知道作者/原创同人小说：穿越从海贼王开始.md",
+      "lowConfidence": true,
+      "hitCount": 0,
+      "currentResult": {
+        "themeDomain": "restraint-themed",
+        "review": {
+          "status": "unreviewed",
+          "overallWeight": null,
+          "writingQuality": null,
+          "liluoSuitability": null,
+          "restraintWritingQuality": null,
+          "dialogueQuality": null,
+          "actionSpatialQuality": null,
+          "atmosphereQuality": null,
+          "notes": "",
+          "reviewedAt": null
+        },
+        "productionUse": {
+          "styleRecommendation": "unreviewed",
+          "representation": "source-only",
+          "contentLeakageRisk": "unknown",
+          "mappedAssetId": null
+        },
+        "title": {
+          "value": "原创同人小说：穿越从海贼王开始",
+          "confidence": "high",
+          "extractedFrom": "body"
+        },
+        "author": {
+          "authorId": "author-b23a6a8439",
+          "displayName": "unknown",
+          "confidence": "unknown",
+          "extractedFrom": "folder"
+        }
+      }
+    },
+    {
+      "index": 4,
+      "assetId": "ea-734252dcc275",
+      "title": "沙曼紧缚",
+      "author": "unknown",
+      "themeDomain": "restraint-themed",
+      "path": "external-knowledge/sources/fiction-bondage/不知道作者/沙曼紧缚.md",
+      "lowConfidence": true,
+      "hitCount": 0,
+      "currentResult": {
+        "themeDomain": "restraint-themed",
+        "review": {
+          "status": "unreviewed",
+          "overallWeight": null,
+          "writingQuality": null,
+          "liluoSuitability": null,
+          "restraintWritingQuality": null,
+          "dialogueQuality": null,
+          "actionSpatialQuality": null,
+          "atmosphereQuality": null,
+          "notes": "",
+          "reviewedAt": null
+        },
+        "productionUse": {
+          "styleRecommendation": "unreviewed",
+          "representation": "source-only",
+          "contentLeakageRisk": "unknown",
+          "mappedAssetId": null
+        },
+        "title": {
+          "value": "沙曼紧缚",
+          "confidence": "high",
+          "extractedFrom": "body"
+        },
+        "author": {
+          "authorId": "author-b23a6a8439",
+          "displayName": "unknown",
+          "confidence": "unknown",
+          "extractedFrom": "folder"
+        }
+      }
+    },
+    {
+      "index": 5,
+      "assetId": "ea-b4786781b379",
+      "title": "崩坏3rd 脑洞同人文】—两人的结局",
+      "author": "unknown",
+      "themeDomain": "restraint-themed",
+      "path": "external-knowledge/sources/fiction-bondage/不知道作者/【崩坏3rd 脑洞同人文】—两人的结局.md",
+      "lowConfidence": true,
+      "hitCount": 0,
+      "currentResult": {
+        "themeDomain": "restraint-themed",
+        "review": {
+          "status": "unreviewed",
+          "overallWeight": null,
+          "writingQuality": null,
+          "liluoSuitability": null,
+          "restraintWritingQuality": null,
+          "dialogueQuality": null,
+          "actionSpatialQuality": null,
+          "atmosphereQuality": null,
+          "notes": "",
+          "reviewedAt": null
+        },
+        "productionUse": {
+          "styleRecommendation": "unreviewed",
+          "representation": "source-only",
+          "contentLeakageRisk": "unknown",
+          "mappedAssetId": null
+        },
+        "title": {
+          "value": "崩坏3rd 脑洞同人文】—两人的结局",
+          "confidence": "high",
+          "extractedFrom": "body"
+        },
+        "author": {
+          "authorId": "author-b23a6a8439",
+          "displayName": "unknown",
+          "confidence": "unknown",
+          "extractedFrom": "folder"
+        }
+      }
+    }
+  ]
+}

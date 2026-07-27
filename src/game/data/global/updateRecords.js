@@ -1,9 +1,27 @@
 export const updateRecords = Object.freeze([
     {
+        "id":  "169",
+        "date":  "2026-07-27",
+        "title":  "大纲关联图谱视图",
+        "summary":  "大纲关联图谱：多对多投影层；Style-RAG 主视觉改为写法名词网，文章名为证据挂点；普通 RAG 补抽象卡内容且定位不变。"
+    },
+    {
+        "id":  "168",
+        "date":  "2026-07-26",
+        "title":  "知识检索抽查校准闭环",
+        "summary":  "知识检索抽查覆盖普通 RAG、Style-RAG、细节概念与情节；普通 RAG 默认只抽知识卡；卡文与协商须走自然表达；人工评价先协商改向再落盘；修正时共查共改；按阈值升级 Skill 并仅重建受影响范围。"
+    },
+    {
+        "id":  "167",
+        "date":  "2026-07-26",
+        "title":  "Style-RAG元数据检索与外部文章评权",
+        "summary":  "V0 显式引用 + V1 元数据 Style Pack；外部紧缚/知乎清单与用户评权；V2–V4 向量/训练仍暂缓。"
+    },
+    {
         "id":  "166",
         "date":  "2026-07-26",
         "title":  "开放权重双模型写作管线与文风资产基础设施",
-        "summary":  "固定 DSR1-14B/Qwen3-32B，OpenAI-compatible 管线、写作合同、文风资产与缺口登记；StyleRAG 暂缓；Running 后约 5 分钟再双模型 health。"
+        "summary":  "固定 DSR1-14B/Qwen3-32B 管线与文风资产；StyleRAG 暂缓；Running 后约 5 分钟再 health；登记成人向 pending 候选。"
     },
     {
         "id":  "165",

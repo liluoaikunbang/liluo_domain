@@ -1,0 +1,3 @@
+interface:
+  display_name: "Style-RAG 文风检索"
+  short_description: "元数据 Style 查询、文风包组装、外部文章评权与写作表"

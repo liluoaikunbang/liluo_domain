@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "sheetId": "liluo-writing-sheet",
+  "status": "awaiting-assets",
+  "approvedByUser": false,
+  "evidenceAssetIds": [],
+  "evidencePriority": [
+    "golden-approved",
+    "calibration-pair",
+    "personal-history",
+    "external-article-high-score",
+    "external-style-card"
+  ],
+  "principles": [],
+  "preferredPatterns": [],
+  "avoidedPatterns": [],
+  "notes": "当前无黄金正文、个人旧作与修改对照。外部文章可作为补充证据，但不得单独定义璃落文风。用户批准后才更新 current。",
+  "updatedAt": "2026-07-26T00:00:00.000Z"
+}

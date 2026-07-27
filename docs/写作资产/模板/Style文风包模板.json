@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "packId": "sp-template-placeholder",
+  "queryId": "sq-template-placeholder",
+  "requestContractId": null,
+  "status": "awaiting-assets",
+  "mode": "metadata",
+  "sections": {
+    "writingSheet": null,
+    "hardRules": [],
+    "positiveExamples": [],
+    "externalReferences": [],
+    "calibrationPairs": [],
+    "modelFailureModes": [],
+    "strictBoundaries": []
+  },
+  "selectedAssets": [],
+  "explanations": [],
+  "characterBudget": {
+    "used": 0,
+    "limit": 1800
+  },
+  "renderedMarkdown": "",
+  "createdAt": "2026-07-26T00:00:00.000Z"
+}

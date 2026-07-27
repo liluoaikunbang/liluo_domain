@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "categories": {
+    "rag": [
+      "fact-error",
+      "source-error",
+      "chunking-unreasonable",
+      "recall-miss",
+      "content-mixup",
+      "wrong-summary"
+    ],
+    "style-rag": [
+      "style-tag-error",
+      "theme-domain-misclassified",
+      "article-weight-unreasonable",
+      "author-info-error",
+      "example-not-applicable",
+      "plot-content-leakage",
+      "restraint-summary-distortion"
+    ],
+    "concept": [
+      "naming-inconsistency",
+      "alias-conflict",
+      "wrong-parent",
+      "missing-rag-link",
+      "orphan-concept",
+      "visibility-misconfigured",
+      "wrong-summary"
+    ],
+    "plot": [
+      "wrong-tag",
+      "bondage-tag-mismatch",
+      "wrong-summary",
+      "character-mismatch",
+      "placement-unclear",
+      "missing-style-hint",
+      "duplicate-plot",
+      "unused-orphan"
+    ],
+    "shared": [
+      "model-unauthorized-completion",
+      "no-source-evidence",
+      "wrong-inference",
+      "duplicate-entry",
+      "stale-index",
+      "canon-contamination",
+      "copyright-boundary",
+      "index-structure",
+      "continuity-risk"
+    ]
+  },
+  "labelsZh": {
+    "fact-error": "事实错误",
+    "source-error": "来源错误",
+    "chunking-unreasonable": "分块不合理",
+    "recall-miss": "召回遗漏",
+    "content-mixup": "内容混淆",
+    "wrong-summary": "错误摘要",
+    "style-tag-error": "文风标签错误",
+    "theme-domain-misclassified": "紧缚/非紧缚分类错误",
+    "article-weight-unreasonable": "文章权重不合理",
+    "author-info-error": "作者信息错误",
+    "example-not-applicable": "范例不适用",
+    "plot-content-leakage": "剧情内容污染",
+    "restraint-summary-distortion": "紧缚内容概括失真",
+    "naming-inconsistency": "命名不一致",
+    "alias-conflict": "别名冲突",
+    "wrong-parent": "父概念错误",
+    "missing-rag-link": "缺 RAG 挂接",
+    "orphan-concept": "孤立概念",
+    "visibility-misconfigured": "可见性配置不当",
+    "wrong-tag": "普通 Tag 错误",
+    "bondage-tag-mismatch": "紧缚 Tag 不匹配",
+    "character-mismatch": "人物关联错误",
+    "placement-unclear": "安置不明",
+    "missing-style-hint": "缺少 Style 提示",
+    "duplicate-plot": "重复情节",
+    "unused-orphan": "未使用孤立情节",
+    "model-unauthorized-completion": "模型擅自补全",
+    "no-source-evidence": "原文没有证据",
+    "wrong-inference": "错误推断",
+    "duplicate-entry": "重复条目",
+    "stale-index": "过时索引",
+    "canon-contamination": "正史污染风险",
+    "copyright-boundary": "版权边界问题",
+    "index-structure": "索引结构问题",
+    "continuity-risk": "连续性风险"
+  }
+}

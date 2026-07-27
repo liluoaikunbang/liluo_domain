@@ -12,7 +12,11 @@
       "type": "object",
       "additionalProperties": false,
       "properties": {
-        "styleRagStatus": { "type": "string", "const": "deferred" },
+        "styleRagStatus": {
+          "type": "string",
+          "enum": ["explicit-only", "metadata-rag"],
+          "description": "V0/V1 已启用；embedding/learned-reranker/model-training 仍属 deferredModes，不得写入此字段"
+        },
         "allowExistingCanonMigration": { "type": "boolean", "const": false },
         "autoPromotePersonalHistoryToGolden": { "type": "boolean", "const": false },
         "autoApproveByModel": { "type": "boolean", "const": false },
@@ -28,7 +32,9 @@
         "approved": { "type": "integer", "minimum": 0 },
         "goldenApproved": { "type": "integer", "minimum": 0 },
         "personalHistory": { "type": "integer", "minimum": 0 },
-        "calibrationPairs": { "type": "integer", "minimum": 0 }
+        "calibrationPairs": { "type": "integer", "minimum": 0 },
+        "externalArticles": { "type": "integer", "minimum": 0 },
+        "externalStyleCards": { "type": "integer", "minimum": 0 }
       }
     },
     "assets": {

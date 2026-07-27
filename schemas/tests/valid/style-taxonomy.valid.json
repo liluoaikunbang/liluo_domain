@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "taxonomyId": "liluo-style-taxonomy-v1",
+  "sceneFunctions": [
+    "daily-interaction",
+    "exploration-investigation",
+    "tension-action",
+    "restricted-action-escape",
+    "dialogue-conflict",
+    "suspense-supernatural",
+    "world-atmosphere",
+    "discovery-reveal",
+    "aftermath-recovery",
+    "chapter-transition"
+  ],
+  "worldTypes": [
+    "urban",
+    "apocalypse",
+    "ancient",
+    "western-fantasy",
+    "science-fiction",
+    "cross-world",
+    "generic"
+  ],
+  "themeDomains": [
+    "restraint-themed",
+    "general-prose",
+    "mixed",
+    "unknown"
+  ],
+  "restraintFunctions": [
+    "none",
+    "background-element",
+    "restricted-movement",
+    "capture-confinement",
+    "escape-attempt",
+    "performance-or-challenge",
+    "daily-social-system",
+    "psychological-tension",
+    "technical-spatial-description",
+    "mixed"
+  ],
+  "pov": [
+    "first-person",
+    "second-person",
+    "third-person-limited",
+    "third-person-omniscient",
+    "mixed",
+    "unknown"
+  ],
+  "narrativeDistance": [
+    "intimate",
+    "close",
+    "medium",
+    "distant",
+    "unknown"
+  ],
+  "densityLevels": [
+    "none",
+    "low",
+    "medium",
+    "high"
+  ],
+  "informationRelease": [
+    "front-loaded",
+    "progressive",
+    "delayed",
+    "fragmented",
+    "unknown"
+  ],
+  "sentenceRhythm": [
+    "short",
+    "medium",
+    "long",
+    "short-medium-alternating",
+    "varied",
+    "unknown"
+  ],
+  "emotionExpression": [
+    "internal-monologue",
+    "observable-reaction",
+    "subtext",
+    "direct-statement",
+    "mixed",
+    "unknown"
+  ],
+  "sensoryPriority": [
+    "visual",
+    "auditory",
+    "tactile",
+    "olfactory",
+    "spatial",
+    "bodily",
+    "temperature",
+    "kinesthetic"
+  ],
+  "endingMode": [
+    "closed",
+    "open",
+    "cliffhanger",
+    "aftermath",
+    "unknown"
+  ],
+  "languageIntensity": [
+    "restrained",
+    "moderate",
+    "intense",
+    "unknown"
+  ],
+  "productionRepresentations": [
+    "abstract-style-card",
+    "style-safe-excerpt",
+    "raw-excerpt",
+    "source-only"
+  ],
+  "reviewStatuses": [
+    "unreviewed",
+    "deferred",
+    "reviewed",
+    "rejected"
+  ],
+  "notes": {
+    "themeDomain": "适用域，不是质量等级。",
+    "restraintFunction": "描写写作功能，不代表色情程度。"
+  }
+}

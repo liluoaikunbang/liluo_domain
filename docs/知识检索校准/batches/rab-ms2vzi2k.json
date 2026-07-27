@@ -1,0 +1,207 @@
+{
+  "schemaVersion": 1,
+  "batchId": "rab-ms2vzi2k",
+  "channel": "rag",
+  "channels": [
+    "rag"
+  ],
+  "mode": "low-confidence",
+  "exportedAt": "2026-07-27T07:09:32.348Z",
+  "count": 8,
+  "remainingPool": 257,
+  "items": [
+    {
+      "index": 1,
+      "channel": "rag",
+      "assetId": "fb-src-000001",
+      "title": "（完结）彼岸花开",
+      "author": "unknown",
+      "themeDomain": "restraint-themed",
+      "path": "external-knowledge/sources/fiction-bondage/不知道作者/（完结）彼岸花开.md",
+      "lowConfidence": true,
+      "hitCount": 0,
+      "currentResult": {
+        "assetKind": "source",
+        "sourceId": "fb-src-000001",
+        "tags": [
+          "环境:都市",
+          "叙事:仪式",
+          "叙事:调查",
+          "氛围:悬疑",
+          "状态:受限"
+        ],
+        "title": "（完结）彼岸花开",
+        "author": null,
+        "knowledgeScope": "external-fiction-reference",
+        "canonical": false
+      }
+    },
+    {
+      "index": 2,
+      "channel": "rag",
+      "assetId": "fb-src-000003",
+      "title": "0-临时备忘录-1",
+      "author": "unknown",
+      "themeDomain": "restraint-themed",
+      "path": "external-knowledge/sources/fiction-bondage/不知道作者/0-临时备忘录-1.md",
+      "lowConfidence": true,
+      "hitCount": 0,
+      "currentResult": {
+        "assetKind": "source",
+        "sourceId": "fb-src-000003",
+        "tags": [
+          "环境:地牢",
+          "叙事:逃脱",
+          "状态:受限"
+        ],
+        "title": "0-临时备忘录-1",
+        "author": null,
+        "knowledgeScope": "external-fiction-reference",
+        "canonical": false
+      }
+    },
+    {
+      "index": 3,
+      "channel": "rag",
+      "assetId": "fb-src-000013",
+      "title": "古堡",
+      "author": "unknown",
+      "themeDomain": "restraint-themed",
+      "path": "external-knowledge/sources/fiction-bondage/不知道作者/古堡.md",
+      "lowConfidence": true,
+      "hitCount": 0,
+      "currentResult": {
+        "assetKind": "source",
+        "sourceId": "fb-src-000013",
+        "tags": [
+          "环境:古堡",
+          "环境:地牢",
+          "叙事:逃脱",
+          "氛围:悬疑",
+          "状态:受限"
+        ],
+        "title": "古堡",
+        "author": null,
+        "knowledgeScope": "external-fiction-reference",
+        "canonical": false
+      }
+    },
+    {
+      "index": 4,
+      "channel": "rag",
+      "assetId": "fb-src-000016",
+      "title": "克隆时代1-39",
+      "author": "unknown",
+      "themeDomain": "restraint-themed",
+      "path": "external-knowledge/sources/fiction-bondage/不知道作者/克隆时代1-39.md",
+      "lowConfidence": true,
+      "hitCount": 0,
+      "currentResult": {
+        "assetKind": "source",
+        "sourceId": "fb-src-000016",
+        "tags": [
+          "环境:校园",
+          "世界:科幻"
+        ],
+        "title": "克隆时代1-39",
+        "author": null,
+        "knowledgeScope": "external-fiction-reference",
+        "canonical": false
+      }
+    },
+    {
+      "index": 5,
+      "channel": "rag",
+      "assetId": "fb-src-000018",
+      "title": "密室逃脱",
+      "author": "unknown",
+      "themeDomain": "restraint-themed",
+      "path": "external-knowledge/sources/fiction-bondage/不知道作者/密室逃脱.md",
+      "lowConfidence": true,
+      "hitCount": 0,
+      "currentResult": {
+        "assetKind": "source",
+        "sourceId": "fb-src-000018",
+        "tags": [
+          "叙事:逃脱",
+          "氛围:悬疑",
+          "世界:科幻",
+          "状态:受限"
+        ],
+        "title": "密室逃脱",
+        "author": null,
+        "knowledgeScope": "external-fiction-reference",
+        "canonical": false
+      }
+    },
+    {
+      "index": 6,
+      "channel": "rag",
+      "assetId": "fb-src-000037",
+      "title": "转生魅魔的异世界之旅.wps",
+      "author": "unknown",
+      "themeDomain": "restraint-themed",
+      "path": "external-knowledge/sources/fiction-bondage/不知道作者/转生魅魔的异世界之旅.wps.md",
+      "lowConfidence": true,
+      "hitCount": 0,
+      "currentResult": {
+        "assetKind": "source",
+        "sourceId": "fb-src-000037",
+        "tags": [
+          "世界:奇幻",
+          "状态:受限"
+        ],
+        "title": "转生魅魔的异世界之旅.wps",
+        "author": null,
+        "knowledgeScope": "external-fiction-reference",
+        "canonical": false
+      }
+    },
+    {
+      "index": 7,
+      "channel": "rag",
+      "assetId": "fb-src-000040",
+      "title": "舞蹈院的恩怨-kk@男君",
+      "author": "unknown",
+      "themeDomain": "restraint-themed",
+      "path": "external-knowledge/sources/fiction-bondage/堕落方舟/舞蹈院的恩怨-kk@男君.md",
+      "lowConfidence": true,
+      "hitCount": 0,
+      "currentResult": {
+        "assetKind": "source",
+        "sourceId": "fb-src-000040",
+        "tags": [
+          "环境:校园",
+          "状态:受限"
+        ],
+        "title": "舞蹈院的恩怨-kk@男君",
+        "author": null,
+        "knowledgeScope": "external-fiction-reference",
+        "canonical": false
+      }
+    },
+    {
+      "index": 8,
+      "channel": "rag",
+      "assetId": "fb-src-000046",
+      "title": "按摩女的捆绑-kenwken（如梦）",
+      "author": "unknown",
+      "themeDomain": "restraint-themed",
+      "path": "external-knowledge/sources/fiction-bondage/其他未分类/按摩女的捆绑-kenwken（如梦）.md",
+      "lowConfidence": true,
+      "hitCount": 0,
+      "currentResult": {
+        "assetKind": "source",
+        "sourceId": "fb-src-000046",
+        "tags": [
+          "叙事:逃脱",
+          "状态:受限"
+        ],
+        "title": "按摩女的捆绑-kenwken（如梦）",
+        "author": null,
+        "knowledgeScope": "external-fiction-reference",
+        "canonical": false
+      }
+    }
+  ]
+}

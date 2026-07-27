@@ -24,7 +24,8 @@
       "外部模型直接写 canon",
       "未配置却伪装 live 可用",
       "个人旧作自动升黄金样本",
-      "实现 StyleRAG",
+      "未评审自动 StyleRAG 进生产",
+      "安装 embedding / 向量库",
       "单次修改自动升级 Skill"
     ],
     "requiredValidationProfiles": [],

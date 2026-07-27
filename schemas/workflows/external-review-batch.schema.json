@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://liluo.local/schemas/workflows/external-review-batch.schema.json",
+  "title": "外部文章评审批次",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "batchId", "exportedAt", "articles"],
+  "properties": {
+    "schemaVersion": { "type": "integer", "const": 1 },
+    "batchId": { "type": "string" },
+    "exportedAt": { "type": "string" },
+    "filters": { "type": "object", "additionalProperties": true },
+    "articles": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["articleId"],
+        "properties": {
+          "articleId": { "type": "string" },
+          "title": { "type": "string" },
+          "author": { "type": "string" },
+          "themeDomain": { "type": "string" },
+          "path": { "type": "string" },
+          "overallWeight": { "type": ["integer", "null"], "minimum": 0, "maximum": 5 },
+          "writingQuality": { "type": ["integer", "null"], "minimum": 0, "maximum": 5 },
+          "liluoSuitability": { "type": ["integer", "null"], "minimum": 0, "maximum": 5 },
+          "restraintWritingQuality": { "type": ["integer", "null"], "minimum": 0, "maximum": 5 },
+          "dialogueQuality": { "type": ["integer", "null"], "minimum": 0, "maximum": 5 },
+          "actionSpatialQuality": { "type": ["integer", "null"], "minimum": 0, "maximum": 5 },
+          "atmosphereQuality": { "type": ["integer", "null"], "minimum": 0, "maximum": 5 },
+          "authorSupplement": { "type": ["string", "null"] },
+          "notes": { "type": "string" },
+          "deferred": { "type": "boolean" }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "auditId": "ra-763a31b6bb",
+  "channel": "concept",
+  "batchId": null,
+  "sourceAssetId": "restraint.pose.houshou-guanyin",
+  "sourcePath": "src/game/data/outline_relation_graph/conceptRegistry.js",
+  "sourceTitle": "后手观音",
+  "sourceAuthor": "seed",
+  "themeDomain": "restraint-themed",
+  "currentResult": {
+    "conceptId": "restraint.pose.houshou-guanyin",
+    "canonicalName": "后手观音",
+    "aliases": [
+      "后手观音式",
+      "观音反手"
+    ],
+    "parentConcepts": [
+      "restraint.arms.behind-back",
+      "restraint.upper-body.restricted"
+    ],
+    "visibility": {
+      "primaryTag": false,
+      "detailPanel": true,
+      "graph": true,
+      "searchable": true,
+      "ragRetrievable": true
+    },
+    "summary": "双手于身后特定相对位置形成的可识别紧缚姿态细节。"
+  },
+  "reportedIssue": "概念有别名但图谱未挂到对应 RAG 卡",
+  "correctResult": "应 explains 到 fb-term-houshou-guanyin",
+  "issueCategories": [
+    "missing-rag-link"
+  ],
+  "isSingleCase": true,
+  "mayBecomeGeneralRule": false,
+  "relatedSkills": [
+    "outline-relation-graph",
+    "liluo-external-fiction-knowledge"
+  ],
+  "fixStatus": "recorded",
+  "needsIndexRebuild": false,
+  "rebuildScope": {
+    "sourcePaths": [
+      "src/game/data/outline_relation_graph/conceptRegistry.js"
+    ],
+    "assetIds": [
+      "restraint.pose.houshou-guanyin"
+    ],
+    "fields": []
+  },
+  "skillUpgradeDecision": {
+    "suggested": false,
+    "reason": "标记为个例或未声明可成通用规则；单次错误不升级 Skill",
+    "patternGroupId": null,
+    "userExplicitRuleRequest": false,
+    "approvedByUser": false
+  },
+  "hitCountHint": null,
+  "confidenceNotes": "",
+  "notes": "",
+  "createdAt": "2026-07-27T06:22:55.780Z",
+  "updatedAt": "2026-07-27T06:22:55.782Z",
+  "reviewedAt": "2026-07-27T06:22:55.780Z"
+}

@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "updatedAt": "2026-07-26T00:00:00.000Z",
   "policy": {
-    "styleRagStatus": "enabled",
+    "styleRagStatus": "embedding-enabled",
     "allowExistingCanonMigration": false,
     "autoPromotePersonalHistoryToGolden": false,
     "autoApproveByModel": false,

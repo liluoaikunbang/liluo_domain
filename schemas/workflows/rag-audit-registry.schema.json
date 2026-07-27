@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://liluo.local/schemas/workflows/rag-audit-registry.schema.json",
+  "title": "RAG 抽查注册表",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "counts", "records"],
+  "properties": {
+    "schemaVersion": { "type": "integer", "const": 1 },
+    "updatedAt": { "type": "string" },
+    "counts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["total", "open", "rag", "styleRag", "concept", "plot", "needsRebuild", "skillUpgradeSuggested"],
+      "properties": {
+        "total": { "type": "integer", "minimum": 0 },
+        "open": { "type": "integer", "minimum": 0 },
+        "rag": { "type": "integer", "minimum": 0 },
+        "styleRag": { "type": "integer", "minimum": 0 },
+        "concept": { "type": "integer", "minimum": 0 },
+        "plot": { "type": "integer", "minimum": 0 },
+        "needsRebuild": { "type": "integer", "minimum": 0 },
+        "skillUpgradeSuggested": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "records": {
+      "type": "array",
+      "items": { "type": "object" }
+    },
+    "patternGroups": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["patternGroupId", "category", "auditIds", "independentCount"],
+        "properties": {
+          "patternGroupId": { "type": "string" },
+          "category": { "type": "string" },
+          "channel": { "type": "string" },
+          "auditIds": { "type": "array", "items": { "type": "string" } },
+          "independentCount": { "type": "integer", "minimum": 0 },
+          "skillUpgradeSuggested": { "type": "boolean" },
+          "abstractRuleDraft": { "type": "string" }
+        }
+      }
+    }
+  }
+}

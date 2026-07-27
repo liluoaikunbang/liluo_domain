@@ -132,10 +132,25 @@
       "globs": [
         "docs/写作资产/registry.json",
         "docs/写作资产/模板/**",
-        "docs/写作资产/README.md"
+        "docs/写作资产/README.md",
+        "docs/写作资产/璃落写作表/**",
+        "docs/写作资产/外部风格研究/*.json",
+        "docs/写作资产/外部风格研究/README.md"
       ],
       "layer": "L2",
       "role": "writing-asset-authority",
+      "loadMode": "task-on-demand",
+      "editMode": "governed"
+    },
+    {
+      "id": "style-rag-policy",
+      "globs": [
+        "project-navigation/style-rag-policy.json",
+        "project-navigation/style-taxonomy.json",
+        "project-navigation/external-style-sources.json"
+      ],
+      "layer": "L2",
+      "role": "style-rag-policy",
       "loadMode": "task-on-demand",
       "editMode": "governed"
     },

@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "batchId": "rab-ms2ubk72",
+  "channel": "concept",
+  "channels": [
+    "concept"
+  ],
+  "mode": "low-confidence",
+  "exportedAt": "2026-07-27T06:22:55.742Z",
+  "count": 3,
+  "remainingPool": 9,
+  "items": [
+    {
+      "index": 1,
+      "channel": "concept",
+      "assetId": "restraint.detail.wrist-relative",
+      "title": "手腕相对位置",
+      "author": "seed",
+      "themeDomain": "restraint-themed",
+      "path": "src/game/data/outline_relation_graph/conceptRegistry.js",
+      "lowConfidence": true,
+      "hitCount": 0,
+      "currentResult": {
+        "assetKind": "concept",
+        "conceptId": "restraint.detail.wrist-relative",
+        "canonicalName": "手腕相对位置",
+        "aliases": [
+          "手腕位置"
+        ],
+        "parentConcepts": [
+          "restraint.arms.behind-back"
+        ],
+        "visibility": {
+          "primaryTag": false,
+          "detailPanel": true,
+          "graph": true,
+          "searchable": true,
+          "ragRetrievable": true
+        },
+        "summary": "描述双腕叠压、并拢或交叉等相对关系。"
+      }
+    },
+    {
+      "index": 2,
+      "channel": "concept",
+      "assetId": "restraint.pose.houshou-guanyin",
+      "title": "后手观音",
+      "author": "seed",
+      "themeDomain": "restraint-themed",
+      "path": "src/game/data/outline_relation_graph/conceptRegistry.js",
+      "lowConfidence": true,
+      "hitCount": 0,
+      "currentResult": {
+        "assetKind": "concept",
+        "conceptId": "restraint.pose.houshou-guanyin",
+        "canonicalName": "后手观音",
+        "aliases": [
+          "后手观音式",
+          "观音反手"
+        ],
+        "parentConcepts": [
+          "restraint.arms.behind-back",
+          "restraint.upper-body.restricted"
+        ],
+        "visibility": {
+          "primaryTag": false,
+          "detailPanel": true,
+          "graph": true,
+          "searchable": true,
+          "ragRetrievable": true
+        },
+        "summary": "双手于身后特定相对位置形成的可识别紧缚姿态细节。"
+      }
+    },
+    {
+      "index": 3,
+      "channel": "concept",
+      "assetId": "restraint.detail.state-change",
+      "title": "状态变化",
+      "author": "seed",
+      "themeDomain": "restraint-themed",
+      "path": "src/game/data/outline_relation_graph/conceptRegistry.js",
+      "lowConfidence": true,
+      "hitCount": 0,
+      "currentResult": {
+        "assetKind": "concept",
+        "conceptId": "restraint.detail.state-change",
+        "canonicalName": "状态变化",
+        "aliases": [
+          "受限状态变化"
+        ],
+        "parentConcepts": [
+          "restraint.escape.attempt"
+        ],
+        "visibility": {
+          "primaryTag": false,
+          "detailPanel": true,
+          "graph": true,
+          "searchable": true,
+          "ragRetrievable": true
+        },
+        "summary": "受限强度、姿态或退出条件随情节推进发生的变化。"
+      }
+    }
+  ]
+}

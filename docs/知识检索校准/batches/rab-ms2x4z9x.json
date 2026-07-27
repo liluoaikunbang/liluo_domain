@@ -1,0 +1,182 @@
+{
+  "schemaVersion": 1,
+  "batchId": "rab-ms2x4z9x",
+  "channel": "rag",
+  "channels": [
+    "rag"
+  ],
+  "mode": "random",
+  "exportedAt": "2026-07-27T07:41:47.541Z",
+  "count": 3,
+  "remainingPool": 13,
+  "ragSample": {
+    "includeCards": true,
+    "includeSources": false
+  },
+  "items": [
+    {
+      "index": 1,
+      "channel": "rag",
+      "assetId": "fb-plot-pattern-voluntary-entry-control-transfer",
+      "title": "主动进入—保障失效—控制权转移",
+      "author": "card",
+      "themeDomain": "unknown",
+      "path": "external-knowledge/cards/plot-pattern/fb-plot-pattern-voluntary-entry-control-transfer.json",
+      "lowConfidence": true,
+      "hitCount": 0,
+      "currentResult": {
+        "assetKind": "card",
+        "cardType": "plot-pattern",
+        "definition": "",
+        "distinctions": [],
+        "concepts": [
+          "角色主动或半主动进入受限情境。",
+          "原定保障出现缺口，角色先尝试按旧计划收场。",
+          "退出失败使控制权转移，事件从体验或试探升级为必须处理的困局。",
+          "角色通过观察、交涉、选择或外部关系寻找新的退出路径。"
+        ],
+        "prerequisites": [
+          "角色相信自己保留退出权，或相信协助者、约定与工具能够兜底。",
+          "进入情境符合角色当时的动机，而不是无缘由地配合情节。"
+        ],
+        "progression": [
+          "角色主动或半主动进入受限情境。",
+          "原定保障出现缺口，角色先尝试按旧计划收场。",
+          "退出失败使控制权转移，事件从体验或试探升级为必须处理的困局。",
+          "角色通过观察、交涉、选择或外部关系寻找新的退出路径。"
+        ],
+        "tags": [
+          "环境:地牢",
+          "环境:都市",
+          "世界:奇幻",
+          "状态:受限",
+          "叙事:仪式",
+          "叙事:调查",
+          "氛围:悬疑",
+          "叙事:逃脱"
+        ],
+        "reviewStatus": "candidate",
+        "sourceRefCount": 4,
+        "knowledgeScope": "external-fiction-reference",
+        "canonical": false,
+        "sameTypePeers": [
+          {
+            "assetId": "fb-plot-pattern-rescue-without-restored-agency",
+            "title": "获救但未恢复行动权",
+            "hasDefinition": false
+          }
+        ]
+      }
+    },
+    {
+      "index": 2,
+      "channel": "rag",
+      "assetId": "fb-expression-000001",
+      "title": "环境压力与角色感知的交替表达",
+      "author": "card",
+      "themeDomain": "unknown",
+      "path": "external-knowledge/cards/expression/fb-expression-000001.json",
+      "lowConfidence": true,
+      "hitCount": 0,
+      "currentResult": {
+        "assetKind": "card",
+        "cardType": "expression",
+        "definition": "表达卡：用环境细节与角色感知交替推进，让压迫感来自可观察的外部变化与内感受切换，而不是一次性说明处境。",
+        "distinctions": [
+          "重点是节奏交替，不是堆砌形容词。",
+          "感知服务于场景功能，不替代情节因果。"
+        ],
+        "concepts": [
+          "环境细节",
+          "角色感知",
+          "节奏递进"
+        ],
+        "prerequisites": [],
+        "progression": [],
+        "tags": [
+          "环境:都市",
+          "叙事:仪式",
+          "叙事:调查",
+          "氛围:悬疑",
+          "状态:受限",
+          "环境:地牢",
+          "叙事:逃脱"
+        ],
+        "reviewStatus": "candidate",
+        "sourceRefCount": 3,
+        "knowledgeScope": "external-fiction-reference",
+        "canonical": false,
+        "sameTypePeers": []
+      }
+    },
+    {
+      "index": 3,
+      "channel": "rag",
+      "assetId": "fb-term-wuhuada-bang",
+      "title": "五花大绑",
+      "author": "card",
+      "themeDomain": "unknown",
+      "path": "external-knowledge/cards/term/fb-term-wuhuada-bang.json",
+      "lowConfidence": true,
+      "hitCount": 0,
+      "currentResult": {
+        "assetKind": "card",
+        "cardType": "term",
+        "definition": "中文虚构文本中常见的综合性上身反绑称呼，重点通常落在上肢、肩背与躯干同时受限所形成的整体姿态和叙事状态；不同来源所指的具体绳路并不完全一致。",
+        "distinctions": [
+          "它是宽泛题材术语，不应据名称推断唯一、固定的现实操作方法。",
+          "它不等同于单纯反绑，也不天然表示某一种强度、目的或安全程度。"
+        ],
+        "concepts": [
+          "五花绑",
+          "中式五花大绑"
+        ],
+        "prerequisites": [],
+        "progression": [],
+        "tags": [
+          "环境:地牢",
+          "叙事:逃脱",
+          "状态:受限",
+          "叙事:调查",
+          "氛围:悬疑"
+        ],
+        "reviewStatus": "candidate",
+        "sourceRefCount": 3,
+        "knowledgeScope": "external-fiction-reference",
+        "canonical": false,
+        "sameTypePeers": [
+          {
+            "assetId": "fb-term-behind-back-arms",
+            "title": "身后束手",
+            "hasDefinition": true
+          },
+          {
+            "assetId": "fb-term-houshou-guanyin",
+            "title": "后手观音",
+            "hasDefinition": true
+          },
+          {
+            "assetId": "fb-term-mobility-range",
+            "title": "身体活动范围",
+            "hasDefinition": true
+          },
+          {
+            "assetId": "fb-term-state-change",
+            "title": "状态变化",
+            "hasDefinition": true
+          },
+          {
+            "assetId": "fb-term-upper-body-restricted",
+            "title": "上肢受限",
+            "hasDefinition": true
+          },
+          {
+            "assetId": "fb-term-voluntary-entry-loss-of-control",
+            "title": "送绑玩脱",
+            "hasDefinition": true
+          }
+        ]
+      }
+    }
+  ]
+}

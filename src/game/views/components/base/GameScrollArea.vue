@@ -18,7 +18,8 @@ function scrollToTop(): void {
 }
 
 defineExpose({
-  scrollToTop
+  scrollToTop,
+  scrollAreaElement
 });
 </script>
 

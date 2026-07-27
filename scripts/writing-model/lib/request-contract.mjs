@@ -36,10 +36,11 @@ export async function validateFormalProseRequest(data) {
   return { ok: errors.length === 0, errors }
 }
 
-export function buildChatMessages(contract, styleSnippets = []) {
+export function buildChatMessages(contract, styleSnippets = [], stylePackMarkdown = null) {
   const lines = [
     '你是璃落项目的正式正文候选生成器。只输出 Markdown 正文，不要解释，不要标题（除非合同允许）。',
     '不得改写 immutableFacts，不得新增 forbiddenAdditions 中禁止的组织、能力、物品、关系或世界规则。',
+    'Canon / Scene Contract 决定写什么；Style Pack / 显式文风参考只决定怎样写，不得从范例继承剧情事实。',
     '',
     `目的：${contract.purpose}`,
     `世界：${contract.scene.world}`,
@@ -50,6 +51,7 @@ export function buildChatMessages(contract, styleSnippets = []) {
     `场景目标：${contract.scene.goal}`,
     `目标字数：${contract.expression.targetChineseCharacters.min}-${contract.expression.targetChineseCharacters.max}`,
     '',
+    '【CANON / SCENE CONTRACT】',
     '不可变事实：',
     ...contract.immutableFacts.map((item) => `- ${item}`),
     '',
@@ -59,8 +61,11 @@ export function buildChatMessages(contract, styleSnippets = []) {
     '禁止新增：',
     ...(contract.scene.forbiddenAdditions.length ? contract.scene.forbiddenAdditions.map((item) => `- ${item}`) : ['- （无）']),
   ]
+  if (stylePackMarkdown) {
+    lines.push('', '【STYLE PACK — 只控制表达】', stylePackMarkdown)
+  }
   if (styleSnippets.length) {
-    lines.push('', '显式文风参考（用户/主智能体指定，非自动检索）：')
+    lines.push('', '显式文风参考（V0 styleReferenceIds，可与 Style Pack 并存）：')
     for (const snippet of styleSnippets) {
       lines.push(`--- ${snippet.id} ---`, snippet.text.slice(0, 1200))
     }

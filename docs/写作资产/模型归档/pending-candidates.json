@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-07-26",
+  "policy": {
+    "productionModelsRemainDual": true,
+    "pendingCandidatesDoNotWriteCanon": true,
+    "pendingCandidatesRequireUserApprovalToEnable": true,
+    "notes": "本文件只登记尚未接入 writing-models.json 生产槽的候选。启用须单独评测、endpoint、修订 pin，并经用户批准后改生产注册表。"
+  },
+  "candidates": [
+    {
+      "id": "qwen35-27b-writer-v2-uncensored-heretic",
+      "status": "pending-add",
+      "priority": "medium",
+      "lane": "adult-uncensored-writing",
+      "displayName": "Qwen3.5-27B-Writer-V2-uncensored-heretic",
+      "repository": "llmfan46/Qwen3.5-27B-Writer-V2-uncensored-heretic",
+      "huggingfaceUrl": "https://huggingface.co/llmfan46/Qwen3.5-27B-Writer-V2-uncensored-heretic",
+      "baseModel": "ConicCat/Qwen3.5-27B-Writer-V2",
+      "license": "apache-2.0",
+      "tags": [
+        "uncensored",
+        "decensored",
+        "heretic",
+        "abliterated",
+        "creative-writing",
+        "roleplay",
+        "adult-fiction"
+      ],
+      "intendedUse": "成人向虚构写作与角色扮演；当现有生产双模型因安全对齐拒绝或软化色情/紧缚等成人内容时，作为优先评估的待接入候选。",
+      "reportedCharacteristics": [
+        "Heretic ARA 去审查变体，宣称相对原模型拒绝率显著下降（公开卡称约 8/100 vs 93/100）",
+        "主打 creative writing / roleplay，强调文风相对基座更自然",
+        "约 27B 参数；未量化权重体积较大，部署成本需单独评估"
+      ],
+      "notYet": [
+        "未写入 project-navigation/writing-models.json 生产 models[]",
+        "无项目 endpoint / .env 变量",
+        "未做璃落题集盲评与成人场景拒答实测",
+        "未 pin revision",
+        "未决定是否替换对照槽、作为第三可选槽，或仅成人场景路由"
+      ],
+      "constraints": [
+        "正式角色仍须为成年人；不得写未成年人色情",
+        "候选正文仍只进 docs/写作资产/工作区/，不得直接写 canon",
+        "启用前核对许可证、隐私与付费 endpoint 成本",
+        "不得因本候选静默替换当前 DSR1/Qwen3-32B 生产双模型"
+      ],
+      "remindWhen": [
+        "adult-fiction",
+        "erotic-prose",
+        "uncensored-model",
+        "model-refusal",
+        "formal-prose-generation",
+        "compare-models",
+        "writing-model-api"
+      ],
+      "sourceRefs": [
+        "https://huggingface.co/llmfan46/Qwen3.5-27B-Writer-V2-uncensored-heretic",
+        "docs/系统说明/开放权重双模型写作管线.md",
+        "project-navigation/writing-models.json"
+      ],
+      "registeredBy": "user",
+      "registeredAt": "2026-07-26",
+      "updatedAt": "2026-07-26"
+    }
+  ]
+}

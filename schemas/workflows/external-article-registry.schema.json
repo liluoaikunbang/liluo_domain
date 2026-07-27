@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://liluo.local/schemas/workflows/external-article-registry.schema.json",
+  "title": "外部文章注册表",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "articles", "counts"],
+  "properties": {
+    "schemaVersion": { "type": "integer", "const": 1 },
+    "updatedAt": { "type": "string" },
+    "counts": { "type": "object", "additionalProperties": true },
+    "articles": {
+      "type": "array",
+      "items": { "type": "object" }
+    }
+  }
+}

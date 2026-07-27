@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "policyId": "liluo-rag-audit-calibration-v1",
+  "channels": ["rag", "style-rag"],
+  "defaultBatchSize": 8,
+  "maxBatchSize": 20,
+  "skillUpgrade": {
+    "minIndependentRecordsForPattern": 3,
+    "requireExplicitUserRuleRequest": true,
+    "allowSingleCriticalEscalation": true,
+    "criticalCategories": [
+      "canon-contamination",
+      "source-error",
+      "copyright-boundary",
+      "index-structure",
+      "continuity-risk",
+      "plot-content-leakage"
+    ],
+    "forbidSingleIncidentSkillPatch": true,
+    "requireAbstractRulePlusExamples": true
+  },
+  "rebuild": {
+    "requireDryRunFirst": true,
+    "forbidFullRebuildByDefault": true,
+    "forbidModifySourceArticles": true,
+    "forbidAutoMarkHumanApproved": true,
+    "requireDiffReport": true,
+    "requireValidationSuite": true,
+    "retainPreviousSnapshot": true
+  },
+  "samplingPriorities": [
+    "low-confidence",
+    "unknown-fields",
+    "hit-frequency",
+    "unreviewed",
+    "theme-domain",
+    "author",
+    "source-folder",
+    "random"
+  ],
+  "notes": "现有索引可继续使用；抽查是渐进校准，不阻塞查询。"
+}

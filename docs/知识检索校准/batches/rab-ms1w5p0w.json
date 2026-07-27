@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "batchId": "rab-ms1w5p0w",
+  "channel": "rag",
+  "mode": "random",
+  "exportedAt": "2026-07-26T14:26:35.120Z",
+  "count": 3,
+  "remainingPool": 246,
+  "items": [
+    {
+      "index": 1,
+      "assetId": "fb-src-000270",
+      "title": "(20230411)当霸道总裁文里出现沙雕女主会是怎样的情景_糯米团子-c4048605ec1d",
+      "author": "糯米团子",
+      "themeDomain": "general-prose",
+      "path": "external-knowledge/sources/zhihu-novels/糯米团子/(20230411)当霸道总裁文里出现沙雕女主会是怎样的情景_糯米团子-c4048605ec1d.md",
+      "lowConfidence": false,
+      "hitCount": 0,
+      "currentResult": {
+        "sourceId": "fb-src-000270",
+        "tags": [
+          "氛围:悬疑",
+          "世界:科幻"
+        ],
+        "title": "(20230411)当霸道总裁文里出现沙雕女主会是怎样的情景_糯米团子-c4048605ec1d",
+        "author": "糯米团子",
+        "knowledgeScope": "external-fiction-reference",
+        "canonical": false
+      }
+    },
+    {
+      "index": 2,
+      "assetId": "fb-src-000149",
+      "title": "逃不掉的绑架",
+      "author": "杨可",
+      "themeDomain": "restraint-themed",
+      "path": "external-knowledge/sources/fiction-bondage/作者,金主大大/杨可/逃不掉的绑架.md",
+      "lowConfidence": false,
+      "hitCount": 0,
+      "currentResult": {
+        "sourceId": "fb-src-000149",
+        "tags": [
+          "环境:校园",
+          "氛围:悬疑",
+          "世界:科幻",
+          "状态:受限"
+        ],
+        "title": "逃不掉的绑架",
+        "author": "杨可",
+        "knowledgeScope": "external-fiction-reference",
+        "canonical": false
+      }
+    },
+    {
+      "index": 3,
+      "assetId": "fb-src-000216",
+      "title": "地牢冒险者回收计划！",
+      "author": "P站apflu",
+      "themeDomain": "restraint-themed",
+      "path": "external-knowledge/sources/fiction-bondage/作者,金主大大/P站apflu/地牢冒险者回收计划！.md",
+      "lowConfidence": false,
+      "hitCount": 0,
+      "currentResult": {
+        "sourceId": "fb-src-000216",
+        "tags": [
+          "环境:地牢",
+          "环境:都市",
+          "世界:奇幻",
+          "状态:受限"
+        ],
+        "title": "地牢冒险者回收计划！",
+        "author": "P站apflu",
+        "knowledgeScope": "external-fiction-reference",
+        "canonical": false
+      }
+    }
+  ]
+}

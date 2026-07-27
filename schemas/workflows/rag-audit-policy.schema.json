@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://liluo.local/schemas/workflows/rag-audit-policy.schema.json",
+  "title": "知识检索抽查校准策略",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "policyId", "channels", "skillUpgrade", "rebuild"],
+  "properties": {
+    "schemaVersion": { "type": "integer", "const": 1 },
+    "policyId": { "type": "string" },
+    "channels": {
+      "type": "array",
+      "items": { "type": "string", "enum": ["rag", "style-rag", "concept", "plot"] },
+      "minItems": 1
+    },
+    "defaultBatchSize": { "type": "integer", "minimum": 1, "maximum": 30 },
+    "maxBatchSize": { "type": "integer", "minimum": 1, "maximum": 50 },
+    "skillUpgrade": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "minIndependentRecordsForPattern",
+        "forbidSingleIncidentSkillPatch",
+        "requireAbstractRulePlusExamples"
+      ],
+      "properties": {
+        "minIndependentRecordsForPattern": { "type": "integer", "minimum": 2 },
+        "requireExplicitUserRuleRequest": { "type": "boolean" },
+        "allowSingleCriticalEscalation": { "type": "boolean" },
+        "criticalCategories": { "type": "array", "items": { "type": "string" } },
+        "forbidSingleIncidentSkillPatch": { "type": "boolean", "const": true },
+        "requireAbstractRulePlusExamples": { "type": "boolean" }
+      }
+    },
+    "rebuild": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "requireDryRunFirst",
+        "forbidFullRebuildByDefault",
+        "forbidModifySourceArticles",
+        "forbidAutoMarkHumanApproved"
+      ],
+      "properties": {
+        "requireDryRunFirst": { "type": "boolean", "const": true },
+        "forbidFullRebuildByDefault": { "type": "boolean", "const": true },
+        "forbidModifySourceArticles": { "type": "boolean", "const": true },
+        "forbidAutoMarkHumanApproved": { "type": "boolean", "const": true },
+        "requireDiffReport": { "type": "boolean" },
+        "requireValidationSuite": { "type": "boolean" },
+        "retainPreviousSnapshot": { "type": "boolean" }
+      }
+    },
+    "samplingPriorities": { "type": "array", "items": { "type": "string" } },
+    "notes": { "type": "string" }
+  }
+}

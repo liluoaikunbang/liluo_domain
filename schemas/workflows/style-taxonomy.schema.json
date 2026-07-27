@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://liluo.local/schemas/workflows/style-taxonomy.schema.json",
+  "title": "璃落文风标签体系",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "taxonomyId",
+    "sceneFunctions",
+    "worldTypes",
+    "themeDomains",
+    "restraintFunctions"
+  ],
+  "properties": {
+    "schemaVersion": { "type": "integer", "const": 1 },
+    "taxonomyId": { "type": "string" },
+    "sceneFunctions": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+    "worldTypes": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+    "themeDomains": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+    "restraintFunctions": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+    "pov": { "type": "array", "items": { "type": "string" } },
+    "narrativeDistance": { "type": "array", "items": { "type": "string" } },
+    "densityLevels": { "type": "array", "items": { "type": "string" } },
+    "informationRelease": { "type": "array", "items": { "type": "string" } },
+    "sentenceRhythm": { "type": "array", "items": { "type": "string" } },
+    "emotionExpression": { "type": "array", "items": { "type": "string" } },
+    "sensoryPriority": { "type": "array", "items": { "type": "string" } },
+    "endingMode": { "type": "array", "items": { "type": "string" } },
+    "languageIntensity": { "type": "array", "items": { "type": "string" } },
+    "productionRepresentations": { "type": "array", "items": { "type": "string" } },
+    "reviewStatuses": { "type": "array", "items": { "type": "string" } },
+    "notes": { "type": "object", "additionalProperties": { "type": "string" } }
+  }
+}

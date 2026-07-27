@@ -1,0 +1,147 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://liluo.local/schemas/workflows/style-rag-policy.schema.json",
+  "title": "璃落 Style-RAG 策略",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "policyId",
+    "implementationStage",
+    "enabledModes",
+    "deferredModes",
+    "production",
+    "packLimits",
+    "sourcePrior",
+    "externalQuality",
+    "scoring",
+    "selection"
+  ],
+  "properties": {
+    "schemaVersion": { "type": "integer", "const": 1 },
+    "policyId": { "type": "string", "minLength": 1 },
+    "implementationStage": {
+      "type": "string",
+      "enum": ["explicit-only", "metadata-rag", "hybrid-vector-deferred", "learned-reranker-deferred"]
+    },
+    "enabledModes": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["explicit", "metadata", "hybrid-explicit"]
+      },
+      "minItems": 1
+    },
+    "deferredModes": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["embedding", "learned-reranker", "model-training"]
+      }
+    },
+    "production": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "approvedAssetsOnly",
+        "allowCanonFactsInStyleQuery",
+        "allowAutomaticApproval",
+        "allowAutomaticSkillUpdate",
+        "allowUnreviewedExternalArticle"
+      ],
+      "properties": {
+        "approvedAssetsOnly": { "type": "boolean" },
+        "allowCanonFactsInStyleQuery": { "type": "boolean", "const": false },
+        "allowAutomaticApproval": { "type": "boolean", "const": false },
+        "allowAutomaticSkillUpdate": { "type": "boolean", "const": false },
+        "allowUnreviewedExternalArticle": { "type": "boolean", "const": false },
+        "minimumArticleOverallWeightForProduction": { "type": "integer", "minimum": 0, "maximum": 5 }
+      }
+    },
+    "packLimits": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "maxGoldenExamples",
+        "maxPersonalHistoryExamples",
+        "maxExternalArticles",
+        "maxCalibrationPairs",
+        "maxExternalStyleCards",
+        "maxHardRules",
+        "maxRawReferenceChineseCharacters",
+        "maxSourcesFromSameWork",
+        "maxSourcesFromSameAuthor"
+      ],
+      "properties": {
+        "maxGoldenExamples": { "type": "integer", "minimum": 0 },
+        "maxPersonalHistoryExamples": { "type": "integer", "minimum": 0 },
+        "maxExternalArticles": { "type": "integer", "minimum": 0 },
+        "maxCalibrationPairs": { "type": "integer", "minimum": 0 },
+        "maxExternalStyleCards": { "type": "integer", "minimum": 0 },
+        "maxHardRules": { "type": "integer", "minimum": 0 },
+        "maxRawReferenceChineseCharacters": { "type": "integer", "minimum": 0 },
+        "maxSourcesFromSameWork": { "type": "integer", "minimum": 1 },
+        "maxSourcesFromSameAuthor": { "type": "integer", "minimum": 1 }
+      }
+    },
+    "sourcePrior": {
+      "type": "object",
+      "additionalProperties": { "type": "number", "minimum": 0, "maximum": 1 }
+    },
+    "externalQuality": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "articleScoreWeight",
+        "authorPriorWeight",
+        "unratedArticleScore",
+        "unratedAuthorPrior",
+        "minimumRatedUsesForModelEffect"
+      ],
+      "properties": {
+        "articleScoreWeight": { "type": "number" },
+        "authorPriorWeight": { "type": "number" },
+        "unratedArticleScore": { "type": "number" },
+        "unratedAuthorPrior": { "type": "number" },
+        "minimumRatedUsesForModelEffect": { "type": "integer", "minimum": 1 }
+      }
+    },
+    "scoring": {
+      "type": "object",
+      "additionalProperties": { "type": "number", "minimum": 0, "maximum": 1 }
+    },
+    "selection": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "minimumScore",
+        "diversityPenalty",
+        "missingFieldScore",
+        "unknownModelEffectivenessScore",
+        "requireExplanation"
+      ],
+      "properties": {
+        "minimumScore": { "type": "number" },
+        "diversityPenalty": { "type": "number" },
+        "missingFieldScore": { "type": "number" },
+        "unknownModelEffectivenessScore": { "type": "number" },
+        "requireExplanation": { "type": "boolean" }
+      }
+    },
+    "themeDomainMatch": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": { "type": "number", "minimum": 0, "maximum": 1 }
+      }
+    },
+    "orderedLevels": {
+      "type": "object",
+      "additionalProperties": { "type": "integer" }
+    },
+    "canonForbiddenInStyleQuery": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  }
+}

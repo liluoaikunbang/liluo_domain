@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-07-26",
+  "notes": "文件夹分类是初始权威；用户可纠正单篇文章 themeDomain。不修改原始文章。",
+  "sources": [
+    {
+      "id": "restraint-articles",
+      "root": "external-knowledge/sources/fiction-bondage",
+      "themeDomain": "restraint-themed",
+      "classificationBasis": "folder",
+      "defaultRepresentation": "source-only",
+      "includeGlobs": ["**/*.md"],
+      "excludeGlobs": ["**/node_modules/**", "**/.git/**"],
+      "authorExtractionHints": {
+        "authorFolderPrefix": "作者,金主大大",
+        "unknownAuthorFolders": ["不知道作者", "其他未分类", "精品单章片段", "堕落方舟"]
+      }
+    },
+    {
+      "id": "zhihu-articles",
+      "root": "external-knowledge/sources/zhihu-novels",
+      "themeDomain": "general-prose",
+      "classificationBasis": "folder",
+      "defaultRepresentation": "source-only",
+      "includeGlobs": ["**/*.md"],
+      "excludeGlobs": ["**/node_modules/**", "**/.git/**"],
+      "authorExtractionHints": {
+        "authorIsFirstPathSegment": true
+      }
+    }
+  ]
+}

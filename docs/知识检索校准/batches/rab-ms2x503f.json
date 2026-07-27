@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 1,
+  "batchId": "rab-ms2x503f",
+  "channel": "rag",
+  "channels": [
+    "rag"
+  ],
+  "mode": "low-confidence",
+  "exportedAt": "2026-07-27T07:41:48.603Z",
+  "count": 2,
+  "remainingPool": 14,
+  "ragSample": {
+    "includeCards": true,
+    "includeSources": false
+  },
+  "items": [
+    {
+      "index": 1,
+      "channel": "rag",
+      "assetId": "fb-fictional-state-fixed-pose",
+      "title": "固定姿态",
+      "author": "card",
+      "themeDomain": "unknown",
+      "path": "external-knowledge/cards/fictional-state/fb-fictional-state-fixed-pose.json",
+      "lowConfidence": true,
+      "hitCount": 0,
+      "currentResult": {
+        "assetKind": "card",
+        "cardType": "fictional-state",
+        "definition": "虚构状态卡：角色被维持在某一可识别身体姿态上，叙事重点在姿态本身带来的行动边界、视觉反馈与场景功能，而不是现实操作指南。",
+        "distinctions": [
+          "固定姿态强调“被维持在某一形态”，不等于短暂按住或瞬间失衡。",
+          "可与上肢受限并存，但也可单独由家具、空间或规则造成。"
+        ],
+        "concepts": [
+          "固定姿态",
+          "定姿",
+          "强制姿势"
+        ],
+        "prerequisites": [
+          "场景需要读者立刻读出姿态对行动选项的影响。"
+        ],
+        "progression": [
+          "先给出可识别姿态轮廓。",
+          "再落到该姿态下仍可执行的少数动作。",
+          "用姿态变化或退出条件推动下一段选择。"
+        ],
+        "tags": [
+          "状态:受限",
+          "叙事:仪式",
+          "氛围:悬疑"
+        ],
+        "reviewStatus": "candidate",
+        "sourceRefCount": 3,
+        "knowledgeScope": "external-fiction-reference",
+        "canonical": false,
+        "sameTypePeers": [
+          {
+            "assetId": "fb-fictional-state-000004",
+            "title": "叙事受限状态与行动选择",
+            "hasDefinition": true
+          }
+        ]
+      }
+    },
+    {
+      "index": 2,
+      "channel": "rag",
+      "assetId": "fb-plot-pattern-rescue-without-restored-agency",
+      "title": "获救但未恢复行动权",
+      "author": "card",
+      "themeDomain": "unknown",
+      "path": "external-knowledge/cards/plot-pattern/fb-plot-pattern-rescue-without-restored-agency.json",
+      "lowConfidence": true,
+      "hitCount": 0,
+      "currentResult": {
+        "assetKind": "card",
+        "cardType": "plot-pattern",
+        "definition": "",
+        "distinctions": [],
+        "concepts": [
+          "角色离开直接威胁或回到可信环境。",
+          "同伴确认安全，却发现行动权并未同步恢复。",
+          "事件目标从营救转为解除残留状态、追查关键条件或处理后果。"
+        ],
+        "prerequisites": [
+          "外部威胁与角色当前受限状态可以被分别解决。"
+        ],
+        "progression": [
+          "角色离开直接威胁或回到可信环境。",
+          "同伴确认安全，却发现行动权并未同步恢复。",
+          "事件目标从营救转为解除残留状态、追查关键条件或处理后果。"
+        ],
+        "tags": [
+          "环境:地牢",
+          "叙事:逃脱",
+          "状态:受限",
+          "环境:都市",
+          "叙事:仪式",
+          "叙事:调查",
+          "氛围:悬疑"
+        ],
+        "reviewStatus": "candidate",
+        "sourceRefCount": 3,
+        "knowledgeScope": "external-fiction-reference",
+        "canonical": false,
+        "sameTypePeers": [
+          {
+            "assetId": "fb-plot-pattern-voluntary-entry-control-transfer",
+            "title": "主动进入—保障失效—控制权转移",
+            "hasDefinition": false
+          }
+        ]
+      }
+    }
+  ]
+}

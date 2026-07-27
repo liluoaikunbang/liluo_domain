@@ -162,11 +162,30 @@
       "status": "active"
     },
     {
-      "ruleId": "style-rag-deferred",
-      "title": "StyleRAG 与向量检索暂缓，仅允许显式样本引用",
+      "ruleId": "writing-model-pending-candidates-not-production",
+      "title": "待添加写作模型候选不得静默进入生产双模型槽",
       "authority": "docs/系统说明/开放权重双模型写作管线.md",
       "decision": "docs/设计记忆/架构决策/ADR-013-开放权重双模型与人工校准写作管线.md",
-      "consumers": [".agents/skills/liluo-project/liluo-formal-prose-pipeline/references/style-rag-deferred-boundary.md", "docs/写作资产/registry.json"],
+      "consumers": [
+        "docs/写作资产/模型归档/pending-candidates.json",
+        ".agents/skills/liluo-project/liluo-formal-prose-pipeline/SKILL.md",
+        "project-navigation/manual-gaps.json",
+        "docs/技能说明/liluo-formal-prose-pipeline.md"
+      ],
+      "status": "active"
+    },
+    {
+      "ruleId": "style-rag-metadata-v1",
+      "title": "Style-RAG V0/V1 元数据检索已启用；向量/训练仍暂缓",
+      "authority": "docs/系统说明/Style-RAG元数据检索与文风包系统.md",
+      "decision": "docs/设计记忆/架构决策/ADR-014-Style-RAG元数据检索与Canon风格隔离.md",
+      "consumers": [
+        ".agents/skills/liluo-project/liluo-style-rag/SKILL.md",
+        ".agents/skills/liluo-project/liluo-formal-prose-pipeline/references/style-rag-deferred-boundary.md",
+        "docs/写作资产/registry.json",
+        "project-navigation/style-rag-policy.json",
+        ".agents/skills/writing/liluo-natural-expression/SKILL.md"
+      ],
       "status": "active"
     },
     {
@@ -253,7 +272,7 @@
       "title": "非技术读者文本默认 light 且技术文本不文学化",
       "authority": "docs/系统说明/璃落自然表达与文气塑形系统.md",
       "decision": "docs/设计记忆/创作决策/CDR-005-非技术文本默认应用璃落自然表达.md",
-      "consumers": ["AGENTS.md", ".agents/skills/writing/liluo-natural-expression/SKILL.md", "docs/用户命令目录.md", ".cursor/rules/00-project-entry.mdc"],
+      "consumers": ["AGENTS.md", ".agents/skills/writing/liluo-natural-expression/SKILL.md", "docs/用户命令目录.md", ".cursor/rules/00-project-entry.mdc", ".cursor/rules/content-authoring.mdc", ".agents/skills/liluo-project/liluo-external-fiction-knowledge/SKILL.md", ".agents/skills/liluo-project/liluo-style-rag/SKILL.md", "docs/系统说明/知识检索抽查校准系统.md", "docs/系统说明/Style-RAG元数据检索与文风包系统.md", "docs/系统说明/外部虚构题材知识库.md", "docs/设计记忆/创作决策/CDR-005-非技术文本默认应用璃落自然表达.md"],
       "status": "active"
     },
     {

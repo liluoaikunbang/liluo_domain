@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "policyId": "x",
+  "implementationStage": "metadata-rag",
+  "enabledModes": [
+    "explicit"
+  ],
+  "deferredModes": [
+    "embedding"
+  ],
+  "production": {
+    "approvedAssetsOnly": true,
+    "allowCanonFactsInStyleQuery": true,
+    "allowAutomaticApproval": false,
+    "allowAutomaticSkillUpdate": false,
+    "allowUnreviewedExternalArticle": false
+  },
+  "packLimits": {
+    "maxGoldenExamples": 1,
+    "maxPersonalHistoryExamples": 1,
+    "maxExternalArticles": 1,
+    "maxCalibrationPairs": 1,
+    "maxExternalStyleCards": 1,
+    "maxHardRules": 1,
+    "maxRawReferenceChineseCharacters": 1,
+    "maxSourcesFromSameWork": 1,
+    "maxSourcesFromSameAuthor": 1
+  },
+  "sourcePrior": {},
+  "externalQuality": {
+    "articleScoreWeight": 0.7,
+    "authorPriorWeight": 0.3,
+    "unratedArticleScore": 0.5,
+    "unratedAuthorPrior": 0.5,
+    "minimumRatedUsesForModelEffect": 3
+  },
+  "scoring": {
+    "a": 1
+  },
+  "selection": {
+    "minimumScore": 0.45,
+    "diversityPenalty": 0.15,
+    "missingFieldScore": 0,
+    "unknownModelEffectivenessScore": 0.5,
+    "requireExplanation": true
+  }
+}

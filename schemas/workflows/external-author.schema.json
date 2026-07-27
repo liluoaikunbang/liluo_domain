@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://liluo.local/schemas/workflows/external-author.schema.json",
+  "title": "外部作者登记",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "authorId",
+    "displayName",
+    "aliases",
+    "articleIds",
+    "userPrior",
+    "derivedStatistics",
+    "createdAt",
+    "updatedAt"
+  ],
+  "properties": {
+    "schemaVersion": { "type": "integer", "const": 1 },
+    "authorId": { "type": "string", "pattern": "^author-.+" },
+    "displayName": { "type": "string" },
+    "aliases": { "type": "array", "items": { "type": "string" } },
+    "articleIds": { "type": "array", "items": { "type": "string" } },
+    "userPrior": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status"],
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": ["unreviewed", "deferred", "reviewed", "rejected"]
+        },
+        "weight": { "type": ["integer", "null"], "minimum": 0, "maximum": 5 },
+        "notes": { "type": "string" },
+        "reviewedAt": { "type": ["string", "null"] }
+      }
+    },
+    "derivedStatistics": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["ratedArticles", "meanArticleWeight"],
+      "properties": {
+        "ratedArticles": { "type": "integer", "minimum": 0 },
+        "meanArticleWeight": { "type": ["number", "null"] },
+        "themeDomainCounts": {
+          "type": "object",
+          "additionalProperties": { "type": "integer" }
+        }
+      }
+    },
+    "createdAt": { "type": "string" },
+    "updatedAt": { "type": "string" }
+  }
+}

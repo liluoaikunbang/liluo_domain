@@ -1,0 +1,6 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": null,
+  "records": [],
+  "notes": "仅记录人工评分；禁止模型自评。由 writing:style:feedback 追加。"
+}

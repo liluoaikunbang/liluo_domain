@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://liluo.local/schemas/workflows/external-author-registry.schema.json",
+  "title": "外部作者注册表",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "authors", "counts"],
+  "properties": {
+    "schemaVersion": { "type": "integer", "const": 1 },
+    "updatedAt": { "type": "string" },
+    "counts": { "type": "object", "additionalProperties": true },
+    "authors": {
+      "type": "array",
+      "items": { "type": "object" }
+    }
+  }
+}

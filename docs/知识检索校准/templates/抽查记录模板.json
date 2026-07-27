@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "auditId": "ra-example",
+  "channel": "style-rag",
+  "batchId": null,
+  "sourceAssetId": "ea-... | cardId | conceptId | plot-id",
+  "sourcePath": "对应权威路径",
+  "sourceTitle": "",
+  "sourceAuthor": "",
+  "themeDomain": "restraint-themed",
+  "currentResult": {
+    "summary": "当前索引/检索摘要（勿贴全文）"
+  },
+  "reportedIssue": "人工指出的问题",
+  "correctResult": "正确结果或应有字段",
+  "issueCategories": ["author-info-error"],
+  "isSingleCase": true,
+  "mayBecomeGeneralRule": false,
+  "relatedSkills": ["liluo-style-rag"],
+  "fixStatus": "recorded",
+  "needsIndexRebuild": false,
+  "rebuildScope": {
+    "sourcePaths": [],
+    "assetIds": [],
+    "fields": []
+  },
+  "skillUpgradeDecision": {
+    "suggested": false,
+    "reason": "",
+    "patternGroupId": null,
+    "userExplicitRuleRequest": false,
+    "approvedByUser": false
+  },
+  "hitCountHint": null,
+  "confidenceNotes": "",
+  "notes": "",
+  "createdAt": "2026-07-26T00:00:00.000Z",
+  "updatedAt": "2026-07-26T00:00:00.000Z",
+  "reviewedAt": null
+}

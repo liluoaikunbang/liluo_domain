@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "batchId": "rab-ms2ubk60",
+  "channel": "rag",
+  "channels": [
+    "rag"
+  ],
+  "mode": "random",
+  "exportedAt": "2026-07-27T06:22:55.704Z",
+  "count": 3,
+  "remainingPool": 262,
+  "items": [
+    {
+      "index": 1,
+      "channel": "rag",
+      "assetId": "fb-src-000084",
+      "title": "总裁大小姐的紧缚挑战",
+      "author": "unknown",
+      "themeDomain": "restraint-themed",
+      "path": "external-knowledge/sources/fiction-bondage/其他未分类/总裁大小姐的紧缚挑战.md",
+      "lowConfidence": true,
+      "hitCount": 0,
+      "currentResult": {
+        "assetKind": "source",
+        "sourceId": "fb-src-000084",
+        "tags": [
+          "环境:校园",
+          "叙事:逃脱",
+          "叙事:调查",
+          "氛围:悬疑",
+          "状态:受限"
+        ],
+        "title": "总裁大小姐的紧缚挑战",
+        "author": null,
+        "knowledgeScope": "external-fiction-reference",
+        "canonical": false
+      }
+    },
+    {
+      "index": 2,
+      "channel": "rag",
+      "assetId": "fb-src-000159",
+      "title": "107288949_p0_master1200-20230515171903-3ab85jt",
+      "author": "assets",
+      "themeDomain": "restraint-themed",
+      "path": "external-knowledge/sources/fiction-bondage/作者,金主大大/杨可/assets/107288949_p0_master1200-20230515171903-3ab85jt.jpg",
+      "lowConfidence": false,
+      "hitCount": 0,
+      "currentResult": {
+        "assetKind": "source",
+        "sourceId": "fb-src-000159",
+        "tags": [],
+        "title": "107288949_p0_master1200-20230515171903-3ab85jt",
+        "author": "assets",
+        "knowledgeScope": "external-fiction-reference",
+        "canonical": false
+      }
+    },
+    {
+      "index": 3,
+      "channel": "rag",
+      "assetId": "fb-src-000165",
+      "title": "3-20230515132120-b2no8xz",
+      "author": "assets",
+      "themeDomain": "restraint-themed",
+      "path": "external-knowledge/sources/fiction-bondage/作者,金主大大/杨可/assets/3-20230515132120-b2no8xz.jpg",
+      "lowConfidence": false,
+      "hitCount": 0,
+      "currentResult": {
+        "assetKind": "source",
+        "sourceId": "fb-src-000165",
+        "tags": [],
+        "title": "3-20230515132120-b2no8xz",
+        "author": "assets",
+        "knowledgeScope": "external-fiction-reference",
+        "canonical": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "batchId": "rab-ms2vg6hy",
+  "channel": "all",
+  "channels": [
+    "rag",
+    "style-rag",
+    "concept",
+    "plot"
+  ],
+  "mode": "low-confidence",
+  "exportedAt": "2026-07-27T06:54:30.886Z",
+  "count": 1,
+  "remainingPool": 536,
+  "items": [
+    {
+      "index": 1,
+      "channel": "rag",
+      "assetId": "fb-src-000001",
+      "title": "（完结）彼岸花开",
+      "author": "unknown",
+      "themeDomain": "restraint-themed",
+      "path": "external-knowledge/sources/fiction-bondage/不知道作者/（完结）彼岸花开.md",
+      "lowConfidence": true,
+      "hitCount": 0,
+      "currentResult": {
+        "assetKind": "source",
+        "sourceId": "fb-src-000001",
+        "tags": [
+          "环境:都市",
+          "叙事:仪式",
+          "叙事:调查",
+          "氛围:悬疑",
+          "状态:受限"
+        ],
+        "title": "（完结）彼岸花开",
+        "author": null,
+        "knowledgeScope": "external-fiction-reference",
+        "canonical": false
+      }
+    }
+  ]
+}

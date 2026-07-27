@@ -1,6 +1,6 @@
 ---
 name: liluo-natural-expression
-description: Improve natural expression, narrative rhythm, character voice, subtext, and reader-facing clarity without changing facts. Use by default in light mode for 璃落 story-outline prose, fiction, game dialogue, character interiority, scene text, creative-team dialogue, project notes, player-facing copy, public development narratives, and user-requested writing tests or drafts (including named restraint poses); the main agent must read this Skill before composing or revising such text. Use deep mode for important chapters or scenes, diagnose for analysis-only requests or pre-delivery self-check, and do not use on code, schemas, paths, logs, exact quotations, or other precision-first technical text.
+description: Improve natural expression, narrative rhythm, character voice, subtext, and reader-facing clarity without changing facts. Use by default in light mode for 璃落 story-outline prose, fiction, game dialogue, character interiority, scene text, creative-team dialogue, project notes, player-facing copy, public development narratives, user-requested writing tests or drafts (including named restraint poses), and reader-facing RAG/Style-RAG prose (knowledge-card body text, Style Pack abstracts, review/audit negotiation notes, revision plans); the main agent must read this Skill before composing or revising such text. Use deep mode for important chapters or scenes, diagnose for analysis-only requests or pre-delivery self-check, and do not use on code, schemas, paths, logs, exact quotations, or other precision-first technical text.
 ---
 
 # 璃落自然表达与文气塑形
@@ -9,7 +9,7 @@ Treat other Skills and authoritative project files as the source of **what is tr
 
 ## Route the task
 
-Before any substantive compose or revise of reader-facing prose, read this Skill and the matching reference. Do not skip because the request is informal, a test, or a short draft.
+Before any substantive compose or revise of reader-facing prose, read this Skill and the matching reference. Do not skip because the request is informal, a test, a short draft, or “only a RAG / Style-RAG card.” Knowledge-card body text, Style Pack abstracts, review/audit negotiation notes, and revision plans use `light`; IDs, paths, CLI, and JSON stay `off`.
 
 Choose one operation and one intensity:
 

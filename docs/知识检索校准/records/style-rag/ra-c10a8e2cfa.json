@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "auditId": "ra-c10a8e2cfa",
+  "channel": "style-rag",
+  "batchId": null,
+  "sourceAssetId": "ea-audit-test-fixture",
+  "sourcePath": "external-knowledge/sources/fiction-bondage/不知道作者/测试抽查占位.md",
+  "sourceTitle": "",
+  "sourceAuthor": "",
+  "themeDomain": null,
+  "currentResult": {},
+  "reportedIssue": "作者被模型补全为某常见笔名，但原文文件夹为不知道作者",
+  "correctResult": "author=unknown；confidence=unknown",
+  "issueCategories": [
+    "author-info-error",
+    "model-unauthorized-completion"
+  ],
+  "isSingleCase": true,
+  "mayBecomeGeneralRule": true,
+  "relatedSkills": [
+    "liluo-style-rag"
+  ],
+  "fixStatus": "recorded",
+  "needsIndexRebuild": false,
+  "rebuildScope": {
+    "sourcePaths": [
+      "external-knowledge/sources/fiction-bondage/不知道作者/测试抽查占位.md"
+    ],
+    "assetIds": [
+      "ea-audit-test-fixture"
+    ],
+    "fields": []
+  },
+  "skillUpgradeDecision": {
+    "suggested": false,
+    "reason": "独立重复仅 1/3；禁止单次事件膨胀 Skill",
+    "patternGroupId": null,
+    "userExplicitRuleRequest": false,
+    "approvedByUser": false
+  },
+  "hitCountHint": null,
+  "confidenceNotes": "",
+  "notes": "",
+  "createdAt": "2026-07-27T06:26:35.981Z",
+  "updatedAt": "2026-07-27T06:26:35.998Z",
+  "reviewedAt": "2026-07-27T06:26:35.981Z",
+  "relatedAdjustments": [],
+  "relatedReviewComplete": false
+}

@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 2,
+  "taxonomyId": "x",
+  "sceneFunctions": [
+    "daily-interaction"
+  ],
+  "worldTypes": [
+    "urban"
+  ],
+  "themeDomains": [
+    "general-prose"
+  ],
+  "restraintFunctions": [
+    "none"
+  ]
+}

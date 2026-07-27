@@ -2689,6 +2689,141 @@
       "evalStatus": "not-applicable"
     },
     {
+      "id": "command-writing-external-authors",
+      "kind": "command",
+      "title": "npm run writing:external:authors",
+      "domain": "writing",
+      "status": "available",
+      "maturity": "standard",
+      "summary": "node scripts/writing-model/writing-model.mjs external-authors",
+      "userCanSay": [],
+      "userMustProvide": [],
+      "aiCanDo": [
+        "运行对应的确定性项目命令。"
+      ],
+      "aiMustNotDo": [],
+      "skills": [],
+      "agents": [],
+      "commands": [
+        "npm run writing:external:authors"
+      ],
+      "outputs": [],
+      "sourceRefs": [
+        "package.json"
+      ],
+      "userEffort": "none",
+      "lastVerified": null,
+      "evalStatus": "not-applicable"
+    },
+    {
+      "id": "command-writing-external-inventory",
+      "kind": "command",
+      "title": "npm run writing:external:inventory",
+      "domain": "writing",
+      "status": "available",
+      "maturity": "standard",
+      "summary": "node scripts/writing-model/writing-model.mjs external-inventory",
+      "userCanSay": [],
+      "userMustProvide": [],
+      "aiCanDo": [
+        "运行对应的确定性项目命令。"
+      ],
+      "aiMustNotDo": [],
+      "skills": [],
+      "agents": [],
+      "commands": [
+        "npm run writing:external:inventory"
+      ],
+      "outputs": [],
+      "sourceRefs": [
+        "package.json"
+      ],
+      "userEffort": "none",
+      "lastVerified": null,
+      "evalStatus": "not-applicable"
+    },
+    {
+      "id": "command-writing-external-review-export",
+      "kind": "command",
+      "title": "npm run writing:external:review:export",
+      "domain": "writing",
+      "status": "available",
+      "maturity": "standard",
+      "summary": "node scripts/writing-model/writing-model.mjs external-review-export",
+      "userCanSay": [],
+      "userMustProvide": [],
+      "aiCanDo": [
+        "运行对应的确定性项目命令。"
+      ],
+      "aiMustNotDo": [],
+      "skills": [],
+      "agents": [],
+      "commands": [
+        "npm run writing:external:review:export"
+      ],
+      "outputs": [],
+      "sourceRefs": [
+        "package.json"
+      ],
+      "userEffort": "none",
+      "lastVerified": null,
+      "evalStatus": "not-applicable"
+    },
+    {
+      "id": "command-writing-external-review-import",
+      "kind": "command",
+      "title": "npm run writing:external:review:import",
+      "domain": "writing",
+      "status": "available",
+      "maturity": "standard",
+      "summary": "node scripts/writing-model/writing-model.mjs external-review-import",
+      "userCanSay": [],
+      "userMustProvide": [],
+      "aiCanDo": [
+        "运行对应的确定性项目命令。"
+      ],
+      "aiMustNotDo": [],
+      "skills": [],
+      "agents": [],
+      "commands": [
+        "npm run writing:external:review:import"
+      ],
+      "outputs": [],
+      "sourceRefs": [
+        "package.json"
+      ],
+      "userEffort": "none",
+      "lastVerified": null,
+      "evalStatus": "not-applicable"
+    },
+    {
+      "id": "command-writing-external-validate",
+      "kind": "command",
+      "title": "npm run writing:external:validate",
+      "domain": "writing",
+      "status": "available",
+      "maturity": "standard",
+      "summary": "node scripts/writing-model/writing-model.mjs external-validate",
+      "userCanSay": [],
+      "userMustProvide": [],
+      "aiCanDo": [
+        "运行对应的确定性项目命令。"
+      ],
+      "aiMustNotDo": [],
+      "skills": [],
+      "agents": [],
+      "commands": [
+        "npm run writing:external:validate"
+      ],
+      "outputs": [],
+      "sourceRefs": [
+        "package.json"
+      ],
+      "userEffort": "none",
+      "lastVerified": null,
+      "evalStatus": "not-applicable"
+    },
+    {
       "id": "command-writing-gaps-remind",
       "kind": "command",
       "title": "npm run writing:gaps:remind",
@@ -2922,6 +3057,249 @@
       "agents": [],
       "commands": [
         "npm run writing:prose:draft"
+      ],
+      "outputs": [],
+      "sourceRefs": [
+        "package.json"
+      ],
+      "userEffort": "none",
+      "lastVerified": null,
+      "evalStatus": "not-applicable"
+    },
+    {
+      "id": "command-writing-style-explain",
+      "kind": "command",
+      "title": "npm run writing:style:explain",
+      "domain": "writing",
+      "status": "available",
+      "maturity": "standard",
+      "summary": "node scripts/writing-model/writing-model.mjs style-explain",
+      "userCanSay": [],
+      "userMustProvide": [],
+      "aiCanDo": [
+        "运行对应的确定性项目命令。"
+      ],
+      "aiMustNotDo": [],
+      "skills": [],
+      "agents": [],
+      "commands": [
+        "npm run writing:style:explain"
+      ],
+      "outputs": [],
+      "sourceRefs": [
+        "package.json"
+      ],
+      "userEffort": "none",
+      "lastVerified": null,
+      "evalStatus": "not-applicable"
+    },
+    {
+      "id": "command-writing-style-feedback",
+      "kind": "command",
+      "title": "npm run writing:style:feedback",
+      "domain": "writing",
+      "status": "available",
+      "maturity": "standard",
+      "summary": "node scripts/writing-model/writing-model.mjs style-feedback",
+      "userCanSay": [],
+      "userMustProvide": [],
+      "aiCanDo": [
+        "运行对应的确定性项目命令。"
+      ],
+      "aiMustNotDo": [],
+      "skills": [],
+      "agents": [],
+      "commands": [
+        "npm run writing:style:feedback"
+      ],
+      "outputs": [],
+      "sourceRefs": [
+        "package.json"
+      ],
+      "userEffort": "none",
+      "lastVerified": null,
+      "evalStatus": "not-applicable"
+    },
+    {
+      "id": "command-writing-style-pack",
+      "kind": "command",
+      "title": "npm run writing:style:pack",
+      "domain": "writing",
+      "status": "available",
+      "maturity": "standard",
+      "summary": "node scripts/writing-model/writing-model.mjs style-pack",
+      "userCanSay": [],
+      "userMustProvide": [],
+      "aiCanDo": [
+        "运行对应的确定性项目命令。"
+      ],
+      "aiMustNotDo": [],
+      "skills": [],
+      "agents": [],
+      "commands": [
+        "npm run writing:style:pack"
+      ],
+      "outputs": [],
+      "sourceRefs": [
+        "package.json"
+      ],
+      "userEffort": "none",
+      "lastVerified": null,
+      "evalStatus": "not-applicable"
+    },
+    {
+      "id": "command-writing-style-query",
+      "kind": "command",
+      "title": "npm run writing:style:query",
+      "domain": "writing",
+      "status": "available",
+      "maturity": "standard",
+      "summary": "node scripts/writing-model/writing-model.mjs style-query",
+      "userCanSay": [],
+      "userMustProvide": [],
+      "aiCanDo": [
+        "运行对应的确定性项目命令。"
+      ],
+      "aiMustNotDo": [],
+      "skills": [],
+      "agents": [],
+      "commands": [
+        "npm run writing:style:query"
+      ],
+      "outputs": [],
+      "sourceRefs": [
+        "package.json"
+      ],
+      "userEffort": "none",
+      "lastVerified": null,
+      "evalStatus": "not-applicable"
+    },
+    {
+      "id": "command-writing-style-search",
+      "kind": "command",
+      "title": "npm run writing:style:search",
+      "domain": "writing",
+      "status": "available",
+      "maturity": "standard",
+      "summary": "node scripts/writing-model/writing-model.mjs style-search",
+      "userCanSay": [],
+      "userMustProvide": [],
+      "aiCanDo": [
+        "运行对应的确定性项目命令。"
+      ],
+      "aiMustNotDo": [],
+      "skills": [],
+      "agents": [],
+      "commands": [
+        "npm run writing:style:search"
+      ],
+      "outputs": [],
+      "sourceRefs": [
+        "package.json"
+      ],
+      "userEffort": "none",
+      "lastVerified": null,
+      "evalStatus": "not-applicable"
+    },
+    {
+      "id": "command-writing-style-sheet-approve",
+      "kind": "command",
+      "title": "npm run writing:style:sheet:approve",
+      "domain": "writing",
+      "status": "available",
+      "maturity": "standard",
+      "summary": "node scripts/writing-model/writing-model.mjs style-sheet-approve",
+      "userCanSay": [],
+      "userMustProvide": [],
+      "aiCanDo": [
+        "运行对应的确定性项目命令。"
+      ],
+      "aiMustNotDo": [],
+      "skills": [],
+      "agents": [],
+      "commands": [
+        "npm run writing:style:sheet:approve"
+      ],
+      "outputs": [],
+      "sourceRefs": [
+        "package.json"
+      ],
+      "userEffort": "none",
+      "lastVerified": null,
+      "evalStatus": "not-applicable"
+    },
+    {
+      "id": "command-writing-style-sheet-draft",
+      "kind": "command",
+      "title": "npm run writing:style:sheet:draft",
+      "domain": "writing",
+      "status": "available",
+      "maturity": "standard",
+      "summary": "node scripts/writing-model/writing-model.mjs style-sheet-draft",
+      "userCanSay": [],
+      "userMustProvide": [],
+      "aiCanDo": [
+        "运行对应的确定性项目命令。"
+      ],
+      "aiMustNotDo": [],
+      "skills": [],
+      "agents": [],
+      "commands": [
+        "npm run writing:style:sheet:draft"
+      ],
+      "outputs": [],
+      "sourceRefs": [
+        "package.json"
+      ],
+      "userEffort": "none",
+      "lastVerified": null,
+      "evalStatus": "not-applicable"
+    },
+    {
+      "id": "command-writing-style-test",
+      "kind": "command",
+      "title": "npm run writing:style:test",
+      "domain": "writing",
+      "status": "available",
+      "maturity": "standard",
+      "summary": "node --test scripts/tests/style-rag-metadata.test.mjs scripts/tests/external-style-inventory.test.mjs",
+      "userCanSay": [],
+      "userMustProvide": [],
+      "aiCanDo": [
+        "运行对应的确定性项目命令。"
+      ],
+      "aiMustNotDo": [],
+      "skills": [],
+      "agents": [],
+      "commands": [
+        "npm run writing:style:test"
+      ],
+      "outputs": [],
+      "sourceRefs": [
+        "package.json"
+      ],
+      "userEffort": "none",
+      "lastVerified": null,
+      "evalStatus": "not-applicable"
+    },
+    {
+      "id": "command-writing-style-validate",
+      "kind": "command",
+      "title": "npm run writing:style:validate",
+      "domain": "writing",
+      "status": "available",
+      "maturity": "standard",
+      "summary": "node scripts/writing-model/writing-model.mjs style-validate",
+      "userCanSay": [],
+      "userMustProvide": [],
+      "aiCanDo": [
+        "运行对应的确定性项目命令。"
+      ],
+      "aiMustNotDo": [],
+      "skills": [],
+      "agents": [],
+      "commands": [
+        "npm run writing:style:validate"
       ],
       "outputs": [],
       "sourceRefs": [
@@ -3338,7 +3716,7 @@
       "domain": "project",
       "status": "available",
       "maturity": "standard",
-      "summary": "Run the 璃落 open-weight dual-model formal prose pipeline with writing contracts, mock/live OpenAI-compatible calls, workspace drafts, natural-expression checks, user approval, golden/calibration archival, and gap reminders. Use for 正式正文、双模型对照、写作模型 API、个人旧作导入、黄金正文归档、修改对照、模型校准或 pin；not for ordinary one-line polish (use liluo-natural-expression), StyleRAG, or letting external models write canon.",
+      "summary": "Run the 璃落 open-weight dual-model formal prose pipeline with writing contracts, mock/live OpenAI-compatible calls, workspace drafts, natural-expression checks, user approval, golden/calibration archival, and gap reminders. Use for 正式正文、双模型对照、写作模型 API、个人旧作导入、黄金正文归档、修改对照、模型校准或 pin；Style Pack / 外部评权走 liluo-style-rag；not for ordinary one-line polish (use liluo-natural-expression) or letting external models write canon.",
       "userCanSay": [],
       "userMustProvide": [],
       "aiCanDo": [],
@@ -3851,6 +4229,31 @@
       "outputs": [],
       "sourceRefs": [
         ".agents\\skills\\liluo-project\\liluo-story-to-playable-content\\SKILL.md"
+      ],
+      "userEffort": "low",
+      "lastVerified": null,
+      "evalStatus": "unknown"
+    },
+    {
+      "id": "skill-liluo-style-rag",
+      "kind": "skill",
+      "title": "liluo-style-rag",
+      "domain": "project",
+      "status": "available",
+      "maturity": "standard",
+      "summary": "Run 璃落 Style-RAG V0/V1 metadata retrieval for formal prose—auto style selection, external article inventory, list titles/authors, score articles and author priors, restraint vs general domain matching, style pack assembly, calibration archive hooks, writing sheet lifecycle, retrieval explanation, and weight adjustment. Use for Style查询、文风包、外部文章评权、写作表、style feedback；not for general fiction inspiration RAG (use liluo-external-fiction-knowledge), embeddings, vector DB, V2–V4 learned retrieval, or writing canon.",
+      "userCanSay": [],
+      "userMustProvide": [],
+      "aiCanDo": [],
+      "aiMustNotDo": [],
+      "skills": [
+        "liluo-style-rag"
+      ],
+      "agents": [],
+      "commands": [],
+      "outputs": [],
+      "sourceRefs": [
+        ".agents\\skills\\liluo-project\\liluo-style-rag\\SKILL.md"
       ],
       "userEffort": "low",
       "lastVerified": null,

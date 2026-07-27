@@ -1,6 +1,6 @@
 ---
 name: liluo-formal-prose-pipeline
-description: Run the 璃落 open-weight dual-model formal prose pipeline with writing contracts, mock/live OpenAI-compatible calls, workspace drafts, natural-expression checks, user approval, golden/calibration archival, and gap reminders. Use for 正式正文、双模型对照、写作模型 API、个人旧作导入、黄金正文归档、修改对照、模型校准或 pin；not for ordinary one-line polish (use liluo-natural-expression), StyleRAG, or letting external models write canon.
+description: Run the 璃落 open-weight dual-model formal prose pipeline with writing contracts, mock/live OpenAI-compatible calls, workspace drafts, natural-expression checks, user approval, golden/calibration archival, and gap reminders. Use for 正式正文、双模型对照、写作模型 API、个人旧作导入、黄金正文归档、修改对照、模型校准或 pin；Style Pack / 外部评权走 liluo-style-rag；not for ordinary one-line polish (use liluo-natural-expression) or letting external models write canon.
 ---
 
 # 正式正文写作管线
@@ -12,10 +12,11 @@ Read `AGENTS.md` and [model-routing-contract.md](references/model-routing-contra
 1. External models never write `src/game/data/story_outline/**`, `plot_outline/**`, dialogues, world bible, or other runtime canon.
 2. Drafts land only under `docs/写作资产/工作区/`.
 3. Single draft requires explicit `--model dsr1|qwen3`. Dual calls only via `compare` / `--model both`.
-4. No StyleRAG, embeddings, or automatic sample retrieval. At most 1–3 **explicit** `styleReferenceIds`.
+4. Style references: V0 explicit `styleReferenceIds` (0–3) and/or V1 metadata Style Pack via `liluo-style-rag` (`expression.styleQueryPath`). Still **no embeddings, vector DB, or automatic unapproved retrieval**. Unreviewed external assets cannot enter production pack.
 5. Live network calls require explicit `--live`. Routine/CI/evals must stay mock/static.
 6. Before any live health / draft / compare: remind the user to wake HF Inference Endpoints to **Running**. After the user confirms Running (default: both DSR1 and Qwen3), **wait ~5 minutes** then run `writing:models:health -- --live --model both` (or the single model they named). Prefer a background delay so the user can do other work; report when done. Do not treat 503 as a credential or model-swap problem; do not start paid cloud endpoints on the user's behalf.
-7. Before claiming related capability is ready, query open gaps via `npm run writing:gaps:remind -- --topic <topic>`.
+7. When the user asks about adult/erotic refusal, uncensored writers, or adding a third writing model: read `docs/写作资产/模型归档/pending-candidates.json` and remind open gap `gap-writing-model-adult-uncensored-candidate`. Do **not** silently swap production dual models or pretend the pending candidate is already wired.
+8. Before claiming related capability is ready, query open gaps via `npm run writing:gaps:remind -- --topic <topic>`.
 
 ## Generate prose
 

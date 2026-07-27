@@ -369,7 +369,7 @@
     "id": "src/game/data/global/updateRecords.js",
     "indexVersion": 1,
     "references": {},
-    "sourceHash": "b122676dd5f8259e0117fffc16e496f02f5cc80142acd76d515099daf02a9100",
+    "sourceHash": "cb86fb8dba7f018ec74a194788b7d029fc9de2835f46050dac49a1990ac43472",
     "sourcePath": "src/game/data/global/updateRecords.js",
     "subtype": "module",
     "summary": "module：src/game/data/global/updateRecords.js",
@@ -737,6 +737,139 @@
     "summary": "module：src/game/data/minigames/directionPadGames.ts",
     "summarySource": "structured-fields",
     "title": "directionPadGames.ts",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/data/outline_relation_graph/buildOutlineRelationGraph.js",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "./constants.js",
+        "./conceptRegistry.js",
+        "./styleTaxonomyLabels.js"
+      ]
+    },
+    "sourceHash": "74bd2510dd1013921638a11ba35f284a869e1bfca0743a4878763ea4bf86b51c",
+    "sourcePath": "src/game/data/outline_relation_graph/buildOutlineRelationGraph.js",
+    "subtype": "module",
+    "summary": "module：src/game/data/outline_relation_graph/buildOutlineRelationGraph.js",
+    "summarySource": "structured-fields",
+    "title": "buildOutlineRelationGraph.js",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/data/outline_relation_graph/conceptRegistry.js",
+    "indexVersion": 1,
+    "references": {},
+    "sourceHash": "b72289bb4e7bd9af9dd4a4c677e8dc9bfd1a57e460ffef0ce06544cc7e289e53",
+    "sourcePath": "src/game/data/outline_relation_graph/conceptRegistry.js",
+    "subtype": "module",
+    "summary": "module：src/game/data/outline_relation_graph/conceptRegistry.js",
+    "summarySource": "structured-fields",
+    "title": "conceptRegistry.js",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/data/outline_relation_graph/constants.js",
+    "indexVersion": 1,
+    "references": {},
+    "sourceHash": "d3fcaf5f99ed315ce376a61ace26187241d35a6789bc9e3c48c378842c2df795",
+    "sourcePath": "src/game/data/outline_relation_graph/constants.js",
+    "subtype": "module",
+    "summary": "module：src/game/data/outline_relation_graph/constants.js",
+    "summarySource": "structured-fields",
+    "title": "constants.js",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/data/outline_relation_graph/filterOutlineRelationGraph.js",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "./constants.js"
+      ]
+    },
+    "sourceHash": "2f4bb622c53fc58bf2b156191aa2e9913fe97425269696e32dd483b33ba964fd",
+    "sourcePath": "src/game/data/outline_relation_graph/filterOutlineRelationGraph.js",
+    "subtype": "module",
+    "summary": "module：src/game/data/outline_relation_graph/filterOutlineRelationGraph.js",
+    "summarySource": "structured-fields",
+    "title": "filterOutlineRelationGraph.js",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/data/outline_relation_graph/index.js",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "./constants.js",
+        "./conceptRegistry.js",
+        "./styleTaxonomyLabels.js",
+        "./buildOutlineRelationGraph.js",
+        "./layoutOutlineRelationGraph.js",
+        "./filterOutlineRelationGraph.js"
+      ]
+    },
+    "sourceHash": "afc113897d2bb5fee73591d9932c72a83531c1b36d95f5a3f2dc0cb9d946cf7b",
+    "sourcePath": "src/game/data/outline_relation_graph/index.js",
+    "subtype": "module",
+    "summary": "module：src/game/data/outline_relation_graph/index.js",
+    "summarySource": "structured-fields",
+    "title": "index.js",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/data/outline_relation_graph/layoutOutlineRelationGraph.js",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "./constants.js",
+        "./buildOutlineRelationGraph.js"
+      ]
+    },
+    "sourceHash": "68eecd5c91656114883b60a8ee609cdf49ae862fa3092b6205e9ce39f97b5ed1",
+    "sourcePath": "src/game/data/outline_relation_graph/layoutOutlineRelationGraph.js",
+    "subtype": "module",
+    "summary": "module：src/game/data/outline_relation_graph/layoutOutlineRelationGraph.js",
+    "summarySource": "structured-fields",
+    "title": "layoutOutlineRelationGraph.js",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/data/outline_relation_graph/loadOutlineRelationGraph.js",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "../story_outline/storyOutlineSource.js",
+        "../story_outline/storyCharacterOutline.js",
+        "../plot_outline/plotOutline.js",
+        "../gameplay_outline/gameplayOutline.js",
+        "./buildOutlineRelationGraph.js",
+        "./conceptRegistry.js",
+        "../../../../docs/知识检索校准/registry.json",
+        "../../../../docs/写作资产/外部风格研究/article-registry.json",
+        "../../../../project-navigation/style-taxonomy.json",
+        "../../../../external-knowledge/card-rules.json"
+      ]
+    },
+    "sourceHash": "c3f66a27d1b289733e07c08ba27494f25080c7d1833b968efab7d632397ca6fd",
+    "sourcePath": "src/game/data/outline_relation_graph/loadOutlineRelationGraph.js",
+    "subtype": "module",
+    "summary": "module：src/game/data/outline_relation_graph/loadOutlineRelationGraph.js",
+    "summarySource": "structured-fields",
+    "title": "loadOutlineRelationGraph.js",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/data/outline_relation_graph/styleTaxonomyLabels.js",
+    "indexVersion": 1,
+    "references": {},
+    "sourceHash": "a7cfcc683a046034c55c317ad105aa481c5546284a50a13f305ac42c6f0367b5",
+    "sourcePath": "src/game/data/outline_relation_graph/styleTaxonomyLabels.js",
+    "subtype": "module",
+    "summary": "module：src/game/data/outline_relation_graph/styleTaxonomyLabels.js",
+    "summarySource": "structured-fields",
+    "title": "styleTaxonomyLabels.js",
     "type": "code-module"
   },
   {
@@ -1818,7 +1951,7 @@
         "vue"
       ]
     },
-    "sourceHash": "0b681530475eb87e693f330b1d0f836a96a4ef1e440c33ba6800920f671fb777",
+    "sourceHash": "abc07789dc798ec2bb331cf43b10467abc8c3b9a57e3512e55c5f9a7b54c3dfd",
     "sourcePath": "src/game/views/components/base/GameScrollArea.vue",
     "subtype": "vue",
     "summary": "vue：src/game/views/components/base/GameScrollArea.vue",
@@ -1912,10 +2045,11 @@
         "./CharacterOutlinePanel.vue",
         "./GameplayMenuPanel.vue",
         "./PlotOutlinePanel.vue",
+        "./RelationGraphPanel.vue",
         "./StoryMenuPanel.vue"
       ]
     },
-    "sourceHash": "f97603affb1672856c529cfb77605d728a9c40e4938e3a47008d94967c68349f",
+    "sourceHash": "d82663cfdb6bb5f6dec6c3d1584639d441177aa219d9afa2d22f27282b021760",
     "sourcePath": "src/game/views/components/base/OutlineMenuPanel.vue",
     "subtype": "vue",
     "summary": "vue：src/game/views/components/base/OutlineMenuPanel.vue",
@@ -1955,6 +2089,25 @@
     "summary": "vue：src/game/views/components/base/QuestMenuPanel.vue",
     "summarySource": "structured-fields",
     "title": "QuestMenuPanel.vue",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/views/components/base/RelationGraphPanel.vue",
+    "indexVersion": 1,
+    "references": {
+      "imports": [
+        "vue",
+        "./GameScrollArea.vue",
+        "../../../data/outline_relation_graph/index.js",
+        "../../../data/outline_relation_graph/loadOutlineRelationGraph.js"
+      ]
+    },
+    "sourceHash": "f949970c7fe629587abdeb5919f6e65673e5ed429ffaf31c8c9faefd0da757c8",
+    "sourcePath": "src/game/views/components/base/RelationGraphPanel.vue",
+    "subtype": "vue",
+    "summary": "vue：src/game/views/components/base/RelationGraphPanel.vue",
+    "summarySource": "structured-fields",
+    "title": "RelationGraphPanel.vue",
     "type": "code-module"
   },
   {

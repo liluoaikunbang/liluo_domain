@@ -1,0 +1,132 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://liluo.local/schemas/workflows/external-article.schema.json",
+  "title": "外部文章登记",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "articleId",
+    "sourceId",
+    "path",
+    "title",
+    "author",
+    "themeDomain",
+    "rights",
+    "review",
+    "productionUse",
+    "hash",
+    "createdAt",
+    "updatedAt"
+  ],
+  "properties": {
+    "schemaVersion": { "type": "integer", "const": 1 },
+    "articleId": { "type": "string", "pattern": "^ea-.+" },
+    "sourceId": { "type": "string" },
+    "path": { "type": "string" },
+    "title": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["value", "confidence", "extractedFrom"],
+      "properties": {
+        "value": { "type": "string" },
+        "confidence": { "type": "string", "enum": ["high", "medium", "low", "unknown"] },
+        "extractedFrom": {
+          "type": "string",
+          "enum": ["frontmatter", "body", "filename", "source-metadata", "unknown"]
+        }
+      }
+    },
+    "author": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["displayName", "confidence", "extractedFrom"],
+      "properties": {
+        "authorId": { "type": ["string", "null"] },
+        "displayName": { "type": "string" },
+        "confidence": { "type": "string", "enum": ["high", "medium", "low", "unknown"] },
+        "extractedFrom": {
+          "type": "string",
+          "enum": ["frontmatter", "body", "filename", "source-metadata", "folder", "unknown"]
+        }
+      }
+    },
+    "themeDomain": {
+      "type": "string",
+      "enum": ["restraint-themed", "general-prose", "mixed", "unknown"]
+    },
+    "themeDomainOverride": {
+      "type": ["string", "null"],
+      "enum": ["restraint-themed", "general-prose", "mixed", "unknown", null]
+    },
+    "restraintFunction": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "sourceUrl": { "type": ["string", "null"] },
+    "rights": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "productionUse"],
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": ["unknown", "user-owned", "authorized", "public-domain", "external-reference", "forbidden"]
+        },
+        "productionUse": {
+          "type": "string",
+          "enum": ["source-only", "abstract-style-card", "style-safe-excerpt", "raw-excerpt", "forbidden"]
+        }
+      }
+    },
+    "review": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status"],
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": ["unreviewed", "deferred", "reviewed", "rejected"]
+        },
+        "overallWeight": { "type": ["integer", "null"], "minimum": 0, "maximum": 5 },
+        "writingQuality": { "type": ["integer", "null"], "minimum": 0, "maximum": 5 },
+        "liluoSuitability": { "type": ["integer", "null"], "minimum": 0, "maximum": 5 },
+        "restraintWritingQuality": { "type": ["integer", "null"], "minimum": 0, "maximum": 5 },
+        "dialogueQuality": { "type": ["integer", "null"], "minimum": 0, "maximum": 5 },
+        "actionSpatialQuality": { "type": ["integer", "null"], "minimum": 0, "maximum": 5 },
+        "atmosphereQuality": { "type": ["integer", "null"], "minimum": 0, "maximum": 5 },
+        "notes": { "type": "string" },
+        "reviewedAt": { "type": ["string", "null"] }
+      }
+    },
+    "style": { "type": "object", "additionalProperties": true },
+    "productionUse": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["styleRecommendation", "representation", "contentLeakageRisk"],
+      "properties": {
+        "styleRecommendation": {
+          "type": "string",
+          "enum": ["recommended", "excluded", "unreviewed"]
+        },
+        "representation": {
+          "type": "string",
+          "enum": ["abstract-style-card", "style-safe-excerpt", "raw-excerpt", "source-only"]
+        },
+        "contentLeakageRisk": {
+          "type": "string",
+          "enum": ["low", "medium", "high", "unknown"]
+        },
+        "mappedAssetId": { "type": ["string", "null"] }
+      }
+    },
+    "duplicateGroupId": { "type": ["string", "null"] },
+    "isCanonicalDuplicate": { "type": "boolean" },
+    "hash": { "type": "string" },
+    "contentHash": { "type": ["string", "null"] },
+    "mtimeMs": { "type": "number" },
+    "byteSize": { "type": "integer" },
+    "createdAt": { "type": "string" },
+    "updatedAt": { "type": "string" }
+  }
+}

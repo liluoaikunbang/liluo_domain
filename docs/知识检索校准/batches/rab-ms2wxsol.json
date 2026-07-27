@@ -1,0 +1,346 @@
+{
+  "schemaVersion": 1,
+  "batchId": "rab-ms2wxsol",
+  "channel": "all",
+  "channels": [
+    "rag",
+    "style-rag",
+    "concept",
+    "plot"
+  ],
+  "mode": "random",
+  "exportedAt": "2026-07-27T07:36:12.405Z",
+  "count": 8,
+  "remainingPool": 283,
+  "ragSample": {
+    "includeCards": true,
+    "includeSources": false
+  },
+  "items": [
+    {
+      "index": 1,
+      "channel": "rag",
+      "assetId": "fb-expression-000001",
+      "title": "环境压力与角色感知的交替表达",
+      "author": "card",
+      "themeDomain": "unknown",
+      "path": "external-knowledge/cards/expression/fb-expression-000001.json",
+      "lowConfidence": true,
+      "hitCount": 0,
+      "currentResult": {
+        "assetKind": "card",
+        "cardType": "expression",
+        "definition": "表达卡：用环境细节与角色感知交替推进，让压迫感来自可观察的外部变化与内感受切换，而不是一次性说明处境。",
+        "distinctions": [
+          "重点是节奏交替，不是堆砌形容词。",
+          "感知服务于场景功能，不替代情节因果。"
+        ],
+        "concepts": [
+          "环境细节",
+          "角色感知",
+          "节奏递进"
+        ],
+        "prerequisites": [],
+        "progression": [],
+        "tags": [
+          "环境:都市",
+          "叙事:仪式",
+          "叙事:调查",
+          "氛围:悬疑",
+          "状态:受限",
+          "环境:地牢",
+          "叙事:逃脱"
+        ],
+        "reviewStatus": "candidate",
+        "sourceRefCount": 3,
+        "knowledgeScope": "external-fiction-reference",
+        "canonical": false,
+        "sameTypePeers": []
+      }
+    },
+    {
+      "index": 2,
+      "channel": "rag",
+      "assetId": "fb-term-behind-back-arms",
+      "title": "身后束手",
+      "author": "card",
+      "themeDomain": "unknown",
+      "path": "external-knowledge/cards/term/fb-term-behind-back-arms.json",
+      "lowConfidence": true,
+      "hitCount": 0,
+      "currentResult": {
+        "assetKind": "card",
+        "cardType": "term",
+        "definition": "虚构叙事中常见的上肢限制称呼：双手被约束在身后，重点落在肩背、肘腕与躯干同时受限所形成的可识别姿态，而非某一种固定绳路。",
+        "distinctions": [
+          "它是姿态级术语，不等于具体绑法名称，也不必然对应唯一操作方法。",
+          "与单纯“手腕被缚”不同，强调上肢整体被安置在身后。"
+        ],
+        "concepts": [
+          "身后束手",
+          "反绑",
+          "背后束手"
+        ],
+        "prerequisites": [],
+        "progression": [],
+        "tags": [
+          "状态:受限",
+          "叙事:逃脱",
+          "氛围:悬疑"
+        ],
+        "reviewStatus": "candidate",
+        "sourceRefCount": 3,
+        "knowledgeScope": "external-fiction-reference",
+        "canonical": false,
+        "sameTypePeers": [
+          {
+            "assetId": "fb-term-houshou-guanyin",
+            "title": "后手观音",
+            "hasDefinition": true
+          },
+          {
+            "assetId": "fb-term-mobility-range",
+            "title": "身体活动范围",
+            "hasDefinition": true
+          },
+          {
+            "assetId": "fb-term-state-change",
+            "title": "状态变化",
+            "hasDefinition": true
+          },
+          {
+            "assetId": "fb-term-upper-body-restricted",
+            "title": "上肢受限",
+            "hasDefinition": true
+          },
+          {
+            "assetId": "fb-term-voluntary-entry-loss-of-control",
+            "title": "送绑玩脱",
+            "hasDefinition": true
+          },
+          {
+            "assetId": "fb-term-wuhuada-bang",
+            "title": "五花大绑",
+            "hasDefinition": true
+          }
+        ]
+      }
+    },
+    {
+      "index": 3,
+      "channel": "style-rag",
+      "assetId": "ea-6a736ad10e7c",
+      "title": "无限战争",
+      "author": "杨可",
+      "themeDomain": "restraint-themed",
+      "path": "external-knowledge/sources/fiction-bondage/作者,金主大大/杨可/无限战争.md",
+      "lowConfidence": false,
+      "hitCount": 0,
+      "currentResult": {
+        "themeDomain": "restraint-themed",
+        "review": {
+          "status": "unreviewed",
+          "overallWeight": null,
+          "writingQuality": null,
+          "liluoSuitability": null,
+          "restraintWritingQuality": null,
+          "dialogueQuality": null,
+          "actionSpatialQuality": null,
+          "atmosphereQuality": null,
+          "notes": "",
+          "reviewedAt": null
+        },
+        "productionUse": {
+          "styleRecommendation": "unreviewed",
+          "representation": "source-only",
+          "contentLeakageRisk": "unknown",
+          "mappedAssetId": null
+        },
+        "title": {
+          "value": "无限战争",
+          "confidence": "high",
+          "extractedFrom": "body"
+        },
+        "author": {
+          "authorId": "author-fbb5709bce",
+          "displayName": "杨可",
+          "confidence": "medium",
+          "extractedFrom": "folder"
+        }
+      }
+    },
+    {
+      "index": 4,
+      "channel": "style-rag",
+      "assetId": "ea-eccf2fcc0ee5",
+      "title": "人偶纺织机",
+      "author": "苏攻子",
+      "themeDomain": "restraint-themed",
+      "path": "external-knowledge/sources/fiction-bondage/作者,金主大大/苏攻子/人偶纺织机.md",
+      "lowConfidence": false,
+      "hitCount": 0,
+      "currentResult": {
+        "themeDomain": "restraint-themed",
+        "review": {
+          "status": "unreviewed",
+          "overallWeight": null,
+          "writingQuality": null,
+          "liluoSuitability": null,
+          "restraintWritingQuality": null,
+          "dialogueQuality": null,
+          "actionSpatialQuality": null,
+          "atmosphereQuality": null,
+          "notes": "",
+          "reviewedAt": null
+        },
+        "productionUse": {
+          "styleRecommendation": "unreviewed",
+          "representation": "source-only",
+          "contentLeakageRisk": "unknown",
+          "mappedAssetId": null
+        },
+        "title": {
+          "value": "人偶纺织机",
+          "confidence": "high",
+          "extractedFrom": "body"
+        },
+        "author": {
+          "authorId": "author-7dc70709ab",
+          "displayName": "苏攻子",
+          "confidence": "medium",
+          "extractedFrom": "folder"
+        }
+      }
+    },
+    {
+      "index": 5,
+      "channel": "concept",
+      "assetId": "restraint.detail.mobility-range",
+      "title": "身体活动范围",
+      "author": "seed",
+      "themeDomain": "restraint-themed",
+      "path": "src/game/data/outline_relation_graph/conceptRegistry.js",
+      "lowConfidence": true,
+      "hitCount": 0,
+      "currentResult": {
+        "assetKind": "concept",
+        "conceptId": "restraint.detail.mobility-range",
+        "canonicalName": "身体活动范围",
+        "aliases": [
+          "活动范围"
+        ],
+        "parentConcepts": [
+          "restraint.pose.fixed"
+        ],
+        "visibility": {
+          "primaryTag": false,
+          "detailPanel": true,
+          "graph": true,
+          "searchable": true,
+          "ragRetrievable": true
+        },
+        "summary": "受限状态下身体仍可活动的幅度。"
+      }
+    },
+    {
+      "index": 6,
+      "channel": "concept",
+      "assetId": "restraint.detail.wrist-relative",
+      "title": "手腕相对位置",
+      "author": "seed",
+      "themeDomain": "restraint-themed",
+      "path": "src/game/data/outline_relation_graph/conceptRegistry.js",
+      "lowConfidence": true,
+      "hitCount": 0,
+      "currentResult": {
+        "assetKind": "concept",
+        "conceptId": "restraint.detail.wrist-relative",
+        "canonicalName": "手腕相对位置",
+        "aliases": [
+          "手腕位置"
+        ],
+        "parentConcepts": [
+          "restraint.arms.behind-back"
+        ],
+        "visibility": {
+          "primaryTag": false,
+          "detailPanel": true,
+          "graph": true,
+          "searchable": true,
+          "ragRetrievable": true
+        },
+        "summary": "描述双腕叠压、并拢或交叉等相对关系。"
+      }
+    },
+    {
+      "index": 7,
+      "channel": "plot",
+      "assetId": "plot-022",
+      "title": "公开猎场反播",
+      "author": "plot-catalog",
+      "themeDomain": "general-prose",
+      "path": "src/game/data/plot_outline/catalog.json",
+      "lowConfidence": false,
+      "hitCount": 0,
+      "currentResult": {
+        "assetKind": "plot",
+        "id": "plot-022",
+        "title": "公开猎场反播",
+        "summary": "璃落被误登记、顶替或贩卖进直播生存竞技，发现平台会用积分、观众投票和动态猎人机制逼选手制造冲突。她利用维修通道和系统预测盲点联合其他选手伪造淘汰、篡改定位并劫持镜头，把后台操纵补给、灾害和自愿记录的证据直播出去，使争夺冠军的逃亡转化为对整个平台的公开审判。",
+        "groupId": "plot-group-013",
+        "tags": [
+          "生存竞技",
+          "强制直播",
+          "动态追猎",
+          "算法操控",
+          "选手结盟",
+          "反向曝光"
+        ],
+        "bondageTags": [],
+        "characters": [
+          "璃落",
+          "参赛者",
+          "平台管理者"
+        ],
+        "usedBy": [
+          "world-5-star-weaving-dream-dome-hunt"
+        ]
+      }
+    },
+    {
+      "index": 8,
+      "channel": "plot",
+      "assetId": "plot-056",
+      "title": "脑机梦狱-意识监牢",
+      "author": "plot-catalog",
+      "themeDomain": "general-prose",
+      "path": "src/game/data/plot_outline/catalog.json",
+      "lowConfidence": true,
+      "hitCount": 0,
+      "currentResult": {
+        "assetKind": "plot",
+        "id": "plot-056",
+        "title": "脑机梦狱-意识监牢",
+        "summary": "在科幻世界中，囚犯的身体被维生系统维持在沉睡状态，意识却经由脑机接口接入一座可被反复重置的虚拟监狱。璃落在其中醒来时，感官、时间流逝与环境规则都由狱方定义；每一次越狱失败、求助或试图证明现实，都会被系统归档为行为数据，并成为下一轮更精确的限制条件。她必须分辨哪些痛苦只是模拟、哪些记忆正在被系统改写，并在肉身无法行动的情况下，设法把一段无法被重置的证据送回现实。",
+        "groupId": "plot-group-014",
+        "tags": [
+          "科幻",
+          "脑机接口",
+          "虚拟监狱",
+          "意识监牢",
+          "肉身沉睡",
+          "时间循环",
+          "记忆校验",
+          "越狱",
+          "罐中脑"
+        ],
+        "bondageTags": [],
+        "characters": [
+          "璃落",
+          "虚拟监狱系统"
+        ],
+        "usedBy": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 2,
+  "counts": {
+    "total": 0,
+    "open": 0,
+    "rag": 0,
+    "styleRag": 0,
+    "needsRebuild": 0,
+    "skillUpgradeSuggested": 0
+  },
+  "records": []
+}
