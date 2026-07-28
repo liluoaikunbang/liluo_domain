@@ -80,7 +80,7 @@
         "./dialogueExecution"
       ]
     },
-    "sourceHash": "32976599a676af44ff5fa3cb21d2d16a4bcd045b715fc22466558bbe12f493c4",
+    "sourceHash": "977cce79de240129d46188459fed39a48214928defc20c70010142d60ab9661a",
     "sourcePath": "src/game/core/EventRunner.ts",
     "subtype": "module",
     "summary": "module：src/game/core/EventRunner.ts",
@@ -369,7 +369,7 @@
     "id": "src/game/data/global/updateRecords.js",
     "indexVersion": 1,
     "references": {},
-    "sourceHash": "bea1150c522f1b951a6c3f3839ac6787ece64179e0f5033eca8313f81fe865ea",
+    "sourceHash": "066492e3070fa9cbcb6d922363419027342920079155bd808933a13976c018db",
     "sourcePath": "src/game/data/global/updateRecords.js",
     "subtype": "module",
     "summary": "module：src/game/data/global/updateRecords.js",
@@ -460,6 +460,18 @@
     "summary": "module：src/game/data/interactive_fictions/registry.ts",
     "summarySource": "structured-fields",
     "title": "registry.ts",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/data/mapContentRegistry.ts",
+    "indexVersion": 1,
+    "references": {},
+    "sourceHash": "93e2aebd9b403c22a2a73d3424381cc432fa4981b801861623b4f51bf49f5c0d",
+    "sourcePath": "src/game/data/mapContentRegistry.ts",
+    "subtype": "module",
+    "summary": "module：src/game/data/mapContentRegistry.ts",
+    "summarySource": "structured-fields",
+    "title": "mapContentRegistry.ts",
     "type": "code-module"
   },
   {
@@ -749,7 +761,7 @@
         "./styleTaxonomyLabels.js"
       ]
     },
-    "sourceHash": "45b39e88b34a7f622d437406c80357c42ab8961c2be6375eeab2a1ee1089bd46",
+    "sourceHash": "64295b3524041a7ecbd92a5195986c76c4acebdd93b20f11bb3fe349d90a4a7c",
     "sourcePath": "src/game/data/outline_relation_graph/buildOutlineRelationGraph.js",
     "subtype": "module",
     "summary": "module：src/game/data/outline_relation_graph/buildOutlineRelationGraph.js",
@@ -773,7 +785,7 @@
     "id": "src/game/data/outline_relation_graph/constants.js",
     "indexVersion": 1,
     "references": {},
-    "sourceHash": "8f4025be985d5cf1dc8b77af516eadc7cbfe39c9531c52eee6bc4faf40537a87",
+    "sourceHash": "63a5102210b151eb349a61f085e122ab2787382579815d5656fd6fba30ba0fbe",
     "sourcePath": "src/game/data/outline_relation_graph/constants.js",
     "subtype": "module",
     "summary": "module：src/game/data/outline_relation_graph/constants.js",
@@ -805,13 +817,14 @@
         "./constants.js",
         "./conceptRegistry.js",
         "./styleTaxonomyLabels.js",
+        "./resolveRestraintRagPrimaryLabels.js",
         "./buildOutlineRelationGraph.js",
         "./layoutOutlineRelationGraph.js",
         "./filterOutlineRelationGraph.js",
         "./outlineRelationGraphExport.js"
       ]
     },
-    "sourceHash": "6b30dae732064597228d5591bc57a8741ec415b8d3cfca339021182cc879b907",
+    "sourceHash": "4729b221cabbc614b968afaa5582b3d160e57d634b25984d29ac3566b9a89fe6",
     "sourcePath": "src/game/data/outline_relation_graph/index.js",
     "subtype": "module",
     "summary": "module：src/game/data/outline_relation_graph/index.js",
@@ -871,6 +884,18 @@
     "summary": "module：src/game/data/outline_relation_graph/outlineRelationGraphExport.js",
     "summarySource": "structured-fields",
     "title": "outlineRelationGraphExport.js",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/data/outline_relation_graph/resolveRestraintRagPrimaryLabels.js",
+    "indexVersion": 1,
+    "references": {},
+    "sourceHash": "b28af2b847753c82c04181852b7984b68a5fe7f4cda2a229a2abcf7a3cd48b96",
+    "sourcePath": "src/game/data/outline_relation_graph/resolveRestraintRagPrimaryLabels.js",
+    "subtype": "module",
+    "summary": "module：src/game/data/outline_relation_graph/resolveRestraintRagPrimaryLabels.js",
+    "summarySource": "structured-fields",
+    "title": "resolveRestraintRagPrimaryLabels.js",
     "type": "code-module"
   },
   {
@@ -1060,7 +1085,7 @@
         "./maps/munika/liluo_room/assets"
       ]
     },
-    "sourceHash": "85aa57fb34709aa5252d351b0d075c7f528fbf8bde2c217feb631b8d49053e83",
+    "sourceHash": "4daf22556ae7e5ecca7181845be003d9c588abea307844c47d79cf27b18a8ce3",
     "sourcePath": "src/game/data/registry.ts",
     "subtype": "module",
     "summary": "module：src/game/data/registry.ts",
@@ -1668,6 +1693,18 @@
     "type": "code-module"
   },
   {
+    "id": "src/game/systems/map/spawnPositionRules.ts",
+    "indexVersion": 1,
+    "references": {},
+    "sourceHash": "8be79419c89b95676401e452a3de8006d6e6932c394947c6e3805f9574ef57cc",
+    "sourcePath": "src/game/systems/map/spawnPositionRules.ts",
+    "subtype": "phaser-system",
+    "summary": "phaser-system：src/game/systems/map/spawnPositionRules.ts",
+    "summarySource": "structured-fields",
+    "title": "spawnPositionRules.ts",
+    "type": "code-module"
+  },
+  {
     "id": "src/game/systems/map/worldSceneRuntime.ts",
     "indexVersion": 1,
     "references": {
@@ -1689,11 +1726,12 @@
         "./renderers/npcReplacementRenderer",
         "./renderers/worldHintRenderer",
         "./runtimeMapNormalizer",
+        "./spawnPositionRules",
         "../../data/timeOfDay",
         "../animation/character/layeredCharacterTexture.ts"
       ]
     },
-    "sourceHash": "01ea7415bf2fb3594961c9fbb87a33054269dfbd080b3082ca990b6b5d8b20a5",
+    "sourceHash": "335ea147c3d6eb8462349a828ff6923d56055717d59a261d52c294f7de5abdc8",
     "sourcePath": "src/game/systems/map/worldSceneRuntime.ts",
     "subtype": "phaser-system",
     "summary": "phaser-system：src/game/systems/map/worldSceneRuntime.ts",
@@ -2080,7 +2118,7 @@
         "./GameScrollArea.vue"
       ]
     },
-    "sourceHash": "1313426f509f609e0ca85fdd60e7ab5c892cdfa2da51a53e06e2a887975b9bd4",
+    "sourceHash": "016dd75f6b946eb9ba47f501dbd148f0b3611149458f561a6c236c51f2ef1bdd",
     "sourcePath": "src/game/views/components/base/PlotOutlinePanel.vue",
     "subtype": "vue",
     "summary": "vue：src/game/views/components/base/PlotOutlinePanel.vue",
@@ -2116,7 +2154,7 @@
         "./jsonDownload"
       ]
     },
-    "sourceHash": "46b969b46cc3ec45a549f2d328d6620b4999ab885330c12f13c1513899cb333b",
+    "sourceHash": "2620202db5caf27cc31b9e21f123518d0a54a48f9dc9cc244214624c8293d1b1",
     "sourcePath": "src/game/views/components/base/RelationGraphPanel.vue",
     "subtype": "vue",
     "summary": "vue：src/game/views/components/base/RelationGraphPanel.vue",
@@ -2221,10 +2259,12 @@
         "../../../data/global/gameMenuData",
         "./jsonDownload",
         "./StoryGameplayLinkDialog.vue",
-        "./storyMetaPopover"
+        "./storyMetaPopover",
+        "../../../data/outline_relation_graph/resolveRestraintRagPrimaryLabels.js",
+        "../../../data/outline_relation_graph/loadOutlineRelationGraph.js"
       ]
     },
-    "sourceHash": "26066413a6aba1dc0b9be1f34a54d75b7c89a6d36b21b3fb0b7314380eac473d",
+    "sourceHash": "f697f61917acd317378e4c79ff4616f3dca4f7cdef1fcea65798fe98f806f405",
     "sourcePath": "src/game/views/components/base/StoryMenuPanel.vue",
     "subtype": "vue",
     "summary": "vue：src/game/views/components/base/StoryMenuPanel.vue",
@@ -2370,7 +2410,7 @@
         "../data/portraits/registry"
       ]
     },
-    "sourceHash": "1ad24bf22973fe93b7add37d92b372294eb7ccef7e513c57abdf9e1b156ea226",
+    "sourceHash": "ebb4e6606dd2fe98871a13d34bc3caf19b984bd81696b52a6768774933c9b6af",
     "sourcePath": "src/game/views/GameView.vue",
     "subtype": "vue",
     "summary": "vue：src/game/views/GameView.vue",

@@ -40,7 +40,7 @@
             <dt>偏向世界</dt><dd>{{ selected.worldBiases.join('、') || '无特定偏向' }}</dd>
             <dt>出现人物</dt><dd>{{ selected.characters.join('、') || '无' }}</dd>
             <dt>情节类型</dt><dd>{{ plotKindLabel(selected.plotKind) }}</dd>
-            <dt>RAG 引用</dt><dd>{{ selected.ragRefs?.join('、') || '无' }}</dd>
+            <dt>紧缚 RAG 引用</dt><dd>{{ selected.ragRefs?.join('、') || '无' }}</dd>
             <dt>应用节点</dt><dd>{{ selected.usedByLabels?.join('、') || '尚未使用' }}</dd>
             <dt>备注</dt><dd>{{ selected.notes || '无' }}</dd>
           </dl>

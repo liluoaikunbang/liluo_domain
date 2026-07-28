@@ -1,0 +1,283 @@
+{
+  "schemaVersion": 1,
+  "batchId": "rab-ms41ij83",
+  "channel": "rag",
+  "channels": [
+    "rag"
+  ],
+  "mode": "low-confidence",
+  "exportedAt": "2026-07-28T02:32:04.563Z",
+  "count": 5,
+  "remainingPool": 39,
+  "ragSample": {
+    "includeCards": true,
+    "includeSources": false
+  },
+  "items": [
+    {
+      "index": 1,
+      "channel": "rag",
+      "assetId": "rag.restraint.context.burial-restraint",
+      "title": "活埋",
+      "author": "card",
+      "themeDomain": "unknown",
+      "path": "external-knowledge/cards/restraint/rag.restraint.context.burial-restraint.json",
+      "lowConfidence": true,
+      "hitCount": 0,
+      "currentResult": {
+        "assetKind": "card",
+        "cardType": "context",
+        "definition": "",
+        "distinctions": [],
+        "concepts": [],
+        "prerequisites": [],
+        "progression": [],
+        "tags": [],
+        "reviewStatus": "pending",
+        "sourceRefCount": 0,
+        "knowledgeScope": "external-fiction-reference",
+        "canonical": false,
+        "sameTypePeers": [
+          {
+            "assetId": "rag.restraint.context.open-air-dungeon",
+            "title": "露天地牢",
+            "hasDefinition": false
+          },
+          {
+            "assetId": "rag.restraint.context.restrained-life",
+            "title": "拘束生活",
+            "hasDefinition": false
+          }
+        ]
+      }
+    },
+    {
+      "index": 2,
+      "channel": "rag",
+      "assetId": "rag.restraint.detail.虐足-小鞋",
+      "title": "虐足-小鞋",
+      "author": "card",
+      "themeDomain": "unknown",
+      "path": "external-knowledge/cards/restraint/rag.restraint.detail.虐足-小鞋.json",
+      "lowConfidence": true,
+      "hitCount": 0,
+      "currentResult": {
+        "assetKind": "card",
+        "cardType": "term",
+        "definition": "",
+        "distinctions": [],
+        "concepts": [],
+        "prerequisites": [],
+        "progression": [],
+        "tags": [],
+        "reviewStatus": "pending",
+        "sourceRefCount": 0,
+        "knowledgeScope": "external-fiction-reference",
+        "canonical": false,
+        "sameTypePeers": [
+          {
+            "assetId": "rag.restraint.detail.冤罪",
+            "title": "冤罪",
+            "hasDefinition": false
+          },
+          {
+            "assetId": "rag.restraint.detail.寒冷",
+            "title": "寒冷",
+            "hasDefinition": true
+          },
+          {
+            "assetId": "rag.restraint.detail.小笼子",
+            "title": "小笼子",
+            "hasDefinition": false
+          },
+          {
+            "assetId": "rag.restraint.detail.小黑屋",
+            "title": "小黑屋",
+            "hasDefinition": true
+          },
+          {
+            "assetId": "rag.restraint.detail.性刺激-三点刺激",
+            "title": "性刺激-三点刺激",
+            "hasDefinition": false
+          },
+          {
+            "assetId": "rag.restraint.detail.感官刺激-芥末辣椒等",
+            "title": "感官刺激-芥末辣椒等",
+            "hasDefinition": false
+          }
+        ]
+      }
+    },
+    {
+      "index": 3,
+      "channel": "rag",
+      "assetId": "rag.restraint.effect.odor-stimulation",
+      "title": "气味系",
+      "author": "card",
+      "themeDomain": "unknown",
+      "path": "external-knowledge/cards/restraint/rag.restraint.effect.odor-stimulation.json",
+      "lowConfidence": true,
+      "hitCount": 0,
+      "currentResult": {
+        "assetKind": "card",
+        "cardType": "effect",
+        "definition": "",
+        "distinctions": [],
+        "concepts": [],
+        "prerequisites": [],
+        "progression": [],
+        "tags": [],
+        "reviewStatus": "pending",
+        "sourceRefCount": 0,
+        "knowledgeScope": "external-fiction-reference",
+        "canonical": false,
+        "sameTypePeers": [
+          {
+            "assetId": "rag.restraint.effect.free-fall-stimulation",
+            "title": "刺激-自由落体",
+            "hasDefinition": false
+          },
+          {
+            "assetId": "rag.restraint.effect.pain",
+            "title": "疼痛",
+            "hasDefinition": false
+          },
+          {
+            "assetId": "rag.restraint.effect.public-humiliation",
+            "title": "社死",
+            "hasDefinition": false
+          },
+          {
+            "assetId": "rag.restraint.effect.sensory-stimulation",
+            "title": "感官刺激",
+            "hasDefinition": false
+          },
+          {
+            "assetId": "rag.restraint.effect.sexual-stimulation",
+            "title": "性刺激",
+            "hasDefinition": false
+          },
+          {
+            "assetId": "rag.restraint.effect.tickling",
+            "title": "挠痒",
+            "hasDefinition": true
+          }
+        ]
+      }
+    },
+    {
+      "index": 4,
+      "channel": "rag",
+      "assetId": "rag.restraint.effect.pain",
+      "title": "疼痛",
+      "author": "card",
+      "themeDomain": "unknown",
+      "path": "external-knowledge/cards/restraint/rag.restraint.effect.pain.json",
+      "lowConfidence": true,
+      "hitCount": 0,
+      "currentResult": {
+        "assetKind": "card",
+        "cardType": "effect",
+        "definition": "",
+        "distinctions": [],
+        "concepts": [],
+        "prerequisites": [],
+        "progression": [],
+        "tags": [],
+        "reviewStatus": "pending",
+        "sourceRefCount": 0,
+        "knowledgeScope": "external-fiction-reference",
+        "canonical": false,
+        "sameTypePeers": [
+          {
+            "assetId": "rag.restraint.effect.free-fall-stimulation",
+            "title": "刺激-自由落体",
+            "hasDefinition": false
+          },
+          {
+            "assetId": "rag.restraint.effect.odor-stimulation",
+            "title": "气味系",
+            "hasDefinition": false
+          },
+          {
+            "assetId": "rag.restraint.effect.public-humiliation",
+            "title": "社死",
+            "hasDefinition": false
+          },
+          {
+            "assetId": "rag.restraint.effect.sensory-stimulation",
+            "title": "感官刺激",
+            "hasDefinition": false
+          },
+          {
+            "assetId": "rag.restraint.effect.sexual-stimulation",
+            "title": "性刺激",
+            "hasDefinition": false
+          },
+          {
+            "assetId": "rag.restraint.effect.tickling",
+            "title": "挠痒",
+            "hasDefinition": true
+          }
+        ]
+      }
+    },
+    {
+      "index": 5,
+      "channel": "rag",
+      "assetId": "rag.restraint.tool.straitjacket",
+      "title": "拘束衣",
+      "author": "card",
+      "themeDomain": "unknown",
+      "path": "external-knowledge/cards/restraint/rag.restraint.tool.straitjacket.json",
+      "lowConfidence": true,
+      "hitCount": 0,
+      "currentResult": {
+        "assetKind": "card",
+        "cardType": "tool",
+        "definition": "依靠衣物包覆和固定结构限制上身或全身动作的器具类别。",
+        "distinctions": [],
+        "concepts": [],
+        "prerequisites": [],
+        "progression": [],
+        "tags": [],
+        "reviewStatus": "candidate",
+        "sourceRefCount": 2,
+        "knowledgeScope": "external-fiction-reference",
+        "canonical": false,
+        "sameTypePeers": [
+          {
+            "assetId": "rag.restraint.tool.cable-tie",
+            "title": "扎带",
+            "hasDefinition": true
+          },
+          {
+            "assetId": "rag.restraint.tool.cement-shoes",
+            "title": "水泥鞋",
+            "hasDefinition": false
+          },
+          {
+            "assetId": "rag.restraint.tool.chain",
+            "title": "锁链",
+            "hasDefinition": true
+          },
+          {
+            "assetId": "rag.restraint.tool.handcuffs",
+            "title": "手铐",
+            "hasDefinition": true
+          },
+          {
+            "assetId": "rag.restraint.tool.leg-irons",
+            "title": "脚镣",
+            "hasDefinition": true
+          },
+          {
+            "assetId": "rag.restraint.tool.shackles",
+            "title": "镣铐",
+            "hasDefinition": true
+          }
+        ]
+      }
+    }
+  ]
+}

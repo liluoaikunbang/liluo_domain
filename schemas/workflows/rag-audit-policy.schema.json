@@ -52,6 +52,19 @@
       }
     },
     "samplingPriorities": { "type": "array", "items": { "type": "string" } },
+    "ragSample": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "defaultAssetKinds": {
+          "type": "array",
+          "items": { "type": "string", "enum": ["card", "source"] },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "allowSourceOptIn": { "type": "boolean" }
+      }
+    },
     "notes": { "type": "string" }
   }
 }

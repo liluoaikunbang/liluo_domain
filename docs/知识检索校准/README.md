@@ -19,7 +19,7 @@
 | 路径 | 用途 |
 | --- | --- |
 | `registry.json` | 抽查记录索引与模式组 |
-| `records/rag/` | 普通 RAG 抽查 JSON |
+| `records/rag/` | 紧缚 RAG 抽查 JSON |
 | `records/style-rag/` | Style-RAG 抽查 JSON |
 | `records/concept/` | 细节概念抽查 JSON |
 | `records/plot/` | 情节抽查 JSON |

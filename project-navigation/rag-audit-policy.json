@@ -43,5 +43,5 @@
     "defaultAssetKinds": ["card"],
     "allowSourceOptIn": true
   },
-  "notes": "现有索引/目录可继续使用；抽查覆盖普通 RAG、Style-RAG、细节概念与情节。普通 RAG 默认只抽知识卡，源条目须 --include-sources 或 --asset-kind source|all。改任一条目时必须检查关联项，有需要则一并调整，禁止只改单点留下矛盾。"
+  "notes": "现有索引/目录可继续使用；抽查覆盖紧缚 RAG、Style-RAG、细节概念与情节。紧缚 RAG 默认只抽知识卡，源条目须 --include-sources 或 --asset-kind source|all。改任一条目时必须检查关联项，有需要则一并调整，禁止只改单点留下矛盾。"
 }

@@ -14,4 +14,4 @@ alwaysApply: false
 - 正式阅读向内容的成员复核按 `project-navigation/team-routing.json` 路由，不读取全员灵魂卡。
 - 开放权重正式正文候选走 `liluo-formal-prose-pipeline`，只写入 `docs/写作资产/工作区/`；批准后由现有故事/对话 Skill 写入正式文件。
 - 文风检索、外部文章评权与 Style Pack 走 `liluo-style-rag`（元数据 V0/V1）；不得用 embedding/向量库，不得把范例事实写入 canon。
-- 普通 RAG 知识库走 `liluo-external-fiction-knowledge`；撰写或改写知识卡正文、Style-RAG 抽象说明、抽查协商与改稿说明前，先读并应用 `liluo-natural-expression` light；ID、路径、命令不润色。
+- 紧缚 RAG 知识库走 `liluo-external-fiction-knowledge`；撰写或改写知识卡正文、Style-RAG 抽象说明、抽查协商与改稿说明前，先读并应用 `liluo-natural-expression` light；ID、路径、命令不润色。

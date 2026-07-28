@@ -27,7 +27,7 @@ export const GRAPH_NODE_TYPE_LABELS = Object.freeze({
   organization: '组织',
   location: '地点',
   item: '物品',
-  rag: '普通 RAG',
+  rag: '紧缚 RAG',
   style_rag: 'Style-RAG'
 });
 
@@ -196,11 +196,11 @@ export const GRAPH_FILTER_PRESETS = Object.freeze([
   { id: 'plot-location', label: '只看情节与地点', nodeTypes: ['plot', 'location'], relationTypes: null },
   { id: 'plot-hierarchy', label: '只看大情节 / 小情节', nodeTypes: ['plot'], relationTypes: ['contains'] },
   { id: 'gameplay-hierarchy', label: '只看大玩法 / 小玩法', nodeTypes: ['gameplay'], relationTypes: ['belongs_to'] },
-  { id: 'rag-hierarchy', label: '只看普通 RAG 上位/具体', nodeTypes: ['rag'], relationTypes: ['broader', 'narrower'], includeStyleEvidence: false },
-  { id: 'rag-story-plot', label: '只看普通 RAG 与大纲/情节', nodeTypes: ['rag', 'story', 'plot'], relationTypes: null },
+  { id: 'rag-hierarchy', label: '只看紧缚 RAG 上位/具体', nodeTypes: ['rag'], relationTypes: ['broader', 'narrower'], includeStyleEvidence: false },
+  { id: 'rag-story-plot', label: '只看紧缚 RAG 与大纲/情节', nodeTypes: ['rag', 'story', 'plot'], relationTypes: null },
   { id: 'style-techniques', label: '只看写法名词（Style-RAG）', nodeTypes: ['style_rag'], relationTypes: null, includeStyleEvidence: false },
   { id: 'style-with-evidence', label: '写法名词 + 文章证据', nodeTypes: ['style_rag'], relationTypes: null, includeStyleEvidence: true },
-  { id: 'rag-style', label: '只看普通 RAG 与 Style-RAG', nodeTypes: ['rag', 'style_rag'], relationTypes: null },
+  { id: 'rag-style', label: '只看紧缚 RAG 与 Style-RAG', nodeTypes: ['rag', 'style_rag'], relationTypes: null },
   { id: 'pending-audit', label: '只看待校准节点', nodeTypes: null, auditStatuses: ['pending_review', 'low_confidence', 'conflict', 'missing_source', 'relation_pending'] },
   { id: 'orphans', label: '只看孤立节点', nodeTypes: null, auditStatuses: ['orphan'] },
   { id: 'low-confidence', label: '只看低置信度关系', nodeTypes: null, edgeAuditStatuses: ['low_confidence', 'pending_confirm'] }

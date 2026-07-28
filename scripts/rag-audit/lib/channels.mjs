@@ -3,7 +3,7 @@
 export const AUDIT_CHANNELS = Object.freeze(['rag', 'style-rag', 'concept', 'plot'])
 
 export const AUDIT_CHANNEL_LABELS = Object.freeze({
-  rag: '普通 RAG',
+  rag: '紧缚 RAG',
   'style-rag': 'Style-RAG',
   concept: '细节概念',
   plot: '情节'

@@ -154,6 +154,11 @@
                     旧版未模板化
                   </span>
                   <span v-for="storyTag in node.storyTags" :key="storyTag" class="story-node-story-tag">{{ storyTag }}</span>
+                  <span
+                    v-for="label in node.restraintRagLabels"
+                    :key="`rag-${label}`"
+                    class="story-node-restraint-rag-tag"
+                  >{{ label }}</span>
                   <span v-if="node.timeline" class="story-node-timeline">{{ node.timeline }}</span>
                 </div>
                 <strong class="story-node-title">{{ node.title }}</strong>
@@ -196,7 +201,8 @@
                 <th scope="col">故事线</th>
                 <th scope="col">概要</th>
                 <th scope="col">情节引用</th>
-                <th scope="col">RAG 引用</th>
+                <th scope="col">紧缚 RAG</th>
+                <th scope="col">紧缚 RAG 引用</th>
                 <th scope="col">玩法引用</th>
                 <th scope="col">主要角色</th>
                 <th scope="col">所在地点</th>
@@ -272,10 +278,29 @@
                 <td>
                   <div class="story-table-tags">
                     <span v-for="storyTag in node.storyTags" :key="storyTag" class="story-node-story-tag">{{ storyTag }}</span>
+                    <span
+                      v-for="label in node.restraintRagLabels"
+                      :key="`rag-${label}`"
+                      class="story-node-restraint-rag-tag"
+                    >{{ label }}</span>
+                    <span
+                      v-if="!node.storyTags.length && !node.restraintRagLabels.length"
+                      class="story-table-empty"
+                    >-</span>
                   </div>
                 </td>
                 <td class="story-table-summary">{{ node.summary }}</td>
                 <td class="story-summary-copy-cell">{{ node.plotRefsText || '-' }}</td>
+                <td class="story-summary-copy-cell">
+                  <div class="story-table-tags">
+                    <span
+                      v-for="label in node.restraintRagLabels"
+                      :key="`table-rag-${label}`"
+                      class="story-node-restraint-rag-tag"
+                    >{{ label }}</span>
+                    <span v-if="!node.restraintRagLabels.length" class="story-table-empty">-</span>
+                  </div>
+                </td>
                 <td class="story-summary-copy-cell">{{ node.ragRefsText || '-' }}</td>
                 <td class="story-summary-copy-cell">{{ node.gameplayRefsText || '-' }}</td>
                 <td class="story-summary-copy-cell">{{ node.charactersText || '-' }}</td>
@@ -628,7 +653,7 @@
                 <th scope="col">文件名</th>
                 <th scope="col">状态</th>
                 <th scope="col" :class="getSummaryMatchFieldClass('plotRefs')">情节引用</th>
-                <th scope="col" :class="getSummaryMatchFieldClass('ragRefs')">RAG 引用</th>
+                <th scope="col" :class="getSummaryMatchFieldClass('ragRefs')">紧缚 RAG 引用</th>
                 <th scope="col" :class="getSummaryMatchFieldClass('gameplayRefs')">玩法引用</th>
                 <th scope="col">简介</th>
               </tr>
@@ -744,6 +769,11 @@ import { codexCategories } from '../../../data/global/gameMenuData';
 import { downloadJsonPayload } from './jsonDownload';
 import StoryGameplayLinkDialog from './StoryGameplayLinkDialog.vue';
 import { shouldOpenMetaPopoverRight } from './storyMetaPopover';
+import {
+  indexRagCardsById,
+  resolveRestraintRagPrimaryLabels
+} from '../../../data/outline_relation_graph/resolveRestraintRagPrimaryLabels.js';
+import { listBundledRagCards } from '../../../data/outline_relation_graph/loadOutlineRelationGraph.js';
 
 const detailImageModules = import.meta.glob([
   '../../../../assets/game/outlines/**/*.{png,jpg,jpeg,webp,gif}',
@@ -755,6 +785,7 @@ const detailImageModules = import.meta.glob([
 });
 const detailImageUrlByPath = createDetailImageUrlMap(detailImageModules);
 const storyCgSlots = codexCategories.find((category) => category.key === 'cg')?.slots ?? [];
+const restraintRagCardIndex = indexRagCardsById(listBundledRagCards());
 
 const props = defineProps({
   outline: {
@@ -830,7 +861,7 @@ const SUMMARY_FIELD_DEFINITIONS = [
   },
   {
     key: 'ragRefs',
-    label: 'RAG 引用'
+    label: '紧缚 RAG 引用'
   },
   {
     key: 'gameplayRefs',
@@ -860,6 +891,10 @@ function unique(values) {
 
 function getStoryTags(node) {
   return unique(Array.isArray(node.storyTags) ? node.storyTags : []).slice(0, 2);
+}
+
+function getRestraintRagLabels(node) {
+  return resolveRestraintRagPrimaryLabels(node?.ragRefs, restraintRagCardIndex).slice(0, 4);
 }
 
 function getDetailLabel(node) {
@@ -924,7 +959,13 @@ function hasSummaryFields(node) {
 }
 
 function hasNodeMetaRow(node) {
-  return Boolean(node.displayStatus || shouldDisplayTemplateStatus(node) || node.storyTags.length > 0 || node.timeline);
+  return Boolean(
+    node.displayStatus ||
+      shouldDisplayTemplateStatus(node) ||
+      node.storyTags.length > 0 ||
+      (Array.isArray(node.restraintRagLabels) && node.restraintRagLabels.length > 0) ||
+      node.timeline
+  );
 }
 
 function shouldDisplayTemplateStatus(node) {
@@ -1007,7 +1048,8 @@ function getMetaItems(node) {
     createMetaItem('简介', node.summary),
     createMetaItem('伏笔', node.foreshadowing),
     createMetaItem('情节引用', node.plotRefs),
-    createMetaItem('RAG 引用', node.ragRefs),
+    createMetaItem('紧缚 RAG', getRestraintRagLabels(node)),
+    createMetaItem('紧缚 RAG 引用', node.ragRefs),
     createMetaItem('玩法引用', node.gameplayRefs),
     createMetaItem('主要角色', node.characters),
     createMetaItem('需要异能', node.requiredAbilities),
@@ -1368,6 +1410,7 @@ function createTableRows(outline, collapsedKeys) {
       cgSequence: Array.isArray(node.cgSequence) ? node.cgSequence : [],
       gameplayRefs: Array.isArray(node.gameplayRefs) ? node.gameplayRefs : [],
       storyTags: getStoryTags(node),
+      restraintRagLabels: getRestraintRagLabels(node),
       plotRefsText: formatSummaryValue(node.plotRefs),
       ragRefsText: formatSummaryValue(node.ragRefs),
       gameplayRefsText: formatSummaryValue(node.gameplayRefs),
@@ -1722,6 +1765,7 @@ function createNodeLayout(outline, mode, collapsedKeys) {
       cgSequence: Array.isArray(node.cgSequence) ? node.cgSequence : [],
       gameplayRefs: Array.isArray(node.gameplayRefs) ? node.gameplayRefs : [],
       storyTags: getStoryTags(node),
+      restraintRagLabels: getRestraintRagLabels(node),
       plotRefs: toValueList(node.plotRefs),
       ragRefs: toValueList(node.ragRefs),
       metaItems: getMetaItems(node),
@@ -1778,6 +1822,7 @@ function createNodeLayout(outline, mode, collapsedKeys) {
       cgSequence: Array.isArray(node.cgSequence) ? node.cgSequence : [],
       gameplayRefs: Array.isArray(node.gameplayRefs) ? node.gameplayRefs : [],
       storyTags: getStoryTags(node),
+      restraintRagLabels: getRestraintRagLabels(node),
       plotRefs: toValueList(node.plotRefs),
       ragRefs: toValueList(node.ragRefs),
       metaItems: getMetaItems(node),

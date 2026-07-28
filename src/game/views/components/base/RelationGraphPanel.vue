@@ -676,7 +676,7 @@ function hierarchyParentLabel(node) {
 
 function relatedNodeTypeLabel(node) {
   if (node?.type === 'style_rag') return styleRoleLabel(node);
-  if (node?.type === 'rag') return ragLayerDetailLabel(node) !== '—' ? `普通 RAG · ${ragLayerDetailLabel(node)}` : nodeTypeLabel(node?.type);
+  if (node?.type === 'rag') return ragLayerDetailLabel(node) !== '—' ? `紧缚 RAG · ${ragLayerDetailLabel(node)}` : nodeTypeLabel(node?.type);
   if ((node?.type === 'world' || node?.type === 'story') && hierarchyDetailLabel(node) !== '—') {
     return `故事 · ${hierarchyDetailLabel(node)}`;
   }
@@ -690,7 +690,7 @@ function detailTypeLabel(nodeOrType) {
   if (node.type === 'style_rag') return styleRoleLabel(node);
   if (node.type === 'rag') {
     const layer = ragLayerDetailLabel(node);
-    return layer !== '—' ? `普通 RAG · ${layer}` : '普通 RAG';
+    return layer !== '—' ? `紧缚 RAG · ${layer}` : '紧缚 RAG';
   }
   if (node.type === 'world' || node.type === 'story') {
     const layer = hierarchyDetailLabel(node);

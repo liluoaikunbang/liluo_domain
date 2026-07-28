@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-07-27T07:41:47.989Z",
+  "updatedAt": "2026-07-28T02:32:05.222Z",
   "counts": {
-    "total": 10,
-    "open": 10,
+    "total": 12,
+    "open": 12,
     "rag": 0,
-    "styleRag": 6,
-    "concept": 4,
+    "styleRag": 7,
+    "concept": 5,
     "plot": 0,
     "needsRebuild": 0,
     "skillUpgradeSuggested": 0
@@ -150,6 +150,34 @@
       "mayBecomeGeneralRule": false,
       "skillUpgradeSuggested": false,
       "path": "docs/知识检索校准/records/concept/ra-3514339560.json"
+    },
+    {
+      "auditId": "ra-26cac52c01",
+      "channel": "style-rag",
+      "sourceAssetId": "ea-audit-test-fixture",
+      "issueCategories": [
+        "author-info-error",
+        "model-unauthorized-completion"
+      ],
+      "fixStatus": "recorded",
+      "needsIndexRebuild": false,
+      "mayBecomeGeneralRule": true,
+      "skillUpgradeSuggested": false,
+      "path": "docs/知识检索校准/records/style-rag/ra-26cac52c01.json"
+    },
+    {
+      "auditId": "ra-62f79e0f7f",
+      "channel": "concept",
+      "sourceAssetId": "restraint.pose.houshou-guanyin",
+      "issueCategories": [
+        "missing-rag-link",
+        "naming-inconsistency"
+      ],
+      "fixStatus": "recorded",
+      "needsIndexRebuild": false,
+      "mayBecomeGeneralRule": false,
+      "skillUpgradeSuggested": false,
+      "path": "docs/知识检索校准/records/concept/ra-62f79e0f7f.json"
     }
   ],
   "patternGroups": [
@@ -163,7 +191,8 @@
         "ra-0a4bcea9fa",
         "ra-c10a8e2cfa",
         "ra-5bdbff1494",
-        "ra-3acf505be3"
+        "ra-3acf505be3",
+        "ra-26cac52c01"
       ],
       "independentCount": 1,
       "skillUpgradeSuggested": false,
@@ -179,7 +208,8 @@
         "ra-0a4bcea9fa",
         "ra-c10a8e2cfa",
         "ra-5bdbff1494",
-        "ra-3acf505be3"
+        "ra-3acf505be3",
+        "ra-26cac52c01"
       ],
       "independentCount": 1,
       "skillUpgradeSuggested": false,

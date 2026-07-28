@@ -33,6 +33,9 @@ import { liluoRoomAssetBundle } from './maps/munika/liluo_room/assets';
 import { liluoRoomMeta } from './maps/munika/liluo_room/meta';
 import { mumuRoomAssetBundle } from './maps/munika/mumu_room/assets';
 import { mumuRoomMeta } from './maps/munika/mumu_room/meta';
+import { mergeMapContentRegistry } from './mapContentRegistry';
+
+export { mergeMapContentRegistry } from './mapContentRegistry';
 
 export interface GameMapTilesetRenderConfig {
   textureKey: string;
@@ -165,22 +168,22 @@ export const mapRegistry: Record<string, GameMapRegistryEntry> = {
   }
 };
 
-export const eventRegistry = {
-  ...(cityDesireEvents as Record<string, unknown>),
-  ...(cityJingjiangSchoolEvents as Record<string, unknown>),
-  ...(liluoEstateEvents as Record<string, unknown>),
-  ...(liluoHouseLivingRoomEvents as Record<string, unknown>),
-  ...(liluoRoomEvents as Record<string, unknown>),
-  ...(mumuRoomEvents as Record<string, unknown>)
-};
+export const eventRegistry = mergeMapContentRegistry('event', [
+  { mapId: cityDesireMeta.id, entries: cityDesireEvents as Record<string, unknown> },
+  { mapId: cityJingjiangSchoolMeta.id, entries: cityJingjiangSchoolEvents as Record<string, unknown> },
+  { mapId: liluoEstateMeta.id, entries: liluoEstateEvents as Record<string, unknown> },
+  { mapId: liluoHouseLivingRoomMeta.id, entries: liluoHouseLivingRoomEvents as Record<string, unknown> },
+  { mapId: liluoRoomMeta.id, entries: liluoRoomEvents as Record<string, unknown> },
+  { mapId: mumuRoomMeta.id, entries: mumuRoomEvents as Record<string, unknown> }
+]);
 
-export const dialogueRegistry = {
-  ...(cityDesireDialogues as Record<string, unknown>),
-  ...(cityJingjiangSchoolDialogues as Record<string, unknown>),
-  ...(liluoEstateDialogues as Record<string, unknown>),
-  ...(liluoHouseLivingRoomDialogues as Record<string, unknown>),
-  ...(liluoRoomDialogues as Record<string, unknown>)
-};
+export const dialogueRegistry = mergeMapContentRegistry('dialogue', [
+  { mapId: cityDesireMeta.id, entries: cityDesireDialogues as Record<string, unknown> },
+  { mapId: cityJingjiangSchoolMeta.id, entries: cityJingjiangSchoolDialogues as Record<string, unknown> },
+  { mapId: liluoEstateMeta.id, entries: liluoEstateDialogues as Record<string, unknown> },
+  { mapId: liluoHouseLivingRoomMeta.id, entries: liluoHouseLivingRoomDialogues as Record<string, unknown> },
+  { mapId: liluoRoomMeta.id, entries: liluoRoomDialogues as Record<string, unknown> }
+]);
 
 export const INITIAL_MAP_ID = liluoEstateMeta.id;
 

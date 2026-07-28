@@ -156,14 +156,14 @@ function validate(graph) {
   if (graph.nodes.some((node) => node.type === 'concept')) {
     errors.push('detail-concept nodes must not be projected into the graph');
   }
-  const detailRag = graph.nodes.find((node) => node.id === 'rag:fb-term-houshou-guanyin');
-  if (!detailRag) errors.push('missing RAG card 后手观音');
+  const detailRag = graph.nodes.find((node) => node.id === 'rag:rag.restraint.detail.挠痒-山药汁');
+  if (!detailRag) errors.push('missing RAG card 挠痒-山药汁');
   if (detailRag?.meta?.ragLayer !== 'concept') {
-    errors.push('后手观音 RAG should be ragLayer=concept (具体概念)');
+    errors.push('挠痒-山药汁 RAG should be ragLayer=concept (具体概念)');
   }
-  const categoryRag = graph.nodes.find((node) => node.id === 'rag:fb-term-upper-body-restricted');
+  const categoryRag = graph.nodes.find((node) => node.id === 'rag:rag.restraint.effect.tickling');
   if (categoryRag?.meta?.ragLayer !== 'category') {
-    errors.push('上肢受限 RAG should be ragLayer=category (上位类别)');
+    errors.push('挠痒 RAG should be ragLayer=category (上位类别)');
   }
   if (graph.nodes.some((node) => node.title === '身后束手')) {
     errors.push('身后束手 must not appear as a RAG card');
@@ -171,10 +171,10 @@ function validate(graph) {
   const hierarchyEdge = graph.edges.find(
     (edge) =>
       edge.relationType === 'narrower' &&
-      edge.source === 'rag:fb-term-upper-body-restricted' &&
-      edge.target === 'rag:fb-term-houshou-guanyin'
+      edge.source === 'rag:rag.restraint.effect.tickling' &&
+      edge.target === 'rag:rag.restraint.detail.挠痒-山药汁'
   );
-  if (!hierarchyEdge) errors.push('missing narrower edge 上肢受限 RAG → 后手观音 RAG');
+  if (!hierarchyEdge) errors.push('missing narrower edge 挠痒 RAG → 挠痒-山药汁 RAG');
   const technique = graph.nodes.find(
     (node) => node.type === 'style_rag' && node.meta?.role === 'technique' && node.title === '日常互动'
   );

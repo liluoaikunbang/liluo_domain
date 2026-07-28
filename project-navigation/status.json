@@ -1,16 +1,16 @@
 {
   "schemaVersion": 1,
-  "scannedAt": "2026-07-26T14:27:25.915Z",
+  "scannedAt": "2026-07-28T03:22:37.398Z",
   "counts": {
     "capabilities": 170,
     "workflows": 10,
     "gaps": 287,
     "gameplay": 108,
     "plots": {
-      "total": 54,
+      "total": 59,
       "unused": 22,
       "partial": 1,
-      "bondageUnused": 14
+      "bondageUnused": 0
     }
   }
 }

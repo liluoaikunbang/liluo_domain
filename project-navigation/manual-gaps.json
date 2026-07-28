@@ -374,7 +374,7 @@
     },
     {
       "id": "gap-rag-manual-audit-calibration",
-      "title": "普通 RAG 人工抽查校准",
+      "title": "紧缚 RAG 人工抽查校准",
       "domain": "knowledge",
       "category": "rag-audit",
       "origin": "user-confirmed",

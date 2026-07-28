@@ -29,7 +29,7 @@ test('plot panel exposes search, usage, world-bias and plot-kind filters', () =>
   assert.match(plotPanelSource, /plotKind/u);
   assert.match(plotPanelSource, /usedByLabels/u);
   assert.match(plotPanelSource, /出现人物/u);
-  assert.match(plotPanelSource, /RAG 引用/u);
+  assert.match(plotPanelSource, /紧缚 RAG 引用/u);
   assert.doesNotMatch(plotPanelSource, /普通标签|紧缚标签|bondageTags|plotTags/u);
   assert.match(plotPanelSource, /未使用/u);
   assert.match(plotPanelSource, /已使用/u);

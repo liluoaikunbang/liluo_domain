@@ -7,28 +7,10 @@
       "title": "砚秋（内容与一致性审计）",
       "domain": "project",
       "status": "available",
-      "maturity": "standard",
       "summary": "只读审计内容、元数据、引用、ID 与确定性校验结果。",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "在主 Codex 的调度下进行只读调查或验证。"
-      ],
-      "aiMustNotDo": [
-        "不直接写入正式项目文件。"
-      ],
-      "skills": [],
-      "agents": [
-        "liluo_content_auditor"
-      ],
-      "commands": [],
-      "outputs": [],
       "sourceRefs": [
         ".codex\\agents\\liluo_content_auditor.toml"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "unknown"
+      ]
     },
     {
       "id": "agent-liluo-context-explorer",
@@ -36,28 +18,10 @@
       "title": "知遥（资料与出处）",
       "domain": "project",
       "status": "available",
-      "maturity": "standard",
       "summary": "只读定位最小权威上下文与证据路径。",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "在主 Codex 的调度下进行只读调查或验证。"
-      ],
-      "aiMustNotDo": [
-        "不直接写入正式项目文件。"
-      ],
-      "skills": [],
-      "agents": [
-        "liluo_context_explorer"
-      ],
-      "commands": [],
-      "outputs": [],
       "sourceRefs": [
         ".codex\\agents\\liluo_context_explorer.toml"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "unknown"
+      ]
     },
     {
       "id": "agent-liluo-continuity-reviewer",
@@ -65,28 +29,10 @@
       "title": "言澈（世界观连续性）",
       "domain": "project",
       "status": "available",
-      "maturity": "standard",
       "summary": "只读核验角色、时间线与世界规则的一致性。",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "在主 Codex 的调度下进行只读调查或验证。"
-      ],
-      "aiMustNotDo": [
-        "不直接写入正式项目文件。"
-      ],
-      "skills": [],
-      "agents": [
-        "liluo_continuity_reviewer"
-      ],
-      "commands": [],
-      "outputs": [],
       "sourceRefs": [
         ".codex\\agents\\liluo_continuity_reviewer.toml"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "unknown"
+      ]
     },
     {
       "id": "agent-liluo-game-architecture-explorer",
@@ -94,28 +40,10 @@
       "title": "时雨（游戏架构）",
       "domain": "project",
       "status": "available",
-      "maturity": "standard",
       "summary": "只读追踪 Vue、Phaser、Pinia 与游戏运行时的数据流。",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "在主 Codex 的调度下进行只读调查或验证。"
-      ],
-      "aiMustNotDo": [
-        "不直接写入正式项目文件。"
-      ],
-      "skills": [],
-      "agents": [
-        "liluo_game_architecture_explorer"
-      ],
-      "commands": [],
-      "outputs": [],
       "sourceRefs": [
         ".codex\\agents\\liluo_game_architecture_explorer.toml"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "unknown"
+      ]
     },
     {
       "id": "agent-liluo-project-memory-curator",
@@ -123,28 +51,10 @@
       "title": "怀月（规范与设计记忆）",
       "domain": "project",
       "status": "available",
-      "maturity": "standard",
       "summary": "只读追踪长期规则的权威来源、影响面与重复冲突。",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "在主 Codex 的调度下进行只读调查或验证。"
-      ],
-      "aiMustNotDo": [
-        "不直接写入正式项目文件。"
-      ],
-      "skills": [],
-      "agents": [
-        "liluo_project_memory_curator"
-      ],
-      "commands": [],
-      "outputs": [],
       "sourceRefs": [
         ".codex\\agents\\liluo_project_memory_curator.toml"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "unknown"
+      ]
     },
     {
       "id": "agent-liluo-story-gap-analyst",
@@ -152,28 +62,10 @@
       "title": "星弥（故事缺口）",
       "domain": "project",
       "status": "available",
-      "maturity": "standard",
       "summary": "只读发现有证据的故事与可玩内容缺口，供用户审批。",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "在主 Codex 的调度下进行只读调查或验证。"
-      ],
-      "aiMustNotDo": [
-        "不直接写入正式项目文件。"
-      ],
-      "skills": [],
-      "agents": [
-        "liluo_story_gap_analyst"
-      ],
-      "commands": [],
-      "outputs": [],
       "sourceRefs": [
         ".codex\\agents\\liluo_story_gap_analyst.toml"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "unknown"
+      ]
     },
     {
       "id": "agent-liluo-validation-runner",
@@ -181,28 +73,10 @@
       "title": "凌音（测试与验证）",
       "domain": "project",
       "status": "available",
-      "maturity": "standard",
       "summary": "运行最小适用的既有验证并如实报告结果。",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "在主 Codex 的调度下进行只读调查或验证。"
-      ],
-      "aiMustNotDo": [
-        "不直接写入正式项目文件。"
-      ],
-      "skills": [],
-      "agents": [
-        "liluo_validation_runner"
-      ],
-      "commands": [],
-      "outputs": [],
       "sourceRefs": [
         ".codex\\agents\\liluo_validation_runner.toml"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "unknown"
+      ]
     },
     {
       "id": "command-data-contracts-all",
@@ -210,26 +84,10 @@
       "title": "npm run data:contracts:all",
       "domain": "data",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/data-contracts/validate-data-contracts.mjs --scope all --check",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run data:contracts:all"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-data-contracts-check",
@@ -237,26 +95,10 @@
       "title": "npm run data:contracts:check",
       "domain": "data",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/data-contracts/validate-data-contracts.mjs --scope changed --check",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run data:contracts:check"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-data-contracts-registry",
@@ -264,26 +106,10 @@
       "title": "npm run data:contracts:registry",
       "domain": "data",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/data-contracts/validate-schema-registry.mjs",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run data:contracts:registry"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-data-contracts-test",
@@ -291,26 +117,10 @@
       "title": "npm run data:contracts:test",
       "domain": "data",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/data-contracts/test-data-contracts.mjs",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run data:contracts:test"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-docs-check-encoding",
@@ -318,26 +128,10 @@
       "title": "npm run docs:check-encoding",
       "domain": "docs",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/docs/check-doc-encoding.js",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run docs:check-encoding"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-docs-commands-validate",
@@ -345,26 +139,10 @@
       "title": "npm run docs:commands:validate",
       "domain": "docs",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/document-governance/validate-user-command-sync.mjs",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run docs:commands:validate"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-docs-compact-report",
@@ -372,26 +150,10 @@
       "title": "npm run docs:compact:report",
       "domain": "docs",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/document-governance/report-document-duplication.mjs",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run docs:compact:report"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-docs-governance-audit",
@@ -399,26 +161,10 @@
       "title": "npm run docs:governance:audit",
       "domain": "docs",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/document-governance/audit-document-governance.mjs",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run docs:governance:audit"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-docs-governance-validate",
@@ -426,26 +172,10 @@
       "title": "npm run docs:governance:validate",
       "domain": "docs",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/document-governance/validate-governance-registry.mjs",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run docs:governance:validate"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-docs-impact",
@@ -453,26 +183,10 @@
       "title": "npm run docs:impact",
       "domain": "docs",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/document-governance/analyze-document-impact.mjs",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run docs:impact"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-docs-memory-validate",
@@ -480,26 +194,10 @@
       "title": "npm run docs:memory:validate",
       "domain": "docs",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/document-governance/validate-design-memory.mjs",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run docs:memory:validate"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-evals-add-regression",
@@ -507,26 +205,10 @@
       "title": "npm run evals:add-regression",
       "domain": "evals",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/evals/add-regression-case.mjs",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run evals:add-regression"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-evals-baseline-update",
@@ -534,26 +216,10 @@
       "title": "npm run evals:baseline:update",
       "domain": "evals",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/evals/score-codex-evals.mjs --update-baseline",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run evals:baseline:update"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-evals-changed",
@@ -561,26 +227,10 @@
       "title": "npm run evals:changed",
       "domain": "evals",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/evals/run-codex-evals.mjs --suite changed",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run evals:changed"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-evals-check",
@@ -588,26 +238,10 @@
       "title": "npm run evals:check",
       "domain": "evals",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/evals/validate-eval-registry.mjs && node scripts/evals/run-static-evals.mjs --scope changed",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run evals:check"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-evals-full",
@@ -615,26 +249,10 @@
       "title": "npm run evals:full",
       "domain": "evals",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/evals/run-codex-evals.mjs --suite full",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run evals:full"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-evals-smoke",
@@ -642,26 +260,10 @@
       "title": "npm run evals:smoke",
       "domain": "evals",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/evals/run-codex-evals.mjs --suite smoke",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run evals:smoke"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-evals-static-all",
@@ -669,26 +271,10 @@
       "title": "npm run evals:static:all",
       "domain": "evals",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/evals/run-static-evals.mjs --scope all",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run evals:static:all"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-external-knowledge-build",
@@ -696,26 +282,10 @@
       "title": "npm run external:knowledge:build",
       "domain": "external",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/external-knowledge/build-external-knowledge.mjs --all",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run external:knowledge:build"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-external-knowledge-check",
@@ -723,26 +293,10 @@
       "title": "npm run external:knowledge:check",
       "domain": "external",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/external-knowledge/check-external-knowledge.mjs",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run external:knowledge:check"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-external-knowledge-copy-check",
@@ -750,26 +304,10 @@
       "title": "npm run external:knowledge:copy-check",
       "domain": "external",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/external-knowledge/check-copy-similarity.mjs",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run external:knowledge:copy-check"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-external-knowledge-query",
@@ -777,26 +315,10 @@
       "title": "npm run external:knowledge:query",
       "domain": "external",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/external-knowledge/query-external-knowledge.mjs",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run external:knowledge:query"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-external-knowledge-sync",
@@ -804,26 +326,10 @@
       "title": "npm run external:knowledge:sync",
       "domain": "external",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/external-knowledge/sync-external-knowledge.mjs",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run external:knowledge:sync"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-external-knowledge-update",
@@ -831,26 +337,10 @@
       "title": "npm run external:knowledge:update",
       "domain": "external",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/external-knowledge/update-external-knowledge.mjs --changed",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run external:knowledge:update"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-external-knowledge-validate",
@@ -858,26 +348,10 @@
       "title": "npm run external:knowledge:validate",
       "domain": "external",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/external-knowledge/validate-external-knowledge.mjs",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run external:knowledge:validate"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-external-skills-catalog",
@@ -885,26 +359,10 @@
       "title": "npm run external-skills:catalog",
       "domain": "external-skills",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/external-skills/external-skills.mjs catalog",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run external-skills:catalog"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-external-skills-check",
@@ -912,26 +370,10 @@
       "title": "npm run external-skills:check",
       "domain": "external-skills",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/external-skills/external-skills.mjs check",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run external-skills:check"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-external-skills-check-due",
@@ -939,26 +381,10 @@
       "title": "npm run external-skills:check-due",
       "domain": "external-skills",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/external-skills/external-skills.mjs check-due",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run external-skills:check-due"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-external-skills-diff",
@@ -966,26 +392,10 @@
       "title": "npm run external-skills:diff",
       "domain": "external-skills",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/external-skills/external-skills.mjs diff",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run external-skills:diff"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-external-skills-evaluate",
@@ -993,26 +403,10 @@
       "title": "npm run external-skills:evaluate",
       "domain": "external-skills",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/external-skills/external-skills.mjs evaluate",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run external-skills:evaluate"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-external-skills-fetch",
@@ -1020,26 +414,10 @@
       "title": "npm run external-skills:fetch",
       "domain": "external-skills",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/external-skills/external-skills.mjs fetch",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run external-skills:fetch"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-external-skills-maintain",
@@ -1047,26 +425,10 @@
       "title": "npm run external-skills:maintain",
       "domain": "external-skills",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/external-skills/external-skills.mjs maintain",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run external-skills:maintain"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-external-skills-query",
@@ -1074,26 +436,10 @@
       "title": "npm run external-skills:query",
       "domain": "external-skills",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/external-skills/external-skills.mjs query",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run external-skills:query"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-external-skills-report",
@@ -1101,26 +447,10 @@
       "title": "npm run external-skills:report",
       "domain": "external-skills",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/external-skills/external-skills.mjs report",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run external-skills:report"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-external-skills-validate",
@@ -1128,26 +458,10 @@
       "title": "npm run external-skills:validate",
       "domain": "external-skills",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/external-skills/external-skills.mjs validate",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run external-skills:validate"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-game-content-validate",
@@ -1155,26 +469,10 @@
       "title": "npm run game:content:validate",
       "domain": "game",
       "status": "available",
-      "maturity": "standard",
       "summary": "node .agents/skills/liluo-project/liluo-game-content-validator/scripts/validate-game-content.mjs --scope all --check",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run game:content:validate"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-project-context-audit",
@@ -1182,26 +480,10 @@
       "title": "npm run project:context:audit",
       "domain": "project",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/project-navigation/project-navigation.mjs context-check",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run project:context:audit"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-project-context-pack",
@@ -1209,26 +491,10 @@
       "title": "npm run project:context-pack",
       "domain": "project",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/project-context-pack/project-context-pack.mjs",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run project:context-pack"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-project-context-pack-dry-run",
@@ -1236,26 +502,10 @@
       "title": "npm run project:context-pack:dry-run",
       "domain": "project",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/project-context-pack/project-context-pack.mjs --dry-run",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run project:context-pack:dry-run"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-project-context-pack-test",
@@ -1263,26 +513,10 @@
       "title": "npm run project:context-pack:test",
       "domain": "project",
       "status": "available",
-      "maturity": "standard",
       "summary": "node --test scripts/tests/project-context-pack.test.mjs",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run project:context-pack:test"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-project-context-resolve",
@@ -1290,26 +524,10 @@
       "title": "npm run project:context:resolve",
       "domain": "project",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/project-navigation/project-navigation.mjs context",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run project:context:resolve"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-project-context-test",
@@ -1317,26 +535,10 @@
       "title": "npm run project:context:test",
       "domain": "project",
       "status": "available",
-      "maturity": "standard",
       "summary": "node --test scripts/tests/project-context-routing.test.mjs",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run project:context:test"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-project-gate-changed",
@@ -1344,26 +546,10 @@
       "title": "npm run project:gate:changed",
       "domain": "project",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/quality-gate/run-quality-gate.mjs --mode changed",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run project:gate:changed"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-project-gate-ci",
@@ -1371,26 +557,10 @@
       "title": "npm run project:gate:ci",
       "domain": "project",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/quality-gate/run-quality-gate.mjs --mode ci",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run project:gate:ci"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-project-gate-explain",
@@ -1398,26 +568,10 @@
       "title": "npm run project:gate:explain",
       "domain": "project",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/quality-gate/explain-quality-gate.mjs",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run project:gate:explain"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-project-gate-prepush",
@@ -1425,26 +579,10 @@
       "title": "npm run project:gate:prepush",
       "domain": "project",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/quality-gate/run-quality-gate.mjs --mode prepush",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run project:gate:prepush"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-project-hooks-install",
@@ -1452,26 +590,10 @@
       "title": "npm run project:hooks:install",
       "domain": "project",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/quality-gate/install-git-hooks.mjs",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run project:hooks:install"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-project-hooks-test",
@@ -1479,26 +601,10 @@
       "title": "npm run project:hooks:test",
       "domain": "project",
       "status": "available",
-      "maturity": "standard",
       "summary": "node --test scripts/quality-gate/tests/*.test.mjs",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run project:hooks:test"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-project-index-build",
@@ -1506,26 +612,10 @@
       "title": "npm run project:index:build",
       "domain": "project",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/project-index/build-project-index.mjs --all",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run project:index:build"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-project-index-changed",
@@ -1533,26 +623,10 @@
       "title": "npm run project:index:changed",
       "domain": "project",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/project-index/build-project-index.mjs --changed",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run project:index:changed"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-project-index-check",
@@ -1560,26 +634,10 @@
       "title": "npm run project:index:check",
       "domain": "project",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/project-index/check-project-index.mjs",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run project:index:check"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-project-index-query",
@@ -1587,26 +645,10 @@
       "title": "npm run project:index:query",
       "domain": "project",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/project-index/query-project-index.mjs",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run project:index:query"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-project-index-validate",
@@ -1614,26 +656,10 @@
       "title": "npm run project:index:validate",
       "domain": "project",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/project-index/validate-project-index.mjs",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run project:index:validate"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-project-navigation-build",
@@ -1641,26 +667,10 @@
       "title": "npm run project:navigation:build",
       "domain": "project",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/project-navigation/project-navigation.mjs build",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run project:navigation:build"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-project-navigation-changed",
@@ -1668,26 +678,10 @@
       "title": "npm run project:navigation:changed",
       "domain": "project",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/project-navigation/project-navigation.mjs changed",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run project:navigation:changed"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-project-navigation-check",
@@ -1695,26 +689,10 @@
       "title": "npm run project:navigation:check",
       "domain": "project",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/project-navigation/project-navigation.mjs check",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run project:navigation:check"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-project-navigation-list",
@@ -1722,26 +700,10 @@
       "title": "npm run project:navigation:list",
       "domain": "project",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/project-navigation/project-navigation.mjs list",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run project:navigation:list"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-project-navigation-next",
@@ -1749,26 +711,10 @@
       "title": "npm run project:navigation:next",
       "domain": "project",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/project-navigation/project-navigation.mjs next",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run project:navigation:next"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-project-navigation-rescan",
@@ -1776,26 +722,10 @@
       "title": "npm run project:navigation:rescan",
       "domain": "project",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/project-navigation/project-navigation.mjs rescan",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run project:navigation:rescan"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-project-routine",
@@ -1803,26 +733,10 @@
       "title": "npm run project:routine",
       "domain": "project",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/project-routine.mjs",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run project:routine"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-project-skill-init",
@@ -1830,26 +744,10 @@
       "title": "npm run project:skill:init",
       "domain": "project",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/init-project-skill.mjs",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run project:skill:init"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-project-workflow-approve",
@@ -1857,26 +755,10 @@
       "title": "npm run project:workflow:approve",
       "domain": "project",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/project-workflows/project-workflows.mjs approve",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run project:workflow:approve"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-project-workflow-brief",
@@ -1884,26 +766,10 @@
       "title": "npm run project:workflow:brief",
       "domain": "project",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/project-workflows/project-workflows.mjs brief",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run project:workflow:brief"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-project-workflow-complete-node",
@@ -1911,26 +777,10 @@
       "title": "npm run project:workflow:complete-node",
       "domain": "project",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/project-workflows/project-workflows.mjs complete-node",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run project:workflow:complete-node"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-project-workflow-create-run",
@@ -1938,26 +788,10 @@
       "title": "npm run project:workflow:create-run",
       "domain": "project",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/project-workflows/project-workflows.mjs create-run",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run project:workflow:create-run"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-project-workflow-fail-node",
@@ -1965,26 +799,10 @@
       "title": "npm run project:workflow:fail-node",
       "domain": "project",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/project-workflows/project-workflows.mjs fail-node",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run project:workflow:fail-node"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-project-workflow-finish",
@@ -1992,26 +810,10 @@
       "title": "npm run project:workflow:finish",
       "domain": "project",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/project-workflows/project-workflows.mjs finish",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run project:workflow:finish"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-project-workflow-generate",
@@ -2019,26 +821,10 @@
       "title": "npm run project:workflow:generate",
       "domain": "project",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/project-workflows/project-workflows.mjs generate",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run project:workflow:generate"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-project-workflow-generate-all",
@@ -2046,26 +832,10 @@
       "title": "npm run project:workflow:generate:all",
       "domain": "project",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/project-workflows/project-workflows.mjs generate --all",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run project:workflow:generate:all"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-project-workflow-list",
@@ -2073,26 +843,10 @@
       "title": "npm run project:workflow:list",
       "domain": "project",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/project-workflows/project-workflows.mjs list",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run project:workflow:list"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-project-workflow-mermaid",
@@ -2100,26 +854,10 @@
       "title": "npm run project:workflow:mermaid",
       "domain": "project",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/project-workflows/project-workflows.mjs mermaid",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run project:workflow:mermaid"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-project-workflow-projection",
@@ -2127,26 +865,10 @@
       "title": "npm run project:workflow:projection",
       "domain": "project",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/project-workflows/project-workflows.mjs projection",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run project:workflow:projection"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-project-workflow-record-invocation",
@@ -2154,26 +876,10 @@
       "title": "npm run project:workflow:record-invocation",
       "domain": "project",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/project-workflows/project-workflows.mjs record-invocation",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run project:workflow:record-invocation"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-project-workflow-report",
@@ -2181,26 +887,10 @@
       "title": "npm run project:workflow:report",
       "domain": "project",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/project-workflows/project-workflows.mjs report",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run project:workflow:report"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-project-workflow-start-node",
@@ -2208,26 +898,10 @@
       "title": "npm run project:workflow:start-node",
       "domain": "project",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/project-workflows/project-workflows.mjs start-node",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run project:workflow:start-node"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-project-workflow-status",
@@ -2235,26 +909,10 @@
       "title": "npm run project:workflow:status",
       "domain": "project",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/project-workflows/project-workflows.mjs status",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run project:workflow:status"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-project-workflow-test",
@@ -2262,26 +920,10 @@
       "title": "npm run project:workflow:test",
       "domain": "project",
       "status": "available",
-      "maturity": "standard",
       "summary": "node --test scripts/tests/project-workflows.test.mjs",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run project:workflow:test"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-project-workflow-validate",
@@ -2289,26 +931,10 @@
       "title": "npm run project:workflow:validate",
       "domain": "project",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/project-workflows/project-workflows.mjs validate",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run project:workflow:validate"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-project-workflow-viewer-build",
@@ -2316,26 +942,10 @@
       "title": "npm run project:workflow:viewer:build",
       "domain": "project",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/project-workflows/project-workflows.mjs viewer-build",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run project:workflow:viewer:build"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-story-gaps-examples",
@@ -2343,26 +953,10 @@
       "title": "npm run story:gaps:examples",
       "domain": "story",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/story-gaps/run-story-gap-examples.mjs",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run story:gaps:examples"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-story-gaps-test",
@@ -2370,26 +964,10 @@
       "title": "npm run story:gaps:test",
       "domain": "story",
       "status": "available",
-      "maturity": "standard",
       "summary": "node --test scripts/tests/story-gap-discovery.test.mjs",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run story:gaps:test"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-story-gaps-validate",
@@ -2397,26 +975,10 @@
       "title": "npm run story:gaps:validate",
       "domain": "story",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/story-gaps/validate-story-gap-candidate.mjs",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run story:gaps:validate"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-team-literary-names-available",
@@ -2424,26 +986,10 @@
       "title": "npm run team:literary-names:available",
       "domain": "team",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/team-presence/team-literary-names.mjs available",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run team:literary-names:available"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-team-literary-names-list",
@@ -2451,26 +997,10 @@
       "title": "npm run team:literary-names:list",
       "domain": "team",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/team-presence/team-literary-names.mjs list",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run team:literary-names:list"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-team-literary-names-validate",
@@ -2478,26 +1008,10 @@
       "title": "npm run team:literary-names:validate",
       "domain": "team",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/team-presence/team-literary-names.mjs validate",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run team:literary-names:validate"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-team-notes-validate",
@@ -2505,26 +1019,10 @@
       "title": "npm run team:notes:validate",
       "domain": "team",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/team-presence/validate-team-notes.mjs",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run team:notes:validate"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-team-presence-check",
@@ -2532,26 +1030,10 @@
       "title": "npm run team:presence:check",
       "domain": "team",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/team-presence/check-team-presence.mjs",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run team:presence:check"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-team-presence-update",
@@ -2559,26 +1041,10 @@
       "title": "npm run team:presence:update",
       "domain": "team",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/team-presence/update-team-presence.mjs",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run team:presence:update"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-team-roster-validate",
@@ -2586,26 +1052,10 @@
       "title": "npm run team:roster:validate",
       "domain": "team",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/team-presence/validate-team-roster.mjs",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run team:roster:validate"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-writing-assets-register",
@@ -2613,26 +1063,10 @@
       "title": "npm run writing:assets:register",
       "domain": "writing",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/writing-model/writing-model.mjs assets-register",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run writing:assets:register"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-writing-assets-validate",
@@ -2640,26 +1074,10 @@
       "title": "npm run writing:assets:validate",
       "domain": "writing",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/writing-model/writing-model.mjs assets-validate",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run writing:assets:validate"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-writing-calibration-create",
@@ -2667,26 +1085,10 @@
       "title": "npm run writing:calibration:create",
       "domain": "writing",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/writing-model/writing-model.mjs calibration-create",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run writing:calibration:create"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-writing-external-authors",
@@ -2694,26 +1096,10 @@
       "title": "npm run writing:external:authors",
       "domain": "writing",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/writing-model/writing-model.mjs external-authors",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run writing:external:authors"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-writing-external-inventory",
@@ -2721,26 +1107,10 @@
       "title": "npm run writing:external:inventory",
       "domain": "writing",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/writing-model/writing-model.mjs external-inventory",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run writing:external:inventory"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-writing-external-review-export",
@@ -2748,26 +1118,10 @@
       "title": "npm run writing:external:review:export",
       "domain": "writing",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/writing-model/writing-model.mjs external-review-export",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run writing:external:review:export"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-writing-external-review-import",
@@ -2775,26 +1129,10 @@
       "title": "npm run writing:external:review:import",
       "domain": "writing",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/writing-model/writing-model.mjs external-review-import",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run writing:external:review:import"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-writing-external-validate",
@@ -2802,26 +1140,10 @@
       "title": "npm run writing:external:validate",
       "domain": "writing",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/writing-model/writing-model.mjs external-validate",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run writing:external:validate"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-writing-gaps-remind",
@@ -2829,26 +1151,10 @@
       "title": "npm run writing:gaps:remind",
       "domain": "writing",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/writing-model/writing-model.mjs remind-gaps",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run writing:gaps:remind"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-writing-golden-sync",
@@ -2856,26 +1162,10 @@
       "title": "npm run writing:golden:sync",
       "domain": "writing",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/writing-model/writing-model.mjs sync-golden",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run writing:golden:sync"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-writing-models-health",
@@ -2883,26 +1173,10 @@
       "title": "npm run writing:models:health",
       "domain": "writing",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/writing-model/writing-model.mjs health",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run writing:models:health"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-writing-models-pin",
@@ -2910,26 +1184,10 @@
       "title": "npm run writing:models:pin",
       "domain": "writing",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/writing-model/writing-model.mjs pin",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run writing:models:pin"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-writing-models-status",
@@ -2937,26 +1195,10 @@
       "title": "npm run writing:models:status",
       "domain": "writing",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/writing-model/writing-model.mjs status",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run writing:models:status"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-writing-models-validate",
@@ -2964,26 +1206,10 @@
       "title": "npm run writing:models:validate",
       "domain": "writing",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/writing-model/writing-model.mjs validate",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run writing:models:validate"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-writing-pipeline-test",
@@ -2991,26 +1217,10 @@
       "title": "npm run writing:pipeline:test",
       "domain": "writing",
       "status": "available",
-      "maturity": "standard",
       "summary": "node --test scripts/tests/writing-model-pipeline.test.mjs",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run writing:pipeline:test"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-writing-prose-compare",
@@ -3018,26 +1228,10 @@
       "title": "npm run writing:prose:compare",
       "domain": "writing",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/writing-model/writing-model.mjs compare",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run writing:prose:compare"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-writing-prose-draft",
@@ -3045,26 +1239,10 @@
       "title": "npm run writing:prose:draft",
       "domain": "writing",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/writing-model/writing-model.mjs draft",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run writing:prose:draft"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-writing-style-explain",
@@ -3072,26 +1250,10 @@
       "title": "npm run writing:style:explain",
       "domain": "writing",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/writing-model/writing-model.mjs style-explain",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run writing:style:explain"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-writing-style-feedback",
@@ -3099,26 +1261,10 @@
       "title": "npm run writing:style:feedback",
       "domain": "writing",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/writing-model/writing-model.mjs style-feedback",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run writing:style:feedback"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-writing-style-pack",
@@ -3126,26 +1272,10 @@
       "title": "npm run writing:style:pack",
       "domain": "writing",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/writing-model/writing-model.mjs style-pack",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run writing:style:pack"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-writing-style-query",
@@ -3153,26 +1283,10 @@
       "title": "npm run writing:style:query",
       "domain": "writing",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/writing-model/writing-model.mjs style-query",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run writing:style:query"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-writing-style-search",
@@ -3180,26 +1294,10 @@
       "title": "npm run writing:style:search",
       "domain": "writing",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/writing-model/writing-model.mjs style-search",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run writing:style:search"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-writing-style-sheet-approve",
@@ -3207,26 +1305,10 @@
       "title": "npm run writing:style:sheet:approve",
       "domain": "writing",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/writing-model/writing-model.mjs style-sheet-approve",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run writing:style:sheet:approve"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-writing-style-sheet-draft",
@@ -3234,26 +1316,10 @@
       "title": "npm run writing:style:sheet:draft",
       "domain": "writing",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/writing-model/writing-model.mjs style-sheet-draft",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run writing:style:sheet:draft"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-writing-style-test",
@@ -3261,26 +1327,10 @@
       "title": "npm run writing:style:test",
       "domain": "writing",
       "status": "available",
-      "maturity": "standard",
       "summary": "node --test scripts/tests/style-rag-metadata.test.mjs scripts/tests/external-style-inventory.test.mjs",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run writing:style:test"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "command-writing-style-validate",
@@ -3288,26 +1338,10 @@
       "title": "npm run writing:style:validate",
       "domain": "writing",
       "status": "available",
-      "maturity": "standard",
       "summary": "node scripts/writing-model/writing-model.mjs style-validate",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [
-        "运行对应的确定性项目命令。"
-      ],
-      "aiMustNotDo": [],
-      "skills": [],
-      "agents": [],
-      "commands": [
-        "npm run writing:style:validate"
-      ],
-      "outputs": [],
       "sourceRefs": [
         "package.json"
-      ],
-      "userEffort": "none",
-      "lastVerified": null,
-      "evalStatus": "not-applicable"
+      ]
     },
     {
       "id": "skill-brainstorm-ideas-existing",
@@ -3315,24 +1349,10 @@
       "title": "brainstorm-ideas-existing",
       "domain": "general",
       "status": "available",
-      "maturity": "standard",
       "summary": "私有化的上游既有产品构思方法；只由璃落效用导向构思编排层调用，从既有事实生成少量候选，不单独处理用户的故事或玩法请求。",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [],
-      "aiMustNotDo": [],
-      "skills": [
-        "brainstorm-ideas-existing"
-      ],
-      "agents": [],
-      "commands": [],
-      "outputs": [],
       "sourceRefs": [
         ".agents\\skills\\liluo-project\\brainstorm-ideas-existing\\SKILL.md"
-      ],
-      "userEffort": "low",
-      "lastVerified": null,
-      "evalStatus": "unknown"
+      ]
     },
     {
       "id": "skill-code-review-and-quality",
@@ -3340,24 +1360,10 @@
       "title": "code-review-and-quality",
       "domain": "general",
       "status": "available",
-      "maturity": "standard",
       "summary": "Conduct a formal multi-axis review for merge/PR readiness, security-sensitive or architectural changes, substantial refactors, or an explicit review request. Do not trigger for every small local edit; ordinary implementation still receives a concise task-local diff check.",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [],
-      "aiMustNotDo": [],
-      "skills": [
-        "code-review-and-quality"
-      ],
-      "agents": [],
-      "commands": [],
-      "outputs": [],
       "sourceRefs": [
         ".agents\\skills\\code-review-and-quality\\SKILL.md"
-      ],
-      "userEffort": "low",
-      "lastVerified": null,
-      "evalStatus": "unknown"
+      ]
     },
     {
       "id": "skill-code-simplification",
@@ -3365,24 +1371,10 @@
       "title": "code-simplification",
       "domain": "general",
       "status": "available",
-      "maturity": "standard",
       "summary": "Simplifies code for clarity. Use when refactoring code for clarity without changing behavior. Use when code works but is harder to read, maintain, or extend than it should be. Use when reviewing code that has accumulated unnecessary complexity.",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [],
-      "aiMustNotDo": [],
-      "skills": [
-        "code-simplification"
-      ],
-      "agents": [],
-      "commands": [],
-      "outputs": [],
       "sourceRefs": [
         ".agents\\skills\\code-simplification\\SKILL.md"
-      ],
-      "userEffort": "low",
-      "lastVerified": null,
-      "evalStatus": "unknown"
+      ]
     },
     {
       "id": "skill-debugging-and-error-recovery",
@@ -3390,24 +1382,10 @@
       "title": "debugging-and-error-recovery",
       "domain": "general",
       "status": "available",
-      "maturity": "standard",
       "summary": "Guides systematic root-cause debugging. Use when tests fail, builds break, behavior doesn't match expectations, or you encounter any unexpected error. Use when you need a systematic approach to finding and fixing the root cause rather than guessing.",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [],
-      "aiMustNotDo": [],
-      "skills": [
-        "debugging-and-error-recovery"
-      ],
-      "agents": [],
-      "commands": [],
-      "outputs": [],
       "sourceRefs": [
         ".agents\\skills\\debugging-and-error-recovery\\SKILL.md"
-      ],
-      "userEffort": "low",
-      "lastVerified": null,
-      "evalStatus": "unknown"
+      ]
     },
     {
       "id": "skill-frontend-ui-engineering",
@@ -3415,24 +1393,10 @@
       "title": "frontend-ui-engineering",
       "domain": "general",
       "status": "available",
-      "maturity": "standard",
       "summary": "Builds production-quality UIs. Use when building or modifying user-facing interfaces. Use when creating components, implementing layouts, managing state, or when the output needs to look and feel production-quality rather than AI-generated.",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [],
-      "aiMustNotDo": [],
-      "skills": [
-        "frontend-ui-engineering"
-      ],
-      "agents": [],
-      "commands": [],
-      "outputs": [],
       "sourceRefs": [
         ".agents\\skills\\frontend-ui-engineering\\SKILL.md"
-      ],
-      "userEffort": "low",
-      "lastVerified": null,
-      "evalStatus": "unknown"
+      ]
     },
     {
       "id": "skill-identify-assumptions-existing",
@@ -3440,24 +1404,10 @@
       "title": "identify-assumptions-existing",
       "domain": "general",
       "status": "available",
-      "maturity": "standard",
       "summary": "私有化的上游既有内容假设识别方法；只由璃落效用导向构思编排层调用，用于检查候选价值、可理解性、世界契合和制作可行性。",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [],
-      "aiMustNotDo": [],
-      "skills": [
-        "identify-assumptions-existing"
-      ],
-      "agents": [],
-      "commands": [],
-      "outputs": [],
       "sourceRefs": [
         ".agents\\skills\\liluo-project\\identify-assumptions-existing\\SKILL.md"
-      ],
-      "userEffort": "low",
-      "lastVerified": null,
-      "evalStatus": "unknown"
+      ]
     },
     {
       "id": "skill-incremental-implementation",
@@ -3465,24 +1415,10 @@
       "title": "incremental-implementation",
       "domain": "general",
       "status": "available",
-      "maturity": "standard",
       "summary": "Deliver genuinely large, risky, or independently releasable changes in thin vertical slices. Use when work spans multiple functional layers or more than roughly 100 lines of substantive implementation; do not trigger for small multi-file synchronization, documentation, metadata, or a single coherent behavior change.",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [],
-      "aiMustNotDo": [],
-      "skills": [
-        "incremental-implementation"
-      ],
-      "agents": [],
-      "commands": [],
-      "outputs": [],
       "sourceRefs": [
         ".agents\\skills\\incremental-implementation\\SKILL.md"
-      ],
-      "userEffort": "low",
-      "lastVerified": null,
-      "evalStatus": "unknown"
+      ]
     },
     {
       "id": "skill-liluo-asset-registry-audit",
@@ -3490,24 +1426,10 @@
       "title": "liluo-asset-registry-audit",
       "domain": "project",
       "status": "available",
-      "maturity": "standard",
       "summary": "Audit src/assets/game and docs/游戏素材图片清单.md for counts, hashes, references, classification, case conflicts, and missing entries. Use for 素材清单、缺失引用、未引用素材、重复图片或路径大小写审计；not for deleting, converting, compressing, moving, or promoting candidate assets.",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [],
-      "aiMustNotDo": [],
-      "skills": [
-        "liluo-asset-registry-audit"
-      ],
-      "agents": [],
-      "commands": [],
-      "outputs": [],
       "sourceRefs": [
         ".agents\\skills\\liluo-project\\liluo-asset-registry-audit\\SKILL.md"
-      ],
-      "userEffort": "low",
-      "lastVerified": null,
-      "evalStatus": "unknown"
+      ]
     },
     {
       "id": "skill-liluo-browser-game-regression",
@@ -3515,24 +1437,10 @@
       "title": "liluo-browser-game-regression",
       "domain": "project",
       "status": "available",
-      "maturity": "standard",
       "summary": "Plan and execute real browser regression for the 璃落 Vue3+Phaser game, covering navigation, maps, movement, dialogue, menus and save re-entry. Use for 浏览器回归、真实操作流程、控制台错误或窗口尺寸验证；not when only unit tests are requested.",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [],
-      "aiMustNotDo": [],
-      "skills": [
-        "liluo-browser-game-regression"
-      ],
-      "agents": [],
-      "commands": [],
-      "outputs": [],
       "sourceRefs": [
         ".agents\\skills\\liluo-project\\liluo-browser-game-regression\\SKILL.md"
-      ],
-      "userEffort": "low",
-      "lastVerified": null,
-      "evalStatus": "unknown"
+      ]
     },
     {
       "id": "skill-liluo-capability-regression",
@@ -3540,24 +1448,10 @@
       "title": "liluo-capability-regression",
       "domain": "project",
       "status": "available",
-      "maturity": "standard",
       "summary": "Run and maintain the 璃落 Skill / Agent capability regression system after Skill, Agent, AGENTS.md, rule, registry, or routing-prompt changes. Use to select static, changed, smoke, or full evaluation scope; diagnose structured routing regressions; or turn an explicitly confirmed long-term correction into a case. Do not modify another capability's business behavior or invent long-term rules.",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [],
-      "aiMustNotDo": [],
-      "skills": [
-        "liluo-capability-regression"
-      ],
-      "agents": [],
-      "commands": [],
-      "outputs": [],
       "sourceRefs": [
         ".agents\\skills\\testing\\liluo-capability-regression\\SKILL.md"
-      ],
-      "userEffort": "low",
-      "lastVerified": null,
-      "evalStatus": "unknown"
+      ]
     },
     {
       "id": "skill-liluo-character-arc-and-relationship-memory",
@@ -3565,24 +1459,10 @@
       "title": "liluo-character-arc-and-relationship-memory",
       "domain": "project",
       "status": "available",
-      "maturity": "standard",
       "summary": "Validate and maintain evidence-backed long-term character growth and relationship changes for 璃落. Use for 角色弧光、关系阶段、长期能力代价、跨章节变化记忆；not for transient emotions, speculative canon or runtime save migration.",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [],
-      "aiMustNotDo": [],
-      "skills": [
-        "liluo-character-arc-and-relationship-memory"
-      ],
-      "agents": [],
-      "commands": [],
-      "outputs": [],
       "sourceRefs": [
         ".agents\\skills\\liluo-project\\liluo-character-arc-and-relationship-memory\\SKILL.md"
-      ],
-      "userEffort": "low",
-      "lastVerified": null,
-      "evalStatus": "unknown"
+      ]
     },
     {
       "id": "skill-liluo-command-approval-governance",
@@ -3590,24 +1470,10 @@
       "title": "liluo-command-approval-governance",
       "domain": "project",
       "status": "available",
-      "maturity": "standard",
       "summary": "Safely classify, persist, audit, supersede, retire, and validate 璃落 project command authorization decisions. Use when the user says a command should以后长期允许、每次询问、禁止、撤销长期允许，asks to inspect TUI “始终允许” changes, migrate a global rule back to the project, inspect overbroad rules, or maintain `.codex/rules` and the approval registry; not for one-time/session approvals or bypassing platform sandbox and admin policy.",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [],
-      "aiMustNotDo": [],
-      "skills": [
-        "liluo-command-approval-governance"
-      ],
-      "agents": [],
-      "commands": [],
-      "outputs": [],
       "sourceRefs": [
         ".agents\\skills\\liluo-project\\liluo-command-approval-governance\\SKILL.md"
-      ],
-      "userEffort": "low",
-      "lastVerified": null,
-      "evalStatus": "unknown"
+      ]
     },
     {
       "id": "skill-liluo-creative-team-presence",
@@ -3615,24 +1481,10 @@
       "title": "liluo-creative-team-presence",
       "domain": "project",
       "status": "available",
-      "maturity": "standard",
       "summary": "Apply the 璃落 creative-team identities with immersive personaMode, compact displayDensity, and actual-call-only participation; route solo/micro-consult/council via team-routing.json. Use when the user asks 创作组讨论、沉浸/专业/克制模式、展示成员、久别重聚、记录璃落长期想法、项目组手记、把确认指示写成璃落的话, or changes member personas; apply proactively for ordinary project tasks that benefit from truthful team presence.",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [],
-      "aiMustNotDo": [],
-      "skills": [
-        "liluo-creative-team-presence"
-      ],
-      "agents": [],
-      "commands": [],
-      "outputs": [],
       "sourceRefs": [
         ".agents\\skills\\liluo-project\\liluo-creative-team-presence\\SKILL.md"
-      ],
-      "userEffort": "low",
-      "lastVerified": null,
-      "evalStatus": "unknown"
+      ]
     },
     {
       "id": "skill-liluo-dialogue-event-authoring",
@@ -3640,24 +1492,10 @@
       "title": "liluo-dialogue-event-authoring",
       "domain": "project",
       "status": "available",
-      "maturity": "standard",
       "summary": "Author executable 璃落 dialogues and story events with conditions, choices, state changes, items, CG, portraits, gameplay entry, exit and re-entry. Use for 对话、条件分支、剧情事件或状态驱动演出；not for prose-only fiction or map registration alone.",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [],
-      "aiMustNotDo": [],
-      "skills": [
-        "liluo-dialogue-event-authoring"
-      ],
-      "agents": [],
-      "commands": [],
-      "outputs": [],
       "sourceRefs": [
         ".agents\\skills\\liluo-project\\liluo-dialogue-event-authoring\\SKILL.md"
-      ],
-      "userEffort": "low",
-      "lastVerified": null,
-      "evalStatus": "unknown"
+      ]
     },
     {
       "id": "skill-liluo-executable-workflow",
@@ -3665,24 +1503,10 @@
       "title": "liluo-executable-workflow",
       "domain": "project",
       "status": "available",
-      "maturity": "standard",
       "summary": "Run mature 璃落 tasks from machine-readable workflow JSON with per-node briefs, required Skill/Agent evidence, adoption checks, and fail-closed completion gates. Use for 可执行工作流、流程演练、节点任务书、主线重构工作流、漏调用门禁 or when a repeated multi-Skill/Agent process needs auditability; not for one-off tiny edits, open brainstorming, or replacing authoritative content Skills.",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [],
-      "aiMustNotDo": [],
-      "skills": [
-        "liluo-executable-workflow"
-      ],
-      "agents": [],
-      "commands": [],
-      "outputs": [],
       "sourceRefs": [
         ".agents\\skills\\liluo-project\\liluo-executable-workflow\\SKILL.md"
-      ],
-      "userEffort": "low",
-      "lastVerified": null,
-      "evalStatus": "unknown"
+      ]
     },
     {
       "id": "skill-liluo-external-fiction-knowledge",
@@ -3690,24 +1514,10 @@
       "title": "liluo-external-fiction-knowledge",
       "domain": "project",
       "status": "available",
-      "maturity": "standard",
       "summary": "Query, build, incrementally update, validate, and originality-check the 璃落 external fiction reference library. Use for 外部小说素材、参考小说灵感、文学表达、类似场景、画面结构、虚构状态、题材模式、表达卡、外部语料更新/重建/过期检查或直接照搬风险检查；not for canonical project facts, ordinary code changes, internal project-index maintenance, or unrelated image work.",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [],
-      "aiMustNotDo": [],
-      "skills": [
-        "liluo-external-fiction-knowledge"
-      ],
-      "agents": [],
-      "commands": [],
-      "outputs": [],
       "sourceRefs": [
         ".agents\\skills\\liluo-project\\liluo-external-fiction-knowledge\\SKILL.md"
-      ],
-      "userEffort": "low",
-      "lastVerified": null,
-      "evalStatus": "unknown"
+      ]
     },
     {
       "id": "skill-liluo-formal-prose-pipeline",
@@ -3715,24 +1525,10 @@
       "title": "liluo-formal-prose-pipeline",
       "domain": "project",
       "status": "available",
-      "maturity": "standard",
       "summary": "Run the 璃落 open-weight dual-model formal prose pipeline with writing contracts, mock/live OpenAI-compatible calls, workspace drafts, natural-expression checks, user approval, golden/calibration archival, and gap reminders. Use for 正式正文、双模型对照、写作模型 API、个人旧作导入、黄金正文归档、修改对照、模型校准或 pin；Style Pack / 外部评权走 liluo-style-rag；not for ordinary one-line polish (use liluo-natural-expression) or letting external models write canon.",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [],
-      "aiMustNotDo": [],
-      "skills": [
-        "liluo-formal-prose-pipeline"
-      ],
-      "agents": [],
-      "commands": [],
-      "outputs": [],
       "sourceRefs": [
         ".agents\\skills\\liluo-project\\liluo-formal-prose-pipeline\\SKILL.md"
-      ],
-      "userEffort": "low",
-      "lastVerified": null,
-      "evalStatus": "unknown"
+      ]
     },
     {
       "id": "skill-liluo-game-content-validator",
@@ -3740,24 +1536,10 @@
       "title": "liluo-game-content-validator",
       "domain": "project",
       "status": "available",
-      "maturity": "standard",
       "summary": "Run a unified read-only audit for 璃落 story outlines, maps, events, dialogues, gameplay references, assets, JSON/frontmatter, UTF-8, and existing tests. Use for 内容校验、引用审计、重复 ID、孤儿节点或改动后总检；not to auto-fix risky structures.",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [],
-      "aiMustNotDo": [],
-      "skills": [
-        "liluo-game-content-validator"
-      ],
-      "agents": [],
-      "commands": [],
-      "outputs": [],
       "sourceRefs": [
         ".agents\\skills\\liluo-project\\liluo-game-content-validator\\SKILL.md"
-      ],
-      "userEffort": "low",
-      "lastVerified": null,
-      "evalStatus": "unknown"
+      ]
     },
     {
       "id": "skill-liluo-gameplay-loop-audit",
@@ -3765,24 +1547,10 @@
       "title": "liluo-gameplay-loop-audit",
       "domain": "project",
       "status": "available",
-      "maturity": "standard",
       "summary": "Audit gameplay ideas against the current 2D pixel PVE RPG, converting viable competitive mechanics into developable single-player loops. Use for 玩法循环、PVE 转化、可开发性、重复玩法或最小原型审查；not for implementing code by default.",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [],
-      "aiMustNotDo": [],
-      "skills": [
-        "liluo-gameplay-loop-audit"
-      ],
-      "agents": [],
-      "commands": [],
-      "outputs": [],
       "sourceRefs": [
         ".agents\\skills\\liluo-project\\liluo-gameplay-loop-audit\\SKILL.md"
-      ],
-      "userEffort": "low",
-      "lastVerified": null,
-      "evalStatus": "unknown"
+      ]
     },
     {
       "id": "skill-liluo-narrative-route-validation",
@@ -3790,24 +1558,10 @@
       "title": "liluo-narrative-route-validation",
       "domain": "project",
       "status": "available",
-      "maturity": "standard",
       "summary": "Statically validate and deterministically simulate 璃落 narrative routes, including conditions, branches, state changes, loops, endings and save resume. Use for 剧情路线检查、分支模拟、死循环、不可达结局、存档重入；not for inventing story or editing real saves.",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [],
-      "aiMustNotDo": [],
-      "skills": [
-        "liluo-narrative-route-validation"
-      ],
-      "agents": [],
-      "commands": [],
-      "outputs": [],
       "sourceRefs": [
         ".agents\\skills\\testing\\liluo-narrative-route-validation\\SKILL.md"
-      ],
-      "userEffort": "low",
-      "lastVerified": null,
-      "evalStatus": "unknown"
+      ]
     },
     {
       "id": "skill-liluo-natural-expression",
@@ -3815,24 +1569,10 @@
       "title": "liluo-natural-expression",
       "domain": "project",
       "status": "available",
-      "maturity": "standard",
-      "summary": "Improve natural expression, narrative rhythm, character voice, subtext, and reader-facing clarity without changing facts. Use by default in light mode for 璃落 story-outline prose, fiction, game dialogue, character interiority, scene text, creative-team dialogue, project notes, player-facing copy, public development narratives, and user-requested writing tests or drafts (including named restraint poses); the main agent must read this Skill before composing or revising such text. Use deep mode for important chapters or scenes, diagnose for analysis-only requests or pre-delivery self-check, and do not use on code, schemas, paths, logs, exact quotations, or other precision-first technical text.",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [],
-      "aiMustNotDo": [],
-      "skills": [
-        "liluo-natural-expression"
-      ],
-      "agents": [],
-      "commands": [],
-      "outputs": [],
+      "summary": "Improve natural expression, narrative rhythm, character voice, subtext, and reader-facing clarity without changing facts. Use by default in light mode for 璃落 story-outline prose, fiction, game dialogue, character interiority, scene text, creative-team dialogue, project notes, player-facing copy, public development narratives, user-requested writing tests or drafts (including named restraint poses), and reader-facing RAG/Style-RAG prose (knowledge-card body text, Style Pack abstracts, review/audit negotiation notes, revision plans); the main agent must read this Skill before composing or revising such text. Use deep mode for important chapters or scenes, diagnose for analysis-only requests or pre-delivery self-check, and do not use on code, schemas, paths, logs, exact quotations, or other precision-first technical text.",
       "sourceRefs": [
         ".agents\\skills\\writing\\liluo-natural-expression\\SKILL.md"
-      ],
-      "userEffort": "low",
-      "lastVerified": null,
-      "evalStatus": "unknown"
+      ]
     },
     {
       "id": "skill-liluo-offline-release-pipeline",
@@ -3840,24 +1580,10 @@
       "title": "liluo-offline-release-pipeline",
       "domain": "project",
       "status": "available",
-      "maturity": "standard",
       "summary": "Build, validate, package, browser-check, document, and optionally upload the 璃落 multi-file offline game release with its one-click Windows launcher. Use when the user asks 生成离线包、可双击版本、打包游戏、发布版本、上传 GitHub Release、部署离线游戏，or asks to finish a suitable version and distribute it; not for ordinary web preview, source-code push, or public server deployment.",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [],
-      "aiMustNotDo": [],
-      "skills": [
-        "liluo-offline-release-pipeline"
-      ],
-      "agents": [],
-      "commands": [],
-      "outputs": [],
       "sourceRefs": [
         ".agents\\skills\\liluo-project\\liluo-offline-release-pipeline\\SKILL.md"
-      ],
-      "userEffort": "low",
-      "lastVerified": null,
-      "evalStatus": "unknown"
+      ]
     },
     {
       "id": "skill-liluo-phaser-map-event-integration",
@@ -3865,24 +1591,10 @@
       "title": "liluo-phaser-map-event-integration",
       "domain": "project",
       "status": "available",
-      "maturity": "standard",
       "summary": "Integrate maps, spawn points, collisions, NPCs, teleports and events into the existing Vue3/Phaser/Pinia architecture. Use for 新增或接入地图、地图 NPC、传送点、碰撞、寻路、镜头或故事落地；not for outline-only writing or unrelated UI pages.",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [],
-      "aiMustNotDo": [],
-      "skills": [
-        "liluo-phaser-map-event-integration"
-      ],
-      "agents": [],
-      "commands": [],
-      "outputs": [],
       "sourceRefs": [
         ".agents\\skills\\liluo-project\\liluo-phaser-map-event-integration\\SKILL.md"
-      ],
-      "userEffort": "low",
-      "lastVerified": null,
-      "evalStatus": "unknown"
+      ]
     },
     {
       "id": "skill-liluo-plot-placement-interview",
@@ -3890,24 +1602,10 @@
       "title": "liluo-plot-placement-interview",
       "domain": "project",
       "status": "available",
-      "maturity": "standard",
       "summary": "Select a 璃落 plot-catalog entry (random unused/partial or specified), propose outline placement by world bias with mainline vs side judgment, then interview after user approval. Use for 从情节库抽取、未用情节安置、指定情节对照大纲、主线还是支线；not for outline-first random interview, listing unused plots without placement, or writing plot-only catalog entries.",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [],
-      "aiMustNotDo": [],
-      "skills": [
-        "liluo-plot-placement-interview"
-      ],
-      "agents": [],
-      "commands": [],
-      "outputs": [],
       "sourceRefs": [
         ".agents\\skills\\liluo-project\\liluo-plot-placement-interview\\SKILL.md"
-      ],
-      "userEffort": "low",
-      "lastVerified": null,
-      "evalStatus": "unknown"
+      ]
     },
     {
       "id": "skill-liluo-production-coverage",
@@ -3915,24 +1613,10 @@
       "title": "liluo-production-coverage",
       "domain": "project",
       "status": "available",
-      "maturity": "standard",
       "summary": "Derive conservative world and series production coverage from real 璃落 story, map, event, dialogue, gameplay, asset, entry and validation evidence. Use for 世界制作进度、系列覆盖、可玩化缺口、下一步优先级；not for manual progress scoring or claiming playability from file counts.",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [],
-      "aiMustNotDo": [],
-      "skills": [
-        "liluo-production-coverage"
-      ],
-      "agents": [],
-      "commands": [],
-      "outputs": [],
       "sourceRefs": [
         ".agents\\skills\\liluo-project\\liluo-production-coverage\\SKILL.md"
-      ],
-      "userEffort": "low",
-      "lastVerified": null,
-      "evalStatus": "unknown"
+      ]
     },
     {
       "id": "skill-liluo-project-capability-navigation",
@@ -3940,24 +1624,10 @@
       "title": "liluo-project-capability-navigation",
       "domain": "project",
       "status": "available",
-      "maturity": "standard",
       "summary": "Maintain the machine-readable 璃落 capability, workflow, source and gap registry; generate the full overview and concise “我现在可以做什么” action page; and recommend grounded next tasks. Use for “我现在能做什么”“下一步做什么”“同步能力和待办”“某项缺口完成了”, or after Skill, Agent, command, source, missingItems or gameplay-status changes; do not replace authoritative files or invent progress.",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [],
-      "aiMustNotDo": [],
-      "skills": [
-        "liluo-project-capability-navigation"
-      ],
-      "agents": [],
-      "commands": [],
-      "outputs": [],
       "sourceRefs": [
         ".agents\\skills\\liluo-project\\liluo-project-capability-navigation\\SKILL.md"
-      ],
-      "userEffort": "low",
-      "lastVerified": null,
-      "evalStatus": "unknown"
+      ]
     },
     {
       "id": "skill-liluo-project-context-pack",
@@ -3965,24 +1635,10 @@
       "title": "liluo-project-context-pack",
       "domain": "project",
       "status": "available",
-      "maturity": "standard",
       "summary": "Build a gitignored descriptive context pack for uploading to other AIs. Use for 项目上下文打包、导出给其他AI分析、描述性资料压缩包；not for offline game release or packaging runtime code/assets.",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [],
-      "aiMustNotDo": [],
-      "skills": [
-        "liluo-project-context-pack"
-      ],
-      "agents": [],
-      "commands": [],
-      "outputs": [],
       "sourceRefs": [
         ".agents\\skills\\liluo-project\\liluo-project-context-pack\\SKILL.md"
-      ],
-      "userEffort": "low",
-      "lastVerified": null,
-      "evalStatus": "unknown"
+      ]
     },
     {
       "id": "skill-liluo-project-documentation-sync",
@@ -3990,24 +1646,10 @@
       "title": "liluo-project-documentation-sync",
       "domain": "project",
       "status": "available",
-      "maturity": "standard",
       "summary": "Synchronize 璃落 feature docs, 功能更新目录, updateRecords.js, and project/user-facing 技能说明 while preserving dates and IDs. Use after material feature, workflow, schema, behavior, or user-facing Skill changes, and before claiming such a task complete; do not skip because docs feel optional. Do not trigger for wording-only Skill edits, internal metadata, typo fixes, or routine content maintenance.",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [],
-      "aiMustNotDo": [],
-      "skills": [
-        "liluo-project-documentation-sync"
-      ],
-      "agents": [],
-      "commands": [],
-      "outputs": [],
       "sourceRefs": [
         ".agents\\skills\\liluo-project\\liluo-project-documentation-sync\\SKILL.md"
-      ],
-      "userEffort": "low",
-      "lastVerified": null,
-      "evalStatus": "unknown"
+      ]
     },
     {
       "id": "skill-liluo-project-governance-memory",
@@ -4015,24 +1657,10 @@
       "title": "liluo-project-governance-memory",
       "domain": "project",
       "status": "available",
-      "maturity": "standard",
       "summary": "Govern persistent 璃落 project rules and design memory with a single authoritative source, impact tracing, ADR/CDR decisions, user-command synchronization, and low-token light/deep audits. Use when a user establishes a long-term requirement, adds or changes a reusable workflow, asks why a design was chosen, requests documentation-impact or duplication review, or changes a project Skill, Agent, system contract, or documentation responsibility; not for one-off fixes or unresolved discussion.",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [],
-      "aiMustNotDo": [],
-      "skills": [
-        "liluo-project-governance-memory"
-      ],
-      "agents": [],
-      "commands": [],
-      "outputs": [],
       "sourceRefs": [
         ".agents\\skills\\liluo-project\\liluo-project-governance-memory\\SKILL.md"
-      ],
-      "userEffort": "low",
-      "lastVerified": null,
-      "evalStatus": "unknown"
+      ]
     },
     {
       "id": "skill-liluo-project-index-maintenance",
@@ -4040,24 +1668,10 @@
       "title": "liluo-project-index-maintenance",
       "domain": "project",
       "status": "available",
-      "maturity": "standard",
       "summary": "Build, check, query, validate, repair, or upgrade the 璃落 project knowledge index. Use for 建立项目知识索引、更新或重建索引、检查过期、刷新领域索引、查询索引、修复格式、升级 schema 或重新生成反向引用；not for ordinary single-file edits or prose discussion.",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [],
-      "aiMustNotDo": [],
-      "skills": [
-        "liluo-project-index-maintenance"
-      ],
-      "agents": [],
-      "commands": [],
-      "outputs": [],
       "sourceRefs": [
         ".agents\\skills\\liluo-project\\liluo-project-index-maintenance\\SKILL.md"
-      ],
-      "userEffort": "low",
-      "lastVerified": null,
-      "evalStatus": "unknown"
+      ]
     },
     {
       "id": "skill-liluo-purpose-driven-ideation",
@@ -4065,24 +1679,10 @@
       "title": "liluo-purpose-driven-ideation",
       "domain": "project",
       "status": "available",
-      "maturity": "standard",
       "summary": "为璃落既有故事、事件、对话、地图互动、道具、CG、玩法与文案生成并筛选效用导向候选。用户要求想方案、补细节、设计选项、比较可行方案、找灵感或检查候选价值时使用；不用于已确定内容的机械改写、错别字、代码修复、迁移或 Schema 校验。",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [],
-      "aiMustNotDo": [],
-      "skills": [
-        "liluo-purpose-driven-ideation"
-      ],
-      "agents": [],
-      "commands": [],
-      "outputs": [],
       "sourceRefs": [
         ".agents\\skills\\liluo-project\\liluo-purpose-driven-ideation\\SKILL.md"
-      ],
-      "userEffort": "low",
-      "lastVerified": null,
-      "evalStatus": "unknown"
+      ]
     },
     {
       "id": "skill-liluo-save-data-migration",
@@ -4090,24 +1690,10 @@
       "title": "liluo-save-data-migration",
       "domain": "project",
       "status": "available",
-      "maturity": "standard",
       "summary": "Audit and evolve 璃落 save schema/version, import validation and backward migrations without losing progress. Use for 存档版本、新字段、地图/事件/物品改名、旧档兼容或损坏数据；not for editing real user saves during Skill maintenance.",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [],
-      "aiMustNotDo": [],
-      "skills": [
-        "liluo-save-data-migration"
-      ],
-      "agents": [],
-      "commands": [],
-      "outputs": [],
       "sourceRefs": [
         ".agents\\skills\\liluo-project\\liluo-save-data-migration\\SKILL.md"
-      ],
-      "userEffort": "low",
-      "lastVerified": null,
-      "evalStatus": "unknown"
+      ]
     },
     {
       "id": "skill-liluo-sprite-pipeline",
@@ -4115,24 +1701,10 @@
       "title": "liluo-sprite-pipeline",
       "domain": "project",
       "status": "available",
-      "maturity": "standard",
       "summary": "Generate, organize, inspect, preview, and integrate 璃落 5×4 twenty-frame character walk sprites using the existing build pipeline. Use for 角色行走图、20 帧、四方向、脚底基线、帧缓存或运行时接入；not for unrelated images or runtime compensation of a misaligned source sheet.",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [],
-      "aiMustNotDo": [],
-      "skills": [
-        "liluo-sprite-pipeline"
-      ],
-      "agents": [],
-      "commands": [],
-      "outputs": [],
       "sourceRefs": [
         ".agents\\skills\\liluo-project\\liluo-sprite-pipeline\\SKILL.md"
-      ],
-      "userEffort": "low",
-      "lastVerified": null,
-      "evalStatus": "unknown"
+      ]
     },
     {
       "id": "skill-liluo-story-gap-discovery",
@@ -4140,24 +1712,10 @@
       "title": "liluo-story-gap-discovery",
       "domain": "project",
       "status": "available",
-      "maturity": "standard",
       "summary": "Discover evidence-backed gaps, repeated functions, underused gameplay, scene/character/state/visual opportunities, and optional external-fiction patterns in a 璃落 story node, series, or world; return ranked original candidate cards for user approval. Use for 大纲缺口、补充候选、系列重复、未覆盖玩法/地图/CG/关系、外部模式灵感或世界级内容盘点；not when a complete user-authored plot only needs formal writing, for existing-fact lookup, or for unrelated code/map/save/asset work.",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [],
-      "aiMustNotDo": [],
-      "skills": [
-        "liluo-story-gap-discovery"
-      ],
-      "agents": [],
-      "commands": [],
-      "outputs": [],
       "sourceRefs": [
         ".agents\\skills\\liluo-project\\liluo-story-gap-discovery\\SKILL.md"
-      ],
-      "userEffort": "low",
-      "lastVerified": null,
-      "evalStatus": "unknown"
+      ]
     },
     {
       "id": "skill-liluo-story-outline-authoring",
@@ -4165,24 +1723,10 @@
       "title": "liluo-story-outline-authoring",
       "domain": "project",
       "status": "available",
-      "maturity": "standard",
       "summary": "Create, expand, or template-refactor a specified 璃落 story node while synchronizing source JSON and Markdown. Use for 新增故事条目、完善大纲、灵感升级、补齐地图事件玩法状态；not for outline-first random interviews, plot-first placement interviews, graph-only moves, audits, or map implementation.",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [],
-      "aiMustNotDo": [],
-      "skills": [
-        "liluo-story-outline-authoring"
-      ],
-      "agents": [],
-      "commands": [],
-      "outputs": [],
       "sourceRefs": [
         ".agents\\skills\\liluo-project\\liluo-story-outline-authoring\\SKILL.md"
-      ],
-      "userEffort": "low",
-      "lastVerified": null,
-      "evalStatus": "unknown"
+      ]
     },
     {
       "id": "skill-liluo-story-outline-graph-maintenance",
@@ -4190,24 +1734,10 @@
       "title": "liluo-story-outline-graph-maintenance",
       "domain": "project",
       "status": "available",
-      "maturity": "standard",
       "summary": "Safely insert, move, split, merge, rename, or repair 璃落 story-tree parentKey links with dry-run validation. Use for 移动节点、插入节点、改父节点、side 分支、断链、循环或重复 key；not for prose-only authoring.",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [],
-      "aiMustNotDo": [],
-      "skills": [
-        "liluo-story-outline-graph-maintenance"
-      ],
-      "agents": [],
-      "commands": [],
-      "outputs": [],
       "sourceRefs": [
         ".agents\\skills\\liluo-project\\liluo-story-outline-graph-maintenance\\SKILL.md"
-      ],
-      "userEffort": "low",
-      "lastVerified": null,
-      "evalStatus": "unknown"
+      ]
     },
     {
       "id": "skill-liluo-story-to-playable-content",
@@ -4215,24 +1745,10 @@
       "title": "liluo-story-to-playable-content",
       "domain": "project",
       "status": "available",
-      "maturity": "standard",
       "summary": "Convert one approved 璃落 story node into an evidence-backed production plan, executable skeleton, scoped implementation, or validation report. Use for 故事转可玩、制作清单、灰盒骨架、从大纲落地地图事件对话；not for bulk conversion or unapproved story rewriting.",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [],
-      "aiMustNotDo": [],
-      "skills": [
-        "liluo-story-to-playable-content"
-      ],
-      "agents": [],
-      "commands": [],
-      "outputs": [],
       "sourceRefs": [
         ".agents\\skills\\liluo-project\\liluo-story-to-playable-content\\SKILL.md"
-      ],
-      "userEffort": "low",
-      "lastVerified": null,
-      "evalStatus": "unknown"
+      ]
     },
     {
       "id": "skill-liluo-style-rag",
@@ -4240,24 +1756,10 @@
       "title": "liluo-style-rag",
       "domain": "project",
       "status": "available",
-      "maturity": "standard",
       "summary": "Run 璃落 Style-RAG V0/V1 metadata retrieval for formal prose—auto style selection, external article inventory, list titles/authors, score articles and author priors, restraint vs general domain matching, style pack assembly, calibration archive hooks, writing sheet lifecycle, retrieval explanation, and weight adjustment. Use for Style查询、文风包、外部文章评权、写作表、style feedback；not for general fiction inspiration RAG (use liluo-external-fiction-knowledge), embeddings, vector DB, V2–V4 learned retrieval, or writing canon.",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [],
-      "aiMustNotDo": [],
-      "skills": [
-        "liluo-style-rag"
-      ],
-      "agents": [],
-      "commands": [],
-      "outputs": [],
       "sourceRefs": [
         ".agents\\skills\\liluo-project\\liluo-style-rag\\SKILL.md"
-      ],
-      "userEffort": "low",
-      "lastVerified": null,
-      "evalStatus": "unknown"
+      ]
     },
     {
       "id": "skill-liluo-world-bible-continuity-audit",
@@ -4265,24 +1767,10 @@
       "title": "liluo-world-bible-continuity-audit",
       "domain": "project",
       "status": "available",
-      "maturity": "standard",
       "summary": "Read-only continuity audit of 璃落 characters, organizations, locations, items, abilities, timeline, 命域 rules, foreshadowing, cross-world differences and lasting growth. Use for 世界观矛盾、人设一致性、时间线或伏笔审查；not for default file rewriting.",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [],
-      "aiMustNotDo": [],
-      "skills": [
-        "liluo-world-bible-continuity-audit"
-      ],
-      "agents": [],
-      "commands": [],
-      "outputs": [],
       "sourceRefs": [
         ".agents\\skills\\liluo-project\\liluo-world-bible-continuity-audit\\SKILL.md"
-      ],
-      "userEffort": "low",
-      "lastVerified": null,
-      "evalStatus": "unknown"
+      ]
     },
     {
       "id": "skill-liluo-zhihu-novel-ingest",
@@ -4290,24 +1778,10 @@
       "title": "liluo-zhihu-novel-ingest",
       "domain": "project",
       "status": "available",
-      "maturity": "standard",
       "summary": "Download Zhihu articles, answers, or columns that the user names as external fiction inspiration, using external-knowledge/tools/zhihu-download, then import the resulting Markdown into the 璃落 external-fiction RAG library. Use when the user gives a 知乎 link and asks to 下载、保存、导入RAG、作为灵感来源、收进外部小说素材 or similar; not for canonical story writing, direct copying, non-Zhihu sources, or automatic tool upgrades.",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [],
-      "aiMustNotDo": [],
-      "skills": [
-        "liluo-zhihu-novel-ingest"
-      ],
-      "agents": [],
-      "commands": [],
-      "outputs": [],
       "sourceRefs": [
         ".agents\\skills\\liluo-project\\liluo-zhihu-novel-ingest\\SKILL.md"
-      ],
-      "userEffort": "low",
-      "lastVerified": null,
-      "evalStatus": "unknown"
+      ]
     },
     {
       "id": "skill-opportunity-solution-tree",
@@ -4315,24 +1789,10 @@
       "title": "opportunity-solution-tree",
       "domain": "general",
       "status": "available",
-      "maturity": "standard",
       "summary": "私有化的上游机会—方案树方法；只由璃落效用导向构思编排层用于大型构思，将目标、真实缺口与候选连接起来。",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [],
-      "aiMustNotDo": [],
-      "skills": [
-        "opportunity-solution-tree"
-      ],
-      "agents": [],
-      "commands": [],
-      "outputs": [],
       "sourceRefs": [
         ".agents\\skills\\liluo-project\\opportunity-solution-tree\\SKILL.md"
-      ],
-      "userEffort": "low",
-      "lastVerified": null,
-      "evalStatus": "unknown"
+      ]
     },
     {
       "id": "skill-planning-and-task-breakdown",
@@ -4340,24 +1800,10 @@
       "title": "planning-and-task-breakdown",
       "domain": "general",
       "status": "available",
-      "maturity": "standard",
       "summary": "Breaks work into ordered tasks. Use when you have a spec or clear requirements and need to break work into implementable tasks. Use when a task feels too large to start, when you need to estimate scope, or when parallel work is possible.",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [],
-      "aiMustNotDo": [],
-      "skills": [
-        "planning-and-task-breakdown"
-      ],
-      "agents": [],
-      "commands": [],
-      "outputs": [],
       "sourceRefs": [
         ".agents\\skills\\planning-and-task-breakdown\\SKILL.md"
-      ],
-      "userEffort": "low",
-      "lastVerified": null,
-      "evalStatus": "unknown"
+      ]
     },
     {
       "id": "skill-prioritize-features",
@@ -4365,24 +1811,10 @@
       "title": "prioritize-features",
       "domain": "general",
       "status": "available",
-      "maturity": "standard",
       "summary": "私有化的上游候选优先级方法；只由璃落效用导向构思编排层调用，比较价值、差异、风险和成本，不把新颖度当作独立优先级。",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [],
-      "aiMustNotDo": [],
-      "skills": [
-        "prioritize-features"
-      ],
-      "agents": [],
-      "commands": [],
-      "outputs": [],
       "sourceRefs": [
         ".agents\\skills\\liluo-project\\prioritize-features\\SKILL.md"
-      ],
-      "userEffort": "low",
-      "lastVerified": null,
-      "evalStatus": "unknown"
+      ]
     },
     {
       "id": "skill-random-story-outline-interview",
@@ -4390,24 +1822,10 @@
       "title": "random-story-outline-interview",
       "domain": "general",
       "status": "available",
-      "maturity": "standard",
       "summary": "Randomly select an incomplete 璃落 story-outline node, reconstruct confirmed JSON/Markdown context, and ask a focused interview. Use for 随机抽取、按世界访谈、继续随机提问；do not use for plot-first placement from the plot catalog, or for directly drafting or restructuring a specified node.",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [],
-      "aiMustNotDo": [],
-      "skills": [
-        "random-story-outline-interview"
-      ],
-      "agents": [],
-      "commands": [],
-      "outputs": [],
       "sourceRefs": [
         ".agents\\skills\\liluo-project\\random-story-outline-interview\\SKILL.md"
-      ],
-      "userEffort": "low",
-      "lastVerified": null,
-      "evalStatus": "unknown"
+      ]
     },
     {
       "id": "skill-spec-driven-development",
@@ -4415,24 +1833,10 @@
       "title": "spec-driven-development",
       "domain": "general",
       "status": "available",
-      "maturity": "standard",
       "summary": "Creates specs before coding. Use when starting a new project, feature, or significant change and no specification exists yet. Use when requirements are unclear, ambiguous, or only exist as a vague idea.",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [],
-      "aiMustNotDo": [],
-      "skills": [
-        "spec-driven-development"
-      ],
-      "agents": [],
-      "commands": [],
-      "outputs": [],
       "sourceRefs": [
         ".agents\\skills\\spec-driven-development\\SKILL.md"
-      ],
-      "userEffort": "low",
-      "lastVerified": null,
-      "evalStatus": "unknown"
+      ]
     },
     {
       "id": "skill-test-driven-development",
@@ -4440,24 +1844,10 @@
       "title": "test-driven-development",
       "domain": "general",
       "status": "available",
-      "maturity": "standard",
       "summary": "Use strict RED-GREEN-REFACTOR for regression bugs, ambiguous behavior, risky logic, or when the user explicitly requests TDD. Do not trigger merely because a small deterministic helper, documentation, configuration, metadata, or static content changes; those changes may use one targeted post-implementation test.",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [],
-      "aiMustNotDo": [],
-      "skills": [
-        "test-driven-development"
-      ],
-      "agents": [],
-      "commands": [],
-      "outputs": [],
       "sourceRefs": [
         ".agents\\skills\\test-driven-development\\SKILL.md"
-      ],
-      "userEffort": "low",
-      "lastVerified": null,
-      "evalStatus": "unknown"
+      ]
     },
     {
       "id": "skill-vite",
@@ -4465,24 +1855,10 @@
       "title": "vite",
       "domain": "general",
       "status": "available",
-      "maturity": "standard",
       "summary": "Expert guidance for Vite development with modern build tooling, HMR, framework integrations, and performance optimization",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [],
-      "aiMustNotDo": [],
-      "skills": [
-        "vite"
-      ],
-      "agents": [],
-      "commands": [],
-      "outputs": [],
       "sourceRefs": [
         ".agents\\skills\\vite\\SKILL.md"
-      ],
-      "userEffort": "low",
-      "lastVerified": null,
-      "evalStatus": "unknown"
+      ]
     },
     {
       "id": "skill-vue-typescript",
@@ -4490,24 +1866,10 @@
       "title": "vue-typescript",
       "domain": "general",
       "status": "available",
-      "maturity": "standard",
       "summary": "Expert in Vue.js TypeScript development with Vite, Pinia, and modern UI frameworks",
-      "userCanSay": [],
-      "userMustProvide": [],
-      "aiCanDo": [],
-      "aiMustNotDo": [],
-      "skills": [
-        "vue-typescript"
-      ],
-      "agents": [],
-      "commands": [],
-      "outputs": [],
       "sourceRefs": [
         ".agents\\skills\\vue-typescript\\SKILL.md"
-      ],
-      "userEffort": "low",
-      "lastVerified": null,
-      "evalStatus": "unknown"
+      ]
     }
   ]
 }

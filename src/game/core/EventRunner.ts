@@ -6,7 +6,10 @@ import {
   type NotificationExecutionData,
   type EventExecutionResult
 } from './eventExecution';
-import { resolveDialogueChoice } from './dialogueExecution';
+import {
+  resolveDialogueChoice,
+  type DialogueChoiceExecutionData
+} from './dialogueExecution';
 
 export interface EventData {
   eventId: string;
@@ -94,34 +97,8 @@ export interface DialogueCutsceneData {
   fadeOutMs?: number;
 }
 
-export interface DialogueChoiceData {
-  id: string;
+export interface DialogueChoiceData extends DialogueChoiceExecutionData {
   label: string;
-  next?: string;
-  cutscene?: DialogueCutsceneData;
-  mapTransition?: EventMapTransitionData;
-  timeOfDayChange?: EventTimeOfDayChangeData;
-  weatherChange?: EventWeatherChangeData;
-  notification?: NotificationExecutionData;
-  playerAppearanceChange?: EventPlayerAppearanceChangeData;
-  playerPortraitChange?: EventPlayerPortraitChangeData;
-  playerStatusChange?: {
-    status: string[];
-    mode?: 'set' | 'append' | 'remove';
-  };
-  mapSessionFlagChange?: {
-    flagId: string;
-    value: boolean;
-  };
-  interactiveFictionStart?: {
-    scenarioId: string;
-  };
-  directionPadGameStart?: {
-    gameId: string;
-  };
-  soundEffectPlay?: {
-    key: string;
-  };
 }
 
 export interface DialogueSceneImageData {

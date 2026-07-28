@@ -86,39 +86,11 @@ function ruleCard(rule, cardType, segments) {
   };
 }
 export function createCandidateCards(segments, rules = {}) {
-  const definitions = [
-    ['expression', '环境压力与角色感知的交替表达', ['环境细节', '角色感知', '节奏递进']],
-    ['visual-structure', '封闭空间中的人物与出口关系', ['人物轮廓', '空间边界', '出口视觉重心']],
-    ['scene-pattern', '封闭场景的探索与转场', ['环境线索', '空间阻隔', '转场触发']],
-    ['fictional-state', '叙事受限状态与行动选择', ['行动边界', '视觉反馈', '剧情选择']],
-    ['trope', '调查—受阻—发现新路径的推进模式', ['调查起点', '阻力升级', '原创转折']],
-  ];
-  return definitions.map(([cardType, title, abstractPatterns], index) => {
-    const selected = [], seenSources = new Set();
-    for (const segment of segments.slice(index)) {
-      if (seenSources.has(segment.sourceId)) continue;
-      selected.push(segment);
-      seenSources.add(segment.sourceId);
-      if (selected.length === 3) break;
-    }
-    const refs = selected.map(sourceRef);
-    return {
-      cardId: `fb-${cardType}-${String(index + 1).padStart(6, '0')}`,
-      cardType,
-      title,
-      concepts: abstractPatterns,
-      abstractPatterns,
-      tags: [],
-      sourceRefs: refs,
-      reviewStatus: 'candidate',
-      directQuoteIncluded: false,
-      knowledgeScope: SCOPE,
-      canonical: false
-    };
-  }).concat(
-    (rules.terms ?? []).map((rule) => ruleCard(rule, 'term', segments)).filter(Boolean),
-    (rules.plotPatterns ?? []).map((rule) => ruleCard(rule, 'plot-pattern', segments)).filter(Boolean),
-  );
+  // Only emit cards backed by explicit card-rules evidence.
+  // Do not seed vague expression/scene/trope placeholders that never explain a concept.
+  return []
+    .concat((rules.terms ?? []).map((rule) => ruleCard(rule, 'term', segments)).filter(Boolean))
+    .concat((rules.plotPatterns ?? []).map((rule) => ruleCard(rule, 'plot-pattern', segments)).filter(Boolean));
 }
 
 async function hydrateCardEvidence(segments) {
@@ -167,7 +139,15 @@ export async function buildKnowledge({ changedOnly = false } = {}) {
   await writeJson(path.join(temp, 'index', 'keywords', 'terms.json'), Object.fromEntries([...termPostings].sort(([a], [b]) => a.localeCompare(b, 'zh-CN'))));
   await writeJson(path.join(temp, 'index', 'tags', 'tag-index.json'), Object.fromEntries([...tagPostings].sort(([a], [b]) => a.localeCompare(b, 'zh-CN'))));
   await writeJson(path.join(temp, 'index', 'references', 'source-locations.json'), Object.fromEntries(segments.map((item) => [item.segmentId, { sourceId: item.sourceId, sourcePath: item.sourcePath, startLine: item.startLine, endLine: item.endLine }])));
+  const generatedCardIds = new Set(cards.map((card) => card.cardId));
   for (const card of cards) await writeJson(path.join(temp, 'cards', card.cardType, `${card.cardId}.json`), card);
+  // Preserve hand-maintained cards (e.g. restraint/ with ragLayer) that are not regenerated from card-rules.
+  for (const existingPath of await listFiles(path.join(KNOWLEDGE_ROOT, 'cards'))) {
+    const existing = await readJson(existingPath, null);
+    if (!existing?.cardId || generatedCardIds.has(existing.cardId)) continue;
+    const relative = path.relative(path.join(KNOWLEDGE_ROOT, 'cards'), existingPath);
+    await writeJson(path.join(temp, 'cards', relative), existing);
+  }
   const unsupported = sources.filter((item) => item.indexStatus !== 'indexed'), indexOutputFiles = await listFiles(path.join(temp, 'index')), indexSizes = await Promise.all(indexOutputFiles.map(async (file) => (await fs.stat(file)).size));
   const metrics = { sourceFiles: sources.length, indexedFiles: sources.length - unsupported.length, unsupportedFiles: unsupported.length, parseFailures: 0, totalCharacters: sources.reduce((sum, item) => sum + item.characterCount, 0), totalSegments: segments.length, duplicateFiles: duplicates.reduce((sum, group) => sum + group.sourceIds.length - 1, 0), possibleVersions: versions.length, indexFiles: indexOutputFiles.length, indexSizeBytes: indexSizes.reduce((sum, size) => sum + size, 0), largestShardBytes: Math.max(0, ...indexSizes), largestShardRecords: Math.max(0, ...shards.map((item) => item.count)), status: 'current' };
   await writeJson(path.join(temp, 'reports', 'source-quality.json'), { unsupported: unsupported.map((item) => ({ sourceId: item.sourceId, path: item.relativePath, reason: 'unsupported-binary' })), parseFailures: [] });

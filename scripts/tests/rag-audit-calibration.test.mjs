@@ -193,7 +193,7 @@ test('related assets are suggested and recorded for co-adjustment', async () => 
     relatedAdjustments: [
       {
         channel: 'rag',
-        assetId: 'fb-term-houshou-guanyin',
+        assetId: 'rag.restraint.effect.tickling',
         action: 'adjusted',
         note: '已同步卡定义与别名',
       },

@@ -810,6 +810,7 @@
 .story-node-status,
 .story-node-template-status,
 .story-node-story-tag,
+.story-node-restraint-rag-tag,
 .story-node-timeline {
   align-self: flex-start;
   max-width: 100%;
@@ -879,6 +880,12 @@
   border-color: rgba(143, 218, 205, 0.26);
   background: rgba(143, 218, 205, 0.1);
   color: rgba(214, 255, 248, 0.78);
+}
+
+.story-node-restraint-rag-tag {
+  border-color: rgba(214, 154, 255, 0.32);
+  background: rgba(148, 92, 196, 0.18);
+  color: rgba(243, 228, 255, 0.88);
 }
 
 .story-node-timeline {

@@ -1,15 +1,21 @@
 export const updateRecords = Object.freeze([
     {
+        "id":  "170",
+        "date":  "2026-07-28",
+        "title":  "架构收敛与上下文按需加载",
+        "summary":  "明确旧页面式游戏为低优先级可运行参考；索引和行动导航改为按需薄投影；对话与地图注册收敛为单一契约并拒绝重复 ID；GameView 菜单绑定和 WorldScene 出生点纯规则已拆分。"
+    },
+    {
         "id":  "169",
         "date":  "2026-07-27",
         "title":  "大纲关联图谱视图",
-        "summary":  "大纲关联图谱：故事通过 plotRefs、ragRefs、gameplayRefs 直连情节、RAG 与玩法；普通 RAG 以 parentCardIds 建立上位类别与具体概念两层；空内容、缺来源、待补故事和未关联情节使用橙色缺口框；支持投影 JSON 导出。"
+        "summary":  "大纲关联图谱：故事通过 plotRefs、ragRefs、gameplayRefs 直连情节、紧缚 RAG 与玩法；紧缚 RAG 以 parentCardIds 建立上位类别与具体概念两层；空内容、缺来源、待补故事和未关联情节使用橙色缺口框；支持投影 JSON 导出。已删除空泛的旧 fb-* 孤立卡；用户可见名称改为「紧缚 RAG」。大纲访谈每次必问紧缚 RAG 标签（CDR-009）。"
     },
     {
         "id":  "168",
         "date":  "2026-07-26",
         "title":  "知识检索抽查校准闭环",
-        "summary":  "知识检索抽查覆盖普通 RAG、Style-RAG、细节概念与情节；普通 RAG 默认只抽知识卡；卡文与协商须走自然表达；人工评价先协商改向再落盘；修正时共查共改；按阈值升级 Skill 并仅重建受影响范围。"
+        "summary":  "知识检索抽查覆盖紧缚 RAG、Style-RAG、细节概念与情节；紧缚 RAG 默认只抽知识卡；卡文与协商须走自然表达；人工评价先协商改向再落盘；修正时共查共改；按阈值升级 Skill 并仅重建受影响范围。"
     },
     {
         "id":  "167",

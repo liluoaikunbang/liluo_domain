@@ -461,7 +461,7 @@ export async function sampleAuditBatch(options = {}) {
     ragSample: payload.ragSample,
     note: ragKinds.includeSources
       ? '仅人工抽查；本批含源条目（--include-sources / --asset-kind）。现有索引可继续使用。'
-      : '仅人工抽查；普通 RAG 默认只抽知识卡。源条目请加 --include-sources。现有索引可继续使用。',
+      : '仅人工抽查；紧缚 RAG 默认只抽知识卡。源条目请加 --include-sources。现有索引可继续使用。',
   }
 }
 
@@ -500,7 +500,7 @@ function renderBatchMarkdown(payload) {
     '',
     '填写后用对应 `*:audit:record --channel <通道>` 写入；单次错误不会自动升级 Skill。',
     '硬规则：改主条目时必须检查关联项；有需要补充或调整的，与主条目一并处理。可用 `*:audit:related --asset <id>` 列出邻居。',
-    '普通 RAG 默认只抽知识卡；需要源条目时加 `--include-sources` 或 `--asset-kind source|all`。',
+    '紧缚 RAG 默认只抽知识卡；需要源条目时加 `--include-sources` 或 `--asset-kind source|all`。',
     '卡审重点：描述是否够用 / 是否有独立存在价值 / 与邻居是否该分层或合并（不必读原文）。',
     '',
   ]

@@ -9,7 +9,7 @@ const panelSource = readFileSync(
 
 test('story summary uses plot, RAG and gameplay references instead of retired Tag columns', () => {
   assert.match(panelSource, /情节引用/u);
-  assert.match(panelSource, /RAG 引用/u);
+  assert.match(panelSource, /紧缚 RAG 引用/u);
   assert.match(panelSource, /玩法引用/u);
   assert.match(panelSource, /plotRefs/u);
   assert.match(panelSource, /ragRefs/u);

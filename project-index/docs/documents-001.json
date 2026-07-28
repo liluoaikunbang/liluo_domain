@@ -1883,7 +1883,7 @@
   {
     "id": "docs/功能更新/168-知识检索抽查校准闭环.md",
     "indexVersion": 1,
-    "sourceHash": "d3c27495bb7877a74fa66433c2653248e51d4d0f5759e3c08796de4a176f772b",
+    "sourceHash": "1092ee76c060f17afa3eede74100bb71afe3e228e98497125f6cffea0a2bd27e",
     "sourcePath": "docs/功能更新/168-知识检索抽查校准闭环.md",
     "subtype": "update",
     "summary": "168 - 知识检索抽查校准闭环",
@@ -1894,7 +1894,7 @@
   {
     "id": "docs/功能更新/169-大纲关联图谱视图.md",
     "indexVersion": 1,
-    "sourceHash": "8f9aa169b0ae8ad661d4bbe95eac9c85dda93539425df09c57a93d1bd5eda9ca",
+    "sourceHash": "45a7e0eb6999f9acba49cb3b35b2eec8f1171aac5c0974ed0bff9b735b609bdb",
     "sourcePath": "docs/功能更新/169-大纲关联图谱视图.md",
     "subtype": "update",
     "summary": "169 - 大纲关联图谱视图",
@@ -1903,9 +1903,20 @@
     "type": "document"
   },
   {
+    "id": "docs/功能更新/170-架构收敛与上下文按需加载.md",
+    "indexVersion": 1,
+    "sourceHash": "eba01ecb68dba93a9ed53fc3ee07b5bc42be5d31fa527773cbb5f5d821b7bad7",
+    "sourcePath": "docs/功能更新/170-架构收敛与上下文按需加载.md",
+    "subtype": "update",
+    "summary": "170 - 架构收敛与上下文按需加载",
+    "summarySource": "title-only",
+    "title": "170 - 架构收敛与上下文按需加载",
+    "type": "document"
+  },
+  {
     "id": "docs/功能更新目录.md",
     "indexVersion": 1,
-    "sourceHash": "b062a2e124c0150700145935ab42b2008abe2e7394ecc092cf3ed5f25f47e30b",
+    "sourceHash": "332b588e9962993e400b0a7a45f32884ee788af21a387a8cbb0f86ffa4e8e846",
     "sourcePath": "docs/功能更新目录.md",
     "subtype": "other",
     "summary": "功能更新目录",
@@ -1949,7 +1960,7 @@
   {
     "id": "docs/技能说明/知识检索抽查校准.md",
     "indexVersion": 1,
-    "sourceHash": "7afff00790090e68c2a7a0dae1bd9e0ebba16cb1d8ac05bee07a28190469d8fe",
+    "sourceHash": "abdc1b963b9af58bc6fff05bbc62b60612c3213ccee4f5497546891543a04978",
     "sourcePath": "docs/技能说明/知识检索抽查校准.md",
     "subtype": "skill",
     "summary": "liluo 知识检索抽查校准",
@@ -2103,7 +2114,7 @@
   {
     "id": "docs/技能说明/liluo-natural-expression.md",
     "indexVersion": 1,
-    "sourceHash": "7a3fa7e2e26d86fad0cbd78d5a2db9970d8dbba9b6db0d20ec6d764b6026aff8",
+    "sourceHash": "3aebd296a9021dce731676fc7cfe77fc3a2aa7924f46622f2198a3250eb72b0e",
     "sourcePath": "docs/技能说明/liluo-natural-expression.md",
     "subtype": "skill",
     "summary": "liluo-natural-expression",
@@ -2136,7 +2147,7 @@
   {
     "id": "docs/技能说明/liluo-plot-placement-interview.md",
     "indexVersion": 1,
-    "sourceHash": "76293203c1ac38fc70127c6a22e95d480b4e4fc5ac19be5c62cc17999d4159b6",
+    "sourceHash": "6f450dee3d3b871fd806d5fb842a360c1bfdb5dc038aaf95e303ccc94bd6b060",
     "sourcePath": "docs/技能说明/liluo-plot-placement-interview.md",
     "subtype": "skill",
     "summary": "liluo-plot-placement-interview",
@@ -2257,7 +2268,7 @@
   {
     "id": "docs/技能说明/liluo-story-outline-authoring.md",
     "indexVersion": 1,
-    "sourceHash": "aa9404281982f599d18fd3fea1c3155f906e0eb3b1be19d093e0f53f36eb14f0",
+    "sourceHash": "09a8af4a324e03ef24c5feb1a3b575784f165938aea8dd301d24be5466f72c1e",
     "sourcePath": "docs/技能说明/liluo-story-outline-authoring.md",
     "subtype": "skill",
     "summary": "liluo-story-outline-authoring",
@@ -2323,7 +2334,7 @@
   {
     "id": "docs/技能说明/random-story-outline-interview.md",
     "indexVersion": 1,
-    "sourceHash": "3e1347bbaa8a868ecf37547040b8e8bbeafd024a57d0abc9e064163550063ad9",
+    "sourceHash": "e5bce808c299edf4067e5efecbcb6498575b07a53744272adb5292850483fe33",
     "sourcePath": "docs/技能说明/random-story-outline-interview.md",
     "subtype": "skill",
     "summary": "random-story-outline-interview",
@@ -2378,7 +2389,7 @@
   {
     "id": "docs/设计记忆/创作决策/CDR-005-非技术文本默认应用璃落自然表达.md",
     "indexVersion": 1,
-    "sourceHash": "73355dec0e0d3171722024812cced57fd2fdf8f19d281f4e95034596207a17b4",
+    "sourceHash": "283116396523a9c408aee8afab25f277fa33aa6c48345bd72d6b8c91b95637c4",
     "sourcePath": "docs/设计记忆/创作决策/CDR-005-非技术文本默认应用璃落自然表达.md",
     "subtype": "other",
     "summary": "CDR-005：非技术文本默认应用璃落自然表达",
@@ -2411,12 +2422,23 @@
   {
     "id": "docs/设计记忆/创作决策/CDR-008-大纲访谈须选项确认普通Tag与紧缚Tag.md",
     "indexVersion": 1,
-    "sourceHash": "ac8c3c928942f24c4db4a115152eece150a0a0cbfac415b86b16d2e55a61ffa8",
+    "sourceHash": "7ed659a1897f262edac8d8f8e439174db9f699f5bb5596e81d805e04e61ac4d0",
     "sourcePath": "docs/设计记忆/创作决策/CDR-008-大纲访谈须选项确认普通Tag与紧缚Tag.md",
     "subtype": "other",
     "summary": "CDR-008：大纲访谈须选项确认普通 Tag 与紧缚 Tag",
     "summarySource": "title-only",
     "title": "CDR-008：大纲访谈须选项确认普通 Tag 与紧缚 Tag",
+    "type": "document"
+  },
+  {
+    "id": "docs/设计记忆/创作决策/CDR-009-大纲访谈须选项确认紧缚RAG.md",
+    "indexVersion": 1,
+    "sourceHash": "6fa2de7e66b66aad03dd978a370a8fd60bb2255543292e3262030ca2a2fcc61e",
+    "sourcePath": "docs/设计记忆/创作决策/CDR-009-大纲访谈须选项确认紧缚RAG.md",
+    "subtype": "other",
+    "summary": "CDR-009：大纲访谈须选项确认紧缚 RAG",
+    "summarySource": "title-only",
+    "title": "CDR-009：大纲访谈须选项确认紧缚 RAG",
     "type": "document"
   },
   {
@@ -2596,9 +2618,20 @@
     "type": "document"
   },
   {
+    "id": "docs/设计记忆/架构决策/ADR-015-旧页面参考迁移与按需索引入口.md",
+    "indexVersion": 1,
+    "sourceHash": "26536bda320f90796949daf7fff2bda2c21ebcce30e5fef77a45517082aced67",
+    "sourcePath": "docs/设计记忆/架构决策/ADR-015-旧页面参考迁移与按需索引入口.md",
+    "subtype": "other",
+    "summary": "ADR-015：旧页面参考迁移与按需索引入口",
+    "summarySource": "title-only",
+    "title": "ADR-015：旧页面参考迁移与按需索引入口",
+    "type": "document"
+  },
+  {
     "id": "docs/设计记忆/架构决策/README.md",
     "indexVersion": 1,
-    "sourceHash": "f9004fead885305a1971c21235e3f4c0ac76fa29e16637d065bf1b2802358639",
+    "sourceHash": "97816e219dedba7f8e8b9adc0f73755580092849fde5cb08993f37e025030220",
     "sourcePath": "docs/设计记忆/架构决策/README.md",
     "subtype": "other",
     "summary": "架构决策记录",
@@ -2714,39 +2747,6 @@
     "summary": "言澈｜正纬｜经纬",
     "summarySource": "title-only",
     "title": "言澈｜正纬｜经纬",
-    "type": "document"
-  },
-  {
-    "id": "docs/设计记忆/项目组灵魂/成员/砚秋.md",
-    "indexVersion": 1,
-    "sourceHash": "32ff17f62b45bd130bed1418750138f6a9cc0bc94a23ad72eb5aecbb4af25ed0",
-    "sourcePath": "docs/设计记忆/项目组灵魂/成员/砚秋.md",
-    "subtype": "other",
-    "summary": "砚秋｜指瑕｜衡鉴",
-    "summarySource": "title-only",
-    "title": "砚秋｜指瑕｜衡鉴",
-    "type": "document"
-  },
-  {
-    "id": "docs/设计记忆/项目组灵魂/成员/知遥.md",
-    "indexVersion": 1,
-    "sourceHash": "0056184e7c59b88b22750fcc803bf1bd8910d2a7401f4666531ccbf3ac0e7790",
-    "sourcePath": "docs/设计记忆/项目组灵魂/成员/知遥.md",
-    "subtype": "other",
-    "summary": "知遥｜宗经｜寻迹",
-    "summarySource": "title-only",
-    "title": "知遥｜宗经｜寻迹",
-    "type": "document"
-  },
-  {
-    "id": "docs/设计记忆/项目组灵魂/成员关系.md",
-    "indexVersion": 1,
-    "sourceHash": "05bac21bcad06d945b6f00a3b7682d86e1b3527984a61ba2a507e7d84de6225c",
-    "sourcePath": "docs/设计记忆/项目组灵魂/成员关系.md",
-    "subtype": "other",
-    "summary": "成员关系",
-    "summarySource": "title-only",
-    "title": "成员关系",
     "type": "document"
   }
 ]

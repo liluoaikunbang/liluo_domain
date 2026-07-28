@@ -104,7 +104,7 @@ test('does not project detail-concept nodes; hierarchy lives on RAG', () => {
   const graph = buildFixtureGraph();
   assert.ok(!graph.nodes.some((node) => node.type === 'concept'));
   assert.ok(!graph.nodes.some((node) => node.id.startsWith('concept:')));
-  const detailRag = graph.nodes.find((node) => node.id === 'rag:fb-term-houshou-guanyin');
+  const detailRag = graph.nodes.find((node) => node.id === 'rag:rag.restraint.detail.挠痒-山药汁');
   assert.ok(detailRag);
   assert.equal(detailRag.meta.ragLayer, 'concept');
   assert.ok(detailRag.visibility?.searchable !== false);
@@ -112,10 +112,10 @@ test('does not project detail-concept nodes; hierarchy lives on RAG', () => {
 
 test('detail RAG cards remain searchable without concept nodes', () => {
   const graph = buildFixtureGraph();
-  const rag = graph.nodes.find((node) => node.title === '后手观音');
+  const rag = graph.nodes.find((node) => node.title === '挠痒-山药汁');
   assert.ok(rag);
   assert.equal(rag.type, 'rag');
-  const results = searchOutlineRelationGraph(graph, '后手观音');
+  const results = searchOutlineRelationGraph(graph, '挠痒-山药汁');
   assert.ok(results.some((row) => row.id === rag.id));
 });
 
@@ -265,10 +265,10 @@ test('RAG cards include definitions and hierarchy metadata', () => {
   const graph = buildFixtureGraph();
   const ragNodes = graph.nodes.filter((node) => node.type === 'rag');
   assert.ok(ragNodes.length >= 14, `expected enriched RAG cards, got ${ragNodes.length}`);
-  assert.ok(ragNodes.some((node) => node.title === '后手观音'));
-  assert.ok(ragNodes.some((node) => node.title === '上肢受限'));
-  const expression = ragNodes.find((node) => node.title.includes('环境压力'));
-  assert.ok(expression?.summary || expression?.description);
+  assert.ok(ragNodes.some((node) => node.title === '挠痒'));
+  assert.ok(ragNodes.some((node) => node.title === '挠痒-山药汁'));
+  const tickling = ragNodes.find((node) => node.title === '挠痒');
+  assert.ok(tickling?.summary || tickling?.description);
 });
 
 test('RAG hierarchy is 上位类别 → 具体概念 and links directly to plots/stories', async () => {
@@ -283,18 +283,12 @@ test('RAG hierarchy is 上位类别 → 具体概念 and links directly to plots
   assert.ok(graph.stats.conceptCategoryCount >= 3);
   assert.ok(graph.stats.conceptDetailCount >= 6);
 
-  const category = graph.nodes.find((node) => node.id === 'rag:fb-term-upper-body-restricted');
-  const detail = graph.nodes.find((node) => node.id === 'rag:fb-term-houshou-guanyin');
+  const category = graph.nodes.find((node) => node.id === 'rag:rag.restraint.effect.tickling');
+  const detail = graph.nodes.find((node) => node.id === 'rag:rag.restraint.detail.挠痒-山药汁');
   assert.equal(category.meta.ragLayer, CONCEPT_LAYERS.CATEGORY);
   assert.equal(detail.meta.ragLayer, CONCEPT_LAYERS.CONCEPT);
   assert.ok(!graph.nodes.some((node) => node.title === '身后束手'));
-  assert.ok(graph.nodes.some((node) => node.id === 'rag:fb-term-houshou-bingzhou'));
-  assert.ok(graph.nodes.some((node) => node.id === 'rag:fb-term-houshou-gaoshou-xiaofu'));
-  assert.ok(graph.nodes.some((node) => node.id === 'rag:fb-term-houshou-common'));
-  assert.ok(
-    !(category.aliases || []).includes('身后束手'),
-    '身后束手 must not be an alias of 上肢受限'
-  );
+  assert.ok(graph.nodes.some((node) => node.id === 'rag:rag.restraint.detail.挠痒-蚊子'));
   assert.ok(
     graph.edges.some(
       (edge) =>
@@ -312,11 +306,11 @@ test('RAG hierarchy is 上位类别 → 具体概念 and links directly to plots
       entries: [
         {
           id: 'plot-link-probe',
-          title: '探针-五花大绑',
+          title: '探针-挠痒',
           summary: '图谱直连探针',
           groupId: catalog.groups?.[0]?.id || '',
           plotKind: 'restraint',
-          ragRefs: ['fb-term-wuhuada-bang'],
+          ragRefs: ['rag.restraint.effect.tickling'],
           characters: [],
           usedBy: [],
           usageStatus: 'unused',
@@ -328,14 +322,14 @@ test('RAG hierarchy is 上位类别 → 具体概念 and links directly to plots
       ]
     }
   });
-  const wuhuada = probeGraph.nodes.find((node) => node.id === 'rag:fb-term-wuhuada-bang');
+  const tickling = probeGraph.nodes.find((node) => node.id === 'rag:rag.restraint.effect.tickling');
   const probePlot = probeGraph.nodes.find((node) => node.id === 'plot:plot-link-probe');
-  assert.ok(wuhuada);
+  assert.ok(tickling);
   assert.ok(probePlot);
   assert.ok(
     probeGraph.edges.some(
       (edge) =>
-        edge.target === wuhuada.id &&
+        edge.target === tickling.id &&
         edge.source === probePlot.id &&
         edge.sourceRef === 'plot.ragRefs'
     ),

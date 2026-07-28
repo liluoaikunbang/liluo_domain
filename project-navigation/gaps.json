@@ -2,22 +2,23 @@
   "schemaVersion": 1,
   "gaps": [
     {
-      "id": "gap-outline-relation-graph-phase2",
-      "title": "大纲关联图谱后续能力",
-      "domain": "tooling",
-      "origin": "implementation",
+      "id": "gap-cursebound-false-cure-anchor",
+      "title": "咒缚回响错误治疗节点",
+      "domain": "story",
+      "origin": "user-confirmed",
       "status": "open",
-      "priority": "low",
-      "description": "第一版已提供全图/聚焦/筛选/汇总与投影校验。后续可选：图谱内手动编辑关系、批量修正、高清导出、时间轴动态图、快照对比与演示模式；均不得另建平行主数据。",
+      "priority": "high",
+      "description": "女巫沼泽、龙眠山脉、骸骨王座和熔辉机城都是候选，尚未选定不可逆的中期转折承载节点。",
       "sourceRefs": [
-        "docs/系统说明/大纲关联图谱系统.md",
-        "docs/功能更新/169-大纲关联图谱视图.md"
+        "src/game/data/story_outline/sources/4-fantasy.json"
       ],
       "completionCriteria": [
-        "按需实现至少一项后续能力，并保持投影层不改写正史"
+        "选择或否决一个候选，并记录治疗如何只改变咒缚表达"
       ],
-      "nextAction": "在真实校准流程中收集最需要的编辑能力后再实现。",
-      "lastSeenAt": "2026-07-27T03:30:00.000Z"
+      "nextAction": "比较四个候选与各自原文主题的适配度。",
+      "originRef": "project-navigation/manual-gaps.json",
+      "derivedFrom": "manual-gaps",
+      "lastSeenAt": "2026-07-28T03:22:37.387Z"
     },
     {
       "id": "gap-cursebound-region-functions",
@@ -34,7 +35,9 @@
         "至少完成一个地区卷的功能确认且不覆盖其原始灵感"
       ],
       "nextAction": "从熔辉机城或女巫沼泽选择一个进行最小功能核验。",
-      "lastSeenAt": "2026-07-26T14:27:25.901Z"
+      "lastSeenAt": "2026-07-28T03:22:37.387Z",
+      "originRef": "project-navigation/manual-gaps.json",
+      "derivedFrom": "manual-gaps"
     },
     {
       "id": "gap-cursebound-stage-rules",
@@ -51,7 +54,9 @@
         "每个阶段有触发、可见影响和可逆性边界"
       ],
       "nextAction": "从初次显现与可控发作两阶段开始确认。",
-      "lastSeenAt": "2026-07-26T14:27:25.901Z"
+      "lastSeenAt": "2026-07-28T03:22:37.387Z",
+      "originRef": "project-navigation/manual-gaps.json",
+      "derivedFrom": "manual-gaps"
     },
     {
       "id": "gap-cursebound-trigger-event",
@@ -68,7 +73,9 @@
         "确认触发条件、首次可见后果与不应提前解释的部分"
       ],
       "nextAction": "先确定璃落在秘塔中触碰的风险类型，不决定古咒来源。",
-      "lastSeenAt": "2026-07-26T14:27:25.901Z"
+      "lastSeenAt": "2026-07-28T03:22:37.387Z",
+      "originRef": "project-navigation/manual-gaps.json",
+      "derivedFrom": "manual-gaps"
     },
     {
       "id": "gap-mainline-unfiled-inspiration-cleanup",
@@ -85,7 +92,9 @@
         "每次审查都记录已分配、保留候选和仍缺的信息"
       ],
       "nextAction": "从一个新灵感开始，仅决定阶段容器与待确认信息。",
-      "lastSeenAt": "2026-07-26T14:27:25.901Z"
+      "lastSeenAt": "2026-07-28T03:22:37.387Z",
+      "originRef": "project-navigation/manual-gaps.json",
+      "derivedFrom": "manual-gaps"
     },
     {
       "id": "gap-project-capability-navigation",
@@ -103,11 +112,13 @@
         "用户行动页由注册表生成"
       ],
       "nextAction": "完成首版治理与回归接入",
-      "lastSeenAt": "2026-07-26T14:27:25.901Z"
+      "lastSeenAt": "2026-07-28T03:22:37.387Z",
+      "originRef": "project-navigation/manual-gaps.json",
+      "derivedFrom": "manual-gaps"
     },
     {
       "id": "gap-rag-manual-audit-calibration",
-      "title": "普通 RAG 人工抽查校准",
+      "title": "紧缚 RAG 人工抽查校准",
       "domain": "knowledge",
       "category": "rag-audit",
       "origin": "user-confirmed",
@@ -149,7 +160,9 @@
       ],
       "createdAt": "2026-07-26",
       "updatedAt": "2026-07-26",
-      "lastSeenAt": "2026-07-26T14:27:25.902Z"
+      "lastSeenAt": "2026-07-28T03:22:37.387Z",
+      "originRef": "project-navigation/manual-gaps.json",
+      "derivedFrom": "manual-gaps"
     },
     {
       "id": "gap-silent-earth-anomaly-domains",
@@ -166,7 +179,9 @@
         "确认异常灾域是正史局部异常、独立灾域还是轮回入口"
       ],
       "nextAction": "为异常灾域选择一项不涉及具体幕后原因的开放条件。",
-      "lastSeenAt": "2026-07-26T14:27:25.901Z"
+      "lastSeenAt": "2026-07-28T03:22:37.387Z",
+      "originRef": "project-navigation/manual-gaps.json",
+      "derivedFrom": "manual-gaps"
     },
     {
       "id": "gap-silent-earth-history-timeline",
@@ -183,7 +198,9 @@
         "阶段之间的必要因果由用户确认并写入对应正式主线备忘"
       ],
       "nextAction": "选择相邻两个正史阶段，确认它们之间真正必须成立的状态变化。",
-      "lastSeenAt": "2026-07-26T14:27:25.901Z"
+      "lastSeenAt": "2026-07-28T03:22:37.387Z",
+      "originRef": "project-navigation/manual-gaps.json",
+      "derivedFrom": "manual-gaps"
     },
     {
       "id": "gap-silent-earth-loops-entry-rules",
@@ -200,7 +217,9 @@
         "至少确认入口、完成后返回关系和可保留状态的边界"
       ],
       "nextAction": "决定一个轮回世界如何被璃落发现，而不预设其制造者。",
-      "lastSeenAt": "2026-07-26T14:27:25.901Z"
+      "lastSeenAt": "2026-07-28T03:22:37.387Z",
+      "originRef": "project-navigation/manual-gaps.json",
+      "derivedFrom": "manual-gaps"
     },
     {
       "id": "gap-star-weaving-first-frontier-anchor",
@@ -217,7 +236,9 @@
         "确认或否决一个候选，保留另一个完整区域篇地位"
       ],
       "nextAction": "比较两个候选如何改变璃落的航程状态。",
-      "lastSeenAt": "2026-07-26T14:27:25.901Z"
+      "lastSeenAt": "2026-07-28T03:22:37.387Z",
+      "originRef": "project-navigation/manual-gaps.json",
+      "derivedFrom": "manual-gaps"
     },
     {
       "id": "gap-star-weaving-long-range-travel",
@@ -234,7 +255,9 @@
         "确认长期航行方式与返回据点的最小事实"
       ],
       "nextAction": "确定璃落获得的是何种持续跨星区行动资格。",
-      "lastSeenAt": "2026-07-26T14:27:25.901Z"
+      "lastSeenAt": "2026-07-28T03:22:37.387Z",
+      "originRef": "project-navigation/manual-gaps.json",
+      "derivedFrom": "manual-gaps"
     },
     {
       "id": "gap-star-weaving-voyage-state-returns",
@@ -251,7 +274,9 @@
         "为一个已知星域篇确认一个真实长期变化"
       ],
       "nextAction": "选择一个独立篇章，确认其完成后允许璃落带走的关系或权限。",
-      "lastSeenAt": "2026-07-26T14:27:25.901Z"
+      "lastSeenAt": "2026-07-28T03:22:37.387Z",
+      "originRef": "project-navigation/manual-gaps.json",
+      "derivedFrom": "manual-gaps"
     },
     {
       "id": "gap-style-rag-manual-audit-calibration",
@@ -297,7 +322,9 @@
       ],
       "createdAt": "2026-07-26",
       "updatedAt": "2026-07-26",
-      "lastSeenAt": "2026-07-26T14:27:25.902Z"
+      "lastSeenAt": "2026-07-28T03:22:37.387Z",
+      "originRef": "project-navigation/manual-gaps.json",
+      "derivedFrom": "manual-gaps"
     },
     {
       "id": "gap-writing-calibration-pairs",
@@ -338,7 +365,9 @@
       ],
       "createdAt": "2026-07-26",
       "updatedAt": "2026-07-26",
-      "lastSeenAt": "2026-07-26T14:27:25.901Z"
+      "lastSeenAt": "2026-07-28T03:22:37.387Z",
+      "originRef": "project-navigation/manual-gaps.json",
+      "derivedFrom": "manual-gaps"
     },
     {
       "id": "gap-writing-external-article-review",
@@ -383,7 +412,9 @@
       ],
       "createdAt": "2026-07-26",
       "updatedAt": "2026-07-26",
-      "lastSeenAt": "2026-07-26T14:27:25.902Z"
+      "lastSeenAt": "2026-07-28T03:22:37.387Z",
+      "originRef": "project-navigation/manual-gaps.json",
+      "derivedFrom": "manual-gaps"
     },
     {
       "id": "gap-writing-golden-prose-first-batch",
@@ -427,7 +458,9 @@
       ],
       "createdAt": "2026-07-26",
       "updatedAt": "2026-07-26",
-      "lastSeenAt": "2026-07-26T14:27:25.901Z"
+      "lastSeenAt": "2026-07-28T03:22:37.387Z",
+      "originRef": "project-navigation/manual-gaps.json",
+      "derivedFrom": "manual-gaps"
     },
     {
       "id": "gap-writing-model-adult-uncensored-candidate",
@@ -481,7 +514,9 @@
       ],
       "createdAt": "2026-07-26",
       "updatedAt": "2026-07-26",
-      "lastSeenAt": "2026-07-26T14:27:25.902Z"
+      "lastSeenAt": "2026-07-28T03:22:37.387Z",
+      "originRef": "project-navigation/manual-gaps.json",
+      "derivedFrom": "manual-gaps"
     },
     {
       "id": "gap-writing-model-dsr1-endpoint",
@@ -535,7 +570,9 @@
       ],
       "createdAt": "2026-07-26",
       "updatedAt": "2026-07-26",
-      "lastSeenAt": "2026-07-26T14:27:25.901Z"
+      "lastSeenAt": "2026-07-28T03:22:37.387Z",
+      "originRef": "project-navigation/manual-gaps.json",
+      "derivedFrom": "manual-gaps"
     },
     {
       "id": "gap-writing-model-effectiveness-priors",
@@ -575,7 +612,9 @@
       ],
       "createdAt": "2026-07-26",
       "updatedAt": "2026-07-26",
-      "lastSeenAt": "2026-07-26T14:27:25.902Z"
+      "lastSeenAt": "2026-07-28T03:22:37.387Z",
+      "originRef": "project-navigation/manual-gaps.json",
+      "derivedFrom": "manual-gaps"
     },
     {
       "id": "gap-writing-model-eval-baseline",
@@ -622,7 +661,9 @@
       ],
       "createdAt": "2026-07-26",
       "updatedAt": "2026-07-26",
-      "lastSeenAt": "2026-07-26T14:27:25.901Z"
+      "lastSeenAt": "2026-07-28T03:22:37.387Z",
+      "originRef": "project-navigation/manual-gaps.json",
+      "derivedFrom": "manual-gaps"
     },
     {
       "id": "gap-writing-model-qwen3-endpoint",
@@ -676,7 +717,9 @@
       ],
       "createdAt": "2026-07-26",
       "updatedAt": "2026-07-26",
-      "lastSeenAt": "2026-07-26T14:27:25.901Z"
+      "lastSeenAt": "2026-07-28T03:22:37.387Z",
+      "originRef": "project-navigation/manual-gaps.json",
+      "derivedFrom": "manual-gaps"
     },
     {
       "id": "gap-writing-personal-history-corpus",
@@ -723,7 +766,9 @@
       ],
       "createdAt": "2026-07-26",
       "updatedAt": "2026-07-26",
-      "lastSeenAt": "2026-07-26T14:27:25.901Z"
+      "lastSeenAt": "2026-07-28T03:22:37.387Z",
+      "originRef": "project-navigation/manual-gaps.json",
+      "derivedFrom": "manual-gaps"
     },
     {
       "id": "gap-writing-sheet-evidence",
@@ -763,7 +808,9 @@
       ],
       "createdAt": "2026-07-26",
       "updatedAt": "2026-07-26",
-      "lastSeenAt": "2026-07-26T14:27:25.902Z"
+      "lastSeenAt": "2026-07-28T03:22:37.387Z",
+      "originRef": "project-navigation/manual-gaps.json",
+      "derivedFrom": "manual-gaps"
     },
     {
       "id": "gap-writing-style-rag-deferred",
@@ -805,7 +852,9 @@
       ],
       "createdAt": "2026-07-26",
       "updatedAt": "2026-07-26",
-      "lastSeenAt": "2026-07-26T14:27:25.902Z"
+      "lastSeenAt": "2026-07-28T03:22:37.387Z",
+      "originRef": "project-navigation/manual-gaps.json",
+      "derivedFrom": "manual-gaps"
     },
     {
       "id": "story-gap-world-1-glimmering-glance-black-rose-sanatorium-地图-黑蔷薇疗养院-场景结构-9bd2f52366",
@@ -825,7 +874,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.898Z",
+      "lastSeenAt": "2026-07-28T03:22:37.385Z",
       "resolvedAt": null
     },
     {
@@ -846,7 +895,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.898Z",
+      "lastSeenAt": "2026-07-28T03:22:37.385Z",
       "resolvedAt": null
     },
     {
@@ -868,7 +917,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.898Z",
+      "lastSeenAt": "2026-07-28T03:22:37.385Z",
       "resolvedAt": null
     },
     {
@@ -889,7 +938,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.897Z",
+      "lastSeenAt": "2026-07-28T03:22:37.384Z",
       "resolvedAt": null
     },
     {
@@ -910,7 +959,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.898Z",
+      "lastSeenAt": "2026-07-28T03:22:37.385Z",
       "resolvedAt": null
     },
     {
@@ -931,7 +980,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.898Z",
+      "lastSeenAt": "2026-07-28T03:22:37.385Z",
       "resolvedAt": null
     },
     {
@@ -953,7 +1002,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.898Z",
+      "lastSeenAt": "2026-07-28T03:22:37.385Z",
       "resolvedAt": null
     },
     {
@@ -974,7 +1023,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.898Z",
+      "lastSeenAt": "2026-07-28T03:22:37.385Z",
       "resolvedAt": null
     },
     {
@@ -995,7 +1044,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.898Z",
+      "lastSeenAt": "2026-07-28T03:22:37.385Z",
       "resolvedAt": null
     },
     {
@@ -1016,7 +1065,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.898Z",
+      "lastSeenAt": "2026-07-28T03:22:37.385Z",
       "resolvedAt": null
     },
     {
@@ -1037,7 +1086,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.898Z",
+      "lastSeenAt": "2026-07-28T03:22:37.385Z",
       "resolvedAt": null
     },
     {
@@ -1058,7 +1107,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.898Z",
+      "lastSeenAt": "2026-07-28T03:22:37.385Z",
       "resolvedAt": null
     },
     {
@@ -1079,7 +1128,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.898Z",
+      "lastSeenAt": "2026-07-28T03:22:37.385Z",
       "resolvedAt": null
     },
     {
@@ -1101,7 +1150,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.898Z",
+      "lastSeenAt": "2026-07-28T03:22:37.385Z",
       "resolvedAt": null
     },
     {
@@ -1122,7 +1171,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.898Z",
+      "lastSeenAt": "2026-07-28T03:22:37.385Z",
       "resolvedAt": null
     },
     {
@@ -1143,7 +1192,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.902Z",
+      "lastSeenAt": "2026-07-28T03:22:37.388Z",
       "resolvedAt": null
     },
     {
@@ -1164,7 +1213,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.898Z",
+      "lastSeenAt": "2026-07-28T03:22:37.385Z",
       "resolvedAt": null
     },
     {
@@ -1185,7 +1234,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.898Z",
+      "lastSeenAt": "2026-07-28T03:22:37.385Z",
       "resolvedAt": null
     },
     {
@@ -1207,7 +1256,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.898Z",
+      "lastSeenAt": "2026-07-28T03:22:37.385Z",
       "resolvedAt": null
     },
     {
@@ -1228,7 +1277,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.898Z",
+      "lastSeenAt": "2026-07-28T03:22:37.385Z",
       "resolvedAt": null
     },
     {
@@ -1249,7 +1298,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.898Z",
+      "lastSeenAt": "2026-07-28T03:22:37.385Z",
       "resolvedAt": null
     },
     {
@@ -1271,7 +1320,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.898Z",
+      "lastSeenAt": "2026-07-28T03:22:37.385Z",
       "resolvedAt": null
     },
     {
@@ -1292,7 +1341,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.898Z",
+      "lastSeenAt": "2026-07-28T03:22:37.385Z",
       "resolvedAt": null
     },
     {
@@ -1313,7 +1362,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.385Z",
       "resolvedAt": null
     },
     {
@@ -1335,7 +1384,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.385Z",
       "resolvedAt": null
     },
     {
@@ -1356,7 +1405,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.385Z",
       "resolvedAt": null
     },
     {
@@ -1377,7 +1426,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.385Z",
       "resolvedAt": null
     },
     {
@@ -1399,7 +1448,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.385Z",
       "resolvedAt": null
     },
     {
@@ -1420,7 +1469,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.385Z",
       "resolvedAt": null
     },
     {
@@ -1441,7 +1490,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.385Z",
       "resolvedAt": null
     },
     {
@@ -1463,7 +1512,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.385Z",
       "resolvedAt": null
     },
     {
@@ -1484,7 +1533,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.385Z",
       "resolvedAt": null
     },
     {
@@ -1505,7 +1554,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.385Z",
       "resolvedAt": null
     },
     {
@@ -1526,7 +1575,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.385Z",
       "resolvedAt": null
     },
     {
@@ -1548,7 +1597,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.385Z",
       "resolvedAt": null
     },
     {
@@ -1569,7 +1618,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.385Z",
       "resolvedAt": null
     },
     {
@@ -1590,7 +1639,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.385Z",
       "resolvedAt": null
     },
     {
@@ -1611,7 +1660,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.385Z",
       "resolvedAt": null
     },
     {
@@ -1633,7 +1682,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.385Z",
       "resolvedAt": null
     },
     {
@@ -1654,7 +1703,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.385Z",
       "resolvedAt": null
     },
     {
@@ -1675,7 +1724,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.385Z",
       "resolvedAt": null
     },
     {
@@ -1696,7 +1745,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.385Z",
       "resolvedAt": null
     },
     {
@@ -1718,7 +1767,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.385Z",
       "resolvedAt": null
     },
     {
@@ -1739,7 +1788,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.385Z",
       "resolvedAt": null
     },
     {
@@ -1760,7 +1809,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.385Z",
       "resolvedAt": null
     },
     {
@@ -1781,7 +1830,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.385Z",
       "resolvedAt": null
     },
     {
@@ -1803,7 +1852,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.385Z",
       "resolvedAt": null
     },
     {
@@ -1824,7 +1873,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.385Z",
       "resolvedAt": null
     },
     {
@@ -1845,7 +1894,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.385Z",
       "resolvedAt": null
     },
     {
@@ -1866,7 +1915,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.385Z",
       "resolvedAt": null
     },
     {
@@ -1887,7 +1936,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.385Z",
       "resolvedAt": null
     },
     {
@@ -1908,7 +1957,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.385Z",
       "resolvedAt": null
     },
     {
@@ -1929,7 +1978,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.385Z",
       "resolvedAt": null
     },
     {
@@ -1950,7 +1999,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.385Z",
       "resolvedAt": null
     },
     {
@@ -1972,7 +2021,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.385Z",
       "resolvedAt": null
     },
     {
@@ -1993,7 +2042,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.385Z",
       "resolvedAt": null
     },
     {
@@ -2014,7 +2063,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.385Z",
       "resolvedAt": null
     },
     {
@@ -2036,7 +2085,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.385Z",
       "resolvedAt": null
     },
     {
@@ -2057,7 +2106,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.385Z",
       "resolvedAt": null
     },
     {
@@ -2078,7 +2127,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.385Z",
       "resolvedAt": null
     },
     {
@@ -2100,7 +2149,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.385Z",
       "resolvedAt": null
     },
     {
@@ -2121,7 +2170,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.385Z",
       "resolvedAt": null
     },
     {
@@ -2142,7 +2191,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -2164,7 +2213,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -2185,7 +2234,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -2206,7 +2255,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -2227,7 +2276,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -2249,7 +2298,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -2270,7 +2319,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -2291,7 +2340,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -2313,7 +2362,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -2334,7 +2383,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -2355,7 +2404,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -2376,7 +2425,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -2397,7 +2446,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -2419,7 +2468,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -2440,7 +2489,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -2461,7 +2510,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -2482,7 +2531,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -2503,7 +2552,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -2525,7 +2574,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -2546,7 +2595,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -2567,7 +2616,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -2588,7 +2637,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -2610,7 +2659,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -2631,7 +2680,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -2652,7 +2701,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -2673,7 +2722,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -2695,7 +2744,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -2716,7 +2765,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -2737,7 +2786,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -2758,7 +2807,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -2780,7 +2829,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -2801,7 +2850,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -2822,7 +2871,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -2844,7 +2893,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -2865,7 +2914,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -2886,7 +2935,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -2907,7 +2956,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -2929,7 +2978,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -2950,7 +2999,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -2971,7 +3020,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -2992,7 +3041,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -3014,7 +3063,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -3035,7 +3084,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -3056,7 +3105,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -3077,7 +3126,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -3099,7 +3148,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -3120,7 +3169,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -3141,7 +3190,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -3163,7 +3212,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -3184,7 +3233,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -3205,7 +3254,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -3227,7 +3276,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -3248,7 +3297,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -3269,7 +3318,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -3290,7 +3339,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -3312,7 +3361,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -3333,7 +3382,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -3354,7 +3403,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -3375,7 +3424,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.902Z",
+      "lastSeenAt": "2026-07-28T03:22:37.388Z",
       "resolvedAt": null
     },
     {
@@ -3396,7 +3445,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -3418,7 +3467,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -3439,7 +3488,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -3460,7 +3509,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -3481,7 +3530,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -3502,7 +3551,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.902Z",
+      "lastSeenAt": "2026-07-28T03:22:37.388Z",
       "resolvedAt": null
     },
     {
@@ -3523,7 +3572,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.902Z",
+      "lastSeenAt": "2026-07-28T03:22:37.388Z",
       "resolvedAt": null
     },
     {
@@ -3544,7 +3593,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -3566,7 +3615,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.902Z",
+      "lastSeenAt": "2026-07-28T03:22:37.388Z",
       "resolvedAt": null
     },
     {
@@ -3587,7 +3636,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -3608,7 +3657,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.902Z",
+      "lastSeenAt": "2026-07-28T03:22:37.388Z",
       "resolvedAt": null
     },
     {
@@ -3629,7 +3678,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -3651,7 +3700,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -3672,7 +3721,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -3693,7 +3742,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -3714,7 +3763,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -3736,7 +3785,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -3757,7 +3806,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -3778,7 +3827,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -3799,7 +3848,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -3821,7 +3870,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -3842,7 +3891,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -3863,7 +3912,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -3884,7 +3933,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -3906,7 +3955,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -3927,7 +3976,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -3948,7 +3997,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -3969,7 +4018,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -3991,7 +4040,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -4012,7 +4061,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -4033,7 +4082,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -4054,7 +4103,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -4075,7 +4124,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -4097,7 +4146,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -4119,7 +4168,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -4140,7 +4189,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -4161,7 +4210,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -4183,7 +4232,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -4204,7 +4253,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -4225,7 +4274,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -4246,7 +4295,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -4268,7 +4317,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -4289,7 +4338,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -4310,7 +4359,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -4331,7 +4380,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -4353,7 +4402,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -4374,7 +4423,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -4395,7 +4444,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -4416,7 +4465,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -4438,7 +4487,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -4459,7 +4508,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -4480,7 +4529,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -4502,7 +4551,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -4523,7 +4572,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -4544,7 +4593,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -4565,7 +4614,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -4587,7 +4636,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -4608,7 +4657,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -4629,7 +4678,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -4650,7 +4699,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -4671,7 +4720,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -4692,7 +4741,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -4713,7 +4762,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -4735,7 +4784,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -4756,7 +4805,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -4777,7 +4826,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -4799,7 +4848,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -4820,7 +4869,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -4841,7 +4890,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -4862,7 +4911,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -4884,7 +4933,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -4905,7 +4954,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -4926,7 +4975,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.900Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -4947,7 +4996,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -4969,7 +5018,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -4990,7 +5039,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.899Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -5011,7 +5060,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.900Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -5032,7 +5081,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.900Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -5054,7 +5103,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.900Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -5075,7 +5124,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.900Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -5096,7 +5145,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.900Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -5117,7 +5166,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.900Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -5139,7 +5188,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.900Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -5160,7 +5209,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.900Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -5181,7 +5230,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.900Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -5202,7 +5251,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.900Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -5224,7 +5273,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.900Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -5245,7 +5294,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.900Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -5266,7 +5315,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.900Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -5287,7 +5336,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.900Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -5309,7 +5358,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.900Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -5330,7 +5379,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.900Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -5351,7 +5400,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.900Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -5372,7 +5421,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.900Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -5394,7 +5443,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.900Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -5415,7 +5464,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.900Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -5436,7 +5485,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.900Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -5457,7 +5506,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.900Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -5479,7 +5528,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.900Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -5500,7 +5549,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.900Z",
+      "lastSeenAt": "2026-07-28T03:22:37.386Z",
       "resolvedAt": null
     },
     {
@@ -5521,7 +5570,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.900Z",
+      "lastSeenAt": "2026-07-28T03:22:37.387Z",
       "resolvedAt": null
     },
     {
@@ -5542,7 +5591,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.900Z",
+      "lastSeenAt": "2026-07-28T03:22:37.387Z",
       "resolvedAt": null
     },
     {
@@ -5564,7 +5613,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.900Z",
+      "lastSeenAt": "2026-07-28T03:22:37.387Z",
       "resolvedAt": null
     },
     {
@@ -5585,7 +5634,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.900Z",
+      "lastSeenAt": "2026-07-28T03:22:37.387Z",
       "resolvedAt": null
     },
     {
@@ -5606,7 +5655,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.900Z",
+      "lastSeenAt": "2026-07-28T03:22:37.387Z",
       "resolvedAt": null
     },
     {
@@ -5627,7 +5676,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.900Z",
+      "lastSeenAt": "2026-07-28T03:22:37.387Z",
       "resolvedAt": null
     },
     {
@@ -5649,7 +5698,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.900Z",
+      "lastSeenAt": "2026-07-28T03:22:37.387Z",
       "resolvedAt": null
     },
     {
@@ -5670,7 +5719,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.900Z",
+      "lastSeenAt": "2026-07-28T03:22:37.387Z",
       "resolvedAt": null
     },
     {
@@ -5691,7 +5740,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.900Z",
+      "lastSeenAt": "2026-07-28T03:22:37.387Z",
       "resolvedAt": null
     },
     {
@@ -5712,7 +5761,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.900Z",
+      "lastSeenAt": "2026-07-28T03:22:37.387Z",
       "resolvedAt": null
     },
     {
@@ -5734,7 +5783,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.900Z",
+      "lastSeenAt": "2026-07-28T03:22:37.387Z",
       "resolvedAt": null
     },
     {
@@ -5755,7 +5804,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.900Z",
+      "lastSeenAt": "2026-07-28T03:22:37.387Z",
       "resolvedAt": null
     },
     {
@@ -5776,7 +5825,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.900Z",
+      "lastSeenAt": "2026-07-28T03:22:37.387Z",
       "resolvedAt": null
     },
     {
@@ -5797,7 +5846,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.900Z",
+      "lastSeenAt": "2026-07-28T03:22:37.387Z",
       "resolvedAt": null
     },
     {
@@ -5819,7 +5868,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.900Z",
+      "lastSeenAt": "2026-07-28T03:22:37.387Z",
       "resolvedAt": null
     },
     {
@@ -5840,7 +5889,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.900Z",
+      "lastSeenAt": "2026-07-28T03:22:37.387Z",
       "resolvedAt": null
     },
     {
@@ -5861,7 +5910,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.900Z",
+      "lastSeenAt": "2026-07-28T03:22:37.387Z",
       "resolvedAt": null
     },
     {
@@ -5882,7 +5931,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.900Z",
+      "lastSeenAt": "2026-07-28T03:22:37.387Z",
       "resolvedAt": null
     },
     {
@@ -5904,7 +5953,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.900Z",
+      "lastSeenAt": "2026-07-28T03:22:37.387Z",
       "resolvedAt": null
     },
     {
@@ -5925,7 +5974,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.900Z",
+      "lastSeenAt": "2026-07-28T03:22:37.387Z",
       "resolvedAt": null
     },
     {
@@ -5946,7 +5995,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.900Z",
+      "lastSeenAt": "2026-07-28T03:22:37.387Z",
       "resolvedAt": null
     },
     {
@@ -5967,7 +6016,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.900Z",
+      "lastSeenAt": "2026-07-28T03:22:37.387Z",
       "resolvedAt": null
     },
     {
@@ -5989,7 +6038,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.900Z",
+      "lastSeenAt": "2026-07-28T03:22:37.387Z",
       "resolvedAt": null
     },
     {
@@ -6010,7 +6059,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.900Z",
+      "lastSeenAt": "2026-07-28T03:22:37.387Z",
       "resolvedAt": null
     },
     {
@@ -6032,7 +6081,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.900Z",
+      "lastSeenAt": "2026-07-28T03:22:37.387Z",
       "resolvedAt": null
     },
     {
@@ -6053,7 +6102,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.900Z",
+      "lastSeenAt": "2026-07-28T03:22:37.387Z",
       "resolvedAt": null
     },
     {
@@ -6074,7 +6123,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.900Z",
+      "lastSeenAt": "2026-07-28T03:22:37.387Z",
       "resolvedAt": null
     },
     {
@@ -6095,7 +6144,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.900Z",
+      "lastSeenAt": "2026-07-28T03:22:37.387Z",
       "resolvedAt": null
     },
     {
@@ -6116,7 +6165,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.900Z",
+      "lastSeenAt": "2026-07-28T03:22:37.387Z",
       "resolvedAt": null
     },
     {
@@ -6138,7 +6187,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.900Z",
+      "lastSeenAt": "2026-07-28T03:22:37.387Z",
       "resolvedAt": null
     },
     {
@@ -6159,7 +6208,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.900Z",
+      "lastSeenAt": "2026-07-28T03:22:37.387Z",
       "resolvedAt": null
     },
     {
@@ -6180,7 +6229,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.900Z",
+      "lastSeenAt": "2026-07-28T03:22:37.387Z",
       "resolvedAt": null
     },
     {
@@ -6201,7 +6250,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.900Z",
+      "lastSeenAt": "2026-07-28T03:22:37.387Z",
       "resolvedAt": null
     },
     {
@@ -6222,7 +6271,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.900Z",
+      "lastSeenAt": "2026-07-28T03:22:37.387Z",
       "resolvedAt": null
     },
     {
@@ -6243,7 +6292,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.900Z",
+      "lastSeenAt": "2026-07-28T03:22:37.387Z",
       "resolvedAt": null
     },
     {
@@ -6265,7 +6314,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.900Z",
+      "lastSeenAt": "2026-07-28T03:22:37.387Z",
       "resolvedAt": null
     },
     {
@@ -6286,7 +6335,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.900Z",
+      "lastSeenAt": "2026-07-28T03:22:37.387Z",
       "resolvedAt": null
     },
     {
@@ -6307,7 +6356,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.900Z",
+      "lastSeenAt": "2026-07-28T03:22:37.387Z",
       "resolvedAt": null
     },
     {
@@ -6328,7 +6377,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.900Z",
+      "lastSeenAt": "2026-07-28T03:22:37.387Z",
       "resolvedAt": null
     },
     {
@@ -6350,7 +6399,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.900Z",
+      "lastSeenAt": "2026-07-28T03:22:37.387Z",
       "resolvedAt": null
     },
     {
@@ -6371,7 +6420,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-26T14:27:25.900Z",
+      "lastSeenAt": "2026-07-28T03:22:37.387Z",
       "resolvedAt": null
     }
   ]

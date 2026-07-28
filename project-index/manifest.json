@@ -12,7 +12,7 @@
     },
     "code": {
       "enabled": true,
-      "entryCount": 158,
+      "entryCount": 161,
       "outputs": [
         "code/modules-001.json"
       ],
@@ -20,7 +20,7 @@
     },
     "docs": {
       "enabled": true,
-      "entryCount": 504,
+      "entryCount": 515,
       "outputs": [
         "docs/documents-001.json",
         "docs/documents-002.json",

@@ -85,16 +85,26 @@
     },
     {
       "ruleId": "outline-interview-tag-confirmation",
-      "title": "大纲访谈须选项确认普通 Tag 与紧缚 Tag",
+      "title": "大纲访谈须选项确认普通 Tag 与紧缚 Tag（已取代）",
       "authority": "docs/系统说明/故事大纲随机提问模板.md",
       "decision": "docs/设计记忆/创作决策/CDR-008-大纲访谈须选项确认普通Tag与紧缚Tag.md",
+      "consumers": [],
+      "status": "deprecated",
+      "supersededBy": "outline-interview-restraint-rag-confirmation"
+    },
+    {
+      "ruleId": "outline-interview-restraint-rag-confirmation",
+      "title": "大纲访谈须选项确认紧缚 RAG",
+      "authority": "docs/系统说明/故事大纲随机提问模板.md",
+      "decision": "docs/设计记忆/创作决策/CDR-009-大纲访谈须选项确认紧缚RAG.md",
       "consumers": [
         ".agents/skills/liluo-project/random-story-outline-interview/SKILL.md",
         ".agents/skills/liluo-project/liluo-story-outline-authoring/SKILL.md",
         ".agents/skills/liluo-project/liluo-plot-placement-interview/SKILL.md",
+        ".agents/skills/liluo-project/liluo-external-fiction-knowledge/SKILL.md",
         "docs/系统说明/故事大纲条目模板.md",
         "docs/系统说明/情节安置提问模板.md",
-        "docs/系统说明/情节条目系统.md",
+        "docs/系统说明/Tag体系收缩与RAG情节迁移系统.md",
         "docs/用户命令目录.md"
       ],
       "status": "active"

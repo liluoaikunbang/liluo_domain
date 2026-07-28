@@ -2,6 +2,12 @@ export * from './constants.js';
 export * from './conceptRegistry.js';
 export * from './styleTaxonomyLabels.js';
 export {
+  buildRestraintRagMissingItem,
+  cardNeedsRestraintBodyTodo,
+  indexRagCardsById,
+  resolveRestraintRagPrimaryLabels
+} from './resolveRestraintRagPrimaryLabels.js';
+export {
   buildOutlineRelationGraph,
   computeGraphStats,
   createEmptyGraph,

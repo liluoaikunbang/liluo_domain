@@ -41,20 +41,8 @@
         >
           <template #overlay>
             <GameMenuOverlay
-              :visible="isMenuOpen"
-              :saves="saveSummaries"
-              :current-map-id="currentMapId"
-              :current-map-entry="currentMapEntry"
-              :current-map-name="currentMapName"
-              :current-position="currentPlayerPosition"
-              :current-player-portrait="currentPlayerPortraitForMenu"
-              @close="closeMenu"
-              @save-game="handleSaveGame"
-              @load-game="handleLoadGame"
-              @delete-save="handleDeleteSave"
-              @delete-all-saves="handleDeleteAllSaves"
-              @export-saves="handleExportSaves"
-              @import-saves="handleImportSaves"
+              v-bind="gameMenuOverlayProps"
+              v-on="gameMenuOverlayListeners"
             />
             <GamePortraitLayerDialog
               :visible="isPortraitLayerDialogOpen"
@@ -95,20 +83,8 @@
           >
             <template #overlay>
               <GameMenuOverlay
-                :visible="isMenuOpen"
-                :saves="saveSummaries"
-                :current-map-id="currentMapId"
-                :current-map-entry="currentMapEntry"
-                :current-map-name="currentMapName"
-                :current-position="currentPlayerPosition"
-                :current-player-portrait="currentPlayerPortraitForMenu"
-                @close="closeMenu"
-                @save-game="handleSaveGame"
-                @load-game="handleLoadGame"
-                @delete-save="handleDeleteSave"
-                @delete-all-saves="handleDeleteAllSaves"
-                @export-saves="handleExportSaves"
-                @import-saves="handleImportSaves"
+                v-bind="gameMenuOverlayProps"
+                v-on="gameMenuOverlayListeners"
               />
             </template>
           </InteractiveFictionMode>
@@ -136,20 +112,8 @@
           >
             <template #overlay>
               <GameMenuOverlay
-                :visible="isMenuOpen"
-                :saves="saveSummaries"
-                :current-map-id="currentMapId"
-                :current-map-entry="currentMapEntry"
-                :current-map-name="currentMapName"
-                :current-position="currentPlayerPosition"
-                :current-player-portrait="currentPlayerPortraitForMenu"
-                @close="closeMenu"
-                @save-game="handleSaveGame"
-                @load-game="handleLoadGame"
-                @delete-save="handleDeleteSave"
-                @delete-all-saves="handleDeleteAllSaves"
-                @export-saves="handleExportSaves"
-                @import-saves="handleImportSaves"
+                v-bind="gameMenuOverlayProps"
+                v-on="gameMenuOverlayListeners"
               />
             </template>
           </DirectionPadMode>
@@ -454,6 +418,15 @@ const currentPlayerPortraitForMenu = computed(() => ({
   src: playerPortraitSrc.value,
   layers: playerPortraitLayers.value,
   backLayers: playerPortraitBackLayers.value
+}));
+const gameMenuOverlayProps = computed(() => ({
+  visible: isMenuOpen.value,
+  saves: saveSummaries.value,
+  currentMapId: currentMapId.value,
+  currentMapEntry: currentMapEntry.value,
+  currentMapName: currentMapName.value,
+  currentPosition: currentPlayerPosition.value,
+  currentPlayerPortrait: currentPlayerPortraitForMenu.value
 }));
 const activeInteractiveFictionBackgroundSrc = computed(() => {
   if (!activeInteractiveFiction.value) {
@@ -856,6 +829,16 @@ const handleImportSaves = (text) => {
       type: 'loss'
     });
   }
+};
+
+const gameMenuOverlayListeners = {
+  close: closeMenu,
+  saveGame: handleSaveGame,
+  loadGame: handleLoadGame,
+  deleteSave: handleDeleteSave,
+  deleteAllSaves: handleDeleteAllSaves,
+  exportSaves: handleExportSaves,
+  importSaves: handleImportSaves
 };
 
 const startInteractiveFiction = (scenarioId) => {

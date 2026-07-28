@@ -2,7 +2,7 @@
   {
     "id": "src/game/data/registry.ts",
     "indexVersion": 1,
-    "sourceHash": "85aa57fb34709aa5252d351b0d075c7f528fbf8bde2c217feb631b8d49053e83",
+    "sourceHash": "4daf22556ae7e5ecca7181845be003d9c588abea307844c47d79cf27b18a8ce3",
     "sourcePath": "src/game/data/registry.ts",
     "summary": "游戏内容注册入口",
     "summarySource": "structured-fields",

@@ -1,5 +1,126 @@
 [
   {
+    "id": "docs/知识检索校准/rebuild-logs/README.md",
+    "indexVersion": 1,
+    "sourceHash": "3a8239a7e82bb188a628a655f8a1a839dcfe71693fb10c86073d27ab154ba6e8",
+    "sourcePath": "docs/知识检索校准/rebuild-logs/README.md",
+    "subtype": "other",
+    "summary": "rebuild-logs",
+    "summarySource": "title-only",
+    "title": "rebuild-logs",
+    "type": "document"
+  },
+  {
+    "id": "docs/知识检索校准/records/concept/README.md",
+    "indexVersion": 1,
+    "sourceHash": "0db692d5b5ae8ed44d56b03c12a73a8dc38315e36cb1b8215d59e27218058da7",
+    "sourcePath": "docs/知识检索校准/records/concept/README.md",
+    "subtype": "other",
+    "summary": "细节概念抽查记录",
+    "summarySource": "title-only",
+    "title": "细节概念抽查记录",
+    "type": "document"
+  },
+  {
+    "id": "docs/知识检索校准/records/plot/README.md",
+    "indexVersion": 1,
+    "sourceHash": "ea054f53f90ea5cc98e3bd3219d2f7f6c981fbac61cabc32080e35a397b75854",
+    "sourcePath": "docs/知识检索校准/records/plot/README.md",
+    "subtype": "other",
+    "summary": "情节抽查记录",
+    "summarySource": "title-only",
+    "title": "情节抽查记录",
+    "type": "document"
+  },
+  {
+    "id": "docs/知识检索校准/records/rag/README.md",
+    "indexVersion": 1,
+    "sourceHash": "9d6101b96563c1d2600bacc631b894d1657513f3c904f5ba646cf7756198079d",
+    "sourcePath": "docs/知识检索校准/records/rag/README.md",
+    "subtype": "other",
+    "summary": "records/rag",
+    "summarySource": "title-only",
+    "title": "records/rag",
+    "type": "document"
+  },
+  {
+    "id": "docs/知识检索校准/records/style-rag/README.md",
+    "indexVersion": 1,
+    "sourceHash": "aa793c39692de1d302707ebebaee644e4cb540ebde4d825c930143d39e953f83",
+    "sourcePath": "docs/知识检索校准/records/style-rag/README.md",
+    "subtype": "other",
+    "summary": "records/style-rag",
+    "summarySource": "title-only",
+    "title": "records/style-rag",
+    "type": "document"
+  },
+  {
+    "id": "docs/智能体说明/项目子智能体体系.md",
+    "indexVersion": 1,
+    "sourceHash": "bef536acbfb587877b2a8b222a172fffc7280415599343193f0a539e30e703c2",
+    "sourcePath": "docs/智能体说明/项目子智能体体系.md",
+    "subtype": "agent",
+    "summary": "项目子智能体体系",
+    "summarySource": "title-only",
+    "title": "项目子智能体体系",
+    "type": "document"
+  },
+  {
+    "id": "docs/智能体说明/liluo_content_auditor.md",
+    "indexVersion": 1,
+    "sourceHash": "eb303dec155b8f8449ca95e141318e6172964ee2196552968ae4d204b86b4fad",
+    "sourcePath": "docs/智能体说明/liluo_content_auditor.md",
+    "subtype": "agent",
+    "summary": "璃落内容审查员",
+    "summarySource": "title-only",
+    "title": "璃落内容审查员",
+    "type": "document"
+  },
+  {
+    "id": "docs/智能体说明/liluo_context_explorer.md",
+    "indexVersion": 1,
+    "sourceHash": "f2097c741211a0b5562506b003c75907b0200346f5e74b128b14c32ed0d869c3",
+    "sourcePath": "docs/智能体说明/liluo_context_explorer.md",
+    "subtype": "agent",
+    "summary": "璃落项目上下文检索员",
+    "summarySource": "title-only",
+    "title": "璃落项目上下文检索员",
+    "type": "document"
+  },
+  {
+    "id": "docs/智能体说明/liluo_continuity_reviewer.md",
+    "indexVersion": 1,
+    "sourceHash": "100f5a29f06b3108b02dd2007c347bdbe0082b05f914c33f7277f7820001300d",
+    "sourcePath": "docs/智能体说明/liluo_continuity_reviewer.md",
+    "subtype": "agent",
+    "summary": "璃落宇宙连续性审查员",
+    "summarySource": "title-only",
+    "title": "璃落宇宙连续性审查员",
+    "type": "document"
+  },
+  {
+    "id": "docs/智能体说明/liluo_game_architecture_explorer.md",
+    "indexVersion": 1,
+    "sourceHash": "d078efca9a4c0285106fd8ff91a05707ca85a2981d88a4c2db22b0d2501404ea",
+    "sourcePath": "docs/智能体说明/liluo_game_architecture_explorer.md",
+    "subtype": "agent",
+    "summary": "璃落游戏架构分析员",
+    "summarySource": "title-only",
+    "title": "璃落游戏架构分析员",
+    "type": "document"
+  },
+  {
+    "id": "docs/智能体说明/liluo_project_memory_curator.md",
+    "indexVersion": 1,
+    "sourceHash": "ed79058d4f0f0599ca585344c407bde0c1672abbefe1cbdd51b77eb3d7016e3f",
+    "sourcePath": "docs/智能体说明/liluo_project_memory_curator.md",
+    "subtype": "agent",
+    "summary": "liluo_project_memory_curator",
+    "summarySource": "title-only",
+    "title": "liluo_project_memory_curator",
+    "type": "document"
+  },
+  {
     "id": "docs/智能体说明/liluo_story_gap_analyst.md",
     "indexVersion": 1,
     "sourceHash": "4fee394bec8fed2193f315c0d95d1f9b4a00ab8612317878b111a44ea098492a",

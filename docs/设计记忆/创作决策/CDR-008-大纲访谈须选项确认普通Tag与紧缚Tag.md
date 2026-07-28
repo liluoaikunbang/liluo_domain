@@ -1,18 +1,21 @@
 ---
 id: CDR-008
-status: accepted
+status: superseded
 title: 大纲访谈须选项确认普通 Tag 与紧缚 Tag
 date: 2026-07-27
 scope: [story, plot, tags, interview]
 relatedRules: [outline-interview-tag-confirmation]
 relatedWorlds: [all]
 supersedes: []
+supersededBy: [CDR-009]
 sourceStatus: user-confirmed
 ---
 
 # CDR-008：大纲访谈须选项确认普通 Tag 与紧缚 Tag
 
-## 当前结论
+> **已由 [CDR-009](./CDR-009-大纲访谈须选项确认紧缚RAG.md) 取代（2026-07-28）。** Tag 字段退役后，须选项改为确认紧缚 RAG（`ragRefs`）与骨架空卡 / `missingItems` 补卡流程。下文仅保留历史结论。
+
+## 当前结论（历史）
 
 对故事大纲做随机提问、指定节点完善或情节安置批准后的访谈时，必须同时询问普通 Tag（`plotTags`）与紧缚 Tag（`bondageTags`），并给出可多选/可改/可全否的候选选项；只有用户明确确认的标签才写入权威源。不得从情节库、父节点或玩法引用静默继承。普通 Tag 库已于 2026-07-27 清空，之后只靠用户确认逐步补回。
 
