@@ -10,7 +10,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "c82dff51dfaa5308ef0e85b61042b17b909a22bc5d452aa1c546d2fa18ff64be"
+      "json": "007f6297958f5edd7f541c1ceb5356aa5f0adf1a1b7edb11eab1dd42e79cfba5"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
     "summary": "带有一些超自然能力与现象的现代都市世界。",
@@ -32,7 +32,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "c82dff51dfaa5308ef0e85b61042b17b909a22bc5d452aa1c546d2fa18ff64be"
+      "json": "007f6297958f5edd7f541c1ceb5356aa5f0adf1a1b7edb11eab1dd42e79cfba5"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
     "summary": "异常灾害处理组织",
@@ -53,7 +53,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "c82dff51dfaa5308ef0e85b61042b17b909a22bc5d452aa1c546d2fa18ff64be"
+      "json": "007f6297958f5edd7f541c1ceb5356aa5f0adf1a1b7edb11eab1dd42e79cfba5"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
     "summary": "黑槲夜猎",
@@ -81,7 +81,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "c82dff51dfaa5308ef0e85b61042b17b909a22bc5d452aa1c546d2fa18ff64be",
+      "json": "007f6297958f5edd7f541c1ceb5356aa5f0adf1a1b7edb11eab1dd42e79cfba5",
       "markdown": "ff8272e9febaa7ce19d7923ed58a296c9a228f7111ad1dc1bea2fe50202baca1"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -123,7 +123,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "c82dff51dfaa5308ef0e85b61042b17b909a22bc5d452aa1c546d2fa18ff64be",
+      "json": "007f6297958f5edd7f541c1ceb5356aa5f0adf1a1b7edb11eab1dd42e79cfba5",
       "markdown": "feb7cabeddeb4400b2e1de0ebcdd9483d9b35a9e68d203a984f1073d45df9ea8"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -166,7 +166,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "c82dff51dfaa5308ef0e85b61042b17b909a22bc5d452aa1c546d2fa18ff64be",
+      "json": "007f6297958f5edd7f541c1ceb5356aa5f0adf1a1b7edb11eab1dd42e79cfba5",
       "markdown": "6ab6b14cddee2fa6a40a8117b57b398ba2bf524714cbc3cfcd6333937a7522fd"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -203,7 +203,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "c82dff51dfaa5308ef0e85b61042b17b909a22bc5d452aa1c546d2fa18ff64be",
+      "json": "007f6297958f5edd7f541c1ceb5356aa5f0adf1a1b7edb11eab1dd42e79cfba5",
       "markdown": "febc436a101f8d0db25ac81b2809e440bd7719119cda80453cd9cc508135ea73"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -243,7 +243,7 @@
     "series": "1-modern",
     "side": true,
     "sourceHashes": {
-      "json": "c82dff51dfaa5308ef0e85b61042b17b909a22bc5d452aa1c546d2fa18ff64be",
+      "json": "007f6297958f5edd7f541c1ceb5356aa5f0adf1a1b7edb11eab1dd42e79cfba5",
       "markdown": "d1284c85e05dba4d7efde1564aea6cb97243a967ab0f2645d613229610769a6c"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -279,7 +279,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "c82dff51dfaa5308ef0e85b61042b17b909a22bc5d452aa1c546d2fa18ff64be",
+      "json": "007f6297958f5edd7f541c1ceb5356aa5f0adf1a1b7edb11eab1dd42e79cfba5",
       "markdown": "c2ad2e8085348e3bcf0f4bb342a2726399a574dbb9d0fb4a17efe7f255ceb146"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -315,7 +315,7 @@
     "series": "1-modern",
     "side": true,
     "sourceHashes": {
-      "json": "c82dff51dfaa5308ef0e85b61042b17b909a22bc5d452aa1c546d2fa18ff64be",
+      "json": "007f6297958f5edd7f541c1ceb5356aa5f0adf1a1b7edb11eab1dd42e79cfba5",
       "markdown": "a2ed9b8341bfcd9c2981215af41d5c78f896ff5323dc20611d2187014d7aa093"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -352,7 +352,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "c82dff51dfaa5308ef0e85b61042b17b909a22bc5d452aa1c546d2fa18ff64be",
+      "json": "007f6297958f5edd7f541c1ceb5356aa5f0adf1a1b7edb11eab1dd42e79cfba5",
       "markdown": "63747f694ca90f915465b1776a77c47f0c93665eb6c13a5307afa8f569f76c05"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -374,7 +374,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "c82dff51dfaa5308ef0e85b61042b17b909a22bc5d452aa1c546d2fa18ff64be"
+      "json": "007f6297958f5edd7f541c1ceb5356aa5f0adf1a1b7edb11eab1dd42e79cfba5"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
     "summary": "灰巷线尾声。",
@@ -384,6 +384,9 @@
     "world": "1-浮光掠影"
   },
   {
+    "characters": [
+      "璃落"
+    ],
     "childKeys": [
       "world-1-glimmering-glance-epilogue",
       "world-1-glimmering-glance-liminal-space"
@@ -392,23 +395,27 @@
     "indexVersion": 1,
     "key": "world-1-glimmering-glance-eternal-restraint-maze",
     "locations": [
-      "荆江市"
+      "荆江市",
+      "永拘迷宫",
+      "核心怨念树"
     ],
     "markdownPath": "src/game/data/story_outline/1-modern/4.3-永拘迷宫.md",
+    "maturity": "灵感",
     "missingItems": [
-      "设计｜永拘迷宫·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "设计｜永拘迷宫·区域细则｜已确认六种心理态房间与核心怨念树；仍缺各态房间数量、连接规则，以及相较其他禁域模块的机制差异细则",
       "玩法｜永拘迷宫·主要活动｜缺少主要游戏活动类型与可执行操作循环",
-      "流程｜永拘迷宫·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解"
+      "流程｜永拘迷宫·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "衔接｜永拘迷宫·满怨古树吸收｜已确认后期由满怨古树吸收核心怨念树并与群像救援并行瓦解核心；仍缺触发时机、可见过程，以及对满怨古树的即时后果"
     ],
     "parentKey": "world-1-glimmering-glance-silent-correction-center",
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "c82dff51dfaa5308ef0e85b61042b17b909a22bc5d452aa1c546d2fa18ff64be",
-      "markdown": "cd20270845e19062e9163c950bec04a7863f988569ef5c62a7bcdf728e6f4d82"
+      "json": "007f6297958f5edd7f541c1ceb5356aa5f0adf1a1b7edb11eab1dd42e79cfba5",
+      "markdown": "88d2abd47b4fe1013b71afeeda594f3e104d1bac953d49250bd4e1443381c93f"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
-    "summary": "异能者决战，璃落被永久拘束后投入迷宫中",
+    "summary": "异能者决战中璃落被永久拘束投入永拘迷宫；房间对应期待、羞耻、恐惧、安心、依赖、反抗六种心理态，核心为怨念树。后期满怨古树吸收该核心怨念树，与群像救援并行瓦解迷宫核心。",
     "summarySource": "frontmatter.summary",
     "title": "永拘迷宫",
     "type": "story-node",
@@ -423,7 +430,7 @@
     "series": "1-modern",
     "side": true,
     "sourceHashes": {
-      "json": "c82dff51dfaa5308ef0e85b61042b17b909a22bc5d452aa1c546d2fa18ff64be"
+      "json": "007f6297958f5edd7f541c1ceb5356aa5f0adf1a1b7edb11eab1dd42e79cfba5"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
     "summary": "幻想世界冒险",
@@ -453,7 +460,7 @@
     "series": "1-modern",
     "side": true,
     "sourceHashes": {
-      "json": "c82dff51dfaa5308ef0e85b61042b17b909a22bc5d452aa1c546d2fa18ff64be",
+      "json": "007f6297958f5edd7f541c1ceb5356aa5f0adf1a1b7edb11eab1dd42e79cfba5",
       "markdown": "305fed136b881a15ac9af16e994d7081acea522b3972a7820ceaf09b0473cd11"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -482,7 +489,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "c82dff51dfaa5308ef0e85b61042b17b909a22bc5d452aa1c546d2fa18ff64be",
+      "json": "007f6297958f5edd7f541c1ceb5356aa5f0adf1a1b7edb11eab1dd42e79cfba5",
       "markdown": "f402a07e1a45644c9ee385709ff27fca86e6a984aa6202d4f99540b2c6c47a1c"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -511,7 +518,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "c82dff51dfaa5308ef0e85b61042b17b909a22bc5d452aa1c546d2fa18ff64be",
+      "json": "007f6297958f5edd7f541c1ceb5356aa5f0adf1a1b7edb11eab1dd42e79cfba5",
       "markdown": "d2f39d994444da83685c6660aa7bc8afb0ee39f17db5f6a0c069ff015551902d"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -537,7 +544,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "c82dff51dfaa5308ef0e85b61042b17b909a22bc5d452aa1c546d2fa18ff64be"
+      "json": "007f6297958f5edd7f541c1ceb5356aa5f0adf1a1b7edb11eab1dd42e79cfba5"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
     "summary": "暗巷与废墟交织的地下都市，暴力与无序像潮水般涌动。",
@@ -566,8 +573,8 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "c82dff51dfaa5308ef0e85b61042b17b909a22bc5d452aa1c546d2fa18ff64be",
-      "markdown": "13e2300cdd74cace8829b89a070e6f93566b7df11b598029444865528826a612"
+      "json": "007f6297958f5edd7f541c1ceb5356aa5f0adf1a1b7edb11eab1dd42e79cfba5",
+      "markdown": "0829cc01017a98afe7a7df1924c43aae14ce3ecb364d3982161db571d3d12e65"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
     "summary": "荆锁会事件完结，璃落与校园地下的满怨古树缠斗；荆锁会遗留的一组灵异游戏共同压制着它。",
@@ -610,7 +617,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "c82dff51dfaa5308ef0e85b61042b17b909a22bc5d452aa1c546d2fa18ff64be",
+      "json": "007f6297958f5edd7f541c1ceb5356aa5f0adf1a1b7edb11eab1dd42e79cfba5",
       "markdown": "31091d717790018e9b7815797e3e4a676ac1dd271834b65af99f6d1cf29a25e7"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -647,7 +654,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "c82dff51dfaa5308ef0e85b61042b17b909a22bc5d452aa1c546d2fa18ff64be",
+      "json": "007f6297958f5edd7f541c1ceb5356aa5f0adf1a1b7edb11eab1dd42e79cfba5",
       "markdown": "6f2d016a4278f60231b98e15d365fffbd2665200458424439f458a2d8566ffa2"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -678,7 +685,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "c82dff51dfaa5308ef0e85b61042b17b909a22bc5d452aa1c546d2fa18ff64be",
+      "json": "007f6297958f5edd7f541c1ceb5356aa5f0adf1a1b7edb11eab1dd42e79cfba5",
       "markdown": "127b01977d96533a7386934b2b7a51c55fe90c2d5fdabc9e98cba6d53f81ded6"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -713,7 +720,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "c82dff51dfaa5308ef0e85b61042b17b909a22bc5d452aa1c546d2fa18ff64be",
+      "json": "007f6297958f5edd7f541c1ceb5356aa5f0adf1a1b7edb11eab1dd42e79cfba5",
       "markdown": "433f0707fb706cad8ad99286daa149dd023acc38871b69ab54128d68b949d0a7"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -748,7 +755,7 @@
     "series": "1-modern",
     "side": true,
     "sourceHashes": {
-      "json": "c82dff51dfaa5308ef0e85b61042b17b909a22bc5d452aa1c546d2fa18ff64be",
+      "json": "007f6297958f5edd7f541c1ceb5356aa5f0adf1a1b7edb11eab1dd42e79cfba5",
       "markdown": "776895d4fcc84c910acbea5b32b0085048d5d04697779fb4629e397148c32d7c"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -777,7 +784,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "c82dff51dfaa5308ef0e85b61042b17b909a22bc5d452aa1c546d2fa18ff64be",
+      "json": "007f6297958f5edd7f541c1ceb5356aa5f0adf1a1b7edb11eab1dd42e79cfba5",
       "markdown": "3536c38886c150c7c736043837d591ccd9f43ae9fad3731853dfe2a522990190"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -821,7 +828,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "c82dff51dfaa5308ef0e85b61042b17b909a22bc5d452aa1c546d2fa18ff64be",
+      "json": "007f6297958f5edd7f541c1ceb5356aa5f0adf1a1b7edb11eab1dd42e79cfba5",
       "markdown": "075bea42dc95151d26eb3e0369391f0d7e89efbe9d7a7bd66a3fadb2c557121b"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -847,7 +854,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "c82dff51dfaa5308ef0e85b61042b17b909a22bc5d452aa1c546d2fa18ff64be"
+      "json": "007f6297958f5edd7f541c1ceb5356aa5f0adf1a1b7edb11eab1dd42e79cfba5"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
     "summary": "每个学校，都有属于自己的灵异传说。",
@@ -895,8 +902,8 @@
     "series": "1-modern",
     "side": true,
     "sourceHashes": {
-      "json": "c82dff51dfaa5308ef0e85b61042b17b909a22bc5d452aa1c546d2fa18ff64be",
-      "markdown": "bc191924ce8782f2cb74136a9d88f566e0efd03433e1d4d8dcd5bb97ffa389e4"
+      "json": "007f6297958f5edd7f541c1ceb5356aa5f0adf1a1b7edb11eab1dd42e79cfba5",
+      "markdown": "15993e9bfbd45e23df7649dbabdb92ffc3601be8fb9b096790dccabc78fc99b5"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
     "summary": "接近都市线大结局时，璃落联合众人反攻永拘迷宫；建立者失去控制后逃入阈限网络深处，并成为后续支线持续追踪和交锋的长期 Boss。",
@@ -939,7 +946,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "c82dff51dfaa5308ef0e85b61042b17b909a22bc5d452aa1c546d2fa18ff64be",
+      "json": "007f6297958f5edd7f541c1ceb5356aa5f0adf1a1b7edb11eab1dd42e79cfba5",
       "markdown": "8fe2e9f66caa113ecd0ed6496b3025e89681a3cd7b4fbeb9a8d97eacdf69b365"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -976,7 +983,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "c82dff51dfaa5308ef0e85b61042b17b909a22bc5d452aa1c546d2fa18ff64be",
+      "json": "007f6297958f5edd7f541c1ceb5356aa5f0adf1a1b7edb11eab1dd42e79cfba5",
       "markdown": "0a55143227d87bdc8e70a122b2aef0eeda151c6bd84dc9b0290656f143ba5cfa"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -1005,7 +1012,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "c82dff51dfaa5308ef0e85b61042b17b909a22bc5d452aa1c546d2fa18ff64be",
+      "json": "007f6297958f5edd7f541c1ceb5356aa5f0adf1a1b7edb11eab1dd42e79cfba5",
       "markdown": "2c2156ce1b97f654c4a3028ba117d723f3af13271f4e8e841528b113a9d97b25"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -1039,7 +1046,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "c82dff51dfaa5308ef0e85b61042b17b909a22bc5d452aa1c546d2fa18ff64be",
+      "json": "007f6297958f5edd7f541c1ceb5356aa5f0adf1a1b7edb11eab1dd42e79cfba5",
       "markdown": "fd2294a2e163010f46a679b7e1a72a6c60ef396cc7214970c6100e94cd8986ae"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -1066,7 +1073,7 @@
     "series": "1-modern",
     "side": true,
     "sourceHashes": {
-      "json": "c82dff51dfaa5308ef0e85b61042b17b909a22bc5d452aa1c546d2fa18ff64be",
+      "json": "007f6297958f5edd7f541c1ceb5356aa5f0adf1a1b7edb11eab1dd42e79cfba5",
       "markdown": "3a4d191ff4a43af1c8508e84b46806e6e177e45ac3114f1e67ac2577ee029487"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -1098,7 +1105,7 @@
     "series": "1-modern",
     "side": true,
     "sourceHashes": {
-      "json": "c82dff51dfaa5308ef0e85b61042b17b909a22bc5d452aa1c546d2fa18ff64be",
+      "json": "007f6297958f5edd7f541c1ceb5356aa5f0adf1a1b7edb11eab1dd42e79cfba5",
       "markdown": "dc564cd116d72f0cb6addac8c10ef9dae693db45db780306327f39f5d23c921e"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -1125,7 +1132,7 @@
     "series": "1-modern",
     "side": true,
     "sourceHashes": {
-      "json": "c82dff51dfaa5308ef0e85b61042b17b909a22bc5d452aa1c546d2fa18ff64be",
+      "json": "007f6297958f5edd7f541c1ceb5356aa5f0adf1a1b7edb11eab1dd42e79cfba5",
       "markdown": "b46ad7c95ad123c46ee8b8a8476981d2d8573b14c8aefb10d056f38f3ca3dab3"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -1164,7 +1171,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "c82dff51dfaa5308ef0e85b61042b17b909a22bc5d452aa1c546d2fa18ff64be",
+      "json": "007f6297958f5edd7f541c1ceb5356aa5f0adf1a1b7edb11eab1dd42e79cfba5",
       "markdown": "8f089a042add95e201ca3988a531a3f1b94cedd28e688e89817221ad86854060"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -1211,7 +1218,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "c82dff51dfaa5308ef0e85b61042b17b909a22bc5d452aa1c546d2fa18ff64be",
+      "json": "007f6297958f5edd7f541c1ceb5356aa5f0adf1a1b7edb11eab1dd42e79cfba5",
       "markdown": "fb6e524a7ebc9d29b51b09329e534dfef89050d92b1aa245b90b78e027beaf1e"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -1240,7 +1247,7 @@
     "series": "1-modern",
     "side": true,
     "sourceHashes": {
-      "json": "c82dff51dfaa5308ef0e85b61042b17b909a22bc5d452aa1c546d2fa18ff64be",
+      "json": "007f6297958f5edd7f541c1ceb5356aa5f0adf1a1b7edb11eab1dd42e79cfba5",
       "markdown": "e85f07d9cb03795fe34025a7eb3935c0ff7a00e48154c6285daa8627d0af76d2"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -1272,7 +1279,7 @@
     "series": "1-modern",
     "side": true,
     "sourceHashes": {
-      "json": "c82dff51dfaa5308ef0e85b61042b17b909a22bc5d452aa1c546d2fa18ff64be",
+      "json": "007f6297958f5edd7f541c1ceb5356aa5f0adf1a1b7edb11eab1dd42e79cfba5",
       "markdown": "b9187476101faa01188740a7c9e293362a315311d61124948bd73686d9527ca7"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -1299,7 +1306,7 @@
     "series": "1-modern",
     "side": true,
     "sourceHashes": {
-      "json": "c82dff51dfaa5308ef0e85b61042b17b909a22bc5d452aa1c546d2fa18ff64be",
+      "json": "007f6297958f5edd7f541c1ceb5356aa5f0adf1a1b7edb11eab1dd42e79cfba5",
       "markdown": "8448165f2fabc7c0236215cc3668d6a482455168b0f037f19a50beed9378acc8"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -1321,7 +1328,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "c82dff51dfaa5308ef0e85b61042b17b909a22bc5d452aa1c546d2fa18ff64be"
+      "json": "007f6297958f5edd7f541c1ceb5356aa5f0adf1a1b7edb11eab1dd42e79cfba5"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
     "summary": "旧都遗留的回声，把监狱风云之后的线索重新引向荆江市。",
@@ -1350,14 +1357,14 @@
       "玩法｜旧案·主要活动｜缺少主要游戏活动类型与可执行操作循环",
       "流程｜旧案·时间电梯调查｜缺少各年代停靠条件、可调查证据、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
       "流程｜旧案·霸凌副本循环｜缺少多重回忆场景的选择、分支、重复进入与奖励规则",
-      "衔接｜旧案·入口条件｜已确认电梯位于宿舍旧楼内且不由《宿舍旧楼》主线触发；缺少玩家解锁或进入本模块的条件与提示方式"
+      "衔接｜旧案·入口条件｜已确认电梯在宿舍旧楼内、不由主线触发电梯；脚铐为电梯钥匙且《宿舍旧楼》主线默认能拿到；接取提示为林沐遥次日早上转发内部线索短信。仍缺短信文案要点、任务目标表述，以及持钥后如何实际启动电梯"
     ],
     "parentKey": "world-1-glimmering-glance-sensory-trial",
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "c82dff51dfaa5308ef0e85b61042b17b909a22bc5d452aa1c546d2fa18ff64be",
-      "markdown": "4ae16b200d30d4f0cacf840090d6ac4bee74a96164461de2299ec36b6d753c2c"
+      "json": "007f6297958f5edd7f541c1ceb5356aa5f0adf1a1b7edb11eab1dd42e79cfba5",
+      "markdown": "596e469135fd51879bcfd79e74cbaa3c84c59fc6b480f42126fae68a9b241d4c"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
     "summary": "荆锁会遗留的校园霸凌旧案副本；玩家经宿舍旧楼的时间电梯进入荆江大学各年代层调查取证，并可重复体验多重霸凌场景。",
@@ -1368,8 +1375,10 @@
   },
   {
     "characters": [
+      "璃落",
       "林沐遥",
-      "Macy"
+      "Macy",
+      "杜铮"
     ],
     "childKeys": [
       "world-1-glimmering-glance-grudge-ancient-tree",
@@ -1392,16 +1401,19 @@
     "markdownPath": "src/game/data/story_outline/1-modern/1.5-宿舍旧楼.md",
     "maturity": "大纲",
     "missingItems": [
-      "流程｜宿舍旧楼·线性阶段细则｜已确认为线性推进且核心循环为记忆触发+危机拖延；仍缺少各段（小巷/旧楼天台/厂房/杜铮）的具体阶段目标、完成条件与失败恢复细则",
-      "衔接｜宿舍旧楼·旧案短信支线｜已确认主线结束后以短信提示触发《旧案》支线任务；仍缺少发信人、短信文案要点、接取时机与任务目标表述",
-      "支线｜Macy·可重复日常｜已确认类型为“又被收保护费但这次是帮忙”；仍缺少触发条件、单次流程与奖励/关系变化"
+      "流程｜宿舍旧楼·线性阶段细则｜已确认为线性推进且核心循环为记忆触发+危机拖延；各段（小巷/旧楼天台/厂房/杜铮）的阶段目标、完成条件与失败恢复细则由用户保留待定",
+      "玩法｜宿舍旧楼·杜铮危机拖延操作｜杜铮段玩家主操作循环由用户保留待定",
+      "衔接｜宿舍旧楼·旧案短信支线｜已确认发信人为林沐遥转发的内部线索，接取时机为回宿舍休息次日早上；短信文案要点与任务目标表述由用户保留待定",
+      "支线｜Macy·可重复日常｜已确认类型为“又被收保护费但这次是帮忙”；触发条件、单次流程与奖励/关系变化由用户保留待定",
+      "RAG｜紧缚RAG｜补全「语言羞辱」正文与来源",
+      "RAG｜紧缚RAG｜补全「气味系」正文与来源"
     ],
     "parentKey": "world-1-glimmering-glance-rope-spirit-game",
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "c82dff51dfaa5308ef0e85b61042b17b909a22bc5d452aa1c546d2fa18ff64be",
-      "markdown": "4bbd33314492ee4fababd79141913e062a0d6d4cb2357449965a2ebeccee53aa"
+      "json": "007f6297958f5edd7f541c1ceb5356aa5f0adf1a1b7edb11eab1dd42e79cfba5",
+      "markdown": "9e99b86c820d1d43b2111b69e306c3107ee785bb967be24992eb9af745df2dd6"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
     "summary": "璃落与林沐遥经拆迁小巷进入旧校舍，在天台与废弃厂房追查校园霸凌旧案与荆锁会线索，最终揭出杜铮掩埋的试验品遗骨。",
@@ -1432,7 +1444,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "c82dff51dfaa5308ef0e85b61042b17b909a22bc5d452aa1c546d2fa18ff64be",
+      "json": "007f6297958f5edd7f541c1ceb5356aa5f0adf1a1b7edb11eab1dd42e79cfba5",
       "markdown": "61f3e66756a4a2ecdc615197820a722d9d86efe55e087f2538f3210697e8a897"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -1461,7 +1473,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "c82dff51dfaa5308ef0e85b61042b17b909a22bc5d452aa1c546d2fa18ff64be",
+      "json": "007f6297958f5edd7f541c1ceb5356aa5f0adf1a1b7edb11eab1dd42e79cfba5",
       "markdown": "25bd52b4fa721bde9b13ae9150b2e3e7fca657e47738e7d78988bf3b0b3523a4"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -1488,7 +1500,7 @@
     "series": "1-modern",
     "side": true,
     "sourceHashes": {
-      "json": "c82dff51dfaa5308ef0e85b61042b17b909a22bc5d452aa1c546d2fa18ff64be",
+      "json": "007f6297958f5edd7f541c1ceb5356aa5f0adf1a1b7edb11eab1dd42e79cfba5",
       "markdown": "624a1803c3e66ab85ae6be3f3e6106df2f1d1a4c7bb4462b46292c3a52aeebca"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -1517,7 +1529,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "c82dff51dfaa5308ef0e85b61042b17b909a22bc5d452aa1c546d2fa18ff64be",
+      "json": "007f6297958f5edd7f541c1ceb5356aa5f0adf1a1b7edb11eab1dd42e79cfba5",
       "markdown": "661c2da0b64b0b6517c720c6bfc7692372d1dcc35e2073878e7158e904ebbbd4"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -1540,7 +1552,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "c82dff51dfaa5308ef0e85b61042b17b909a22bc5d452aa1c546d2fa18ff64be",
+      "json": "007f6297958f5edd7f541c1ceb5356aa5f0adf1a1b7edb11eab1dd42e79cfba5",
       "markdown": "f961684c82482e9189da956ad116998c7f6982f896f87eee7198e73e2982aed5"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -1570,7 +1582,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "c82dff51dfaa5308ef0e85b61042b17b909a22bc5d452aa1c546d2fa18ff64be",
+      "json": "007f6297958f5edd7f541c1ceb5356aa5f0adf1a1b7edb11eab1dd42e79cfba5",
       "markdown": "e7eecf8e3566dd72027c07c1f0248bd418baa3681d1d211f2e008bbe99806f7e"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -1617,7 +1629,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "c82dff51dfaa5308ef0e85b61042b17b909a22bc5d452aa1c546d2fa18ff64be",
+      "json": "007f6297958f5edd7f541c1ceb5356aa5f0adf1a1b7edb11eab1dd42e79cfba5",
       "markdown": "5f560c9c3053d4ee1f1fc3b641a3bb0780d6f335231805ca5445a496d2e334fb"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -1649,7 +1661,7 @@
     "series": "1-modern",
     "side": true,
     "sourceHashes": {
-      "json": "c82dff51dfaa5308ef0e85b61042b17b909a22bc5d452aa1c546d2fa18ff64be",
+      "json": "007f6297958f5edd7f541c1ceb5356aa5f0adf1a1b7edb11eab1dd42e79cfba5",
       "markdown": "e06fb3afc2bce986a867b01642ea6b747697a46224c1c01ae4e283ecda4eaf20"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -1678,7 +1690,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "c82dff51dfaa5308ef0e85b61042b17b909a22bc5d452aa1c546d2fa18ff64be",
+      "json": "007f6297958f5edd7f541c1ceb5356aa5f0adf1a1b7edb11eab1dd42e79cfba5",
       "markdown": "3d3f0aae825a8e3df4b885a810083602eb8c9e11a90160c187e746fd7bbf8c6c"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -1708,7 +1720,7 @@
     "series": "1-modern",
     "side": true,
     "sourceHashes": {
-      "json": "c82dff51dfaa5308ef0e85b61042b17b909a22bc5d452aa1c546d2fa18ff64be",
+      "json": "007f6297958f5edd7f541c1ceb5356aa5f0adf1a1b7edb11eab1dd42e79cfba5",
       "markdown": "64fb6194ca5d0de9f89f42c9952a2d620a76e582b8369d458f82986b61b01921"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -1737,7 +1749,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "c82dff51dfaa5308ef0e85b61042b17b909a22bc5d452aa1c546d2fa18ff64be",
+      "json": "007f6297958f5edd7f541c1ceb5356aa5f0adf1a1b7edb11eab1dd42e79cfba5",
       "markdown": "039629933df28e29b276bccb40d674ac1e787589742425ebfcfac89cc7ae9525"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -1774,7 +1786,7 @@
     "series": "1-modern",
     "side": true,
     "sourceHashes": {
-      "json": "c82dff51dfaa5308ef0e85b61042b17b909a22bc5d452aa1c546d2fa18ff64be",
+      "json": "007f6297958f5edd7f541c1ceb5356aa5f0adf1a1b7edb11eab1dd42e79cfba5",
       "markdown": "19e68d18bc1630a93dc5159a2d1de007ca38aa2c1f328323e5d0b5121e7e6b06"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -1797,7 +1809,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "c82dff51dfaa5308ef0e85b61042b17b909a22bc5d452aa1c546d2fa18ff64be"
+      "json": "007f6297958f5edd7f541c1ceb5356aa5f0adf1a1b7edb11eab1dd42e79cfba5"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
     "summary": "荆锁会事件2,舞台表演时的灵异事件。",
@@ -1823,7 +1835,7 @@
     "series": "1-modern",
     "side": true,
     "sourceHashes": {
-      "json": "c82dff51dfaa5308ef0e85b61042b17b909a22bc5d452aa1c546d2fa18ff64be",
+      "json": "007f6297958f5edd7f541c1ceb5356aa5f0adf1a1b7edb11eab1dd42e79cfba5",
       "markdown": "4efe0fdc18e87d9ccf0c18dc1c2f537e2c59fb0318b795cea343bc7d4a6504b0"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -1852,7 +1864,7 @@
     "series": "1-modern",
     "side": true,
     "sourceHashes": {
-      "json": "c82dff51dfaa5308ef0e85b61042b17b909a22bc5d452aa1c546d2fa18ff64be",
+      "json": "007f6297958f5edd7f541c1ceb5356aa5f0adf1a1b7edb11eab1dd42e79cfba5",
       "markdown": "3d5319158074ec011612d1989c73e9f6b761ee3eb4de0006e81a8802616e4067"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -1881,7 +1893,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "c82dff51dfaa5308ef0e85b61042b17b909a22bc5d452aa1c546d2fa18ff64be",
+      "json": "007f6297958f5edd7f541c1ceb5356aa5f0adf1a1b7edb11eab1dd42e79cfba5",
       "markdown": "a06d65171806dfcadf19306d2143416b9cda396ecf7a8abd465c00255ff2312b"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -1912,7 +1924,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "c82dff51dfaa5308ef0e85b61042b17b909a22bc5d452aa1c546d2fa18ff64be",
+      "json": "007f6297958f5edd7f541c1ceb5356aa5f0adf1a1b7edb11eab1dd42e79cfba5",
       "markdown": "86f96eabfd1e2d388ffc0ccf83e7bf54e2ed2aaf9e5b54725fcdb32eeeefec6f"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -1941,7 +1953,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "c82dff51dfaa5308ef0e85b61042b17b909a22bc5d452aa1c546d2fa18ff64be",
+      "json": "007f6297958f5edd7f541c1ceb5356aa5f0adf1a1b7edb11eab1dd42e79cfba5",
       "markdown": "e4b905c0e6d89f4b71ba7d92fbde63e1d0342a6383d032f30c7bf66efc577252"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -1967,7 +1979,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "c82dff51dfaa5308ef0e85b61042b17b909a22bc5d452aa1c546d2fa18ff64be"
+      "json": "007f6297958f5edd7f541c1ceb5356aa5f0adf1a1b7edb11eab1dd42e79cfba5"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
     "summary": "体验特色职业，享受绑架人生",
@@ -1989,7 +2001,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "c82dff51dfaa5308ef0e85b61042b17b909a22bc5d452aa1c546d2fa18ff64be"
+      "json": "007f6297958f5edd7f541c1ceb5356aa5f0adf1a1b7edb11eab1dd42e79cfba5"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
     "summary": "综艺惊魂",
@@ -2010,7 +2022,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "c82dff51dfaa5308ef0e85b61042b17b909a22bc5d452aa1c546d2fa18ff64be"
+      "json": "007f6297958f5edd7f541c1ceb5356aa5f0adf1a1b7edb11eab1dd42e79cfba5"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
     "summary": "世界科考队",

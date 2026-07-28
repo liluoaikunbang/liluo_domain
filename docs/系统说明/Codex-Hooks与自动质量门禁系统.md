@@ -2,12 +2,13 @@
 
 本系统是仓库内确定性质量检查的统一入口。它把 Codex 生命周期轻量拦截、本地推送前门禁和 GitHub Actions 持续集成接到同一套改动分类、计划生成与报告逻辑上；完整规则以本文为权威来源。
 
-## 三层门禁
+## 门禁分层
 
 | 层级 | 入口 | 作用 | 明确不做 |
 | --- | --- | --- | --- |
 | Codex Hook | `.codex/hooks.json`（保持空配置） | 不接入项目级生命周期拦截；安全由平台与显式边界承担 | 不扫描提示词、不拦截工具调用、不在任务停止时运行门禁、不复制 Skill 或业务验证 |
-| 本地 pre-push | `.githooks/pre-push` | 按准备推送的提交范围运行必要检查、测试与构建；ERROR 阻止推送 | 不安装依赖，不改文件，不上传内容 |
+| 本地 pre-commit | `.githooks/pre-commit` | 暂存命中项目索引源时，自动 `project:index:changed` 并把 `project-index/` 打进同一次提交 | 不跑全量门禁；无关提交不刷索引 |
+| 本地 pre-push | `.githooks/pre-push` | 按准备推送的提交范围运行必要检查、测试与构建；ERROR 阻止推送 | 不安装依赖，不改文件，不上传内容；不在 push 时刷新索引 |
 | GitHub Actions | `.github/workflows/quality-gate.yml` | 在 Windows、Node 22 和干净 checkout 上运行全部确定性基础合同 | 不运行 live eval、Playwright、离线打包或 Release |
 
 GitHub Actions 只能检查已经推送的提交；真正能在推送发生前阻断的是本地 pre-push。仓库文件不能自行开启远端分支保护，建议在 GitHub 网页把 `Quality Gate` 设置为 `main` 的 required status check。
@@ -21,23 +22,29 @@ GitHub Actions 只能检查已经推送的提交；真正能在推送发生前�
 | `docs` | README、AGENTS、`docs/**` | 文档编码；治理目录、注册表、用户命令或功能记录变化时追加相应治理检查 |
 | `skills-agents-governance` | `.agents/**`、Agent、Codex rules、批准注册表与授权治理脚本 | `evals:check`；授权治理改动追加自身 test/validate，不自动运行 live eval |
 | `schemas-data` | `schemas/**`、游戏 JSON/YAML | 数据契约；游戏内容数据再进入项目 check |
-| `story` | 故事源、Markdown 与注册表 | 数据契约、项目 check、索引增量与验证 |
-| `maps-events-dialogues` | 地图、事件、对话、互动小说与注册表 | 数据契约、项目 check、索引增量与验证 |
+| `story` | 故事源、Markdown 与注册表 | 数据契约、项目 check、索引验证（本地 `changed` 可先增量刷新；prepush 只验） |
+| `maps-events-dialogues` | 地图、事件、对话、互动小说与注册表 | 数据契约、项目 check、索引验证（同上） |
 | `saves` | 存档代码、版本、迁移、导入导出与 Schema | 数据契约与现有项目测试 |
 | `runtime` | `src/game/**` 运行时代码 | 项目 check 与 tests；构建面仅在 pre-push/CI 追加 Web build |
-| `assets` | `src/assets/game/**` | 现有素材审计、索引增量与验证 |
+| `assets` | `src/assets/game/**` | 现有素材审计、索引验证（本地 `changed` 可先增量刷新；prepush 只验） |
 | `build-config` | package、Vite、TS、`.gitignore`、GitHub workflow 与门禁自身 | 项目 check、tests 与 Web build；Hook 模式始终移除 build |
 | `index-source` | 被项目索引消费的权威源 | 作为索引影响标记，由具体内容领域决定最小索引命令 |
 
-多领域命令顺序是：静态结构与注册表、数据契约、文档编码、内容和代码 check、tests、索引增量与验证、build。同一命令每次计划只出现一次，不默认运行 `project:routine -- all`。
+多领域命令顺序是：静态结构与注册表、数据契约、文档编码、**索引增量（仅 changed/手动门禁）**、内容和代码 check、tests、索引验证、build。同一命令每次计划只出现一次，不默认运行 `project:routine -- all`。
+
+**索引与推送分工（避免绕圈）：**
+
+- 改故事/文档/地图等被索引源时，由 **pre-commit** 刷新并暂存 `project-index/`，与内容同一次提交。
+- **prepush / CI** 只做 `index:check`（经 `project:routine -- check`）与 `project:index:validate`，**不再**运行 `project:index:changed`（push 无法把刷新结果写进正在推送的提交）。
+- 手动 `project:gate:changed` 仍可先 `index:changed` 再 check，方便修工作区；顺序固定为先刷后验。
 
 “工作流治理测试”与“命令授权治理”是两个独立范围。只有 `scripts/command-approval/**`、批准注册表/规则及其专属测试变化时，才运行 `commands:approval:test` 与 `commands:approval:validate`；普通 `project-routine`、Skill、文档或质量门禁测试不能被误归类为命令授权变更，更不能因此要求在 Node 子进程中二次启动 Codex。
 
 ## 模式与报告
 
 - `changed`：开发者手动检查当前工作区，输出完整报告。
-- `prepush`：优先读取 Git pre-push 标准输入中的本地/远端引用；手动运行时检查当前工作区。
-- `ci`：不依赖改动分类裁剪，运行确定性基础合同、静态能力完整性、项目 check/tests、文档编码、索引验证与 Web build。
+- `prepush`：优先读取 Git pre-push 标准输入中的本地/远端引用；手动运行时检查当前工作区；不刷新索引。
+- `ci`：不依赖改动分类裁剪，运行确定性基础合同、静态能力完整性、项目 check/tests、文档编码、索引验证与 Web build（不刷新索引）。
 
 每次运行覆盖生成 `reports/quality-gate/latest.json` 和 `latest.md`。报告目录被 Git 忽略，只保留 `.gitkeep`。报告记录模式、Git 范围、领域、命令、跳过原因、ERROR、WARNING、耗时和最终状态，不记录提示词、密钥、认证文件、真实存档或构建包。
 

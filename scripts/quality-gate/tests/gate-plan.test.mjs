@@ -73,6 +73,22 @@ test('asset changes trigger the asset audit and index maintenance', () => {
   assert.ok(commands.includes('npm run project:index:validate'))
 })
 
+test('changed mode refreshes index before routine check', () => {
+  const commands = commandsFor(['src/game/data/story_outline/sources/1-modern.json'], 'changed')
+  const changedAt = commands.indexOf('npm run project:index:changed')
+  const checkAt = commands.indexOf('npm run project:routine -- check')
+  assert.ok(changedAt >= 0)
+  assert.ok(checkAt >= 0)
+  assert.ok(changedAt < checkAt)
+})
+
+test('prepush validates index without rewriting it', () => {
+  const commands = commandsFor(['src/game/data/story_outline/sources/1-modern.json'], 'prepush')
+  assert.ok(!commands.includes('npm run project:index:changed'))
+  assert.ok(commands.includes('npm run project:routine -- check'))
+  assert.ok(commands.includes('npm run project:index:validate'))
+})
+
 test('multi-domain plans de-duplicate commands', () => {
   const commands = commandsFor(['src/game/data/maps/world/map/events.json', 'src/game/scenes/WorldScene.ts'])
   assert.equal(new Set(commands).size, commands.length)

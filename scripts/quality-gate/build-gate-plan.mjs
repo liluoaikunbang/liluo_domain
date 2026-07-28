@@ -2,7 +2,9 @@ import path from 'node:path'
 import { pathToFileURL } from 'node:url'
 
 const ASSET_AUDIT = 'node .agents/skills/liluo-project/liluo-asset-registry-audit/scripts/audit-game-assets.mjs --check'
+const INDEX_CHANGED = 'npm run project:index:changed'
 
+// Refresh index before check/validate so local `changed` mode does not self-fight.
 const ORDER = [
   'npm run data:contracts:registry',
   'npm run project:hooks:test',
@@ -19,9 +21,9 @@ const ORDER = [
   'npm run docs:check-encoding',
   'npm run docs:governance:validate',
   'npm run docs:commands:validate',
+  INDEX_CHANGED,
   'npm run project:routine -- check',
   'npm run project:routine -- test',
-  'npm run project:index:changed',
   'npm run project:index:validate',
   'npm run build:web',
 ]
@@ -69,7 +71,8 @@ function addForDomains(selected, classification, mode) {
   if (domains.has('story') || domains.has('maps-events-dialogues')) {
     selected.add('npm run data:contracts:check')
     selected.add('npm run project:routine -- check')
-    selected.add('npm run project:index:changed')
+    // Local/dev gate may refresh working tree; prepush must not (cannot rewrite the commit being pushed).
+    if (mode !== 'prepush') selected.add(INDEX_CHANGED)
     selected.add('npm run project:index:validate')
   }
   if (domains.has('saves')) {
@@ -83,7 +86,7 @@ function addForDomains(selected, classification, mode) {
   }
   if (domains.has('assets')) {
     selected.add(ASSET_AUDIT)
-    selected.add('npm run project:index:changed')
+    if (mode !== 'prepush') selected.add(INDEX_CHANGED)
     selected.add('npm run project:index:validate')
   }
   if (domains.has('build-config')) {
@@ -99,6 +102,8 @@ export function buildGatePlan({ classification = { domains: [], files: [], requi
   const selected = new Set(mode === 'ci' ? CI_COMMANDS : [])
   if (mode !== 'ci') addForDomains(selected, classification, mode)
   if (mode === 'hook') selected.delete('npm run build:web')
+  // Belt-and-suspenders: never rewrite files during prepush.
+  if (mode === 'prepush') selected.delete(INDEX_CHANGED)
 
   const commands = ORDER.filter((command) => selected.has(command))
   const skipped = ORDER
@@ -109,6 +114,8 @@ export function buildGatePlan({ classification = { domains: [], files: [], requi
         ? 'Live Codex evals are excluded from automatic gates.'
         : mode === 'hook' && command === 'npm run build:web'
           ? 'Hook mode never builds.'
+          : mode === 'prepush' && command === INDEX_CHANGED
+            ? 'Pre-push validates only; index refresh belongs in pre-commit / the same commit.'
           : 'Not required by the detected change domains.',
     }))
   return { mode, commands, skipped }

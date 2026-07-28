@@ -1,0 +1,13 @@
+#!/bin/sh
+# Refresh and stage project-index when indexed sources are part of this commit.
+# Push gates only validate; they do not rewrite the commit being pushed.
+
+root=$(git rev-parse --show-toplevel) || exit 1
+cd "$root" || exit 1
+
+node scripts/project-index/pre-commit-refresh-index.mjs
+status=$?
+if [ "$status" -ne 0 ]; then
+  echo "pre-commit: project index refresh failed." >&2
+fi
+exit "$status"

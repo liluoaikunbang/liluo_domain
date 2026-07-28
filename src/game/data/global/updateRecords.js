@@ -24,6 +24,12 @@ export const updateRecords = Object.freeze([
         "summary":  "明确旧页面式游戏为低优先级可运行参考；索引和行动导航改为按需薄投影；对话与地图注册收敛为单一契约并拒绝重复 ID；GameView 菜单绑定和 WorldScene 出生点纯规则已拆分。"
     },
     {
+        "id":  "150",
+        "date":  "2026-07-28",
+        "title":  "Codex Hooks 与自动质量门禁系统",
+        "summary":  "取消项目级 Codex 生命周期 Hook；pre-commit 自动刷新并暂存项目索引，prepush/CI 只校验，消除索引过期推送绕圈。"
+    },
+    {
         "id":  "169",
         "date":  "2026-07-27",
         "title":  "大纲关联图谱视图",
@@ -136,12 +142,6 @@ export const updateRecords = Object.freeze([
         "date":  "2026-07-24",
         "title":  "故事大纲局部设定快速路径",
         "summary":  "为故事大纲撰写工作流增加局部设定快速路径，在保持来源、结构与索引校验的前提下避免无关的模板和世界资料读取。"
-    },
-    {
-        "id":  "150",
-        "date":  "2026-07-23",
-        "title":  "Codex Hooks 与自动质量门禁系统",
-        "summary":  "取消全部项目级 Codex 生命周期 Hook；质量门禁仅显式运行或在本地 pre-push、GitHub Actions 执行，并要求异常耗时向用户闭环说明。"
     },
     {
         "id":  "149",

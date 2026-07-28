@@ -4,13 +4,14 @@
 - 更新日期：2026-07-24（拆分工作流治理与命令授权分类，避免无关 pre-push 校验二次启动 Codex）
 - 更新日期：2026-07-25（移除会阻塞会话收尾的 Stop Hook，质量门禁改为显式或推送前执行）
 - 更新日期：2026-07-25（取消剩余 PreToolUse，项目 Hook 配置改为空，避免生命周期集成链阻塞工具调用）
-- 当前摘要：项目不注册 Codex 生命周期 Hook；按改动范围去重的统一门禁、本地 pre-push 与 Windows GitHub Actions CI 继续以 ERROR 阻断、WARNING 报告和双格式运行报告收口确定性验证，并要求异常耗时向用户闭环说明。
+- 更新日期：2026-07-28（pre-commit 自动刷新并暂存项目索引；prepush 只校验不再 index:changed，消除“推送失败再补提交”绕圈）
+- 当前摘要：项目不注册 Codex 生命周期 Hook；提交时自动刷新项目索引，推送门禁只校验；按改动范围去重的统一门禁、本地 pre-push 与 Windows GitHub Actions CI 继续以 ERROR 阻断、WARNING 报告和双格式运行报告收口确定性验证。
 
 ## 已实现
 
 初始实现曾新增仓库级 `UserPromptSubmit`、`PreToolUse` 和 `Stop` Hooks；现已全部取消，`.codex/hooks.json` 保持空配置。新增 Git 改动分类、最小命令计划、跨平台命令执行与 JSON/Markdown 报告。质量门禁通过显式的 changed、prepush、ci 模式统一去重现有数据契约、能力静态评测、内容检查、测试、索引、素材审计与 Web 构建入口。
 
-本地 `.githooks/pre-push` 只调用统一 prepush 门禁，GitHub Actions 在 `windows-latest`、Node 22 与 `npm ci` 后只调用统一 CI 入口。live Codex eval、浏览器回归、离线打包、Release、自动修复、自动提交和推送均未接入。
+本地 `.githooks/pre-commit` 在暂存命中索引源时自动 `project:index:changed` 并 `git add project-index/`；`.githooks/pre-push` 只调用统一 prepush 门禁且不改文件。GitHub Actions 在 `windows-latest`、Node 22 与 `npm ci` 后只调用统一 CI 入口。live Codex eval、浏览器回归、离线打包、Release、自动修复、自动提交和推送均未接入。
 
 ## 安全与失败边界
 
@@ -25,9 +26,16 @@
 - `.codex/hooks.json`
 - `.codex/hooks/`
 - `scripts/quality-gate/`
+- `.githooks/pre-commit`
 - `.githooks/pre-push`
+- `scripts/project-index/pre-commit-refresh-index.mjs`
+- `scripts/project-index/lib/index-sources.mjs`
 - `.github/workflows/quality-gate.yml`
 - `docs/系统说明/Codex-Hooks与自动质量门禁系统.md`
+
+## 2026-07-28 简化：索引刷新改到 pre-commit
+
+原先 prepush 先跑 `index:check`、后才有 `index:changed`，且 push 无法把刷新写进正在推送的提交，导致固定“失败 → 手刷索引 → 再提交 → 再推送”。现改为：命中索引源的提交由 pre-commit 自动刷新并暂存；prepush/CI 只校验；手动 `gate:changed` 仍先刷后验。
 
 ## 2026-07-23 升级：授权与执行路线收敛
 
