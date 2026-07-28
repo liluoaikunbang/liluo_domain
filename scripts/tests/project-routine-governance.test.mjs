@@ -127,8 +127,12 @@ test('project rules allow only governed entry points, not broad npm run', async 
 })
 
 test('project index freshness detection matches the story indexer source boundary', async () => {
-  const checker = await readFile(new URL('../project-index/check-project-index.mjs', import.meta.url), 'utf8')
-  assert.match(checker, /story_outline\/sources\//)
+  const [checker, indexSources] = await Promise.all([
+    readFile(new URL('../project-index/check-project-index.mjs', import.meta.url), 'utf8'),
+    readFile(new URL('../project-index/lib/index-sources.mjs', import.meta.url), 'utf8'),
+  ])
+  assert.match(indexSources, /story_outline\/sources\//)
+  assert.match(checker, /isIndexedSourcePath/)
   assert.doesNotMatch(checker, /story_outline\/'\) && \['\.json', '\.md'\]/)
 })
 
