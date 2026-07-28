@@ -1,5 +1,16 @@
 [
   {
+    "id": "docs/设计记忆/项目组灵魂/文号体系/README.md",
+    "indexVersion": 1,
+    "sourceHash": "81a4aef96b50299b275648bafc12515e30f2ac90325bfbd9fe98ca5719925d68",
+    "sourcePath": "docs/设计记忆/项目组灵魂/文号体系/README.md",
+    "subtype": "other",
+    "summary": "璃落创作组雕龙文号体系",
+    "summarySource": "title-only",
+    "title": "璃落创作组雕龙文号体系",
+    "type": "document"
+  },
+  {
     "id": "docs/设计记忆/项目组灵魂/项目组设定.md",
     "indexVersion": 1,
     "sourceHash": "5793617c77385f4621280b3038641119802b57d0a8da269eca218a7030b3c132",
@@ -156,7 +167,7 @@
   {
     "id": "docs/系统说明/大纲关联图谱系统.md",
     "indexVersion": 1,
-    "sourceHash": "2e2552bb91876e59afc3814d54377b01ecdf4910df1ceb109a2d89b60cc73a0b",
+    "sourceHash": "e05ed83e5b5eb32c954d02b97344fa7926a942d7dfecb14b8c1275f8676e367c",
     "sourcePath": "docs/系统说明/大纲关联图谱系统.md",
     "subtype": "system",
     "summary": "大纲关联图谱系统",
@@ -255,7 +266,7 @@
   {
     "id": "docs/系统说明/故事大纲随机提问模板.md",
     "indexVersion": 1,
-    "sourceHash": "3b6fa6b650b4cd3b26ba530d4ac78012474faffd7606a5f1f3aa8411412eff9e",
+    "sourceHash": "87461814e5327e3d85bb0fdb81eacade146f3913a37ed6ddf4e1b41f5014f001",
     "sourcePath": "docs/系统说明/故事大纲随机提问模板.md",
     "subtype": "system",
     "summary": "故事大纲随机提问模板",
@@ -266,7 +277,7 @@
   {
     "id": "docs/系统说明/故事大纲条目模板.md",
     "indexVersion": 1,
-    "sourceHash": "de43c153b9913901910e0fbab8082c5e5ef9a9d70db76f971eee8c6c2915b599",
+    "sourceHash": "aed99d638c7b506439a5a7c3a13f3242725de2c8e93e8633f2766dbd076a3bf4",
     "sourcePath": "docs/系统说明/故事大纲条目模板.md",
     "subtype": "system",
     "summary": "故事大纲条目模板",
@@ -387,7 +398,7 @@
   {
     "id": "docs/系统说明/情节安置提问模板.md",
     "indexVersion": 1,
-    "sourceHash": "b8a2de1f5591a807d2241bcc9218fc18c72157ff8f71aae4d0fcc1b0ccea78bd",
+    "sourceHash": "6aa5c47b43f4b360dbe62d223dbc34ff97c3b648b6a161d5ad49896671784931",
     "sourcePath": "docs/系统说明/情节安置提问模板.md",
     "subtype": "system",
     "summary": "情节安置提问模板",
@@ -398,7 +409,7 @@
   {
     "id": "docs/系统说明/情节条目系统.md",
     "indexVersion": 1,
-    "sourceHash": "1cbdef9d0bbdf2c7c7a080d7c74bc0a05fdaa2d37ca1c7137091ab521d221e81",
+    "sourceHash": "ce64945b13ee050675dca07e91c1e321b2c4b5aeeb7f6a8f335846f82b1fb410",
     "sourcePath": "docs/系统说明/情节条目系统.md",
     "subtype": "system",
     "summary": "情节条目系统",
@@ -596,7 +607,7 @@
   {
     "id": "docs/系统说明/知识检索抽查校准系统.md",
     "indexVersion": 1,
-    "sourceHash": "ba010554d61dbcff111c5d0ed0b4932d4b36c4117fec048363d56c4974a04833",
+    "sourceHash": "22584d4b7c87ba2fa94583bc5058824a237dd7585f6788788ff9946d8c0b369a",
     "sourcePath": "docs/系统说明/知识检索抽查校准系统.md",
     "subtype": "system",
     "summary": "知识检索抽查校准系统",
@@ -706,12 +717,23 @@
   {
     "id": "docs/系统说明/Style-RAG元数据检索与文风包系统.md",
     "indexVersion": 1,
-    "sourceHash": "cf23d75da941a8c62e73a06c128e65d24dc5f8b5b582848b0d555fc65edf5722",
+    "sourceHash": "07703c9ac57559c0e6a6395840895cfe1202a6b28548fd91e00ac7ce831d022d",
     "sourcePath": "docs/系统说明/Style-RAG元数据检索与文风包系统.md",
     "subtype": "system",
     "summary": "Style-RAG 元数据检索与文风包系统",
     "summarySource": "title-only",
     "title": "Style-RAG 元数据检索与文风包系统",
+    "type": "document"
+  },
+  {
+    "id": "docs/系统说明/Tag体系收缩与RAG情节迁移系统.md",
+    "indexVersion": 1,
+    "sourceHash": "82b2b7674a23ba6df89c5bd4f2f36bd8b8e9a98f5f22778e3cad601b4d0d3beb",
+    "sourcePath": "docs/系统说明/Tag体系收缩与RAG情节迁移系统.md",
+    "subtype": "system",
+    "summary": "Tag 体系收缩与 RAG / 情节迁移系统",
+    "summarySource": "title-only",
+    "title": "Tag 体系收缩与 RAG / 情节迁移系统",
     "type": "document"
   },
   {
@@ -928,6 +950,28 @@
     "indexVersion": 1,
     "sourceHash": "bde1638cda5952e3143b35f0b68a31c55c964235ecd145bfb889f73e515d3dd2",
     "sourcePath": "docs/写作资产/工作区/compare/cg-6afc16af-3/candidate-b.md",
+    "subtype": "other",
+    "summary": "candidate-b",
+    "summarySource": "title-only",
+    "title": "candidate-b",
+    "type": "document"
+  },
+  {
+    "id": "docs/写作资产/工作区/compare/cg-80031368-1/candidate-a.md",
+    "indexVersion": 1,
+    "sourceHash": "7bcba2bd72550ef95988cdea51d4d18a78903f3ea285333edaf317457c03b78d",
+    "sourcePath": "docs/写作资产/工作区/compare/cg-80031368-1/candidate-a.md",
+    "subtype": "other",
+    "summary": "candidate-a",
+    "summarySource": "title-only",
+    "title": "candidate-a",
+    "type": "document"
+  },
+  {
+    "id": "docs/写作资产/工作区/compare/cg-80031368-1/candidate-b.md",
+    "indexVersion": 1,
+    "sourceHash": "a1b77224f895957bb89d0e52cd1bba2c614088954b7274b7a818f6eb1e5edf9e",
+    "sourcePath": "docs/写作资产/工作区/compare/cg-80031368-1/candidate-b.md",
     "subtype": "other",
     "summary": "candidate-b",
     "summarySource": "title-only",
@@ -1460,6 +1504,50 @@
     "summary": "wr-20260726142017-f1b8ebfd",
     "summarySource": "title-only",
     "title": "wr-20260726142017-f1b8ebfd",
+    "type": "document"
+  },
+  {
+    "id": "docs/写作资产/工作区/drafts/wr-20260727100509-1d99b75d.md",
+    "indexVersion": 1,
+    "sourceHash": "a1b77224f895957bb89d0e52cd1bba2c614088954b7274b7a818f6eb1e5edf9e",
+    "sourcePath": "docs/写作资产/工作区/drafts/wr-20260727100509-1d99b75d.md",
+    "subtype": "other",
+    "summary": "wr-20260727100509-1d99b75d",
+    "summarySource": "title-only",
+    "title": "wr-20260727100509-1d99b75d",
+    "type": "document"
+  },
+  {
+    "id": "docs/写作资产/工作区/drafts/wr-20260727100509-3834f391.md",
+    "indexVersion": 1,
+    "sourceHash": "7bcba2bd72550ef95988cdea51d4d18a78903f3ea285333edaf317457c03b78d",
+    "sourcePath": "docs/写作资产/工作区/drafts/wr-20260727100509-3834f391.md",
+    "subtype": "other",
+    "summary": "wr-20260727100509-3834f391",
+    "summarySource": "title-only",
+    "title": "wr-20260727100509-3834f391",
+    "type": "document"
+  },
+  {
+    "id": "docs/写作资产/工作区/drafts/wr-20260727100509-c90610a4.md",
+    "indexVersion": 1,
+    "sourceHash": "a1b77224f895957bb89d0e52cd1bba2c614088954b7274b7a818f6eb1e5edf9e",
+    "sourcePath": "docs/写作资产/工作区/drafts/wr-20260727100509-c90610a4.md",
+    "subtype": "other",
+    "summary": "wr-20260727100509-c90610a4",
+    "summarySource": "title-only",
+    "title": "wr-20260727100509-c90610a4",
+    "type": "document"
+  },
+  {
+    "id": "docs/写作资产/工作区/drafts/wr-20260727100509-ce1b4067.md",
+    "indexVersion": 1,
+    "sourceHash": "7bcba2bd72550ef95988cdea51d4d18a78903f3ea285333edaf317457c03b78d",
+    "sourcePath": "docs/写作资产/工作区/drafts/wr-20260727100509-ce1b4067.md",
+    "subtype": "other",
+    "summary": "wr-20260727100509-ce1b4067",
+    "summarySource": "title-only",
+    "title": "wr-20260727100509-ce1b4067",
     "type": "document"
   },
   {
@@ -2048,7 +2136,7 @@
   {
     "id": "docs/用户命令目录.md",
     "indexVersion": 1,
-    "sourceHash": "b39719567573c308250b9f46d9c9740759ed51420861b0829790176eb40cc71b",
+    "sourceHash": "ca8c60b7e9b2d2ed377a710110585fd8249ce0b11804d3cf156bbe1c16bee135",
     "sourcePath": "docs/用户命令目录.md",
     "subtype": "other",
     "summary": "用户命令目录",
@@ -2659,50 +2747,6 @@
     "summary": "liluo_project_memory_curator",
     "summarySource": "title-only",
     "title": "liluo_project_memory_curator",
-    "type": "document"
-  },
-  {
-    "id": "docs/智能体说明/liluo_story_gap_analyst.md",
-    "indexVersion": 1,
-    "sourceHash": "4fee394bec8fed2193f315c0d95d1f9b4a00ab8612317878b111a44ea098492a",
-    "sourcePath": "docs/智能体说明/liluo_story_gap_analyst.md",
-    "subtype": "agent",
-    "summary": "璃落故事缺口分析员",
-    "summarySource": "title-only",
-    "title": "璃落故事缺口分析员",
-    "type": "document"
-  },
-  {
-    "id": "docs/智能体说明/liluo_validation_runner.md",
-    "indexVersion": 1,
-    "sourceHash": "5ac39e639315e1d9891f2f1649ac28f54397fc79b92ef59ee017dd000109d49c",
-    "sourcePath": "docs/智能体说明/liluo_validation_runner.md",
-    "subtype": "agent",
-    "summary": "璃落验证执行员",
-    "summarySource": "title-only",
-    "title": "璃落验证执行员",
-    "type": "document"
-  },
-  {
-    "id": "docs/CG待制作清单.md",
-    "indexVersion": 1,
-    "sourceHash": "81996a1dd752cbf2e9c5a9fc68bb4a480e556d2d76ec35afa9b4b6894f067f8b",
-    "sourcePath": "docs/CG待制作清单.md",
-    "subtype": "other",
-    "summary": "CG 待制作清单",
-    "summarySource": "title-only",
-    "title": "CG 待制作清单",
-    "type": "document"
-  },
-  {
-    "id": "docs/README.md",
-    "indexVersion": 1,
-    "sourceHash": "c5fbe97bd54b6fd4da58346afdf2cda940a6c6fb6fefcb1552fe53fc87f40819",
-    "sourcePath": "docs/README.md",
-    "subtype": "other",
-    "summary": "璃落的城堡文档入口",
-    "summarySource": "title-only",
-    "title": "璃落的城堡文档入口",
     "type": "document"
   }
 ]

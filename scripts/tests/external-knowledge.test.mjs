@@ -28,16 +28,24 @@ test('matchQuery supports AND, OR, exclusions and filters', () => {
   const item = {
     title: '古堡逃脱',
     searchableText: '古堡 密室 钟声 逃脱',
-    tags: ['环境:古堡', '叙事:逃脱'],
+    tags: [],
     sourceId: 'fb-src-1',
   };
 
   assert.equal(matchQuery(item, { query: '古堡 逃脱', mode: 'and' }).matched, true);
   assert.equal(matchQuery(item, { query: '古堡 仪式', mode: 'or' }).matched, true);
   assert.equal(matchQuery(item, { query: '古堡', exclude: ['钟声'] }).matched, false);
-  assert.equal(matchQuery(item, { query: '古堡', tags: ['叙事:逃脱'], sourceId: 'fb-src-1' }).matched, true);
+  assert.equal(matchQuery(item, { query: '古堡', sourceId: 'fb-src-1' }).matched, true);
   assert.equal(matchQuery(item, { query: 'fb-src-1', mode: 'exact' }).matched, true);
   assert.equal(matchQuery(item, { query: '古堡', mode: 'exact' }).matched, false);
+});
+
+test('source-less stub cards remain searchable but rank below complete cards', () => {
+  const complete = matchQuery({ title: '后手观音', aliases: [], contentStatus: 'complete' }, { query: '后手观音' });
+  const stub = matchQuery({ title: '后手观音', aliases: [], contentStatus: 'stub' }, { query: '后手观音' });
+  assert.equal(stub.matched, true);
+  assert.ok(stub.score > 0);
+  assert.ok(stub.score < complete.score);
 });
 
 test('assessSimilarity reports high risk for long copied spans without reproducing source text', () => {
@@ -148,9 +156,9 @@ test('syncAuthoritativeSource copies changes and automatically deletes only mana
 
 test('createCandidateCards emits traceable term and plot-pattern candidates only when every evidence group is present', () => {
   const segments = [
-    { sourceId: 'fb-src-1', segmentId: 'seg-1', sourcePath: 'one.md', startLine: 3, endLine: 8, preview: '主动送绑后仍以为可以随时结束。', tags: ['状态:受限'] },
-    { sourceId: 'fb-src-2', segmentId: 'seg-2', sourcePath: 'two.md', startLine: 12, endLine: 18, preview: '局面玩脱，原先的保障失效。', tags: ['叙事:失控'] },
-    { sourceId: 'fb-src-3', segmentId: 'seg-3', sourcePath: 'three.md', startLine: 20, endLine: 24, preview: '控制权转移后才发现无法自行脱身。', tags: ['叙事:转折'] },
+    { sourceId: 'fb-src-1', segmentId: 'seg-1', sourcePath: 'one.md', startLine: 3, endLine: 8, preview: '主动送绑后仍以为可以随时结束。', tags: [] },
+    { sourceId: 'fb-src-2', segmentId: 'seg-2', sourcePath: 'two.md', startLine: 12, endLine: 18, preview: '局面玩脱，原先的保障失效。', tags: [] },
+    { sourceId: 'fb-src-3', segmentId: 'seg-3', sourcePath: 'three.md', startLine: 20, endLine: 24, preview: '控制权转移后才发现无法自行脱身。', tags: [] },
   ];
   const rules = {
     terms: [{ id: 'voluntary-loss-of-control', title: '送绑玩脱', aliases: ['送绑', '玩脱'], evidenceGroups: [['送绑'], ['玩脱', '无法自行脱身']], definition: '角色主动进入自认为可控的受限情境，随后因保障失效而失去退出能力。', distinctions: ['不等同于从一开始就遭到强迫。'] }],

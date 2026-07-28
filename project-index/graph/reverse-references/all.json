@@ -1,11 +1,280 @@
 [
   {
-    "entityId": "gameplay-002",
+    "entityId": "gameplay-003",
     "entityType": "gameplay",
-    "id": "gameplay:gameplay-002",
+    "id": "gameplay:gameplay-003",
+    "references": {
+      "storyKeys": [
+        "world-1-glimmering-glance-campus-arrival"
+      ]
+    },
+    "type": "reverse-reference"
+  },
+  {
+    "entityId": "gameplay-012",
+    "entityType": "gameplay",
+    "id": "gameplay:gameplay-012",
     "references": {
       "storyKeys": [
         "world-1-glimmering-glance-liminal-space"
+      ]
+    },
+    "type": "reverse-reference"
+  },
+  {
+    "entityId": "gameplay-013",
+    "entityType": "gameplay",
+    "id": "gameplay:gameplay-013",
+    "references": {
+      "storyKeys": [
+        "world-1-glimmering-glance-city-investigator",
+        "world-1-glimmering-glance-liminal-space",
+        "world-1-glimmering-glance-little-maid-team",
+        "world-1-glimmering-glance-missing-night-bus",
+        "world-1-glimmering-glance-old-dormitory"
+      ]
+    },
+    "type": "reverse-reference"
+  },
+  {
+    "entityId": "gameplay-029",
+    "entityType": "gameplay",
+    "id": "gameplay:gameplay-029",
+    "references": {
+      "storyKeys": [
+        "world-1-glimmering-glance-liminal-space"
+      ]
+    },
+    "type": "reverse-reference"
+  },
+  {
+    "entityId": "gameplay-046",
+    "entityType": "gameplay",
+    "id": "gameplay:gameplay-046",
+    "references": {
+      "storyKeys": [
+        "world-5-star-weaving-dream-reverse-immigration-prison"
+      ]
+    },
+    "type": "reverse-reference"
+  },
+  {
+    "entityId": "gameplay-060",
+    "entityType": "gameplay",
+    "id": "gameplay:gameplay-060",
+    "references": {
+      "storyKeys": [
+        "world-1-glimmering-glance-campus-arrival",
+        "world-1-glimmering-glance-missing-night-bus",
+        "world-1-glimmering-glance-old-dormitory",
+        "world-1-glimmering-glance-rust-salt",
+        "world-5-star-weaving-dream-reverse-immigration-prison"
+      ]
+    },
+    "type": "reverse-reference"
+  },
+  {
+    "entityId": "gameplay-066",
+    "entityType": "gameplay",
+    "id": "gameplay:gameplay-066",
+    "references": {
+      "storyKeys": [
+        "world-1-glimmering-glance-hospital-awakening",
+        "world-1-glimmering-glance-jingjiang-seventh-ability-adaptation-school"
+      ]
+    },
+    "type": "reverse-reference"
+  },
+  {
+    "entityId": "gameplay-068",
+    "entityType": "gameplay",
+    "id": "gameplay:gameplay-068",
+    "references": {
+      "storyKeys": [
+        "world-1-glimmering-glance-old-case"
+      ]
+    },
+    "type": "reverse-reference"
+  },
+  {
+    "entityId": "gameplay-072",
+    "entityType": "gameplay",
+    "id": "gameplay:gameplay-072",
+    "references": {
+      "storyKeys": [
+        "world-1-glimmering-glance-little-maid-team",
+        "world-1-glimmering-glance-snow-train"
+      ]
+    },
+    "type": "reverse-reference"
+  },
+  {
+    "entityId": "gameplay-082",
+    "entityType": "gameplay",
+    "id": "gameplay:gameplay-082",
+    "references": {
+      "storyKeys": [
+        "world-1-glimmering-glance-rust-salt"
+      ]
+    },
+    "type": "reverse-reference"
+  },
+  {
+    "entityId": "gameplay-083",
+    "entityType": "gameplay",
+    "id": "gameplay:gameplay-083",
+    "references": {
+      "storyKeys": [
+        "world-1-glimmering-glance-bound-world-tour"
+      ]
+    },
+    "type": "reverse-reference"
+  },
+  {
+    "entityId": "gameplay-087",
+    "entityType": "gameplay",
+    "id": "gameplay:gameplay-087",
+    "references": {
+      "storyKeys": [
+        "world-1-glimmering-glance-bound-world-tour"
+      ]
+    },
+    "type": "reverse-reference"
+  },
+  {
+    "entityId": "gameplay-090",
+    "entityType": "gameplay",
+    "id": "gameplay:gameplay-090",
+    "references": {
+      "storyKeys": [
+        "world-1-glimmering-glance-city-investigator"
+      ]
+    },
+    "type": "reverse-reference"
+  },
+  {
+    "entityId": "gameplay-091",
+    "entityType": "gameplay",
+    "id": "gameplay:gameplay-091",
+    "references": {
+      "storyKeys": [
+        "world-5-star-weaving-dream-reverse-immigration-prison"
+      ]
+    },
+    "type": "reverse-reference"
+  },
+  {
+    "entityId": "gameplay-094",
+    "entityType": "gameplay",
+    "id": "gameplay:gameplay-094",
+    "references": {
+      "storyKeys": [
+        "world-1-glimmering-glance-liminal-space"
+      ]
+    },
+    "type": "reverse-reference"
+  },
+  {
+    "entityId": "gameplay-099",
+    "entityType": "gameplay",
+    "id": "gameplay:gameplay-099",
+    "references": {
+      "storyKeys": [
+        "world-1-glimmering-glance-hot-spring"
+      ]
+    },
+    "type": "reverse-reference"
+  },
+  {
+    "entityId": "gameplay-100",
+    "entityType": "gameplay",
+    "id": "gameplay:gameplay-100",
+    "references": {
+      "storyKeys": [
+        "world-1-glimmering-glance-hot-spring",
+        "world-1-glimmering-glance-jingjiang-seventh-ability-adaptation-school"
+      ]
+    },
+    "type": "reverse-reference"
+  },
+  {
+    "entityId": "gameplay-104",
+    "entityType": "gameplay",
+    "id": "gameplay:gameplay-104",
+    "references": {
+      "storyKeys": [
+        "world-5-star-weaving-dream-restraint-school",
+        "world-5-star-weaving-dream-reverse-immigration-prison"
+      ]
+    },
+    "type": "reverse-reference"
+  },
+  {
+    "entityId": "gameplay-107",
+    "entityType": "gameplay",
+    "id": "gameplay:gameplay-107",
+    "references": {
+      "storyKeys": [
+        "world-1-glimmering-glance-city-investigator"
+      ]
+    },
+    "type": "reverse-reference"
+  },
+  {
+    "entityId": "gameplay-109",
+    "entityType": "gameplay",
+    "id": "gameplay:gameplay-109",
+    "references": {
+      "storyKeys": [
+        "world-1-glimmering-glance-missing-night-bus"
+      ]
+    },
+    "type": "reverse-reference"
+  },
+  {
+    "entityId": "gameplay-111",
+    "entityType": "gameplay",
+    "id": "gameplay:gameplay-111",
+    "references": {
+      "storyKeys": [
+        "world-1-glimmering-glance-bound-world-tour"
+      ]
+    },
+    "type": "reverse-reference"
+  },
+  {
+    "entityId": "gameplay-112",
+    "entityType": "gameplay",
+    "id": "gameplay:gameplay-112",
+    "references": {
+      "storyKeys": [
+        "world-1-glimmering-glance-bound-world-tour"
+      ]
+    },
+    "type": "reverse-reference"
+  },
+  {
+    "entityId": "gameplay-114",
+    "entityType": "gameplay",
+    "id": "gameplay:gameplay-114",
+    "references": {
+      "storyKeys": [
+        "world-5-star-weaving-dream-restraint-school"
+      ]
+    },
+    "type": "reverse-reference"
+  },
+  {
+    "entityId": "gameplay-116",
+    "entityType": "gameplay",
+    "id": "gameplay:gameplay-116",
+    "references": {
+      "storyKeys": [
+        "world-1-glimmering-glance-hospital-awakening",
+        "world-1-glimmering-glance-jingjiang-seventh-ability-adaptation-school",
+        "world-1-glimmering-glance-little-maid-team",
+        "world-1-glimmering-glance-rust-salt",
+        "world-5-star-weaving-dream-restraint-school"
       ]
     },
     "type": "reverse-reference"
@@ -27,7 +296,7 @@
     "id": "gameplay:gameplay-119",
     "references": {
       "storyKeys": [
-        "world-1-glimmering-glance-hospital-awakening"
+        "world-1-glimmering-glance-midnight-city-exploration"
       ]
     },
     "type": "reverse-reference"

@@ -22,3 +22,4 @@ export {
   getNeighborIds,
   findEdgesBetween
 } from './filterOutlineRelationGraph.js';
+export { createOutlineRelationGraphExportPayload } from './outlineRelationGraphExport.js';

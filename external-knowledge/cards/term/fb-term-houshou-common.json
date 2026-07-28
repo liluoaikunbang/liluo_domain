@@ -1,0 +1,53 @@
+{
+  "cardId": "fb-term-houshou-common",
+  "cardType": "term",
+  "title": "普通后手缚",
+  "aliases": [
+    "普通反绑",
+    "常规后手"
+  ],
+  "definition": "上肢受限下的基础后手形态：双手在身后固定，但不强调并肘靠拢，也不强调高手贴背的小缚结构。用来写“就是普通反绑”，避免误用更特化的名称。",
+  "distinctions": [
+    "它是具体概念，从属于上位类别「上肢受限」。",
+    "与后手并肘不同：不把双肘靠拢当作识别点。",
+    "与后手高手小缚不同：不把双手抬高贴背当作识别点。",
+    "与后手观音不同：不依赖某一固定的双手相对造型。"
+  ],
+  "prerequisites": [],
+  "progression": [],
+  "reversals": [],
+  "outcomes": [],
+  "concepts": [
+    "普通后手缚",
+    "普通反绑",
+    "常规后手"
+  ],
+  "abstractPatterns": [
+    "基础后手姿态",
+    "无特化识别点"
+  ],
+  "tags": [],
+  "sourceRefs": [
+    {
+      "sourceId": "fb-src-000002",
+      "segmentId": "fb-src-000002-seg-00003",
+      "sourcePath": "external-knowledge/sources/fiction-bondage/不知道作者/【崩坏3rd 脑洞同人文】—两人的结局.md",
+      "startLine": 16,
+      "endLine": 16
+    },
+    {
+      "sourceId": "fb-src-000003",
+      "segmentId": "fb-src-000003-seg-00003",
+      "sourcePath": "external-knowledge/sources/fiction-bondage/不知道作者/0-临时备忘录-1.md",
+      "startLine": 16,
+      "endLine": 16
+    }
+  ],
+  "reviewStatus": "candidate",
+  "directQuoteIncluded": false,
+  "knowledgeScope": "external-fiction-reference",
+  "canonical": false,
+  "linkedConceptIds": [
+    "restraint.pose.houshou-common"
+  ]
+}

@@ -35,11 +35,7 @@
     "可识别姿态",
     "行动边界可视化"
   ],
-  "tags": [
-    "状态:受限",
-    "叙事:仪式",
-    "氛围:悬疑"
-  ],
+  "tags": [],
   "sourceRefs": [
     {
       "sourceId": "fb-src-000001",
@@ -66,5 +62,8 @@
   "reviewStatus": "candidate",
   "directQuoteIncluded": false,
   "knowledgeScope": "external-fiction-reference",
-  "canonical": false
+  "canonical": false,
+  "linkedConceptIds": [
+    "restraint.pose.fixed"
+  ]
 }

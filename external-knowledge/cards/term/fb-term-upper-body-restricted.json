@@ -6,9 +6,10 @@
     "手臂受限",
     "上身受限"
   ],
-  "definition": "描述角色上肢活动范围被压缩的状态层术语：可覆盖身后束手、贴身固定、局部制动等多种表现，关注“还能做什么/不能做什么”，而不是绳结细节。",
+  "definition": "上肢活动范围被压缩的上位状态类别。写作时用来统称手臂/上身动不了或只能小幅活动；具体后手形态再落到普通后手缚、并肘、高手小缚、后手观音等下位名称。",
   "distinctions": [
-    "它是状态上位词，可下挂更具体的姿态或绑法名。",
+    "它是上位类别，不等于某一种具体绑法名。",
+    "与「身后束手」不是同义别名：后者偏姿态安置，本词偏活动范围与状态。",
     "不等于全身动弹不得；下肢、躯干或头部仍可能保留行动空间。"
   ],
   "prerequisites": [],
@@ -24,11 +25,7 @@
     "上肢活动范围压缩",
     "行动选项减少"
   ],
-  "tags": [
-    "状态:受限",
-    "叙事:调查",
-    "氛围:悬疑"
-  ],
+  "tags": [],
   "sourceRefs": [
     {
       "sourceId": "fb-src-000001",
@@ -55,5 +52,8 @@
   "reviewStatus": "candidate",
   "directQuoteIncluded": false,
   "knowledgeScope": "external-fiction-reference",
-  "canonical": false
+  "canonical": false,
+  "linkedConceptIds": [
+    "restraint.upper-body.restricted"
+  ]
 }

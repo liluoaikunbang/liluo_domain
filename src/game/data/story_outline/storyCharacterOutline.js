@@ -38,11 +38,11 @@ export function buildStoryCharacterOutline(source) {
         status: node.status ?? '',
         summary: node.summary ?? '',
         storyTags: uniqueStrings(node.storyTags),
-        gameplay: uniqueStrings(node.specialGameplay)
+        gameplay: uniqueStrings(node.gameplayRefs)
       });
       appendUnique(character.locations, node.locations);
-      appendUnique(character.tags, node.plotTags);
-      appendUnique(character.tags, node.bondageTags);
+      appendUnique(character.tags, node.plotRefs);
+      appendUnique(character.tags, node.ragRefs);
       appendUnique(character.relatedNotes, node.foreshadowing);
     });
   });

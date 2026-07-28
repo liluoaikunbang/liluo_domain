@@ -84,6 +84,22 @@
       "status": "active"
     },
     {
+      "ruleId": "outline-interview-tag-confirmation",
+      "title": "大纲访谈须选项确认普通 Tag 与紧缚 Tag",
+      "authority": "docs/系统说明/故事大纲随机提问模板.md",
+      "decision": "docs/设计记忆/创作决策/CDR-008-大纲访谈须选项确认普通Tag与紧缚Tag.md",
+      "consumers": [
+        ".agents/skills/liluo-project/random-story-outline-interview/SKILL.md",
+        ".agents/skills/liluo-project/liluo-story-outline-authoring/SKILL.md",
+        ".agents/skills/liluo-project/liluo-plot-placement-interview/SKILL.md",
+        "docs/系统说明/故事大纲条目模板.md",
+        "docs/系统说明/情节安置提问模板.md",
+        "docs/系统说明/情节条目系统.md",
+        "docs/用户命令目录.md"
+      ],
+      "status": "active"
+    },
+    {
       "ruleId": "persona-never-overrides-professional-contract",
       "title": "人格与陪伴不得改变专业合同和事实结论",
       "authority": "docs/设计记忆/项目组灵魂/项目组设定.md",

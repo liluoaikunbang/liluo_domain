@@ -1,0 +1,46 @@
+[
+  {
+    "id": "docs/智能体说明/liluo_story_gap_analyst.md",
+    "indexVersion": 1,
+    "sourceHash": "4fee394bec8fed2193f315c0d95d1f9b4a00ab8612317878b111a44ea098492a",
+    "sourcePath": "docs/智能体说明/liluo_story_gap_analyst.md",
+    "subtype": "agent",
+    "summary": "璃落故事缺口分析员",
+    "summarySource": "title-only",
+    "title": "璃落故事缺口分析员",
+    "type": "document"
+  },
+  {
+    "id": "docs/智能体说明/liluo_validation_runner.md",
+    "indexVersion": 1,
+    "sourceHash": "5ac39e639315e1d9891f2f1649ac28f54397fc79b92ef59ee017dd000109d49c",
+    "sourcePath": "docs/智能体说明/liluo_validation_runner.md",
+    "subtype": "agent",
+    "summary": "璃落验证执行员",
+    "summarySource": "title-only",
+    "title": "璃落验证执行员",
+    "type": "document"
+  },
+  {
+    "id": "docs/CG待制作清单.md",
+    "indexVersion": 1,
+    "sourceHash": "81996a1dd752cbf2e9c5a9fc68bb4a480e556d2d76ec35afa9b4b6894f067f8b",
+    "sourcePath": "docs/CG待制作清单.md",
+    "subtype": "other",
+    "summary": "CG 待制作清单",
+    "summarySource": "title-only",
+    "title": "CG 待制作清单",
+    "type": "document"
+  },
+  {
+    "id": "docs/README.md",
+    "indexVersion": 1,
+    "sourceHash": "c5fbe97bd54b6fd4da58346afdf2cda940a6c6fb6fefcb1552fe53fc87f40819",
+    "sourcePath": "docs/README.md",
+    "subtype": "other",
+    "summary": "璃落的城堡文档入口",
+    "summarySource": "title-only",
+    "title": "璃落的城堡文档入口",
+    "type": "document"
+  }
+]

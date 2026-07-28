@@ -35,12 +35,7 @@
     "尝试—反馈—代价",
     "退出权再判断"
   ],
-  "tags": [
-    "叙事:逃脱",
-    "状态:受限",
-    "氛围:悬疑",
-    "叙事:调查"
-  ],
+  "tags": [],
   "sourceRefs": [
     {
       "sourceId": "fb-src-000001",
@@ -67,5 +62,8 @@
   "reviewStatus": "candidate",
   "directQuoteIncluded": false,
   "knowledgeScope": "external-fiction-reference",
-  "canonical": false
+  "canonical": false,
+  "linkedConceptIds": [
+    "restraint.escape.attempt"
+  ]
 }

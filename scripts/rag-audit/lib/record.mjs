@@ -121,6 +121,7 @@ export async function recordAudit(input = {}) {
               canonicalName: concept.canonicalName,
               aliases: concept.aliases ?? [],
               parentConcepts: concept.parentConcepts ?? [],
+              layer: concept.layer ?? null,
               visibility: concept.visibility,
               summary: concept.summary ?? '',
             }

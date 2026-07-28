@@ -16,7 +16,7 @@ const conceptModuleUrl = pathToFileURL(
 ).href;
 
 const { buildOutlineRelationGraph } = await import(graphModuleUrl);
-const { SEEDED_CONCEPTS } = await import(conceptModuleUrl);
+const { SEEDED_CONCEPTS, validateConceptHierarchy } = await import(conceptModuleUrl);
 
 function readJson(relativePath) {
   const absolute = join(root, relativePath);
@@ -126,7 +126,10 @@ function printStats(graph) {
     pendingReviewCount: stats.pendingReviewCount,
     lowConfidenceEdgeCount: stats.lowConfidenceEdgeCount,
     missingSourceCount: stats.missingSourceCount,
+    contentGapCount: stats.contentGapCount,
     conceptWithoutRag: stats.conceptWithoutRag,
+    conceptCategoryCount: stats.conceptCategoryCount,
+    conceptDetailCount: stats.conceptDetailCount,
     plotWithoutStyle: stats.plotWithoutStyle,
     styleTechniqueCount: stats.styleTechniqueCount,
     styleEvidenceCount: stats.styleEvidenceCount,
@@ -146,11 +149,32 @@ function validate(graph) {
     }
     if (!edge.relationType) errors.push(`edge ${edge.id} missing relationType`);
   }
-  const detailConcept = graph.nodes.find((node) => node.id === 'concept:restraint.pose.houshou-guanyin');
-  if (!detailConcept) errors.push('missing seeded detail concept 后手观音');
-  if (detailConcept?.visibility?.primaryTag !== false) {
-    errors.push('后手观音 should not be primary_tag');
+  const hierarchy = validateConceptHierarchy(SEEDED_CONCEPTS);
+  if (!hierarchy.ok) {
+    errors.push(...hierarchy.errors.map((message) => `concept-hierarchy-seed: ${message}`));
   }
+  if (graph.nodes.some((node) => node.type === 'concept')) {
+    errors.push('detail-concept nodes must not be projected into the graph');
+  }
+  const detailRag = graph.nodes.find((node) => node.id === 'rag:fb-term-houshou-guanyin');
+  if (!detailRag) errors.push('missing RAG card 后手观音');
+  if (detailRag?.meta?.ragLayer !== 'concept') {
+    errors.push('后手观音 RAG should be ragLayer=concept (具体概念)');
+  }
+  const categoryRag = graph.nodes.find((node) => node.id === 'rag:fb-term-upper-body-restricted');
+  if (categoryRag?.meta?.ragLayer !== 'category') {
+    errors.push('上肢受限 RAG should be ragLayer=category (上位类别)');
+  }
+  if (graph.nodes.some((node) => node.title === '身后束手')) {
+    errors.push('身后束手 must not appear as a RAG card');
+  }
+  const hierarchyEdge = graph.edges.find(
+    (edge) =>
+      edge.relationType === 'narrower' &&
+      edge.source === 'rag:fb-term-upper-body-restricted' &&
+      edge.target === 'rag:fb-term-houshou-guanyin'
+  );
+  if (!hierarchyEdge) errors.push('missing narrower edge 上肢受限 RAG → 后手观音 RAG');
   const technique = graph.nodes.find(
     (node) => node.type === 'style_rag' && node.meta?.role === 'technique' && node.title === '日常互动'
   );
@@ -159,6 +183,12 @@ function validate(graph) {
   if (!evidence) errors.push('missing Style-RAG article evidence anchors');
   if (evidence && evidence.visibility?.overviewDefault !== false) {
     errors.push('article evidence should default hidden in overview');
+  }
+  if (graph.nodes.some((node) => node.type === 'tag' || node.type === 'bondage_tag')) {
+    errors.push('retired Tag node projected into graph');
+  }
+  if (graph.edges.some((edge) => edge.relationType === 'tagged_with' || edge.relationType === 'bondage_tagged_with')) {
+    errors.push('retired Tag relation projected into graph');
   }
   if (errors.length) {
     console.error(JSON.stringify({ ok: false, errors }, null, 2));
@@ -169,7 +199,9 @@ function validate(graph) {
     ok: true,
     nodeCount: graph.nodes.length,
     edgeCount: graph.edges.length,
-    detailConcept: detailConcept.title
+    detailRag: detailRag.title,
+    conceptCategoryCount: graph.stats.conceptCategoryCount,
+    conceptDetailCount: graph.stats.conceptDetailCount
   }, null, 2));
 }
 

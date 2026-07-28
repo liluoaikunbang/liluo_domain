@@ -1168,7 +1168,7 @@
   {
     "id": "docs/功能更新/103-故事栏汇总检索弹窗与分类JSON导出.md",
     "indexVersion": 1,
-    "sourceHash": "fc8077cafedd63fb5e1d4aa912749b57dfc4bd9ece96a116d3f188463690388a",
+    "sourceHash": "c9485501ae0b7d194e4187a3a5ce5a6478b0a907e585db18efd0e555fdf04272",
     "sourcePath": "docs/功能更新/103-故事栏汇总检索弹窗与分类JSON导出.md",
     "subtype": "update",
     "summary": "故事栏汇总检索弹窗与分类JSON导出",
@@ -1883,7 +1883,7 @@
   {
     "id": "docs/功能更新/168-知识检索抽查校准闭环.md",
     "indexVersion": 1,
-    "sourceHash": "f7f2962a36329e0fbd126c54547933be28f908999aa27dfa22dd3d3cd628bd80",
+    "sourceHash": "d3c27495bb7877a74fa66433c2653248e51d4d0f5759e3c08796de4a176f772b",
     "sourcePath": "docs/功能更新/168-知识检索抽查校准闭环.md",
     "subtype": "update",
     "summary": "168 - 知识检索抽查校准闭环",
@@ -1894,7 +1894,7 @@
   {
     "id": "docs/功能更新/169-大纲关联图谱视图.md",
     "indexVersion": 1,
-    "sourceHash": "a501b8351a6c384ca7226730127fd70298608f353596cbb66668f77b9990246d",
+    "sourceHash": "8f9aa169b0ae8ad661d4bbe95eac9c85dda93539425df09c57a93d1bd5eda9ca",
     "sourcePath": "docs/功能更新/169-大纲关联图谱视图.md",
     "subtype": "update",
     "summary": "169 - 大纲关联图谱视图",
@@ -1905,7 +1905,7 @@
   {
     "id": "docs/功能更新目录.md",
     "indexVersion": 1,
-    "sourceHash": "10004d3b3ccd1835efa59ad2a5570f38e5112fbd5a66af23c9294815be6feb94",
+    "sourceHash": "e2ed903e545c3e023843b2730c824b033c977e3b39fe6ed1d0e8d98b9c2bce65",
     "sourcePath": "docs/功能更新目录.md",
     "subtype": "other",
     "summary": "功能更新目录",
@@ -2048,7 +2048,7 @@
   {
     "id": "docs/技能说明/liluo-external-fiction-knowledge.md",
     "indexVersion": 1,
-    "sourceHash": "b59ab0b1d6499da1cecb51b4d35d6dfb6f20d7346116898e3bbb157165d8b850",
+    "sourceHash": "8737867ca4f3f50c41cf40f253d88ea140236c5da35d3a689e16228d4624db9a",
     "sourcePath": "docs/技能说明/liluo-external-fiction-knowledge.md",
     "subtype": "skill",
     "summary": "外部虚构题材知识库 Skill",
@@ -2257,7 +2257,7 @@
   {
     "id": "docs/技能说明/liluo-story-outline-authoring.md",
     "indexVersion": 1,
-    "sourceHash": "afca13a5ca3c3649568c48523a52ff34008b6452915e593d6e6fc136d567ea25",
+    "sourceHash": "aa9404281982f599d18fd3fea1c3155f906e0eb3b1be19d093e0f53f36eb14f0",
     "sourcePath": "docs/技能说明/liluo-story-outline-authoring.md",
     "subtype": "skill",
     "summary": "liluo-story-outline-authoring",
@@ -2323,7 +2323,7 @@
   {
     "id": "docs/技能说明/random-story-outline-interview.md",
     "indexVersion": 1,
-    "sourceHash": "9901d6f9cea73b68ce832b6621c6bbffbe1a4ce7d47c359ac886a19a984c6572",
+    "sourceHash": "3e1347bbaa8a868ecf37547040b8e8bbeafd024a57d0abc9e064163550063ad9",
     "sourcePath": "docs/技能说明/random-story-outline-interview.md",
     "subtype": "skill",
     "summary": "random-story-outline-interview",
@@ -2406,6 +2406,17 @@
     "summary": "CDR-007：默认启用沉浸模式与智能委派",
     "summarySource": "title-only",
     "title": "CDR-007：默认启用沉浸模式与智能委派",
+    "type": "document"
+  },
+  {
+    "id": "docs/设计记忆/创作决策/CDR-008-大纲访谈须选项确认普通Tag与紧缚Tag.md",
+    "indexVersion": 1,
+    "sourceHash": "ac8c3c928942f24c4db4a115152eece150a0a0cbfac415b86b16d2e55a61ffa8",
+    "sourcePath": "docs/设计记忆/创作决策/CDR-008-大纲访谈须选项确认普通Tag与紧缚Tag.md",
+    "subtype": "other",
+    "summary": "CDR-008：大纲访谈须选项确认普通 Tag 与紧缚 Tag",
+    "summarySource": "title-only",
+    "title": "CDR-008：大纲访谈须选项确认普通 Tag 与紧缚 Tag",
     "type": "document"
   },
   {
@@ -2736,17 +2747,6 @@
     "summary": "成员关系",
     "summarySource": "title-only",
     "title": "成员关系",
-    "type": "document"
-  },
-  {
-    "id": "docs/设计记忆/项目组灵魂/文号体系/README.md",
-    "indexVersion": 1,
-    "sourceHash": "81a4aef96b50299b275648bafc12515e30f2ac90325bfbd9fe98ca5719925d68",
-    "sourcePath": "docs/设计记忆/项目组灵魂/文号体系/README.md",
-    "subtype": "other",
-    "summary": "璃落创作组雕龙文号体系",
-    "summarySource": "title-only",
-    "title": "璃落创作组雕龙文号体系",
     "type": "document"
   }
 ]

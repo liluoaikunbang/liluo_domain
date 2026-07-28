@@ -10,11 +10,13 @@ export function matchQuery(item, options = {}) {
   if (String(options.mode).toLowerCase() === 'exact' && terms.length) {
     const query = String(options.query).trim().toLocaleLowerCase();
     const exactValues = [item.sourceId, item.segmentId, item.cardId, item.title, item.author, item.sourcePath, ...(item.tags ?? [])].filter(Boolean).map((value) => String(value).toLocaleLowerCase());
-    return { matched: exactValues.includes(query), score: exactValues.includes(query) ? 10 : 0 };
+    const exactScore = item.contentStatus === 'stub' ? 2.5 : 10;
+    return { matched: exactValues.includes(query), score: exactValues.includes(query) ? exactScore : 0 };
   }
   const hits = terms.map((term) => haystack.includes(term));
   const matched = !terms.length || (String(options.mode ?? 'and').toLowerCase() === 'or' ? hits.some(Boolean) : hits.every(Boolean));
   if (!matched) return { matched: false, score: 0 };
   const title = (item.title ?? '').toLocaleLowerCase(), headings = (item.headingPath ?? []).join(' ').toLocaleLowerCase();
-  return { matched: true, score: hits.filter(Boolean).length + terms.filter((term) => title.includes(term)).length * 3 + terms.filter((term) => headings.includes(term)).length * 2 };
+  const score = hits.filter(Boolean).length + terms.filter((term) => title.includes(term)).length * 3 + terms.filter((term) => headings.includes(term)).length * 2;
+  return { matched: true, score: item.contentStatus === 'stub' ? score * 0.25 : score };
 }

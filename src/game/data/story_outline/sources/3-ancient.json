@@ -9,7 +9,10 @@
       "title": "尘寰问道（古风）",
       "status": "分类",
       "summary": "从丫鬟到一国的公主，从武林侠女到问道修士，这个世界总有无限的可能。",
-      "order": 40
+      "order": 40,
+      "ragRefs": [],
+      "plotRefs": [],
+      "gameplayRefs": []
     },
     {
       "key": "world-3-mortal-dao-maid-difficulty",
@@ -17,7 +20,10 @@
       "title": "丫鬟难为",
       "status": "主线任务",
       "parentKey": "world-3-mortal-dao",
-      "order": 10
+      "order": 10,
+      "ragRefs": [],
+      "plotRefs": [],
+      "gameplayRefs": []
     },
     {
       "key": "world-3-mortal-dao-commoner-princess",
@@ -25,7 +31,10 @@
       "title": "平民公主",
       "status": "主线任务",
       "parentKey": "world-3-mortal-dao-royal-garden-beast-hunt",
-      "order": 10
+      "order": 10,
+      "ragRefs": [],
+      "plotRefs": [],
+      "gameplayRefs": []
     },
     {
       "key": "world-3-mortal-dao-royal-garden-beast-hunt",
@@ -33,7 +42,10 @@
       "title": "王苑兽猎",
       "status": "大纲",
       "parentKey": "world-3-mortal-dao-maid-difficulty",
-      "order": 10
+      "order": 10,
+      "ragRefs": [],
+      "plotRefs": [],
+      "gameplayRefs": []
     },
     {
       "key": "world-3-mortal-dao-frontier-marriage",
@@ -41,7 +53,10 @@
       "title": "塞外和亲",
       "status": "主线任务",
       "parentKey": "world-3-mortal-dao-commoner-princess",
-      "order": 10
+      "order": 10,
+      "ragRefs": [],
+      "plotRefs": [],
+      "gameplayRefs": []
     },
     {
       "key": "world-3-mortal-dao-chaotic-world-ranger",
@@ -50,7 +65,10 @@
       "summary": "璃落逃离宫廷身份后进入乱世江湖，以开锁、潜入、摸取、调包和归还物证为核心特长，在镖局、六扇门旧案、山寨与武林大会之间取得正面战斗无法获得的证据，并逐渐走出一条偏技巧与观察的侠客道路。",
       "status": "主线任务",
       "parentKey": "world-3-mortal-dao-frontier-marriage",
-      "order": 10
+      "order": 10,
+      "ragRefs": [],
+      "plotRefs": [],
+      "gameplayRefs": []
     },
     {
       "key": "world-3-mortal-dao-tile-kiln-disaster-sealing",
@@ -58,7 +76,10 @@
       "title": "瓦窑封灾",
       "status": "大纲",
       "parentKey": "world-3-mortal-dao-chaotic-world-ranger",
-      "order": 10
+      "order": 10,
+      "ragRefs": [],
+      "plotRefs": [],
+      "gameplayRefs": []
     },
     {
       "key": "world-3-mortal-dao-start",
@@ -66,7 +87,10 @@
       "title": "问道起点",
       "status": "主线任务",
       "parentKey": "world-3-mortal-dao-siege-survival",
-      "order": 10
+      "order": 10,
+      "ragRefs": [],
+      "plotRefs": [],
+      "gameplayRefs": []
     },
     {
       "key": "world-3-mortal-dao-siege-survival",
@@ -74,7 +98,10 @@
       "title": "围城求生",
       "status": "大纲",
       "parentKey": "world-3-mortal-dao-sakura-storm-shogunate",
-      "order": 10
+      "order": 10,
+      "ragRefs": [],
+      "plotRefs": [],
+      "gameplayRefs": []
     },
     {
       "key": "world-3-mortal-dao-sakura-storm-shogunate",
@@ -82,7 +109,10 @@
       "title": "樱岚幕府",
       "status": "大纲",
       "parentKey": "world-3-mortal-dao-tile-kiln-disaster-sealing",
-      "order": 10
+      "order": 10,
+      "ragRefs": [],
+      "plotRefs": [],
+      "gameplayRefs": []
     },
     {
       "key": "world-3-mortal-dao-counterattack",
@@ -93,11 +123,6 @@
         "修为废除",
         "第一次"
       ],
-      "bondageTags": [
-        "镣铐",
-        "拘束生活",
-        "DID"
-      ],
       "characters": [
         "妙桐"
       ],
@@ -106,7 +131,16 @@
       ],
       "status": "大纲草稿",
       "parentKey": "world-3-mortal-dao-start",
-      "order": 10
+      "order": 10,
+      "ragRefs": [
+        "rag.restraint.tool.shackles",
+        "rag.restraint.context.restrained-life"
+      ],
+      "plotRefs": [],
+      "gameplayRefs": [],
+      "legacyTagRefs": [
+        "bondage_tag:did"
+      ]
     },
     {
       "key": "world-3-mortal-dao-no-master",
@@ -124,25 +158,16 @@
       ],
       "status": "大纲草稿",
       "parentKey": "world-3-mortal-dao-counterattack",
-      "order": 10
+      "order": 10,
+      "ragRefs": [],
+      "plotRefs": [],
+      "gameplayRefs": []
     },
     {
       "key": "world-3-mortal-dao-framed",
       "world": "3-尘寰问道",
       "title": "陷害，入魔宗",
       "summary": "被陷害，思过崖，魔宗。",
-      "bondageTags": [
-        "社死",
-        "镣铐",
-        "监禁"
-      ],
-      "specialGameplay": [
-        "无鞋",
-        "露天地牢",
-        "水牢",
-        "寒冷",
-        "冤罪"
-      ],
       "characters": [
         "妙桐",
         "顾文若"
@@ -157,7 +182,17 @@
       ],
       "status": "大纲草稿",
       "parentKey": "world-3-mortal-dao-no-master",
-      "order": 10
+      "order": 10,
+      "ragRefs": [
+        "rag.restraint.effect.public-humiliation",
+        "rag.restraint.tool.shackles",
+        "rag.restraint.state.confinement"
+      ],
+      "plotRefs": [],
+      "gameplayRefs": [],
+      "legacyTagRefs": [
+        "bondage_tag:sg:露天地牢"
+      ]
     },
     {
       "key": "world-3-mortal-dao-demonic-sect-adventure",
@@ -166,7 +201,10 @@
       "status": "主线任务",
       "questType": "main",
       "parentKey": "world-3-mortal-dao-framed",
-      "order": 10
+      "order": 10,
+      "ragRefs": [],
+      "plotRefs": [],
+      "gameplayRefs": []
     },
     {
       "key": "world-3-mortal-dao-rebuild",
@@ -188,16 +226,16 @@
       ],
       "status": "大纲草稿",
       "parentKey": "world-3-mortal-dao-demonic-sect-adventure",
-      "order": 10
+      "order": 10,
+      "ragRefs": [],
+      "plotRefs": [],
+      "gameplayRefs": []
     },
     {
       "key": "world-3-mortal-dao-spider-valley",
       "world": "3-尘寰问道",
       "title": "误入灵蛛谷",
       "summary": "被蜘蛛精小姐姐抓到巢穴玩弄。",
-      "bondageTags": [
-        "蛛丝"
-      ],
       "characters": [
         "茯丝"
       ],
@@ -206,7 +244,12 @@
       ],
       "status": "大纲草稿",
       "parentKey": "world-3-mortal-dao-rebuild",
-      "order": 10
+      "order": 10,
+      "ragRefs": [
+        "rag.restraint.material.spider-silk"
+      ],
+      "plotRefs": [],
+      "gameplayRefs": []
     },
     {
       "key": "world-3-mortal-dao-epilogue",
@@ -214,23 +257,28 @@
       "title": "尾声",
       "status": "主线任务",
       "parentKey": "world-3-mortal-dao-spider-valley",
-      "order": 10
+      "order": 10,
+      "ragRefs": [],
+      "plotRefs": [],
+      "gameplayRefs": []
     },
     {
       "key": "world-3-mortal-dao-eternal",
       "world": "3-尘寰问道",
       "title": "永世束缚",
       "summary": "缚神，缚身，缚婴。",
-      "bondageTags": [
-        "永久拘束",
-        "灵魂拘束"
-      ],
       "storyTags": [
         "玄途炼心"
       ],
       "status": "大纲草稿",
       "parentKey": "world-3-mortal-dao-epilogue",
-      "order": 10
+      "order": 10,
+      "ragRefs": [
+        "rag.restraint.duration.permanent-restraint",
+        "rag.restraint.supernatural.soul-restraint"
+      ],
+      "plotRefs": [],
+      "gameplayRefs": []
     }
   ]
 }

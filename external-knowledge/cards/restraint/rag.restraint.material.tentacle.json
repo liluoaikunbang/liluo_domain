@@ -1,0 +1,40 @@
+{
+  "cardId": "rag.restraint.material.tentacle",
+  "title": "触手",
+  "domain": "restraint",
+  "cardType": "material",
+  "aliases": [],
+  "summary": "触手兼具主动移动与缠绕能力，可随人物动作改变固定位置和受限范围。",
+  "definition": "由生物或拟生装置形成的可动条状结构；与普通绳索的区别在于它能主动追随、收紧或重新分配固定点。",
+  "sourceRefs": [
+    {
+      "sourceId": "fb-src-000006",
+      "segmentId": "fb-src-000006-seg-00006",
+      "sourcePath": "external-knowledge/sources/fiction-bondage/不知道作者/被诱骗成为奴隶的大魔导师.md",
+      "startLine": 47,
+      "endLine": 49
+    },
+    {
+      "sourceId": "fb-src-000012",
+      "segmentId": "fb-src-000012-seg-00069",
+      "sourcePath": "external-knowledge/sources/fiction-bondage/不知道作者/感染少女.md",
+      "startLine": 1507,
+      "endLine": 1517
+    }
+  ],
+  "evidenceStatus": "supported",
+  "contentStatus": "complete",
+  "reviewStatus": "candidate",
+  "directQuoteIncluded": false,
+  "canonical": false,
+  "knowledgeScope": "external-fiction-reference",
+  "migration": {
+    "batchId": "tag-rag-restructure-v1",
+    "oldIds": [
+      "bondage_tag:触手"
+    ],
+    "generatedFrom": "legacy-tag-title-only"
+  },
+  "ragLayer": "category",
+  "parentCardIds": []
+}

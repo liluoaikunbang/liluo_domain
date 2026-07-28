@@ -1,0 +1,43 @@
+{
+  "cardId": "rag.restraint.detail.寒冷",
+  "title": "寒冷",
+  "domain": "restraint",
+  "cardType": "term",
+  "aliases": [],
+  "summary": "寒冷作为持续环境压力，会放大受限状态中的僵硬、行动困难与时间感。",
+  "definition": "用于描述低温环境与受限姿态共同作用的感受和情节压力；重点是环境持续影响行动，而不是把寒冷当作独立器具。",
+  "sourceRefs": [
+    {
+      "sourceId": "fb-src-000005",
+      "segmentId": "fb-src-000005-seg-00019",
+      "sourcePath": "external-knowledge/sources/fiction-bondage/不知道作者/被捕捉的韵（完结）.md",
+      "startLine": 203,
+      "endLine": 210
+    },
+    {
+      "sourceId": "fb-src-000007",
+      "segmentId": "fb-src-000007-seg-00019",
+      "sourcePath": "external-knowledge/sources/fiction-bondage/不知道作者/变为奴隶的姑娘.md",
+      "startLine": 269,
+      "endLine": 286
+    }
+  ],
+  "evidenceStatus": "supported",
+  "contentStatus": "complete",
+  "reviewStatus": "candidate",
+  "directQuoteIncluded": false,
+  "canonical": false,
+  "knowledgeScope": "external-fiction-reference",
+  "migration": {
+    "batchId": "tag-rag-restructure-v1",
+    "oldIds": [
+      "bondage_tag:sg:寒冷"
+    ],
+    "generatedFrom": "legacy-tag-title-only"
+  },
+  "ragLayer": "concept",
+  "parentCardIds": [
+    "rag.restraint.effect.pain"
+  ],
+  "distinctions": []
+}

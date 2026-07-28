@@ -4,8 +4,7 @@
       <label><span>搜索情节</span><input v-model="keyword" type="search" placeholder="标题、标签或内容"></label>
       <label><span>使用状态</span><select v-model="usage"><option value="all">全部</option><option value="unused">未完成使用</option><option value="partial">部分使用</option><option value="used">已使用</option></select></label>
       <label><span>偏向世界</span><select v-model="worldBias"><option value="all">全部</option><option value="general">无特定偏向</option><option v-for="world in worlds" :key="world" :value="world">{{ world }}</option></select></label>
-      <label><span>普通标签</span><select v-model="tag"><option value="all">全部普通标签</option><option v-for="option in tags" :key="option" :value="option">{{ option }}</option></select></label>
-      <label><span>紧缚标签</span><select v-model="bondageTag"><option value="all">全部紧缚标签</option><option v-for="option in bondageTags" :key="option" :value="option">{{ option }}</option></select></label>
+      <label><span>情节类型</span><select v-model="plotKind"><option value="all">全部情节</option><option value="ordinary">普通情节</option><option value="restraint">紧缚情节</option><option value="mixed">混合情节</option></select></label>
       <span class="count">{{ visibleGroups.length }} 个大情节 · {{ entries.length }} 个小情节</span>
     </div>
     <div class="browser">
@@ -40,8 +39,8 @@
           <dl>
             <dt>偏向世界</dt><dd>{{ selected.worldBiases.join('、') || '无特定偏向' }}</dd>
             <dt>出现人物</dt><dd>{{ selected.characters.join('、') || '无' }}</dd>
-            <dt>普通标签</dt><dd>{{ selected.tags.join('、') || '无' }}</dd>
-            <dt>紧缚标签</dt><dd>{{ selected.bondageTags.join('、') || '无' }}</dd>
+            <dt>情节类型</dt><dd>{{ plotKindLabel(selected.plotKind) }}</dd>
+            <dt>RAG 引用</dt><dd>{{ selected.ragRefs?.join('、') || '无' }}</dd>
             <dt>应用节点</dt><dd>{{ selected.usedByLabels?.join('、') || '尚未使用' }}</dd>
             <dt>备注</dt><dd>{{ selected.notes || '无' }}</dd>
           </dl>
@@ -54,26 +53,22 @@
 
 <script setup>
 import { computed, ref, watch } from 'vue'
-import { findPlotEntries, getPlotBondageTagOptions, getPlotTagOptions, getPlotWorldBiasOptions } from '../../../data/plot_outline/plotOutline.js'
+import { findPlotEntries, getPlotWorldBiasOptions } from '../../../data/plot_outline/plotOutline.js'
 import GameScrollArea from './GameScrollArea.vue'
 
 const props = defineProps({ catalog: { type: Object, required: true } })
 const keyword = ref('')
 const usage = ref('all')
 const worldBias = ref('all')
-const tag = ref('all')
-const bondageTag = ref('all')
+const plotKind = ref('all')
 const selectedGroupId = ref(props.catalog.groups[0]?.id ?? '')
 const selectedId = ref(props.catalog.entries[0]?.id ?? '')
 const worlds = computed(() => getPlotWorldBiasOptions(props.catalog))
-const tags = computed(() => getPlotTagOptions(props.catalog))
-const bondageTags = computed(() => getPlotBondageTagOptions(props.catalog))
 const entries = computed(() => findPlotEntries(props.catalog, {
   keyword: keyword.value,
   usage: usage.value,
   worldBias: worldBias.value,
-  tag: tag.value,
-  bondageTag: bondageTag.value
+  plotKind: plotKind.value
 }))
 const visibleGroups = computed(() => props.catalog.groups.filter((group) => entries.value.some((entry) => entry.groupId === group.id)))
 const groupEntries = computed(() => entries.value.filter((entry) => entry.groupId === selectedGroupId.value))
@@ -86,6 +81,7 @@ watch(groupEntries, (value) => {
 })
 function groupEntryCount(groupId) { return entries.value.filter((entry) => entry.groupId === groupId).length }
 function usageLabel(entry) { return entry.usageStatus === 'partial' ? '部分使用' : entry.isUsed ? '已使用' : '未使用' }
+function plotKindLabel(kind) { return kind === 'restraint' ? '紧缚情节' : kind === 'mixed' ? '混合情节' : '普通情节' }
 </script>
 
 <style scoped>

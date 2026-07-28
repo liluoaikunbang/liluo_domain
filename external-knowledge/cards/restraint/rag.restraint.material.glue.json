@@ -1,0 +1,33 @@
+{
+  "cardId": "rag.restraint.material.glue",
+  "title": "胶水",
+  "domain": "restraint",
+  "cardType": "material",
+  "aliases": [],
+  "summary": "胶水在虚构场景中可用于封合或固定，使原本可分开的部位暂时失去独立活动。",
+  "definition": "以黏合效果限制开合或相对移动的材料概念；具体安全性与解除方式必须由采用它的故事另行说明。",
+  "sourceRefs": [
+    {
+      "sourceId": "fb-src-000063",
+      "segmentId": "fb-src-000063-seg-00004",
+      "sourcePath": "external-knowledge/sources/fiction-bondage/其他未分类/女学生的倒霉捆绑故事.md",
+      "startLine": 62,
+      "endLine": 91
+    }
+  ],
+  "evidenceStatus": "partial",
+  "contentStatus": "complete",
+  "reviewStatus": "candidate",
+  "directQuoteIncluded": false,
+  "canonical": false,
+  "knowledgeScope": "external-fiction-reference",
+  "migration": {
+    "batchId": "tag-rag-restructure-v1",
+    "oldIds": [
+      "bondage_tag:胶水"
+    ],
+    "generatedFrom": "legacy-tag-title-only"
+  },
+  "ragLayer": "category",
+  "parentCardIds": []
+}

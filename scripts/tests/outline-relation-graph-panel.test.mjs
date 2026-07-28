@@ -107,3 +107,17 @@ test('canvas interactions cover pan zoom fit and search', () => {
   assert.match(graphPanelSource, /searchOutlineRelationGraph/u);
   assert.match(graphPanelSource, /适应全图/u);
 });
+
+test('graph panel can export projection JSON via shared download helper', () => {
+  assert.match(graphPanelSource, /exportGraphJson/u);
+  assert.match(graphPanelSource, /导出JSON/u);
+  assert.match(graphPanelSource, /createOutlineRelationGraphExportPayload/u);
+  assert.match(graphPanelSource, /downloadJsonPayload/u);
+  assert.match(graphPanelSource, /liluo-outline-relation-graph\.json/u);
+});
+
+test('graph panel renders incomplete nodes with a dedicated gap frame color', () => {
+  assert.match(graphPanelSource, /GRAPH_CONTENT_GAP_COLOR/u);
+  assert.match(graphPanelSource, /hasContentGap/u);
+  assert.match(graphPanelSource, /内容缺口/u);
+});

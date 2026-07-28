@@ -5,13 +5,7 @@ import { normalizeText, sha256 } from './hashing.mjs';
 import { segmentText } from './segmenter.mjs';
 import { listFiles, publishDirectory, readJson, writeJson } from './store.mjs';
 
-const TAG_RULES = [
-  ['环境:古堡', /古堡|城堡/g], ['环境:校园', /学校|学院|校园/g], ['环境:地牢', /地牢|地下室|牢房/g], ['环境:都市', /城市|都市|公寓/g],
-  ['叙事:逃脱', /逃脱|逃亡|脱困/g], ['叙事:仪式', /仪式|祭典|典礼/g], ['叙事:调查', /调查|侦探|谜案/g], ['氛围:悬疑', /秘密|阴谋|谜|诡异/g],
-  ['世界:奇幻', /魔法|女巫|骑士|精灵/g], ['世界:科幻', /星际|机械|克隆|未来/g], ['视觉:展示', /舞台|展览|橱窗|陈列/g], ['状态:受限', /拘束|束缚|捆绑|囚禁/g],
-];
 const tokenize = (text) => [...new Set((text.toLocaleLowerCase().match(/[\p{Script=Han}]{2,8}|[a-z0-9]{3,}/gu) ?? []).slice(0, 80))];
-const inferTags = (text) => TAG_RULES.filter(([, pattern]) => { pattern.lastIndex = 0; return pattern.test(text); }).map(([tag]) => tag);
 const sourceTitle = (filePath) => path.basename(filePath, path.extname(filePath));
 const sourceAuthor = (filePath) => { const parent = path.basename(path.dirname(filePath)); return /不知道作者|其他未分类|精品单章片段|堕落方舟/.test(parent) ? null : parent.replace(/（.*?）|\(.*?\)/g, '').trim() || null; };
 
@@ -63,6 +57,11 @@ function ruleCard(rule, cardType, segments) {
     selected.push(segment);
   }
   if (new Set(selected.map((item) => item.sourceId)).size < minimumSources) return null;
+  const conceptLabels = [
+    rule.title,
+    ...(rule.aliases ?? []),
+    ...(rule.conceptLabels ?? []),
+  ].map((value) => String(value ?? '').trim()).filter(Boolean);
   return {
     cardId: `fb-${cardType}-${rule.id}`,
     cardType,
@@ -74,9 +73,11 @@ function ruleCard(rule, cardType, segments) {
     progression: rule.progression ?? [],
     reversals: rule.reversals ?? [],
     outcomes: rule.outcomes ?? [],
-    concepts: [...new Set([...(rule.aliases ?? []), ...(rule.progression ?? [])])],
-    abstractPatterns: rule.progression ?? [],
-    tags: [...new Set(selected.flatMap((segment) => segment.tags ?? []))],
+    // Concept names only — never dump progression sentences into concepts.
+    concepts: [...new Set(conceptLabels)],
+    linkedConceptIds: [...new Set((rule.linkedConceptIds ?? []).map(String).filter(Boolean))],
+    abstractPatterns: rule.progression ?? rule.abstractPatterns ?? [],
+    tags: [],
     sourceRefs: selected.map(sourceRef),
     reviewStatus: 'candidate',
     directQuoteIncluded: false,
@@ -93,9 +94,27 @@ export function createCandidateCards(segments, rules = {}) {
     ['trope', '调查—受阻—发现新路径的推进模式', ['调查起点', '阻力升级', '原创转折']],
   ];
   return definitions.map(([cardType, title, abstractPatterns], index) => {
-    const selected = [], seenSources = new Set(); for (const segment of segments.filter((item) => item.tags.length).slice(index)) { if (seenSources.has(segment.sourceId)) continue; selected.push(segment); seenSources.add(segment.sourceId); if (selected.length === 3) break; }
+    const selected = [], seenSources = new Set();
+    for (const segment of segments.slice(index)) {
+      if (seenSources.has(segment.sourceId)) continue;
+      selected.push(segment);
+      seenSources.add(segment.sourceId);
+      if (selected.length === 3) break;
+    }
     const refs = selected.map(sourceRef);
-    return { cardId: `fb-${cardType}-${String(index + 1).padStart(6, '0')}`, cardType, title, concepts: abstractPatterns, abstractPatterns, tags: [...new Set(refs.flatMap((ref) => segments.find((item) => item.segmentId === ref.segmentId)?.tags ?? []))], sourceRefs: refs, reviewStatus: 'candidate', directQuoteIncluded: false, knowledgeScope: SCOPE, canonical: false };
+    return {
+      cardId: `fb-${cardType}-${String(index + 1).padStart(6, '0')}`,
+      cardType,
+      title,
+      concepts: abstractPatterns,
+      abstractPatterns,
+      tags: [],
+      sourceRefs: refs,
+      reviewStatus: 'candidate',
+      directQuoteIncluded: false,
+      knowledgeScope: SCOPE,
+      canonical: false
+    };
   }).concat(
     (rules.terms ?? []).map((rule) => ruleCard(rule, 'term', segments)).filter(Boolean),
     (rules.plotPatterns ?? []).map((rule) => ruleCard(rule, 'plot-pattern', segments)).filter(Boolean),
@@ -121,16 +140,16 @@ export async function buildKnowledge({ changedOnly = false } = {}) {
   for (const filePath of files) {
     const bytes = await fs.readFile(filePath), extension = path.extname(filePath).toLocaleLowerCase(), relativePath = repoRelative(filePath), contentHash = sha256(bytes);
     const text = TEXT_EXTENSIONS.has(extension) ? bytes.toString('utf8') : null;
-    records.push({ knowledgeScope: SCOPE, canonical: false, title: sourceTitle(filePath), author: sourceAuthor(filePath), sourceType: TEXT_EXTENSIONS.has(extension) ? 'fiction' : 'binary-asset', relativePath, extension, encoding: text === null ? null : 'utf-8', sizeBytes: bytes.length, contentHash, normalizedContentHash: text === null ? null : sha256(normalizeText(text)), lineCount: text === null ? 0 : text.split(/\r?\n/).length, characterCount: text?.length ?? 0, chapterCount: text === null ? 0 : (text.match(/^#{1,6}\s+|^第.+[章节卷部回幕]/gm) ?? []).length, metadataSource: 'filename-and-path', tags: inferTags(`${relativePath} ${text?.slice(0, 10000) ?? ''}`), indexStatus: text === null ? 'cataloged-not-indexed' : 'indexed' });
+    records.push({ knowledgeScope: SCOPE, canonical: false, title: sourceTitle(filePath), author: sourceAuthor(filePath), sourceType: TEXT_EXTENSIONS.has(extension) ? 'fiction' : 'binary-asset', relativePath, extension, encoding: text === null ? null : 'utf-8', sizeBytes: bytes.length, contentHash, normalizedContentHash: text === null ? null : sha256(normalizeText(text)), lineCount: text === null ? 0 : text.split(/\r?\n/).length, characterCount: text?.length ?? 0, chapterCount: text === null ? 0 : (text.match(/^#{1,6}\s+|^第.+[章节卷部回幕]/gm) ?? []).length, metadataSource: 'filename-and-path', tags: [], indexStatus: text === null ? 'cataloged-not-indexed' : 'indexed' });
   }
   const sources = assignSourceIds(records, oldSources).sort((a, b) => a.relativePath.localeCompare(b.relativePath, 'zh-CN'));
   const oldById = new Map(oldSources.map((item) => [item.sourceId, item])), segments = [];
   for (const source of sources) {
     if (source.indexStatus !== 'indexed') continue;
     const previous = oldById.get(source.sourceId), unchanged = changedOnly && previous?.contentHash === source.contentHash && oldSegmentsBySource.has(source.sourceId);
-    if (unchanged) { segments.push(...oldSegmentsBySource.get(source.sourceId)); continue; }
+    if (unchanged) { segments.push(...oldSegmentsBySource.get(source.sourceId).map((segment) => ({ ...segment, tags: [] }))); continue; }
     const text = await fs.readFile(path.join(path.resolve(KNOWLEDGE_ROOT, '..'), source.relativePath), 'utf8');
-    for (const segment of segmentText(text, { sourceId: source.sourceId, sourcePath: source.relativePath })) { const searchable = `${source.title} ${segment.headingPath.join(' ')} ${text.split(/\r?\n/).slice(segment.startLine - 1, segment.endLine).join(' ')}`; segment.tags = [...new Set([...source.tags, ...inferTags(searchable)])]; segment.keywords = tokenize(`${source.title} ${segment.headingPath.join(' ')} ${segment.tags.join(' ')}`); segments.push(segment); }
+    for (const segment of segmentText(text, { sourceId: source.sourceId, sourcePath: source.relativePath })) { const searchable = `${source.title} ${segment.headingPath.join(' ')} ${text.split(/\r?\n/).slice(segment.startLine - 1, segment.endLine).join(' ')}`; segment.tags = []; segment.keywords = tokenize(`${source.title} ${segment.headingPath.join(' ')} ${searchable}`); segments.push(segment); }
   }
   segments.sort((a, b) => a.sourceId.localeCompare(b.sourceId) || a.startLine - b.startLine);
   const changed = summarizeSourceChanges(sources, oldSources);

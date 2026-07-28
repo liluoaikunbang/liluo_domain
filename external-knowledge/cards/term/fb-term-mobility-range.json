@@ -22,11 +22,7 @@
     "剩余可行动作清单",
     "幅度随状态变化"
   ],
-  "tags": [
-    "状态:受限",
-    "叙事:逃脱",
-    "叙事:调查"
-  ],
+  "tags": [],
   "sourceRefs": [
     {
       "sourceId": "fb-src-000001",
@@ -53,5 +49,8 @@
   "reviewStatus": "candidate",
   "directQuoteIncluded": false,
   "knowledgeScope": "external-fiction-reference",
-  "canonical": false
+  "canonical": false,
+  "linkedConceptIds": [
+    "restraint.detail.mobility-range"
+  ]
 }

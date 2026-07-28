@@ -174,7 +174,8 @@
     "outline:graph:find-orphans": "node scripts/outline-graph/outline-graph.mjs find-orphans",
     "outline:graph:find-unreviewed": "node scripts/outline-graph/outline-graph.mjs find-unreviewed",
     "outline:graph:rebuild": "node scripts/outline-graph/outline-graph.mjs rebuild",
-    "outline:graph:test": "node --test scripts/tests/outline-relation-graph.test.mjs scripts/tests/outline-relation-graph-panel.test.mjs"
+    "outline:graph:test": "node --test scripts/tests/outline-relation-graph.test.mjs scripts/tests/outline-relation-graph-panel.test.mjs scripts/tests/outline-relation-graph-export.test.mjs",
+    "migration:tag-rag:dry-run": "node scripts/tag-rag-migration.mjs"
   },
   "dependencies": {
     "clipboard": "^2.0.11",

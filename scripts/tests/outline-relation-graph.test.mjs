@@ -93,44 +93,40 @@ test('converts heterogeneous entities into unique typed nodes', () => {
   assert.equal(new Set(ids).size, ids.length);
 
   const types = new Set(graph.nodes.map((node) => node.type));
-  for (const required of ['story', 'world', 'plot', 'gameplay', 'tag', 'concept', 'rag', 'style_rag']) {
+  for (const required of ['story', 'world', 'plot', 'gameplay', 'rag', 'style_rag']) {
     assert.ok(types.has(required), `missing type ${required}`);
   }
+  // Ordinary Tag lane may be empty after reset; tag type appears only when plotTags/tags exist.
+  assert.equal(types.has('concept'), false, 'detail-concept nodes must not be projected');
 });
 
-test('keeps many-to-many relations without fabricating one-to-one cards', () => {
+test('does not project detail-concept nodes; hierarchy lives on RAG', () => {
   const graph = buildFixtureGraph();
-  const concept = graph.nodes.find((node) => node.id === 'concept:restraint.pose.houshou-guanyin');
-  assert.ok(concept);
-  const conceptEdges = graph.edges.filter(
-    (edge) => edge.source === concept.id || edge.target === concept.id
-  );
-  // May link parents without requiring a dedicated RAG card
-  const ragLinks = conceptEdges.filter((edge) => {
-    const otherId = edge.source === concept.id ? edge.target : edge.source;
-    return otherId.startsWith('rag:');
-  });
-  assert.ok(ragLinks.length >= 0);
-  assert.ok(!graph.nodes.some((node) => node.id === 'rag:restraint.pose.houshou-guanyin'));
+  assert.ok(!graph.nodes.some((node) => node.type === 'concept'));
+  assert.ok(!graph.nodes.some((node) => node.id.startsWith('concept:')));
+  const detailRag = graph.nodes.find((node) => node.id === 'rag:fb-term-houshou-guanyin');
+  assert.ok(detailRag);
+  assert.equal(detailRag.meta.ragLayer, 'concept');
+  assert.ok(detailRag.visibility?.searchable !== false);
 });
 
-test('detail concepts enter the graph even when not primary tags', () => {
+test('detail RAG cards remain searchable without concept nodes', () => {
   const graph = buildFixtureGraph();
-  const concept = graph.nodes.find((node) => node.title === '后手观音');
-  assert.ok(concept);
-  assert.equal(concept.visibility.primaryTag, false);
-  assert.equal(concept.visibility.graph, true);
-  assert.equal(concept.visibility.searchable, true);
-
+  const rag = graph.nodes.find((node) => node.title === '后手观音');
+  assert.ok(rag);
+  assert.equal(rag.type, 'rag');
   const results = searchOutlineRelationGraph(graph, '后手观音');
-  assert.ok(results.some((row) => row.id === concept.id));
+  assert.ok(results.some((row) => row.id === rag.id));
 });
 
 test('nodes without summary or style-rag still build', () => {
   const graph = buildOutlineRelationGraph({
     storySource: {
-      rootKeys: ['a'],
-      nodes: [{ key: 'a', title: 'A', world: 'W', parentKey: null }]
+      rootKeys: ['root'],
+      nodes: [
+        { key: 'root', title: 'RootSeries', world: 'W', parentKey: null, status: '分类' },
+        { key: 'a', title: 'A', world: 'W', parentKey: 'root' }
+      ]
     },
     plotCatalog: {
       groups: [],
@@ -141,6 +137,8 @@ test('nodes without summary or style-rag still build', () => {
     styleArticles: []
   });
   assert.ok(graph.nodes.some((node) => node.id === 'story:a'));
+  assert.ok(graph.nodes.some((node) => node.type === 'world' && node.meta?.mergedSeries));
+  assert.equal(graph.nodes.filter((node) => node.type === 'series').length, 0);
   assert.ok(graph.nodes.some((node) => node.id === 'plot:plot-1'));
   assert.equal(clipSummary(''), '');
 });
@@ -152,7 +150,7 @@ test('auto vs confirmed relation statuses are distinguished', () => {
 });
 
 test('overview display fields hide summary while focus shows summary', () => {
-  const node = { title: '后手观音', summary: '细节姿态', auditStatus: 'confirmed', type: 'concept' };
+  const node = { title: '后手观音', summary: '细节姿态', auditStatus: 'confirmed', type: 'rag' };
   const overview = getNodeDisplayFields(node, 'overview');
   const focus = getNodeDisplayFields(node, 'focus');
   assert.equal(overview.showSummary, false);
@@ -161,14 +159,50 @@ test('overview display fields hide summary while focus shows summary', () => {
   assert.ok(focus.summary.includes('细节'));
 });
 
-test('layout merges world and series into one lane', async () => {
+test('layout merges world into story lane as a numbered tree', async () => {
   const { resolveGraphLaneType, GRAPH_LANE_ORDER } = await import(
     '../../src/game/data/outline_relation_graph/constants.js'
   );
-  assert.equal(resolveGraphLaneType('series'), 'world');
-  assert.equal(resolveGraphLaneType('world'), 'world');
-  assert.ok(GRAPH_LANE_ORDER.includes('world'));
+  assert.equal(resolveGraphLaneType('series'), 'story');
+  assert.equal(resolveGraphLaneType('world'), 'story');
+  assert.equal(resolveGraphLaneType('story'), 'story');
+  assert.ok(GRAPH_LANE_ORDER.includes('story'));
+  assert.equal(GRAPH_LANE_ORDER.includes('world'), false);
   assert.equal(GRAPH_LANE_ORDER.includes('series'), false);
+  assert.equal(GRAPH_LANE_ORDER.includes('concept'), false);
+
+  const graph = buildFixtureGraph();
+  const worldNodes = graph.nodes.filter((node) => node.type === 'world');
+  const seriesNodes = graph.nodes.filter((node) => node.type === 'series');
+  assert.equal(seriesNodes.length, 0, 'series roots fold into world nodes');
+  assert.equal(worldNodes.length, 6, `expected 6 worlds, got ${worldNodes.length}`);
+  assert.ok(worldNodes.every((node) => node.meta?.mergedSeries));
+  assert.ok(worldNodes.every((node) => node.meta?.storyLayer === 'category'));
+  assert.ok(!graph.nodes.some((node) => node.id.startsWith('series:')));
+
+  const layout = layoutOutlineRelationGraph(graph, { preset: 'structure', mode: 'overview', seed: 3 });
+  const storyLaneNodes = layout.nodes.filter((node) => node.laneType === 'story');
+  assert.ok(storyLaneNodes.some((node) => node.type === 'world' && node.treeDepth === 0));
+  assert.ok(storyLaneNodes.some((node) => node.type === 'story' && node.treeDepth === 1));
+
+  const worldOrder = storyLaneNodes
+    .filter((node) => node.type === 'world')
+    .map((node) => node.title);
+  const indexes = ['浮光掠影', '寂土挽歌', '尘寰问道', '慕妮卡', '星宇织梦', '咒缚回响'].map((part) =>
+    worldOrder.findIndex((title) => title.includes(part))
+  );
+  assert.ok(indexes.every((index) => index >= 0));
+  for (let i = 1; i < indexes.length; i += 1) {
+    assert.ok(indexes[i] > indexes[i - 1], `worlds should sort by leading number: ${worldOrder.join(' > ')}`);
+  }
+
+  const modern = storyLaneNodes.find((node) => node.type === 'world' && node.title.includes('浮光掠影'));
+  const child = storyLaneNodes.find(
+    (node) => node.type === 'story' && node.treeParentId === modern?.id
+  );
+  assert.ok(modern && child);
+  assert.equal(child.treeDepth, 1);
+  assert.ok(child.x > modern.x);
 });
 
 test('layout is deterministic for the same seed', () => {
@@ -227,21 +261,210 @@ test('Style-RAG primary nodes are writing techniques; articles are evidence', ()
   assert.ok(shown.nodes.some((node) => node.meta?.role === 'evidence'));
 });
 
-test('RAG cards include definitions and concept-linked seeded terms', () => {
+test('RAG cards include definitions and hierarchy metadata', () => {
   const graph = buildFixtureGraph();
   const ragNodes = graph.nodes.filter((node) => node.type === 'rag');
   assert.ok(ragNodes.length >= 14, `expected enriched RAG cards, got ${ragNodes.length}`);
   assert.ok(ragNodes.some((node) => node.title === '后手观音'));
-  assert.ok(ragNodes.some((node) => node.title === '身后束手'));
+  assert.ok(ragNodes.some((node) => node.title === '上肢受限'));
   const expression = ragNodes.find((node) => node.title.includes('环境压力'));
   assert.ok(expression?.summary || expression?.description);
+});
+
+test('RAG hierarchy is 上位类别 → 具体概念 and links directly to plots/stories', async () => {
+  const { validateConceptHierarchy, CONCEPT_LAYERS } = await import(
+    '../../src/game/data/outline_relation_graph/conceptRegistry.js'
+  );
+
+  const hierarchy = validateConceptHierarchy(SEEDED_CONCEPTS);
+  assert.equal(hierarchy.ok, true, hierarchy.errors.join('; '));
+
+  const graph = buildFixtureGraph();
+  assert.ok(graph.stats.conceptCategoryCount >= 3);
+  assert.ok(graph.stats.conceptDetailCount >= 6);
+
+  const category = graph.nodes.find((node) => node.id === 'rag:fb-term-upper-body-restricted');
+  const detail = graph.nodes.find((node) => node.id === 'rag:fb-term-houshou-guanyin');
+  assert.equal(category.meta.ragLayer, CONCEPT_LAYERS.CATEGORY);
+  assert.equal(detail.meta.ragLayer, CONCEPT_LAYERS.CONCEPT);
+  assert.ok(!graph.nodes.some((node) => node.title === '身后束手'));
+  assert.ok(graph.nodes.some((node) => node.id === 'rag:fb-term-houshou-bingzhou'));
+  assert.ok(graph.nodes.some((node) => node.id === 'rag:fb-term-houshou-gaoshou-xiaofu'));
+  assert.ok(graph.nodes.some((node) => node.id === 'rag:fb-term-houshou-common'));
+  assert.ok(
+    !(category.aliases || []).includes('身后束手'),
+    '身后束手 must not be an alias of 上肢受限'
+  );
+  assert.ok(
+    graph.edges.some(
+      (edge) =>
+        edge.relationType === 'narrower' &&
+        edge.source === category.id &&
+        edge.target === detail.id
+    )
+  );
+
+  // Direct links from story / plot refs to RAG (no Tag or concept hop).
+  const catalog = readJson('src/game/data/plot_outline/catalog.json');
+  const probeGraph = buildFixtureGraph({
+    plotCatalog: {
+      ...catalog,
+      entries: [
+        {
+          id: 'plot-link-probe',
+          title: '探针-五花大绑',
+          summary: '图谱直连探针',
+          groupId: catalog.groups?.[0]?.id || '',
+          plotKind: 'restraint',
+          ragRefs: ['fb-term-wuhuada-bang'],
+          characters: [],
+          usedBy: [],
+          usageStatus: 'unused',
+          isUsed: false,
+          isBondagePlot: false,
+          worldBiases: []
+        },
+        ...(catalog.entries || [])
+      ]
+    }
+  });
+  const wuhuada = probeGraph.nodes.find((node) => node.id === 'rag:fb-term-wuhuada-bang');
+  const probePlot = probeGraph.nodes.find((node) => node.id === 'plot:plot-link-probe');
+  assert.ok(wuhuada);
+  assert.ok(probePlot);
+  assert.ok(
+    probeGraph.edges.some(
+      (edge) =>
+        edge.target === wuhuada.id &&
+        edge.source === probePlot.id &&
+        edge.sourceRef === 'plot.ragRefs'
+    ),
+    'expected direct plot → RAG edge'
+  );
+
+  const layout = layoutOutlineRelationGraph(graph, { preset: 'structure', mode: 'overview', seed: 1 });
+  const behind = layout.nodes.find((node) => node.id === category.id);
+  const houshou = layout.nodes.find((node) => node.id === detail.id);
+  assert.ok(behind && houshou);
+  assert.equal(behind.treeDepth, 0);
+  assert.equal(houshou.treeDepth, 1);
+  assert.equal(houshou.treeParentId, behind.id);
+  assert.ok(houshou.x > behind.x, '具体概念 should be indented under 上位类别');
+  assert.ok(houshou.y > behind.y, '具体概念 should appear below its 上位类别');
+
+  const filtered = filterOutlineRelationGraph(graph, {
+    nodeTypes: ['rag'],
+    relationTypes: ['broader', 'narrower']
+  });
+  assert.ok(filtered.nodes.every((node) => node.type === 'rag'));
+  assert.ok(filtered.edges.every((edge) => edge.relationType === 'broader' || edge.relationType === 'narrower'));
+});
+
+test('retired ordinary and bondage Tag lanes never project', () => {
+  const graph = buildFixtureGraph();
+  assert.ok(!graph.nodes.some((node) => node.type === 'tag' || node.type === 'bondage_tag'));
+  assert.ok(!graph.edges.some((edge) => edge.relationType === 'tagged_with' || edge.relationType === 'bondage_tagged_with'));
+  const skeleton = graph.nodes.find((node) => node.type === 'rag' && node.meta?.contentStatus === 'stub');
+  if (skeleton) assert.equal(skeleton.auditStatus, 'missing_source');
+  const layout = layoutOutlineRelationGraph(graph, { preset: 'structure', mode: 'overview', seed: 2 });
+
+  const plotGroups = graph.nodes.filter(
+    (node) => node.type === 'plot' && node.meta?.plotLayer === 'category'
+  );
+  const plotEntries = graph.nodes.filter(
+    (node) => node.type === 'plot' && node.meta?.plotLayer === 'concept'
+  );
+  assert.ok(plotGroups.length >= 1, 'expected plot groups (大情节)');
+  assert.ok(plotEntries.length >= 1, 'expected plot entries (小情节)');
+  const samplePlot = plotEntries.find((node) => (node.meta?.parentPlotNodeIds || []).length > 0);
+  assert.ok(samplePlot, 'expected a small plot with parent group');
+  const parentPlot = graph.nodes.find((node) => node.id === samplePlot.meta.parentPlotNodeIds[0]);
+  assert.ok(parentPlot && parentPlot.meta?.plotLayer === 'category');
+  const samplePlotLaid = layout.nodes.find((node) => node.id === samplePlot.id);
+  const parentPlotLaid = layout.nodes.find((node) => node.id === parentPlot.id);
+  assert.equal(parentPlotLaid.treeDepth, 0);
+  assert.equal(samplePlotLaid.treeDepth, 1);
+  assert.equal(samplePlotLaid.treeParentId, parentPlot.id);
+  assert.ok(
+    parentPlotLaid.y < samplePlotLaid.y,
+    '大情节 should appear above its 小情节 in the swimlane'
+  );
+
+  const gameplayCategories = graph.nodes.filter(
+    (node) => node.type === 'gameplay' && node.meta?.gameplayLayer === 'category'
+  );
+  const gameplayEntries = graph.nodes.filter(
+    (node) => node.type === 'gameplay' && node.meta?.gameplayLayer === 'concept'
+  );
+  assert.ok(gameplayCategories.length >= 1, 'expected gameplay categories (大玩法)');
+  assert.ok(gameplayEntries.length >= 1, 'expected gameplay entries (小玩法)');
+  const sampleGameplay = gameplayEntries.find(
+    (node) => (node.meta?.parentGameplayNodeIds || []).length > 0
+  );
+  assert.ok(sampleGameplay, 'expected a small gameplay with parent category');
+  const parentGameplay = graph.nodes.find(
+    (node) => node.id === sampleGameplay.meta.parentGameplayNodeIds[0]
+  );
+  assert.ok(parentGameplay && parentGameplay.meta?.gameplayLayer === 'category');
+  const sampleGameplayLaid = layout.nodes.find((node) => node.id === sampleGameplay.id);
+  const parentGameplayLaid = layout.nodes.find((node) => node.id === parentGameplay.id);
+  assert.equal(parentGameplayLaid.treeDepth, 0);
+  assert.equal(sampleGameplayLaid.treeDepth, 1);
+  assert.equal(sampleGameplayLaid.treeParentId, parentGameplay.id);
+});
+
+test('restraint RAG cards project their explicit two-level hierarchy', () => {
+  const graph = buildFixtureGraph();
+  const tickling = graph.nodes.find((node) => node.id === 'rag:rag.restraint.effect.tickling');
+  const yam = graph.nodes.find((node) => node.id === 'rag:rag.restraint.detail.挠痒-山药汁');
+  const mosquito = graph.nodes.find((node) => node.id === 'rag:rag.restraint.detail.挠痒-蚊子');
+
+  assert.equal(tickling?.meta?.ragLayer, 'category');
+  assert.equal(yam?.meta?.ragLayer, 'concept');
+  assert.equal(mosquito?.meta?.ragLayer, 'concept');
+  assert.deepEqual(yam?.meta?.parentRagNodeIds, [tickling.id]);
+  assert.ok(graph.edges.some((edge) => edge.source === tickling.id && edge.target === yam.id && edge.relationType === 'narrower'));
+  assert.ok(graph.edges.some((edge) => edge.source === yam.id && edge.target === tickling.id && edge.relationType === 'broader'));
+});
+
+test('empty, source-less and orphan graph nodes expose a visible content gap state', () => {
+  const graph = buildFixtureGraph();
+  const emptyRag = graph.nodes.find((node) => node.id === 'rag:rag.restraint.detail.挠痒-山药汁');
+  assert.equal(emptyRag?.meta?.hasContentGap, true);
+  assert.ok(emptyRag?.meta?.gapFlags.includes('empty_content'));
+
+  const isolatedPlotGraph = buildFixtureGraph({
+    storySource: { rootKeys: [], nodes: [] },
+    plotCatalog: {
+      groups: [{ id: 'plot-group-test', title: '测试组' }],
+      entries: [{
+        id: 'plot-test-orphan',
+        groupId: 'plot-group-test',
+        title: '未关联情节',
+        summary: '',
+        plotKind: 'ordinary',
+        ragRefs: [],
+        usedBy: []
+      }]
+    },
+    gameplayCatalog: { groups: [], entries: [] },
+    ragCards: [],
+    cardRules: { termCards: [], plotPatternCards: [] },
+    styleArticles: [],
+    styleTaxonomy: { dimensions: [] },
+    concepts: [],
+    auditRegistry: { records: [] }
+  });
+  const orphan = isolatedPlotGraph.nodes.find((node) => node.id === 'plot:plot-test-orphan');
+  assert.equal(orphan?.meta?.hasContentGap, true);
+  assert.ok(orphan?.meta?.gapFlags.includes('unlinked_plot'));
 });
 
 test('performance smoke: synthetic 1000 nodes layout completes quickly', () => {
   const nodes = [];
   const edges = [];
   for (let index = 0; index < 1000; index += 1) {
-    const type = ['story', 'plot', 'tag', 'concept', 'rag', 'style_rag'][index % 6];
+    const type = ['story', 'plot', 'tag', 'rag', 'style_rag', 'bondage_tag'][index % 6];
     nodes.push({
       id: `${type}:n${index}`,
       type,

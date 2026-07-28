@@ -149,11 +149,15 @@
     "storyTags": {
       "$ref": "#/$defs/stringList"
     },
-    "plotTags": {
+    "plotRefs": {
       "$ref": "#/$defs/stringList"
     },
-    "bondageTags": {
+    "ragRefs": {
       "$ref": "#/$defs/stringList"
+    },
+    "legacyTagRefs": {
+      "$ref": "#/$defs/stringList",
+      "description": "仅供 tag-rag-restructure-v1 回滚审计使用的旧 ID；不参与运行时分类或图谱投影。"
     },
     "foreshadowing": {
       "$ref": "#/$defs/stringList"
@@ -162,9 +166,6 @@
       "$ref": "#/$defs/stringList"
     },
     "characters": {
-      "$ref": "#/$defs/stringList"
-    },
-    "specialGameplay": {
       "$ref": "#/$defs/stringList"
     },
     "requiredAbilities": {

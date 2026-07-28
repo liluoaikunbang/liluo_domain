@@ -1,1 +1,54 @@
-{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"External fiction abstraction card","type":"object","required":["cardId","cardType","sourceRefs","reviewStatus","directQuoteIncluded","canonical"],"properties":{"cardType":{"enum":["expression","visual-structure","scene-pattern","fictional-state","trope","term","plot-pattern"]},"aliases":{"type":"array","items":{"type":"string"}},"definition":{"type":"string"},"distinctions":{"type":"array","items":{"type":"string"}},"prerequisites":{"type":"array","items":{"type":"string"}},"progression":{"type":"array","items":{"type":"string"}},"reversals":{"type":"array","items":{"type":"string"}},"outcomes":{"type":"array","items":{"type":"string"}},"reviewStatus":{"enum":["candidate","reviewed"]},"directQuoteIncluded":{"const":false},"canonical":{"const":false},"sourceRefs":{"type":"array","minItems":1,"items":{"type":"object","required":["sourceId","segmentId","sourcePath","startLine","endLine"]}}}}
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "External fiction abstraction card",
+  "type": "object",
+  "required": ["cardId", "cardType", "sourceRefs", "reviewStatus", "directQuoteIncluded", "canonical"],
+  "properties": {
+    "cardType": {
+      "enum": ["expression", "visual-structure", "scene-pattern", "fictional-state", "trope", "term", "plot-pattern", "pose", "tool", "material", "structure", "state", "effect", "sensory", "duration", "supernatural", "context"]
+    },
+    "domain": { "type": "string" },
+    "summary": { "type": "string" },
+    "evidenceStatus": { "enum": ["supported", "partial", "missing"] },
+    "contentStatus": { "enum": ["complete", "partial", "stub"] },
+    "ragLayer": { "enum": ["category", "concept"] },
+    "parentCardIds": {
+      "type": "array",
+      "items": { "type": "string" },
+      "uniqueItems": true
+    },
+    "aliases": { "type": "array", "items": { "type": "string" } },
+    "definition": { "type": "string" },
+    "distinctions": { "type": "array", "items": { "type": "string" } },
+    "prerequisites": { "type": "array", "items": { "type": "string" } },
+    "progression": { "type": "array", "items": { "type": "string" } },
+    "reversals": { "type": "array", "items": { "type": "string" } },
+    "outcomes": { "type": "array", "items": { "type": "string" } },
+    "concepts": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Human-readable concept labels (canonical names / aliases). Must not contain progression sentences."
+    },
+    "linkedConceptIds": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Stable conceptRegistry conceptId links. Preferred over name matching for 上位类别/具体概念 hierarchy."
+    },
+    "abstractPatterns": { "type": "array", "items": { "type": "string" } },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Deprecated. Keep empty []; colon-style metadata tags were retired and must not be inferred."
+    },
+    "reviewStatus": { "enum": ["pending", "candidate", "reviewed"] },
+    "directQuoteIncluded": { "const": false },
+    "canonical": { "const": false },
+    "sourceRefs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["sourceId", "segmentId", "sourcePath", "startLine", "endLine"]
+      }
+    }
+  }
+}

@@ -15,9 +15,8 @@ const outline = [
         summary: 'JSON 摘要',
         detailLabel: 'JSON 按钮',
         storyTags: ['旧章节'],
-        plotTags: ['旧情节标签'],
-        bondageTags: ['旧紧缚标签'],
-        specialGameplay: ['旧玩法'],
+        plotRefs: ['plot-001'],
+        ragRefs: ['rag.restraint.tool.handcuffs'],
         characters: ['旧角色'],
         locations: ['旧地点'],
         foreshadowing: ['旧伏笔'],
@@ -73,12 +72,12 @@ const markdownModules = {
     '  - gameplay-104',
     'foreshadowing:',
     '  - YAML 伏笔',
-    'plotTags:',
-    '  - YAML 情节标签',
-    'bondageTags:',
-    '  - YAML 紧缚标签',
-    'specialGameplay:',
-    '  - YAML 玩法',
+    'plotRefs:',
+    '  - plot-055',
+    'ragRefs:',
+    '  - rag.restraint.effect.pain',
+    'legacyTagRefs:',
+    '  - specialGameplay:旧玩法',
     'characters:',
     '  - YAML 角色',
     'locations:',
@@ -126,9 +125,9 @@ assert.deepEqual(node.gameplayRefs, ['gameplay-104']);
 assert.deepEqual(node.storyTags, ['街景一隅']);
 assert.equal(node.status, '大纲草稿');
 assert.deepEqual(node.foreshadowing, ['YAML 伏笔']);
-assert.deepEqual(node.plotTags, ['YAML 情节标签']);
-assert.deepEqual(node.bondageTags, ['YAML 紧缚标签']);
-assert.deepEqual(node.specialGameplay, ['YAML 玩法']);
+assert.deepEqual(node.plotRefs, ['plot-055']);
+assert.deepEqual(node.ragRefs, ['rag.restraint.effect.pain']);
+assert.deepEqual(node.legacyTagRefs, ['specialGameplay:旧玩法']);
 assert.deepEqual(node.characters, ['YAML 角色']);
 assert.deepEqual(node.locations, ['YAML 地点']);
 assert.equal(node.reference, 'YAML 参考');

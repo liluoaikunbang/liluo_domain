@@ -9,7 +9,10 @@
       "title": "咒缚回响（魔幻）",
       "status": "分类",
       "summary": "魔法与斗气主导的世界，各个种族共同生存的魔幻大陆。",
-      "order": 50
+      "order": 50,
+      "ragRefs": [],
+      "plotRefs": [],
+      "gameplayRefs": []
     },
     {
       "key": "world-6-cursebound-echoes-dreambound-continent",
@@ -17,7 +20,10 @@
       "title": "逐梦大陆",
       "status": "主线任务",
       "parentKey": "world-6-cursebound-echoes",
-      "order": 10
+      "order": 10,
+      "ragRefs": [],
+      "plotRefs": [],
+      "gameplayRefs": []
     },
     {
       "key": "world-6-cursebound-echoes-silver-crown-capital",
@@ -25,7 +31,10 @@
       "title": "银冠王都",
       "status": "主线任务",
       "parentKey": "world-6-cursebound-echoes-dreambound-continent",
-      "order": 10
+      "order": 10,
+      "ragRefs": [],
+      "plotRefs": [],
+      "gameplayRefs": []
     },
     {
       "key": "world-6-cursebound-echoes-secret-rune-academy",
@@ -33,7 +42,10 @@
       "title": "秘纹学院",
       "status": "主线任务",
       "parentKey": "world-6-cursebound-echoes-silent-rite-court",
-      "order": 10
+      "order": 10,
+      "ragRefs": [],
+      "plotRefs": [],
+      "gameplayRefs": []
     },
     {
       "key": "world-6-cursebound-echoes-silent-rite-court",
@@ -41,12 +53,14 @@
       "title": "缄礼宫廷",
       "status": "大纲草稿",
       "summary": "王都上流社会把拘束发展成了礼仪。",
-      "bondageTags": [
-        "束腰",
-        "拘束衣"
-      ],
       "parentKey": "world-6-cursebound-echoes-silver-crown-capital",
-      "order": 10
+      "order": 10,
+      "ragRefs": [
+        "rag.restraint.structure.waist-restraint",
+        "rag.restraint.tool.straitjacket"
+      ],
+      "plotRefs": [],
+      "gameplayRefs": []
     },
     {
       "key": "world-6-cursebound-echoes-holy-seal-islands",
@@ -54,7 +68,10 @@
       "title": "圣印群岛",
       "status": "主线任务",
       "parentKey": "world-6-cursebound-echoes-secret-tower-long-song",
-      "order": 10
+      "order": 10,
+      "ragRefs": [],
+      "plotRefs": [],
+      "gameplayRefs": []
     },
     {
       "key": "world-6-cursebound-echoes-lone-tide-sea",
@@ -62,7 +79,10 @@
       "title": "逐潮孤海",
       "status": "主线任务",
       "parentKey": "world-6-cursebound-echoes-holy-seal-islands",
-      "order": 10
+      "order": 10,
+      "ragRefs": [],
+      "plotRefs": [],
+      "gameplayRefs": []
     },
     {
       "key": "world-6-cursebound-echoes-molten-glow-machine-city",
@@ -70,7 +90,10 @@
       "title": "熔辉机城",
       "status": "主线任务",
       "parentKey": "world-6-cursebound-echoes-lone-tide-sea",
-      "order": 10
+      "order": 10,
+      "ragRefs": [],
+      "plotRefs": [],
+      "gameplayRefs": []
     },
     {
       "key": "world-6-cursebound-echoes-forest-oath-fey-realm",
@@ -78,7 +101,10 @@
       "title": "森誓妖境",
       "status": "主线任务",
       "parentKey": "world-6-cursebound-echoes-molten-glow-machine-city",
-      "order": 10
+      "order": 10,
+      "ragRefs": [],
+      "plotRefs": [],
+      "gameplayRefs": []
     },
     {
       "key": "world-6-cursebound-echoes-darkmoon-castle",
@@ -86,7 +112,10 @@
       "title": "暗月古堡",
       "status": "主线任务",
       "parentKey": "world-6-cursebound-echoes-forest-oath-fey-realm",
-      "order": 10
+      "order": 10,
+      "ragRefs": [],
+      "plotRefs": [],
+      "gameplayRefs": []
     },
     {
       "key": "world-6-cursebound-echoes-tiny-liluo-adventure",
@@ -95,7 +124,10 @@
       "status": "大纲",
       "parentKey": "world-6-cursebound-echoes-forest-oath-fey-realm",
       "order": 20,
-      "branchLayout": "side"
+      "branchLayout": "side",
+      "ragRefs": [],
+      "plotRefs": [],
+      "gameplayRefs": []
     },
     {
       "key": "world-6-cursebound-echoes-bone-throne",
@@ -103,7 +135,10 @@
       "title": "骸骨王座",
       "status": "主线任务",
       "parentKey": "world-6-cursebound-echoes-darkmoon-castle",
-      "order": 10
+      "order": 10,
+      "ragRefs": [],
+      "plotRefs": [],
+      "gameplayRefs": []
     },
     {
       "key": "world-6-cursebound-echoes-dragon-sleep-mountains",
@@ -111,7 +146,10 @@
       "title": "龙眠山脉",
       "status": "主线任务",
       "parentKey": "world-6-cursebound-echoes-bone-throne",
-      "order": 10
+      "order": 10,
+      "ragRefs": [],
+      "plotRefs": [],
+      "gameplayRefs": []
     },
     {
       "key": "world-6-cursebound-echoes-secret-tower-long-song",
@@ -119,7 +157,10 @@
       "title": "秘塔长歌",
       "status": "主线任务",
       "parentKey": "world-6-cursebound-echoes-secret-rune-academy",
-      "order": 10
+      "order": 10,
+      "ragRefs": [],
+      "plotRefs": [],
+      "gameplayRefs": []
     },
     {
       "key": "world-6-cursebound-echoes-locked-horn-wasteland",
@@ -127,7 +168,10 @@
       "title": "锁角荒原",
       "status": "主线任务",
       "parentKey": "world-6-cursebound-echoes-dragon-sleep-mountains",
-      "order": 10
+      "order": 10,
+      "ragRefs": [],
+      "plotRefs": [],
+      "gameplayRefs": []
     },
     {
       "key": "world-6-cursebound-echoes-dark-underground-city",
@@ -135,7 +179,10 @@
       "title": "幽暗城池",
       "status": "主线任务",
       "parentKey": "world-6-cursebound-echoes-locked-horn-wasteland",
-      "order": 10
+      "order": 10,
+      "ragRefs": [],
+      "plotRefs": [],
+      "gameplayRefs": []
     },
     {
       "key": "world-6-cursebound-echoes-crystal-sand-court",
@@ -143,7 +190,10 @@
       "title": "晶沙王庭",
       "status": "主线任务",
       "parentKey": "world-6-cursebound-echoes-dark-underground-city",
-      "order": 10
+      "order": 10,
+      "ragRefs": [],
+      "plotRefs": [],
+      "gameplayRefs": []
     },
     {
       "key": "world-6-cursebound-echoes-northern-frost-crown",
@@ -151,7 +201,10 @@
       "title": "北境霜冠",
       "status": "主线任务",
       "parentKey": "world-6-cursebound-echoes-crystal-sand-court",
-      "order": 10
+      "order": 10,
+      "ragRefs": [],
+      "plotRefs": [],
+      "gameplayRefs": []
     },
     {
       "key": "world-6-cursebound-echoes-shadow-thief-city-state",
@@ -159,7 +212,10 @@
       "title": "盗影城邦",
       "status": "主线任务",
       "parentKey": "world-6-cursebound-echoes-northern-frost-crown",
-      "order": 10
+      "order": 10,
+      "ragRefs": [],
+      "plotRefs": [],
+      "gameplayRefs": []
     },
     {
       "key": "world-6-cursebound-echoes-witch-swamp",
@@ -167,7 +223,10 @@
       "title": "女巫沼泽",
       "status": "主线任务",
       "parentKey": "world-6-cursebound-echoes-shadow-thief-city-state",
-      "order": 10
+      "order": 10,
+      "ragRefs": [],
+      "plotRefs": [],
+      "gameplayRefs": []
     },
     {
       "key": "world-6-cursebound-echoes-astral-rift-gate",
@@ -175,7 +234,10 @@
       "title": "星界裂门",
       "status": "主线任务",
       "parentKey": "world-6-cursebound-echoes-witch-swamp",
-      "order": 10
+      "order": 10,
+      "ragRefs": [],
+      "plotRefs": [],
+      "gameplayRefs": []
     },
     {
       "key": "world-6-cursebound-echoes-abyss-contract",
@@ -183,7 +245,10 @@
       "title": "深渊契约",
       "status": "主线任务",
       "parentKey": "world-6-cursebound-echoes-astral-rift-gate",
-      "order": 10
+      "order": 10,
+      "ragRefs": [],
+      "plotRefs": [],
+      "gameplayRefs": []
     }
   ]
 }

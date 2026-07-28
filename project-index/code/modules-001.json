@@ -369,7 +369,7 @@
     "id": "src/game/data/global/updateRecords.js",
     "indexVersion": 1,
     "references": {},
-    "sourceHash": "cb86fb8dba7f018ec74a194788b7d029fc9de2835f46050dac49a1990ac43472",
+    "sourceHash": "bea1150c522f1b951a6c3f3839ac6787ece64179e0f5033eca8313f81fe865ea",
     "sourcePath": "src/game/data/global/updateRecords.js",
     "subtype": "module",
     "summary": "module：src/game/data/global/updateRecords.js",
@@ -749,7 +749,7 @@
         "./styleTaxonomyLabels.js"
       ]
     },
-    "sourceHash": "74bd2510dd1013921638a11ba35f284a869e1bfca0743a4878763ea4bf86b51c",
+    "sourceHash": "45b39e88b34a7f622d437406c80357c42ab8961c2be6375eeab2a1ee1089bd46",
     "sourcePath": "src/game/data/outline_relation_graph/buildOutlineRelationGraph.js",
     "subtype": "module",
     "summary": "module：src/game/data/outline_relation_graph/buildOutlineRelationGraph.js",
@@ -761,7 +761,7 @@
     "id": "src/game/data/outline_relation_graph/conceptRegistry.js",
     "indexVersion": 1,
     "references": {},
-    "sourceHash": "b72289bb4e7bd9af9dd4a4c677e8dc9bfd1a57e460ffef0ce06544cc7e289e53",
+    "sourceHash": "7858dfcd971dd233ce4617818e62dece0fe7ca4d650f1748c2c757b69b5cfe19",
     "sourcePath": "src/game/data/outline_relation_graph/conceptRegistry.js",
     "subtype": "module",
     "summary": "module：src/game/data/outline_relation_graph/conceptRegistry.js",
@@ -773,7 +773,7 @@
     "id": "src/game/data/outline_relation_graph/constants.js",
     "indexVersion": 1,
     "references": {},
-    "sourceHash": "d3fcaf5f99ed315ce376a61ace26187241d35a6789bc9e3c48c378842c2df795",
+    "sourceHash": "8f4025be985d5cf1dc8b77af516eadc7cbfe39c9531c52eee6bc4faf40537a87",
     "sourcePath": "src/game/data/outline_relation_graph/constants.js",
     "subtype": "module",
     "summary": "module：src/game/data/outline_relation_graph/constants.js",
@@ -807,10 +807,11 @@
         "./styleTaxonomyLabels.js",
         "./buildOutlineRelationGraph.js",
         "./layoutOutlineRelationGraph.js",
-        "./filterOutlineRelationGraph.js"
+        "./filterOutlineRelationGraph.js",
+        "./outlineRelationGraphExport.js"
       ]
     },
-    "sourceHash": "afc113897d2bb5fee73591d9932c72a83531c1b36d95f5a3f2dc0cb9d946cf7b",
+    "sourceHash": "6b30dae732064597228d5591bc57a8741ec415b8d3cfca339021182cc879b907",
     "sourcePath": "src/game/data/outline_relation_graph/index.js",
     "subtype": "module",
     "summary": "module：src/game/data/outline_relation_graph/index.js",
@@ -827,7 +828,7 @@
         "./buildOutlineRelationGraph.js"
       ]
     },
-    "sourceHash": "68eecd5c91656114883b60a8ee609cdf49ae862fa3092b6205e9ce39f97b5ed1",
+    "sourceHash": "57302b772aa3d713ac50249c474e7021467fe53e21f4c86fc5e914a8cd7c2f05",
     "sourcePath": "src/game/data/outline_relation_graph/layoutOutlineRelationGraph.js",
     "subtype": "module",
     "summary": "module：src/game/data/outline_relation_graph/layoutOutlineRelationGraph.js",
@@ -858,6 +859,18 @@
     "summary": "module：src/game/data/outline_relation_graph/loadOutlineRelationGraph.js",
     "summarySource": "structured-fields",
     "title": "loadOutlineRelationGraph.js",
+    "type": "code-module"
+  },
+  {
+    "id": "src/game/data/outline_relation_graph/outlineRelationGraphExport.js",
+    "indexVersion": 1,
+    "references": {},
+    "sourceHash": "ceaf982b9d0fe3642f7f8ef4ee5f10ff750104ee7f3dc021ab3d06748803775b",
+    "sourcePath": "src/game/data/outline_relation_graph/outlineRelationGraphExport.js",
+    "subtype": "module",
+    "summary": "module：src/game/data/outline_relation_graph/outlineRelationGraphExport.js",
+    "summarySource": "structured-fields",
+    "title": "outlineRelationGraphExport.js",
     "type": "code-module"
   },
   {
@@ -940,7 +953,7 @@
         "./catalog.json"
       ]
     },
-    "sourceHash": "e0c50192a9ae56f59fcdb29c2c1e71148800e336a583fc51ed03b7d4cc48f364",
+    "sourceHash": "6c8c803575550ca13b4673bff9420e3155fb15ba14430831b954d7246b043845",
     "sourcePath": "src/game/data/plot_outline/plotOutline.js",
     "subtype": "module",
     "summary": "module：src/game/data/plot_outline/plotOutline.js",
@@ -1087,7 +1100,7 @@
         "./storyOutlineSource.js"
       ]
     },
-    "sourceHash": "ecfe3499274daffe46b2ef41978568ff834ae256a0e5b89d2742889aa26dae62",
+    "sourceHash": "8dab2f9d07ba1c554523b5df228d45626dc2c68aee2192ff616c9e1ae19b60d0",
     "sourcePath": "src/game/data/story_outline/storyCharacterOutline.js",
     "subtype": "module",
     "summary": "module：src/game/data/story_outline/storyCharacterOutline.js",
@@ -1129,7 +1142,7 @@
     "id": "src/game/data/story_outline/storyOutlineFrontmatter.js",
     "indexVersion": 1,
     "references": {},
-    "sourceHash": "15f3b26cdeb7371bf601c03cc0ead88a2ff2aa8ee8869f198b6567a4a7ae5040",
+    "sourceHash": "4868384776c968ffbf91fef9932cdf259108fb744ed7f2d24879df279a074c4d",
     "sourcePath": "src/game/data/story_outline/storyOutlineFrontmatter.js",
     "subtype": "module",
     "summary": "module：src/game/data/story_outline/storyOutlineFrontmatter.js",
@@ -2067,7 +2080,7 @@
         "./GameScrollArea.vue"
       ]
     },
-    "sourceHash": "89f163f1bc4f2e3c9aa651db745b8b36928887df9ed034f0753db654d6afc8ef",
+    "sourceHash": "1313426f509f609e0ca85fdd60e7ab5c892cdfa2da51a53e06e2a887975b9bd4",
     "sourcePath": "src/game/views/components/base/PlotOutlinePanel.vue",
     "subtype": "vue",
     "summary": "vue：src/game/views/components/base/PlotOutlinePanel.vue",
@@ -2099,10 +2112,11 @@
         "vue",
         "./GameScrollArea.vue",
         "../../../data/outline_relation_graph/index.js",
-        "../../../data/outline_relation_graph/loadOutlineRelationGraph.js"
+        "../../../data/outline_relation_graph/loadOutlineRelationGraph.js",
+        "./jsonDownload"
       ]
     },
-    "sourceHash": "f949970c7fe629587abdeb5919f6e65673e5ed429ffaf31c8c9faefd0da757c8",
+    "sourceHash": "46b969b46cc3ec45a549f2d328d6620b4999ab885330c12f13c1513899cb333b",
     "sourcePath": "src/game/views/components/base/RelationGraphPanel.vue",
     "subtype": "vue",
     "summary": "vue：src/game/views/components/base/RelationGraphPanel.vue",
@@ -2210,7 +2224,7 @@
         "./storyMetaPopover"
       ]
     },
-    "sourceHash": "07fccc1c1d6df89f81065d01ff9f00a5c7de33613be8f5d5b1f5937f4f6d637c",
+    "sourceHash": "26066413a6aba1dc0b9be1f34a54d75b7c89a6d36b21b3fb0b7314380eac473d",
     "sourcePath": "src/game/views/components/base/StoryMenuPanel.vue",
     "subtype": "vue",
     "summary": "vue：src/game/views/components/base/StoryMenuPanel.vue",

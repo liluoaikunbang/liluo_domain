@@ -3,7 +3,7 @@ export const updateRecords = Object.freeze([
         "id":  "169",
         "date":  "2026-07-27",
         "title":  "大纲关联图谱视图",
-        "summary":  "大纲关联图谱：多对多投影层；Style-RAG 主视觉改为写法名词网，文章名为证据挂点；普通 RAG 补抽象卡内容且定位不变。"
+        "summary":  "大纲关联图谱：故事通过 plotRefs、ragRefs、gameplayRefs 直连情节、RAG 与玩法；普通 RAG 以 parentCardIds 建立上位类别与具体概念两层；空内容、缺来源、待补故事和未关联情节使用橙色缺口框；支持投影 JSON 导出。"
     },
     {
         "id":  "168",
@@ -399,7 +399,7 @@ export const updateRecords = Object.freeze([
         "id":  "103",
         "date":  "2026-05-23",
         "title":  "故事栏汇总检索弹窗与分类JSON导出",
-        "summary":  "本次为故事栏分类节点补充 JSON 导出，并让汇总视图统计项可点击打开匹配条目弹窗。"
+        "summary":  "故事栏支持分类 JSON 导出与汇总值匹配弹窗；汇总和表格现统一展示情节、RAG、玩法引用，不再显示退役 Tag 字段。"
     },
     {
         "id":  "102",

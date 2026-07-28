@@ -9,7 +9,10 @@
       "title": "慕妮卡帝国（综合）",
       "status": "分类",
       "summary": "由多个自由探索大地图组成的综合区域，各地拥有自己的地图故事线与事件链。",
-      "order": 10
+      "order": 10,
+      "ragRefs": [],
+      "plotRefs": [],
+      "gameplayRefs": []
     },
     {
       "key": "world-4-monica-empire-bound-god-domain",
@@ -18,7 +21,10 @@
       "status": "区域组",
       "summary": "缚神祝福覆盖的核心领地，适合承载庄园、花园与私人居所相关的探索内容。",
       "parentKey": "world-4-monica-empire",
-      "order": 10
+      "order": 10,
+      "ragRefs": [],
+      "plotRefs": [],
+      "gameplayRefs": []
     },
     {
       "key": "world-4-monica-empire-four-seasons-garden",
@@ -33,7 +39,10 @@
         "四季花园"
       ],
       "parentKey": "world-4-monica-empire-bound-god-domain",
-      "order": 10
+      "order": 10,
+      "ragRefs": [],
+      "plotRefs": [],
+      "gameplayRefs": []
     },
     {
       "key": "world-4-monica-empire-core-district",
@@ -42,7 +51,10 @@
       "status": "区域组",
       "summary": "帝国政治、商业与城市欲望汇聚的核心地带。",
       "parentKey": "world-4-monica-empire-silly-lilili-town",
-      "order": 10
+      "order": 10,
+      "ragRefs": [],
+      "plotRefs": [],
+      "gameplayRefs": []
     },
     {
       "key": "world-4-monica-empire-silly-lilili-town",
@@ -56,7 +68,10 @@
         "笨璃璃小镇"
       ],
       "parentKey": "world-4-monica-empire-four-seasons-garden",
-      "order": 10
+      "order": 10,
+      "ragRefs": [],
+      "plotRefs": [],
+      "gameplayRefs": []
     },
     {
       "key": "world-4-monica-empire-life-simulator",
@@ -75,7 +90,9 @@
         "人生模拟器"
       ],
       "parentKey": "world-4-monica-empire-silly-lilili-town",
-      "order": 20
+      "order": 20,
+      "ragRefs": [],
+      "plotRefs": []
     },
     {
       "key": "world-4-monica-empire-city-desire",
@@ -89,7 +106,10 @@
         "醉欲之城"
       ],
       "parentKey": "world-4-monica-empire-core-district",
-      "order": 10
+      "order": 10,
+      "ragRefs": [],
+      "plotRefs": [],
+      "gameplayRefs": []
     },
     {
       "key": "world-4-monica-empire-allied-cities",
@@ -98,7 +118,10 @@
       "status": "区域组",
       "summary": "与慕妮卡帝国保持盟约、贸易或暧昧关系的城池群，等待后续地图接入。",
       "parentKey": "world-4-monica-empire-city-desire",
-      "order": 30
+      "order": 30,
+      "ragRefs": [],
+      "plotRefs": [],
+      "gameplayRefs": []
     },
     {
       "key": "world-4-monica-empire-borderlands",
@@ -107,7 +130,10 @@
       "status": "区域组",
       "summary": "帝国边境、远方属地和异域地图的归档入口，等待后续探索内容扩展。",
       "parentKey": "world-4-monica-empire-allied-cities",
-      "order": 40
+      "order": 40,
+      "ragRefs": [],
+      "plotRefs": [],
+      "gameplayRefs": []
     }
   ]
 }

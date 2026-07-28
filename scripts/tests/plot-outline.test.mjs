@@ -2,9 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {
   plotOutline,
-  findPlotEntries,
-  getPlotTagOptions,
-  getPlotBondageTagOptions
+  findPlotEntries
 } from '../../src/game/data/plot_outline/plotOutline.js';
 
 test('plot catalog uses unique stable ids and consistent usage state', () => {
@@ -20,10 +18,12 @@ test('plot catalog uses unique stable ids and consistent usage state', () => {
     assert.equal(entry.number, entry.id.slice(-3));
     assert.equal(entry.isUsed, entry.usedBy.length > 0);
     assert.ok(Array.isArray(entry.worldBiases));
-    assert.ok(Array.isArray(entry.tags));
+    assert.ok(['ordinary', 'restraint', 'mixed'].includes(entry.plotKind));
+    assert.ok(Array.isArray(entry.ragRefs));
     assert.ok(Array.isArray(entry.characters));
-    assert.equal(typeof entry.isBondagePlot, 'boolean');
-    assert.ok(Array.isArray(entry.bondageTags));
+    assert.equal(Object.hasOwn(entry, 'isBondagePlot'), false);
+    assert.equal(Object.hasOwn(entry, 'tags'), false);
+    assert.equal(Object.hasOwn(entry, 'bondageTags'), false);
     assert.equal(entry.usedByLabels.length, entry.usedBy.length);
     assert.deepEqual(Object.keys(entry.development), ['premise', 'escalation', 'turn', 'consequence']);
     assert.ok(Object.values(entry.development).every((value) => typeof value === 'string' && value.trim().length >= 8));
@@ -98,8 +98,7 @@ test('keeps the protection-fee meeting and later rescue in one linked plot', () 
   assert.equal(receiptPlot?.title, 'Macy-保护费与救援');
   assert.deepEqual(receiptPlot?.usedByLabels, ['浮光掠影-荆锁会事件-宿舍旧楼']);
   assert.deepEqual(receiptPlot?.characters, ['璃落', 'Macy']);
-  assert.equal(receiptPlot?.isBondagePlot, false);
-  assert.deepEqual(receiptPlot?.bondageTags, []);
+  assert.equal(receiptPlot?.plotKind, 'ordinary');
 });
 
 test('finds unused plot entries by world bias and keyword', () => {
@@ -119,17 +118,10 @@ test('keeps used plot entries linked to real story nodes', () => {
   assert.deepEqual(receiptPlot?.usedBy, ['world-1-glimmering-glance-old-dormitory']);
 });
 
-test('filters entries independently by ordinary and bondage tags', () => {
-  assert.deepEqual(
-    findPlotEntries(plotOutline, { tag: '末日' }).map((entry) => entry.id),
-    ['plot-033', 'plot-034', 'plot-039', 'plot-040', 'plot-041', 'plot-044']
-  );
-  assert.ok(findPlotEntries(plotOutline, { bondageTag: '监禁' }).some((entry) => entry.id === 'plot-039'));
-  assert.ok(
-    findPlotEntries(plotOutline, { tag: '末日', bondageTag: '监禁' }).every(
-      (entry) => entry.tags.includes('末日') && entry.bondageTags.includes('监禁')
-    )
-  );
+test('filters ordinary, restraint and mixed plots with mixed included in both broad views', () => {
+  assert.ok(findPlotEntries(plotOutline, { plotKind: 'ordinary' }).every((entry) => ['ordinary', 'mixed'].includes(entry.plotKind)));
+  assert.ok(findPlotEntries(plotOutline, { plotKind: 'restraint' }).every((entry) => ['restraint', 'mixed'].includes(entry.plotKind)));
+  assert.ok(findPlotEntries(plotOutline, { plotKind: 'mixed' }).every((entry) => entry.plotKind === 'mixed'));
 });
 
 test('keeps Liluo sustained resistance under the bondage-struggle group', () => {
@@ -139,7 +131,7 @@ test('keeps Liluo sustained resistance under the bondage-struggle group', () => 
   assert.ok(struggleGroup);
   assert.equal(strugglePlot?.groupId, struggleGroup.id);
   assert.deepEqual(strugglePlot?.worldBiases, ['2-寂土挽歌']);
-  assert.ok(strugglePlot?.tags.includes('他人安全'));
+  assert.ok(['restraint', 'mixed'].includes(strugglePlot?.plotKind));
   assert.ok(strugglePlot?.summary.includes('大母脚趾'));
   assert.ok(strugglePlot?.summary.includes('倒吊'));
 });
@@ -152,7 +144,7 @@ test('keeps the virtual-reality body abduction under the technology-consumption 
   assert.deepEqual(virtualAbduction?.worldBiases, ['5-星宇织梦']);
   assert.ok(virtualAbduction?.summary.includes('现实身体'));
   assert.ok(virtualAbduction?.summary.includes('几个小时'));
-  assert.ok(virtualAbduction?.tags.includes('虚实错位'));
+  assert.ok(['restraint', 'mixed'].includes(virtualAbduction?.plotKind));
 });
 
 test('keeps tendon severing under extreme restraint and torture while preserving the cultivation transition', () => {
@@ -163,7 +155,7 @@ test('keeps tendon severing under extreme restraint and torture while preserving
   assert.deepEqual(transitionPlot?.worldBiases, ['3-尘寰问道']);
   assert.ok(transitionPlot?.summary.includes('挑断筋腱'));
   assert.ok(transitionPlot?.summary.includes('刺青'));
-  assert.ok(transitionPlot?.tags.includes('武侠转仙侠'));
+  assert.ok(['restraint', 'mixed'].includes(transitionPlot?.plotKind));
 });
 
 test('keeps hot-melt glue and dripping-wax ear sealing under apocalyptic extreme torture', () => {
@@ -174,7 +166,7 @@ test('keeps hot-melt glue and dripping-wax ear sealing under apocalyptic extreme
   assert.deepEqual(earSealingPlot?.worldBiases, ['2-寂土挽歌']);
   assert.ok(earSealingPlot?.summary.includes('热熔胶'));
   assert.ok(earSealingPlot?.summary.includes('滴蜡'));
-  assert.ok(earSealingPlot?.tags.includes('听觉封闭'));
+  assert.ok(['restraint', 'mixed'].includes(earSealingPlot?.plotKind));
 });
 
 test('keeps the drilled metal mouth seal combined with the existing sewn-eye and sewn-mouth imprisonment', () => {
@@ -184,7 +176,7 @@ test('keeps the drilled metal mouth seal combined with the existing sewn-eye and
   assert.ok(sensorySealingPlot?.summary.includes('螺丝'));
   assert.ok(sensorySealingPlot?.summary.includes('铁片'));
   assert.ok(sensorySealingPlot?.summary.includes('牙齿'));
-  assert.ok(sensorySealingPlot?.tags.includes('金属封嘴'));
+  assert.ok(sensorySealingPlot?.ragRefs.length > 0);
 });
 
 test('keeps forced alcohol through a medical mouth opener under teasing and bullying', () => {
@@ -195,7 +187,7 @@ test('keeps forced alcohol through a medical mouth opener under teasing and bull
   assert.deepEqual(forcedAlcoholPlot?.worldBiases, []);
   assert.ok(forcedAlcoholPlot?.summary.includes('医用开口器'));
   assert.ok(forcedAlcoholPlot?.summary.includes('灌酒'));
-  assert.ok(forcedAlcoholPlot?.tags.includes('剥夺拒绝权'));
+  assert.ok(['restraint', 'mixed'].includes(forcedAlcoholPlot?.plotKind));
 });
 
 test('keeps wrapped-hands rock-paper-scissors under teasing and bullying', () => {
@@ -205,8 +197,7 @@ test('keeps wrapped-hands rock-paper-scissors under teasing and bullying', () =>
   assert.equal(wrappedHandsPlot?.groupId, bullyingGroup?.id);
   assert.ok(wrappedHandsPlot?.summary.includes('圆球状'));
   assert.ok(wrappedHandsPlot?.summary.includes('猜拳'));
-  assert.ok(wrappedHandsPlot?.tags.includes('不公平游戏'));
-  assert.deepEqual(wrappedHandsPlot?.bondageTags, ['游戏']);
+  assert.ok(['restraint', 'mixed'].includes(wrappedHandsPlot?.plotKind));
 });
 
 test('keeps the club snow-day sequence together under the outdoor amusement group', () => {
@@ -232,9 +223,7 @@ test('keeps the science-fiction internal tickling device under extreme torture w
   assert.ok(internalTicklingPlot?.summary.includes('咽喉'));
   assert.ok(internalTicklingPlot?.summary.includes('食道'));
   assert.ok(internalTicklingPlot?.summary.includes('喷嚏反射'));
-  assert.ok(internalTicklingPlot?.tags.includes('无损伤边界'));
-  assert.equal(internalTicklingPlot?.isBondagePlot, false);
-  assert.deepEqual(internalTicklingPlot?.bondageTags, []);
+  assert.ok(['ordinary', 'restraint', 'mixed'].includes(internalTicklingPlot?.plotKind));
   assert.ok(internalTicklingPlot?.notes.includes('不描写可在现实模仿的植入步骤'));
 });
 
@@ -246,7 +235,7 @@ test('groups nest-web, beeswax and internal-web restraints as separate animal-re
   const internalWebPlot = animalPlots.find((entry) => entry.id === 'plot-051');
 
   assert.deepEqual(animalPlots.map((entry) => entry.id), ['plot-049', 'plot-050', 'plot-051']);
-  assert.deepEqual(spiderPlot?.bondageTags, ['蛛丝']);
+  assert.ok(spiderPlot?.ragRefs.includes('rag.restraint.material.spider-silk'));
   assert.deepEqual(spiderPlot?.usedBy, ['world-3-mortal-dao-spider-valley']);
   assert.ok(spiderPlot?.summary.includes('蛛网拘束系统'));
   assert.equal(beePlot?.usageStatus, 'unused');
@@ -255,7 +244,7 @@ test('groups nest-web, beeswax and internal-web restraints as separate animal-re
   assert.ok(beePlot?.summary.includes('身体完全包裹'));
   assert.ok(beePlot?.summary.includes('体液长期喂养幼蜂'));
   assert.ok(beePlot?.notes.includes('不在情节库中细写体液采集部位或露骨过程'));
-  assert.deepEqual(internalWebPlot?.bondageTags, ['蛛丝']);
+  assert.ok(internalWebPlot?.ragRefs.includes('rag.restraint.material.spider-silk'));
   assert.equal(internalWebPlot?.usageStatus, 'unused');
   assert.ok(internalWebPlot?.summary.includes('把舌头固定'));
   assert.ok(internalWebPlot?.summary.includes('从鼻孔爬出'));
@@ -269,26 +258,19 @@ test('keeps stockings and welded metal restraints as city investigator factory p
 
   assert.equal(stockingsPlot?.groupId, 'plot-group-004');
   assert.equal(stockingsPlot?.usageStatus, 'used');
-  assert.ok(stockingsPlot?.bondageTags.includes('丝袜拘束'));
-  assert.ok(stockingsPlot?.bondageTags.includes('全身包裹'));
+  assert.ok(stockingsPlot?.ragRefs.includes('rag.restraint.material.stocking-restraint'));
+  assert.ok(stockingsPlot?.ragRefs.includes('rag.restraint.structure.full-body-wrapping'));
   assert.deepEqual(stockingsPlot?.usedBy, ['world-1-glimmering-glance-city-investigator']);
 
   assert.equal(metalPlot?.groupId, 'plot-group-004');
   assert.equal(metalPlot?.usageStatus, 'used');
-  assert.ok(metalPlot?.bondageTags.includes('手铐'));
-  assert.ok(metalPlot?.bondageTags.includes('脚镣'));
-  assert.ok(metalPlot?.bondageTags.includes('锁链'));
+  assert.ok(metalPlot?.ragRefs.includes('rag.restraint.tool.handcuffs'));
+  assert.ok(metalPlot?.ragRefs.includes('rag.restraint.tool.leg-irons'));
+  assert.ok(metalPlot?.ragRefs.includes('rag.restraint.tool.chain'));
   assert.deepEqual(metalPlot?.usedBy, ['world-1-glimmering-glance-city-investigator']);
 });
 
-test('exposes unique sorted ordinary and bondage tag options', () => {
-  const ordinaryTags = getPlotTagOptions(plotOutline);
-  const bondageTags = getPlotBondageTagOptions(plotOutline);
-
-  assert.equal(new Set(ordinaryTags).size, ordinaryTags.length);
-  assert.equal(new Set(bondageTags).size, bondageTags.length);
-  assert.deepEqual(ordinaryTags, [...ordinaryTags].sort((left, right) => left.localeCompare(right, 'zh-CN')));
-  assert.deepEqual(bondageTags, [...bondageTags].sort((left, right) => left.localeCompare(right, 'zh-CN')));
-  assert.ok(ordinaryTags.includes('末日'));
-  assert.ok(bondageTags.includes('监禁'));
+test('every plot exposes the unified plotKind and RAG refs contract', () => {
+  assert.ok(plotOutline.entries.every((entry) => ['ordinary', 'restraint', 'mixed'].includes(entry.plotKind)));
+  assert.ok(plotOutline.entries.every((entry) => Array.isArray(entry.ragRefs)));
 });

@@ -17,20 +17,13 @@
   "reversals": [],
   "outcomes": [],
   "concepts": [
+    "送绑玩脱",
     "送绑",
     "玩脱",
     "主动入局后失控"
   ],
   "abstractPatterns": [],
-  "tags": [
-    "环境:地牢",
-    "环境:都市",
-    "世界:奇幻",
-    "状态:受限",
-    "叙事:仪式",
-    "叙事:调查",
-    "氛围:悬疑"
-  ],
+  "tags": [],
   "sourceRefs": [
     {
       "sourceId": "fb-src-000020",
@@ -50,5 +43,8 @@
   "reviewStatus": "candidate",
   "directQuoteIncluded": false,
   "knowledgeScope": "external-fiction-reference",
-  "canonical": false
+  "canonical": false,
+  "linkedConceptIds": [
+    "restraint.pattern.voluntary-entry-loss-of-control"
+  ]
 }

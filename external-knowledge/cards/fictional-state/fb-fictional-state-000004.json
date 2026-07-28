@@ -32,15 +32,7 @@
     "视觉反馈",
     "剧情选择"
   ],
-  "tags": [
-    "环境:都市",
-    "叙事:仪式",
-    "叙事:调查",
-    "氛围:悬疑",
-    "状态:受限",
-    "环境:地牢",
-    "叙事:逃脱"
-  ],
+  "tags": [],
   "sourceRefs": [
     {
       "sourceId": "fb-src-000001",
@@ -67,5 +59,6 @@
   "reviewStatus": "candidate",
   "directQuoteIncluded": false,
   "knowledgeScope": "external-fiction-reference",
-  "canonical": false
+  "canonical": false,
+  "linkedConceptIds": []
 }

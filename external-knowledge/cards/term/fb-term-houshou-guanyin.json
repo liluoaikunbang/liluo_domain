@@ -6,10 +6,11 @@
     "后手观音式",
     "观音反手"
   ],
-  "definition": "细节姿态术语：双手在身后形成特定相对位置的可识别反绑姿态。用于描写层精确区分“身后束手”的下位形态，不代表唯一现实绳法。",
+  "definition": "细节姿态术语：双手在身后形成特定相对位置的可识别反绑姿态。用于描写层精确区分上肢受限下的后手下位形态，不代表唯一现实绳法。",
   "distinctions": [
-    "它是细节概念，不应替代上位状态词“身后束手/上肢受限”。",
-    "名称用于识别姿态，不暗示强度、目的或安全结论。"
+    "它是细节概念，不应替代上位类别「上肢受限」。",
+    "名称用于识别姿态，不暗示强度、目的或安全结论。",
+    "与普通后手缚、后手并肘、后手高手小缚并列，各有不同识别点。"
   ],
   "prerequisites": [],
   "progression": [],
@@ -24,10 +25,7 @@
     "身后双手相对位置可识别",
     "细节姿态命名"
   ],
-  "tags": [
-    "状态:受限",
-    "叙事:仪式"
-  ],
+  "tags": [],
   "sourceRefs": [
     {
       "sourceId": "fb-src-000002",
@@ -54,5 +52,8 @@
   "reviewStatus": "candidate",
   "directQuoteIncluded": false,
   "knowledgeScope": "external-fiction-reference",
-  "canonical": false
+  "canonical": false,
+  "linkedConceptIds": [
+    "restraint.pose.houshou-guanyin"
+  ]
 }

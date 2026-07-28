@@ -22,11 +22,7 @@
     "前后状态对照",
     "退出条件改写"
   ],
-  "tags": [
-    "状态:受限",
-    "叙事:逃脱",
-    "叙事:调查"
-  ],
+  "tags": [],
   "sourceRefs": [
     {
       "sourceId": "fb-src-000001",
@@ -53,5 +49,8 @@
   "reviewStatus": "candidate",
   "directQuoteIncluded": false,
   "knowledgeScope": "external-fiction-reference",
-  "canonical": false
+  "canonical": false,
+  "linkedConceptIds": [
+    "restraint.detail.state-change"
+  ]
 }

@@ -55,6 +55,7 @@
         <button class="rg-tool-button rg-tool-button-wide" type="button" @click="fitAll">适应全图</button>
         <button class="rg-tool-button rg-tool-button-wide" type="button" @click="resetView">重置</button>
         <button class="rg-tool-button rg-tool-button-wide" type="button" @click="rebuildGraph">重建</button>
+        <button class="rg-tool-button rg-tool-button-wide" type="button" @click="exportGraphJson">导出JSON</button>
       </div>
 
       <div class="rg-search" aria-label="图谱搜索">
@@ -193,6 +194,10 @@
                   <span class="rg-swatch" :style="{ background: nodeColor('style_rag') }" />
                   {{ showStyleEvidence ? '文章证据：显示' : '文章证据：隐藏' }}
                 </button>
+                <div class="rg-legend-item">
+                  <span class="rg-swatch" :style="{ background: GRAPH_CONTENT_GAP_COLOR }" />
+                  内容缺口
+                </div>
               </div>
               <div class="rg-legend-section">
                 <h4>关系</h4>
@@ -281,7 +286,13 @@
               <dd>{{ selectedNode.world || '（无）' }}</dd>
               <dt>别名</dt>
               <dd>{{ (selectedNode.aliases || []).join('、') || '（无）' }}</dd>
-              <dt>概念 ID</dt>
+              <dt>分层</dt>
+              <dd>{{ hierarchyDetailLabel(selectedNode) }}</dd>
+              <dt>上位挂接</dt>
+              <dd>{{ hierarchyParentLabel(selectedNode) }}</dd>
+              <dt>稳定分层 ID</dt>
+              <dd>{{ (selectedNode.meta?.linkedConceptIds || []).join('、') || '（无）' }}</dd>
+              <dt>别名 / 检索名</dt>
               <dd>{{ (selectedNode.conceptIds || []).join('、') || '（无）' }}</dd>
               <dt>审核状态</dt>
               <dd>{{ auditStatusLabel(selectedNode.auditStatus) }}</dd>
@@ -341,6 +352,7 @@ import GameScrollArea from './GameScrollArea.vue';
 import {
   GRAPH_AUDIT_STATUSES,
   GRAPH_AUDIT_STATUS_LABELS,
+  GRAPH_CONTENT_GAP_COLOR,
   GRAPH_FILTER_PRESETS,
   GRAPH_LAYOUT_PRESET_LABELS,
   GRAPH_LEGEND_NODE_TYPES,
@@ -353,6 +365,7 @@ import {
   GRAPH_RELATION_TYPES,
   VIEWPORT_CACHE_KEY,
   applyFilterPreset,
+  createOutlineRelationGraphExportPayload,
   expandLegendNodeType,
   filterOutlineRelationGraph,
   focusOutlineRelationGraph,
@@ -365,6 +378,7 @@ import {
   getOutlineRelationGraph,
   invalidateOutlineRelationGraphCache
 } from '../../../data/outline_relation_graph/loadOutlineRelationGraph.js';
+import { downloadJsonPayload } from './jsonDownload';
 
 const MIN_ZOOM = 0.35;
 const MAX_ZOOM = 2.2;
@@ -508,7 +522,10 @@ const summaryCards = computed(() => [
   { label: '待抽查', value: stats.value.pendingReviewCount ?? 0 },
   { label: '低置信度关系', value: stats.value.lowConfidenceEdgeCount ?? 0 },
   { label: '缺少来源', value: stats.value.missingSourceCount ?? 0 },
-  { label: '有概念但无 RAG', value: stats.value.conceptWithoutRag ?? 0 },
+  { label: '内容缺口', value: stats.value.contentGapCount ?? 0 },
+  { label: '有分层种子但无 RAG', value: stats.value.conceptWithoutRag ?? 0 },
+  { label: 'RAG 上位类别', value: stats.value.conceptCategoryCount ?? 0 },
+  { label: 'RAG 具体概念', value: stats.value.conceptDetailCount ?? 0 },
   { label: '有情节但无 Style-RAG', value: stats.value.plotWithoutStyle ?? 0 },
   { label: '高频未确认', value: stats.value.highUseUnconfirmed ?? 0 }
 ]);
@@ -601,6 +618,11 @@ function rebuildGraph() {
   });
 }
 
+function exportGraphJson() {
+  const payload = createOutlineRelationGraphExportPayload(graph.value);
+  downloadJsonPayload(payload, 'liluo-outline-relation-graph.json');
+}
+
 function applySelectedPreset() {
   // computed activeFilters reads filterPresetId
 }
@@ -618,17 +640,62 @@ function styleRoleLabel(node) {
   return '—';
 }
 
+function ragLayerDetailLabel(node) {
+  if (node?.type !== 'rag') return '—';
+  return node?.meta?.ragLayerLabel || (node?.meta?.ragLayer === 'category' ? '上位类别' : node?.meta?.ragLayer === 'concept' ? '具体概念' : '—');
+}
+
+function hierarchyDetailLabel(node) {
+  if (!node) return '—';
+  if (node.type === 'rag') return ragLayerDetailLabel(node);
+  if (node.type === 'world' || node.type === 'story') {
+    return (
+      node.meta?.storyLayerLabel ||
+      (node.meta?.storyLayer === 'category'
+        ? '世界'
+        : node.meta?.storyLayer === 'concept'
+          ? '故事'
+          : node.type === 'world'
+            ? '世界'
+            : '故事')
+    );
+  }
+  return '—';
+}
+
+function hierarchyParentLabel(node) {
+  if (!node) return '（无）';
+  if (node.type === 'rag') {
+    return (node.meta?.parentRagNodeIds || node.meta?.parentConcepts || []).join('、') || '（无 / 自身为上位类别）';
+  }
+  if (node.type === 'world' || node.type === 'story') {
+    return (node.meta?.parentStoryNodeIds || []).join('、') || '（无 / 自身为世界）';
+  }
+  return '（无）';
+}
+
 function relatedNodeTypeLabel(node) {
   if (node?.type === 'style_rag') return styleRoleLabel(node);
+  if (node?.type === 'rag') return ragLayerDetailLabel(node) !== '—' ? `普通 RAG · ${ragLayerDetailLabel(node)}` : nodeTypeLabel(node?.type);
+  if ((node?.type === 'world' || node?.type === 'story') && hierarchyDetailLabel(node) !== '—') {
+    return `故事 · ${hierarchyDetailLabel(node)}`;
+  }
   return nodeTypeLabel(node?.type);
 }
 
 function detailTypeLabel(nodeOrType) {
   const node = typeof nodeOrType === 'string' ? { type: nodeOrType } : nodeOrType;
   if (!node) return '';
-  if (node.type === 'world') return '世界';
   if (node.type === 'series') return '系列';
   if (node.type === 'style_rag') return styleRoleLabel(node);
+  if (node.type === 'rag') {
+    const layer = ragLayerDetailLabel(node);
+    return layer !== '—' ? `普通 RAG · ${layer}` : '普通 RAG';
+  }
+  if (node.type === 'world' || node.type === 'story') {
+    const layer = hierarchyDetailLabel(node);
+    return layer !== '—' ? `故事 · ${layer}` : node.type === 'world' ? '故事 · 世界' : '故事';
+  }
   return nodeTypeLabel(node.type);
 }
 
@@ -646,6 +713,56 @@ function nodeColor(type) {
 
 function relationColor(type) {
   return GRAPH_RELATION_COLORS[type] || '#c8bdd8';
+}
+
+const TREE_LANE_TYPES = new Set(['story', 'plot', 'gameplay', 'rag']);
+
+const TREE_STUB_COLORS = Object.freeze({
+  story: 'rgba(155, 107, 199, 0.75)',
+  plot: 'rgba(122, 155, 200, 0.75)',
+  gameplay: 'rgba(107, 184, 154, 0.75)',
+  rag: 'rgba(94, 207, 138, 0.75)'
+});
+
+const TREE_CATEGORY_FILLS = Object.freeze({
+  story: 'rgba(42, 28, 56, 0.95)',
+  plot: 'rgba(28, 36, 48, 0.95)',
+  gameplay: 'rgba(24, 42, 36, 0.95)',
+  rag: 'rgba(28, 48, 36, 0.95)'
+});
+
+const TREE_DETAIL_FILLS = Object.freeze({
+  story: 'rgba(28, 20, 38, 0.92)',
+  plot: 'rgba(20, 26, 34, 0.92)',
+  gameplay: 'rgba(18, 28, 24, 0.92)',
+  rag: 'rgba(19, 28, 24, 0.92)'
+});
+
+const TREE_CATEGORY_STROKES = Object.freeze({
+  story: '#c49be8',
+  plot: '#9bb8e0',
+  gameplay: '#8fd0b4',
+  rag: '#7adf9a'
+});
+
+function isTreeLaneType(laneType) {
+  return TREE_LANE_TYPES.has(laneType);
+}
+
+function treeStubColor(laneType) {
+  return TREE_STUB_COLORS[laneType] || TREE_STUB_COLORS.rag;
+}
+
+function treeCategoryFill(laneType) {
+  return TREE_CATEGORY_FILLS[laneType] || TREE_CATEGORY_FILLS.rag;
+}
+
+function treeDetailFill(laneType) {
+  return TREE_DETAIL_FILLS[laneType] || TREE_DETAIL_FILLS.rag;
+}
+
+function treeCategoryStroke(laneType) {
+  return TREE_CATEGORY_STROKES[laneType] || TREE_CATEGORY_STROKES.rag;
 }
 
 function formatConfidence(value) {
@@ -1106,6 +1223,12 @@ function draw() {
     const to = nodeById.get(edge.target);
     if (!from || !to) continue;
 
+    // Tree L1↔L2 already drawn as swimlane stubs — skip duplicate bezier edges.
+    const isTreeHierarchyPair =
+      (from.treeParentId && from.treeParentId === to.id) ||
+      (to.treeParentId && to.treeParentId === from.id);
+    if (isTreeHierarchyPair) continue;
+
     const minX = Math.min(from.x, to.x);
     const maxX = Math.max(from.x + from.width, to.x + to.width);
     const minY = Math.min(from.y, to.y);
@@ -1151,6 +1274,33 @@ function draw() {
   for (const packed of normalEdges) strokeEdge(packed);
   for (const packed of connectedEdges) strokeEdge(packed);
 
+  // Tree stubs for 故事 / 情节 / 玩法 / RAG / ordinary Tag / bondage Tag hierarchies
+  for (const node of layout.value.nodes) {
+    if (!node.treeParentId) continue;
+    if (!isTreeLaneType(node.laneType)) continue;
+    const parent = layout.value.nodeById.get(node.treeParentId);
+    if (!parent) continue;
+    if (
+      Math.max(parent.x, node.x) > worldRight ||
+      Math.min(parent.x + parent.width, node.x + node.width) < worldLeft ||
+      Math.max(parent.y, node.y) > worldBottom ||
+      Math.min(parent.y + parent.height, node.y + node.height) < worldTop
+    ) {
+      continue;
+    }
+    const x0 = parent.x + 10;
+    const y0 = parent.y + parent.height;
+    const x1 = node.x + 4;
+    const y1 = node.y + node.height / 2;
+    ctx.beginPath();
+    ctx.strokeStyle = treeStubColor(node.laneType);
+    ctx.lineWidth = 1.4;
+    ctx.moveTo(x0, y0);
+    ctx.lineTo(x0, y1);
+    ctx.lineTo(x1, y1);
+    ctx.stroke();
+  }
+
   const showSummary = layout.value.showSummary;
   const neighborIds = selectedId
     ? new Set(
@@ -1174,9 +1324,28 @@ function draw() {
 
     const isSelected = node.id === selectedId;
     const isNeighbor = neighborIds?.has(node.id);
-    ctx.fillStyle = 'rgba(19, 15, 29, 0.92)';
-    ctx.strokeStyle = isSelected ? '#d8b36d' : isNeighbor ? '#fff3cf' : nodeColor(node.type);
-    ctx.lineWidth = isSelected ? 2.4 : isNeighbor ? 1.8 : 1.2;
+    const isTreeCategory = node.treeLayer === 'category';
+    const isTreeDetail = node.treeLayer === 'concept';
+    const isTreeLane = isTreeLaneType(node.laneType);
+    const hasContentGap = Boolean(node.meta?.hasContentGap);
+    ctx.fillStyle =
+      hasContentGap
+        ? 'rgba(91, 54, 24, 0.94)'
+        : isTreeLane && isTreeCategory
+        ? treeCategoryFill(node.laneType)
+        : isTreeLane && isTreeDetail
+          ? treeDetailFill(node.laneType)
+          : 'rgba(19, 15, 29, 0.92)';
+    ctx.strokeStyle = isSelected
+      ? '#d8b36d'
+      : isNeighbor
+        ? '#fff3cf'
+        : hasContentGap
+          ? GRAPH_CONTENT_GAP_COLOR
+        : isTreeLane && isTreeCategory
+          ? treeCategoryStroke(node.laneType)
+          : nodeColor(node.type);
+    ctx.lineWidth = isSelected ? 2.4 : isNeighbor ? 1.8 : isTreeLane && isTreeCategory ? 1.6 : 1.2;
     if (selectedId && !isSelected && !isNeighbor) {
       ctx.globalAlpha = 0.45;
     }
@@ -1192,9 +1361,16 @@ function draw() {
       ctx.fill();
     }
 
+    const titlePrefix = isTreeDetail ? '└ ' : isTreeCategory ? '▸ ' : '';
     ctx.fillStyle = '#fff5fc';
-    ctx.font = '12px "Segoe UI", "Microsoft YaHei", sans-serif';
-    ctx.fillText(truncateCanvasText(ctx, node.title, node.width - 16), node.x + 8, node.y + 18);
+    ctx.font = isTreeCategory
+      ? 'bold 12px "Segoe UI", "Microsoft YaHei", sans-serif'
+      : '12px "Segoe UI", "Microsoft YaHei", sans-serif';
+    ctx.fillText(
+      truncateCanvasText(ctx, `${titlePrefix}${node.title}`, node.width - 16),
+      node.x + 8,
+      node.y + 18
+    );
 
     // HARD RULE: overview mode never renders summary text
     if (showSummary && mode.value !== 'overview' && node.summary) {

@@ -24,10 +24,10 @@
     "失败不会只停留在原地，而会进入有新信息的新状态。"
   ],
   "concepts": [
-    "角色主动或半主动进入受限情境。",
-    "原定保障出现缺口，角色先尝试按旧计划收场。",
-    "退出失败使控制权转移，事件从体验或试探升级为必须处理的困局。",
-    "角色通过观察、交涉、选择或外部关系寻找新的退出路径。"
+    "送绑玩脱",
+    "送绑",
+    "玩脱",
+    "主动入局后失控"
   ],
   "abstractPatterns": [
     "角色主动或半主动进入受限情境。",
@@ -35,16 +35,7 @@
     "退出失败使控制权转移，事件从体验或试探升级为必须处理的困局。",
     "角色通过观察、交涉、选择或外部关系寻找新的退出路径。"
   ],
-  "tags": [
-    "环境:地牢",
-    "环境:都市",
-    "世界:奇幻",
-    "状态:受限",
-    "叙事:仪式",
-    "叙事:调查",
-    "氛围:悬疑",
-    "叙事:逃脱"
-  ],
+  "tags": [],
   "sourceRefs": [
     {
       "sourceId": "fb-src-000020",
@@ -78,5 +69,8 @@
   "reviewStatus": "candidate",
   "directQuoteIncluded": false,
   "knowledgeScope": "external-fiction-reference",
-  "canonical": false
+  "canonical": false,
+  "linkedConceptIds": [
+    "restraint.pattern.voluntary-entry-loss-of-control"
+  ]
 }

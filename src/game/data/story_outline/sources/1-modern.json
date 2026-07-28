@@ -9,7 +9,10 @@
       "title": "浮光掠影（都市）",
       "status": "分类",
       "summary": "带有一些超自然能力与现象的现代都市世界。",
-      "order": 20
+      "order": 20,
+      "ragRefs": [],
+      "plotRefs": [],
+      "gameplayRefs": []
     },
     {
       "key": "world-1-glimmering-glance-jingsuo-event",
@@ -27,7 +30,10 @@
       ],
       "questType": "main",
       "parentKey": "world-1-glimmering-glance",
-      "order": 10
+      "order": 10,
+      "ragRefs": [],
+      "plotRefs": [],
+      "gameplayRefs": []
     },
     {
       "key": "world-1-glimmering-glance-hospital-awakening",
@@ -48,16 +54,6 @@
         "沈芷为避免阻碍璃落恢复记忆而隐瞒内幕",
         "璃落的气质像沈芷创立荆锁会时想要救助的女生"
       ],
-      "plotTags": [
-        "医院",
-        "失忆",
-        "创伤治疗",
-        "鬼魂",
-        "灵异感知"
-      ],
-      "bondageTags": [
-        "拘束衣"
-      ],
       "characters": [
         "沈芷",
         "许知遥",
@@ -68,7 +64,15 @@
         "市医院"
       ],
       "parentKey": "world-1-glimmering-glance-jingsuo-event",
-      "order": 10
+      "order": 10,
+      "ragRefs": [
+        "rag.restraint.tool.straitjacket"
+      ],
+      "plotRefs": [],
+      "gameplayRefs": [
+        "gameplay-066",
+        "gameplay-116"
+      ]
     },
     {
       "key": "world-1-glimmering-glance-campus-arrival",
@@ -84,17 +88,18 @@
         "校园怪谈",
         "舞蹈教室"
       ],
-      "plotTags": [
-        "校园",
-        "复学",
-        "校园论坛"
-      ],
       "locations": [
         "荆江市",
         "荆南大学"
       ],
       "parentKey": "world-1-glimmering-glance-hospital-awakening",
-      "order": 10
+      "order": 10,
+      "ragRefs": [],
+      "plotRefs": [],
+      "gameplayRefs": [
+        "gameplay-003",
+        "gameplay-060"
+      ]
     },
     {
       "key": "world-1-glimmering-glance-club",
@@ -104,17 +109,6 @@
       "foreshadowing": [
         "介绍",
         "璃落XP"
-      ],
-      "bondageTags": [
-        "模特",
-        "气味系",
-        "社死",
-        "感官刺激"
-      ],
-      "specialGameplay": [
-        "踩踩",
-        "捆绑上街",
-        "芥末辣椒等"
       ],
       "characters": [
         "林雨薇",
@@ -128,7 +122,19 @@
       ],
       "status": "大纲草稿",
       "parentKey": "world-1-glimmering-glance-campus-arrival",
-      "order": 10
+      "order": 10,
+      "ragRefs": [
+        "rag.restraint.effect.odor-stimulation",
+        "rag.restraint.effect.public-humiliation",
+        "rag.restraint.effect.sensory-stimulation"
+      ],
+      "plotRefs": [
+        "plot.migration.社死-捆绑上街"
+      ],
+      "gameplayRefs": [],
+      "legacyTagRefs": [
+        "bondage_tag:模特"
+      ]
     },
     {
       "key": "world-1-glimmering-glance-dance-classroom",
@@ -138,9 +144,6 @@
       "foreshadowing": [
         "荆锁",
         "手铐"
-      ],
-      "bondageTags": [
-        "DID"
       ],
       "characters": [
         "沈芷"
@@ -155,7 +158,13 @@
       ],
       "status": "大纲",
       "parentKey": "world-1-glimmering-glance-club",
-      "order": 10
+      "order": 10,
+      "ragRefs": [],
+      "plotRefs": [],
+      "gameplayRefs": [],
+      "legacyTagRefs": [
+        "bondage_tag:did"
+      ]
     },
     {
       "key": "world-1-glimmering-glance-stage-performance",
@@ -164,7 +173,10 @@
       "status": "大纲草稿",
       "summary": "荆锁会事件2,舞台表演时的灵异事件。",
       "parentKey": "world-1-glimmering-glance-dance-classroom",
-      "order": 10
+      "order": 10,
+      "ragRefs": [],
+      "plotRefs": [],
+      "gameplayRefs": []
     },
     {
       "key": "world-1-glimmering-glance-old-dormitory",
@@ -187,21 +199,6 @@
         "Macy：厂房小混混头目，收保护费却坚持手写收据；不涉杀人，折返救人源于守规矩",
         "Macy：与璃落成为朋友；可重复日常为“又被收保护费，其实是帮忙”"
       ],
-      "plotTags": [
-        "霸凌",
-        "旧案调查",
-        "记忆触发",
-        "危机拖延"
-      ],
-      "bondageTags": [
-        "气味系"
-      ],
-      "specialGameplay": [
-        "小黑屋",
-        "语言羞辱",
-        "记忆触发调查",
-        "危机拖延救援"
-      ],
       "characters": [
         "林沐遥",
         "Macy"
@@ -218,7 +215,18 @@
       ],
       "status": "大纲",
       "parentKey": "world-1-glimmering-glance-rope-spirit-game",
-      "order": 10
+      "order": 10,
+      "ragRefs": [
+        "rag.restraint.effect.odor-stimulation"
+      ],
+      "plotRefs": [],
+      "gameplayRefs": [
+        "gameplay-060",
+        "gameplay-013"
+      ],
+      "legacyTagRefs": [
+        "bondage_tag:sg:危机拖延救援"
+      ]
     },
     {
       "key": "world-1-glimmering-glance-rope-spirit-game",
@@ -232,13 +240,11 @@
       "foreshadowing": [
         "绳仙游戏只是荆锁会遗留灵异游戏中的一项"
       ],
-      "plotTags": [
-        "校园怪谈",
-        "仪式",
-        "封印"
-      ],
       "parentKey": "world-1-glimmering-glance-stage-performance",
-      "order": 10
+      "order": 10,
+      "ragRefs": [],
+      "plotRefs": [],
+      "gameplayRefs": []
     },
     {
       "key": "world-1-glimmering-glance-grudge-ancient-tree",
@@ -252,12 +258,11 @@
       "foreshadowing": [
         "荆锁会遗留的灵异游戏共同压制满怨古树"
       ],
-      "plotTags": [
-        "校园怪谈",
-        "仪式残留"
-      ],
       "parentKey": "world-1-glimmering-glance-old-dormitory",
-      "order": 10
+      "order": 10,
+      "ragRefs": [],
+      "plotRefs": [],
+      "gameplayRefs": []
     },
     {
       "key": "world-1-glimmering-glance-supernatural-games",
@@ -271,17 +276,15 @@
       "foreshadowing": [
         "荆锁会遗留的灵异游戏共同压制满怨古树"
       ],
-      "plotTags": [
-        "校园怪谈",
-        "仪式",
-        "支线任务集合"
-      ],
       "locations": [
         "荆南大学"
       ],
       "branchLayout": "side",
       "parentKey": "world-1-glimmering-glance-rope-spirit-game",
-      "order": 20
+      "order": 20,
+      "ragRefs": [],
+      "plotRefs": [],
+      "gameplayRefs": []
     },
     {
       "key": "world-1-glimmering-glance-urban-rumors",
@@ -294,7 +297,10 @@
       ],
       "questType": "main",
       "parentKey": "world-1-glimmering-glance-grudge-ancient-tree",
-      "order": 10
+      "order": 10,
+      "ragRefs": [],
+      "plotRefs": [],
+      "gameplayRefs": []
     },
     {
       "key": "world-1-glimmering-glance-night-school-ghost-stories",
@@ -306,7 +312,10 @@
       "branchLayout": "side",
       "status": "灵感",
       "parentKey": "world-1-glimmering-glance-grudge-ancient-tree",
-      "order": 20
+      "order": 20,
+      "ragRefs": [],
+      "plotRefs": [],
+      "gameplayRefs": []
     },
     {
       "key": "world-1-glimmering-glance-little-prisoner",
@@ -317,14 +326,6 @@
         "账号",
         "起始",
         "杂技团"
-      ],
-      "bondageTags": [
-        "镣铐",
-        "社死"
-      ],
-      "specialGameplay": [
-        "镣铐上街",
-        "无鞋"
       ],
       "characters": [
         "程见微",
@@ -339,7 +340,15 @@
       ],
       "status": "大纲草稿",
       "parentKey": "world-1-glimmering-glance-anomaly-disaster-response-organization",
-      "order": 10
+      "order": 10,
+      "ragRefs": [
+        "rag.restraint.tool.shackles",
+        "rag.restraint.effect.public-humiliation"
+      ],
+      "plotRefs": [
+        "plot.migration.社死-捆绑上街"
+      ],
+      "gameplayRefs": []
     },
     {
       "key": "world-1-glimmering-glance-anomaly-disaster-response-organization",
@@ -347,7 +356,10 @@
       "title": "异常灾害处理组织",
       "status": "大纲",
       "parentKey": "world-1-glimmering-glance-urban-rumors",
-      "order": 10
+      "order": 10,
+      "ragRefs": [],
+      "plotRefs": [],
+      "gameplayRefs": []
     },
     {
       "key": "world-1-glimmering-glance-strange-object-society-archive",
@@ -356,22 +368,34 @@
       "status": "大纲",
       "branchLayout": "side",
       "parentKey": "world-1-glimmering-glance-anomaly-disaster-response-organization",
-      "order": 20
+      "order": 20,
+      "ragRefs": [],
+      "plotRefs": [],
+      "gameplayRefs": []
     },
     {
       "key": "world-1-glimmering-glance-midnight-city-exploration",
       "world": "1-浮光掠影",
       "title": "深夜城市探险",
-      "bondageTags": [
-        "DID"
-      ],
       "storyTags": [
         "街景一隅"
       ],
       "branchLayout": "side",
       "status": "灵感",
       "parentKey": "world-1-glimmering-glance-urban-rumors",
-      "order": 20
+      "order": 20,
+      "ragRefs": [],
+      "plotRefs": [
+        "plot-056"
+      ],
+      "gameplayRefs": [
+        "gameplay-119"
+      ],
+      "legacyTagRefs": [
+        "bondage_tag:did",
+        "bondage_tag:sg:短篇职业体验",
+        "bondage_tag:sg:普通绑架脱困"
+      ]
     },
     {
       "key": "world-1-glimmering-glance-model",
@@ -379,12 +403,6 @@
       "title": "紧缚模特",
       "branchLayout": "side",
       "summary": "拘束用具模特。",
-      "bondageTags": [
-        "模特"
-      ],
-      "specialGameplay": [
-        "紧缚拍摄"
-      ],
       "locations": [
         "荆江市"
       ],
@@ -393,25 +411,22 @@
       ],
       "status": "大纲草稿",
       "parentKey": "world-1-glimmering-glance-little-prisoner",
-      "order": 10
+      "order": 10,
+      "ragRefs": [],
+      "plotRefs": [
+        "plot-061"
+      ],
+      "gameplayRefs": [],
+      "legacyTagRefs": [
+        "bondage_tag:模特",
+        "bondage_tag:sg:职业-模特"
+      ]
     },
     {
       "key": "world-1-glimmering-glance-maid-hotel",
       "world": "1-浮光掠影",
       "title": "女仆酒店",
       "summary": "女仆酒店中被女仆们抓捕。",
-      "plotTags": [
-        "职业",
-        "反套路"
-      ],
-      "bondageTags": [
-        "气味系"
-      ],
-      "specialGameplay": [
-        "踩踩",
-        "演员",
-        "女仆捆主人"
-      ],
       "characters": [
         "苏婉儿"
       ],
@@ -423,14 +438,29 @@
       ],
       "status": "大纲草稿",
       "parentKey": "world-1-glimmering-glance-little-prisoner",
-      "order": 20
+      "order": 20,
+      "ragRefs": [
+        "rag.restraint.effect.odor-stimulation"
+      ],
+      "plotRefs": [
+        "plot-062",
+        "plot-055"
+      ],
+      "gameplayRefs": [],
+      "legacyTagRefs": [
+        "bondage_tag:sg:职业-演员",
+        "bondage_tag:sg:反套路-女仆捆主人"
+      ]
     },
     {
       "key": "world-1-glimmering-glance-hotel-fright",
       "world": "1-浮光掠影",
       "title": "酒店惊魂",
       "parentKey": "world-1-glimmering-glance-maid-hotel",
-      "order": 10
+      "order": 10,
+      "ragRefs": [],
+      "plotRefs": [],
+      "gameplayRefs": []
     },
     {
       "key": "world-1-glimmering-glance-maid-massage-shop",
@@ -442,23 +472,16 @@
       ],
       "status": "大纲草稿",
       "parentKey": "world-1-glimmering-glance-hotel-fright",
-      "order": 10
+      "order": 10,
+      "ragRefs": [],
+      "plotRefs": [],
+      "gameplayRefs": []
     },
     {
       "key": "world-1-glimmering-glance-trafficker",
       "world": "1-浮光掠影",
       "title": "人贩子",
       "summary": "找模特工作时遇到人贩子。",
-      "bondageTags": [
-        "挠痒",
-        "DID",
-        "扎带"
-      ],
-      "specialGameplay": [
-        "拐卖",
-        "蚊子",
-        "扎带+拘捕网"
-      ],
       "locations": [
         "槐湾村"
       ],
@@ -467,19 +490,24 @@
       ],
       "status": "大纲草稿",
       "parentKey": "world-1-glimmering-glance-hotel-fright",
-      "order": 20
+      "order": 20,
+      "ragRefs": [
+        "rag.restraint.effect.tickling",
+        "rag.restraint.tool.cable-tie"
+      ],
+      "plotRefs": [
+        "plot.migration.did-拐卖"
+      ],
+      "gameplayRefs": [],
+      "legacyTagRefs": [
+        "bondage_tag:did"
+      ]
     },
     {
       "key": "world-1-glimmering-glance-huaiwan-village",
       "world": "1-浮光掠影",
       "title": "槐湾村",
       "summary": "村子里的璃落被捆着授课。",
-      "plotTags": [
-        "职业"
-      ],
-      "specialGameplay": [
-        "捆绑授课"
-      ],
       "characters": [
         "黄翠"
       ],
@@ -492,7 +520,15 @@
       ],
       "status": "大纲草稿",
       "parentKey": "world-1-glimmering-glance-trafficker",
-      "order": 10
+      "order": 10,
+      "ragRefs": [],
+      "plotRefs": [
+        "plot-059"
+      ],
+      "gameplayRefs": [],
+      "legacyTagRefs": [
+        "bondage_tag:sg:职业-教师"
+      ]
     },
     {
       "key": "world-1-glimmering-glance-gray-alley-adventure",
@@ -506,7 +542,10 @@
       ],
       "questType": "main",
       "parentKey": "world-1-glimmering-glance-sinkhole-rainforest-expedition",
-      "order": 10
+      "order": 10,
+      "ragRefs": [],
+      "plotRefs": [],
+      "gameplayRefs": []
     },
     {
       "key": "world-1-glimmering-glance-variety-show-fright",
@@ -514,7 +553,10 @@
       "title": "综艺惊魂",
       "status": "大纲",
       "parentKey": "world-1-glimmering-glance-jingjiang-geomancy",
-      "order": 10
+      "order": 10,
+      "ragRefs": [],
+      "plotRefs": [],
+      "gameplayRefs": []
     },
     {
       "key": "world-1-glimmering-glance-jingjiang-geomancy",
@@ -522,7 +564,10 @@
       "title": "荆江堪舆",
       "status": "大纲",
       "parentKey": "world-1-glimmering-glance-huaiwan-village",
-      "order": 10
+      "order": 10,
+      "ragRefs": [],
+      "plotRefs": [],
+      "gameplayRefs": []
     },
     {
       "key": "world-1-glimmering-glance-world-expedition-team",
@@ -531,7 +576,10 @@
       "status": "主线任务",
       "questType": "main",
       "parentKey": "world-1-glimmering-glance-variety-show-fright",
-      "order": 10
+      "order": 10,
+      "ragRefs": [],
+      "plotRefs": [],
+      "gameplayRefs": []
     },
     {
       "key": "world-1-glimmering-glance-fog-sea-lone-island-expedition",
@@ -539,7 +587,10 @@
       "title": "雾海孤岛探险",
       "status": "大纲",
       "parentKey": "world-1-glimmering-glance-world-expedition-team",
-      "order": 10
+      "order": 10,
+      "ragRefs": [],
+      "plotRefs": [],
+      "gameplayRefs": []
     },
     {
       "key": "world-1-glimmering-glance-sinkhole-rainforest-expedition",
@@ -547,7 +598,10 @@
       "title": "天坑雨林远征",
       "status": "大纲",
       "parentKey": "world-1-glimmering-glance-fog-sea-lone-island-expedition",
-      "order": 10
+      "order": 10,
+      "ragRefs": [],
+      "plotRefs": [],
+      "gameplayRefs": []
     },
     {
       "key": "world-1-glimmering-glance-reality-show",
@@ -556,7 +610,10 @@
       "status": "支线任务",
       "branchLayout": "side",
       "parentKey": "world-1-glimmering-glance-variety-show-fright",
-      "order": 20
+      "order": 20,
+      "ragRefs": [],
+      "plotRefs": [],
+      "gameplayRefs": []
     },
     {
       "key": "world-1-glimmering-glance-cement-shoes",
@@ -568,9 +625,6 @@
         "玩法｜水泥鞋·主要活动｜缺少主要游戏活动类型与可执行操作循环",
         "流程｜水泥鞋·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
         "衔接｜水泥鞋·Macy救援灵感｜Macy可能在救下璃落的过程中发挥重要作用，具体介入原因、行动和结果尚未确认"
-      ],
-      "bondageTags": [
-        "水泥鞋"
       ],
       "characters": [
         "林沐遥",
@@ -585,7 +639,12 @@
       ],
       "status": "大纲草稿",
       "parentKey": "world-1-glimmering-glance-gray-alley-adventure",
-      "order": 10
+      "order": 10,
+      "ragRefs": [
+        "rag.restraint.tool.cement-shoes"
+      ],
+      "plotRefs": [],
+      "gameplayRefs": []
     },
     {
       "key": "world-1-glimmering-glance-missing",
@@ -599,15 +658,6 @@
         "流程｜失联·独自脱逃｜缺少璃落从绑架车辆或转运点脱身的具体方式，以及她在看见欣雨前已经逃到哪一步",
         "人物｜失联·欣雨被捕｜缺少欣雨从《游轮》之后落入人口贩运链的原因、被捕时间及她与璃落重逢时的状态",
         "流程｜失联·折返营救｜缺少璃落折返后采用的救人办法、为何失败，以及她具体如何受伤并被重新抓获"
-      ],
-      "bondageTags": [
-        "社死",
-        "DID",
-        "模特"
-      ],
-      "specialGameplay": [
-        "伪装拘束",
-        "魔术助手"
       ],
       "characters": [
         "艾琳",
@@ -623,7 +673,19 @@
       ],
       "status": "大纲草稿",
       "parentKey": "world-1-glimmering-glance-cement-shoes",
-      "order": 10
+      "order": 10,
+      "ragRefs": [
+        "rag.restraint.effect.public-humiliation"
+      ],
+      "plotRefs": [
+        "plot.migration.社死-伪装拘束",
+        "plot.migration.did-绑架"
+      ],
+      "gameplayRefs": [],
+      "legacyTagRefs": [
+        "bondage_tag:did",
+        "bondage_tag:模特"
+      ]
     },
     {
       "key": "world-1-glimmering-glance-rust-salt",
@@ -642,18 +704,6 @@
       "foreshadowing": [
         "介绍",
         "灰巷势力"
-      ],
-      "bondageTags": [
-        "活埋",
-        "社死"
-      ],
-      "specialGameplay": [
-        "受限状态工具搜集",
-        "证据筛选",
-        "暴露后强化约束路线",
-        "小笼子",
-        "露头活埋",
-        "捆绑上街"
       ],
       "moduleType": [
         "脱困",
@@ -677,7 +727,20 @@
       ],
       "status": "大纲草稿",
       "parentKey": "world-1-glimmering-glance-missing",
-      "order": 10
+      "order": 10,
+      "ragRefs": [
+        "rag.restraint.context.burial-restraint",
+        "rag.restraint.effect.public-humiliation"
+      ],
+      "plotRefs": [
+        "plot.migration.活埋-露头活埋",
+        "plot.migration.社死-捆绑上街"
+      ],
+      "gameplayRefs": [
+        "gameplay-082",
+        "gameplay-060",
+        "gameplay-116"
+      ]
     },
     {
       "key": "world-1-glimmering-glance-prison-storm",
@@ -689,7 +752,13 @@
       ],
       "questType": "main",
       "parentKey": "world-1-glimmering-glance-rust-salt",
-      "order": 10
+      "order": 10,
+      "ragRefs": [],
+      "plotRefs": [],
+      "gameplayRefs": [],
+      "legacyTagRefs": [
+        "bondage_tag:sg:镣铐-压腿铐"
+      ]
     },
     {
       "key": "world-1-glimmering-glance-return-to-jingjiang",
@@ -698,7 +767,10 @@
       "status": "主线任务",
       "summary": "璃落回到荆江市后，从地下异能者猎人、合法异能者社会和城市人为案件三条线重新认识故乡，逐步追查以企业和机构为外壳的罪恶异能者组织。",
       "parentKey": "world-1-glimmering-glance-taisho-romance",
-      "order": 10
+      "order": 10,
+      "ragRefs": [],
+      "plotRefs": [],
+      "gameplayRefs": []
     },
     {
       "key": "world-1-glimmering-glance-old-capital-echo",
@@ -707,7 +779,10 @@
       "status": "主线任务",
       "summary": "旧都遗留的回声，把监狱风云之后的线索重新引向荆江市。",
       "parentKey": "world-1-glimmering-glance-black-oak-night-hunt",
-      "order": 10
+      "order": 10,
+      "ragRefs": [],
+      "plotRefs": [],
+      "gameplayRefs": []
     },
     {
       "key": "world-1-glimmering-glance-black-oak-night-hunt",
@@ -715,7 +790,10 @@
       "title": "黑槲夜猎",
       "status": "大纲",
       "parentKey": "world-1-glimmering-glance-prison-storm",
-      "order": 10
+      "order": 10,
+      "ragRefs": [],
+      "plotRefs": [],
+      "gameplayRefs": []
     },
     {
       "key": "world-1-glimmering-glance-rainy-ancient-city",
@@ -723,7 +801,10 @@
       "title": "烟雨古城",
       "status": "大纲",
       "parentKey": "world-1-glimmering-glance-old-capital-echo",
-      "order": 10
+      "order": 10,
+      "ragRefs": [],
+      "plotRefs": [],
+      "gameplayRefs": []
     },
     {
       "key": "world-1-glimmering-glance-fog-capital-strangeness",
@@ -731,7 +812,10 @@
       "title": "雾都怪奇",
       "status": "大纲",
       "parentKey": "world-1-glimmering-glance-red-white-marriage-contract",
-      "order": 10
+      "order": 10,
+      "ragRefs": [],
+      "plotRefs": [],
+      "gameplayRefs": []
     },
     {
       "key": "world-1-glimmering-glance-red-white-marriage-contract",
@@ -739,7 +823,10 @@
       "title": "赤白婚契",
       "status": "大纲",
       "parentKey": "world-1-glimmering-glance-rainy-ancient-city",
-      "order": 10
+      "order": 10,
+      "ragRefs": [],
+      "plotRefs": [],
+      "gameplayRefs": []
     },
     {
       "key": "world-1-glimmering-glance-taisho-romance",
@@ -747,7 +834,10 @@
       "title": "大正浪漫",
       "status": "大纲",
       "parentKey": "world-1-glimmering-glance-black-rose-sanatorium",
-      "order": 10
+      "order": 10,
+      "ragRefs": [],
+      "plotRefs": [],
+      "gameplayRefs": []
     },
     {
       "key": "world-1-glimmering-glance-black-rose-sanatorium",
@@ -755,16 +845,16 @@
       "title": "黑蔷薇疗养院",
       "status": "大纲",
       "parentKey": "world-1-glimmering-glance-fog-capital-strangeness",
-      "order": 10
+      "order": 10,
+      "ragRefs": [],
+      "plotRefs": [],
+      "gameplayRefs": []
     },
     {
       "key": "world-1-glimmering-glance-little-maid-team",
       "world": "1-浮光掠影",
       "title": "小小女仆团",
       "summary": "璃落在睡梦中遭拇指女仆袭击并被遥控改装玩具车运往后巷，玩家每回合在挣脱、呼救、保护与标记中四选一；救援进度先满可让苏婉儿在后巷截停，受限进度先满则继续转运至接应车辆前。",
-      "bondageTags": [
-        "气味系"
-      ],
       "characters": [
         "璃落",
         "苏婉儿",
@@ -777,19 +867,22 @@
       ],
       "status": "大纲",
       "parentKey": "world-1-glimmering-glance-return-to-jingjiang",
-      "order": 10
+      "order": 10,
+      "ragRefs": [
+        "rag.restraint.effect.odor-stimulation"
+      ],
+      "plotRefs": [],
+      "gameplayRefs": [
+        "gameplay-072",
+        "gameplay-013",
+        "gameplay-116"
+      ]
     },
     {
       "key": "world-1-glimmering-glance-jingjiang-seventh-ability-adaptation-school",
       "world": "1-浮光掠影",
       "title": "荆江第七异能适应学校",
       "summary": "小小女仆团事件后，璃落以志愿者身份进入面向成年异能者的适应学校，并临时接替请假教师；学生用协作异能争夺课堂控制权，她必须识别能力来源、处理整蛊并完成自救实践课。",
-      "plotTags": [
-        "异能者学校",
-        "职业",
-        "校园整蛊",
-        "下克上"
-      ],
       "characters": [
         "璃落",
         "苏婉儿",
@@ -802,7 +895,14 @@
       ],
       "status": "大纲",
       "parentKey": "world-1-glimmering-glance-little-maid-team",
-      "order": 10
+      "order": 10,
+      "ragRefs": [],
+      "plotRefs": [],
+      "gameplayRefs": [
+        "gameplay-066",
+        "gameplay-100",
+        "gameplay-116"
+      ]
     },
     {
       "key": "world-1-glimmering-glance-luxury-theater",
@@ -812,20 +912,16 @@
         "幻域回声"
       ],
       "parentKey": "world-1-glimmering-glance-missing-night-bus",
-      "order": 10
+      "order": 10,
+      "ragRefs": [],
+      "plotRefs": [],
+      "gameplayRefs": []
     },
     {
       "key": "world-1-glimmering-glance-missing-night-bus",
       "world": "1-浮光掠影",
       "title": "消失的夜班车",
       "summary": "七校学员的同住者在工业园下夜班后失踪，璃落从被篡改的考勤、反复更换的班车和外包劳务单追查跨厂转运链，在证据被销毁前截停车辆、救出失踪工人，并由此开始接受城市中的人为案件委托。",
-      "plotTags": [
-        "失踪调查",
-        "工业园",
-        "非法转运",
-        "企业犯罪",
-        "调查员起点"
-      ],
       "characters": [
         "璃落",
         "苏婉儿",
@@ -838,26 +934,23 @@
       ],
       "status": "大纲",
       "parentKey": "world-1-glimmering-glance-jingjiang-seventh-ability-adaptation-school",
-      "order": 10
+      "order": 10,
+      "ragRefs": [],
+      "plotRefs": [],
+      "gameplayRefs": [
+        "gameplay-060",
+        "gameplay-109",
+        "gameplay-013"
+      ],
+      "legacyTagRefs": [
+        "bondage_tag:sg:对照考勤-班车与劳务单建立证据链"
+      ]
     },
     {
       "key": "world-1-glimmering-glance-city-investigator",
       "world": "1-浮光掠影",
       "title": "城市调查员",
       "summary": "完成夜班车失踪案后，璃落以独立调查员身份接受城市人为案件委托，调查工厂、企业和地下运输链中的失踪、非法拘禁与异能滥用；异常灾害处理组织只在案件升级为异常区域或灾害时介入。",
-      "plotTags": [
-        "独立调查员",
-        "工厂调查",
-        "企业犯罪",
-        "委托支线"
-      ],
-      "bondageTags": [
-        "丝袜拘束",
-        "全身包裹",
-        "手铐",
-        "脚镣",
-        "锁链"
-      ],
       "characters": [
         "璃落",
         "丝袜厂人员",
@@ -869,14 +962,30 @@
       "status": "大纲",
       "branchLayout": "side",
       "parentKey": "world-1-glimmering-glance-missing-night-bus",
-      "order": 20
+      "order": 20,
+      "ragRefs": [
+        "rag.restraint.material.stocking-restraint",
+        "rag.restraint.structure.full-body-wrapping",
+        "rag.restraint.tool.handcuffs",
+        "rag.restraint.tool.leg-irons",
+        "rag.restraint.tool.chain"
+      ],
+      "plotRefs": [],
+      "gameplayRefs": [
+        "gameplay-090",
+        "gameplay-013",
+        "gameplay-107"
+      ]
     },
     {
       "key": "world-1-glimmering-glance-eternal-restraint-maze",
       "world": "1-浮光掠影",
       "title": "永拘迷宫",
       "parentKey": "world-1-glimmering-glance-silent-correction-center",
-      "order": 10
+      "order": 10,
+      "ragRefs": [],
+      "plotRefs": [],
+      "gameplayRefs": []
     },
     {
       "key": "world-1-glimmering-glance-silent-correction-center",
@@ -884,7 +993,10 @@
       "title": "静默矫治中心",
       "status": "大纲",
       "parentKey": "world-1-glimmering-glance-luxury-theater",
-      "order": 10
+      "order": 10,
+      "ragRefs": [],
+      "plotRefs": [],
+      "gameplayRefs": []
     },
     {
       "key": "world-1-glimmering-glance-fantasy-world-adventure",
@@ -895,7 +1007,10 @@
       ],
       "branchLayout": "side",
       "parentKey": "world-1-glimmering-glance-luxury-theater",
-      "order": 20
+      "order": 20,
+      "ragRefs": [],
+      "plotRefs": [],
+      "gameplayRefs": []
     },
     {
       "key": "world-1-glimmering-glance-liminal-space",
@@ -914,26 +1029,8 @@
         "结局｜阈限空间·受害者与长期Boss追捕｜已确认建立者失去永拘迷宫控制权并成为后续支线长期 Boss，本次救出的受害者范围、首次追捕线索与后续交锋阶段均保留待定",
         "流程｜阈限空间·长期进入方式｜已确认失控后的永久拘束标记只保留空间坐标功能，璃落后续不必从该坐标进入，缺少其他稳定或随机入口的开放规则"
       ],
-      "plotTags": [
-        "迷宫",
-        "后室",
-        "阈限空间",
-        "群像救援",
-        "跨国犯罪",
-        "人口贩卖",
-        "长期Boss"
-      ],
       "foreshadowing": [
         "永拘迷宫建立者逃入阈限网络深处并成为后续支线长期Boss"
-      ],
-      "specialGameplay": [
-        "无限层级探索",
-        "拘束状态选择",
-        "泳池漂浮物路线",
-        "永久拘束标记反向定位"
-      ],
-      "bondageTags": [
-        "永久拘束"
       ],
       "characters": [
         "璃落",
@@ -951,7 +1048,17 @@
       ],
       "branchLayout": "side",
       "parentKey": "world-1-glimmering-glance-eternal-restraint-maze",
-      "order": 20
+      "order": 20,
+      "ragRefs": [
+        "rag.restraint.duration.permanent-restraint"
+      ],
+      "plotRefs": [],
+      "gameplayRefs": [
+        "gameplay-012",
+        "gameplay-013",
+        "gameplay-094",
+        "gameplay-029"
+      ]
     },
     {
       "key": "world-1-glimmering-glance-epilogue",
@@ -961,33 +1068,34 @@
       "summary": "灰巷线尾声。",
       "questType": "main",
       "parentKey": "world-1-glimmering-glance-eternal-restraint-maze",
-      "order": 10
+      "order": 10,
+      "ragRefs": [],
+      "plotRefs": [],
+      "gameplayRefs": []
     },
     {
       "key": "world-1-glimmering-glance-ultimate-restraint",
       "world": "1-浮光掠影",
       "title": "极端高危女性囚犯运输终极约束方案",
       "summary": "都市反派的最终拘束方案。",
-      "bondageTags": [
-        "永久拘束",
-        "监禁"
-      ],
       "storyTags": [
         "禁域长廊"
       ],
       "status": "大纲草稿",
       "parentKey": "world-1-glimmering-glance-epilogue",
-      "order": 10
+      "order": 10,
+      "ragRefs": [
+        "rag.restraint.duration.permanent-restraint",
+        "rag.restraint.state.confinement"
+      ],
+      "plotRefs": [],
+      "gameplayRefs": []
     },
     {
       "key": "world-1-glimmering-glance-silent-witness",
       "world": "1-浮光掠影",
       "title": "沉默见证",
       "summary": "记者被剥夺所有发声能力。",
-      "bondageTags": [
-        "胶水",
-        "拘束生活"
-      ],
       "characters": [
         "闻澜"
       ],
@@ -997,26 +1105,19 @@
       "branchLayout": "side",
       "status": "大纲草稿",
       "parentKey": "world-1-glimmering-glance-rust-salt",
-      "order": 20
+      "order": 20,
+      "ragRefs": [
+        "rag.restraint.material.glue",
+        "rag.restraint.context.restrained-life"
+      ],
+      "plotRefs": [],
+      "gameplayRefs": []
     },
     {
       "key": "world-1-glimmering-glance-snow-train",
       "world": "1-浮光掠影",
       "title": "雪城列车",
       "summary": "去往雪城的火车卧铺玩法，包含火车牌局与客串乘务员场景。",
-      "plotTags": [
-        "职业"
-      ],
-      "bondageTags": [
-        "挠痒",
-        "气味系",
-        "游戏"
-      ],
-      "specialGameplay": [
-        "气味系-踩踩",
-        "游戏-紧缚斗地主",
-        "职业-火车乘务员"
-      ],
       "characters": [
         "林沐遥",
         "陈思雨",
@@ -1031,25 +1132,27 @@
       "branchLayout": "side",
       "status": "大纲草稿",
       "parentKey": "world-1-glimmering-glance-huaiwan-village",
-      "order": 20
+      "order": 20,
+      "ragRefs": [
+        "rag.restraint.effect.tickling",
+        "rag.restraint.effect.odor-stimulation"
+      ],
+      "plotRefs": [
+        "plot-058"
+      ],
+      "gameplayRefs": [
+        "gameplay-072"
+      ],
+      "legacyTagRefs": [
+        "bondage_tag:游戏",
+        "bondage_tag:sg:职业-火车乘务员"
+      ]
     },
     {
       "key": "world-1-glimmering-glance-movie-bound-stand-in",
       "world": "1-浮光掠影",
       "title": "电影绑替兼职",
       "summary": "璃落接到片场绑替兼职，在电影拍摄中担任被拘束替身。",
-      "plotTags": [
-        "职业",
-        "演员"
-      ],
-      "bondageTags": [
-        "社死"
-      ],
-      "specialGameplay": [
-        "绑替拍摄",
-        "分镜配合",
-        "道具拘束"
-      ],
       "characters": [
         "苏婉儿"
       ],
@@ -1063,7 +1166,17 @@
       "branchLayout": "side",
       "status": "灵感",
       "parentKey": "world-1-glimmering-glance-maid-hotel",
-      "order": 20
+      "order": 20,
+      "ragRefs": [
+        "rag.restraint.effect.public-humiliation"
+      ],
+      "plotRefs": [
+        "plot-062"
+      ],
+      "gameplayRefs": [],
+      "legacyTagRefs": [
+        "bondage_tag:sg:职业-演员"
+      ]
     },
     {
       "key": "world-1-glimmering-glance-inflatable-castle",
@@ -1072,19 +1185,6 @@
       "summary": "和社团大家在充气城堡玩闹。",
       "foreshadowing": [
         "社团活动"
-      ],
-      "plotTags": [
-        "惊险刺激"
-      ],
-      "bondageTags": [
-        "扎带",
-        "社死",
-        "气味系"
-      ],
-      "specialGameplay": [
-        "踩踩",
-        "捆绑上街",
-        "失重"
       ],
       "characters": [
         "林雨薇",
@@ -1101,20 +1201,25 @@
       "branchLayout": "side",
       "status": "大纲草稿",
       "parentKey": "world-1-glimmering-glance-maid-hotel",
-      "order": 30
+      "order": 30,
+      "ragRefs": [
+        "rag.restraint.tool.cable-tie",
+        "rag.restraint.effect.public-humiliation",
+        "rag.restraint.effect.odor-stimulation"
+      ],
+      "plotRefs": [
+        "plot.migration.社死-捆绑上街"
+      ],
+      "gameplayRefs": [],
+      "legacyTagRefs": [
+        "bondage_tag:sg:刺激-自由落体"
+      ]
     },
     {
       "key": "world-1-glimmering-glance-sensory-trial",
       "world": "1-浮光掠影",
       "title": "感官试炼",
       "summary": "荆锁会感官刺激。",
-      "bondageTags": [
-        "挠痒",
-        "感官刺激"
-      ],
-      "specialGameplay": [
-        "眼耳口鼻"
-      ],
       "locations": [
         "荆江市",
         "安和精神病院"
@@ -1125,7 +1230,13 @@
       "branchLayout": "side",
       "status": "大纲草稿",
       "parentKey": "world-1-glimmering-glance-old-dormitory",
-      "order": 20
+      "order": 20,
+      "ragRefs": [
+        "rag.restraint.effect.tickling",
+        "rag.restraint.effect.sensory-stimulation"
+      ],
+      "plotRefs": [],
+      "gameplayRefs": []
     },
     {
       "key": "world-1-glimmering-glance-old-case",
@@ -1143,20 +1254,6 @@
         "宿舍旧楼内的时间电梯连接荆江大学各年代层",
         "荆江大学旧校名与荆南大学现实校名的对照"
       ],
-      "plotTags": [
-        "霸凌",
-        "时间层",
-        "旧案调查",
-        "石膏"
-      ],
-      "bondageTags": [
-        "胶水"
-      ],
-      "specialGameplay": [
-        "胶水-胶水粘嘴",
-        "石膏-石膏包手",
-        "电梯纵向时间线"
-      ],
       "locations": [
         "荆南大学",
         "荆江大学（旧校名）",
@@ -1167,7 +1264,16 @@
       ],
       "status": "大纲草稿",
       "parentKey": "world-1-glimmering-glance-sensory-trial",
-      "order": 10
+      "order": 10,
+      "ragRefs": [
+        "rag.restraint.material.glue"
+      ],
+      "plotRefs": [
+        "plot.migration.胶水-胶水粘嘴"
+      ],
+      "gameplayRefs": [
+        "gameplay-068"
+      ]
     },
     {
       "key": "world-1-glimmering-glance-mirror-person",
@@ -1179,7 +1285,10 @@
       ],
       "status": "大纲草稿",
       "parentKey": "world-1-glimmering-glance-stage-performance",
-      "order": 20
+      "order": 20,
+      "ragRefs": [],
+      "plotRefs": [],
+      "gameplayRefs": []
     },
     {
       "key": "world-1-glimmering-glance-cruise",
@@ -1190,14 +1299,6 @@
         "社团活动",
         "杂技团",
         "初见"
-      ],
-      "bondageTags": [
-        "模特"
-      ],
-      "specialGameplay": [
-        "美人鱼",
-        "荧光绳",
-        "魔术助手"
       ],
       "characters": [
         "林雨薇",
@@ -1213,7 +1314,16 @@
       "branchLayout": "side",
       "status": "大纲草稿",
       "parentKey": "world-1-glimmering-glance-dance-classroom",
-      "order": 20
+      "order": 20,
+      "ragRefs": [],
+      "plotRefs": [
+        "plot-060"
+      ],
+      "gameplayRefs": [],
+      "legacyTagRefs": [
+        "bondage_tag:模特",
+        "bondage_tag:sg:职业-美人鱼模特"
+      ]
     },
     {
       "key": "world-1-glimmering-glance-hot-spring",
@@ -1222,19 +1332,6 @@
       "summary": "温泉里的比赛。",
       "foreshadowing": [
         "社团活动"
-      ],
-      "bondageTags": [
-        "挠痒",
-        "活埋",
-        "性刺激",
-        "气味系",
-        "游戏"
-      ],
-      "specialGameplay": [
-        "区别对待",
-        "山药汁",
-        "沙滩活埋",
-        "紧缚比赛"
       ],
       "characters": [
         "林雨薇",
@@ -1248,7 +1345,25 @@
       ],
       "status": "大纲草稿",
       "parentKey": "world-1-glimmering-glance-cruise",
-      "order": 10
+      "order": 10,
+      "ragRefs": [
+        "rag.restraint.effect.tickling",
+        "rag.restraint.context.burial-restraint",
+        "rag.restraint.effect.sexual-stimulation",
+        "rag.restraint.effect.odor-stimulation"
+      ],
+      "plotRefs": [
+        "plot.migration.活埋-沙滩活埋",
+        "plot-057"
+      ],
+      "gameplayRefs": [
+        "gameplay-099",
+        "gameplay-100"
+      ],
+      "legacyTagRefs": [
+        "bondage_tag:游戏",
+        "bondage_tag:sg:区别对待"
+      ]
     },
     {
       "key": "world-1-glimmering-glance-flexibility",
@@ -1256,14 +1371,6 @@
       "title": "柔韧性练习",
       "branchLayout": "side",
       "summary": "选修舞蹈课。",
-      "bondageTags": [
-        "社死",
-        "疼痛"
-      ],
-      "specialGameplay": [
-        "教室被绑",
-        "捆绑拉伸"
-      ],
       "characters": [
         "林雨薇",
         "莫语"
@@ -1273,7 +1380,16 @@
       ],
       "status": "大纲草稿",
       "parentKey": "world-1-glimmering-glance-club",
-      "order": 20
+      "order": 20,
+      "ragRefs": [
+        "rag.restraint.effect.public-humiliation",
+        "rag.restraint.effect.pain"
+      ],
+      "plotRefs": [
+        "plot.migration.社死-教室被绑",
+        "plot.migration.疼痛-捆绑拉伸"
+      ],
+      "gameplayRefs": []
     },
     {
       "key": "world-1-glimmering-glance-bound-world-tour",
@@ -1291,19 +1407,6 @@
         "旧房车中保存的纸质地图与童年目的地清单",
         "姐妹曾经未能实现的旅行约定",
         "旅途中与都市旧友重逢或通信"
-      ],
-      "plotTags": [
-        "后日谈",
-        "房车旅行",
-        "姐妹陪伴",
-        "风土人情",
-        "旅行摄影"
-      ],
-      "specialGameplay": [
-        "旧房车改造",
-        "旅行摄影",
-        "照片墙收藏",
-        "房车移动据点"
       ],
       "moduleType": [
         "探索",
@@ -1325,7 +1428,15 @@
       ],
       "status": "大纲",
       "parentKey": "world-1-glimmering-glance-ultimate-restraint",
-      "order": 10
+      "order": 10,
+      "ragRefs": [],
+      "plotRefs": [],
+      "gameplayRefs": [
+        "gameplay-083",
+        "gameplay-087",
+        "gameplay-111",
+        "gameplay-112"
+      ]
     }
   ]
 }

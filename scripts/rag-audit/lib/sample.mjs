@@ -238,6 +238,7 @@ async function loadConceptCandidates() {
         canonicalName: concept.canonicalName,
         aliases: concept.aliases ?? [],
         parentConcepts: concept.parentConcepts ?? [],
+        layer: concept.layer ?? (Array.isArray(concept.parentConcepts) && concept.parentConcepts.length ? 'concept' : 'category'),
         visibility: concept.visibility,
         summary: concept.summary ?? '',
       },

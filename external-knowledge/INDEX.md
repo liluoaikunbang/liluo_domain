@@ -8,7 +8,8 @@
 - 支持文本：Markdown、TXT、Markdown Text；其他文件只编目，不读取二进制正文
 - 来源根目录由 `external-knowledge/config.json` 的 `sourceRoots` 控制；来源目录：`catalog/sources.json`；分段：`index/segments/`；关键词与标签：`index/keywords/`、`index/tags/`
 - 七类卡片：`cards/expression/`、`visual-structure/`、`scene-pattern/`、`fictional-state/`、`trope/`、`term/`、`plot-pattern/`
-- 候选规则：`card-rules.json`，按证据组和最小独立来源数生成术语卡与情节模式卡
+- 候选规则：`card-rules.json`，按证据组和最小独立来源数生成术语卡与情节模式卡；规则可带 `linkedConceptIds` 指向概念种子（上位类别/具体概念）
+- 知识卡 `concepts[]` 只放可读概念名/别名，不放情节推进句；`linkedConceptIds` 为稳定挂接（优先于名称匹配）
 - 来源定位：`index/references/source-locations.json`；质量与重复报告：`reports/`
 - 当前统计与状态：`status.json`；构建清单：`manifest.json`
 

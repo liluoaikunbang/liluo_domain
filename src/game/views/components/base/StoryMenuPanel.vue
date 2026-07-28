@@ -158,9 +158,6 @@
                 </div>
                 <strong class="story-node-title">{{ node.title }}</strong>
                 <p v-if="node.summary" class="story-node-summary">{{ node.summary }}</p>
-                <div v-if="node.bondageTags.length > 0" class="story-node-tags" aria-label="紧缚标签">
-                  <span v-for="bondageTag in node.bondageTags" :key="bondageTag" class="story-node-tag">{{ bondageTag }}</span>
-                </div>
                 <button
                   v-if="hasMissingItems(node)"
                   class="story-node-missing-button"
@@ -198,8 +195,9 @@
                 <th scope="col">状态</th>
                 <th scope="col">故事线</th>
                 <th scope="col">概要</th>
-                <th scope="col">紧缚标签</th>
-                <th scope="col">特殊玩法</th>
+                <th scope="col">情节引用</th>
+                <th scope="col">RAG 引用</th>
+                <th scope="col">玩法引用</th>
                 <th scope="col">主要角色</th>
                 <th scope="col">所在地点</th>
                 <th scope="col">需要异能</th>
@@ -277,13 +275,9 @@
                   </div>
                 </td>
                 <td class="story-table-summary">{{ node.summary }}</td>
-                <td>
-                  <div v-if="node.bondageTags.length > 0" class="story-table-tags">
-                    <span v-for="bondageTag in node.bondageTags" :key="bondageTag" class="story-node-tag">{{ bondageTag }}</span>
-                  </div>
-                  <span v-else class="story-table-empty">-</span>
-                </td>
-                <td class="story-summary-copy-cell">{{ node.specialGameplayText || '-' }}</td>
+                <td class="story-summary-copy-cell">{{ node.plotRefsText || '-' }}</td>
+                <td class="story-summary-copy-cell">{{ node.ragRefsText || '-' }}</td>
+                <td class="story-summary-copy-cell">{{ node.gameplayRefsText || '-' }}</td>
                 <td class="story-summary-copy-cell">{{ node.charactersText || '-' }}</td>
                 <td class="story-summary-copy-cell">{{ node.locationsText || '-' }}</td>
                 <td class="story-summary-copy-cell">{{ node.requiredAbilitiesText || '-' }}</td>
@@ -633,9 +627,9 @@
               <tr>
                 <th scope="col">文件名</th>
                 <th scope="col">状态</th>
-                <th scope="col" :class="getSummaryMatchFieldClass('plotTags')">情节标签</th>
-                <th scope="col" :class="getSummaryMatchFieldClass('bondageTags')">紧缚标签</th>
-                <th scope="col" :class="getSummaryMatchFieldClass('specialGameplay')">specialGameplay</th>
+                <th scope="col" :class="getSummaryMatchFieldClass('plotRefs')">情节引用</th>
+                <th scope="col" :class="getSummaryMatchFieldClass('ragRefs')">RAG 引用</th>
+                <th scope="col" :class="getSummaryMatchFieldClass('gameplayRefs')">玩法引用</th>
                 <th scope="col">简介</th>
               </tr>
             </thead>
@@ -669,10 +663,10 @@
                   <span v-else>-</span>
                 </td>
                 <td class="story-summary-copy-cell">
-                  <template v-if="node.plotTagsText">
+                  <template v-if="node.plotRefsText">
                     <span
-                      v-for="(part, index) in getSummaryMatchHighlightedParts(node.plotTagsText)"
-                      :key="`${node.key || node.fileTitle}-plot-tags-${index}`"
+                      v-for="(part, index) in getSummaryMatchHighlightedParts(node.plotRefsText)"
+                      :key="`${node.key || node.fileTitle}-plot-refs-${index}`"
                       :class="{ 'story-summary-match-keyword': part.isMatch }"
                     >
                       {{ part.text }}
@@ -681,10 +675,10 @@
                   <span v-else>-</span>
                 </td>
                 <td class="story-summary-copy-cell">
-                  <template v-if="node.bondageTagsText">
+                  <template v-if="node.ragRefsText">
                     <span
-                      v-for="(part, index) in getSummaryMatchHighlightedParts(node.bondageTagsText)"
-                      :key="`${node.key || node.fileTitle}-bondage-tags-${index}`"
+                      v-for="(part, index) in getSummaryMatchHighlightedParts(node.ragRefsText)"
+                      :key="`${node.key || node.fileTitle}-rag-refs-${index}`"
                       :class="{ 'story-summary-match-keyword': part.isMatch }"
                     >
                       {{ part.text }}
@@ -693,10 +687,10 @@
                   <span v-else>-</span>
                 </td>
                 <td class="story-summary-copy-cell">
-                  <template v-if="node.specialGameplayText">
+                  <template v-if="node.gameplayRefsText">
                     <span
-                      v-for="(part, index) in getSummaryMatchHighlightedParts(node.specialGameplayText)"
-                      :key="`${node.key || node.fileTitle}-special-gameplay-${index}`"
+                      v-for="(part, index) in getSummaryMatchHighlightedParts(node.gameplayRefsText)"
+                      :key="`${node.key || node.fileTitle}-gameplay-refs-${index}`"
                       :class="{ 'story-summary-match-keyword': part.isMatch }"
                     >
                       {{ part.text }}
@@ -827,24 +821,20 @@ const layoutModeOptions = [
 const clamp = (value, min, max) => Math.min(max, Math.max(min, value));
 const SUMMARY_FIELD_DEFINITIONS = [
   {
-    key: 'primaryGameplay',
-    label: '主要玩法'
+    key: 'plotRefs',
+    label: '情节引用'
   },
   {
     key: 'storyTags',
     label: 'storyTags'
   },
   {
-    key: 'plotTags',
-    label: '情节标签'
+    key: 'ragRefs',
+    label: 'RAG 引用'
   },
   {
-    key: 'bondageTags',
-    label: '紧缚标签'
-  },
-  {
-    key: 'specialGameplay',
-    label: 'specialGameplay'
+    key: 'gameplayRefs',
+    label: '玩法引用'
   },
   {
     key: 'characters',
@@ -870,14 +860,6 @@ function unique(values) {
 
 function getStoryTags(node) {
   return unique(Array.isArray(node.storyTags) ? node.storyTags : []).slice(0, 2);
-}
-
-function getBondageTags(node) {
-  return unique(Array.isArray(node.bondageTags) ? node.bondageTags : []).slice(0, 4);
-}
-
-function getTableBondageTags(node) {
-  return unique(Array.isArray(node.bondageTags) ? node.bondageTags : []);
 }
 
 function getDetailLabel(node) {
@@ -931,9 +913,9 @@ function formatSummaryValue(value) {
 function hasSummaryFields(node) {
   return [
     node.storyTags,
-    node.plotTags,
-    node.bondageTags,
-    node.specialGameplay,
+    node.plotRefs,
+    node.ragRefs,
+    node.gameplayRefs,
     node.characters,
     node.locations,
     node.requiredAbilities,
@@ -1024,8 +1006,9 @@ function getMetaItems(node) {
     createMetaItem('世界', node.world),
     createMetaItem('简介', node.summary),
     createMetaItem('伏笔', node.foreshadowing),
-    createMetaItem('情节标签', node.plotTags),
-    createMetaItem('特殊玩法', node.specialGameplay),
+    createMetaItem('情节引用', node.plotRefs),
+    createMetaItem('RAG 引用', node.ragRefs),
+    createMetaItem('玩法引用', node.gameplayRefs),
     createMetaItem('主要角色', node.characters),
     createMetaItem('需要异能', node.requiredAbilities),
     createMetaItem('所在地点', node.locations),
@@ -1135,7 +1118,7 @@ function getLayoutNodeHeight(node) {
     || hasStoryDetail(node)
     || hasLinkedGameplay(node);
   const titleRows = String(node?.title ?? '').length > 16 ? 2 : 1;
-  const tagRows = node?.bondageTags?.length > 2 ? 2 : node?.bondageTags?.length > 0 ? 1 : 0;
+  const tagRows = 0;
   const summaryRows = node?.summary
     ? isCategoryStatus(node?.status)
       ? Math.max(1, Math.ceil(String(node.summary).length / 24))
@@ -1385,8 +1368,9 @@ function createTableRows(outline, collapsedKeys) {
       cgSequence: Array.isArray(node.cgSequence) ? node.cgSequence : [],
       gameplayRefs: Array.isArray(node.gameplayRefs) ? node.gameplayRefs : [],
       storyTags: getStoryTags(node),
-      bondageTags: getTableBondageTags(node),
-      specialGameplayText: formatSummaryValue(node.specialGameplay),
+      plotRefsText: formatSummaryValue(node.plotRefs),
+      ragRefsText: formatSummaryValue(node.ragRefs),
+      gameplayRefsText: formatSummaryValue(node.gameplayRefs),
       charactersText: formatSummaryValue(node.characters),
       locationsText: formatSummaryValue(node.locations),
       requiredAbilitiesText: formatSummaryValue(node.requiredAbilities),
@@ -1560,9 +1544,9 @@ function createFilteredSummaryGroups(groups) {
 
 function createSummaryMatchNode(node) {
   const fileTitle = getMarkdownFileTitle(node.detailSourcePath);
-  const plotTags = toValueList(node.plotTags);
-  const bondageTags = getTableBondageTags(node);
-  const specialGameplay = toValueList(node.specialGameplay);
+  const plotRefs = toValueList(node.plotRefs);
+  const ragRefs = toValueList(node.ragRefs);
+  const gameplayRefs = toValueList(node.gameplayRefs);
 
   return {
     key: node.key ?? '',
@@ -1571,9 +1555,9 @@ function createSummaryMatchNode(node) {
     summary: node.summary ?? '',
     detailSourcePath: node.detailSourcePath ?? '',
     fileTitle,
-    plotTagsText: formatSummaryValue(plotTags),
-    bondageTagsText: formatSummaryValue(bondageTags),
-    specialGameplayText: formatSummaryValue(specialGameplay)
+    plotRefsText: formatSummaryValue(plotRefs),
+    ragRefsText: formatSummaryValue(ragRefs),
+    gameplayRefsText: formatSummaryValue(gameplayRefs)
   };
 }
 
@@ -1738,7 +1722,8 @@ function createNodeLayout(outline, mode, collapsedKeys) {
       cgSequence: Array.isArray(node.cgSequence) ? node.cgSequence : [],
       gameplayRefs: Array.isArray(node.gameplayRefs) ? node.gameplayRefs : [],
       storyTags: getStoryTags(node),
-      bondageTags: getBondageTags(node),
+      plotRefs: toValueList(node.plotRefs),
+      ragRefs: toValueList(node.ragRefs),
       metaItems: getMetaItems(node),
       branchLayout: node.branchLayout,
       isSideBranchLine,
@@ -1793,7 +1778,8 @@ function createNodeLayout(outline, mode, collapsedKeys) {
       cgSequence: Array.isArray(node.cgSequence) ? node.cgSequence : [],
       gameplayRefs: Array.isArray(node.gameplayRefs) ? node.gameplayRefs : [],
       storyTags: getStoryTags(node),
-      bondageTags: getBondageTags(node),
+      plotRefs: toValueList(node.plotRefs),
+      ragRefs: toValueList(node.ragRefs),
       metaItems: getMetaItems(node),
       branchLayout: node.branchLayout,
       isSideBranchLine,
@@ -1847,7 +1833,9 @@ function createNodeLayout(outline, mode, collapsedKeys) {
       displayStatus: '',
       timeline: '',
       storyTags: [],
-      bondageTags: [],
+      plotRefs: [],
+      ragRefs: [],
+      gameplayRefs: [],
       metaItems: [],
       depth,
       canCollapse: false,
