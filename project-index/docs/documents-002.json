@@ -1,5 +1,60 @@
 [
   {
+    "id": "docs/设计记忆/项目组灵魂/成员/凌音.md",
+    "indexVersion": 1,
+    "sourceHash": "b8e5d397cfac7808be0f621c1c45020583a55336d544814033bf6405206647d5",
+    "sourcePath": "docs/设计记忆/项目组灵魂/成员/凌音.md",
+    "subtype": "other",
+    "summary": "凌音｜程器｜验行",
+    "summarySource": "title-only",
+    "title": "凌音｜程器｜验行",
+    "type": "document"
+  },
+  {
+    "id": "docs/设计记忆/项目组灵魂/成员/时雨.md",
+    "indexVersion": 1,
+    "sourceHash": "ec48c43080e5445618604ff92179deeac7a7ac00d53c5403dc7d8c53cbedbe9d",
+    "sourcePath": "docs/设计记忆/项目组灵魂/成员/时雨.md",
+    "subtype": "other",
+    "summary": "时雨｜熔裁｜机枢",
+    "summarySource": "title-only",
+    "title": "时雨｜熔裁｜机枢",
+    "type": "document"
+  },
+  {
+    "id": "docs/设计记忆/项目组灵魂/成员/书晴.md",
+    "indexVersion": 1,
+    "sourceHash": "3a99ac6c007a4d58068dd8de547cf498025417732d19e6e4b9b1fd190c006593",
+    "sourcePath": "docs/设计记忆/项目组灵魂/成员/书晴.md",
+    "subtype": "other",
+    "summary": "书晴｜事类｜拾影",
+    "summarySource": "title-only",
+    "title": "书晴｜事类｜拾影",
+    "type": "document"
+  },
+  {
+    "id": "docs/设计记忆/项目组灵魂/成员/星弥.md",
+    "indexVersion": 1,
+    "sourceHash": "014421309fd01653b99253802adaf2e189b27aa6d4aaa191b5d2ed10fb9a4ecf",
+    "sourcePath": "docs/设计记忆/项目组灵魂/成员/星弥.md",
+    "subtype": "other",
+    "summary": "星弥｜隐秀｜补阙",
+    "summarySource": "title-only",
+    "title": "星弥｜隐秀｜补阙",
+    "type": "document"
+  },
+  {
+    "id": "docs/设计记忆/项目组灵魂/成员/言澈.md",
+    "indexVersion": 1,
+    "sourceHash": "480d633933fb8bed8e2e4a38699877c2022b90788fa115c06067d6fcc28a6327",
+    "sourcePath": "docs/设计记忆/项目组灵魂/成员/言澈.md",
+    "subtype": "other",
+    "summary": "言澈｜正纬｜经纬",
+    "summarySource": "title-only",
+    "title": "言澈｜正纬｜经纬",
+    "type": "document"
+  },
+  {
     "id": "docs/设计记忆/项目组灵魂/成员/砚秋.md",
     "indexVersion": 1,
     "sourceHash": "32ff17f62b45bd130bed1418750138f6a9cc0bc94a23ad72eb5aecbb4af25ed0",
@@ -200,7 +255,7 @@
   {
     "id": "docs/系统说明/大纲关联图谱系统.md",
     "indexVersion": 1,
-    "sourceHash": "6aae389fa1ebffae64386604ebded939b59bdaf7106f83402ea7f95b3dc48518",
+    "sourceHash": "c0f7ea722c75017dc78e1dcf8ccbae57cfbe6d9056b6a763bfc51840b717de88",
     "sourcePath": "docs/系统说明/大纲关联图谱系统.md",
     "subtype": "system",
     "summary": "大纲关联图谱系统",
@@ -319,6 +374,17 @@
     "type": "document"
   },
   {
+    "id": "docs/系统说明/故事情节RAG边界治理系统.md",
+    "indexVersion": 1,
+    "sourceHash": "0ae8847956fb56d50e06c294f2a24d3e5ae0a3c0cd64aec1e55bbf17440ebeb1",
+    "sourcePath": "docs/系统说明/故事情节RAG边界治理系统.md",
+    "subtype": "system",
+    "summary": "故事—情节—RAG 边界治理系统",
+    "summarySource": "title-only",
+    "title": "故事—情节—RAG 边界治理系统",
+    "type": "document"
+  },
+  {
     "id": "docs/系统说明/故事缺口发现与灵感补全系统.md",
     "indexVersion": 1,
     "sourceHash": "9b20471fd2b926b8768fa825184e537410deddbff5bac77bd2db06215627a20c",
@@ -371,6 +437,17 @@
     "summary": "角色外观与运行时状态",
     "summarySource": "title-only",
     "title": "角色外观与运行时状态",
+    "type": "document"
+  },
+  {
+    "id": "docs/系统说明/紧缚专业RAG双分支系统.md",
+    "indexVersion": 1,
+    "sourceHash": "7f964925003758b0b3a822ad8df4b47bd7cdad7c714ca0dc06e52fd7e24ebe94",
+    "sourcePath": "docs/系统说明/紧缚专业RAG双分支系统.md",
+    "subtype": "system",
+    "summary": "紧缚专业 RAG 双分支系统",
+    "summarySource": "title-only",
+    "title": "紧缚专业 RAG 双分支系统",
     "type": "document"
   },
   {
@@ -442,7 +519,7 @@
   {
     "id": "docs/系统说明/情节条目系统.md",
     "indexVersion": 1,
-    "sourceHash": "ce64945b13ee050675dca07e91c1e321b2c4b5aeeb7f6a8f335846f82b1fb410",
+    "sourceHash": "90384e80f01b46dcc0dbfc8e77d32706df9a0d5f125159a9616654be9e1abab9",
     "sourcePath": "docs/系统说明/情节条目系统.md",
     "subtype": "system",
     "summary": "情节条目系统",
@@ -497,7 +574,7 @@
   {
     "id": "docs/系统说明/外部虚构题材知识库.md",
     "indexVersion": 1,
-    "sourceHash": "9b7d5c5660ff797a4d2d70430aa5fd3666440f4a65e2a1d5d6e8b808e34b23ee",
+    "sourceHash": "23f9c206f29c332e0b4eeefc3b1b80e20f2fbd2f31fa9cbcf55aee000444bbbb",
     "sourcePath": "docs/系统说明/外部虚构题材知识库.md",
     "subtype": "system",
     "summary": "外部虚构题材知识库",
@@ -640,7 +717,7 @@
   {
     "id": "docs/系统说明/知识检索抽查校准系统.md",
     "indexVersion": 1,
-    "sourceHash": "8c642b63bcaac6d0c6e6de88f179349355d8e2f297b705200643b2cd289fc9b2",
+    "sourceHash": "484ee200235fe5f30d6023846cbfdd1b4592e37a41d4fc3670aaf7f61a8ed199",
     "sourcePath": "docs/系统说明/知识检索抽查校准系统.md",
     "subtype": "system",
     "summary": "知识检索抽查校准系统",
@@ -717,7 +794,7 @@
   {
     "id": "docs/系统说明/README.md",
     "indexVersion": 1,
-    "sourceHash": "c20b1bd5827322b2b79272b37156ac43966fc0770a4c3d83a1fbf30fbab43368",
+    "sourceHash": "94f7fabfddf42b24826054bc2a69316d50a55a90f756fade941d48fb6e3c8fba",
     "sourcePath": "docs/系统说明/README.md",
     "subtype": "system",
     "summary": "系统说明",
@@ -761,7 +838,7 @@
   {
     "id": "docs/系统说明/Tag体系收缩与RAG情节迁移系统.md",
     "indexVersion": 1,
-    "sourceHash": "111b4ea8ef813ce68edda9846b4c0edaf79039d70ee1e89d1f0995c465a2c7a6",
+    "sourceHash": "4373fad53b99a7ed163b2672c9a406d0700100a280e11200a670e8c732ade440",
     "sourcePath": "docs/系统说明/Tag体系收缩与RAG情节迁移系统.md",
     "subtype": "system",
     "summary": "Tag 体系收缩与 RAG / 情节迁移系统",
@@ -794,7 +871,7 @@
   {
     "id": "docs/项目能力、缺口与行动总览.md",
     "indexVersion": 1,
-    "sourceHash": "9a235b6cfa22392d3e33a21aa5c43005d687bc538971eded97d2b033b620fc88",
+    "sourceHash": "610f0dd70fd707eaf6f99eb793e5855c3f8efbb5bbfc22b7bd42813d115db3bd",
     "sourcePath": "docs/项目能力、缺口与行动总览.md",
     "subtype": "other",
     "summary": "项目能力、缺口与行动总览",
@@ -2169,7 +2246,7 @@
   {
     "id": "docs/用户命令目录.md",
     "indexVersion": 1,
-    "sourceHash": "649bccd315c13034a3ea79fcb987a715ee9ce1782841f6428dd90e65d866ddd8",
+    "sourceHash": "18f8b0ee3f4db66fbd4776b03635e6cbd08b8714b65036b207e24296ec4a5e00",
     "sourcePath": "docs/用户命令目录.md",
     "subtype": "other",
     "summary": "用户命令目录",
@@ -2670,83 +2747,6 @@
     "summary": "普通 RAG 抽查批次 rab-ms41ij8y",
     "summarySource": "title-only",
     "title": "普通 RAG 抽查批次 rab-ms41ij8y",
-    "type": "document"
-  },
-  {
-    "id": "docs/知识检索校准/batches/rab-ms41ija5.md",
-    "indexVersion": 1,
-    "sourceHash": "33814b43e17ecc991afc640718c13ef4b1c7f3b57a6716fed24469d51016a8ee",
-    "sourcePath": "docs/知识检索校准/batches/rab-ms41ija5.md",
-    "subtype": "other",
-    "summary": "普通 RAG 抽查批次 rab-ms41ija5",
-    "summarySource": "title-only",
-    "title": "普通 RAG 抽查批次 rab-ms41ija5",
-    "type": "document"
-  },
-  {
-    "id": "docs/知识检索校准/batches/rab-ms41ijbj.md",
-    "indexVersion": 1,
-    "sourceHash": "aa8d7e3a844199e39d0df6cbdc887c73bacc80e09c5e3beef0a6ea76f90427ab",
-    "sourcePath": "docs/知识检索校准/batches/rab-ms41ijbj.md",
-    "subtype": "other",
-    "summary": "普通 RAG 抽查批次 rab-ms41ijbj",
-    "summarySource": "title-only",
-    "title": "普通 RAG 抽查批次 rab-ms41ijbj",
-    "type": "document"
-  },
-  {
-    "id": "docs/知识检索校准/batches/rab-ms41ijdk.md",
-    "indexVersion": 1,
-    "sourceHash": "e815696846b5a84a12eb27f730068919616ebd940cb28e1a8252ef7feefa2f44",
-    "sourcePath": "docs/知识检索校准/batches/rab-ms41ijdk.md",
-    "subtype": "other",
-    "summary": "细节概念 抽查批次 rab-ms41ijdk",
-    "summarySource": "title-only",
-    "title": "细节概念 抽查批次 rab-ms41ijdk",
-    "type": "document"
-  },
-  {
-    "id": "docs/知识检索校准/batches/rab-ms41ijdp.md",
-    "indexVersion": 1,
-    "sourceHash": "69a3ba66f629fadc6466a04f61f74cadf778fd9becc2e514822e1ae6435c07b6",
-    "sourcePath": "docs/知识检索校准/batches/rab-ms41ijdp.md",
-    "subtype": "other",
-    "summary": "情节 抽查批次 rab-ms41ijdp",
-    "summarySource": "title-only",
-    "title": "情节 抽查批次 rab-ms41ijdp",
-    "type": "document"
-  },
-  {
-    "id": "docs/知识检索校准/batches/rab-ms41ijey.md",
-    "indexVersion": 1,
-    "sourceHash": "2da82ffb221afaee648f38f24921c6d272df55d418ab8939cdfd44787fa0f814",
-    "sourcePath": "docs/知识检索校准/batches/rab-ms41ijey.md",
-    "subtype": "other",
-    "summary": "综合（RAG / Style-RAG / 细节概念 / 情节） 抽查批次 rab-ms41ijey",
-    "summarySource": "title-only",
-    "title": "综合（RAG / Style-RAG / 细节概念 / 情节） 抽查批次 rab-ms41ijey",
-    "type": "document"
-  },
-  {
-    "id": "docs/知识检索校准/batches/README.md",
-    "indexVersion": 1,
-    "sourceHash": "4aa487cdc9bad30e184e6412f8953fc3bf941aad3edf3690a2330ae54b8bad09",
-    "sourcePath": "docs/知识检索校准/batches/README.md",
-    "subtype": "other",
-    "summary": "batches",
-    "summarySource": "title-only",
-    "title": "batches",
-    "type": "document"
-  },
-  {
-    "id": "docs/知识检索校准/README.md",
-    "indexVersion": 1,
-    "sourceHash": "d86d392c70fa085905866a5a049e760debffaf69d00fd31b64a39c171ac3d586",
-    "sourcePath": "docs/知识检索校准/README.md",
-    "subtype": "other",
-    "summary": "知识检索校准（RAG + Style-RAG + 细节概念 + 情节）",
-    "summarySource": "title-only",
-    "title": "知识检索校准（RAG + Style-RAG + 细节概念 + 情节）",
     "type": "document"
   }
 ]

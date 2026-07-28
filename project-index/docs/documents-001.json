@@ -1914,9 +1914,42 @@
     "type": "document"
   },
   {
+    "id": "docs/功能更新/171-RAG原文证据层与图谱核验链路.md",
+    "indexVersion": 1,
+    "sourceHash": "5576c08e271a57048b5e61d539987418e0c070f0f448305beb55bd9037ff3091",
+    "sourcePath": "docs/功能更新/171-RAG原文证据层与图谱核验链路.md",
+    "subtype": "update",
+    "summary": "171-RAG原文证据层与图谱核验链路",
+    "summarySource": "title-only",
+    "title": "171-RAG原文证据层与图谱核验链路",
+    "type": "document"
+  },
+  {
+    "id": "docs/功能更新/172-紧缚专业RAG双分支与用户维护.md",
+    "indexVersion": 1,
+    "sourceHash": "0898c06563032d51d15949673c87b35694a9d41f6832301984e0023f43e7e945",
+    "sourcePath": "docs/功能更新/172-紧缚专业RAG双分支与用户维护.md",
+    "subtype": "update",
+    "summary": "172-紧缚专业RAG双分支与用户维护",
+    "summarySource": "title-only",
+    "title": "172-紧缚专业RAG双分支与用户维护",
+    "type": "document"
+  },
+  {
+    "id": "docs/功能更新/173-故事情节RAG边界治理与逐条迁移门禁.md",
+    "indexVersion": 1,
+    "sourceHash": "f9aeaddf63f004b8705c1eaf7546fd258e6873de8f9e6a0148bb18593549cd49",
+    "sourcePath": "docs/功能更新/173-故事情节RAG边界治理与逐条迁移门禁.md",
+    "subtype": "update",
+    "summary": "173-故事情节RAG边界治理与逐条迁移门禁",
+    "summarySource": "title-only",
+    "title": "173-故事情节RAG边界治理与逐条迁移门禁",
+    "type": "document"
+  },
+  {
     "id": "docs/功能更新目录.md",
     "indexVersion": 1,
-    "sourceHash": "332b588e9962993e400b0a7a45f32884ee788af21a387a8cbb0f86ffa4e8e846",
+    "sourceHash": "bd6b334a45418c5aea3b16422ef3b4387443ef2a76c0506324446bbcc4c90c2c",
     "sourcePath": "docs/功能更新目录.md",
     "subtype": "other",
     "summary": "功能更新目录",
@@ -1960,7 +1993,7 @@
   {
     "id": "docs/技能说明/知识检索抽查校准.md",
     "indexVersion": 1,
-    "sourceHash": "abdc1b963b9af58bc6fff05bbc62b60612c3213ccee4f5497546891543a04978",
+    "sourceHash": "8601e300bc1403c713111b28f23d67c233ddbd61ad2201bf55ce53b2b1438944",
     "sourcePath": "docs/技能说明/知识检索抽查校准.md",
     "subtype": "skill",
     "summary": "liluo 知识检索抽查校准",
@@ -2059,7 +2092,7 @@
   {
     "id": "docs/技能说明/liluo-external-fiction-knowledge.md",
     "indexVersion": 1,
-    "sourceHash": "8737867ca4f3f50c41cf40f253d88ea140236c5da35d3a689e16228d4624db9a",
+    "sourceHash": "0347ef74899bd03ad40d10b6734a8edd3643e760feee3d8919cddcc8be8c6b74",
     "sourcePath": "docs/技能说明/liluo-external-fiction-knowledge.md",
     "subtype": "skill",
     "summary": "外部虚构题材知识库 Skill",
@@ -2343,6 +2376,17 @@
     "type": "document"
   },
   {
+    "id": "docs/情节层级核对/README.md",
+    "indexVersion": 1,
+    "sourceHash": "15678839fd4c80a5279b64d391cff51291c91a3d716edb69972db3ffeaf4e1da",
+    "sourcePath": "docs/情节层级核对/README.md",
+    "subtype": "other",
+    "summary": "情节层级核对",
+    "summarySource": "title-only",
+    "title": "情节层级核对",
+    "type": "document"
+  },
+  {
     "id": "docs/设计记忆/创作决策/CDR-001-像素冒险RPG作为核心体验载体.md",
     "indexVersion": 1,
     "sourceHash": "b28a7b04f4bc1adaa974cd8b5afb6f327040c6cc03ea3ba9dbf090ff37bc094d",
@@ -2439,6 +2483,17 @@
     "summary": "CDR-009：大纲访谈须选项确认紧缚 RAG",
     "summarySource": "title-only",
     "title": "CDR-009：大纲访谈须选项确认紧缚 RAG",
+    "type": "document"
+  },
+  {
+    "id": "docs/设计记忆/创作决策/CDR-010-故事情节RAG三层边界与用户裁决.md",
+    "indexVersion": 1,
+    "sourceHash": "2cb0aeb2db64874b20b7192142ea0eb02f6e19dfde00e8177adad536ea671ccc",
+    "sourcePath": "docs/设计记忆/创作决策/CDR-010-故事情节RAG三层边界与用户裁决.md",
+    "subtype": "other",
+    "summary": "CDR-010：故事—情节—RAG 三层边界与用户裁决",
+    "summarySource": "title-only",
+    "title": "CDR-010：故事—情节—RAG 三层边界与用户裁决",
     "type": "document"
   },
   {
@@ -2692,61 +2747,6 @@
     "summary": "璃落｜神思｜总枢",
     "summarySource": "title-only",
     "title": "璃落｜神思｜总枢",
-    "type": "document"
-  },
-  {
-    "id": "docs/设计记忆/项目组灵魂/成员/凌音.md",
-    "indexVersion": 1,
-    "sourceHash": "b8e5d397cfac7808be0f621c1c45020583a55336d544814033bf6405206647d5",
-    "sourcePath": "docs/设计记忆/项目组灵魂/成员/凌音.md",
-    "subtype": "other",
-    "summary": "凌音｜程器｜验行",
-    "summarySource": "title-only",
-    "title": "凌音｜程器｜验行",
-    "type": "document"
-  },
-  {
-    "id": "docs/设计记忆/项目组灵魂/成员/时雨.md",
-    "indexVersion": 1,
-    "sourceHash": "ec48c43080e5445618604ff92179deeac7a7ac00d53c5403dc7d8c53cbedbe9d",
-    "sourcePath": "docs/设计记忆/项目组灵魂/成员/时雨.md",
-    "subtype": "other",
-    "summary": "时雨｜熔裁｜机枢",
-    "summarySource": "title-only",
-    "title": "时雨｜熔裁｜机枢",
-    "type": "document"
-  },
-  {
-    "id": "docs/设计记忆/项目组灵魂/成员/书晴.md",
-    "indexVersion": 1,
-    "sourceHash": "3a99ac6c007a4d58068dd8de547cf498025417732d19e6e4b9b1fd190c006593",
-    "sourcePath": "docs/设计记忆/项目组灵魂/成员/书晴.md",
-    "subtype": "other",
-    "summary": "书晴｜事类｜拾影",
-    "summarySource": "title-only",
-    "title": "书晴｜事类｜拾影",
-    "type": "document"
-  },
-  {
-    "id": "docs/设计记忆/项目组灵魂/成员/星弥.md",
-    "indexVersion": 1,
-    "sourceHash": "014421309fd01653b99253802adaf2e189b27aa6d4aaa191b5d2ed10fb9a4ecf",
-    "sourcePath": "docs/设计记忆/项目组灵魂/成员/星弥.md",
-    "subtype": "other",
-    "summary": "星弥｜隐秀｜补阙",
-    "summarySource": "title-only",
-    "title": "星弥｜隐秀｜补阙",
-    "type": "document"
-  },
-  {
-    "id": "docs/设计记忆/项目组灵魂/成员/言澈.md",
-    "indexVersion": 1,
-    "sourceHash": "480d633933fb8bed8e2e4a38699877c2022b90788fa115c06067d6fcc28a6327",
-    "sourcePath": "docs/设计记忆/项目组灵魂/成员/言澈.md",
-    "subtype": "other",
-    "summary": "言澈｜正纬｜经纬",
-    "summarySource": "title-only",
-    "title": "言澈｜正纬｜经纬",
     "type": "document"
   }
 ]
