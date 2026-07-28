@@ -2642,7 +2642,7 @@
   {
     "id": "docs/知识检索校准/batches/rab-ms41ij6s.md",
     "indexVersion": 1,
-    "sourceHash": "fc2ef6729a6ca53014d03e22903e9c0307b2d8f8592afd33ecc48c9c5d7abd1d",
+    "sourceHash": "b740723b731b0b04baf9ef69169c4455d264abd9afb72b763d4892ef46d93f24",
     "sourcePath": "docs/知识检索校准/batches/rab-ms41ij6s.md",
     "subtype": "other",
     "summary": "Style-RAG 抽查批次 rab-ms41ij6s",
@@ -2653,7 +2653,7 @@
   {
     "id": "docs/知识检索校准/batches/rab-ms41ij83.md",
     "indexVersion": 1,
-    "sourceHash": "0468dd3682a4988e9c3ced8b7dc4dc66b8142fc3f1b78ce64154b5e4fe7fa4b8",
+    "sourceHash": "3a490d5499be371a4a4914922958dae17f0994bb904c09cee47728e564b064c8",
     "sourcePath": "docs/知识检索校准/batches/rab-ms41ij83.md",
     "subtype": "other",
     "summary": "普通 RAG 抽查批次 rab-ms41ij83",
@@ -2664,7 +2664,7 @@
   {
     "id": "docs/知识检索校准/batches/rab-ms41ij8y.md",
     "indexVersion": 1,
-    "sourceHash": "c626b9678ba1372f5192e3c0d7c633e61b99b3d8848edb8f3b7c4e3c334bd36d",
+    "sourceHash": "5f666a26468ef6d4a24ea76d96539e9153f773a7cb272161e70553999b462d80",
     "sourcePath": "docs/知识检索校准/batches/rab-ms41ij8y.md",
     "subtype": "other",
     "summary": "普通 RAG 抽查批次 rab-ms41ij8y",
@@ -2675,7 +2675,7 @@
   {
     "id": "docs/知识检索校准/batches/rab-ms41ija5.md",
     "indexVersion": 1,
-    "sourceHash": "3e899fc6850610313eb628463494da34bd1e12bceed5c8594cd06cd3636493d0",
+    "sourceHash": "33814b43e17ecc991afc640718c13ef4b1c7f3b57a6716fed24469d51016a8ee",
     "sourcePath": "docs/知识检索校准/batches/rab-ms41ija5.md",
     "subtype": "other",
     "summary": "普通 RAG 抽查批次 rab-ms41ija5",
@@ -2686,7 +2686,7 @@
   {
     "id": "docs/知识检索校准/batches/rab-ms41ijbj.md",
     "indexVersion": 1,
-    "sourceHash": "fd6a5fe6225b91014a939b6de99084534cc0bb5c2916e222c4d7aaa85130d52b",
+    "sourceHash": "aa8d7e3a844199e39d0df6cbdc887c73bacc80e09c5e3beef0a6ea76f90427ab",
     "sourcePath": "docs/知识检索校准/batches/rab-ms41ijbj.md",
     "subtype": "other",
     "summary": "普通 RAG 抽查批次 rab-ms41ijbj",
@@ -2697,7 +2697,7 @@
   {
     "id": "docs/知识检索校准/batches/rab-ms41ijdk.md",
     "indexVersion": 1,
-    "sourceHash": "f96cd02f3dc7751740851974b9ea22f0bd5d8c638084c14bb40ff737f53c0594",
+    "sourceHash": "e815696846b5a84a12eb27f730068919616ebd940cb28e1a8252ef7feefa2f44",
     "sourcePath": "docs/知识检索校准/batches/rab-ms41ijdk.md",
     "subtype": "other",
     "summary": "细节概念 抽查批次 rab-ms41ijdk",
@@ -2708,7 +2708,7 @@
   {
     "id": "docs/知识检索校准/batches/rab-ms41ijdp.md",
     "indexVersion": 1,
-    "sourceHash": "4ac0e2ac10ff261f3e1ab4b1538b3b0214757c82f89d83802f177677e6e63513",
+    "sourceHash": "69a3ba66f629fadc6466a04f61f74cadf778fd9becc2e514822e1ae6435c07b6",
     "sourcePath": "docs/知识检索校准/batches/rab-ms41ijdp.md",
     "subtype": "other",
     "summary": "情节 抽查批次 rab-ms41ijdp",
@@ -2719,7 +2719,7 @@
   {
     "id": "docs/知识检索校准/batches/rab-ms41ijey.md",
     "indexVersion": 1,
-    "sourceHash": "5de7c65c991dce0f6fee7189fe7f7067e0be537afae5c63a035f08cbcc2e2be9",
+    "sourceHash": "2da82ffb221afaee648f38f24921c6d272df55d418ab8939cdfd44787fa0f814",
     "sourcePath": "docs/知识检索校准/batches/rab-ms41ijey.md",
     "subtype": "other",
     "summary": "综合（RAG / Style-RAG / 细节概念 / 情节） 抽查批次 rab-ms41ijey",
