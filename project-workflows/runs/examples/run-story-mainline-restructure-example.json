@@ -3,8 +3,8 @@
   "runId": "run-story-mainline-restructure-example",
   "workflowId": "wf-story-mainline-restructure",
   "workflowVersion": "1.0.0",
-  "createdAt": "2026-07-28T11:36:26.876Z",
-  "updatedAt": "2026-07-28T11:36:26.877Z",
+  "createdAt": "2026-07-28T12:22:42.222Z",
+  "updatedAt": "2026-07-28T12:22:42.223Z",
   "status": "completed",
   "mode": "dry-run",
   "inputSummary": "演练：三世界主线重构基建，不执行正式迁移",
@@ -49,8 +49,8 @@
           "detail": "已记录下游使用"
         }
       ],
-      "startedAt": "2026-07-28T11:36:26.876Z",
-      "endedAt": "2026-07-28T11:36:26.876Z"
+      "startedAt": "2026-07-28T12:22:42.222Z",
+      "endedAt": "2026-07-28T12:22:42.222Z"
     },
     "locate-sources": {
       "status": "completed",
@@ -118,8 +118,8 @@
           "detail": "采用决定：accepted"
         }
       ],
-      "startedAt": "2026-07-28T11:36:26.876Z",
-      "endedAt": "2026-07-28T11:36:26.876Z"
+      "startedAt": "2026-07-28T12:22:42.223Z",
+      "endedAt": "2026-07-28T12:22:42.223Z"
     },
     "preserve-text": {
       "status": "completed",
@@ -157,8 +157,8 @@
           "detail": "已记录下游使用"
         }
       ],
-      "startedAt": "2026-07-28T11:36:26.876Z",
-      "endedAt": "2026-07-28T11:36:26.876Z"
+      "startedAt": "2026-07-28T12:22:42.223Z",
+      "endedAt": "2026-07-28T12:22:42.223Z"
     },
     "independent-review": {
       "status": "completed",
@@ -227,7 +227,7 @@
         }
       ],
       "adoption": "accepted",
-      "endedAt": "2026-07-28T11:36:26.876Z"
+      "endedAt": "2026-07-28T12:22:42.223Z"
     },
     "repair-review-gaps": {
       "status": "pending",
@@ -277,8 +277,8 @@
           "detail": "已记录下游使用"
         }
       ],
-      "startedAt": "2026-07-28T11:36:26.876Z",
-      "endedAt": "2026-07-28T11:36:26.877Z"
+      "startedAt": "2026-07-28T12:22:42.223Z",
+      "endedAt": "2026-07-28T12:22:42.223Z"
     },
     "validate-structure": {
       "status": "completed",
@@ -316,8 +316,8 @@
           "detail": "已记录下游使用"
         }
       ],
-      "startedAt": "2026-07-28T11:36:26.877Z",
-      "endedAt": "2026-07-28T11:36:26.877Z"
+      "startedAt": "2026-07-28T12:22:42.223Z",
+      "endedAt": "2026-07-28T12:22:42.223Z"
     },
     "sync-navigation": {
       "status": "completed",
@@ -380,8 +380,8 @@
           "detail": "采用决定：accepted"
         }
       ],
-      "startedAt": "2026-07-28T11:36:26.877Z",
-      "endedAt": "2026-07-28T11:36:26.877Z"
+      "startedAt": "2026-07-28T12:22:42.223Z",
+      "endedAt": "2026-07-28T12:22:42.223Z"
     },
     "final-report": {
       "status": "completed",
@@ -424,16 +424,16 @@
           "detail": "已记录下游使用"
         }
       ],
-      "startedAt": "2026-07-28T11:36:26.877Z",
-      "endedAt": "2026-07-28T11:36:26.877Z"
+      "startedAt": "2026-07-28T12:22:42.223Z",
+      "endedAt": "2026-07-28T12:22:42.223Z"
     }
   },
   "invocations": [
     {
       "invocationId": "inv-1",
       "nodeId": "prepare-scope",
-      "startedAt": "2026-07-28T11:36:26.876Z",
-      "endedAt": "2026-07-28T11:36:26.876Z",
+      "startedAt": "2026-07-28T12:22:42.222Z",
+      "endedAt": "2026-07-28T12:22:42.222Z",
       "status": "succeeded",
       "resultSummary": "确认 dry-run 与目标三世界",
       "mainRead": true,
@@ -447,8 +447,8 @@
     {
       "invocationId": "inv-2",
       "nodeId": "locate-sources",
-      "startedAt": "2026-07-28T11:36:26.876Z",
-      "endedAt": "2026-07-28T11:36:26.876Z",
+      "startedAt": "2026-07-28T12:22:42.223Z",
+      "endedAt": "2026-07-28T12:22:42.223Z",
       "status": "succeeded",
       "resultSummary": "定位正式源",
       "mainRead": true,
@@ -462,8 +462,8 @@
     {
       "invocationId": "inv-3",
       "nodeId": "locate-sources",
-      "startedAt": "2026-07-28T11:36:26.876Z",
-      "endedAt": "2026-07-28T11:36:26.876Z",
+      "startedAt": "2026-07-28T12:22:42.223Z",
+      "endedAt": "2026-07-28T12:22:42.223Z",
       "status": "succeeded",
       "resultSummary": "保全清单存在",
       "mainRead": true,
@@ -479,8 +479,8 @@
     {
       "invocationId": "inv-4",
       "nodeId": "preserve-text",
-      "startedAt": "2026-07-28T11:36:26.876Z",
-      "endedAt": "2026-07-28T11:36:26.876Z",
+      "startedAt": "2026-07-28T12:22:42.223Z",
+      "endedAt": "2026-07-28T12:22:42.223Z",
       "status": "succeeded",
       "resultSummary": "保全测试通过（演练记录）",
       "mainRead": true,
@@ -494,8 +494,8 @@
     {
       "invocationId": "inv-5",
       "nodeId": "independent-review",
-      "startedAt": "2026-07-28T11:36:26.876Z",
-      "endedAt": "2026-07-28T11:36:26.876Z",
+      "startedAt": "2026-07-28T12:22:42.223Z",
+      "endedAt": "2026-07-28T12:22:42.223Z",
       "status": "succeeded",
       "resultSummary": "结构风险可接受（演练）",
       "mainRead": true,
@@ -509,8 +509,8 @@
     {
       "invocationId": "inv-6",
       "nodeId": "independent-review",
-      "startedAt": "2026-07-28T11:36:26.876Z",
-      "endedAt": "2026-07-28T11:36:26.876Z",
+      "startedAt": "2026-07-28T12:22:42.223Z",
+      "endedAt": "2026-07-28T12:22:42.223Z",
       "status": "succeeded",
       "resultSummary": "连续性无阻塞（演练）",
       "mainRead": true,
@@ -524,8 +524,8 @@
     {
       "invocationId": "inv-7",
       "nodeId": "migrate-structure",
-      "startedAt": "2026-07-28T11:36:26.876Z",
-      "endedAt": "2026-07-28T11:36:26.876Z",
+      "startedAt": "2026-07-28T12:22:42.223Z",
+      "endedAt": "2026-07-28T12:22:42.223Z",
       "status": "succeeded",
       "resultSummary": "dry-run：跳过正式源写入",
       "mainRead": true,
@@ -539,8 +539,8 @@
     {
       "invocationId": "inv-8",
       "nodeId": "validate-structure",
-      "startedAt": "2026-07-28T11:36:26.877Z",
-      "endedAt": "2026-07-28T11:36:26.877Z",
+      "startedAt": "2026-07-28T12:22:42.223Z",
+      "endedAt": "2026-07-28T12:22:42.223Z",
       "status": "succeeded",
       "resultSummary": "演练校验通过",
       "mainRead": true,
@@ -554,8 +554,8 @@
     {
       "invocationId": "inv-9",
       "nodeId": "sync-navigation",
-      "startedAt": "2026-07-28T11:36:26.877Z",
-      "endedAt": "2026-07-28T11:36:26.877Z",
+      "startedAt": "2026-07-28T12:22:42.223Z",
+      "endedAt": "2026-07-28T12:22:42.223Z",
       "status": "succeeded",
       "resultSummary": "导航投影已规划",
       "mainRead": true,
@@ -569,8 +569,8 @@
     {
       "invocationId": "inv-10",
       "nodeId": "sync-navigation",
-      "startedAt": "2026-07-28T11:36:26.877Z",
-      "endedAt": "2026-07-28T11:36:26.877Z",
+      "startedAt": "2026-07-28T12:22:42.223Z",
+      "endedAt": "2026-07-28T12:22:42.223Z",
       "status": "succeeded",
       "resultSummary": "navigation check ok（演练）",
       "mainRead": true,
@@ -584,8 +584,8 @@
     {
       "invocationId": "inv-11",
       "nodeId": "final-report",
-      "startedAt": "2026-07-28T11:36:26.877Z",
-      "endedAt": "2026-07-28T11:36:26.877Z",
+      "startedAt": "2026-07-28T12:22:42.223Z",
+      "endedAt": "2026-07-28T12:22:42.223Z",
       "status": "succeeded",
       "resultSummary": "报告已生成",
       "mainRead": true,
@@ -604,7 +604,7 @@
   "errors": [],
   "completionGate": {
     "passed": true,
-    "checkedAt": "2026-07-28T11:36:26.877Z",
+    "checkedAt": "2026-07-28T12:22:42.224Z",
     "checks": [
       {
         "id": "required-node:prepare-scope",
