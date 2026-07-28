@@ -1,23 +1,12 @@
 {
   "affectedDomains": [
-    "code",
     "docs"
   ],
   "changes": {
     "added": [],
     "deleted": [],
     "modified": [
-      "docs/功能更新/103-故事栏汇总检索弹窗与分类JSON导出.md",
-      "docs/功能更新/169-大纲关联图谱视图.md",
-      "docs/功能更新目录.md",
-      "docs/系统说明/Tag体系收缩与RAG情节迁移系统.md",
-      "docs/系统说明/大纲关联图谱系统.md",
-      "src/game/data/global/updateRecords.js",
-      "src/game/data/outline_relation_graph/buildOutlineRelationGraph.js",
-      "src/game/data/outline_relation_graph/constants.js",
-      "src/game/data/outline_relation_graph/layoutOutlineRelationGraph.js",
-      "src/game/views/components/base/RelationGraphPanel.vue",
-      "src/game/views/components/base/StoryMenuPanel.vue"
+      "docs/功能更新目录.md"
     ],
     "renamed": []
   },
@@ -51,11 +40,11 @@
       "status": "partial"
     }
   },
-  "generatedAt": "2026-07-27T15:34:00.797Z",
+  "generatedAt": "2026-07-28T02:00:56.127Z",
   "generatorVersion": "1.0.3",
   "mode": "changed",
   "schemaVersion": 1,
-  "sourceCommit": "9523c5eb6c18c02b69abf9b1055de451dc29eefa",
+  "sourceCommit": "74bf57ba8cd608038225a712a5b926b9f6e8ef59",
   "sourceSnapshot": {
     "docs/CG待制作清单.md": "81996a1dd752cbf2e9c5a9fc68bb4a480e556d2d76ec35afa9b4b6894f067f8b",
     "docs/README.md": "c5fbe97bd54b6fd4da58346afdf2cda940a6c6fb6fefcb1552fe53fc87f40819",
@@ -353,7 +342,7 @@
     "docs/功能更新/167-Style-RAG元数据检索与外部文章评权.md": "b3838b15b7def9b6ca11dc4ffaac7f79f290198ab150bfd90c75dcbfcbfcb7fe",
     "docs/功能更新/168-知识检索抽查校准闭环.md": "d3c27495bb7877a74fa66433c2653248e51d4d0f5759e3c08796de4a176f772b",
     "docs/功能更新/169-大纲关联图谱视图.md": "8f9aa169b0ae8ad661d4bbe95eac9c85dda93539425df09c57a93d1bd5eda9ca",
-    "docs/功能更新目录.md": "e2ed903e545c3e023843b2730c824b033c977e3b39fe6ed1d0e8d98b9c2bce65",
+    "docs/功能更新目录.md": "b062a2e124c0150700145935ab42b2008abe2e7394ecc092cf3ed5f25f47e30b",
     "docs/外部来源/Skill来源目录.md": "5dea73aeb2afb392039bccaefa6acfaa1b796cf666b7ebd859c77c9171f8fdf3",
     "docs/外部来源/Skill许可证与保存策略.md": "18498f5dc9c78c51a9198714ea470d8f6ecb9692128b5d8c6906ee57ba5308cd",
     "docs/大纲玩法总表整合规格.md": "e6ffc2c182c5d46b69bd8fe08bb3b13038d005c4d08a966ac329d0bb515ec40b",
