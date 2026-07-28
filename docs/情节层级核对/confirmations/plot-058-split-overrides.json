@@ -1,0 +1,51 @@
+{
+  "parentRagTarget": {
+    "newRagId": "rag.restraint.context.occupation",
+    "title": "职业场景",
+    "cardType": "context",
+    "ragLayer": "category",
+    "parentCardIds": [],
+    "aliases": ["职业"],
+    "knowledgeSeed": [
+      "职业场景是可跨故事复用的上位类别：不同职业带来不同的公开规则、道具切口、身份反差与受限行动边界。",
+      "下属具体职业概念分别说明自身特点；上位类别不代替某次故事里的具体过程。"
+    ],
+    "expressionSeed": [
+      "先写清职业公开规则如何改变旁观者期待，再落到具体器具与动作。",
+      "避免把某次客串经历写成职业定义本身。"
+    ]
+  },
+  "ragTarget": {
+    "newRagId": "rag.restraint.context.train-attendant",
+    "title": "火车乘务员",
+    "cardType": "context",
+    "ragLayer": "concept",
+    "parentCardIds": ["rag.restraint.context.occupation"],
+    "aliases": ["职业-火车乘务员", "列车员", "客串乘务员"],
+    "oldIds": ["bondage_tag:sg:职业-火车乘务员"],
+    "knowledgeSeed": [
+      "火车乘务员是列车服务身份下的可复用场景条件：制服、车厢动线、上铺/过道可见性、售卖推车与绩效压力，会改变受限时的公开程度与可调用道具。",
+      "它描述职业切口，不等于某次客串拍照或售卖事件。"
+    ],
+    "expressionSeed": [
+      "表现重点常落在制服辨识、车厢公开性、服务姿态与受限行动的反差。",
+      "可用上铺固定、推车协作、收款互动等职业动作组织场面，但不把单次故事结局写进概念。"
+    ]
+  },
+  "plotRemainder": {
+    "keepOriginalId": true,
+    "proposedTitle": "列车员-客串乘务员拍照售卖",
+    "proposedSummary": "雪城观光列车上，社团玩闹被列车员撞见。对方同样有紧缚爱好，给璃落换上乘务员制服，把她捆在卧铺上铺拍照，并按“被同事欺负”预设姿态。随后璃落仍被捆着协助饮料零食售卖：客人买东西时，列车员会从她胸前取出付款码。这一路售卖帮列车员冲高绩效，璃落却一直处在被围观和使唤的位置。",
+    "characters": ["璃落", "列车员"],
+    "worldBiases": ["1-浮光掠影"],
+    "plotKind": "restraint",
+    "maturity": "scene-ready",
+    "usedByLabels": ["浮光掠影-雪城列车"],
+    "development": {
+      "premise": "列车员发现玩闹后，把璃落变成制服客串乘务员",
+      "escalation": "上铺拍照与被同事欺负的预设姿态把公开性推高",
+      "turn": "捆着售卖并被用来展示付款码，服务与受制叠在一起",
+      "consequence": "列车员绩效暴涨，璃落带着被使唤的公开受限状态继续行程"
+    }
+  }
+}

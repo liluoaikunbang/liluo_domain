@@ -1,6 +1,6 @@
 /** Outline relation graph — display-layer constants (not master data). */
 
-export const GRAPH_SCHEMA_VERSION = 1;
+export const GRAPH_SCHEMA_VERSION = 4;
 
 export const GRAPH_NODE_TYPES = Object.freeze([
   'story',
@@ -14,7 +14,10 @@ export const GRAPH_NODE_TYPES = Object.freeze([
   'location',
   'item',
   'rag',
-  'style_rag'
+  'rag_branch',
+  'style_rag',
+  'evidence',
+  'source'
 ]);
 
 export const GRAPH_NODE_TYPE_LABELS = Object.freeze({
@@ -27,8 +30,11 @@ export const GRAPH_NODE_TYPE_LABELS = Object.freeze({
   organization: '组织',
   location: '地点',
   item: '物品',
-  rag: '紧缚 RAG',
-  style_rag: 'Style-RAG'
+  rag: '紧缚专业 RAG',
+  rag_branch: 'RAG 分支',
+  style_rag: '通用 Style-RAG',
+  evidence: '原文证据',
+  source: '原始来源'
 });
 
 /** Lane order for partitioned / swimlane layout. world folds into story tree. */
@@ -47,12 +53,21 @@ export const GRAPH_LANE_ORDER = Object.freeze([
 /** Map node types onto visual lanes (world/series fold into story). */
 export function resolveGraphLaneType(type) {
   if (type === 'series' || type === 'world') return 'story';
+  if (type === 'rag_branch') return 'rag';
   return type;
 }
 
-/** Legend node types — world/series folded into 故事; detail-concept lane removed. */
+/** Legend node types — world/series folded into 故事; detail-concept lane removed; rag_branch / evidence / source stay off-canvas. */
 export const GRAPH_LEGEND_NODE_TYPES = Object.freeze(
-  GRAPH_NODE_TYPES.filter((type) => type !== 'series' && type !== 'world' && type !== 'concept')
+  GRAPH_NODE_TYPES.filter(
+    (type) =>
+      type !== 'series' &&
+      type !== 'world' &&
+      type !== 'concept' &&
+      type !== 'rag_branch' &&
+      type !== 'evidence' &&
+      type !== 'source'
+  )
 );
 
 export function expandLegendNodeType(type) {
@@ -70,7 +85,16 @@ export const GRAPH_RELATION_TYPES = Object.freeze([
   'references',
   'explains',
   'style_reference',
+  'has_branch',
+  'uses_style',
+  'has_gold_example',
+  'has_calibration_pair',
   'sourced_from',
+  'supported_by',
+  'excerpt_of',
+  'derived_from',
+  'supports_partially',
+  'contradicts',
   'alias_of',
   'broader',
   'narrower',
@@ -94,7 +118,16 @@ export const GRAPH_RELATION_TYPE_LABELS = Object.freeze({
   references: '引用',
   explains: '解释',
   style_reference: '表达参考',
+  has_branch: '拥有分支',
+  uses_style: '调用通用写法',
+  has_gold_example: '黄金范例',
+  has_calibration_pair: '校准对',
   sourced_from: '来源于',
+  supported_by: '证据支撑',
+  excerpt_of: '摘自来源',
+  derived_from: '派生自来源',
+  supports_partially: '部分支撑',
+  contradicts: '与结论冲突',
   alias_of: '别名',
   broader: '上位类别',
   narrower: '具体概念',
@@ -123,7 +156,16 @@ export const GRAPH_RELATION_COLORS = Object.freeze({
   references: '#5ecf8a',
   explains: '#5ecf8a',
   style_reference: '#e86ab8',
+  has_branch: '#6fd4a8',
+  uses_style: '#e86ab8',
+  has_gold_example: '#e8c45a',
+  has_calibration_pair: '#d4a85a',
   sourced_from: '#9ad87a',
+  supported_by: '#7ad8a8',
+  excerpt_of: '#8ecf7a',
+  derived_from: '#a0d890',
+  supports_partially: '#c8d87a',
+  contradicts: '#e8785a',
   precedes: '#e8944a',
   follows: '#e8944a',
   conflicts: '#e85a5a',
@@ -144,7 +186,10 @@ export const GRAPH_NODE_COLORS = Object.freeze({
   location: '#5a9be8',
   item: '#7ab0e0',
   rag: '#5ecf8a',
-  style_rag: '#e86ab8'
+  rag_branch: '#6fd4a8',
+  style_rag: '#e86ab8',
+  evidence: '#7ad8a8',
+  source: '#9ad87a'
 });
 
 export const GRAPH_CONTENT_GAP_COLOR = '#f2a65a';
@@ -196,17 +241,18 @@ export const GRAPH_FILTER_PRESETS = Object.freeze([
   { id: 'plot-location', label: '只看情节与地点', nodeTypes: ['plot', 'location'], relationTypes: null },
   { id: 'plot-hierarchy', label: '只看大情节 / 小情节', nodeTypes: ['plot'], relationTypes: ['contains'] },
   { id: 'gameplay-hierarchy', label: '只看大玩法 / 小玩法', nodeTypes: ['gameplay'], relationTypes: ['belongs_to'] },
-  { id: 'rag-hierarchy', label: '只看紧缚 RAG 上位/具体', nodeTypes: ['rag'], relationTypes: ['broader', 'narrower'], includeStyleEvidence: false },
-  { id: 'rag-story-plot', label: '只看紧缚 RAG 与大纲/情节', nodeTypes: ['rag', 'story', 'plot'], relationTypes: null },
-  { id: 'style-techniques', label: '只看写法名词（Style-RAG）', nodeTypes: ['style_rag'], relationTypes: null, includeStyleEvidence: false },
+  { id: 'rag-hierarchy', label: '只看紧缚专业 RAG 上位/具体', nodeTypes: ['rag'], relationTypes: ['broader', 'narrower'], includeStyleEvidence: false },
+  { id: 'rag-story-plot', label: '只看紧缚专业 RAG 与大纲/情节', nodeTypes: ['rag', 'story', 'plot'], relationTypes: null },
+  { id: 'missing-evidence', label: '缺少证据的 RAG', nodeTypes: ['rag'], auditStatuses: ['missing_source'] },
+  { id: 'style-techniques', label: '只看通用写法（Style-RAG）', nodeTypes: ['style_rag'], relationTypes: null, includeStyleEvidence: false },
   { id: 'style-with-evidence', label: '写法名词 + 文章证据', nodeTypes: ['style_rag'], relationTypes: null, includeStyleEvidence: true },
-  { id: 'rag-style', label: '只看紧缚 RAG 与 Style-RAG', nodeTypes: ['rag', 'style_rag'], relationTypes: null },
+  { id: 'rag-style', label: '紧缚专业 RAG 与通用 Style-RAG', nodeTypes: ['rag', 'style_rag'], relationTypes: null },
   { id: 'pending-audit', label: '只看待校准节点', nodeTypes: null, auditStatuses: ['pending_review', 'low_confidence', 'conflict', 'missing_source', 'relation_pending'] },
   { id: 'orphans', label: '只看孤立节点', nodeTypes: null, auditStatuses: ['orphan'] },
   { id: 'low-confidence', label: '只看低置信度关系', nodeTypes: null, edgeAuditStatuses: ['low_confidence', 'pending_confirm'] }
 ]);
 
 export const DEFAULT_SUMMARY_MAX = 48;
-export const LAYOUT_SEED = 'liluo-outline-relation-graph-v1';
-export const LAYOUT_CACHE_KEY = 'liluo-outline-relation-graph-layout-v1';
-export const VIEWPORT_CACHE_KEY = 'liluo-outline-relation-graph-viewport-v1';
+export const LAYOUT_SEED = 'liluo-outline-relation-graph-v2';
+export const LAYOUT_CACHE_KEY = 'liluo-outline-relation-graph-layout-v2';
+export const VIEWPORT_CACHE_KEY = 'liluo-outline-relation-graph-viewport-v2';

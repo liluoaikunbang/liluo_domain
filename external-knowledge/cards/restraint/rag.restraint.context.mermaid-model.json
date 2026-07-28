@@ -1,0 +1,104 @@
+{
+  "cardId": "rag.restraint.context.mermaid-model",
+  "title": "美人鱼模特",
+  "domain": "restraint",
+  "cardType": "context",
+  "aliases": [
+    "职业-美人鱼模特",
+    "美人鱼表演",
+    "仿生鱼尾"
+  ],
+  "summary": "美人鱼模特是可跨故事复用的职业/表演场景条件：仿生鱼尾限制下肢分合与步态，舞台可见性、教练指导与荧光装饰绳会改变公开受限时的动作边界。",
+  "definition": "美人鱼模特是可跨故事复用的职业/表演场景条件：仿生鱼尾限制下肢分合与步态，舞台可见性、教练指导与荧光装饰绳会改变公开受限时的动作边界。",
+  "sourceRefs": [],
+  "evidenceStatus": "missing",
+  "contentStatus": "stub",
+  "reviewStatus": "candidate",
+  "directQuoteIncluded": false,
+  "canonical": false,
+  "knowledgeScope": "external-fiction-reference",
+  "ragLayer": "concept",
+  "parentCardIds": [
+    "rag.restraint.context.occupation"
+  ],
+  "migration": {
+    "batchId": "plot-layer-governance-v1",
+    "oldIds": [
+      "bondage_tag:sg:职业-美人鱼模特"
+    ],
+    "generatedFrom": "plot-layer-migration",
+    "createdAt": "2026-07-28T09:11:49.664Z"
+  },
+  "evidenceRefs": [],
+  "sourceRecordIds": [],
+  "claims": [],
+  "retrievalPolicy": {
+    "graphVisible": true,
+    "searchable": true,
+    "relationAnchor": true,
+    "contentRetrievable": false,
+    "evidenceRetrievable": false,
+    "knowledgeRetrievable": false,
+    "expressionRetrievable": false
+  },
+  "professionalRagVersion": 1,
+  "knowledge": {
+    "definition": "美人鱼模特是可跨故事复用的职业/表演场景条件：仿生鱼尾限制下肢分合与步态，舞台可见性、教练指导与荧光装饰绳会改变公开受限时的动作边界。",
+    "boundaries": {
+      "includes": [
+        "它描述职业切口，不等于某次游轮体验加演事件。"
+      ],
+      "excludes": [
+        "不保存某次故事里的唯一人物、地点与结局过程"
+      ]
+    },
+    "distinctions": [],
+    "aliases": [
+      "职业-美人鱼模特",
+      "美人鱼表演",
+      "仿生鱼尾"
+    ],
+    "parentConceptRefs": [
+      "rag.restraint.context.occupation"
+    ],
+    "childConceptRefs": [],
+    "relatedConceptRefs": [],
+    "factualClaims": [],
+    "evidenceRefs": [],
+    "projectInterpretation": "它描述职业切口，不等于某次游轮体验加演事件。",
+    "commonMisreadings": [],
+    "status": "stub",
+    "evidenceStatus": "missing",
+    "reviewStatus": "pending"
+  },
+  "expression": {
+    "visualFocus": [],
+    "actionLogic": [],
+    "movementEffects": [],
+    "postureEffects": [],
+    "sensoryFocus": [],
+    "emotionalPossibilities": [],
+    "narrativeUses": [
+      "表现重点常落在鱼尾游动姿态、双手受限与舞台注视的叠加。",
+      "可用穿戴指导、灯光与加演喝彩组织场面，但不把单次游轮行程写进概念。"
+    ],
+    "applicableScenes": [],
+    "unsuitableScenes": [],
+    "expressionPrinciples": [
+      "表现重点常落在鱼尾游动姿态、双手受限与舞台注视的叠加。",
+      "可用穿戴指导、灯光与加演喝彩组织场面，但不把单次游轮行程写进概念。"
+    ],
+    "commonFailures": [],
+    "prohibitedMisreadings": [],
+    "styleEvidenceRefs": [],
+    "goldExampleRefs": [],
+    "calibrationPairRefs": [],
+    "relatedStyleRagRefs": [],
+    "evidenceRefs": [],
+    "status": "stub",
+    "evidenceStatus": "missing",
+    "reviewStatus": "pending"
+  },
+  "overallStatus": "stub",
+  "evidenceBindings": []
+}

@@ -142,7 +142,12 @@
         "consequence": "友情成立并留下水泥鞋事件的关系回收"
       },
       "plotKind": "ordinary",
-      "ragRefs": []
+      "ragRefs": [],
+      "origin": "legacy-migration",
+      "placementStatus": "placed",
+      "maturity": "scene-ready",
+      "layerReviewStatus": "confirmed-keep-as-plot",
+      "layerReviewConfirmationId": "plc-ms4gejub"
     },
     {
       "id": "plot-002",
@@ -177,7 +182,12 @@
       "plotKind": "restraint",
       "ragRefs": [
         "rag.restraint.tool.straitjacket"
-      ]
+      ],
+      "origin": "legacy-migration",
+      "placementStatus": "placed",
+      "maturity": "scene-ready",
+      "layerReviewStatus": "confirmed-keep-as-plot",
+      "layerReviewConfirmationId": "plc-ms4gg058"
     },
     {
       "id": "plot-003",
@@ -209,7 +219,12 @@
         "consequence": "现任成员获得追查旧案的共同目标"
       },
       "plotKind": "ordinary",
-      "ragRefs": []
+      "ragRefs": [],
+      "origin": "legacy-migration",
+      "placementStatus": "placed",
+      "maturity": "scene-ready",
+      "layerReviewStatus": "confirmed-keep-as-plot",
+      "layerReviewConfirmationId": "plc-ms4kcuw3"
     },
     {
       "id": "plot-004",
@@ -241,7 +256,12 @@
         "consequence": "梦境试错转为与沈芷共同调查现实旧案"
       },
       "plotKind": "restraint",
-      "ragRefs": []
+      "ragRefs": [],
+      "origin": "legacy-migration",
+      "placementStatus": "placed",
+      "maturity": "scene-ready",
+      "layerReviewStatus": "confirmed-keep-as-plot",
+      "layerReviewConfirmationId": "plc-ms4kei0x"
     },
     {
       "id": "plot-005",
@@ -272,7 +292,12 @@
         "consequence": "璃落由被动重演者转为主动追责者"
       },
       "plotKind": "ordinary",
-      "ragRefs": []
+      "ragRefs": [],
+      "origin": "legacy-migration",
+      "placementStatus": "placed",
+      "maturity": "scene-ready",
+      "layerReviewStatus": "confirmed-keep-as-plot",
+      "layerReviewConfirmationId": "plc-ms4gh8my"
     },
     {
       "id": "plot-006",
@@ -306,7 +331,12 @@
       "plotKind": "restraint",
       "ragRefs": [
         "rag.restraint.tool.shackles"
-      ]
+      ],
+      "origin": "legacy-migration",
+      "placementStatus": "placed",
+      "maturity": "scene-ready",
+      "layerReviewStatus": "confirmed-keep-as-plot",
+      "layerReviewConfirmationId": "plc-ms4giro6"
     },
     {
       "id": "plot-007",
@@ -338,7 +368,12 @@
       "plotKind": "restraint",
       "ragRefs": [
         "rag.restraint.tool.cable-tie"
-      ]
+      ],
+      "origin": "legacy-migration",
+      "placementStatus": "placed",
+      "maturity": "scene-ready",
+      "layerReviewStatus": "confirmed-keep-as-plot",
+      "layerReviewConfirmationId": "plc-ms4gkcry"
     },
     {
       "id": "plot-009",
@@ -372,7 +407,12 @@
       "ragRefs": [
         "rag.restraint.tool.shackles",
         "rag.restraint.context.restrained-life"
-      ]
+      ],
+      "origin": "legacy-migration",
+      "placementStatus": "placed",
+      "maturity": "scene-ready",
+      "layerReviewStatus": "confirmed-keep-as-plot",
+      "layerReviewConfirmationId": "plc-ms4glwts"
     },
     {
       "id": "plot-010",
@@ -399,7 +439,7 @@
       "usedByLabels": [
         "尘寰问道-问道起点-陷害，入魔宗"
       ],
-      "notes": "多次陷害共同服务于“被正道逐步推出并卖入魔宗”的连续下坠，不拆成独立小案。",
+      "notes": "多次陷害共同服务于“被正道逐步推出并卖入魔宗”的连续下坠，不拆成独立小案。\\n[层级核对] 已关联既有 RAG「冤罪」(rag.restraint.detail.冤罪)。",
       "development": {
         "premise": "偏重刑罚与伪造凶器把璃落推成嫌犯",
         "escalation": "筑基换自由的承诺最终变成宗门出售骗局",
@@ -410,8 +450,14 @@
       "ragRefs": [
         "rag.restraint.tool.shackles",
         "rag.restraint.state.confinement",
-        "rag.restraint.effect.public-humiliation"
-      ]
+        "rag.restraint.effect.public-humiliation",
+        "rag.restraint.detail.冤罪"
+      ],
+      "origin": "legacy-migration",
+      "placementStatus": "placed",
+      "maturity": "scene-ready",
+      "layerReviewStatus": "confirmed-keep-as-plot",
+      "layerReviewConfirmationId": "plc-ms4gn692"
     },
     {
       "id": "plot-011",
@@ -434,7 +480,7 @@
       "usedByLabels": [
         "尘寰问道-魔宗历险-重新修炼"
       ],
-      "notes": "保留“看似削弱的安排暗藏反抗传承”的核心反转，不把修炼日常拆成情节。",
+      "notes": "保留“看似削弱的安排暗藏反抗传承”的核心反转，不把修炼日常拆成情节。\\n[层级核对] 已关联新建 RAG「废除武功」(父级：废功重修)。",
       "development": {
         "premise": "璃落被迫废功并以侍女身份留在魔宗",
         "escalation": "妙桐暗授与弱势功法配套的失传炼体术",
@@ -442,7 +488,14 @@
         "consequence": "隐蔽成长与不完全信任的合作长期并行"
       },
       "plotKind": "ordinary",
-      "ragRefs": []
+      "ragRefs": [
+        "rag.restraint.detail.废除武功"
+      ],
+      "origin": "legacy-migration",
+      "placementStatus": "placed",
+      "maturity": "scene-ready",
+      "layerReviewStatus": "confirmed-keep-as-plot",
+      "layerReviewConfirmationId": "plc-ms4grhgi"
     },
     {
       "id": "plot-013",
@@ -465,7 +518,7 @@
       "usedByLabels": [
         "尘寰问道-尾声-永世束缚"
       ],
-      "notes": "三层封印及离开世界后的能力代价属于同一临终诅咒，不按身体部位拆条。",
+      "notes": "三层封印及离开世界后的能力代价属于同一临终诅咒，不按身体部位拆条。\\n[层级核对] 确认关联既有 RAG「永久拘束」(rag.restraint.duration.permanent-restraint)。",
       "development": {
         "premise": "败亡魔王把多层咒封留给重伤璃落",
         "escalation": "身体、元婴与灵魂限制无法一次炼化",
@@ -476,7 +529,12 @@
       "ragRefs": [
         "rag.restraint.duration.permanent-restraint",
         "rag.restraint.supernatural.soul-restraint"
-      ]
+      ],
+      "origin": "legacy-migration",
+      "placementStatus": "placed",
+      "maturity": "scene-ready",
+      "layerReviewStatus": "confirmed-keep-as-plot",
+      "layerReviewConfirmationId": "plc-ms4gu5sy"
     },
     {
       "id": "plot-014",
@@ -508,7 +566,12 @@
         "consequence": "个人脱困继续升级为揭露宗族旧罪"
       },
       "plotKind": "ordinary",
-      "ragRefs": []
+      "ragRefs": [],
+      "origin": "legacy-migration",
+      "placementStatus": "placed",
+      "maturity": "scene-ready",
+      "layerReviewStatus": "confirmed-keep-as-plot",
+      "layerReviewConfirmationId": "plc-ms4kgozp"
     },
     {
       "id": "plot-015",
@@ -533,7 +596,7 @@
       "usedByLabels": [
         "尘寰问道-丫鬟难为-王苑兽猎"
       ],
-      "notes": "具体进入方式与幕后主使仍可调整；条目保留已明确的“从猎物变成规则变量”结构。",
+      "notes": "具体进入方式与幕后主使仍可调整；条目保留已明确的“从猎物变成规则变量”结构。\\n[层级核对] 已关联新建/确认 RAG「紧缚反抗」。",
       "development": {
         "premise": "璃落被标记为权贵禁苑的活诱饵",
         "escalation": "猎犬、追兵、异兽和礼法共同压缩生路",
@@ -541,7 +604,14 @@
         "consequence": "权力展示化为丑闻并开启祭品追责线"
       },
       "plotKind": "ordinary",
-      "ragRefs": []
+      "ragRefs": [
+        "rag.restraint.context.restraint-resistance"
+      ],
+      "origin": "legacy-migration",
+      "placementStatus": "placed",
+      "maturity": "scene-ready",
+      "layerReviewStatus": "confirmed-keep-as-plot",
+      "layerReviewConfirmationId": "plc-ms4gww0k"
     },
     {
       "id": "plot-017",
@@ -576,7 +646,12 @@
       "ragRefs": [
         "rag.restraint.structure.waist-restraint",
         "rag.restraint.tool.straitjacket"
-      ]
+      ],
+      "origin": "legacy-migration",
+      "placementStatus": "placed",
+      "maturity": "scene-ready",
+      "layerReviewStatus": "confirmed-keep-as-plot",
+      "layerReviewConfirmationId": "plc-ms4gyihv"
     },
     {
       "id": "plot-018",
@@ -601,7 +676,7 @@
       "usedByLabels": [
         "浮光掠影-重返荆江市-小小女仆团"
       ],
-      "notes": "夜袭过程与苏婉儿揭示幕后来源合并，避免按每一种限制手段拆细。",
+      "notes": "夜袭过程与苏婉儿揭示幕后来源合并，避免按每一种限制手段拆细。\\n[层级核对] 已关联新建 RAG「小人国」。",
       "development": {
         "premise": "拇指女仆团趁璃落熟睡分工夜袭",
         "escalation": "数量、尺度与转运流程使恶作剧感升级为绑架",
@@ -610,8 +685,14 @@
       },
       "plotKind": "restraint",
       "ragRefs": [
-        "rag.restraint.tool.cable-tie"
-      ]
+        "rag.restraint.tool.cable-tie",
+        "rag.restraint.context.little-people"
+      ],
+      "origin": "legacy-migration",
+      "placementStatus": "placed",
+      "maturity": "scene-ready",
+      "layerReviewStatus": "confirmed-keep-as-plot",
+      "layerReviewConfirmationId": "plc-ms4h34it"
     },
     {
       "id": "plot-019",
@@ -642,7 +723,12 @@
         "consequence": "被动扮演转为联合拆除整套叙事机器"
       },
       "plotKind": "ordinary",
-      "ragRefs": []
+      "ragRefs": [],
+      "origin": "legacy-migration",
+      "placementStatus": "placed",
+      "maturity": "scene-ready",
+      "layerReviewStatus": "confirmed-keep-as-plot",
+      "layerReviewConfirmationId": "plc-ms4h460c"
     },
     {
       "id": "plot-020",
@@ -676,7 +762,12 @@
       "plotKind": "restraint",
       "ragRefs": [
         "rag.restraint.state.confinement"
-      ]
+      ],
+      "origin": "legacy-migration",
+      "placementStatus": "placed",
+      "maturity": "scene-ready",
+      "layerReviewStatus": "confirmed-keep-as-plot",
+      "layerReviewConfirmationId": "plc-ms4h5akf"
     },
     {
       "id": "plot-021",
@@ -710,7 +801,12 @@
       "plotKind": "restraint",
       "ragRefs": [
         "rag.restraint.duration.permanent-restraint"
-      ]
+      ],
+      "origin": "legacy-migration",
+      "placementStatus": "placed",
+      "maturity": "scene-ready",
+      "layerReviewStatus": "confirmed-keep-as-plot",
+      "layerReviewConfirmationId": "plc-ms4h6g3h"
     },
     {
       "id": "plot-022",
@@ -734,7 +830,7 @@
       "usedByLabels": [
         "星宇织梦-边境殖民星-穹顶狩猎"
       ],
-      "notes": "不同猎场地貌、猎人类型和观众惩罚均是机制变体，不拆成独立情节。",
+      "notes": "不同猎场地貌、猎人类型和观众惩罚均是机制变体，不拆成独立情节。\\n[层级核对] 已关联 RAG「紧缚反抗」(rag.restraint.context.restraint-resistance)。",
       "development": {
         "premise": "璃落被送进伪装成自愿的直播生存赛",
         "escalation": "积分、投票和猎人机制诱导选手内耗",
@@ -742,7 +838,14 @@
         "consequence": "争冠逃亡转为对平台与资本的公开审判"
       },
       "plotKind": "ordinary",
-      "ragRefs": []
+      "ragRefs": [
+        "rag.restraint.context.restraint-resistance"
+      ],
+      "origin": "legacy-migration",
+      "placementStatus": "placed",
+      "maturity": "scene-ready",
+      "layerReviewStatus": "confirmed-keep-as-plot",
+      "layerReviewConfirmationId": "plc-ms4h7wf1"
     },
     {
       "id": "plot-023",
@@ -776,7 +879,12 @@
       "plotKind": "restraint",
       "ragRefs": [
         "rag.restraint.tool.shackles"
-      ]
+      ],
+      "origin": "legacy-migration",
+      "placementStatus": "placed",
+      "maturity": "scene-ready",
+      "layerReviewStatus": "confirmed-keep-as-plot",
+      "layerReviewConfirmationId": "plc-ms4ha6ye"
     },
     {
       "id": "plot-024",
@@ -809,7 +917,12 @@
         "consequence": "两人上船使失联事件升级为贩运链主线"
       },
       "plotKind": "restraint",
-      "ragRefs": []
+      "ragRefs": [],
+      "origin": "legacy-migration",
+      "placementStatus": "placed",
+      "maturity": "scene-ready",
+      "layerReviewStatus": "confirmed-keep-as-plot",
+      "layerReviewConfirmationId": "plc-ms4iobeq"
     },
     {
       "id": "plot-025",
@@ -842,7 +955,12 @@
         "consequence": "逃船同时带回证据与可延续的受害者同盟"
       },
       "plotKind": "restraint",
-      "ragRefs": []
+      "ragRefs": [],
+      "origin": "legacy-migration",
+      "placementStatus": "placed",
+      "maturity": "scene-ready",
+      "layerReviewStatus": "confirmed-keep-as-plot",
+      "layerReviewConfirmationId": "plc-ms4iqmwv"
     },
     {
       "id": "plot-026",
@@ -878,7 +996,12 @@
       "ragRefs": [
         "rag.restraint.effect.public-humiliation",
         "rag.restraint.effect.odor-stimulation"
-      ]
+      ],
+      "origin": "legacy-migration",
+      "placementStatus": "placed",
+      "maturity": "scene-ready",
+      "layerReviewStatus": "confirmed-keep-as-plot",
+      "layerReviewConfirmationId": "plc-ms4it0x5"
     },
     {
       "id": "plot-027",
@@ -914,7 +1037,12 @@
       "ragRefs": [
         "rag.restraint.effect.public-humiliation",
         "rag.restraint.effect.pain"
-      ]
+      ],
+      "origin": "legacy-migration",
+      "placementStatus": "placed",
+      "maturity": "scene-ready",
+      "layerReviewStatus": "confirmed-keep-as-plot",
+      "layerReviewConfirmationId": "plc-ms4j3am2"
     },
     {
       "id": "plot-028",
@@ -947,7 +1075,12 @@
         "consequence": "旅程沉淀照片、经验和团体关系锚点"
       },
       "plotKind": "restraint",
-      "ragRefs": []
+      "ragRefs": [],
+      "origin": "legacy-migration",
+      "placementStatus": "placed",
+      "maturity": "scene-ready",
+      "layerReviewStatus": "confirmed-keep-as-plot",
+      "layerReviewConfirmationId": "plc-ms4j91eb"
     },
     {
       "id": "plot-029",
@@ -971,7 +1104,7 @@
       "usedByLabels": [
         "浮光掠影-旧都回声-黑蔷薇疗养院"
       ],
-      "notes": "与现代行为矫治的区别是哥特式慈善、家族监护和遗产控制；具体进入与离开流程仍待完善。",
+      "notes": "与现代行为矫治的区别是哥特式慈善、家族监护和遗产控制；具体进入与离开流程仍待完善。\\n[层级核对] 已关联 RAG「紧缚反抗」(rag.restraint.context.restraint-resistance)。",
       "development": {
         "premise": "璃落被误认继承人替身并伪证收治",
         "escalation": "病历、监护和慈善话术共同否定自主陈述",
@@ -980,8 +1113,14 @@
       },
       "plotKind": "restraint",
       "ragRefs": [
-        "rag.restraint.state.confinement"
-      ]
+        "rag.restraint.state.confinement",
+        "rag.restraint.context.restraint-resistance"
+      ],
+      "origin": "legacy-migration",
+      "placementStatus": "placed",
+      "maturity": "scene-ready",
+      "layerReviewStatus": "confirmed-keep-as-plot",
+      "layerReviewConfirmationId": "plc-ms4je6ep"
     },
     {
       "id": "plot-030",
@@ -1015,7 +1154,12 @@
       "plotKind": "restraint",
       "ragRefs": [
         "rag.restraint.effect.odor-stimulation"
-      ]
+      ],
+      "origin": "legacy-migration",
+      "placementStatus": "placed",
+      "maturity": "scene-ready",
+      "layerReviewStatus": "confirmed-keep-as-plot",
+      "layerReviewConfirmationId": "plc-ms4jetfn"
     },
     {
       "id": "plot-031",
@@ -1050,7 +1194,12 @@
       "plotKind": "restraint",
       "ragRefs": [
         "rag.restraint.tool.cable-tie"
-      ]
+      ],
+      "origin": "legacy-migration",
+      "placementStatus": "placed",
+      "maturity": "scene-ready",
+      "layerReviewStatus": "confirmed-keep-as-plot",
+      "layerReviewConfirmationId": "plc-ms4jf6wo"
     },
     {
       "id": "plot-032",
@@ -1075,7 +1224,7 @@
       "usedByLabels": [
         "浮光掠影-灰巷历险-黑槲夜猎"
       ],
-      "notes": "作为狩猎游戏的现代豪门变体；具体庄园区域、失败恢复和离场流程仍待节点后续完善。",
+      "notes": "作为狩猎游戏的现代豪门变体；具体庄园区域、失败恢复和离场流程仍待节点后续完善。\\n[层级核对] 已关联 RAG「紧缚反抗」(rag.restraint.context.restraint-resistance)。",
       "development": {
         "premise": "猎物被积分和安全时间诱导互相捕获",
         "escalation": "淘汰者失踪且真正清场猎人进入庄园",
@@ -1083,7 +1232,14 @@
         "consequence": "劫持广播把个人胜负转为共同揭露与营救"
       },
       "plotKind": "ordinary",
-      "ragRefs": []
+      "ragRefs": [
+        "rag.restraint.context.restraint-resistance"
+      ],
+      "origin": "legacy-migration",
+      "placementStatus": "placed",
+      "maturity": "scene-ready",
+      "layerReviewStatus": "confirmed-keep-as-plot",
+      "layerReviewConfirmationId": "plc-ms4jftqx"
     },
     {
       "id": "plot-033",
@@ -1111,7 +1267,12 @@
         "consequence": "场景必须推动救助、冲突或群体立场变化"
       },
       "plotKind": "ordinary",
-      "ragRefs": []
+      "ragRefs": [],
+      "origin": "legacy-migration",
+      "placementStatus": "unplaced",
+      "maturity": "seed",
+      "layerReviewStatus": "confirmed-keep-as-plot",
+      "layerReviewConfirmationId": "plc-ms4jgmid"
     },
     {
       "id": "plot-034",
@@ -1130,7 +1291,7 @@
       "usageStatus": "unused",
       "usedBy": [],
       "usedByLabels": [],
-      "notes": "倒吊受雪、雪塞嘴、袜中塞雪堵嘴和涂抹风油精是同一连续情节，不拆分登记。人物身份、施害原因、持续时间、是否获救及最终结果均待采用时决定。",
+      "notes": "倒吊受雪、雪塞嘴、袜中塞雪堵嘴和涂抹风油精是同一连续情节，不拆分登记。人物身份、施害原因、持续时间、是否获救及最终结果均待采用时决定。\n[层级核对] 已建上位 RAG「极限折磨」，子卡「敏感处风油精」；情节挂两者。",
       "development": {
         "premise": "雪地受困者暴露在持续低温环境",
         "escalation": "冰雪、封堵与刺激叠加削弱表达和判断",
@@ -1139,8 +1300,15 @@
       },
       "plotKind": "restraint",
       "ragRefs": [
-        "rag.restraint.effect.odor-stimulation"
-      ]
+        "rag.restraint.effect.odor-stimulation",
+        "rag.restraint.effect.extreme-torture",
+        "rag.restraint.detail.敏感处风油精"
+      ],
+      "origin": "legacy-migration",
+      "placementStatus": "unplaced",
+      "maturity": "seed",
+      "layerReviewStatus": "confirmed-keep-as-plot",
+      "layerReviewConfirmationId": "plc-ms4jjhvx"
     },
     {
       "id": "plot-035",
@@ -1166,7 +1334,12 @@
       "plotKind": "restraint",
       "ragRefs": [
         "rag.restraint.tool.shackles"
-      ]
+      ],
+      "origin": "legacy-migration",
+      "placementStatus": "unplaced",
+      "maturity": "seed",
+      "layerReviewStatus": "confirmed-keep-as-plot",
+      "layerReviewConfirmationId": "plc-ms4jms37"
     },
     {
       "id": "plot-036",
@@ -1198,7 +1371,12 @@
         "consequence": "破局改变居民未来并打开上游剧本入口"
       },
       "plotKind": "ordinary",
-      "ragRefs": []
+      "ragRefs": [],
+      "origin": "user-created",
+      "placementStatus": "unplaced",
+      "maturity": "seed",
+      "layerReviewStatus": "confirmed-keep-as-plot",
+      "layerReviewConfirmationId": "plc-ms4g7pqk"
     },
     {
       "id": "plot-037",
@@ -1226,7 +1404,12 @@
         "consequence": "结果决定迷城恢复、循环或成为新区域入口"
       },
       "plotKind": "ordinary",
-      "ragRefs": []
+      "ragRefs": [],
+      "origin": "legacy-migration",
+      "placementStatus": "unplaced",
+      "maturity": "seed",
+      "layerReviewStatus": "confirmed-keep-as-plot",
+      "layerReviewConfirmationId": "plc-ms4jnecx"
     },
     {
       "id": "plot-038",
@@ -1255,7 +1438,12 @@
       "plotKind": "restraint",
       "ragRefs": [
         "rag.restraint.state.confinement"
-      ]
+      ],
+      "origin": "legacy-migration",
+      "placementStatus": "unplaced",
+      "maturity": "seed",
+      "layerReviewStatus": "confirmed-keep-as-plot",
+      "layerReviewConfirmationId": "plc-ms4jnv3g"
     },
     {
       "id": "plot-039",
@@ -1275,7 +1463,7 @@
       "usageStatus": "unused",
       "usedBy": [],
       "usedByLabels": [],
-      "notes": "缝眼、缝嘴与用电钻和螺丝把铁片固定到牙齿位置的最终金属封嘴，属于同一条逐步升级的感官与表达封锁，可组合使用但不强制每次全部出现，不拆分登记。丧尸或其他施害者为何保留并监禁璃落、状态持续多久、期间玩家流程、救援者身份、金属与缝合结构的解除方式及恢复影响均待正式采用时确定；眼部、口部与牙齿伤害属于剧情状态和内容警告，不另登记为普通紧缚标签。",
+      "notes": "缝眼、缝嘴与用电钻和螺丝把铁片固定到牙齿位置的最终金属封嘴，属于同一条逐步升级的感官与表达封锁，可组合使用但不强制每次全部出现，不拆分登记。丧尸或其他施害者为何保留并监禁璃落、状态持续多久、期间玩家流程、救援者身份、金属与缝合结构的解除方式及恢复影响均待正式采用时确定；眼部、口部与牙齿伤害属于剧情状态和内容警告，不另登记为普通紧缚标签。\n[层级核对] 已建极限折磨子卡「缝眼」「缝嘴」并挂接本情节。",
       "development": {
         "premise": "长期监禁持续封闭璃落的视觉与表达",
         "escalation": "临时限制升级为必须依赖外援解除的状态",
@@ -1284,8 +1472,16 @@
       },
       "plotKind": "restraint",
       "ragRefs": [
-        "rag.restraint.state.confinement"
-      ]
+        "rag.restraint.state.confinement",
+        "rag.restraint.effect.extreme-torture",
+        "rag.restraint.detail.缝眼",
+        "rag.restraint.detail.缝嘴"
+      ],
+      "origin": "legacy-migration",
+      "placementStatus": "unplaced",
+      "maturity": "seed",
+      "layerReviewStatus": "confirmed-keep-as-plot",
+      "layerReviewConfirmationId": "plc-ms4jp942"
     },
     {
       "id": "plot-040",
@@ -1313,7 +1509,12 @@
         "consequence": "解除后必须留下关系断裂、创伤或追责"
       },
       "plotKind": "ordinary",
-      "ragRefs": []
+      "ragRefs": [],
+      "origin": "legacy-migration",
+      "placementStatus": "unplaced",
+      "maturity": "seed",
+      "layerReviewStatus": "confirmed-keep-as-plot",
+      "layerReviewConfirmationId": "plc-ms4khb76"
     },
     {
       "id": "plot-041",
@@ -1341,7 +1542,12 @@
         "consequence": "痕迹、看守疲劳与护人选择成为营救伏笔"
       },
       "plotKind": "mixed",
-      "ragRefs": []
+      "ragRefs": [],
+      "origin": "legacy-migration",
+      "placementStatus": "unplaced",
+      "maturity": "seed",
+      "layerReviewStatus": "confirmed-keep-as-plot",
+      "layerReviewConfirmationId": "plc-ms4jt4i2"
     },
     {
       "id": "plot-042",
@@ -1368,7 +1574,12 @@
         "consequence": "她须借游戏信号、漏洞或关系网络影响现实"
       },
       "plotKind": "mixed",
-      "ragRefs": []
+      "ragRefs": [],
+      "origin": "legacy-migration",
+      "placementStatus": "unplaced",
+      "maturity": "seed",
+      "layerReviewStatus": "confirmed-keep-as-plot",
+      "layerReviewConfirmationId": "plc-ms4khuvu"
     },
     {
       "id": "plot-043",
@@ -1388,7 +1599,7 @@
       "usageStatus": "unused",
       "usedBy": [],
       "usedByLabels": [],
-      "notes": "本条按主要冲突归入“极限拘束与折磨”：挑断手脚筋脉是武侠语境中具有代表性的废功与酷刑手段；刺青覆疤以及由武侠转入仙侠则是这场折磨造成的长期后果。挑断筋腱、疗伤后以刺青覆盖伤疤、因凡俗武道受阻而接触仙侠修行是同一条角色转型链，不拆分登记。刺青目前只确认具有遮盖伤疤与夺回身体叙事权的意义；它是否同时是阵纹、封印、引气媒介或师门标记，伤势能恢复到何种程度，施伤者身份、疗伤者身份以及首次接触修行的方式均待正式采用时确定。",
+      "notes": "本条按主要冲突归入“极限拘束与折磨”：挑断手脚筋脉是武侠语境中具有代表性的废功与酷刑手段；刺青覆疤以及由武侠转入仙侠则是这场折磨造成的长期后果。挑断筋腱、疗伤后以刺青覆盖伤疤、因凡俗武道受阻而接触仙侠修行是同一条角色转型链，不拆分登记。刺青目前只确认具有遮盖伤疤与夺回身体叙事权的意义；它是否同时是阵纹、封印、引气媒介或师门标记，伤势能恢复到何种程度，施伤者身份、疗伤者身份以及首次接触修行的方式均待正式采用时确定。\n[层级核对] 已在「废功重修」下新建子卡「挑断筋脉」并挂接。",
       "development": {
         "premise": "筋腱重创截断璃落原有武学道路",
         "escalation": "康复无法恢复旧上限且伤疤持续可见",
@@ -1396,7 +1607,15 @@
         "consequence": "身体代价成为武侠转入仙侠修行的因果桥"
       },
       "plotKind": "mixed",
-      "ragRefs": []
+      "ragRefs": [
+        "rag.restraint.context.power-rebuild",
+        "rag.restraint.detail.挑断筋脉"
+      ],
+      "origin": "legacy-migration",
+      "placementStatus": "unplaced",
+      "maturity": "seed",
+      "layerReviewStatus": "confirmed-keep-as-plot",
+      "layerReviewConfirmationId": "plc-ms4kjvi1"
     },
     {
       "id": "plot-044",
@@ -1415,7 +1634,7 @@
       "usageStatus": "unused",
       "usedBy": [],
       "usedByLabels": [],
-      "notes": "本条明确作为折磨情节登记，不归入普通环境机关或紧缚挣扎。热熔胶、滴蜡封耳、听觉隔绝与末日危险信息中断是同一连续桥段，不拆分登记。受困者是否为璃落、施害动机、材料具体附着位置、持续时间、是否造成永久听力损伤、解除方式以及是否影响后续探索均待正式采用时确定。",
+      "notes": "本条明确作为折磨情节登记，不归入普通环境机关或紧缚挣扎。热熔胶、滴蜡封耳、听觉隔绝与末日危险信息中断是同一连续桥段，不拆分登记。受困者是否为璃落、施害动机、材料具体附着位置、持续时间、是否造成永久听力损伤、解除方式以及是否影响后续探索均待正式采用时确定。\n[层级核对] 已在「极限折磨」下新建子卡「热熔胶滴蜡封耳」并挂接。",
       "development": {
         "premise": "听觉封闭使末日受困者失去环境信息",
         "escalation": "刺激、凝固与未知威胁共同放大失控感",
@@ -1423,7 +1642,15 @@
         "consequence": "救援后回收感官恢复、误判与替代沟通"
       },
       "plotKind": "restraint",
-      "ragRefs": []
+      "ragRefs": [
+        "rag.restraint.effect.extreme-torture",
+        "rag.restraint.detail.热熔胶滴蜡封耳"
+      ],
+      "origin": "legacy-migration",
+      "placementStatus": "unplaced",
+      "maturity": "seed",
+      "layerReviewStatus": "confirmed-keep-as-plot",
+      "layerReviewConfirmationId": "plc-ms4klht0"
     },
     {
       "id": "plot-045",
@@ -1448,7 +1675,12 @@
         "consequence": "后续落到证据、照护、关系决裂或反制"
       },
       "plotKind": "mixed",
-      "ragRefs": []
+      "ragRefs": [],
+      "origin": "legacy-migration",
+      "placementStatus": "unplaced",
+      "maturity": "seed",
+      "layerReviewStatus": "confirmed-keep-as-plot",
+      "layerReviewConfirmationId": "plc-ms4kmkh7"
     },
     {
       "id": "plot-046",
@@ -1465,7 +1697,7 @@
       "usageStatus": "unused",
       "usedBy": [],
       "usedByLabels": [],
-      "notes": "本条确认双手分别被包成圆球状，因此视觉上近似只能出“石头”；成立的前提是受害者并非自愿参加，且球状包手使猜拳失去公平性。普通朋友间自愿进行的包手趣味游戏不属于霸凌。包裹材料、参与人数、猜拳轮数、输赢判定、失败后的追加羞辱或惩罚以及受害者是否为璃落均待正式采用时确定。",
+      "notes": "本条确认双手分别被包成圆球状，因此视觉上近似只能出“石头”；成立的前提是受害者并非自愿参加，且球状包手使猜拳失去公平性。普通朋友间自愿进行的包手趣味游戏不属于霸凌。包裹材料、参与人数、猜拳轮数、输赢判定、失败后的追加羞辱或惩罚以及受害者是否为璃落均待正式采用时确定。\n[层级核对] 已建上位 RAG「拘束手指」与子卡「球状包手」。",
       "development": {
         "premise": "圆球状包手让受害者无法正常猜拳",
         "escalation": "施害者同时掌握输赢解释与追加后果",
@@ -1473,7 +1705,15 @@
         "consequence": "破局围绕揭穿规则、拒绝结果或改变旁观者"
       },
       "plotKind": "restraint",
-      "ragRefs": []
+      "ragRefs": [
+        "rag.restraint.structure.finger-restraint",
+        "rag.restraint.detail.球状包手"
+      ],
+      "origin": "legacy-migration",
+      "placementStatus": "unplaced",
+      "maturity": "seed",
+      "layerReviewStatus": "confirmed-keep-as-plot",
+      "layerReviewConfirmationId": "plc-ms4jvbbw"
     },
     {
       "id": "plot-047",
@@ -1500,7 +1740,12 @@
         "consequence": "活动沉淀共同回忆、照片与公开参与经验"
       },
       "plotKind": "restraint",
-      "ragRefs": []
+      "ragRefs": [],
+      "origin": "legacy-migration",
+      "placementStatus": "unplaced",
+      "maturity": "seed",
+      "layerReviewStatus": "confirmed-keep-as-plot",
+      "layerReviewConfirmationId": "plc-ms4kn6dl"
     },
     {
       "id": "plot-048",
@@ -1519,7 +1764,7 @@
       "usageStatus": "unused",
       "usedBy": [],
       "usedByLabels": [],
-      "notes": "本条按主要体验归入“极限拘束与折磨”，不是医疗、刑罚或普通恶作剧。鼻腔的喷嚏临界、咽喉的咳嗽与吞咽冲动、食道方向的深层异物感属于同一套装置的三档刺激，不拆分登记。技术设定必须维持用户确认的绝对无损伤边界：装置材质、伸展范围、力度与药剂剂量均受安全限制，并具有自动停止与完整回收机制；不描写可在现实模仿的植入步骤。控制者身份、植入原因、持续时间、璃落是否能争取局部控制权、装置与神经接口或审讯系统的关系，以及解除方式均待正式采用时确定。",
+      "notes": "本条按主要体验归入“极限拘束与折磨”，不是医疗、刑罚或普通恶作剧。鼻腔的喷嚏临界、咽喉的咳嗽与吞咽冲动、食道方向的深层异物感属于同一套装置的三档刺激，不拆分登记。技术设定必须维持用户确认的绝对无损伤边界：装置材质、伸展范围、力度与药剂剂量均受安全限制，并具有自动停止与完整回收机制；不描写可在现实模仿的植入步骤。控制者身份、植入原因、持续时间、璃落是否能争取局部控制权、装置与神经接口或审讯系统的关系，以及解除方式均待正式采用时确定。\n[层级核对] 已关联 RAG「挠痒」(rag.restraint.effect.tickling)。",
       "development": {
         "premise": "科幻装置从体内反复触发本能反射",
         "escalation": "语言、呼吸与注意节奏被不同刺激持续打断",
@@ -1527,7 +1772,14 @@
         "consequence": "后续转向识别协议、夺回停用权与恢复节奏"
       },
       "plotKind": "ordinary",
-      "ragRefs": []
+      "ragRefs": [
+        "rag.restraint.effect.tickling"
+      ],
+      "origin": "legacy-migration",
+      "placementStatus": "unplaced",
+      "maturity": "seed",
+      "layerReviewStatus": "confirmed-keep-as-plot",
+      "layerReviewConfirmationId": "plc-ms4kovxt"
     },
     {
       "id": "plot-049",
@@ -1551,7 +1803,7 @@
       "usedByLabels": [
         "尘寰问道-魔宗历险-误入灵蛛谷"
       ],
-      "notes": "本条从现有“误入灵蛛谷”节点提取，保留蛛丝缠身、牵引丝、丝层回弹、蛛网通道与毛绒蜘蛛协作形成的完整巢穴拘束，不把每一种缠绕部位拆条。茯丝最终为何留下璃落、两人关系如何变化、璃落是否主动配合探索巢穴以及离开方式仍由原故事节点后续完善。",
+      "notes": "本条从现有“误入灵蛛谷”节点提取，保留蛛丝缠身、牵引丝、丝层回弹、蛛网通道与毛绒蜘蛛协作形成的完整巢穴拘束，不把每一种缠绕部位拆条。茯丝最终为何留下璃落、两人关系如何变化、璃落是否主动配合探索巢穴以及离开方式仍由原故事节点后续完善。\n[层级核对] 已关联 RAG「蛛丝」(rag.restraint.material.spider-silk)。",
       "development": {
         "premise": "璃落误触蛛丝阵并受茯丝牵引控制",
         "escalation": "地面、丝幕和通道会随行动重排丝路",
@@ -1560,8 +1812,14 @@
       },
       "plotKind": "restraint",
       "ragRefs": [
-        "rag.restraint.material.spider-silk"
-      ]
+        "rag.restraint.material.spider-silk",
+        "rag.restraint.material.bio-nest"
+      ],
+      "origin": "legacy-migration",
+      "placementStatus": "placed",
+      "maturity": "scene-ready",
+      "layerReviewStatus": "confirmed-keep-as-plot",
+      "layerReviewConfirmationId": "plc-ms4jwryh"
     },
     {
       "id": "plot-050",
@@ -1579,7 +1837,7 @@
       "usageStatus": "unused",
       "usedBy": [],
       "usedByLabels": [],
-      "notes": "蜂蜡固定、接吻喂入信息素、全身包裹吸收、信息素驯化与最终成为幼蜂体液供养者是一条连续转化链，不按阶段拆分。只确认璃落最终被制度化为供养幼蜂的奴隶，不在情节库中细写体液采集部位或露骨过程。蜂族控制者身份、蜂群世界归属、信息素作用速度、改造是否可逆、璃落如何维持生存、是否存在蜂后以及救援或脱离方式均待正式采用时确定。",
+      "notes": "蜂蜡固定、接吻喂入信息素、全身包裹吸收、信息素驯化与最终成为幼蜂体液供养者是一条连续转化链，不按阶段拆分。只确认璃落最终被制度化为供养幼蜂的奴隶，不在情节库中细写体液采集部位或露骨过程。蜂族控制者身份、蜂群世界归属、信息素作用速度、改造是否可逆、璃落如何维持生存、是否存在蜂后以及救援或脱离方式均待正式采用时确定。\n[层级核对] 已建上位 RAG「生物巢材」，子卡「蜂蜡」；蛛丝同挂该大类。",
       "development": {
         "premise": "蜂蜡与信息素把璃落嵌入巢穴关系",
         "escalation": "长期包裹逐步提高离巢难度与群落依赖",
@@ -1588,8 +1846,15 @@
       },
       "plotKind": "restraint",
       "ragRefs": [
-        "rag.restraint.state.confinement"
-      ]
+        "rag.restraint.state.confinement",
+        "rag.restraint.material.bio-nest",
+        "rag.restraint.material.beeswax"
+      ],
+      "origin": "legacy-migration",
+      "placementStatus": "unplaced",
+      "maturity": "seed",
+      "layerReviewStatus": "confirmed-keep-as-plot",
+      "layerReviewConfirmationId": "plc-ms4jzerh"
     },
     {
       "id": "plot-051",
@@ -1607,7 +1872,7 @@
       "usageStatus": "unused",
       "usedBy": [],
       "usedByLabels": [],
-      "notes": "本条与 plot-049“茯丝-蛛丝巢穴拘束”分开：前者是茯丝以巢穴、牵引丝和空间蛛网进行好奇玩弄式控制，本条则以小蜘蛛进入口、鼻、耳并在体内织网为核心，身体边界、强制度与感官封禁目的明显不同。口内织网、固定舌头与牙齿、小蜘蛛从鼻孔爬出，以及耳内同类封禁属于同一套活体蛛网过程，不再按器官拆条。施害者身份、蜘蛛为何能够安全移动、是否造成损伤、封禁持续时间、璃落如何维持呼吸与吞咽、解除方式及适用世界均待正式采用时确定；不提供现实可模仿的操作细节。",
+      "notes": "本条与 plot-049“茯丝-蛛丝巢穴拘束”分开：前者是茯丝以巢穴、牵引丝和空间蛛网进行好奇玩弄式控制，本条则以小蜘蛛进入口、鼻、耳并在体内织网为核心，身体边界、强制度与感官封禁目的明显不同。口内织网、固定舌头与牙齿、小蜘蛛从鼻孔爬出，以及耳内同类封禁属于同一套活体蛛网过程，不再按器官拆条。施害者身份、蜘蛛为何能够安全移动、是否造成损伤、封禁持续时间、璃落如何维持呼吸与吞咽、解除方式及适用世界均待正式采用时确定；不提供现实可模仿的操作细节。\n[层级核对] 已关联 RAG「蛛丝」及上位「生物巢材」。",
       "development": {
         "premise": "小蜘蛛在口鼻耳间建立贯通蛛网",
         "escalation": "感官、表达与吞咽等状态相互牵连升级",
@@ -1616,8 +1881,14 @@
       },
       "plotKind": "restraint",
       "ragRefs": [
-        "rag.restraint.material.spider-silk"
-      ]
+        "rag.restraint.material.spider-silk",
+        "rag.restraint.material.bio-nest"
+      ],
+      "origin": "legacy-migration",
+      "placementStatus": "unplaced",
+      "maturity": "seed",
+      "layerReviewStatus": "confirmed-keep-as-plot",
+      "layerReviewConfirmationId": "plc-ms4k582d"
     },
     {
       "id": "plot-052",
@@ -1640,7 +1911,7 @@
       "usedByLabels": [
         "浮光掠影-重返荆江市-城市调查员"
       ],
-      "notes": "丝袜厂潜入、调查暴露、生产线逐层套覆、最终被全包成丝袜人偶，以及受限状态下保护和传递证据属于同一调查受困桥段，不再拆分。厂方具体犯罪、委托人身份、璃落进入核心生产区的方式、全包持续时间、呼吸与视野的安全边界、证据藏匿位置、脱困或获救方式仍待后续完善。",
+      "notes": "丝袜厂潜入、调查暴露、生产线逐层套覆、最终被全包成丝袜人偶，以及受限状态下保护和传递证据属于同一调查受困桥段，不再拆分。厂方具体犯罪、委托人身份、璃落进入核心生产区的方式、全包持续时间、呼吸与视野的安全边界、证据藏匿位置、脱困或获救方式仍待后续完善。\n[层级核对] 已关联 RAG「丝袜拘束」(rag.restraint.material.stocking-restraint)。",
       "development": {
         "premise": "丝袜厂调查暴露后璃落被送上生产线",
         "escalation": "材料逐层全包使行动与证据传递同步受阻",
@@ -1651,7 +1922,12 @@
       "ragRefs": [
         "rag.restraint.material.stocking-restraint",
         "rag.restraint.structure.full-body-wrapping"
-      ]
+      ],
+      "origin": "legacy-migration",
+      "placementStatus": "placed",
+      "maturity": "scene-ready",
+      "layerReviewStatus": "confirmed-keep-as-plot",
+      "layerReviewConfirmationId": "plc-ms4k76cz"
     },
     {
       "id": "plot-053",
@@ -1674,7 +1950,7 @@
       "usedByLabels": [
         "浮光掠影-重返荆江市-城市调查员"
       ],
-      "notes": "手铐、脚镣、锁链逐步加装并将关键连接处封合，是同一套利用金属厂环境升级拘束的桥段，不按器具拆条。情节库只记录封合后的不可自行拆卸状态，不提供现实中的焊接参数或操作步骤。金属厂具体犯罪、拘束结构、活动范围、证据保存方式、施害者是否包含异能者、解除设备与救援过程仍待后续完善。",
+      "notes": "手铐、脚镣、锁链逐步加装并将关键连接处封合，是同一套利用金属厂环境升级拘束的桥段，不按器具拆条。情节库只记录封合后的不可自行拆卸状态，不提供现实中的焊接参数或操作步骤。金属厂具体犯罪、拘束结构、活动范围、证据保存方式、施害者是否包含异能者、解除设备与救援过程仍待后续完善。\n[层级核对] 已关联手铐、脚镣；永久拘束下新建子卡「焊死镣铐」。",
       "development": {
         "premise": "金属厂调查者被现成镣具和结构控制",
         "escalation": "永久封合使脱困必须依赖设备或外援",
@@ -1685,8 +1961,15 @@
       "ragRefs": [
         "rag.restraint.tool.handcuffs",
         "rag.restraint.tool.leg-irons",
-        "rag.restraint.tool.chain"
-      ]
+        "rag.restraint.tool.chain",
+        "rag.restraint.duration.permanent-restraint",
+        "rag.restraint.detail.焊死镣铐"
+      ],
+      "origin": "legacy-migration",
+      "placementStatus": "placed",
+      "maturity": "scene-ready",
+      "layerReviewStatus": "confirmed-keep-as-plot",
+      "layerReviewConfirmationId": "plc-ms4kajvn"
     },
     {
       "id": "plot-055",
@@ -1713,7 +1996,12 @@
         "consequence": "她夺回行动决定权，并留下关于智能照护边界与责任归属的后续线索"
       },
       "plotKind": "ordinary",
-      "ragRefs": []
+      "ragRefs": [],
+      "origin": "legacy-migration",
+      "placementStatus": "placed",
+      "maturity": "scene-ready",
+      "layerReviewStatus": "confirmed-keep-as-plot",
+      "layerReviewConfirmationId": "plc-ms4kqs1h"
     },
     {
       "id": "plot-056",
@@ -1740,7 +2028,12 @@
         "consequence": "意识脱困将迫使现实中的人面对这套刑罚系统的合法性与受害记录"
       },
       "plotKind": "ordinary",
-      "ragRefs": []
+      "ragRefs": [],
+      "origin": "legacy-migration",
+      "placementStatus": "placed",
+      "maturity": "scene-ready",
+      "layerReviewStatus": "confirmed-keep-as-plot",
+      "layerReviewConfirmationId": "plc-ms4kbavd"
     },
     {
       "id": "plot-057",
@@ -1771,7 +2064,12 @@
         "consequence": "璃落的选择改变王城权力格局，并决定古代遗产是公开、受管控还是封存"
       },
       "plotKind": "ordinary",
-      "ragRefs": []
+      "ragRefs": [],
+      "origin": "legacy-migration",
+      "placementStatus": "placed",
+      "maturity": "scene-ready",
+      "layerReviewStatus": "confirmed-keep-as-plot",
+      "layerReviewConfirmationId": "plc-ms4kr7ng"
     },
     {
       "id": "plot-054",
@@ -1801,169 +2099,234 @@
         "consequence": "璃落以诅咒证据重写审判规则并决定阵营关系"
       },
       "plotKind": "ordinary",
-      "ragRefs": []
+      "ragRefs": [],
+      "origin": "user-created",
+      "placementStatus": "unplaced",
+      "maturity": "seed",
+      "layerReviewStatus": "confirmed-keep-as-plot",
+      "layerReviewConfirmationId": "plc-ms4ga9zw"
     },
     {
       "id": "plot-058",
       "number": "058",
       "groupId": "plot-group-025",
-      "title": "火车乘务员",
-      "summary": "由旧 specialGameplay「职业-火车乘务员」迁移；具体场景、过程与结果以关联故事正文为准。",
-      "plotKind": "mixed",
-      "worldBiases": [],
-      "ragRefs": [],
-      "characters": [],
+      "title": "列车员-客串乘务员拍照售卖",
+      "summary": "雪城观光列车上，社团玩闹被列车员撞见。对方同样有紧缚爱好，给璃落换上乘务员制服，把她捆在卧铺上铺拍照，并按“被同事欺负”预设姿态。随后璃落仍被捆着协助饮料零食售卖：客人买东西时，列车员会从她胸前取出付款码。这一路售卖帮列车员冲高绩效，璃落却一直处在被围观和使唤的位置。",
+      "plotKind": "restraint",
+      "worldBiases": [
+        "1-浮光掠影"
+      ],
+      "ragRefs": [
+        "rag.restraint.context.train-attendant"
+      ],
+      "characters": [
+        "璃落",
+        "列车员"
+      ],
       "isUsed": true,
       "usageStatus": "used",
       "usedBy": [
         "world-1-glimmering-glance-snow-train"
       ],
       "usedByLabels": [
-        "world-1-glimmering-glance-snow-train"
+        "浮光掠影-雪城列车"
       ],
-      "notes": "迁移批次 tag-rag-restructure-v1；未从标题补写缺失剧情。",
+      "notes": "迁移批次 tag-rag-restructure-v1；未从标题补写缺失剧情。\n[层级核对] 已拆分：保留情节实例，并引用 RAG rag.restraint.context.train-attendant（上位 rag.restraint.context.occupation）。",
       "development": {
-        "premise": "具体内容见关联故事正文",
-        "escalation": "具体内容见关联故事正文",
-        "turn": "具体内容见关联故事正文",
-        "consequence": "具体内容见关联故事正文"
+        "premise": "列车员发现玩闹后，把璃落变成制服客串乘务员",
+        "escalation": "上铺拍照与被同事欺负的预设姿态把公开性推高",
+        "turn": "捆着售卖并被用来展示付款码，服务与受制叠在一起",
+        "consequence": "列车员绩效暴涨，璃落带着被使唤的公开受限状态继续行程"
       },
       "migration": {
         "batchId": "tag-rag-restructure-v1",
         "oldIds": [
           "bondage_tag:sg:职业-火车乘务员"
         ]
-      }
+      },
+      "origin": "legacy-migration",
+      "placementStatus": "placed",
+      "maturity": "scene-ready",
+      "layerReviewStatus": "split-plot-and-rag",
+      "layerReviewConfirmationId": "plc-ms4fdzed"
     },
     {
       "id": "plot-059",
       "number": "059",
       "groupId": "plot-group-025",
-      "title": "教师",
-      "summary": "由旧 specialGameplay「职业-教师」迁移；具体场景、过程与结果以关联故事正文为准。",
-      "plotKind": "mixed",
-      "worldBiases": [],
-      "ragRefs": [],
-      "characters": [],
+      "title": "槐湾村-捆缚授课",
+      "summary": "槐湾村的孩子们围着璃落听故事、认字，村民随后把闲置小屋改成小教室，请她正式开课。璃落授课时仍保持约束：左手反剪固定在背后，右臂贴身只留小臂活动，手指用纱布和胶带包裹，只露出两根用来握笔。黄翠每日早晚照料与换绑；约一个月后沈芷抵达教室，看见她以这种姿态站在讲台上给孩子们上课。",
+      "plotKind": "restraint",
+      "worldBiases": [
+        "1-浮光掠影"
+      ],
+      "ragRefs": [
+        "rag.restraint.context.teacher"
+      ],
+      "characters": [
+        "璃落",
+        "黄翠",
+        "沈芷"
+      ],
       "isUsed": true,
       "usageStatus": "used",
       "usedBy": [
         "world-1-glimmering-glance-huaiwan-village"
       ],
       "usedByLabels": [
-        "world-1-glimmering-glance-huaiwan-village"
+        "浮光掠影-槐湾村"
       ],
-      "notes": "迁移批次 tag-rag-restructure-v1；未从标题补写缺失剧情。",
+      "notes": "迁移批次 tag-rag-restructure-v1；未从标题补写缺失剧情。\n[层级核对] 已拆分：保留情节实例，并引用 RAG rag.restraint.context.teacher（上位 rag.restraint.context.occupation）。",
       "development": {
-        "premise": "具体内容见关联故事正文",
-        "escalation": "具体内容见关联故事正文",
-        "turn": "具体内容见关联故事正文",
-        "consequence": "具体内容见关联故事正文"
+        "premise": "村民请璃落给孩子们开课，教室很快搭起来",
+        "escalation": "授课期间她一直维持局部受限的教学姿态",
+        "turn": "沈芷抵达时看见妹妹以捆缚姿态站在讲台上",
+        "consequence": "村庄承认她的教学贡献，后续转向药材合作与离去安排"
       },
       "migration": {
         "batchId": "tag-rag-restructure-v1",
         "oldIds": [
           "bondage_tag:sg:职业-教师"
         ]
-      }
+      },
+      "origin": "legacy-migration",
+      "placementStatus": "placed",
+      "maturity": "scene-ready",
+      "layerReviewStatus": "split-plot-and-rag",
+      "layerReviewConfirmationId": "plc-ms4fpvse"
     },
     {
       "id": "plot-060",
       "number": "060",
       "groupId": "plot-group-025",
-      "title": "美人鱼模特",
-      "summary": "由旧 specialGameplay「职业-美人鱼模特」迁移；具体场景、过程与结果以关联故事正文为准。",
-      "plotKind": "mixed",
-      "worldBiases": [],
-      "ragRefs": [],
-      "characters": [],
+      "title": "游轮-美人鱼尾体验加演",
+      "summary": "游轮剧院里，璃落被幻梦绸艺团的美人鱼演出吸引，向工作人员申请体验。教练欣雨为她选了湛蓝色仿生鱼尾并指导穿戴；林雨薇捆住她的双手，欣雨改用荧光绳让效果更好看。璃落在下午练会S型游动与鱼尾摆动，当晚加演获得满堂喝彩。",
+      "plotKind": "restraint",
+      "worldBiases": [
+        "1-浮光掠影"
+      ],
+      "ragRefs": [
+        "rag.restraint.context.mermaid-model"
+      ],
+      "characters": [
+        "璃落",
+        "欣雨",
+        "林雨薇"
+      ],
       "isUsed": true,
       "usageStatus": "used",
       "usedBy": [
         "world-1-glimmering-glance-cruise"
       ],
       "usedByLabels": [
-        "world-1-glimmering-glance-cruise"
+        "浮光掠影-游轮"
       ],
-      "notes": "迁移批次 tag-rag-restructure-v1；未从标题补写缺失剧情。",
+      "notes": "迁移批次 tag-rag-restructure-v1；未从标题补写缺失剧情。\n[层级核对] 已拆分：保留情节实例，并引用 RAG rag.restraint.context.mermaid-model（上位 rag.restraint.context.occupation）。",
       "development": {
-        "premise": "具体内容见关联故事正文",
-        "escalation": "具体内容见关联故事正文",
-        "turn": "具体内容见关联故事正文",
-        "consequence": "具体内容见关联故事正文"
+        "premise": "璃落申请体验美人鱼表演并穿上仿生鱼尾",
+        "escalation": "双手改用荧光绳固定，公开练习游动姿态",
+        "turn": "当晚加演把体验推到舞台中央",
+        "consequence": "满堂喝彩后留下表演向受限体验，并与后续后台互动衔接"
       },
       "migration": {
         "batchId": "tag-rag-restructure-v1",
         "oldIds": [
           "bondage_tag:sg:职业-美人鱼模特"
         ]
-      }
+      },
+      "origin": "legacy-migration",
+      "placementStatus": "placed",
+      "maturity": "scene-ready",
+      "layerReviewStatus": "split-plot-and-rag",
+      "layerReviewConfirmationId": "plc-ms4fsm88"
     },
     {
       "id": "plot-061",
       "number": "061",
       "groupId": "plot-group-025",
-      "title": "模特",
-      "summary": "由旧 specialGameplay「职业-模特」迁移；具体场景、过程与结果以关联故事正文为准。",
-      "plotKind": "mixed",
-      "worldBiases": [],
-      "ragRefs": [],
-      "characters": [],
+      "title": "购物模特-拘束椅与包裹拍摄",
+      "summary": "沈芷短期出国后，璃落报名本城拘束用品工作室当长期模特。试镜用轻量拘束具表现很好；正式拍摄一里她被固定在拘束椅上，完成从不安到放松的展示并成片发布；正式拍摄二里她进入接近全身包裹的装置，中段休息时以该状态接通沈芷视频，现场工作人员被姐姐的专业点评惊到。产品拍完后，她又开始找下一段拍摄兼职。",
+      "plotKind": "restraint",
+      "worldBiases": [
+        "1-浮光掠影"
+      ],
+      "ragRefs": [
+        "rag.restraint.context.shopping-model"
+      ],
+      "characters": [
+        "璃落",
+        "沈芷"
+      ],
       "isUsed": true,
       "usageStatus": "used",
       "usedBy": [
         "world-1-glimmering-glance-model"
       ],
       "usedByLabels": [
-        "world-1-glimmering-glance-model"
+        "浮光掠影-紧缚模特"
       ],
-      "notes": "迁移批次 tag-rag-restructure-v1；未从标题补写缺失剧情。",
+      "notes": "迁移批次 tag-rag-restructure-v1；未从标题补写缺失剧情。\n[层级核对] 已拆分：保留情节实例，并引用 RAG rag.restraint.context.shopping-model（上位 rag.restraint.context.occupation）。",
       "development": {
-        "premise": "具体内容见关联故事正文",
-        "escalation": "具体内容见关联故事正文",
-        "turn": "具体内容见关联故事正文",
-        "consequence": "具体内容见关联故事正文"
+        "premise": "璃落报名拘束用品工作室，先过轻量试镜",
+        "escalation": "拘束椅拍摄把自愿固定过程推到成片发布",
+        "turn": "全身包裹拍摄中接通沈芷，家属点评比工作人员更懂",
+        "consequence": "该店产品拍完，璃落转向寻找下一段拍摄兼职"
       },
       "migration": {
         "batchId": "tag-rag-restructure-v1",
         "oldIds": [
           "bondage_tag:sg:职业-模特"
         ]
-      }
+      },
+      "origin": "legacy-migration",
+      "placementStatus": "placed",
+      "maturity": "scene-ready",
+      "layerReviewStatus": "split-plot-and-rag",
+      "layerReviewConfirmationId": "plc-ms4fvf0k"
     },
     {
       "id": "plot-062",
       "number": "062",
       "groupId": "plot-group-025",
-      "title": "演员",
-      "summary": "由旧 specialGameplay「职业-演员」迁移；具体场景、过程与结果以关联故事正文为准。",
-      "plotKind": "mixed",
-      "worldBiases": [],
-      "ragRefs": [],
-      "characters": [],
+      "title": "电影绑替-片场长时拘束补拍",
+      "summary": "璃落暑假在片场做捆绑替身，负责补拍需要展示捆绑特写的镜头，几乎整天保持被绑状态，一场接一场换绑。她常因太享受而演不出被绑时的紧张，被导演提醒收着点。某场捆绑镜头特别多，她一连被绑好几天；工作人员喊咔后给她喂水，她很快成了团宠。苏婉儿曾来探班。",
+      "plotKind": "restraint",
+      "worldBiases": [
+        "1-浮光掠影"
+      ],
+      "ragRefs": [
+        "rag.restraint.context.actor"
+      ],
+      "characters": [
+        "璃落",
+        "苏婉儿"
+      ],
       "isUsed": true,
       "usageStatus": "used",
       "usedBy": [
-        "world-1-glimmering-glance-maid-hotel",
         "world-1-glimmering-glance-movie-bound-stand-in"
       ],
       "usedByLabels": [
-        "world-1-glimmering-glance-maid-hotel",
-        "world-1-glimmering-glance-movie-bound-stand-in"
+        "浮光掠影-电影绑替兼职"
       ],
-      "notes": "迁移批次 tag-rag-restructure-v1；未从标题补写缺失剧情。",
+      "notes": "迁移批次 tag-rag-restructure-v1；未从标题补写缺失剧情。\n[层级核对] 已拆分：保留情节实例，并引用 RAG rag.restraint.context.actor（上位 rag.restraint.context.occupation）。",
       "development": {
-        "premise": "具体内容见关联故事正文",
-        "escalation": "具体内容见关联故事正文",
-        "turn": "具体内容见关联故事正文",
-        "consequence": "具体内容见关联故事正文"
+        "premise": "璃落接片场绑替，专补长时间捆绑特写",
+        "escalation": "多场换绑与连续数日拘束把强度推高",
+        "turn": "因太享受而 NG，导演要求她收着演",
+        "consequence": "成为团宠，并与苏婉儿探班重逢"
       },
       "migration": {
         "batchId": "tag-rag-restructure-v1",
         "oldIds": [
           "bondage_tag:sg:职业-演员"
         ]
-      }
+      },
+      "origin": "legacy-migration",
+      "placementStatus": "placed",
+      "maturity": "scene-ready",
+      "layerReviewStatus": "split-plot-and-rag",
+      "layerReviewConfirmationId": "plc-ms4g2zm3"
     }
   ]
 }

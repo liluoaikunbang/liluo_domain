@@ -1,0 +1,141 @@
+{
+  "cardId": "rag.restraint.detail.焊死镣铐",
+  "title": "焊死镣铐",
+  "domain": "restraint",
+  "cardType": "term",
+  "aliases": [
+    "永久封合镣铐",
+    "焊死锁链",
+    "封合镣具"
+  ],
+  "summary": "把镣铐锁链连接处永久封合，取消可自行开锁拆卸的路径；属永久拘束。",
+  "definition": "焊死镣铐指把手铐、脚镣、锁链等金属器具的关键连接处永久封合，使原本可找锁孔或拆卸点的拘束变成必须借助外部设备才能解除的整体金属束缚；是永久拘束下的具体手法，不等于普通可开锁镣铐，也不等于某次金属厂情节。",
+  "sourceRefs": [],
+  "evidenceStatus": "missing",
+  "contentStatus": "stub",
+  "reviewStatus": "candidate",
+  "directQuoteIncluded": false,
+  "canonical": false,
+  "knowledgeScope": "external-fiction-reference",
+  "ragLayer": "concept",
+  "parentCardIds": [
+    "rag.restraint.duration.permanent-restraint"
+  ],
+  "migration": {
+    "batchId": "plot-layer-governance-v1",
+    "oldIds": [],
+    "generatedFrom": "plot-layer-user-request",
+    "createdAt": "2026-07-28T11:17:44.529Z"
+  },
+  "evidenceRefs": [],
+  "sourceRecordIds": [],
+  "claims": [],
+  "distinctions": [
+    {
+      "targetConceptId": "rag.restraint.tool.handcuffs",
+      "description": "手铐是器具本身；本卡强调连接处被永久封合后的不可自行解除。"
+    },
+    {
+      "targetConceptId": "rag.restraint.tool.leg-irons",
+      "description": "脚镣是器具本身；本卡强调封合后的永久状态。"
+    }
+  ],
+  "retrievalPolicy": {
+    "graphVisible": true,
+    "searchable": true,
+    "relationAnchor": true,
+    "contentRetrievable": false,
+    "evidenceRetrievable": false,
+    "knowledgeRetrievable": false,
+    "expressionRetrievable": false
+  },
+  "professionalRagVersion": 1,
+  "knowledge": {
+    "definition": "焊死镣铐指把手铐、脚镣、锁链等金属器具的关键连接处永久封合，使原本可找锁孔或拆卸点的拘束变成必须借助外部设备才能解除的整体金属束缚；是永久拘束下的具体手法，不等于普通可开锁镣铐，也不等于某次金属厂情节。",
+    "boundaries": {
+      "includes": [
+        "镣铐锁链关键连接处被永久封合",
+        "取消锁孔/拆卸点自行脱困路径",
+        "须外部设备或外援才能解除"
+      ],
+      "excludes": [
+        "普通可开锁手铐脚镣",
+        "单次金属厂调查事件完整过程",
+        "焊接工艺参数与现实操作步骤"
+      ]
+    },
+    "distinctions": [
+      {
+        "targetConceptId": "rag.restraint.tool.handcuffs",
+        "description": "手铐是器具本身；本卡强调连接处被永久封合后的不可自行解除。"
+      },
+      {
+        "targetConceptId": "rag.restraint.tool.leg-irons",
+        "description": "脚镣是器具本身；本卡强调封合后的永久状态。"
+      }
+    ],
+    "aliases": [
+      "永久封合镣铐",
+      "焊死锁链",
+      "封合镣具"
+    ],
+    "parentConceptRefs": [
+      "rag.restraint.duration.permanent-restraint"
+    ],
+    "childConceptRefs": [],
+    "relatedConceptRefs": [
+      "rag.restraint.tool.handcuffs",
+      "rag.restraint.tool.leg-irons",
+      "rag.restraint.tool.chain"
+    ],
+    "factualClaims": [],
+    "evidenceRefs": [],
+    "projectInterpretation": "可与手铐、脚镣、锁链同挂；情节只写封合结果与脱困代价，不写焊接参数。",
+    "commonMisreadings": [
+      "把整段金属厂调查写成此概念本身"
+    ],
+    "status": "stub",
+    "evidenceStatus": "missing",
+    "reviewStatus": "pending"
+  },
+  "expression": {
+    "visualFocus": [
+      "连接处被封死的金属痕迹",
+      "锁孔失效或被盖住"
+    ],
+    "actionLogic": [
+      "先写清原本可拆的连接",
+      "再写封合后只能拖行或等外援设备"
+    ],
+    "movementEffects": [],
+    "postureEffects": [],
+    "sensoryFocus": [
+      "金属重量",
+      "拖行声响",
+      "活动范围被锁链限定"
+    ],
+    "emotionalPossibilities": [],
+    "narrativeUses": [
+      "把可逆拘束升级为必须外援解除的状态"
+    ],
+    "applicableScenes": [],
+    "unsuitableScenes": [],
+    "expressionPrinciples": [
+      "只写封合结果与行动边界，不提供可复现焊接步骤"
+    ],
+    "commonFailures": [
+      "写成工业焊接说明书"
+    ],
+    "prohibitedMisreadings": [],
+    "styleEvidenceRefs": [],
+    "goldExampleRefs": [],
+    "calibrationPairRefs": [],
+    "relatedStyleRagRefs": [],
+    "evidenceRefs": [],
+    "status": "stub",
+    "evidenceStatus": "missing",
+    "reviewStatus": "pending"
+  },
+  "evidenceBindings": [],
+  "overallStatus": "stub"
+}

@@ -1,0 +1,766 @@
+{
+  "schemaVersion": 1,
+  "excerpts": [
+    {
+      "id": "ev-fbsrc000005-63173e9e3fc005ec",
+      "sourceId": "fb-src-000005",
+      "segmentId": "fb-src-000005-seg-00019",
+      "excerptPreview": "（我的这一生就这么结束了？也好，就这么结束吧，这样就不必再受折磨了…）然而，在寒冷的漆黑中，被冻得麻 木 不 仁，以为自己已经死亡的韵，被直 肠处突然传来的灌肠感拉回了现实，并在全身按 摩器运作下找回自我，在直 肠胀 大而被挤 压受到刺 …",
+      "excerptStorage": "source-resolved",
+      "location": {
+        "lineStart": 203,
+        "lineEnd": 210,
+        "sourcePath": "external-knowledge/sources/fiction-bondage/不知道作者/被捕捉的韵（完结）.md"
+      },
+      "contextBeforePreview": "刚离开颠倒得让人脑袋混沌的黏 稠火 热地狱，未能喘口气，又被扔进了让人颤 抖着被 迫保持清 醒的坚 硬极寒地狱。同样是黑 暗中诞生的地狱，同样是可以让人发狂的…",
+      "contextAfterPreview": "“嗯\\~真臭啊！没想到外表这么可爱的你，体 内的东西却是这么肮 脏，让我来帮你清洗干净吧\\~”并没有认识到这是由于自己让他人憋了一整天才让发 泄的原因，在用木…",
+      "evidenceRoles": [
+        "definition"
+      ],
+      "extractionOrigin": "imported",
+      "reviewStatus": "pending",
+      "rightsScope": {
+        "privateRag": true,
+        "publicExport": false
+      },
+      "contentHash": "5224b67e092fe5c66087352f308c117303d9192a7018c920e2d1c398f2d7f03e",
+      "sourceMissing": false,
+      "usedByCardIds": [
+        "rag.restraint.detail.寒冷"
+      ],
+      "usedByClaimIds": [
+        "rag.restraint.detail.寒冷::claim:definition:0"
+      ],
+      "createdAt": "2026-07-28T07:07:22.737Z",
+      "updatedAt": "2026-07-28T07:14:30.100Z"
+    },
+    {
+      "id": "ev-fbsrc000007-ffceedc768f85969",
+      "sourceId": "fb-src-000007",
+      "segmentId": "fb-src-000007-seg-00019",
+      "excerptPreview": "她的腿感到寒冷脚镣，手铐牢牢地束缚着她的四肢，钢皮革带更深地扼住她的肌肤，防碍血流通畅。她的手胳膊和肩被脚镣，手铐和钢脖圈限 制在不自然的位置，感到疆硬痛。浑身难受。她突然想到，现在唯一的可能是询问老铁匠，是否得到帮助。 她忍着痛，伴随叮…",
+      "excerptStorage": "source-resolved",
+      "location": {
+        "lineStart": 269,
+        "lineEnd": 286,
+        "sourcePath": "external-knowledge/sources/fiction-bondage/不知道作者/变为奴隶的姑娘.md"
+      },
+      "contextBeforePreview": "第四章：求救",
+      "contextAfterPreview": "原来是老铁匠男孩的声音：“女士，咋天夜里接到你的电 话，一夜着急。今天早上我自己拿定主 义。你现在最重要是保持镇静。如果你同意，今天上午我将你接到工厂，看有什…",
+      "evidenceRoles": [
+        "definition"
+      ],
+      "extractionOrigin": "imported",
+      "reviewStatus": "pending",
+      "rightsScope": {
+        "privateRag": true,
+        "publicExport": false
+      },
+      "contentHash": "ff97c380bb33b15b37d080a5d362f94e2dbeeb94e8cfe9e72982ba991a4e7d14",
+      "sourceMissing": false,
+      "usedByCardIds": [
+        "rag.restraint.detail.寒冷"
+      ],
+      "usedByClaimIds": [
+        "rag.restraint.detail.寒冷::claim:definition:0"
+      ],
+      "createdAt": "2026-07-28T07:07:22.739Z",
+      "updatedAt": "2026-07-28T07:14:30.100Z"
+    },
+    {
+      "id": "ev-fbsrc000099-ac56d9ab326803a8",
+      "sourceId": "fb-src-000099",
+      "segmentId": "fb-src-000099-seg-00047",
+      "excerptPreview": "在这种复杂的心情中，我昏睡了过去，再次醒来的 时候是被人惊醒，睁开眼睛总算是用了些许亮光，原来我是被关在了一个小黑屋里的笼子里了，笼子空间有限，我只能卷着双腿缩在笼子里。 一个女仆站在笼子外，冷冷的看着我说：“贱畜醒了？看来还是没死嘛，主…",
+      "excerptStorage": "source-resolved",
+      "location": {
+        "lineStart": 638,
+        "lineEnd": 650,
+        "sourcePath": "external-knowledge/sources/fiction-bondage/作者,金主大大/楚曼白/梦馨的复仇.md"
+      },
+      "contextBeforePreview": "越哭越觉得自己悔恨，夹杂这一丝不甘，还有更多的是委屈，上天为何对我如此不公。为何汪宏这种如此穷凶极恶的人都能活到现在，我不甘心。1 D1 @6 k7 c : …",
+      "contextAfterPreview": "“这个贱人就交给你们了，好好处理，不用留情，我先出去了，好了通知我就可以了。”",
+      "evidenceRoles": [
+        "definition"
+      ],
+      "extractionOrigin": "imported",
+      "reviewStatus": "pending",
+      "rightsScope": {
+        "privateRag": true,
+        "publicExport": false
+      },
+      "contentHash": "2f2ce8b5e3e530dc8fa87822338229d19f146092af4e0a2a3cacf3686550a1f5",
+      "sourceMissing": false,
+      "usedByCardIds": [
+        "rag.restraint.detail.小黑屋"
+      ],
+      "usedByClaimIds": [
+        "rag.restraint.detail.小黑屋::claim:definition:0"
+      ],
+      "createdAt": "2026-07-28T07:07:22.750Z",
+      "updatedAt": "2026-07-28T07:14:30.109Z"
+    },
+    {
+      "id": "ev-fbsrc000061-c787f87b6a2befa0",
+      "sourceId": "fb-src-000061",
+      "segmentId": "fb-src-000061-seg-00378",
+      "excerptPreview": "何九哪敢不从，忙打开机 关，把水牢里的水排 出去。 这里最不妙的就是林考柔了，随着池水的排空，她那绝美无比却又被无数绳索紧缚的娇 躯露了出来，何九暗咽口水，心道这女人真要命。 “不愧是五灵女之一啊，这身材，这脸蛋，啧啧，要是老夫再年轻个五…",
+      "excerptStorage": "source-resolved",
+      "location": {
+        "lineStart": 10762,
+        "lineEnd": 10781,
+        "sourcePath": "external-knowledge/sources/fiction-bondage/其他未分类/女侠被缚的故事.md"
+      },
+      "contextBeforePreview": "“这就不是林女侠你操心的事情了，反正到时候你就知道了。”说着，宋毅转头，笑着吩咐道:“赶紧把这些水抽干了，我好再帮林女侠加紧一下捆绑。”",
+      "contextAfterPreview": "何九吓懵了，好一会儿才反应过来，连忙掉头就想跑，可还没走几步，他就整个人都动不了了，胸前出现一个血洞，他艰难地转过头，看到的是林女侠冰冷又绝美的双眸，还有被紧…",
+      "evidenceRoles": [
+        "definition"
+      ],
+      "extractionOrigin": "imported",
+      "reviewStatus": "pending",
+      "rightsScope": {
+        "privateRag": true,
+        "publicExport": false
+      },
+      "contentHash": "9a2bf1753ffac3340e71b31e93675be5f9c35478f93778467b1ec0594f1e968f",
+      "sourceMissing": false,
+      "usedByCardIds": [
+        "rag.restraint.detail.水牢"
+      ],
+      "usedByClaimIds": [
+        "rag.restraint.detail.水牢::claim:definition:0"
+      ],
+      "createdAt": "2026-07-28T07:07:22.788Z",
+      "updatedAt": "2026-07-28T07:14:30.143Z"
+    },
+    {
+      "id": "ev-fbsrc000203-d47405a3a29f2ab9",
+      "sourceId": "fb-src-000203",
+      "segmentId": "fb-src-000203-seg-00126",
+      "excerptPreview": "又不知道坐了多久，迷迷糊糊的我发现水牢的灯又亮了，萨拉斯又站在水牢边的台阶上。 她笑嘻嘻地对我说：“特级女囚小 姐感觉如何？” 坐在水里的我转过头去，不想理她。 她感到尊严受到了侵犯，大喝道：“特级女囚001号，站起来！” 我哪里起得来，…",
+      "excerptStorage": "source-resolved",
+      "location": {
+        "lineStart": 3159,
+        "lineEnd": 3189,
+        "sourcePath": "external-knowledge/sources/fiction-bondage/作者,金主大大/en010272/自愿女囚岁月.md"
+      },
+      "contextBeforePreview": "不知道过了多久，又累又怕的我实在支持不住，只好背靠着铁笼坐在水里，反铐的双手抓 住铁栏杆。",
+      "contextAfterPreview": "我只能勉强蹲在里面，尽量把身 体蜷缩成一团，头靠着膝盖闭上双眼。 只过了一会儿，就已经感觉到腿脚发软、全身发酸。",
+      "evidenceRoles": [
+        "definition"
+      ],
+      "extractionOrigin": "imported",
+      "reviewStatus": "pending",
+      "rightsScope": {
+        "privateRag": true,
+        "publicExport": false
+      },
+      "contentHash": "2d1e982aff683951ce33b98cf575289c5983fc6a03b9b02cd43fa314d57c0184",
+      "sourceMissing": false,
+      "usedByCardIds": [
+        "rag.restraint.detail.水牢"
+      ],
+      "usedByClaimIds": [
+        "rag.restraint.detail.水牢::claim:definition:0"
+      ],
+      "createdAt": "2026-07-28T07:07:22.790Z",
+      "updatedAt": "2026-07-28T07:14:30.143Z"
+    },
+    {
+      "id": "ev-fbsrc000213-6ae450bf9170edd2",
+      "sourceId": "fb-src-000213",
+      "segmentId": "fb-src-000213-seg-00016",
+      "excerptPreview": "自小织被当成实验品永久拘束已经一年了 林医生回到了自己的岗位上 愤怒、悔恨一直占据自己的脑海 “你要是再不来上班，我可就要找人替你了，你知不知道多少人在盯着你这个职位，要不是因为你家里的事情，我才不会帮你说话 ，明天早上马上来报道” 林医…",
+      "excerptStorage": "source-resolved",
+      "location": {
+        "lineStart": 644,
+        "lineEnd": 703,
+        "sourcePath": "external-knowledge/sources/fiction-bondage/作者,金主大大/P站？？？/精神病院的阴谋.md"
+      },
+      "contextBeforePreview": "",
+      "contextAfterPreview": "这让她想起了被粗暴对待的小织 她看了看口罩的背后，是一个需要特殊装置才能解开的锁",
+      "evidenceRoles": [
+        "definition"
+      ],
+      "extractionOrigin": "imported",
+      "reviewStatus": "pending",
+      "rightsScope": {
+        "privateRag": true,
+        "publicExport": false
+      },
+      "contentHash": "418b317e118bc41ebc6f497dfbe2c47ff0891f5c3c0ca7a159dfcb8345f33891",
+      "sourceMissing": false,
+      "usedByCardIds": [
+        "rag.restraint.duration.permanent-restraint"
+      ],
+      "usedByClaimIds": [
+        "rag.restraint.duration.permanent-restraint::claim:definition:0"
+      ],
+      "createdAt": "2026-07-28T07:07:22.822Z",
+      "updatedAt": "2026-07-28T07:14:30.180Z"
+    },
+    {
+      "id": "ev-fbsrc000064-39a5ce2a889250dd",
+      "sourceId": "fb-src-000064",
+      "segmentId": "fb-src-000064-seg-00113",
+      "excerptPreview": "杨旭似乎没有听到司雅说什么，目光依然集中在她的那双精致漂亮的双脚上，原本就粉嫩的肌肤，因为刚刚杨旭不断的挠痒，已经变得微微发红，长时间的肌肤摩擦，散发着一种怪怪的气息，杨旭还特意放在鼻尖出嗅了嗅，味道还挺不好闻的，但是却似乎有一种诱人的魔…",
+      "excerptStorage": "source-resolved",
+      "location": {
+        "lineStart": 1910,
+        "lineEnd": 1923,
+        "sourcePath": "external-knowledge/sources/fiction-bondage/其他未分类/倾斜的世界-远方的寂静.md"
+      },
+      "contextBeforePreview": "“十分钟？该说的我都说了，如果你想要折腾人家，怎么说你都不会满意的，再说互动游戏好呀，人家本来就喜欢这种调调嘛”，司雅可不是被糊弄大的，当然知道杨旭虽然看出了…",
+      "contextAfterPreview": "一开始司雅还是有些抵触，虽然并不剧烈的挣扎，可是慢慢的她听到杨旭的话后，开始配合起来，一直到杨旭把整条小裤裤都塞入了她的嘴里，当然这个巴掌大的东西并不能填满她…",
+      "evidenceRoles": [
+        "definition"
+      ],
+      "extractionOrigin": "imported",
+      "reviewStatus": "pending",
+      "rightsScope": {
+        "privateRag": true,
+        "publicExport": false
+      },
+      "contentHash": "7438d5b96e6eb2b913a0f22f2382b006d1b664eff977b7ffaba935ee7ad2f745",
+      "sourceMissing": false,
+      "usedByCardIds": [
+        "rag.restraint.effect.tickling"
+      ],
+      "usedByClaimIds": [
+        "rag.restraint.effect.tickling::claim:definition:0"
+      ],
+      "createdAt": "2026-07-28T07:07:22.858Z",
+      "updatedAt": "2026-07-28T07:14:30.213Z"
+    },
+    {
+      "id": "ev-fbsrc000063-113028cfb79edd25",
+      "sourceId": "fb-src-000063",
+      "segmentId": "fb-src-000063-seg-00004",
+      "excerptPreview": "孙媛直接将502胶水涂在了叶晗的嘴唇上，从外面看不太出来，但是已经让叶晗根本说不了话了。 “让你叫，你不是能叫吗？你再叫一下试试看啊。”孙媛冷笑着说道，然后用手拍了拍叶晗的小脸，说道“你还敢跑，这件事情我一定会告诉老大的，你就等着被惩罚吧…",
+      "excerptStorage": "source-resolved",
+      "location": {
+        "lineStart": 62,
+        "lineEnd": 91,
+        "sourcePath": "external-knowledge/sources/fiction-bondage/其他未分类/女学生的倒霉捆绑故事.md"
+      },
+      "contextBeforePreview": "孙媛使劲的搂住了叶晗的胳膊，让她根本无法动弹，这时候叶晗本身就已经很累了，使不出多大的力气，根本没法挣脱。",
+      "contextAfterPreview": "叶晗努力的晃动着身体，用手按着凳子，努力想要起来。这时候苏巧乐不怀好意的拿出了另外一段绳索，看着她。",
+      "evidenceRoles": [
+        "definition"
+      ],
+      "extractionOrigin": "imported",
+      "reviewStatus": "pending",
+      "rightsScope": {
+        "privateRag": true,
+        "publicExport": false
+      },
+      "contentHash": "2f631c43f399da26bf30f9cd49bc13be08f27e12a016f4500d2e6307d446828f",
+      "sourceMissing": false,
+      "usedByCardIds": [
+        "rag.restraint.material.glue"
+      ],
+      "usedByClaimIds": [
+        "rag.restraint.material.glue::claim:definition:0"
+      ],
+      "createdAt": "2026-07-28T07:07:22.863Z",
+      "updatedAt": "2026-07-28T07:14:30.217Z"
+    },
+    {
+      "id": "ev-fbsrc000033-5d21fc2ccbc0e6c6",
+      "sourceId": "fb-src-000033",
+      "segmentId": "fb-src-000033-seg-00223",
+      "excerptPreview": "毫厘之差。 手臂粗细的蛛丝下一刻就猛地撞在了墙壁上，冲击力道带着丝线变成了形状不规整的‘丝网’，只差几厘米的距离就能触碰到人的身子，将她也固定在这坚固墙面上。 躲过这击的索菲娅却没有大难不死时的侥幸神色，而是在自己那张精致面庞上添了恼羞成…",
+      "excerptStorage": "source-resolved",
+      "location": {
+        "lineStart": 7362,
+        "lineEnd": 7385,
+        "sourcePath": "external-knowledge/sources/fiction-bondage/不知道作者/无限拘束乐园.md"
+      },
+      "contextBeforePreview": "面对朝自己迅猛射来，由几根纤细蛛丝拧成的一股‘粗绳’，无法奔跑的索菲娅急中生智，不慌不乱地下腰侧身，堪堪闪躲开这次攻击。",
+      "contextAfterPreview": "与此同时，她的动作幅度也愈来愈小，原先是求稳，现在却只是求快，躲过一根又一根的丝线。",
+      "evidenceRoles": [
+        "definition"
+      ],
+      "extractionOrigin": "imported",
+      "reviewStatus": "pending",
+      "rightsScope": {
+        "privateRag": true,
+        "publicExport": false
+      },
+      "contentHash": "2f5dde068ffe77ab480a75f8e7efec10278f1eabba499b5a1e89127c6e0cfd6d",
+      "sourceMissing": false,
+      "usedByCardIds": [
+        "rag.restraint.material.spider-silk"
+      ],
+      "usedByClaimIds": [
+        "rag.restraint.material.spider-silk::claim:definition:0"
+      ],
+      "createdAt": "2026-07-28T07:07:22.874Z",
+      "updatedAt": "2026-07-28T07:14:30.222Z"
+    },
+    {
+      "id": "ev-fbsrc000006-d1e6a13b49e9ceb4",
+      "sourceId": "fb-src-000006",
+      "segmentId": "fb-src-000006-seg-00006",
+      "excerptPreview": "苏琴已经不是第一次泡原浆了，但是她永远无法习惯着难遇抵挡的性 欲，已经失去理智的苏琴徒劳的扭 动着，用着自己被完全拘束的凌弱的肉 体试图反 抗着强大的触手，而下面四个已经开启的道具，因为失去了苏琴用 力保持的肉 壁压力开始疯狂的震动，进一…",
+      "excerptStorage": "source-resolved",
+      "location": {
+        "lineStart": 47,
+        "lineEnd": 49,
+        "sourcePath": "external-knowledge/sources/fiction-bondage/不知道作者/被诱骗成为奴隶的大魔导师.md"
+      },
+      "contextBeforePreview": "媚药的原液和触手不断的按 摩棒着苏琴的每一寸的皮肤，苏琴全身因为工作和束腰束腿等造成的酸胀开始衰减，脚趾因为一整天的走路产生的疼痛开始衰减，但是这对于苏琴来说…",
+      "contextAfterPreview": "#### \\(3\\)",
+      "evidenceRoles": [
+        "definition"
+      ],
+      "extractionOrigin": "imported",
+      "reviewStatus": "pending",
+      "rightsScope": {
+        "privateRag": true,
+        "publicExport": false
+      },
+      "contentHash": "43b8c0f6ac69c5ba42672a755ebe421c1c00ef7391869ad84d39a362b6c2775b",
+      "sourceMissing": false,
+      "usedByCardIds": [
+        "rag.restraint.material.tentacle"
+      ],
+      "usedByClaimIds": [
+        "rag.restraint.material.tentacle::claim:definition:0"
+      ],
+      "createdAt": "2026-07-28T07:07:22.885Z",
+      "updatedAt": "2026-07-28T07:14:30.232Z"
+    },
+    {
+      "id": "ev-fbsrc000012-8641387d07f59ae3",
+      "sourceId": "fb-src-000012",
+      "segmentId": "fb-src-000012-seg-00069",
+      "excerptPreview": "少女纤细的双臂被一根根细细的触手扭到背后，小臂水平交疊紧紧捆缚在腰间。细长的黑色触手在少女白皙的身体上来回往复的游走捆邹，在胸部上下勒紧，在乳沟之间穿过，将胸部上下的触手连接，横8字的勒住少女本不算丰满的胸部。\\& B6 q\\) C\\& …",
+      "excerptStorage": "source-resolved",
+      "location": {
+        "lineStart": 1507,
+        "lineEnd": 1517,
+        "sourcePath": "external-knowledge/sources/fiction-bondage/不知道作者/感染少女.md"
+      },
+      "contextBeforePreview": "随着这层皮一点点的褪去，消失，皮下包裏着的实体，终于水落石出的呈现在众人的面前。\\& K\\# m\" P6 \\_9 \\~7 \\[1 l: o: \\_\\# i\" …",
+      "contextAfterPreview": "而写着02编号的报表上的数据同样打印着一张头像照，同样是一名与莫雪年龄相仿的少女，有着一头梳成了两个长长马尾的紫发和同色如水晶一般的紫瞳。少女还有些俏皮的抬起…",
+      "evidenceRoles": [
+        "definition"
+      ],
+      "extractionOrigin": "imported",
+      "reviewStatus": "pending",
+      "rightsScope": {
+        "privateRag": true,
+        "publicExport": false
+      },
+      "contentHash": "edf085a751c0f696c6491ee5cd9b9dff686cf362a4d093a80c1704c274e26b0f",
+      "sourceMissing": false,
+      "usedByCardIds": [
+        "rag.restraint.material.tentacle"
+      ],
+      "usedByClaimIds": [
+        "rag.restraint.material.tentacle::claim:definition:0"
+      ],
+      "createdAt": "2026-07-28T07:07:22.887Z",
+      "updatedAt": "2026-07-28T07:14:30.232Z"
+    },
+    {
+      "id": "ev-fbsrc000097-e84c1d9dbd5075df",
+      "sourceId": "fb-src-000097",
+      "segmentId": "fb-src-000097-seg-00002",
+      "excerptPreview": "Y& d4 P- X! n4 N0 y 几人被铐上特制的连体铐，锁在了监禁押送车的特制栏杆上，每个罪犯单独一辆，有专门的警察押送，一行车辆在多辆武警车的护送下离开了海市，开往码头。% U; c4 }. s& j( e9 t Y, X\\* …",
+      "excerptStorage": "source-resolved",
+      "location": {
+        "lineStart": 20,
+        "lineEnd": 40,
+        "sourcePath": "external-knowledge/sources/fiction-bondage/作者,金主大大/楚曼白/监狱风云.md"
+      },
+      "contextBeforePreview": "几人听到判决下来后，卫澜没有任何反应，好像事先就知道一样，而且嘴角还微微翘起，不知道想什么。其他几人都对卫澜投去了仇恨的目光，其中楚曼白哭喊着自己是冤枉的，只…",
+      "contextAfterPreview": "卫澜把项圈挂在自己脖子上，别说，跟普通项链看清没什么区别，只是有些粗一点罢了，软踏踏的吊在脖子上，然后再次向两位道谢被外面来的警务人员带出门去了。 l- j&…",
+      "evidenceRoles": [
+        "definition"
+      ],
+      "extractionOrigin": "imported",
+      "reviewStatus": "pending",
+      "rightsScope": {
+        "privateRag": true,
+        "publicExport": false
+      },
+      "contentHash": "6dafd51deb361a2eb9a2e849882c32fd9c09c8b049a99508d61297cdd6bbcf58",
+      "sourceMissing": false,
+      "usedByCardIds": [
+        "rag.restraint.state.confinement"
+      ],
+      "usedByClaimIds": [
+        "rag.restraint.state.confinement::claim:definition:0"
+      ],
+      "createdAt": "2026-07-28T07:07:22.896Z",
+      "updatedAt": "2026-07-28T07:14:30.241Z"
+    },
+    {
+      "id": "ev-fbsrc000150-143b566063c1b9d5",
+      "sourceId": "fb-src-000150",
+      "segmentId": "fb-src-000150-seg-00015",
+      "excerptPreview": "还好有小空间生成器，他才能放心的把宋哈娜监禁在花村道场。当时他在游戏厅迷昏宋哈娜后，正苦恼把她藏到哪，突然眼前开了一道异空间传送门，走出来一个人，吓得他当场就举起了他的步圌枪，结果来人只是扔下了一个东西，便离开了。那个人他见过，是天天侦探…",
+      "excerptStorage": "source-resolved",
+      "location": {
+        "lineStart": 161,
+        "lineEnd": 173,
+        "sourcePath": "external-knowledge/sources/fiction-bondage/作者,金主大大/杨可/天天侦探社-全.md"
+      },
+      "contextBeforePreview": "明明有入侵者，却没查到，这让源氏很郁闷，他决定再蹲守几天。最近还有一件让他郁闷的事：他有段时间没见过宋哈娜了。花村外面有家游戏厅，同为守望先锋成员的他和宋哈娜…",
+      "contextAfterPreview": "“行吧。”源氏答应了下来，便往正出口那里走去。正在此时，变故陡生。莫里森举起他的脉冲步圌枪，一发螺旋飞弹直奔源氏背影而去！飞弹速度极快，但源氏却仿佛早有预料一…",
+      "evidenceRoles": [
+        "definition"
+      ],
+      "extractionOrigin": "imported",
+      "reviewStatus": "pending",
+      "rightsScope": {
+        "privateRag": true,
+        "publicExport": false
+      },
+      "contentHash": "63fbba2a0616abe5ae2fe091979d43eef1412d9a8d1618a1b5f490ee9cb2b868",
+      "sourceMissing": false,
+      "usedByCardIds": [
+        "rag.restraint.state.confinement"
+      ],
+      "usedByClaimIds": [
+        "rag.restraint.state.confinement::claim:definition:0"
+      ],
+      "createdAt": "2026-07-28T07:07:22.898Z",
+      "updatedAt": "2026-07-28T07:14:30.241Z"
+    },
+    {
+      "id": "ev-fbsrc000107-573f0ddab1cb932d",
+      "sourceId": "fb-src-000107",
+      "segmentId": "fb-src-000107-seg-00008",
+      "excerptPreview": "“呜呜！！” 白楹其余的脚趾不甘心的用 力扭 动着，却无论如何也撼动不了严实的扎带，就在这时，一阵哗啦声，却是男人取下了软管淋浴花洒坐在了浴缸边缘…… 没有多余的废话，哗啦一声，开关被拧开，热水器随之自动启动，嗡嗡声中，冰冷的凉水毫不留情…",
+      "excerptStorage": "source-resolved",
+      "location": {
+        "lineStart": 139,
+        "lineEnd": 162,
+        "sourcePath": "external-knowledge/sources/fiction-bondage/作者,金主大大/咚咚噹117（如梦）/白楹的紧缚劫难.md"
+      },
+      "contextBeforePreview": "瞧见白楹脚掌仍旧在不安分的胡乱扭 动着，男人又从口袋里抽 出一根略细一些的扎带，捉住那双不老实的白 嫩脚丫，捏住两个大脚趾，用扎带 套住，吱的一下收紧到极限，…",
+      "contextAfterPreview": "“臭婊 子！竟然敢用假密码糊弄我，今天就让你尝尝悔恨的滋味儿！”",
+      "evidenceRoles": [
+        "definition"
+      ],
+      "extractionOrigin": "imported",
+      "reviewStatus": "pending",
+      "rightsScope": {
+        "privateRag": true,
+        "publicExport": false
+      },
+      "contentHash": "9a918168ddef39cc9e08af33b517be670a33410d48b683e7ec95ec6d351eb27c",
+      "sourceMissing": false,
+      "usedByCardIds": [
+        "rag.restraint.tool.cable-tie"
+      ],
+      "usedByClaimIds": [
+        "rag.restraint.tool.cable-tie::claim:definition:0"
+      ],
+      "createdAt": "2026-07-28T07:07:22.913Z",
+      "updatedAt": "2026-07-28T07:14:30.259Z"
+    },
+    {
+      "id": "ev-fbsrc000017-81b6df450b0098a0",
+      "sourceId": "fb-src-000017",
+      "segmentId": "fb-src-000017-seg-00051",
+      "excerptPreview": "“谁叫姐姐这么厉害呢。”春上优雪自言自语道，她找来一个项圈，戴在了已经被黑色胶布全包的水野亚美的脖子上，然后拖着这具被完全紧缚的娇躯，一直到将项圈上的锁链的另一头锁在嵌在墙上的一个铁质圆环上。 项圈的锁链很短，只有几厘米，固定住了水野亚美…",
+      "excerptStorage": "source-resolved",
+      "location": {
+        "lineStart": 980,
+        "lineEnd": 999,
+        "sourcePath": "external-knowledge/sources/fiction-bondage/不知道作者/美少女战士.md"
+      },
+      "contextBeforePreview": "出乎意料却又在意料之内，春上优雪没有就这样放过水野亚美，她将黑色的胶布继续覆盖到水野亚美的脖子上，紧接着是钳着口球的嘴巴，再绕过鼻子，将她那一头漂亮的蓝色短发…",
+      "contextAfterPreview": "“呼，我先去换身衣服，洗个澡，再回来和妹妹好好地算账。”春上优雪将身上早就被抽得满是破洞的JK制服脱了下来，只穿着一双黑色的小皮鞋和内衣裤，整具漂亮的身体展露…",
+      "evidenceRoles": [
+        "definition"
+      ],
+      "extractionOrigin": "imported",
+      "reviewStatus": "pending",
+      "rightsScope": {
+        "privateRag": true,
+        "publicExport": false
+      },
+      "contentHash": "703546b29270cf6377a5d7967b930e7511ed8b941c8d750f22567c96c11a273e",
+      "sourceMissing": false,
+      "usedByCardIds": [
+        "rag.restraint.tool.chain"
+      ],
+      "usedByClaimIds": [
+        "rag.restraint.tool.chain::claim:definition:0"
+      ],
+      "createdAt": "2026-07-28T07:07:22.924Z",
+      "updatedAt": "2026-07-28T07:14:30.267Z"
+    },
+    {
+      "id": "ev-fbsrc000022-ff9fc8f112128eb6",
+      "sourceId": "fb-src-000022",
+      "segmentId": "fb-src-000022-seg-00004",
+      "excerptPreview": "用那其坚固的材料打造的锁链，呈现出银灰色。 在阳光下的照射下，散发着淡淡的光芒，我的心情低沉下来，有种异样的感觉。仿佛这锁链要陪伴我一生，牢牢得禁锢在身上，永远不会分离。 “与锁链不同的是，铐环所用的材质是以耐磨、耐高温著称的 HB 9，…",
+      "excerptStorage": "source-resolved",
+      "location": {
+        "lineStart": 164,
+        "lineEnd": 201,
+        "sourcePath": "external-knowledge/sources/fiction-bondage/不知道作者/奇妙人生.md"
+      },
+      "contextBeforePreview": "“这幅铐子，整体都由钨合金制成，链子的材质是 TB 64，是这个厂子之前产的最多的材质，在硬度，坚韧和耐磨性上综合起来性价比最好的材料之一。”伊老板给我介绍起…",
+      "contextAfterPreview": "佩戴完项圈之后，那大叔没了多余的动作。",
+      "evidenceRoles": [
+        "definition"
+      ],
+      "extractionOrigin": "imported",
+      "reviewStatus": "pending",
+      "rightsScope": {
+        "privateRag": true,
+        "publicExport": false
+      },
+      "contentHash": "920592475f1d2f155f16594398b2a230ffada18af67ff80c4b0f74ad25f6c675",
+      "sourceMissing": false,
+      "usedByCardIds": [
+        "rag.restraint.tool.chain"
+      ],
+      "usedByClaimIds": [
+        "rag.restraint.tool.chain::claim:definition:0"
+      ],
+      "createdAt": "2026-07-28T07:07:22.925Z",
+      "updatedAt": "2026-07-28T07:14:30.267Z"
+    },
+    {
+      "id": "ev-fbsrc000001-aa3111bc2f37d846",
+      "sourceId": "fb-src-000001",
+      "segmentId": "fb-src-000001-seg-00003",
+      "excerptPreview": "男人给樱桃和乳环消毒后，并没有将金属镂空罩装上，而是放倒一个装满洗涤剂的盆中浸泡。然后扶着颖儿缓慢躺下，用手铐把她的双手分别拷在操作台的两边，又将她的双 腿大字分开，分别固定。用准备好的贞操带钥匙先打开了前护盾放到了盆中浸泡。贞操带的样式…",
+      "excerptStorage": "source-resolved",
+      "location": {
+        "lineStart": 13,
+        "lineEnd": 14,
+        "sourcePath": "external-knowledge/sources/fiction-bondage/不知道作者/（完结）彼岸花开.md"
+      },
+      "contextBeforePreview": "“…………” \\(2\\)+ \\`\\! g. Z8 I+ \\{- s\\# K- \\}\\) A6 T. \\_",
+      "contextAfterPreview": "打开拉链，完美的一线天和上面穿的8个金属圆环便呈现出来，男人先是旋转了前盾下柱导尿管的接头，然后拔 出，又缓慢的将它埋入缝中的部分一点一点抻出来。男人并没有立…",
+      "evidenceRoles": [
+        "definition"
+      ],
+      "extractionOrigin": "imported",
+      "reviewStatus": "pending",
+      "rightsScope": {
+        "privateRag": true,
+        "publicExport": false
+      },
+      "contentHash": "7cc609b524499e03104fffcc5eedadbdec846ae0fa2b53bf661c268c21d27452",
+      "sourceMissing": false,
+      "usedByCardIds": [
+        "rag.restraint.tool.handcuffs"
+      ],
+      "usedByClaimIds": [
+        "rag.restraint.tool.handcuffs::claim:definition:0"
+      ],
+      "createdAt": "2026-07-28T07:07:22.930Z",
+      "updatedAt": "2026-07-28T07:14:30.272Z"
+    },
+    {
+      "id": "ev-fbsrc000007-df631609bdf54c72",
+      "sourceId": "fb-src-000007",
+      "segmentId": "fb-src-000007-seg-00004",
+      "excerptPreview": "我问她：“你这样脚镣，手铐，绳捆索绑，一定非常难受吧：” “还好，时间长了，己经习惯了。同时，这样做也有自身乐处。” 我更奇怪了：“你一个小女孩，锁上这样重的脚镣，手铐，最少也有十公斤吧。你可以要求酋长换轻一点的，同样可以防止逃脱。” “…",
+      "excerptStorage": "source-resolved",
+      "location": {
+        "lineStart": 37,
+        "lineEnd": 64,
+        "sourcePath": "external-knowledge/sources/fiction-bondage/不知道作者/变为奴隶的姑娘.md"
+      },
+      "contextBeforePreview": "她很友善笑笑，说：“在这里能见到家乡人真稀奇。”她象对自己处境毫不在乎。我倒了一杯水给她，她一口喝干，她说：“橡皮球塞在嘴里，口水流得太多，好口渴。”",
+      "contextAfterPreview": "第二章：自缚",
+      "evidenceRoles": [
+        "definition"
+      ],
+      "extractionOrigin": "imported",
+      "reviewStatus": "pending",
+      "rightsScope": {
+        "privateRag": true,
+        "publicExport": false
+      },
+      "contentHash": "c888352755d9469580de43d0b1446fb79e8269914338f171b87f05c54eedd091",
+      "sourceMissing": false,
+      "usedByCardIds": [
+        "rag.restraint.tool.handcuffs",
+        "rag.restraint.tool.leg-irons"
+      ],
+      "usedByClaimIds": [
+        "rag.restraint.tool.handcuffs::claim:definition:0",
+        "rag.restraint.tool.leg-irons::claim:definition:0"
+      ],
+      "createdAt": "2026-07-28T07:07:22.931Z",
+      "updatedAt": "2026-07-28T07:14:30.277Z"
+    },
+    {
+      "id": "ev-fbsrc000013-32b4b5cb293b1e19",
+      "sourceId": "fb-src-000013",
+      "segmentId": "fb-src-000013-seg-00014",
+      "excerptPreview": "给蓝水晶戴上脚镣之后，由于腿环，拘束皮带，高跟鞋和脚镣的关系，蓝水晶的小腿现在绷的直直的，脚部的曲线也格外好看，从她的脸色上看起来，似乎极度不舒服，她的嘴角和眉毛都因为痛苦拧了起来，但是这样却让蓝水晶的身材看上去更为苗条动人。黑色丝袜衬托…",
+      "excerptStorage": "source-resolved",
+      "location": {
+        "lineStart": 124,
+        "lineEnd": 134,
+        "sourcePath": "external-knowledge/sources/fiction-bondage/不知道作者/古堡.md"
+      },
+      "contextBeforePreview": "果绿拿出一副12寸的高跟鞋，给蓝水晶的脚穿上，将鞋面上的皮带拉到她脚后跟处小孔处拉到最紧系上，然后上锁。 脚部少了脚镣怎么能行，果绿早就准备好了一副沉重的脚镣…",
+      "contextAfterPreview": "浣肠带来的强烈排泄感让她痛苦的白汗直冒，前后同时的刺激让她在无尽的痛苦与下身的快感中无法自拔。只能不断扭动身躯，但是又被全身的拘束限制的无法移动，只能增加下身…",
+      "evidenceRoles": [
+        "definition"
+      ],
+      "extractionOrigin": "imported",
+      "reviewStatus": "pending",
+      "rightsScope": {
+        "privateRag": true,
+        "publicExport": false
+      },
+      "contentHash": "c6e257843b835f6d8d14051ee29397a3e748602d38e9a867b3faa553a48ae793",
+      "sourceMissing": false,
+      "usedByCardIds": [
+        "rag.restraint.tool.leg-irons"
+      ],
+      "usedByClaimIds": [
+        "rag.restraint.tool.leg-irons::claim:definition:0"
+      ],
+      "createdAt": "2026-07-28T07:07:22.937Z",
+      "updatedAt": "2026-07-28T07:14:30.277Z"
+    },
+    {
+      "id": "ev-fbsrc000001-33d437169a02bc91",
+      "sourceId": "fb-src-000001",
+      "segmentId": "fb-src-000001-seg-00044",
+      "excerptPreview": "走过一个路灯，前方的身影渐渐长高，林琦看着那拉长的影子十分好奇，她很想看看自己的脚和影子的脚同时落地重合在一起是什么样子，可惜脚上的镣铐限制让她只能迈开一小步。她的好奇险些让她摔倒，还是男人及时扶住她的腰身，才让她重新站稳。 “累了吧，我…",
+      "excerptStorage": "source-resolved",
+      "location": {
+        "lineStart": 401,
+        "lineEnd": 417,
+        "sourcePath": "external-knowledge/sources/fiction-bondage/不知道作者/（完结）彼岸花开.md"
+      },
+      "contextBeforePreview": "深夜的公园，也没有多少人在活动，深处那幽暗的灯光隐隐约约，林琦有些害怕，公园碎石铺就的小路，让穿着细根高跟鞋的她时常失去平衡，她紧紧的抱住男人的胳膊，脸朝朝向…",
+      "contextAfterPreview": "男人瞪大了眼睛，愣了一下。林琦的主动让他有些意外，可待林琦那蜻蜓点水的一吻结束，身子想要离开的时候，男人一把搂紧了她的腰，一只手扶住她的头，向她深深的吻去………",
+      "evidenceRoles": [
+        "definition"
+      ],
+      "extractionOrigin": "imported",
+      "reviewStatus": "pending",
+      "rightsScope": {
+        "privateRag": true,
+        "publicExport": false
+      },
+      "contentHash": "9bdaa629f61afac281f97c4d466790635ad9784f6558f177806d1bc3759cfd21",
+      "sourceMissing": false,
+      "usedByCardIds": [
+        "rag.restraint.tool.shackles"
+      ],
+      "usedByClaimIds": [
+        "rag.restraint.tool.shackles::claim:definition:0"
+      ],
+      "createdAt": "2026-07-28T07:07:22.943Z",
+      "updatedAt": "2026-07-28T07:14:30.281Z"
+    },
+    {
+      "id": "ev-fbsrc000025-07df26ec6400c8fe",
+      "sourceId": "fb-src-000025",
+      "segmentId": "fb-src-000025-seg-00063",
+      "excerptPreview": "然是带着一套魔术师逃脱时用的简单镣铐，就是把手腕、脚踝和脖子链接在一起 的那种，不过链条比较长，不影响正常休息，虽然也有些奇怪的感觉，不过累坏 了的沙曼仍然很快睡着了。 对沙曼来说，可惜的是这次体验只有短短的八小时，而当她想加长时间时， …",
+      "excerptStorage": "source-resolved",
+      "location": {
+        "lineStart": 2885,
+        "lineEnd": 2936,
+        "sourcePath": "external-knowledge/sources/fiction-bondage/不知道作者/沙曼紧缚.md"
+      },
+      "contextBeforePreview": "这一天沙曼折腾的有些累，吃完晚饭洗个澡便睡下了。即使是睡觉时，她仍",
+      "contextAfterPreview": "都会有一些新奇的节目表演和抽奖，就是按照这个号牌来的。",
+      "evidenceRoles": [
+        "definition"
+      ],
+      "extractionOrigin": "imported",
+      "reviewStatus": "pending",
+      "rightsScope": {
+        "privateRag": true,
+        "publicExport": false
+      },
+      "contentHash": "9fffab651f2955b3cf13d0347bf41e6edf40e4d42e3328198cb5d71fa17d5f31",
+      "sourceMissing": false,
+      "usedByCardIds": [
+        "rag.restraint.tool.shackles"
+      ],
+      "usedByClaimIds": [
+        "rag.restraint.tool.shackles::claim:definition:0"
+      ],
+      "createdAt": "2026-07-28T07:07:22.944Z",
+      "updatedAt": "2026-07-28T07:14:30.281Z"
+    },
+    {
+      "id": "ev-fbsrc000013-0e0aba7ec0d43059",
+      "sourceId": "fb-src-000013",
+      "segmentId": "fb-src-000013-seg-00010",
+      "excerptPreview": "而他制作的特殊量身定做的拘束衣，全部的拘束道具都由特种金属打造，无法被任何东西破坏，也就是说，紫翡翠完全没有任何希望逃走。果绿在紫翡翠项圈上其实早就刻下了一个代表她以后永远身份的标牌，只可惜紫翡翠并没有看到。） 于是妩媚动人的紫翡翠就这样…",
+      "excerptStorage": "source-resolved",
+      "location": {
+        "lineStart": 82,
+        "lineEnd": 90,
+        "sourcePath": "external-knowledge/sources/fiction-bondage/不知道作者/古堡.md"
+      },
+      "contextBeforePreview": "紫翡翠并不知道，所有量身定做的道具的真正威力，以及从今以后这样她身上的所有拘束就将成为她身体的一部分，从此再不可能被拿下来。而紫翡翠所有的高傲，傲气，骄傲，都…",
+      "contextAfterPreview": "蓝水晶每天总是会运动，而城堡里的超大游泳池确实让她过了游泳的瘾，每天早晚她都会来游泳。她总喜欢穿着一套天蓝色的游泳衣，那那套天蓝色的拘束衣，就送给你吧。 这天…",
+      "evidenceRoles": [
+        "definition"
+      ],
+      "extractionOrigin": "imported",
+      "reviewStatus": "pending",
+      "rightsScope": {
+        "privateRag": true,
+        "publicExport": false
+      },
+      "contentHash": "c08ec18bc6924ce18c24ad2683b28ed7d199d9930d4b96d16e40cab40f383936",
+      "sourceMissing": false,
+      "usedByCardIds": [
+        "rag.restraint.tool.straitjacket"
+      ],
+      "usedByClaimIds": [
+        "rag.restraint.tool.straitjacket::claim:definition:0"
+      ],
+      "createdAt": "2026-07-28T07:07:22.949Z",
+      "updatedAt": "2026-07-28T07:14:30.285Z"
+    },
+    {
+      "id": "ev-fbsrc000033-3e22e68e2161b366",
+      "sourceId": "fb-src-000033",
+      "segmentId": "fb-src-000033-seg-00038",
+      "excerptPreview": "好紧……！？ 与此同时，徐琳雁也感觉到身上的拘束衣正在迅速收紧，强迫四肢相互合拢，甚至就连足心都牢牢地贴在了臀瓣上，哪怕她彻底放松下来也未见有半点松弛的迹象。 这还没完，随着乳胶衣的完全闭合，一道散发着黯粉色光芒的淫靡纹章开始在臀瓣上方紧…",
+      "excerptStorage": "source-resolved",
+      "location": {
+        "lineStart": 1189,
+        "lineEnd": 1220,
+        "sourcePath": "external-knowledge/sources/fiction-bondage/不知道作者/无限拘束乐园.md"
+      },
+      "contextBeforePreview": "得到了肯定的答复后，卡特琳娜也不再有任何留情，一手努力合拢乳胶衣，一手拿着形似于木夹，有着金属光泽的夹子，使其夹住乳胶衣的接缝处，猛地向上一拉，原本的开口竟然…",
+      "contextAfterPreview": "徐琳雁仅从将手腕与大臂一同环绕起来的‘镣铐’就已经看出，这副 K 9 束具是与乳胶拘束衣公共设计的，考虑到了四肢都被乳胶包裹封闭起来的特殊情况。",
+      "evidenceRoles": [
+        "definition"
+      ],
+      "extractionOrigin": "imported",
+      "reviewStatus": "pending",
+      "rightsScope": {
+        "privateRag": true,
+        "publicExport": false
+      },
+      "contentHash": "90694064ac9897bb3007d4f922b5457e1c610ceadec57eed954c64c4e3c4788d",
+      "sourceMissing": false,
+      "usedByCardIds": [
+        "rag.restraint.tool.straitjacket"
+      ],
+      "usedByClaimIds": [
+        "rag.restraint.tool.straitjacket::claim:definition:0"
+      ],
+      "createdAt": "2026-07-28T07:07:22.954Z",
+      "updatedAt": "2026-07-28T07:14:30.285Z"
+    }
+  ]
+}

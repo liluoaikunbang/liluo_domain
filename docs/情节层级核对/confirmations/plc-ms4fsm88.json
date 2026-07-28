@@ -1,0 +1,160 @@
+{
+  "schemaVersion": 1,
+  "confirmationId": "plc-ms4fsm88",
+  "plotId": "plot-060",
+  "decision": "split-plot-and-rag",
+  "userNote": "用户确认：采用同样拆分；情节标题游轮-美人鱼尾体验加演",
+  "overrides": {
+    "parentRagTarget": {
+      "existingRagId": "rag.restraint.context.occupation",
+      "title": "职业场景",
+      "cardType": "context",
+      "ragLayer": "category",
+      "parentCardIds": []
+    },
+    "ragTarget": {
+      "newRagId": "rag.restraint.context.mermaid-model",
+      "title": "美人鱼模特",
+      "cardType": "context",
+      "ragLayer": "concept",
+      "parentCardIds": [
+        "rag.restraint.context.occupation"
+      ],
+      "aliases": [
+        "职业-美人鱼模特",
+        "美人鱼表演",
+        "仿生鱼尾"
+      ],
+      "oldIds": [
+        "bondage_tag:sg:职业-美人鱼模特"
+      ],
+      "knowledgeSeed": [
+        "美人鱼模特是可跨故事复用的职业/表演场景条件：仿生鱼尾限制下肢分合与步态，舞台可见性、教练指导与荧光装饰绳会改变公开受限时的动作边界。",
+        "它描述职业切口，不等于某次游轮体验加演事件。"
+      ],
+      "expressionSeed": [
+        "表现重点常落在鱼尾游动姿态、双手受限与舞台注视的叠加。",
+        "可用穿戴指导、灯光与加演喝彩组织场面，但不把单次游轮行程写进概念。"
+      ]
+    },
+    "plotRemainder": {
+      "keepOriginalId": true,
+      "proposedTitle": "游轮-美人鱼尾体验加演",
+      "proposedSummary": "游轮剧院里，璃落被幻梦绸艺团的美人鱼演出吸引，向工作人员申请体验。教练欣雨为她选了湛蓝色仿生鱼尾并指导穿戴；林雨薇捆住她的双手，欣雨改用荧光绳让效果更好看。璃落在下午练会S型游动与鱼尾摆动，当晚加演获得满堂喝彩。",
+      "characters": [
+        "璃落",
+        "欣雨",
+        "林雨薇"
+      ],
+      "worldBiases": [
+        "1-浮光掠影"
+      ],
+      "plotKind": "restraint",
+      "maturity": "scene-ready",
+      "usedByLabels": [
+        "浮光掠影-游轮"
+      ],
+      "development": {
+        "premise": "璃落申请体验美人鱼表演并穿上仿生鱼尾",
+        "escalation": "双手改用荧光绳固定，公开练习游动姿态",
+        "turn": "当晚加演把体验推到舞台中央",
+        "consequence": "满堂喝彩后留下表演向受限体验，并与后续后台互动衔接"
+      }
+    }
+  },
+  "proposalSnapshot": {
+    "sourcePlotId": "plot-060",
+    "title": "美人鱼模特",
+    "number": "060",
+    "groupId": "plot-group-025",
+    "groupTitle": "戏弄与霸凌",
+    "plotKind": "mixed",
+    "usageStatus": "used",
+    "recommendation": "move-to-rag",
+    "recommendedLayer": "rag",
+    "rationale": [
+      "摘要标明由旧职业 specialGameplay 迁移，且把具体过程指向故事正文。",
+      "标题是职业名词，不具备一次独立事件的完整发生结构。",
+      "换人物/世界后仍可复用同一职业场景概念。"
+    ],
+    "reuseTest": {
+      "reusableAcrossStories": true,
+      "explanation": "职业/场景概念可跨故事复用；正文过程不在本条目内。"
+    },
+    "eventTest": {
+      "hasActorOrRole": true,
+      "hasTrigger": false,
+      "hasProcess": true,
+      "hasChangeOrOutcome": false
+    },
+    "placementTest": {
+      "hasFormalWorldPlacement": true,
+      "linkedStoryIds": [
+        "world-1-glimmering-glance-cruise"
+      ]
+    },
+    "proposedRagTarget": {
+      "newRagId": "rag.restraint.context.美人鱼模特",
+      "title": "美人鱼模特职业场景",
+      "cardType": "context",
+      "knowledgeSeed": [
+        "美人鱼模特是可跨故事复用的职业/角色场景条件，不绑定唯一人物、地点或单次结果。",
+        "知识分支应说明该职业场景通常带来的行动边界、可见规则与可复用限制条件。"
+      ],
+      "expressionSeed": [
+        "表达分支应说明该职业场景下受限状态、公开程度与身份反差的表现重点。",
+        "避免把某次故事正文过程写进概念定义。"
+      ]
+    },
+    "edgeMigrationPlan": [
+      {
+        "action": "redirect",
+        "fromId": "world-1-glimmering-glance-cruise",
+        "relation": "contains/plotRefs",
+        "toId": "plot-060",
+        "reason": "故事应改为引用 RAG，不再把职业概念当作情节 contains"
+      },
+      {
+        "action": "add",
+        "fromId": "world-1-glimmering-glance-cruise",
+        "relation": "references/ragRefs",
+        "toId": "rag.restraint.context.美人鱼模特",
+        "reason": "故事直接引用可复用职业场景 RAG"
+      }
+    ],
+    "affectedSourceFiles": [
+      "src/game/data/plot_outline/catalog.json",
+      "src/game/data/story_outline/sources/1-modern.json"
+    ],
+    "affectedStoryEntries": [
+      "world-1-glimmering-glance-cruise"
+    ],
+    "linkedStories": [
+      {
+        "key": "world-1-glimmering-glance-cruise",
+        "title": "游轮",
+        "sourceFile": "src/game/data/story_outline/sources/1-modern.json",
+        "markdownFiles": [
+          "src/game/data/story_outline/1-modern/1.3.1-游轮.md"
+        ],
+        "ragRefs": [],
+        "plotRefs": [
+          "plot-060"
+        ],
+        "gameplayRefs": []
+      }
+    ],
+    "confidence": 0.9,
+    "questionsForUser": [
+      "是否确认将「美人鱼模特」整体迁入 RAG（建议名：美人鱼模特职业场景）？",
+      "该 RAG 是否放入紧缚专业 RAG 的 context 类别？若你希望用其他 domain/cardType，请指定。",
+      "关联故事正文里是否仍有一次应单独保留的具体事件？若有，请给出应保留的情节标题，或选择稍后拆分。"
+    ],
+    "reviewStatus": "proposed",
+    "generatedAt": "2026-07-28T08:54:03.643Z"
+  },
+  "recordedAt": "2026-07-28T09:11:49.640Z",
+  "applied": true,
+  "dryRun": false,
+  "migrationId": "plm-ms4fsm8r"
+}

@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "migrationId": "plm-ms4khb7m",
+  "confirmationId": "plc-ms4khb76",
+  "decision": "keep-as-plot",
+  "sourcePlotId": "plot-040",
+  "createdAt": "2026-07-28T11:23:00.233Z",
+  "plan": {
+    "decision": "keep-as-plot",
+    "sourcePlotId": "plot-040",
+    "targetRag": null,
+    "plotRemainder": null,
+    "edgeMigrationPlan": [],
+    "affectedStoryEntries": [],
+    "affectedSourceFiles": [
+      "src/game/data/plot_outline/catalog.json"
+    ],
+    "note": "plan only; main data untouched until apply with confirm token"
+  },
+  "ragResult": null,
+  "parentRagResult": null,
+  "changedFiles": [
+    "src/game/data/plot_outline/catalog.json"
+  ],
+  "rollback": {
+    "restoreCatalogFromSnapshot": true,
+    "snapshotHint": "pls-ms4f5rj0"
+  }
+}

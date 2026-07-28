@@ -150,7 +150,7 @@
           </div>
         </section>
         <p class="rg-summary-note">
-          汇总不修改正史。抽查请继续使用现有 `rag:audit:*` / `style-rag:audit:*` 闭环；图谱仅作发现与定位入口。
+          汇总只作浏览统计，不修改正史。
         </p>
         </div>
       </GameScrollArea>
@@ -273,45 +273,183 @@
               <button type="button" class="rg-tool-button" :disabled="!historyRootId" @click="returnToRoot">返回初始</button>
             </div>
 
-            <dl class="rg-detail-list">
+            <nav
+              v-if="selectedNode.type === 'rag'"
+              class="rg-detail-tabs"
+              aria-label="紧缚专业 RAG 详情页签"
+            >
+              <button
+                v-for="tab in ragDetailTabs"
+                :key="tab.key"
+                type="button"
+                class="rg-tool-button"
+                :class="{ 'rg-tool-button-active': ragDetailTab === tab.key }"
+                @click="ragDetailTab = tab.key"
+              >
+                {{ tab.label }}
+              </button>
+            </nav>
+
+            <dl v-if="!isRagDetailNode || ragDetailTab === 'meta'" class="rg-detail-list">
               <dt>稳定 ID</dt>
               <dd>{{ selectedNode.id }}</dd>
-              <dt>摘要</dt>
-              <dd>{{ selectedNode.summary || '（无）' }}</dd>
-              <dt>描述</dt>
-              <dd>{{ selectedNode.description || '（无）' }}</dd>
-              <dt>来源</dt>
-              <dd>{{ (selectedNode.sourceIds || []).join('、') || '（无）' }}</dd>
-              <dt>世界</dt>
-              <dd>{{ selectedNode.world || '（无）' }}</dd>
-              <dt>别名</dt>
-              <dd>{{ (selectedNode.aliases || []).join('、') || '（无）' }}</dd>
-              <dt>分层</dt>
-              <dd>{{ hierarchyDetailLabel(selectedNode) }}</dd>
-              <dt>上位挂接</dt>
-              <dd>{{ hierarchyParentLabel(selectedNode) }}</dd>
-              <dt>稳定分层 ID</dt>
-              <dd>{{ (selectedNode.meta?.linkedConceptIds || []).join('、') || '（无）' }}</dd>
-              <dt>别名 / 检索名</dt>
-              <dd>{{ (selectedNode.conceptIds || []).join('、') || '（无）' }}</dd>
-              <dt>审核状态</dt>
-              <dd>{{ auditStatusLabel(selectedNode.auditStatus) }}</dd>
-              <dt>置信度</dt>
-              <dd>{{ formatConfidence(selectedNode.confidence) }}</dd>
-              <dt>是否自动生成</dt>
-              <dd>{{ selectedNode.origin === 'derived-field' || selectedNode.origin?.includes('auto') ? '派生/自动' : selectedNode.origin }}</dd>
-              <dt>缺口标记</dt>
-              <dd>{{ (selectedNode.meta?.gapFlags || []).join('、') || '（无）' }}</dd>
-              <dt>Style 角色</dt>
-              <dd>{{ styleRoleLabel(selectedNode) }}</dd>
-              <dt>最近更新</dt>
-              <dd>{{ selectedNode.updatedAt || '（无）' }}</dd>
+              <template v-if="!isRagDetailNode || ragDetailTab === 'meta'">
+                <dt>一句话</dt>
+                <dd>{{ selectedNode.summary || '（无）' }}</dd>
+                <dt v-if="!isRagDetailNode">描述</dt>
+                <dd v-if="!isRagDetailNode">{{ selectedNode.description || '（无）' }}</dd>
+                <dt>别名</dt>
+                <dd>{{ (selectedNode.aliases || []).join('、') || '（无）' }}</dd>
+                <dt>分层</dt>
+                <dd>{{ hierarchyDetailLabel(selectedNode) }}</dd>
+                <dt>上位挂接</dt>
+                <dd>{{ hierarchyParentLabel(selectedNode) }}</dd>
+                <template v-if="isRagDetailNode">
+                  <dt>总状态</dt>
+                  <dd>{{ selectedNode.meta?.overallStatusLabel || selectedNode.meta?.overallStatus || '（无）' }}</dd>
+                  <dt>知识完成度</dt>
+                  <dd>{{ selectedNode.meta?.knowledgeCompleteness != null ? `${selectedNode.meta.knowledgeCompleteness}%` : '（无）' }}</dd>
+                  <dt>表达完成度</dt>
+                  <dd>{{ selectedNode.meta?.expressionCompleteness != null ? `${selectedNode.meta.expressionCompleteness}%` : '（无）' }}</dd>
+                  <dt>内容 / 证据 / 审核</dt>
+                  <dd>
+                    {{ selectedNode.meta?.contentStatus || '—' }}
+                    · {{ selectedNode.meta?.evidenceStatus || '—' }}
+                    · {{ auditStatusLabel(selectedNode.auditStatus) }}
+                  </dd>
+                </template>
+                <template v-else>
+                  <dt>来源</dt>
+                  <dd>{{ (selectedNode.sourceIds || []).join('、') || '（无）' }}</dd>
+                  <dt>世界</dt>
+                  <dd>{{ selectedNode.world || '（无）' }}</dd>
+                  <dt>稳定分层 ID</dt>
+                  <dd>{{ (selectedNode.meta?.linkedConceptIds || []).join('、') || '（无）' }}</dd>
+                  <dt>别名 / 检索名</dt>
+                  <dd>{{ (selectedNode.conceptIds || []).join('、') || '（无）' }}</dd>
+                  <dt>内容状态</dt>
+                  <dd>{{ selectedNode.meta?.contentStatus || '（无）' }}</dd>
+                  <dt>证据状态</dt>
+                  <dd>{{ selectedNode.meta?.evidenceStatus || '（无）' }}</dd>
+                  <dt>审核状态</dt>
+                  <dd>{{ auditStatusLabel(selectedNode.auditStatus) }}</dd>
+                  <dt>置信度</dt>
+                  <dd>{{ formatConfidence(selectedNode.confidence) }}</dd>
+                  <dt>是否自动生成</dt>
+                  <dd>{{ selectedNode.origin === 'derived-field' || selectedNode.origin?.includes('auto') ? '派生/自动' : selectedNode.origin }}</dd>
+                  <dt>缺口标记</dt>
+                  <dd>{{ (selectedNode.gapFlags || selectedNode.meta?.gapFlags || []).join?.('、') || (selectedNode.meta?.gapFlags || []).join('、') || '（无）' }}</dd>
+                  <dt>Style 角色</dt>
+                  <dd>{{ styleRoleLabel(selectedNode) }}</dd>
+                  <dt>最近更新</dt>
+                  <dd>{{ selectedNode.updatedAt || '（无）' }}</dd>
+                </template>
+              </template>
             </dl>
 
-            <section class="rg-detail-related">
+            <section
+              v-if="isRagDetailNode && ragDetailTab === 'knowledge'"
+              class="rg-detail-related"
+            >
+              <h3>知识（这是什么）</h3>
+              <p class="rg-muted">
+                状态 {{ ragKnowledgeMeta.status || 'stub' }}
+                · 审核 {{ ragKnowledgeMeta.reviewStatus || 'pending' }}
+                · 证据 {{ ragKnowledgeMeta.evidenceStatus || 'missing' }}
+              </p>
+              <p v-if="ragKnowledgeMeta.definition"><strong>定义：</strong>{{ ragKnowledgeMeta.definition }}</p>
+              <p v-else class="rg-muted">知识骨架为空：未经确认前不得自行补定义。</p>
+              <p v-if="ragKnowledgeMeta.projectInterpretation"><strong>项目解释：</strong>{{ ragKnowledgeMeta.projectInterpretation }}</p>
+              <ul v-if="(ragKnowledgeMeta.boundaries?.includes || []).length">
+                <li v-for="item in ragKnowledgeMeta.boundaries.includes" :key="`inc-${item}`">包含：{{ item }}</li>
+              </ul>
+              <ul v-if="(ragKnowledgeMeta.boundaries?.excludes || []).length">
+                <li v-for="item in ragKnowledgeMeta.boundaries.excludes" :key="`exc-${item}`">排除：{{ item }}</li>
+              </ul>
+              <ul v-if="knowledgeDistinctions.length">
+                <li v-for="(item, idx) in knowledgeDistinctions" :key="`dist-${idx}`">区别：{{ item }}</li>
+              </ul>
+              <article
+                v-for="claim in knowledgeClaimsUnique"
+                :key="claim.id"
+                class="rg-claim-block"
+              >
+                <strong>{{ claim.label || claim.claimType }}</strong>
+                <p>{{ claim.content }}</p>
+                <p class="rg-muted">
+                  支持：{{ claim.supportStatus || 'pending' }}
+                  · 审核：{{ claim.reviewStatus || 'pending' }}
+                  · 证据 {{ (claim.evidenceRefs || []).length }} 条
+                </p>
+              </article>
+              <p v-if="!ragKnowledgeMeta.definition && !knowledgeClaimsUnique.length" class="rg-muted">暂无知识陈述。</p>
+            </section>
+
+            <section
+              v-if="isRagDetailNode && ragDetailTab === 'expression'"
+              class="rg-detail-related"
+            >
+              <h3>表达（小说里怎么写）</h3>
+              <p class="rg-muted">
+                状态 {{ ragExpressionMeta.status || 'stub' }}
+                · 审核 {{ ragExpressionMeta.reviewStatus || 'pending' }}
+                · 证据 {{ ragExpressionMeta.evidenceStatus || 'missing' }}
+              </p>
+              <template v-if="expressionHasContent">
+                <p v-if="(ragExpressionMeta.visualFocus || []).length"><strong>视觉重点：</strong>{{ ragExpressionMeta.visualFocus.join('；') }}</p>
+                <p v-if="(ragExpressionMeta.actionLogic || []).length"><strong>动作逻辑：</strong>{{ ragExpressionMeta.actionLogic.join('；') }}</p>
+                <p v-if="(ragExpressionMeta.movementEffects || []).length"><strong>移动影响：</strong>{{ ragExpressionMeta.movementEffects.join('；') }}</p>
+                <p v-if="(ragExpressionMeta.postureEffects || []).length"><strong>姿态影响：</strong>{{ ragExpressionMeta.postureEffects.join('；') }}</p>
+                <p v-if="(ragExpressionMeta.sensoryFocus || []).length"><strong>感官：</strong>{{ ragExpressionMeta.sensoryFocus.join('；') }}</p>
+                <p v-if="(ragExpressionMeta.expressionPrinciples || []).length"><strong>表达原则：</strong>{{ ragExpressionMeta.expressionPrinciples.join('；') }}</p>
+                <p v-if="(ragExpressionMeta.commonFailures || []).length"><strong>常见失败：</strong>{{ ragExpressionMeta.commonFailures.join('；') }}</p>
+                <p v-if="(ragExpressionMeta.prohibitedMisreadings || []).length"><strong>禁止误读：</strong>{{ ragExpressionMeta.prohibitedMisreadings.join('；') }}</p>
+                <p v-if="(ragExpressionMeta.goldExampleRefs || []).length"><strong>黄金范例：</strong>{{ ragExpressionMeta.goldExampleRefs.join('、') }}</p>
+                <p v-if="(ragExpressionMeta.calibrationPairRefs || []).length"><strong>校准对：</strong>{{ ragExpressionMeta.calibrationPairRefs.join('、') }}</p>
+                <p v-if="(ragExpressionMeta.relatedStyleRagRefs || []).length"><strong>相关通用 Style-RAG：</strong>{{ ragExpressionMeta.relatedStyleRagRefs.join('、') }}</p>
+              </template>
+              <p v-else class="rg-muted">
+                表达骨架为空（与「知识」不是同一段定义）。写作时可临时回退通用 Style-RAG，并标记缺口；勿把知识定义复制到这里充数。
+              </p>
+            </section>
+
+            <section
+              v-if="isRagDetailNode && ragDetailTab === 'evidence'"
+              class="rg-detail-related"
+            >
+              <h3>原文证据</h3>
+              <p class="rg-muted">展开查看对应段落；不在大图上列出，也不跳转到证据/来源节点。</p>
+              <details
+                v-for="evidence in detailEvidenceItems"
+                :key="evidence.evidenceId"
+                class="rg-evidence-expand"
+              >
+                <summary>
+                  <strong>{{ evidence.sourceTitle || '未命名来源' }}</strong>
+                  <span class="rg-muted">
+                    {{ evidence.reviewStatus || 'pending' }}
+                    · {{ evidence.purpose || 'evidence' }}
+                  </span>
+                </summary>
+                <p v-if="evidence.sourceMissing" class="rg-muted">来源失效：请进入缺口系统核对本机源文件。</p>
+                <blockquote class="rg-evidence-quote">{{ evidence.paragraph || evidence.excerptPreview || '（无预览）' }}</blockquote>
+                <p v-if="evidence.location?.sourcePath" class="rg-muted">
+                  定位：{{ evidence.location.sourcePath }}:{{ evidence.location.lineStart || '?' }}-{{ evidence.location.lineEnd || '?' }}
+                </p>
+              </details>
+              <p v-if="!detailEvidenceItems.length" class="rg-muted">尚无原文证据挂接。</p>
+
+              <h3 class="rg-evidence-sources-title">原始来源</h3>
+              <ul v-if="detailSourceTitles.length" class="rg-source-title-list">
+                <li v-for="title in detailSourceTitles" :key="title">{{ title }}</li>
+              </ul>
+              <p v-else class="rg-muted">尚无挂接小说名。</p>
+            </section>
+
+            <section v-if="!isRagDetailNode || ragDetailTab === 'links'" class="rg-detail-related">
               <h3>关联节点</h3>
               <button
-                v-for="related in relatedNodes"
+                v-for="related in relatedNodesForDetail"
                 :key="related.id"
                 type="button"
                 class="rg-related-button"
@@ -320,16 +458,7 @@
                 <strong>{{ related.title }}</strong>
                 <span>{{ relatedNodeTypeLabel(related) }} · {{ relatedRelationLabel(related.id) }}</span>
               </button>
-            </section>
-
-            <section class="rg-detail-actions">
-              <h3>校准入口</h3>
-              <p>图谱不直接改写正史。请用现有抽查命令记录问题：</p>
-              <ul>
-                <li>`npm run knowledge:audit:sample` / `rag|style-rag|concept|plot:audit:record`</li>
-                <li>`npm run rag:audit:sample` / `style-rag:audit:sample` / `concept:audit:sample` / `plot:audit:sample`</li>
-                <li>`npm run outline:graph:validate` 校验投影完整性</li>
-              </ul>
+              <p v-if="!relatedNodesForDetail.length" class="rg-muted">（无关联）</p>
             </section>
           </aside>
         </GameScrollArea>
@@ -399,6 +528,7 @@ const hiddenNodeTypes = ref(new Set());
 const hiddenRelationTypes = ref(new Set());
 const onlyRelationType = ref('');
 const showStyleEvidence = ref(false);
+const ragDetailTab = ref('meta');
 const legendVisible = ref(true);
 const historyStack = ref([]);
 const historyIndex = ref(-1);
@@ -493,6 +623,58 @@ const graphNodeById = computed(() => {
 
 const selectedNode = computed(() => graphNodeById.value.get(selectedNodeId.value) || null);
 
+const ragDetailTabs = [
+  { key: 'meta', label: '概览' },
+  { key: 'knowledge', label: '知识' },
+  { key: 'expression', label: '表达' },
+  { key: 'evidence', label: '原文证据' },
+  { key: 'links', label: '关联' }
+];
+
+const selectedRagCardMeta = computed(() => {
+  const node = selectedNode.value;
+  if (!node || node.type !== 'rag') return null;
+  return node.meta || {};
+});
+
+const ragKnowledgeMeta = computed(() => selectedRagCardMeta.value?.knowledge || {});
+const ragExpressionMeta = computed(() => selectedRagCardMeta.value?.expression || {});
+
+const isRagDetailNode = computed(() => selectedNode.value?.type === 'rag');
+
+const expressionHasContent = computed(() => {
+  const e = ragExpressionMeta.value || {};
+  return Boolean(
+    (e.visualFocus || []).length ||
+      (e.actionLogic || []).length ||
+      (e.movementEffects || []).length ||
+      (e.postureEffects || []).length ||
+      (e.sensoryFocus || []).length ||
+      (e.expressionPrinciples || []).length ||
+      (e.commonFailures || []).length ||
+      (e.prohibitedMisreadings || []).length ||
+      (e.goldExampleRefs || []).length ||
+      (e.calibrationPairRefs || []).length ||
+      (e.relatedStyleRagRefs || []).length
+  );
+});
+
+const knowledgeDistinctions = computed(() =>
+  (ragKnowledgeMeta.value?.distinctions || [])
+    .map((item) => (typeof item === 'string' ? item : item?.description))
+    .filter(Boolean)
+);
+
+const knowledgeClaimsUnique = computed(() => {
+  const definition = String(ragKnowledgeMeta.value?.definition || '').trim();
+  return (selectedRagCardMeta.value?.claims || []).filter((claim) => {
+    const content = String(claim?.content || '').trim();
+    if (!content) return false;
+    // 避免知识页把 definition 再原样刷一遍
+    return !definition || content !== definition;
+  });
+});
+
 const relatedNodes = computed(() => {
   if (!selectedNode.value) return [];
   const ids = getNeighborIds(graph.value, selectedNode.value.id);
@@ -501,6 +683,16 @@ const relatedNodes = computed(() => {
     .filter(Boolean)
     .slice(0, 40);
 });
+
+/** 关联页不展示证据/来源（它们在「原文证据」页签）；也不展示已废弃的分支节点。 */
+const relatedNodesForDetail = computed(() =>
+  relatedNodes.value.filter(
+    (node) =>
+      node.type !== 'rag_branch' &&
+      node.type !== 'evidence' &&
+      node.type !== 'source'
+  )
+);
 
 const hoveredEdge = computed(() => {
   if (!hoveredEdgeId.value) return null;
@@ -518,6 +710,8 @@ const summaryCards = computed(() => [
   { label: '关系总数', value: stats.value.edgeCount ?? 0 },
   { label: '写法名词', value: stats.value.styleTechniqueCount ?? 0 },
   { label: '文章证据', value: stats.value.styleEvidenceCount ?? 0 },
+  { label: 'RAG 骨架卡', value: stats.value.ragStubCount ?? 0 },
+  { label: '缺少证据 RAG', value: stats.value.ragMissingEvidenceCount ?? 0 },
   { label: '孤立节点', value: stats.value.orphanCount ?? 0 },
   { label: '待抽查', value: stats.value.pendingReviewCount ?? 0 },
   { label: '低置信度关系', value: stats.value.lowConfidenceEdgeCount ?? 0 },
@@ -529,6 +723,20 @@ const summaryCards = computed(() => [
   { label: '有情节但无 Style-RAG', value: stats.value.plotWithoutStyle ?? 0 },
   { label: '高频未确认', value: stats.value.highUseUnconfirmed ?? 0 }
 ]);
+
+const detailEvidenceItems = computed(() => {
+  if (!selectedNode.value || selectedNode.value.type !== 'rag') return [];
+  return Array.isArray(selectedNode.value.meta?.evidenceItems) ? selectedNode.value.meta.evidenceItems : [];
+});
+
+const detailSourceTitles = computed(() => {
+  if (!selectedNode.value || selectedNode.value.type !== 'rag') return [];
+  const fromMeta = Array.isArray(selectedNode.value.meta?.sourceTitles)
+    ? selectedNode.value.meta.sourceTitles
+    : [];
+  if (fromMeta.length) return fromMeta;
+  return [...new Set(detailEvidenceItems.value.map((item) => item.sourceTitle).filter(Boolean))];
+});
 
 const typeRows = computed(() =>
   Object.entries(stats.value.byType || {}).map(([type, count]) => ({
@@ -676,7 +884,7 @@ function hierarchyParentLabel(node) {
 
 function relatedNodeTypeLabel(node) {
   if (node?.type === 'style_rag') return styleRoleLabel(node);
-  if (node?.type === 'rag') return ragLayerDetailLabel(node) !== '—' ? `紧缚 RAG · ${ragLayerDetailLabel(node)}` : nodeTypeLabel(node?.type);
+  if (node?.type === 'rag') return ragLayerDetailLabel(node) !== '—' ? `紧缚专业 RAG · ${ragLayerDetailLabel(node)}` : nodeTypeLabel(node?.type);
   if ((node?.type === 'world' || node?.type === 'story') && hierarchyDetailLabel(node) !== '—') {
     return `故事 · ${hierarchyDetailLabel(node)}`;
   }
@@ -690,7 +898,8 @@ function detailTypeLabel(nodeOrType) {
   if (node.type === 'style_rag') return styleRoleLabel(node);
   if (node.type === 'rag') {
     const layer = ragLayerDetailLabel(node);
-    return layer !== '—' ? `紧缚 RAG · ${layer}` : '紧缚 RAG';
+    const overall = node.meta?.overallStatusLabel ? ` · ${node.meta.overallStatusLabel}` : '';
+    return layer !== '—' ? `紧缚专业 RAG · ${layer}${overall}` : `紧缚专业 RAG${overall}`;
   }
   if (node.type === 'world' || node.type === 'story') {
     const layer = hierarchyDetailLabel(node);
@@ -892,6 +1101,9 @@ function jumpToNode(nodeId, options = {}) {
 
   if (node.type === 'style_rag' && node.meta?.role === 'evidence') {
     showStyleEvidence.value = true;
+  }
+  if (node.type === 'rag') {
+    ragDetailTab.value = 'meta';
   }
 
   selectedNodeId.value = nodeId;
@@ -1768,6 +1980,13 @@ function saveJson(key, value) {
   margin: 10px 0;
 }
 
+.rg-detail-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin: 0 0 10px;
+}
+
 .rg-detail-list {
   display: grid;
   grid-template-columns: 88px 1fr;
@@ -1814,6 +2033,61 @@ function saveJson(key, value) {
 .rg-related-button span {
   color: #bdb2ca;
   font-size: 11px;
+}
+
+.rg-claim-block {
+  margin-bottom: 8px;
+  padding: 8px;
+  border: 1px solid rgba(126, 216, 168, 0.35);
+  background: rgba(18, 32, 26, 0.55);
+}
+
+.rg-claim-block p {
+  margin: 4px 0 0;
+}
+
+.rg-muted {
+  color: #bdb2ca;
+  font-size: 11px;
+}
+
+.rg-evidence-quote {
+  margin: 8px 0;
+  padding: 8px 10px;
+  border-left: 3px solid #7ad8a8;
+  background: rgba(18, 32, 26, 0.7);
+  white-space: pre-wrap;
+}
+
+.rg-evidence-context {
+  color: #9a90a8;
+  font-size: 11px;
+  white-space: pre-wrap;
+}
+
+.rg-evidence-expand {
+  margin: 8px 0;
+  padding: 8px 10px;
+  border: 1px solid rgba(126, 216, 168, 0.28);
+  background: rgba(18, 32, 26, 0.45);
+}
+
+.rg-evidence-expand summary {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.rg-evidence-sources-title {
+  margin-top: 16px;
+}
+
+.rg-source-title-list {
+  margin: 6px 0 0;
+  padding-left: 18px;
+  color: #d8d0e0;
+  font-size: 12px;
 }
 
 .rg-summary {

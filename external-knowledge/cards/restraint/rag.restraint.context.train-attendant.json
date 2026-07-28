@@ -1,0 +1,104 @@
+{
+  "cardId": "rag.restraint.context.train-attendant",
+  "title": "火车乘务员",
+  "domain": "restraint",
+  "cardType": "context",
+  "aliases": [
+    "职业-火车乘务员",
+    "列车员",
+    "客串乘务员"
+  ],
+  "summary": "火车乘务员是列车服务身份下的可复用场景条件：制服、车厢动线、上铺/过道可见性、售卖推车与绩效压力，会改变受限时的公开程度与可调用道具。",
+  "definition": "火车乘务员是列车服务身份下的可复用场景条件：制服、车厢动线、上铺/过道可见性、售卖推车与绩效压力，会改变受限时的公开程度与可调用道具。",
+  "sourceRefs": [],
+  "evidenceStatus": "missing",
+  "contentStatus": "stub",
+  "reviewStatus": "candidate",
+  "directQuoteIncluded": false,
+  "canonical": false,
+  "knowledgeScope": "external-fiction-reference",
+  "ragLayer": "concept",
+  "parentCardIds": [
+    "rag.restraint.context.occupation"
+  ],
+  "migration": {
+    "batchId": "plot-layer-governance-v1",
+    "oldIds": [
+      "bondage_tag:sg:职业-火车乘务员"
+    ],
+    "generatedFrom": "plot-layer-migration",
+    "createdAt": "2026-07-28T09:00:26.891Z"
+  },
+  "evidenceRefs": [],
+  "sourceRecordIds": [],
+  "claims": [],
+  "retrievalPolicy": {
+    "graphVisible": true,
+    "searchable": true,
+    "relationAnchor": true,
+    "contentRetrievable": false,
+    "evidenceRetrievable": false,
+    "knowledgeRetrievable": false,
+    "expressionRetrievable": false
+  },
+  "professionalRagVersion": 1,
+  "knowledge": {
+    "definition": "火车乘务员是列车服务身份下的可复用场景条件：制服、车厢动线、上铺/过道可见性、售卖推车与绩效压力，会改变受限时的公开程度与可调用道具。",
+    "boundaries": {
+      "includes": [
+        "它描述职业切口，不等于某次客串拍照或售卖事件。"
+      ],
+      "excludes": [
+        "不保存某次故事里的唯一人物、地点与结局过程"
+      ]
+    },
+    "distinctions": [],
+    "aliases": [
+      "职业-火车乘务员",
+      "列车员",
+      "客串乘务员"
+    ],
+    "parentConceptRefs": [
+      "rag.restraint.context.occupation"
+    ],
+    "childConceptRefs": [],
+    "relatedConceptRefs": [],
+    "factualClaims": [],
+    "evidenceRefs": [],
+    "projectInterpretation": "它描述职业切口，不等于某次客串拍照或售卖事件。",
+    "commonMisreadings": [],
+    "status": "stub",
+    "evidenceStatus": "missing",
+    "reviewStatus": "pending"
+  },
+  "expression": {
+    "visualFocus": [],
+    "actionLogic": [],
+    "movementEffects": [],
+    "postureEffects": [],
+    "sensoryFocus": [],
+    "emotionalPossibilities": [],
+    "narrativeUses": [
+      "表现重点常落在制服辨识、车厢公开性、服务姿态与受限行动的反差。",
+      "可用上铺固定、推车协作、收款互动等职业动作组织场面，但不把单次故事结局写进概念。"
+    ],
+    "applicableScenes": [],
+    "unsuitableScenes": [],
+    "expressionPrinciples": [
+      "表现重点常落在制服辨识、车厢公开性、服务姿态与受限行动的反差。",
+      "可用上铺固定、推车协作、收款互动等职业动作组织场面，但不把单次故事结局写进概念。"
+    ],
+    "commonFailures": [],
+    "prohibitedMisreadings": [],
+    "styleEvidenceRefs": [],
+    "goldExampleRefs": [],
+    "calibrationPairRefs": [],
+    "relatedStyleRagRefs": [],
+    "evidenceRefs": [],
+    "status": "stub",
+    "evidenceStatus": "missing",
+    "reviewStatus": "pending"
+  },
+  "overallStatus": "stub",
+  "evidenceBindings": []
+}

@@ -412,14 +412,15 @@
       "status": "大纲草稿",
       "parentKey": "world-1-glimmering-glance-little-prisoner",
       "order": 10,
-      "ragRefs": [],
+      "ragRefs": [
+        "rag.restraint.context.shopping-model"
+      ],
       "plotRefs": [
         "plot-061"
       ],
       "gameplayRefs": [],
       "legacyTagRefs": [
-        "bondage_tag:模特",
-        "bondage_tag:sg:职业-模特"
+        "bondage_tag:模特"
       ]
     },
     {
@@ -443,12 +444,10 @@
         "rag.restraint.effect.odor-stimulation"
       ],
       "plotRefs": [
-        "plot-062",
         "plot-055"
       ],
       "gameplayRefs": [],
       "legacyTagRefs": [
-        "bondage_tag:sg:职业-演员",
         "bondage_tag:sg:反套路-女仆捆主人"
       ]
     },
@@ -521,14 +520,14 @@
       "status": "大纲草稿",
       "parentKey": "world-1-glimmering-glance-trafficker",
       "order": 10,
-      "ragRefs": [],
+      "ragRefs": [
+        "rag.restraint.context.teacher"
+      ],
       "plotRefs": [
         "plot-059"
       ],
       "gameplayRefs": [],
-      "legacyTagRefs": [
-        "bondage_tag:sg:职业-教师"
-      ]
+      "legacyTagRefs": []
     },
     {
       "key": "world-1-glimmering-glance-gray-alley-adventure",
@@ -791,7 +790,9 @@
       "status": "大纲",
       "parentKey": "world-1-glimmering-glance-prison-storm",
       "order": 10,
-      "ragRefs": [],
+      "ragRefs": [
+        "rag.restraint.context.restraint-resistance"
+      ],
       "plotRefs": [],
       "gameplayRefs": []
     },
@@ -846,7 +847,9 @@
       "status": "大纲",
       "parentKey": "world-1-glimmering-glance-fog-capital-strangeness",
       "order": 10,
-      "ragRefs": [],
+      "ragRefs": [
+        "rag.restraint.context.restraint-resistance"
+      ],
       "plotRefs": [],
       "gameplayRefs": []
     },
@@ -869,7 +872,8 @@
       "parentKey": "world-1-glimmering-glance-return-to-jingjiang",
       "order": 10,
       "ragRefs": [
-        "rag.restraint.effect.odor-stimulation"
+        "rag.restraint.effect.odor-stimulation",
+        "rag.restraint.context.little-people"
       ],
       "plotRefs": [],
       "gameplayRefs": [
@@ -968,7 +972,9 @@
         "rag.restraint.structure.full-body-wrapping",
         "rag.restraint.tool.handcuffs",
         "rag.restraint.tool.leg-irons",
-        "rag.restraint.tool.chain"
+        "rag.restraint.tool.chain",
+        "rag.restraint.duration.permanent-restraint",
+        "rag.restraint.detail.焊死镣铐"
       ],
       "plotRefs": [],
       "gameplayRefs": [
@@ -1135,7 +1141,8 @@
       "order": 20,
       "ragRefs": [
         "rag.restraint.effect.tickling",
-        "rag.restraint.effect.odor-stimulation"
+        "rag.restraint.effect.odor-stimulation",
+        "rag.restraint.context.train-attendant"
       ],
       "plotRefs": [
         "plot-058"
@@ -1144,8 +1151,7 @@
         "gameplay-072"
       ],
       "legacyTagRefs": [
-        "bondage_tag:游戏",
-        "bondage_tag:sg:职业-火车乘务员"
+        "bondage_tag:游戏"
       ]
     },
     {
@@ -1168,15 +1174,14 @@
       "parentKey": "world-1-glimmering-glance-maid-hotel",
       "order": 20,
       "ragRefs": [
-        "rag.restraint.effect.public-humiliation"
+        "rag.restraint.effect.public-humiliation",
+        "rag.restraint.context.actor"
       ],
       "plotRefs": [
         "plot-062"
       ],
       "gameplayRefs": [],
-      "legacyTagRefs": [
-        "bondage_tag:sg:职业-演员"
-      ]
+      "legacyTagRefs": []
     },
     {
       "key": "world-1-glimmering-glance-inflatable-castle",
@@ -1315,14 +1320,15 @@
       "status": "大纲草稿",
       "parentKey": "world-1-glimmering-glance-dance-classroom",
       "order": 20,
-      "ragRefs": [],
+      "ragRefs": [
+        "rag.restraint.context.mermaid-model"
+      ],
       "plotRefs": [
         "plot-060"
       ],
       "gameplayRefs": [],
       "legacyTagRefs": [
-        "bondage_tag:模特",
-        "bondage_tag:sg:职业-美人鱼模特"
+        "bondage_tag:模特"
       ]
     },
     {

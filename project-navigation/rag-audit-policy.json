@@ -43,5 +43,13 @@
     "defaultAssetKinds": ["card"],
     "allowSourceOptIn": true
   },
-  "notes": "现有索引/目录可继续使用；抽查覆盖紧缚 RAG、Style-RAG、细节概念与情节。紧缚 RAG 默认只抽知识卡，源条目须 --include-sources 或 --asset-kind source|all。改任一条目时必须检查关联项，有需要则一并调整，禁止只改单点留下矛盾。"
+  "confirmedOkDownweight": {
+    "enabled": true,
+    "keepInPool": true,
+    "auditedPenalty": 25,
+    "priorityPenalty": 45,
+    "category": "confirmed-ok",
+    "notes": "抽查过（任意归档）降中权；confirmed-ok 再降权。权重只影响抽中概率，不移出池；高权抽完后仍会轮到低权项做回归。"
+  },
+  "notes": "现有索引/目录可继续使用；抽查覆盖紧缚专业 RAG（每卡含知识+表达，不拆成两条）、Style-RAG、细节概念与情节。紧缚 RAG 默认只抽知识卡条目（一张卡同时展示双分支状态），源条目须 --include-sources 或 --asset-kind source|all。用户确认无问题请用 --category confirmed-ok 归档。改任一条目时必须检查关联项，有需要则一并调整，禁止只改单点留下矛盾。"
 }

@@ -43,7 +43,9 @@
       "status": "大纲",
       "parentKey": "world-3-mortal-dao-maid-difficulty",
       "order": 10,
-      "ragRefs": [],
+      "ragRefs": [
+        "rag.restraint.context.restraint-resistance"
+      ],
       "plotRefs": [],
       "gameplayRefs": []
     },
@@ -186,7 +188,8 @@
       "ragRefs": [
         "rag.restraint.effect.public-humiliation",
         "rag.restraint.tool.shackles",
-        "rag.restraint.state.confinement"
+        "rag.restraint.state.confinement",
+        "rag.restraint.detail.冤罪"
       ],
       "plotRefs": [],
       "gameplayRefs": [],
@@ -227,7 +230,9 @@
       "status": "大纲草稿",
       "parentKey": "world-3-mortal-dao-demonic-sect-adventure",
       "order": 10,
-      "ragRefs": [],
+      "ragRefs": [
+        "rag.restraint.detail.废除武功"
+      ],
       "plotRefs": [],
       "gameplayRefs": []
     },

@@ -1,0 +1,72 @@
+{
+  "cardId": "rag.restraint.state.confinement",
+  "title": "监禁",
+  "domain": "restraint",
+  "cardType": "state",
+  "aliases": [],
+  "summary": "监禁限制人物离开特定空间，并把时间、看守和出入口控制纳入持续状态。",
+  "definition": "人物被阻止离开指定房间、设施或区域的状态；它可以与器具拘束并存，但核心是退出权被控制。",
+  "sourceRefs": [
+    {
+      "sourceId": "fb-src-000097",
+      "segmentId": "fb-src-000097-seg-00002",
+      "sourcePath": "external-knowledge/sources/fiction-bondage/作者,金主大大/楚曼白/监狱风云.md",
+      "startLine": 20,
+      "endLine": 40
+    },
+    {
+      "sourceId": "fb-src-000150",
+      "segmentId": "fb-src-000150-seg-00015",
+      "sourcePath": "external-knowledge/sources/fiction-bondage/作者,金主大大/杨可/天天侦探社-全.md",
+      "startLine": 161,
+      "endLine": 173
+    }
+  ],
+  "evidenceStatus": "partial",
+  "contentStatus": "complete",
+  "reviewStatus": "candidate",
+  "directQuoteIncluded": false,
+  "canonical": false,
+  "knowledgeScope": "external-fiction-reference",
+  "migration": {
+    "batchId": "tag-rag-restructure-v1",
+    "oldIds": [
+      "bondage_tag:监禁"
+    ],
+    "generatedFrom": "legacy-tag-title-only",
+    "evidenceLayer": "v1",
+    "evidenceMigratedAt": "2026-07-28T07:14:30.241Z"
+  },
+  "ragLayer": "category",
+  "parentCardIds": [],
+  "evidenceRefs": [
+    "ev-fbsrc000097-e84c1d9dbd5075df",
+    "ev-fbsrc000150-143b566063c1b9d5"
+  ],
+  "sourceRecordIds": [
+    "fb-src-000097",
+    "fb-src-000150"
+  ],
+  "claims": [
+    {
+      "id": "rag.restraint.state.confinement::claim:definition:0",
+      "label": "定义",
+      "content": "人物被阻止离开指定房间、设施或区域的状态；它可以与器具拘束并存，但核心是退出权被控制。",
+      "claimType": "definition",
+      "evidenceRefs": [
+        "ev-fbsrc000097-e84c1d9dbd5075df",
+        "ev-fbsrc000150-143b566063c1b9d5"
+      ],
+      "supportStatus": "pending",
+      "reviewStatus": "pending",
+      "origin": "external-summary"
+    }
+  ],
+  "retrievalPolicy": {
+    "graphVisible": true,
+    "searchable": true,
+    "relationAnchor": true,
+    "contentRetrievable": false,
+    "evidenceRetrievable": true
+  }
+}

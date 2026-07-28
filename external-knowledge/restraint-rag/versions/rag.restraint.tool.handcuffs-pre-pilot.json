@@ -1,0 +1,74 @@
+{
+  "cardId": "rag.restraint.tool.handcuffs",
+  "title": "手铐",
+  "domain": "restraint",
+  "cardType": "tool",
+  "aliases": [],
+  "summary": "手铐以腕部铐环和中间连接限制双手相对位置，也可分别连接环境固定点。",
+  "definition": "作用于手腕的成对铐具；它描述器具类别，不等同于某一种具体姿态。",
+  "sourceRefs": [
+    {
+      "sourceId": "fb-src-000001",
+      "segmentId": "fb-src-000001-seg-00003",
+      "sourcePath": "external-knowledge/sources/fiction-bondage/不知道作者/（完结）彼岸花开.md",
+      "startLine": 13,
+      "endLine": 14
+    },
+    {
+      "sourceId": "fb-src-000007",
+      "segmentId": "fb-src-000007-seg-00004",
+      "sourcePath": "external-knowledge/sources/fiction-bondage/不知道作者/变为奴隶的姑娘.md",
+      "startLine": 37,
+      "endLine": 64
+    }
+  ],
+  "evidenceStatus": "partial",
+  "contentStatus": "complete",
+  "reviewStatus": "candidate",
+  "directQuoteIncluded": false,
+  "canonical": false,
+  "knowledgeScope": "external-fiction-reference",
+  "migration": {
+    "batchId": "tag-rag-restructure-v1",
+    "oldIds": [
+      "bondage_tag:手铐"
+    ],
+    "generatedFrom": "legacy-tag-title-only",
+    "evidenceLayer": "v1",
+    "evidenceMigratedAt": "2026-07-28T07:14:30.272Z"
+  },
+  "ragLayer": "concept",
+  "parentCardIds": [
+    "rag.restraint.tool.shackles"
+  ],
+  "evidenceRefs": [
+    "ev-fbsrc000001-aa3111bc2f37d846",
+    "ev-fbsrc000007-df631609bdf54c72"
+  ],
+  "sourceRecordIds": [
+    "fb-src-000001",
+    "fb-src-000007"
+  ],
+  "claims": [
+    {
+      "id": "rag.restraint.tool.handcuffs::claim:definition:0",
+      "label": "定义",
+      "content": "作用于手腕的成对铐具；它描述器具类别，不等同于某一种具体姿态。",
+      "claimType": "definition",
+      "evidenceRefs": [
+        "ev-fbsrc000001-aa3111bc2f37d846",
+        "ev-fbsrc000007-df631609bdf54c72"
+      ],
+      "supportStatus": "pending",
+      "reviewStatus": "pending",
+      "origin": "external-summary"
+    }
+  ],
+  "retrievalPolicy": {
+    "graphVisible": true,
+    "searchable": true,
+    "relationAnchor": true,
+    "contentRetrievable": false,
+    "evidenceRetrievable": true
+  }
+}

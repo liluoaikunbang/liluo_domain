@@ -17,6 +17,8 @@ test('outline keeps original sections and adds relation graph tab', () => {
     /\{ key: 'story', label: '故事' \},\s*\{ key: 'plot', label: '情节' \},\s*\{ key: 'gameplay', label: '玩法' \},\s*\{ key: 'character', label: '人物\/组织' \},\s*\{ key: 'relation-graph', label: '关联图谱' \}/u
   );
   assert.match(outlinePanelSource, /RelationGraphPanel/u);
+  assert.doesNotMatch(outlinePanelSource, /RestraintRagMaintainPanel/u);
+  assert.doesNotMatch(outlinePanelSource, /restraint-rag/u);
   assert.match(outlinePanelSource, /activeSection === 'relation-graph'/u);
   assert.match(outlinePanelSource, /activeSection === 'story'/u);
   assert.match(outlinePanelSource, /activeSection === 'plot'/u);
@@ -72,6 +74,14 @@ test('graph panel can toggle Style-RAG article evidence visibility', () => {
   assert.match(graphPanelSource, /allowFocusedEvidence/u);
   assert.match(graphPanelSource, /写法名词/u);
 });
+test('graph panel hides AI calibration entry and off-canvas evidence categories', () => {
+  assert.doesNotMatch(graphPanelSource, /校准入口/u);
+  assert.doesNotMatch(graphPanelSource, /knowledge:audit:sample/u);
+  assert.doesNotMatch(graphPanelSource, /原文证据条数|原始来源书名|原始来源节点|原文证据节点/u);
+  assert.match(graphPanelSource, /原文证据/u); // detail tab still exists
+  assert.match(graphPanelSource, /rg-evidence-expand/u);
+});
+
 test('legend is left-side and hideable with project scroll areas', () => {
   assert.match(graphPanelSource, /rg-legend-column/u);
   assert.match(graphPanelSource, /legendVisible/u);

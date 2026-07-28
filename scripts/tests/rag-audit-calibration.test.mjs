@@ -54,7 +54,7 @@ test('sample rag batch defaults to cards only', async () => {
   assert.ok(payload.items.every((item) => item.currentResult?.assetKind === 'card'))
   const md = await readFile(path.join(repo, batch.path), 'utf8')
   assert.match(md, /卡审三问/)
-  assert.match(md, /默认只抽知识卡/)
+  assert.match(md, /每张概念卡抽一次/)
 })
 
 test('sample rag batch can include sources when opted in', async () => {

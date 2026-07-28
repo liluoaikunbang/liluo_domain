@@ -1,0 +1,100 @@
+{
+  "cardId": "rag.restraint.context.occupation",
+  "title": "职业场景",
+  "domain": "restraint",
+  "cardType": "context",
+  "aliases": [
+    "职业"
+  ],
+  "summary": "职业场景是可跨故事复用的上位类别：不同职业带来不同的公开规则、道具切口、身份反差与受限行动边界。",
+  "definition": "职业场景是可跨故事复用的上位类别：不同职业带来不同的公开规则、道具切口、身份反差与受限行动边界。",
+  "sourceRefs": [],
+  "evidenceStatus": "missing",
+  "contentStatus": "stub",
+  "reviewStatus": "candidate",
+  "directQuoteIncluded": false,
+  "canonical": false,
+  "knowledgeScope": "external-fiction-reference",
+  "ragLayer": "category",
+  "parentCardIds": [],
+  "migration": {
+    "batchId": "plot-layer-governance-v1",
+    "oldIds": [],
+    "generatedFrom": "plot-layer-migration",
+    "createdAt": "2026-07-28T09:00:26.890Z"
+  },
+  "evidenceRefs": [],
+  "sourceRecordIds": [],
+  "claims": [],
+  "retrievalPolicy": {
+    "graphVisible": true,
+    "searchable": true,
+    "relationAnchor": true,
+    "contentRetrievable": false,
+    "evidenceRetrievable": false,
+    "knowledgeRetrievable": false,
+    "expressionRetrievable": false
+  },
+  "professionalRagVersion": 1,
+  "knowledge": {
+    "definition": "职业场景是可跨故事复用的上位类别：不同职业带来不同的公开规则、道具切口、身份反差与受限行动边界。",
+    "boundaries": {
+      "includes": [
+        "下属具体职业概念分别说明自身特点；上位类别不代替某次故事里的具体过程。"
+      ],
+      "excludes": [
+        "不保存某次故事里的唯一人物、地点与结局过程"
+      ]
+    },
+    "distinctions": [],
+    "aliases": [
+      "职业"
+    ],
+    "parentConceptRefs": [],
+    "childConceptRefs": [
+      "rag.restraint.context.train-attendant",
+      "rag.restraint.context.teacher",
+      "rag.restraint.context.mermaid-model",
+      "rag.restraint.context.shopping-model",
+      "rag.restraint.context.actor"
+    ],
+    "relatedConceptRefs": [],
+    "factualClaims": [],
+    "evidenceRefs": [],
+    "projectInterpretation": "下属具体职业概念分别说明自身特点；上位类别不代替某次故事里的具体过程。",
+    "commonMisreadings": [],
+    "status": "stub",
+    "evidenceStatus": "missing",
+    "reviewStatus": "pending"
+  },
+  "expression": {
+    "visualFocus": [],
+    "actionLogic": [],
+    "movementEffects": [],
+    "postureEffects": [],
+    "sensoryFocus": [],
+    "emotionalPossibilities": [],
+    "narrativeUses": [
+      "先写清职业公开规则如何改变旁观者期待，再落到具体器具与动作。",
+      "避免把某次客串经历写成职业定义本身。"
+    ],
+    "applicableScenes": [],
+    "unsuitableScenes": [],
+    "expressionPrinciples": [
+      "先写清职业公开规则如何改变旁观者期待，再落到具体器具与动作。",
+      "避免把某次客串经历写成职业定义本身。"
+    ],
+    "commonFailures": [],
+    "prohibitedMisreadings": [],
+    "styleEvidenceRefs": [],
+    "goldExampleRefs": [],
+    "calibrationPairRefs": [],
+    "relatedStyleRagRefs": [],
+    "evidenceRefs": [],
+    "status": "stub",
+    "evidenceStatus": "missing",
+    "reviewStatus": "pending"
+  },
+  "overallStatus": "stub",
+  "evidenceBindings": []
+}

@@ -26,11 +26,116 @@
     "oldIds": [
       "bondage_tag:sg:小黑屋"
     ],
-    "generatedFrom": "legacy-tag-title-only"
+    "generatedFrom": "legacy-tag-title-only",
+    "evidenceLayer": "v1",
+    "evidenceMigratedAt": "2026-07-28T07:14:30.109Z",
+    "professionalRag": {
+      "batchId": "professional-rag-bulk-v1",
+      "migratedAt": "2026-07-28T07:49:31.897Z",
+      "strategy": "knowledge-from-legacy-expression-stub",
+      "notes": "知识分支由既有 definition/claims/evidence 迁入；表达分支保留骨架（有 creative-note/abstractPatterns 时写入草稿）；同一概念不另建重复卡。"
+    }
   },
   "ragLayer": "concept",
   "parentCardIds": [
     "rag.restraint.state.confinement"
   ],
-  "distinctions": []
+  "distinctions": [],
+  "evidenceRefs": [
+    "ev-fbsrc000099-ac56d9ab326803a8"
+  ],
+  "sourceRecordIds": [
+    "fb-src-000099"
+  ],
+  "claims": [
+    {
+      "id": "rag.restraint.detail.小黑屋::claim:definition:0",
+      "label": "定义",
+      "content": "以黑暗或微光、空间局促和信息隔绝为主要特征的监禁场景。",
+      "claimType": "definition",
+      "evidenceRefs": [
+        "ev-fbsrc000099-ac56d9ab326803a8"
+      ],
+      "supportStatus": "pending",
+      "reviewStatus": "pending",
+      "origin": "external-summary"
+    }
+  ],
+  "retrievalPolicy": {
+    "graphVisible": true,
+    "searchable": true,
+    "relationAnchor": true,
+    "contentRetrievable": false,
+    "evidenceRetrievable": true,
+    "knowledgeRetrievable": false,
+    "expressionRetrievable": false
+  },
+  "professionalRagVersion": 1,
+  "knowledge": {
+    "definition": "以黑暗或微光、空间局促和信息隔绝为主要特征的监禁场景。",
+    "boundaries": {
+      "includes": [],
+      "excludes": []
+    },
+    "distinctions": [],
+    "aliases": [],
+    "parentConceptRefs": [
+      "rag.restraint.state.confinement"
+    ],
+    "childConceptRefs": [],
+    "relatedConceptRefs": [],
+    "factualClaims": [
+      {
+        "id": "rag.restraint.detail.小黑屋::claim:definition:0",
+        "label": "定义",
+        "content": "以黑暗或微光、空间局促和信息隔绝为主要特征的监禁场景。",
+        "claimType": "definition",
+        "evidenceRefs": [
+          "ev-fbsrc000099-ac56d9ab326803a8"
+        ],
+        "supportStatus": "pending",
+        "reviewStatus": "pending",
+        "origin": "external-summary"
+      }
+    ],
+    "evidenceRefs": [
+      "ev-fbsrc000099-ac56d9ab326803a8"
+    ],
+    "projectInterpretation": "",
+    "commonMisreadings": [],
+    "status": "usable",
+    "evidenceStatus": "partial",
+    "reviewStatus": "pending"
+  },
+  "expression": {
+    "visualFocus": [],
+    "actionLogic": [],
+    "movementEffects": [],
+    "postureEffects": [],
+    "sensoryFocus": [],
+    "emotionalPossibilities": [],
+    "narrativeUses": [],
+    "applicableScenes": [],
+    "unsuitableScenes": [],
+    "expressionPrinciples": [],
+    "commonFailures": [],
+    "prohibitedMisreadings": [],
+    "styleEvidenceRefs": [],
+    "goldExampleRefs": [],
+    "calibrationPairRefs": [],
+    "relatedStyleRagRefs": [],
+    "evidenceRefs": [],
+    "status": "stub",
+    "evidenceStatus": "missing",
+    "reviewStatus": "pending"
+  },
+  "overallStatus": "knowledge-only",
+  "evidenceBindings": [
+    {
+      "evidenceId": "ev-fbsrc000099-ac56d9ab326803a8",
+      "purpose": "knowledge-evidence",
+      "branch": "knowledge",
+      "supportStatus": "pending"
+    }
+  ]
 }

@@ -1,0 +1,99 @@
+{
+  "cardId": "rag.restraint.context.power-rebuild",
+  "title": "废功重修",
+  "domain": "restraint",
+  "cardType": "context",
+  "aliases": [
+    "废功",
+    "重修"
+  ],
+  "summary": "废功重修是可跨故事复用的上位类别：角色原有武力/修为被废、被封印或被迫交出后，再以另一条路径重新获得力量。",
+  "definition": "废功重修是可跨故事复用的上位类别：角色原有武力/修为被废、被封印或被迫交出后，再以另一条路径重新获得力量。",
+  "sourceRefs": [],
+  "evidenceStatus": "missing",
+  "contentStatus": "stub",
+  "reviewStatus": "candidate",
+  "directQuoteIncluded": false,
+  "canonical": false,
+  "knowledgeScope": "external-fiction-reference",
+  "ragLayer": "category",
+  "parentCardIds": [],
+  "migration": {
+    "batchId": "plot-layer-governance-v1",
+    "oldIds": [],
+    "generatedFrom": "plot-layer-user-request",
+    "createdAt": "2026-07-28T09:38:56.410Z"
+  },
+  "evidenceRefs": [],
+  "sourceRecordIds": [],
+  "claims": [],
+  "retrievalPolicy": {
+    "graphVisible": true,
+    "searchable": true,
+    "relationAnchor": true,
+    "contentRetrievable": false,
+    "evidenceRetrievable": false,
+    "knowledgeRetrievable": false,
+    "expressionRetrievable": false
+  },
+  "professionalRagVersion": 1,
+  "knowledge": {
+    "definition": "废功重修是可跨故事复用的上位类别：角色原有武力/修为被废、被封印或被迫交出后，再以另一条路径重新获得力量。",
+    "boundaries": {
+      "includes": [
+        "下属具体概念分别说明废除方式与重修路径；上位类别不代替某次侍女改功事件。"
+      ],
+      "excludes": [
+        "不保存某次故事里的唯一人物、地点与结局过程"
+      ]
+    },
+    "distinctions": [],
+    "aliases": [
+      "废功",
+      "重修"
+    ],
+    "parentConceptRefs": [],
+    "childConceptRefs": [
+      "rag.restraint.detail.废除武功",
+      "rag.restraint.detail.挑断筋脉"
+    ],
+    "relatedConceptRefs": [],
+    "factualClaims": [],
+    "evidenceRefs": [],
+    "projectInterpretation": "下属具体概念分别说明废除方式与重修路径；上位类别不代替某次侍女改功事件。",
+    "commonMisreadings": [],
+    "status": "stub",
+    "evidenceStatus": "missing",
+    "reviewStatus": "pending"
+  },
+  "expression": {
+    "visualFocus": [],
+    "actionLogic": [],
+    "movementEffects": [],
+    "postureEffects": [],
+    "sensoryFocus": [],
+    "emotionalPossibilities": [],
+    "narrativeUses": [
+      "先写清失去原有力量后的行动边界变化，再落到重修路径如何被隐藏或利用。",
+      "避免把单次魔宗侍女经历写成类别定义。"
+    ],
+    "applicableScenes": [],
+    "unsuitableScenes": [],
+    "expressionPrinciples": [
+      "先写清失去原有力量后的行动边界变化，再落到重修路径如何被隐藏或利用。",
+      "避免把单次魔宗侍女经历写成类别定义。"
+    ],
+    "commonFailures": [],
+    "prohibitedMisreadings": [],
+    "styleEvidenceRefs": [],
+    "goldExampleRefs": [],
+    "calibrationPairRefs": [],
+    "relatedStyleRagRefs": [],
+    "evidenceRefs": [],
+    "status": "stub",
+    "evidenceStatus": "missing",
+    "reviewStatus": "pending"
+  },
+  "overallStatus": "stub",
+  "evidenceBindings": []
+}

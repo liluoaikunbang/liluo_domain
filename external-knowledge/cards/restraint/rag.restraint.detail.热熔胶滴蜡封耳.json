@@ -1,0 +1,138 @@
+{
+  "cardId": "rag.restraint.detail.热熔胶滴蜡封耳",
+  "title": "热熔胶滴蜡封耳",
+  "domain": "restraint",
+  "cardType": "term",
+  "aliases": [
+    "滴蜡封耳",
+    "热熔胶封耳",
+    "蜡封耳"
+  ],
+  "summary": "热熔胶与滴蜡封耳，灼热、凝固与听觉隔绝叠加；属极限折磨。",
+  "definition": "热熔胶滴蜡封耳指用热熔胶与反复滴蜡封住耳部，使灼热刺激、材料凝固与听觉隔绝叠加；是极限折磨下的具体手段，不等于缝眼缝嘴，也不等于某次末日封耳情节。",
+  "sourceRefs": [],
+  "evidenceStatus": "missing",
+  "contentStatus": "stub",
+  "reviewStatus": "candidate",
+  "directQuoteIncluded": false,
+  "canonical": false,
+  "knowledgeScope": "external-fiction-reference",
+  "ragLayer": "concept",
+  "parentCardIds": [
+    "rag.restraint.effect.extreme-torture"
+  ],
+  "migration": {
+    "batchId": "plot-layer-governance-v1",
+    "oldIds": [],
+    "generatedFrom": "plot-layer-user-request",
+    "createdAt": "2026-07-28T11:26:15.371Z"
+  },
+  "evidenceRefs": [],
+  "sourceRecordIds": [],
+  "claims": [],
+  "distinctions": [
+    {
+      "targetConceptId": "rag.restraint.detail.缝眼",
+      "description": "本卡是热熔材料封耳；缝眼是缝合封闭视觉。"
+    },
+    {
+      "targetConceptId": "rag.restraint.detail.缝嘴",
+      "description": "本卡针对耳部听觉隔绝；缝嘴针对口唇表达封锁。"
+    }
+  ],
+  "retrievalPolicy": {
+    "graphVisible": true,
+    "searchable": true,
+    "relationAnchor": true,
+    "contentRetrievable": false,
+    "evidenceRetrievable": false,
+    "knowledgeRetrievable": false,
+    "expressionRetrievable": false
+  },
+  "professionalRagVersion": 1,
+  "knowledge": {
+    "definition": "热熔胶滴蜡封耳指用热熔胶与反复滴蜡封住耳部，使灼热刺激、材料凝固与听觉隔绝叠加；是极限折磨下的具体手段，不等于缝眼缝嘴，也不等于某次末日封耳情节。",
+    "boundaries": {
+      "includes": [
+        "热熔胶封耳",
+        "反复滴蜡封耳",
+        "灼热刺激与听觉隔绝叠加"
+      ],
+      "excludes": [
+        "缝眼缝嘴",
+        "单纯气味刺激",
+        "单次末日封耳完整事件过程"
+      ]
+    },
+    "distinctions": [
+      {
+        "targetConceptId": "rag.restraint.detail.缝眼",
+        "description": "本卡是热熔材料封耳；缝眼是缝合封闭视觉。"
+      },
+      {
+        "targetConceptId": "rag.restraint.detail.缝嘴",
+        "description": "本卡针对耳部听觉隔绝；缝嘴针对口唇表达封锁。"
+      }
+    ],
+    "aliases": [
+      "滴蜡封耳",
+      "热熔胶封耳",
+      "蜡封耳"
+    ],
+    "parentConceptRefs": [
+      "rag.restraint.effect.extreme-torture"
+    ],
+    "childConceptRefs": [],
+    "relatedConceptRefs": [
+      "rag.restraint.detail.眼耳口鼻",
+      "rag.restraint.material.glue"
+    ],
+    "factualClaims": [],
+    "evidenceRefs": [],
+    "projectInterpretation": "末日或审讯场面可引用本卡；无法辨认环境声响的恐惧仍写在情节层。",
+    "commonMisreadings": [
+      "把整段末日封耳过程当成此概念本身"
+    ],
+    "status": "stub",
+    "evidenceStatus": "missing",
+    "reviewStatus": "pending"
+  },
+  "expression": {
+    "visualFocus": [
+      "耳部被材料封住",
+      "冷却凝固后的隔绝"
+    ],
+    "actionLogic": [
+      "先写清材料如何封住听觉",
+      "再写听不见脚步警报呼喊后的失控感"
+    ],
+    "movementEffects": [],
+    "postureEffects": [],
+    "sensoryFocus": [
+      "灼热",
+      "黏滞凝固",
+      "听觉切断"
+    ],
+    "emotionalPossibilities": [],
+    "narrativeUses": [
+      "把听觉通道封死，放大未知威胁"
+    ],
+    "applicableScenes": [],
+    "unsuitableScenes": [],
+    "expressionPrinciples": [
+      "写落点、凝固与听不见的后果，不写可复现操作参数"
+    ],
+    "commonFailures": [],
+    "prohibitedMisreadings": [],
+    "styleEvidenceRefs": [],
+    "goldExampleRefs": [],
+    "calibrationPairRefs": [],
+    "relatedStyleRagRefs": [],
+    "evidenceRefs": [],
+    "status": "stub",
+    "evidenceStatus": "missing",
+    "reviewStatus": "pending"
+  },
+  "evidenceBindings": [],
+  "overallStatus": "stub"
+}

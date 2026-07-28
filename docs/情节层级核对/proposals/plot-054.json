@@ -1,0 +1,46 @@
+{
+  "sourcePlotId": "plot-054",
+  "title": "魔女之夜-猎巫裁判与月夜集会",
+  "number": "054",
+  "groupId": "plot-group-027",
+  "groupTitle": "魔女之夜",
+  "plotKind": "ordinary",
+  "usageStatus": "unused",
+  "recommendation": "uncertain",
+  "recommendedLayer": "uncertain",
+  "rationale": [
+    "规模与世界观容器感偏强，可能是故事候选，也可能仍是未安置情节。"
+  ],
+  "reuseTest": {
+    "reusableAcrossStories": false,
+    "explanation": "摘要描述一次具体发生，换故事后通常不能原样复用。"
+  },
+  "eventTest": {
+    "hasActorOrRole": true,
+    "hasTrigger": true,
+    "hasProcess": true,
+    "hasChangeOrOutcome": true
+  },
+  "placementTest": {
+    "hasFormalWorldPlacement": false,
+    "linkedStoryIds": []
+  },
+  "proposedStoryTarget": {
+    "newStoryCandidate": true
+  },
+  "edgeMigrationPlan": [],
+  "affectedSourceFiles": [
+    "src/game/data/plot_outline/catalog.json"
+  ],
+  "affectedStoryEntries": [],
+  "linkedStories": [],
+  "confidence": 0.5,
+  "questionsForUser": [
+    "是否应提升为正式故事容器，还是保留为未安置情节？"
+  ],
+  "reviewStatus": "confirmed",
+  "generatedAt": "2026-07-28T08:54:03.555Z",
+  "userDecision": "keep-as-plot",
+  "confirmationId": "plc-ms4ga9zw",
+  "updatedAt": "2026-07-28T09:25:33.600Z"
+}

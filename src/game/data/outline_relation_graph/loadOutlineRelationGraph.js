@@ -9,6 +9,9 @@ import auditRegistry from '../../../../docs/知识检索校准/registry.json' wi
 import articleRegistry from '../../../../docs/写作资产/外部风格研究/article-registry.json' with { type: 'json' };
 import styleTaxonomy from '../../../../project-navigation/style-taxonomy.json' with { type: 'json' };
 import cardRules from '../../../../external-knowledge/card-rules.json' with { type: 'json' };
+import evidenceExcerptsPayload from '../../../../external-knowledge/evidence/excerpts.json' with { type: 'json' };
+import evidenceReviewsPayload from '../../../../external-knowledge/evidence/reviews.json' with { type: 'json' };
+import sourceCatalog from '../../../../external-knowledge/catalog/sources.json' with { type: 'json' };
 
 const ragCardModules = import.meta.glob('../../../../external-knowledge/cards/**/*.json', {
   eager: true,
@@ -24,6 +27,14 @@ export function listBundledRagCards() {
 
 export function listBundledStyleArticles() {
   return Array.isArray(articleRegistry?.articles) ? articleRegistry.articles : [];
+}
+
+export function listBundledEvidenceExcerpts() {
+  return Array.isArray(evidenceExcerptsPayload?.excerpts) ? evidenceExcerptsPayload.excerpts : [];
+}
+
+export function listBundledEvidenceReviews() {
+  return Array.isArray(evidenceReviewsPayload?.reviews) ? evidenceReviewsPayload.reviews : [];
 }
 
 /**
@@ -44,6 +55,9 @@ export function getOutlineRelationGraph(options = {}) {
     cardRules,
     styleArticles: listBundledStyleArticles(),
     styleTaxonomy,
+    evidenceExcerpts: listBundledEvidenceExcerpts(),
+    evidenceReviews: listBundledEvidenceReviews(),
+    sourceCatalog: Array.isArray(sourceCatalog) ? sourceCatalog : [],
     concepts: SEEDED_CONCEPTS,
     auditRegistry,
     builtAt: new Date().toISOString()

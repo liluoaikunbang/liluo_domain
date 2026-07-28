@@ -1,0 +1,114 @@
+{
+  "cardId": "rag.restraint.effect.extreme-torture",
+  "title": "极限折磨",
+  "domain": "restraint",
+  "cardType": "effect",
+  "aliases": [
+    "极限感官折磨",
+    "高强度感官折磨"
+  ],
+  "summary": "极限折磨是可跨故事复用的上位类别：高强度感官加压或强制封闭感官/表达通道，叠加拘束使人难以自行解除。",
+  "definition": "极限折磨是可跨故事复用的上位类别：用高强度感官加压或强制封闭感官/表达通道（刺激性物剂、缝眼缝嘴等）叠加拘束，使人难以躲开或自行清除。下属具体手段各自建卡；本类别不代替某次具体监禁情节。",
+  "sourceRefs": [],
+  "evidenceStatus": "missing",
+  "contentStatus": "stub",
+  "reviewStatus": "candidate",
+  "directQuoteIncluded": false,
+  "canonical": false,
+  "knowledgeScope": "external-fiction-reference",
+  "ragLayer": "category",
+  "parentCardIds": [],
+  "migration": {
+    "batchId": "plot-layer-governance-v1",
+    "oldIds": [],
+    "generatedFrom": "plot-layer-user-request",
+    "createdAt": "2026-07-28T10:58:23.340Z"
+  },
+  "evidenceRefs": [],
+  "sourceRecordIds": [],
+  "claims": [],
+  "distinctions": [],
+  "retrievalPolicy": {
+    "graphVisible": true,
+    "searchable": true,
+    "relationAnchor": true,
+    "contentRetrievable": false,
+    "evidenceRetrievable": false,
+    "knowledgeRetrievable": false,
+    "expressionRetrievable": false
+  },
+  "professionalRagVersion": 1,
+  "knowledge": {
+    "definition": "极限折磨是可跨故事复用的上位类别：用高强度感官加压或强制封闭感官/表达通道（刺激性物剂、缝眼缝嘴等）叠加拘束，使人难以躲开或自行清除。下属具体手段各自建卡；本类别不代替某次具体监禁情节。",
+    "boundaries": {
+      "includes": [
+        "刺激性物剂作用于敏感部位",
+        "短时高强度灼热/刺痛类加压",
+        "与拘束叠加、无法自行清除",
+        "缝合封闭眼睑或口唇等感官/表达通道",
+        "热熔胶/滴蜡等材料封堵感官通道"
+      ],
+      "excludes": [
+        "单纯气味羞辱（气味系）",
+        "单纯持续低温（寒冷）",
+        "挠痒类",
+        "单次故事里的完整事件过程"
+      ]
+    },
+    "distinctions": [],
+    "aliases": [
+      "极限感官折磨",
+      "高强度感官折磨"
+    ],
+    "parentConceptRefs": [],
+    "childConceptRefs": [
+      "rag.restraint.detail.敏感处风油精",
+      "rag.restraint.detail.感官刺激-芥末辣椒等",
+      "rag.restraint.detail.缝眼",
+      "rag.restraint.detail.缝嘴",
+      "rag.restraint.detail.热熔胶滴蜡封耳"
+    ],
+    "relatedConceptRefs": [
+      "rag.restraint.effect.odor-stimulation",
+      "rag.restraint.detail.寒冷",
+      "rag.restraint.effect.pain",
+      "rag.restraint.effect.sensory-stimulation",
+      "rag.restraint.detail.眼耳口鼻"
+    ],
+    "factualClaims": [],
+    "evidenceRefs": [],
+    "projectInterpretation": "上位类别只框定强度与机制边界；具体手段用子卡。",
+    "commonMisreadings": [],
+    "status": "stub",
+    "evidenceStatus": "missing",
+    "reviewStatus": "pending"
+  },
+  "expression": {
+    "visualFocus": [],
+    "actionLogic": [],
+    "movementEffects": [],
+    "postureEffects": [],
+    "sensoryFocus": [],
+    "emotionalPossibilities": [],
+    "narrativeUses": [
+      "先点明加压强度与无法躲开，再落到具体子手段"
+    ],
+    "applicableScenes": [],
+    "unsuitableScenes": [],
+    "expressionPrinciples": [
+      "不把某次完整折磨事件写进类别定义"
+    ],
+    "commonFailures": [],
+    "prohibitedMisreadings": [],
+    "styleEvidenceRefs": [],
+    "goldExampleRefs": [],
+    "calibrationPairRefs": [],
+    "relatedStyleRagRefs": [],
+    "evidenceRefs": [],
+    "status": "stub",
+    "evidenceStatus": "missing",
+    "reviewStatus": "pending"
+  },
+  "evidenceBindings": [],
+  "overallStatus": "stub"
+}

@@ -1,0 +1,64 @@
+{
+  "cardId": "rag.restraint.duration.permanent-restraint",
+  "title": "永久拘束",
+  "domain": "restraint",
+  "cardType": "duration",
+  "aliases": [],
+  "summary": "受限状态跨越日常起居和长期时间跨度，人物需要面对持续依赖与生活结构变化。",
+  "definition": "不是一次场景中的短暂固定，而是被故事明确设定为长期、无明确解除期或近似永久的拘束状态。",
+  "sourceRefs": [
+    {
+      "sourceId": "fb-src-000213",
+      "segmentId": "fb-src-000213-seg-00016",
+      "sourcePath": "external-knowledge/sources/fiction-bondage/作者,金主大大/P站？？？/精神病院的阴谋.md",
+      "startLine": 644,
+      "endLine": 703
+    }
+  ],
+  "evidenceStatus": "partial",
+  "contentStatus": "complete",
+  "reviewStatus": "candidate",
+  "directQuoteIncluded": false,
+  "canonical": false,
+  "knowledgeScope": "external-fiction-reference",
+  "migration": {
+    "batchId": "tag-rag-restructure-v1",
+    "oldIds": [
+      "bondage_tag:永久拘束"
+    ],
+    "generatedFrom": "legacy-tag-title-only",
+    "evidenceLayer": "v1",
+    "evidenceMigratedAt": "2026-07-28T07:14:30.180Z"
+  },
+  "ragLayer": "concept",
+  "parentCardIds": [
+    "rag.restraint.context.restrained-life"
+  ],
+  "evidenceRefs": [
+    "ev-fbsrc000213-6ae450bf9170edd2"
+  ],
+  "sourceRecordIds": [
+    "fb-src-000213"
+  ],
+  "claims": [
+    {
+      "id": "rag.restraint.duration.permanent-restraint::claim:definition:0",
+      "label": "定义",
+      "content": "不是一次场景中的短暂固定，而是被故事明确设定为长期、无明确解除期或近似永久的拘束状态。",
+      "claimType": "definition",
+      "evidenceRefs": [
+        "ev-fbsrc000213-6ae450bf9170edd2"
+      ],
+      "supportStatus": "pending",
+      "reviewStatus": "pending",
+      "origin": "external-summary"
+    }
+  ],
+  "retrievalPolicy": {
+    "graphVisible": true,
+    "searchable": true,
+    "relationAnchor": true,
+    "contentRetrievable": false,
+    "evidenceRetrievable": true
+  }
+}

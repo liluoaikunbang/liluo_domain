@@ -101,6 +101,9 @@ function buildGraph() {
   const auditRegistry = readJson('docs/知识检索校准/registry.json');
   const styleTaxonomy = readJson('project-navigation/style-taxonomy.json');
   const cardRules = readJson('external-knowledge/card-rules.json') ?? { terms: [], plotPatterns: [] };
+  const evidenceExcerpts = readJson('external-knowledge/evidence/excerpts.json')?.excerpts ?? [];
+  const evidenceReviews = readJson('external-knowledge/evidence/reviews.json')?.reviews ?? [];
+  const sourceCatalog = readJson('external-knowledge/catalog/sources.json') ?? [];
 
   return buildOutlineRelationGraph({
     storySource,
@@ -111,6 +114,9 @@ function buildGraph() {
     cardRules,
     styleArticles: articleRegistry?.articles ?? [],
     styleTaxonomy,
+    evidenceExcerpts,
+    evidenceReviews,
+    sourceCatalog,
     concepts: SEEDED_CONCEPTS,
     auditRegistry
   });
@@ -134,6 +140,12 @@ function printStats(graph) {
     styleTechniqueCount: stats.styleTechniqueCount,
     styleEvidenceCount: stats.styleEvidenceCount,
     styleDimensionCount: stats.styleDimensionCount,
+    evidenceNodeCount: stats.evidenceNodeCount,
+    sourceNodeCount: stats.sourceNodeCount,
+    ragStubCount: stats.ragStubCount,
+    ragMissingEvidenceCount: stats.ragMissingEvidenceCount,
+    pendingEvidenceCount: stats.pendingEvidenceCount,
+    confirmedEvidenceCount: stats.confirmedEvidenceCount,
     byType: stats.byType,
     byRelation: stats.byRelation
   }, null, 2));

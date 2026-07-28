@@ -81,6 +81,9 @@ function buildFixtureGraph(overrides = {}) {
     cardRules: readJson('external-knowledge/card-rules.json'),
     styleArticles: (readJson('docs/写作资产/外部风格研究/article-registry.json').articles || []).slice(0, 20),
     styleTaxonomy: readJson('project-navigation/style-taxonomy.json'),
+    evidenceExcerpts: readJson('external-knowledge/evidence/excerpts.json').excerpts || [],
+    evidenceReviews: readJson('external-knowledge/evidence/reviews.json').reviews || [],
+    sourceCatalog: readJson('external-knowledge/catalog/sources.json'),
     concepts: SEEDED_CONCEPTS,
     auditRegistry: readJson('docs/知识检索校准/registry.json'),
     ...overrides
@@ -112,11 +115,13 @@ test('does not project detail-concept nodes; hierarchy lives on RAG', () => {
 
 test('detail RAG cards remain searchable without concept nodes', () => {
   const graph = buildFixtureGraph();
-  const rag = graph.nodes.find((node) => node.title === '挠痒-山药汁');
+  const rag = graph.nodes.find((node) => node.title === '山药汁');
   assert.ok(rag);
   assert.equal(rag.type, 'rag');
   const results = searchOutlineRelationGraph(graph, '挠痒-山药汁');
   assert.ok(results.some((row) => row.id === rag.id));
+  const resultsByNewTitle = searchOutlineRelationGraph(graph, '山药汁');
+  assert.ok(resultsByNewTitle.some((row) => row.id === rag.id));
 });
 
 test('nodes without summary or style-rag still build', () => {
@@ -170,6 +175,8 @@ test('layout merges world into story lane as a numbered tree', async () => {
   assert.equal(GRAPH_LANE_ORDER.includes('world'), false);
   assert.equal(GRAPH_LANE_ORDER.includes('series'), false);
   assert.equal(GRAPH_LANE_ORDER.includes('concept'), false);
+  assert.equal(GRAPH_LANE_ORDER.includes('evidence'), false);
+  assert.equal(GRAPH_LANE_ORDER.includes('source'), false);
 
   const graph = buildFixtureGraph();
   const worldNodes = graph.nodes.filter((node) => node.type === 'world');
@@ -266,7 +273,7 @@ test('RAG cards include definitions and hierarchy metadata', () => {
   const ragNodes = graph.nodes.filter((node) => node.type === 'rag');
   assert.ok(ragNodes.length >= 14, `expected enriched RAG cards, got ${ragNodes.length}`);
   assert.ok(ragNodes.some((node) => node.title === '挠痒'));
-  assert.ok(ragNodes.some((node) => node.title === '挠痒-山药汁'));
+  assert.ok(ragNodes.some((node) => node.title === '山药汁'));
   const tickling = ragNodes.find((node) => node.title === '挠痒');
   assert.ok(tickling?.summary || tickling?.description);
 });

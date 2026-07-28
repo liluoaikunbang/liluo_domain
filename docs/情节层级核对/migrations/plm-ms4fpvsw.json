@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "migrationId": "plm-ms4fpvsw",
+  "confirmationId": "plc-ms4fpvse",
+  "decision": "split-plot-and-rag",
+  "sourcePlotId": "plot-059",
+  "createdAt": "2026-07-28T09:09:42.103Z",
+  "plan": {
+    "decision": "split-plot-and-rag",
+    "sourcePlotId": "plot-059",
+    "targetRag": {
+      "newRagId": "rag.restraint.context.teacher",
+      "title": "教师",
+      "cardType": "context",
+      "ragLayer": "concept",
+      "parentCardIds": [
+        "rag.restraint.context.occupation"
+      ],
+      "aliases": [
+        "职业-教师",
+        "授课",
+        "捆缚授课"
+      ],
+      "oldIds": [
+        "bondage_tag:sg:职业-教师"
+      ],
+      "knowledgeSeed": [
+        "教师是可跨故事复用的职业场景条件：课堂秩序、板书/握笔需求、公开讲授与旁观者期待，会改变受限时仍需保留的局部行动能力。",
+        "它描述职业切口，不等于某次山村捆缚授课事件。"
+      ],
+      "expressionSeed": [
+        "表现重点常落在“还能教”与“仍被限制”的并存：哪只手能动、如何握笔、如何面向学生。",
+        "可用课堂动线、板书动作与公开注视组织场面，但不把单次报恩或村庄结果写进概念。"
+      ]
+    },
+    "plotRemainder": {
+      "keepOriginalId": true,
+      "proposedTitle": "槐湾村-捆缚授课",
+      "proposedSummary": "槐湾村的孩子们围着璃落听故事、认字，村民随后把闲置小屋改成小教室，请她正式开课。璃落授课时仍保持约束：左手反剪固定在背后，右臂贴身只留小臂活动，手指用纱布和胶带包裹，只露出两根用来握笔。黄翠每日早晚照料与换绑；约一个月后沈芷抵达教室，看见她以这种姿态站在讲台上给孩子们上课。",
+      "characters": [
+        "璃落",
+        "黄翠",
+        "沈芷"
+      ],
+      "worldBiases": [
+        "1-浮光掠影"
+      ],
+      "plotKind": "restraint",
+      "maturity": "scene-ready",
+      "usedByLabels": [
+        "浮光掠影-槐湾村"
+      ],
+      "development": {
+        "premise": "村民请璃落给孩子们开课，教室很快搭起来",
+        "escalation": "授课期间她一直维持局部受限的教学姿态",
+        "turn": "沈芷抵达时看见妹妹以捆缚姿态站在讲台上",
+        "consequence": "村庄承认她的教学贡献，后续转向药材合作与离去安排"
+      }
+    },
+    "edgeMigrationPlan": [
+      {
+        "action": "redirect",
+        "fromId": "world-1-glimmering-glance-huaiwan-village",
+        "relation": "contains/plotRefs",
+        "toId": "plot-059",
+        "reason": "故事应改为引用 RAG，不再把职业概念当作情节 contains"
+      },
+      {
+        "action": "add",
+        "fromId": "world-1-glimmering-glance-huaiwan-village",
+        "relation": "references/ragRefs",
+        "toId": "rag.restraint.context.教师",
+        "reason": "故事直接引用可复用职业场景 RAG"
+      }
+    ],
+    "affectedStoryEntries": [
+      "world-1-glimmering-glance-huaiwan-village"
+    ],
+    "affectedSourceFiles": [
+      "src/game/data/plot_outline/catalog.json",
+      "src/game/data/story_outline/sources/1-modern.json"
+    ],
+    "note": "plan only; main data untouched until apply with confirm token"
+  },
+  "ragResult": {
+    "cardId": "rag.restraint.context.teacher",
+    "filePath": "external-knowledge/cards/restraint/rag.restraint.context.teacher.json",
+    "created": false
+  },
+  "parentRagResult": {
+    "cardId": "rag.restraint.context.occupation",
+    "created": false,
+    "filePath": null
+  },
+  "changedFiles": [
+    "external-knowledge/cards/restraint/rag.restraint.context.teacher.json",
+    "external-knowledge/cards/restraint/rag.restraint.context.occupation.json",
+    "src/game/data/story_outline/sources/1-modern.json",
+    "src/game/data/plot_outline/catalog.json"
+  ],
+  "rollback": {
+    "restoreCatalogFromSnapshot": true,
+    "snapshotHint": "pls-ms4f5rj0"
+  }
+}

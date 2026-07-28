@@ -1,0 +1,7 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": null,
+  "items": [],
+  "neverPrompt": [],
+  "notes": "新紧缚名词候选箱。识别后不自动正式纳入；用户选择后才 create-stub / research / build-review-pack。"
+}

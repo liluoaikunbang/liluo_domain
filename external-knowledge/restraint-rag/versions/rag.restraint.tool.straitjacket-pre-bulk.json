@@ -1,0 +1,72 @@
+{
+  "cardId": "rag.restraint.tool.straitjacket",
+  "title": "拘束衣",
+  "domain": "restraint",
+  "cardType": "tool",
+  "aliases": [],
+  "summary": "拘束衣以衣物结构包覆躯干和手臂，使四肢活动范围随整体闭合而缩小。",
+  "definition": "依靠衣物包覆和固定结构限制上身或全身动作的器具类别。",
+  "sourceRefs": [
+    {
+      "sourceId": "fb-src-000013",
+      "segmentId": "fb-src-000013-seg-00010",
+      "sourcePath": "external-knowledge/sources/fiction-bondage/不知道作者/古堡.md",
+      "startLine": 82,
+      "endLine": 90
+    },
+    {
+      "sourceId": "fb-src-000033",
+      "segmentId": "fb-src-000033-seg-00038",
+      "sourcePath": "external-knowledge/sources/fiction-bondage/不知道作者/无限拘束乐园.md",
+      "startLine": 1189,
+      "endLine": 1220
+    }
+  ],
+  "evidenceStatus": "partial",
+  "contentStatus": "complete",
+  "reviewStatus": "candidate",
+  "directQuoteIncluded": false,
+  "canonical": false,
+  "knowledgeScope": "external-fiction-reference",
+  "migration": {
+    "batchId": "tag-rag-restructure-v1",
+    "oldIds": [
+      "bondage_tag:拘束衣"
+    ],
+    "generatedFrom": "legacy-tag-title-only",
+    "evidenceLayer": "v1",
+    "evidenceMigratedAt": "2026-07-28T07:14:30.285Z"
+  },
+  "ragLayer": "category",
+  "parentCardIds": [],
+  "evidenceRefs": [
+    "ev-fbsrc000013-0e0aba7ec0d43059",
+    "ev-fbsrc000033-3e22e68e2161b366"
+  ],
+  "sourceRecordIds": [
+    "fb-src-000013",
+    "fb-src-000033"
+  ],
+  "claims": [
+    {
+      "id": "rag.restraint.tool.straitjacket::claim:definition:0",
+      "label": "定义",
+      "content": "依靠衣物包覆和固定结构限制上身或全身动作的器具类别。",
+      "claimType": "definition",
+      "evidenceRefs": [
+        "ev-fbsrc000013-0e0aba7ec0d43059",
+        "ev-fbsrc000033-3e22e68e2161b366"
+      ],
+      "supportStatus": "pending",
+      "reviewStatus": "pending",
+      "origin": "external-summary"
+    }
+  ],
+  "retrievalPolicy": {
+    "graphVisible": true,
+    "searchable": true,
+    "relationAnchor": true,
+    "contentRetrievable": false,
+    "evidenceRetrievable": true
+  }
+}

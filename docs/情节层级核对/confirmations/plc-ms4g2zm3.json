@@ -1,0 +1,208 @@
+{
+  "schemaVersion": 1,
+  "confirmationId": "plc-ms4g2zm3",
+  "plotId": "plot-062",
+  "decision": "split-plot-and-rag",
+  "userNote": "用户确认：拆分；情节电影绑替-片场长时拘束补拍；女仆酒店去掉plot-062且不挂演员RAG",
+  "overrides": {
+    "parentRagTarget": {
+      "existingRagId": "rag.restraint.context.occupation",
+      "title": "职业场景",
+      "cardType": "context",
+      "ragLayer": "category",
+      "parentCardIds": []
+    },
+    "ragTarget": {
+      "newRagId": "rag.restraint.context.actor",
+      "title": "演员",
+      "cardType": "context",
+      "ragLayer": "concept",
+      "parentCardIds": [
+        "rag.restraint.context.occupation"
+      ],
+      "aliases": [
+        "职业-演员",
+        "绑替",
+        "捆绑替身"
+      ],
+      "oldIds": [
+        "bondage_tag:sg:职业-演员"
+      ],
+      "knowledgeSeed": [
+        "演员是可跨故事复用的职业场景条件：片场/舞台的表演要求、镜头时长、NG 与补拍会改变受限时仍需配合表演的边界。",
+        "它描述职业切口，不等于某次电影绑替兼职事件。"
+      ],
+      "expressionSeed": [
+        "表现重点常落在表演情绪与真实受限体感的错位，以及通告式多场换绑。",
+        "可用补拍特写、导演要求与收工照料组织场面，但不把单次暑假档期写进概念。"
+      ]
+    },
+    "plotRemainder": {
+      "keepOriginalId": true,
+      "proposedTitle": "电影绑替-片场长时拘束补拍",
+      "proposedSummary": "璃落暑假在片场做捆绑替身，负责补拍需要展示捆绑特写的镜头，几乎整天保持被绑状态，一场接一场换绑。她常因太享受而演不出被绑时的紧张，被导演提醒收着点。某场捆绑镜头特别多，她一连被绑好几天；工作人员喊咔后给她喂水，她很快成了团宠。苏婉儿曾来探班。",
+      "characters": [
+        "璃落",
+        "苏婉儿"
+      ],
+      "worldBiases": [
+        "1-浮光掠影"
+      ],
+      "plotKind": "restraint",
+      "maturity": "scene-ready",
+      "usedBy": [
+        "world-1-glimmering-glance-movie-bound-stand-in"
+      ],
+      "usedByLabels": [
+        "浮光掠影-电影绑替兼职"
+      ],
+      "development": {
+        "premise": "璃落接片场绑替，专补长时间捆绑特写",
+        "escalation": "多场换绑与连续数日拘束把强度推高",
+        "turn": "因太享受而 NG，导演要求她收着演",
+        "consequence": "成为团宠，并与苏婉儿探班重逢"
+      }
+    },
+    "storyActions": [
+      {
+        "storyKey": "world-1-glimmering-glance-maid-hotel",
+        "removePlotId": "plot-062",
+        "removeRagId": "rag.restraint.context.actor",
+        "addRagId": false,
+        "clearLegacyIncludes": [
+          "职业-演员"
+        ]
+      }
+    ]
+  },
+  "proposalSnapshot": {
+    "sourcePlotId": "plot-062",
+    "title": "演员",
+    "number": "062",
+    "groupId": "plot-group-025",
+    "groupTitle": "戏弄与霸凌",
+    "plotKind": "mixed",
+    "usageStatus": "used",
+    "recommendation": "move-to-rag",
+    "recommendedLayer": "rag",
+    "rationale": [
+      "摘要标明由旧职业 specialGameplay 迁移，且把具体过程指向故事正文。",
+      "标题是职业名词，不具备一次独立事件的完整发生结构。",
+      "换人物/世界后仍可复用同一职业场景概念。"
+    ],
+    "reuseTest": {
+      "reusableAcrossStories": true,
+      "explanation": "职业/场景概念可跨故事复用；正文过程不在本条目内。"
+    },
+    "eventTest": {
+      "hasActorOrRole": true,
+      "hasTrigger": false,
+      "hasProcess": true,
+      "hasChangeOrOutcome": false
+    },
+    "placementTest": {
+      "hasFormalWorldPlacement": true,
+      "linkedStoryIds": [
+        "world-1-glimmering-glance-maid-hotel",
+        "world-1-glimmering-glance-movie-bound-stand-in"
+      ]
+    },
+    "proposedRagTarget": {
+      "newRagId": "rag.restraint.context.演员",
+      "title": "演员职业场景",
+      "cardType": "context",
+      "knowledgeSeed": [
+        "演员是可跨故事复用的职业/角色场景条件，不绑定唯一人物、地点或单次结果。",
+        "知识分支应说明该职业场景通常带来的行动边界、可见规则与可复用限制条件。"
+      ],
+      "expressionSeed": [
+        "表达分支应说明该职业场景下受限状态、公开程度与身份反差的表现重点。",
+        "避免把某次故事正文过程写进概念定义。"
+      ]
+    },
+    "edgeMigrationPlan": [
+      {
+        "action": "redirect",
+        "fromId": "world-1-glimmering-glance-maid-hotel",
+        "relation": "contains/plotRefs",
+        "toId": "plot-062",
+        "reason": "故事应改为引用 RAG，不再把职业概念当作情节 contains"
+      },
+      {
+        "action": "add",
+        "fromId": "world-1-glimmering-glance-maid-hotel",
+        "relation": "references/ragRefs",
+        "toId": "rag.restraint.context.演员",
+        "reason": "故事直接引用可复用职业场景 RAG"
+      },
+      {
+        "action": "redirect",
+        "fromId": "world-1-glimmering-glance-movie-bound-stand-in",
+        "relation": "contains/plotRefs",
+        "toId": "plot-062",
+        "reason": "故事应改为引用 RAG，不再把职业概念当作情节 contains"
+      },
+      {
+        "action": "add",
+        "fromId": "world-1-glimmering-glance-movie-bound-stand-in",
+        "relation": "references/ragRefs",
+        "toId": "rag.restraint.context.演员",
+        "reason": "故事直接引用可复用职业场景 RAG"
+      }
+    ],
+    "affectedSourceFiles": [
+      "src/game/data/plot_outline/catalog.json",
+      "src/game/data/story_outline/sources/1-modern.json",
+      "src/game/data/story_outline/sources/1-modern.json"
+    ],
+    "affectedStoryEntries": [
+      "world-1-glimmering-glance-maid-hotel",
+      "world-1-glimmering-glance-movie-bound-stand-in"
+    ],
+    "linkedStories": [
+      {
+        "key": "world-1-glimmering-glance-maid-hotel",
+        "title": "女仆酒店",
+        "sourceFile": "src/game/data/story_outline/sources/1-modern.json",
+        "markdownFiles": [
+          "src/game/data/story_outline/1-modern/2.2-女仆酒店.md"
+        ],
+        "ragRefs": [
+          "rag.restraint.effect.odor-stimulation"
+        ],
+        "plotRefs": [
+          "plot-062",
+          "plot-055"
+        ],
+        "gameplayRefs": []
+      },
+      {
+        "key": "world-1-glimmering-glance-movie-bound-stand-in",
+        "title": "电影绑替兼职",
+        "sourceFile": "src/game/data/story_outline/sources/1-modern.json",
+        "markdownFiles": [
+          "src/game/data/story_outline/1-modern/2.2.1-电影绑替兼职.md"
+        ],
+        "ragRefs": [
+          "rag.restraint.effect.public-humiliation"
+        ],
+        "plotRefs": [
+          "plot-062"
+        ],
+        "gameplayRefs": []
+      }
+    ],
+    "confidence": 0.9,
+    "questionsForUser": [
+      "是否确认将「演员」整体迁入 RAG（建议名：演员职业场景）？",
+      "该 RAG 是否放入紧缚专业 RAG 的 context 类别？若你希望用其他 domain/cardType，请指定。",
+      "关联故事正文里是否仍有一次应单独保留的具体事件？若有，请给出应保留的情节标题，或选择稍后拆分。"
+    ],
+    "reviewStatus": "proposed",
+    "generatedAt": "2026-07-28T08:54:03.720Z"
+  },
+  "recordedAt": "2026-07-28T09:19:53.547Z",
+  "applied": true,
+  "dryRun": false,
+  "migrationId": "plm-ms4g2zmn"
+}

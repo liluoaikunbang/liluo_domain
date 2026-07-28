@@ -1,0 +1,94 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Shared evidence excerpt (RAG + Style-RAG)",
+  "type": "object",
+  "required": [
+    "id",
+    "sourceId",
+    "evidenceRoles",
+    "extractionOrigin",
+    "reviewStatus",
+    "rightsScope"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^ev-[a-z0-9][a-z0-9._-]{7,120}$"
+    },
+    "sourceId": { "type": "string", "minLength": 1 },
+    "segmentId": { "type": ["string", "null"] },
+    "excerptPreview": {
+      "type": "string",
+      "maxLength": 120,
+      "description": "Short safe preview for search/UI. Full text is resolved from the source file at runtime."
+    },
+    "excerptStorage": {
+      "enum": ["source-resolved", "inline-public-safe", "private-cache"]
+    },
+    "location": {
+      "type": "object",
+      "properties": {
+        "section": { "type": "string" },
+        "heading": { "type": "string" },
+        "paragraphStart": { "type": "integer", "minimum": 1 },
+        "paragraphEnd": { "type": "integer", "minimum": 1 },
+        "lineStart": { "type": "integer", "minimum": 1 },
+        "lineEnd": { "type": "integer", "minimum": 1 },
+        "pageStart": { "type": "integer", "minimum": 1 },
+        "pageEnd": { "type": "integer", "minimum": 1 },
+        "anchor": { "type": "string" },
+        "sourcePath": { "type": "string" }
+      }
+    },
+    "contextBeforePreview": { "type": "string", "maxLength": 80 },
+    "contextAfterPreview": { "type": "string", "maxLength": 80 },
+    "evidenceRoles": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "definition",
+          "alias",
+          "classification",
+          "distinction",
+          "mechanism",
+          "appearance",
+          "creative-reference",
+          "counterexample",
+          "dispute",
+          "limitation",
+          "other"
+        ]
+      }
+    },
+    "extractionOrigin": {
+      "enum": ["user-selected", "ai-proposed", "rule-extracted", "imported"]
+    },
+    "reviewStatus": {
+      "enum": ["confirmed", "pending", "rejected"]
+    },
+    "rightsScope": {
+      "type": "object",
+      "required": ["privateRag", "publicExport"],
+      "properties": {
+        "privateRag": { "type": "boolean" },
+        "publicExport": { "type": "boolean" }
+      }
+    },
+    "contentHash": { "type": "string" },
+    "sourceMissing": { "type": "boolean" },
+    "usedByCardIds": {
+      "type": "array",
+      "items": { "type": "string" },
+      "uniqueItems": true
+    },
+    "usedByClaimIds": {
+      "type": "array",
+      "items": { "type": "string" },
+      "uniqueItems": true
+    },
+    "createdAt": { "type": "string" },
+    "updatedAt": { "type": "string" }
+  }
+}

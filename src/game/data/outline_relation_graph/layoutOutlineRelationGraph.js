@@ -127,23 +127,42 @@ export function layoutOutlineRelationGraph(graph, options = {}) {
     lane.height = Math.max(cursorY, LANE_PADDING_Y);
   }
 
+  // 只保留有节点的泳道，并重新压紧横向位置（证据/来源等已下线类别不再占位）
+  const visibleLanes = [];
+  let visibleLaneIndex = 0;
+  for (const lane of lanes) {
+    if (!lane.nodes.length) continue;
+    const x = LANE_PADDING_X + visibleLaneIndex * (LANE_WIDTH + LANE_GAP);
+    const dx = x - lane.x;
+    if (dx !== 0) {
+      for (const placed of positioned) {
+        if (placed.laneType !== lane.type) continue;
+        placed.x += dx;
+        placed.laneIndex = visibleLaneIndex;
+        maxX = Math.max(maxX, placed.x + placed.width);
+      }
+    }
+    visibleLanes.push({
+      type: lane.type,
+      laneIndex: visibleLaneIndex,
+      x,
+      width: lane.width,
+      height: lane.height,
+      label: lane.type
+    });
+    visibleLaneIndex += 1;
+  }
+
   return {
     preset,
     mode,
     seed,
     nodeHeight,
     showSummary,
-    lanes: lanes.map((lane) => ({
-      type: lane.type,
-      laneIndex: lane.laneIndex,
-      x: lane.x,
-      width: lane.width,
-      height: lane.height,
-      label: lane.type
-    })),
+    lanes: visibleLanes,
     nodes: positioned,
     nodeById,
-    canvasWidth: Math.max(maxX + 80, lanes.length * (LANE_WIDTH + LANE_GAP) + LANE_PADDING_X),
+    canvasWidth: Math.max(maxX + 80, visibleLanes.length * (LANE_WIDTH + LANE_GAP) + LANE_PADDING_X),
     canvasHeight: Math.max(maxY + 120, 640)
   };
 }

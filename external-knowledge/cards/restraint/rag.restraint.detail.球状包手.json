@@ -1,0 +1,125 @@
+{
+  "sourceRefs": [],
+  "evidenceStatus": "missing",
+  "contentStatus": "stub",
+  "reviewStatus": "candidate",
+  "directQuoteIncluded": false,
+  "canonical": false,
+  "knowledgeScope": "external-fiction-reference",
+  "evidenceRefs": [],
+  "sourceRecordIds": [],
+  "claims": [],
+  "distinctions": [
+    {
+      "targetConceptId": "rag.restraint.detail.石膏-石膏包手",
+      "description": "本卡强调圆球形包裹与手势失效；石膏包手另卡。"
+    }
+  ],
+  "retrievalPolicy": {
+    "graphVisible": true,
+    "searchable": true,
+    "relationAnchor": true,
+    "contentRetrievable": false,
+    "evidenceRetrievable": false,
+    "knowledgeRetrievable": false,
+    "expressionRetrievable": false
+  },
+  "professionalRagVersion": 1,
+  "evidenceBindings": [],
+  "migration": {
+    "batchId": "plot-layer-governance-v1",
+    "oldIds": [],
+    "generatedFrom": "plot-layer-user-request",
+    "createdAt": "2026-07-28T11:05:53.927Z"
+  },
+  "cardId": "rag.restraint.detail.球状包手",
+  "title": "球状包手",
+  "domain": "restraint",
+  "cardType": "term",
+  "aliases": [
+    "圆球包手",
+    "包成石头"
+  ],
+  "summary": "双手被严密包裹成圆球，手指无法分开或改变外形；常使猜拳等手势游戏从一开始就无法公平完成。",
+  "definition": "球状包手指把一只或双手严密包裹成圆球状，使手指完全无法分开或改变外形；是拘束手指下的具体手法，不等于石膏包手，也不等于某次猜拳羞辱的完整事件。",
+  "ragLayer": "concept",
+  "parentCardIds": [
+    "rag.restraint.structure.finger-restraint"
+  ],
+  "knowledge": {
+    "definition": "球状包手指把一只或双手严密包裹成圆球状，使手指完全无法分开或改变外形；是拘束手指下的具体手法，不等于石膏包手，也不等于某次猜拳羞辱的完整事件。",
+    "boundaries": {
+      "includes": [
+        "双手或单手被包成圆球",
+        "手指无法分开展示手势",
+        "可被强迫参加依赖手势的游戏"
+      ],
+      "excludes": [
+        "石膏固封（见石膏包手）",
+        "单次故事完整过程"
+      ]
+    },
+    "distinctions": [
+      {
+        "targetConceptId": "rag.restraint.detail.石膏-石膏包手",
+        "description": "本卡强调圆球形包裹与手势失效；石膏包手另卡。"
+      }
+    ],
+    "aliases": [
+      "圆球包手",
+      "包成石头"
+    ],
+    "parentConceptRefs": [
+      "rag.restraint.structure.finger-restraint"
+    ],
+    "childConceptRefs": [],
+    "relatedConceptRefs": [
+      "rag.restraint.detail.石膏-石膏包手"
+    ],
+    "factualClaims": [],
+    "evidenceRefs": [],
+    "projectInterpretation": "猜拳羞辱等场面可引用本卡；完整事件仍写在情节层。",
+    "commonMisreadings": [
+      "把整段猜拳羞辱当成此概念本身"
+    ],
+    "status": "stub",
+    "evidenceStatus": "missing",
+    "reviewStatus": "pending"
+  },
+  "expression": {
+    "visualFocus": [
+      "圆球状手型",
+      "无法分指"
+    ],
+    "actionLogic": [
+      "先写清包成圆球后还能做什么手势",
+      "再写被强迫参加依赖手势的游戏时如何预设失败"
+    ],
+    "movementEffects": [],
+    "postureEffects": [],
+    "sensoryFocus": [
+      "压迫",
+      "无法活动手指"
+    ],
+    "emotionalPossibilities": [],
+    "narrativeUses": [
+      "把简单游戏改成从一开始就无法公平完成的羞辱"
+    ],
+    "applicableScenes": [],
+    "unsuitableScenes": [],
+    "expressionPrinciples": [
+      "写外形与功能失效，不写可复现包扎教程"
+    ],
+    "commonFailures": [],
+    "prohibitedMisreadings": [],
+    "styleEvidenceRefs": [],
+    "goldExampleRefs": [],
+    "calibrationPairRefs": [],
+    "relatedStyleRagRefs": [],
+    "evidenceRefs": [],
+    "status": "stub",
+    "evidenceStatus": "missing",
+    "reviewStatus": "pending"
+  },
+  "overallStatus": "stub"
+}

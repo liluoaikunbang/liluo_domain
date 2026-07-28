@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Shared source record overlay (extends catalog/sources + Style-RAG articles)",
+  "type": "object",
+  "required": ["id", "title", "sourceType", "rightsStatus", "storageScope", "reviewStatus"],
+  "properties": {
+    "id": { "type": "string", "minLength": 1 },
+    "title": { "type": "string", "minLength": 1 },
+    "author": { "type": "string" },
+    "sourceType": {
+      "enum": [
+        "article",
+        "webpage",
+        "book",
+        "project-document",
+        "user-note",
+        "image-note",
+        "other"
+      ]
+    },
+    "url": { "type": "string" },
+    "localPath": { "type": "string" },
+    "contentHash": { "type": "string" },
+    "createdAt": { "type": "string" },
+    "retrievedAt": { "type": "string" },
+    "updatedAt": { "type": "string" },
+    "language": { "type": "string" },
+    "rightsStatus": {
+      "enum": [
+        "user-authored",
+        "licensed",
+        "public-domain",
+        "copyrighted",
+        "unknown"
+      ]
+    },
+    "storageScope": {
+      "enum": ["private-local", "private-project", "public-safe"]
+    },
+    "reviewStatus": {
+      "enum": ["confirmed", "pending", "missing"]
+    },
+    "legacySourceId": { "type": "string" },
+    "legacyArticleId": { "type": "string" },
+    "channel": {
+      "enum": ["rag", "style-rag", "shared"]
+    }
+  }
+}

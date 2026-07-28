@@ -1,0 +1,138 @@
+{
+  "cardId": "rag.restraint.detail.缝眼",
+  "title": "缝眼",
+  "domain": "restraint",
+  "cardType": "term",
+  "aliases": [
+    "缝合双眼",
+    "缝眼睑"
+  ],
+  "summary": "将眼睑缝合封闭，强制切断或严重限制视觉；属极限折磨下的感官封锁手段。",
+  "definition": "缝眼指将眼睑缝合封闭，使受缚者无法正常看见；是极限折磨下的具体手段，不等于整段丧尸监禁或金属封嘴过程。",
+  "sourceRefs": [],
+  "evidenceStatus": "missing",
+  "contentStatus": "stub",
+  "reviewStatus": "candidate",
+  "directQuoteIncluded": false,
+  "canonical": false,
+  "knowledgeScope": "external-fiction-reference",
+  "ragLayer": "concept",
+  "parentCardIds": [
+    "rag.restraint.effect.extreme-torture"
+  ],
+  "migration": {
+    "batchId": "plot-layer-governance-v1",
+    "oldIds": [],
+    "generatedFrom": "plot-layer-user-request",
+    "createdAt": "2026-07-28T11:01:11.122Z"
+  },
+  "evidenceRefs": [],
+  "sourceRecordIds": [],
+  "claims": [],
+  "distinctions": [
+    {
+      "targetConceptId": "rag.restraint.detail.缝嘴",
+      "description": "本卡专指眼睑缝合封闭视觉；缝嘴另卡。"
+    },
+    {
+      "targetConceptId": "rag.restraint.detail.眼耳口鼻",
+      "description": "眼耳口鼻是感官封堵上位/并列概念；本卡是缝合这一具体手段。"
+    }
+  ],
+  "retrievalPolicy": {
+    "graphVisible": true,
+    "searchable": true,
+    "relationAnchor": true,
+    "contentRetrievable": false,
+    "evidenceRetrievable": false,
+    "knowledgeRetrievable": false,
+    "expressionRetrievable": false
+  },
+  "professionalRagVersion": 1,
+  "knowledge": {
+    "definition": "缝眼指将眼睑缝合封闭，使受缚者无法正常看见；是极限折磨下的具体手段，不等于整段丧尸监禁或金属封嘴过程。",
+    "boundaries": {
+      "includes": [
+        "眼睑被缝合封闭",
+        "视觉被强制切断或严重受限",
+        "难以自行拆线"
+      ],
+      "excludes": [
+        "缝嘴（见姐妹卡）",
+        "金属固封牙齿等非缝合手段",
+        "单次故事里的完整监禁事件过程"
+      ]
+    },
+    "distinctions": [
+      {
+        "targetConceptId": "rag.restraint.detail.缝嘴",
+        "description": "本卡专指眼睑缝合封闭视觉；缝嘴另卡。"
+      },
+      {
+        "targetConceptId": "rag.restraint.detail.眼耳口鼻",
+        "description": "眼耳口鼻是感官封堵上位/并列概念；本卡是缝合这一具体手段。"
+      }
+    ],
+    "aliases": [
+      "缝合双眼",
+      "缝眼睑"
+    ],
+    "parentConceptRefs": [
+      "rag.restraint.effect.extreme-torture"
+    ],
+    "childConceptRefs": [],
+    "relatedConceptRefs": [
+      "rag.restraint.detail.缝嘴",
+      "rag.restraint.detail.眼耳口鼻",
+      "rag.restraint.state.confinement"
+    ],
+    "factualClaims": [],
+    "evidenceRefs": [],
+    "projectInterpretation": "可挂到需要高强度感官/表达封锁的情节；具体事件过程仍写在情节层。",
+    "commonMisreadings": [
+      "把整段丧尸监禁升级链当成此概念本身"
+    ],
+    "status": "stub",
+    "evidenceStatus": "missing",
+    "reviewStatus": "pending"
+  },
+  "expression": {
+    "visualFocus": [
+      "眼睑缝线与无法睁开",
+      "依赖听觉/触觉摸索"
+    ],
+    "actionLogic": [
+      "先写清缝合如何封住视线",
+      "再写在看不见时如何行动或受控"
+    ],
+    "movementEffects": [],
+    "postureEffects": [],
+    "sensoryFocus": [
+      "黑暗",
+      "刺痛",
+      "缝线牵扯"
+    ],
+    "emotionalPossibilities": [],
+    "narrativeUses": [
+      "把视觉切断成长期压迫",
+      "迫使角色改用替代感知"
+    ],
+    "applicableScenes": [],
+    "unsuitableScenes": [],
+    "expressionPrinciples": [
+      "点到缝合结果与行动影响，不写成手术步骤手册"
+    ],
+    "commonFailures": [],
+    "prohibitedMisreadings": [],
+    "styleEvidenceRefs": [],
+    "goldExampleRefs": [],
+    "calibrationPairRefs": [],
+    "relatedStyleRagRefs": [],
+    "evidenceRefs": [],
+    "status": "stub",
+    "evidenceStatus": "missing",
+    "reviewStatus": "pending"
+  },
+  "evidenceBindings": [],
+  "overallStatus": "stub"
+}

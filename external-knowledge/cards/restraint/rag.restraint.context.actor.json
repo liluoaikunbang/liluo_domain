@@ -1,0 +1,104 @@
+{
+  "cardId": "rag.restraint.context.actor",
+  "title": "演员",
+  "domain": "restraint",
+  "cardType": "context",
+  "aliases": [
+    "职业-演员",
+    "绑替",
+    "捆绑替身"
+  ],
+  "summary": "演员是可跨故事复用的职业场景条件：片场/舞台的表演要求、镜头时长、NG 与补拍会改变受限时仍需配合表演的边界。",
+  "definition": "演员是可跨故事复用的职业场景条件：片场/舞台的表演要求、镜头时长、NG 与补拍会改变受限时仍需配合表演的边界。",
+  "sourceRefs": [],
+  "evidenceStatus": "missing",
+  "contentStatus": "stub",
+  "reviewStatus": "candidate",
+  "directQuoteIncluded": false,
+  "canonical": false,
+  "knowledgeScope": "external-fiction-reference",
+  "ragLayer": "concept",
+  "parentCardIds": [
+    "rag.restraint.context.occupation"
+  ],
+  "migration": {
+    "batchId": "plot-layer-governance-v1",
+    "oldIds": [
+      "bondage_tag:sg:职业-演员"
+    ],
+    "generatedFrom": "plot-layer-migration",
+    "createdAt": "2026-07-28T09:19:53.571Z"
+  },
+  "evidenceRefs": [],
+  "sourceRecordIds": [],
+  "claims": [],
+  "retrievalPolicy": {
+    "graphVisible": true,
+    "searchable": true,
+    "relationAnchor": true,
+    "contentRetrievable": false,
+    "evidenceRetrievable": false,
+    "knowledgeRetrievable": false,
+    "expressionRetrievable": false
+  },
+  "professionalRagVersion": 1,
+  "knowledge": {
+    "definition": "演员是可跨故事复用的职业场景条件：片场/舞台的表演要求、镜头时长、NG 与补拍会改变受限时仍需配合表演的边界。",
+    "boundaries": {
+      "includes": [
+        "它描述职业切口，不等于某次电影绑替兼职事件。"
+      ],
+      "excludes": [
+        "不保存某次故事里的唯一人物、地点与结局过程"
+      ]
+    },
+    "distinctions": [],
+    "aliases": [
+      "职业-演员",
+      "绑替",
+      "捆绑替身"
+    ],
+    "parentConceptRefs": [
+      "rag.restraint.context.occupation"
+    ],
+    "childConceptRefs": [],
+    "relatedConceptRefs": [],
+    "factualClaims": [],
+    "evidenceRefs": [],
+    "projectInterpretation": "它描述职业切口，不等于某次电影绑替兼职事件。",
+    "commonMisreadings": [],
+    "status": "stub",
+    "evidenceStatus": "missing",
+    "reviewStatus": "pending"
+  },
+  "expression": {
+    "visualFocus": [],
+    "actionLogic": [],
+    "movementEffects": [],
+    "postureEffects": [],
+    "sensoryFocus": [],
+    "emotionalPossibilities": [],
+    "narrativeUses": [
+      "表现重点常落在表演情绪与真实受限体感的错位，以及通告式多场换绑。",
+      "可用补拍特写、导演要求与收工照料组织场面，但不把单次暑假档期写进概念。"
+    ],
+    "applicableScenes": [],
+    "unsuitableScenes": [],
+    "expressionPrinciples": [
+      "表现重点常落在表演情绪与真实受限体感的错位，以及通告式多场换绑。",
+      "可用补拍特写、导演要求与收工照料组织场面，但不把单次暑假档期写进概念。"
+    ],
+    "commonFailures": [],
+    "prohibitedMisreadings": [],
+    "styleEvidenceRefs": [],
+    "goldExampleRefs": [],
+    "calibrationPairRefs": [],
+    "relatedStyleRagRefs": [],
+    "evidenceRefs": [],
+    "status": "stub",
+    "evidenceStatus": "missing",
+    "reviewStatus": "pending"
+  },
+  "overallStatus": "stub",
+  "evidenceBindings": []
+}

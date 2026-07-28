@@ -1,0 +1,94 @@
+{
+  "sourcePlotId": "plot-059",
+  "title": "教师",
+  "number": "059",
+  "groupId": "plot-group-025",
+  "groupTitle": "戏弄与霸凌",
+  "plotKind": "mixed",
+  "usageStatus": "used",
+  "recommendation": "move-to-rag",
+  "recommendedLayer": "rag",
+  "rationale": [
+    "摘要标明由旧职业 specialGameplay 迁移，且把具体过程指向故事正文。",
+    "标题是职业名词，不具备一次独立事件的完整发生结构。",
+    "换人物/世界后仍可复用同一职业场景概念。"
+  ],
+  "reuseTest": {
+    "reusableAcrossStories": true,
+    "explanation": "职业/场景概念可跨故事复用；正文过程不在本条目内。"
+  },
+  "eventTest": {
+    "hasActorOrRole": true,
+    "hasTrigger": false,
+    "hasProcess": true,
+    "hasChangeOrOutcome": false
+  },
+  "placementTest": {
+    "hasFormalWorldPlacement": true,
+    "linkedStoryIds": [
+      "world-1-glimmering-glance-huaiwan-village"
+    ]
+  },
+  "proposedRagTarget": {
+    "newRagId": "rag.restraint.context.教师",
+    "title": "教师职业场景",
+    "cardType": "context",
+    "knowledgeSeed": [
+      "教师是可跨故事复用的职业/角色场景条件，不绑定唯一人物、地点或单次结果。",
+      "知识分支应说明该职业场景通常带来的行动边界、可见规则与可复用限制条件。"
+    ],
+    "expressionSeed": [
+      "表达分支应说明该职业场景下受限状态、公开程度与身份反差的表现重点。",
+      "避免把某次故事正文过程写进概念定义。"
+    ]
+  },
+  "edgeMigrationPlan": [
+    {
+      "action": "redirect",
+      "fromId": "world-1-glimmering-glance-huaiwan-village",
+      "relation": "contains/plotRefs",
+      "toId": "plot-059",
+      "reason": "故事应改为引用 RAG，不再把职业概念当作情节 contains"
+    },
+    {
+      "action": "add",
+      "fromId": "world-1-glimmering-glance-huaiwan-village",
+      "relation": "references/ragRefs",
+      "toId": "rag.restraint.context.教师",
+      "reason": "故事直接引用可复用职业场景 RAG"
+    }
+  ],
+  "affectedSourceFiles": [
+    "src/game/data/plot_outline/catalog.json",
+    "src/game/data/story_outline/sources/1-modern.json"
+  ],
+  "affectedStoryEntries": [
+    "world-1-glimmering-glance-huaiwan-village"
+  ],
+  "linkedStories": [
+    {
+      "key": "world-1-glimmering-glance-huaiwan-village",
+      "title": "槐湾村",
+      "sourceFile": "src/game/data/story_outline/sources/1-modern.json",
+      "markdownFiles": [
+        "src/game/data/story_outline/1-modern/2.5-槐湾村.md"
+      ],
+      "ragRefs": [],
+      "plotRefs": [
+        "plot-059"
+      ],
+      "gameplayRefs": []
+    }
+  ],
+  "confidence": 0.9,
+  "questionsForUser": [
+    "是否确认将「教师」整体迁入 RAG（建议名：教师职业场景）？",
+    "该 RAG 是否放入紧缚专业 RAG 的 context 类别？若你希望用其他 domain/cardType，请指定。",
+    "关联故事正文里是否仍有一次应单独保留的具体事件？若有，请给出应保留的情节标题，或选择稍后拆分。"
+  ],
+  "reviewStatus": "confirmed",
+  "generatedAt": "2026-07-28T08:54:03.617Z",
+  "userDecision": "split-plot-and-rag",
+  "confirmationId": "plc-ms4fpvse",
+  "updatedAt": "2026-07-28T09:09:42.067Z"
+}

@@ -1,0 +1,127 @@
+{
+  "sourceRefs": [],
+  "evidenceStatus": "missing",
+  "contentStatus": "stub",
+  "reviewStatus": "candidate",
+  "directQuoteIncluded": false,
+  "canonical": false,
+  "knowledgeScope": "external-fiction-reference",
+  "evidenceRefs": [],
+  "sourceRecordIds": [],
+  "claims": [],
+  "distinctions": [
+    {
+      "targetConceptId": "rag.restraint.material.spider-silk",
+      "description": "蜂蜡偏可塑性封固与嵌巢；蛛丝偏缠绕结网与牵引。"
+    }
+  ],
+  "retrievalPolicy": {
+    "graphVisible": true,
+    "searchable": true,
+    "relationAnchor": true,
+    "contentRetrievable": false,
+    "evidenceRetrievable": false,
+    "knowledgeRetrievable": false,
+    "expressionRetrievable": false
+  },
+  "professionalRagVersion": 1,
+  "evidenceBindings": [],
+  "migration": {
+    "batchId": "plot-layer-governance-v1",
+    "oldIds": [],
+    "generatedFrom": "plot-layer-user-request",
+    "createdAt": "2026-07-28T11:09:04.999Z"
+  },
+  "cardId": "rag.restraint.material.beeswax",
+  "title": "蜂蜡",
+  "domain": "restraint",
+  "cardType": "material",
+  "aliases": [
+    "蜂巢蜡封",
+    "蜡封拘束"
+  ],
+  "summary": "温热蜂蜡逐层包覆四肢与躯干，把人物嵌进巢状结构；属生物巢材。",
+  "definition": "蜂蜡指蜂群或蜂族分泌的温热可塑性材料，可逐层包覆四肢与躯干，把人物嵌进巢状结构；是生物巢材下的具体材料，不等于信息素改造，也不等于某次供养奴隶情节。",
+  "ragLayer": "concept",
+  "parentCardIds": [
+    "rag.restraint.material.bio-nest"
+  ],
+  "knowledge": {
+    "definition": "蜂蜡指蜂群或蜂族分泌的温热可塑性材料，可逐层包覆四肢与躯干，把人物嵌进巢状结构；是生物巢材下的具体材料，不等于信息素改造，也不等于某次供养奴隶情节。",
+    "boundaries": {
+      "includes": [
+        "温热蜂蜡逐层固定",
+        "把身体嵌进蜂巢般结构",
+        "长时间贴合封固"
+      ],
+      "excludes": [
+        "信息素改造本身",
+        "蛛丝缠绕（见蛛丝）",
+        "单次供养事件完整过程"
+      ]
+    },
+    "distinctions": [
+      {
+        "targetConceptId": "rag.restraint.material.spider-silk",
+        "description": "蜂蜡偏可塑性封固与嵌巢；蛛丝偏缠绕结网与牵引。"
+      }
+    ],
+    "aliases": [
+      "蜂巢蜡封",
+      "蜡封拘束"
+    ],
+    "parentConceptRefs": [
+      "rag.restraint.material.bio-nest"
+    ],
+    "childConceptRefs": [],
+    "relatedConceptRefs": [
+      "rag.restraint.material.spider-silk"
+    ],
+    "factualClaims": [],
+    "evidenceRefs": [],
+    "projectInterpretation": "蜂群供养等场面可引用本卡；信息素与身份改造另写情节或另卡。",
+    "commonMisreadings": [
+      "把整段信息素供养过程当成蜂蜡材料本身"
+    ],
+    "status": "stub",
+    "evidenceStatus": "missing",
+    "reviewStatus": "pending"
+  },
+  "expression": {
+    "visualFocus": [
+      "温热蜡层逐层加厚",
+      "肢体被嵌进巢壁"
+    ],
+    "actionLogic": [
+      "先写蜡如何贴合并冷却定型",
+      "再写嵌巢后还能动哪里"
+    ],
+    "movementEffects": [],
+    "postureEffects": [],
+    "sensoryFocus": [
+      "温热",
+      "粘滞",
+      "冷却后的硬固"
+    ],
+    "emotionalPossibilities": [],
+    "narrativeUses": [
+      "把人物从可移动状态改成巢内固定件"
+    ],
+    "applicableScenes": [],
+    "unsuitableScenes": [],
+    "expressionPrinciples": [
+      "写材料触感与固定结果，不写成养蜂工艺说明书"
+    ],
+    "commonFailures": [],
+    "prohibitedMisreadings": [],
+    "styleEvidenceRefs": [],
+    "goldExampleRefs": [],
+    "calibrationPairRefs": [],
+    "relatedStyleRagRefs": [],
+    "evidenceRefs": [],
+    "status": "stub",
+    "evidenceStatus": "missing",
+    "reviewStatus": "pending"
+  },
+  "overallStatus": "stub"
+}

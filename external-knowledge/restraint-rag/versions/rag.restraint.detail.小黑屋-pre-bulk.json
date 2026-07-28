@@ -1,0 +1,65 @@
+{
+  "cardId": "rag.restraint.detail.小黑屋",
+  "title": "小黑屋",
+  "domain": "restraint",
+  "cardType": "term",
+  "aliases": [],
+  "summary": "狭小、缺光的封闭空间会压缩姿态选择，并让等待本身成为压力。",
+  "definition": "以黑暗或微光、空间局促和信息隔绝为主要特征的监禁场景。",
+  "sourceRefs": [
+    {
+      "sourceId": "fb-src-000099",
+      "segmentId": "fb-src-000099-seg-00047",
+      "sourcePath": "external-knowledge/sources/fiction-bondage/作者,金主大大/楚曼白/梦馨的复仇.md",
+      "startLine": 638,
+      "endLine": 650
+    }
+  ],
+  "evidenceStatus": "partial",
+  "contentStatus": "complete",
+  "reviewStatus": "candidate",
+  "directQuoteIncluded": false,
+  "canonical": false,
+  "knowledgeScope": "external-fiction-reference",
+  "migration": {
+    "batchId": "tag-rag-restructure-v1",
+    "oldIds": [
+      "bondage_tag:sg:小黑屋"
+    ],
+    "generatedFrom": "legacy-tag-title-only",
+    "evidenceLayer": "v1",
+    "evidenceMigratedAt": "2026-07-28T07:14:30.109Z"
+  },
+  "ragLayer": "concept",
+  "parentCardIds": [
+    "rag.restraint.state.confinement"
+  ],
+  "distinctions": [],
+  "evidenceRefs": [
+    "ev-fbsrc000099-ac56d9ab326803a8"
+  ],
+  "sourceRecordIds": [
+    "fb-src-000099"
+  ],
+  "claims": [
+    {
+      "id": "rag.restraint.detail.小黑屋::claim:definition:0",
+      "label": "定义",
+      "content": "以黑暗或微光、空间局促和信息隔绝为主要特征的监禁场景。",
+      "claimType": "definition",
+      "evidenceRefs": [
+        "ev-fbsrc000099-ac56d9ab326803a8"
+      ],
+      "supportStatus": "pending",
+      "reviewStatus": "pending",
+      "origin": "external-summary"
+    }
+  ],
+  "retrievalPolicy": {
+    "graphVisible": true,
+    "searchable": true,
+    "relationAnchor": true,
+    "contentRetrievable": false,
+    "evidenceRetrievable": true
+  }
+}

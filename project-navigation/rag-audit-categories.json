@@ -38,6 +38,7 @@
       "unused-orphan"
     ],
     "shared": [
+      "confirmed-ok",
       "model-unauthorized-completion",
       "no-source-evidence",
       "wrong-inference",
@@ -50,6 +51,7 @@
     ]
   },
   "labelsZh": {
+    "confirmed-ok": "抽查确认无问题",
     "fact-error": "事实错误",
     "source-error": "来源错误",
     "chunking-unreasonable": "分块不合理",

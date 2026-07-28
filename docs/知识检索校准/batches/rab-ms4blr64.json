@@ -1,0 +1,170 @@
+{
+  "schemaVersion": 1,
+  "batchId": "rab-ms4blr64",
+  "channel": "rag",
+  "channels": [
+    "rag"
+  ],
+  "mode": "random",
+  "exportedAt": "2026-07-28T07:14:30.988Z",
+  "count": 3,
+  "remainingPool": 41,
+  "ragSample": {
+    "includeCards": true,
+    "includeSources": false
+  },
+  "items": [
+    {
+      "index": 1,
+      "channel": "rag",
+      "assetId": "rag.restraint.detail.虐足-小鞋",
+      "title": "虐足-小鞋",
+      "author": "card",
+      "themeDomain": "unknown",
+      "path": "external-knowledge/cards/restraint/rag.restraint.detail.虐足-小鞋.json",
+      "lowConfidence": true,
+      "hitCount": 0,
+      "currentResult": {
+        "assetKind": "card",
+        "cardType": "term",
+        "definition": "",
+        "distinctions": [],
+        "concepts": [],
+        "prerequisites": [],
+        "progression": [],
+        "tags": [],
+        "reviewStatus": "pending",
+        "evidenceStatus": "missing",
+        "contentStatus": "stub",
+        "evidenceRefCount": 0,
+        "claimCount": 0,
+        "sourceRefCount": 0,
+        "knowledgeScope": "external-fiction-reference",
+        "canonical": false,
+        "sameTypePeers": [
+          {
+            "assetId": "rag.restraint.detail.冤罪",
+            "title": "冤罪",
+            "hasDefinition": false
+          },
+          {
+            "assetId": "rag.restraint.detail.寒冷",
+            "title": "寒冷",
+            "hasDefinition": true
+          },
+          {
+            "assetId": "rag.restraint.detail.小笼子",
+            "title": "小笼子",
+            "hasDefinition": false
+          },
+          {
+            "assetId": "rag.restraint.detail.小黑屋",
+            "title": "小黑屋",
+            "hasDefinition": true
+          },
+          {
+            "assetId": "rag.restraint.detail.性刺激-三点刺激",
+            "title": "性刺激-三点刺激",
+            "hasDefinition": false
+          },
+          {
+            "assetId": "rag.restraint.detail.感官刺激-芥末辣椒等",
+            "title": "感官刺激-芥末辣椒等",
+            "hasDefinition": false
+          }
+        ]
+      }
+    },
+    {
+      "index": 2,
+      "channel": "rag",
+      "assetId": "rag.restraint.duration.permanent-restraint",
+      "title": "永久拘束",
+      "author": "card",
+      "themeDomain": "unknown",
+      "path": "external-knowledge/cards/restraint/rag.restraint.duration.permanent-restraint.json",
+      "lowConfidence": true,
+      "hitCount": 0,
+      "currentResult": {
+        "assetKind": "card",
+        "cardType": "duration",
+        "definition": "不是一次场景中的短暂固定，而是被故事明确设定为长期、无明确解除期或近似永久的拘束状态。",
+        "distinctions": [],
+        "concepts": [],
+        "prerequisites": [],
+        "progression": [],
+        "tags": [],
+        "reviewStatus": "candidate",
+        "evidenceStatus": "partial",
+        "contentStatus": "complete",
+        "evidenceRefCount": 1,
+        "claimCount": 1,
+        "sourceRefCount": 1,
+        "knowledgeScope": "external-fiction-reference",
+        "canonical": false,
+        "sameTypePeers": []
+      }
+    },
+    {
+      "index": 3,
+      "channel": "rag",
+      "assetId": "rag.restraint.detail.水牢",
+      "title": "水牢",
+      "author": "card",
+      "themeDomain": "unknown",
+      "path": "external-knowledge/cards/restraint/rag.restraint.detail.水牢.json",
+      "lowConfidence": true,
+      "hitCount": 0,
+      "currentResult": {
+        "assetKind": "card",
+        "cardType": "term",
+        "definition": "角色被限制在有积水或可改变水位的封闭设施中；水体既是环境，也是持续改变行动条件的压力源。",
+        "distinctions": [],
+        "concepts": [],
+        "prerequisites": [],
+        "progression": [],
+        "tags": [],
+        "reviewStatus": "candidate",
+        "evidenceStatus": "partial",
+        "contentStatus": "complete",
+        "evidenceRefCount": 2,
+        "claimCount": 1,
+        "sourceRefCount": 2,
+        "knowledgeScope": "external-fiction-reference",
+        "canonical": false,
+        "sameTypePeers": [
+          {
+            "assetId": "rag.restraint.detail.冤罪",
+            "title": "冤罪",
+            "hasDefinition": false
+          },
+          {
+            "assetId": "rag.restraint.detail.寒冷",
+            "title": "寒冷",
+            "hasDefinition": true
+          },
+          {
+            "assetId": "rag.restraint.detail.小笼子",
+            "title": "小笼子",
+            "hasDefinition": false
+          },
+          {
+            "assetId": "rag.restraint.detail.小黑屋",
+            "title": "小黑屋",
+            "hasDefinition": true
+          },
+          {
+            "assetId": "rag.restraint.detail.性刺激-三点刺激",
+            "title": "性刺激-三点刺激",
+            "hasDefinition": false
+          },
+          {
+            "assetId": "rag.restraint.detail.感官刺激-芥末辣椒等",
+            "title": "感官刺激-芥末辣椒等",
+            "hasDefinition": false
+          }
+        ]
+      }
+    }
+  ]
+}

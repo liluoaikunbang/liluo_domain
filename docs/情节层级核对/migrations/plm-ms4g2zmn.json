@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 1,
+  "migrationId": "plm-ms4g2zmn",
+  "confirmationId": "plc-ms4g2zm3",
+  "decision": "split-plot-and-rag",
+  "sourcePlotId": "plot-062",
+  "createdAt": "2026-07-28T09:19:53.596Z",
+  "plan": {
+    "decision": "split-plot-and-rag",
+    "sourcePlotId": "plot-062",
+    "targetRag": {
+      "newRagId": "rag.restraint.context.actor",
+      "title": "演员",
+      "cardType": "context",
+      "ragLayer": "concept",
+      "parentCardIds": [
+        "rag.restraint.context.occupation"
+      ],
+      "aliases": [
+        "职业-演员",
+        "绑替",
+        "捆绑替身"
+      ],
+      "oldIds": [
+        "bondage_tag:sg:职业-演员"
+      ],
+      "knowledgeSeed": [
+        "演员是可跨故事复用的职业场景条件：片场/舞台的表演要求、镜头时长、NG 与补拍会改变受限时仍需配合表演的边界。",
+        "它描述职业切口，不等于某次电影绑替兼职事件。"
+      ],
+      "expressionSeed": [
+        "表现重点常落在表演情绪与真实受限体感的错位，以及通告式多场换绑。",
+        "可用补拍特写、导演要求与收工照料组织场面，但不把单次暑假档期写进概念。"
+      ]
+    },
+    "plotRemainder": {
+      "keepOriginalId": true,
+      "proposedTitle": "电影绑替-片场长时拘束补拍",
+      "proposedSummary": "璃落暑假在片场做捆绑替身，负责补拍需要展示捆绑特写的镜头，几乎整天保持被绑状态，一场接一场换绑。她常因太享受而演不出被绑时的紧张，被导演提醒收着点。某场捆绑镜头特别多，她一连被绑好几天；工作人员喊咔后给她喂水，她很快成了团宠。苏婉儿曾来探班。",
+      "characters": [
+        "璃落",
+        "苏婉儿"
+      ],
+      "worldBiases": [
+        "1-浮光掠影"
+      ],
+      "plotKind": "restraint",
+      "maturity": "scene-ready",
+      "usedBy": [
+        "world-1-glimmering-glance-movie-bound-stand-in"
+      ],
+      "usedByLabels": [
+        "浮光掠影-电影绑替兼职"
+      ],
+      "development": {
+        "premise": "璃落接片场绑替，专补长时间捆绑特写",
+        "escalation": "多场换绑与连续数日拘束把强度推高",
+        "turn": "因太享受而 NG，导演要求她收着演",
+        "consequence": "成为团宠，并与苏婉儿探班重逢"
+      }
+    },
+    "edgeMigrationPlan": [
+      {
+        "action": "redirect",
+        "fromId": "world-1-glimmering-glance-maid-hotel",
+        "relation": "contains/plotRefs",
+        "toId": "plot-062",
+        "reason": "故事应改为引用 RAG，不再把职业概念当作情节 contains"
+      },
+      {
+        "action": "add",
+        "fromId": "world-1-glimmering-glance-maid-hotel",
+        "relation": "references/ragRefs",
+        "toId": "rag.restraint.context.演员",
+        "reason": "故事直接引用可复用职业场景 RAG"
+      },
+      {
+        "action": "redirect",
+        "fromId": "world-1-glimmering-glance-movie-bound-stand-in",
+        "relation": "contains/plotRefs",
+        "toId": "plot-062",
+        "reason": "故事应改为引用 RAG，不再把职业概念当作情节 contains"
+      },
+      {
+        "action": "add",
+        "fromId": "world-1-glimmering-glance-movie-bound-stand-in",
+        "relation": "references/ragRefs",
+        "toId": "rag.restraint.context.演员",
+        "reason": "故事直接引用可复用职业场景 RAG"
+      }
+    ],
+    "affectedStoryEntries": [
+      "world-1-glimmering-glance-maid-hotel",
+      "world-1-glimmering-glance-movie-bound-stand-in"
+    ],
+    "affectedSourceFiles": [
+      "src/game/data/plot_outline/catalog.json",
+      "src/game/data/story_outline/sources/1-modern.json",
+      "src/game/data/story_outline/sources/1-modern.json"
+    ],
+    "note": "plan only; main data untouched until apply with confirm token"
+  },
+  "ragResult": {
+    "cardId": "rag.restraint.context.actor",
+    "filePath": "external-knowledge/cards/restraint/rag.restraint.context.actor.json",
+    "created": true
+  },
+  "parentRagResult": {
+    "cardId": "rag.restraint.context.occupation",
+    "created": false,
+    "filePath": null
+  },
+  "changedFiles": [
+    "external-knowledge/cards/restraint/rag.restraint.context.actor.json",
+    "external-knowledge/cards/restraint/rag.restraint.context.occupation.json",
+    "src/game/data/story_outline/sources/1-modern.json",
+    "src/game/data/plot_outline/catalog.json"
+  ],
+  "rollback": {
+    "restoreCatalogFromSnapshot": true,
+    "snapshotHint": "pls-ms4f5rj0"
+  }
+}
