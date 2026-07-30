@@ -432,12 +432,15 @@
     "key": "world-1-glimmering-glance-rust-salt",
     "markdownPath": "src/game/data/story_outline/1-modern/3.3-锈盐.md",
     "missingItems": [
-      "玩法｜锈盐·船舱脱困工具链｜缺少可搜集小工具、分阶段解除步骤及每一步解锁的具体操作",
-      "调查｜锈盐·值班区证据筛选｜缺少可调查文件与物件、有效证据判定、错误选择反馈及存储卡提示方式",
-      "流程｜锈盐·甲板追逐与失败恢复｜缺少追逐路线危险、看守追击规则、跳海成功条件及再次被抓后的补救流程",
-      "流程｜锈盐·海岸至灰巷｜缺少 Rin 救起璃落后到藏卡完成之间的玩家目标、可执行活动与失败反馈",
+      "玩法｜锈盐·船舱脱困工具链｜已确认受限行动应作为可拆分的玩法规则，不以单一“拘束抗性”概括；仍缺观察、移动、环境交互、道具操作与逐步脱困等动作在各约束状态下的可用范围、解锁顺序与输入规则",
+      "调查｜锈盐·值班区证据筛选｜已确认以环境观察作为存储卡提示与证据筛选的主要方式；仍缺可调查文件与物件、有效证据判定及错误选择反馈",
+      "流程｜锈盐·甲板追逐与失败恢复｜已确认允许多次失败；每次被抓回后难度递增。仍缺追逐路线危险、看守追击规则、跳海成功条件及困难补救流程",
+      "流程｜锈盐·海岸至灰巷｜已确认以观察 Rin 的可信度、躲避巡查、选择藏卡点和利用保护费冲突创造行动窗口构成流程，并突出双方互相利用；仍缺各阶段目标、失败反馈与完成条件",
       "玩法｜锈盐·唐人街与填埋场｜缺少交易、出卖、逼供、活埋救援和官方收网阶段的玩家参与方式与阶段目标",
-      "状态｜锈盐·章节状态写入｜缺少伤势与约束变化、存储卡状态、Rin 关系、女孩去向及进入《监狱风云》的存档字段设计"
+      "状态｜锈盐·章节状态写入｜缺少伤势与约束变化、存储卡状态、Rin 关系、女孩去向及进入《监狱风云》的存档字段设计",
+      "RAG｜紧缚RAG｜补全「活埋」正文与来源",
+      "RAG｜紧缚RAG｜补全「社死」正文与来源",
+      "RAG｜紧缚RAG｜补全「小笼子」正文与来源"
     ],
     "title": "锈盐"
   },
@@ -581,6 +584,25 @@
     "title": "红线鬼域"
   },
   {
+    "key": "world-3-mortal-dao-autumn-alliance-hunt",
+    "markdownPath": "src/game/data/story_outline/3-ancient/2.0-秋盟惊猎.md",
+    "missingItems": [
+      "地图｜秋盟惊猎·场景结构｜缺少秋盟猎苑、旧围栏缓冲沙地与档案库的实际区域及连接",
+      "流程｜秋盟惊猎·惊马与查档｜缺少玩家介入惊马、协查与档案检索的可执行流程",
+      "玩法｜秋盟惊猎·调查循环｜缺少调查操作、证据反馈与失败恢复规则"
+    ],
+    "title": "秋盟惊猎"
+  },
+  {
+    "key": "world-3-mortal-dao-cold-palace-garden",
+    "markdownPath": "src/game/data/story_outline/3-ancient/2.1-冷宫荒圃.md",
+    "missingItems": [
+      "玩法｜冷宫荒圃·古代种田循环｜缺少田块规模、作物与季节规则，以及失败和恢复反馈",
+      "流程｜冷宫荒圃·离开冷宫｜缺少璃落获得离宫机会的具体事件与条件"
+    ],
+    "title": "冷宫荒圃"
+  },
+  {
     "key": "world-3-mortal-dao-counterattack",
     "markdownPath": "src/game/data/story_outline/3-ancient/5.1-缚身反杀.md",
     "missingItems": [
@@ -601,6 +623,15 @@
       "地图｜永世束缚·场景结构｜缺少实际地点、区域连接、道路限制与返回变化"
     ],
     "title": "永世束缚"
+  },
+  {
+    "key": "world-3-mortal-dao-marriage-northbound",
+    "markdownPath": "src/game/data/story_outline/3-ancient/2.3-和亲北行.md",
+    "missingItems": [
+      "流程｜和亲北行·离宫整备｜缺少和亲诏令、离宫时机与侍女去留的具体安排",
+      "玩法｜和亲北行·田地迁入｜缺少迁入操作、传承空间限制与跨旅途持续开放的规则"
+    ],
+    "title": "和亲北行"
   },
   {
     "key": "world-3-mortal-dao-royal-garden-beast-hunt",
@@ -645,6 +676,25 @@
       "地图｜瓦窑封灾·场景结构｜缺少实际地点、区域连接、道路限制与返回变化"
     ],
     "title": "瓦窑封灾"
+  },
+  {
+    "key": "world-3-mortal-dao-wedding-escort-crisis",
+    "markdownPath": "src/game/data/story_outline/3-ancient/3.1-接亲惊变.md",
+    "missingItems": [
+      "地图｜接亲惊变·接亲路｜缺少接亲队行程、伏击区域与脱险路线",
+      "流程｜接亲惊变·刺杀应对｜缺少璃落与阿勒珂共险、脱离伏击与返回队伍的可执行流程",
+      "玩法｜接亲惊变·护送与求生｜缺少护送、战斗或潜行的操作循环及失败恢复规则"
+    ],
+    "title": "接亲惊变"
+  },
+  {
+    "key": "world-3-mortal-dao-well-relic-retrieval",
+    "markdownPath": "src/game/data/story_outline/3-ancient/2.2-井下取遗.md",
+    "missingItems": [
+      "流程｜井下取遗·离开冷宫与重返古井｜缺少离宫机会、下井过程与取遗后的离开方式",
+      "设定｜井下取遗·传承空间｜缺少遗物的具体形态、空间限制与可用于翻盘的已确认能力"
+    ],
+    "title": "井下取遗"
   },
   {
     "key": "world-4-monica-empire-life-simulator",

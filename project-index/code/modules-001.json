@@ -369,7 +369,7 @@
     "id": "src/game/data/global/updateRecords.js",
     "indexVersion": 1,
     "references": {},
-    "sourceHash": "e9897af04c0210169a74f2a16ce2cdf50118d086fef5c007963bc5155c1ad28f",
+    "sourceHash": "a3ec1613443457d2fe9afffd30a05f9618b1fbbd31df0452f161b2cb92c68737",
     "sourcePath": "src/game/data/global/updateRecords.js",
     "subtype": "module",
     "summary": "module：src/game/data/global/updateRecords.js",
@@ -2107,40 +2107,21 @@
       "imports": [
         "vue",
         "../../../data/gameplay_outline/gameplayOutline",
-        "../../../data/plot_outline/layerReviewQueue.json",
         "../../../data/plot_outline/plotOutline.js",
         "../../../data/story_outline/storyCharacterOutline",
         "./CharacterOutlinePanel.vue",
         "./GameplayMenuPanel.vue",
-        "./PlotLayerReviewPanel.vue",
         "./PlotOutlinePanel.vue",
         "./RelationGraphPanel.vue",
         "./StoryMenuPanel.vue"
       ]
     },
-    "sourceHash": "ef6f263f4f0f0b43ea46e8032fe15358052d0489381c7fd208a0c158b05c9712",
+    "sourceHash": "578b46d39b7e24bfc897449041c7ff6af570f4834fd3c50b5129134bb3339a1c",
     "sourcePath": "src/game/views/components/base/OutlineMenuPanel.vue",
     "subtype": "vue",
     "summary": "vue：src/game/views/components/base/OutlineMenuPanel.vue",
     "summarySource": "structured-fields",
     "title": "OutlineMenuPanel.vue",
-    "type": "code-module"
-  },
-  {
-    "id": "src/game/views/components/base/PlotLayerReviewPanel.vue",
-    "indexVersion": 1,
-    "references": {
-      "imports": [
-        "vue",
-        "./GameScrollArea.vue"
-      ]
-    },
-    "sourceHash": "758771bbff151c4d125a4302423836b5457fdd3fe580dd288ac62bccf15ed495",
-    "sourcePath": "src/game/views/components/base/PlotLayerReviewPanel.vue",
-    "subtype": "vue",
-    "summary": "vue：src/game/views/components/base/PlotLayerReviewPanel.vue",
-    "summarySource": "structured-fields",
-    "title": "PlotLayerReviewPanel.vue",
     "type": "code-module"
   },
   {

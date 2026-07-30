@@ -1,6 +1,6 @@
 ---
 name: random-story-outline-interview
-description: Randomly select an incomplete 璃落 story-outline node, reconstruct confirmed JSON/Markdown context, and ask a focused interview. Use for 随机抽取、按世界访谈、继续随机提问；do not use for plot-first placement from the plot catalog, or for directly drafting or restructuring a specified node.
+description: Randomly select an incomplete 璃落 story-outline node, reconstruct confirmed JSON/Markdown context, and ask a focused interview. Use for 随机提问、随机抽取、按世界访谈、继续随机提问；do not use for plot-first placement from the plot catalog, or for directly drafting or restructuring a specified node.
 ---
 
 # Random Story Outline Interview
@@ -8,7 +8,7 @@ description: Randomly select an incomplete 璃落 story-outline node, reconstruc
 Read `docs/系统说明/故事大纲随机提问模板.md` completely. Use the lightweight random path unless the user explicitly requests retrieval, ranking, comparison, or best-match selection. For write-back, also read the outline template and the context required by the authoring Skill.
 
 1. Build ordinary-node candidates with non-empty `missingItems`; exclude categories, main-quest containers and withdrawn nodes unless requested.
-2. For requests such as “随机”“随便”“问一个” or no selection criteria, use a local random number to select directly from the real pool. Do not invoke a subagent. Read only the selected source node and its Markdown; do not automatically expand parents, children, siblings, world options, gameplay catalogs, or plot catalogs. Follow an additional reference only when it is directly required to avoid asking something already answered.
+2. For requests such as “随机提问”“随机”“随便”“问一个” or no selection criteria, use a local random number to select directly from the real pool. Do not invoke a subagent. Read only the selected source node and its Markdown; do not automatically expand parents, children, siblings, world options, gameplay catalogs, or plot catalogs. Follow an additional reference only when it is directly required to avoid asking something already answered.
 3. Apply an optional world filter, random seed, or recently-asked exclusion locally. Report filters and seed when present; an unseeded lightweight draw need not invent a seed.
 4. Invoke a read-only context/audit agent only when the user explicitly asks for retrieval or comparison, such as “找最完整的”“找最接近某条件的”“比较后选择”“检索匹配项”, or when the requested result cannot be determined from the candidate fields without cross-file evidence.
 5. Distinguish an empty concept from existing narrative that lacks production information.

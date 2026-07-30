@@ -2,7 +2,7 @@
   {
     "id": "docs/大纲玩法总表整合规格.md",
     "indexVersion": 1,
-    "sourceHash": "e6ffc2c182c5d46b69bd8fe08bb3b13038d005c4d08a966ac329d0bb515ec40b",
+    "sourceHash": "fc22f57d20f5cc858909806a673690b4a43d4a6eba2d232b1badbe6c83d6fdcc",
     "sourcePath": "docs/大纲玩法总表整合规格.md",
     "subtype": "other",
     "summary": "大纲故事与玩法整合说明",
@@ -1355,7 +1355,7 @@
   {
     "id": "docs/功能更新/120-故事大纲游戏化模板与世界选项库.md",
     "indexVersion": 1,
-    "sourceHash": "bacf72ff54741d687092ff1a5f63b3d59eec4e00ba0293a78a3ce0ad13ad0ccc",
+    "sourceHash": "e952c6b6d2a3bc1266374eeec3ae8f69ae4a57aeb0ccf493c343100d04f5893d",
     "sourcePath": "docs/功能更新/120-故事大纲游戏化模板与世界选项库.md",
     "subtype": "update",
     "summary": "故事大纲游戏化模板与世界选项库",
@@ -1696,7 +1696,7 @@
   {
     "id": "docs/功能更新/151-故事大纲局部设定快速路径.md",
     "indexVersion": 1,
-    "sourceHash": "153b6bc5073e4384ca0e6fdaae046b99a1419b0fee05cd092c1a11871f93d646",
+    "sourceHash": "3116c8ce6b58b620ae442077fd25edb69d90ae23b623cfb0ae05f743ce191906",
     "sourcePath": "docs/功能更新/151-故事大纲局部设定快速路径.md",
     "subtype": "update",
     "summary": "151-故事大纲局部设定快速路径",
@@ -1947,9 +1947,20 @@
     "type": "document"
   },
   {
+    "id": "docs/功能更新/174-移除大纲层级核对工作流.md",
+    "indexVersion": 1,
+    "sourceHash": "da704d15f09239674675f2ffcc4159963cf65a12135f65a825e07440bbdd7301",
+    "sourcePath": "docs/功能更新/174-移除大纲层级核对工作流.md",
+    "subtype": "update",
+    "summary": "174-移除大纲层级核对工作流",
+    "summarySource": "title-only",
+    "title": "174-移除大纲层级核对工作流",
+    "type": "document"
+  },
+  {
     "id": "docs/功能更新目录.md",
     "indexVersion": 1,
-    "sourceHash": "8b1a7c8635cb4140c2895817134edaefe051b30d4a1bea4fff32ece3604714e0",
+    "sourceHash": "6cace1b3f97c4ab33a14f969f13a8ff39289b4431be83f28b61a2ec143936a7d",
     "sourcePath": "docs/功能更新目录.md",
     "subtype": "other",
     "summary": "功能更新目录",
@@ -2301,7 +2312,7 @@
   {
     "id": "docs/技能说明/liluo-story-outline-authoring.md",
     "indexVersion": 1,
-    "sourceHash": "09a8af4a324e03ef24c5feb1a3b575784f165938aea8dd301d24be5466f72c1e",
+    "sourceHash": "2988d07732c607b1a3587a22a69bf3281e281164781b896b30f818c05ea80dc5",
     "sourcePath": "docs/技能说明/liluo-story-outline-authoring.md",
     "subtype": "skill",
     "summary": "liluo-story-outline-authoring",
@@ -2378,12 +2389,12 @@
   {
     "id": "docs/情节层级核对/README.md",
     "indexVersion": 1,
-    "sourceHash": "15678839fd4c80a5279b64d391cff51291c91a3d716edb69972db3ffeaf4e1da",
+    "sourceHash": "6b9bb18d140714c73e5d6f2d030063b8de4e91ad7d25b094a409e178f4feda2a",
     "sourcePath": "docs/情节层级核对/README.md",
     "subtype": "other",
-    "summary": "情节层级核对",
+    "summary": "情节层级核对（历史归档）",
     "summarySource": "title-only",
-    "title": "情节层级核对",
+    "title": "情节层级核对（历史归档）",
     "type": "document"
   },
   {
@@ -2488,7 +2499,7 @@
   {
     "id": "docs/设计记忆/创作决策/CDR-010-故事情节RAG三层边界与用户裁决.md",
     "indexVersion": 1,
-    "sourceHash": "2cb0aeb2db64874b20b7192142ea0eb02f6e19dfde00e8177adad536ea671ccc",
+    "sourceHash": "73864a2b00dc440753aff3e9522f4d59b715944e8a94122beb8da86e11e1362a",
     "sourcePath": "docs/设计记忆/创作决策/CDR-010-故事情节RAG三层边界与用户裁决.md",
     "subtype": "other",
     "summary": "CDR-010：故事—情节—RAG 三层边界与用户裁决",
@@ -2497,9 +2508,31 @@
     "type": "document"
   },
   {
+    "id": "docs/设计记忆/创作决策/CDR-011-主线容器与故事节点分工.md",
+    "indexVersion": 1,
+    "sourceHash": "72ee2b1f937a8b7d15241b2883f6c7e4737d9db95795ccaa9bc15bc18f949a72",
+    "sourcePath": "docs/设计记忆/创作决策/CDR-011-主线容器与故事节点分工.md",
+    "subtype": "other",
+    "summary": "CDR-011：主线容器与故事节点分工",
+    "summarySource": "title-only",
+    "title": "CDR-011：主线容器与故事节点分工",
+    "type": "document"
+  },
+  {
+    "id": "docs/设计记忆/创作决策/CDR-012-主线与世界趋势核对门槛.md",
+    "indexVersion": 1,
+    "sourceHash": "4675c828753724bb6d4208fa10f7c2529d41efe5bb615ada6f3ce0dedf70d5a4",
+    "sourcePath": "docs/设计记忆/创作决策/CDR-012-主线与世界趋势核对门槛.md",
+    "subtype": "other",
+    "summary": "CDR-012：主线与世界趋势核对门槛",
+    "summarySource": "title-only",
+    "title": "CDR-012：主线与世界趋势核对门槛",
+    "type": "document"
+  },
+  {
     "id": "docs/设计记忆/创作决策/README.md",
     "indexVersion": 1,
-    "sourceHash": "9cbfc03c806398f4fbcd76de057f48b8bfa6d2c5855f3277d93f9a16ab5546d5",
+    "sourceHash": "9ec3b73c142e6791cce590ce5dae2cafd1a8a54503fe99c6a59404c2c3d9501e",
     "sourcePath": "docs/设计记忆/创作决策/README.md",
     "subtype": "other",
     "summary": "创作决策记录",
@@ -2714,39 +2747,6 @@
     "summary": "项目宪章",
     "summarySource": "title-only",
     "title": "项目宪章",
-    "type": "document"
-  },
-  {
-    "id": "docs/设计记忆/项目组灵魂/表达模式.md",
-    "indexVersion": 1,
-    "sourceHash": "a7a9b9ef3ac9321380e98dd049d9371464234aedd0880ee23f53d9e089b76bee",
-    "sourcePath": "docs/设计记忆/项目组灵魂/表达模式.md",
-    "subtype": "other",
-    "summary": "表达模式",
-    "summarySource": "title-only",
-    "title": "表达模式",
-    "type": "document"
-  },
-  {
-    "id": "docs/设计记忆/项目组灵魂/成员/怀月.md",
-    "indexVersion": 1,
-    "sourceHash": "7532e0519dc7d26a5f5f11b5d4f1dccd5316093d878dbbfbc99479ab925c85db",
-    "sourcePath": "docs/设计记忆/项目组灵魂/成员/怀月.md",
-    "subtype": "other",
-    "summary": "怀月｜序志｜藏忆",
-    "summarySource": "title-only",
-    "title": "怀月｜序志｜藏忆",
-    "type": "document"
-  },
-  {
-    "id": "docs/设计记忆/项目组灵魂/成员/璃落.md",
-    "indexVersion": 1,
-    "sourceHash": "eac2b46e6b2d56aea9d42ea2415a6f4b042df19f6dc8805cada07f92ce94dfff",
-    "sourcePath": "docs/设计记忆/项目组灵魂/成员/璃落.md",
-    "subtype": "other",
-    "summary": "璃落｜神思｜总枢",
-    "summarySource": "title-only",
-    "title": "璃落｜神思｜总枢",
     "type": "document"
   }
 ]

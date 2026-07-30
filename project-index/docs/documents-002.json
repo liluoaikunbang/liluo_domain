@@ -1,5 +1,38 @@
 [
   {
+    "id": "docs/设计记忆/项目组灵魂/表达模式.md",
+    "indexVersion": 1,
+    "sourceHash": "a7a9b9ef3ac9321380e98dd049d9371464234aedd0880ee23f53d9e089b76bee",
+    "sourcePath": "docs/设计记忆/项目组灵魂/表达模式.md",
+    "subtype": "other",
+    "summary": "表达模式",
+    "summarySource": "title-only",
+    "title": "表达模式",
+    "type": "document"
+  },
+  {
+    "id": "docs/设计记忆/项目组灵魂/成员/怀月.md",
+    "indexVersion": 1,
+    "sourceHash": "7532e0519dc7d26a5f5f11b5d4f1dccd5316093d878dbbfbc99479ab925c85db",
+    "sourcePath": "docs/设计记忆/项目组灵魂/成员/怀月.md",
+    "subtype": "other",
+    "summary": "怀月｜序志｜藏忆",
+    "summarySource": "title-only",
+    "title": "怀月｜序志｜藏忆",
+    "type": "document"
+  },
+  {
+    "id": "docs/设计记忆/项目组灵魂/成员/璃落.md",
+    "indexVersion": 1,
+    "sourceHash": "eac2b46e6b2d56aea9d42ea2415a6f4b042df19f6dc8805cada07f92ce94dfff",
+    "sourcePath": "docs/设计记忆/项目组灵魂/成员/璃落.md",
+    "subtype": "other",
+    "summary": "璃落｜神思｜总枢",
+    "summarySource": "title-only",
+    "title": "璃落｜神思｜总枢",
+    "type": "document"
+  },
+  {
     "id": "docs/设计记忆/项目组灵魂/成员/凌音.md",
     "indexVersion": 1,
     "sourceHash": "b8e5d397cfac7808be0f621c1c45020583a55336d544814033bf6405206647d5",
@@ -365,7 +398,7 @@
   {
     "id": "docs/系统说明/故事大纲条目模板.md",
     "indexVersion": 1,
-    "sourceHash": "672658f6a08682cf999ebd4e10b4383cd153509015f4a0e9d821694fe0b89a3a",
+    "sourceHash": "6da56546533834100202f1e8ac77cc4c7de309595494da8c40f935f68e577052",
     "sourcePath": "docs/系统说明/故事大纲条目模板.md",
     "subtype": "system",
     "summary": "故事大纲条目模板",
@@ -376,7 +409,7 @@
   {
     "id": "docs/系统说明/故事情节RAG边界治理系统.md",
     "indexVersion": 1,
-    "sourceHash": "0ae8847956fb56d50e06c294f2a24d3e5ae0a3c0cd64aec1e55bbf17440ebeb1",
+    "sourceHash": "a87eb7c6f4293c7eaf27a36de2a109d5b99b8ef22a576a1b49efc22d17546438",
     "sourcePath": "docs/系统说明/故事情节RAG边界治理系统.md",
     "subtype": "system",
     "summary": "故事—情节—RAG 边界治理系统",
@@ -519,7 +552,7 @@
   {
     "id": "docs/系统说明/情节条目系统.md",
     "indexVersion": 1,
-    "sourceHash": "90384e80f01b46dcc0dbfc8e77d32706df9a0d5f125159a9616654be9e1abab9",
+    "sourceHash": "3e6ada8b281f30975b3a294cf3593516641b1eba02b7a8e62b3cea75b0c26668",
     "sourcePath": "docs/系统说明/情节条目系统.md",
     "subtype": "system",
     "summary": "情节条目系统",
@@ -838,7 +871,7 @@
   {
     "id": "docs/系统说明/Tag体系收缩与RAG情节迁移系统.md",
     "indexVersion": 1,
-    "sourceHash": "4373fad53b99a7ed163b2672c9a406d0700100a280e11200a670e8c732ade440",
+    "sourceHash": "a38f2e77b6ebfee02d25c571f718fbb9765921dd1bed90ce1fd31eb9647392b9",
     "sourcePath": "docs/系统说明/Tag体系收缩与RAG情节迁移系统.md",
     "subtype": "system",
     "summary": "Tag 体系收缩与 RAG / 情节迁移系统",
@@ -2246,7 +2279,7 @@
   {
     "id": "docs/用户命令目录.md",
     "indexVersion": 1,
-    "sourceHash": "18f8b0ee3f4db66fbd4776b03635e6cbd08b8714b65036b207e24296ec4a5e00",
+    "sourceHash": "7f3813920dc0e084eff0759d4388b5d4ef0a3c699b6fa282d82b05cb97d3bb02",
     "sourcePath": "docs/用户命令目录.md",
     "subtype": "other",
     "summary": "用户命令目录",
@@ -2714,39 +2747,6 @@
     "summary": "普通 RAG 抽查批次 rab-ms2x503f",
     "summarySource": "title-only",
     "title": "普通 RAG 抽查批次 rab-ms2x503f",
-    "type": "document"
-  },
-  {
-    "id": "docs/知识检索校准/batches/rab-ms41ij6s.md",
-    "indexVersion": 1,
-    "sourceHash": "b740723b731b0b04baf9ef69169c4455d264abd9afb72b763d4892ef46d93f24",
-    "sourcePath": "docs/知识检索校准/batches/rab-ms41ij6s.md",
-    "subtype": "other",
-    "summary": "Style-RAG 抽查批次 rab-ms41ij6s",
-    "summarySource": "title-only",
-    "title": "Style-RAG 抽查批次 rab-ms41ij6s",
-    "type": "document"
-  },
-  {
-    "id": "docs/知识检索校准/batches/rab-ms41ij83.md",
-    "indexVersion": 1,
-    "sourceHash": "3a490d5499be371a4a4914922958dae17f0994bb904c09cee47728e564b064c8",
-    "sourcePath": "docs/知识检索校准/batches/rab-ms41ij83.md",
-    "subtype": "other",
-    "summary": "普通 RAG 抽查批次 rab-ms41ij83",
-    "summarySource": "title-only",
-    "title": "普通 RAG 抽查批次 rab-ms41ij83",
-    "type": "document"
-  },
-  {
-    "id": "docs/知识检索校准/batches/rab-ms41ij8y.md",
-    "indexVersion": 1,
-    "sourceHash": "5f666a26468ef6d4a24ea76d96539e9153f773a7cb272161e70553999b462d80",
-    "sourcePath": "docs/知识检索校准/batches/rab-ms41ij8y.md",
-    "subtype": "other",
-    "summary": "普通 RAG 抽查批次 rab-ms41ij8y",
-    "summarySource": "title-only",
-    "title": "普通 RAG 抽查批次 rab-ms41ij8y",
     "type": "document"
   }
 ]

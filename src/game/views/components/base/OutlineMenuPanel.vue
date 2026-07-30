@@ -24,10 +24,6 @@
       v-else-if="activeSection === 'plot'"
       :catalog="plotOutline"
     />
-    <PlotLayerReviewPanel
-      v-else-if="activeSection === 'plot-layer-review'"
-      :queue="plotLayerReviewQueue"
-    />
     <GameplayMenuPanel
       v-else-if="activeSection === 'gameplay'"
       :catalog="gameplayOutline"
@@ -46,12 +42,10 @@
 <script setup>
 import { ref, watch } from 'vue';
 import { gameplayOutline } from '../../../data/gameplay_outline/gameplayOutline';
-import layerReviewQueue from '../../../data/plot_outline/layerReviewQueue.json';
 import { plotOutline } from '../../../data/plot_outline/plotOutline.js';
 import { storyCharacterOutline } from '../../../data/story_outline/storyCharacterOutline';
 import CharacterOutlinePanel from './CharacterOutlinePanel.vue';
 import GameplayMenuPanel from './GameplayMenuPanel.vue';
-import PlotLayerReviewPanel from './PlotLayerReviewPanel.vue';
 import PlotOutlinePanel from './PlotOutlinePanel.vue';
 import RelationGraphPanel from './RelationGraphPanel.vue';
 import StoryMenuPanel from './StoryMenuPanel.vue';
@@ -63,12 +57,9 @@ const props = defineProps({
   }
 });
 
-const plotLayerReviewQueue = layerReviewQueue;
-
 const sections = [
   { key: 'story', label: '故事' },
   { key: 'plot', label: '情节' },
-  { key: 'plot-layer-review', label: '层级核对' },
   { key: 'gameplay', label: '玩法' },
   { key: 'character', label: '人物/组织' },
   { key: 'relation-graph', label: '关联图谱' }

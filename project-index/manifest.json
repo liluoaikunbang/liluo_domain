@@ -12,7 +12,7 @@
     },
     "code": {
       "enabled": true,
-      "entryCount": 163,
+      "entryCount": 162,
       "outputs": [
         "code/modules-001.json"
       ],
@@ -20,7 +20,7 @@
     },
     "docs": {
       "enabled": true,
-      "entryCount": 538,
+      "entryCount": 541,
       "outputs": [
         "docs/documents-001.json",
         "docs/documents-002.json",
@@ -42,9 +42,10 @@
     },
     "gameplay": {
       "enabled": true,
-      "entryCount": 108,
+      "entryCount": 112,
       "outputs": [
         "gameplay/catalog.json",
+        "gameplay/categories/gameplay-group-00.json",
         "gameplay/categories/gameplay-group-01.json",
         "gameplay/categories/gameplay-group-02.json",
         "gameplay/categories/gameplay-group-03.json",
@@ -65,7 +66,7 @@
     },
     "story": {
       "enabled": true,
-      "entryCount": 161,
+      "entryCount": 166,
       "outputs": [
         "story/nodes/nodes-001.json"
       ],
@@ -84,7 +85,7 @@
   "generatorVersion": "1.0.3",
   "graph": {
     "enabled": true,
-    "entryCount": 184,
+    "entryCount": 191,
     "outputs": [
       "graph/story-relations.json",
       "graph/reverse-references/all.json"

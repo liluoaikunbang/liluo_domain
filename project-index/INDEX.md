@@ -4,13 +4,13 @@
 
 | 领域 | 记录数 | 入口 |
 |---|---:|---|
-| story | 161 | `story/SUMMARY.md` |
-| gameplay | 108 | `gameplay/SUMMARY.md` |
+| story | 166 | `story/SUMMARY.md` |
+| gameplay | 112 | `gameplay/SUMMARY.md` |
 | game | 45 | `game/SUMMARY.md` |
-| code | 163 | `code/SUMMARY.md` |
+| code | 162 | `code/SUMMARY.md` |
 | assets | 694 | `assets/SUMMARY.md` |
-| docs | 538 | `docs/SUMMARY.md` |
-| graph | 184 | `graph/SUMMARY.md` |
+| docs | 541 | `docs/SUMMARY.md` |
+| graph | 191 | `graph/SUMMARY.md` |
 
 ## 最小读取建议
 

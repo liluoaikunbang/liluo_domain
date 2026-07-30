@@ -78,8 +78,17 @@
     },
     {
       "ruleId": "story-outline-default-expand",
-      "title": "故事内容默认扩充既有节点并控制子节点增长",
+      "title": "主线容器不得代替故事块，充分情节优先提议建节点",
       "authority": "docs/系统说明/故事大纲条目模板.md",
+      "decision": "docs/设计记忆/创作决策/CDR-011-主线容器与故事节点分工.md",
+      "consumers": ["AGENTS.md", ".agents/skills/liluo-project/liluo-story-outline-authoring/SKILL.md", "docs/技能说明/liluo-story-outline-authoring.md"],
+      "status": "active"
+    },
+    {
+      "ruleId": "mainline-world-trend-alignment",
+      "title": "主线子节点写入前必须核对主线与世界类别趋势",
+      "authority": "docs/系统说明/故事大纲条目模板.md",
+      "decision": "docs/设计记忆/创作决策/CDR-012-主线与世界趋势核对门槛.md",
       "consumers": ["AGENTS.md", ".agents/skills/liluo-project/liluo-story-outline-authoring/SKILL.md", "docs/技能说明/liluo-story-outline-authoring.md"],
       "status": "active"
     },
@@ -434,10 +443,7 @@
       "consumers": [
         "AGENTS.md",
         "docs/系统说明/情节条目系统.md",
-        "docs/系统说明/Tag体系收缩与RAG情节迁移系统.md",
-        "docs/用户命令目录.md",
-        "scripts/plot-layer/plot-layer.mjs",
-        "src/game/views/components/base/PlotLayerReviewPanel.vue"
+        "docs/系统说明/Tag体系收缩与RAG情节迁移系统.md"
       ],
       "status": "active"
     }

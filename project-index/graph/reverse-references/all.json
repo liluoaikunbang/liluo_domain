@@ -142,6 +142,18 @@
     "type": "reverse-reference"
   },
   {
+    "entityId": "gameplay-089",
+    "entityType": "gameplay",
+    "id": "gameplay:gameplay-089",
+    "references": {
+      "storyKeys": [
+        "world-3-mortal-dao-cold-palace-garden",
+        "world-3-mortal-dao-marriage-northbound"
+      ]
+    },
+    "type": "reverse-reference"
+  },
+  {
     "entityId": "gameplay-090",
     "entityType": "gameplay",
     "id": "gameplay:gameplay-090",
@@ -297,6 +309,17 @@
     "references": {
       "storyKeys": [
         "world-1-glimmering-glance-midnight-city-exploration"
+      ]
+    },
+    "type": "reverse-reference"
+  },
+  {
+    "entityId": "gameplay-121",
+    "entityType": "gameplay",
+    "id": "gameplay:gameplay-121",
+    "references": {
+      "storyKeys": [
+        "world-1-glimmering-glance-rust-salt"
       ]
     },
     "type": "reverse-reference"

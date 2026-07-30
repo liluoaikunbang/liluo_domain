@@ -1,0 +1,83 @@
+{
+  "cardId": "rag.restraint.term.吊缚",
+  "title": "吊缚",
+  "domain": "restraint",
+  "cardType": "term",
+  "aliases": [],
+  "summary": "骨架卡：吊缚（待用户确认后才可检索）",
+  "definition": "",
+  "sourceRefs": [],
+  "evidenceStatus": "missing",
+  "contentStatus": "stub",
+  "reviewStatus": "pending",
+  "directQuoteIncluded": false,
+  "canonical": false,
+  "knowledgeScope": "external-fiction-reference",
+  "ragLayer": "concept",
+  "parentCardIds": [
+    "rag.restraint.state.confinement"
+  ],
+  "evidenceRefs": [],
+  "sourceRecordIds": [],
+  "claims": [],
+  "knowledge": {
+    "definition": "",
+    "boundaries": {
+      "includes": [],
+      "excludes": []
+    },
+    "distinctions": [],
+    "aliases": [],
+    "parentConceptRefs": [],
+    "childConceptRefs": [],
+    "relatedConceptRefs": [],
+    "factualClaims": [],
+    "evidenceRefs": [],
+    "projectInterpretation": "",
+    "commonMisreadings": [],
+    "status": "stub",
+    "evidenceStatus": "missing",
+    "reviewStatus": "pending"
+  },
+  "expression": {
+    "visualFocus": [],
+    "actionLogic": [],
+    "movementEffects": [],
+    "postureEffects": [],
+    "sensoryFocus": [],
+    "emotionalPossibilities": [],
+    "narrativeUses": [],
+    "applicableScenes": [],
+    "unsuitableScenes": [],
+    "expressionPrinciples": [],
+    "commonFailures": [],
+    "prohibitedMisreadings": [],
+    "styleEvidenceRefs": [],
+    "goldExampleRefs": [],
+    "calibrationPairRefs": [],
+    "relatedStyleRagRefs": [],
+    "evidenceRefs": [],
+    "status": "stub",
+    "evidenceStatus": "missing",
+    "reviewStatus": "pending"
+  },
+  "overallStatus": "stub",
+  "professionalRagVersion": 1,
+  "retrievalPolicy": {
+    "graphVisible": true,
+    "searchable": true,
+    "relationAnchor": true,
+    "contentRetrievable": false,
+    "evidenceRetrievable": false,
+    "knowledgeRetrievable": false,
+    "expressionRetrievable": false
+  },
+  "migration": {
+    "professionalRag": {
+      "batchId": "professional-rag-dual-branch-v1",
+      "migratedAt": "2026-07-28T15:42:46.886Z",
+      "strategy": "knowledge-from-legacy-expression-stub",
+      "notes": "知识分支由既有 definition/claims/evidence 迁入；表达分支保留骨架（有 creative-note/abstractPatterns 时写入草稿）；同一概念不另建重复卡。"
+    }
+  }
+}

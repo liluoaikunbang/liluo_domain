@@ -7,7 +7,7 @@
     "presentationModes": [
       "main-map"
     ],
-    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourceHash": "b08b4823641d24b13caefad6b3d7b9d7f47e56d08094e411011f7cd934934a89",
     "sourcePath": "src/game/data/gameplay_outline/catalog.json",
     "summary": "玩家进入由房间、走廊、机关和出口组成的区域，逐步完成探索。",
     "summarySource": "source-json.summary",
@@ -84,7 +84,7 @@
     "presentationModes": [
       "main-map"
     ],
-    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourceHash": "b08b4823641d24b13caefad6b3d7b9d7f47e56d08094e411011f7cd934934a89",
     "sourcePath": "src/game/data/gameplay_outline/catalog.json",
     "summary": "地图不是单个房间，而是较大的连续迷宫。",
     "summarySource": "source-json.summary",
@@ -149,7 +149,7 @@
     "presentationModes": [
       "main-map"
     ],
-    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourceHash": "b08b4823641d24b13caefad6b3d7b9d7f47e56d08094e411011f7cd934934a89",
     "sourcePath": "src/game/data/gameplay_outline/catalog.json",
     "summary": "以村庄、城市、森林、战场、废墟或大型设施为完整区域。",
     "summarySource": "source-json.summary",
@@ -207,7 +207,7 @@
       "main-map",
       "special-map"
     ],
-    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourceHash": "b08b4823641d24b13caefad6b3d7b9d7f47e56d08094e411011f7cd934934a89",
     "sourcePath": "src/game/data/gameplay_outline/catalog.json",
     "summary": "不一定使用传统横版，也可以在俯视地图中实现“能力解锁道路”。",
     "summarySource": "source-json.summary",

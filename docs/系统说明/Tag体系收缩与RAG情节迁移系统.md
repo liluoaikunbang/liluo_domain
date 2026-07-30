@@ -43,7 +43,7 @@
 
 ## 迁移与回滚
 
-情节库向 RAG 的**逐条**层级迁移使用 `npm run plot-layer:*`（默认只读审计与 dry-run 确认；`--apply --confirm-token` 才写主数据）。详见 [故事情节RAG边界治理系统](./故事情节RAG边界治理系统.md)。
+情节库向 RAG 的跨层级调整须在对话中逐项说明建议并获得用户确认后，按最小范围直接更新权威主数据；禁止未经确认的批量迁移。详见 [故事情节RAG边界治理系统](./故事情节RAG边界治理系统.md)。
 
 历史 Tag 重结构批次：`npm run migration:tag-rag:dry-run` 生成
 `project-workflows/runs/tag-rag-restructure-v1.dry-run.json`。清单逐项保存旧 ID、旧名称、旧层级、迁移类型、新 ID、受影响故事/情节和处理状态，是本轮回滚与审计依据。

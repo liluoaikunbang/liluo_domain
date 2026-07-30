@@ -8,7 +8,7 @@
   "polarity": "positive",
   "mode": "routing-plan",
   "costTier": "standard",
-  "userPrompt": "随机抽取一个未完成故事节点并向我进行聚焦访谈。",
+  "userPrompt": "随机提问。",
   "contextFiles": [],
   "expected": {
     "requiredSkills": [

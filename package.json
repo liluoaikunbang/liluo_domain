@@ -194,17 +194,7 @@
     "restraint-rag:migrate-pilot": "node scripts/restraint-rag/restraint-rag.mjs migrate-pilot",
     "restraint-rag:migrate-all": "node scripts/restraint-rag/restraint-rag.mjs migrate-pilot --all",
     "restraint-rag:writing-context": "node scripts/restraint-rag/restraint-rag.mjs writing-context",
-    "restraint-rag:test": "node --test scripts/tests/restraint-professional-rag.test.mjs",
-    "plot-layer:audit": "node scripts/plot-layer/plot-layer.mjs audit",
-    "plot-layer:review-queue": "node scripts/plot-layer/plot-layer.mjs review-queue",
-    "plot-layer:show": "node scripts/plot-layer/plot-layer.mjs show",
-    "plot-layer:propose": "node scripts/plot-layer/plot-layer.mjs propose",
-    "plot-layer:confirm": "node scripts/plot-layer/plot-layer.mjs confirm",
-    "plot-layer:defer": "node scripts/plot-layer/plot-layer.mjs defer",
-    "plot-layer:rollback": "node scripts/plot-layer/plot-layer.mjs rollback",
-    "plot-layer:status": "node scripts/plot-layer/plot-layer.mjs status",
-    "plot-layer:rebuild-affected": "node scripts/plot-layer/plot-layer.mjs rebuild-affected",
-    "plot-layer:test": "node --test scripts/tests/plot-layer-governance.test.mjs"
+    "restraint-rag:test": "node --test scripts/tests/restraint-professional-rag.test.mjs"
   },
   "dependencies": {
     "clipboard": "^2.0.11",

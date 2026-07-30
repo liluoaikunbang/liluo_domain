@@ -1,0 +1,62 @@
+[
+  {
+    "category": "紧缚状态行动",
+    "categoryId": "gameplay-group-00",
+    "id": "gameplay-121",
+    "indexVersion": 1,
+    "presentationModes": [
+      "main-map"
+    ],
+    "sourceHash": "b08b4823641d24b13caefad6b3d7b9d7f47e56d08094e411011f7cd934934a89",
+    "sourcePath": "src/game/data/gameplay_outline/catalog.json",
+    "summary": "角色在常规紧缚状态下进行观察、紧缚移动、环境交互与道具尝试；状态变化逐步扩展可执行行动，而不是用单一能力概括。",
+    "summarySource": "source-json.summary",
+    "title": "常规紧缚行动",
+    "type": "gameplay"
+  },
+  {
+    "category": "紧缚状态行动",
+    "categoryId": "gameplay-group-00",
+    "id": "gameplay-122",
+    "indexVersion": 1,
+    "presentationModes": [
+      "main-map"
+    ],
+    "sourceHash": "b08b4823641d24b13caefad6b3d7b9d7f47e56d08094e411011f7cd934934a89",
+    "sourcePath": "src/game/data/gameplay_outline/catalog.json",
+    "summary": "在紧缚状态下利用有限行动、环境与时机应对敌人，而非沿用完整战斗动作集。",
+    "summarySource": "source-json.summary",
+    "title": "紧缚战斗",
+    "type": "gameplay"
+  },
+  {
+    "category": "紧缚状态行动",
+    "categoryId": "gameplay-group-00",
+    "id": "gameplay-123",
+    "indexVersion": 1,
+    "presentationModes": [
+      "main-map"
+    ],
+    "sourceHash": "b08b4823641d24b13caefad6b3d7b9d7f47e56d08094e411011f7cd934934a89",
+    "sourcePath": "src/game/data/gameplay_outline/catalog.json",
+    "summary": "在紧缚移动和追击压力下选择路线、掩护与时机，完成阶段性脱离。",
+    "summarySource": "source-json.summary",
+    "title": "紧缚逃跑",
+    "type": "gameplay"
+  },
+  {
+    "category": "紧缚状态行动",
+    "categoryId": "gameplay-group-00",
+    "id": "gameplay-124",
+    "indexVersion": 1,
+    "presentationModes": [
+      "main-map"
+    ],
+    "sourceHash": "b08b4823641d24b13caefad6b3d7b9d7f47e56d08094e411011f7cd934934a89",
+    "sourcePath": "src/game/data/gameplay_outline/catalog.json",
+    "summary": "通过观察当前限制、选择可用交互与环境条件，逐步改变紧缚状态并解锁后续行动。",
+    "summarySource": "source-json.summary",
+    "title": "紧缚挣扎",
+    "type": "gameplay"
+  }
+]

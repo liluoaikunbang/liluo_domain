@@ -1,18 +1,5 @@
-# 情节层级核对
+# 情节层级核对（历史归档）
 
-本目录保存情节库 → RAG / 故事边界治理的**候选审计与确认记录**，不是正式主数据。
+大纲中的“层级核对”页签与 `plot-layer:*` 工作流已于 2026-07-28 移除。本目录仅保留当时已确认迁移的审计记录，供追溯既有情节、故事与 RAG 的来源；不再生成、更新或作为运行时数据读取。
 
-- `registry.json`：快照与迁移索引  
-- `snapshots/`：审计前只读快照  
-- `proposals/`：逐条判断卡  
-- `review-queue.json`：排序后的核对队列  
-- `confirmations/`：用户确认记录  
-- `migrations/`：已执行迁移与回滚提示  
-
-正式权威仍是：
-
-- 情节：`src/game/data/plot_outline/catalog.json`
-- 故事：`src/game/data/story_outline/sources/*.json` 与对应 Markdown
-- 紧缚 RAG：`external-knowledge/cards/restraint/`
-
-用法见 [故事情节RAG边界治理系统](../系统说明/故事情节RAG边界治理系统.md)。
+当前跨层级调整遵循 [故事情节RAG边界治理系统](../系统说明/故事情节RAG边界治理系统.md)：在对话中逐项说明建议并获得用户确认后，再按最小范围更新权威主数据。

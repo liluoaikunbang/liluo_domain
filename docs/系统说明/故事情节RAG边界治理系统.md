@@ -2,7 +2,7 @@
 
 ## 目标
 
-固定「故事 / 情节 / RAG」三层定义、判断流程与用户最终裁决机制，避免用完成度、标题形态或图谱观感混淆层级。情节库向 RAG 的迁移必须：**AI 审计建议 → 用户逐条确认 → 按确认写入主数据**；禁止批量自动清洗。
+固定「故事 / 情节 / RAG」三层定义、判断流程与用户最终裁决机制，避免用完成度、标题形态或图谱观感混淆层级。涉及跨层级调整时必须：**AI 给出建议 → 用户逐项确认 → 按确认写入主数据**；禁止批量自动清洗。
 
 权威决策：`docs/设计记忆/创作决策/CDR-010-故事情节RAG三层边界与用户裁决.md`。
 
@@ -49,37 +49,17 @@
 
 允许拆分：同一旧条目可同时抽出 RAG 并保留情节实例（如「水泥鞋」概念 + 「南堤码头沉湖危机」事件）。
 
-## 审计与确认流程
+## 判断与确认流程
 
-1. `npm run plot-layer:audit`：只读快照 + 全库建议，不改正式主数据  
-2. `plot-layer:review-queue` / `show` / `propose`：查看队列与单条判断卡  
-3. 用户逐条裁决；游戏内「大纲 → 层级核对」只读展示队列  
-4. `plot-layer:confirm <id> --decision ...`：默认只记确认（dry-run）  
-5. 显式 `--apply --confirm-token <id>` 后才写主数据  
-6. `rollback` / `rebuild-affected`：回滚提示与受影响重建  
+1. AI 根据三层定义说明该元素的可复用性、事件性和正式安置情况，并提出建议；不直接改主数据。
+2. 用户逐项确认保留为情节、抽为 RAG、拆分为两者，或先暂缓。
+3. 获得确认后，才按最小范围更新相应的情节目录、故事来源或 RAG 卡，并保留可追溯的已有来源字段。
 
-推荐审核顺序：明显 RAG → 建议拆分 → 疑似故事 → 不确定。未确认内容只进候选区。
+推荐判断顺序：明显可复用概念 → 建议拆分 → 疑似正式故事 → 不确定。未确认内容只作为对话候选，不创建独立的审核队列或运行界面。
 
 ## 新元素固定建议格式
 
 用户提交新元素时，AI 必须先给出层级建议（可复用性 / 事件性 / 正式安置 / 是否多层），等待用户决定后再写入。禁止直接宣称「已归入某层」并自动落盘。
-
-## 命令
-
-| 命令 | 作用 |
-| --- | --- |
-| `npm run plot-layer:audit` | 只读审计与队列 |
-| `npm run plot-layer:review-queue` | 查看待确认队列 |
-| `npm run plot-layer:show -- <plotId>` | 完整判断卡 |
-| `npm run plot-layer:propose -- <plotId>` | 重新生成建议（不写主数据） |
-| `npm run plot-layer:confirm -- <plotId> --decision ...` | 记录确认；加 `--apply --confirm-token` 才写入 |
-| `npm run plot-layer:defer -- <plotId>` | 暂缓 |
-| `npm run plot-layer:rollback -- <migrationId>` | 回滚情节快照字段 |
-| `npm run plot-layer:status` | 状态 |
-| `npm run plot-layer:rebuild-affected -- <plotId>` | 受影响重建提示 |
-| `npm run plot-layer:test` | 治理测试 |
-
-审计产物：`docs/情节层级核对/`；UI 导出：`src/game/data/plot_outline/layerReviewQueue.json`。
 
 ## 相关系统
 

@@ -2,6 +2,13 @@
   "categories": [
     {
       "entryCount": 4,
+      "file": "gameplay/categories/gameplay-group-00.json",
+      "id": "gameplay-group-00",
+      "order": 0,
+      "title": "紧缚状态行动"
+    },
+    {
+      "entryCount": 4,
       "file": "gameplay/categories/gameplay-group-01.json",
       "id": "gameplay-group-01",
       "order": 1,
@@ -106,5 +113,5 @@
       "title": "重复挑战"
     }
   ],
-  "entryCount": 108
+  "entryCount": 112
 }

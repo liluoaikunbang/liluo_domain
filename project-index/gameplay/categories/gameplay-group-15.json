@@ -8,7 +8,7 @@
       "main-map",
       "light-extension"
     ],
-    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourceHash": "b08b4823641d24b13caefad6b3d7b9d7f47e56d08094e411011f7cd934934a89",
     "sourcePath": "src/game/data/gameplay_outline/catalog.json",
     "summary": "为已有副本增加重复挑战价值。",
     "summarySource": "source-json.summary",
@@ -65,7 +65,7 @@
     "presentationModes": [
       "main-map"
     ],
-    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourceHash": "b08b4823641d24b13caefad6b3d7b9d7f47e56d08094e411011f7cd934934a89",
     "sourcePath": "src/game/data/gameplay_outline/catalog.json",
     "summary": "使用同一地图和敌人，通过改变规则形成新关卡。",
     "summarySource": "source-json.summary",
@@ -122,7 +122,7 @@
     "presentationModes": [
       "light-extension"
     ],
-    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourceHash": "b08b4823641d24b13caefad6b3d7b9d7f47e56d08094e411011f7cd934934a89",
     "sourcePath": "src/game/data/gameplay_outline/catalog.json",
     "summary": "让玩家在相同规则下重复挑战。",
     "summarySource": "source-json.summary",

@@ -7,7 +7,7 @@
     "presentationModes": [
       "main-map"
     ],
-    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourceHash": "b08b4823641d24b13caefad6b3d7b9d7f47e56d08094e411011f7cd934934a89",
     "sourcePath": "src/game/data/gameplay_outline/catalog.json",
     "summary": "在探索过程中获得各种建设和制作材料。",
     "summarySource": "source-json.summary",
@@ -64,7 +64,7 @@
     "presentationModes": [
       "light-extension"
     ],
-    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourceHash": "b08b4823641d24b13caefad6b3d7b9d7f47e56d08094e411011f7cd934934a89",
     "sourcePath": "src/game/data/gameplay_outline/catalog.json",
     "summary": "将采集材料转化为装备、消耗品和建设物。",
     "summarySource": "source-json.summary",
@@ -129,7 +129,7 @@
     "presentationModes": [
       "light-extension"
     ],
-    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourceHash": "b08b4823641d24b13caefad6b3d7b9d7f47e56d08094e411011f7cd934934a89",
     "sourcePath": "src/game/data/gameplay_outline/catalog.json",
     "summary": "让战斗和探索持续产生装备成长。",
     "summarySource": "source-json.summary",
@@ -188,7 +188,7 @@
       "interface-gameplay",
       "cg-friendly"
     ],
-    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourceHash": "b08b4823641d24b13caefad6b3d7b9d7f47e56d08094e411011f7cd934934a89",
     "sourcePath": "src/game/data/gameplay_outline/catalog.json",
     "summary": "使用远征资源建设长期据点、修复废墟，或经营列车、船只、飞船等可移动基地。",
     "summarySource": "source-json.summary",
@@ -247,7 +247,7 @@
       "interface-gameplay",
       "cg-friendly"
     ],
-    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourceHash": "b08b4823641d24b13caefad6b3d7b9d7f47e56d08094e411011f7cd934934a89",
     "sourcePath": "src/game/data/gameplay_outline/catalog.json",
     "summary": "修复废墟的建筑、生产、人口与公共秩序，使区域状态持续改善。",
     "summarySource": "source-json.summary",
@@ -305,7 +305,7 @@
       "main-map",
       "interface-gameplay"
     ],
-    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourceHash": "b08b4823641d24b13caefad6b3d7b9d7f47e56d08094e411011f7cd934934a89",
     "sourcePath": "src/game/data/gameplay_outline/catalog.json",
     "summary": "经营列车、船只、飞船等移动据点，并处理航线、模块与旅途风险。",
     "summarySource": "source-json.summary",
@@ -363,7 +363,7 @@
       "main-map",
       "interface-gameplay"
     ],
-    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourceHash": "b08b4823641d24b13caefad6b3d7b9d7f47e56d08094e411011f7cd934934a89",
     "sourcePath": "src/game/data/gameplay_outline/catalog.json",
     "summary": "玩家通过冒险获取商品，再经营店铺。",
     "summarySource": "source-json.summary",
@@ -420,9 +420,9 @@
     "presentationModes": [
       "main-map"
     ],
-    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourceHash": "b08b4823641d24b13caefad6b3d7b9d7f47e56d08094e411011f7cd934934a89",
     "sourcePath": "src/game/data/gameplay_outline/catalog.json",
-    "summary": "作为重建、家园和资源生产的一部分。",
+    "summary": "作为重建、家园和资源生产的一部分；可制作生态设施改善田块的授粉、肥力与保水条件，稳定提高产量。",
     "summarySource": "source-json.summary",
     "title": "农场经营",
     "type": "gameplay",
@@ -466,6 +466,18 @@
       {
         "id": "gameplay-089-variant-10",
         "title": "收获节事件"
+      },
+      {
+        "id": "gameplay-089-variant-11",
+        "title": "昆虫旅馆"
+      },
+      {
+        "id": "gameplay-089-variant-12",
+        "title": "蚯蚓塔"
+      },
+      {
+        "id": "gameplay-089-variant-13",
+        "title": "堆肥箱与覆盖物"
       }
     ]
   },
@@ -478,7 +490,7 @@
       "main-map",
       "interface-gameplay"
     ],
-    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourceHash": "b08b4823641d24b13caefad6b3d7b9d7f47e56d08094e411011f7cd934934a89",
     "sourcePath": "src/game/data/gameplay_outline/catalog.json",
     "summary": "管理任务、成员和资源，同时亲自参与关键行动。",
     "summarySource": "source-json.summary",
@@ -536,7 +548,7 @@
       "main-map",
       "interface-gameplay"
     ],
-    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourceHash": "b08b4823641d24b13caefad6b3d7b9d7f47e56d08094e411011f7cd934934a89",
     "sourcePath": "src/game/data/gameplay_outline/catalog.json",
     "summary": "适合都市、末日、科幻和禁域场景。",
     "summarySource": "source-json.summary",
@@ -594,7 +606,7 @@
       "main-map",
       "interface-gameplay"
     ],
-    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourceHash": "b08b4823641d24b13caefad6b3d7b9d7f47e56d08094e411011f7cd934934a89",
     "sourcePath": "src/game/data/gameplay_outline/catalog.json",
     "summary": "连接多个据点并保证资源流通。",
     "summarySource": "source-json.summary",
@@ -652,7 +664,7 @@
       "main-map",
       "interface-gameplay"
     ],
-    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourceHash": "b08b4823641d24b13caefad6b3d7b9d7f47e56d08094e411011f7cd934934a89",
     "sourcePath": "src/game/data/gameplay_outline/catalog.json",
     "summary": "建立材料加工和生产链。",
     "summarySource": "source-json.summary",
@@ -712,7 +724,7 @@
       "interface-gameplay",
       "cg-friendly"
     ],
-    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourceHash": "b08b4823641d24b13caefad6b3d7b9d7f47e56d08094e411011f7cd934934a89",
     "sourcePath": "src/game/data/gameplay_outline/catalog.json",
     "summary": "璃落亲自完成探索与居民任务，为破败小镇带回资源和人才；小镇通过设施升级、职业居民、节日活动与资源解锁持续恢复，每座设施同时开放服务和对应剧情。",
     "summarySource": "source-json.summary",
