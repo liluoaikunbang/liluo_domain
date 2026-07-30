@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "migrationId": "plm-ms4fsm8r",
+  "confirmationId": "plc-ms4fsm88",
+  "decision": "split-plot-and-rag",
+  "sourcePlotId": "plot-060",
+  "createdAt": "2026-07-28T09:11:49.684Z",
+  "plan": {
+    "decision": "split-plot-and-rag",
+    "sourcePlotId": "plot-060",
+    "targetRag": {
+      "newRagId": "rag.restraint.context.mermaid-model",
+      "title": "美人鱼模特",
+      "cardType": "context",
+      "ragLayer": "concept",
+      "parentCardIds": [
+        "rag.restraint.context.occupation"
+      ],
+      "aliases": [
+        "职业-美人鱼模特",
+        "美人鱼表演",
+        "仿生鱼尾"
+      ],
+      "oldIds": [
+        "bondage_tag:sg:职业-美人鱼模特"
+      ],
+      "knowledgeSeed": [
+        "美人鱼模特是可跨故事复用的职业/表演场景条件：仿生鱼尾限制下肢分合与步态，舞台可见性、教练指导与荧光装饰绳会改变公开受限时的动作边界。",
+        "它描述职业切口，不等于某次游轮体验加演事件。"
+      ],
+      "expressionSeed": [
+        "表现重点常落在鱼尾游动姿态、双手受限与舞台注视的叠加。",
+        "可用穿戴指导、灯光与加演喝彩组织场面，但不把单次游轮行程写进概念。"
+      ]
+    },
+    "plotRemainder": {
+      "keepOriginalId": true,
+      "proposedTitle": "游轮-美人鱼尾体验加演",
+      "proposedSummary": "游轮剧院里，璃落被幻梦绸艺团的美人鱼演出吸引，向工作人员申请体验。教练欣雨为她选了湛蓝色仿生鱼尾并指导穿戴；林雨薇捆住她的双手，欣雨改用荧光绳让效果更好看。璃落在下午练会S型游动与鱼尾摆动，当晚加演获得满堂喝彩。",
+      "characters": [
+        "璃落",
+        "欣雨",
+        "林雨薇"
+      ],
+      "worldBiases": [
+        "1-浮光掠影"
+      ],
+      "plotKind": "restraint",
+      "maturity": "scene-ready",
+      "usedByLabels": [
+        "浮光掠影-游轮"
+      ],
+      "development": {
+        "premise": "璃落申请体验美人鱼表演并穿上仿生鱼尾",
+        "escalation": "双手改用荧光绳固定，公开练习游动姿态",
+        "turn": "当晚加演把体验推到舞台中央",
+        "consequence": "满堂喝彩后留下表演向受限体验，并与后续后台互动衔接"
+      }
+    },
+    "edgeMigrationPlan": [
+      {
+        "action": "redirect",
+        "fromId": "world-1-glimmering-glance-cruise",
+        "relation": "contains/plotRefs",
+        "toId": "plot-060",
+        "reason": "故事应改为引用 RAG，不再把职业概念当作情节 contains"
+      },
+      {
+        "action": "add",
+        "fromId": "world-1-glimmering-glance-cruise",
+        "relation": "references/ragRefs",
+        "toId": "rag.restraint.context.美人鱼模特",
+        "reason": "故事直接引用可复用职业场景 RAG"
+      }
+    ],
+    "affectedStoryEntries": [
+      "world-1-glimmering-glance-cruise"
+    ],
+    "affectedSourceFiles": [
+      "src/game/data/plot_outline/catalog.json",
+      "src/game/data/story_outline/sources/1-modern.json"
+    ],
+    "note": "plan only; main data untouched until apply with confirm token"
+  },
+  "ragResult": {
+    "cardId": "rag.restraint.context.mermaid-model",
+    "filePath": "external-knowledge/cards/restraint/rag.restraint.context.mermaid-model.json",
+    "created": true
+  },
+  "parentRagResult": {
+    "cardId": "rag.restraint.context.occupation",
+    "created": false,
+    "filePath": null
+  },
+  "changedFiles": [
+    "external-knowledge/cards/restraint/rag.restraint.context.mermaid-model.json",
+    "external-knowledge/cards/restraint/rag.restraint.context.occupation.json",
+    "src/game/data/story_outline/sources/1-modern.json",
+    "src/game/data/plot_outline/catalog.json"
+  ],
+  "rollback": {
+    "restoreCatalogFromSnapshot": true,
+    "snapshotHint": "pls-ms4f5rj0"
+  }
+}

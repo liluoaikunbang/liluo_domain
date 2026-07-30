@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "confirmationId": "plc-ms4gh8my",
+  "plotId": "plot-005",
+  "decision": "keep-as-plot",
+  "userNote": "用户确认：跟着建议走（保留为情节）",
+  "overrides": {
+    "origin": "legacy-migration",
+    "placementStatus": "placed",
+    "maturity": "scene-ready"
+  },
+  "proposalSnapshot": {
+    "sourcePlotId": "plot-005",
+    "title": "林沐遥-旧楼回溯",
+    "number": "005",
+    "groupId": "plot-group-003",
+    "groupTitle": "旧案与创伤回溯",
+    "plotKind": "ordinary",
+    "usageStatus": "used",
+    "recommendation": "keep-as-plot",
+    "recommendedLayer": "plot",
+    "rationale": [
+      "具备角色/条件/过程/变化中的多项事件证据。",
+      "应作为一次性叙事实例保留；若内部含可复用概念，可另抽 RAG，但不整项迁移。"
+    ],
+    "reuseTest": {
+      "reusableAcrossStories": false,
+      "explanation": "摘要描述一次具体发生，换故事后通常不能原样复用。"
+    },
+    "eventTest": {
+      "hasActorOrRole": true,
+      "hasTrigger": true,
+      "hasProcess": true,
+      "hasChangeOrOutcome": false
+    },
+    "placementTest": {
+      "hasFormalWorldPlacement": false,
+      "linkedStoryIds": []
+    },
+    "edgeMigrationPlan": [],
+    "affectedSourceFiles": [
+      "src/game/data/plot_outline/catalog.json"
+    ],
+    "affectedStoryEntries": [],
+    "linkedStories": [],
+    "confidence": 0.82,
+    "questionsForUser": [],
+    "reviewStatus": "proposed",
+    "generatedAt": "2026-07-28T08:54:03.444Z"
+  },
+  "recordedAt": "2026-07-28T09:30:58.426Z",
+  "applied": true,
+  "dryRun": false,
+  "migrationId": "plm-ms4gh8ne"
+}

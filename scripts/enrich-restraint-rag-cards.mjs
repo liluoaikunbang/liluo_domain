@@ -10,6 +10,7 @@ const parentByCardId = new Map(Object.entries({
   'rag.restraint.detail.感官刺激-芥末辣椒等': 'rag.restraint.effect.sensory-stimulation',
   'rag.restraint.detail.眼耳口鼻': 'rag.restraint.effect.sensory-stimulation',
   'rag.restraint.detail.性刺激-三点刺激': 'rag.restraint.effect.sexual-stimulation',
+  'rag.restraint.effect.free-fall-stimulation': 'rag.restraint.effect.stimulation',
   'rag.restraint.detail.气味系-踩踩': 'rag.restraint.effect.odor-stimulation',
   'rag.restraint.detail.无鞋': 'rag.restraint.effect.public-humiliation',
   'rag.restraint.detail.语言羞辱': 'rag.restraint.effect.public-humiliation',

@@ -190,7 +190,9 @@
       "status": "大纲",
       "parentKey": "world-5-star-weaving-dream-frontier-colony",
       "order": 10,
-      "ragRefs": [],
+      "ragRefs": [
+        "rag.restraint.context.restraint-resistance"
+      ],
       "plotRefs": [],
       "gameplayRefs": []
     },

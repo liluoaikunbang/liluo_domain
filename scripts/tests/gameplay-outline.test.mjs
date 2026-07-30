@@ -25,12 +25,12 @@ test('creates a self-describing JSON export for the complete gameplay outline', 
   assert.notEqual(payload.catalog, gameplayOutline);
 });
 
-test('loads the 108 consolidated gameplay entries with valid references', () => {
-  assert.equal(gameplayOutline.entries.length, 108);
-  assert.equal(new Set(gameplayOutline.entries.map((entry) => entry.id)).size, 108);
+test('loads the 112 consolidated gameplay entries with valid references', () => {
+  assert.equal(gameplayOutline.entries.length, 112);
+  assert.equal(new Set(gameplayOutline.entries.map((entry) => entry.id)).size, 112);
   assert.deepEqual(
     gameplayOutline.entries.map((entry) => entry.number),
-    Array.from({ length: 108 }, (_, index) => index + 1)
+    Array.from({ length: 112 }, (_, index) => index + 1)
   );
 
   const categoryIds = new Set(gameplayOutline.categories.map((category) => category.id));
@@ -48,7 +48,12 @@ test('loads the 108 consolidated gameplay entries with valid references', () => 
   const variantTitles = gameplayOutline.entries.flatMap((entry) => entry.variants.map((variant) => variant.title));
   assert.equal(new Set(variantTitles).size, variantTitles.length);
 
-  assert.equal(gameplayOutline.categories.length, 15);
+  assert.equal(gameplayOutline.categories.length, 16);
+  assert.deepEqual(gameplayOutline.categories[0], {
+    id: 'gameplay-group-00',
+    order: 0,
+    title: '紧缚状态行动'
+  });
   assert.equal(gameplayOutline.schemaVersion, 4);
   assert.equal(Object.hasOwn(gameplayOutline, 'source'), false);
   assert.equal(gameplayOutline.entries.some((entry) => Object.hasOwn(entry, 'moduleRefs')), false);
@@ -82,12 +87,20 @@ test('uses unified mechanism names instead of stitched category or gameplay labe
   );
 });
 
-test('keeps top-level gameplay groups broad and balanced', () => {
-  const entryCounts = gameplayOutline.categories.map(({ id }) =>
+test('keeps top-level gameplay groups broad and balanced except the pinned core gameplay series', () => {
+  const entryCounts = gameplayOutline.categories
+    .filter(({ id }) => id !== 'gameplay-group-00')
+    .map(({ id }) =>
     gameplayOutline.entries.filter(({ categoryId }) => categoryId === id).length
   );
 
-  assert.equal(gameplayOutline.categories.length, 15);
+  assert.equal(gameplayOutline.categories.length, 16);
+  const restraintEntries = gameplayOutline.entries.filter(({ categoryId }) => categoryId === 'gameplay-group-00');
+  assert.deepEqual(
+    restraintEntries.map(({ title }) => title),
+    ['常规紧缚行动', '紧缚战斗', '紧缚逃跑', '紧缚挣扎']
+  );
+  assert.equal(restraintEntries.every(({ variants }) => variants.length === 0), true);
   assert.equal(Math.min(...entryCounts) >= 2, true);
   assert.equal(Math.max(...entryCounts) <= 13, true);
 });
@@ -167,6 +180,15 @@ test('keeps vocational town management as a lightweight story-linked world-build
   assert.ok(townManagement?.designReferences.includes('开罗游戏式经营模拟'));
   assert.ok(townManagement?.variants.some((variant) => variant.title === '设施剧情链'));
   assert.ok(townManagement?.variants.some((variant) => variant.title === '轻量经营壳'));
+});
+
+test('adds craftable ecological facilities to farm management', () => {
+  const farmManagement = gameplayOutline.entries.find((entry) => entry.id === 'gameplay-089');
+  const variantsByTitle = new Map(farmManagement?.variants.map((variant) => [variant.title, variant.description]));
+
+  assert.match(variantsByTitle.get('昆虫旅馆') ?? '', /授粉|虫害/u);
+  assert.match(variantsByTitle.get('蚯蚓塔') ?? '', /肥力|产量/u);
+  assert.match(variantsByTitle.get('堆肥箱与覆盖物') ?? '', /保水|养分/u);
 });
 
 test('keeps linear interactive fiction separate from outcome-changing branch dialogue', () => {

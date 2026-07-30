@@ -26,8 +26,125 @@
     "oldIds": [
       "bondage_tag:蛛丝"
     ],
-    "generatedFrom": "legacy-tag-title-only"
+    "generatedFrom": "legacy-tag-title-only",
+    "evidenceLayer": "v1",
+    "evidenceMigratedAt": "2026-07-28T07:14:30.222Z",
+    "professionalRag": {
+      "batchId": "professional-rag-pilot-v1",
+      "migratedAt": "2026-07-28T07:38:48.404Z",
+      "strategy": "knowledge-from-legacy-expression-stub",
+      "notes": "知识分支由既有 definition/claims/evidence 迁入；表达分支保留骨架待用户确认。"
+    },
+    "plotLayerNote": "挂入上位「生物巢材」；ragLayer 由 category 改为 concept。",
+    "updatedAt": "2026-07-28T11:09:04.999Z"
   },
-  "ragLayer": "category",
-  "parentCardIds": []
+  "ragLayer": "concept",
+  "parentCardIds": [
+    "rag.restraint.material.bio-nest"
+  ],
+  "evidenceRefs": [
+    "ev-fbsrc000033-5d21fc2ccbc0e6c6"
+  ],
+  "sourceRecordIds": [
+    "fb-src-000033"
+  ],
+  "claims": [
+    {
+      "id": "rag.restraint.material.spider-silk::claim:definition:0",
+      "label": "定义",
+      "content": "由蜘蛛或类蛛生物产生的丝状材料，在虚构场景中承担缠绕、结网和环境固定功能。",
+      "claimType": "definition",
+      "evidenceRefs": [
+        "ev-fbsrc000033-5d21fc2ccbc0e6c6"
+      ],
+      "supportStatus": "pending",
+      "reviewStatus": "pending",
+      "origin": "external-summary"
+    }
+  ],
+  "retrievalPolicy": {
+    "graphVisible": true,
+    "searchable": true,
+    "relationAnchor": true,
+    "contentRetrievable": false,
+    "evidenceRetrievable": true,
+    "knowledgeRetrievable": false,
+    "expressionRetrievable": false
+  },
+  "professionalRagVersion": 1,
+  "knowledge": {
+    "definition": "由蜘蛛或类蛛生物产生的丝状材料，在虚构场景中承担缠绕、结网和环境固定功能。",
+    "boundaries": {
+      "includes": [],
+      "excludes": []
+    },
+    "distinctions": [
+      {
+        "targetConceptId": "rag.restraint.material.beeswax",
+        "description": "蛛丝偏缠绕结网与牵引；蜂蜡偏可塑性封固与嵌巢。"
+      }
+    ],
+    "aliases": [],
+    "parentConceptRefs": [
+      "rag.restraint.material.bio-nest"
+    ],
+    "childConceptRefs": [],
+    "relatedConceptRefs": [
+      "rag.restraint.material.beeswax",
+      "rag.restraint.detail.特殊-拘捕网"
+    ],
+    "factualClaims": [
+      {
+        "id": "rag.restraint.material.spider-silk::claim:definition:0",
+        "label": "定义",
+        "content": "由蜘蛛或类蛛生物产生的丝状材料，在虚构场景中承担缠绕、结网和环境固定功能。",
+        "claimType": "definition",
+        "evidenceRefs": [
+          "ev-fbsrc000033-5d21fc2ccbc0e6c6"
+        ],
+        "supportStatus": "pending",
+        "reviewStatus": "pending",
+        "origin": "external-summary"
+      }
+    ],
+    "evidenceRefs": [
+      "ev-fbsrc000033-5d21fc2ccbc0e6c6"
+    ],
+    "projectInterpretation": "",
+    "commonMisreadings": [],
+    "status": "usable",
+    "evidenceStatus": "partial",
+    "reviewStatus": "pending"
+  },
+  "expression": {
+    "visualFocus": [],
+    "actionLogic": [],
+    "movementEffects": [],
+    "postureEffects": [],
+    "sensoryFocus": [],
+    "emotionalPossibilities": [],
+    "narrativeUses": [],
+    "applicableScenes": [],
+    "unsuitableScenes": [],
+    "expressionPrinciples": [],
+    "commonFailures": [],
+    "prohibitedMisreadings": [],
+    "styleEvidenceRefs": [],
+    "goldExampleRefs": [],
+    "calibrationPairRefs": [],
+    "relatedStyleRagRefs": [],
+    "evidenceRefs": [],
+    "status": "stub",
+    "evidenceStatus": "missing",
+    "reviewStatus": "pending"
+  },
+  "overallStatus": "knowledge-only",
+  "evidenceBindings": [
+    {
+      "evidenceId": "ev-fbsrc000033-5d21fc2ccbc0e6c6",
+      "purpose": "knowledge-evidence",
+      "branch": "knowledge",
+      "supportStatus": "pending"
+    }
+  ]
 }

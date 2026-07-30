@@ -7,18 +7,29 @@ description: Query, build, incrementally update, validate, and originality-check
 
 Read root `AGENTS.md`, `external-knowledge/INDEX.md`, and only the reference files needed for the request.
 
-## Interview stub cards (紧缚 RAG)
+## Interview stub cards (紧缚专业 RAG)
 
 When an outline interview confirms a restraint concept that has no card yet:
 
 1. Search `external-knowledge/cards/` (prefer `restraint/`) by title and aliases; reuse an existing card ID when matched.
-2. If missing, create a skeleton card under `external-knowledge/cards/restraint/`:
-   - `contentStatus: "stub"`, `evidenceStatus: "missing"`, `sourceRefs: []`
+2. If missing, **ask the user first** before creating anything（纳入并整理 / 先建立空白卡 / 设为别名 / 合并 / 不是紧缚 / 暂不处理 / 永不提示）. Only after agreement create a skeleton card under `external-knowledge/cards/restraint/` via `npm run restraint-rag:create-stub` (or equivalent fields):
+   - Dual branches: `knowledge` + `expression` both `stub` / `pending`
+   - `overallStatus: stub`, `retrievalPolicy.knowledgeRetrievable/expressionRetrievable/contentRetrievable: false`
    - `ragLayer: "category"` when no parent is known; otherwise `concept` with `parentCardIds` pointing at an existing category
    - summary only states concept boundary and that it came from interview confirmation
-3. Return the `cardId` to the calling outline Skill for `ragRefs` write-back; do not invent plot or story facts.
+3. Return the `cardId` to the calling outline Skill for `ragRefs` write-back; do not invent plot or story facts; do not auto-fill definitions or expression guidance.
 4. Run `npm run external:knowledge:validate` after creating or editing cards in the same task.
-5. Stub cards stay discoverable but down-ranked; filling body/sources is a user todo via story `missingItems` (`RAG｜紧缚RAG｜补全「…」正文与来源`), not silent completion.
+5. Stub cards stay discoverable but down-ranked / non-content-retrievable; filling body/sources/evidence is a user todo via story `missingItems` (`RAG｜紧缚专业RAG｜补全「…」正文与来源`), not silent completion.
+
+See [紧缚专业RAG双分支系统](../../../docs/系统说明/紧缚专业RAG双分支系统.md).
+
+## Evidence layer
+
+- Shared store: `external-knowledge/evidence/` (ordinary RAG + Style-RAG reuse sources/excerpts/reviews; roles stay separate).
+- Cards keep abstractions; quotes live only as evidence excerpts resolved from source files (`excerptStorage: source-resolved` by default).
+- AI may propose evidence (`extractionOrigin: ai-proposed`, `reviewStatus: pending`) via migrate/propose; never auto-confirm.
+- User verifies claim↔evidence with `npm run external:knowledge:evidence:review`.
+- Writing retrieval (`retrievalMode=writing`) excludes stubs and unconfirmed cards (`contentRetrievable: false`).
 
 ## Query and creation
 
@@ -33,7 +44,7 @@ When an outline interview confirms a restraint concept that has no card yet:
 
 ## Manual audit calibration
 
-When the user asks about RAG accuracy, restraint-index quality, wrong summaries/tags, concept naming, plot tag quality, or next audit work: remind open gap via `npm run writing:gaps:remind -- --topic rag-accuracy` (or `rag-audit`) and offer a small batch — prefer `npm run knowledge:audit:sample` (covers rag / style-rag / concept / plot) or channel-specific `rag:audit:sample` / `concept:audit:sample` / `plot:audit:sample`. Ordinary / 紧缚 RAG sampling **defaults to knowledge cards only**; include sources only with `--include-sources` or `--asset-kind source|all`. Present card audits for human judgment (definition / existence / layering among peers); do not make the user read source fiction as the primary task. When drafting or revising card prose, audit explanations, or revision options for the user, first apply `liluo-natural-expression` **light**: concrete, testable wording; no empty hierarchy jargon. When the user gives a qualitative judgment (e.g. “太抽象”“描述不行”), **do not** immediately `*:audit:record` their words: continue the conversation, propose concrete revision directions, then a short modification plan with before/after drafts; only write the card and/or record after the user confirms the revision is good or explicitly says to leave it for now. When fixing or recording an issue, run `*:audit:related --asset <id>` and co-adjust related concept/RAG/plot/style neighbors that need changes in the same pass; do not leave contradictory names, summaries, or links. Keep using the current index and catalogs. Do not redesign RAG, merge concept into RAG, add embeddings, or rebuild the full library from one complaint. Skill changes require abstract rules and the thresholds in `project-navigation/rag-audit-policy.json`; then scoped `*:rebuild:affected` only.
+When the user asks about RAG accuracy, restraint-index quality, wrong summaries/tags, concept naming, plot tag quality, or next audit work: remind open gap via `npm run writing:gaps:remind -- --topic rag-accuracy` (or `rag-audit`) and offer a small batch — prefer `npm run knowledge:audit:sample` (covers rag / style-rag / concept / plot) or channel-specific `rag:audit:sample` / `concept:audit:sample` / `plot:audit:sample`. Ordinary / 紧缚 RAG sampling **defaults to knowledge cards only**; include sources only with `--include-sources` or `--asset-kind source|all`. Present card audits for human judgment (definition / existence / layering / evidence support among peers); do not make the user read source fiction as the primary task—use graph evidence layer + short previews. When user confirms a card is fine, record with `--category confirmed-ok` so future sampling **down-weights** it without removing it from the pool. When drafting or revising card prose, audit explanations, or revision options for the user, first apply `liluo-natural-expression` **light**: concrete, testable wording; no empty hierarchy jargon. When the user gives a qualitative judgment (e.g. “太抽象”“描述不行”), **do not** immediately `*:audit:record` their words: continue the conversation, propose concrete revision directions, then a short modification plan with before/after drafts; only write the card and/or record after the user confirms the revision is good or explicitly says to leave it for now. When fixing or recording an issue, run `*:audit:related --asset <id>` and co-adjust related concept/RAG/plot/style neighbors that need changes in the same pass; do not leave contradictory names, summaries, or links. Keep using the current index and catalogs. Do not redesign RAG, merge concept into RAG, add embeddings, or rebuild the full library from one complaint. Skill changes require abstract rules and the thresholds in `project-navigation/rag-audit-policy.json`; then scoped `*:rebuild:affected` only.
 
 ## Maintenance
 

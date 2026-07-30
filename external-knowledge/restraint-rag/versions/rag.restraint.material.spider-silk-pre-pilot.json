@@ -1,0 +1,62 @@
+{
+  "cardId": "rag.restraint.material.spider-silk",
+  "title": "蛛丝",
+  "domain": "restraint",
+  "cardType": "material",
+  "aliases": [],
+  "summary": "蛛丝常表现为可喷射、可铺展并能把人物固定到环境表面的黏性材料。",
+  "definition": "由蜘蛛或类蛛生物产生的丝状材料，在虚构场景中承担缠绕、结网和环境固定功能。",
+  "sourceRefs": [
+    {
+      "sourceId": "fb-src-000033",
+      "segmentId": "fb-src-000033-seg-00223",
+      "sourcePath": "external-knowledge/sources/fiction-bondage/不知道作者/无限拘束乐园.md",
+      "startLine": 7362,
+      "endLine": 7385
+    }
+  ],
+  "evidenceStatus": "partial",
+  "contentStatus": "complete",
+  "reviewStatus": "candidate",
+  "directQuoteIncluded": false,
+  "canonical": false,
+  "knowledgeScope": "external-fiction-reference",
+  "migration": {
+    "batchId": "tag-rag-restructure-v1",
+    "oldIds": [
+      "bondage_tag:蛛丝"
+    ],
+    "generatedFrom": "legacy-tag-title-only",
+    "evidenceLayer": "v1",
+    "evidenceMigratedAt": "2026-07-28T07:14:30.222Z"
+  },
+  "ragLayer": "category",
+  "parentCardIds": [],
+  "evidenceRefs": [
+    "ev-fbsrc000033-5d21fc2ccbc0e6c6"
+  ],
+  "sourceRecordIds": [
+    "fb-src-000033"
+  ],
+  "claims": [
+    {
+      "id": "rag.restraint.material.spider-silk::claim:definition:0",
+      "label": "定义",
+      "content": "由蜘蛛或类蛛生物产生的丝状材料，在虚构场景中承担缠绕、结网和环境固定功能。",
+      "claimType": "definition",
+      "evidenceRefs": [
+        "ev-fbsrc000033-5d21fc2ccbc0e6c6"
+      ],
+      "supportStatus": "pending",
+      "reviewStatus": "pending",
+      "origin": "external-summary"
+    }
+  ],
+  "retrievalPolicy": {
+    "graphVisible": true,
+    "searchable": true,
+    "relationAnchor": true,
+    "contentRetrievable": false,
+    "evidenceRetrievable": true
+  }
+}

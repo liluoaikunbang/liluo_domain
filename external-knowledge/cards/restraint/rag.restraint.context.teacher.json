@@ -1,0 +1,104 @@
+{
+  "cardId": "rag.restraint.context.teacher",
+  "title": "教师",
+  "domain": "restraint",
+  "cardType": "context",
+  "aliases": [
+    "职业-教师",
+    "授课",
+    "捆缚授课"
+  ],
+  "summary": "教师是可跨故事复用的职业场景条件：课堂秩序、板书/握笔需求、公开讲授与旁观者期待，会改变受限时仍需保留的局部行动能力。",
+  "definition": "教师是可跨故事复用的职业场景条件：课堂秩序、板书/握笔需求、公开讲授与旁观者期待，会改变受限时仍需保留的局部行动能力。",
+  "sourceRefs": [],
+  "evidenceStatus": "missing",
+  "contentStatus": "stub",
+  "reviewStatus": "candidate",
+  "directQuoteIncluded": false,
+  "canonical": false,
+  "knowledgeScope": "external-fiction-reference",
+  "ragLayer": "concept",
+  "parentCardIds": [
+    "rag.restraint.context.occupation"
+  ],
+  "migration": {
+    "batchId": "plot-layer-governance-v1",
+    "oldIds": [
+      "bondage_tag:sg:职业-教师"
+    ],
+    "generatedFrom": "plot-layer-migration",
+    "createdAt": "2026-07-28T09:09:12.500Z"
+  },
+  "evidenceRefs": [],
+  "sourceRecordIds": [],
+  "claims": [],
+  "retrievalPolicy": {
+    "graphVisible": true,
+    "searchable": true,
+    "relationAnchor": true,
+    "contentRetrievable": false,
+    "evidenceRetrievable": false,
+    "knowledgeRetrievable": false,
+    "expressionRetrievable": false
+  },
+  "professionalRagVersion": 1,
+  "knowledge": {
+    "definition": "教师是可跨故事复用的职业场景条件：课堂秩序、板书/握笔需求、公开讲授与旁观者期待，会改变受限时仍需保留的局部行动能力。",
+    "boundaries": {
+      "includes": [
+        "它描述职业切口，不等于某次山村捆缚授课事件。"
+      ],
+      "excludes": [
+        "不保存某次故事里的唯一人物、地点与结局过程"
+      ]
+    },
+    "distinctions": [],
+    "aliases": [
+      "职业-教师",
+      "授课",
+      "捆缚授课"
+    ],
+    "parentConceptRefs": [
+      "rag.restraint.context.occupation"
+    ],
+    "childConceptRefs": [],
+    "relatedConceptRefs": [],
+    "factualClaims": [],
+    "evidenceRefs": [],
+    "projectInterpretation": "它描述职业切口，不等于某次山村捆缚授课事件。",
+    "commonMisreadings": [],
+    "status": "stub",
+    "evidenceStatus": "missing",
+    "reviewStatus": "pending"
+  },
+  "expression": {
+    "visualFocus": [],
+    "actionLogic": [],
+    "movementEffects": [],
+    "postureEffects": [],
+    "sensoryFocus": [],
+    "emotionalPossibilities": [],
+    "narrativeUses": [
+      "表现重点常落在“还能教”与“仍被限制”的并存：哪只手能动、如何握笔、如何面向学生。",
+      "可用课堂动线、板书动作与公开注视组织场面，但不把单次报恩或村庄结果写进概念。"
+    ],
+    "applicableScenes": [],
+    "unsuitableScenes": [],
+    "expressionPrinciples": [
+      "表现重点常落在“还能教”与“仍被限制”的并存：哪只手能动、如何握笔、如何面向学生。",
+      "可用课堂动线、板书动作与公开注视组织场面，但不把单次报恩或村庄结果写进概念。"
+    ],
+    "commonFailures": [],
+    "prohibitedMisreadings": [],
+    "styleEvidenceRefs": [],
+    "goldExampleRefs": [],
+    "calibrationPairRefs": [],
+    "relatedStyleRagRefs": [],
+    "evidenceRefs": [],
+    "status": "stub",
+    "evidenceStatus": "missing",
+    "reviewStatus": "pending"
+  },
+  "overallStatus": "stub",
+  "evidenceBindings": []
+}

@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 1,
+  "batchId": "rab-ms4cuvl5",
+  "channel": "concept",
+  "channels": [
+    "concept"
+  ],
+  "mode": "low-confidence",
+  "exportedAt": "2026-07-28T07:49:36.233Z",
+  "count": 3,
+  "remainingPool": 12,
+  "ragSample": {
+    "includeCards": true,
+    "includeSources": false
+  },
+  "items": [
+    {
+      "index": 1,
+      "channel": "concept",
+      "assetId": "restraint.detail.wrist-relative",
+      "title": "手腕相对位置",
+      "author": "seed",
+      "themeDomain": "restraint-themed",
+      "path": "src/game/data/outline_relation_graph/conceptRegistry.js",
+      "lowConfidence": true,
+      "hitCount": 0,
+      "currentResult": {
+        "assetKind": "concept",
+        "conceptId": "restraint.detail.wrist-relative",
+        "canonicalName": "手腕相对位置",
+        "aliases": [
+          "手腕位置"
+        ],
+        "parentConcepts": [
+          "restraint.upper-body.restricted"
+        ],
+        "layer": "concept",
+        "visibility": {
+          "primaryTag": false,
+          "detailPanel": true,
+          "graph": true,
+          "searchable": true,
+          "ragRetrievable": true
+        },
+        "summary": "描述双腕叠压、并拢或交叉等相对关系。"
+      }
+    },
+    {
+      "index": 2,
+      "channel": "concept",
+      "assetId": "restraint.pose.houshou-bingzhou",
+      "title": "后手并肘",
+      "author": "seed",
+      "themeDomain": "restraint-themed",
+      "path": "src/game/data/outline_relation_graph/conceptRegistry.js",
+      "lowConfidence": true,
+      "hitCount": 0,
+      "currentResult": {
+        "assetKind": "concept",
+        "conceptId": "restraint.pose.houshou-bingzhou",
+        "canonicalName": "后手并肘",
+        "aliases": [
+          "欧式并肘",
+          "并肘反绑"
+        ],
+        "parentConcepts": [
+          "restraint.upper-body.restricted"
+        ],
+        "layer": "concept",
+        "visibility": {
+          "primaryTag": false,
+          "detailPanel": true,
+          "graph": true,
+          "searchable": true,
+          "ragRetrievable": true
+        },
+        "summary": "双肘在身后靠拢或并合的可识别后手姿态；俗称欧式并肘。"
+      }
+    },
+    {
+      "index": 3,
+      "channel": "concept",
+      "assetId": "restraint.detail.state-change",
+      "title": "状态变化",
+      "author": "seed",
+      "themeDomain": "restraint-themed",
+      "path": "src/game/data/outline_relation_graph/conceptRegistry.js",
+      "lowConfidence": true,
+      "hitCount": 0,
+      "currentResult": {
+        "assetKind": "concept",
+        "conceptId": "restraint.detail.state-change",
+        "canonicalName": "状态变化",
+        "aliases": [
+          "受限状态变化"
+        ],
+        "parentConcepts": [
+          "restraint.escape.attempt"
+        ],
+        "layer": "concept",
+        "visibility": {
+          "primaryTag": false,
+          "detailPanel": true,
+          "graph": true,
+          "searchable": true,
+          "ragRetrievable": true
+        },
+        "summary": "受限强度、姿态或退出条件随情节推进发生的变化。"
+      }
+    }
+  ]
+}

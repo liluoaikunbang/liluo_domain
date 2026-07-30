@@ -7,10 +7,12 @@
 - 知乎灵感源：`external-knowledge/sources/zhihu-novels/`（由 `liluo-zhihu-novel-ingest` 导入，索引为外部参考）
 - 支持文本：Markdown、TXT、Markdown Text；其他文件只编目，不读取二进制正文
 - 来源根目录由 `external-knowledge/config.json` 的 `sourceRoots` 控制；来源目录：`catalog/sources.json`；分段：`index/segments/`；关键词与标签：`index/keywords/`、`index/tags/`
-- 七类历史类型名仍可由 Schema/`card-rules` 使用；当前在库卡以 `cards/restraint/` 两级结构为主，不再自动播种空泛表达/场景占位卡
+- 七类历史类型名仍可由 Schema/`card-rules` 使用；当前在库卡以 `cards/restraint/` 两级结构为主，并升级为**紧缚专业 RAG 双分支**（`knowledge` + `expression`）；详见 `docs/系统说明/紧缚专业RAG双分支系统.md` 与 `npm run restraint-rag:*`
 - 候选规则：`card-rules.json`，按证据组和最小独立来源数生成术语卡与情节模式卡；规则可带 `linkedConceptIds` 指向概念种子（上位类别/具体概念）
 - 知识卡 `concepts[]` 只放可读概念名/别名，不放情节推进句；`linkedConceptIds` 为稳定挂接（优先于名称匹配）
+- 新名词候选箱：`restraint-rag/candidates.json`（识别后不自动正式纳入）
 - 来源定位：`index/references/source-locations.json`；质量与重复报告：`reports/`
+- **共享原文证据层**：`evidence/`（`excerpts.json` / `reviews.json` / `registry.json`）。知识卡通过 `evidenceRefs` + `claims[]` 引用证据；可用 `evidenceBindings` 区分 knowledge/expression；全文默认按源文件行号运行时展开，公开仓不存受版权保护的大段原文。详见 [evidence/README.md](./evidence/README.md)
 - 当前统计与状态：`status.json`；构建清单：`manifest.json`
 
 常用命令：
@@ -21,6 +23,9 @@ npm run external:knowledge:sync
 npm run external:knowledge:update
 npm run external:knowledge:build
 npm run external:knowledge:validate
+npm run external:knowledge:evidence:migrate -- --dry-run
+npm run external:knowledge:evidence:validate
+npm run external:knowledge:evidence:review -- --claim <id> --evidence <id> --verdict supports
 npm run external:knowledge:query -- --query "古堡 逃脱" --mode and --limit 8 --format markdown
 npm run external:knowledge:query -- --query "挠痒"
 npm run external:knowledge:query -- --query "手铐" --mode and

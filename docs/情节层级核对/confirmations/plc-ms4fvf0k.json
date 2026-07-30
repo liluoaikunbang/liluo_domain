@@ -1,0 +1,160 @@
+{
+  "schemaVersion": 1,
+  "confirmationId": "plc-ms4fvf0k",
+  "plotId": "plot-061",
+  "decision": "split-plot-and-rag",
+  "userNote": "用户确认：职业RAG购物模特；情节标题购物模特-拘束椅与包裹拍摄",
+  "overrides": {
+    "parentRagTarget": {
+      "existingRagId": "rag.restraint.context.occupation",
+      "title": "职业场景",
+      "cardType": "context",
+      "ragLayer": "category",
+      "parentCardIds": []
+    },
+    "ragTarget": {
+      "newRagId": "rag.restraint.context.shopping-model",
+      "title": "购物模特",
+      "cardType": "context",
+      "ragLayer": "concept",
+      "parentCardIds": [
+        "rag.restraint.context.occupation"
+      ],
+      "aliases": [
+        "职业-模特",
+        "模特",
+        "拘束用品模特",
+        "产品模特"
+      ],
+      "oldIds": [
+        "bondage_tag:sg:职业-模特"
+      ],
+      "knowledgeSeed": [
+        "购物模特是可跨故事复用的职业场景条件：面向商品展示与影像制作，需在合意、安全流程下演示拘束用具从自由到固定的过程，并保留可沟通、可中断的局部行动能力。",
+        "它描述职业切口，不等于某次工作室拘束椅或全身包裹拍摄事件。"
+      ],
+      "expressionSeed": [
+        "表现重点常落在镜头前的姿态适应、安全员确认与商品固定点的可见性。",
+        "可用试镜轻量展示、正式多点固定与中段通话等职业流程组织场面，但不把单次兼职行程写进概念。"
+      ]
+    },
+    "plotRemainder": {
+      "keepOriginalId": true,
+      "proposedTitle": "购物模特-拘束椅与包裹拍摄",
+      "proposedSummary": "沈芷短期出国后，璃落报名本城拘束用品工作室当长期模特。试镜用轻量拘束具表现很好；正式拍摄一里她被固定在拘束椅上，完成从不安到放松的展示并成片发布；正式拍摄二里她进入接近全身包裹的装置，中段休息时以该状态接通沈芷视频，现场工作人员被姐姐的专业点评惊到。产品拍完后，她又开始找下一段拍摄兼职。",
+      "characters": [
+        "璃落",
+        "沈芷"
+      ],
+      "worldBiases": [
+        "1-浮光掠影"
+      ],
+      "plotKind": "restraint",
+      "maturity": "scene-ready",
+      "usedByLabels": [
+        "浮光掠影-紧缚模特"
+      ],
+      "development": {
+        "premise": "璃落报名拘束用品工作室，先过轻量试镜",
+        "escalation": "拘束椅拍摄把自愿固定过程推到成片发布",
+        "turn": "全身包裹拍摄中接通沈芷，家属点评比工作人员更懂",
+        "consequence": "该店产品拍完，璃落转向寻找下一段拍摄兼职"
+      }
+    }
+  },
+  "proposalSnapshot": {
+    "sourcePlotId": "plot-061",
+    "title": "模特",
+    "number": "061",
+    "groupId": "plot-group-025",
+    "groupTitle": "戏弄与霸凌",
+    "plotKind": "mixed",
+    "usageStatus": "used",
+    "recommendation": "move-to-rag",
+    "recommendedLayer": "rag",
+    "rationale": [
+      "摘要标明由旧职业 specialGameplay 迁移，且把具体过程指向故事正文。",
+      "标题是职业名词，不具备一次独立事件的完整发生结构。",
+      "换人物/世界后仍可复用同一职业场景概念。"
+    ],
+    "reuseTest": {
+      "reusableAcrossStories": true,
+      "explanation": "职业/场景概念可跨故事复用；正文过程不在本条目内。"
+    },
+    "eventTest": {
+      "hasActorOrRole": true,
+      "hasTrigger": false,
+      "hasProcess": true,
+      "hasChangeOrOutcome": false
+    },
+    "placementTest": {
+      "hasFormalWorldPlacement": true,
+      "linkedStoryIds": [
+        "world-1-glimmering-glance-model"
+      ]
+    },
+    "proposedRagTarget": {
+      "newRagId": "rag.restraint.context.模特",
+      "title": "模特职业场景",
+      "cardType": "context",
+      "knowledgeSeed": [
+        "模特是可跨故事复用的职业/角色场景条件，不绑定唯一人物、地点或单次结果。",
+        "知识分支应说明该职业场景通常带来的行动边界、可见规则与可复用限制条件。"
+      ],
+      "expressionSeed": [
+        "表达分支应说明该职业场景下受限状态、公开程度与身份反差的表现重点。",
+        "避免把某次故事正文过程写进概念定义。"
+      ]
+    },
+    "edgeMigrationPlan": [
+      {
+        "action": "redirect",
+        "fromId": "world-1-glimmering-glance-model",
+        "relation": "contains/plotRefs",
+        "toId": "plot-061",
+        "reason": "故事应改为引用 RAG，不再把职业概念当作情节 contains"
+      },
+      {
+        "action": "add",
+        "fromId": "world-1-glimmering-glance-model",
+        "relation": "references/ragRefs",
+        "toId": "rag.restraint.context.模特",
+        "reason": "故事直接引用可复用职业场景 RAG"
+      }
+    ],
+    "affectedSourceFiles": [
+      "src/game/data/plot_outline/catalog.json",
+      "src/game/data/story_outline/sources/1-modern.json"
+    ],
+    "affectedStoryEntries": [
+      "world-1-glimmering-glance-model"
+    ],
+    "linkedStories": [
+      {
+        "key": "world-1-glimmering-glance-model",
+        "title": "紧缚模特",
+        "sourceFile": "src/game/data/story_outline/sources/1-modern.json",
+        "markdownFiles": [
+          "src/game/data/story_outline/1-modern/2.1.1-紧缚模特.md"
+        ],
+        "ragRefs": [],
+        "plotRefs": [
+          "plot-061"
+        ],
+        "gameplayRefs": []
+      }
+    ],
+    "confidence": 0.9,
+    "questionsForUser": [
+      "是否确认将「模特」整体迁入 RAG（建议名：模特职业场景）？",
+      "该 RAG 是否放入紧缚专业 RAG 的 context 类别？若你希望用其他 domain/cardType，请指定。",
+      "关联故事正文里是否仍有一次应单独保留的具体事件？若有，请给出应保留的情节标题，或选择稍后拆分。"
+    ],
+    "reviewStatus": "proposed",
+    "generatedAt": "2026-07-28T08:54:03.671Z"
+  },
+  "recordedAt": "2026-07-28T09:14:00.260Z",
+  "applied": true,
+  "dryRun": false,
+  "migrationId": "plm-ms4fvf11"
+}

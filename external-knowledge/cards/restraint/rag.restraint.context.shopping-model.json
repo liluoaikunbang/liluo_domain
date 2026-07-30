@@ -1,0 +1,106 @@
+{
+  "cardId": "rag.restraint.context.shopping-model",
+  "title": "购物模特",
+  "domain": "restraint",
+  "cardType": "context",
+  "aliases": [
+    "职业-模特",
+    "模特",
+    "拘束用品模特",
+    "产品模特"
+  ],
+  "summary": "购物模特是可跨故事复用的职业场景条件：面向商品展示与影像制作，需在合意、安全流程下演示拘束用具从自由到固定的过程，并保留可沟通、可中断的局部行动能力。",
+  "definition": "购物模特是可跨故事复用的职业场景条件：面向商品展示与影像制作，需在合意、安全流程下演示拘束用具从自由到固定的过程，并保留可沟通、可中断的局部行动能力。",
+  "sourceRefs": [],
+  "evidenceStatus": "missing",
+  "contentStatus": "stub",
+  "reviewStatus": "candidate",
+  "directQuoteIncluded": false,
+  "canonical": false,
+  "knowledgeScope": "external-fiction-reference",
+  "ragLayer": "concept",
+  "parentCardIds": [
+    "rag.restraint.context.occupation"
+  ],
+  "migration": {
+    "batchId": "plot-layer-governance-v1",
+    "oldIds": [
+      "bondage_tag:sg:职业-模特"
+    ],
+    "generatedFrom": "plot-layer-migration",
+    "createdAt": "2026-07-28T09:14:00.281Z"
+  },
+  "evidenceRefs": [],
+  "sourceRecordIds": [],
+  "claims": [],
+  "retrievalPolicy": {
+    "graphVisible": true,
+    "searchable": true,
+    "relationAnchor": true,
+    "contentRetrievable": false,
+    "evidenceRetrievable": false,
+    "knowledgeRetrievable": false,
+    "expressionRetrievable": false
+  },
+  "professionalRagVersion": 1,
+  "knowledge": {
+    "definition": "购物模特是可跨故事复用的职业场景条件：面向商品展示与影像制作，需在合意、安全流程下演示拘束用具从自由到固定的过程，并保留可沟通、可中断的局部行动能力。",
+    "boundaries": {
+      "includes": [
+        "它描述职业切口，不等于某次工作室拘束椅或全身包裹拍摄事件。"
+      ],
+      "excludes": [
+        "不保存某次故事里的唯一人物、地点与结局过程"
+      ]
+    },
+    "distinctions": [],
+    "aliases": [
+      "职业-模特",
+      "模特",
+      "拘束用品模特",
+      "产品模特"
+    ],
+    "parentConceptRefs": [
+      "rag.restraint.context.occupation"
+    ],
+    "childConceptRefs": [],
+    "relatedConceptRefs": [],
+    "factualClaims": [],
+    "evidenceRefs": [],
+    "projectInterpretation": "它描述职业切口，不等于某次工作室拘束椅或全身包裹拍摄事件。",
+    "commonMisreadings": [],
+    "status": "stub",
+    "evidenceStatus": "missing",
+    "reviewStatus": "pending"
+  },
+  "expression": {
+    "visualFocus": [],
+    "actionLogic": [],
+    "movementEffects": [],
+    "postureEffects": [],
+    "sensoryFocus": [],
+    "emotionalPossibilities": [],
+    "narrativeUses": [
+      "表现重点常落在镜头前的姿态适应、安全员确认与商品固定点的可见性。",
+      "可用试镜轻量展示、正式多点固定与中段通话等职业流程组织场面，但不把单次兼职行程写进概念。"
+    ],
+    "applicableScenes": [],
+    "unsuitableScenes": [],
+    "expressionPrinciples": [
+      "表现重点常落在镜头前的姿态适应、安全员确认与商品固定点的可见性。",
+      "可用试镜轻量展示、正式多点固定与中段通话等职业流程组织场面，但不把单次兼职行程写进概念。"
+    ],
+    "commonFailures": [],
+    "prohibitedMisreadings": [],
+    "styleEvidenceRefs": [],
+    "goldExampleRefs": [],
+    "calibrationPairRefs": [],
+    "relatedStyleRagRefs": [],
+    "evidenceRefs": [],
+    "status": "stub",
+    "evidenceStatus": "missing",
+    "reviewStatus": "pending"
+  },
+  "overallStatus": "stub",
+  "evidenceBindings": []
+}

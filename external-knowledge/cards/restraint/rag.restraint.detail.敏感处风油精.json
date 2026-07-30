@@ -1,0 +1,157 @@
+{
+  "cardId": "rag.restraint.detail.敏感处风油精",
+  "title": "敏感处风油精",
+  "domain": "restraint",
+  "cardType": "term",
+  "aliases": [
+    "风油精敏感处",
+    "敏感部位风油精"
+  ],
+  "summary": "将风油精涂抹于皮肤或黏膜敏感部位，造成灼热与刺痛；常与拘束叠加，使人无法擦拭或躲开。",
+  "definition": "敏感处风油精指把风油精直接涂在皮肤或黏膜的敏感部位，造成灼热、刺痛等强烈不适；是极限折磨下的具体手段，不等于整段雪刑或末日情节。",
+  "sourceRefs": [],
+  "evidenceStatus": "missing",
+  "contentStatus": "stub",
+  "reviewStatus": "candidate",
+  "directQuoteIncluded": false,
+  "canonical": false,
+  "knowledgeScope": "external-fiction-reference",
+  "ragLayer": "concept",
+  "parentCardIds": [
+    "rag.restraint.effect.extreme-torture"
+  ],
+  "migration": {
+    "batchId": "plot-layer-governance-v1",
+    "oldIds": [],
+    "generatedFrom": "plot-layer-user-request",
+    "createdAt": "2026-07-28T10:58:23.340Z"
+  },
+  "evidenceRefs": [],
+  "sourceRecordIds": [],
+  "claims": [],
+  "distinctions": [
+    {
+      "targetConceptId": "rag.restraint.detail.感官刺激-芥末辣椒等",
+      "description": "本卡专指风油精敏感处；芥末辣椒等另卡。"
+    },
+    {
+      "targetConceptId": "rag.restraint.effect.odor-stimulation",
+      "description": "重点是接触后的灼热刺痛，不是气味羞辱。"
+    }
+  ],
+  "retrievalPolicy": {
+    "graphVisible": true,
+    "searchable": true,
+    "relationAnchor": true,
+    "contentRetrievable": false,
+    "evidenceRetrievable": false,
+    "knowledgeRetrievable": false,
+    "expressionRetrievable": false
+  },
+  "professionalRagVersion": 1,
+  "knowledge": {
+    "definition": "敏感处风油精指把风油精直接涂在皮肤或黏膜的敏感部位，造成灼热、刺痛等强烈不适；是极限折磨下的具体手段，不等于整段雪刑或末日情节。",
+    "boundaries": {
+      "includes": [
+        "敏感部位涂抹风油精",
+        "与拘束叠加、难以自行清除"
+      ],
+      "excludes": [
+        "芥末辣椒等其他物剂（见姐妹卡）",
+        "单纯气味羞辱",
+        "整段雪刑事件过程"
+      ]
+    },
+    "distinctions": [
+      {
+        "targetConceptId": "rag.restraint.detail.感官刺激-芥末辣椒等",
+        "description": "本卡专指风油精敏感处；芥末辣椒等另卡。"
+      },
+      {
+        "targetConceptId": "rag.restraint.effect.odor-stimulation",
+        "description": "重点是接触后的灼热刺痛，不是气味羞辱。"
+      }
+    ],
+    "aliases": [
+      "风油精敏感处",
+      "敏感部位风油精"
+    ],
+    "parentConceptRefs": [
+      "rag.restraint.effect.extreme-torture"
+    ],
+    "childConceptRefs": [],
+    "relatedConceptRefs": [
+      "rag.restraint.detail.感官刺激-芥末辣椒等",
+      "rag.restraint.effect.odor-stimulation",
+      "rag.restraint.detail.寒冷"
+    ],
+    "factualClaims": [],
+    "evidenceRefs": [],
+    "projectInterpretation": "情节可引用本卡；雪刑等完整事件仍写在情节层。",
+    "commonMisreadings": [
+      "把整段雪刑过程当成此概念本身"
+    ],
+    "status": "stub",
+    "evidenceStatus": "missing",
+    "reviewStatus": "pending"
+  },
+  "expression": {
+    "visualFocus": [
+      "物剂落点与接触面积",
+      "无法躲开时的身体反应"
+    ],
+    "actionLogic": [
+      "先写清风油精落在哪里、怎么涂上",
+      "再写拘束如何阻止擦拭或躲开",
+      "最后写灼热刺痛如何打断判断与表达"
+    ],
+    "movementEffects": [
+      "扭动、蜷缩、试图躲开却被姿态固定"
+    ],
+    "postureEffects": [
+      "倒吊、固定张腿等使敏感部位持续暴露"
+    ],
+    "sensoryFocus": [
+      "灼热",
+      "刺痛",
+      "流泪",
+      "呼吸发乱"
+    ],
+    "emotionalPossibilities": [
+      "慌乱",
+      "羞耻",
+      "愤怒"
+    ],
+    "narrativeUses": [
+      "把低温、堵嘴等手段再叠一层短时爆发的感官加压",
+      "表现施害者故意针对敏感处"
+    ],
+    "applicableScenes": [
+      "受困折磨",
+      "审讯加压",
+      "公开羞辱叠加"
+    ],
+    "unsuitableScenes": [
+      "只需轻度气味暗示、无接触刺激的场面"
+    ],
+    "expressionPrinciples": [
+      "写落点与即时反应，不写浓度配方或可复现操作手册",
+      "敏感处点到即可，重点是无法清除与压迫感"
+    ],
+    "commonFailures": [
+      "写成医疗说明书",
+      "与气味羞辱混成同一手段"
+    ],
+    "prohibitedMisreadings": [],
+    "styleEvidenceRefs": [],
+    "goldExampleRefs": [],
+    "calibrationPairRefs": [],
+    "relatedStyleRagRefs": [],
+    "evidenceRefs": [],
+    "status": "stub",
+    "evidenceStatus": "missing",
+    "reviewStatus": "pending"
+  },
+  "evidenceBindings": [],
+  "overallStatus": "stub"
+}

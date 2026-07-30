@@ -127,33 +127,57 @@ async function loadRagCardCandidates() {
     const card = JSON.parse(await readFile(absolute, 'utf8'))
     if (!card?.cardId) continue
     const rel = toPosix(absolute)
+    const knowledge = card.knowledge ?? null
+    const expression = card.expression ?? null
+    const definition = knowledge?.definition || card.definition || ''
+    const knowledgeEmpty = !String(definition).trim()
+    const expressionEmpty =
+      !(expression?.visualFocus?.length ||
+        expression?.actionLogic?.length ||
+        expression?.expressionPrinciples?.length ||
+        expression?.goldExampleRefs?.length)
     items.push({
       channel: 'rag',
       assetId: card.cardId,
       path: rel,
       title: card.title ?? card.cardId,
       author: 'card',
-      themeDomain: 'unknown',
+      themeDomain: card.domain === 'restraint' ? 'restraint-themed' : 'unknown',
       confidence: {
         title: card.title ? 'high' : 'unknown',
         author: 'n/a',
       },
       reviewStatus: card.reviewStatus ?? 'candidate',
       lowConfidence:
-        !card.definition ||
+        knowledgeEmpty ||
+        expressionEmpty ||
         !Array.isArray(card.sourceRefs) ||
         card.sourceRefs.length === 0 ||
-        card.reviewStatus === 'candidate',
+        card.reviewStatus === 'candidate' ||
+        knowledge?.reviewStatus === 'pending' ||
+        expression?.reviewStatus === 'pending',
       currentResult: {
         assetKind: 'card',
         cardType: card.cardType,
-        definition: card.definition ?? '',
-        distinctions: card.distinctions ?? [],
+        // 一张卡同时带知识+表达；抽查不拆成两条
+        professionalRag: Boolean(card.professionalRagVersion && knowledge && expression),
+        overallStatus: card.overallStatus ?? null,
+        definition,
+        distinctions: card.distinctions ?? knowledge?.distinctions ?? [],
         concepts: card.concepts ?? [],
         prerequisites: card.prerequisites ?? [],
         progression: card.progression ?? [],
         tags: card.tags ?? [],
         reviewStatus: card.reviewStatus,
+        evidenceStatus: card.evidenceStatus,
+        contentStatus: card.contentStatus,
+        knowledgeStatus: knowledge?.status ?? null,
+        knowledgeReviewStatus: knowledge?.reviewStatus ?? null,
+        expressionStatus: expression?.status ?? null,
+        expressionReviewStatus: expression?.reviewStatus ?? null,
+        expressionPrinciples: expression?.expressionPrinciples ?? [],
+        evidenceRefCount: Array.isArray(card.evidenceRefs) ? card.evidenceRefs.length : 0,
+        claimCount: Array.isArray(card.claims) ? card.claims.length : 0,
         sourceRefCount: Array.isArray(card.sourceRefs) ? card.sourceRefs.length : 0,
         knowledgeScope: card.knowledgeScope,
         canonical: Boolean(card.canonical),
@@ -298,7 +322,27 @@ function alreadyAuditedIds(registry, channel) {
   )
 }
 
-function scorePool(pool, mode, options, hitStats) {
+function okAuditedIds(registry, channel) {
+  return new Set(
+    (registry.records ?? [])
+      .filter((r) => {
+        if (channel !== 'all' && r.channel !== channel) return false
+        const categories = r.issueCategories ?? []
+        const ok =
+          categories.includes('confirmed-ok') ||
+          r.formStatus === 'confirmed-ok' ||
+          r.userJudgment === 'ok' ||
+          r.verdict === 'ok'
+        return Boolean(ok)
+      })
+      .map((r) => `${r.channel}:${r.sourceAssetId}`),
+  )
+}
+
+function scorePool(pool, mode, options, hitStats, policy = {}) {
+  const down = policy.confirmedOkDownweight ?? {}
+  const auditedPenalty = Number(down.auditedPenalty ?? 25)
+  const confirmedOkPenalty = Number(down.priorityPenalty ?? 45)
   const scored = pool.map((item) => {
     let priority = 0
     if (mode === 'low-confidence' || mode === 'unknown-fields') {
@@ -323,6 +367,17 @@ function scorePool(pool, mode, options, hitStats) {
       }
     }
     if (mode === 'random') priority += 1
+    // 权重只影响随机/排序概率，不移出池：
+    // 抽查过 → 中降权；抽查且 confirmed-ok → 再降权。
+    if (item.currentResult?.userAudited === true) priority -= auditedPenalty
+    if (item.currentResult?.userAuditOk === true) priority -= confirmedOkPenalty
+    if (item.channel === 'rag' && item.currentResult?.assetKind === 'card') {
+      const review = String(item.reviewStatus ?? '')
+      if (review === 'reviewed' || review === 'confirmed') priority -= 20
+      if (item.currentResult?.evidenceStatus === 'sufficient' || item.currentResult?.evidenceStatus === 'supported') {
+        priority -= 15
+      }
+    }
     priority += seedFrom(item.assetId) % 7
     return { item, priority }
   })
@@ -346,10 +401,15 @@ function selectFromScored(scored, mode, options, batchSize) {
   return selected.slice(0, batchSize)
 }
 
-function filterPool(pool, options, audited) {
+function filterPool(pool, options, audited, okAudited = new Set()) {
   let next = pool
-  if (options.excludeAudited !== false) {
-    next = next.filter((item) => !audited.has(`${item.channel}:${item.assetId}`))
+  // 默认：已抽查项仍留在池中，只靠权重降概率；仅当显式 --exclude-audited 才硬排除。
+  if (options.excludeAudited === true) {
+    next = next.filter((item) => {
+      const key = `${item.channel}:${item.assetId}`
+      if (!audited.has(key)) return true
+      return okAudited.has(key)
+    })
   }
   if (options.theme) {
     next = next.filter((item) => item.themeDomain === options.theme)
@@ -381,6 +441,7 @@ export async function sampleAuditBatch(options = {}) {
   const registry = await loadAuditRegistry()
   const hitStats = await loadHitStats()
   const audited = alreadyAuditedIds(registry, channel)
+  const okAudited = okAuditedIds(registry, channel)
 
   let selected = []
   let remainingPool = 0
@@ -392,15 +453,37 @@ export async function sampleAuditBatch(options = {}) {
     for (const ch of channelsInBatch) {
       const take = perChannel + (leftover > 0 ? 1 : 0)
       if (leftover > 0) leftover -= 1
-      let pool = filterPool(await loadCandidatesForChannel(ch, options, policy), options, audited)
-      const scored = scorePool(pool, mode, options, hitStats)
+      let pool = filterPool(await loadCandidatesForChannel(ch, options, policy), options, audited, okAudited)
+      pool = pool.map((item) => {
+        const key = `${item.channel}:${item.assetId}`
+        const flags = {}
+        if (audited.has(key)) flags.userAudited = true
+        if (okAudited.has(key)) flags.userAuditOk = true
+        if (!flags.userAudited && !flags.userAuditOk) return item
+        return {
+          ...item,
+          currentResult: { ...(item.currentResult ?? {}), ...flags },
+        }
+      })
+      const scored = scorePool(pool, mode, options, hitStats, policy)
       remainingPool += Math.max(0, scored.length - take)
       selected.push(...selectFromScored(scored, mode, { ...options, seed: `${options.seed ?? ''}:${ch}` }, take))
     }
     selected = selected.slice(0, batchSize)
   } else {
-    let pool = filterPool(await loadCandidatesForChannel(channel, options, policy), options, audited)
-    const scored = scorePool(pool, mode, options, hitStats)
+    let pool = filterPool(await loadCandidatesForChannel(channel, options, policy), options, audited, okAudited)
+    pool = pool.map((item) => {
+      const key = `${item.channel}:${item.assetId}`
+      const flags = {}
+      if (audited.has(key)) flags.userAudited = true
+      if (okAudited.has(key)) flags.userAuditOk = true
+      if (!flags.userAudited && !flags.userAuditOk) return item
+      return {
+        ...item,
+        currentResult: { ...(item.currentResult ?? {}), ...flags },
+      }
+    })
+    const scored = scorePool(pool, mode, options, hitStats, policy)
     selected = selectFromScored(scored, mode, options, batchSize)
     remainingPool = Math.max(0, scored.length - selected.length)
   }
@@ -461,7 +544,7 @@ export async function sampleAuditBatch(options = {}) {
     ragSample: payload.ragSample,
     note: ragKinds.includeSources
       ? '仅人工抽查；本批含源条目（--include-sources / --asset-kind）。现有索引可继续使用。'
-      : '仅人工抽查；紧缚 RAG 默认只抽知识卡。源条目请加 --include-sources。现有索引可继续使用。',
+      : '仅人工抽查；紧缚 RAG 每张卡抽一次（含知识+表达双分支状态），不拆成两条。源条目请加 --include-sources。',
   }
 }
 
@@ -500,8 +583,9 @@ function renderBatchMarkdown(payload) {
     '',
     '填写后用对应 `*:audit:record --channel <通道>` 写入；单次错误不会自动升级 Skill。',
     '硬规则：改主条目时必须检查关联项；有需要补充或调整的，与主条目一并处理。可用 `*:audit:related --asset <id>` 列出邻居。',
-    '紧缚 RAG 默认只抽知识卡；需要源条目时加 `--include-sources` 或 `--asset-kind source|all`。',
-    '卡审重点：描述是否够用 / 是否有独立存在价值 / 与邻居是否该分层或合并（不必读原文）。',
+    '紧缚 RAG：每张概念卡抽一次，同时看知识分支与表达分支；不要拆成两条。源条目加 `--include-sources`。',
+    '抽查权重：未抽查优先；抽查过降权；confirmed-ok 再降权；低权仍留在池中，高权抽完后会轮到。',
+    '卡审重点：知识是否够用 / 表达骨架是否空着或需补 / 是否有独立存在价值 / 与邻居是否该分层或合并。',
     '',
   ]
   for (const item of payload.items) {
@@ -511,9 +595,16 @@ function renderBatchMarkdown(payload) {
     lines.push(`  - 路径：${item.path}`)
     lines.push(`  - 低置信度：${item.lowConfidence ? '是' : '否'}｜命中提示：${item.hitCount}`)
     if (result.assetKind === 'card') {
-      lines.push(`  - 卡类型：${result.cardType ?? 'unknown'}｜状态：${result.reviewStatus ?? item.reviewStatus ?? 'unknown'}｜来源挂接：${result.sourceRefCount ?? 0}`)
-      lines.push(`  - definition：${truncateText(result.definition) || '（缺失）'}`)
-      const distinctions = (result.distinctions ?? []).map((d) => truncateText(d, 100)).filter(Boolean)
+      lines.push(`  - 卡类型：${result.cardType ?? 'unknown'}｜总状态：${result.overallStatus ?? result.reviewStatus ?? item.reviewStatus ?? 'unknown'}｜来源挂接：${result.sourceRefCount ?? 0}`)
+      lines.push(
+        `  - 双分支：知识 ${result.knowledgeStatus ?? 'n/a'}/${result.knowledgeReviewStatus ?? 'n/a'}｜表达 ${result.expressionStatus ?? 'n/a'}/${result.expressionReviewStatus ?? 'n/a'}`,
+      )
+      lines.push(`  - 知识 definition：${truncateText(result.definition) || '（空骨架）'}`)
+      const expressionPrinciples = (result.expressionPrinciples ?? []).map((d) => truncateText(d, 100)).filter(Boolean)
+      lines.push(`  - 表达要点：${expressionPrinciples.length ? expressionPrinciples.join(' / ') : '（空骨架）'}`)
+      const distinctions = (result.distinctions ?? [])
+        .map((d) => truncateText(typeof d === 'string' ? d : d?.description, 100))
+        .filter(Boolean)
       lines.push(`  - distinctions：${distinctions.length ? distinctions.join(' / ') : '（无）'}`)
       const concepts = (result.concepts ?? []).map((c) => truncateText(c, 80)).filter(Boolean)
       lines.push(`  - concepts：${concepts.length ? concepts.join(' ｜ ') : '（无）'}`)
@@ -533,7 +624,7 @@ function renderBatchMarkdown(payload) {
       } else {
         lines.push('  - 同类型邻居：（无）')
       }
-      lines.push('  - 卡审三问：描述是否够用？是否有独立存在价值？与邻居是否该分层/合并？')
+      lines.push('  - 卡审三问：知识是否够用？表达是否该补？与邻居是否该分层/合并？（一张卡只审一次）')
     }
     lines.push('  - 问题描述：')
     lines.push('  - 正确结果：')

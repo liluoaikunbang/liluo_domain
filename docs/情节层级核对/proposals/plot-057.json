@@ -1,0 +1,72 @@
+{
+  "sourcePlotId": "plot-057",
+  "title": "天方夜谭-沙漠王城与灯神宝库",
+  "number": "057",
+  "groupId": "plot-group-021",
+  "groupTitle": "童话改编",
+  "plotKind": "ordinary",
+  "usageStatus": "unused",
+  "recommendation": "keep-as-plot",
+  "recommendedLayer": "plot",
+  "rationale": [
+    "具备角色/条件/过程/变化中的多项事件证据。",
+    "应作为一次性叙事实例保留；若内部含可复用概念，可另抽 RAG，但不整项迁移。"
+  ],
+  "reuseTest": {
+    "reusableAcrossStories": false,
+    "explanation": "摘要描述一次具体发生，换故事后通常不能原样复用。"
+  },
+  "eventTest": {
+    "hasActorOrRole": true,
+    "hasTrigger": true,
+    "hasProcess": true,
+    "hasChangeOrOutcome": true
+  },
+  "placementTest": {
+    "hasFormalWorldPlacement": true,
+    "linkedStoryIds": [
+      "world-1-glimmering-glance-hot-spring"
+    ]
+  },
+  "edgeMigrationPlan": [],
+  "affectedSourceFiles": [
+    "src/game/data/plot_outline/catalog.json",
+    "src/game/data/story_outline/sources/1-modern.json"
+  ],
+  "affectedStoryEntries": [
+    "world-1-glimmering-glance-hot-spring"
+  ],
+  "linkedStories": [
+    {
+      "key": "world-1-glimmering-glance-hot-spring",
+      "title": "温泉度假酒店",
+      "sourceFile": "src/game/data/story_outline/sources/1-modern.json",
+      "markdownFiles": [
+        "src/game/data/story_outline/1-modern/1.8-温泉度假酒店.md"
+      ],
+      "ragRefs": [
+        "rag.restraint.effect.tickling",
+        "rag.restraint.context.burial-restraint",
+        "rag.restraint.effect.sexual-stimulation",
+        "rag.restraint.effect.odor-stimulation"
+      ],
+      "plotRefs": [
+        "plot.migration.活埋-沙滩活埋",
+        "plot-057"
+      ],
+      "gameplayRefs": [
+        "gameplay-099",
+        "gameplay-100"
+      ]
+    }
+  ],
+  "confidence": 0.75,
+  "questionsForUser": [
+    "是否需要补充 ragRefs 指向已有紧缚 RAG？可暂缓。"
+  ],
+  "reviewStatus": "confirmed",
+  "generatedAt": "2026-07-28T08:54:03.555Z",
+  "userDecision": "keep-as-plot",
+  "confirmationId": "plc-ms4kr7ng",
+  "updatedAt": "2026-07-28T11:30:42.178Z"
+}

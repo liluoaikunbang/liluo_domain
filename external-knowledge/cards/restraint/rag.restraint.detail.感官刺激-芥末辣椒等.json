@@ -1,15 +1,18 @@
 {
   "cardId": "rag.restraint.detail.感官刺激-芥末辣椒等",
-  "title": "感官刺激-芥末辣椒等",
+  "title": "芥末辣椒等",
   "domain": "restraint",
   "cardType": "term",
-  "aliases": [],
-  "summary": "",
-  "definition": "",
+  "aliases": [
+    "感官刺激-芥末辣椒等",
+    "芥末辣椒"
+  ],
+  "summary": "用芥末、辣椒等刺激性物剂接触皮肤或黏膜，造成灼热刺痛；属极限折磨下的具体手段。",
+  "definition": "用芥末、辣椒等刺激性物剂直接接触皮肤或黏膜，造成灼热、刺痛等强烈不适；是极限折磨下的具体手段，与敏感处风油精并列，不等于某次具体情节。",
   "sourceRefs": [],
   "evidenceStatus": "missing",
   "contentStatus": "stub",
-  "reviewStatus": "pending",
+  "reviewStatus": "candidate",
   "directQuoteIncluded": false,
   "canonical": false,
   "knowledgeScope": "external-fiction-reference",
@@ -18,10 +21,102 @@
     "oldIds": [
       "bondage_tag:sg:感官刺激-芥末辣椒等"
     ],
-    "generatedFrom": "legacy-tag-title-only"
+    "generatedFrom": "legacy-tag-title-only",
+    "evidenceLayer": "v1",
+    "evidenceMigratedAt": "2026-07-28T07:14:30.120Z",
+    "professionalRag": {
+      "batchId": "professional-rag-bulk-v1",
+      "migratedAt": "2026-07-28T07:49:31.911Z",
+      "strategy": "knowledge-from-legacy-expression-stub",
+      "notes": "知识分支由既有 definition/claims/evidence 迁入；表达分支保留骨架（有 creative-note/abstractPatterns 时写入草稿）；同一概念不另建重复卡。"
+    },
+    "plotLayerNote": "恢复为芥末辣椒等子概念；极限折磨升为上位类别；敏感处风油精另建子卡。",
+    "updatedAt": "2026-07-28T10:58:23.340Z"
   },
   "ragLayer": "concept",
   "parentCardIds": [
-    "rag.restraint.effect.sensory-stimulation"
+    "rag.restraint.effect.extreme-torture"
+  ],
+  "evidenceRefs": [],
+  "sourceRecordIds": [],
+  "claims": [],
+  "retrievalPolicy": {
+    "graphVisible": true,
+    "searchable": true,
+    "relationAnchor": true,
+    "contentRetrievable": false,
+    "evidenceRetrievable": false,
+    "knowledgeRetrievable": false,
+    "expressionRetrievable": false
+  },
+  "professionalRagVersion": 1,
+  "knowledge": {
+    "definition": "用芥末、辣椒等刺激性物剂直接接触皮肤或黏膜，造成灼热、刺痛等强烈不适；是极限折磨下的具体手段，与敏感处风油精并列，不等于某次具体情节。",
+    "boundaries": {
+      "includes": [
+        "芥末、辣椒油等物剂接触皮肤或黏膜",
+        "与拘束叠加"
+      ],
+      "excludes": [
+        "敏感处风油精（见姐妹卡）",
+        "单纯气味羞辱",
+        "单次故事完整过程"
+      ]
+    },
+    "distinctions": [
+      {
+        "targetConceptId": "rag.restraint.detail.敏感处风油精",
+        "description": "本卡管芥末辣椒等；敏感处风油精另卡。"
+      }
+    ],
+    "aliases": [
+      "感官刺激-芥末辣椒等",
+      "芥末辣椒"
+    ],
+    "parentConceptRefs": [
+      "rag.restraint.effect.extreme-torture"
+    ],
+    "childConceptRefs": [],
+    "relatedConceptRefs": [
+      "rag.restraint.detail.敏感处风油精",
+      "rag.restraint.effect.sensory-stimulation"
+    ],
+    "factualClaims": [],
+    "evidenceRefs": [],
+    "projectInterpretation": "与敏感处风油精同属极限折磨子手段。",
+    "commonMisreadings": [],
+    "status": "stub",
+    "evidenceStatus": "missing",
+    "reviewStatus": "pending"
+  },
+  "expression": {
+    "visualFocus": [],
+    "actionLogic": [],
+    "movementEffects": [],
+    "postureEffects": [],
+    "sensoryFocus": [],
+    "emotionalPossibilities": [],
+    "narrativeUses": [],
+    "applicableScenes": [],
+    "unsuitableScenes": [],
+    "expressionPrinciples": [],
+    "commonFailures": [],
+    "prohibitedMisreadings": [],
+    "styleEvidenceRefs": [],
+    "goldExampleRefs": [],
+    "calibrationPairRefs": [],
+    "relatedStyleRagRefs": [],
+    "evidenceRefs": [],
+    "status": "stub",
+    "evidenceStatus": "missing",
+    "reviewStatus": "pending"
+  },
+  "overallStatus": "stub",
+  "evidenceBindings": [],
+  "distinctions": [
+    {
+      "targetConceptId": "rag.restraint.detail.敏感处风油精",
+      "description": "本卡管芥末辣椒等；敏感处风油精另卡。"
+    }
   ]
 }

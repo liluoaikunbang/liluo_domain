@@ -22,7 +22,7 @@
       "endLine": 134
     }
   ],
-  "evidenceStatus": "supported",
+  "evidenceStatus": "partial",
   "contentStatus": "complete",
   "reviewStatus": "candidate",
   "directQuoteIncluded": false,
@@ -33,10 +33,126 @@
     "oldIds": [
       "bondage_tag:脚镣"
     ],
-    "generatedFrom": "legacy-tag-title-only"
+    "generatedFrom": "legacy-tag-title-only",
+    "evidenceLayer": "v1",
+    "evidenceMigratedAt": "2026-07-28T07:14:30.277Z",
+    "professionalRag": {
+      "batchId": "professional-rag-bulk-v1",
+      "migratedAt": "2026-07-28T07:49:32.031Z",
+      "strategy": "knowledge-from-legacy-expression-stub",
+      "notes": "知识分支由既有 definition/claims/evidence 迁入；表达分支保留骨架（有 creative-note/abstractPatterns 时写入草稿）；同一概念不另建重复卡。"
+    }
   },
   "ragLayer": "concept",
   "parentCardIds": [
     "rag.restraint.tool.shackles"
+  ],
+  "evidenceRefs": [
+    "ev-fbsrc000007-df631609bdf54c72",
+    "ev-fbsrc000013-32b4b5cb293b1e19"
+  ],
+  "sourceRecordIds": [
+    "fb-src-000007",
+    "fb-src-000013"
+  ],
+  "claims": [
+    {
+      "id": "rag.restraint.tool.leg-irons::claim:definition:0",
+      "label": "定义",
+      "content": "作用于脚踝的成对铐具；主要改变行走范围和节奏，不自动决定上身姿态。",
+      "claimType": "definition",
+      "evidenceRefs": [
+        "ev-fbsrc000007-df631609bdf54c72",
+        "ev-fbsrc000013-32b4b5cb293b1e19"
+      ],
+      "supportStatus": "pending",
+      "reviewStatus": "pending",
+      "origin": "external-summary"
+    }
+  ],
+  "retrievalPolicy": {
+    "graphVisible": true,
+    "searchable": true,
+    "relationAnchor": true,
+    "contentRetrievable": false,
+    "evidenceRetrievable": true,
+    "knowledgeRetrievable": false,
+    "expressionRetrievable": false
+  },
+  "professionalRagVersion": 1,
+  "knowledge": {
+    "definition": "作用于脚踝的成对铐具；主要改变行走范围和节奏，不自动决定上身姿态。",
+    "boundaries": {
+      "includes": [],
+      "excludes": []
+    },
+    "distinctions": [],
+    "aliases": [],
+    "parentConceptRefs": [
+      "rag.restraint.tool.shackles"
+    ],
+    "childConceptRefs": [],
+    "relatedConceptRefs": [],
+    "factualClaims": [
+      {
+        "id": "rag.restraint.tool.leg-irons::claim:definition:0",
+        "label": "定义",
+        "content": "作用于脚踝的成对铐具；主要改变行走范围和节奏，不自动决定上身姿态。",
+        "claimType": "definition",
+        "evidenceRefs": [
+          "ev-fbsrc000007-df631609bdf54c72",
+          "ev-fbsrc000013-32b4b5cb293b1e19"
+        ],
+        "supportStatus": "pending",
+        "reviewStatus": "pending",
+        "origin": "external-summary"
+      }
+    ],
+    "evidenceRefs": [
+      "ev-fbsrc000007-df631609bdf54c72",
+      "ev-fbsrc000013-32b4b5cb293b1e19"
+    ],
+    "projectInterpretation": "",
+    "commonMisreadings": [],
+    "status": "usable",
+    "evidenceStatus": "partial",
+    "reviewStatus": "pending"
+  },
+  "expression": {
+    "visualFocus": [],
+    "actionLogic": [],
+    "movementEffects": [],
+    "postureEffects": [],
+    "sensoryFocus": [],
+    "emotionalPossibilities": [],
+    "narrativeUses": [],
+    "applicableScenes": [],
+    "unsuitableScenes": [],
+    "expressionPrinciples": [],
+    "commonFailures": [],
+    "prohibitedMisreadings": [],
+    "styleEvidenceRefs": [],
+    "goldExampleRefs": [],
+    "calibrationPairRefs": [],
+    "relatedStyleRagRefs": [],
+    "evidenceRefs": [],
+    "status": "stub",
+    "evidenceStatus": "missing",
+    "reviewStatus": "pending"
+  },
+  "overallStatus": "knowledge-only",
+  "evidenceBindings": [
+    {
+      "evidenceId": "ev-fbsrc000007-df631609bdf54c72",
+      "purpose": "knowledge-evidence",
+      "branch": "knowledge",
+      "supportStatus": "pending"
+    },
+    {
+      "evidenceId": "ev-fbsrc000013-32b4b5cb293b1e19",
+      "purpose": "knowledge-evidence",
+      "branch": "knowledge",
+      "supportStatus": "pending"
+    }
   ]
 }

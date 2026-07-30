@@ -10,7 +10,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "6b6849bcf03bb67062b0657cb49e007c0345f69e2d633dbcbe2fc21192862d7d"
+      "json": "db89866cf5644a053d9c887d5d769e782d0b8718d475846ccd5ec456537ecaba"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
     "summary": "带有一些超自然能力与现象的现代都市世界。",
@@ -32,7 +32,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "6b6849bcf03bb67062b0657cb49e007c0345f69e2d633dbcbe2fc21192862d7d"
+      "json": "db89866cf5644a053d9c887d5d769e782d0b8718d475846ccd5ec456537ecaba"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
     "summary": "异常灾害处理组织",
@@ -53,7 +53,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "6b6849bcf03bb67062b0657cb49e007c0345f69e2d633dbcbe2fc21192862d7d"
+      "json": "db89866cf5644a053d9c887d5d769e782d0b8718d475846ccd5ec456537ecaba"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
     "summary": "黑槲夜猎",
@@ -81,7 +81,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "6b6849bcf03bb67062b0657cb49e007c0345f69e2d633dbcbe2fc21192862d7d",
+      "json": "db89866cf5644a053d9c887d5d769e782d0b8718d475846ccd5ec456537ecaba",
       "markdown": "ff8272e9febaa7ce19d7923ed58a296c9a228f7111ad1dc1bea2fe50202baca1"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -123,7 +123,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "6b6849bcf03bb67062b0657cb49e007c0345f69e2d633dbcbe2fc21192862d7d",
+      "json": "db89866cf5644a053d9c887d5d769e782d0b8718d475846ccd5ec456537ecaba",
       "markdown": "feb7cabeddeb4400b2e1de0ebcdd9483d9b35a9e68d203a984f1073d45df9ea8"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -166,7 +166,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "6b6849bcf03bb67062b0657cb49e007c0345f69e2d633dbcbe2fc21192862d7d",
+      "json": "db89866cf5644a053d9c887d5d769e782d0b8718d475846ccd5ec456537ecaba",
       "markdown": "6ab6b14cddee2fa6a40a8117b57b398ba2bf524714cbc3cfcd6333937a7522fd"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -203,7 +203,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "6b6849bcf03bb67062b0657cb49e007c0345f69e2d633dbcbe2fc21192862d7d",
+      "json": "db89866cf5644a053d9c887d5d769e782d0b8718d475846ccd5ec456537ecaba",
       "markdown": "febc436a101f8d0db25ac81b2809e440bd7719119cda80453cd9cc508135ea73"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -243,7 +243,7 @@
     "series": "1-modern",
     "side": true,
     "sourceHashes": {
-      "json": "6b6849bcf03bb67062b0657cb49e007c0345f69e2d633dbcbe2fc21192862d7d",
+      "json": "db89866cf5644a053d9c887d5d769e782d0b8718d475846ccd5ec456537ecaba",
       "markdown": "d1284c85e05dba4d7efde1564aea6cb97243a967ab0f2645d613229610769a6c"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -279,8 +279,8 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "6b6849bcf03bb67062b0657cb49e007c0345f69e2d633dbcbe2fc21192862d7d",
-      "markdown": "0acf5a6c1d5f2ec83d82f57c9ec2b1e3546ce128d20d8cff118ca2e749b5426a"
+      "json": "db89866cf5644a053d9c887d5d769e782d0b8718d475846ccd5ec456537ecaba",
+      "markdown": "c2ad2e8085348e3bcf0f4bb342a2726399a574dbb9d0fb4a17efe7f255ceb146"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
     "summary": "加入紧缚社团。",
@@ -315,8 +315,8 @@
     "series": "1-modern",
     "side": true,
     "sourceHashes": {
-      "json": "6b6849bcf03bb67062b0657cb49e007c0345f69e2d633dbcbe2fc21192862d7d",
-      "markdown": "5b1114e721d241644c8339f346e925b9bc6bef24c12b1bf766ca8d6c9ee06e1e"
+      "json": "db89866cf5644a053d9c887d5d769e782d0b8718d475846ccd5ec456537ecaba",
+      "markdown": "0d2a98eaffd894f680ff56009fe275519b18846497efca15e6796e556f7b1cb0"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
     "summary": "游轮上的玩耍。",
@@ -352,7 +352,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "6b6849bcf03bb67062b0657cb49e007c0345f69e2d633dbcbe2fc21192862d7d",
+      "json": "db89866cf5644a053d9c887d5d769e782d0b8718d475846ccd5ec456537ecaba",
       "markdown": "63747f694ca90f915465b1776a77c47f0c93665eb6c13a5307afa8f569f76c05"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -374,7 +374,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "6b6849bcf03bb67062b0657cb49e007c0345f69e2d633dbcbe2fc21192862d7d"
+      "json": "db89866cf5644a053d9c887d5d769e782d0b8718d475846ccd5ec456537ecaba"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
     "summary": "灰巷线尾声。",
@@ -384,6 +384,9 @@
     "world": "1-浮光掠影"
   },
   {
+    "characters": [
+      "璃落"
+    ],
     "childKeys": [
       "world-1-glimmering-glance-epilogue",
       "world-1-glimmering-glance-liminal-space"
@@ -392,23 +395,27 @@
     "indexVersion": 1,
     "key": "world-1-glimmering-glance-eternal-restraint-maze",
     "locations": [
-      "荆江市"
+      "荆江市",
+      "永拘迷宫",
+      "核心怨念树"
     ],
     "markdownPath": "src/game/data/story_outline/1-modern/4.3-永拘迷宫.md",
+    "maturity": "灵感",
     "missingItems": [
-      "设计｜永拘迷宫·故事体量｜缺少故事体量、主要区域数量与核心机制差异说明",
+      "设计｜永拘迷宫·区域细则｜已确认六种心理态房间与核心怨念树；仍缺各态房间数量、连接规则，以及相较其他禁域模块的机制差异细则",
       "玩法｜永拘迷宫·主要活动｜缺少主要游戏活动类型与可执行操作循环",
-      "流程｜永拘迷宫·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解"
+      "流程｜永拘迷宫·玩家流程｜缺少进入、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
+      "衔接｜永拘迷宫·满怨古树吸收｜已确认后期由满怨古树吸收核心怨念树并与群像救援并行瓦解核心；仍缺触发时机、可见过程，以及对满怨古树的即时后果"
     ],
     "parentKey": "world-1-glimmering-glance-silent-correction-center",
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "6b6849bcf03bb67062b0657cb49e007c0345f69e2d633dbcbe2fc21192862d7d",
-      "markdown": "cd20270845e19062e9163c950bec04a7863f988569ef5c62a7bcdf728e6f4d82"
+      "json": "db89866cf5644a053d9c887d5d769e782d0b8718d475846ccd5ec456537ecaba",
+      "markdown": "20e13675131da40ccbcd45b8f49fcf3daff9f1b3f95c37f466f5dd72c0dbd79c"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
-    "summary": "异能者决战，璃落被永久拘束后投入迷宫中",
+    "summary": "异能者决战中璃落被永久拘束投入永拘迷宫；房间对应期待、羞耻、恐惧、安心、依赖、反抗六种心理态，核心为怨念树。后期满怨古树吸收该核心怨念树，与群像救援并行瓦解迷宫核心。",
     "summarySource": "frontmatter.summary",
     "title": "永拘迷宫",
     "type": "story-node",
@@ -423,7 +430,7 @@
     "series": "1-modern",
     "side": true,
     "sourceHashes": {
-      "json": "6b6849bcf03bb67062b0657cb49e007c0345f69e2d633dbcbe2fc21192862d7d"
+      "json": "db89866cf5644a053d9c887d5d769e782d0b8718d475846ccd5ec456537ecaba"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
     "summary": "幻想世界冒险",
@@ -453,7 +460,7 @@
     "series": "1-modern",
     "side": true,
     "sourceHashes": {
-      "json": "6b6849bcf03bb67062b0657cb49e007c0345f69e2d633dbcbe2fc21192862d7d",
+      "json": "db89866cf5644a053d9c887d5d769e782d0b8718d475846ccd5ec456537ecaba",
       "markdown": "305fed136b881a15ac9af16e994d7081acea522b3972a7820ceaf09b0473cd11"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -482,7 +489,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "6b6849bcf03bb67062b0657cb49e007c0345f69e2d633dbcbe2fc21192862d7d",
+      "json": "db89866cf5644a053d9c887d5d769e782d0b8718d475846ccd5ec456537ecaba",
       "markdown": "f402a07e1a45644c9ee385709ff27fca86e6a984aa6202d4f99540b2c6c47a1c"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -511,7 +518,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "6b6849bcf03bb67062b0657cb49e007c0345f69e2d633dbcbe2fc21192862d7d",
+      "json": "db89866cf5644a053d9c887d5d769e782d0b8718d475846ccd5ec456537ecaba",
       "markdown": "d2f39d994444da83685c6660aa7bc8afb0ee39f17db5f6a0c069ff015551902d"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -537,7 +544,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "6b6849bcf03bb67062b0657cb49e007c0345f69e2d633dbcbe2fc21192862d7d"
+      "json": "db89866cf5644a053d9c887d5d769e782d0b8718d475846ccd5ec456537ecaba"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
     "summary": "暗巷与废墟交织的地下都市，暴力与无序像潮水般涌动。",
@@ -566,8 +573,8 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "6b6849bcf03bb67062b0657cb49e007c0345f69e2d633dbcbe2fc21192862d7d",
-      "markdown": "13e2300cdd74cace8829b89a070e6f93566b7df11b598029444865528826a612"
+      "json": "db89866cf5644a053d9c887d5d769e782d0b8718d475846ccd5ec456537ecaba",
+      "markdown": "891a948e2602747f559af582f15276ea59fd6c096e2c4d77ee7cf03becca313e"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
     "summary": "荆锁会事件完结，璃落与校园地下的满怨古树缠斗；荆锁会遗留的一组灵异游戏共同压制着它。",
@@ -610,7 +617,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "6b6849bcf03bb67062b0657cb49e007c0345f69e2d633dbcbe2fc21192862d7d",
+      "json": "db89866cf5644a053d9c887d5d769e782d0b8718d475846ccd5ec456537ecaba",
       "markdown": "31091d717790018e9b7815797e3e4a676ac1dd271834b65af99f6d1cf29a25e7"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -647,8 +654,8 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "6b6849bcf03bb67062b0657cb49e007c0345f69e2d633dbcbe2fc21192862d7d",
-      "markdown": "eb00a4c43f426d7216289aed1eaf87bd5c385de7ab604ae8ee0b15acd351e602"
+      "json": "db89866cf5644a053d9c887d5d769e782d0b8718d475846ccd5ec456537ecaba",
+      "markdown": "6f2d016a4278f60231b98e15d365fffbd2665200458424439f458a2d8566ffa2"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
     "summary": "温泉里的比赛。",
@@ -678,8 +685,8 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "6b6849bcf03bb67062b0657cb49e007c0345f69e2d633dbcbe2fc21192862d7d",
-      "markdown": "f53ad37c9c9c44274014e0e3cae4fcd5a25ef234f6e2b94c05c4210b35a73add"
+      "json": "db89866cf5644a053d9c887d5d769e782d0b8718d475846ccd5ec456537ecaba",
+      "markdown": "127b01977d96533a7386934b2b7a51c55fe90c2d5fdabc9e98cba6d53f81ded6"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
     "summary": "在和女仆小姐姐们入住的酒店中，遇到伪装成灵异事件的异能者，差点被抓走。",
@@ -713,8 +720,8 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "6b6849bcf03bb67062b0657cb49e007c0345f69e2d633dbcbe2fc21192862d7d",
-      "markdown": "6ca982944aeef44e843f70ffa811e5a0e8df924c7513ebf4de4938c497879268"
+      "json": "db89866cf5644a053d9c887d5d769e782d0b8718d475846ccd5ec456537ecaba",
+      "markdown": "8d21275a00c7128c6a5c487d5497482179f1189706ff1f1e161f5419d353d2ea"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
     "summary": "村子里的璃落被捆着授课。",
@@ -748,8 +755,8 @@
     "series": "1-modern",
     "side": true,
     "sourceHashes": {
-      "json": "6b6849bcf03bb67062b0657cb49e007c0345f69e2d633dbcbe2fc21192862d7d",
-      "markdown": "cd3c21b98250fbcc3691adc5dc8b91485532f12c373cea5ccdaa48978afe8c95"
+      "json": "db89866cf5644a053d9c887d5d769e782d0b8718d475846ccd5ec456537ecaba",
+      "markdown": "776895d4fcc84c910acbea5b32b0085048d5d04697779fb4629e397148c32d7c"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
     "summary": "和社团大家在充气城堡玩闹。",
@@ -777,7 +784,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "6b6849bcf03bb67062b0657cb49e007c0345f69e2d633dbcbe2fc21192862d7d",
+      "json": "db89866cf5644a053d9c887d5d769e782d0b8718d475846ccd5ec456537ecaba",
       "markdown": "3536c38886c150c7c736043837d591ccd9f43ae9fad3731853dfe2a522990190"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -821,7 +828,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "6b6849bcf03bb67062b0657cb49e007c0345f69e2d633dbcbe2fc21192862d7d",
+      "json": "db89866cf5644a053d9c887d5d769e782d0b8718d475846ccd5ec456537ecaba",
       "markdown": "075bea42dc95151d26eb3e0369391f0d7e89efbe9d7a7bd66a3fadb2c557121b"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -847,7 +854,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "6b6849bcf03bb67062b0657cb49e007c0345f69e2d633dbcbe2fc21192862d7d"
+      "json": "db89866cf5644a053d9c887d5d769e782d0b8718d475846ccd5ec456537ecaba"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
     "summary": "每个学校，都有属于自己的灵异传说。",
@@ -895,8 +902,8 @@
     "series": "1-modern",
     "side": true,
     "sourceHashes": {
-      "json": "6b6849bcf03bb67062b0657cb49e007c0345f69e2d633dbcbe2fc21192862d7d",
-      "markdown": "bc191924ce8782f2cb74136a9d88f566e0efd03433e1d4d8dcd5bb97ffa389e4"
+      "json": "db89866cf5644a053d9c887d5d769e782d0b8718d475846ccd5ec456537ecaba",
+      "markdown": "233082db4c709e98735b78c2d1f7484e8aae42051502a4abdc7b17dc5c041966"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
     "summary": "接近都市线大结局时，璃落联合众人反攻永拘迷宫；建立者失去控制后逃入阈限网络深处，并成为后续支线持续追踪和交锋的长期 Boss。",
@@ -939,7 +946,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "6b6849bcf03bb67062b0657cb49e007c0345f69e2d633dbcbe2fc21192862d7d",
+      "json": "db89866cf5644a053d9c887d5d769e782d0b8718d475846ccd5ec456537ecaba",
       "markdown": "8fe2e9f66caa113ecd0ed6496b3025e89681a3cd7b4fbeb9a8d97eacdf69b365"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -976,7 +983,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "6b6849bcf03bb67062b0657cb49e007c0345f69e2d633dbcbe2fc21192862d7d",
+      "json": "db89866cf5644a053d9c887d5d769e782d0b8718d475846ccd5ec456537ecaba",
       "markdown": "0a55143227d87bdc8e70a122b2aef0eeda151c6bd84dc9b0290656f143ba5cfa"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -1005,7 +1012,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "6b6849bcf03bb67062b0657cb49e007c0345f69e2d633dbcbe2fc21192862d7d",
+      "json": "db89866cf5644a053d9c887d5d769e782d0b8718d475846ccd5ec456537ecaba",
       "markdown": "2c2156ce1b97f654c4a3028ba117d723f3af13271f4e8e841528b113a9d97b25"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -1039,8 +1046,8 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "6b6849bcf03bb67062b0657cb49e007c0345f69e2d633dbcbe2fc21192862d7d",
-      "markdown": "86b1f5168231da3a949d4ead619196e709e977132b9f9705cd8ee4d3796bca52"
+      "json": "db89866cf5644a053d9c887d5d769e782d0b8718d475846ccd5ec456537ecaba",
+      "markdown": "eda8d7413824a08e2aaa7bebad4cf11d1b3b065dd8c3d08a2b1472438d0284f4"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
     "summary": "女仆酒店中被女仆们抓捕。",
@@ -1066,8 +1073,8 @@
     "series": "1-modern",
     "side": true,
     "sourceHashes": {
-      "json": "6b6849bcf03bb67062b0657cb49e007c0345f69e2d633dbcbe2fc21192862d7d",
-      "markdown": "ffc9c1f4d29ece9d6af6f719e842940ea0d464fbb32e80f3b0fe6035d2494d06"
+      "json": "db89866cf5644a053d9c887d5d769e782d0b8718d475846ccd5ec456537ecaba",
+      "markdown": "f67ea8aaac05dab274bd0782ab3fce0431245b9740c2a5af082a99f12c54baa0"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
     "summary": "长期开放和反复体验的女仆按摩服务",
@@ -1098,7 +1105,7 @@
     "series": "1-modern",
     "side": true,
     "sourceHashes": {
-      "json": "6b6849bcf03bb67062b0657cb49e007c0345f69e2d633dbcbe2fc21192862d7d",
+      "json": "db89866cf5644a053d9c887d5d769e782d0b8718d475846ccd5ec456537ecaba",
       "markdown": "dc564cd116d72f0cb6addac8c10ef9dae693db45db780306327f39f5d23c921e"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -1125,7 +1132,7 @@
     "series": "1-modern",
     "side": true,
     "sourceHashes": {
-      "json": "6b6849bcf03bb67062b0657cb49e007c0345f69e2d633dbcbe2fc21192862d7d",
+      "json": "db89866cf5644a053d9c887d5d769e782d0b8718d475846ccd5ec456537ecaba",
       "markdown": "b46ad7c95ad123c46ee8b8a8476981d2d8573b14c8aefb10d056f38f3ca3dab3"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -1164,7 +1171,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "6b6849bcf03bb67062b0657cb49e007c0345f69e2d633dbcbe2fc21192862d7d",
+      "json": "db89866cf5644a053d9c887d5d769e782d0b8718d475846ccd5ec456537ecaba",
       "markdown": "8f089a042add95e201ca3988a531a3f1b94cedd28e688e89817221ad86854060"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -1211,7 +1218,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "6b6849bcf03bb67062b0657cb49e007c0345f69e2d633dbcbe2fc21192862d7d",
+      "json": "db89866cf5644a053d9c887d5d769e782d0b8718d475846ccd5ec456537ecaba",
       "markdown": "fb6e524a7ebc9d29b51b09329e534dfef89050d92b1aa245b90b78e027beaf1e"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -1240,8 +1247,8 @@
     "series": "1-modern",
     "side": true,
     "sourceHashes": {
-      "json": "6b6849bcf03bb67062b0657cb49e007c0345f69e2d633dbcbe2fc21192862d7d",
-      "markdown": "0a1411f2f19a529083c420f4713112aea1a65521d35edeef73021db06eeaed5e"
+      "json": "db89866cf5644a053d9c887d5d769e782d0b8718d475846ccd5ec456537ecaba",
+      "markdown": "2c7cb01beb60dd9ad365d48aef867cb1e128c4f0ea2feaa6204081078799c7d1"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
     "summary": "拘束用具模特。",
@@ -1272,8 +1279,8 @@
     "series": "1-modern",
     "side": true,
     "sourceHashes": {
-      "json": "6b6849bcf03bb67062b0657cb49e007c0345f69e2d633dbcbe2fc21192862d7d",
-      "markdown": "3b1221698a9bbb407799c090ea8a58aa8d491332251cb0be596efa5d296edd1a"
+      "json": "db89866cf5644a053d9c887d5d769e782d0b8718d475846ccd5ec456537ecaba",
+      "markdown": "89ac7e7fa83a364bb09c7af523e6e3572fe87ed7eb43cca537f2442930cebdf1"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
     "summary": "璃落接到片场绑替兼职，在电影拍摄中担任被拘束替身。",
@@ -1299,7 +1306,7 @@
     "series": "1-modern",
     "side": true,
     "sourceHashes": {
-      "json": "6b6849bcf03bb67062b0657cb49e007c0345f69e2d633dbcbe2fc21192862d7d",
+      "json": "db89866cf5644a053d9c887d5d769e782d0b8718d475846ccd5ec456537ecaba",
       "markdown": "8448165f2fabc7c0236215cc3668d6a482455168b0f037f19a50beed9378acc8"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -1321,7 +1328,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "6b6849bcf03bb67062b0657cb49e007c0345f69e2d633dbcbe2fc21192862d7d"
+      "json": "db89866cf5644a053d9c887d5d769e782d0b8718d475846ccd5ec456537ecaba"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
     "summary": "旧都遗留的回声，把监狱风云之后的线索重新引向荆江市。",
@@ -1350,14 +1357,14 @@
       "玩法｜旧案·主要活动｜缺少主要游戏活动类型与可执行操作循环",
       "流程｜旧案·时间电梯调查｜缺少各年代停靠条件、可调查证据、阶段目标、完成条件、失败恢复与离开方式的游戏化拆解",
       "流程｜旧案·霸凌副本循环｜缺少多重回忆场景的选择、分支、重复进入与奖励规则",
-      "衔接｜旧案·入口条件｜已确认电梯位于宿舍旧楼内且不由《宿舍旧楼》主线触发；缺少玩家解锁或进入本模块的条件与提示方式"
+      "衔接｜旧案·入口条件｜已确认电梯在宿舍旧楼内、不由主线触发电梯；脚铐为电梯钥匙且《宿舍旧楼》主线默认能拿到；接取提示为林沐遥次日早上转发内部线索短信。仍缺短信文案要点、任务目标表述，以及持钥后如何实际启动电梯"
     ],
     "parentKey": "world-1-glimmering-glance-sensory-trial",
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "6b6849bcf03bb67062b0657cb49e007c0345f69e2d633dbcbe2fc21192862d7d",
-      "markdown": "57ca817bc245e4801315d7f08d55a432eca296842a3a9237e15a8bf6412dd895"
+      "json": "db89866cf5644a053d9c887d5d769e782d0b8718d475846ccd5ec456537ecaba",
+      "markdown": "596e469135fd51879bcfd79e74cbaa3c84c59fc6b480f42126fae68a9b241d4c"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
     "summary": "荆锁会遗留的校园霸凌旧案副本；玩家经宿舍旧楼的时间电梯进入荆江大学各年代层调查取证，并可重复体验多重霸凌场景。",
@@ -1368,8 +1375,10 @@
   },
   {
     "characters": [
+      "璃落",
       "林沐遥",
-      "Macy"
+      "Macy",
+      "杜铮"
     ],
     "childKeys": [
       "world-1-glimmering-glance-grudge-ancient-tree",
@@ -1392,16 +1401,19 @@
     "markdownPath": "src/game/data/story_outline/1-modern/1.5-宿舍旧楼.md",
     "maturity": "大纲",
     "missingItems": [
-      "流程｜宿舍旧楼·线性阶段细则｜已确认为线性推进且核心循环为记忆触发+危机拖延；仍缺少各段（小巷/旧楼天台/厂房/杜铮）的具体阶段目标、完成条件与失败恢复细则",
-      "衔接｜宿舍旧楼·旧案短信支线｜已确认主线结束后以短信提示触发《旧案》支线任务；仍缺少发信人、短信文案要点、接取时机与任务目标表述",
-      "支线｜Macy·可重复日常｜已确认类型为“又被收保护费但这次是帮忙”；仍缺少触发条件、单次流程与奖励/关系变化"
+      "流程｜宿舍旧楼·线性阶段细则｜已确认为线性推进且核心循环为记忆触发+危机拖延；各段（小巷/旧楼天台/厂房/杜铮）的阶段目标、完成条件与失败恢复细则由用户保留待定",
+      "玩法｜宿舍旧楼·杜铮危机拖延操作｜杜铮段玩家主操作循环由用户保留待定",
+      "衔接｜宿舍旧楼·旧案短信支线｜已确认发信人为林沐遥转发的内部线索，接取时机为回宿舍休息次日早上；短信文案要点与任务目标表述由用户保留待定",
+      "支线｜Macy·可重复日常｜已确认类型为“又被收保护费但这次是帮忙”；触发条件、单次流程与奖励/关系变化由用户保留待定",
+      "RAG｜紧缚RAG｜补全「语言羞辱」正文与来源",
+      "RAG｜紧缚RAG｜补全「气味系」正文与来源"
     ],
     "parentKey": "world-1-glimmering-glance-rope-spirit-game",
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "6b6849bcf03bb67062b0657cb49e007c0345f69e2d633dbcbe2fc21192862d7d",
-      "markdown": "4bbd33314492ee4fababd79141913e062a0d6d4cb2357449965a2ebeccee53aa"
+      "json": "db89866cf5644a053d9c887d5d769e782d0b8718d475846ccd5ec456537ecaba",
+      "markdown": "c56e6b63faa2f434fa9c4a6f35db07317ccd6f9dfdf61c3bdb2faafa43cbbd74"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
     "summary": "璃落与林沐遥经拆迁小巷进入旧校舍，在天台与废弃厂房追查校园霸凌旧案与荆锁会线索，最终揭出杜铮掩埋的试验品遗骨。",
@@ -1432,8 +1444,8 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "6b6849bcf03bb67062b0657cb49e007c0345f69e2d633dbcbe2fc21192862d7d",
-      "markdown": "9a234477120f72a9815636946b7af0d1f772ed00dacc1fa5f7bc8cd00c015b45"
+      "json": "db89866cf5644a053d9c887d5d769e782d0b8718d475846ccd5ec456537ecaba",
+      "markdown": "61f3e66756a4a2ecdc615197820a722d9d86efe55e087f2538f3210697e8a897"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
     "summary": "璃落第一次进灰巷监狱",
@@ -1461,7 +1473,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "6b6849bcf03bb67062b0657cb49e007c0345f69e2d633dbcbe2fc21192862d7d",
+      "json": "db89866cf5644a053d9c887d5d769e782d0b8718d475846ccd5ec456537ecaba",
       "markdown": "25bd52b4fa721bde9b13ae9150b2e3e7fca657e47738e7d78988bf3b0b3523a4"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -1488,7 +1500,7 @@
     "series": "1-modern",
     "side": true,
     "sourceHashes": {
-      "json": "6b6849bcf03bb67062b0657cb49e007c0345f69e2d633dbcbe2fc21192862d7d",
+      "json": "db89866cf5644a053d9c887d5d769e782d0b8718d475846ccd5ec456537ecaba",
       "markdown": "624a1803c3e66ab85ae6be3f3e6106df2f1d1a4c7bb4462b46292c3a52aeebca"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -1517,7 +1529,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "6b6849bcf03bb67062b0657cb49e007c0345f69e2d633dbcbe2fc21192862d7d",
+      "json": "db89866cf5644a053d9c887d5d769e782d0b8718d475846ccd5ec456537ecaba",
       "markdown": "661c2da0b64b0b6517c720c6bfc7692372d1dcc35e2073878e7158e904ebbbd4"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -1540,7 +1552,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "6b6849bcf03bb67062b0657cb49e007c0345f69e2d633dbcbe2fc21192862d7d",
+      "json": "db89866cf5644a053d9c887d5d769e782d0b8718d475846ccd5ec456537ecaba",
       "markdown": "f961684c82482e9189da956ad116998c7f6982f896f87eee7198e73e2982aed5"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -1570,7 +1582,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "6b6849bcf03bb67062b0657cb49e007c0345f69e2d633dbcbe2fc21192862d7d",
+      "json": "db89866cf5644a053d9c887d5d769e782d0b8718d475846ccd5ec456537ecaba",
       "markdown": "e7eecf8e3566dd72027c07c1f0248bd418baa3681d1d211f2e008bbe99806f7e"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -1594,7 +1606,8 @@
     "gameplayRefs": [
       "gameplay-082",
       "gameplay-060",
-      "gameplay-116"
+      "gameplay-116",
+      "gameplay-121"
     ],
     "id": "world-1-glimmering-glance-rust-salt",
     "indexVersion": 1,
@@ -1606,19 +1619,22 @@
     "markdownPath": "src/game/data/story_outline/1-modern/3.3-锈盐.md",
     "maturity": "大纲草稿",
     "missingItems": [
-      "玩法｜锈盐·船舱脱困工具链｜缺少可搜集小工具、分阶段解除步骤及每一步解锁的具体操作",
-      "调查｜锈盐·值班区证据筛选｜缺少可调查文件与物件、有效证据判定、错误选择反馈及存储卡提示方式",
-      "流程｜锈盐·甲板追逐与失败恢复｜缺少追逐路线危险、看守追击规则、跳海成功条件及再次被抓后的补救流程",
-      "流程｜锈盐·海岸至灰巷｜缺少 Rin 救起璃落后到藏卡完成之间的玩家目标、可执行活动与失败反馈",
+      "玩法｜锈盐·船舱脱困工具链｜已确认受限行动应作为可拆分的玩法规则，不以单一“拘束抗性”概括；仍缺观察、移动、环境交互、道具操作与逐步脱困等动作在各约束状态下的可用范围、解锁顺序与输入规则",
+      "调查｜锈盐·值班区证据筛选｜已确认以环境观察作为存储卡提示与证据筛选的主要方式；仍缺可调查文件与物件、有效证据判定及错误选择反馈",
+      "流程｜锈盐·甲板追逐与失败恢复｜已确认允许多次失败；每次被抓回后难度递增。仍缺追逐路线危险、看守追击规则、跳海成功条件及困难补救流程",
+      "流程｜锈盐·海岸至灰巷｜已确认以观察 Rin 的可信度、躲避巡查、选择藏卡点和利用保护费冲突创造行动窗口构成流程，并突出双方互相利用；仍缺各阶段目标、失败反馈与完成条件",
       "玩法｜锈盐·唐人街与填埋场｜缺少交易、出卖、逼供、活埋救援和官方收网阶段的玩家参与方式与阶段目标",
-      "状态｜锈盐·章节状态写入｜缺少伤势与约束变化、存储卡状态、Rin 关系、女孩去向及进入《监狱风云》的存档字段设计"
+      "状态｜锈盐·章节状态写入｜缺少伤势与约束变化、存储卡状态、Rin 关系、女孩去向及进入《监狱风云》的存档字段设计",
+      "RAG｜紧缚RAG｜补全「活埋」正文与来源",
+      "RAG｜紧缚RAG｜补全「社死」正文与来源",
+      "RAG｜紧缚RAG｜补全「小笼子」正文与来源"
     ],
     "parentKey": "world-1-glimmering-glance-missing",
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "6b6849bcf03bb67062b0657cb49e007c0345f69e2d633dbcbe2fc21192862d7d",
-      "markdown": "5f560c9c3053d4ee1f1fc3b641a3bb0780d6f335231805ca5445a496d2e334fb"
+      "json": "db89866cf5644a053d9c887d5d769e782d0b8718d475846ccd5ec456537ecaba",
+      "markdown": "34509abe04e68e0237d524d277ca2f2f186ad0bf339957081e4e706974c78ba1"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
     "summary": "璃落为救欣雨而被抓回运奴船，负伤且成为船舱中唯一持续被捆绑的人；受她帮助的女孩们分享食物并照顾她，随后璃落逃船夺证，初入灰巷。",
@@ -1649,7 +1665,7 @@
     "series": "1-modern",
     "side": true,
     "sourceHashes": {
-      "json": "6b6849bcf03bb67062b0657cb49e007c0345f69e2d633dbcbe2fc21192862d7d",
+      "json": "db89866cf5644a053d9c887d5d769e782d0b8718d475846ccd5ec456537ecaba",
       "markdown": "e06fb3afc2bce986a867b01642ea6b747697a46224c1c01ae4e283ecda4eaf20"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -1678,7 +1694,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "6b6849bcf03bb67062b0657cb49e007c0345f69e2d633dbcbe2fc21192862d7d",
+      "json": "db89866cf5644a053d9c887d5d769e782d0b8718d475846ccd5ec456537ecaba",
       "markdown": "3d3f0aae825a8e3df4b885a810083602eb8c9e11a90160c187e746fd7bbf8c6c"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -1708,7 +1724,7 @@
     "series": "1-modern",
     "side": true,
     "sourceHashes": {
-      "json": "6b6849bcf03bb67062b0657cb49e007c0345f69e2d633dbcbe2fc21192862d7d",
+      "json": "db89866cf5644a053d9c887d5d769e782d0b8718d475846ccd5ec456537ecaba",
       "markdown": "64fb6194ca5d0de9f89f42c9952a2d620a76e582b8369d458f82986b61b01921"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -1737,7 +1753,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "6b6849bcf03bb67062b0657cb49e007c0345f69e2d633dbcbe2fc21192862d7d",
+      "json": "db89866cf5644a053d9c887d5d769e782d0b8718d475846ccd5ec456537ecaba",
       "markdown": "039629933df28e29b276bccb40d674ac1e787589742425ebfcfac89cc7ae9525"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -1774,8 +1790,8 @@
     "series": "1-modern",
     "side": true,
     "sourceHashes": {
-      "json": "6b6849bcf03bb67062b0657cb49e007c0345f69e2d633dbcbe2fc21192862d7d",
-      "markdown": "ca2e5ba7492fc7423432cf8148bb4380ffce926390a71aeaedf226f05eef1020"
+      "json": "db89866cf5644a053d9c887d5d769e782d0b8718d475846ccd5ec456537ecaba",
+      "markdown": "ab64e93826844abfe3d63adc1b9ff70948ed64db6b5b2d5918cf5f451136ccab"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
     "summary": "去往雪城的火车卧铺玩法，包含火车牌局与客串乘务员场景。",
@@ -1797,7 +1813,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "6b6849bcf03bb67062b0657cb49e007c0345f69e2d633dbcbe2fc21192862d7d"
+      "json": "db89866cf5644a053d9c887d5d769e782d0b8718d475846ccd5ec456537ecaba"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
     "summary": "荆锁会事件2,舞台表演时的灵异事件。",
@@ -1823,7 +1839,7 @@
     "series": "1-modern",
     "side": true,
     "sourceHashes": {
-      "json": "6b6849bcf03bb67062b0657cb49e007c0345f69e2d633dbcbe2fc21192862d7d",
+      "json": "db89866cf5644a053d9c887d5d769e782d0b8718d475846ccd5ec456537ecaba",
       "markdown": "4efe0fdc18e87d9ccf0c18dc1c2f537e2c59fb0318b795cea343bc7d4a6504b0"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -1852,7 +1868,7 @@
     "series": "1-modern",
     "side": true,
     "sourceHashes": {
-      "json": "6b6849bcf03bb67062b0657cb49e007c0345f69e2d633dbcbe2fc21192862d7d",
+      "json": "db89866cf5644a053d9c887d5d769e782d0b8718d475846ccd5ec456537ecaba",
       "markdown": "3d5319158074ec011612d1989c73e9f6b761ee3eb4de0006e81a8802616e4067"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -1881,7 +1897,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "6b6849bcf03bb67062b0657cb49e007c0345f69e2d633dbcbe2fc21192862d7d",
+      "json": "db89866cf5644a053d9c887d5d769e782d0b8718d475846ccd5ec456537ecaba",
       "markdown": "a06d65171806dfcadf19306d2143416b9cda396ecf7a8abd465c00255ff2312b"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -1912,8 +1928,8 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "6b6849bcf03bb67062b0657cb49e007c0345f69e2d633dbcbe2fc21192862d7d",
-      "markdown": "46f0a66497b35e51c807edd7e9f7b70b179524a5ead1e5612160d29ae51ce0eb"
+      "json": "db89866cf5644a053d9c887d5d769e782d0b8718d475846ccd5ec456537ecaba",
+      "markdown": "86f96eabfd1e2d388ffc0ccf83e7bf54e2ed2aaf9e5b54725fcdb32eeeefec6f"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
     "summary": "找模特工作时遇到人贩子。",
@@ -1941,7 +1957,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "6b6849bcf03bb67062b0657cb49e007c0345f69e2d633dbcbe2fc21192862d7d",
+      "json": "db89866cf5644a053d9c887d5d769e782d0b8718d475846ccd5ec456537ecaba",
       "markdown": "e4b905c0e6d89f4b71ba7d92fbde63e1d0342a6383d032f30c7bf66efc577252"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
@@ -1967,7 +1983,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "6b6849bcf03bb67062b0657cb49e007c0345f69e2d633dbcbe2fc21192862d7d"
+      "json": "db89866cf5644a053d9c887d5d769e782d0b8718d475846ccd5ec456537ecaba"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
     "summary": "体验特色职业，享受绑架人生",
@@ -1989,7 +2005,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "6b6849bcf03bb67062b0657cb49e007c0345f69e2d633dbcbe2fc21192862d7d"
+      "json": "db89866cf5644a053d9c887d5d769e782d0b8718d475846ccd5ec456537ecaba"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
     "summary": "综艺惊魂",
@@ -2010,7 +2026,7 @@
     "series": "1-modern",
     "side": false,
     "sourceHashes": {
-      "json": "6b6849bcf03bb67062b0657cb49e007c0345f69e2d633dbcbe2fc21192862d7d"
+      "json": "db89866cf5644a053d9c887d5d769e782d0b8718d475846ccd5ec456537ecaba"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/1-modern.json",
     "summary": "世界科考队",
@@ -2435,7 +2451,7 @@
     "side": false,
     "sourceHashes": {
       "json": "350a2f7ab62a7cc82b552c996bfa571cd7e9cba74a1c017cb535b63ae0941d1f",
-      "markdown": "be9cff2d27aec40233ed3cd23025063f1664f2e7746f308f9459ea71ebad929d"
+      "markdown": "e512e362ae03529ca5b7e900fabd7d8b0b1314772fbd879d83dcb90a972164ce"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/2-apocalypse.json",
     "summary": "进入丧尸末日。",
@@ -2539,12 +2555,49 @@
     "series": "3-ancient",
     "side": false,
     "sourceHashes": {
-      "json": "4797abe6b28b55548fc8f7f1b5a4bb04f04246cea9e2f75eedd96f4d03c6d4a0"
+      "json": "5b890791012b6e5d73fc5eb9662d15764a9bb66ca974ca269815bcfaa0288fde"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/3-ancient.json",
     "summary": "从丫鬟到一国的公主，从武林侠女到问道修士，这个世界总有无限的可能。",
     "summarySource": "source-json.summary",
     "title": "尘寰问道（古风）",
+    "type": "story-node",
+    "world": "3-尘寰问道"
+  },
+  {
+    "characters": [
+      "璃落",
+      "赫连·阿勒珂",
+      "陆怀瑾"
+    ],
+    "childKeys": [
+      "world-3-mortal-dao-cold-palace-garden"
+    ],
+    "id": "world-3-mortal-dao-autumn-alliance-hunt",
+    "indexVersion": 1,
+    "key": "world-3-mortal-dao-autumn-alliance-hunt",
+    "locations": [
+      "秋盟猎苑",
+      "档案库"
+    ],
+    "markdownPath": "src/game/data/story_outline/3-ancient/2.0-秋盟惊猎.md",
+    "maturity": "灵感",
+    "missingItems": [
+      "地图｜秋盟惊猎·场景结构｜缺少秋盟猎苑、旧围栏缓冲沙地与档案库的实际区域及连接",
+      "流程｜秋盟惊猎·惊马与查档｜缺少玩家介入惊马、协查与档案检索的可执行流程",
+      "玩法｜秋盟惊猎·调查循环｜缺少调查操作、证据反馈与失败恢复规则"
+    ],
+    "parentKey": "world-3-mortal-dao-commoner-princess",
+    "series": "3-ancient",
+    "side": false,
+    "sourceHashes": {
+      "json": "5b890791012b6e5d73fc5eb9662d15764a9bb66ca974ca269815bcfaa0288fde",
+      "markdown": "d6df4e0cef47f5354bc1b02c0e84083d34133c238247299b06ac6976b2108940"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/3-ancient.json",
+    "summary": "璃落协助北方王子赫连·阿勒珂化解人为惊马，并与大理寺评事陆怀瑾追查案情；在档案库中，她发现失踪母亲竟是旧东宫太子妃。",
+    "summarySource": "frontmatter.summary",
+    "title": "秋盟惊猎",
     "type": "story-node",
     "world": "3-尘寰问道"
   },
@@ -2557,12 +2610,12 @@
     "key": "world-3-mortal-dao-chaotic-world-ranger",
     "markdownPath": "src/game/data/story_outline/3-ancient/4-乱世游侠.md",
     "maturity": "主线任务",
-    "parentKey": "world-3-mortal-dao-frontier-marriage",
+    "parentKey": "world-3-mortal-dao-wedding-escort-crisis",
     "series": "3-ancient",
     "side": false,
     "sourceHashes": {
-      "json": "4797abe6b28b55548fc8f7f1b5a4bb04f04246cea9e2f75eedd96f4d03c6d4a0",
-      "markdown": "1c5320d7830730099625e935e0046cea2eff1b8ad41153a6cd08b9344e5c8e04"
+      "json": "5b890791012b6e5d73fc5eb9662d15764a9bb66ca974ca269815bcfaa0288fde",
+      "markdown": "5bcfc0e5f4281f5f2c9265121f9f5c89239d1744c0aaf58c732dfeb9e264b48d"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/3-ancient.json",
     "summary": "璃落逃离宫廷身份后进入乱世江湖，以开锁、潜入、摸取、调包和归还物证为核心特长，在镖局、六扇门旧案、山寨与武林大会之间取得正面战斗无法获得的证据，并逐渐走出一条偏技巧与观察的侠客道路。",
@@ -2572,22 +2625,61 @@
     "world": "3-尘寰问道"
   },
   {
+    "characters": [
+      "璃落",
+      "侍女"
+    ],
     "childKeys": [
-      "world-3-mortal-dao-frontier-marriage"
+      "world-3-mortal-dao-well-relic-retrieval"
+    ],
+    "gameplayRefs": [
+      "gameplay-089"
+    ],
+    "id": "world-3-mortal-dao-cold-palace-garden",
+    "indexVersion": 1,
+    "key": "world-3-mortal-dao-cold-palace-garden",
+    "locations": [
+      "冷宫"
+    ],
+    "markdownPath": "src/game/data/story_outline/3-ancient/2.1-冷宫荒圃.md",
+    "maturity": "灵感",
+    "missingItems": [
+      "玩法｜冷宫荒圃·古代种田循环｜缺少田块规模、作物与季节规则，以及失败和恢复反馈",
+      "流程｜冷宫荒圃·离开冷宫｜缺少璃落获得离宫机会的具体事件与条件"
+    ],
+    "parentKey": "world-3-mortal-dao-autumn-alliance-hunt",
+    "series": "3-ancient",
+    "side": false,
+    "sourceHashes": {
+      "json": "5b890791012b6e5d73fc5eb9662d15764a9bb66ca974ca269815bcfaa0288fde",
+      "markdown": "784ac04fd4b478a4805871639b3941cec66800f7280334ed9ff28a5f722b2219"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/3-ancient.json",
+    "summary": "璃落与贴身侍女在冷宫开垦荒地，以种植维持生活并建立信任；这片田地将成为可随旅途延续的长期支线起点。",
+    "summarySource": "frontmatter.summary",
+    "title": "冷宫荒圃",
+    "type": "story-node",
+    "world": "3-尘寰问道"
+  },
+  {
+    "childKeys": [
+      "world-3-mortal-dao-autumn-alliance-hunt"
     ],
     "id": "world-3-mortal-dao-commoner-princess",
     "indexVersion": 1,
     "key": "world-3-mortal-dao-commoner-princess",
+    "markdownPath": "src/game/data/story_outline/3-ancient/2-平民公主.md",
     "maturity": "主线任务",
     "parentKey": "world-3-mortal-dao-royal-garden-beast-hunt",
     "series": "3-ancient",
     "side": false,
     "sourceHashes": {
-      "json": "4797abe6b28b55548fc8f7f1b5a4bb04f04246cea9e2f75eedd96f4d03c6d4a0"
+      "json": "5b890791012b6e5d73fc5eb9662d15764a9bb66ca974ca269815bcfaa0288fde",
+      "markdown": "56b4ead65dd029d15dc74c9d682cd8ba797b26dea5d05ac557fc59ddb8aa0625"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/3-ancient.json",
-    "summary": "平民公主",
-    "summarySource": "title-only",
+    "summary": "璃落被权臣一系包装为失落公主后卷入宫廷斗争；秋盟惊猎使她触及旧东宫线索，继而遭悬井水牢灭口、被侍女救出并打入冷宫。她从冷宫种地、井下取遗到北方和亲，逐步接近自己作为旧太子遗孤的真相。",
+    "summarySource": "frontmatter.summary",
     "title": "平民公主",
     "type": "story-node",
     "world": "3-尘寰问道"
@@ -2614,7 +2706,7 @@
     "series": "3-ancient",
     "side": false,
     "sourceHashes": {
-      "json": "4797abe6b28b55548fc8f7f1b5a4bb04f04246cea9e2f75eedd96f4d03c6d4a0",
+      "json": "5b890791012b6e5d73fc5eb9662d15764a9bb66ca974ca269815bcfaa0288fde",
       "markdown": "361b0821d3446b296b65126a53e280e5d6bd985ed25c73df01de6ca6cc0eed6b"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/3-ancient.json",
@@ -2636,7 +2728,7 @@
     "series": "3-ancient",
     "side": false,
     "sourceHashes": {
-      "json": "4797abe6b28b55548fc8f7f1b5a4bb04f04246cea9e2f75eedd96f4d03c6d4a0"
+      "json": "5b890791012b6e5d73fc5eb9662d15764a9bb66ca974ca269815bcfaa0288fde"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/3-ancient.json",
     "summary": "魔宗历险",
@@ -2657,7 +2749,7 @@
     "series": "3-ancient",
     "side": false,
     "sourceHashes": {
-      "json": "4797abe6b28b55548fc8f7f1b5a4bb04f04246cea9e2f75eedd96f4d03c6d4a0"
+      "json": "5b890791012b6e5d73fc5eb9662d15764a9bb66ca974ca269815bcfaa0288fde"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/3-ancient.json",
     "summary": "尾声",
@@ -2683,7 +2775,7 @@
     "series": "3-ancient",
     "side": false,
     "sourceHashes": {
-      "json": "4797abe6b28b55548fc8f7f1b5a4bb04f04246cea9e2f75eedd96f4d03c6d4a0",
+      "json": "5b890791012b6e5d73fc5eb9662d15764a9bb66ca974ca269815bcfaa0288fde",
       "markdown": "82a2354246ef9da334d0dc8efaf84fbc1d9c993cb1dc7e4d6a6c539db1e4a442"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/3-ancient.json",
@@ -2713,7 +2805,7 @@
     "series": "3-ancient",
     "side": false,
     "sourceHashes": {
-      "json": "4797abe6b28b55548fc8f7f1b5a4bb04f04246cea9e2f75eedd96f4d03c6d4a0"
+      "json": "5b890791012b6e5d73fc5eb9662d15764a9bb66ca974ca269815bcfaa0288fde"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/3-ancient.json",
     "summary": "被陷害，思过崖，魔宗。",
@@ -2724,21 +2816,23 @@
   },
   {
     "childKeys": [
-      "world-3-mortal-dao-chaotic-world-ranger"
+      "world-3-mortal-dao-wedding-escort-crisis"
     ],
     "id": "world-3-mortal-dao-frontier-marriage",
     "indexVersion": 1,
     "key": "world-3-mortal-dao-frontier-marriage",
+    "markdownPath": "src/game/data/story_outline/3-ancient/3-塞外和亲.md",
     "maturity": "主线任务",
-    "parentKey": "world-3-mortal-dao-commoner-princess",
+    "parentKey": "world-3-mortal-dao-marriage-northbound",
     "series": "3-ancient",
     "side": false,
     "sourceHashes": {
-      "json": "4797abe6b28b55548fc8f7f1b5a4bb04f04246cea9e2f75eedd96f4d03c6d4a0"
+      "json": "5b890791012b6e5d73fc5eb9662d15764a9bb66ca974ca269815bcfaa0288fde",
+      "markdown": "32aa197c8a13c3619a74dc60c9586787a1fe7e72a39e3f9feb964638527761b9"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/3-ancient.json",
-    "summary": "塞外和亲",
-    "summarySource": "title-only",
+    "summary": "璃落被北方王子赫连·阿勒珂点名送往北方和亲；在续盟、王庭压力与身份秘密之间，她带着可延续田地的传承遗物进入北方政治中心。",
+    "summarySource": "frontmatter.summary",
     "title": "塞外和亲",
     "type": "story-node",
     "world": "3-尘寰问道"
@@ -2755,12 +2849,50 @@
     "series": "3-ancient",
     "side": false,
     "sourceHashes": {
-      "json": "4797abe6b28b55548fc8f7f1b5a4bb04f04246cea9e2f75eedd96f4d03c6d4a0"
+      "json": "5b890791012b6e5d73fc5eb9662d15764a9bb66ca974ca269815bcfaa0288fde"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/3-ancient.json",
     "summary": "丫鬟难为",
     "summarySource": "title-only",
     "title": "丫鬟难为",
+    "type": "story-node",
+    "world": "3-尘寰问道"
+  },
+  {
+    "characters": [
+      "璃落",
+      "侍女"
+    ],
+    "childKeys": [
+      "world-3-mortal-dao-frontier-marriage"
+    ],
+    "gameplayRefs": [
+      "gameplay-089"
+    ],
+    "id": "world-3-mortal-dao-marriage-northbound",
+    "indexVersion": 1,
+    "key": "world-3-mortal-dao-marriage-northbound",
+    "locations": [
+      "皇宫",
+      "冷宫"
+    ],
+    "markdownPath": "src/game/data/story_outline/3-ancient/2.3-和亲北行.md",
+    "maturity": "灵感",
+    "missingItems": [
+      "流程｜和亲北行·离宫整备｜缺少和亲诏令、离宫时机与侍女去留的具体安排",
+      "玩法｜和亲北行·田地迁入｜缺少迁入操作、传承空间限制与跨旅途持续开放的规则"
+    ],
+    "parentKey": "world-3-mortal-dao-well-relic-retrieval",
+    "series": "3-ancient",
+    "side": false,
+    "sourceHashes": {
+      "json": "5b890791012b6e5d73fc5eb9662d15764a9bb66ca974ca269815bcfaa0288fde",
+      "markdown": "d85a46fb49437744091dd323aaee875c9fbfa850944e1ef55d2d4728b259498b"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/3-ancient.json",
+    "summary": "北方王子赫连·阿勒珂因续盟与王庭压力点名璃落和亲；璃落在离宫前将冷宫亲手开垦的田地迁入传承空间，带往北方。",
+    "summarySource": "frontmatter.summary",
+    "title": "和亲北行",
     "type": "story-node",
     "world": "3-尘寰问道"
   },
@@ -2782,7 +2914,7 @@
     "series": "3-ancient",
     "side": false,
     "sourceHashes": {
-      "json": "4797abe6b28b55548fc8f7f1b5a4bb04f04246cea9e2f75eedd96f4d03c6d4a0"
+      "json": "5b890791012b6e5d73fc5eb9662d15764a9bb66ca974ca269815bcfaa0288fde"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/3-ancient.json",
     "summary": "回到宗门，由于丹田被毁无人收徒。",
@@ -2809,7 +2941,7 @@
     "series": "3-ancient",
     "side": false,
     "sourceHashes": {
-      "json": "4797abe6b28b55548fc8f7f1b5a4bb04f04246cea9e2f75eedd96f4d03c6d4a0"
+      "json": "5b890791012b6e5d73fc5eb9662d15764a9bb66ca974ca269815bcfaa0288fde"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/3-ancient.json",
     "summary": "重修功法。",
@@ -2819,6 +2951,10 @@
     "world": "3-尘寰问道"
   },
   {
+    "characters": [
+      "璃落",
+      "赫连·阿勒珂"
+    ],
     "childKeys": [
       "world-3-mortal-dao-commoner-princess"
     ],
@@ -2837,11 +2973,11 @@
     "series": "3-ancient",
     "side": false,
     "sourceHashes": {
-      "json": "4797abe6b28b55548fc8f7f1b5a4bb04f04246cea9e2f75eedd96f4d03c6d4a0",
-      "markdown": "fbb8fb3b513a1433dca05f5638deea79cb9520b7796870d6317ceccf7702be3a"
+      "json": "5b890791012b6e5d73fc5eb9662d15764a9bb66ca974ca269815bcfaa0288fde",
+      "markdown": "8b17e8fe50935c5ab9337df81f398920bfb4d93e95aba6ab790dc6949f827984"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/3-ancient.json",
-    "summary": "璃落卷入贵族的斗兽场，表现突出被收为丫鬟",
+    "summary": "仍是平民的璃落在王苑兽猎中救人脱险；随使团而来的北方王子赫连·阿勒珂不能公开干预，只以驯兽口哨暗助，并由此记住璃落。",
     "summarySource": "frontmatter.summary",
     "title": "王苑兽猎",
     "type": "story-node",
@@ -2866,7 +3002,7 @@
     "series": "3-ancient",
     "side": false,
     "sourceHashes": {
-      "json": "4797abe6b28b55548fc8f7f1b5a4bb04f04246cea9e2f75eedd96f4d03c6d4a0",
+      "json": "5b890791012b6e5d73fc5eb9662d15764a9bb66ca974ca269815bcfaa0288fde",
       "markdown": "ca888ed78aa37404d4f712d1557a57a79a1d49322a5470ade1d5672136db57a1"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/3-ancient.json",
@@ -2895,7 +3031,7 @@
     "series": "3-ancient",
     "side": false,
     "sourceHashes": {
-      "json": "4797abe6b28b55548fc8f7f1b5a4bb04f04246cea9e2f75eedd96f4d03c6d4a0",
+      "json": "5b890791012b6e5d73fc5eb9662d15764a9bb66ca974ca269815bcfaa0288fde",
       "markdown": "7556dcc6236ca58b5904683c88bf3bd968218e653e576f7f9918c1295e523031"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/3-ancient.json",
@@ -2920,7 +3056,7 @@
     "series": "3-ancient",
     "side": false,
     "sourceHashes": {
-      "json": "4797abe6b28b55548fc8f7f1b5a4bb04f04246cea9e2f75eedd96f4d03c6d4a0"
+      "json": "5b890791012b6e5d73fc5eb9662d15764a9bb66ca974ca269815bcfaa0288fde"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/3-ancient.json",
     "summary": "被蜘蛛精小姐姐抓到巢穴玩弄。",
@@ -2941,7 +3077,7 @@
     "series": "3-ancient",
     "side": false,
     "sourceHashes": {
-      "json": "4797abe6b28b55548fc8f7f1b5a4bb04f04246cea9e2f75eedd96f4d03c6d4a0"
+      "json": "5b890791012b6e5d73fc5eb9662d15764a9bb66ca974ca269815bcfaa0288fde"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/3-ancient.json",
     "summary": "问道起点",
@@ -2969,13 +3105,82 @@
     "series": "3-ancient",
     "side": false,
     "sourceHashes": {
-      "json": "4797abe6b28b55548fc8f7f1b5a4bb04f04246cea9e2f75eedd96f4d03c6d4a0",
+      "json": "5b890791012b6e5d73fc5eb9662d15764a9bb66ca974ca269815bcfaa0288fde",
       "markdown": "531734e2e2d2cd3c211549526e40b32122d9910cc133033fe17b5b2ce45ab6fe"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/3-ancient.json",
     "summary": "是一个偏乡土民俗恐怖与古风疑案的支线模块。",
     "summarySource": "frontmatter.summary",
     "title": "瓦窑封灾",
+    "type": "story-node",
+    "world": "3-尘寰问道"
+  },
+  {
+    "characters": [
+      "璃落",
+      "赫连·阿勒珂"
+    ],
+    "childKeys": [
+      "world-3-mortal-dao-chaotic-world-ranger"
+    ],
+    "id": "world-3-mortal-dao-wedding-escort-crisis",
+    "indexVersion": 1,
+    "key": "world-3-mortal-dao-wedding-escort-crisis",
+    "locations": [
+      "接亲路"
+    ],
+    "markdownPath": "src/game/data/story_outline/3-ancient/3.1-接亲惊变.md",
+    "maturity": "灵感",
+    "missingItems": [
+      "地图｜接亲惊变·接亲路｜缺少接亲队行程、伏击区域与脱险路线",
+      "流程｜接亲惊变·刺杀应对｜缺少璃落与阿勒珂共险、脱离伏击与返回队伍的可执行流程",
+      "玩法｜接亲惊变·护送与求生｜缺少护送、战斗或潜行的操作循环及失败恢复规则"
+    ],
+    "parentKey": "world-3-mortal-dao-frontier-marriage",
+    "series": "3-ancient",
+    "side": false,
+    "sourceHashes": {
+      "json": "5b890791012b6e5d73fc5eb9662d15764a9bb66ca974ca269815bcfaa0288fde",
+      "markdown": "0c3ef93daf4466e82ea739a8e1f08831a60f2e56568e1f2d9fb69432bb957ea3"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/3-ancient.json",
+    "summary": "北方主战派在接亲路上刺杀阿勒珂、试图破坏续盟；璃落与她共险，并在处理伤口时得知阿勒珂一直以男性王子身份示人。",
+    "summarySource": "frontmatter.summary",
+    "title": "接亲惊变",
+    "type": "story-node",
+    "world": "3-尘寰问道"
+  },
+  {
+    "characters": [
+      "璃落",
+      "侍女"
+    ],
+    "childKeys": [
+      "world-3-mortal-dao-marriage-northbound"
+    ],
+    "id": "world-3-mortal-dao-well-relic-retrieval",
+    "indexVersion": 1,
+    "key": "world-3-mortal-dao-well-relic-retrieval",
+    "locations": [
+      "古井"
+    ],
+    "markdownPath": "src/game/data/story_outline/3-ancient/2.2-井下取遗.md",
+    "maturity": "灵感",
+    "missingItems": [
+      "流程｜井下取遗·离开冷宫与重返古井｜缺少离宫机会、下井过程与取遗后的离开方式",
+      "设定｜井下取遗·传承空间｜缺少遗物的具体形态、空间限制与可用于翻盘的已确认能力"
+    ],
+    "parentKey": "world-3-mortal-dao-cold-palace-garden",
+    "series": "3-ancient",
+    "side": false,
+    "sourceHashes": {
+      "json": "5b890791012b6e5d73fc5eb9662d15764a9bb66ca974ca269815bcfaa0288fde",
+      "markdown": "656c54a829b4cc6d0125d605a4bb9c6f14d689b03776600c51825cfc8ba74080"
+    },
+    "sourceJsonPath": "src/game/data/story_outline/sources/3-ancient.json",
+    "summary": "璃落离开冷宫后重返古井取回遗物；它能与母亲留下的护身物合拢，以血开启后显出家族修仙传承与可容纳田地的空间。",
+    "summarySource": "frontmatter.summary",
+    "title": "井下取遗",
     "type": "story-node",
     "world": "3-尘寰问道"
   },
@@ -3222,7 +3427,7 @@
     "series": "5-science",
     "side": false,
     "sourceHashes": {
-      "json": "fa1adaefd027593f9aea96947b41e13f1e93d5d5a665c29e62936ecf7872ff3b"
+      "json": "94b3f75eefda750f7bb1fce6234974e7f4580fc67dde592956b22d50c27e064f"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/5-science.json",
     "summary": "在科技高度发达的星际文明，还有更多让人向往的旅途",
@@ -3243,7 +3448,7 @@
     "series": "5-science",
     "side": false,
     "sourceHashes": {
-      "json": "fa1adaefd027593f9aea96947b41e13f1e93d5d5a665c29e62936ecf7872ff3b"
+      "json": "94b3f75eefda750f7bb1fce6234974e7f4580fc67dde592956b22d50c27e064f"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/5-science.json",
     "summary": "荒矿小行星",
@@ -3264,7 +3469,7 @@
     "series": "5-science",
     "side": false,
     "sourceHashes": {
-      "json": "fa1adaefd027593f9aea96947b41e13f1e93d5d5a665c29e62936ecf7872ff3b"
+      "json": "94b3f75eefda750f7bb1fce6234974e7f4580fc67dde592956b22d50c27e064f"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/5-science.json",
     "summary": "仿生迷途",
@@ -3285,7 +3490,7 @@
     "series": "5-science",
     "side": false,
     "sourceHashes": {
-      "json": "fa1adaefd027593f9aea96947b41e13f1e93d5d5a665c29e62936ecf7872ff3b"
+      "json": "94b3f75eefda750f7bb1fce6234974e7f4580fc67dde592956b22d50c27e064f"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/5-science.json",
     "summary": "克隆回廊",
@@ -3306,7 +3511,7 @@
     "series": "5-science",
     "side": false,
     "sourceHashes": {
-      "json": "fa1adaefd027593f9aea96947b41e13f1e93d5d5a665c29e62936ecf7872ff3b"
+      "json": "94b3f75eefda750f7bb1fce6234974e7f4580fc67dde592956b22d50c27e064f"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/5-science.json",
     "summary": "冷眠方舟",
@@ -3327,7 +3532,7 @@
     "series": "5-science",
     "side": false,
     "sourceHashes": {
-      "json": "fa1adaefd027593f9aea96947b41e13f1e93d5d5a665c29e62936ecf7872ff3b"
+      "json": "94b3f75eefda750f7bb1fce6234974e7f4580fc67dde592956b22d50c27e064f"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/5-science.json",
     "summary": "深蓝海卫",
@@ -3355,7 +3560,7 @@
     "series": "5-science",
     "side": false,
     "sourceHashes": {
-      "json": "fa1adaefd027593f9aea96947b41e13f1e93d5d5a665c29e62936ecf7872ff3b",
+      "json": "94b3f75eefda750f7bb1fce6234974e7f4580fc67dde592956b22d50c27e064f",
       "markdown": "e5a19b03e9ebbce8335db6da8b2c70a0fa8a342b6658bf0720021f4860ed4a04"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/5-science.json",
@@ -3377,7 +3582,7 @@
     "series": "5-science",
     "side": false,
     "sourceHashes": {
-      "json": "fa1adaefd027593f9aea96947b41e13f1e93d5d5a665c29e62936ecf7872ff3b"
+      "json": "94b3f75eefda750f7bb1fce6234974e7f4580fc67dde592956b22d50c27e064f"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/5-science.json",
     "summary": "异星初触",
@@ -3398,7 +3603,7 @@
     "series": "5-science",
     "side": false,
     "sourceHashes": {
-      "json": "fa1adaefd027593f9aea96947b41e13f1e93d5d5a665c29e62936ecf7872ff3b"
+      "json": "94b3f75eefda750f7bb1fce6234974e7f4580fc67dde592956b22d50c27e064f"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/5-science.json",
     "summary": "先驱遗迹",
@@ -3419,7 +3624,7 @@
     "series": "5-science",
     "side": false,
     "sourceHashes": {
-      "json": "fa1adaefd027593f9aea96947b41e13f1e93d5d5a665c29e62936ecf7872ff3b"
+      "json": "94b3f75eefda750f7bb1fce6234974e7f4580fc67dde592956b22d50c27e064f"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/5-science.json",
     "summary": "边境殖民星",
@@ -3440,7 +3645,7 @@
     "series": "5-science",
     "side": false,
     "sourceHashes": {
-      "json": "fa1adaefd027593f9aea96947b41e13f1e93d5d5a665c29e62936ecf7872ff3b"
+      "json": "94b3f75eefda750f7bb1fce6234974e7f4580fc67dde592956b22d50c27e064f"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/5-science.json",
     "summary": "群心蜂巢",
@@ -3461,7 +3666,7 @@
     "series": "5-science",
     "side": false,
     "sourceHashes": {
-      "json": "fa1adaefd027593f9aea96947b41e13f1e93d5d5a665c29e62936ecf7872ff3b"
+      "json": "94b3f75eefda750f7bb1fce6234974e7f4580fc67dde592956b22d50c27e064f"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/5-science.json",
     "summary": "星际黑市",
@@ -3482,7 +3687,7 @@
     "series": "5-science",
     "side": false,
     "sourceHashes": {
-      "json": "fa1adaefd027593f9aea96947b41e13f1e93d5d5a665c29e62936ecf7872ff3b"
+      "json": "94b3f75eefda750f7bb1fce6234974e7f4580fc67dde592956b22d50c27e064f"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/5-science.json",
     "summary": "镜域沉沦",
@@ -3503,7 +3708,7 @@
     "series": "5-science",
     "side": false,
     "sourceHashes": {
-      "json": "fa1adaefd027593f9aea96947b41e13f1e93d5d5a665c29e62936ecf7872ff3b"
+      "json": "94b3f75eefda750f7bb1fce6234974e7f4580fc67dde592956b22d50c27e064f"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/5-science.json",
     "summary": "熔铠战星",
@@ -3524,7 +3729,7 @@
     "series": "5-science",
     "side": false,
     "sourceHashes": {
-      "json": "fa1adaefd027593f9aea96947b41e13f1e93d5d5a665c29e62936ecf7872ff3b"
+      "json": "94b3f75eefda750f7bb1fce6234974e7f4580fc67dde592956b22d50c27e064f"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/5-science.json",
     "summary": "轨道庭院",
@@ -3546,7 +3751,7 @@
     "series": "5-science",
     "side": false,
     "sourceHashes": {
-      "json": "fa1adaefd027593f9aea96947b41e13f1e93d5d5a665c29e62936ecf7872ff3b",
+      "json": "94b3f75eefda750f7bb1fce6234974e7f4580fc67dde592956b22d50c27e064f",
       "markdown": "901731ac2c1e3bb2ef379b56388ea9656137bcbe9fe24cc032dfc93195f5d715"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/5-science.json",
@@ -3568,7 +3773,7 @@
     "series": "5-science",
     "side": false,
     "sourceHashes": {
-      "json": "fa1adaefd027593f9aea96947b41e13f1e93d5d5a665c29e62936ecf7872ff3b"
+      "json": "94b3f75eefda750f7bb1fce6234974e7f4580fc67dde592956b22d50c27e064f"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/5-science.json",
     "summary": "监狱行星",
@@ -3587,7 +3792,7 @@
     "series": "5-science",
     "side": false,
     "sourceHashes": {
-      "json": "fa1adaefd027593f9aea96947b41e13f1e93d5d5a665c29e62936ecf7872ff3b"
+      "json": "94b3f75eefda750f7bb1fce6234974e7f4580fc67dde592956b22d50c27e064f"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/5-science.json",
     "summary": "量子迷城",
@@ -3615,7 +3820,7 @@
     "series": "5-science",
     "side": false,
     "sourceHashes": {
-      "json": "fa1adaefd027593f9aea96947b41e13f1e93d5d5a665c29e62936ecf7872ff3b",
+      "json": "94b3f75eefda750f7bb1fce6234974e7f4580fc67dde592956b22d50c27e064f",
       "markdown": "aaeba7cc478f847e38771228c77d3934ec44a199f7f2906652a40c6b47bd5355"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/5-science.json",
@@ -3661,7 +3866,7 @@
     "series": "5-science",
     "side": false,
     "sourceHashes": {
-      "json": "fa1adaefd027593f9aea96947b41e13f1e93d5d5a665c29e62936ecf7872ff3b",
+      "json": "94b3f75eefda750f7bb1fce6234974e7f4580fc67dde592956b22d50c27e064f",
       "markdown": "aa87092efa5f2bb02528e8b8c006c9e0bc98112ec1cacc9eb24057068ce3b97a"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/5-science.json",
@@ -3711,7 +3916,7 @@
     "series": "5-science",
     "side": false,
     "sourceHashes": {
-      "json": "fa1adaefd027593f9aea96947b41e13f1e93d5d5a665c29e62936ecf7872ff3b",
+      "json": "94b3f75eefda750f7bb1fce6234974e7f4580fc67dde592956b22d50c27e064f",
       "markdown": "ca750fd355716532e936f075bce50b5af63774e89cec5b9bfd8da2f36a506bdc"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/5-science.json",
@@ -3733,7 +3938,7 @@
     "series": "5-science",
     "side": false,
     "sourceHashes": {
-      "json": "fa1adaefd027593f9aea96947b41e13f1e93d5d5a665c29e62936ecf7872ff3b"
+      "json": "94b3f75eefda750f7bb1fce6234974e7f4580fc67dde592956b22d50c27e064f"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/5-science.json",
     "summary": "环锁群星",
@@ -3754,7 +3959,7 @@
     "series": "5-science",
     "side": false,
     "sourceHashes": {
-      "json": "fa1adaefd027593f9aea96947b41e13f1e93d5d5a665c29e62936ecf7872ff3b"
+      "json": "94b3f75eefda750f7bb1fce6234974e7f4580fc67dde592956b22d50c27e064f"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/5-science.json",
     "summary": "基序蛊城",
@@ -3775,7 +3980,7 @@
     "series": "5-science",
     "side": false,
     "sourceHashes": {
-      "json": "fa1adaefd027593f9aea96947b41e13f1e93d5d5a665c29e62936ecf7872ff3b"
+      "json": "94b3f75eefda750f7bb1fce6234974e7f4580fc67dde592956b22d50c27e064f"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/5-science.json",
     "summary": "逐星远航",
@@ -3796,7 +4001,7 @@
     "series": "5-science",
     "side": false,
     "sourceHashes": {
-      "json": "fa1adaefd027593f9aea96947b41e13f1e93d5d5a665c29e62936ecf7872ff3b"
+      "json": "94b3f75eefda750f7bb1fce6234974e7f4580fc67dde592956b22d50c27e064f"
     },
     "sourceJsonPath": "src/game/data/story_outline/sources/5-science.json",
     "summary": "星门港区",

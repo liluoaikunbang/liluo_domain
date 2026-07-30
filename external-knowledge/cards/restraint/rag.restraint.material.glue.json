@@ -26,8 +26,111 @@
     "oldIds": [
       "bondage_tag:胶水"
     ],
-    "generatedFrom": "legacy-tag-title-only"
+    "generatedFrom": "legacy-tag-title-only",
+    "evidenceLayer": "v1",
+    "evidenceMigratedAt": "2026-07-28T07:14:30.217Z",
+    "professionalRag": {
+      "batchId": "professional-rag-bulk-v1",
+      "migratedAt": "2026-07-28T07:49:31.995Z",
+      "strategy": "knowledge-from-legacy-expression-stub",
+      "notes": "知识分支由既有 definition/claims/evidence 迁入；表达分支保留骨架（有 creative-note/abstractPatterns 时写入草稿）；同一概念不另建重复卡。"
+    }
   },
   "ragLayer": "category",
-  "parentCardIds": []
+  "parentCardIds": [],
+  "evidenceRefs": [
+    "ev-fbsrc000063-113028cfb79edd25"
+  ],
+  "sourceRecordIds": [
+    "fb-src-000063"
+  ],
+  "claims": [
+    {
+      "id": "rag.restraint.material.glue::claim:definition:0",
+      "label": "定义",
+      "content": "以黏合效果限制开合或相对移动的材料概念；具体安全性与解除方式必须由采用它的故事另行说明。",
+      "claimType": "definition",
+      "evidenceRefs": [
+        "ev-fbsrc000063-113028cfb79edd25"
+      ],
+      "supportStatus": "pending",
+      "reviewStatus": "pending",
+      "origin": "external-summary"
+    }
+  ],
+  "retrievalPolicy": {
+    "graphVisible": true,
+    "searchable": true,
+    "relationAnchor": true,
+    "contentRetrievable": false,
+    "evidenceRetrievable": true,
+    "knowledgeRetrievable": false,
+    "expressionRetrievable": false
+  },
+  "professionalRagVersion": 1,
+  "knowledge": {
+    "definition": "以黏合效果限制开合或相对移动的材料概念；具体安全性与解除方式必须由采用它的故事另行说明。",
+    "boundaries": {
+      "includes": [],
+      "excludes": []
+    },
+    "distinctions": [],
+    "aliases": [],
+    "parentConceptRefs": [],
+    "childConceptRefs": [],
+    "relatedConceptRefs": [],
+    "factualClaims": [
+      {
+        "id": "rag.restraint.material.glue::claim:definition:0",
+        "label": "定义",
+        "content": "以黏合效果限制开合或相对移动的材料概念；具体安全性与解除方式必须由采用它的故事另行说明。",
+        "claimType": "definition",
+        "evidenceRefs": [
+          "ev-fbsrc000063-113028cfb79edd25"
+        ],
+        "supportStatus": "pending",
+        "reviewStatus": "pending",
+        "origin": "external-summary"
+      }
+    ],
+    "evidenceRefs": [
+      "ev-fbsrc000063-113028cfb79edd25"
+    ],
+    "projectInterpretation": "",
+    "commonMisreadings": [],
+    "status": "usable",
+    "evidenceStatus": "partial",
+    "reviewStatus": "pending"
+  },
+  "expression": {
+    "visualFocus": [],
+    "actionLogic": [],
+    "movementEffects": [],
+    "postureEffects": [],
+    "sensoryFocus": [],
+    "emotionalPossibilities": [],
+    "narrativeUses": [],
+    "applicableScenes": [],
+    "unsuitableScenes": [],
+    "expressionPrinciples": [],
+    "commonFailures": [],
+    "prohibitedMisreadings": [],
+    "styleEvidenceRefs": [],
+    "goldExampleRefs": [],
+    "calibrationPairRefs": [],
+    "relatedStyleRagRefs": [],
+    "evidenceRefs": [],
+    "status": "stub",
+    "evidenceStatus": "missing",
+    "reviewStatus": "pending"
+  },
+  "overallStatus": "knowledge-only",
+  "evidenceBindings": [
+    {
+      "evidenceId": "ev-fbsrc000063-113028cfb79edd25",
+      "purpose": "knowledge-evidence",
+      "branch": "knowledge",
+      "supportStatus": "pending"
+    }
+  ]
 }

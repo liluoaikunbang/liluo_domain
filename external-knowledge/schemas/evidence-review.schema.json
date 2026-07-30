@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Evidence-to-claim verification record",
+  "type": "object",
+  "required": ["id", "claimId", "evidenceId", "verdict", "reviewedBy", "reviewedAt"],
+  "properties": {
+    "id": { "type": "string", "minLength": 1 },
+    "claimId": { "type": "string", "minLength": 1 },
+    "evidenceId": { "type": "string", "minLength": 1 },
+    "cardId": { "type": "string" },
+    "verdict": {
+      "enum": [
+        "supports",
+        "partially-supports",
+        "does-not-support",
+        "ambiguous",
+        "conflicts"
+      ]
+    },
+    "note": { "type": "string" },
+    "reviewedBy": { "enum": ["user", "ai"] },
+    "reviewedAt": { "type": "string" }
+  }
+}

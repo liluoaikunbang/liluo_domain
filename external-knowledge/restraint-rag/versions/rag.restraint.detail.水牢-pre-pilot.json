@@ -1,0 +1,75 @@
+{
+  "cardId": "rag.restraint.detail.水牢",
+  "title": "水牢",
+  "domain": "restraint",
+  "cardType": "term",
+  "aliases": [],
+  "summary": "水牢把监禁与水位、低温、站立困难等环境变化绑定在一起。",
+  "definition": "角色被限制在有积水或可改变水位的封闭设施中；水体既是环境，也是持续改变行动条件的压力源。",
+  "sourceRefs": [
+    {
+      "sourceId": "fb-src-000061",
+      "segmentId": "fb-src-000061-seg-00378",
+      "sourcePath": "external-knowledge/sources/fiction-bondage/其他未分类/女侠被缚的故事.md",
+      "startLine": 10762,
+      "endLine": 10781
+    },
+    {
+      "sourceId": "fb-src-000203",
+      "segmentId": "fb-src-000203-seg-00126",
+      "sourcePath": "external-knowledge/sources/fiction-bondage/作者,金主大大/en010272/自愿女囚岁月.md",
+      "startLine": 3159,
+      "endLine": 3189
+    }
+  ],
+  "evidenceStatus": "partial",
+  "contentStatus": "complete",
+  "reviewStatus": "candidate",
+  "directQuoteIncluded": false,
+  "canonical": false,
+  "knowledgeScope": "external-fiction-reference",
+  "migration": {
+    "batchId": "tag-rag-restructure-v1",
+    "oldIds": [
+      "bondage_tag:sg:水牢"
+    ],
+    "generatedFrom": "legacy-tag-title-only",
+    "evidenceLayer": "v1",
+    "evidenceMigratedAt": "2026-07-28T07:14:30.143Z"
+  },
+  "ragLayer": "concept",
+  "parentCardIds": [
+    "rag.restraint.state.confinement"
+  ],
+  "distinctions": [],
+  "evidenceRefs": [
+    "ev-fbsrc000061-c787f87b6a2befa0",
+    "ev-fbsrc000203-d47405a3a29f2ab9"
+  ],
+  "sourceRecordIds": [
+    "fb-src-000061",
+    "fb-src-000203"
+  ],
+  "claims": [
+    {
+      "id": "rag.restraint.detail.水牢::claim:definition:0",
+      "label": "定义",
+      "content": "角色被限制在有积水或可改变水位的封闭设施中；水体既是环境，也是持续改变行动条件的压力源。",
+      "claimType": "definition",
+      "evidenceRefs": [
+        "ev-fbsrc000061-c787f87b6a2befa0",
+        "ev-fbsrc000203-d47405a3a29f2ab9"
+      ],
+      "supportStatus": "pending",
+      "reviewStatus": "pending",
+      "origin": "external-summary"
+    }
+  ],
+  "retrievalPolicy": {
+    "graphVisible": true,
+    "searchable": true,
+    "relationAnchor": true,
+    "contentRetrievable": false,
+    "evidenceRetrievable": true
+  }
+}

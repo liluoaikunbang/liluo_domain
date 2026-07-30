@@ -1,0 +1,109 @@
+{
+  "sourceRefs": [],
+  "evidenceStatus": "missing",
+  "contentStatus": "stub",
+  "reviewStatus": "candidate",
+  "directQuoteIncluded": false,
+  "canonical": false,
+  "knowledgeScope": "external-fiction-reference",
+  "evidenceRefs": [],
+  "sourceRecordIds": [],
+  "claims": [],
+  "distinctions": [],
+  "retrievalPolicy": {
+    "graphVisible": true,
+    "searchable": true,
+    "relationAnchor": true,
+    "contentRetrievable": false,
+    "evidenceRetrievable": false,
+    "knowledgeRetrievable": false,
+    "expressionRetrievable": false
+  },
+  "professionalRagVersion": 1,
+  "evidenceBindings": [],
+  "migration": {
+    "batchId": "plot-layer-governance-v1",
+    "oldIds": [],
+    "generatedFrom": "plot-layer-user-request",
+    "createdAt": "2026-07-28T11:09:04.999Z"
+  },
+  "cardId": "rag.restraint.material.bio-nest",
+  "title": "生物巢材",
+  "domain": "restraint",
+  "cardType": "material",
+  "aliases": [
+    "巢穴材料",
+    "分泌拘束材料",
+    "有机巢材"
+  ],
+  "summary": "生物巢材是可跨故事复用的上位类别：丝、蜡等巢穴分泌材料用于缠绕、封固并与环境连成一体。",
+  "definition": "生物巢材是可跨故事复用的上位类别：由生物巢穴或类巢生物分泌、铺展的丝、蜡等材料，用来缠绕、封固人物并与环境连成一体。下属具体材料各自建卡；本类别不代替某次蜂群供养或蛛丝巢穴情节。",
+  "ragLayer": "category",
+  "parentCardIds": [],
+  "knowledge": {
+    "definition": "生物巢材是可跨故事复用的上位类别：由生物巢穴或类巢生物分泌、铺展的丝、蜡等材料，用来缠绕、封固人物并与环境连成一体。下属具体材料各自建卡；本类别不代替某次蜂群供养或蛛丝巢穴情节。",
+    "boundaries": {
+      "includes": [
+        "蛛丝、蜂蜡等巢穴/生物分泌材料的拘束用途",
+        "材料与巢室、通道等环境结构连成一体",
+        "以丝网形态实施的拘捕/封禁（如拘捕网）"
+      ],
+      "excludes": [
+        "普通人造绳索与工业胶水",
+        "触手等主动追猎肢体（另卡）",
+        "单次故事完整事件过程"
+      ]
+    },
+    "distinctions": [],
+    "aliases": [
+      "巢穴材料",
+      "分泌拘束材料",
+      "有机巢材"
+    ],
+    "parentConceptRefs": [],
+    "childConceptRefs": [
+      "rag.restraint.material.spider-silk",
+      "rag.restraint.material.beeswax",
+      "rag.restraint.detail.特殊-拘捕网"
+    ],
+    "relatedConceptRefs": [
+      "rag.restraint.material.tentacle",
+      "rag.restraint.material.glue",
+      "rag.restraint.detail.特殊-拘捕网"
+    ],
+    "factualClaims": [],
+    "evidenceRefs": [],
+    "projectInterpretation": "上位类别只框定材料来源与巢穴化固定；蛛丝、蜂蜡等用子卡。",
+    "commonMisreadings": [],
+    "status": "stub",
+    "evidenceStatus": "missing",
+    "reviewStatus": "pending"
+  },
+  "expression": {
+    "visualFocus": [],
+    "actionLogic": [],
+    "movementEffects": [],
+    "postureEffects": [],
+    "sensoryFocus": [],
+    "emotionalPossibilities": [],
+    "narrativeUses": [
+      "先写材料如何铺展并连上环境，再落到人物被固定后的行动边界"
+    ],
+    "applicableScenes": [],
+    "unsuitableScenes": [],
+    "expressionPrinciples": [
+      "不把某次供养或巢穴事件写成材料类别定义"
+    ],
+    "commonFailures": [],
+    "prohibitedMisreadings": [],
+    "styleEvidenceRefs": [],
+    "goldExampleRefs": [],
+    "calibrationPairRefs": [],
+    "relatedStyleRagRefs": [],
+    "evidenceRefs": [],
+    "status": "stub",
+    "evidenceStatus": "missing",
+    "reviewStatus": "pending"
+  },
+  "overallStatus": "stub"
+}

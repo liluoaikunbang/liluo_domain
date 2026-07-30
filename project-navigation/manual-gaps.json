@@ -379,24 +379,25 @@
       "category": "rag-audit",
       "origin": "user-confirmed",
       "status": "open",
-      "priority": "medium",
-      "description": "外部虚构知识索引可继续使用，但可能存在标签遗漏、错误概括、分块不合理、召回遗漏、内容混淆、与文风通道混淆、以及对紧缚题材的过度推断。需通过长期人工抽查逐步修正，不要求全量重做，不引入 embedding/领域本体。",
-      "missing": ["ongoingManualAuditBatches", "repeatedIssuePatterns>=3-for-skill-upgrade"],
-      "reason": "现有索引先用；质量靠抽查闭环改进，而非推倒重建。",
+      "priority": "high",
+      "description": "外部虚构知识索引可继续使用，但可能存在标签遗漏、错误概括、分块不合理、召回遗漏、内容混淆、与文风通道混淆、以及对紧缚题材的过度推断。现已升级为「来源→证据片段→知识陈述」三层；AI 已按现有 sourceRefs 生成候选证据（pending），需用户在关联图谱中核验证据是否真正支持结论，并持续分批抽查。用户确认无问题的卡用 confirmed-ok 归档后抽中概率降低，但不会移出抽查池。",
+      "missing": ["ongoingManualAuditBatches", "evidenceClaimVerification", "repeatedIssuePatterns>=3-for-skill-upgrade"],
+      "reason": "现有索引先用；质量靠抽查闭环与证据核验改进，而非推倒重建。",
       "requiredFrom": "user",
-      "unlocks": ["rag-audit-driven-skill-rules", "affected-index-rebuild"],
+      "unlocks": ["rag-audit-driven-skill-rules", "affected-index-rebuild", "confirmed-evidence-retrieval"],
       "sourceRefs": [
         "docs/知识检索校准/README.md",
         "project-navigation/rag-audit-policy.json",
-        "external-knowledge/INDEX.md"
+        "external-knowledge/INDEX.md",
+        "external-knowledge/evidence/README.md"
       ],
-      "completionCriteria": ["形成可持续抽查习惯", "重复问题经批准写入抽象 Skill 规则后仅重建受影响范围"],
-      "nextAction": "npm run rag:audit:sample -- --mode low-confidence --batch-size 8，人工填写后 rag:audit:record。",
+      "completionCriteria": ["形成可持续抽查习惯", "对候选证据完成至少一批用户核验", "重复问题经批准写入抽象 Skill 规则后仅重建受影响范围"],
+      "nextAction": "npm run rag:audit:sample -- --mode low-confidence --batch-size 8；在关联图谱打开证据层核验原文；无问题用 rag:audit:record --category confirmed-ok，有问题先协商改向再归档。",
       "relatedCapabilityIds": ["skill-liluo-external-fiction-knowledge"],
-      "relatedFiles": ["docs/知识检索校准/", "external-knowledge/"],
-      "remindWhen": ["rag-accuracy", "external-fiction-rag", "restraint-index", "rag-audit"],
+      "relatedFiles": ["docs/知识检索校准/", "external-knowledge/", "external-knowledge/evidence/"],
+      "remindWhen": ["rag-accuracy", "external-fiction-rag", "restraint-index", "rag-audit", "evidence-layer"],
       "createdAt": "2026-07-26",
-      "updatedAt": "2026-07-26"
+      "updatedAt": "2026-07-28"
     },
     {
       "id": "gap-style-rag-manual-audit-calibration",

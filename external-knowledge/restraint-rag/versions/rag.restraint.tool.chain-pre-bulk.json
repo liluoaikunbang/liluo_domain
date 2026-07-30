@@ -1,0 +1,72 @@
+{
+  "cardId": "rag.restraint.tool.chain",
+  "title": "锁链",
+  "domain": "restraint",
+  "cardType": "tool",
+  "aliases": [],
+  "summary": "锁链既能连接人物与固定点，也能通过长度直接限定可移动范围。",
+  "definition": "由连续金属环节构成的连接材料；在场景中常承担牵引、环境固定或多部位联结。",
+  "sourceRefs": [
+    {
+      "sourceId": "fb-src-000017",
+      "segmentId": "fb-src-000017-seg-00051",
+      "sourcePath": "external-knowledge/sources/fiction-bondage/不知道作者/美少女战士.md",
+      "startLine": 980,
+      "endLine": 999
+    },
+    {
+      "sourceId": "fb-src-000022",
+      "segmentId": "fb-src-000022-seg-00004",
+      "sourcePath": "external-knowledge/sources/fiction-bondage/不知道作者/奇妙人生.md",
+      "startLine": 164,
+      "endLine": 201
+    }
+  ],
+  "evidenceStatus": "partial",
+  "contentStatus": "complete",
+  "reviewStatus": "candidate",
+  "directQuoteIncluded": false,
+  "canonical": false,
+  "knowledgeScope": "external-fiction-reference",
+  "migration": {
+    "batchId": "tag-rag-restructure-v1",
+    "oldIds": [
+      "bondage_tag:锁链"
+    ],
+    "generatedFrom": "legacy-tag-title-only",
+    "evidenceLayer": "v1",
+    "evidenceMigratedAt": "2026-07-28T07:14:30.267Z"
+  },
+  "ragLayer": "category",
+  "parentCardIds": [],
+  "evidenceRefs": [
+    "ev-fbsrc000017-81b6df450b0098a0",
+    "ev-fbsrc000022-ff9fc8f112128eb6"
+  ],
+  "sourceRecordIds": [
+    "fb-src-000017",
+    "fb-src-000022"
+  ],
+  "claims": [
+    {
+      "id": "rag.restraint.tool.chain::claim:definition:0",
+      "label": "定义",
+      "content": "由连续金属环节构成的连接材料；在场景中常承担牵引、环境固定或多部位联结。",
+      "claimType": "definition",
+      "evidenceRefs": [
+        "ev-fbsrc000017-81b6df450b0098a0",
+        "ev-fbsrc000022-ff9fc8f112128eb6"
+      ],
+      "supportStatus": "pending",
+      "reviewStatus": "pending",
+      "origin": "external-summary"
+    }
+  ],
+  "retrievalPolicy": {
+    "graphVisible": true,
+    "searchable": true,
+    "relationAnchor": true,
+    "contentRetrievable": false,
+    "evidenceRetrievable": true
+  }
+}

@@ -7,7 +7,7 @@
     "presentationModes": [
       "main-map"
     ],
-    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourceHash": "ddb50ad1825b9a6746fd4e9abb83fc318506722907f340d1fbbb8fa6814df6b5",
     "sourcePath": "src/game/data/gameplay_outline/catalog.json",
     "summary": "每次远征的地图、敌人、奖励和事件有所变化。",
     "summarySource": "source-json.summary",
@@ -65,7 +65,7 @@
       "main-map",
       "light-extension"
     ],
-    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourceHash": "ddb50ad1825b9a6746fd4e9abb83fc318506722907f340d1fbbb8fa6814df6b5",
     "sourcePath": "src/game/data/gameplay_outline/catalog.json",
     "summary": "远征过程中持续形成独特的战斗流派。",
     "summarySource": "source-json.summary",
@@ -130,7 +130,7 @@
     "presentationModes": [
       "main-map"
     ],
-    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourceHash": "ddb50ad1825b9a6746fd4e9abb83fc318506722907f340d1fbbb8fa6814df6b5",
     "sourcePath": "src/game/data/gameplay_outline/catalog.json",
     "summary": "地图以连续楼层、区域或关卡构成，难度持续上升。",
     "summarySource": "source-json.summary",
@@ -188,7 +188,7 @@
       "light-extension",
       "cg-friendly"
     ],
-    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourceHash": "ddb50ad1825b9a6746fd4e9abb83fc318506722907f340d1fbbb8fa6814df6b5",
     "sourcePath": "src/game/data/gameplay_outline/catalog.json",
     "summary": "通过文字、像素互动和CG呈现高风险选择。",
     "summarySource": "source-json.summary",
@@ -246,7 +246,7 @@
       "main-map",
       "light-extension"
     ],
-    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourceHash": "ddb50ad1825b9a6746fd4e9abb83fc318506722907f340d1fbbb8fa6814df6b5",
     "sourcePath": "src/game/data/gameplay_outline/catalog.json",
     "summary": "进入危险区域搜索物资、完成任务，并在负重、风险、深入探索与及时撤离之间作出取舍。",
     "summarySource": "source-json.summary",

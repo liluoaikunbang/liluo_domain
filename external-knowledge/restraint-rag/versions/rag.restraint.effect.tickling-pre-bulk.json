@@ -1,0 +1,62 @@
+{
+  "cardId": "rag.restraint.effect.tickling",
+  "title": "挠痒",
+  "domain": "restraint",
+  "cardType": "effect",
+  "aliases": [],
+  "summary": "挠痒通过持续触碰造成不由自主的躲闪、紧绷和注意力转移。",
+  "definition": "以痒感和身体反射为核心的刺激效果；在受限场景中，角色往往无法避开刺激位置。",
+  "sourceRefs": [
+    {
+      "sourceId": "fb-src-000064",
+      "segmentId": "fb-src-000064-seg-00113",
+      "sourcePath": "external-knowledge/sources/fiction-bondage/其他未分类/倾斜的世界-远方的寂静.md",
+      "startLine": 1910,
+      "endLine": 1923
+    }
+  ],
+  "evidenceStatus": "partial",
+  "contentStatus": "complete",
+  "reviewStatus": "candidate",
+  "directQuoteIncluded": false,
+  "canonical": false,
+  "knowledgeScope": "external-fiction-reference",
+  "migration": {
+    "batchId": "tag-rag-restructure-v1",
+    "oldIds": [
+      "bondage_tag:挠痒"
+    ],
+    "generatedFrom": "legacy-tag-title-only",
+    "evidenceLayer": "v1",
+    "evidenceMigratedAt": "2026-07-28T07:14:30.213Z"
+  },
+  "ragLayer": "category",
+  "parentCardIds": [],
+  "evidenceRefs": [
+    "ev-fbsrc000064-39a5ce2a889250dd"
+  ],
+  "sourceRecordIds": [
+    "fb-src-000064"
+  ],
+  "claims": [
+    {
+      "id": "rag.restraint.effect.tickling::claim:definition:0",
+      "label": "定义",
+      "content": "以痒感和身体反射为核心的刺激效果；在受限场景中，角色往往无法避开刺激位置。",
+      "claimType": "definition",
+      "evidenceRefs": [
+        "ev-fbsrc000064-39a5ce2a889250dd"
+      ],
+      "supportStatus": "pending",
+      "reviewStatus": "pending",
+      "origin": "external-summary"
+    }
+  ],
+  "retrievalPolicy": {
+    "graphVisible": true,
+    "searchable": true,
+    "relationAnchor": true,
+    "contentRetrievable": false,
+    "evidenceRetrievable": true
+  }
+}

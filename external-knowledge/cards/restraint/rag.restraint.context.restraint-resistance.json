@@ -1,0 +1,103 @@
+{
+  "cardId": "rag.restraint.context.restraint-resistance",
+  "title": "紧缚反抗",
+  "domain": "restraint",
+  "cardType": "context",
+  "aliases": [
+    "受缚反抗",
+    "紧缚挣扎",
+    "反制逃脱",
+    "紧缚反击"
+  ],
+  "summary": "紧缚反抗是可跨故事复用的行动模式：受缚者在限制未解除时仍主动寻找发力点、利用规则/环境/旁观者，迫使局面从单向控制转向对抗或反噬。",
+  "definition": "紧缚反抗是可跨故事复用的行动模式：受缚者在限制未解除时仍主动寻找发力点、利用规则/环境/旁观者，迫使局面从单向控制转向对抗或反噬。",
+  "sourceRefs": [],
+  "evidenceStatus": "missing",
+  "contentStatus": "stub",
+  "reviewStatus": "candidate",
+  "directQuoteIncluded": false,
+  "canonical": false,
+  "knowledgeScope": "external-fiction-reference",
+  "ragLayer": "category",
+  "parentCardIds": [],
+  "migration": {
+    "batchId": "plot-layer-governance-v1",
+    "oldIds": [],
+    "generatedFrom": "plot-layer-user-request",
+    "createdAt": "2026-07-28T09:43:08.554Z"
+  },
+  "evidenceRefs": [],
+  "sourceRecordIds": [],
+  "claims": [],
+  "retrievalPolicy": {
+    "graphVisible": true,
+    "searchable": true,
+    "relationAnchor": true,
+    "contentRetrievable": false,
+    "evidenceRetrievable": false,
+    "knowledgeRetrievable": false,
+    "expressionRetrievable": false
+  },
+  "professionalRagVersion": 1,
+  "knowledge": {
+    "definition": "紧缚反抗是可跨故事复用的行动模式：受缚者在限制未解除时仍主动寻找发力点、利用规则/环境/旁观者，迫使局面从单向控制转向对抗或反噬。",
+    "boundaries": {
+      "includes": [
+        "受缚状态下的主动对抗、规则反制、环境借力"
+      ],
+      "excludes": [
+        "完全脱困后的事后报复过程本身"
+      ]
+    },
+    "distinctions": [],
+    "aliases": [
+      "受缚反抗",
+      "紧缚挣扎",
+      "紧缚反击"
+    ],
+    "parentConceptRefs": [],
+    "childConceptRefs": [],
+    "relatedConceptRefs": [],
+    "factualClaims": [],
+    "evidenceRefs": [],
+    "projectInterpretation": "不等于某次禁苑反猎的具体过程。",
+    "commonMisreadings": [],
+    "status": "stub",
+    "evidenceStatus": "missing",
+    "reviewStatus": "pending"
+  },
+  "expression": {
+    "visualFocus": [],
+    "actionLogic": [
+      "在限制中寻找可撬动的规则与物理支点"
+    ],
+    "movementEffects": [],
+    "postureEffects": [],
+    "sensoryFocus": [],
+    "emotionalPossibilities": [],
+    "narrativeUses": [
+      "把单向狩猎改写成公开反噬"
+    ],
+    "applicableScenes": [
+      "猎场",
+      "公开仪式",
+      "需要旁观者见证的控制场合"
+    ],
+    "unsuitableScenes": [],
+    "expressionPrinciples": [
+      "先写清限制仍在，再写反抗如何借限制本身发力"
+    ],
+    "commonFailures": [],
+    "prohibitedMisreadings": [],
+    "styleEvidenceRefs": [],
+    "goldExampleRefs": [],
+    "calibrationPairRefs": [],
+    "relatedStyleRagRefs": [],
+    "evidenceRefs": [],
+    "status": "stub",
+    "evidenceStatus": "missing",
+    "reviewStatus": "pending"
+  },
+  "overallStatus": "stub",
+  "evidenceBindings": []
+}

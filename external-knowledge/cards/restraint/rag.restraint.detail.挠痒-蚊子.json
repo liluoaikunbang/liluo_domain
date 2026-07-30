@@ -1,9 +1,11 @@
 {
   "cardId": "rag.restraint.detail.挠痒-蚊子",
-  "title": "挠痒-蚊子",
+  "title": "蚊子",
   "domain": "restraint",
   "cardType": "term",
-  "aliases": [],
+  "aliases": [
+    "挠痒-蚊子"
+  ],
   "summary": "",
   "definition": "",
   "sourceRefs": [],
@@ -18,10 +20,78 @@
     "oldIds": [
       "bondage_tag:sg:挠痒-蚊子"
     ],
-    "generatedFrom": "legacy-tag-title-only"
+    "generatedFrom": "legacy-tag-title-only",
+    "evidenceLayer": "v1",
+    "evidenceMigratedAt": "2026-07-28T07:14:30.130Z",
+    "professionalRag": {
+      "batchId": "professional-rag-bulk-v1",
+      "migratedAt": "2026-07-28T07:49:31.923Z",
+      "strategy": "knowledge-from-legacy-expression-stub",
+      "notes": "知识分支由既有 definition/claims/evidence 迁入；表达分支保留骨架（有 creative-note/abstractPatterns 时写入草稿）；同一概念不另建重复卡。"
+    }
   },
   "ragLayer": "concept",
   "parentCardIds": [
     "rag.restraint.effect.tickling"
-  ]
+  ],
+  "evidenceRefs": [],
+  "sourceRecordIds": [],
+  "claims": [],
+  "retrievalPolicy": {
+    "graphVisible": true,
+    "searchable": true,
+    "relationAnchor": true,
+    "contentRetrievable": false,
+    "evidenceRetrievable": false,
+    "knowledgeRetrievable": false,
+    "expressionRetrievable": false
+  },
+  "professionalRagVersion": 1,
+  "knowledge": {
+    "definition": "",
+    "boundaries": {
+      "includes": [],
+      "excludes": []
+    },
+    "distinctions": [],
+    "aliases": [
+      "挠痒-蚊子"
+    ],
+    "parentConceptRefs": [
+      "rag.restraint.effect.tickling"
+    ],
+    "childConceptRefs": [],
+    "relatedConceptRefs": [],
+    "factualClaims": [],
+    "evidenceRefs": [],
+    "projectInterpretation": "",
+    "commonMisreadings": [],
+    "status": "stub",
+    "evidenceStatus": "missing",
+    "reviewStatus": "pending"
+  },
+  "expression": {
+    "visualFocus": [],
+    "actionLogic": [],
+    "movementEffects": [],
+    "postureEffects": [],
+    "sensoryFocus": [],
+    "emotionalPossibilities": [],
+    "narrativeUses": [],
+    "applicableScenes": [],
+    "unsuitableScenes": [],
+    "expressionPrinciples": [],
+    "commonFailures": [],
+    "prohibitedMisreadings": [],
+    "styleEvidenceRefs": [],
+    "goldExampleRefs": [],
+    "calibrationPairRefs": [],
+    "relatedStyleRagRefs": [],
+    "evidenceRefs": [],
+    "status": "stub",
+    "evidenceStatus": "missing",
+    "reviewStatus": "pending"
+  },
+  "overallStatus": "stub",
+  "evidenceBindings": []
 }

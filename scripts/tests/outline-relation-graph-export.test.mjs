@@ -19,11 +19,12 @@ test('creates a self-describing JSON export for the outline relation graph', () 
   );
 
   assert.equal(payload.exportType, 'outline-relation-graph');
-  assert.equal(payload.exportVersion, 1);
+  assert.equal(payload.exportVersion, 2);
   assert.equal(payload.exportedAt, '2026-07-27T12:00:00.000Z');
   assert.equal(payload.schemaVersion, 1);
   assert.equal(payload.builtAt, '2026-07-27T00:00:00.000Z');
   assert.equal(payload.layoutSeed, 42);
+  assert.equal(payload.publicSafe, true);
   assert.equal(payload.nodeCount, 1);
   assert.equal(payload.edgeCount, 1);
   assert.deepEqual(payload.nodes, graph.nodes);

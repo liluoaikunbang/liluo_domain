@@ -22,7 +22,7 @@
       "endLine": 64
     }
   ],
-  "evidenceStatus": "supported",
+  "evidenceStatus": "partial",
   "contentStatus": "complete",
   "reviewStatus": "candidate",
   "directQuoteIncluded": false,
@@ -33,10 +33,126 @@
     "oldIds": [
       "bondage_tag:手铐"
     ],
-    "generatedFrom": "legacy-tag-title-only"
+    "generatedFrom": "legacy-tag-title-only",
+    "evidenceLayer": "v1",
+    "evidenceMigratedAt": "2026-07-28T07:14:30.272Z",
+    "professionalRag": {
+      "batchId": "professional-rag-pilot-v1",
+      "migratedAt": "2026-07-28T07:38:48.396Z",
+      "strategy": "knowledge-from-legacy-expression-stub",
+      "notes": "知识分支由既有 definition/claims/evidence 迁入；表达分支保留骨架待用户确认。"
+    }
   },
   "ragLayer": "concept",
   "parentCardIds": [
     "rag.restraint.tool.shackles"
+  ],
+  "evidenceRefs": [
+    "ev-fbsrc000001-aa3111bc2f37d846",
+    "ev-fbsrc000007-df631609bdf54c72"
+  ],
+  "sourceRecordIds": [
+    "fb-src-000001",
+    "fb-src-000007"
+  ],
+  "claims": [
+    {
+      "id": "rag.restraint.tool.handcuffs::claim:definition:0",
+      "label": "定义",
+      "content": "作用于手腕的成对铐具；它描述器具类别，不等同于某一种具体姿态。",
+      "claimType": "definition",
+      "evidenceRefs": [
+        "ev-fbsrc000001-aa3111bc2f37d846",
+        "ev-fbsrc000007-df631609bdf54c72"
+      ],
+      "supportStatus": "pending",
+      "reviewStatus": "pending",
+      "origin": "external-summary"
+    }
+  ],
+  "retrievalPolicy": {
+    "graphVisible": true,
+    "searchable": true,
+    "relationAnchor": true,
+    "contentRetrievable": false,
+    "evidenceRetrievable": true,
+    "knowledgeRetrievable": false,
+    "expressionRetrievable": false
+  },
+  "professionalRagVersion": 1,
+  "knowledge": {
+    "definition": "作用于手腕的成对铐具；它描述器具类别，不等同于某一种具体姿态。",
+    "boundaries": {
+      "includes": [],
+      "excludes": []
+    },
+    "distinctions": [],
+    "aliases": [],
+    "parentConceptRefs": [
+      "rag.restraint.tool.shackles"
+    ],
+    "childConceptRefs": [],
+    "relatedConceptRefs": [],
+    "factualClaims": [
+      {
+        "id": "rag.restraint.tool.handcuffs::claim:definition:0",
+        "label": "定义",
+        "content": "作用于手腕的成对铐具；它描述器具类别，不等同于某一种具体姿态。",
+        "claimType": "definition",
+        "evidenceRefs": [
+          "ev-fbsrc000001-aa3111bc2f37d846",
+          "ev-fbsrc000007-df631609bdf54c72"
+        ],
+        "supportStatus": "pending",
+        "reviewStatus": "pending",
+        "origin": "external-summary"
+      }
+    ],
+    "evidenceRefs": [
+      "ev-fbsrc000001-aa3111bc2f37d846",
+      "ev-fbsrc000007-df631609bdf54c72"
+    ],
+    "projectInterpretation": "",
+    "commonMisreadings": [],
+    "status": "usable",
+    "evidenceStatus": "partial",
+    "reviewStatus": "pending"
+  },
+  "expression": {
+    "visualFocus": [],
+    "actionLogic": [],
+    "movementEffects": [],
+    "postureEffects": [],
+    "sensoryFocus": [],
+    "emotionalPossibilities": [],
+    "narrativeUses": [],
+    "applicableScenes": [],
+    "unsuitableScenes": [],
+    "expressionPrinciples": [],
+    "commonFailures": [],
+    "prohibitedMisreadings": [],
+    "styleEvidenceRefs": [],
+    "goldExampleRefs": [],
+    "calibrationPairRefs": [],
+    "relatedStyleRagRefs": [],
+    "evidenceRefs": [],
+    "status": "stub",
+    "evidenceStatus": "missing",
+    "reviewStatus": "pending"
+  },
+  "overallStatus": "knowledge-only",
+  "evidenceBindings": [
+    {
+      "evidenceId": "ev-fbsrc000001-aa3111bc2f37d846",
+      "purpose": "knowledge-evidence",
+      "branch": "knowledge",
+      "supportStatus": "pending"
+    },
+    {
+      "evidenceId": "ev-fbsrc000007-df631609bdf54c72",
+      "purpose": "knowledge-evidence",
+      "branch": "knowledge",
+      "supportStatus": "pending"
+    }
   ]
 }

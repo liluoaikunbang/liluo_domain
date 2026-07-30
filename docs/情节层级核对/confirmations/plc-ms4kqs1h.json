@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "confirmationId": "plc-ms4kqs1h",
+  "plotId": "plot-055",
+  "decision": "keep-as-plot",
+  "userNote": "用户确认：跟着建议走",
+  "overrides": {
+    "origin": "legacy-migration",
+    "placementStatus": "placed",
+    "maturity": "scene-ready"
+  },
+  "proposalSnapshot": {
+    "sourcePlotId": "plot-055",
+    "title": "智能家居-脆弱资产误判",
+    "number": "055",
+    "groupId": "plot-group-014",
+    "groupTitle": "科技消费陷阱",
+    "plotKind": "ordinary",
+    "usageStatus": "unused",
+    "recommendation": "keep-as-plot",
+    "recommendedLayer": "plot",
+    "rationale": [
+      "具备角色/条件/过程/变化中的多项事件证据。",
+      "应作为一次性叙事实例保留；若内部含可复用概念，可另抽 RAG，但不整项迁移。"
+    ],
+    "reuseTest": {
+      "reusableAcrossStories": false,
+      "explanation": "摘要描述一次具体发生，换故事后通常不能原样复用。"
+    },
+    "eventTest": {
+      "hasActorOrRole": true,
+      "hasTrigger": true,
+      "hasProcess": true,
+      "hasChangeOrOutcome": true
+    },
+    "placementTest": {
+      "hasFormalWorldPlacement": true,
+      "linkedStoryIds": [
+        "world-1-glimmering-glance-maid-hotel"
+      ]
+    },
+    "edgeMigrationPlan": [],
+    "affectedSourceFiles": [
+      "src/game/data/plot_outline/catalog.json",
+      "src/game/data/story_outline/sources/1-modern.json"
+    ],
+    "affectedStoryEntries": [
+      "world-1-glimmering-glance-maid-hotel"
+    ],
+    "linkedStories": [
+      {
+        "key": "world-1-glimmering-glance-maid-hotel",
+        "title": "女仆酒店",
+        "sourceFile": "src/game/data/story_outline/sources/1-modern.json",
+        "markdownFiles": [
+          "src/game/data/story_outline/1-modern/2.2-女仆酒店.md"
+        ],
+        "ragRefs": [
+          "rag.restraint.effect.odor-stimulation"
+        ],
+        "plotRefs": [
+          "plot-062",
+          "plot-055"
+        ],
+        "gameplayRefs": []
+      }
+    ],
+    "confidence": 0.75,
+    "questionsForUser": [
+      "是否需要补充 ragRefs 指向已有紧缚 RAG？可暂缓。"
+    ],
+    "reviewStatus": "proposed",
+    "generatedAt": "2026-07-28T08:54:03.478Z"
+  },
+  "recordedAt": "2026-07-28T11:30:21.941Z",
+  "applied": true,
+  "dryRun": false,
+  "migrationId": "plm-ms4kqs26"
+}

@@ -1,0 +1,106 @@
+{
+  "cardId": "rag.restraint.context.little-people",
+  "title": "小人国",
+  "domain": "restraint",
+  "cardType": "context",
+  "aliases": [
+    "拇指女仆",
+    "微型族群",
+    "小人拘束"
+  ],
+  "summary": "小人国是可跨故事复用的尺度场景条件：微型族群以数量、分工与日常空间异化，对常人尺度角色形成捕获、转运或照料式限制。",
+  "definition": "小人国是可跨故事复用的尺度场景条件：微型族群以数量、分工与日常空间异化，对常人尺度角色形成捕获、转运或照料式限制。",
+  "sourceRefs": [],
+  "evidenceStatus": "missing",
+  "contentStatus": "stub",
+  "reviewStatus": "candidate",
+  "directQuoteIncluded": false,
+  "canonical": false,
+  "knowledgeScope": "external-fiction-reference",
+  "ragLayer": "category",
+  "parentCardIds": [],
+  "migration": {
+    "batchId": "plot-layer-governance-v1",
+    "oldIds": [],
+    "generatedFrom": "plot-layer-user-request",
+    "createdAt": "2026-07-28T09:47:59.518Z"
+  },
+  "evidenceRefs": [],
+  "sourceRecordIds": [],
+  "claims": [],
+  "retrievalPolicy": {
+    "graphVisible": true,
+    "searchable": true,
+    "relationAnchor": true,
+    "contentRetrievable": false,
+    "evidenceRetrievable": false,
+    "knowledgeRetrievable": false,
+    "expressionRetrievable": false
+  },
+  "professionalRagVersion": 1,
+  "knowledge": {
+    "definition": "小人国是可跨故事复用的尺度场景条件：微型族群以数量、分工与日常空间异化，对常人尺度角色形成捕获、转运或照料式限制。",
+    "boundaries": {
+      "includes": [
+        "微型族群协作拘束",
+        "巨物尺度反差",
+        "日常空间被小人化利用"
+      ],
+      "excludes": [
+        "普通等身角色互搏中的人数优势 alone"
+      ]
+    },
+    "distinctions": [],
+    "aliases": [
+      "拇指女仆",
+      "微型族群"
+    ],
+    "parentConceptRefs": [],
+    "childConceptRefs": [],
+    "relatedConceptRefs": [],
+    "factualClaims": [],
+    "evidenceRefs": [],
+    "projectInterpretation": "不等于某次拇指夜袭的具体绑架过程。",
+    "commonMisreadings": [],
+    "status": "stub",
+    "evidenceStatus": "missing",
+    "reviewStatus": "pending"
+  },
+  "expression": {
+    "visualFocus": [
+      "尺度反差",
+      "多人分工缠绕"
+    ],
+    "actionLogic": [
+      "以数量与空间分工逐步剥夺行动与感知"
+    ],
+    "movementEffects": [],
+    "postureEffects": [],
+    "sensoryFocus": [],
+    "emotionalPossibilities": [],
+    "narrativeUses": [
+      "卧室夜袭",
+      "运走前的分工固定"
+    ],
+    "applicableScenes": [
+      "室内夜袭",
+      "微型族群栖息地"
+    ],
+    "unsuitableScenes": [],
+    "expressionPrinciples": [
+      "先写清尺度与分工，再写常人身体如何被逐步接管"
+    ],
+    "commonFailures": [],
+    "prohibitedMisreadings": [],
+    "styleEvidenceRefs": [],
+    "goldExampleRefs": [],
+    "calibrationPairRefs": [],
+    "relatedStyleRagRefs": [],
+    "evidenceRefs": [],
+    "status": "stub",
+    "evidenceStatus": "missing",
+    "reviewStatus": "pending"
+  },
+  "overallStatus": "stub",
+  "evidenceBindings": []
+}

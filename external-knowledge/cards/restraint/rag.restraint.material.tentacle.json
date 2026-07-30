@@ -22,7 +22,7 @@
       "endLine": 1517
     }
   ],
-  "evidenceStatus": "supported",
+  "evidenceStatus": "partial",
   "contentStatus": "complete",
   "reviewStatus": "candidate",
   "directQuoteIncluded": false,
@@ -33,8 +33,122 @@
     "oldIds": [
       "bondage_tag:触手"
     ],
-    "generatedFrom": "legacy-tag-title-only"
+    "generatedFrom": "legacy-tag-title-only",
+    "evidenceLayer": "v1",
+    "evidenceMigratedAt": "2026-07-28T07:14:30.232Z",
+    "professionalRag": {
+      "batchId": "professional-rag-bulk-v1",
+      "migratedAt": "2026-07-28T07:49:32.003Z",
+      "strategy": "knowledge-from-legacy-expression-stub",
+      "notes": "知识分支由既有 definition/claims/evidence 迁入；表达分支保留骨架（有 creative-note/abstractPatterns 时写入草稿）；同一概念不另建重复卡。"
+    }
   },
   "ragLayer": "category",
-  "parentCardIds": []
+  "parentCardIds": [],
+  "evidenceRefs": [
+    "ev-fbsrc000006-d1e6a13b49e9ceb4",
+    "ev-fbsrc000012-8641387d07f59ae3"
+  ],
+  "sourceRecordIds": [
+    "fb-src-000006",
+    "fb-src-000012"
+  ],
+  "claims": [
+    {
+      "id": "rag.restraint.material.tentacle::claim:definition:0",
+      "label": "定义",
+      "content": "由生物或拟生装置形成的可动条状结构；与普通绳索的区别在于它能主动追随、收紧或重新分配固定点。",
+      "claimType": "definition",
+      "evidenceRefs": [
+        "ev-fbsrc000006-d1e6a13b49e9ceb4",
+        "ev-fbsrc000012-8641387d07f59ae3"
+      ],
+      "supportStatus": "pending",
+      "reviewStatus": "pending",
+      "origin": "external-summary"
+    }
+  ],
+  "retrievalPolicy": {
+    "graphVisible": true,
+    "searchable": true,
+    "relationAnchor": true,
+    "contentRetrievable": false,
+    "evidenceRetrievable": true,
+    "knowledgeRetrievable": false,
+    "expressionRetrievable": false
+  },
+  "professionalRagVersion": 1,
+  "knowledge": {
+    "definition": "由生物或拟生装置形成的可动条状结构；与普通绳索的区别在于它能主动追随、收紧或重新分配固定点。",
+    "boundaries": {
+      "includes": [],
+      "excludes": []
+    },
+    "distinctions": [],
+    "aliases": [],
+    "parentConceptRefs": [],
+    "childConceptRefs": [],
+    "relatedConceptRefs": [],
+    "factualClaims": [
+      {
+        "id": "rag.restraint.material.tentacle::claim:definition:0",
+        "label": "定义",
+        "content": "由生物或拟生装置形成的可动条状结构；与普通绳索的区别在于它能主动追随、收紧或重新分配固定点。",
+        "claimType": "definition",
+        "evidenceRefs": [
+          "ev-fbsrc000006-d1e6a13b49e9ceb4",
+          "ev-fbsrc000012-8641387d07f59ae3"
+        ],
+        "supportStatus": "pending",
+        "reviewStatus": "pending",
+        "origin": "external-summary"
+      }
+    ],
+    "evidenceRefs": [
+      "ev-fbsrc000006-d1e6a13b49e9ceb4",
+      "ev-fbsrc000012-8641387d07f59ae3"
+    ],
+    "projectInterpretation": "",
+    "commonMisreadings": [],
+    "status": "usable",
+    "evidenceStatus": "partial",
+    "reviewStatus": "pending"
+  },
+  "expression": {
+    "visualFocus": [],
+    "actionLogic": [],
+    "movementEffects": [],
+    "postureEffects": [],
+    "sensoryFocus": [],
+    "emotionalPossibilities": [],
+    "narrativeUses": [],
+    "applicableScenes": [],
+    "unsuitableScenes": [],
+    "expressionPrinciples": [],
+    "commonFailures": [],
+    "prohibitedMisreadings": [],
+    "styleEvidenceRefs": [],
+    "goldExampleRefs": [],
+    "calibrationPairRefs": [],
+    "relatedStyleRagRefs": [],
+    "evidenceRefs": [],
+    "status": "stub",
+    "evidenceStatus": "missing",
+    "reviewStatus": "pending"
+  },
+  "overallStatus": "knowledge-only",
+  "evidenceBindings": [
+    {
+      "evidenceId": "ev-fbsrc000006-d1e6a13b49e9ceb4",
+      "purpose": "knowledge-evidence",
+      "branch": "knowledge",
+      "supportStatus": "pending"
+    },
+    {
+      "evidenceId": "ev-fbsrc000012-8641387d07f59ae3",
+      "purpose": "knowledge-evidence",
+      "branch": "knowledge",
+      "supportStatus": "pending"
+    }
+  ]
 }

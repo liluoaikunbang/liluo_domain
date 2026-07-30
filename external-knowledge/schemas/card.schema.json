@@ -9,8 +9,14 @@
     },
     "domain": { "type": "string" },
     "summary": { "type": "string" },
-    "evidenceStatus": { "enum": ["supported", "partial", "missing"] },
-    "contentStatus": { "enum": ["complete", "partial", "stub"] },
+    "evidenceStatus": {
+      "enum": ["supported", "partial", "missing", "sufficient", "conflicted"],
+      "description": "Legacy: supported≈sufficient. Prefer missing|partial|sufficient|conflicted."
+    },
+    "contentStatus": {
+      "enum": ["complete", "partial", "stub", "draft", "usable"],
+      "description": "Legacy: partial≈draft. Prefer stub|draft|usable|complete."
+    },
     "ragLayer": { "enum": ["category", "concept"] },
     "parentCardIds": {
       "type": "array",
@@ -40,14 +46,147 @@
       "items": { "type": "string" },
       "description": "Deprecated. Keep empty []; colon-style metadata tags were retired and must not be inferred."
     },
-    "reviewStatus": { "enum": ["pending", "candidate", "reviewed"] },
-    "directQuoteIncluded": { "const": false },
+    "reviewStatus": {
+      "enum": ["pending", "candidate", "reviewed", "confirmed", "rejected"],
+      "description": "Legacy: candidate≈pending, reviewed≈confirmed. Prefer pending|confirmed|rejected."
+    },
+    "directQuoteIncluded": {
+      "const": false,
+      "description": "Card prose must not paste source quotations. Original excerpts live in the shared evidence library and are resolved from sources at runtime."
+    },
     "canonical": { "const": false },
     "sourceRefs": {
       "type": "array",
       "items": {
         "type": "object",
         "required": ["sourceId", "segmentId", "sourcePath", "startLine", "endLine"]
+      },
+      "description": "Legacy location refs kept for compatibility. Prefer evidenceRefs into the shared evidence library."
+    },
+    "evidenceRefs": {
+      "type": "array",
+      "items": { "type": "string" },
+      "uniqueItems": true
+    },
+    "sourceRecordIds": {
+      "type": "array",
+      "items": { "type": "string" },
+      "uniqueItems": true
+    },
+    "claims": {
+      "type": "array",
+      "items": { "$ref": "./rag-claim.schema.json" }
+    },
+    "retrievalPolicy": {
+      "type": "object",
+      "properties": {
+        "graphVisible": { "type": "boolean" },
+        "searchable": { "type": "boolean" },
+        "relationAnchor": { "type": "boolean" },
+        "contentRetrievable": {
+          "type": "boolean",
+          "description": "Legacy combined gate. Prefer knowledgeRetrievable / expressionRetrievable for professional RAG."
+        },
+        "evidenceRetrievable": { "type": "boolean" },
+        "knowledgeRetrievable": {
+          "type": "boolean",
+          "description": "High-weight writing retrieval for the knowledge branch. Requires user confirmation."
+        },
+        "expressionRetrievable": {
+          "type": "boolean",
+          "description": "High-weight writing retrieval for the expression branch. Requires user confirmation."
+        }
+      }
+    },
+    "professionalRagVersion": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "When set, this restraint card is a professional dual-branch RAG (knowledge + expression)."
+    },
+    "overallStatus": {
+      "enum": ["stub", "knowledge-only", "expression-only", "usable", "confirmed", "conflicted"]
+    },
+    "knowledge": {
+      "type": "object",
+      "description": "Knowledge branch: what this restraint concept is.",
+      "properties": {
+        "definition": { "type": "string" },
+        "boundaries": {
+          "type": "object",
+          "properties": {
+            "includes": { "type": "array", "items": { "type": "string" } },
+            "excludes": { "type": "array", "items": { "type": "string" } }
+          }
+        },
+        "distinctions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["description"],
+            "properties": {
+              "targetConceptId": { "type": "string" },
+              "description": { "type": "string" }
+            }
+          }
+        },
+        "aliases": { "type": "array", "items": { "type": "string" } },
+        "parentConceptRefs": { "type": "array", "items": { "type": "string" } },
+        "childConceptRefs": { "type": "array", "items": { "type": "string" } },
+        "relatedConceptRefs": { "type": "array", "items": { "type": "string" } },
+        "factualClaims": { "type": "array", "items": { "$ref": "./rag-claim.schema.json" } },
+        "evidenceRefs": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+        "projectInterpretation": { "type": "string" },
+        "commonMisreadings": { "type": "array", "items": { "type": "string" } },
+        "status": { "enum": ["stub", "draft", "usable", "confirmed"] },
+        "evidenceStatus": { "enum": ["missing", "partial", "sufficient", "conflicted"] },
+        "reviewStatus": { "enum": ["pending", "confirmed", "rejected"] }
+      }
+    },
+    "expression": {
+      "type": "object",
+      "description": "Expression branch: how this restraint concept should be written.",
+      "properties": {
+        "visualFocus": { "type": "array", "items": { "type": "string" } },
+        "actionLogic": { "type": "array", "items": { "type": "string" } },
+        "movementEffects": { "type": "array", "items": { "type": "string" } },
+        "postureEffects": { "type": "array", "items": { "type": "string" } },
+        "sensoryFocus": { "type": "array", "items": { "type": "string" } },
+        "emotionalPossibilities": { "type": "array", "items": { "type": "string" } },
+        "narrativeUses": { "type": "array", "items": { "type": "string" } },
+        "applicableScenes": { "type": "array", "items": { "type": "string" } },
+        "unsuitableScenes": { "type": "array", "items": { "type": "string" } },
+        "expressionPrinciples": { "type": "array", "items": { "type": "string" } },
+        "commonFailures": { "type": "array", "items": { "type": "string" } },
+        "prohibitedMisreadings": { "type": "array", "items": { "type": "string" } },
+        "styleEvidenceRefs": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+        "goldExampleRefs": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+        "calibrationPairRefs": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+        "relatedStyleRagRefs": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+        "evidenceRefs": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+        "status": { "enum": ["stub", "draft", "usable", "confirmed"] },
+        "evidenceStatus": { "enum": ["missing", "partial", "sufficient", "conflicted"] },
+        "reviewStatus": { "enum": ["pending", "confirmed", "rejected"] }
+      }
+    },
+    "linkedStoryIds": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+    "linkedPlotIds": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+    "linkedGameplayIds": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+    "linkedCharacterIds": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+    "linkedLocationIds": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+    "evidenceBindings": {
+      "type": "array",
+      "description": "Per-evidence purpose: knowledge-evidence | expression-evidence | both.",
+      "items": {
+        "type": "object",
+        "required": ["evidenceId", "purpose"],
+        "properties": {
+          "evidenceId": { "type": "string" },
+          "purpose": { "enum": ["knowledge-evidence", "expression-evidence", "both"] },
+          "branch": { "enum": ["knowledge", "expression", "both"] },
+          "supportStatus": {
+            "enum": ["supported", "partially-supported", "unsupported", "conflicted", "pending"]
+          }
+        }
       }
     }
   }

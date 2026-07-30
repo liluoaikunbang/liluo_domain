@@ -2,10 +2,13 @@
 
 ## 职责边界
 
-- 情节回答“发生了什么”，权威源为 `src/game/data/plot_outline/catalog.json`。
-- 紧缚 RAG 回答“这个概念、状态或结构是什么”，权威源为 `external-knowledge/cards/`。
+- 情节回答“发生了什么”（一次性叙事实例），权威源为 `src/game/data/plot_outline/catalog.json`。
+- 紧缚 RAG 回答“这个概念、状态或结构是什么 / 怎么表现”，权威源为 `external-knowledge/cards/`。
+- 故事回答“正式安置在宇宙结构的哪里”，权威源为故事大纲来源。
 - 玩法回答“玩家能做什么、系统如何响应”，权威源为玩法注册表。
 - Style-RAG 回答“如何表达”，不承担事实、事件或交互规则。
+
+三层边界、拆分规则与用户裁决门禁以 [故事情节RAG边界治理系统](./故事情节RAG边界治理系统.md) 为准。完成度与标题形态不决定层级。
 
 普通 Tag、紧缚 Tag 及其图谱泳道已经退役。故事节点以 `plotRefs`、`ragRefs`、`gameplayRefs` 建立显式关系；`storyTags` 仅保留世界内栏目与故事风格职责。节点界面上的「紧缚 RAG 标签」是由 `ragRefs` 派生的一级标题（上位类别优先），不另存平行字段。
 
@@ -40,7 +43,9 @@
 
 ## 迁移与回滚
 
-`npm run migration:tag-rag:dry-run` 生成
+情节库向 RAG 的跨层级调整须在对话中逐项说明建议并获得用户确认后，按最小范围直接更新权威主数据；禁止未经确认的批量迁移。详见 [故事情节RAG边界治理系统](./故事情节RAG边界治理系统.md)。
+
+历史 Tag 重结构批次：`npm run migration:tag-rag:dry-run` 生成
 `project-workflows/runs/tag-rag-restructure-v1.dry-run.json`。清单逐项保存旧 ID、旧名称、旧层级、迁移类型、新 ID、受影响故事/情节和处理状态，是本轮回滚与审计依据。
 
 正式主数据不保存旧 Tag 字段或空迁移壳。若需回滚，只能根据清单恢复到独立审查分支，不能在现行故事、情节或图谱中重新启用旧字段。

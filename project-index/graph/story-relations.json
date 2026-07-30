@@ -425,9 +425,19 @@
     "to": "world-2-silent-earth-dirge"
   },
   {
+    "from": "world-3-mortal-dao-autumn-alliance-hunt",
+    "relationType": "parent",
+    "to": "world-3-mortal-dao-commoner-princess"
+  },
+  {
     "from": "world-3-mortal-dao-chaotic-world-ranger",
     "relationType": "parent",
-    "to": "world-3-mortal-dao-frontier-marriage"
+    "to": "world-3-mortal-dao-wedding-escort-crisis"
+  },
+  {
+    "from": "world-3-mortal-dao-cold-palace-garden",
+    "relationType": "parent",
+    "to": "world-3-mortal-dao-autumn-alliance-hunt"
   },
   {
     "from": "world-3-mortal-dao-commoner-princess",
@@ -462,12 +472,17 @@
   {
     "from": "world-3-mortal-dao-frontier-marriage",
     "relationType": "parent",
-    "to": "world-3-mortal-dao-commoner-princess"
+    "to": "world-3-mortal-dao-marriage-northbound"
   },
   {
     "from": "world-3-mortal-dao-maid-difficulty",
     "relationType": "parent",
     "to": "world-3-mortal-dao"
+  },
+  {
+    "from": "world-3-mortal-dao-marriage-northbound",
+    "relationType": "parent",
+    "to": "world-3-mortal-dao-well-relic-retrieval"
   },
   {
     "from": "world-3-mortal-dao-no-master",
@@ -508,6 +523,16 @@
     "from": "world-3-mortal-dao-tile-kiln-disaster-sealing",
     "relationType": "parent",
     "to": "world-3-mortal-dao-chaotic-world-ranger"
+  },
+  {
+    "from": "world-3-mortal-dao-wedding-escort-crisis",
+    "relationType": "parent",
+    "to": "world-3-mortal-dao-frontier-marriage"
+  },
+  {
+    "from": "world-3-mortal-dao-well-relic-retrieval",
+    "relationType": "parent",
+    "to": "world-3-mortal-dao-cold-palace-garden"
   },
   {
     "from": "world-4-monica-empire-allied-cities",

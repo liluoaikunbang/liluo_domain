@@ -1,0 +1,129 @@
+{
+  "cardId": "rag.restraint.detail.挑断筋脉",
+  "title": "挑断筋脉",
+  "domain": "restraint",
+  "cardType": "term",
+  "aliases": [
+    "断筋",
+    "挑断筋腱",
+    "废筋脉"
+  ],
+  "summary": "挑断或重创筋腱经脉，截断依赖凡俗筋骨的武学道路；属废功重修下的具体废除方式。",
+  "definition": "挑断筋脉指挑断或重创筋腱、经脉等身体战斗根基，使依赖招式、步法与凡俗筋骨锤炼的武学道路被强行截断；是废功重修下的具体废除方式，不等于废除丹田/交出修为，也不等于某次断筋覆纹转仙侠的完整情节。",
+  "sourceRefs": [],
+  "evidenceStatus": "missing",
+  "contentStatus": "stub",
+  "reviewStatus": "candidate",
+  "directQuoteIncluded": false,
+  "canonical": false,
+  "knowledgeScope": "external-fiction-reference",
+  "ragLayer": "concept",
+  "parentCardIds": [
+    "rag.restraint.context.power-rebuild"
+  ],
+  "migration": {
+    "batchId": "plot-layer-governance-v1",
+    "oldIds": [],
+    "generatedFrom": "plot-layer-user-request",
+    "createdAt": "2026-07-28T11:24:59.815Z"
+  },
+  "evidenceRefs": [],
+  "sourceRecordIds": [],
+  "claims": [],
+  "distinctions": [
+    {
+      "targetConceptId": "rag.restraint.detail.废除武功",
+      "description": "本卡强调筋腱/经脉被挑断的身体性截断；废除武功可含废丹田、交出修为等更广手段。"
+    }
+  ],
+  "retrievalPolicy": {
+    "graphVisible": true,
+    "searchable": true,
+    "relationAnchor": true,
+    "contentRetrievable": false,
+    "evidenceRetrievable": false,
+    "knowledgeRetrievable": false,
+    "expressionRetrievable": false
+  },
+  "professionalRagVersion": 1,
+  "knowledge": {
+    "definition": "挑断筋脉指挑断或重创筋腱、经脉等身体战斗根基，使依赖招式、步法与凡俗筋骨锤炼的武学道路被强行截断；是废功重修下的具体废除方式，不等于废除丹田/交出修为，也不等于某次断筋覆纹转仙侠的完整情节。",
+    "boundaries": {
+      "includes": [
+        "挑断或重创筋腱/经脉",
+        "凡俗武学招式步法难以继续",
+        "可推动改走其他力量路径"
+      ],
+      "excludes": [
+        "废除丹田/交出修为等非断筋手段（见废除武功）",
+        "刺青覆疤等后续自我改写",
+        "单次武道转途完整事件过程"
+      ]
+    },
+    "distinctions": [
+      {
+        "targetConceptId": "rag.restraint.detail.废除武功",
+        "description": "本卡强调筋腱/经脉被挑断的身体性截断；废除武功可含废丹田、交出修为等更广手段。"
+      }
+    ],
+    "aliases": [
+      "断筋",
+      "挑断筋腱",
+      "废筋脉"
+    ],
+    "parentConceptRefs": [
+      "rag.restraint.context.power-rebuild"
+    ],
+    "childConceptRefs": [],
+    "relatedConceptRefs": [
+      "rag.restraint.detail.废除武功"
+    ],
+    "factualClaims": [],
+    "evidenceRefs": [],
+    "projectInterpretation": "断筋覆纹、武道转仙侠等场面可引用本卡；刺青与转体系契机仍写在情节层。",
+    "commonMisreadings": [
+      "把整段覆纹转途当成此概念本身"
+    ],
+    "status": "stub",
+    "evidenceStatus": "missing",
+    "reviewStatus": "pending"
+  },
+  "expression": {
+    "visualFocus": [
+      "筋腱损伤与行动失效",
+      "旧伤疤与后续印记可对照但不混为一谈"
+    ],
+    "actionLogic": [
+      "先写清哪条武学道路被截断",
+      "再写身体还能做什么、不能做什么"
+    ],
+    "movementEffects": [],
+    "postureEffects": [],
+    "sensoryFocus": [
+      "剧痛",
+      "无力",
+      "步法失灵"
+    ],
+    "emotionalPossibilities": [],
+    "narrativeUses": [
+      "把武侠战斗体系强行打断，为重修或转体系铺路"
+    ],
+    "applicableScenes": [],
+    "unsuitableScenes": [],
+    "expressionPrinciples": [
+      "写截断结果与行动边界，不写可复现伤人手法"
+    ],
+    "commonFailures": [],
+    "prohibitedMisreadings": [],
+    "styleEvidenceRefs": [],
+    "goldExampleRefs": [],
+    "calibrationPairRefs": [],
+    "relatedStyleRagRefs": [],
+    "evidenceRefs": [],
+    "status": "stub",
+    "evidenceStatus": "missing",
+    "reviewStatus": "pending"
+  },
+  "evidenceBindings": [],
+  "overallStatus": "stub"
+}

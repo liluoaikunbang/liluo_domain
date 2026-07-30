@@ -16,7 +16,7 @@
 
 ## 维护与七类卡片
 
-用户只维护本机权威源。`external:knowledge:update` 先用路径与 SHA-256 增量同步镜像，再执行来源级增量索引；普通删除无需询问并只删除受控镜像文件，一次删除超过清单 20% 时自动中止。同步绝不反向删除或改写权威源。schema、分段规则、索引格式、批量移动、损坏或用户明确要求时全量重建。七类卡为 `expression`、`visual-structure`、`scene-pattern`、`fictional-state`、`trope`、`term`、`plot-pattern`。术语卡记录定义、别称和易混边界；情节模式卡记录前提、推进、控制/状态变化、反转和后果。两者由 `card-rules.json` 的证据组与最小来源数确定性生成；证据不足时跳过。规则可声明 `linkedConceptIds`，挂到概念种子的「上位类别 / 具体概念」；`concepts[]` 只写名称/别名，不写推进句。自动内容只标 `candidate`，明确人工/Codex 审核后才可标 `reviewed`。概念层次权威在 `conceptRegistry.js`，不并入本知识库。
+用户只维护本机权威源。`external:knowledge:update` 先用路径与 SHA-256 增量同步镜像，再执行来源级增量索引；普通删除无需询问并只删除受控镜像文件，一次删除超过清单 20% 时自动中止。同步绝不反向删除或改写权威源。schema、分段规则、索引格式、批量移动、损坏或用户明确要求时全量重建。七类卡为 `expression`、`visual-structure`、`scene-pattern`、`fictional-state`、`trope`、`term`、`plot-pattern`。术语卡记录定义、别称和易混边界；情节模式卡记录前提、推进、控制/状态变化、反转和后果。两者由 `card-rules.json` 的证据组与最小来源数确定性生成；证据不足时跳过。规则可声明 `linkedConceptIds`，挂到概念种子的「上位类别 / 具体概念」；`concepts[]` 只写名称/别名，不写推进句。自动内容只标 `candidate`，明确人工/Codex 审核后才可标 `reviewed`/`confirmed`。知识卡正文不粘贴原文；共享证据层在 `external-knowledge/evidence/`，由 `evidenceRefs` 与 `claims` 引用，运行时按源文件行号展开。骨架卡可作关系锚点，但默认不进入正式写作检索。
 
 ## 命令
 
@@ -26,6 +26,9 @@ npm run external:knowledge:sync
 npm run external:knowledge:update
 npm run external:knowledge:build
 npm run external:knowledge:validate
+npm run external:knowledge:evidence:migrate -- --dry-run
+npm run external:knowledge:evidence:validate
+npm run external:knowledge:evidence:review -- --claim <id> --evidence <id> --verdict supports
 npm run external:knowledge:query -- --query "古堡 逃脱" --mode and --limit 8
 npm run external:knowledge:query -- --card-type term --query "送绑玩脱"
 npm run external:knowledge:query -- --card-type plot-pattern --query "保障失效 控制权转移" --mode and

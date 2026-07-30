@@ -28,6 +28,8 @@ export function filterOutlineRelationGraph(graph, filters = {}) {
 
     const isStyleEvidence = node.type === 'style_rag' && node.meta?.role === 'evidence';
     const matchesQuery = query ? collectSearchText(node).includes(query) : false;
+    // 知识/表达/原文证据只在详情页签；大图不投影 rag_branch、evidence、source
+    if (node.type === 'rag_branch' || node.type === 'evidence' || node.type === 'source') return false;
     if (isStyleEvidence && !filters.includeStyleEvidence) {
       // Overview/filter: hide novel titles by default; focus/search may reveal evidence anchors.
       if (!filters.allowFocusedEvidence && !matchesQuery) return false;
@@ -166,7 +168,10 @@ function collectSearchText(node) {
     ...(node.conceptIds ?? []),
     ...(node.sourceIds ?? []),
     node.world,
-    node.type
+    node.type,
+    node.meta?.excerptPreview,
+    node.meta?.location?.sourcePath,
+    ...(node.meta?.claims ?? []).map((claim) => claim.content)
   ]
     .join(' ')
     .toLocaleLowerCase('zh-CN');

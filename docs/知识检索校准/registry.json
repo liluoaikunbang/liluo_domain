@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-07-28T02:32:05.222Z",
+  "updatedAt": "2026-07-28T07:49:36.689Z",
   "counts": {
-    "total": 12,
-    "open": 12,
+    "total": 16,
+    "open": 16,
     "rag": 0,
-    "styleRag": 7,
-    "concept": 5,
+    "styleRag": 9,
+    "concept": 7,
     "plot": 0,
     "needsRebuild": 0,
     "skillUpgradeSuggested": 0
@@ -178,6 +178,62 @@
       "mayBecomeGeneralRule": false,
       "skillUpgradeSuggested": false,
       "path": "docs/知识检索校准/records/concept/ra-62f79e0f7f.json"
+    },
+    {
+      "auditId": "ra-ff7e41535a",
+      "channel": "style-rag",
+      "sourceAssetId": "ea-audit-test-fixture",
+      "issueCategories": [
+        "author-info-error",
+        "model-unauthorized-completion"
+      ],
+      "fixStatus": "recorded",
+      "needsIndexRebuild": false,
+      "mayBecomeGeneralRule": true,
+      "skillUpgradeSuggested": false,
+      "path": "docs/知识检索校准/records/style-rag/ra-ff7e41535a.json"
+    },
+    {
+      "auditId": "ra-17d393a209",
+      "channel": "concept",
+      "sourceAssetId": "restraint.pose.houshou-guanyin",
+      "issueCategories": [
+        "missing-rag-link",
+        "naming-inconsistency"
+      ],
+      "fixStatus": "recorded",
+      "needsIndexRebuild": false,
+      "mayBecomeGeneralRule": false,
+      "skillUpgradeSuggested": false,
+      "path": "docs/知识检索校准/records/concept/ra-17d393a209.json"
+    },
+    {
+      "auditId": "ra-c61b7154fe",
+      "channel": "style-rag",
+      "sourceAssetId": "ea-audit-test-fixture",
+      "issueCategories": [
+        "author-info-error",
+        "model-unauthorized-completion"
+      ],
+      "fixStatus": "recorded",
+      "needsIndexRebuild": false,
+      "mayBecomeGeneralRule": true,
+      "skillUpgradeSuggested": false,
+      "path": "docs/知识检索校准/records/style-rag/ra-c61b7154fe.json"
+    },
+    {
+      "auditId": "ra-ce903d3b48",
+      "channel": "concept",
+      "sourceAssetId": "restraint.pose.houshou-guanyin",
+      "issueCategories": [
+        "missing-rag-link",
+        "naming-inconsistency"
+      ],
+      "fixStatus": "recorded",
+      "needsIndexRebuild": false,
+      "mayBecomeGeneralRule": false,
+      "skillUpgradeSuggested": false,
+      "path": "docs/知识检索校准/records/concept/ra-ce903d3b48.json"
     }
   ],
   "patternGroups": [
@@ -192,7 +248,9 @@
         "ra-c10a8e2cfa",
         "ra-5bdbff1494",
         "ra-3acf505be3",
-        "ra-26cac52c01"
+        "ra-26cac52c01",
+        "ra-ff7e41535a",
+        "ra-c61b7154fe"
       ],
       "independentCount": 1,
       "skillUpgradeSuggested": false,
@@ -209,7 +267,9 @@
         "ra-c10a8e2cfa",
         "ra-5bdbff1494",
         "ra-3acf505be3",
-        "ra-26cac52c01"
+        "ra-26cac52c01",
+        "ra-ff7e41535a",
+        "ra-c61b7154fe"
       ],
       "independentCount": 1,
       "skillUpgradeSuggested": false,

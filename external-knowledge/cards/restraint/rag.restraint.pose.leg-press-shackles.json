@@ -1,9 +1,11 @@
 {
   "cardId": "rag.restraint.pose.leg-press-shackles",
-  "title": "镣铐-压腿铐",
+  "title": "压腿铐",
   "domain": "restraint",
   "cardType": "term",
-  "aliases": [],
+  "aliases": [
+    "镣铐-压腿铐"
+  ],
   "summary": "",
   "definition": "",
   "sourceRefs": [],
@@ -18,10 +20,78 @@
     "oldIds": [
       "bondage_tag:sg:镣铐-压腿铐"
     ],
-    "generatedFrom": "legacy-tag-title-only"
+    "generatedFrom": "legacy-tag-title-only",
+    "evidenceLayer": "v1",
+    "evidenceMigratedAt": "2026-07-28T07:14:30.237Z",
+    "professionalRag": {
+      "batchId": "professional-rag-pilot-v1",
+      "migratedAt": "2026-07-28T07:38:48.383Z",
+      "strategy": "knowledge-from-legacy-expression-stub",
+      "notes": "知识分支由既有 definition/claims/evidence 迁入；表达分支保留骨架待用户确认。"
+    }
   },
   "ragLayer": "concept",
   "parentCardIds": [
     "rag.restraint.tool.shackles"
-  ]
+  ],
+  "evidenceRefs": [],
+  "sourceRecordIds": [],
+  "claims": [],
+  "retrievalPolicy": {
+    "graphVisible": true,
+    "searchable": true,
+    "relationAnchor": true,
+    "contentRetrievable": false,
+    "evidenceRetrievable": false,
+    "knowledgeRetrievable": false,
+    "expressionRetrievable": false
+  },
+  "professionalRagVersion": 1,
+  "knowledge": {
+    "definition": "",
+    "boundaries": {
+      "includes": [],
+      "excludes": []
+    },
+    "distinctions": [],
+    "aliases": [
+      "镣铐-压腿铐"
+    ],
+    "parentConceptRefs": [
+      "rag.restraint.tool.shackles"
+    ],
+    "childConceptRefs": [],
+    "relatedConceptRefs": [],
+    "factualClaims": [],
+    "evidenceRefs": [],
+    "projectInterpretation": "",
+    "commonMisreadings": [],
+    "status": "stub",
+    "evidenceStatus": "missing",
+    "reviewStatus": "pending"
+  },
+  "expression": {
+    "visualFocus": [],
+    "actionLogic": [],
+    "movementEffects": [],
+    "postureEffects": [],
+    "sensoryFocus": [],
+    "emotionalPossibilities": [],
+    "narrativeUses": [],
+    "applicableScenes": [],
+    "unsuitableScenes": [],
+    "expressionPrinciples": [],
+    "commonFailures": [],
+    "prohibitedMisreadings": [],
+    "styleEvidenceRefs": [],
+    "goldExampleRefs": [],
+    "calibrationPairRefs": [],
+    "relatedStyleRagRefs": [],
+    "evidenceRefs": [],
+    "status": "stub",
+    "evidenceStatus": "missing",
+    "reviewStatus": "pending"
+  },
+  "overallStatus": "stub",
+  "evidenceBindings": []
 }

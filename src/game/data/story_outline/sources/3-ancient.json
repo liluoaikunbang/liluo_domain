@@ -29,6 +29,7 @@
       "key": "world-3-mortal-dao-commoner-princess",
       "world": "3-尘寰问道",
       "title": "平民公主",
+      "summary": "璃落被权臣一系包装为失落公主后卷入宫廷斗争；秋盟惊猎使她触及旧东宫线索，继而遭悬井水牢灭口、被侍女救出并打入冷宫。她从冷宫种地、井下取遗到北方和亲，逐步接近自己作为旧太子遗孤的真相。",
       "status": "主线任务",
       "parentKey": "world-3-mortal-dao-royal-garden-beast-hunt",
       "order": 10,
@@ -37,23 +38,93 @@
       "gameplayRefs": []
     },
     {
+      "key": "world-3-mortal-dao-autumn-alliance-hunt",
+      "world": "3-尘寰问道",
+      "title": "秋盟惊猎",
+      "summary": "璃落协助北方王子赫连·阿勒珂化解人为惊马，并与大理寺评事陆怀瑾追查案情；在档案库中，她发现失踪母亲竟是旧东宫太子妃。",
+      "status": "灵感",
+      "parentKey": "world-3-mortal-dao-commoner-princess",
+      "order": 10,
+      "characters": ["璃落", "赫连·阿勒珂", "陆怀瑾"],
+      "ragRefs": [],
+      "plotRefs": [],
+      "gameplayRefs": []
+    },
+    {
       "key": "world-3-mortal-dao-royal-garden-beast-hunt",
       "world": "3-尘寰问道",
       "title": "王苑兽猎",
+      "summary": "仍是平民的璃落在王苑兽猎中救人脱险；随使团而来的北方王子赫连·阿勒珂不能公开干预，只以驯兽口哨暗助，并由此记住璃落。",
       "status": "大纲",
       "parentKey": "world-3-mortal-dao-maid-difficulty",
+      "order": 10,
+      "characters": ["璃落", "赫连·阿勒珂"],
+      "ragRefs": [
+        "rag.restraint.context.restraint-resistance"
+      ],
+      "plotRefs": [],
+      "gameplayRefs": []
+    },
+    {
+      "key": "world-3-mortal-dao-cold-palace-garden",
+      "world": "3-尘寰问道",
+      "title": "冷宫荒圃",
+      "summary": "璃落与贴身侍女在冷宫开垦荒地，以种植维持生活并建立信任；这片田地将成为可随旅途延续的长期支线起点。",
+      "storyTags": ["檐下烟火", "礼法成笼"],
+      "status": "灵感",
+      "parentKey": "world-3-mortal-dao-autumn-alliance-hunt",
+      "order": 10,
+      "ragRefs": [],
+      "plotRefs": ["plot-038"],
+      "gameplayRefs": ["gameplay-089"]
+    },
+    {
+      "key": "world-3-mortal-dao-well-relic-retrieval",
+      "world": "3-尘寰问道",
+      "title": "井下取遗",
+      "summary": "璃落离开冷宫后重返古井取回遗物；它能与母亲留下的护身物合拢，以血开启后显出家族修仙传承与可容纳田地的空间。",
+      "storyTags": ["疑案残灯", "因果问命"],
+      "status": "灵感",
+      "parentKey": "world-3-mortal-dao-cold-palace-garden",
+      "order": 10,
+      "ragRefs": [],
+      "plotRefs": ["plot-038"],
+      "gameplayRefs": []
+    },
+    {
+      "key": "world-3-mortal-dao-marriage-northbound",
+      "world": "3-尘寰问道",
+      "title": "和亲北行",
+      "summary": "北方王子赫连·阿勒珂因续盟与王庭压力点名璃落和亲；璃落在离宫前将冷宫亲手开垦的田地迁入传承空间，带往北方。",
+      "storyTags": ["礼法成笼", "檐下烟火", "因果问命"],
+      "status": "灵感",
+      "parentKey": "world-3-mortal-dao-well-relic-retrieval",
+      "order": 10,
+      "ragRefs": [],
+      "plotRefs": ["plot-038"],
+      "gameplayRefs": ["gameplay-089"]
+    },
+    {
+      "key": "world-3-mortal-dao-frontier-marriage",
+      "world": "3-尘寰问道",
+      "title": "塞外和亲",
+      "summary": "璃落被北方王子赫连·阿勒珂点名送往北方和亲；在续盟、王庭压力与身份秘密之间，她带着可延续田地的传承遗物进入北方政治中心。",
+      "status": "主线任务",
+      "parentKey": "world-3-mortal-dao-marriage-northbound",
       "order": 10,
       "ragRefs": [],
       "plotRefs": [],
       "gameplayRefs": []
     },
     {
-      "key": "world-3-mortal-dao-frontier-marriage",
+      "key": "world-3-mortal-dao-wedding-escort-crisis",
       "world": "3-尘寰问道",
-      "title": "塞外和亲",
-      "status": "主线任务",
-      "parentKey": "world-3-mortal-dao-commoner-princess",
+      "title": "接亲惊变",
+      "summary": "北方主战派在接亲路上刺杀阿勒珂、试图破坏续盟；璃落与她共险，并在处理伤口时得知阿勒珂一直以男性王子身份示人。",
+      "status": "灵感",
+      "parentKey": "world-3-mortal-dao-frontier-marriage",
       "order": 10,
+      "characters": ["璃落", "赫连·阿勒珂"],
       "ragRefs": [],
       "plotRefs": [],
       "gameplayRefs": []
@@ -64,7 +135,7 @@
       "title": "乱世游侠",
       "summary": "璃落逃离宫廷身份后进入乱世江湖，以开锁、潜入、摸取、调包和归还物证为核心特长，在镖局、六扇门旧案、山寨与武林大会之间取得正面战斗无法获得的证据，并逐渐走出一条偏技巧与观察的侠客道路。",
       "status": "主线任务",
-      "parentKey": "world-3-mortal-dao-frontier-marriage",
+      "parentKey": "world-3-mortal-dao-wedding-escort-crisis",
       "order": 10,
       "ragRefs": [],
       "plotRefs": [],
@@ -186,7 +257,8 @@
       "ragRefs": [
         "rag.restraint.effect.public-humiliation",
         "rag.restraint.tool.shackles",
-        "rag.restraint.state.confinement"
+        "rag.restraint.state.confinement",
+        "rag.restraint.detail.冤罪"
       ],
       "plotRefs": [],
       "gameplayRefs": [],
@@ -227,7 +299,9 @@
       "status": "大纲草稿",
       "parentKey": "world-3-mortal-dao-demonic-sect-adventure",
       "order": 10,
-      "ragRefs": [],
+      "ragRefs": [
+        "rag.restraint.detail.废除武功"
+      ],
       "plotRefs": [],
       "gameplayRefs": []
     },

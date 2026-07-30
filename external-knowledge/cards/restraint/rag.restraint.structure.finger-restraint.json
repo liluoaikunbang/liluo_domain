@@ -1,0 +1,105 @@
+{
+  "sourceRefs": [],
+  "evidenceStatus": "missing",
+  "contentStatus": "stub",
+  "reviewStatus": "candidate",
+  "directQuoteIncluded": false,
+  "canonical": false,
+  "knowledgeScope": "external-fiction-reference",
+  "evidenceRefs": [],
+  "sourceRecordIds": [],
+  "claims": [],
+  "distinctions": [],
+  "retrievalPolicy": {
+    "graphVisible": true,
+    "searchable": true,
+    "relationAnchor": true,
+    "contentRetrievable": false,
+    "evidenceRetrievable": false,
+    "knowledgeRetrievable": false,
+    "expressionRetrievable": false
+  },
+  "professionalRagVersion": 1,
+  "evidenceBindings": [],
+  "migration": {
+    "batchId": "plot-layer-governance-v1",
+    "oldIds": [],
+    "generatedFrom": "plot-layer-user-request",
+    "createdAt": "2026-07-28T11:05:53.927Z"
+  },
+  "cardId": "rag.restraint.structure.finger-restraint",
+  "title": "拘束手指",
+  "domain": "restraint",
+  "cardType": "structure",
+  "aliases": [
+    "手指拘束",
+    "限制手指",
+    "包手"
+  ],
+  "summary": "拘束手指是可跨故事复用的上位类别：限制手指分开、弯曲或改变外形，使抓握、比划与精细操作失效。",
+  "definition": "拘束手指是可跨故事复用的上位类别：通过包裹、固封、并指等方式限制手指分开、弯曲或改变外形，使抓握、比划与精细操作失效。下属具体手法各自建卡；本类别不代替某次猜拳羞辱情节。",
+  "ragLayer": "category",
+  "parentCardIds": [],
+  "knowledge": {
+    "definition": "拘束手指是可跨故事复用的上位类别：通过包裹、固封、并指等方式限制手指分开、弯曲或改变外形，使抓握、比划与精细操作失效。下属具体手法各自建卡；本类别不代替某次猜拳羞辱情节。",
+    "boundaries": {
+      "includes": [
+        "并指、包手、固封手指外形",
+        "使剪刀/布等手势无法完成",
+        "削弱抓握与精细操作"
+      ],
+      "excludes": [
+        "整只手臂的笼统束缚若未特指手指",
+        "单次故事完整羞辱事件过程"
+      ]
+    },
+    "distinctions": [],
+    "aliases": [
+      "手指拘束",
+      "限制手指",
+      "包手"
+    ],
+    "parentConceptRefs": [],
+    "childConceptRefs": [
+      "rag.restraint.detail.球状包手",
+      "rag.restraint.detail.石膏-石膏包手"
+    ],
+    "relatedConceptRefs": [
+      "rag.restraint.structure.full-body-wrapping"
+    ],
+    "factualClaims": [],
+    "evidenceRefs": [],
+    "projectInterpretation": "上位类别只框定手指行动边界；球状包手、石膏包手等用子卡。",
+    "commonMisreadings": [],
+    "status": "stub",
+    "evidenceStatus": "missing",
+    "reviewStatus": "pending"
+  },
+  "expression": {
+    "visualFocus": [],
+    "actionLogic": [],
+    "movementEffects": [],
+    "postureEffects": [],
+    "sensoryFocus": [],
+    "emotionalPossibilities": [],
+    "narrativeUses": [
+      "先写清手指还能做什么、不能做什么，再落到具体包覆手法"
+    ],
+    "applicableScenes": [],
+    "unsuitableScenes": [],
+    "expressionPrinciples": [
+      "不把某次猜拳或游戏过程写成类别定义"
+    ],
+    "commonFailures": [],
+    "prohibitedMisreadings": [],
+    "styleEvidenceRefs": [],
+    "goldExampleRefs": [],
+    "calibrationPairRefs": [],
+    "relatedStyleRagRefs": [],
+    "evidenceRefs": [],
+    "status": "stub",
+    "evidenceStatus": "missing",
+    "reviewStatus": "pending"
+  },
+  "overallStatus": "stub"
+}

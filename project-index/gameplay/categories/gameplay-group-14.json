@@ -7,7 +7,7 @@
     "presentationModes": [
       "interface-gameplay"
     ],
-    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourceHash": "ddb50ad1825b9a6746fd4e9abb83fc318506722907f340d1fbbb8fa6814df6b5",
     "sourcePath": "src/game/data/gameplay_outline/catalog.json",
     "summary": "让非当前出战角色执行自动任务。",
     "summarySource": "source-json.summary",
@@ -64,7 +64,7 @@
     "presentationModes": [
       "interface-gameplay"
     ],
-    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourceHash": "ddb50ad1825b9a6746fd4e9abb83fc318506722907f340d1fbbb8fa6814df6b5",
     "sourcePath": "src/game/data/gameplay_outline/catalog.json",
     "summary": "适合作为长期宇宙的缓慢积累系统。",
     "summarySource": "source-json.summary",

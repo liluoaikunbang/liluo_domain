@@ -21,7 +21,7 @@ const cards = [
   },
   {
     cardId: 'rag.restraint.detail.挠痒-山药汁',
-    title: '挠痒-山药汁',
+    title: '山药汁',
     ragLayer: 'concept',
     parentCardIds: ['rag.restraint.effect.tickling'],
     contentStatus: 'stub',

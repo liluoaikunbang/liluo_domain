@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "confirmationId": "plc-ms4kbavd",
+  "plotId": "plot-056",
+  "decision": "keep-as-plot",
+  "userNote": "用户确认：跟着建议走",
+  "overrides": {
+    "origin": "legacy-migration",
+    "placementStatus": "placed",
+    "maturity": "scene-ready"
+  },
+  "proposalSnapshot": {
+    "sourcePlotId": "plot-056",
+    "title": "脑机梦狱-意识监牢",
+    "number": "056",
+    "groupId": "plot-group-014",
+    "groupTitle": "科技消费陷阱",
+    "plotKind": "ordinary",
+    "usageStatus": "unused",
+    "recommendation": "keep-as-plot",
+    "recommendedLayer": "plot",
+    "rationale": [
+      "具备角色/条件/过程/变化中的多项事件证据。",
+      "应作为一次性叙事实例保留；若内部含可复用概念，可另抽 RAG，但不整项迁移。"
+    ],
+    "reuseTest": {
+      "reusableAcrossStories": false,
+      "explanation": "摘要描述一次具体发生，换故事后通常不能原样复用。"
+    },
+    "eventTest": {
+      "hasActorOrRole": true,
+      "hasTrigger": true,
+      "hasProcess": true,
+      "hasChangeOrOutcome": true
+    },
+    "placementTest": {
+      "hasFormalWorldPlacement": true,
+      "linkedStoryIds": [
+        "world-1-glimmering-glance-midnight-city-exploration"
+      ]
+    },
+    "edgeMigrationPlan": [],
+    "affectedSourceFiles": [
+      "src/game/data/plot_outline/catalog.json",
+      "src/game/data/story_outline/sources/1-modern.json"
+    ],
+    "affectedStoryEntries": [
+      "world-1-glimmering-glance-midnight-city-exploration"
+    ],
+    "linkedStories": [
+      {
+        "key": "world-1-glimmering-glance-midnight-city-exploration",
+        "title": "深夜城市探险",
+        "sourceFile": "src/game/data/story_outline/sources/1-modern.json",
+        "markdownFiles": [
+          "src/game/data/story_outline/1-modern/2.1-深夜城市探险.md"
+        ],
+        "ragRefs": [],
+        "plotRefs": [
+          "plot-056"
+        ],
+        "gameplayRefs": [
+          "gameplay-119"
+        ]
+      }
+    ],
+    "confidence": 0.82,
+    "questionsForUser": [],
+    "reviewStatus": "proposed",
+    "generatedAt": "2026-07-28T08:54:03.517Z"
+  },
+  "recordedAt": "2026-07-28T11:18:19.849Z",
+  "applied": true,
+  "dryRun": false,
+  "migrationId": "plm-ms4kbavt"
+}

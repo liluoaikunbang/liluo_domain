@@ -7,7 +7,7 @@
     "presentationModes": [
       "main-map"
     ],
-    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourceHash": "ddb50ad1825b9a6746fd4e9abb83fc318506722907f340d1fbbb8fa6814df6b5",
     "sourcePath": "src/game/data/gameplay_outline/catalog.json",
     "summary": "利用地图物体和角色移动完成谜题。",
     "summarySource": "source-json.summary",
@@ -73,7 +73,7 @@
       "main-map",
       "cg-friendly"
     ],
-    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourceHash": "ddb50ad1825b9a6746fd4e9abb83fc318506722907f340d1fbbb8fa6814df6b5",
     "sourcePath": "src/game/data/gameplay_outline/catalog.json",
     "summary": "在有限空间中调查物品、组合线索并寻找出口。",
     "summarySource": "source-json.summary",
@@ -131,7 +131,7 @@
       "main-map",
       "special-map"
     ],
-    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourceHash": "ddb50ad1825b9a6746fd4e9abb83fc318506722907f340d1fbbb8fa6814df6b5",
     "sourcePath": "src/game/data/gameplay_outline/catalog.json",
     "summary": "利用过去动作、循环和时间状态完成机关。",
     "summarySource": "source-json.summary",
@@ -188,7 +188,7 @@
     "presentationModes": [
       "main-map"
     ],
-    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourceHash": "ddb50ad1825b9a6746fd4e9abb83fc318506722907f340d1fbbb8fa6814df6b5",
     "sourcePath": "src/game/data/gameplay_outline/catalog.json",
     "summary": "战斗本身是一道谜题，不能只依靠数值碾压。",
     "summarySource": "source-json.summary",
@@ -246,7 +246,7 @@
       "main-map",
       "cg-friendly"
     ],
-    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourceHash": "ddb50ad1825b9a6746fd4e9abb83fc318506722907f340d1fbbb8fa6814df6b5",
     "sourcePath": "src/game/data/gameplay_outline/catalog.json",
     "summary": "通过像素地图寻找证据，再用CG展示关键细节。",
     "summarySource": "source-json.summary",
@@ -304,7 +304,7 @@
       "interface-gameplay",
       "cg-friendly"
     ],
-    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourceHash": "ddb50ad1825b9a6746fd4e9abb83fc318506722907f340d1fbbb8fa6814df6b5",
     "sourcePath": "src/game/data/gameplay_outline/catalog.json",
     "summary": "通过对话、证据和人物反应寻找漏洞。",
     "summarySource": "source-json.summary",
@@ -362,7 +362,7 @@
       "main-map",
       "interface-gameplay"
     ],
-    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourceHash": "ddb50ad1825b9a6746fd4e9abb83fc318506722907f340d1fbbb8fa6814df6b5",
     "sourcePath": "src/game/data/gameplay_outline/catalog.json",
     "summary": "NPC群体中存在隐藏身份或未知威胁。",
     "summarySource": "source-json.summary",
@@ -420,7 +420,7 @@
       "interface-gameplay",
       "cg-friendly"
     ],
-    "sourceHash": "bd517b5530bf65b090e56aebe3a3724c3c947a2fa0ec740470c46711b76e91cc",
+    "sourceHash": "ddb50ad1825b9a6746fd4e9abb83fc318506722907f340d1fbbb8fa6814df6b5",
     "sourcePath": "src/game/data/gameplay_outline/catalog.json",
     "summary": "特别适合“命锁谕令”和“命罪裁决”。",
     "summarySource": "source-json.summary",

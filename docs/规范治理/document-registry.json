@@ -330,6 +330,20 @@
       "status": "active"
     },
     {
+      "documentId": "story-plot-rag-layer-governance-system",
+      "path": "docs/系统说明/故事情节RAG边界治理系统.md",
+      "type": "system-spec",
+      "authorityFor": ["story-plot-rag-layer-boundary", "plot-to-rag-migration-gate"],
+      "consumers": [
+        "AGENTS.md",
+        "docs/系统说明/情节条目系统.md",
+        "docs/系统说明/Tag体系收缩与RAG情节迁移系统.md"
+      ],
+      "indexable": true,
+      "userFacing": true,
+      "status": "active"
+    },
+    {
       "documentId": "command-approval-governance-system",
       "path": "docs/系统说明/Codex命令授权治理系统.md",
       "type": "system-spec",

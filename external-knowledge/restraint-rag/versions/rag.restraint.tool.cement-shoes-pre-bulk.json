@@ -1,0 +1,37 @@
+{
+  "cardId": "rag.restraint.tool.cement-shoes",
+  "title": "水泥鞋",
+  "domain": "restraint",
+  "cardType": "tool",
+  "aliases": [],
+  "summary": "",
+  "definition": "",
+  "sourceRefs": [],
+  "evidenceStatus": "missing",
+  "contentStatus": "stub",
+  "reviewStatus": "pending",
+  "directQuoteIncluded": false,
+  "canonical": false,
+  "knowledgeScope": "external-fiction-reference",
+  "migration": {
+    "batchId": "tag-rag-restructure-v1",
+    "oldIds": [
+      "bondage_tag:水泥鞋"
+    ],
+    "generatedFrom": "legacy-tag-title-only",
+    "evidenceLayer": "v1",
+    "evidenceMigratedAt": "2026-07-28T07:14:30.263Z"
+  },
+  "ragLayer": "category",
+  "parentCardIds": [],
+  "evidenceRefs": [],
+  "sourceRecordIds": [],
+  "claims": [],
+  "retrievalPolicy": {
+    "graphVisible": true,
+    "searchable": true,
+    "relationAnchor": true,
+    "contentRetrievable": false,
+    "evidenceRetrievable": false
+  }
+}

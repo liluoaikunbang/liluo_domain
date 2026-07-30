@@ -26,10 +26,120 @@
     "oldIds": [
       "bondage_tag:永久拘束"
     ],
-    "generatedFrom": "legacy-tag-title-only"
+    "generatedFrom": "legacy-tag-title-only",
+    "evidenceLayer": "v1",
+    "evidenceMigratedAt": "2026-07-28T07:14:30.180Z",
+    "professionalRag": {
+      "batchId": "professional-rag-bulk-v1",
+      "migratedAt": "2026-07-28T07:49:31.968Z",
+      "strategy": "knowledge-from-legacy-expression-stub",
+      "notes": "知识分支由既有 definition/claims/evidence 迁入；表达分支保留骨架（有 creative-note/abstractPatterns 时写入草稿）；同一概念不另建重复卡。"
+    },
+    "plotLayerNote": "升为上位类别以挂焊死镣铐等子卡；与拘束生活改为关联。",
+    "updatedAt": "2026-07-28T11:17:44.529Z"
   },
-  "ragLayer": "concept",
-  "parentCardIds": [
-    "rag.restraint.context.restrained-life"
+  "ragLayer": "category",
+  "parentCardIds": [],
+  "evidenceRefs": [
+    "ev-fbsrc000213-6ae450bf9170edd2"
+  ],
+  "sourceRecordIds": [
+    "fb-src-000213"
+  ],
+  "claims": [
+    {
+      "id": "rag.restraint.duration.permanent-restraint::claim:definition:0",
+      "label": "定义",
+      "content": "不是一次场景中的短暂固定，而是被故事明确设定为长期、无明确解除期或近似永久的拘束状态。",
+      "claimType": "definition",
+      "evidenceRefs": [
+        "ev-fbsrc000213-6ae450bf9170edd2"
+      ],
+      "supportStatus": "pending",
+      "reviewStatus": "pending",
+      "origin": "external-summary"
+    }
+  ],
+  "retrievalPolicy": {
+    "graphVisible": true,
+    "searchable": true,
+    "relationAnchor": true,
+    "contentRetrievable": false,
+    "evidenceRetrievable": true,
+    "knowledgeRetrievable": false,
+    "expressionRetrievable": false
+  },
+  "professionalRagVersion": 1,
+  "knowledge": {
+    "definition": "不是一次场景中的短暂固定，而是被故事明确设定为长期、无明确解除期或近似永久的拘束状态。",
+    "boundaries": {
+      "includes": [],
+      "excludes": []
+    },
+    "distinctions": [],
+    "aliases": [],
+    "parentConceptRefs": [],
+    "childConceptRefs": [
+      "rag.restraint.detail.焊死镣铐"
+    ],
+    "relatedConceptRefs": [
+      "rag.restraint.context.restrained-life",
+      "rag.restraint.tool.handcuffs",
+      "rag.restraint.tool.leg-irons",
+      "rag.restraint.tool.chain"
+    ],
+    "factualClaims": [
+      {
+        "id": "rag.restraint.duration.permanent-restraint::claim:definition:0",
+        "label": "定义",
+        "content": "不是一次场景中的短暂固定，而是被故事明确设定为长期、无明确解除期或近似永久的拘束状态。",
+        "claimType": "definition",
+        "evidenceRefs": [
+          "ev-fbsrc000213-6ae450bf9170edd2"
+        ],
+        "supportStatus": "pending",
+        "reviewStatus": "pending",
+        "origin": "external-summary"
+      }
+    ],
+    "evidenceRefs": [
+      "ev-fbsrc000213-6ae450bf9170edd2"
+    ],
+    "projectInterpretation": "",
+    "commonMisreadings": [],
+    "status": "usable",
+    "evidenceStatus": "partial",
+    "reviewStatus": "pending"
+  },
+  "expression": {
+    "visualFocus": [],
+    "actionLogic": [],
+    "movementEffects": [],
+    "postureEffects": [],
+    "sensoryFocus": [],
+    "emotionalPossibilities": [],
+    "narrativeUses": [],
+    "applicableScenes": [],
+    "unsuitableScenes": [],
+    "expressionPrinciples": [],
+    "commonFailures": [],
+    "prohibitedMisreadings": [],
+    "styleEvidenceRefs": [],
+    "goldExampleRefs": [],
+    "calibrationPairRefs": [],
+    "relatedStyleRagRefs": [],
+    "evidenceRefs": [],
+    "status": "stub",
+    "evidenceStatus": "missing",
+    "reviewStatus": "pending"
+  },
+  "overallStatus": "knowledge-only",
+  "evidenceBindings": [
+    {
+      "evidenceId": "ev-fbsrc000213-6ae450bf9170edd2",
+      "purpose": "knowledge-evidence",
+      "branch": "knowledge",
+      "supportStatus": "pending"
+    }
   ]
 }
