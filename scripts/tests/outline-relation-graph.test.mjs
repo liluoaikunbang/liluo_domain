@@ -6,10 +6,12 @@ import { fileURLToPath } from 'node:url';
 
 import {
   buildOutlineRelationGraph,
+  applyFilterPreset,
   clipSummary,
   focusOutlineRelationGraph,
   filterOutlineRelationGraph,
   getNodeDisplayFields,
+  layoutRagHierarchyGraph,
   layoutOutlineRelationGraph,
   searchOutlineRelationGraph,
   SEEDED_CONCEPTS
@@ -79,8 +81,6 @@ function buildFixtureGraph(overrides = {}) {
     },
     ragCards: loadRagCards(),
     cardRules: readJson('external-knowledge/card-rules.json'),
-    styleArticles: (readJson('docs/写作资产/外部风格研究/article-registry.json').articles || []).slice(0, 20),
-    styleTaxonomy: readJson('project-navigation/style-taxonomy.json'),
     evidenceExcerpts: readJson('external-knowledge/evidence/excerpts.json').excerpts || [],
     evidenceReviews: readJson('external-knowledge/evidence/reviews.json').reviews || [],
     sourceCatalog: readJson('external-knowledge/catalog/sources.json'),
@@ -90,13 +90,63 @@ function buildFixtureGraph(overrides = {}) {
   });
 }
 
+test('RAG evidence path can be explicitly projected without crowding the overview', () => {
+  const graph = buildFixtureGraph({
+    ragCards: [{
+      cardId: 'rag.general.space.cooperation-limit',
+      title: '狭窄空间中的协作受限',
+      ragDomain: 'general-craft',
+      contentStatus: 'stub',
+      evidenceRefs: ['ev-rag-path'],
+      knowledge: { definition: '', factualClaims: [], evidenceRefs: ['ev-rag-path'], status: 'stub', evidenceStatus: 'missing', reviewStatus: 'pending' },
+      expression: { visualFocus: [], actionLogic: [], expressionPrinciples: [], evidenceRefs: [], status: 'stub', evidenceStatus: 'missing', reviewStatus: 'pending' }
+    }],
+    evidenceExcerpts: [{ id: 'ev-rag-path', sourceId: 'source-rag-path', reviewStatus: 'pending', excerptPreview: '狭窄走廊让两人无法并肩。', location: { sourcePath: 'external-knowledge/sources/zhihu-novels/demo.md', startLine: 4, endLine: 4 } }],
+    sourceCatalog: [{ sourceId: 'source-rag-path', title: '测试来源', relativePath: 'external-knowledge/sources/zhihu-novels/demo.md' }]
+  });
+  const focused = filterOutlineRelationGraph(graph, { nodeTypes: ['rag', 'evidence', 'source'], relationTypes: ['supported_by', 'excerpt_of'], includeRagEvidence: true });
+  assert.ok(focused.nodes.some((node) => node.type === 'evidence'));
+  assert.ok(focused.nodes.some((node) => node.type === 'source'));
+  assert.ok(focused.edges.some((edge) => edge.relationType === 'supported_by'));
+});
+
+test('RAG network preset includes the two RAG branches and source-evidence chain', async () => {
+  const filters = applyFilterPreset('rag-network');
+  assert.deepEqual(filters.nodeTypes, ['rag', 'evidence', 'source']);
+  assert.equal(filters.includeRagEvidence, true);
+
+  const { resolveGraphLaneType } = await import('../../src/game/data/outline_relation_graph/constants.js');
+  assert.equal(resolveGraphLaneType('evidence'), 'rag');
+  assert.equal(resolveGraphLaneType('source'), 'rag');
+});
+
+test('RAG hierarchy supports arbitrary depth and keeps multi-parent cards singular', () => {
+  const graph = {
+    layoutSeed: 11,
+    nodes: [
+      { id: 'rag:root', type: 'rag', title: 'root', meta: { ragLayer: 'category', parentRagNodeIds: [] } },
+      { id: 'rag:middle', type: 'rag', title: 'middle', meta: { ragLayer: 'concept', parentRagNodeIds: ['rag:root'] } },
+      { id: 'rag:leaf', type: 'rag', title: 'leaf', meta: { ragLayer: 'concept', parentRagNodeIds: ['rag:middle'] } },
+      { id: 'rag:shared', type: 'rag', title: 'shared', meta: { ragLayer: 'concept', parentRagNodeIds: ['rag:root', 'rag:leaf'] } },
+      { id: 'evidence:ignored', type: 'evidence', title: 'evidence', meta: {} }
+    ],
+    edges: []
+  };
+  const layout = layoutRagHierarchyGraph(graph);
+  assert.equal(layout.nodes.length, 4);
+  assert.equal(layout.nodeById.get('rag:leaf').treeDepth, 2);
+  assert.equal(layout.nodeById.get('rag:shared').treeParentId, 'rag:leaf');
+  assert.equal(layout.nodeById.get('rag:shared').treeDepth, 3);
+  assert.equal(layout.nodes.filter((node) => node.id === 'rag:shared').length, 1);
+});
+
 test('converts heterogeneous entities into unique typed nodes', () => {
   const graph = buildFixtureGraph();
   const ids = graph.nodes.map((node) => node.id);
   assert.equal(new Set(ids).size, ids.length);
 
   const types = new Set(graph.nodes.map((node) => node.type));
-  for (const required of ['story', 'world', 'plot', 'gameplay', 'rag', 'style_rag']) {
+  for (const required of ['story', 'world', 'plot', 'gameplay', 'rag']) {
     assert.ok(types.has(required), `missing type ${required}`);
   }
   // Ordinary Tag lane may be empty after reset; tag type appears only when plotTags/tags exist.
@@ -241,31 +291,10 @@ test('filter presets isolate orphans and pending review', () => {
   assert.ok(Array.isArray(pending.nodes));
 });
 
-test('Style-RAG primary nodes are writing techniques; articles are evidence', () => {
+test('independent Style-RAG entries are no longer projected', () => {
   const graph = buildFixtureGraph();
-  const techniques = graph.nodes.filter(
-    (node) => node.type === 'style_rag' && node.meta?.role === 'technique'
-  );
-  const evidence = graph.nodes.filter(
-    (node) => node.type === 'style_rag' && node.meta?.role === 'evidence'
-  );
-  const dimensions = graph.nodes.filter(
-    (node) => node.type === 'style_rag' && node.meta?.role === 'technique_dimension'
-  );
-  assert.ok(techniques.length >= 20, `expected technique nouns, got ${techniques.length}`);
-  assert.ok(dimensions.length >= 5, `expected dimensions, got ${dimensions.length}`);
-  assert.ok(evidence.length >= 1, 'expected article evidence anchors');
-  assert.ok(techniques.some((node) => node.title === '日常互动'));
-  assert.ok(techniques.some((node) => node.title === '逃脱尝试'));
-
-  const hidden = filterOutlineRelationGraph(graph, { includeStyleEvidence: false });
-  assert.equal(
-    hidden.nodes.some((node) => node.meta?.role === 'evidence'),
-    false,
-    'overview should hide article evidence by default'
-  );
-  const shown = filterOutlineRelationGraph(graph, { includeStyleEvidence: true });
-  assert.ok(shown.nodes.some((node) => node.meta?.role === 'evidence'));
+  assert.equal(graph.nodes.some((node) => node.type === 'style_rag'), false);
+  assert.equal(graph.edges.some((edge) => edge.relationType === 'uses_style'), false);
 });
 
 test('RAG cards include definitions and hierarchy metadata', () => {

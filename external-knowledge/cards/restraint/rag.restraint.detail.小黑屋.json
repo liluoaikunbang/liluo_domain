@@ -6,18 +6,10 @@
   "aliases": [],
   "summary": "狭小、缺光的封闭空间会压缩姿态选择，并让等待本身成为压力。",
   "definition": "以黑暗或微光、空间局促和信息隔绝为主要特征的监禁场景。",
-  "sourceRefs": [
-    {
-      "sourceId": "fb-src-000099",
-      "segmentId": "fb-src-000099-seg-00047",
-      "sourcePath": "external-knowledge/sources/fiction-bondage/作者,金主大大/楚曼白/梦馨的复仇.md",
-      "startLine": 638,
-      "endLine": 650
-    }
-  ],
-  "evidenceStatus": "partial",
-  "contentStatus": "complete",
-  "reviewStatus": "candidate",
+  "sourceRefs": [],
+  "evidenceStatus": "missing",
+  "contentStatus": "stub",
+  "reviewStatus": "pending",
   "directQuoteIncluded": false,
   "canonical": false,
   "knowledgeScope": "external-fiction-reference",
@@ -41,9 +33,7 @@
     "rag.restraint.state.confinement"
   ],
   "distinctions": [],
-  "evidenceRefs": [
-    "ev-fbsrc000099-ac56d9ab326803a8"
-  ],
+  "evidenceRefs": [],
   "sourceRecordIds": [
     "fb-src-000099"
   ],
@@ -66,7 +56,7 @@
     "searchable": true,
     "relationAnchor": true,
     "contentRetrievable": false,
-    "evidenceRetrievable": true,
+    "evidenceRetrievable": false,
     "knowledgeRetrievable": false,
     "expressionRetrievable": false
   },
@@ -84,27 +74,12 @@
     ],
     "childConceptRefs": [],
     "relatedConceptRefs": [],
-    "factualClaims": [
-      {
-        "id": "rag.restraint.detail.小黑屋::claim:definition:0",
-        "label": "定义",
-        "content": "以黑暗或微光、空间局促和信息隔绝为主要特征的监禁场景。",
-        "claimType": "definition",
-        "evidenceRefs": [
-          "ev-fbsrc000099-ac56d9ab326803a8"
-        ],
-        "supportStatus": "pending",
-        "reviewStatus": "pending",
-        "origin": "external-summary"
-      }
-    ],
-    "evidenceRefs": [
-      "ev-fbsrc000099-ac56d9ab326803a8"
-    ],
+    "factualClaims": [],
+    "evidenceRefs": [],
     "projectInterpretation": "",
     "commonMisreadings": [],
-    "status": "usable",
-    "evidenceStatus": "partial",
+    "status": "stub",
+    "evidenceStatus": "missing",
     "reviewStatus": "pending"
   },
   "expression": {
@@ -129,13 +104,6 @@
     "evidenceStatus": "missing",
     "reviewStatus": "pending"
   },
-  "overallStatus": "knowledge-only",
-  "evidenceBindings": [
-    {
-      "evidenceId": "ev-fbsrc000099-ac56d9ab326803a8",
-      "purpose": "knowledge-evidence",
-      "branch": "knowledge",
-      "supportStatus": "pending"
-    }
-  ]
+  "overallStatus": "stub",
+  "evidenceBindings": []
 }

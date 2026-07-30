@@ -26,15 +26,11 @@ export function filterOutlineRelationGraph(graph, filters = {}) {
       return false;
     }
 
-    const isStyleEvidence = node.type === 'style_rag' && node.meta?.role === 'evidence';
     const matchesQuery = query ? collectSearchText(node).includes(query) : false;
-    // 知识/表达/原文证据只在详情页签；大图不投影 rag_branch、evidence、source
-    if (node.type === 'rag_branch' || node.type === 'evidence' || node.type === 'source') return false;
-    if (isStyleEvidence && !filters.includeStyleEvidence) {
-      // Overview/filter: hide novel titles by default; focus/search may reveal evidence anchors.
-      if (!filters.allowFocusedEvidence && !matchesQuery) return false;
-    }
-
+    // Ordinary overview stays compact. The RAG evidence-path preset/focus may
+    // explicitly reveal source and excerpt nodes.
+    if (node.type === 'rag_branch') return false;
+    if ((node.type === 'evidence' || node.type === 'source') && !filters.includeRagEvidence) return false;
     if (!query) return true;
     return matchesQuery;
   });
@@ -87,7 +83,27 @@ export function applyFilterPreset(presetId) {
   if (Object.prototype.hasOwnProperty.call(preset, 'includeStyleEvidence')) {
     result.includeStyleEvidence = Boolean(preset.includeStyleEvidence);
   }
+  if (Object.prototype.hasOwnProperty.call(preset, 'includeRagEvidence')) {
+    result.includeRagEvidence = Boolean(preset.includeRagEvidence);
+  }
   return result;
+}
+
+/** Free-canvas RAG subgraph with optional direct story/plot/gameplay context. */
+export function filterRagNetworkGraph(graph, scope = 'rag-only') {
+  const nodes = asArray(graph?.nodes);
+  const edges = asArray(graph?.edges);
+  const baseTypes = scope === 'rag-only' ? new Set(['rag']) : new Set(['rag', 'evidence', 'source']);
+  const included = new Set(nodes.filter((node) => baseTypes.has(node.type)).map((node) => node.id));
+  if (scope === 'with-context') {
+    for (const edge of edges) {
+      if (included.has(edge.source)) included.add(edge.target);
+      if (included.has(edge.target)) included.add(edge.source);
+    }
+  }
+  const visibleNodes = nodes.filter((node) => included.has(node.id));
+  const visibleEdges = edges.filter((edge) => included.has(edge.source) && included.has(edge.target));
+  return { nodes: visibleNodes, edges: visibleEdges, scope };
 }
 
 /**

@@ -6,25 +6,10 @@
   "aliases": [],
   "summary": "镣铐是手铐、脚镣及连体铐等金属铐具的上位类别。",
   "definition": "以铐环和连接件限制肢体相对活动的金属器具总称；具体作用部位由下位条目说明。",
-  "sourceRefs": [
-    {
-      "sourceId": "fb-src-000001",
-      "segmentId": "fb-src-000001-seg-00044",
-      "sourcePath": "external-knowledge/sources/fiction-bondage/不知道作者/（完结）彼岸花开.md",
-      "startLine": 401,
-      "endLine": 417
-    },
-    {
-      "sourceId": "fb-src-000025",
-      "segmentId": "fb-src-000025-seg-00063",
-      "sourcePath": "external-knowledge/sources/fiction-bondage/不知道作者/沙曼紧缚.md",
-      "startLine": 2885,
-      "endLine": 2936
-    }
-  ],
-  "evidenceStatus": "partial",
-  "contentStatus": "complete",
-  "reviewStatus": "candidate",
+  "sourceRefs": [],
+  "evidenceStatus": "missing",
+  "contentStatus": "stub",
+  "reviewStatus": "pending",
   "directQuoteIncluded": false,
   "canonical": false,
   "knowledgeScope": "external-fiction-reference",
@@ -45,10 +30,7 @@
   },
   "ragLayer": "category",
   "parentCardIds": [],
-  "evidenceRefs": [
-    "ev-fbsrc000001-33d437169a02bc91",
-    "ev-fbsrc000025-07df26ec6400c8fe"
-  ],
+  "evidenceRefs": [],
   "sourceRecordIds": [
     "fb-src-000001",
     "fb-src-000025"
@@ -73,7 +55,7 @@
     "searchable": true,
     "relationAnchor": true,
     "contentRetrievable": false,
-    "evidenceRetrievable": true,
+    "evidenceRetrievable": false,
     "knowledgeRetrievable": false,
     "expressionRetrievable": false
   },
@@ -89,29 +71,12 @@
     "parentConceptRefs": [],
     "childConceptRefs": [],
     "relatedConceptRefs": [],
-    "factualClaims": [
-      {
-        "id": "rag.restraint.tool.shackles::claim:definition:0",
-        "label": "定义",
-        "content": "以铐环和连接件限制肢体相对活动的金属器具总称；具体作用部位由下位条目说明。",
-        "claimType": "definition",
-        "evidenceRefs": [
-          "ev-fbsrc000001-33d437169a02bc91",
-          "ev-fbsrc000025-07df26ec6400c8fe"
-        ],
-        "supportStatus": "pending",
-        "reviewStatus": "pending",
-        "origin": "external-summary"
-      }
-    ],
-    "evidenceRefs": [
-      "ev-fbsrc000001-33d437169a02bc91",
-      "ev-fbsrc000025-07df26ec6400c8fe"
-    ],
+    "factualClaims": [],
+    "evidenceRefs": [],
     "projectInterpretation": "",
     "commonMisreadings": [],
-    "status": "usable",
-    "evidenceStatus": "partial",
+    "status": "stub",
+    "evidenceStatus": "missing",
     "reviewStatus": "pending"
   },
   "expression": {
@@ -136,19 +101,6 @@
     "evidenceStatus": "missing",
     "reviewStatus": "pending"
   },
-  "overallStatus": "knowledge-only",
-  "evidenceBindings": [
-    {
-      "evidenceId": "ev-fbsrc000001-33d437169a02bc91",
-      "purpose": "knowledge-evidence",
-      "branch": "knowledge",
-      "supportStatus": "pending"
-    },
-    {
-      "evidenceId": "ev-fbsrc000025-07df26ec6400c8fe",
-      "purpose": "knowledge-evidence",
-      "branch": "knowledge",
-      "supportStatus": "pending"
-    }
-  ]
+  "overallStatus": "stub",
+  "evidenceBindings": []
 }

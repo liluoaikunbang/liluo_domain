@@ -1428,8 +1428,8 @@
       ],
       "isUsed": true,
       "usageStatus": "partial",
-      "usedBy": ["world-3-mortal-dao-cold-palace-garden", "world-3-mortal-dao-well-relic-retrieval", "world-3-mortal-dao-marriage-northbound", "world-3-mortal-dao-frontier-marriage"],
-      "usedByLabels": ["尘寰问道-平民公主-冷宫荒圃", "尘寰问道-平民公主-井下取遗", "尘寰问道-平民公主-和亲北行", "尘寰问道-平民公主-塞外和亲"],
+      "usedBy": ["world-3-mortal-dao-hanging-well-detention", "world-3-mortal-dao-cold-palace-garden", "world-3-mortal-dao-well-relic-retrieval", "world-3-mortal-dao-marriage-northbound", "world-3-mortal-dao-frontier-marriage"],
+      "usedByLabels": ["尘寰问道-平民公主-悬井吊牢", "尘寰问道-平民公主-冷宫荒圃", "尘寰问道-平民公主-井下取遗", "尘寰问道-平民公主-和亲北行", "尘寰问道-平民公主-塞外和亲"],
       "notes": "已确认掌握宫中旧案的人为阻止璃落接近身世真相，将她紧缚后塞入狭窄古井并伪造自尽；对方仓促离开且未下井核验。璃落井下受困数日，发现与旧案、身世及家族修仙传承有关的遗物但无法当场取走；其贴身侍女原本奉命监视，因璃落平等相待而背叛命令、完成救援。下令一方并未以侍女的软肋相挟，只是本就不重视璃落，也未将侍女视作变数。宫廷随后以璃落因身份焦虑擅闯禁地、自导自演为由反咎，将她打入无人照应的冷宫；后续有人自行前来欺凌，并非施害派系继续授意。璃落与侍女在冷宫开垦荒地种地维持生活，可承接古代种田小游戏。古井仍可直接进入；遗物取证的前置条件是创造离开冷宫的机会。璃落在回井取回遗物后，于北方和亲时将冷宫田地迁入其中，使种田支线持续开放。施害派系、遗物的具体形态、后续下井取证节点、离开冷宫的具体机会，以及种田小游戏的具体规则仍待后续确定；不与魔宗水牢或封窑替罪条目合并。",
       "development": {
         "premise": "旧案知情人把璃落的失踪伪装成投井自尽",

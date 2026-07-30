@@ -12,6 +12,20 @@ import {
 
 export const PROFESSIONAL_RAG_VERSION = 1;
 
+/**
+ * Every RAG card uses the same knowledge/expression shape.  The domain only
+ * controls provenance and retrieval boundaries; it never removes a branch.
+ */
+export const RAG_DOMAINS = Object.freeze({
+  restraint: 'restraint-professional',
+  general: 'general-craft',
+  canon: 'canon',
+});
+
+export function normalizeRagDomain(value, fallback = RAG_DOMAINS.restraint) {
+  return Object.values(RAG_DOMAINS).includes(value) ? value : fallback;
+}
+
 export const OVERALL_STATUS = Object.freeze({
   stub: 'stub',
   'knowledge-only': 'knowledge-only',
@@ -172,6 +186,7 @@ export function ensureProfessionalShape(card, { materialize = false } = {}) {
   if (hasBranches && !materialize) {
     return {
       ...card,
+      ragDomain: normalizeRagDomain(card.ragDomain),
       professionalRagVersion: card.professionalRagVersion ?? PROFESSIONAL_RAG_VERSION,
       overallStatus: deriveOverallStatus(card),
       retrievalPolicy: normalizeProfessionalRetrievalPolicy(card),
@@ -215,6 +230,7 @@ export function ensureProfessionalShape(card, { materialize = false } = {}) {
 
   const shaped = {
     ...card,
+    ragDomain: normalizeRagDomain(card.ragDomain),
     professionalRagVersion: PROFESSIONAL_RAG_VERSION,
     knowledge,
     expression,

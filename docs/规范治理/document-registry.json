@@ -5,8 +5,16 @@
       "documentId": "project-core-rules",
       "path": "AGENTS.md",
       "type": "project-contract",
-      "authorityFor": ["project-routing", "global-development-boundaries", "adult-characters-only"],
-      "consumers": ["README.md", "docs/项目概览.md", "docs/设计记忆/项目宪章.md"],
+      "authorityFor": [
+        "project-routing",
+        "global-development-boundaries",
+        "adult-characters-only"
+      ],
+      "consumers": [
+        "README.md",
+        "docs/项目概览.md",
+        "docs/设计记忆/项目宪章.md"
+      ],
       "indexable": true,
       "status": "active"
     },
@@ -14,8 +22,13 @@
       "documentId": "project-documentation-entry",
       "path": "docs/README.md",
       "type": "documentation-entry",
-      "authorityFor": ["documentation-navigation"],
-      "consumers": ["README.md", "docs/项目概览.md"],
+      "authorityFor": [
+        "documentation-navigation"
+      ],
+      "consumers": [
+        "README.md",
+        "docs/项目概览.md"
+      ],
       "indexable": true,
       "status": "active"
     },
@@ -23,8 +36,14 @@
       "documentId": "user-command-catalog",
       "path": "docs/用户命令目录.md",
       "type": "user-entry",
-      "authorityFor": ["user-invokable-workflows"],
-      "consumers": ["README.md", "docs/README.md", "docs/项目概览.md"],
+      "authorityFor": [
+        "user-invokable-workflows"
+      ],
+      "consumers": [
+        "README.md",
+        "docs/README.md",
+        "docs/项目概览.md"
+      ],
       "indexable": true,
       "userFacing": true,
       "status": "active"
@@ -33,8 +52,21 @@
       "documentId": "offline-release-system",
       "path": "docs/系统说明/离线发行与GitHub-Release流程.md",
       "type": "system-spec",
-      "authorityFor": ["offline-build", "offline-packaging", "offline-loopback-launcher", "github-release-upload"],
-      "consumers": ["package.json", "vite.config.mjs", "scripts/release/offline-release.mjs", ".agents/skills/liluo-project/liluo-offline-release-pipeline/SKILL.md", "docs/技能说明/liluo-offline-release-pipeline.md", "docs/用户命令目录.md", "docs/项目概览.md"],
+      "authorityFor": [
+        "offline-build",
+        "offline-packaging",
+        "offline-loopback-launcher",
+        "github-release-upload"
+      ],
+      "consumers": [
+        "package.json",
+        "vite.config.mjs",
+        "scripts/release/offline-release.mjs",
+        ".agents/skills/liluo-project/liluo-offline-release-pipeline/SKILL.md",
+        "docs/技能说明/liluo-offline-release-pipeline.md",
+        "docs/用户命令目录.md",
+        "docs/项目概览.md"
+      ],
       "indexable": true,
       "userFacing": true,
       "status": "active"
@@ -43,8 +75,15 @@
       "documentId": "project-index-system",
       "path": "docs/系统说明/项目知识索引系统.md",
       "type": "system-spec",
-      "authorityFor": ["project-index-architecture"],
-      "consumers": ["AGENTS.md", ".agents/skills/liluo-project/liluo-project-index-maintenance/SKILL.md", "docs/技能说明/liluo-project-index-maintenance.md", "docs/用户命令目录.md"],
+      "authorityFor": [
+        "project-index-architecture"
+      ],
+      "consumers": [
+        "AGENTS.md",
+        ".agents/skills/liluo-project/liluo-project-index-maintenance/SKILL.md",
+        "docs/技能说明/liluo-project-index-maintenance.md",
+        "docs/用户命令目录.md"
+      ],
       "indexable": true,
       "status": "active"
     },
@@ -52,7 +91,10 @@
       "documentId": "project-context-pack-system",
       "path": "docs/系统说明/项目描述性上下文打包系统.md",
       "type": "system-spec",
-      "authorityFor": ["project-context-pack", "descriptive-export-for-external-ai"],
+      "authorityFor": [
+        "project-context-pack",
+        "descriptive-export-for-external-ai"
+      ],
       "consumers": [
         "AGENTS.md",
         ".agents/skills/liluo-project/liluo-project-context-pack/SKILL.md",
@@ -70,7 +112,11 @@
       "documentId": "project-context-load-system",
       "path": "docs/系统说明/项目上下文装载与配置分层系统.md",
       "type": "system-spec",
-      "authorityFor": ["context-load-layers", "context-budget", "context-resolve-audit"],
+      "authorityFor": [
+        "context-load-layers",
+        "context-budget",
+        "context-resolve-audit"
+      ],
       "consumers": [
         "AGENTS.md",
         "project-navigation/context-policy.json",
@@ -91,8 +137,23 @@
       "documentId": "json-schema-data-contract-system",
       "path": "docs/系统说明/JSON-Schema数据契约系统.md",
       "type": "system-spec",
-      "authorityFor": ["json-schema-contracts", "schema-registry", "structural-validation-boundary"],
-      "consumers": ["schemas/registry.json", "scripts/data-contracts/validate-schema-registry.mjs", "scripts/data-contracts/validate-data-contracts.mjs", "scripts/data-contracts/test-data-contracts.mjs", "scripts/project-routine.mjs", "package.json", "README.md", "docs/README.md", "docs/系统说明/README.md", "docs/用户命令目录.md"],
+      "authorityFor": [
+        "json-schema-contracts",
+        "schema-registry",
+        "structural-validation-boundary"
+      ],
+      "consumers": [
+        "schemas/registry.json",
+        "scripts/data-contracts/validate-schema-registry.mjs",
+        "scripts/data-contracts/validate-data-contracts.mjs",
+        "scripts/data-contracts/test-data-contracts.mjs",
+        "scripts/project-routine.mjs",
+        "package.json",
+        "README.md",
+        "docs/README.md",
+        "docs/系统说明/README.md",
+        "docs/用户命令目录.md"
+      ],
       "indexable": true,
       "userFacing": true,
       "status": "active"
@@ -101,8 +162,17 @@
       "documentId": "external-knowledge-system",
       "path": "docs/系统说明/外部虚构题材知识库.md",
       "type": "system-spec",
-      "authorityFor": ["external-knowledge-architecture", "external-originality"],
-      "consumers": ["AGENTS.md", ".agents/skills/liluo-project/liluo-external-fiction-knowledge/SKILL.md", "docs/技能说明/liluo-external-fiction-knowledge.md", "docs/用户命令目录.md", ".agents/skills/writing/liluo-natural-expression/SKILL.md"],
+      "authorityFor": [
+        "external-knowledge-architecture",
+        "external-originality"
+      ],
+      "consumers": [
+        "AGENTS.md",
+        ".agents/skills/liluo-project/liluo-external-fiction-knowledge/SKILL.md",
+        "docs/技能说明/liluo-external-fiction-knowledge.md",
+        "docs/用户命令目录.md",
+        ".agents/skills/writing/liluo-natural-expression/SKILL.md"
+      ],
       "indexable": true,
       "status": "active"
     },
@@ -110,8 +180,20 @@
       "documentId": "story-gap-discovery-system",
       "path": "docs/系统说明/故事缺口发现与灵感补全系统.md",
       "type": "system-spec",
-      "authorityFor": ["story-gap-discovery", "story-gap-candidates", "story-gap-approval", "story-gap-retrieval-budget"],
-      "consumers": ["AGENTS.md", ".agents/skills/liluo-project/liluo-story-gap-discovery/SKILL.md", "docs/技能说明/liluo-story-gap-discovery.md", ".codex/agents/liluo_story_gap_analyst.toml", "docs/智能体说明/liluo_story_gap_analyst.md", "docs/用户命令目录.md"],
+      "authorityFor": [
+        "story-gap-discovery",
+        "story-gap-candidates",
+        "story-gap-approval",
+        "story-gap-retrieval-budget"
+      ],
+      "consumers": [
+        "AGENTS.md",
+        ".agents/skills/liluo-project/liluo-story-gap-discovery/SKILL.md",
+        "docs/技能说明/liluo-story-gap-discovery.md",
+        ".codex/agents/liluo_story_gap_analyst.toml",
+        "docs/智能体说明/liluo_story_gap_analyst.md",
+        "docs/用户命令目录.md"
+      ],
       "indexable": true,
       "userFacing": true,
       "status": "active"
@@ -120,8 +202,16 @@
       "documentId": "story-outline-template-system",
       "path": "docs/系统说明/故事大纲条目模板.md",
       "type": "system-spec",
-      "authorityFor": ["story-outline-template", "story-node-granularity", "mainline-memo-boundary"],
-      "consumers": ["AGENTS.md", ".agents/skills/liluo-project/liluo-story-outline-authoring/SKILL.md", "docs/技能说明/liluo-story-outline-authoring.md"],
+      "authorityFor": [
+        "story-outline-template",
+        "story-node-granularity",
+        "mainline-memo-boundary"
+      ],
+      "consumers": [
+        "AGENTS.md",
+        ".agents/skills/liluo-project/liluo-story-outline-authoring/SKILL.md",
+        "docs/技能说明/liluo-story-outline-authoring.md"
+      ],
       "indexable": true,
       "status": "active"
     },
@@ -129,8 +219,15 @@
       "documentId": "codex-session-submission-incident",
       "path": "docs/运行规范/未解决问题/Codex会话提交异常与上下文预算问题.md",
       "type": "system-spec",
-      "authorityFor": ["codex-session-submission-incident", "incident-evidence-continuity"],
-      "consumers": ["AGENTS.md", "docs/用户命令目录.md", "docs/功能更新/156-Codex会话提交异常持续记录.md"],
+      "authorityFor": [
+        "codex-session-submission-incident",
+        "incident-evidence-continuity"
+      ],
+      "consumers": [
+        "AGENTS.md",
+        "docs/用户命令目录.md",
+        "docs/功能更新/156-Codex会话提交异常持续记录.md"
+      ],
       "indexable": true,
       "userFacing": true,
       "status": "active"
@@ -139,8 +236,16 @@
       "documentId": "project-agent-system",
       "path": "docs/智能体说明/项目子智能体体系.md",
       "type": "agent-system",
-      "authorityFor": ["project-agent-roles"],
-      "consumers": ["AGENTS.md", ".codex/agents/liluo_context_explorer.toml", ".codex/agents/liluo_content_auditor.toml", ".codex/agents/liluo_story_gap_analyst.toml", ".codex/agents/liluo_validation_runner.toml"],
+      "authorityFor": [
+        "project-agent-roles"
+      ],
+      "consumers": [
+        "AGENTS.md",
+        ".codex/agents/liluo_context_explorer.toml",
+        ".codex/agents/liluo_content_auditor.toml",
+        ".codex/agents/liluo_story_gap_analyst.toml",
+        ".codex/agents/liluo_validation_runner.toml"
+      ],
       "indexable": true,
       "status": "active"
     },
@@ -148,8 +253,19 @@
       "documentId": "governance-memory-system",
       "path": "docs/系统说明/项目规范治理与设计记忆系统.md",
       "type": "system-spec",
-      "authorityFor": ["documentation-governance", "design-memory-architecture", "minimal-verification-budget", "avoidable-friction-review"],
-      "consumers": ["AGENTS.md", ".agents/skills/liluo-project/liluo-project-governance-memory/SKILL.md", "docs/技能说明/liluo-project-governance-memory.md", "docs/智能体说明/liluo_project_memory_curator.md", "docs/用户命令目录.md"],
+      "authorityFor": [
+        "documentation-governance",
+        "design-memory-architecture",
+        "minimal-verification-budget",
+        "avoidable-friction-review"
+      ],
+      "consumers": [
+        "AGENTS.md",
+        ".agents/skills/liluo-project/liluo-project-governance-memory/SKILL.md",
+        "docs/技能说明/liluo-project-governance-memory.md",
+        "docs/智能体说明/liluo_project_memory_curator.md",
+        "docs/用户命令目录.md"
+      ],
       "indexable": true,
       "userFacing": true,
       "status": "active"
@@ -158,8 +274,22 @@
       "documentId": "ai-collaboration-file-layering",
       "path": "docs/系统说明/AI协同文件与规则分层.md",
       "type": "system-spec",
-      "authorityFor": ["ai-tool-shared-authority", "cursor-rule-layering", "tool-specific-adapter-boundary", "derived-dual-tool-config"],
-      "consumers": ["AGENTS.md", ".cursor/rules/00-project-entry.mdc", ".cursor/rules/game-architecture.mdc", ".cursor/rules/content-authoring.mdc", ".cursor/rules/documentation-governance.mdc", ".cursor/rules/verification-and-git.mdc", "docs/系统说明/README.md", "docs/README.md"],
+      "authorityFor": [
+        "ai-tool-shared-authority",
+        "cursor-rule-layering",
+        "tool-specific-adapter-boundary",
+        "derived-dual-tool-config"
+      ],
+      "consumers": [
+        "AGENTS.md",
+        ".cursor/rules/00-project-entry.mdc",
+        ".cursor/rules/game-architecture.mdc",
+        ".cursor/rules/content-authoring.mdc",
+        ".cursor/rules/documentation-governance.mdc",
+        ".cursor/rules/verification-and-git.mdc",
+        "docs/系统说明/README.md",
+        "docs/README.md"
+      ],
       "indexable": true,
       "status": "active"
     },
@@ -167,8 +297,22 @@
       "documentId": "creative-team-presence-system",
       "path": "docs/系统说明/璃落创作组人格与项目陪伴系统.md",
       "type": "system-spec",
-      "authorityFor": ["creative-team-presence", "persona-modes", "display-density", "team-routing-tiers", "team-discussion", "reunion-state"],
-      "consumers": ["AGENTS.md", ".agents/skills/liluo-project/liluo-creative-team-presence/SKILL.md", "docs/技能说明/liluo-creative-team-presence.md", "docs/智能体说明/项目子智能体体系.md", "project-navigation/team-routing.json", "docs/用户命令目录.md"],
+      "authorityFor": [
+        "creative-team-presence",
+        "persona-modes",
+        "display-density",
+        "team-routing-tiers",
+        "team-discussion",
+        "reunion-state"
+      ],
+      "consumers": [
+        "AGENTS.md",
+        ".agents/skills/liluo-project/liluo-creative-team-presence/SKILL.md",
+        "docs/技能说明/liluo-creative-team-presence.md",
+        "docs/智能体说明/项目子智能体体系.md",
+        "project-navigation/team-routing.json",
+        "docs/用户命令目录.md"
+      ],
       "indexable": true,
       "userFacing": true,
       "status": "active"
@@ -177,8 +321,19 @@
       "documentId": "creative-team-soul",
       "path": "docs/设计记忆/项目组灵魂/项目组设定.md",
       "type": "design-memory",
-      "authorityFor": ["creative-team-identity", "thought-source-status", "reality-narrative-boundary", "user-to-liluo-direction-mapping"],
-      "consumers": ["docs/系统说明/璃落创作组人格与项目陪伴系统.md", ".agents/skills/liluo-project/liluo-creative-team-presence/SKILL.md", "docs/设计记忆/项目组灵魂/项目组手记/README.md", "docs/设计记忆/项目组灵魂/team-roster.json", "docs/用户命令目录.md"],
+      "authorityFor": [
+        "creative-team-identity",
+        "thought-source-status",
+        "reality-narrative-boundary",
+        "user-to-liluo-direction-mapping"
+      ],
+      "consumers": [
+        "docs/系统说明/璃落创作组人格与项目陪伴系统.md",
+        ".agents/skills/liluo-project/liluo-creative-team-presence/SKILL.md",
+        "docs/设计记忆/项目组灵魂/项目组手记/README.md",
+        "docs/设计记忆/项目组灵魂/team-roster.json",
+        "docs/用户命令目录.md"
+      ],
       "indexable": true,
       "status": "active"
     },
@@ -186,8 +341,18 @@
       "documentId": "creative-team-literary-names",
       "path": "docs/设计记忆/项目组灵魂/文号体系/README.md",
       "type": "design-memory",
-      "authorityFor": ["team-literary-name-source", "team-literary-name-assignment", "team-literary-name-status"],
-      "consumers": ["docs/设计记忆/项目组灵魂/team-roster.json", ".agents/skills/liluo-project/liluo-creative-team-presence/SKILL.md", ".agents/skills/liluo-project/liluo-project-governance-memory/SKILL.md", "docs/智能体说明/项目子智能体体系.md", "docs/用户命令目录.md"],
+      "authorityFor": [
+        "team-literary-name-source",
+        "team-literary-name-assignment",
+        "team-literary-name-status"
+      ],
+      "consumers": [
+        "docs/设计记忆/项目组灵魂/team-roster.json",
+        ".agents/skills/liluo-project/liluo-creative-team-presence/SKILL.md",
+        ".agents/skills/liluo-project/liluo-project-governance-memory/SKILL.md",
+        "docs/智能体说明/项目子智能体体系.md",
+        "docs/用户命令目录.md"
+      ],
       "indexable": true,
       "userFacing": true,
       "status": "active"
@@ -196,8 +361,14 @@
       "documentId": "project-charter",
       "path": "docs/设计记忆/项目宪章.md",
       "type": "design-memory",
-      "authorityFor": ["project-soul"],
-      "consumers": ["AGENTS.md", "README.md", "docs/项目概览.md"],
+      "authorityFor": [
+        "project-soul"
+      ],
+      "consumers": [
+        "AGENTS.md",
+        "README.md",
+        "docs/项目概览.md"
+      ],
       "indexable": true,
       "status": "active"
     },
@@ -205,8 +376,26 @@
       "documentId": "external-skill-evolution-system",
       "path": "docs/系统说明/外部Skill来源库与项目能力演化系统.md",
       "type": "system-spec",
-      "authorityFor": ["external-skill-isolation", "external-skill-sources", "external-skill-user-packs", "external-skill-rag", "external-skill-update", "external-tool-update-tracking", "local-skill-lineage"],
-      "consumers": ["AGENTS.md", ".gitignore", "package.json", "scripts/external-skills/external-skills.mjs", ".agents/skills/liluo-project/liluo-zhihu-novel-ingest/SKILL.md", "docs/技能说明/liluo-zhihu-novel-ingest.md", "docs/外部来源/Skill来源目录.md", "docs/外部来源/Skill许可证与保存策略.md", "docs/用户命令目录.md"],
+      "authorityFor": [
+        "external-skill-isolation",
+        "external-skill-sources",
+        "external-skill-user-packs",
+        "external-skill-rag",
+        "external-skill-update",
+        "external-tool-update-tracking",
+        "local-skill-lineage"
+      ],
+      "consumers": [
+        "AGENTS.md",
+        ".gitignore",
+        "package.json",
+        "scripts/external-skills/external-skills.mjs",
+        ".agents/skills/liluo-project/liluo-zhihu-novel-ingest/SKILL.md",
+        "docs/技能说明/liluo-zhihu-novel-ingest.md",
+        "docs/外部来源/Skill来源目录.md",
+        "docs/外部来源/Skill许可证与保存策略.md",
+        "docs/用户命令目录.md"
+      ],
       "indexable": true,
       "userFacing": true,
       "status": "active"
@@ -215,8 +404,26 @@
       "documentId": "natural-expression-system",
       "path": "docs/系统说明/璃落自然表达与文气塑形系统.md",
       "type": "system-spec",
-      "authorityFor": ["natural-expression-routing", "natural-expression-intensity", "natural-expression-plausibility", "natural-expression-user-calibration", "natural-expression-grounded-figurative", "restraint-prose-light-rag", "restraint-technique-pose-consistency", "style-profile-boundary"],
-      "consumers": ["AGENTS.md", ".agents/skills/writing/liluo-natural-expression/SKILL.md", "docs/技能说明/liluo-natural-expression.md", "docs/用户命令目录.md", ".cursor/rules/content-authoring.mdc", ".agents/skills/liluo-project/liluo-external-fiction-knowledge/SKILL.md", ".agents/skills/liluo-project/liluo-style-rag/SKILL.md", "docs/系统说明/知识检索抽查校准系统.md", "docs/系统说明/Style-RAG元数据检索与文风包系统.md", "docs/系统说明/外部虚构题材知识库.md"],
+      "authorityFor": [
+        "natural-expression-routing",
+        "natural-expression-intensity",
+        "natural-expression-plausibility",
+        "natural-expression-user-calibration",
+        "natural-expression-grounded-figurative",
+        "restraint-prose-light-rag",
+        "restraint-technique-pose-consistency",
+        "style-profile-boundary"
+      ],
+      "consumers": [
+        "AGENTS.md",
+        ".agents/skills/writing/liluo-natural-expression/SKILL.md",
+        "docs/技能说明/liluo-natural-expression.md",
+        "docs/用户命令目录.md",
+        ".cursor/rules/content-authoring.mdc",
+        ".agents/skills/liluo-project/liluo-external-fiction-knowledge/SKILL.md",
+        "docs/系统说明/知识检索抽查校准系统.md",
+        "docs/系统说明/外部虚构题材知识库.md"
+      ],
       "indexable": true,
       "userFacing": true,
       "status": "active"
@@ -225,7 +432,13 @@
       "documentId": "formal-prose-pipeline-system",
       "path": "docs/系统说明/开放权重双模型写作管线.md",
       "type": "system-spec",
-      "authorityFor": ["formal-prose-pipeline", "open-weight-writing-models", "writing-asset-layers", "writing-model-workspace-only", "writing-model-pending-candidates"],
+      "authorityFor": [
+        "formal-prose-pipeline",
+        "open-weight-writing-models",
+        "writing-asset-layers",
+        "writing-model-workspace-only",
+        "writing-model-pending-candidates"
+      ],
       "consumers": [
         "AGENTS.md",
         ".agents/skills/liluo-project/liluo-formal-prose-pipeline/SKILL.md",
@@ -246,7 +459,11 @@
       "documentId": "writing-model-api-guide",
       "path": "docs/系统说明/写作模型API配置与用户操作指南.md",
       "type": "system-spec",
-      "authorityFor": ["writing-model-credential-onboarding", "writing-model-endpoint-setup", "writing-model-live-preflight"],
+      "authorityFor": [
+        "writing-model-credential-onboarding",
+        "writing-model-endpoint-setup",
+        "writing-model-live-preflight"
+      ],
       "consumers": [
         ".agents/skills/liluo-project/liluo-formal-prose-pipeline/SKILL.md",
         "docs/技能说明/liluo-formal-prose-pipeline.md",
@@ -258,33 +475,16 @@
       "status": "active"
     },
     {
-      "documentId": "style-rag-metadata-system",
-      "path": "docs/系统说明/Style-RAG元数据检索与文风包系统.md",
-      "type": "system-spec",
-      "authorityFor": ["style-rag-v0-v1", "style-pack", "canon-style-separation", "style-query"],
-      "consumers": [
-        "AGENTS.md",
-        ".agents/skills/liluo-project/liluo-style-rag/SKILL.md",
-        "docs/技能说明/liluo-style-rag.md",
-        "project-navigation/style-rag-policy.json",
-        "scripts/writing-model/writing-model.mjs",
-        "docs/用户命令目录.md",
-        ".agents/skills/writing/liluo-natural-expression/SKILL.md",
-        "docs/系统说明/Style-RAG用户操作指南.md"
-      ],
-      "indexable": true,
-      "userFacing": true,
-      "status": "active"
-    },
-    {
       "documentId": "external-article-review-system",
       "path": "docs/系统说明/外部文章清单与用户评权系统.md",
       "type": "system-spec",
-      "authorityFor": ["external-article-inventory", "external-author-prior", "user-article-scoring"],
+      "authorityFor": [
+        "external-article-inventory",
+        "external-author-prior",
+        "user-article-scoring"
+      ],
       "consumers": [
-        ".agents/skills/liluo-project/liluo-style-rag/SKILL.md",
         "project-navigation/external-style-sources.json",
-        "docs/写作资产/外部风格研究/article-registry.json",
         ".agents/skills/writing/liluo-natural-expression/SKILL.md",
         "docs/用户命令目录.md"
       ],
@@ -296,7 +496,11 @@
       "documentId": "rag-audit-calibration-system",
       "path": "docs/系统说明/知识检索抽查校准系统.md",
       "type": "system-spec",
-      "authorityFor": ["rag-audit-calibration", "style-rag-audit", "affected-index-rebuild-gate"],
+      "authorityFor": [
+        "rag-audit-calibration",
+        "style-rag-audit",
+        "affected-index-rebuild-gate"
+      ],
       "consumers": [
         "AGENTS.md",
         "docs/技能说明/知识检索抽查校准.md",
@@ -304,8 +508,7 @@
         "scripts/rag-audit/rag-audit.mjs",
         "docs/用户命令目录.md",
         ".agents/skills/writing/liluo-natural-expression/SKILL.md",
-        ".agents/skills/liluo-project/liluo-external-fiction-knowledge/SKILL.md",
-        ".agents/skills/liluo-project/liluo-style-rag/SKILL.md"
+        ".agents/skills/liluo-project/liluo-external-fiction-knowledge/SKILL.md"
       ],
       "indexable": true,
       "userFacing": true,
@@ -315,15 +518,18 @@
       "documentId": "outline-relation-graph-system",
       "path": "docs/系统说明/大纲关联图谱系统.md",
       "type": "system-spec",
-      "authorityFor": ["outline-relation-graph", "outline-graph-projection", "graph-audit-discovery"],
+      "authorityFor": [
+        "outline-relation-graph",
+        "outline-graph-projection",
+        "graph-audit-discovery"
+      ],
       "consumers": [
         "AGENTS.md",
         "src/game/views/components/base/RelationGraphPanel.vue",
         "src/game/data/outline_relation_graph/",
         "scripts/outline-graph/outline-graph.mjs",
         "docs/用户命令目录.md",
-        "docs/系统说明/知识检索抽查校准系统.md",
-        "docs/系统说明/Style-RAG元数据检索与文风包系统.md"
+        "docs/系统说明/知识检索抽查校准系统.md"
       ],
       "indexable": true,
       "userFacing": true,
@@ -333,7 +539,10 @@
       "documentId": "story-plot-rag-layer-governance-system",
       "path": "docs/系统说明/故事情节RAG边界治理系统.md",
       "type": "system-spec",
-      "authorityFor": ["story-plot-rag-layer-boundary", "plot-to-rag-migration-gate"],
+      "authorityFor": [
+        "story-plot-rag-layer-boundary",
+        "plot-to-rag-migration-gate"
+      ],
       "consumers": [
         "AGENTS.md",
         "docs/系统说明/情节条目系统.md",
@@ -347,8 +556,27 @@
       "documentId": "command-approval-governance-system",
       "path": "docs/系统说明/Codex命令授权治理系统.md",
       "type": "system-spec",
-      "authorityFor": ["command-approval-scope", "project-exec-rules", "approval-decision-lifecycle", "tui-rule-normalization", "fixed-verification-profiles"],
-      "consumers": ["AGENTS.md", ".codex/config.toml", ".codex/rules/routine-development.rules", ".codex/approval-decisions.json", ".agents/skills/liluo-project/liluo-command-approval-governance/SKILL.md", ".agents/skills/code-review-and-quality/SKILL.md", "scripts/command-approval/command-approval.mjs", "scripts/project-routine.mjs", "scripts/init-project-skill.mjs", "package.json", "docs/运行规范/Codex命令批准分级表.md", "docs/用户命令目录.md"],
+      "authorityFor": [
+        "command-approval-scope",
+        "project-exec-rules",
+        "approval-decision-lifecycle",
+        "tui-rule-normalization",
+        "fixed-verification-profiles"
+      ],
+      "consumers": [
+        "AGENTS.md",
+        ".codex/config.toml",
+        ".codex/rules/routine-development.rules",
+        ".codex/approval-decisions.json",
+        ".agents/skills/liluo-project/liluo-command-approval-governance/SKILL.md",
+        ".agents/skills/code-review-and-quality/SKILL.md",
+        "scripts/command-approval/command-approval.mjs",
+        "scripts/project-routine.mjs",
+        "scripts/init-project-skill.mjs",
+        "package.json",
+        "docs/运行规范/Codex命令批准分级表.md",
+        "docs/用户命令目录.md"
+      ],
       "indexable": true,
       "userFacing": true,
       "status": "active"
@@ -357,8 +585,17 @@
       "documentId": "windows-utf8-command-system",
       "path": "docs/系统说明/Windows命令与UTF-8编码规范.md",
       "type": "system-spec",
-      "authorityFor": ["windows-utf8-file-reading", "windows-command-encoding-recovery", "git-chinese-path-output", "git-metadata-write-routing"],
-      "consumers": ["AGENTS.md", "docs/系统说明/README.md", "docs/用户命令目录.md"],
+      "authorityFor": [
+        "windows-utf8-file-reading",
+        "windows-command-encoding-recovery",
+        "git-chinese-path-output",
+        "git-metadata-write-routing"
+      ],
+      "consumers": [
+        "AGENTS.md",
+        "docs/系统说明/README.md",
+        "docs/用户命令目录.md"
+      ],
       "indexable": true,
       "userFacing": true,
       "status": "active"
@@ -367,8 +604,16 @@
       "documentId": "story-to-playable-system",
       "path": "docs/系统说明/故事大纲到可玩内容转化系统.md",
       "type": "system-spec",
-      "authorityFor": ["story-to-playable-workflow", "playable-content-contract"],
-      "consumers": ["AGENTS.md", ".agents/skills/liluo-project/liluo-story-to-playable-content/SKILL.md", "scripts/content-production/content-production.mjs", "docs/用户命令目录.md"],
+      "authorityFor": [
+        "story-to-playable-workflow",
+        "playable-content-contract"
+      ],
+      "consumers": [
+        "AGENTS.md",
+        ".agents/skills/liluo-project/liluo-story-to-playable-content/SKILL.md",
+        "scripts/content-production/content-production.mjs",
+        "docs/用户命令目录.md"
+      ],
       "indexable": true,
       "userFacing": true,
       "status": "active"
@@ -377,8 +622,14 @@
       "documentId": "narrative-route-validation-system",
       "path": "docs/系统说明/叙事路线模拟与逻辑验证系统.md",
       "type": "system-spec",
-      "authorityFor": ["narrative-route-validation"],
-      "consumers": [".agents/skills/testing/liluo-narrative-route-validation/SKILL.md", "scripts/content-production/route-validation.mjs", "docs/用户命令目录.md"],
+      "authorityFor": [
+        "narrative-route-validation"
+      ],
+      "consumers": [
+        ".agents/skills/testing/liluo-narrative-route-validation/SKILL.md",
+        "scripts/content-production/route-validation.mjs",
+        "docs/用户命令目录.md"
+      ],
       "indexable": true,
       "status": "active"
     },
@@ -386,8 +637,15 @@
       "documentId": "character-relationship-memory-system",
       "path": "docs/系统说明/角色成长与关系长期记忆系统.md",
       "type": "system-spec",
-      "authorityFor": ["character-arc-memory", "relationship-memory"],
-      "consumers": [".agents/skills/liluo-project/liluo-character-arc-and-relationship-memory/SKILL.md", "src/game/data/story_outline/long-term-memory.json", "docs/用户命令目录.md"],
+      "authorityFor": [
+        "character-arc-memory",
+        "relationship-memory"
+      ],
+      "consumers": [
+        ".agents/skills/liluo-project/liluo-character-arc-and-relationship-memory/SKILL.md",
+        "src/game/data/story_outline/long-term-memory.json",
+        "docs/用户命令目录.md"
+      ],
       "indexable": true,
       "status": "active"
     },
@@ -395,8 +653,16 @@
       "documentId": "formal-content-provenance-system",
       "path": "docs/系统说明/正式项目内容来源与版权写入门槛.md",
       "type": "system-spec",
-      "authorityFor": ["formal-content-source-gate"],
-      "consumers": ["AGENTS.md", "scripts/content-production/provenance.mjs", ".codex/agents/liluo_content_auditor.toml", ".agents/skills/liluo-project/liluo-story-outline-authoring/SKILL.md", ".agents/skills/liluo-project/liluo-dialogue-event-authoring/SKILL.md"],
+      "authorityFor": [
+        "formal-content-source-gate"
+      ],
+      "consumers": [
+        "AGENTS.md",
+        "scripts/content-production/provenance.mjs",
+        ".codex/agents/liluo_content_auditor.toml",
+        ".agents/skills/liluo-project/liluo-story-outline-authoring/SKILL.md",
+        ".agents/skills/liluo-project/liluo-dialogue-event-authoring/SKILL.md"
+      ],
       "indexable": true,
       "status": "active"
     },
@@ -404,8 +670,14 @@
       "documentId": "production-coverage-system",
       "path": "docs/系统说明/世界与系列生产覆盖统计系统.md",
       "type": "system-spec",
-      "authorityFor": ["world-series-production-coverage"],
-      "consumers": [".agents/skills/liluo-project/liluo-production-coverage/SKILL.md", "scripts/content-production/production-coverage.mjs", "docs/用户命令目录.md"],
+      "authorityFor": [
+        "world-series-production-coverage"
+      ],
+      "consumers": [
+        ".agents/skills/liluo-project/liluo-production-coverage/SKILL.md",
+        "scripts/content-production/production-coverage.mjs",
+        "docs/用户命令目录.md"
+      ],
       "indexable": true,
       "userFacing": true,
       "status": "active"
@@ -414,8 +686,17 @@
       "documentId": "capability-regression-system",
       "path": "docs/系统说明/Skill与Agent能力回归评测系统.md",
       "type": "system-spec",
-      "authorityFor": ["skill-agent-capability-regression"],
-      "consumers": ["evals/README.md", "evals/registry.json", ".agents/skills/testing/liluo-capability-regression/SKILL.md", "docs/技能说明/liluo-capability-regression.md", "docs/用户命令目录.md", "scripts/project-routine.mjs"],
+      "authorityFor": [
+        "skill-agent-capability-regression"
+      ],
+      "consumers": [
+        "evals/README.md",
+        "evals/registry.json",
+        ".agents/skills/testing/liluo-capability-regression/SKILL.md",
+        "docs/技能说明/liluo-capability-regression.md",
+        "docs/用户命令目录.md",
+        "scripts/project-routine.mjs"
+      ],
       "indexable": true,
       "userFacing": true,
       "status": "active"
@@ -424,8 +705,26 @@
       "documentId": "automatic-quality-gate-system",
       "path": "docs/系统说明/Codex-Hooks与自动质量门禁系统.md",
       "type": "system-spec",
-      "authorityFor": ["codex-hooks", "changed-quality-gate", "git-pre-push-gate", "github-actions-quality-gate"],
-      "consumers": [".codex/hooks.json", ".codex/hooks/", ".githooks/pre-push", ".github/workflows/quality-gate.yml", ".vscode/settings.json", "scripts/quality-gate/", ".gitignore", "package.json", "README.md", "docs/README.md", "docs/系统说明/README.md", "docs/用户命令目录.md"],
+      "authorityFor": [
+        "codex-hooks",
+        "changed-quality-gate",
+        "git-pre-push-gate",
+        "github-actions-quality-gate"
+      ],
+      "consumers": [
+        ".codex/hooks.json",
+        ".codex/hooks/",
+        ".githooks/pre-push",
+        ".github/workflows/quality-gate.yml",
+        ".vscode/settings.json",
+        "scripts/quality-gate/",
+        ".gitignore",
+        "package.json",
+        "README.md",
+        "docs/README.md",
+        "docs/系统说明/README.md",
+        "docs/用户命令目录.md"
+      ],
       "indexable": true,
       "userFacing": true,
       "status": "active"
@@ -434,7 +733,11 @@
       "documentId": "executable-workflow-system",
       "path": "docs/系统说明/机器可读工作流与可视化执行规范系统.md",
       "type": "system-spec",
-      "authorityFor": ["executable-workflows", "workflow-run-records", "workflow-resource-gates"],
+      "authorityFor": [
+        "executable-workflows",
+        "workflow-run-records",
+        "workflow-resource-gates"
+      ],
       "decision": "docs/设计记忆/架构决策/ADR-011-成熟复杂任务采用机器可读工作流门禁.md",
       "consumers": [
         "AGENTS.md",

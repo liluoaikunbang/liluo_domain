@@ -1,6 +1,19 @@
 <template>
   <section class="relation-graph-panel" aria-label="关联图谱">
     <header class="rg-toolbar">
+      <div v-if="ragNetwork" class="rg-mode-controls" aria-label="RAG 网络范围">
+        <button
+          v-for="option in ragNetworkScopeOptions"
+          :key="option.key"
+          class="rg-tool-button"
+          :class="{ 'rg-tool-button-active': ragNetworkScope === option.key }"
+          type="button"
+          :aria-pressed="ragNetworkScope === option.key"
+          @click="ragNetworkScope = option.key"
+        >
+          {{ option.label }}
+        </button>
+      </div>
       <div class="rg-mode-controls" aria-label="图谱模式">
         <button
           v-for="option in modeOptions"
@@ -15,7 +28,7 @@
         </button>
       </div>
 
-      <div class="rg-layout-controls" aria-label="布局预设">
+      <div v-if="!ragNetwork" class="rg-layout-controls" aria-label="图谱视图">
         <button
           v-for="option in layoutOptions"
           :key="option.key"
@@ -23,7 +36,7 @@
           :class="{ 'rg-tool-button-active': layoutPreset === option.key }"
           type="button"
           :aria-pressed="layoutPreset === option.key"
-          @click="layoutPreset = option.key"
+          @click="setGraphView(option.key)"
         >
           {{ option.label }}
         </button>
@@ -185,15 +198,6 @@
                   <span class="rg-swatch" :style="{ background: nodeColor(type) }" />
                   {{ nodeTypeLabel(type) }}
                 </button>
-                <button
-                  type="button"
-                  class="rg-legend-item"
-                  :class="{ 'rg-legend-item-off': !showStyleEvidence }"
-                  @click="showStyleEvidence = !showStyleEvidence"
-                >
-                  <span class="rg-swatch" :style="{ background: nodeColor('style_rag') }" />
-                  {{ showStyleEvidence ? '文章证据：显示' : '文章证据：隐藏' }}
-                </button>
                 <div class="rg-legend-item">
                   <span class="rg-swatch" :style="{ background: GRAPH_CONTENT_GAP_COLOR }" />
                   内容缺口
@@ -339,8 +343,6 @@
                   <dd>{{ selectedNode.origin === 'derived-field' || selectedNode.origin?.includes('auto') ? '派生/自动' : selectedNode.origin }}</dd>
                   <dt>缺口标记</dt>
                   <dd>{{ (selectedNode.gapFlags || selectedNode.meta?.gapFlags || []).join?.('、') || (selectedNode.meta?.gapFlags || []).join('、') || '（无）' }}</dd>
-                  <dt>Style 角色</dt>
-                  <dd>{{ styleRoleLabel(selectedNode) }}</dd>
                   <dt>最近更新</dt>
                   <dd>{{ selectedNode.updatedAt || '（无）' }}</dd>
                 </template>
@@ -406,10 +408,9 @@
                 <p v-if="(ragExpressionMeta.prohibitedMisreadings || []).length"><strong>禁止误读：</strong>{{ ragExpressionMeta.prohibitedMisreadings.join('；') }}</p>
                 <p v-if="(ragExpressionMeta.goldExampleRefs || []).length"><strong>黄金范例：</strong>{{ ragExpressionMeta.goldExampleRefs.join('、') }}</p>
                 <p v-if="(ragExpressionMeta.calibrationPairRefs || []).length"><strong>校准对：</strong>{{ ragExpressionMeta.calibrationPairRefs.join('、') }}</p>
-                <p v-if="(ragExpressionMeta.relatedStyleRagRefs || []).length"><strong>相关通用 Style-RAG：</strong>{{ ragExpressionMeta.relatedStyleRagRefs.join('、') }}</p>
               </template>
               <p v-else class="rg-muted">
-                表达骨架为空（与「知识」不是同一段定义）。写作时可临时回退通用 Style-RAG，并标记缺口；勿把知识定义复制到这里充数。
+                表达骨架为空（与「知识」不是同一段定义）。等待用户确认后再补充；勿把知识定义复制到这里充数。
               </p>
             </section>
 
@@ -497,8 +498,11 @@ import {
   createOutlineRelationGraphExportPayload,
   expandLegendNodeType,
   filterOutlineRelationGraph,
+  filterRagNetworkGraph,
   focusOutlineRelationGraph,
+  layoutRagHierarchyGraph,
   getNeighborIds,
+  layoutRagNetworkGraph,
   layoutOutlineRelationGraph,
   findEdgesBetween,
   searchOutlineRelationGraph
@@ -513,8 +517,13 @@ const MIN_ZOOM = 0.35;
 const MAX_ZOOM = 2.2;
 const ZOOM_STEP = 0.1;
 
+const props = defineProps({
+  ragNetwork: { type: Boolean, default: false }
+});
+
 const mode = ref('overview');
-const layoutPreset = ref('structure');
+const layoutPreset = ref(props.ragNetwork ? 'rag-network' : 'structure');
+const ragNetworkScope = ref('rag-only');
 const focusDepth = ref(1);
 const searchQuery = ref('');
 const filterNodeType = ref('');
@@ -527,7 +536,6 @@ const highlightPair = ref(null);
 const hiddenNodeTypes = ref(new Set());
 const hiddenRelationTypes = ref(new Set());
 const onlyRelationType = ref('');
-const showStyleEvidence = ref(false);
 const ragDetailTab = ref('meta');
 const legendVisible = ref(true);
 const historyStack = ref([]);
@@ -542,8 +550,19 @@ const pointerState = ref(null);
 
 const graph = ref(getOutlineRelationGraph());
 
-const modeOptions = GRAPH_MODES.map((key) => ({ key, label: GRAPH_MODE_LABELS[key] }));
-const layoutOptions = Object.entries(GRAPH_LAYOUT_PRESET_LABELS).map(([key, label]) => ({ key, label }));
+const modeOptions = computed(() =>
+  GRAPH_MODES
+    .filter((key) => props.ragNetwork || key !== 'hierarchy')
+    .map((key) => ({ key, label: GRAPH_MODE_LABELS[key] }))
+);
+const layoutOptions = Object.entries(GRAPH_LAYOUT_PRESET_LABELS)
+  .filter(([key]) => key === 'structure')
+  .map(([key, label]) => ({ key, label }));
+const ragNetworkScopeOptions = [
+  { key: 'rag-only', label: '仅 RAG 条目' },
+  { key: 'rag-evidence', label: '含证据与来源' },
+  { key: 'with-context', label: '纳入关联节点' }
+];
 const filterPresets = GRAPH_FILTER_PRESETS;
 const legendNodeTypeOptions = GRAPH_LEGEND_NODE_TYPES;
 const relationTypeOptions = GRAPH_RELATION_TYPES;
@@ -557,29 +576,36 @@ const stats = computed(() => graph.value.stats || {});
 const searchResults = computed(() => searchOutlineRelationGraph(graph.value, searchQuery.value, 12));
 
 const activeFilters = computed(() => {
+  const isRagNetworkView = layoutPreset.value === 'rag-network';
   const filters = {
     hiddenNodeTypes: [...hiddenNodeTypes.value],
     hiddenRelationTypes: [...hiddenRelationTypes.value],
     onlyRelationTypes: onlyRelationType.value ? [onlyRelationType.value] : null,
-    includeStyleEvidence: showStyleEvidence.value,
+    includeRagEvidence: isRagNetworkView,
     allowFocusedEvidence: mode.value === 'focus'
   };
-  if (mode.value === 'filter') {
+  if (isRagNetworkView) {
+    Object.assign(filters, applyFilterPreset('rag-network'));
+  } else if (mode.value === 'filter') {
     if (filterNodeType.value) filters.nodeTypes = expandLegendNodeType(filterNodeType.value);
     if (filterRelationType.value) filters.relationTypes = [filterRelationType.value];
     if (filterAuditStatus.value) filters.auditStatuses = [filterAuditStatus.value];
     if (filterPresetId.value) {
       const presetFilters = applyFilterPreset(filterPresetId.value);
       Object.assign(filters, presetFilters);
-      if (!Object.prototype.hasOwnProperty.call(presetFilters, 'includeStyleEvidence')) {
-        filters.includeStyleEvidence = showStyleEvidence.value;
-      }
     }
   }
   return filters;
 });
 
 const visibleGraph = computed(() => {
+  if (props.ragNetwork) {
+    let working = filterRagNetworkGraph(graph.value, ragNetworkScope.value);
+    if (mode.value === 'focus' && selectedNodeId.value) {
+      working = focusOutlineRelationGraph(working, selectedNodeId.value, focusDepth.value);
+    }
+    return working;
+  }
   let working = {
     nodes: graph.value.nodes,
     edges: graph.value.edges
@@ -595,16 +621,20 @@ const visibleGraph = computed(() => {
   );
 });
 
-const layout = computed(() =>
-  layoutOutlineRelationGraph(
-    { ...graph.value, nodes: visibleGraph.value.nodes, edges: visibleGraph.value.edges },
-    {
-      preset: layoutPreset.value,
-      mode: mode.value === 'overview' ? 'overview' : 'focus',
-      seed: graph.value.layoutSeed
-    }
-  )
-);
+const layout = computed(() => {
+  const projected = { ...graph.value, nodes: visibleGraph.value.nodes, edges: visibleGraph.value.edges };
+  if (props.ragNetwork && mode.value === 'hierarchy') {
+    return layoutRagHierarchyGraph(projected, { seed: graph.value.layoutSeed });
+  }
+  if (layoutPreset.value === 'rag-network') {
+    return layoutRagNetworkGraph(projected, { seed: graph.value.layoutSeed });
+  }
+  return layoutOutlineRelationGraph(projected, {
+    preset: 'structure',
+    mode: mode.value === 'overview' ? 'overview' : 'focus',
+    seed: graph.value.layoutSeed
+  });
+});
 
 const canvasSpacerStyle = computed(() => ({
   width: `${layout.value.canvasWidth * zoom.value}px`,
@@ -654,8 +684,7 @@ const expressionHasContent = computed(() => {
       (e.commonFailures || []).length ||
       (e.prohibitedMisreadings || []).length ||
       (e.goldExampleRefs || []).length ||
-      (e.calibrationPairRefs || []).length ||
-      (e.relatedStyleRagRefs || []).length
+      (e.calibrationPairRefs || []).length
   );
 });
 
@@ -708,8 +737,6 @@ const legendRelationTypes = computed(() => {
 const summaryCards = computed(() => [
   { label: '节点总数', value: stats.value.nodeCount ?? 0 },
   { label: '关系总数', value: stats.value.edgeCount ?? 0 },
-  { label: '写法名词', value: stats.value.styleTechniqueCount ?? 0 },
-  { label: '文章证据', value: stats.value.styleEvidenceCount ?? 0 },
   { label: 'RAG 骨架卡', value: stats.value.ragStubCount ?? 0 },
   { label: '缺少证据 RAG', value: stats.value.ragMissingEvidenceCount ?? 0 },
   { label: '孤立节点', value: stats.value.orphanCount ?? 0 },
@@ -720,7 +747,6 @@ const summaryCards = computed(() => [
   { label: '有分层种子但无 RAG', value: stats.value.conceptWithoutRag ?? 0 },
   { label: 'RAG 上位类别', value: stats.value.conceptCategoryCount ?? 0 },
   { label: 'RAG 具体概念', value: stats.value.conceptDetailCount ?? 0 },
-  { label: '有情节但无 Style-RAG', value: stats.value.plotWithoutStyle ?? 0 },
   { label: '高频未确认', value: stats.value.highUseUnconfirmed ?? 0 }
 ]);
 
@@ -817,6 +843,19 @@ function setMode(next) {
   mode.value = next;
 }
 
+function setGraphView(next) {
+  layoutPreset.value = next;
+  if (next !== 'rag-network') return;
+
+  // This is a dedicated projection, so it starts from the complete RAG network
+  // instead of inheriting an unrelated filter selection.
+  mode.value = 'overview';
+  filterNodeType.value = '';
+  filterRelationType.value = '';
+  filterAuditStatus.value = '';
+  filterPresetId.value = '';
+}
+
 function rebuildGraph() {
   invalidateOutlineRelationGraphCache();
   graph.value = getOutlineRelationGraph({ forceRebuild: true });
@@ -832,20 +871,12 @@ function exportGraphJson() {
 }
 
 function applySelectedPreset() {
-  // computed activeFilters reads filterPresetId
+  // A manual quick filter leaves the dedicated RAG-network projection.
+  if (filterPresetId.value) layoutPreset.value = 'structure';
 }
 
 function nodeTypeLabel(type) {
   return GRAPH_NODE_TYPE_LABELS[type] || type;
-}
-
-function styleRoleLabel(node) {
-  const role = node?.meta?.role;
-  if (role === 'evidence') return '文章证据';
-  if (role === 'technique') return '写法名词';
-  if (role === 'technique_dimension') return '写法维度';
-  if (node?.type === 'style_rag') return 'Style-RAG';
-  return '—';
 }
 
 function ragLayerDetailLabel(node) {
@@ -883,7 +914,6 @@ function hierarchyParentLabel(node) {
 }
 
 function relatedNodeTypeLabel(node) {
-  if (node?.type === 'style_rag') return styleRoleLabel(node);
   if (node?.type === 'rag') return ragLayerDetailLabel(node) !== '—' ? `紧缚专业 RAG · ${ragLayerDetailLabel(node)}` : nodeTypeLabel(node?.type);
   if ((node?.type === 'world' || node?.type === 'story') && hierarchyDetailLabel(node) !== '—') {
     return `故事 · ${hierarchyDetailLabel(node)}`;
@@ -895,7 +925,6 @@ function detailTypeLabel(nodeOrType) {
   const node = typeof nodeOrType === 'string' ? { type: nodeOrType } : nodeOrType;
   if (!node) return '';
   if (node.type === 'series') return '系列';
-  if (node.type === 'style_rag') return styleRoleLabel(node);
   if (node.type === 'rag') {
     const layer = ragLayerDetailLabel(node);
     const overall = node.meta?.overallStatusLabel ? ` · ${node.meta.overallStatusLabel}` : '';
@@ -1099,9 +1128,6 @@ function jumpToNode(nodeId, options = {}) {
   // Only switch mode when explicitly requested (e.g. detail "聚焦模式" or summary shortcut).
   if (options.switchMode) mode.value = options.switchMode;
 
-  if (node.type === 'style_rag' && node.meta?.role === 'evidence') {
-    showStyleEvidence.value = true;
-  }
   if (node.type === 'rag') {
     ragDetailTab.value = 'meta';
   }

@@ -1,0 +1,4 @@
+interface:
+  display_name: "RAG 来源逐段访谈"
+  short_description: "逐段展示原文并由用户确认 RAG 关系"
+  default_prompt: "Use $liluo-rag-source-interview to present one source segment and record only the user's confirmed RAG decision."

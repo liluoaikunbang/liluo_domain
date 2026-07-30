@@ -36,6 +36,10 @@
     <RelationGraphPanel
       v-else-if="activeSection === 'relation-graph'"
     />
+    <RelationGraphPanel
+      v-else-if="activeSection === 'rag-network'"
+      rag-network
+    />
   </section>
 </template>
 
@@ -62,7 +66,8 @@ const sections = [
   { key: 'plot', label: '情节' },
   { key: 'gameplay', label: '玩法' },
   { key: 'character', label: '人物/组织' },
-  { key: 'relation-graph', label: '关联图谱' }
+  { key: 'relation-graph', label: '关联图谱' },
+  { key: 'rag-network', label: 'RAG 网络' }
 ];
 const activeSection = ref('story');
 const selectedGameplayId = ref('');

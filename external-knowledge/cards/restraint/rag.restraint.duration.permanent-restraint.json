@@ -6,18 +6,10 @@
   "aliases": [],
   "summary": "受限状态跨越日常起居和长期时间跨度，人物需要面对持续依赖与生活结构变化。",
   "definition": "不是一次场景中的短暂固定，而是被故事明确设定为长期、无明确解除期或近似永久的拘束状态。",
-  "sourceRefs": [
-    {
-      "sourceId": "fb-src-000213",
-      "segmentId": "fb-src-000213-seg-00016",
-      "sourcePath": "external-knowledge/sources/fiction-bondage/作者,金主大大/P站？？？/精神病院的阴谋.md",
-      "startLine": 644,
-      "endLine": 703
-    }
-  ],
-  "evidenceStatus": "partial",
-  "contentStatus": "complete",
-  "reviewStatus": "candidate",
+  "sourceRefs": [],
+  "evidenceStatus": "missing",
+  "contentStatus": "stub",
+  "reviewStatus": "pending",
   "directQuoteIncluded": false,
   "canonical": false,
   "knowledgeScope": "external-fiction-reference",
@@ -40,9 +32,7 @@
   },
   "ragLayer": "category",
   "parentCardIds": [],
-  "evidenceRefs": [
-    "ev-fbsrc000213-6ae450bf9170edd2"
-  ],
+  "evidenceRefs": [],
   "sourceRecordIds": [
     "fb-src-000213"
   ],
@@ -65,7 +55,7 @@
     "searchable": true,
     "relationAnchor": true,
     "contentRetrievable": false,
-    "evidenceRetrievable": true,
+    "evidenceRetrievable": false,
     "knowledgeRetrievable": false,
     "expressionRetrievable": false
   },
@@ -88,27 +78,12 @@
       "rag.restraint.tool.leg-irons",
       "rag.restraint.tool.chain"
     ],
-    "factualClaims": [
-      {
-        "id": "rag.restraint.duration.permanent-restraint::claim:definition:0",
-        "label": "定义",
-        "content": "不是一次场景中的短暂固定，而是被故事明确设定为长期、无明确解除期或近似永久的拘束状态。",
-        "claimType": "definition",
-        "evidenceRefs": [
-          "ev-fbsrc000213-6ae450bf9170edd2"
-        ],
-        "supportStatus": "pending",
-        "reviewStatus": "pending",
-        "origin": "external-summary"
-      }
-    ],
-    "evidenceRefs": [
-      "ev-fbsrc000213-6ae450bf9170edd2"
-    ],
+    "factualClaims": [],
+    "evidenceRefs": [],
     "projectInterpretation": "",
     "commonMisreadings": [],
-    "status": "usable",
-    "evidenceStatus": "partial",
+    "status": "stub",
+    "evidenceStatus": "missing",
     "reviewStatus": "pending"
   },
   "expression": {
@@ -133,13 +108,6 @@
     "evidenceStatus": "missing",
     "reviewStatus": "pending"
   },
-  "overallStatus": "knowledge-only",
-  "evidenceBindings": [
-    {
-      "evidenceId": "ev-fbsrc000213-6ae450bf9170edd2",
-      "purpose": "knowledge-evidence",
-      "branch": "knowledge",
-      "supportStatus": "pending"
-    }
-  ]
+  "overallStatus": "stub",
+  "evidenceBindings": []
 }

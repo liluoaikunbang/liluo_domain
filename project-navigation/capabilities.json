@@ -310,6 +310,50 @@
       ]
     },
     {
+      "id": "command-external-knowledge-evidence-migrate",
+      "kind": "command",
+      "title": "npm run external:knowledge:evidence:migrate",
+      "domain": "external",
+      "status": "available",
+      "summary": "node scripts/external-knowledge/migrate-rag-evidence.mjs",
+      "sourceRefs": [
+        "package.json"
+      ]
+    },
+    {
+      "id": "command-external-knowledge-evidence-propose",
+      "kind": "command",
+      "title": "npm run external:knowledge:evidence:propose",
+      "domain": "external",
+      "status": "available",
+      "summary": "node scripts/external-knowledge/propose-rag-evidence.mjs",
+      "sourceRefs": [
+        "package.json"
+      ]
+    },
+    {
+      "id": "command-external-knowledge-evidence-review",
+      "kind": "command",
+      "title": "npm run external:knowledge:evidence:review",
+      "domain": "external",
+      "status": "available",
+      "summary": "node scripts/external-knowledge/review-evidence.mjs",
+      "sourceRefs": [
+        "package.json"
+      ]
+    },
+    {
+      "id": "command-external-knowledge-evidence-validate",
+      "kind": "command",
+      "title": "npm run external:knowledge:evidence:validate",
+      "domain": "external",
+      "status": "available",
+      "summary": "node scripts/external-knowledge/validate-evidence.mjs",
+      "sourceRefs": [
+        "package.json"
+      ]
+    },
+    {
       "id": "command-external-knowledge-query",
       "kind": "command",
       "title": "npm run external:knowledge:query",
@@ -327,6 +371,17 @@
       "domain": "external",
       "status": "available",
       "summary": "node scripts/external-knowledge/sync-external-knowledge.mjs",
+      "sourceRefs": [
+        "package.json"
+      ]
+    },
+    {
+      "id": "command-external-knowledge-test",
+      "kind": "command",
+      "title": "npm run external:knowledge:test",
+      "domain": "external",
+      "status": "available",
+      "summary": "node --test scripts/tests/external-knowledge.test.mjs scripts/tests/rag-evidence-layer.test.mjs",
       "sourceRefs": [
         "package.json"
       ]
@@ -1091,61 +1146,6 @@
       ]
     },
     {
-      "id": "command-writing-external-authors",
-      "kind": "command",
-      "title": "npm run writing:external:authors",
-      "domain": "writing",
-      "status": "available",
-      "summary": "node scripts/writing-model/writing-model.mjs external-authors",
-      "sourceRefs": [
-        "package.json"
-      ]
-    },
-    {
-      "id": "command-writing-external-inventory",
-      "kind": "command",
-      "title": "npm run writing:external:inventory",
-      "domain": "writing",
-      "status": "available",
-      "summary": "node scripts/writing-model/writing-model.mjs external-inventory",
-      "sourceRefs": [
-        "package.json"
-      ]
-    },
-    {
-      "id": "command-writing-external-review-export",
-      "kind": "command",
-      "title": "npm run writing:external:review:export",
-      "domain": "writing",
-      "status": "available",
-      "summary": "node scripts/writing-model/writing-model.mjs external-review-export",
-      "sourceRefs": [
-        "package.json"
-      ]
-    },
-    {
-      "id": "command-writing-external-review-import",
-      "kind": "command",
-      "title": "npm run writing:external:review:import",
-      "domain": "writing",
-      "status": "available",
-      "summary": "node scripts/writing-model/writing-model.mjs external-review-import",
-      "sourceRefs": [
-        "package.json"
-      ]
-    },
-    {
-      "id": "command-writing-external-validate",
-      "kind": "command",
-      "title": "npm run writing:external:validate",
-      "domain": "writing",
-      "status": "available",
-      "summary": "node scripts/writing-model/writing-model.mjs external-validate",
-      "sourceRefs": [
-        "package.json"
-      ]
-    },
-    {
       "id": "command-writing-gaps-remind",
       "kind": "command",
       "title": "npm run writing:gaps:remind",
@@ -1240,105 +1240,6 @@
       "domain": "writing",
       "status": "available",
       "summary": "node scripts/writing-model/writing-model.mjs draft",
-      "sourceRefs": [
-        "package.json"
-      ]
-    },
-    {
-      "id": "command-writing-style-explain",
-      "kind": "command",
-      "title": "npm run writing:style:explain",
-      "domain": "writing",
-      "status": "available",
-      "summary": "node scripts/writing-model/writing-model.mjs style-explain",
-      "sourceRefs": [
-        "package.json"
-      ]
-    },
-    {
-      "id": "command-writing-style-feedback",
-      "kind": "command",
-      "title": "npm run writing:style:feedback",
-      "domain": "writing",
-      "status": "available",
-      "summary": "node scripts/writing-model/writing-model.mjs style-feedback",
-      "sourceRefs": [
-        "package.json"
-      ]
-    },
-    {
-      "id": "command-writing-style-pack",
-      "kind": "command",
-      "title": "npm run writing:style:pack",
-      "domain": "writing",
-      "status": "available",
-      "summary": "node scripts/writing-model/writing-model.mjs style-pack",
-      "sourceRefs": [
-        "package.json"
-      ]
-    },
-    {
-      "id": "command-writing-style-query",
-      "kind": "command",
-      "title": "npm run writing:style:query",
-      "domain": "writing",
-      "status": "available",
-      "summary": "node scripts/writing-model/writing-model.mjs style-query",
-      "sourceRefs": [
-        "package.json"
-      ]
-    },
-    {
-      "id": "command-writing-style-search",
-      "kind": "command",
-      "title": "npm run writing:style:search",
-      "domain": "writing",
-      "status": "available",
-      "summary": "node scripts/writing-model/writing-model.mjs style-search",
-      "sourceRefs": [
-        "package.json"
-      ]
-    },
-    {
-      "id": "command-writing-style-sheet-approve",
-      "kind": "command",
-      "title": "npm run writing:style:sheet:approve",
-      "domain": "writing",
-      "status": "available",
-      "summary": "node scripts/writing-model/writing-model.mjs style-sheet-approve",
-      "sourceRefs": [
-        "package.json"
-      ]
-    },
-    {
-      "id": "command-writing-style-sheet-draft",
-      "kind": "command",
-      "title": "npm run writing:style:sheet:draft",
-      "domain": "writing",
-      "status": "available",
-      "summary": "node scripts/writing-model/writing-model.mjs style-sheet-draft",
-      "sourceRefs": [
-        "package.json"
-      ]
-    },
-    {
-      "id": "command-writing-style-test",
-      "kind": "command",
-      "title": "npm run writing:style:test",
-      "domain": "writing",
-      "status": "available",
-      "summary": "node --test scripts/tests/style-rag-metadata.test.mjs scripts/tests/external-style-inventory.test.mjs",
-      "sourceRefs": [
-        "package.json"
-      ]
-    },
-    {
-      "id": "command-writing-style-validate",
-      "kind": "command",
-      "title": "npm run writing:style:validate",
-      "domain": "writing",
-      "status": "available",
-      "summary": "node scripts/writing-model/writing-model.mjs style-validate",
       "sourceRefs": [
         "package.json"
       ]
@@ -1525,7 +1426,7 @@
       "title": "liluo-formal-prose-pipeline",
       "domain": "project",
       "status": "available",
-      "summary": "Run the 璃落 open-weight dual-model formal prose pipeline with writing contracts, mock/live OpenAI-compatible calls, workspace drafts, natural-expression checks, user approval, golden/calibration archival, and gap reminders. Use for 正式正文、双模型对照、写作模型 API、个人旧作导入、黄金正文归档、修改对照、模型校准或 pin；Style Pack / 外部评权走 liluo-style-rag；not for ordinary one-line polish (use liluo-natural-expression) or letting external models write canon.",
+      "summary": "Run the 璃落 open-weight dual-model formal prose pipeline with writing contracts, mock/live OpenAI-compatible calls, workspace drafts, natural-expression checks, user approval, golden/calibration archival, and gap reminders. Use for 正式正文、双模型对照、写作模型 API、个人旧作导入、黄金正文归档、修改对照、模型校准或 pin；not for ordinary one-line polish (use liluo-natural-expression) or letting external models write canon.",
       "sourceRefs": [
         ".agents\\skills\\liluo-project\\liluo-formal-prose-pipeline\\SKILL.md"
       ]
@@ -1685,6 +1586,39 @@
       ]
     },
     {
+      "id": "skill-liluo-rag-candidate-proposal",
+      "kind": "skill",
+      "title": "liluo-rag-candidate-proposal",
+      "domain": "project",
+      "status": "available",
+      "summary": "在任何璃落项目内容准备写入前，全面拆分本次增量中的可复用概念，提出紧缚专业、通用或正史 RAG 候选并由用户裁决；不自动确认或写入 RAG。",
+      "sourceRefs": [
+        ".agents\\skills\\liluo-project\\liluo-rag-candidate-proposal\\SKILL.md"
+      ]
+    },
+    {
+      "id": "skill-liluo-rag-source-association",
+      "kind": "skill",
+      "title": "liluo-rag-source-association",
+      "domain": "project",
+      "status": "available",
+      "summary": "用户显式要求时，为指定紧缚或通用 RAG 卡扫描外部文章候选、片段和关系，并以 dry-run 审包等待确认；不自动确认证据或图边。",
+      "sourceRefs": [
+        ".agents\\skills\\liluo-project\\liluo-rag-source-association\\SKILL.md"
+      ]
+    },
+    {
+      "id": "skill-liluo-rag-source-interview",
+      "kind": "skill",
+      "title": "liluo-rag-source-interview",
+      "domain": "project",
+      "status": "available",
+      "summary": "逐段展示外部小说原文，并由用户确认其 RAG 关键词、双分支归属或不入库处置；不自动确认来源关系。",
+      "sourceRefs": [
+        ".agents\\skills\\liluo-project\\liluo-rag-source-interview\\SKILL.md"
+      ]
+    },
+    {
       "id": "skill-liluo-save-data-migration",
       "kind": "skill",
       "title": "liluo-save-data-migration",
@@ -1751,17 +1685,6 @@
       ]
     },
     {
-      "id": "skill-liluo-style-rag",
-      "kind": "skill",
-      "title": "liluo-style-rag",
-      "domain": "project",
-      "status": "available",
-      "summary": "Run 璃落 Style-RAG V0/V1 metadata retrieval for formal prose—auto style selection, external article inventory, list titles/authors, score articles and author priors, restraint vs general domain matching, style pack assembly, calibration archive hooks, writing sheet lifecycle, retrieval explanation, and weight adjustment. Use for Style查询、文风包、外部文章评权、写作表、style feedback；not for general fiction inspiration RAG (use liluo-external-fiction-knowledge), embeddings, vector DB, V2–V4 learned retrieval, or writing canon.",
-      "sourceRefs": [
-        ".agents\\skills\\liluo-project\\liluo-style-rag\\SKILL.md"
-      ]
-    },
-    {
       "id": "skill-liluo-world-bible-continuity-audit",
       "kind": "skill",
       "title": "liluo-world-bible-continuity-audit",
@@ -1822,7 +1745,7 @@
       "title": "random-story-outline-interview",
       "domain": "general",
       "status": "available",
-      "summary": "Randomly select an incomplete 璃落 story-outline node, reconstruct confirmed JSON/Markdown context, and ask a focused interview. Use for 随机抽取、按世界访谈、继续随机提问；do not use for plot-first placement from the plot catalog, or for directly drafting or restructuring a specified node.",
+      "summary": "Randomly select an incomplete 璃落 story-outline node, reconstruct confirmed JSON/Markdown context, and ask a focused interview. Use for 随机提问、随机抽取、按世界访谈、继续随机提问；do not use for plot-first placement from the plot catalog, or for directly drafting or restructuring a specified node.",
       "sourceRefs": [
         ".agents\\skills\\liluo-project\\random-story-outline-interview\\SKILL.md"
       ]

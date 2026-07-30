@@ -135,31 +135,12 @@
     "writing:models:pin": "node scripts/writing-model/writing-model.mjs pin",
     "writing:gaps:remind": "node scripts/writing-model/writing-model.mjs remind-gaps",
     "writing:golden:sync": "node scripts/writing-model/writing-model.mjs sync-golden",
-    "writing:style:validate": "node scripts/writing-model/writing-model.mjs style-validate",
-    "writing:style:query": "node scripts/writing-model/writing-model.mjs style-query",
-    "writing:style:search": "node scripts/writing-model/writing-model.mjs style-search",
-    "writing:style:pack": "node scripts/writing-model/writing-model.mjs style-pack",
-    "writing:style:explain": "node scripts/writing-model/writing-model.mjs style-explain",
-    "writing:style:feedback": "node scripts/writing-model/writing-model.mjs style-feedback",
-    "writing:style:sheet:draft": "node scripts/writing-model/writing-model.mjs style-sheet-draft",
-    "writing:style:sheet:approve": "node scripts/writing-model/writing-model.mjs style-sheet-approve",
-    "writing:external:inventory": "node scripts/writing-model/writing-model.mjs external-inventory",
-    "writing:external:review:export": "node scripts/writing-model/writing-model.mjs external-review-export",
-    "writing:external:review:import": "node scripts/writing-model/writing-model.mjs external-review-import",
-    "writing:external:authors": "node scripts/writing-model/writing-model.mjs external-authors",
-    "writing:external:validate": "node scripts/writing-model/writing-model.mjs external-validate",
     "writing:pipeline:test": "node --test scripts/tests/writing-model-pipeline.test.mjs",
-    "writing:style:test": "node --test scripts/tests/style-rag-metadata.test.mjs scripts/tests/external-style-inventory.test.mjs",
     "rag:audit:sample": "node scripts/rag-audit/rag-audit.mjs sample --channel rag",
     "rag:audit:record": "node scripts/rag-audit/rag-audit.mjs record --channel rag",
     "rag:audit:status": "node scripts/rag-audit/rag-audit.mjs status --channel rag",
     "rag:audit:related": "node scripts/rag-audit/rag-audit.mjs related --channel rag",
     "rag:rebuild:affected": "node scripts/rag-audit/rag-audit.mjs rebuild --channel rag",
-    "style-rag:audit:sample": "node scripts/rag-audit/rag-audit.mjs sample --channel style-rag",
-    "style-rag:audit:record": "node scripts/rag-audit/rag-audit.mjs record --channel style-rag",
-    "style-rag:audit:status": "node scripts/rag-audit/rag-audit.mjs status --channel style-rag",
-    "style-rag:audit:related": "node scripts/rag-audit/rag-audit.mjs related --channel style-rag",
-    "style-rag:rebuild:affected": "node scripts/rag-audit/rag-audit.mjs rebuild --channel style-rag",
     "concept:audit:sample": "node scripts/rag-audit/rag-audit.mjs sample --channel concept",
     "concept:audit:record": "node scripts/rag-audit/rag-audit.mjs record --channel concept",
     "concept:audit:status": "node scripts/rag-audit/rag-audit.mjs status --channel concept",
@@ -195,6 +176,14 @@
     "restraint-rag:migrate-all": "node scripts/restraint-rag/restraint-rag.mjs migrate-pilot --all",
     "restraint-rag:writing-context": "node scripts/restraint-rag/restraint-rag.mjs writing-context",
     "restraint-rag:test": "node --test scripts/tests/restraint-professional-rag.test.mjs"
+    ,"rag:propose": "node scripts/rag-knowledge/rag-knowledge.mjs propose"
+    ,"rag:rescan-stories": "node scripts/rag-knowledge/rag-knowledge.mjs rescan-stories"
+    ,"rag:source-scan": "node scripts/rag-knowledge/rag-knowledge.mjs source-scan"
+    ,"rag:source-interview": "node scripts/rag-knowledge/rag-knowledge.mjs source-interview"
+    ,"rag:decide-segment": "node scripts/rag-knowledge/rag-knowledge.mjs decide-segment"
+    ,"rag:create-from-segment": "node scripts/rag-knowledge/rag-knowledge.mjs create-rag"
+    ,"rag:reset-human-baseline": "node scripts/rag-knowledge/rag-knowledge.mjs reset-human-baseline"
+    ,"rag:review-proposal": "node scripts/rag-knowledge/rag-knowledge.mjs review-proposal"
   },
   "dependencies": {
     "clipboard": "^2.0.11",

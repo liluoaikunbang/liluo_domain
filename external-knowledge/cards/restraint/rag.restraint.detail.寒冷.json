@@ -6,25 +6,10 @@
   "aliases": [],
   "summary": "寒冷作为持续环境压力，会放大受限状态中的僵硬、行动困难与时间感。",
   "definition": "用于描述低温环境与受限姿态共同作用的感受和情节压力；重点是环境持续影响行动，而不是把寒冷当作独立器具。",
-  "sourceRefs": [
-    {
-      "sourceId": "fb-src-000005",
-      "segmentId": "fb-src-000005-seg-00019",
-      "sourcePath": "external-knowledge/sources/fiction-bondage/不知道作者/被捕捉的韵（完结）.md",
-      "startLine": 203,
-      "endLine": 210
-    },
-    {
-      "sourceId": "fb-src-000007",
-      "segmentId": "fb-src-000007-seg-00019",
-      "sourcePath": "external-knowledge/sources/fiction-bondage/不知道作者/变为奴隶的姑娘.md",
-      "startLine": 269,
-      "endLine": 286
-    }
-  ],
-  "evidenceStatus": "partial",
-  "contentStatus": "complete",
-  "reviewStatus": "candidate",
+  "sourceRefs": [],
+  "evidenceStatus": "missing",
+  "contentStatus": "stub",
+  "reviewStatus": "pending",
   "directQuoteIncluded": false,
   "canonical": false,
   "knowledgeScope": "external-fiction-reference",
@@ -48,10 +33,7 @@
     "rag.restraint.effect.pain"
   ],
   "distinctions": [],
-  "evidenceRefs": [
-    "ev-fbsrc000005-63173e9e3fc005ec",
-    "ev-fbsrc000007-ffceedc768f85969"
-  ],
+  "evidenceRefs": [],
   "sourceRecordIds": [
     "fb-src-000005",
     "fb-src-000007"
@@ -76,7 +58,7 @@
     "searchable": true,
     "relationAnchor": true,
     "contentRetrievable": false,
-    "evidenceRetrievable": true,
+    "evidenceRetrievable": false,
     "knowledgeRetrievable": false,
     "expressionRetrievable": false
   },
@@ -94,29 +76,12 @@
     ],
     "childConceptRefs": [],
     "relatedConceptRefs": [],
-    "factualClaims": [
-      {
-        "id": "rag.restraint.detail.寒冷::claim:definition:0",
-        "label": "定义",
-        "content": "用于描述低温环境与受限姿态共同作用的感受和情节压力；重点是环境持续影响行动，而不是把寒冷当作独立器具。",
-        "claimType": "definition",
-        "evidenceRefs": [
-          "ev-fbsrc000005-63173e9e3fc005ec",
-          "ev-fbsrc000007-ffceedc768f85969"
-        ],
-        "supportStatus": "pending",
-        "reviewStatus": "pending",
-        "origin": "external-summary"
-      }
-    ],
-    "evidenceRefs": [
-      "ev-fbsrc000005-63173e9e3fc005ec",
-      "ev-fbsrc000007-ffceedc768f85969"
-    ],
+    "factualClaims": [],
+    "evidenceRefs": [],
     "projectInterpretation": "",
     "commonMisreadings": [],
-    "status": "usable",
-    "evidenceStatus": "partial",
+    "status": "stub",
+    "evidenceStatus": "missing",
     "reviewStatus": "pending"
   },
   "expression": {
@@ -141,19 +106,6 @@
     "evidenceStatus": "missing",
     "reviewStatus": "pending"
   },
-  "overallStatus": "knowledge-only",
-  "evidenceBindings": [
-    {
-      "evidenceId": "ev-fbsrc000005-63173e9e3fc005ec",
-      "purpose": "knowledge-evidence",
-      "branch": "knowledge",
-      "supportStatus": "pending"
-    },
-    {
-      "evidenceId": "ev-fbsrc000007-ffceedc768f85969",
-      "purpose": "knowledge-evidence",
-      "branch": "knowledge",
-      "supportStatus": "pending"
-    }
-  ]
+  "overallStatus": "stub",
+  "evidenceBindings": []
 }

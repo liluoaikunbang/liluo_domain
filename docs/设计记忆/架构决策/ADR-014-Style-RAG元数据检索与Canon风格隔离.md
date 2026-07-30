@@ -1,10 +1,10 @@
 ---
 id: ADR-014
-status: accepted
+status: superseded
 title: Style-RAG 元数据检索与 Canon 风格隔离
 date: 2026-07-26
 scope: [style-rag, formal-prose, writing-assets, external-style, canon-boundary]
-relatedRules: [style-rag-metadata-v1, natural-expression-default-light]
+relatedRules: [natural-expression-default-light]
 relatedSystems: [style-rag-metadata, formal-prose-pipeline, external-style-inventory, writing-sheet, natural-expression-system]
 supersedes: []
 relatedAdrs: [ADR-013]

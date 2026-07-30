@@ -1,5 +1,27 @@
 [
   {
+    "id": "docs/设计记忆/设计原则.md",
+    "indexVersion": 1,
+    "sourceHash": "9f1646a30850245ea737130a53c0e6380afbb1c1ad516d9ac28987cf4b07211d",
+    "sourcePath": "docs/设计记忆/设计原则.md",
+    "subtype": "other",
+    "summary": "设计原则",
+    "summarySource": "title-only",
+    "title": "设计原则",
+    "type": "document"
+  },
+  {
+    "id": "docs/设计记忆/项目宪章.md",
+    "indexVersion": 1,
+    "sourceHash": "c93bacf45ccb0bd6cc4f5e73fb532e8506f33c3a4cae7c5fb1f6e97aa7bd4b41",
+    "sourcePath": "docs/设计记忆/项目宪章.md",
+    "subtype": "other",
+    "summary": "项目宪章",
+    "summarySource": "title-only",
+    "title": "项目宪章",
+    "type": "document"
+  },
+  {
     "id": "docs/设计记忆/项目组灵魂/表达模式.md",
     "indexVersion": 1,
     "sourceHash": "a7a9b9ef3ac9321380e98dd049d9371464234aedd0880ee23f53d9e089b76bee",
@@ -231,6 +253,17 @@
     "type": "document"
   },
   {
+    "id": "docs/实施规格/人工确认式RAG来源标注与来源访谈.md",
+    "indexVersion": 1,
+    "sourceHash": "d88b5663b83ac1d156435028cfc4302d94d63cf47069c0ccbbac71e8d36f0e70",
+    "sourcePath": "docs/实施规格/人工确认式RAG来源标注与来源访谈.md",
+    "subtype": "other",
+    "summary": "规格：人工确认式 RAG 来源标注与来源访谈",
+    "summarySource": "title-only",
+    "title": "规格：人工确认式 RAG 来源标注与来源访谈",
+    "type": "document"
+  },
+  {
     "id": "docs/素材制作策略.md",
     "indexVersion": 1,
     "sourceHash": "42637da7703139df56d638e64e9ccaf2ba7dc707ea89a8f6f19367fdeb225ffa",
@@ -266,7 +299,7 @@
   {
     "id": "docs/我现在可以做什么.md",
     "indexVersion": 1,
-    "sourceHash": "0555f4f1ef794ff573501eb242c8f04648083922df999fb30d79ac641669fc7b",
+    "sourceHash": "040cf7b1c6ecebacf9186c72aad8697d281b625e0877642db31fbec67fd3cd63",
     "sourcePath": "docs/我现在可以做什么.md",
     "subtype": "other",
     "summary": "我现在可以做什么",
@@ -288,7 +321,7 @@
   {
     "id": "docs/系统说明/大纲关联图谱系统.md",
     "indexVersion": 1,
-    "sourceHash": "dff2f579c9f5b3e41ef406de95c42e41f7fe230969798297117eb133a58b68ec",
+    "sourceHash": "cccbe8af564b8599af18532b3726fe62f266c6779c617c3b7feb56c14f9db06b",
     "sourcePath": "docs/系统说明/大纲关联图谱系统.md",
     "subtype": "system",
     "summary": "大纲关联图谱系统",
@@ -475,7 +508,7 @@
   {
     "id": "docs/系统说明/紧缚专业RAG双分支系统.md",
     "indexVersion": 1,
-    "sourceHash": "1e5eff9d6b1e9dc5d2d4c7e887be9bd76fed8eef39e639102c8bb4d401894f90",
+    "sourceHash": "8613ffb22cbbd0bdf9062de2f6a69beaae6e2a951dab97dabc779af00c7f4eb7",
     "sourcePath": "docs/系统说明/紧缚专业RAG双分支系统.md",
     "subtype": "system",
     "summary": "紧缚专业 RAG 双分支系统",
@@ -825,9 +858,20 @@
     "type": "document"
   },
   {
+    "id": "docs/系统说明/RAG增量提议与来源关联图谱系统.md",
+    "indexVersion": 1,
+    "sourceHash": "dbd7d2d7bdd25094f4cf0db8b189c911b1c1d1a97b4ffeed6620a812fd7fbc5c",
+    "sourcePath": "docs/系统说明/RAG增量提议与来源关联图谱系统.md",
+    "subtype": "system",
+    "summary": "RAG 增量提议与来源关联图谱系统",
+    "summarySource": "title-only",
+    "title": "RAG 增量提议与来源关联图谱系统",
+    "type": "document"
+  },
+  {
     "id": "docs/系统说明/README.md",
     "indexVersion": 1,
-    "sourceHash": "1adc2e83fb7bc47104cbbdb188bb57c5eb9550379caf287dd208241a7dfa3279",
+    "sourceHash": "cbdf3999999ccfa5187590b778f37e4e0d45c92f48d747643be5bc0a600b72d7",
     "sourcePath": "docs/系统说明/README.md",
     "subtype": "system",
     "summary": "系统说明",
@@ -844,28 +888,6 @@
     "summary": "Skill 与 Agent 能力回归评测系统",
     "summarySource": "title-only",
     "title": "Skill 与 Agent 能力回归评测系统",
-    "type": "document"
-  },
-  {
-    "id": "docs/系统说明/Style-RAG用户操作指南.md",
-    "indexVersion": 1,
-    "sourceHash": "d7ac3425c1ee1a399871ccb207d84084b257b687f6c5d540799277254597d407",
-    "sourcePath": "docs/系统说明/Style-RAG用户操作指南.md",
-    "subtype": "system",
-    "summary": "Style-RAG 用户操作指南",
-    "summarySource": "title-only",
-    "title": "Style-RAG 用户操作指南",
-    "type": "document"
-  },
-  {
-    "id": "docs/系统说明/Style-RAG元数据检索与文风包系统.md",
-    "indexVersion": 1,
-    "sourceHash": "373e99697716d051d219a8763723a53555362cc94f08b6549f5c21cb8d08cf2f",
-    "sourcePath": "docs/系统说明/Style-RAG元数据检索与文风包系统.md",
-    "subtype": "system",
-    "summary": "Style-RAG 元数据检索与文风包系统",
-    "summarySource": "title-only",
-    "title": "Style-RAG 元数据检索与文风包系统",
     "type": "document"
   },
   {
@@ -904,7 +926,7 @@
   {
     "id": "docs/项目能力、缺口与行动总览.md",
     "indexVersion": 1,
-    "sourceHash": "dcecd8acdc697e5427fc1cf9069ad81fcff10bd39235b76ba8fad7a67de41a59",
+    "sourceHash": "e2552da10b0184ccc21e4c4ad516e0027e7f14ea8319f91ffca4a94faf5861d5",
     "sourcePath": "docs/项目能力、缺口与行动总览.md",
     "subtype": "other",
     "summary": "项目能力、缺口与行动总览",
@@ -2279,7 +2301,7 @@
   {
     "id": "docs/用户命令目录.md",
     "indexVersion": 1,
-    "sourceHash": "01b218a178f0ab771db8f7d6953dcd1f26f2d6d18b937eb00bc7a76264c6ad78",
+    "sourceHash": "01371cd753fd2a3f9947bf2f1728dfe304b3545f42756f92fedeb6d3e2a01438",
     "sourcePath": "docs/用户命令目录.md",
     "subtype": "other",
     "summary": "用户命令目录",
@@ -2725,28 +2747,6 @@
     "summary": "情节 抽查批次 rab-ms2x4zbt",
     "summarySource": "title-only",
     "title": "情节 抽查批次 rab-ms2x4zbt",
-    "type": "document"
-  },
-  {
-    "id": "docs/知识检索校准/batches/rab-ms2x4zcj.md",
-    "indexVersion": 1,
-    "sourceHash": "e0ce279c1e862a8230f553f1b063ca9cb7d747e28eb04b1f9050607d699dad24",
-    "sourcePath": "docs/知识检索校准/batches/rab-ms2x4zcj.md",
-    "subtype": "other",
-    "summary": "综合（RAG / Style-RAG / 细节概念 / 情节） 抽查批次 rab-ms2x4zcj",
-    "summarySource": "title-only",
-    "title": "综合（RAG / Style-RAG / 细节概念 / 情节） 抽查批次 rab-ms2x4zcj",
-    "type": "document"
-  },
-  {
-    "id": "docs/知识检索校准/batches/rab-ms2x503f.md",
-    "indexVersion": 1,
-    "sourceHash": "585981491cfd4b6c82fa789c5aeeffc584ce3cb43b6e93049e2fab65e8f5e223",
-    "sourcePath": "docs/知识检索校准/batches/rab-ms2x503f.md",
-    "subtype": "other",
-    "summary": "普通 RAG 抽查批次 rab-ms2x503f",
-    "summarySource": "title-only",
-    "title": "普通 RAG 抽查批次 rab-ms2x503f",
     "type": "document"
   }
 ]

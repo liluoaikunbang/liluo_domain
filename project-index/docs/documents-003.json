@@ -1,5 +1,27 @@
 [
   {
+    "id": "docs/知识检索校准/batches/rab-ms2x4zcj.md",
+    "indexVersion": 1,
+    "sourceHash": "e0ce279c1e862a8230f553f1b063ca9cb7d747e28eb04b1f9050607d699dad24",
+    "sourcePath": "docs/知识检索校准/batches/rab-ms2x4zcj.md",
+    "subtype": "other",
+    "summary": "综合（RAG / Style-RAG / 细节概念 / 情节） 抽查批次 rab-ms2x4zcj",
+    "summarySource": "title-only",
+    "title": "综合（RAG / Style-RAG / 细节概念 / 情节） 抽查批次 rab-ms2x4zcj",
+    "type": "document"
+  },
+  {
+    "id": "docs/知识检索校准/batches/rab-ms2x503f.md",
+    "indexVersion": 1,
+    "sourceHash": "585981491cfd4b6c82fa789c5aeeffc584ce3cb43b6e93049e2fab65e8f5e223",
+    "sourcePath": "docs/知识检索校准/batches/rab-ms2x503f.md",
+    "subtype": "other",
+    "summary": "普通 RAG 抽查批次 rab-ms2x503f",
+    "summarySource": "title-only",
+    "title": "普通 RAG 抽查批次 rab-ms2x503f",
+    "type": "document"
+  },
+  {
     "id": "docs/知识检索校准/batches/rab-ms41ij6s.md",
     "indexVersion": 1,
     "sourceHash": "b740723b731b0b04baf9ef69169c4455d264abd9afb72b763d4892ef46d93f24",

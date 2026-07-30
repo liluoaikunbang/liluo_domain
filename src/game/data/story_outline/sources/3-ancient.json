@@ -29,7 +29,7 @@
       "key": "world-3-mortal-dao-commoner-princess",
       "world": "3-尘寰问道",
       "title": "平民公主",
-      "summary": "璃落被权臣一系包装为失落公主后卷入宫廷斗争；秋盟惊猎使她触及旧东宫线索，继而遭悬井水牢灭口、被侍女救出并打入冷宫。她从冷宫种地、井下取遗到北方和亲，逐步接近自己作为旧太子遗孤的真相。",
+      "summary": "璃落被权臣一系包装为失落公主后卷入宫廷斗争；秋盟惊猎使她触及旧东宫线索，继而遭悬井吊牢灭口、被侍女救出并打入冷宫。她从冷宫种地、井下取遗到北方和亲，逐步接近自己作为旧太子遗孤的真相。",
       "status": "主线任务",
       "parentKey": "world-3-mortal-dao-royal-garden-beast-hunt",
       "order": 10,
@@ -48,6 +48,32 @@
       "characters": ["璃落", "赫连·阿勒珂", "陆怀瑾"],
       "ragRefs": [],
       "plotRefs": [],
+      "gameplayRefs": []
+    },
+    {
+      "key": "world-3-mortal-dao-hanging-well-detention",
+      "world": "3-尘寰问道",
+      "title": "悬井吊牢",
+      "summary": "璃落因触及旧东宫线索被旧东宫势力伪造成投井自尽，受困枯井数日；贴身侍女违背监视命令将她救出，宫廷随后反咎并将她打入冷宫。",
+      "storyTags": [
+        "幽牢深锁",
+        "礼法成笼"
+      ],
+      "status": "灵感",
+      "parentKey": "world-3-mortal-dao-autumn-alliance-hunt",
+      "order": 10,
+      "characters": [
+        "璃落",
+        "侍女"
+      ],
+      "locations": [
+        "宫苑古井",
+        "冷宫"
+      ],
+      "ragRefs": [],
+      "plotRefs": [
+        "plot-038"
+      ],
       "gameplayRefs": []
     },
     {
@@ -72,7 +98,7 @@
       "summary": "璃落与贴身侍女在冷宫开垦荒地，以种植维持生活并建立信任；这片田地将成为可随旅途延续的长期支线起点。",
       "storyTags": ["檐下烟火", "礼法成笼"],
       "status": "灵感",
-      "parentKey": "world-3-mortal-dao-autumn-alliance-hunt",
+      "parentKey": "world-3-mortal-dao-hanging-well-detention",
       "order": 10,
       "ragRefs": [],
       "plotRefs": ["plot-038"],

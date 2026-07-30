@@ -15,7 +15,6 @@ export const GRAPH_NODE_TYPES = Object.freeze([
   'item',
   'rag',
   'rag_branch',
-  'style_rag',
   'evidence',
   'source'
 ]);
@@ -32,7 +31,6 @@ export const GRAPH_NODE_TYPE_LABELS = Object.freeze({
   item: '物品',
   rag: '紧缚专业 RAG',
   rag_branch: 'RAG 分支',
-  style_rag: '通用 Style-RAG',
   evidence: '原文证据',
   source: '原始来源'
 });
@@ -46,14 +44,13 @@ export const GRAPH_LANE_ORDER = Object.freeze([
   'organization',
   'location',
   'item',
-  'rag',
-  'style_rag'
+  'rag'
 ]);
 
 /** Map node types onto visual lanes (world/series fold into story). */
 export function resolveGraphLaneType(type) {
   if (type === 'series' || type === 'world') return 'story';
-  if (type === 'rag_branch') return 'rag';
+  if (type === 'rag_branch' || type === 'evidence' || type === 'source') return 'rag';
   return type;
 }
 
@@ -84,9 +81,7 @@ export const GRAPH_RELATION_TYPES = Object.freeze([
   'holds',
   'references',
   'explains',
-  'style_reference',
   'has_branch',
-  'uses_style',
   'has_gold_example',
   'has_calibration_pair',
   'sourced_from',
@@ -117,9 +112,7 @@ export const GRAPH_RELATION_TYPE_LABELS = Object.freeze({
   holds: '持有',
   references: '引用',
   explains: '解释',
-  style_reference: '表达参考',
   has_branch: '拥有分支',
-  uses_style: '调用通用写法',
   has_gold_example: '黄金范例',
   has_calibration_pair: '校准对',
   sourced_from: '来源于',
@@ -155,9 +148,7 @@ export const GRAPH_RELATION_COLORS = Object.freeze({
   holds: '#4a8ad8',
   references: '#5ecf8a',
   explains: '#5ecf8a',
-  style_reference: '#e86ab8',
   has_branch: '#6fd4a8',
-  uses_style: '#e86ab8',
   has_gold_example: '#e8c45a',
   has_calibration_pair: '#d4a85a',
   sourced_from: '#9ad87a',
@@ -187,7 +178,6 @@ export const GRAPH_NODE_COLORS = Object.freeze({
   item: '#7ab0e0',
   rag: '#5ecf8a',
   rag_branch: '#6fd4a8',
-  style_rag: '#e86ab8',
   evidence: '#7ad8a8',
   source: '#9ad87a'
 });
@@ -203,7 +193,6 @@ export const GRAPH_AUDIT_STATUSES = Object.freeze([
   'missing_source',
   'orphan',
   'missing_rag',
-  'missing_style_rag',
   'relation_pending'
 ]);
 
@@ -216,24 +205,25 @@ export const GRAPH_AUDIT_STATUS_LABELS = Object.freeze({
   missing_source: '缺少来源',
   orphan: '孤立节点',
   missing_rag: '有分层种子但无 RAG',
-  missing_style_rag: '有情节但无 Style-RAG',
   relation_pending: '关系待确认'
 });
 
-export const GRAPH_MODES = Object.freeze(['overview', 'focus', 'filter', 'summary']);
+export const GRAPH_MODES = Object.freeze(['overview', 'focus', 'hierarchy', 'filter', 'summary']);
 
 export const GRAPH_MODE_LABELS = Object.freeze({
   overview: '全图',
   focus: '聚焦',
+  hierarchy: '层级树',
   filter: '筛选',
   summary: '汇总'
 });
 
-export const GRAPH_LAYOUT_PRESETS = Object.freeze(['structure', 'aesthetic']);
+/** Toolbar graph views. RAG network is a focused projection, not a decorative layout. */
+export const GRAPH_LAYOUT_PRESETS = Object.freeze(['structure', 'rag-network']);
 
 export const GRAPH_LAYOUT_PRESET_LABELS = Object.freeze({
   structure: '结构优先',
-  aesthetic: '美观优先'
+  'rag-network': 'RAG 网络'
 });
 
 export const GRAPH_FILTER_PRESETS = Object.freeze([
@@ -243,10 +233,9 @@ export const GRAPH_FILTER_PRESETS = Object.freeze([
   { id: 'gameplay-hierarchy', label: '只看大玩法 / 小玩法', nodeTypes: ['gameplay'], relationTypes: ['belongs_to'] },
   { id: 'rag-hierarchy', label: '只看紧缚专业 RAG 上位/具体', nodeTypes: ['rag'], relationTypes: ['broader', 'narrower'], includeStyleEvidence: false },
   { id: 'rag-story-plot', label: '只看紧缚专业 RAG 与大纲/情节', nodeTypes: ['rag', 'story', 'plot'], relationTypes: null },
+  { id: 'rag-evidence-path', label: 'RAG 证据路径（条目→片段→来源）', nodeTypes: ['rag', 'evidence', 'source'], relationTypes: ['supported_by', 'excerpt_of'], includeRagEvidence: true },
+  { id: 'rag-network', label: 'RAG 网络（知识 / 表达 / 证据 / 来源）', nodeTypes: ['rag', 'evidence', 'source'], relationTypes: null, includeRagEvidence: true },
   { id: 'missing-evidence', label: '缺少证据的 RAG', nodeTypes: ['rag'], auditStatuses: ['missing_source'] },
-  { id: 'style-techniques', label: '只看通用写法（Style-RAG）', nodeTypes: ['style_rag'], relationTypes: null, includeStyleEvidence: false },
-  { id: 'style-with-evidence', label: '写法名词 + 文章证据', nodeTypes: ['style_rag'], relationTypes: null, includeStyleEvidence: true },
-  { id: 'rag-style', label: '紧缚专业 RAG 与通用 Style-RAG', nodeTypes: ['rag', 'style_rag'], relationTypes: null },
   { id: 'pending-audit', label: '只看待校准节点', nodeTypes: null, auditStatuses: ['pending_review', 'low_confidence', 'conflict', 'missing_source', 'relation_pending'] },
   { id: 'orphans', label: '只看孤立节点', nodeTypes: null, auditStatuses: ['orphan'] },
   { id: 'low-confidence', label: '只看低置信度关系', nodeTypes: null, edgeAuditStatuses: ['low_confidence', 'pending_confirm'] }

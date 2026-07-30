@@ -14,23 +14,25 @@ const graphPanelSource = readFileSync(
 test('outline keeps original sections and adds relation graph tab', () => {
   assert.match(
     outlinePanelSource,
-    /\{ key: 'story', label: '故事' \},\s*\{ key: 'plot', label: '情节' \},\s*\{ key: 'gameplay', label: '玩法' \},\s*\{ key: 'character', label: '人物\/组织' \},\s*\{ key: 'relation-graph', label: '关联图谱' \}/u
+    /\{ key: 'story', label: '故事' \},\s*\{ key: 'plot', label: '情节' \},\s*\{ key: 'gameplay', label: '玩法' \},\s*\{ key: 'character', label: '人物\/组织' \},\s*\{ key: 'relation-graph', label: '关联图谱' \},\s*\{ key: 'rag-network', label: 'RAG 网络' \}/u
   );
   assert.match(outlinePanelSource, /RelationGraphPanel/u);
   assert.doesNotMatch(outlinePanelSource, /RestraintRagMaintainPanel/u);
   assert.doesNotMatch(outlinePanelSource, /restraint-rag/u);
   assert.match(outlinePanelSource, /activeSection === 'relation-graph'/u);
+  assert.match(outlinePanelSource, /activeSection === 'rag-network'/u);
   assert.match(outlinePanelSource, /activeSection === 'story'/u);
   assert.match(outlinePanelSource, /activeSection === 'plot'/u);
   assert.match(outlinePanelSource, /activeSection === 'gameplay'/u);
   assert.match(outlinePanelSource, /activeSection === 'character'/u);
 });
 
-test('graph panel exposes four modes and overview title-only rule', () => {
+test('graph panel exposes hierarchy and overview title-only rule', () => {
   assert.match(graphPanelSource, /全图/u);
   assert.match(graphPanelSource, /聚焦/u);
   assert.match(graphPanelSource, /筛选/u);
   assert.match(graphPanelSource, /汇总/u);
+  assert.match(graphPanelSource, /hierarchy/u);
   assert.match(graphPanelSource, /HARD RULE: overview mode never renders summary text/u);
   assert.match(graphPanelSource, /mode\.value !== 'overview'/u);
   assert.match(graphPanelSource, /showSummary && mode\.value !== 'overview'/u);
@@ -67,12 +69,12 @@ test('selected node highlights connected edges and merges world/series lane', ()
   assert.match(graphPanelSource, /detailTypeLabel/u);
 });
 
-test('graph panel can toggle Style-RAG article evidence visibility', () => {
-  assert.match(graphPanelSource, /showStyleEvidence/u);
-  assert.match(graphPanelSource, /文章证据：显示|文章证据：隐藏/u);
-  assert.match(graphPanelSource, /includeStyleEvidence/u);
-  assert.match(graphPanelSource, /allowFocusedEvidence/u);
-  assert.match(graphPanelSource, /写法名词/u);
+test('graph panel uses a dedicated free canvas for RAG knowledge roaming', () => {
+  assert.match(graphPanelSource, /layoutRagNetworkGraph/u);
+  assert.match(graphPanelSource, /layoutRagHierarchyGraph/u);
+  assert.match(graphPanelSource, /rag-network/u);
+  assert.match(graphPanelSource, /仅 RAG 条目|含证据与来源|纳入关联节点/u);
+  assert.doesNotMatch(graphPanelSource, /showStyleEvidence|Style-RAG|通用写法/u);
 });
 test('graph panel hides AI calibration entry and off-canvas evidence categories', () => {
   assert.doesNotMatch(graphPanelSource, /校准入口/u);

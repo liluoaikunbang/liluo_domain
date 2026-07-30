@@ -6,18 +6,10 @@
   "aliases": [],
   "summary": "扎带是轻便的条状固定件，常用于快速形成不可直接回退的收紧状态。",
   "definition": "通过单向锁止结构保持收紧的固定件；知识卡只记录其叙事功能，不提供操作步骤。",
-  "sourceRefs": [
-    {
-      "sourceId": "fb-src-000107",
-      "segmentId": "fb-src-000107-seg-00008",
-      "sourcePath": "external-knowledge/sources/fiction-bondage/作者,金主大大/咚咚噹117（如梦）/白楹的紧缚劫难.md",
-      "startLine": 139,
-      "endLine": 162
-    }
-  ],
-  "evidenceStatus": "partial",
-  "contentStatus": "complete",
-  "reviewStatus": "candidate",
+  "sourceRefs": [],
+  "evidenceStatus": "missing",
+  "contentStatus": "stub",
+  "reviewStatus": "pending",
   "directQuoteIncluded": false,
   "canonical": false,
   "knowledgeScope": "external-fiction-reference",
@@ -38,9 +30,7 @@
   },
   "ragLayer": "category",
   "parentCardIds": [],
-  "evidenceRefs": [
-    "ev-fbsrc000107-573f0ddab1cb932d"
-  ],
+  "evidenceRefs": [],
   "sourceRecordIds": [
     "fb-src-000107"
   ],
@@ -63,7 +53,7 @@
     "searchable": true,
     "relationAnchor": true,
     "contentRetrievable": false,
-    "evidenceRetrievable": true,
+    "evidenceRetrievable": false,
     "knowledgeRetrievable": false,
     "expressionRetrievable": false
   },
@@ -79,27 +69,12 @@
     "parentConceptRefs": [],
     "childConceptRefs": [],
     "relatedConceptRefs": [],
-    "factualClaims": [
-      {
-        "id": "rag.restraint.tool.cable-tie::claim:definition:0",
-        "label": "定义",
-        "content": "通过单向锁止结构保持收紧的固定件；知识卡只记录其叙事功能，不提供操作步骤。",
-        "claimType": "definition",
-        "evidenceRefs": [
-          "ev-fbsrc000107-573f0ddab1cb932d"
-        ],
-        "supportStatus": "pending",
-        "reviewStatus": "pending",
-        "origin": "external-summary"
-      }
-    ],
-    "evidenceRefs": [
-      "ev-fbsrc000107-573f0ddab1cb932d"
-    ],
+    "factualClaims": [],
+    "evidenceRefs": [],
     "projectInterpretation": "",
     "commonMisreadings": [],
-    "status": "usable",
-    "evidenceStatus": "partial",
+    "status": "stub",
+    "evidenceStatus": "missing",
     "reviewStatus": "pending"
   },
   "expression": {
@@ -124,13 +99,6 @@
     "evidenceStatus": "missing",
     "reviewStatus": "pending"
   },
-  "overallStatus": "knowledge-only",
-  "evidenceBindings": [
-    {
-      "evidenceId": "ev-fbsrc000107-573f0ddab1cb932d",
-      "purpose": "knowledge-evidence",
-      "branch": "knowledge",
-      "supportStatus": "pending"
-    }
-  ]
+  "overallStatus": "stub",
+  "evidenceBindings": []
 }

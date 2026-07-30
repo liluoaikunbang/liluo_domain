@@ -1080,6 +1080,46 @@
         "src/game/data/gameplay_outline/catalog.json"
       ],
       "storyRefs": []
+    },
+    {
+      "id": "gameplay-121",
+      "title": "常规紧缚行动",
+      "categoryId": "gameplay-group-00",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-122",
+      "title": "紧缚战斗",
+      "categoryId": "gameplay-group-00",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-123",
+      "title": "紧缚逃跑",
+      "categoryId": "gameplay-group-00",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
+    },
+    {
+      "id": "gameplay-124",
+      "title": "紧缚挣扎",
+      "categoryId": "gameplay-group-00",
+      "status": "catalogued",
+      "sourceRefs": [
+        "src/game/data/gameplay_outline/catalog.json"
+      ],
+      "storyRefs": []
     }
   ]
 }

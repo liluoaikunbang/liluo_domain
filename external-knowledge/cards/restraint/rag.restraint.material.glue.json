@@ -6,18 +6,10 @@
   "aliases": [],
   "summary": "胶水在虚构场景中可用于封合或固定，使原本可分开的部位暂时失去独立活动。",
   "definition": "以黏合效果限制开合或相对移动的材料概念；具体安全性与解除方式必须由采用它的故事另行说明。",
-  "sourceRefs": [
-    {
-      "sourceId": "fb-src-000063",
-      "segmentId": "fb-src-000063-seg-00004",
-      "sourcePath": "external-knowledge/sources/fiction-bondage/其他未分类/女学生的倒霉捆绑故事.md",
-      "startLine": 62,
-      "endLine": 91
-    }
-  ],
-  "evidenceStatus": "partial",
-  "contentStatus": "complete",
-  "reviewStatus": "candidate",
+  "sourceRefs": [],
+  "evidenceStatus": "missing",
+  "contentStatus": "stub",
+  "reviewStatus": "pending",
   "directQuoteIncluded": false,
   "canonical": false,
   "knowledgeScope": "external-fiction-reference",
@@ -38,9 +30,7 @@
   },
   "ragLayer": "category",
   "parentCardIds": [],
-  "evidenceRefs": [
-    "ev-fbsrc000063-113028cfb79edd25"
-  ],
+  "evidenceRefs": [],
   "sourceRecordIds": [
     "fb-src-000063"
   ],
@@ -63,7 +53,7 @@
     "searchable": true,
     "relationAnchor": true,
     "contentRetrievable": false,
-    "evidenceRetrievable": true,
+    "evidenceRetrievable": false,
     "knowledgeRetrievable": false,
     "expressionRetrievable": false
   },
@@ -79,27 +69,12 @@
     "parentConceptRefs": [],
     "childConceptRefs": [],
     "relatedConceptRefs": [],
-    "factualClaims": [
-      {
-        "id": "rag.restraint.material.glue::claim:definition:0",
-        "label": "定义",
-        "content": "以黏合效果限制开合或相对移动的材料概念；具体安全性与解除方式必须由采用它的故事另行说明。",
-        "claimType": "definition",
-        "evidenceRefs": [
-          "ev-fbsrc000063-113028cfb79edd25"
-        ],
-        "supportStatus": "pending",
-        "reviewStatus": "pending",
-        "origin": "external-summary"
-      }
-    ],
-    "evidenceRefs": [
-      "ev-fbsrc000063-113028cfb79edd25"
-    ],
+    "factualClaims": [],
+    "evidenceRefs": [],
     "projectInterpretation": "",
     "commonMisreadings": [],
-    "status": "usable",
-    "evidenceStatus": "partial",
+    "status": "stub",
+    "evidenceStatus": "missing",
     "reviewStatus": "pending"
   },
   "expression": {
@@ -124,13 +99,6 @@
     "evidenceStatus": "missing",
     "reviewStatus": "pending"
   },
-  "overallStatus": "knowledge-only",
-  "evidenceBindings": [
-    {
-      "evidenceId": "ev-fbsrc000063-113028cfb79edd25",
-      "purpose": "knowledge-evidence",
-      "branch": "knowledge",
-      "supportStatus": "pending"
-    }
-  ]
+  "overallStatus": "stub",
+  "evidenceBindings": []
 }

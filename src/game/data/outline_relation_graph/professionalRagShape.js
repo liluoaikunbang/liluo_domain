@@ -31,6 +31,12 @@ function normalizeEvidenceStatus(value) {
   return ['missing', 'partial', 'sufficient', 'conflicted'].includes(key) ? key : 'missing';
 }
 
+function normalizeRagDomain(value) {
+  return ['restraint-professional', 'general-craft', 'canon'].includes(value)
+    ? value
+    : 'restraint-professional';
+}
+
 function branchHasContent(branch, kind) {
   if (!branch) return false;
   if (kind === 'knowledge') {
@@ -46,7 +52,6 @@ function branchHasContent(branch, kind) {
     asArray(branch.actionLogic).length > 0 ||
     asArray(branch.expressionPrinciples).length > 0 ||
     asArray(branch.goldExampleRefs).length > 0 ||
-    asArray(branch.relatedStyleRagRefs).length > 0 ||
     asArray(branch.evidenceRefs).length > 0
   );
 }
@@ -88,7 +93,6 @@ export function emptyExpressionBranch(overrides = {}) {
     styleEvidenceRefs: [],
     goldExampleRefs: [],
     calibrationPairRefs: [],
-    relatedStyleRagRefs: [],
     evidenceRefs: [],
     status: 'stub',
     evidenceStatus: 'missing',
@@ -132,7 +136,7 @@ export function computeBranchCompleteness(branch, kind) {
           asArray(branch.visualFocus).length > 0 || asArray(branch.actionLogic).length > 0,
           asArray(branch.expressionPrinciples).length > 0 || asArray(branch.commonFailures).length > 0,
           asArray(branch.goldExampleRefs).length > 0 || asArray(branch.calibrationPairRefs).length > 0,
-          asArray(branch.relatedStyleRagRefs).length > 0 || asArray(branch.evidenceRefs).length > 0,
+          asArray(branch.evidenceRefs).length > 0,
           normalizeReviewStatus(branch.reviewStatus) === 'confirmed'
         ];
   return Math.round((checks.filter(Boolean).length / checks.length) * 100);
@@ -143,6 +147,7 @@ export function ensureProfessionalShape(card) {
   if (card.knowledge && card.expression) {
     return {
       ...card,
+      ragDomain: normalizeRagDomain(card.ragDomain),
       overallStatus: deriveOverallStatus(card)
     };
   }
@@ -164,6 +169,7 @@ export function ensureProfessionalShape(card) {
   const expression = emptyExpressionBranch();
   return {
     ...card,
+    ragDomain: normalizeRagDomain(card.ragDomain),
     knowledge,
     expression,
     overallStatus: deriveOverallStatus({ ...card, knowledge, expression })

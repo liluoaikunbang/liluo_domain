@@ -625,6 +625,15 @@
     "title": "永世束缚"
   },
   {
+    "key": "world-3-mortal-dao-hanging-well-detention",
+    "markdownPath": "src/game/data/story_outline/3-ancient/2.0.1-悬井吊牢.md",
+    "missingItems": [
+      "流程｜悬井吊牢·井下受限观察｜缺少玩家如何辨认井壁痕迹、井口声音与遗物位置的可执行流程",
+      "玩法｜悬井吊牢·救援衔接｜缺少侍女外部查找、救援触发与玩家反馈的具体安排"
+    ],
+    "title": "悬井吊牢"
+  },
+  {
     "key": "world-3-mortal-dao-marriage-northbound",
     "markdownPath": "src/game/data/story_outline/3-ancient/2.3-和亲北行.md",
     "missingItems": [

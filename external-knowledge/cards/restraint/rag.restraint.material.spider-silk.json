@@ -6,18 +6,10 @@
   "aliases": [],
   "summary": "蛛丝常表现为可喷射、可铺展并能把人物固定到环境表面的黏性材料。",
   "definition": "由蜘蛛或类蛛生物产生的丝状材料，在虚构场景中承担缠绕、结网和环境固定功能。",
-  "sourceRefs": [
-    {
-      "sourceId": "fb-src-000033",
-      "segmentId": "fb-src-000033-seg-00223",
-      "sourcePath": "external-knowledge/sources/fiction-bondage/不知道作者/无限拘束乐园.md",
-      "startLine": 7362,
-      "endLine": 7385
-    }
-  ],
-  "evidenceStatus": "partial",
-  "contentStatus": "complete",
-  "reviewStatus": "candidate",
+  "sourceRefs": [],
+  "evidenceStatus": "missing",
+  "contentStatus": "stub",
+  "reviewStatus": "pending",
   "directQuoteIncluded": false,
   "canonical": false,
   "knowledgeScope": "external-fiction-reference",
@@ -42,9 +34,7 @@
   "parentCardIds": [
     "rag.restraint.material.bio-nest"
   ],
-  "evidenceRefs": [
-    "ev-fbsrc000033-5d21fc2ccbc0e6c6"
-  ],
+  "evidenceRefs": [],
   "sourceRecordIds": [
     "fb-src-000033"
   ],
@@ -67,7 +57,7 @@
     "searchable": true,
     "relationAnchor": true,
     "contentRetrievable": false,
-    "evidenceRetrievable": true,
+    "evidenceRetrievable": false,
     "knowledgeRetrievable": false,
     "expressionRetrievable": false
   },
@@ -93,27 +83,12 @@
       "rag.restraint.material.beeswax",
       "rag.restraint.detail.特殊-拘捕网"
     ],
-    "factualClaims": [
-      {
-        "id": "rag.restraint.material.spider-silk::claim:definition:0",
-        "label": "定义",
-        "content": "由蜘蛛或类蛛生物产生的丝状材料，在虚构场景中承担缠绕、结网和环境固定功能。",
-        "claimType": "definition",
-        "evidenceRefs": [
-          "ev-fbsrc000033-5d21fc2ccbc0e6c6"
-        ],
-        "supportStatus": "pending",
-        "reviewStatus": "pending",
-        "origin": "external-summary"
-      }
-    ],
-    "evidenceRefs": [
-      "ev-fbsrc000033-5d21fc2ccbc0e6c6"
-    ],
+    "factualClaims": [],
+    "evidenceRefs": [],
     "projectInterpretation": "",
     "commonMisreadings": [],
-    "status": "usable",
-    "evidenceStatus": "partial",
+    "status": "stub",
+    "evidenceStatus": "missing",
     "reviewStatus": "pending"
   },
   "expression": {
@@ -138,13 +113,6 @@
     "evidenceStatus": "missing",
     "reviewStatus": "pending"
   },
-  "overallStatus": "knowledge-only",
-  "evidenceBindings": [
-    {
-      "evidenceId": "ev-fbsrc000033-5d21fc2ccbc0e6c6",
-      "purpose": "knowledge-evidence",
-      "branch": "knowledge",
-      "supportStatus": "pending"
-    }
-  ]
+  "overallStatus": "stub",
+  "evidenceBindings": []
 }

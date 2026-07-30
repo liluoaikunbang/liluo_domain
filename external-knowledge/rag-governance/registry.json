@@ -1,0 +1,640 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-07-30T17:07:03.423Z",
+  "proposals": [],
+  "researchTodos": [
+    {
+      "id": "todo-human-confirmed-source-rag-baseline",
+      "status": "open",
+      "title": "逐段确认外部小说来源并重建 RAG 基线",
+      "nextAction": "运行 npm run rag:source-interview，逐段确认既有或新建 RAG；来源完成后补充元信息。",
+      "createdAt": "2026-07-31T00:00:00.000Z",
+      "evidence": [".agents/skills/liluo-project/liluo-rag-source-interview/SKILL.md"]
+    }
+  ],
+  "relations": [],
+  "approvalPolicies": [],
+  "baselineResets": [
+    {
+      "resetId": "rbr-ms7rlek1",
+      "cardId": "rag.restraint.detail.寒冷",
+      "sourceRefs": [
+        {
+          "sourceId": "fb-src-000005",
+          "segmentId": "fb-src-000005-seg-00019",
+          "sourcePath": "external-knowledge/sources/fiction-bondage/不知道作者/被捕捉的韵（完结）.md",
+          "startLine": 203,
+          "endLine": 210
+        },
+        {
+          "sourceId": "fb-src-000007",
+          "segmentId": "fb-src-000007-seg-00019",
+          "sourcePath": "external-knowledge/sources/fiction-bondage/不知道作者/变为奴隶的姑娘.md",
+          "startLine": 269,
+          "endLine": 286
+        }
+      ],
+      "evidenceRefs": [
+        "ev-fbsrc000005-63173e9e3fc005ec",
+        "ev-fbsrc000007-ffceedc768f85969"
+      ],
+      "evidenceBindings": [
+        {
+          "evidenceId": "ev-fbsrc000005-63173e9e3fc005ec",
+          "purpose": "knowledge-evidence",
+          "branch": "knowledge",
+          "supportStatus": "pending"
+        },
+        {
+          "evidenceId": "ev-fbsrc000007-ffceedc768f85969",
+          "purpose": "knowledge-evidence",
+          "branch": "knowledge",
+          "supportStatus": "pending"
+        }
+      ],
+      "retiredAt": "2026-07-30T17:05:27.026Z"
+    },
+    {
+      "resetId": "rbr-ms7rlek1",
+      "cardId": "rag.restraint.detail.小黑屋",
+      "sourceRefs": [
+        {
+          "sourceId": "fb-src-000099",
+          "segmentId": "fb-src-000099-seg-00047",
+          "sourcePath": "external-knowledge/sources/fiction-bondage/作者,金主大大/楚曼白/梦馨的复仇.md",
+          "startLine": 638,
+          "endLine": 650
+        }
+      ],
+      "evidenceRefs": [
+        "ev-fbsrc000099-ac56d9ab326803a8"
+      ],
+      "evidenceBindings": [
+        {
+          "evidenceId": "ev-fbsrc000099-ac56d9ab326803a8",
+          "purpose": "knowledge-evidence",
+          "branch": "knowledge",
+          "supportStatus": "pending"
+        }
+      ],
+      "retiredAt": "2026-07-30T17:05:27.031Z"
+    },
+    {
+      "resetId": "rbr-ms7rlek1",
+      "cardId": "rag.restraint.detail.水牢",
+      "sourceRefs": [
+        {
+          "sourceId": "fb-src-000061",
+          "segmentId": "fb-src-000061-seg-00378",
+          "sourcePath": "external-knowledge/sources/fiction-bondage/其他未分类/女侠被缚的故事.md",
+          "startLine": 10762,
+          "endLine": 10781
+        },
+        {
+          "sourceId": "fb-src-000203",
+          "segmentId": "fb-src-000203-seg-00126",
+          "sourcePath": "external-knowledge/sources/fiction-bondage/作者,金主大大/en010272/自愿女囚岁月.md",
+          "startLine": 3159,
+          "endLine": 3189
+        }
+      ],
+      "evidenceRefs": [
+        "ev-fbsrc000061-c787f87b6a2befa0",
+        "ev-fbsrc000203-d47405a3a29f2ab9"
+      ],
+      "evidenceBindings": [
+        {
+          "evidenceId": "ev-fbsrc000061-c787f87b6a2befa0",
+          "purpose": "knowledge-evidence",
+          "branch": "knowledge",
+          "supportStatus": "pending"
+        },
+        {
+          "evidenceId": "ev-fbsrc000203-d47405a3a29f2ab9",
+          "purpose": "knowledge-evidence",
+          "branch": "knowledge",
+          "supportStatus": "pending"
+        }
+      ],
+      "retiredAt": "2026-07-30T17:05:27.034Z"
+    },
+    {
+      "resetId": "rbr-ms7rlek1",
+      "cardId": "rag.restraint.duration.permanent-restraint",
+      "sourceRefs": [
+        {
+          "sourceId": "fb-src-000213",
+          "segmentId": "fb-src-000213-seg-00016",
+          "sourcePath": "external-knowledge/sources/fiction-bondage/作者,金主大大/P站？？？/精神病院的阴谋.md",
+          "startLine": 644,
+          "endLine": 703
+        }
+      ],
+      "evidenceRefs": [
+        "ev-fbsrc000213-6ae450bf9170edd2"
+      ],
+      "evidenceBindings": [
+        {
+          "evidenceId": "ev-fbsrc000213-6ae450bf9170edd2",
+          "purpose": "knowledge-evidence",
+          "branch": "knowledge",
+          "supportStatus": "pending"
+        }
+      ],
+      "retiredAt": "2026-07-30T17:05:27.037Z"
+    },
+    {
+      "resetId": "rbr-ms7rlek1",
+      "cardId": "rag.restraint.effect.tickling",
+      "sourceRefs": [
+        {
+          "sourceId": "fb-src-000064",
+          "segmentId": "fb-src-000064-seg-00113",
+          "sourcePath": "external-knowledge/sources/fiction-bondage/其他未分类/倾斜的世界-远方的寂静.md",
+          "startLine": 1910,
+          "endLine": 1923
+        }
+      ],
+      "evidenceRefs": [
+        "ev-fbsrc000064-39a5ce2a889250dd"
+      ],
+      "evidenceBindings": [
+        {
+          "evidenceId": "ev-fbsrc000064-39a5ce2a889250dd",
+          "purpose": "knowledge-evidence",
+          "branch": "knowledge",
+          "supportStatus": "pending"
+        }
+      ],
+      "retiredAt": "2026-07-30T17:05:27.041Z"
+    },
+    {
+      "resetId": "rbr-ms7rlek1",
+      "cardId": "rag.restraint.material.glue",
+      "sourceRefs": [
+        {
+          "sourceId": "fb-src-000063",
+          "segmentId": "fb-src-000063-seg-00004",
+          "sourcePath": "external-knowledge/sources/fiction-bondage/其他未分类/女学生的倒霉捆绑故事.md",
+          "startLine": 62,
+          "endLine": 91
+        }
+      ],
+      "evidenceRefs": [
+        "ev-fbsrc000063-113028cfb79edd25"
+      ],
+      "evidenceBindings": [
+        {
+          "evidenceId": "ev-fbsrc000063-113028cfb79edd25",
+          "purpose": "knowledge-evidence",
+          "branch": "knowledge",
+          "supportStatus": "pending"
+        }
+      ],
+      "retiredAt": "2026-07-30T17:05:27.044Z"
+    },
+    {
+      "resetId": "rbr-ms7rlek1",
+      "cardId": "rag.restraint.material.spider-silk",
+      "sourceRefs": [
+        {
+          "sourceId": "fb-src-000033",
+          "segmentId": "fb-src-000033-seg-00223",
+          "sourcePath": "external-knowledge/sources/fiction-bondage/不知道作者/无限拘束乐园.md",
+          "startLine": 7362,
+          "endLine": 7385
+        }
+      ],
+      "evidenceRefs": [
+        "ev-fbsrc000033-5d21fc2ccbc0e6c6"
+      ],
+      "evidenceBindings": [
+        {
+          "evidenceId": "ev-fbsrc000033-5d21fc2ccbc0e6c6",
+          "purpose": "knowledge-evidence",
+          "branch": "knowledge",
+          "supportStatus": "pending"
+        }
+      ],
+      "retiredAt": "2026-07-30T17:05:27.047Z"
+    },
+    {
+      "resetId": "rbr-ms7rlek1",
+      "cardId": "rag.restraint.material.tentacle",
+      "sourceRefs": [
+        {
+          "sourceId": "fb-src-000006",
+          "segmentId": "fb-src-000006-seg-00006",
+          "sourcePath": "external-knowledge/sources/fiction-bondage/不知道作者/被诱骗成为奴隶的大魔导师.md",
+          "startLine": 47,
+          "endLine": 49
+        },
+        {
+          "sourceId": "fb-src-000012",
+          "segmentId": "fb-src-000012-seg-00069",
+          "sourcePath": "external-knowledge/sources/fiction-bondage/不知道作者/感染少女.md",
+          "startLine": 1507,
+          "endLine": 1517
+        }
+      ],
+      "evidenceRefs": [
+        "ev-fbsrc000006-d1e6a13b49e9ceb4",
+        "ev-fbsrc000012-8641387d07f59ae3"
+      ],
+      "evidenceBindings": [
+        {
+          "evidenceId": "ev-fbsrc000006-d1e6a13b49e9ceb4",
+          "purpose": "knowledge-evidence",
+          "branch": "knowledge",
+          "supportStatus": "pending"
+        },
+        {
+          "evidenceId": "ev-fbsrc000012-8641387d07f59ae3",
+          "purpose": "knowledge-evidence",
+          "branch": "knowledge",
+          "supportStatus": "pending"
+        }
+      ],
+      "retiredAt": "2026-07-30T17:05:27.051Z"
+    },
+    {
+      "resetId": "rbr-ms7rlek1",
+      "cardId": "rag.restraint.state.confinement",
+      "sourceRefs": [
+        {
+          "sourceId": "fb-src-000097",
+          "segmentId": "fb-src-000097-seg-00002",
+          "sourcePath": "external-knowledge/sources/fiction-bondage/作者,金主大大/楚曼白/监狱风云.md",
+          "startLine": 20,
+          "endLine": 40
+        },
+        {
+          "sourceId": "fb-src-000150",
+          "segmentId": "fb-src-000150-seg-00015",
+          "sourcePath": "external-knowledge/sources/fiction-bondage/作者,金主大大/杨可/天天侦探社-全.md",
+          "startLine": 161,
+          "endLine": 173
+        }
+      ],
+      "evidenceRefs": [
+        "ev-fbsrc000097-e84c1d9dbd5075df",
+        "ev-fbsrc000150-143b566063c1b9d5"
+      ],
+      "evidenceBindings": [
+        {
+          "evidenceId": "ev-fbsrc000097-e84c1d9dbd5075df",
+          "purpose": "knowledge-evidence",
+          "branch": "knowledge",
+          "supportStatus": "pending"
+        },
+        {
+          "evidenceId": "ev-fbsrc000150-143b566063c1b9d5",
+          "purpose": "knowledge-evidence",
+          "branch": "knowledge",
+          "supportStatus": "pending"
+        }
+      ],
+      "retiredAt": "2026-07-30T17:05:27.054Z"
+    },
+    {
+      "resetId": "rbr-ms7rlek1",
+      "cardId": "rag.restraint.tool.cable-tie",
+      "sourceRefs": [
+        {
+          "sourceId": "fb-src-000107",
+          "segmentId": "fb-src-000107-seg-00008",
+          "sourcePath": "external-knowledge/sources/fiction-bondage/作者,金主大大/咚咚噹117（如梦）/白楹的紧缚劫难.md",
+          "startLine": 139,
+          "endLine": 162
+        }
+      ],
+      "evidenceRefs": [
+        "ev-fbsrc000107-573f0ddab1cb932d"
+      ],
+      "evidenceBindings": [
+        {
+          "evidenceId": "ev-fbsrc000107-573f0ddab1cb932d",
+          "purpose": "knowledge-evidence",
+          "branch": "knowledge",
+          "supportStatus": "pending"
+        }
+      ],
+      "retiredAt": "2026-07-30T17:05:27.058Z"
+    },
+    {
+      "resetId": "rbr-ms7rlek1",
+      "cardId": "rag.restraint.tool.chain",
+      "sourceRefs": [
+        {
+          "sourceId": "fb-src-000017",
+          "segmentId": "fb-src-000017-seg-00051",
+          "sourcePath": "external-knowledge/sources/fiction-bondage/不知道作者/美少女战士.md",
+          "startLine": 980,
+          "endLine": 999
+        },
+        {
+          "sourceId": "fb-src-000022",
+          "segmentId": "fb-src-000022-seg-00004",
+          "sourcePath": "external-knowledge/sources/fiction-bondage/不知道作者/奇妙人生.md",
+          "startLine": 164,
+          "endLine": 201
+        }
+      ],
+      "evidenceRefs": [
+        "ev-fbsrc000017-81b6df450b0098a0",
+        "ev-fbsrc000022-ff9fc8f112128eb6"
+      ],
+      "evidenceBindings": [
+        {
+          "evidenceId": "ev-fbsrc000017-81b6df450b0098a0",
+          "purpose": "knowledge-evidence",
+          "branch": "knowledge",
+          "supportStatus": "pending"
+        },
+        {
+          "evidenceId": "ev-fbsrc000022-ff9fc8f112128eb6",
+          "purpose": "knowledge-evidence",
+          "branch": "knowledge",
+          "supportStatus": "pending"
+        }
+      ],
+      "retiredAt": "2026-07-30T17:05:27.062Z"
+    },
+    {
+      "resetId": "rbr-ms7rlek1",
+      "cardId": "rag.restraint.tool.handcuffs",
+      "sourceRefs": [
+        {
+          "sourceId": "fb-src-000001",
+          "segmentId": "fb-src-000001-seg-00003",
+          "sourcePath": "external-knowledge/sources/fiction-bondage/不知道作者/（完结）彼岸花开.md",
+          "startLine": 13,
+          "endLine": 14
+        },
+        {
+          "sourceId": "fb-src-000007",
+          "segmentId": "fb-src-000007-seg-00004",
+          "sourcePath": "external-knowledge/sources/fiction-bondage/不知道作者/变为奴隶的姑娘.md",
+          "startLine": 37,
+          "endLine": 64
+        }
+      ],
+      "evidenceRefs": [
+        "ev-fbsrc000001-aa3111bc2f37d846",
+        "ev-fbsrc000007-df631609bdf54c72"
+      ],
+      "evidenceBindings": [
+        {
+          "evidenceId": "ev-fbsrc000001-aa3111bc2f37d846",
+          "purpose": "knowledge-evidence",
+          "branch": "knowledge",
+          "supportStatus": "pending"
+        },
+        {
+          "evidenceId": "ev-fbsrc000007-df631609bdf54c72",
+          "purpose": "knowledge-evidence",
+          "branch": "knowledge",
+          "supportStatus": "pending"
+        }
+      ],
+      "retiredAt": "2026-07-30T17:05:27.065Z"
+    },
+    {
+      "resetId": "rbr-ms7rlek1",
+      "cardId": "rag.restraint.tool.leg-irons",
+      "sourceRefs": [
+        {
+          "sourceId": "fb-src-000007",
+          "segmentId": "fb-src-000007-seg-00004",
+          "sourcePath": "external-knowledge/sources/fiction-bondage/不知道作者/变为奴隶的姑娘.md",
+          "startLine": 37,
+          "endLine": 64
+        },
+        {
+          "sourceId": "fb-src-000013",
+          "segmentId": "fb-src-000013-seg-00014",
+          "sourcePath": "external-knowledge/sources/fiction-bondage/不知道作者/古堡.md",
+          "startLine": 124,
+          "endLine": 134
+        }
+      ],
+      "evidenceRefs": [
+        "ev-fbsrc000007-df631609bdf54c72",
+        "ev-fbsrc000013-32b4b5cb293b1e19"
+      ],
+      "evidenceBindings": [
+        {
+          "evidenceId": "ev-fbsrc000007-df631609bdf54c72",
+          "purpose": "knowledge-evidence",
+          "branch": "knowledge",
+          "supportStatus": "pending"
+        },
+        {
+          "evidenceId": "ev-fbsrc000013-32b4b5cb293b1e19",
+          "purpose": "knowledge-evidence",
+          "branch": "knowledge",
+          "supportStatus": "pending"
+        }
+      ],
+      "retiredAt": "2026-07-30T17:05:27.068Z"
+    },
+    {
+      "resetId": "rbr-ms7rlek1",
+      "cardId": "rag.restraint.tool.shackles",
+      "sourceRefs": [
+        {
+          "sourceId": "fb-src-000001",
+          "segmentId": "fb-src-000001-seg-00044",
+          "sourcePath": "external-knowledge/sources/fiction-bondage/不知道作者/（完结）彼岸花开.md",
+          "startLine": 401,
+          "endLine": 417
+        },
+        {
+          "sourceId": "fb-src-000025",
+          "segmentId": "fb-src-000025-seg-00063",
+          "sourcePath": "external-knowledge/sources/fiction-bondage/不知道作者/沙曼紧缚.md",
+          "startLine": 2885,
+          "endLine": 2936
+        }
+      ],
+      "evidenceRefs": [
+        "ev-fbsrc000001-33d437169a02bc91",
+        "ev-fbsrc000025-07df26ec6400c8fe"
+      ],
+      "evidenceBindings": [
+        {
+          "evidenceId": "ev-fbsrc000001-33d437169a02bc91",
+          "purpose": "knowledge-evidence",
+          "branch": "knowledge",
+          "supportStatus": "pending"
+        },
+        {
+          "evidenceId": "ev-fbsrc000025-07df26ec6400c8fe",
+          "purpose": "knowledge-evidence",
+          "branch": "knowledge",
+          "supportStatus": "pending"
+        }
+      ],
+      "retiredAt": "2026-07-30T17:05:27.071Z"
+    },
+    {
+      "resetId": "rbr-ms7rlek1",
+      "cardId": "rag.restraint.tool.straitjacket",
+      "sourceRefs": [
+        {
+          "sourceId": "fb-src-000013",
+          "segmentId": "fb-src-000013-seg-00010",
+          "sourcePath": "external-knowledge/sources/fiction-bondage/不知道作者/古堡.md",
+          "startLine": 82,
+          "endLine": 90
+        },
+        {
+          "sourceId": "fb-src-000033",
+          "segmentId": "fb-src-000033-seg-00038",
+          "sourcePath": "external-knowledge/sources/fiction-bondage/不知道作者/无限拘束乐园.md",
+          "startLine": 1189,
+          "endLine": 1220
+        }
+      ],
+      "evidenceRefs": [
+        "ev-fbsrc000013-0e0aba7ec0d43059",
+        "ev-fbsrc000033-3e22e68e2161b366"
+      ],
+      "evidenceBindings": [
+        {
+          "evidenceId": "ev-fbsrc000013-0e0aba7ec0d43059",
+          "purpose": "knowledge-evidence",
+          "branch": "knowledge",
+          "supportStatus": "pending"
+        },
+        {
+          "evidenceId": "ev-fbsrc000033-3e22e68e2161b366",
+          "purpose": "knowledge-evidence",
+          "branch": "knowledge",
+          "supportStatus": "pending"
+        }
+      ],
+      "retiredAt": "2026-07-30T17:05:27.073Z"
+    },
+    {
+      "resetId": "rbr-ms7rngw3",
+      "cardId": "rag.restraint.detail.寒冷",
+      "sourceRefs": [],
+      "evidenceRefs": [],
+      "evidenceBindings": [],
+      "retiredAt": "2026-07-30T17:07:03.364Z"
+    },
+    {
+      "resetId": "rbr-ms7rngw3",
+      "cardId": "rag.restraint.detail.小黑屋",
+      "sourceRefs": [],
+      "evidenceRefs": [],
+      "evidenceBindings": [],
+      "retiredAt": "2026-07-30T17:07:03.371Z"
+    },
+    {
+      "resetId": "rbr-ms7rngw3",
+      "cardId": "rag.restraint.detail.水牢",
+      "sourceRefs": [],
+      "evidenceRefs": [],
+      "evidenceBindings": [],
+      "retiredAt": "2026-07-30T17:07:03.375Z"
+    },
+    {
+      "resetId": "rbr-ms7rngw3",
+      "cardId": "rag.restraint.duration.permanent-restraint",
+      "sourceRefs": [],
+      "evidenceRefs": [],
+      "evidenceBindings": [],
+      "retiredAt": "2026-07-30T17:07:03.379Z"
+    },
+    {
+      "resetId": "rbr-ms7rngw3",
+      "cardId": "rag.restraint.effect.tickling",
+      "sourceRefs": [],
+      "evidenceRefs": [],
+      "evidenceBindings": [],
+      "retiredAt": "2026-07-30T17:07:03.384Z"
+    },
+    {
+      "resetId": "rbr-ms7rngw3",
+      "cardId": "rag.restraint.material.glue",
+      "sourceRefs": [],
+      "evidenceRefs": [],
+      "evidenceBindings": [],
+      "retiredAt": "2026-07-30T17:07:03.386Z"
+    },
+    {
+      "resetId": "rbr-ms7rngw3",
+      "cardId": "rag.restraint.material.spider-silk",
+      "sourceRefs": [],
+      "evidenceRefs": [],
+      "evidenceBindings": [],
+      "retiredAt": "2026-07-30T17:07:03.391Z"
+    },
+    {
+      "resetId": "rbr-ms7rngw3",
+      "cardId": "rag.restraint.material.tentacle",
+      "sourceRefs": [],
+      "evidenceRefs": [],
+      "evidenceBindings": [],
+      "retiredAt": "2026-07-30T17:07:03.395Z"
+    },
+    {
+      "resetId": "rbr-ms7rngw3",
+      "cardId": "rag.restraint.state.confinement",
+      "sourceRefs": [],
+      "evidenceRefs": [],
+      "evidenceBindings": [],
+      "retiredAt": "2026-07-30T17:07:03.399Z"
+    },
+    {
+      "resetId": "rbr-ms7rngw3",
+      "cardId": "rag.restraint.tool.cable-tie",
+      "sourceRefs": [],
+      "evidenceRefs": [],
+      "evidenceBindings": [],
+      "retiredAt": "2026-07-30T17:07:03.403Z"
+    },
+    {
+      "resetId": "rbr-ms7rngw3",
+      "cardId": "rag.restraint.tool.chain",
+      "sourceRefs": [],
+      "evidenceRefs": [],
+      "evidenceBindings": [],
+      "retiredAt": "2026-07-30T17:07:03.407Z"
+    },
+    {
+      "resetId": "rbr-ms7rngw3",
+      "cardId": "rag.restraint.tool.handcuffs",
+      "sourceRefs": [],
+      "evidenceRefs": [],
+      "evidenceBindings": [],
+      "retiredAt": "2026-07-30T17:07:03.409Z"
+    },
+    {
+      "resetId": "rbr-ms7rngw3",
+      "cardId": "rag.restraint.tool.leg-irons",
+      "sourceRefs": [],
+      "evidenceRefs": [],
+      "evidenceBindings": [],
+      "retiredAt": "2026-07-30T17:07:03.413Z"
+    },
+    {
+      "resetId": "rbr-ms7rngw3",
+      "cardId": "rag.restraint.tool.shackles",
+      "sourceRefs": [],
+      "evidenceRefs": [],
+      "evidenceBindings": [],
+      "retiredAt": "2026-07-30T17:07:03.416Z"
+    },
+    {
+      "resetId": "rbr-ms7rngw3",
+      "cardId": "rag.restraint.tool.straitjacket",
+      "sourceRefs": [],
+      "evidenceRefs": [],
+      "evidenceBindings": [],
+      "retiredAt": "2026-07-30T17:07:03.419Z"
+    }
+  ]
+}

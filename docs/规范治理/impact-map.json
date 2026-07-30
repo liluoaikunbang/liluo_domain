@@ -2,91 +2,191 @@
   "schemaVersion": 1,
   "changeTypes": {
     "persistent-rule": {
-      "requiredChecks": ["权威系统说明或项目宪章", "rule-registry.json", "直接消费者", "项目知识索引"],
+      "requiredChecks": [
+        "权威系统说明或项目宪章",
+        "rule-registry.json",
+        "直接消费者",
+        "项目知识索引"
+      ],
       "featureUpdate": false,
       "userCommands": false,
       "decision": false
     },
     "new-user-invokable-workflow": {
-      "requiredChecks": ["docs/用户命令目录.md", "对应 Skill/Agent/脚本", "对应说明", "当前系统说明", "功能更新", "项目知识索引"],
+      "requiredChecks": [
+        "docs/用户命令目录.md",
+        "对应 Skill/Agent/脚本",
+        "对应说明",
+        "当前系统说明",
+        "功能更新",
+        "项目知识索引"
+      ],
       "featureUpdate": true,
       "userCommands": true,
       "decision": false
     },
     "agent-role-change": {
-      "requiredChecks": [".codex/agents/*.toml", "docs/智能体说明/", "docs/智能体说明/项目子智能体体系.md", "AGENTS.md", "项目知识索引"],
+      "requiredChecks": [
+        ".codex/agents/*.toml",
+        "docs/智能体说明/",
+        "docs/智能体说明/项目子智能体体系.md",
+        "AGENTS.md",
+        "项目知识索引"
+      ],
       "featureUpdate": true,
       "userCommands": false,
       "decision": false
     },
     "agent-persona-change": {
-      "requiredChecks": ["docs/设计记忆/项目组灵魂/", "team-roster.json", "project-navigation/team-routing.json", "文号变更时检查文号体系来源与篇名池", "对应 Agent TOML 与说明", "创作组系统说明", "项目知识索引"],
+      "requiredChecks": [
+        "docs/设计记忆/项目组灵魂/",
+        "team-roster.json",
+        "project-navigation/team-routing.json",
+        "文号变更时检查文号体系来源与篇名池",
+        "对应 Agent TOML 与说明",
+        "创作组系统说明",
+        "项目知识索引"
+      ],
       "featureUpdate": true,
       "userCommands": true,
       "decision": "consider-CDR"
     },
     "context-load-policy-change": {
-      "requiredChecks": ["project-navigation/context-policy.json", "schemas/workflows/context-policy.schema.json", "docs/系统说明/项目上下文装载与配置分层系统.md", ".cursor/rules/00-project-entry.mdc", "project:context:audit", "项目知识索引"],
+      "requiredChecks": [
+        "project-navigation/context-policy.json",
+        "schemas/workflows/context-policy.schema.json",
+        "docs/系统说明/项目上下文装载与配置分层系统.md",
+        ".cursor/rules/00-project-entry.mdc",
+        "project:context:audit",
+        "项目知识索引"
+      ],
       "featureUpdate": true,
       "userCommands": true,
       "decision": "consider-ADR"
     },
     "architecture-decision": {
-      "requiredChecks": ["docs/设计记忆/架构决策/", "相关系统说明", "相关 Skill/Agent", "项目知识索引"],
+      "requiredChecks": [
+        "docs/设计记忆/架构决策/",
+        "相关系统说明",
+        "相关 Skill/Agent",
+        "项目知识索引"
+      ],
       "featureUpdate": false,
       "userCommands": false,
       "decision": "ADR"
     },
     "creative-decision": {
-      "requiredChecks": ["docs/设计记忆/创作决策/", "项目宪章或设计原则", "相关创作 Skill", "项目知识索引"],
+      "requiredChecks": [
+        "docs/设计记忆/创作决策/",
+        "项目宪章或设计原则",
+        "相关创作 Skill",
+        "项目知识索引"
+      ],
       "featureUpdate": false,
       "userCommands": false,
       "decision": "CDR"
     },
     "system-contract-change": {
-      "requiredChecks": ["相关系统说明", "对应 Skill/Agent", "schema 或测试", "功能更新", "项目知识索引"],
+      "requiredChecks": [
+        "相关系统说明",
+        "对应 Skill/Agent",
+        "schema 或测试",
+        "功能更新",
+        "项目知识索引"
+      ],
       "featureUpdate": true,
       "userCommands": false,
       "decision": "consider-ADR"
     },
     "one-off-bug-fix": {
-      "requiredChecks": ["相关测试", "必要的当前说明"],
+      "requiredChecks": [
+        "相关测试",
+        "必要的当前说明"
+      ],
       "featureUpdate": false,
       "userCommands": false,
       "decision": false
     },
     "documentation-compression": {
-      "requiredChecks": ["docs/规范治理/文档压缩规范.md", "权威来源", "消费者链接", "治理审计"],
+      "requiredChecks": [
+        "docs/规范治理/文档压缩规范.md",
+        "权威来源",
+        "消费者链接",
+        "治理审计"
+      ],
       "featureUpdate": false,
       "userCommands": false,
       "decision": false
     },
     "external-skill-system-change": {
-      "requiredChecks": ["外部 Skill 系统说明", "source schema", "更新脚本与测试", "许可证策略", "用户命令", "ADR-004", "项目知识索引"],
+      "requiredChecks": [
+        "外部 Skill 系统说明",
+        "source schema",
+        "更新脚本与测试",
+        "许可证策略",
+        "用户命令",
+        "ADR-004",
+        "项目知识索引"
+      ],
       "featureUpdate": true,
       "userCommands": true,
       "decision": "ADR"
     },
     "natural-expression-change": {
-      "requiredChecks": ["自然表达系统说明", "writing Skill", "风格档案与 fixture", "用户命令", "CDR-005", "项目知识索引"],
+      "requiredChecks": [
+        "自然表达系统说明",
+        "writing Skill",
+        "风格档案与 fixture",
+        "用户命令",
+        "CDR-005",
+        "项目知识索引"
+      ],
       "featureUpdate": true,
       "userCommands": true,
       "decision": "CDR"
     },
     "command-approval-change": {
-      "requiredChecks": ["Codex 命令授权系统说明", ".codex/rules", "批准决定注册表", "命令授权 Skill 与测试", "命令批准分级表", "用户命令", "ADR-005", "项目知识索引"],
+      "requiredChecks": [
+        "Codex 命令授权系统说明",
+        ".codex/rules",
+        "批准决定注册表",
+        "命令授权 Skill 与测试",
+        "命令批准分级表",
+        "用户命令",
+        "ADR-005",
+        "项目知识索引"
+      ],
       "featureUpdate": "only-for-system-contract-change",
       "userCommands": true,
       "decision": "consider-ADR"
     },
     "content-production-change": {
-      "requiredChecks": ["故事转可玩系统说明", "路线验证与 fixture", "角色关系长期记忆", "正式来源门槛", "生产覆盖", "四个 Skill 与技能说明", "用户命令", "ADR-006", "功能更新", "项目知识索引"],
+      "requiredChecks": [
+        "故事转可玩系统说明",
+        "路线验证与 fixture",
+        "角色关系长期记忆",
+        "正式来源门槛",
+        "生产覆盖",
+        "四个 Skill 与技能说明",
+        "用户命令",
+        "ADR-006",
+        "功能更新",
+        "项目知识索引"
+      ],
       "featureUpdate": true,
       "userCommands": true,
       "decision": "ADR"
     },
     "capability-regression-change": {
-      "requiredChecks": ["能力回归系统说明", "评测 Schema 与注册表", "对应案例", "能力回归 Skill 与说明", "用户命令", "功能更新", "项目知识索引"],
+      "requiredChecks": [
+        "能力回归系统说明",
+        "评测 Schema 与注册表",
+        "对应案例",
+        "能力回归 Skill 与说明",
+        "用户命令",
+        "功能更新",
+        "项目知识索引"
+      ],
       "featureUpdate": true,
       "userCommands": true,
       "decision": "consider-ADR"

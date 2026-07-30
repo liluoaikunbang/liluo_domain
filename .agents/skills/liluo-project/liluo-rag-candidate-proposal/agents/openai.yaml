@@ -1,0 +1,4 @@
+interface:
+  display_name: "RAG 增量提议"
+  short_description: "从项目增量中提出待用户确认的 RAG 候选"
+  default_prompt: "Use $liluo-rag-candidate-proposal to propose traceable RAG candidates without confirming or writing them."

@@ -159,7 +159,9 @@
       "status": "大纲",
       "parentKey": "world-1-glimmering-glance-club",
       "order": 10,
-      "ragRefs": [],
+      "ragRefs": [
+        "rag.restraint.tool.handcuffs"
+      ],
       "plotRefs": [],
       "gameplayRefs": [],
       "legacyTagRefs": [

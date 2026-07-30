@@ -18,7 +18,7 @@
       "nextAction": "比较四个候选与各自原文主题的适配度。",
       "originRef": "project-navigation/manual-gaps.json",
       "derivedFrom": "manual-gaps",
-      "lastSeenAt": "2026-07-28T03:22:37.387Z"
+      "lastSeenAt": "2026-07-30T17:16:55.769Z"
     },
     {
       "id": "gap-cursebound-region-functions",
@@ -35,7 +35,7 @@
         "至少完成一个地区卷的功能确认且不覆盖其原始灵感"
       ],
       "nextAction": "从熔辉机城或女巫沼泽选择一个进行最小功能核验。",
-      "lastSeenAt": "2026-07-28T03:22:37.387Z",
+      "lastSeenAt": "2026-07-30T17:16:55.769Z",
       "originRef": "project-navigation/manual-gaps.json",
       "derivedFrom": "manual-gaps"
     },
@@ -54,7 +54,7 @@
         "每个阶段有触发、可见影响和可逆性边界"
       ],
       "nextAction": "从初次显现与可控发作两阶段开始确认。",
-      "lastSeenAt": "2026-07-28T03:22:37.387Z",
+      "lastSeenAt": "2026-07-30T17:16:55.769Z",
       "originRef": "project-navigation/manual-gaps.json",
       "derivedFrom": "manual-gaps"
     },
@@ -73,7 +73,7 @@
         "确认触发条件、首次可见后果与不应提前解释的部分"
       ],
       "nextAction": "先确定璃落在秘塔中触碰的风险类型，不决定古咒来源。",
-      "lastSeenAt": "2026-07-28T03:22:37.387Z",
+      "lastSeenAt": "2026-07-30T17:16:55.769Z",
       "originRef": "project-navigation/manual-gaps.json",
       "derivedFrom": "manual-gaps"
     },
@@ -92,7 +92,7 @@
         "每次审查都记录已分配、保留候选和仍缺的信息"
       ],
       "nextAction": "从一个新灵感开始，仅决定阶段容器与待确认信息。",
-      "lastSeenAt": "2026-07-28T03:22:37.387Z",
+      "lastSeenAt": "2026-07-30T17:16:55.769Z",
       "originRef": "project-navigation/manual-gaps.json",
       "derivedFrom": "manual-gaps"
     },
@@ -112,7 +112,7 @@
         "用户行动页由注册表生成"
       ],
       "nextAction": "完成首版治理与回归接入",
-      "lastSeenAt": "2026-07-28T03:22:37.387Z",
+      "lastSeenAt": "2026-07-30T17:16:55.769Z",
       "originRef": "project-navigation/manual-gaps.json",
       "derivedFrom": "manual-gaps"
     },
@@ -160,7 +160,7 @@
       ],
       "createdAt": "2026-07-26",
       "updatedAt": "2026-07-26",
-      "lastSeenAt": "2026-07-28T03:22:37.387Z",
+      "lastSeenAt": "2026-07-30T17:16:55.769Z",
       "originRef": "project-navigation/manual-gaps.json",
       "derivedFrom": "manual-gaps"
     },
@@ -179,7 +179,7 @@
         "确认异常灾域是正史局部异常、独立灾域还是轮回入口"
       ],
       "nextAction": "为异常灾域选择一项不涉及具体幕后原因的开放条件。",
-      "lastSeenAt": "2026-07-28T03:22:37.387Z",
+      "lastSeenAt": "2026-07-30T17:16:55.769Z",
       "originRef": "project-navigation/manual-gaps.json",
       "derivedFrom": "manual-gaps"
     },
@@ -198,7 +198,7 @@
         "阶段之间的必要因果由用户确认并写入对应正式主线备忘"
       ],
       "nextAction": "选择相邻两个正史阶段，确认它们之间真正必须成立的状态变化。",
-      "lastSeenAt": "2026-07-28T03:22:37.387Z",
+      "lastSeenAt": "2026-07-30T17:16:55.769Z",
       "originRef": "project-navigation/manual-gaps.json",
       "derivedFrom": "manual-gaps"
     },
@@ -217,7 +217,7 @@
         "至少确认入口、完成后返回关系和可保留状态的边界"
       ],
       "nextAction": "决定一个轮回世界如何被璃落发现，而不预设其制造者。",
-      "lastSeenAt": "2026-07-28T03:22:37.387Z",
+      "lastSeenAt": "2026-07-30T17:16:55.769Z",
       "originRef": "project-navigation/manual-gaps.json",
       "derivedFrom": "manual-gaps"
     },
@@ -236,7 +236,7 @@
         "确认或否决一个候选，保留另一个完整区域篇地位"
       ],
       "nextAction": "比较两个候选如何改变璃落的航程状态。",
-      "lastSeenAt": "2026-07-28T03:22:37.387Z",
+      "lastSeenAt": "2026-07-30T17:16:55.769Z",
       "originRef": "project-navigation/manual-gaps.json",
       "derivedFrom": "manual-gaps"
     },
@@ -255,7 +255,7 @@
         "确认长期航行方式与返回据点的最小事实"
       ],
       "nextAction": "确定璃落获得的是何种持续跨星区行动资格。",
-      "lastSeenAt": "2026-07-28T03:22:37.387Z",
+      "lastSeenAt": "2026-07-30T17:16:55.769Z",
       "originRef": "project-navigation/manual-gaps.json",
       "derivedFrom": "manual-gaps"
     },
@@ -274,7 +274,7 @@
         "为一个已知星域篇确认一个真实长期变化"
       ],
       "nextAction": "选择一个独立篇章，确认其完成后允许璃落带走的关系或权限。",
-      "lastSeenAt": "2026-07-28T03:22:37.387Z",
+      "lastSeenAt": "2026-07-30T17:16:55.769Z",
       "originRef": "project-navigation/manual-gaps.json",
       "derivedFrom": "manual-gaps"
     },
@@ -322,7 +322,7 @@
       ],
       "createdAt": "2026-07-26",
       "updatedAt": "2026-07-26",
-      "lastSeenAt": "2026-07-28T03:22:37.387Z",
+      "lastSeenAt": "2026-07-30T17:16:55.769Z",
       "originRef": "project-navigation/manual-gaps.json",
       "derivedFrom": "manual-gaps"
     },
@@ -365,7 +365,7 @@
       ],
       "createdAt": "2026-07-26",
       "updatedAt": "2026-07-26",
-      "lastSeenAt": "2026-07-28T03:22:37.387Z",
+      "lastSeenAt": "2026-07-30T17:16:55.769Z",
       "originRef": "project-navigation/manual-gaps.json",
       "derivedFrom": "manual-gaps"
     },
@@ -412,7 +412,7 @@
       ],
       "createdAt": "2026-07-26",
       "updatedAt": "2026-07-26",
-      "lastSeenAt": "2026-07-28T03:22:37.387Z",
+      "lastSeenAt": "2026-07-30T17:16:55.769Z",
       "originRef": "project-navigation/manual-gaps.json",
       "derivedFrom": "manual-gaps"
     },
@@ -458,7 +458,7 @@
       ],
       "createdAt": "2026-07-26",
       "updatedAt": "2026-07-26",
-      "lastSeenAt": "2026-07-28T03:22:37.387Z",
+      "lastSeenAt": "2026-07-30T17:16:55.769Z",
       "originRef": "project-navigation/manual-gaps.json",
       "derivedFrom": "manual-gaps"
     },
@@ -514,7 +514,7 @@
       ],
       "createdAt": "2026-07-26",
       "updatedAt": "2026-07-26",
-      "lastSeenAt": "2026-07-28T03:22:37.387Z",
+      "lastSeenAt": "2026-07-30T17:16:55.769Z",
       "originRef": "project-navigation/manual-gaps.json",
       "derivedFrom": "manual-gaps"
     },
@@ -570,7 +570,7 @@
       ],
       "createdAt": "2026-07-26",
       "updatedAt": "2026-07-26",
-      "lastSeenAt": "2026-07-28T03:22:37.387Z",
+      "lastSeenAt": "2026-07-30T17:16:55.769Z",
       "originRef": "project-navigation/manual-gaps.json",
       "derivedFrom": "manual-gaps"
     },
@@ -612,7 +612,7 @@
       ],
       "createdAt": "2026-07-26",
       "updatedAt": "2026-07-26",
-      "lastSeenAt": "2026-07-28T03:22:37.387Z",
+      "lastSeenAt": "2026-07-30T17:16:55.769Z",
       "originRef": "project-navigation/manual-gaps.json",
       "derivedFrom": "manual-gaps"
     },
@@ -661,7 +661,7 @@
       ],
       "createdAt": "2026-07-26",
       "updatedAt": "2026-07-26",
-      "lastSeenAt": "2026-07-28T03:22:37.387Z",
+      "lastSeenAt": "2026-07-30T17:16:55.769Z",
       "originRef": "project-navigation/manual-gaps.json",
       "derivedFrom": "manual-gaps"
     },
@@ -717,7 +717,7 @@
       ],
       "createdAt": "2026-07-26",
       "updatedAt": "2026-07-26",
-      "lastSeenAt": "2026-07-28T03:22:37.387Z",
+      "lastSeenAt": "2026-07-30T17:16:55.769Z",
       "originRef": "project-navigation/manual-gaps.json",
       "derivedFrom": "manual-gaps"
     },
@@ -766,7 +766,7 @@
       ],
       "createdAt": "2026-07-26",
       "updatedAt": "2026-07-26",
-      "lastSeenAt": "2026-07-28T03:22:37.387Z",
+      "lastSeenAt": "2026-07-30T17:16:55.769Z",
       "originRef": "project-navigation/manual-gaps.json",
       "derivedFrom": "manual-gaps"
     },
@@ -808,7 +808,7 @@
       ],
       "createdAt": "2026-07-26",
       "updatedAt": "2026-07-26",
-      "lastSeenAt": "2026-07-28T03:22:37.387Z",
+      "lastSeenAt": "2026-07-30T17:16:55.769Z",
       "originRef": "project-navigation/manual-gaps.json",
       "derivedFrom": "manual-gaps"
     },
@@ -852,7 +852,7 @@
       ],
       "createdAt": "2026-07-26",
       "updatedAt": "2026-07-26",
-      "lastSeenAt": "2026-07-28T03:22:37.387Z",
+      "lastSeenAt": "2026-07-30T17:16:55.769Z",
       "originRef": "project-navigation/manual-gaps.json",
       "derivedFrom": "manual-gaps"
     },
@@ -874,7 +874,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.385Z",
+      "lastSeenAt": "2026-07-30T17:16:55.765Z",
       "resolvedAt": null
     },
     {
@@ -895,7 +895,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.385Z",
+      "lastSeenAt": "2026-07-30T17:16:55.765Z",
       "resolvedAt": null
     },
     {
@@ -917,7 +917,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.385Z",
+      "lastSeenAt": "2026-07-30T17:16:55.765Z",
       "resolvedAt": null
     },
     {
@@ -938,7 +938,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.384Z",
+      "lastSeenAt": "2026-07-30T17:16:55.764Z",
       "resolvedAt": null
     },
     {
@@ -959,7 +959,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.385Z",
+      "lastSeenAt": "2026-07-30T17:16:55.765Z",
       "resolvedAt": null
     },
     {
@@ -980,7 +980,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.385Z",
+      "lastSeenAt": "2026-07-30T17:16:55.765Z",
       "resolvedAt": null
     },
     {
@@ -1002,7 +1002,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.385Z",
+      "lastSeenAt": "2026-07-30T17:16:55.765Z",
       "resolvedAt": null
     },
     {
@@ -1023,7 +1023,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.385Z",
+      "lastSeenAt": "2026-07-30T17:16:55.765Z",
       "resolvedAt": null
     },
     {
@@ -1044,7 +1044,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.385Z",
+      "lastSeenAt": "2026-07-30T17:16:55.765Z",
       "resolvedAt": null
     },
     {
@@ -1065,7 +1065,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.385Z",
+      "lastSeenAt": "2026-07-30T17:16:55.765Z",
       "resolvedAt": null
     },
     {
@@ -1086,7 +1086,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.385Z",
+      "lastSeenAt": "2026-07-30T17:16:55.765Z",
       "resolvedAt": null
     },
     {
@@ -1107,7 +1107,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.385Z",
+      "lastSeenAt": "2026-07-30T17:16:55.765Z",
       "resolvedAt": null
     },
     {
@@ -1128,7 +1128,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.385Z",
+      "lastSeenAt": "2026-07-30T17:16:55.765Z",
       "resolvedAt": null
     },
     {
@@ -1150,7 +1150,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.385Z",
+      "lastSeenAt": "2026-07-30T17:16:55.765Z",
       "resolvedAt": null
     },
     {
@@ -1171,7 +1171,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.385Z",
+      "lastSeenAt": "2026-07-30T17:16:55.765Z",
       "resolvedAt": null
     },
     {
@@ -1192,7 +1192,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.388Z",
+      "lastSeenAt": "2026-07-30T17:16:55.769Z",
       "resolvedAt": null
     },
     {
@@ -1213,7 +1213,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.385Z",
+      "lastSeenAt": "2026-07-30T17:16:55.765Z",
       "resolvedAt": null
     },
     {
@@ -1234,7 +1234,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.385Z",
+      "lastSeenAt": "2026-07-30T17:16:55.765Z",
       "resolvedAt": null
     },
     {
@@ -1256,7 +1256,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.385Z",
+      "lastSeenAt": "2026-07-30T17:16:55.765Z",
       "resolvedAt": null
     },
     {
@@ -1277,7 +1277,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.385Z",
+      "lastSeenAt": "2026-07-30T17:16:55.765Z",
       "resolvedAt": null
     },
     {
@@ -1298,7 +1298,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.385Z",
+      "lastSeenAt": "2026-07-30T17:16:55.765Z",
       "resolvedAt": null
     },
     {
@@ -1320,7 +1320,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.385Z",
+      "lastSeenAt": "2026-07-30T17:16:55.765Z",
       "resolvedAt": null
     },
     {
@@ -1341,7 +1341,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.385Z",
+      "lastSeenAt": "2026-07-30T17:16:55.765Z",
       "resolvedAt": null
     },
     {
@@ -1362,7 +1362,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.385Z",
+      "lastSeenAt": "2026-07-30T17:16:55.765Z",
       "resolvedAt": null
     },
     {
@@ -1384,7 +1384,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.385Z",
+      "lastSeenAt": "2026-07-30T17:16:55.765Z",
       "resolvedAt": null
     },
     {
@@ -1405,7 +1405,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.385Z",
+      "lastSeenAt": "2026-07-30T17:16:55.765Z",
       "resolvedAt": null
     },
     {
@@ -1426,7 +1426,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.385Z",
+      "lastSeenAt": "2026-07-30T17:16:55.765Z",
       "resolvedAt": null
     },
     {
@@ -1448,7 +1448,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.385Z",
+      "lastSeenAt": "2026-07-30T17:16:55.765Z",
       "resolvedAt": null
     },
     {
@@ -1469,7 +1469,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.385Z",
+      "lastSeenAt": "2026-07-30T17:16:55.765Z",
       "resolvedAt": null
     },
     {
@@ -1490,7 +1490,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.385Z",
+      "lastSeenAt": "2026-07-30T17:16:55.765Z",
       "resolvedAt": null
     },
     {
@@ -1512,7 +1512,49 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.385Z",
+      "lastSeenAt": "2026-07-30T17:16:55.765Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-eternal-restraint-maze-衔接-永拘迷宫-满怨古树吸收-7d9addcfdb",
+      "title": "永拘迷宫·满怨古树吸收",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "已确认后期由满怨古树吸收核心怨念树并与群像救援并行瓦解核心；仍缺触发时机、可见过程，以及对满怨古树的即时后果",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-eternal-restraint-maze",
+        "src/game/data/story_outline/1-modern/4.3-永拘迷宫.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-30T17:16:55.765Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-eternal-restraint-maze-设计-永拘迷宫-区域细则-71150c77c0",
+      "title": "永拘迷宫·区域细则",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "已确认六种心理态房间与核心怨念树；仍缺各态房间数量、连接规则，以及相较其他禁域模块的机制差异细则",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-eternal-restraint-maze",
+        "src/game/data/story_outline/1-modern/4.3-永拘迷宫.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-30T17:16:55.765Z",
       "resolvedAt": null
     },
     {
@@ -1520,7 +1562,7 @@
       "title": "永拘迷宫·故事体量",
       "domain": "story",
       "origin": "story-missing-item",
-      "status": "open",
+      "status": "needs-review",
       "priority": "untriaged",
       "description": "缺少故事体量、主要区域数量与核心机制差异说明",
       "sourceRefs": [
@@ -1533,7 +1575,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.385Z",
+      "lastSeenAt": "2026-07-30T17:16:55.769Z",
       "resolvedAt": null
     },
     {
@@ -1554,7 +1596,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.385Z",
+      "lastSeenAt": "2026-07-30T17:16:55.765Z",
       "resolvedAt": null
     },
     {
@@ -1575,7 +1617,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.385Z",
+      "lastSeenAt": "2026-07-30T17:16:55.765Z",
       "resolvedAt": null
     },
     {
@@ -1597,7 +1639,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.385Z",
+      "lastSeenAt": "2026-07-30T17:16:55.765Z",
       "resolvedAt": null
     },
     {
@@ -1618,7 +1660,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.385Z",
+      "lastSeenAt": "2026-07-30T17:16:55.765Z",
       "resolvedAt": null
     },
     {
@@ -1639,7 +1681,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.385Z",
+      "lastSeenAt": "2026-07-30T17:16:55.765Z",
       "resolvedAt": null
     },
     {
@@ -1660,7 +1702,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.385Z",
+      "lastSeenAt": "2026-07-30T17:16:55.765Z",
       "resolvedAt": null
     },
     {
@@ -1682,7 +1724,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.385Z",
+      "lastSeenAt": "2026-07-30T17:16:55.765Z",
       "resolvedAt": null
     },
     {
@@ -1703,7 +1745,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.385Z",
+      "lastSeenAt": "2026-07-30T17:16:55.765Z",
       "resolvedAt": null
     },
     {
@@ -1724,7 +1766,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.385Z",
+      "lastSeenAt": "2026-07-30T17:16:55.765Z",
       "resolvedAt": null
     },
     {
@@ -1745,7 +1787,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.385Z",
+      "lastSeenAt": "2026-07-30T17:16:55.765Z",
       "resolvedAt": null
     },
     {
@@ -1767,7 +1809,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.385Z",
+      "lastSeenAt": "2026-07-30T17:16:55.765Z",
       "resolvedAt": null
     },
     {
@@ -1788,7 +1830,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.385Z",
+      "lastSeenAt": "2026-07-30T17:16:55.765Z",
       "resolvedAt": null
     },
     {
@@ -1809,7 +1851,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.385Z",
+      "lastSeenAt": "2026-07-30T17:16:55.765Z",
       "resolvedAt": null
     },
     {
@@ -1830,7 +1872,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.385Z",
+      "lastSeenAt": "2026-07-30T17:16:55.765Z",
       "resolvedAt": null
     },
     {
@@ -1852,7 +1894,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.385Z",
+      "lastSeenAt": "2026-07-30T17:16:55.765Z",
       "resolvedAt": null
     },
     {
@@ -1873,7 +1915,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.385Z",
+      "lastSeenAt": "2026-07-30T17:16:55.765Z",
       "resolvedAt": null
     },
     {
@@ -1894,7 +1936,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.385Z",
+      "lastSeenAt": "2026-07-30T17:16:55.765Z",
       "resolvedAt": null
     },
     {
@@ -1915,7 +1957,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.385Z",
+      "lastSeenAt": "2026-07-30T17:16:55.765Z",
       "resolvedAt": null
     },
     {
@@ -1936,7 +1978,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.385Z",
+      "lastSeenAt": "2026-07-30T17:16:55.765Z",
       "resolvedAt": null
     },
     {
@@ -1957,7 +1999,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.385Z",
+      "lastSeenAt": "2026-07-30T17:16:55.765Z",
       "resolvedAt": null
     },
     {
@@ -1978,7 +2020,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.385Z",
+      "lastSeenAt": "2026-07-30T17:16:55.765Z",
       "resolvedAt": null
     },
     {
@@ -1999,7 +2041,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.385Z",
+      "lastSeenAt": "2026-07-30T17:16:55.765Z",
       "resolvedAt": null
     },
     {
@@ -2021,7 +2063,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.385Z",
+      "lastSeenAt": "2026-07-30T17:16:55.765Z",
       "resolvedAt": null
     },
     {
@@ -2042,7 +2084,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.385Z",
+      "lastSeenAt": "2026-07-30T17:16:55.765Z",
       "resolvedAt": null
     },
     {
@@ -2063,7 +2105,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.385Z",
+      "lastSeenAt": "2026-07-30T17:16:55.765Z",
       "resolvedAt": null
     },
     {
@@ -2085,7 +2127,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.385Z",
+      "lastSeenAt": "2026-07-30T17:16:55.765Z",
       "resolvedAt": null
     },
     {
@@ -2106,7 +2148,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.385Z",
+      "lastSeenAt": "2026-07-30T17:16:55.765Z",
       "resolvedAt": null
     },
     {
@@ -2127,7 +2169,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.385Z",
+      "lastSeenAt": "2026-07-30T17:16:55.765Z",
       "resolvedAt": null
     },
     {
@@ -2149,7 +2191,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.385Z",
+      "lastSeenAt": "2026-07-30T17:16:55.765Z",
       "resolvedAt": null
     },
     {
@@ -2170,7 +2212,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.385Z",
+      "lastSeenAt": "2026-07-30T17:16:55.765Z",
       "resolvedAt": null
     },
     {
@@ -2191,7 +2233,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.765Z",
       "resolvedAt": null
     },
     {
@@ -2213,7 +2255,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.765Z",
       "resolvedAt": null
     },
     {
@@ -2234,7 +2276,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.765Z",
       "resolvedAt": null
     },
     {
@@ -2255,7 +2297,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.765Z",
       "resolvedAt": null
     },
     {
@@ -2276,7 +2318,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.765Z",
       "resolvedAt": null
     },
     {
@@ -2298,7 +2340,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.765Z",
       "resolvedAt": null
     },
     {
@@ -2319,7 +2361,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.765Z",
       "resolvedAt": null
     },
     {
@@ -2340,7 +2382,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.765Z",
       "resolvedAt": null
     },
     {
@@ -2362,7 +2404,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.765Z",
       "resolvedAt": null
     },
     {
@@ -2383,7 +2425,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -2404,7 +2446,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -2425,7 +2467,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -2446,7 +2488,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -2468,7 +2510,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -2489,7 +2531,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -2510,7 +2552,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -2531,7 +2573,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -2552,7 +2594,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -2574,7 +2616,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -2595,7 +2637,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -2616,7 +2658,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -2637,7 +2679,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -2659,7 +2701,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -2680,7 +2722,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -2701,7 +2743,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -2722,7 +2764,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -2744,7 +2786,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -2765,7 +2807,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -2786,7 +2828,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -2807,7 +2849,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -2829,7 +2871,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -2850,7 +2892,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -2871,7 +2913,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -2893,7 +2935,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -2914,7 +2956,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -2935,7 +2977,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -2956,7 +2998,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -2978,7 +3020,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -2999,7 +3041,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -3020,7 +3062,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -3041,7 +3083,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -3063,7 +3105,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -3084,7 +3126,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -3105,7 +3147,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -3126,7 +3168,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -3148,7 +3190,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -3169,7 +3211,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -3190,7 +3232,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -3212,7 +3254,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -3233,7 +3275,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -3254,7 +3296,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -3276,7 +3318,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -3297,7 +3339,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -3318,7 +3360,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -3339,7 +3381,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -3361,7 +3403,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -3382,7 +3424,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -3403,7 +3445,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -3424,7 +3466,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.388Z",
+      "lastSeenAt": "2026-07-30T17:16:55.769Z",
       "resolvedAt": null
     },
     {
@@ -3445,7 +3487,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -3467,7 +3509,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -3488,7 +3530,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -3509,7 +3551,49 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-old-dormitory-rag-紧缚rag-5a095b90bb",
+      "title": "宿舍旧楼·紧缚RAG",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "补全「气味系」正文与来源",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-old-dormitory",
+        "src/game/data/story_outline/1-modern/1.5-宿舍旧楼.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-old-dormitory-rag-紧缚rag-5a095b90bb",
+      "title": "宿舍旧楼·紧缚RAG",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "补全「气味系」正文与来源",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-old-dormitory",
+        "src/game/data/story_outline/1-modern/1.5-宿舍旧楼.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -3530,7 +3614,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -3551,7 +3635,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.388Z",
+      "lastSeenAt": "2026-07-30T17:16:55.769Z",
       "resolvedAt": null
     },
     {
@@ -3572,7 +3656,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.388Z",
+      "lastSeenAt": "2026-07-30T17:16:55.769Z",
       "resolvedAt": null
     },
     {
@@ -3593,7 +3677,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -3615,7 +3699,29 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.388Z",
+      "lastSeenAt": "2026-07-30T17:16:55.769Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-old-dormitory-玩法-宿舍旧楼-杜铮危机拖延操作-3622e09940",
+      "title": "宿舍旧楼·杜铮危机拖延操作",
+      "domain": "gameplay",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "杜铮段玩家主操作循环由用户保留待定",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-old-dormitory",
+        "src/game/data/story_outline/1-modern/1.5-宿舍旧楼.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "确认玩家活动后筛选可落地玩法候选。",
+      "relatedCapabilityIds": [
+        "skill-liluo-gameplay-loop-audit",
+        "skill-liluo-story-gap-discovery"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -3636,7 +3742,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -3657,7 +3763,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.388Z",
+      "lastSeenAt": "2026-07-30T17:16:55.769Z",
       "resolvedAt": null
     },
     {
@@ -3678,7 +3784,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -3700,7 +3806,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -3721,7 +3827,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -3742,7 +3848,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -3763,7 +3869,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -3785,7 +3891,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -3806,7 +3912,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -3827,7 +3933,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -3848,7 +3954,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -3870,7 +3976,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -3891,7 +3997,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -3912,7 +4018,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -3933,7 +4039,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -3955,7 +4061,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -3976,7 +4082,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -3997,7 +4103,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -4018,7 +4124,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -4040,7 +4146,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -4061,7 +4167,70 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-rust-salt-rag-紧缚rag-7e4f6fbc4f",
+      "title": "锈盐·紧缚RAG",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "补全「小笼子」正文与来源",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-rust-salt",
+        "src/game/data/story_outline/1-modern/3.3-锈盐.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-rust-salt-rag-紧缚rag-7e4f6fbc4f",
+      "title": "锈盐·紧缚RAG",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "补全「小笼子」正文与来源",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-rust-salt",
+        "src/game/data/story_outline/1-modern/3.3-锈盐.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-1-glimmering-glance-rust-salt-rag-紧缚rag-7e4f6fbc4f",
+      "title": "锈盐·紧缚RAG",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "补全「小笼子」正文与来源",
+      "sourceRefs": [
+        "story-key:world-1-glimmering-glance-rust-salt",
+        "src/game/data/story_outline/1-modern/3.3-锈盐.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -4082,7 +4251,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -4103,7 +4272,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -4124,7 +4293,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -4146,7 +4315,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -4168,7 +4337,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -4189,7 +4358,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -4210,7 +4379,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -4232,7 +4401,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -4253,7 +4422,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -4274,7 +4443,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -4295,7 +4464,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -4317,7 +4486,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -4338,7 +4507,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -4359,7 +4528,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -4380,7 +4549,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -4402,7 +4571,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -4423,7 +4592,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -4444,7 +4613,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -4465,7 +4634,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -4487,7 +4656,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -4508,7 +4677,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -4529,7 +4698,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -4551,7 +4720,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -4572,7 +4741,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -4593,7 +4762,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -4614,7 +4783,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -4636,7 +4805,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -4657,7 +4826,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -4678,7 +4847,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -4699,7 +4868,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -4720,7 +4889,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -4741,7 +4910,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -4762,7 +4931,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -4784,7 +4953,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -4805,7 +4974,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -4826,7 +4995,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -4848,7 +5017,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -4869,7 +5038,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -4890,7 +5059,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -4911,7 +5080,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -4933,7 +5102,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -4954,7 +5123,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -4975,7 +5144,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -4996,7 +5165,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -5018,7 +5187,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -5039,7 +5208,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -5060,7 +5229,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -5081,7 +5250,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -5103,7 +5272,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -5124,7 +5293,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -5145,7 +5314,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -5166,7 +5335,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -5188,7 +5357,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -5209,7 +5378,114 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-3-mortal-dao-autumn-alliance-hunt-地图-秋盟惊猎-场景结构-1c2688ed6a",
+      "title": "秋盟惊猎·场景结构",
+      "domain": "map",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少秋盟猎苑、旧围栏缓冲沙地与档案库的实际区域及连接",
+      "sourceRefs": [
+        "story-key:world-3-mortal-dao-autumn-alliance-hunt",
+        "src/game/data/story_outline/3-ancient/2.0-秋盟惊猎.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-3-mortal-dao-autumn-alliance-hunt-流程-秋盟惊猎-惊马与查档-229e7a8625",
+      "title": "秋盟惊猎·惊马与查档",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少玩家介入惊马、协查与档案检索的可执行流程",
+      "sourceRefs": [
+        "story-key:world-3-mortal-dao-autumn-alliance-hunt",
+        "src/game/data/story_outline/3-ancient/2.0-秋盟惊猎.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-3-mortal-dao-autumn-alliance-hunt-玩法-秋盟惊猎-调查循环-7668ff0499",
+      "title": "秋盟惊猎·调查循环",
+      "domain": "gameplay",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少调查操作、证据反馈与失败恢复规则",
+      "sourceRefs": [
+        "story-key:world-3-mortal-dao-autumn-alliance-hunt",
+        "src/game/data/story_outline/3-ancient/2.0-秋盟惊猎.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "确认玩家活动后筛选可落地玩法候选。",
+      "relatedCapabilityIds": [
+        "skill-liluo-gameplay-loop-audit",
+        "skill-liluo-story-gap-discovery"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-3-mortal-dao-cold-palace-garden-流程-冷宫荒圃-离开冷宫-e00a1dd2fb",
+      "title": "冷宫荒圃·离开冷宫",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少璃落获得离宫机会的具体事件与条件",
+      "sourceRefs": [
+        "story-key:world-3-mortal-dao-cold-palace-garden",
+        "src/game/data/story_outline/3-ancient/2.1-冷宫荒圃.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-3-mortal-dao-cold-palace-garden-玩法-冷宫荒圃-古代种田循环-c6aef936c7",
+      "title": "冷宫荒圃·古代种田循环",
+      "domain": "gameplay",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少田块规模、作物与季节规则，以及失败和恢复反馈",
+      "sourceRefs": [
+        "story-key:world-3-mortal-dao-cold-palace-garden",
+        "src/game/data/story_outline/3-ancient/2.1-冷宫荒圃.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "确认玩家活动后筛选可落地玩法候选。",
+      "relatedCapabilityIds": [
+        "skill-liluo-gameplay-loop-audit",
+        "skill-liluo-story-gap-discovery"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -5230,7 +5506,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -5251,7 +5527,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -5273,7 +5549,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -5294,7 +5570,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -5315,7 +5591,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -5336,7 +5612,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -5358,7 +5634,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -5379,7 +5655,93 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-3-mortal-dao-hanging-well-detention-流程-悬井吊牢-井下受限观察-07a383674a",
+      "title": "悬井吊牢·井下受限观察",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少玩家如何辨认井壁痕迹、井口声音与遗物位置的可执行流程",
+      "sourceRefs": [
+        "story-key:world-3-mortal-dao-hanging-well-detention",
+        "src/game/data/story_outline/3-ancient/2.0.1-悬井吊牢.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-3-mortal-dao-hanging-well-detention-玩法-悬井吊牢-救援衔接-ddd322ad4e",
+      "title": "悬井吊牢·救援衔接",
+      "domain": "gameplay",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少侍女外部查找、救援触发与玩家反馈的具体安排",
+      "sourceRefs": [
+        "story-key:world-3-mortal-dao-hanging-well-detention",
+        "src/game/data/story_outline/3-ancient/2.0.1-悬井吊牢.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "确认玩家活动后筛选可落地玩法候选。",
+      "relatedCapabilityIds": [
+        "skill-liluo-gameplay-loop-audit",
+        "skill-liluo-story-gap-discovery"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-3-mortal-dao-marriage-northbound-流程-和亲北行-离宫整备-4c7df5dafb",
+      "title": "和亲北行·离宫整备",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少和亲诏令、离宫时机与侍女去留的具体安排",
+      "sourceRefs": [
+        "story-key:world-3-mortal-dao-marriage-northbound",
+        "src/game/data/story_outline/3-ancient/2.3-和亲北行.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-3-mortal-dao-marriage-northbound-玩法-和亲北行-田地迁入-08efeaa94a",
+      "title": "和亲北行·田地迁入",
+      "domain": "gameplay",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少迁入操作、传承空间限制与跨旅途持续开放的规则",
+      "sourceRefs": [
+        "story-key:world-3-mortal-dao-marriage-northbound",
+        "src/game/data/story_outline/3-ancient/2.3-和亲北行.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "确认玩家活动后筛选可落地玩法候选。",
+      "relatedCapabilityIds": [
+        "skill-liluo-gameplay-loop-audit",
+        "skill-liluo-story-gap-discovery"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -5400,7 +5762,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -5421,7 +5783,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -5443,7 +5805,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -5464,7 +5826,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -5485,7 +5847,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -5506,7 +5868,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -5528,7 +5890,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -5549,7 +5911,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.386Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -5570,7 +5932,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.387Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -5591,7 +5953,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.387Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -5613,7 +5975,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.387Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -5634,7 +5996,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.387Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -5655,7 +6017,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.387Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -5676,7 +6038,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.387Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -5698,7 +6060,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.387Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
       "resolvedAt": null
     },
     {
@@ -5719,7 +6081,113 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.387Z",
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-3-mortal-dao-wedding-escort-crisis-地图-接亲惊变-接亲路-31be46f0be",
+      "title": "接亲惊变·接亲路",
+      "domain": "map",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少接亲队行程、伏击区域与脱险路线",
+      "sourceRefs": [
+        "story-key:world-3-mortal-dao-wedding-escort-crisis",
+        "src/game/data/story_outline/3-ancient/3.1-接亲惊变.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-3-mortal-dao-wedding-escort-crisis-流程-接亲惊变-刺杀应对-853dd3dc6b",
+      "title": "接亲惊变·刺杀应对",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少璃落与阿勒珂共险、脱离伏击与返回队伍的可执行流程",
+      "sourceRefs": [
+        "story-key:world-3-mortal-dao-wedding-escort-crisis",
+        "src/game/data/story_outline/3-ancient/3.1-接亲惊变.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-3-mortal-dao-wedding-escort-crisis-玩法-接亲惊变-护送与求生-326cae88bf",
+      "title": "接亲惊变·护送与求生",
+      "domain": "gameplay",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少护送、战斗或潜行的操作循环及失败恢复规则",
+      "sourceRefs": [
+        "story-key:world-3-mortal-dao-wedding-escort-crisis",
+        "src/game/data/story_outline/3-ancient/3.1-接亲惊变.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "确认玩家活动后筛选可落地玩法候选。",
+      "relatedCapabilityIds": [
+        "skill-liluo-gameplay-loop-audit",
+        "skill-liluo-story-gap-discovery"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-3-mortal-dao-well-relic-retrieval-流程-井下取遗-离开冷宫与重返古井-ac5540139f",
+      "title": "井下取遗·离开冷宫与重返古井",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少离宫机会、下井过程与取遗后的离开方式",
+      "sourceRefs": [
+        "story-key:world-3-mortal-dao-well-relic-retrieval",
+        "src/game/data/story_outline/3-ancient/2.2-井下取遗.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-30T17:16:55.766Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "story-gap-world-3-mortal-dao-well-relic-retrieval-设定-井下取遗-传承空间-23644ad004",
+      "title": "井下取遗·传承空间",
+      "domain": "story",
+      "origin": "story-missing-item",
+      "status": "open",
+      "priority": "untriaged",
+      "description": "缺少遗物的具体形态、空间限制与可用于翻盘的已确认能力",
+      "sourceRefs": [
+        "story-key:world-3-mortal-dao-well-relic-retrieval",
+        "src/game/data/story_outline/3-ancient/2.2-井下取遗.md"
+      ],
+      "completionCriteria": [],
+      "nextAction": "围绕这一项进行一次聚焦确认或撰写。",
+      "relatedCapabilityIds": [
+        "skill-liluo-story-outline-authoring"
+      ],
+      "firstSeenAt": null,
+      "lastSeenAt": "2026-07-30T17:16:55.767Z",
       "resolvedAt": null
     },
     {
@@ -5740,7 +6208,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.387Z",
+      "lastSeenAt": "2026-07-30T17:16:55.767Z",
       "resolvedAt": null
     },
     {
@@ -5761,7 +6229,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.387Z",
+      "lastSeenAt": "2026-07-30T17:16:55.767Z",
       "resolvedAt": null
     },
     {
@@ -5783,7 +6251,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.387Z",
+      "lastSeenAt": "2026-07-30T17:16:55.767Z",
       "resolvedAt": null
     },
     {
@@ -5804,7 +6272,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.387Z",
+      "lastSeenAt": "2026-07-30T17:16:55.767Z",
       "resolvedAt": null
     },
     {
@@ -5825,7 +6293,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.387Z",
+      "lastSeenAt": "2026-07-30T17:16:55.767Z",
       "resolvedAt": null
     },
     {
@@ -5846,7 +6314,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.387Z",
+      "lastSeenAt": "2026-07-30T17:16:55.767Z",
       "resolvedAt": null
     },
     {
@@ -5868,7 +6336,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.387Z",
+      "lastSeenAt": "2026-07-30T17:16:55.767Z",
       "resolvedAt": null
     },
     {
@@ -5889,7 +6357,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.387Z",
+      "lastSeenAt": "2026-07-30T17:16:55.767Z",
       "resolvedAt": null
     },
     {
@@ -5910,7 +6378,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.387Z",
+      "lastSeenAt": "2026-07-30T17:16:55.767Z",
       "resolvedAt": null
     },
     {
@@ -5931,7 +6399,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.387Z",
+      "lastSeenAt": "2026-07-30T17:16:55.767Z",
       "resolvedAt": null
     },
     {
@@ -5953,7 +6421,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.387Z",
+      "lastSeenAt": "2026-07-30T17:16:55.767Z",
       "resolvedAt": null
     },
     {
@@ -5974,7 +6442,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.387Z",
+      "lastSeenAt": "2026-07-30T17:16:55.767Z",
       "resolvedAt": null
     },
     {
@@ -5995,7 +6463,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.387Z",
+      "lastSeenAt": "2026-07-30T17:16:55.767Z",
       "resolvedAt": null
     },
     {
@@ -6016,7 +6484,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.387Z",
+      "lastSeenAt": "2026-07-30T17:16:55.767Z",
       "resolvedAt": null
     },
     {
@@ -6038,7 +6506,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.387Z",
+      "lastSeenAt": "2026-07-30T17:16:55.767Z",
       "resolvedAt": null
     },
     {
@@ -6059,7 +6527,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.387Z",
+      "lastSeenAt": "2026-07-30T17:16:55.767Z",
       "resolvedAt": null
     },
     {
@@ -6081,7 +6549,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.387Z",
+      "lastSeenAt": "2026-07-30T17:16:55.767Z",
       "resolvedAt": null
     },
     {
@@ -6102,7 +6570,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.387Z",
+      "lastSeenAt": "2026-07-30T17:16:55.767Z",
       "resolvedAt": null
     },
     {
@@ -6123,7 +6591,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.387Z",
+      "lastSeenAt": "2026-07-30T17:16:55.767Z",
       "resolvedAt": null
     },
     {
@@ -6144,7 +6612,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.387Z",
+      "lastSeenAt": "2026-07-30T17:16:55.767Z",
       "resolvedAt": null
     },
     {
@@ -6165,7 +6633,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.387Z",
+      "lastSeenAt": "2026-07-30T17:16:55.767Z",
       "resolvedAt": null
     },
     {
@@ -6187,7 +6655,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.387Z",
+      "lastSeenAt": "2026-07-30T17:16:55.767Z",
       "resolvedAt": null
     },
     {
@@ -6208,7 +6676,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.387Z",
+      "lastSeenAt": "2026-07-30T17:16:55.767Z",
       "resolvedAt": null
     },
     {
@@ -6229,7 +6697,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.387Z",
+      "lastSeenAt": "2026-07-30T17:16:55.767Z",
       "resolvedAt": null
     },
     {
@@ -6250,7 +6718,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.387Z",
+      "lastSeenAt": "2026-07-30T17:16:55.767Z",
       "resolvedAt": null
     },
     {
@@ -6271,7 +6739,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.387Z",
+      "lastSeenAt": "2026-07-30T17:16:55.767Z",
       "resolvedAt": null
     },
     {
@@ -6292,7 +6760,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.387Z",
+      "lastSeenAt": "2026-07-30T17:16:55.767Z",
       "resolvedAt": null
     },
     {
@@ -6314,7 +6782,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.387Z",
+      "lastSeenAt": "2026-07-30T17:16:55.767Z",
       "resolvedAt": null
     },
     {
@@ -6335,7 +6803,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.387Z",
+      "lastSeenAt": "2026-07-30T17:16:55.767Z",
       "resolvedAt": null
     },
     {
@@ -6356,7 +6824,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.387Z",
+      "lastSeenAt": "2026-07-30T17:16:55.767Z",
       "resolvedAt": null
     },
     {
@@ -6377,7 +6845,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.387Z",
+      "lastSeenAt": "2026-07-30T17:16:55.767Z",
       "resolvedAt": null
     },
     {
@@ -6399,7 +6867,7 @@
         "skill-liluo-story-gap-discovery"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.387Z",
+      "lastSeenAt": "2026-07-30T17:16:55.767Z",
       "resolvedAt": null
     },
     {
@@ -6420,7 +6888,7 @@
         "skill-liluo-story-outline-authoring"
       ],
       "firstSeenAt": null,
-      "lastSeenAt": "2026-07-28T03:22:37.387Z",
+      "lastSeenAt": "2026-07-30T17:16:55.767Z",
       "resolvedAt": null
     }
   ]

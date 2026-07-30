@@ -1,6 +1,5 @@
 export * from './constants.js';
 export * from './conceptRegistry.js';
-export * from './styleTaxonomyLabels.js';
 export {
   buildRestraintRagMissingItem,
   cardNeedsRestraintBodyTodo,
@@ -18,10 +17,13 @@ export {
 } from './buildOutlineRelationGraph.js';
 export {
   layoutOutlineRelationGraph,
+  layoutRagHierarchyGraph,
+  layoutRagNetworkGraph,
   getNodeDisplayFields
 } from './layoutOutlineRelationGraph.js';
 export {
   filterOutlineRelationGraph,
+  filterRagNetworkGraph,
   applyFilterPreset,
   focusOutlineRelationGraph,
   searchOutlineRelationGraph,

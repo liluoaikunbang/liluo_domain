@@ -5,7 +5,10 @@
       "ruleId": "codex-submission-incident-continuity",
       "title": "反复出现的会话提交异常先查档案并追加新证据",
       "authority": "docs/运行规范/未解决问题/Codex会话提交异常与上下文预算问题.md",
-      "consumers": ["AGENTS.md", "docs/用户命令目录.md"],
+      "consumers": [
+        "AGENTS.md",
+        "docs/用户命令目录.md"
+      ],
       "status": "active"
     },
     {
@@ -13,7 +16,11 @@
       "title": "像素冒险 RPG 世界体验优先",
       "authority": "docs/设计记忆/项目宪章.md",
       "decision": "docs/设计记忆/创作决策/CDR-001-像素冒险RPG作为核心体验载体.md",
-      "consumers": ["AGENTS.md", "README.md", "docs/项目概览.md"],
+      "consumers": [
+        "AGENTS.md",
+        "README.md",
+        "docs/项目概览.md"
+      ],
       "status": "active"
     },
     {
@@ -21,7 +28,10 @@
       "title": "正式项目登场角色统一为成年人",
       "authority": "AGENTS.md",
       "decision": "docs/设计记忆/创作决策/CDR-006-正式项目角色统一为成年人.md",
-      "consumers": [".agents/skills/writing/liluo-natural-expression/SKILL.md", "docs/系统说明/璃落自然表达与文气塑形系统.md"],
+      "consumers": [
+        ".agents/skills/writing/liluo-natural-expression/SKILL.md",
+        "docs/系统说明/璃落自然表达与文气塑形系统.md"
+      ],
       "status": "active"
     },
     {
@@ -29,7 +39,10 @@
       "title": "项目索引只作导航并需核验权威源",
       "authority": "docs/系统说明/项目知识索引系统.md",
       "decision": "docs/设计记忆/架构决策/ADR-001-项目知识采用分层索引.md",
-      "consumers": ["AGENTS.md", ".agents/skills/liluo-project/liluo-project-index-maintenance/SKILL.md"],
+      "consumers": [
+        "AGENTS.md",
+        ".agents/skills/liluo-project/liluo-project-index-maintenance/SKILL.md"
+      ],
       "status": "active"
     },
     {
@@ -50,7 +63,15 @@
       "title": "JSON Schema 负责结构且业务验证器负责跨文件规则",
       "authority": "docs/系统说明/JSON-Schema数据契约系统.md",
       "decision": "docs/设计记忆/架构决策/ADR-007-结构合同采用JSON-Schema并与业务验证分层.md",
-      "consumers": ["schemas/registry.json", "scripts/data-contracts/validate-schema-registry.mjs", "scripts/data-contracts/validate-data-contracts.mjs", "scripts/data-contracts/test-data-contracts.mjs", "scripts/project-routine.mjs", "package.json", "docs/用户命令目录.md"],
+      "consumers": [
+        "schemas/registry.json",
+        "scripts/data-contracts/validate-schema-registry.mjs",
+        "scripts/data-contracts/validate-data-contracts.mjs",
+        "scripts/data-contracts/test-data-contracts.mjs",
+        "scripts/project-routine.mjs",
+        "package.json",
+        "docs/用户命令目录.md"
+      ],
       "status": "active"
     },
     {
@@ -58,7 +79,10 @@
       "title": "正式项目知识与外部知识分离",
       "authority": "docs/系统说明/外部虚构题材知识库.md",
       "decision": "docs/设计记忆/创作决策/CDR-002-外部知识只作原创转化参考.md",
-      "consumers": ["AGENTS.md", ".agents/skills/liluo-project/liluo-external-fiction-knowledge/SKILL.md"],
+      "consumers": [
+        "AGENTS.md",
+        ".agents/skills/liluo-project/liluo-external-fiction-knowledge/SKILL.md"
+      ],
       "status": "active"
     },
     {
@@ -66,14 +90,22 @@
       "title": "外部来源只作抽象原创转化",
       "authority": "docs/系统说明/外部虚构题材知识库.md",
       "decision": "docs/设计记忆/创作决策/CDR-002-外部知识只作原创转化参考.md",
-      "consumers": [".agents/skills/liluo-project/liluo-external-fiction-knowledge/SKILL.md", "docs/技能说明/liluo-external-fiction-knowledge.md"],
+      "consumers": [
+        ".agents/skills/liluo-project/liluo-external-fiction-knowledge/SKILL.md",
+        "docs/技能说明/liluo-external-fiction-knowledge.md"
+      ],
       "status": "active"
     },
     {
       "ruleId": "story-gap-candidates-require-approval",
       "title": "故事缺口候选未经审批不得写入正式大纲",
       "authority": "docs/系统说明/故事缺口发现与灵感补全系统.md",
-      "consumers": ["AGENTS.md", ".agents/skills/liluo-project/liluo-story-gap-discovery/SKILL.md", ".codex/agents/liluo_story_gap_analyst.toml", ".agents/skills/liluo-project/liluo-story-outline-authoring/SKILL.md"],
+      "consumers": [
+        "AGENTS.md",
+        ".agents/skills/liluo-project/liluo-story-gap-discovery/SKILL.md",
+        ".codex/agents/liluo_story_gap_analyst.toml",
+        ".agents/skills/liluo-project/liluo-story-outline-authoring/SKILL.md"
+      ],
       "status": "active"
     },
     {
@@ -81,7 +113,11 @@
       "title": "主线容器不得代替故事块，充分情节优先提议建节点",
       "authority": "docs/系统说明/故事大纲条目模板.md",
       "decision": "docs/设计记忆/创作决策/CDR-011-主线容器与故事节点分工.md",
-      "consumers": ["AGENTS.md", ".agents/skills/liluo-project/liluo-story-outline-authoring/SKILL.md", "docs/技能说明/liluo-story-outline-authoring.md"],
+      "consumers": [
+        "AGENTS.md",
+        ".agents/skills/liluo-project/liluo-story-outline-authoring/SKILL.md",
+        "docs/技能说明/liluo-story-outline-authoring.md"
+      ],
       "status": "active"
     },
     {
@@ -89,7 +125,11 @@
       "title": "主线子节点写入前必须核对主线与世界类别趋势",
       "authority": "docs/系统说明/故事大纲条目模板.md",
       "decision": "docs/设计记忆/创作决策/CDR-012-主线与世界趋势核对门槛.md",
-      "consumers": ["AGENTS.md", ".agents/skills/liluo-project/liluo-story-outline-authoring/SKILL.md", "docs/技能说明/liluo-story-outline-authoring.md"],
+      "consumers": [
+        "AGENTS.md",
+        ".agents/skills/liluo-project/liluo-story-outline-authoring/SKILL.md",
+        "docs/技能说明/liluo-story-outline-authoring.md"
+      ],
       "status": "active"
     },
     {
@@ -123,7 +163,11 @@
       "title": "人格与陪伴不得改变专业合同和事实结论",
       "authority": "docs/设计记忆/项目组灵魂/项目组设定.md",
       "decision": "docs/设计记忆/创作决策/CDR-003-将项目智能体组织为璃落创作组.md",
-      "consumers": ["AGENTS.md", ".agents/skills/liluo-project/liluo-creative-team-presence/SKILL.md", "docs/智能体说明/项目子智能体体系.md"],
+      "consumers": [
+        "AGENTS.md",
+        ".agents/skills/liluo-project/liluo-creative-team-presence/SKILL.md",
+        "docs/智能体说明/项目子智能体体系.md"
+      ],
       "status": "active"
     },
     {
@@ -131,7 +175,12 @@
       "title": "创作组雕龙文号统一取自《文心雕龙》篇名",
       "authority": "docs/设计记忆/项目组灵魂/文号体系/README.md",
       "decision": "docs/设计记忆/创作决策/CDR-004-将文心雕龙篇名作为璃落创作组统一文号来源.md",
-      "consumers": ["AGENTS.md", ".agents/skills/liluo-project/liluo-creative-team-presence/SKILL.md", ".agents/skills/liluo-project/liluo-project-governance-memory/SKILL.md", "docs/智能体说明/项目子智能体体系.md"],
+      "consumers": [
+        "AGENTS.md",
+        ".agents/skills/liluo-project/liluo-creative-team-presence/SKILL.md",
+        ".agents/skills/liluo-project/liluo-project-governance-memory/SKILL.md",
+        "docs/智能体说明/项目子智能体体系.md"
+      ],
       "status": "active"
     },
     {
@@ -139,7 +188,11 @@
       "title": "成员正式观点必须来自真实 Agent 参与",
       "authority": "docs/设计记忆/项目组灵魂/表达模式.md",
       "decision": "docs/设计记忆/创作决策/CDR-003-将项目智能体组织为璃落创作组.md",
-      "consumers": ["AGENTS.md", ".agents/skills/liluo-project/liluo-creative-team-presence/SKILL.md", ".cursor/rules/00-project-entry.mdc"],
+      "consumers": [
+        "AGENTS.md",
+        ".agents/skills/liluo-project/liluo-creative-team-presence/SKILL.md",
+        ".cursor/rules/00-project-entry.mdc"
+      ],
       "status": "active"
     },
     {
@@ -147,7 +200,17 @@
       "title": "创作组默认 immersive 人格、compact 密度与 actual-call-only 参与",
       "authority": "docs/设计记忆/项目组灵魂/表达模式.md",
       "decision": "docs/设计记忆/架构决策/ADR-012-上下文分层与创作组有效参与机制.md",
-      "consumers": ["AGENTS.md", "docs/设计记忆/项目组灵魂/team-roster.json", "project-navigation/team-routing.json", ".agents/skills/liluo-project/liluo-creative-team-presence/SKILL.md", "docs/系统说明/璃落创作组人格与项目陪伴系统.md", "docs/技能说明/liluo-creative-team-presence.md", "scripts/team-presence/team-presence.mjs", ".cursor/rules/00-project-entry.mdc", "docs/用户命令目录.md"],
+      "consumers": [
+        "AGENTS.md",
+        "docs/设计记忆/项目组灵魂/team-roster.json",
+        "project-navigation/team-routing.json",
+        ".agents/skills/liluo-project/liluo-creative-team-presence/SKILL.md",
+        "docs/系统说明/璃落创作组人格与项目陪伴系统.md",
+        "docs/技能说明/liluo-creative-team-presence.md",
+        "scripts/team-presence/team-presence.mjs",
+        ".cursor/rules/00-project-entry.mdc",
+        "docs/用户命令目录.md"
+      ],
       "status": "active"
     },
     {
@@ -155,7 +218,12 @@
       "title": "主智能体按三档路由委派，不以演对话为由空转",
       "authority": "docs/智能体说明/项目子智能体体系.md",
       "decision": "docs/设计记忆/架构决策/ADR-012-上下文分层与创作组有效参与机制.md",
-      "consumers": ["AGENTS.md", "project-navigation/team-routing.json", ".agents/skills/liluo-project/liluo-creative-team-presence/SKILL.md", "docs/用户命令目录.md"],
+      "consumers": [
+        "AGENTS.md",
+        "project-navigation/team-routing.json",
+        ".agents/skills/liluo-project/liluo-creative-team-presence/SKILL.md",
+        "docs/用户命令目录.md"
+      ],
       "status": "active"
     },
     {
@@ -163,7 +231,14 @@
       "title": "项目上下文按 L0–L4 装载，索引与历史默认不注入",
       "authority": "docs/系统说明/项目上下文装载与配置分层系统.md",
       "decision": "docs/设计记忆/架构决策/ADR-012-上下文分层与创作组有效参与机制.md",
-      "consumers": ["AGENTS.md", "project-navigation/context-policy.json", ".cursor/rules/00-project-entry.mdc", "docs/系统说明/AI协同文件与规则分层.md", "docs/用户命令目录.md", "package.json"],
+      "consumers": [
+        "AGENTS.md",
+        "project-navigation/context-policy.json",
+        ".cursor/rules/00-project-entry.mdc",
+        "docs/系统说明/AI协同文件与规则分层.md",
+        "docs/用户命令目录.md",
+        "package.json"
+      ],
       "status": "active"
     },
     {
@@ -171,7 +246,12 @@
       "title": "外部写作模型不得直接写入正式 canon",
       "authority": "docs/系统说明/开放权重双模型写作管线.md",
       "decision": "docs/设计记忆/架构决策/ADR-013-开放权重双模型与人工校准写作管线.md",
-      "consumers": ["AGENTS.md", ".agents/skills/liluo-project/liluo-formal-prose-pipeline/SKILL.md", "scripts/writing-model/writing-model.mjs", "docs/用户命令目录.md"],
+      "consumers": [
+        "AGENTS.md",
+        ".agents/skills/liluo-project/liluo-formal-prose-pipeline/SKILL.md",
+        "scripts/writing-model/writing-model.mjs",
+        "docs/用户命令目录.md"
+      ],
       "status": "active"
     },
     {
@@ -179,7 +259,11 @@
       "title": "写作模型仅通过 OpenAI-compatible 接入且不绑定供应商 SDK",
       "authority": "docs/系统说明/开放权重双模型写作管线.md",
       "decision": "docs/设计记忆/架构决策/ADR-013-开放权重双模型与人工校准写作管线.md",
-      "consumers": ["project-navigation/writing-models.json", "scripts/writing-model/", ".env.writing.example"],
+      "consumers": [
+        "project-navigation/writing-models.json",
+        "scripts/writing-model/",
+        ".env.writing.example"
+      ],
       "status": "active"
     },
     {
@@ -210,25 +294,17 @@
       "status": "active"
     },
     {
-      "ruleId": "style-rag-metadata-v1",
-      "title": "Style-RAG V0/V1 元数据检索已启用；向量/训练仍暂缓",
-      "authority": "docs/系统说明/Style-RAG元数据检索与文风包系统.md",
-      "decision": "docs/设计记忆/架构决策/ADR-014-Style-RAG元数据检索与Canon风格隔离.md",
-      "consumers": [
-        ".agents/skills/liluo-project/liluo-style-rag/SKILL.md",
-        ".agents/skills/liluo-project/liluo-formal-prose-pipeline/references/style-rag-deferred-boundary.md",
-        "docs/写作资产/registry.json",
-        "project-navigation/style-rag-policy.json",
-        ".agents/skills/writing/liluo-natural-expression/SKILL.md"
-      ],
-      "status": "active"
-    },
-    {
       "ruleId": "user-to-liluo-direction-is-one-way",
       "title": "用户确认的指示可由璃落转述但璃落话语不反推用户授权",
       "authority": "docs/设计记忆/项目组灵魂/项目组设定.md",
       "decision": "docs/设计记忆/创作决策/CDR-003-将项目智能体组织为璃落创作组.md",
-      "consumers": ["AGENTS.md", ".agents/skills/liluo-project/liluo-creative-team-presence/SKILL.md", "scripts/team-presence/team-presence.mjs", "docs/设计记忆/项目组灵魂/项目组手记/README.md", "docs/用户命令目录.md"],
+      "consumers": [
+        "AGENTS.md",
+        ".agents/skills/liluo-project/liluo-creative-team-presence/SKILL.md",
+        "scripts/team-presence/team-presence.mjs",
+        "docs/设计记忆/项目组灵魂/项目组手记/README.md",
+        "docs/用户命令目录.md"
+      ],
       "status": "active"
     },
     {
@@ -236,7 +312,10 @@
       "title": "跨系统长期规则只完整维护一次",
       "authority": "docs/系统说明/项目规范治理与设计记忆系统.md",
       "decision": "docs/设计记忆/架构决策/ADR-002-规范与设计记忆分层治理.md",
-      "consumers": ["AGENTS.md", ".agents/skills/liluo-project/liluo-project-governance-memory/SKILL.md"],
+      "consumers": [
+        "AGENTS.md",
+        ".agents/skills/liluo-project/liluo-project-governance-memory/SKILL.md"
+      ],
       "status": "active"
     },
     {
@@ -244,7 +323,11 @@
       "title": "Cursor 与 Codex 共用权威文件、专属适配分层且大段派生配置须先提示用户采用源文件加生成/校验脚本",
       "authority": "docs/系统说明/AI协同文件与规则分层.md",
       "decision": "docs/设计记忆/架构决策/ADR-010-Cursor与Codex采用共享事实源和专属适配层.md",
-      "consumers": ["AGENTS.md", ".cursor/rules/00-project-entry.mdc", ".cursor/rules/documentation-governance.mdc"],
+      "consumers": [
+        "AGENTS.md",
+        ".cursor/rules/00-project-entry.mdc",
+        ".cursor/rules/documentation-governance.mdc"
+      ],
       "status": "active"
     },
     {
@@ -252,7 +335,11 @@
       "title": "长期与用户工作流变化执行轻量影响门禁",
       "authority": "docs/系统说明/项目规范治理与设计记忆系统.md",
       "decision": "docs/设计记忆/架构决策/ADR-002-规范与设计记忆分层治理.md",
-      "consumers": ["AGENTS.md", ".agents/skills/liluo-project/liluo-project-governance-memory/references/completion-gate.md", "docs/用户命令目录.md"],
+      "consumers": [
+        "AGENTS.md",
+        ".agents/skills/liluo-project/liluo-project-governance-memory/references/completion-gate.md",
+        "docs/用户命令目录.md"
+      ],
       "status": "active"
     },
     {
@@ -260,7 +347,11 @@
       "title": "实际出现可避免绕圈时只做一次有门槛的轻量复盘",
       "authority": "docs/系统说明/项目规范治理与设计记忆系统.md",
       "decision": "docs/设计记忆/架构决策/ADR-002-规范与设计记忆分层治理.md",
-      "consumers": ["AGENTS.md", ".agents/skills/liluo-project/liluo-project-governance-memory/SKILL.md", ".agents/skills/liluo-project/liluo-project-governance-memory/references/completion-gate.md"],
+      "consumers": [
+        "AGENTS.md",
+        ".agents/skills/liluo-project/liluo-project-governance-memory/SKILL.md",
+        ".agents/skills/liluo-project/liluo-project-governance-memory/references/completion-gate.md"
+      ],
       "status": "active"
     },
     {
@@ -268,7 +359,15 @@
       "title": "普通任务按变化面执行最小验证并避免可预见失败",
       "authority": "docs/系统说明/项目规范治理与设计记忆系统.md",
       "decision": "docs/设计记忆/架构决策/ADR-002-规范与设计记忆分层治理.md",
-      "consumers": ["AGENTS.md", ".agents/skills/test-driven-development/SKILL.md", ".agents/skills/incremental-implementation/SKILL.md", ".agents/skills/code-review-and-quality/SKILL.md", ".agents/skills/liluo-project/liluo-project-governance-memory/references/completion-gate.md", "scripts/project-routine.mjs", "docs/系统说明/Codex命令授权治理系统.md"],
+      "consumers": [
+        "AGENTS.md",
+        ".agents/skills/test-driven-development/SKILL.md",
+        ".agents/skills/incremental-implementation/SKILL.md",
+        ".agents/skills/code-review-and-quality/SKILL.md",
+        ".agents/skills/liluo-project/liluo-project-governance-memory/references/completion-gate.md",
+        "scripts/project-routine.mjs",
+        "docs/系统说明/Codex命令授权治理系统.md"
+      ],
       "status": "active"
     },
     {
@@ -276,7 +375,11 @@
       "title": "Windows 多文件离线发行使用本机回环启动器",
       "authority": "docs/系统说明/离线发行与GitHub-Release流程.md",
       "decision": "docs/设计记忆/架构决策/ADR-003-离线发行采用本机回环启动器.md",
-      "consumers": ["scripts/release/offline-release.mjs", ".agents/skills/liluo-project/liluo-offline-release-pipeline/SKILL.md", "docs/用户命令目录.md"],
+      "consumers": [
+        "scripts/release/offline-release.mjs",
+        ".agents/skills/liluo-project/liluo-offline-release-pipeline/SKILL.md",
+        "docs/用户命令目录.md"
+      ],
       "status": "active"
     },
     {
@@ -284,7 +387,11 @@
       "title": "外部 Skill 仅作非可信参考且更新只进入 staging",
       "authority": "docs/系统说明/外部Skill来源库与项目能力演化系统.md",
       "decision": "docs/设计记忆/架构决策/ADR-004-外部Skill采用非可信三层演化架构.md",
-      "consumers": ["AGENTS.md", "scripts/external-skills/external-skills.mjs", "docs/用户命令目录.md"],
+      "consumers": [
+        "AGENTS.md",
+        "scripts/external-skills/external-skills.mjs",
+        "docs/用户命令目录.md"
+      ],
       "status": "active"
     },
     {
@@ -292,14 +399,23 @@
       "title": "外部 Skill 与工具按月只读追踪并经用户批准后更新",
       "authority": "docs/系统说明/外部Skill来源库与项目能力演化系统.md",
       "decision": "docs/设计记忆/架构决策/ADR-004-外部Skill采用非可信三层演化架构.md",
-      "consumers": ["AGENTS.md", ".agents/skills/liluo-project/liluo-zhihu-novel-ingest/SKILL.md", "docs/技能说明/liluo-zhihu-novel-ingest.md", "docs/用户命令目录.md"],
+      "consumers": [
+        "AGENTS.md",
+        ".agents/skills/liluo-project/liluo-zhihu-novel-ingest/SKILL.md",
+        "docs/技能说明/liluo-zhihu-novel-ingest.md",
+        "docs/用户命令目录.md"
+      ],
       "status": "active"
     },
     {
       "ruleId": "external-tool-local-clones",
       "title": "外部工具副本本机可重建且不随项目上传",
       "authority": "docs/系统说明/外部Skill来源库与项目能力演化系统.md",
-      "consumers": [".gitignore", ".agents/skills/liluo-project/liluo-zhihu-novel-ingest/SKILL.md", "docs/技能说明/liluo-zhihu-novel-ingest.md"],
+      "consumers": [
+        ".gitignore",
+        ".agents/skills/liluo-project/liluo-zhihu-novel-ingest/SKILL.md",
+        "docs/技能说明/liluo-zhihu-novel-ingest.md"
+      ],
       "status": "active"
     },
     {
@@ -307,7 +423,17 @@
       "title": "非技术读者文本默认 light 且技术文本不文学化",
       "authority": "docs/系统说明/璃落自然表达与文气塑形系统.md",
       "decision": "docs/设计记忆/创作决策/CDR-005-非技术文本默认应用璃落自然表达.md",
-      "consumers": ["AGENTS.md", ".agents/skills/writing/liluo-natural-expression/SKILL.md", "docs/用户命令目录.md", ".cursor/rules/00-project-entry.mdc", ".cursor/rules/content-authoring.mdc", ".agents/skills/liluo-project/liluo-external-fiction-knowledge/SKILL.md", ".agents/skills/liluo-project/liluo-style-rag/SKILL.md", "docs/系统说明/知识检索抽查校准系统.md", "docs/系统说明/Style-RAG元数据检索与文风包系统.md", "docs/系统说明/外部虚构题材知识库.md", "docs/设计记忆/创作决策/CDR-005-非技术文本默认应用璃落自然表达.md"],
+      "consumers": [
+        "AGENTS.md",
+        ".agents/skills/writing/liluo-natural-expression/SKILL.md",
+        "docs/用户命令目录.md",
+        ".cursor/rules/00-project-entry.mdc",
+        ".cursor/rules/content-authoring.mdc",
+        ".agents/skills/liluo-project/liluo-external-fiction-knowledge/SKILL.md",
+        "docs/系统说明/知识检索抽查校准系统.md",
+        "docs/系统说明/外部虚构题材知识库.md",
+        "docs/设计记忆/创作决策/CDR-005-非技术文本默认应用璃落自然表达.md"
+      ],
       "status": "active"
     },
     {
@@ -315,7 +441,12 @@
       "title": "命中 Skill 或 Agent 时须在实质工作前加载或委派",
       "authority": "AGENTS.md",
       "decision": "docs/设计记忆/创作决策/CDR-005-非技术文本默认应用璃落自然表达.md",
-      "consumers": ["docs/智能体说明/项目子智能体体系.md", "docs/系统说明/璃落自然表达与文气塑形系统.md", ".cursor/rules/00-project-entry.mdc", "docs/用户命令目录.md"],
+      "consumers": [
+        "docs/智能体说明/项目子智能体体系.md",
+        "docs/系统说明/璃落自然表达与文气塑形系统.md",
+        ".cursor/rules/00-project-entry.mdc",
+        "docs/用户命令目录.md"
+      ],
       "status": "active"
     },
     {
@@ -339,7 +470,11 @@
       "title": "自然表达先保证动作与空间可信再处理文气",
       "authority": "docs/系统说明/璃落自然表达与文气塑形系统.md",
       "decision": "docs/设计记忆/创作决策/CDR-005-非技术文本默认应用璃落自然表达.md",
-      "consumers": [".agents/skills/writing/liluo-natural-expression/SKILL.md", "docs/技能说明/liluo-natural-expression.md", "docs/用户命令目录.md"],
+      "consumers": [
+        ".agents/skills/writing/liluo-natural-expression/SKILL.md",
+        "docs/技能说明/liluo-natural-expression.md",
+        "docs/用户命令目录.md"
+      ],
       "status": "active"
     },
     {
@@ -347,7 +482,12 @@
       "title": "虚构束缚场景写作前执行低 token 外部表达检索",
       "authority": "docs/系统说明/璃落自然表达与文气塑形系统.md",
       "decision": "docs/设计记忆/创作决策/CDR-005-非技术文本默认应用璃落自然表达.md",
-      "consumers": [".agents/skills/writing/liluo-natural-expression/SKILL.md", ".agents/skills/writing/liluo-natural-expression/references/fictional-restraint-narrative.md", "docs/技能说明/liluo-natural-expression.md", "docs/用户命令目录.md"],
+      "consumers": [
+        ".agents/skills/writing/liluo-natural-expression/SKILL.md",
+        ".agents/skills/writing/liluo-natural-expression/references/fictional-restraint-narrative.md",
+        "docs/技能说明/liluo-natural-expression.md",
+        "docs/用户命令目录.md"
+      ],
       "status": "active"
     },
     {
@@ -355,7 +495,12 @@
       "title": "可复用的用户写作校准在同一任务同步权威规范",
       "authority": "docs/系统说明/璃落自然表达与文气塑形系统.md",
       "decision": "docs/设计记忆/创作决策/CDR-005-非技术文本默认应用璃落自然表达.md",
-      "consumers": [".agents/skills/writing/liluo-natural-expression/references/quick-contract.md", ".agents/skills/writing/liluo-natural-expression/references/fiction-prose.md", ".agents/skills/writing/liluo-natural-expression/references/fictional-restraint-narrative.md", "docs/技能说明/liluo-natural-expression.md"],
+      "consumers": [
+        ".agents/skills/writing/liluo-natural-expression/references/quick-contract.md",
+        ".agents/skills/writing/liluo-natural-expression/references/fiction-prose.md",
+        ".agents/skills/writing/liluo-natural-expression/references/fictional-restraint-narrative.md",
+        "docs/技能说明/liluo-natural-expression.md"
+      ],
       "status": "active"
     },
     {
@@ -363,7 +508,13 @@
       "title": "悬念与设问必须具有可回答对象或行动落点",
       "authority": "docs/系统说明/璃落自然表达与文气塑形系统.md",
       "decision": "docs/设计记忆/创作决策/CDR-005-非技术文本默认应用璃落自然表达.md",
-      "consumers": [".agents/skills/writing/liluo-natural-expression/SKILL.md", ".agents/skills/writing/liluo-natural-expression/references/quick-contract.md", ".agents/skills/writing/liluo-natural-expression/scripts/expression-contract.mjs", "docs/技能说明/liluo-natural-expression.md", "docs/用户命令目录.md"],
+      "consumers": [
+        ".agents/skills/writing/liluo-natural-expression/SKILL.md",
+        ".agents/skills/writing/liluo-natural-expression/references/quick-contract.md",
+        ".agents/skills/writing/liluo-natural-expression/scripts/expression-contract.mjs",
+        "docs/技能说明/liluo-natural-expression.md",
+        "docs/用户命令目录.md"
+      ],
       "status": "active"
     },
     {
@@ -371,7 +522,12 @@
       "title": "束缚绑法名称必须与识别姿态和动作骨架一致",
       "authority": "docs/系统说明/璃落自然表达与文气塑形系统.md",
       "decision": "docs/设计记忆/创作决策/CDR-005-非技术文本默认应用璃落自然表达.md",
-      "consumers": [".agents/skills/writing/liluo-natural-expression/references/quick-contract.md", ".agents/skills/writing/liluo-natural-expression/references/fiction-prose.md", ".agents/skills/writing/liluo-natural-expression/references/fictional-restraint-narrative.md", "docs/技能说明/liluo-natural-expression.md"],
+      "consumers": [
+        ".agents/skills/writing/liluo-natural-expression/references/quick-contract.md",
+        ".agents/skills/writing/liluo-natural-expression/references/fiction-prose.md",
+        ".agents/skills/writing/liluo-natural-expression/references/fictional-restraint-narrative.md",
+        "docs/技能说明/liluo-natural-expression.md"
+      ],
       "status": "active"
     },
     {
@@ -379,7 +535,13 @@
       "title": "修饰与比喻须锚定人物经验与场景材料",
       "authority": "docs/系统说明/璃落自然表达与文气塑形系统.md",
       "decision": "docs/设计记忆/创作决策/CDR-005-非技术文本默认应用璃落自然表达.md",
-      "consumers": [".agents/skills/writing/liluo-natural-expression/references/quick-contract.md", ".agents/skills/writing/liluo-natural-expression/references/fiction-prose.md", ".agents/skills/writing/liluo-natural-expression/references/mechanical-patterns.md", "docs/技能说明/liluo-natural-expression.md", "docs/用户命令目录.md"],
+      "consumers": [
+        ".agents/skills/writing/liluo-natural-expression/references/quick-contract.md",
+        ".agents/skills/writing/liluo-natural-expression/references/fiction-prose.md",
+        ".agents/skills/writing/liluo-natural-expression/references/mechanical-patterns.md",
+        "docs/技能说明/liluo-natural-expression.md",
+        "docs/用户命令目录.md"
+      ],
       "status": "active"
     },
     {
@@ -387,14 +549,28 @@
       "title": "项目命令授权精确持久化且不自动修改用户级规则",
       "authority": "docs/系统说明/Codex命令授权治理系统.md",
       "decision": "docs/设计记忆/架构决策/ADR-005-命令授权采用项目规则与决定注册分层治理.md",
-      "consumers": ["AGENTS.md", ".agents/skills/liluo-project/liluo-command-approval-governance/SKILL.md", ".agents/skills/code-review-and-quality/SKILL.md", ".codex/config.toml", ".codex/rules/routine-development.rules", "scripts/command-approval/command-approval.mjs", "scripts/project-routine.mjs", "scripts/init-project-skill.mjs", "docs/用户命令目录.md"],
+      "consumers": [
+        "AGENTS.md",
+        ".agents/skills/liluo-project/liluo-command-approval-governance/SKILL.md",
+        ".agents/skills/code-review-and-quality/SKILL.md",
+        ".codex/config.toml",
+        ".codex/rules/routine-development.rules",
+        "scripts/command-approval/command-approval.mjs",
+        "scripts/project-routine.mjs",
+        "scripts/init-project-skill.mjs",
+        "docs/用户命令目录.md"
+      ],
       "status": "active"
     },
     {
       "ruleId": "windows-explicit-utf8",
       "title": "Windows 中文文件与 Git 中文路径采用确定性编码和解析",
       "authority": "docs/系统说明/Windows命令与UTF-8编码规范.md",
-      "consumers": ["AGENTS.md", "docs/系统说明/README.md", "docs/用户命令目录.md"],
+      "consumers": [
+        "AGENTS.md",
+        "docs/系统说明/README.md",
+        "docs/用户命令目录.md"
+      ],
       "status": "active"
     },
     {
@@ -402,14 +578,26 @@
       "title": "正式内容写入必须通过统一来源与版权门槛",
       "authority": "docs/系统说明/正式项目内容来源与版权写入门槛.md",
       "decision": "docs/设计记忆/架构决策/ADR-006-内容生产采用证据派生与最小持久化.md",
-      "consumers": ["AGENTS.md", "scripts/content-production/provenance.mjs", ".codex/agents/liluo_content_auditor.toml", ".agents/skills/liluo-project/liluo-story-to-playable-content/SKILL.md"],
+      "consumers": [
+        "AGENTS.md",
+        "scripts/content-production/provenance.mjs",
+        ".codex/agents/liluo_content_auditor.toml",
+        ".agents/skills/liluo-project/liluo-story-to-playable-content/SKILL.md"
+      ],
       "status": "active"
     },
     {
       "ruleId": "capability-regression-gate",
       "title": "项目 Skill 与 Agent 变更必须保留静态覆盖并按最小范围回归",
       "authority": "docs/系统说明/Skill与Agent能力回归评测系统.md",
-      "consumers": ["AGENTS.md", "evals/registry.json", ".agents/skills/testing/liluo-capability-regression/SKILL.md", "scripts/evals/", "scripts/project-routine.mjs", "docs/用户命令目录.md"],
+      "consumers": [
+        "AGENTS.md",
+        "evals/registry.json",
+        ".agents/skills/testing/liluo-capability-regression/SKILL.md",
+        "scripts/evals/",
+        "scripts/project-routine.mjs",
+        "docs/用户命令目录.md"
+      ],
       "status": "active"
     },
     {
@@ -417,7 +605,15 @@
       "title": "项目不注册 Codex 生命周期 Hook，质量门禁只在显式或推送/CI入口执行",
       "authority": "docs/系统说明/Codex-Hooks与自动质量门禁系统.md",
       "decision": "docs/设计记忆/架构决策/ADR-009-取消项目级Codex生命周期Hook.md",
-      "consumers": ["AGENTS.md", ".codex/hooks.json", "scripts/quality-gate/", ".githooks/pre-push", ".github/workflows/quality-gate.yml", "package.json", "docs/用户命令目录.md"],
+      "consumers": [
+        "AGENTS.md",
+        ".codex/hooks.json",
+        "scripts/quality-gate/",
+        ".githooks/pre-push",
+        ".github/workflows/quality-gate.yml",
+        "package.json",
+        "docs/用户命令目录.md"
+      ],
       "status": "active"
     },
     {
@@ -425,14 +621,23 @@
       "title": "工具或命令异常耗时必须核查、告知并明确解决状态",
       "authority": "docs/系统说明/Codex-Hooks与自动质量门禁系统.md",
       "decision": "docs/设计记忆/架构决策/ADR-009-取消项目级Codex生命周期Hook.md",
-      "consumers": ["AGENTS.md", ".agents/skills/liluo-project/liluo-project-governance-memory/SKILL.md"],
+      "consumers": [
+        "AGENTS.md",
+        ".agents/skills/liluo-project/liluo-project-governance-memory/SKILL.md"
+      ],
       "status": "active"
     },
     {
       "ruleId": "purpose-driven-ideation",
       "title": "构思候选必须以真实缺口、可观察因果和成本依据筛选，并允许不新增",
       "authority": "docs/系统说明/效用导向灵感与细节构思系统.md",
-      "consumers": ["AGENTS.md", ".agents/skills/liluo-project/liluo-purpose-driven-ideation/SKILL.md", "docs/技能说明/liluo-purpose-driven-ideation.md", "docs/用户命令目录.md", "evals/registry.json"],
+      "consumers": [
+        "AGENTS.md",
+        ".agents/skills/liluo-project/liluo-purpose-driven-ideation/SKILL.md",
+        "docs/技能说明/liluo-purpose-driven-ideation.md",
+        "docs/用户命令目录.md",
+        "evals/registry.json"
+      ],
       "status": "active"
     },
     {

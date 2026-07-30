@@ -1,0 +1,4 @@
+interface:
+  display_name: "RAG 来源关联扫描"
+  short_description: "扫描指定 RAG 卡的外部来源候选"
+  default_prompt: "Use $liluo-rag-source-association to return a dry-run source association package without confirming evidence."

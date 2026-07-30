@@ -67,14 +67,27 @@
     },
     {
       "type": "skill",
-      "name": "liluo-style-rag",
-      "path": ".agents/skills/liluo-project/liluo-style-rag/SKILL.md",
+      "name": "liluo-rag-candidate-proposal",
+      "path": ".agents/skills/liluo-project/liluo-rag-candidate-proposal/SKILL.md",
       "status": "active",
       "tier": "standard",
-      "caseGlobs": [
-        "evals/cases/skills/style-rag-positive-001.json",
-        "evals/cases/skills/style-rag-negative-001.json"
-      ]
+      "caseGlobs": ["evals/cases/skills/rag-candidate-proposal-positive-001.json"]
+    },
+    {
+      "type": "skill",
+      "name": "liluo-rag-source-association",
+      "path": ".agents/skills/liluo-project/liluo-rag-source-association/SKILL.md",
+      "status": "active",
+      "tier": "standard",
+      "caseGlobs": ["evals/cases/skills/rag-source-association-positive-001.json"]
+    },
+    {
+      "type": "skill",
+      "name": "liluo-rag-source-interview",
+      "path": ".agents/skills/liluo-project/liluo-rag-source-interview/SKILL.md",
+      "status": "active",
+      "tier": "standard",
+      "caseGlobs": ["evals/cases/skills/rag-source-interview-positive-001.json"]
     },
     {
       "type": "skill",

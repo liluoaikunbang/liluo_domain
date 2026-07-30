@@ -97,9 +97,7 @@ function buildGraph() {
     categories: [],
     entries: []
   };
-  const articleRegistry = readJson('docs/写作资产/外部风格研究/article-registry.json');
   const auditRegistry = readJson('docs/知识检索校准/registry.json');
-  const styleTaxonomy = readJson('project-navigation/style-taxonomy.json');
   const cardRules = readJson('external-knowledge/card-rules.json') ?? { terms: [], plotPatterns: [] };
   const evidenceExcerpts = readJson('external-knowledge/evidence/excerpts.json')?.excerpts ?? [];
   const evidenceReviews = readJson('external-knowledge/evidence/reviews.json')?.reviews ?? [];
@@ -112,8 +110,6 @@ function buildGraph() {
     characterOutline: buildCharacterOutline(storySource),
     ragCards: loadRagCards(),
     cardRules,
-    styleArticles: articleRegistry?.articles ?? [],
-    styleTaxonomy,
     evidenceExcerpts,
     evidenceReviews,
     sourceCatalog,
@@ -136,10 +132,6 @@ function printStats(graph) {
     conceptWithoutRag: stats.conceptWithoutRag,
     conceptCategoryCount: stats.conceptCategoryCount,
     conceptDetailCount: stats.conceptDetailCount,
-    plotWithoutStyle: stats.plotWithoutStyle,
-    styleTechniqueCount: stats.styleTechniqueCount,
-    styleEvidenceCount: stats.styleEvidenceCount,
-    styleDimensionCount: stats.styleDimensionCount,
     evidenceNodeCount: stats.evidenceNodeCount,
     sourceNodeCount: stats.sourceNodeCount,
     ragStubCount: stats.ragStubCount,
@@ -187,15 +179,6 @@ function validate(graph) {
       edge.target === 'rag:rag.restraint.detail.挠痒-山药汁'
   );
   if (!hierarchyEdge) errors.push('missing narrower edge 挠痒 RAG → 挠痒-山药汁 RAG');
-  const technique = graph.nodes.find(
-    (node) => node.type === 'style_rag' && node.meta?.role === 'technique' && node.title === '日常互动'
-  );
-  if (!technique) errors.push('missing Style-RAG technique noun 日常互动');
-  const evidence = graph.nodes.find((node) => node.type === 'style_rag' && node.meta?.role === 'evidence');
-  if (!evidence) errors.push('missing Style-RAG article evidence anchors');
-  if (evidence && evidence.visibility?.overviewDefault !== false) {
-    errors.push('article evidence should default hidden in overview');
-  }
   if (graph.nodes.some((node) => node.type === 'tag' || node.type === 'bondage_tag')) {
     errors.push('retired Tag node projected into graph');
   }

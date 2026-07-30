@@ -6,18 +6,10 @@
   "aliases": [],
   "summary": "挠痒通过持续触碰造成不由自主的躲闪、紧绷和注意力转移。",
   "definition": "以痒感和身体反射为核心的刺激效果；在受限场景中，角色往往无法避开刺激位置。",
-  "sourceRefs": [
-    {
-      "sourceId": "fb-src-000064",
-      "segmentId": "fb-src-000064-seg-00113",
-      "sourcePath": "external-knowledge/sources/fiction-bondage/其他未分类/倾斜的世界-远方的寂静.md",
-      "startLine": 1910,
-      "endLine": 1923
-    }
-  ],
-  "evidenceStatus": "partial",
-  "contentStatus": "complete",
-  "reviewStatus": "candidate",
+  "sourceRefs": [],
+  "evidenceStatus": "missing",
+  "contentStatus": "stub",
+  "reviewStatus": "pending",
   "directQuoteIncluded": false,
   "canonical": false,
   "knowledgeScope": "external-fiction-reference",
@@ -38,9 +30,7 @@
   },
   "ragLayer": "category",
   "parentCardIds": [],
-  "evidenceRefs": [
-    "ev-fbsrc000064-39a5ce2a889250dd"
-  ],
+  "evidenceRefs": [],
   "sourceRecordIds": [
     "fb-src-000064"
   ],
@@ -63,7 +53,7 @@
     "searchable": true,
     "relationAnchor": true,
     "contentRetrievable": false,
-    "evidenceRetrievable": true,
+    "evidenceRetrievable": false,
     "knowledgeRetrievable": false,
     "expressionRetrievable": false
   },
@@ -79,27 +69,12 @@
     "parentConceptRefs": [],
     "childConceptRefs": [],
     "relatedConceptRefs": [],
-    "factualClaims": [
-      {
-        "id": "rag.restraint.effect.tickling::claim:definition:0",
-        "label": "定义",
-        "content": "以痒感和身体反射为核心的刺激效果；在受限场景中，角色往往无法避开刺激位置。",
-        "claimType": "definition",
-        "evidenceRefs": [
-          "ev-fbsrc000064-39a5ce2a889250dd"
-        ],
-        "supportStatus": "pending",
-        "reviewStatus": "pending",
-        "origin": "external-summary"
-      }
-    ],
-    "evidenceRefs": [
-      "ev-fbsrc000064-39a5ce2a889250dd"
-    ],
+    "factualClaims": [],
+    "evidenceRefs": [],
     "projectInterpretation": "",
     "commonMisreadings": [],
-    "status": "usable",
-    "evidenceStatus": "partial",
+    "status": "stub",
+    "evidenceStatus": "missing",
     "reviewStatus": "pending"
   },
   "expression": {
@@ -124,13 +99,6 @@
     "evidenceStatus": "missing",
     "reviewStatus": "pending"
   },
-  "overallStatus": "knowledge-only",
-  "evidenceBindings": [
-    {
-      "evidenceId": "ev-fbsrc000064-39a5ce2a889250dd",
-      "purpose": "knowledge-evidence",
-      "branch": "knowledge",
-      "supportStatus": "pending"
-    }
-  ]
+  "overallStatus": "stub",
+  "evidenceBindings": []
 }

@@ -6,25 +6,10 @@
   "aliases": [],
   "summary": "脚镣通过踝部铐环和连接长度限制步幅，并产生清晰的移动反馈。",
   "definition": "作用于脚踝的成对铐具；主要改变行走范围和节奏，不自动决定上身姿态。",
-  "sourceRefs": [
-    {
-      "sourceId": "fb-src-000007",
-      "segmentId": "fb-src-000007-seg-00004",
-      "sourcePath": "external-knowledge/sources/fiction-bondage/不知道作者/变为奴隶的姑娘.md",
-      "startLine": 37,
-      "endLine": 64
-    },
-    {
-      "sourceId": "fb-src-000013",
-      "segmentId": "fb-src-000013-seg-00014",
-      "sourcePath": "external-knowledge/sources/fiction-bondage/不知道作者/古堡.md",
-      "startLine": 124,
-      "endLine": 134
-    }
-  ],
-  "evidenceStatus": "partial",
-  "contentStatus": "complete",
-  "reviewStatus": "candidate",
+  "sourceRefs": [],
+  "evidenceStatus": "missing",
+  "contentStatus": "stub",
+  "reviewStatus": "pending",
   "directQuoteIncluded": false,
   "canonical": false,
   "knowledgeScope": "external-fiction-reference",
@@ -47,10 +32,7 @@
   "parentCardIds": [
     "rag.restraint.tool.shackles"
   ],
-  "evidenceRefs": [
-    "ev-fbsrc000007-df631609bdf54c72",
-    "ev-fbsrc000013-32b4b5cb293b1e19"
-  ],
+  "evidenceRefs": [],
   "sourceRecordIds": [
     "fb-src-000007",
     "fb-src-000013"
@@ -75,7 +57,7 @@
     "searchable": true,
     "relationAnchor": true,
     "contentRetrievable": false,
-    "evidenceRetrievable": true,
+    "evidenceRetrievable": false,
     "knowledgeRetrievable": false,
     "expressionRetrievable": false
   },
@@ -93,29 +75,12 @@
     ],
     "childConceptRefs": [],
     "relatedConceptRefs": [],
-    "factualClaims": [
-      {
-        "id": "rag.restraint.tool.leg-irons::claim:definition:0",
-        "label": "定义",
-        "content": "作用于脚踝的成对铐具；主要改变行走范围和节奏，不自动决定上身姿态。",
-        "claimType": "definition",
-        "evidenceRefs": [
-          "ev-fbsrc000007-df631609bdf54c72",
-          "ev-fbsrc000013-32b4b5cb293b1e19"
-        ],
-        "supportStatus": "pending",
-        "reviewStatus": "pending",
-        "origin": "external-summary"
-      }
-    ],
-    "evidenceRefs": [
-      "ev-fbsrc000007-df631609bdf54c72",
-      "ev-fbsrc000013-32b4b5cb293b1e19"
-    ],
+    "factualClaims": [],
+    "evidenceRefs": [],
     "projectInterpretation": "",
     "commonMisreadings": [],
-    "status": "usable",
-    "evidenceStatus": "partial",
+    "status": "stub",
+    "evidenceStatus": "missing",
     "reviewStatus": "pending"
   },
   "expression": {
@@ -140,19 +105,6 @@
     "evidenceStatus": "missing",
     "reviewStatus": "pending"
   },
-  "overallStatus": "knowledge-only",
-  "evidenceBindings": [
-    {
-      "evidenceId": "ev-fbsrc000007-df631609bdf54c72",
-      "purpose": "knowledge-evidence",
-      "branch": "knowledge",
-      "supportStatus": "pending"
-    },
-    {
-      "evidenceId": "ev-fbsrc000013-32b4b5cb293b1e19",
-      "purpose": "knowledge-evidence",
-      "branch": "knowledge",
-      "supportStatus": "pending"
-    }
-  ]
+  "overallStatus": "stub",
+  "evidenceBindings": []
 }

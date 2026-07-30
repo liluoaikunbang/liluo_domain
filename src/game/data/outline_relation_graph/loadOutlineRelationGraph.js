@@ -6,8 +6,6 @@ import { buildOutlineRelationGraph } from './buildOutlineRelationGraph.js';
 import { SEEDED_CONCEPTS } from './conceptRegistry.js';
 
 import auditRegistry from '../../../../docs/知识检索校准/registry.json' with { type: 'json' };
-import articleRegistry from '../../../../docs/写作资产/外部风格研究/article-registry.json' with { type: 'json' };
-import styleTaxonomy from '../../../../project-navigation/style-taxonomy.json' with { type: 'json' };
 import cardRules from '../../../../external-knowledge/card-rules.json' with { type: 'json' };
 import evidenceExcerptsPayload from '../../../../external-knowledge/evidence/excerpts.json' with { type: 'json' };
 import evidenceReviewsPayload from '../../../../external-knowledge/evidence/reviews.json' with { type: 'json' };
@@ -23,10 +21,6 @@ let cachedBuiltAt = '';
 
 export function listBundledRagCards() {
   return Object.values(ragCardModules).filter(Boolean);
-}
-
-export function listBundledStyleArticles() {
-  return Array.isArray(articleRegistry?.articles) ? articleRegistry.articles : [];
 }
 
 export function listBundledEvidenceExcerpts() {
@@ -53,8 +47,6 @@ export function getOutlineRelationGraph(options = {}) {
     characterOutline: storyCharacterOutline,
     ragCards: listBundledRagCards(),
     cardRules,
-    styleArticles: listBundledStyleArticles(),
-    styleTaxonomy,
     evidenceExcerpts: listBundledEvidenceExcerpts(),
     evidenceReviews: listBundledEvidenceReviews(),
     sourceCatalog: Array.isArray(sourceCatalog) ? sourceCatalog : [],
