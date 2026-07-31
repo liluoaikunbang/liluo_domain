@@ -1,33 +1,135 @@
-{
-  "schemaVersion": 1,
+﻿{
+  "schemaVersion": 2,
   "generatedAt": "2026-07-31",
   "assets": [
     {
       "id": "hero-liluo-universe",
       "path": "docs/assets/readme/hero-liluo-universe.png",
-      "purpose": "README 主视觉",
+      "purpose": "README 首屏主视觉",
       "source": "built-in image_gen",
       "notes": [
-        "参考璃落现有立绘与头像色彩特征生成",
-        "用于表达项目升级后的多世界旗舰定位"
+        "保留第一轮建立的宇宙旗帜图",
+        "用于表达璃落宇宙的总入口氛围"
       ]
     },
     {
-      "id": "storyworld-growth",
-      "path": "docs/assets/readme/storyworld-growth.png",
-      "purpose": "README 架构分层示意图",
+      "id": "liluo-character-portrait",
+      "path": "docs/assets/readme/liluo-character-portrait.png",
+      "purpose": "README 角色展示",
       "source": "built-in image_gen",
       "notes": [
-        "用于表达世界、叙事生产包与输出形态之间的生长关系"
+        "替换旧像素代替立绘",
+        "统一刚成年、娇小、弱气的璃落角色基准气质"
+      ]
+    },
+    {
+      "id": "liluo-multiverse-fusion",
+      "path": "docs/assets/readme/liluo-multiverse-fusion.png",
+      "purpose": "README 多世界融合横幅",
+      "source": "built-in image_gen",
+      "notes": [
+        "参考用户提供的横向排布意境图生成",
+        "强调不同世界中的服装、姿态与环境差异"
+      ]
+    },
+    {
+      "id": "world-mingsuo-yuling",
+      "path": "docs/assets/readme/world-mingsuo-yuling.png",
+      "purpose": "README 六大世界展示",
+      "source": "built-in image_gen",
+      "notes": [
+        "世界优先的穆妮卡帝国宣传图",
+        "表现综合型帝国世界中的秩序、装饰性与多风格并存感"
+      ]
+    },
+    {
+      "id": "world-fuguang-lueying",
+      "path": "docs/assets/readme/world-fuguang-lueying.png",
+      "purpose": "README 六大世界展示",
+      "source": "built-in image_gen",
+      "notes": [
+        "世界优先的浮光掠影宣传图",
+        "表现都市夜雨、校园与异常痕迹"
+      ]
+    },
+    {
+      "id": "world-jitu-wange",
+      "path": "docs/assets/readme/world-jitu-wange.png",
+      "purpose": "README 六大世界展示",
+      "source": "built-in image_gen",
+      "notes": [
+        "世界优先的寂土挽歌宣传图",
+        "表现灾后废墟、补给点与脆弱希望"
+      ]
+    },
+    {
+      "id": "world-chenhuan-wendao",
+      "path": "docs/assets/readme/world-chenhuan-wendao.png",
+      "purpose": "README 六大世界展示",
+      "source": "built-in image_gen",
+      "notes": [
+        "世界优先的尘寰问道宣传图",
+        "表现旧城灯火、旧案疑云与山水异闻"
+      ]
+    },
+    {
+      "id": "world-zhoufu-huixiang",
+      "path": "docs/assets/readme/world-zhoufu-huixiang.png",
+      "purpose": "README 六大世界展示",
+      "source": "built-in image_gen",
+      "notes": [
+        "世界优先的咒缚回响宣传图",
+        "表现学院、古堡、海路与契约幻想"
+      ]
+    },
+    {
+      "id": "world-xingyu-zhimeng",
+      "path": "docs/assets/readme/world-xingyu-zhimeng.png",
+      "purpose": "README 六大世界展示",
+      "source": "built-in image_gen",
+      "notes": [
+        "世界优先的星宇织梦宣传图",
+        "表现轨道环城、远航方舟与未来边疆"
+      ]
+    },
+    {
+      "id": "prototype-campus-map",
+      "path": "docs/assets/readme/prototype-campus-map.png",
+      "purpose": "README 真实运行截图",
+      "source": "user-provided screenshot",
+      "notes": [
+        "真实地图探索与三栏 UI 运行截图",
+        "不是 AI 宣传图"
+      ]
+    },
+    {
+      "id": "prototype-gallery-ui",
+      "path": "docs/assets/readme/prototype-gallery-ui.png",
+      "purpose": "README 真实运行截图",
+      "source": "user-provided screenshot",
+      "notes": [
+        "真实图鉴与菜单运行截图",
+        "不是 AI 宣传图"
       ]
     },
     {
       "id": "one-story-many-forms",
       "path": "docs/assets/readme/one-story-many-forms.png",
-      "purpose": "README 多形态输出示意图",
+      "purpose": "README 多形态输出说明图",
       "source": "built-in image_gen",
       "notes": [
-        "用于表达同一故事向多种正式输出分化"
+        "保留第一轮说明图",
+        "用于表达同一个故事如何进入不同正式形态"
+      ]
+    },
+    {
+      "id": "storyworld-growth",
+      "path": "docs/assets/readme/storyworld-growth.png",
+      "purpose": "README 生长方法说明图",
+      "source": "built-in image_gen",
+      "notes": [
+        "保留第一轮说明图",
+        "用于表达世界、故事、玩法与生产方法的生长关系"
       ]
     }
   ]

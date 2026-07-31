@@ -574,12 +574,12 @@
   {
     "id": "docs/assets/readme/README.md",
     "indexVersion": 1,
-    "sourceHash": "8d8157aeef698751d3216f5a2b7a9c56de99583c202e9498d67ef7d644763097",
+    "sourceHash": "b13aa47016a2d728ebab9288bced6ec806a4936a5543c63e5ad2d8c20d672a80",
     "sourcePath": "docs/assets/readme/README.md",
     "subtype": "other",
-    "summary": "README 视觉素材",
+    "summary": "README",
     "summarySource": "title-only",
-    "title": "README 视觉素材",
+    "title": "README",
     "type": "document"
   },
   {
@@ -596,12 +596,12 @@
   {
     "id": "docs/README.md",
     "indexVersion": 1,
-    "sourceHash": "f9977ec4cac61c82fdac85bd0c3b1bd94f50d1f910128bac80cd8f654a898d03",
+    "sourceHash": "59154f6e59605898f890a55619af68685d8158dce89accd91e264a60d164057d",
     "sourcePath": "docs/README.md",
     "subtype": "other",
-    "summary": "璃落宇宙文档入口",
+    "summary": "README",
     "summarySource": "title-only",
-    "title": "璃落宇宙文档入口",
+    "title": "README",
     "type": "document"
   }
 ]
