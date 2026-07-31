@@ -1353,6 +1353,28 @@
     "type": "document"
   },
   {
+    "id": "docs/写作资产/工作区/compare/cg-d35430f8-b/candidate-a.md",
+    "indexVersion": 1,
+    "sourceHash": "1017524af1396535e9f99ce5a1393cc6e06ae886ed82d57656909f9ee8069769",
+    "sourcePath": "docs/写作资产/工作区/compare/cg-d35430f8-b/candidate-a.md",
+    "subtype": "other",
+    "summary": "candidate-a",
+    "summarySource": "title-only",
+    "title": "candidate-a",
+    "type": "document"
+  },
+  {
+    "id": "docs/写作资产/工作区/compare/cg-d35430f8-b/candidate-b.md",
+    "indexVersion": 1,
+    "sourceHash": "ff03122d032988ae5e585f69d366c630096165800a70322f288288e3ddf9bd66",
+    "sourcePath": "docs/写作资产/工作区/compare/cg-d35430f8-b/candidate-b.md",
+    "subtype": "other",
+    "summary": "candidate-b",
+    "summarySource": "title-only",
+    "title": "candidate-b",
+    "type": "document"
+  },
+  {
     "id": "docs/写作资产/工作区/compare/cg-d673b17c-a/candidate-a.md",
     "indexVersion": 1,
     "sourceHash": "7bcba2bd72550ef95988cdea51d4d18a78903f3ea285333edaf317457c03b78d",
@@ -1834,6 +1856,28 @@
     "summary": "wr-20260727100509-ce1b4067",
     "summarySource": "title-only",
     "title": "wr-20260727100509-ce1b4067",
+    "type": "document"
+  },
+  {
+    "id": "docs/写作资产/工作区/drafts/wr-20260731113434-2518e791.md",
+    "indexVersion": 1,
+    "sourceHash": "1017524af1396535e9f99ce5a1393cc6e06ae886ed82d57656909f9ee8069769",
+    "sourcePath": "docs/写作资产/工作区/drafts/wr-20260731113434-2518e791.md",
+    "subtype": "other",
+    "summary": "wr-20260731113434-2518e791",
+    "summarySource": "title-only",
+    "title": "wr-20260731113434-2518e791",
+    "type": "document"
+  },
+  {
+    "id": "docs/写作资产/工作区/drafts/wr-20260731113521-aca8edba.md",
+    "indexVersion": 1,
+    "sourceHash": "ff03122d032988ae5e585f69d366c630096165800a70322f288288e3ddf9bd66",
+    "sourcePath": "docs/写作资产/工作区/drafts/wr-20260731113521-aca8edba.md",
+    "subtype": "other",
+    "summary": "wr-20260731113521-aca8edba",
+    "summarySource": "title-only",
+    "title": "wr-20260731113521-aca8edba",
     "type": "document"
   },
   {
@@ -2703,50 +2747,6 @@
     "summary": "普通 RAG 抽查批次 rab-ms2vzi2k",
     "summarySource": "title-only",
     "title": "普通 RAG 抽查批次 rab-ms2vzi2k",
-    "type": "document"
-  },
-  {
-    "id": "docs/知识检索校准/batches/rab-ms2wxsjf.md",
-    "indexVersion": 1,
-    "sourceHash": "fa45d9d3950db4ba5c8b28349d704a6f692fb38c0a8bcaf7689fcebf7a699636",
-    "sourcePath": "docs/知识检索校准/batches/rab-ms2wxsjf.md",
-    "subtype": "other",
-    "summary": "Style-RAG 抽查批次 rab-ms2wxsjf",
-    "summarySource": "title-only",
-    "title": "Style-RAG 抽查批次 rab-ms2wxsjf",
-    "type": "document"
-  },
-  {
-    "id": "docs/知识检索校准/batches/rab-ms2wxskc.md",
-    "indexVersion": 1,
-    "sourceHash": "eb008d138ad708d29d5c91a2556ee57fe834216ad2bc181592aa5a06c354dd68",
-    "sourcePath": "docs/知识检索校准/batches/rab-ms2wxskc.md",
-    "subtype": "other",
-    "summary": "普通 RAG 抽查批次 rab-ms2wxskc",
-    "summarySource": "title-only",
-    "title": "普通 RAG 抽查批次 rab-ms2wxskc",
-    "type": "document"
-  },
-  {
-    "id": "docs/知识检索校准/batches/rab-ms2wxsks.md",
-    "indexVersion": 1,
-    "sourceHash": "88a4987eacbde05925061b6f51ba5940344901a58ea6a9fe76248a966df63001",
-    "sourcePath": "docs/知识检索校准/batches/rab-ms2wxsks.md",
-    "subtype": "other",
-    "summary": "普通 RAG 抽查批次 rab-ms2wxsks",
-    "summarySource": "title-only",
-    "title": "普通 RAG 抽查批次 rab-ms2wxsks",
-    "type": "document"
-  },
-  {
-    "id": "docs/知识检索校准/batches/rab-ms2wxsle.md",
-    "indexVersion": 1,
-    "sourceHash": "e035e8ea4e51da5cf003e09bdec1ad3a20949122c2f83fed42265c3d2ad141e5",
-    "sourcePath": "docs/知识检索校准/batches/rab-ms2wxsle.md",
-    "subtype": "other",
-    "summary": "普通 RAG 抽查批次 rab-ms2wxsle",
-    "summarySource": "title-only",
-    "title": "普通 RAG 抽查批次 rab-ms2wxsle",
     "type": "document"
   }
 ]

@@ -3,7 +3,7 @@ export const updateRecords = Object.freeze([
         "id":  "176",
         "date":  "2026-07-31",
         "title":  "AI原生叙事游戏生产体系升级",
-        "summary":  "项目定位升级为 AI 原生叙事游戏生产体系；明确像素 RPG 旗舰地位，新增五层架构、叙事生产包 Schema/模板、README 主视觉与治理同步。"
+        "summary":  "项目门户升级为游戏宇宙宣传页取向；README 前半段改为世界、主角、六大世界与真实原型优先，并用正式 AI 宣传图替换第二轮 SVG 草案。"
     },
     {
         "id":  "175",

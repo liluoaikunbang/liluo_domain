@@ -3,10 +3,15 @@
     "docs"
   ],
   "changes": {
-    "added": [],
+    "added": [
+      "docs/写作资产/工作区/compare/cg-d35430f8-b/candidate-a.md",
+      "docs/写作资产/工作区/compare/cg-d35430f8-b/candidate-b.md",
+      "docs/写作资产/工作区/drafts/wr-20260731113434-2518e791.md",
+      "docs/写作资产/工作区/drafts/wr-20260731113521-aca8edba.md"
+    ],
     "deleted": [],
     "modified": [
-      "docs/assets/readme/README.md"
+      "docs/功能更新目录.md"
     ],
     "renamed": []
   },
@@ -20,7 +25,7 @@
       "status": "current"
     },
     "docs": {
-      "entryCount": 555,
+      "entryCount": 559,
       "status": "current"
     },
     "game": {
@@ -40,11 +45,11 @@
       "status": "partial"
     }
   },
-  "generatedAt": "2026-07-31T09:38:43.021Z",
+  "generatedAt": "2026-07-31T11:57:53.032Z",
   "generatorVersion": "1.0.3",
   "mode": "changed",
   "schemaVersion": 1,
-  "sourceCommit": "8ca90223a84e4e1d05b379e59db4715b3fe5fdd0",
+  "sourceCommit": "60a42f9a3676ff6d0803577052ffd348400f0165",
   "sourceSnapshot": {
     "docs/CG待制作清单.md": "81996a1dd752cbf2e9c5a9fc68bb4a480e556d2d76ec35afa9b4b6894f067f8b",
     "docs/README.md": "59154f6e59605898f890a55619af68685d8158dce89accd91e264a60d164057d",
@@ -91,6 +96,8 @@
     "docs/写作资产/工作区/compare/cg-c1248a6a-0/candidate-b.md": "a1b77224f895957bb89d0e52cd1bba2c614088954b7274b7a818f6eb1e5edf9e",
     "docs/写作资产/工作区/compare/cg-cb44b47a-3/candidate-a.md": "7bcba2bd72550ef95988cdea51d4d18a78903f3ea285333edaf317457c03b78d",
     "docs/写作资产/工作区/compare/cg-cb44b47a-3/candidate-b.md": "a1b77224f895957bb89d0e52cd1bba2c614088954b7274b7a818f6eb1e5edf9e",
+    "docs/写作资产/工作区/compare/cg-d35430f8-b/candidate-a.md": "1017524af1396535e9f99ce5a1393cc6e06ae886ed82d57656909f9ee8069769",
+    "docs/写作资产/工作区/compare/cg-d35430f8-b/candidate-b.md": "ff03122d032988ae5e585f69d366c630096165800a70322f288288e3ddf9bd66",
     "docs/写作资产/工作区/compare/cg-d673b17c-a/candidate-a.md": "7bcba2bd72550ef95988cdea51d4d18a78903f3ea285333edaf317457c03b78d",
     "docs/写作资产/工作区/compare/cg-d673b17c-a/candidate-b.md": "a1b77224f895957bb89d0e52cd1bba2c614088954b7274b7a818f6eb1e5edf9e",
     "docs/写作资产/工作区/compare/cg-f6a20eee-3/candidate-a.md": "d1a4090cf55ff4fbc76e13ff756403f11d6a102b2623dcd3539c68a9a105267d",
@@ -135,6 +142,8 @@
     "docs/写作资产/工作区/drafts/wr-20260727100509-3834f391.md": "7bcba2bd72550ef95988cdea51d4d18a78903f3ea285333edaf317457c03b78d",
     "docs/写作资产/工作区/drafts/wr-20260727100509-c90610a4.md": "a1b77224f895957bb89d0e52cd1bba2c614088954b7274b7a818f6eb1e5edf9e",
     "docs/写作资产/工作区/drafts/wr-20260727100509-ce1b4067.md": "7bcba2bd72550ef95988cdea51d4d18a78903f3ea285333edaf317457c03b78d",
+    "docs/写作资产/工作区/drafts/wr-20260731113434-2518e791.md": "1017524af1396535e9f99ce5a1393cc6e06ae886ed82d57656909f9ee8069769",
+    "docs/写作资产/工作区/drafts/wr-20260731113521-aca8edba.md": "ff03122d032988ae5e585f69d366c630096165800a70322f288288e3ddf9bd66",
     "docs/写作资产/工作区/external-review/erb-ms1vnduq.md": "a7c9bebb0edeaad65a9e4cee6445373f106fcdfa79229c5b12308edaa2df2a32",
     "docs/写作资产/工作区/external-review/erb-ms1vnpl0.md": "9a3e7ea7145a7191b6b6414b3e9bc9624b826fcb364edfab91ef23462436ff76",
     "docs/写作资产/工作区/external-review/erb-ms1vqs3g.md": "76e820a2c429fb30e7f4f985f3f79887023c7bafa80dc6dd0766799e06b9d231",
@@ -350,7 +359,7 @@
     "docs/功能更新/174-移除大纲层级核对工作流.md": "5f73abe145b153a5e2131356d1e5061d56a5fa8dbc7f97b093b65d3337932250",
     "docs/功能更新/175-RAG增量提议与来源关联图谱.md": "2214a1d8afc2b36a58393309b9ad9cb3ccd728c0e1bf80be40e0cc3ba05ef4fe",
     "docs/功能更新/176-AI原生叙事游戏生产体系升级.md": "e937bd4ac88ff24482764dc1d1310ee6cb7c94b15efdac5bfe63530593b708b7",
-    "docs/功能更新目录.md": "3cb2be689fbb3d3a728b405b69dcb70f35275cd2e4a9ec0ebad31c959eb2e6d7",
+    "docs/功能更新目录.md": "2cd5b5d65aa2b428089954482755e9aa9b5538df2763622fcbf39b3dfb947e9d",
     "docs/协作参与与团队扩展路线.md": "cde12dc906682d4b04159bac97ea3458c0cc4f79821c9f03f486c52029747f54",
     "docs/外部来源/Skill来源目录.md": "5dea73aeb2afb392039bccaefa6acfaa1b796cf666b7ebd859c77c9171f8fdf3",
     "docs/外部来源/Skill许可证与保存策略.md": "18498f5dc9c78c51a9198714ea470d8f6ecb9692128b5d8c6906ee57ba5308cd",
