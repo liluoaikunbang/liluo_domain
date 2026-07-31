@@ -149,6 +149,16 @@
       "template": true
     },
     {
+      "id": "narrative-production-package-v1",
+      "schema": "schemas/narrative/narrative-production-package-v1.schema.json",
+      "sourceGlobs": [],
+      "mode": "file",
+      "owner": "narrative",
+      "requiredInChangedGate": false,
+      "allowsMissingEmbeddedSchemaVersion": false,
+      "template": true
+    },
+    {
       "id": "style-rag-policy",
       "schema": "schemas/workflows/style-rag-policy.schema.json",
       "sourceGlobs": ["project-navigation/style-rag-policy.json"],

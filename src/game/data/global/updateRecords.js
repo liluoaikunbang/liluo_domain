@@ -1,5 +1,11 @@
 export const updateRecords = Object.freeze([
     {
+        "id":  "176",
+        "date":  "2026-07-31",
+        "title":  "AI原生叙事游戏生产体系升级",
+        "summary":  "项目定位升级为 AI 原生叙事游戏生产体系；明确像素 RPG 旗舰地位，新增五层架构、叙事生产包 Schema/模板、README 主视觉与治理同步。"
+    },
+    {
         "id":  "175",
         "date":  "2026-07-31",
         "title":  "RAG增量提议与来源关联图谱",
@@ -27,7 +33,7 @@ export const updateRecords = Object.freeze([
         "id":  "172",
         "date":  "2026-07-28",
         "title":  "紧缚专业RAG双分支与用户维护",
-        "summary":  "紧缚 RAG 升级为知识+表达双分支；Style-RAG 为辅助；图谱详情页签（证据可展开、来源只列书名）；抽查分层降权；全部卡批量迁骨架；不另开维护页。"
+        "summary":  "紧缚 RAG 升级为知识+表达双分支；Style-RAG 为辅助；图谱详情页签（证据可展开、来源只列书名）；抽查分层降权；全部卡批量迁骨架；不另开维护页，并补齐 rag-audit-policy 的 confirmed-ok 降权合同。"
     },
     {
         "id":  "171",

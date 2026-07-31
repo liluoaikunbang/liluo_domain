@@ -65,6 +65,25 @@
         "allowSourceOptIn": { "type": "boolean" }
       }
     },
+    "confirmedOkDownweight": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "enabled",
+        "keepInPool",
+        "auditedPenalty",
+        "priorityPenalty",
+        "category"
+      ],
+      "properties": {
+        "enabled": { "type": "boolean" },
+        "keepInPool": { "type": "boolean", "const": true },
+        "auditedPenalty": { "type": "integer", "minimum": 0 },
+        "priorityPenalty": { "type": "integer", "minimum": 0 },
+        "category": { "type": "string", "const": "confirmed-ok" },
+        "notes": { "type": "string" }
+      }
+    },
     "notes": { "type": "string" }
   }
 }

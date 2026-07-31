@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "policyId": "x",
+  "channels": [
+    "rag"
+  ],
+  "skillUpgrade": {
+    "minIndependentRecordsForPattern": 3,
+    "forbidSingleIncidentSkillPatch": true,
+    "requireAbstractRulePlusExamples": true
+  },
+  "rebuild": {
+    "requireDryRunFirst": true,
+    "forbidFullRebuildByDefault": true,
+    "forbidModifySourceArticles": true,
+    "forbidAutoMarkHumanApproved": true
+  },
+  "confirmedOkDownweight": {
+    "enabled": true,
+    "keepInPool": true,
+    "auditedPenalty": 25,
+    "priorityPenalty": 45,
+    "category": "ok"
+  }
+}

@@ -24,6 +24,45 @@
       "status": "active"
     },
     {
+      "ruleId": "single-canon-multi-form-output",
+      "title": "同一正式叙事可多形态输出，但不得分裂事实源",
+      "authority": "docs/设计记忆/项目宪章.md",
+      "decision": "docs/设计记忆/架构决策/ADR-017-从单一像素RPG到AI原生叙事游戏生产体系.md",
+      "consumers": [
+        "AGENTS.md",
+        "README.md",
+        "docs/项目概览.md",
+        "docs/系统说明/AI原生叙事游戏生产体系.md",
+        "docs/系统说明/输出形态与渐进生产.md"
+      ],
+      "status": "active"
+    },
+    {
+      "ruleId": "flagship-rpg-first-class-lightweight-outputs",
+      "title": "像素 RPG 为旗舰体验，互动小说等轻量形态为第一类正式输出",
+      "authority": "docs/系统说明/输出形态与渐进生产.md",
+      "decision": "docs/设计记忆/架构决策/ADR-017-从单一像素RPG到AI原生叙事游戏生产体系.md",
+      "consumers": [
+        "AGENTS.md",
+        "README.md",
+        "docs/系统说明/游戏视图与模式.md",
+        "docs/系统说明/互动小说副本.md"
+      ],
+      "status": "active"
+    },
+    {
+      "ruleId": "narrative-package-before-downstream-production",
+      "title": "叙事生产先形成合同，再进入玩法编排、素材槽位与输出实现",
+      "authority": "docs/系统说明/叙事生产包设计.md",
+      "decision": "docs/设计记忆/架构决策/ADR-017-从单一像素RPG到AI原生叙事游戏生产体系.md",
+      "consumers": [
+        "schemas/narrative/narrative-production-package-v1.schema.json",
+        "project-workflows/templates/narrative-production-package.template.json",
+        "docs/系统说明/故事大纲到可玩内容转化系统.md"
+      ],
+      "status": "active"
+    },
+    {
       "ruleId": "adult-characters-only",
       "title": "正式项目登场角色统一为成年人",
       "authority": "AGENTS.md",

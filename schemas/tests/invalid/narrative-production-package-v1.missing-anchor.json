@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "packageId": "npp-missing-anchor",
+  "status": "draft",
+  "canon": {
+    "sources": [
+      {
+        "kind": "story",
+        "path": "src/game/data/story_outline/sources/1-浮光掠影.json"
+      }
+    ],
+    "immutableFacts": [
+      "x"
+    ]
+  },
+  "narrativeIntent": {
+    "corePromise": "x",
+    "playerExperienceGoals": [
+      "x"
+    ],
+    "mustKeep": [
+      "x"
+    ]
+  },
+  "experienceForms": [
+    {
+      "form": "interactive-fiction",
+      "priority": 1,
+      "productionGoal": "x",
+      "entryCriteria": [],
+      "successEvidence": [
+        "x"
+      ]
+    }
+  ],
+  "assetSlots": [],
+  "productionSlices": [
+    {
+      "sliceId": "slice-a",
+      "label": "x",
+      "targetForm": "interactive-fiction",
+      "deliverables": [
+        "x"
+      ]
+    }
+  ],
+  "validation": {
+    "requiredEvidence": [
+      "x"
+    ],
+    "forbidCanonDrift": true,
+    "requireStatePlan": true
+  }
+}

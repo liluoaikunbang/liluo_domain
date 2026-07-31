@@ -1,8 +1,52 @@
 [
   {
+    "id": "docs/设计记忆/架构决策/ADR-015-旧页面参考迁移与按需索引入口.md",
+    "indexVersion": 1,
+    "sourceHash": "26536bda320f90796949daf7fff2bda2c21ebcce30e5fef77a45517082aced67",
+    "sourcePath": "docs/设计记忆/架构决策/ADR-015-旧页面参考迁移与按需索引入口.md",
+    "subtype": "other",
+    "summary": "ADR-015：旧页面参考迁移与按需索引入口",
+    "summarySource": "title-only",
+    "title": "ADR-015：旧页面参考迁移与按需索引入口",
+    "type": "document"
+  },
+  {
+    "id": "docs/设计记忆/架构决策/ADR-016-外部RAG来源采用逐段人工确认基线.md",
+    "indexVersion": 1,
+    "sourceHash": "e4b0cb2c5288dac1bc5db75acc85724fe913723482f131c7fa9124da2096c3fe",
+    "sourcePath": "docs/设计记忆/架构决策/ADR-016-外部RAG来源采用逐段人工确认基线.md",
+    "subtype": "other",
+    "summary": "ADR-016：外部 RAG 来源采用逐段人工确认基线",
+    "summarySource": "title-only",
+    "title": "ADR-016：外部 RAG 来源采用逐段人工确认基线",
+    "type": "document"
+  },
+  {
+    "id": "docs/设计记忆/架构决策/ADR-017-从单一像素RPG到AI原生叙事游戏生产体系.md",
+    "indexVersion": 1,
+    "sourceHash": "a8338d5f6c5275ef8b93a650a4cad588bf62054003d00b7e2278aee6bd2003f0",
+    "sourcePath": "docs/设计记忆/架构决策/ADR-017-从单一像素RPG到AI原生叙事游戏生产体系.md",
+    "subtype": "other",
+    "summary": "ADR-017：从单一像素 RPG 到 AI 原生叙事游戏生产体系",
+    "summarySource": "title-only",
+    "title": "ADR-017：从单一像素 RPG 到 AI 原生叙事游戏生产体系",
+    "type": "document"
+  },
+  {
+    "id": "docs/设计记忆/架构决策/README.md",
+    "indexVersion": 1,
+    "sourceHash": "b6bcc167a81a0cc209dda03c4833d76b77196c98e285962aced27d9aa01628f7",
+    "sourcePath": "docs/设计记忆/架构决策/README.md",
+    "subtype": "other",
+    "summary": "架构决策记录",
+    "summarySource": "title-only",
+    "title": "架构决策记录",
+    "type": "document"
+  },
+  {
     "id": "docs/设计记忆/设计原则.md",
     "indexVersion": 1,
-    "sourceHash": "9f1646a30850245ea737130a53c0e6380afbb1c1ad516d9ac28987cf4b07211d",
+    "sourceHash": "1573f1a6c54970df7bf88962e1c459e08bd671019f429cbd172a953fd135325a",
     "sourcePath": "docs/设计记忆/设计原则.md",
     "subtype": "other",
     "summary": "设计原则",
@@ -13,7 +57,7 @@
   {
     "id": "docs/设计记忆/项目宪章.md",
     "indexVersion": 1,
-    "sourceHash": "c93bacf45ccb0bd6cc4f5e73fb532e8506f33c3a4cae7c5fb1f6e97aa7bd4b41",
+    "sourceHash": "f4d6fc4fb2dcfe2be70ec274f507c0080c3974941c8674238d7582a725c875cc",
     "sourcePath": "docs/设计记忆/项目宪章.md",
     "subtype": "other",
     "summary": "项目宪章",
@@ -244,7 +288,7 @@
   {
     "id": "docs/设计记忆/README.md",
     "indexVersion": 1,
-    "sourceHash": "6b2663ae2c61394d64f26a6b789c7d6621d3e88650507158f3e91512ff96acab",
+    "sourceHash": "20364c111084bc4a99a50447d5b35ad165ed8bf93e1b14d7e9fecfbcb0fb5985",
     "sourcePath": "docs/设计记忆/README.md",
     "subtype": "other",
     "summary": "设计记忆",
@@ -343,7 +387,7 @@
   {
     "id": "docs/系统说明/故事大纲到可玩内容转化系统.md",
     "indexVersion": 1,
-    "sourceHash": "d39abdae4f8c4295d88d781d8e7ae6484dda4f8d1696905e22e163a1ea200da9",
+    "sourceHash": "3eecb4891806da280738cc94a9f5ab35815c3553ae67402a0e0daa74b2cd352c",
     "sourcePath": "docs/系统说明/故事大纲到可玩内容转化系统.md",
     "subtype": "system",
     "summary": "故事大纲到可玩内容转化系统",
@@ -464,7 +508,7 @@
   {
     "id": "docs/系统说明/互动小说副本.md",
     "indexVersion": 1,
-    "sourceHash": "8b3762dbee06377909ae57f8fc755398d018e0481373bcd3356262fdd0e52eb5",
+    "sourceHash": "d999484bfc6316e98792c8e64a83151edf07fc145ac173f79731f06f340ecda9",
     "sourcePath": "docs/系统说明/互动小说副本.md",
     "subtype": "system",
     "summary": "互动小说副本",
@@ -607,7 +651,7 @@
   {
     "id": "docs/系统说明/世界与系列生产覆盖统计系统.md",
     "indexVersion": 1,
-    "sourceHash": "ddfada609de7e343a6d05ea87cbb0ed68f2ca17a9f9f8d5f88c8533a69428865",
+    "sourceHash": "1efbe106882ceae16b0e3b7704e74c234c0caf73fd4cc27e98dd827f08be668a",
     "sourcePath": "docs/系统说明/世界与系列生产覆盖统计系统.md",
     "subtype": "system",
     "summary": "世界与系列生产覆盖统计系统",
@@ -624,6 +668,28 @@
     "summary": "事件与对话系统",
     "summarySource": "title-only",
     "title": "事件与对话系统",
+    "type": "document"
+  },
+  {
+    "id": "docs/系统说明/输出形态与渐进生产.md",
+    "indexVersion": 1,
+    "sourceHash": "f1c5f50cf609c58379bd158591a8518e5d72ef3dca1b7f6b82aa0a22796baf2a",
+    "sourcePath": "docs/系统说明/输出形态与渐进生产.md",
+    "subtype": "system",
+    "summary": "输出形态与渐进生产",
+    "summarySource": "title-only",
+    "title": "输出形态与渐进生产",
+    "type": "document"
+  },
+  {
+    "id": "docs/系统说明/素材槽位与渐进增强.md",
+    "indexVersion": 1,
+    "sourceHash": "941ed3c4b12e1fadee7af6af23053009ca2f37ccabf0c2dde45253cbcad3d226",
+    "sourcePath": "docs/系统说明/素材槽位与渐进增强.md",
+    "subtype": "system",
+    "summary": "素材槽位与渐进增强",
+    "summarySource": "title-only",
+    "title": "素材槽位与渐进增强",
     "type": "document"
   },
   {
@@ -657,6 +723,17 @@
     "summary": "外部 Skill 来源库与项目能力演化系统",
     "summarySource": "title-only",
     "title": "外部 Skill 来源库与项目能力演化系统",
+    "type": "document"
+  },
+  {
+    "id": "docs/系统说明/玩法适配与体验编排.md",
+    "indexVersion": 1,
+    "sourceHash": "fbee633fc23356d57214d701aa746479f98b52b57b30fe409b3ddc287a1a0b26",
+    "sourcePath": "docs/系统说明/玩法适配与体验编排.md",
+    "subtype": "system",
+    "summary": "玩法适配与体验编排",
+    "summarySource": "title-only",
+    "title": "玩法适配与体验编排",
     "type": "document"
   },
   {
@@ -759,9 +836,20 @@
     "type": "document"
   },
   {
+    "id": "docs/系统说明/叙事生产包设计.md",
+    "indexVersion": 1,
+    "sourceHash": "ad7c415e52a31195beb0f489a879ace0f8b9de60893faa812e773a7286cf7daf",
+    "sourcePath": "docs/系统说明/叙事生产包设计.md",
+    "subtype": "system",
+    "summary": "叙事生产包设计",
+    "summarySource": "title-only",
+    "title": "叙事生产包设计",
+    "type": "document"
+  },
+  {
     "id": "docs/系统说明/游戏视图与模式.md",
     "indexVersion": 1,
-    "sourceHash": "cf54c683f485b54f2520b397dee8354e9b0cd23988c24a74c59a82bc9199d89e",
+    "sourceHash": "45c91b7baa53f45cc5cb3483992fc88f9a1f78c240f78f366cb3a3cc22df517d",
     "sourcePath": "docs/系统说明/游戏视图与模式.md",
     "subtype": "system",
     "summary": "游戏视图与模式",
@@ -811,6 +899,17 @@
     "summary": "AI 协同文件与规则分层",
     "summarySource": "title-only",
     "title": "AI 协同文件与规则分层",
+    "type": "document"
+  },
+  {
+    "id": "docs/系统说明/AI原生叙事游戏生产体系.md",
+    "indexVersion": 1,
+    "sourceHash": "51320cfead33c07883f50c9cfcdec317e0c85d47b5c581212daafe94e6dc2b15",
+    "sourcePath": "docs/系统说明/AI原生叙事游戏生产体系.md",
+    "subtype": "system",
+    "summary": "AI原生叙事游戏生产体系",
+    "summarySource": "title-only",
+    "title": "AI原生叙事游戏生产体系",
     "type": "document"
   },
   {
@@ -871,7 +970,7 @@
   {
     "id": "docs/系统说明/README.md",
     "indexVersion": 1,
-    "sourceHash": "cbdf3999999ccfa5187590b778f37e4e0d45c92f48d747643be5bc0a600b72d7",
+    "sourceHash": "ffeea66c426f861433eb2526c2d1001a8f24b3866e7a31ab28d22eed442f6acc",
     "sourcePath": "docs/系统说明/README.md",
     "subtype": "system",
     "summary": "系统说明",
@@ -915,7 +1014,7 @@
   {
     "id": "docs/项目概览.md",
     "indexVersion": 1,
-    "sourceHash": "9649a8cce8f7d9711c66e4a1c988ca0c8c7289bc79205a26745b11baccc4215e",
+    "sourceHash": "34f7741bdd2339f6ca191e322a55f9c2cadef5ec45fcfd401e2c8ba14aaba41f",
     "sourcePath": "docs/项目概览.md",
     "subtype": "other",
     "summary": "项目概览",
@@ -932,6 +1031,28 @@
     "summary": "项目能力、缺口与行动总览",
     "summarySource": "title-only",
     "title": "项目能力、缺口与行动总览",
+    "type": "document"
+  },
+  {
+    "id": "docs/项目愿景.md",
+    "indexVersion": 1,
+    "sourceHash": "0c656a8b3a3745f6f54a0081f72106ec2c42f7f5c6bca45a1c790465f12f6b4b",
+    "sourcePath": "docs/项目愿景.md",
+    "subtype": "other",
+    "summary": "项目愿景",
+    "summarySource": "title-only",
+    "title": "项目愿景",
+    "type": "document"
+  },
+  {
+    "id": "docs/协作参与与团队扩展路线.md",
+    "indexVersion": 1,
+    "sourceHash": "cde12dc906682d4b04159bac97ea3458c0cc4f79821c9f03f486c52029747f54",
+    "sourcePath": "docs/协作参与与团队扩展路线.md",
+    "subtype": "other",
+    "summary": "协作参与与团队扩展路线",
+    "summarySource": "title-only",
+    "title": "协作参与与团队扩展路线",
     "type": "document"
   },
   {
@@ -2626,127 +2747,6 @@
     "summary": "普通 RAG 抽查批次 rab-ms2wxsle",
     "summarySource": "title-only",
     "title": "普通 RAG 抽查批次 rab-ms2wxsle",
-    "type": "document"
-  },
-  {
-    "id": "docs/知识检索校准/batches/rab-ms2wxsly.md",
-    "indexVersion": 1,
-    "sourceHash": "98365ce670132a31f4453a3c1738c69e9bd62b86c2ba24c512127f477e9f026a",
-    "sourcePath": "docs/知识检索校准/batches/rab-ms2wxsly.md",
-    "subtype": "other",
-    "summary": "普通 RAG 抽查批次 rab-ms2wxsly",
-    "summarySource": "title-only",
-    "title": "普通 RAG 抽查批次 rab-ms2wxsly",
-    "type": "document"
-  },
-  {
-    "id": "docs/知识检索校准/batches/rab-ms2wxsns.md",
-    "indexVersion": 1,
-    "sourceHash": "2ebb04335291f893496bfc27aa9e0bbb2e5910dea5caac7a0719e0f9b68f2511",
-    "sourcePath": "docs/知识检索校准/batches/rab-ms2wxsns.md",
-    "subtype": "other",
-    "summary": "细节概念 抽查批次 rab-ms2wxsns",
-    "summarySource": "title-only",
-    "title": "细节概念 抽查批次 rab-ms2wxsns",
-    "type": "document"
-  },
-  {
-    "id": "docs/知识检索校准/batches/rab-ms2wxsnz.md",
-    "indexVersion": 1,
-    "sourceHash": "1d7e7373288c9757a3aba75ea260830b50b880085dfbab9064cebbc7e0e66a0d",
-    "sourcePath": "docs/知识检索校准/batches/rab-ms2wxsnz.md",
-    "subtype": "other",
-    "summary": "情节 抽查批次 rab-ms2wxsnz",
-    "summarySource": "title-only",
-    "title": "情节 抽查批次 rab-ms2wxsnz",
-    "type": "document"
-  },
-  {
-    "id": "docs/知识检索校准/batches/rab-ms2wxsol.md",
-    "indexVersion": 1,
-    "sourceHash": "9abaa7fd7c8f064f357f0edf70a2d9d72b4090caac78d315db541399f20c4fc0",
-    "sourcePath": "docs/知识检索校准/batches/rab-ms2wxsol.md",
-    "subtype": "other",
-    "summary": "综合（RAG / Style-RAG / 细节概念 / 情节） 抽查批次 rab-ms2wxsol",
-    "summarySource": "title-only",
-    "title": "综合（RAG / Style-RAG / 细节概念 / 情节） 抽查批次 rab-ms2wxsol",
-    "type": "document"
-  },
-  {
-    "id": "docs/知识检索校准/batches/rab-ms2x4z78.md",
-    "indexVersion": 1,
-    "sourceHash": "eed2c960f38a8a6e54e5e4e4f9b43a6d1639b67e16c523bfd5e3206262e49533",
-    "sourcePath": "docs/知识检索校准/batches/rab-ms2x4z78.md",
-    "subtype": "other",
-    "summary": "Style-RAG 抽查批次 rab-ms2x4z78",
-    "summarySource": "title-only",
-    "title": "Style-RAG 抽查批次 rab-ms2x4z78",
-    "type": "document"
-  },
-  {
-    "id": "docs/知识检索校准/batches/rab-ms2x4z88.md",
-    "indexVersion": 1,
-    "sourceHash": "88853bce53c7002d38244441ddb7cf6beca27c532390bc7ada6b1d67fd9c85a8",
-    "sourcePath": "docs/知识检索校准/batches/rab-ms2x4z88.md",
-    "subtype": "other",
-    "summary": "普通 RAG 抽查批次 rab-ms2x4z88",
-    "summarySource": "title-only",
-    "title": "普通 RAG 抽查批次 rab-ms2x4z88",
-    "type": "document"
-  },
-  {
-    "id": "docs/知识检索校准/batches/rab-ms2x4z8r.md",
-    "indexVersion": 1,
-    "sourceHash": "779c65d573b42023a6de642dcfeedccca7cb95b65dbd04ead7b35a79135ac05d",
-    "sourcePath": "docs/知识检索校准/batches/rab-ms2x4z8r.md",
-    "subtype": "other",
-    "summary": "普通 RAG 抽查批次 rab-ms2x4z8r",
-    "summarySource": "title-only",
-    "title": "普通 RAG 抽查批次 rab-ms2x4z8r",
-    "type": "document"
-  },
-  {
-    "id": "docs/知识检索校准/batches/rab-ms2x4z9d.md",
-    "indexVersion": 1,
-    "sourceHash": "ce06b99d6fa45e1cd84601b0c36b8c5ef423a72c6860632c92e5413f109ce96e",
-    "sourcePath": "docs/知识检索校准/batches/rab-ms2x4z9d.md",
-    "subtype": "other",
-    "summary": "普通 RAG 抽查批次 rab-ms2x4z9d",
-    "summarySource": "title-only",
-    "title": "普通 RAG 抽查批次 rab-ms2x4z9d",
-    "type": "document"
-  },
-  {
-    "id": "docs/知识检索校准/batches/rab-ms2x4z9x.md",
-    "indexVersion": 1,
-    "sourceHash": "e6992ffe5a13672b978da4fe32e39a2bc7a43c09a4d65930b33387540af518ce",
-    "sourcePath": "docs/知识检索校准/batches/rab-ms2x4z9x.md",
-    "subtype": "other",
-    "summary": "普通 RAG 抽查批次 rab-ms2x4z9x",
-    "summarySource": "title-only",
-    "title": "普通 RAG 抽查批次 rab-ms2x4z9x",
-    "type": "document"
-  },
-  {
-    "id": "docs/知识检索校准/batches/rab-ms2x4zbm.md",
-    "indexVersion": 1,
-    "sourceHash": "ed1db2b49b18e2fa477b3147262df3ea245ae562b85078bdb94212d5b8b0bdcf",
-    "sourcePath": "docs/知识检索校准/batches/rab-ms2x4zbm.md",
-    "subtype": "other",
-    "summary": "细节概念 抽查批次 rab-ms2x4zbm",
-    "summarySource": "title-only",
-    "title": "细节概念 抽查批次 rab-ms2x4zbm",
-    "type": "document"
-  },
-  {
-    "id": "docs/知识检索校准/batches/rab-ms2x4zbt.md",
-    "indexVersion": 1,
-    "sourceHash": "2e33dbdb4766e0abfdb644f698011b52b13b8f073d39fb080decf03271c1d6a0",
-    "sourcePath": "docs/知识检索校准/batches/rab-ms2x4zbt.md",
-    "subtype": "other",
-    "summary": "情节 抽查批次 rab-ms2x4zbt",
-    "summarySource": "title-only",
-    "title": "情节 抽查批次 rab-ms2x4zbt",
     "type": "document"
   }
 ]

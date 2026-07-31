@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "packageId": "npp-example-package",
+  "status": "draft",
+  "storyAnchor": {
+    "worldKey": "world-example",
+    "seriesKey": "series-example",
+    "storyKey": "story-example",
+    "title": "示例故事节点标题",
+    "publicWorldName": "示例世界名"
+  },
+  "canon": {
+    "sources": [
+      {
+        "kind": "story",
+        "path": "src/game/data/story_outline/sources/example.json"
+      }
+    ],
+    "immutableFacts": [
+      "这里填写不可改写的正式事实"
+    ]
+  },
+  "narrativeIntent": {
+    "corePromise": "一句话说明这段叙事想让玩家感受到什么。",
+    "playerExperienceGoals": [
+      "体验目标 1"
+    ],
+    "relationshipFocus": [],
+    "mustKeep": [
+      "必须保留的叙事价值"
+    ],
+    "forbiddenDrift": []
+  },
+  "experienceForms": [
+    {
+      "form": "interactive-fiction",
+      "priority": 1,
+      "productionGoal": "先验证节奏、张力或分支。",
+      "entryCriteria": [
+        "进入该形态前必须具备的条件"
+      ],
+      "successEvidence": [
+        "完成后应留下的真实证据"
+      ]
+    }
+  ],
+  "assetSlots": [
+    {
+      "slotId": "slot-example",
+      "kind": "cg",
+      "stage": "placeholder",
+      "policy": "nice-to-have",
+      "summary": "示例素材槽位。"
+    }
+  ],
+  "productionSlices": [
+    {
+      "sliceId": "slice-example",
+      "label": "示例交付切片",
+      "targetForm": "interactive-fiction",
+      "deliverables": [
+        "交付物 A"
+      ]
+    }
+  ],
+  "validation": {
+    "requiredEvidence": [
+      "来源核验",
+      "状态规划",
+      "形态选择理由"
+    ],
+    "forbidCanonDrift": true,
+    "requireStatePlan": true
+  }
+}

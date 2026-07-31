@@ -1927,7 +1927,7 @@
   {
     "id": "docs/功能更新/172-紧缚专业RAG双分支与用户维护.md",
     "indexVersion": 1,
-    "sourceHash": "0395b80554af374ad159a28f8afad2f54fd376110ccf5205d8232a8f7d2db55a",
+    "sourceHash": "9f32adb39f375ea31c0953bec1cec2cf32b74696be32d906550793d7c2c3a191",
     "sourcePath": "docs/功能更新/172-紧缚专业RAG双分支与用户维护.md",
     "subtype": "update",
     "summary": "172-紧缚专业RAG双分支与用户维护",
@@ -1969,9 +1969,20 @@
     "type": "document"
   },
   {
+    "id": "docs/功能更新/176-AI原生叙事游戏生产体系升级.md",
+    "indexVersion": 1,
+    "sourceHash": "948b24f583f00d18e525ebb9cfc3693cb606cbc3063329fe04bb20d4c2d5560c",
+    "sourcePath": "docs/功能更新/176-AI原生叙事游戏生产体系升级.md",
+    "subtype": "update",
+    "summary": "176-AI原生叙事游戏生产体系升级",
+    "summarySource": "title-only",
+    "title": "176-AI原生叙事游戏生产体系升级",
+    "type": "document"
+  },
+  {
     "id": "docs/功能更新目录.md",
     "indexVersion": 1,
-    "sourceHash": "8abfcbbdec30a4d4e164ebdd850f577adff173f8c3dfee48ab91651049a1c95c",
+    "sourceHash": "2fe668106f3c12f3c491d2e5672d3946e70478935681b8eb8b5f67712664b30c",
     "sourcePath": "docs/功能更新目录.md",
     "subtype": "other",
     "summary": "功能更新目录",
@@ -2285,6 +2296,28 @@
     "summary": "liluo-purpose-driven-ideation",
     "summarySource": "title-only",
     "title": "liluo-purpose-driven-ideation",
+    "type": "document"
+  },
+  {
+    "id": "docs/技能说明/liluo-rag-candidate-proposal.md",
+    "indexVersion": 1,
+    "sourceHash": "7690665c2a847c861b7674a1ddc7bfed2b514fd3dcadfa51f58e9a021938f7c3",
+    "sourcePath": "docs/技能说明/liluo-rag-candidate-proposal.md",
+    "subtype": "skill",
+    "summary": "liluo-rag-candidate-proposal",
+    "summarySource": "title-only",
+    "title": "liluo-rag-candidate-proposal",
+    "type": "document"
+  },
+  {
+    "id": "docs/技能说明/liluo-rag-source-association.md",
+    "indexVersion": 1,
+    "sourceHash": "3350fb804e65afa086e539cc5ccecbfdf4f21a8fa1b22a801ad3125b16dba21c",
+    "sourcePath": "docs/技能说明/liluo-rag-source-association.md",
+    "subtype": "skill",
+    "summary": "liluo-rag-source-association",
+    "summarySource": "title-only",
+    "title": "liluo-rag-source-association",
     "type": "document"
   },
   {
@@ -2714,39 +2747,6 @@
     "summary": "ADR-014：Style-RAG 元数据检索与 Canon 风格隔离",
     "summarySource": "title-only",
     "title": "ADR-014：Style-RAG 元数据检索与 Canon 风格隔离",
-    "type": "document"
-  },
-  {
-    "id": "docs/设计记忆/架构决策/ADR-015-旧页面参考迁移与按需索引入口.md",
-    "indexVersion": 1,
-    "sourceHash": "26536bda320f90796949daf7fff2bda2c21ebcce30e5fef77a45517082aced67",
-    "sourcePath": "docs/设计记忆/架构决策/ADR-015-旧页面参考迁移与按需索引入口.md",
-    "subtype": "other",
-    "summary": "ADR-015：旧页面参考迁移与按需索引入口",
-    "summarySource": "title-only",
-    "title": "ADR-015：旧页面参考迁移与按需索引入口",
-    "type": "document"
-  },
-  {
-    "id": "docs/设计记忆/架构决策/ADR-016-外部RAG来源采用逐段人工确认基线.md",
-    "indexVersion": 1,
-    "sourceHash": "e4b0cb2c5288dac1bc5db75acc85724fe913723482f131c7fa9124da2096c3fe",
-    "sourcePath": "docs/设计记忆/架构决策/ADR-016-外部RAG来源采用逐段人工确认基线.md",
-    "subtype": "other",
-    "summary": "ADR-016：外部 RAG 来源采用逐段人工确认基线",
-    "summarySource": "title-only",
-    "title": "ADR-016：外部 RAG 来源采用逐段人工确认基线",
-    "type": "document"
-  },
-  {
-    "id": "docs/设计记忆/架构决策/README.md",
-    "indexVersion": 1,
-    "sourceHash": "d43346ae3c049b95c6d68132a6942847f4a8e542ce43b133741a62252ce96240",
-    "sourcePath": "docs/设计记忆/架构决策/README.md",
-    "subtype": "other",
-    "summary": "架构决策记录",
-    "summarySource": "title-only",
-    "title": "架构决策记录",
     "type": "document"
   }
 ]

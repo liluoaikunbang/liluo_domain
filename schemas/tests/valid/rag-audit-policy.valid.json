@@ -38,5 +38,13 @@
     "source-folder",
     "random"
   ],
+  "confirmedOkDownweight": {
+    "enabled": true,
+    "keepInPool": true,
+    "auditedPenalty": 25,
+    "priorityPenalty": 45,
+    "category": "confirmed-ok",
+    "notes": "抽查过降权，confirmed-ok 再降权，但不移出池。"
+  },
   "notes": "现有索引可继续使用；抽查是渐进校准，不阻塞查询。"
 }

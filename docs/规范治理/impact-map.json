@@ -75,6 +75,24 @@
       "userCommands": false,
       "decision": "ADR"
     },
+    "project-positioning-change": {
+      "requiredChecks": [
+        "AGENTS.md",
+        "README.md",
+        "docs/项目愿景.md",
+        "docs/项目概览.md",
+        "docs/设计记忆/项目宪章.md",
+        "docs/设计记忆/设计原则.md",
+        "相关系统说明",
+        "相关 ADR",
+        "相关 Schema/模板",
+        "功能更新",
+        "项目知识索引"
+      ],
+      "featureUpdate": true,
+      "userCommands": false,
+      "decision": "ADR"
+    },
     "creative-decision": {
       "requiredChecks": [
         "docs/设计记忆/创作决策/",

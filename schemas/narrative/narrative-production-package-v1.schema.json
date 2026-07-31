@@ -1,0 +1,189 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://liluo.local/schemas/narrative/narrative-production-package-v1.schema.json",
+  "title": "璃落叙事生产包",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "packageId",
+    "status",
+    "storyAnchor",
+    "canon",
+    "narrativeIntent",
+    "experienceForms",
+    "assetSlots",
+    "productionSlices",
+    "validation"
+  ],
+  "properties": {
+    "schemaVersion": { "type": "integer", "const": 1 },
+    "packageId": {
+      "type": "string",
+      "pattern": "^npp-[A-Za-z0-9][A-Za-z0-9._:-]*$"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["draft", "approved", "in-production", "validated", "superseded", "archived"]
+    },
+    "storyAnchor": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["worldKey", "seriesKey", "storyKey", "title"],
+      "properties": {
+        "worldKey": { "$ref": "../common/identifier.schema.json" },
+        "seriesKey": { "$ref": "../common/identifier.schema.json" },
+        "storyKey": { "$ref": "../common/identifier.schema.json" },
+        "title": { "type": "string", "minLength": 1 },
+        "publicWorldName": { "type": "string", "minLength": 1 }
+      }
+    },
+    "canon": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["sources", "immutableFacts"],
+      "properties": {
+        "sources": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "../common/source-reference.schema.json" }
+        },
+        "immutableFacts": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+    "narrativeIntent": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["corePromise", "playerExperienceGoals", "mustKeep"],
+      "properties": {
+        "corePromise": { "type": "string", "minLength": 1 },
+        "playerExperienceGoals": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "relationshipFocus": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "mustKeep": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "forbiddenDrift": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+    "experienceForms": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["form", "priority", "productionGoal", "entryCriteria", "successEvidence"],
+        "properties": {
+          "form": {
+            "type": "string",
+            "enum": [
+              "pixel-rpg",
+              "interactive-fiction",
+              "scene-bridge",
+              "cg-brief",
+              "lore-card",
+              "system-brief"
+            ]
+          },
+          "priority": { "type": "integer", "minimum": 1, "maximum": 5 },
+          "productionGoal": { "type": "string", "minLength": 1 },
+          "entryCriteria": {
+            "type": "array",
+            "items": { "type": "string", "minLength": 1 }
+          },
+          "successEvidence": {
+            "type": "array",
+            "minItems": 1,
+            "items": { "type": "string", "minLength": 1 }
+          }
+        }
+      }
+    },
+    "assetSlots": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["slotId", "kind", "stage", "policy", "summary"],
+        "properties": {
+          "slotId": { "$ref": "../common/identifier.schema.json" },
+          "kind": {
+            "type": "string",
+            "enum": ["portrait", "cg", "map-scene", "audio", "ui", "other"]
+          },
+          "stage": {
+            "type": "string",
+            "enum": ["placeholder", "target", "stretch"]
+          },
+          "policy": {
+            "type": "string",
+            "enum": ["must-have", "should-have", "nice-to-have"]
+          },
+          "summary": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+    "productionSlices": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["sliceId", "label", "targetForm", "deliverables"],
+        "properties": {
+          "sliceId": { "$ref": "../common/identifier.schema.json" },
+          "label": { "type": "string", "minLength": 1 },
+          "targetForm": {
+            "type": "string",
+            "enum": [
+              "pixel-rpg",
+              "interactive-fiction",
+              "scene-bridge",
+              "cg-brief",
+              "lore-card",
+              "system-brief"
+            ]
+          },
+          "deliverables": {
+            "type": "array",
+            "minItems": 1,
+            "items": { "type": "string", "minLength": 1 }
+          },
+          "dependsOnSliceIds": {
+            "type": "array",
+            "items": { "$ref": "../common/identifier.schema.json" }
+          }
+        }
+      }
+    },
+    "validation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["requiredEvidence", "forbidCanonDrift", "requireStatePlan"],
+      "properties": {
+        "requiredEvidence": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "forbidCanonDrift": { "type": "boolean", "const": true },
+        "requireStatePlan": { "type": "boolean" }
+      }
+    }
+  }
+}

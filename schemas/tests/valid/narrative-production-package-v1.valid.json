@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 1,
+  "packageId": "npp-glimmering-campus-arrival",
+  "status": "draft",
+  "storyAnchor": {
+    "worldKey": "world-glimmering-glance",
+    "seriesKey": "series-campus-arrival",
+    "storyKey": "world-1-glimmering-glance-campus-arrival",
+    "title": "校园初入",
+    "publicWorldName": "浮光掠影"
+  },
+  "canon": {
+    "sources": [
+      {
+        "kind": "story",
+        "path": "src/game/data/story_outline/sources/1-浮光掠影.json"
+      }
+    ],
+    "immutableFacts": [
+      "角色均为成年人",
+      "本包不能改写故事节点的正式事实"
+    ]
+  },
+  "narrativeIntent": {
+    "corePromise": "先让玩家感受到初入校园时的陌生、期待与轻微不安。",
+    "playerExperienceGoals": [
+      "形成地点记忆",
+      "建立主角与环境的第一层关系"
+    ],
+    "relationshipFocus": [
+      "璃落与校园环境"
+    ],
+    "mustKeep": [
+      "保留进入地点的探索感",
+      "保留后续扩展为地图流程的空间"
+    ],
+    "forbiddenDrift": [
+      "不得引入未确认的新角色背景"
+    ]
+  },
+  "experienceForms": [
+    {
+      "form": "interactive-fiction",
+      "priority": 1,
+      "productionGoal": "先验证阅读节奏与情绪推进。",
+      "entryCriteria": [
+        "故事锚点已确认"
+      ],
+      "successEvidence": [
+        "存在可运行的分支与结束状态"
+      ]
+    },
+    {
+      "form": "pixel-rpg",
+      "priority": 2,
+      "productionGoal": "后续接入正式校园地图与事件触发。",
+      "entryCriteria": [
+        "已有地图入口规划"
+      ],
+      "successEvidence": [
+        "存在可进入、可推进、可完成的地图流程"
+      ]
+    }
+  ],
+  "assetSlots": [
+    {
+      "slotId": "portrait-liluo-campus",
+      "kind": "portrait",
+      "stage": "target",
+      "policy": "should-have",
+      "summary": "用于校园初入阶段的立绘表达。"
+    },
+    {
+      "slotId": "cg-campus-gate",
+      "kind": "cg",
+      "stage": "placeholder",
+      "policy": "nice-to-have",
+      "summary": "校门初见的关键镜头。"
+    }
+  ],
+  "productionSlices": [
+    {
+      "sliceId": "if-graybox",
+      "label": "互动小说灰盒",
+      "targetForm": "interactive-fiction",
+      "deliverables": [
+        "scenario draft",
+        "ending flags"
+      ]
+    },
+    {
+      "sliceId": "rpg-mvp",
+      "label": "地图 MVP",
+      "targetForm": "pixel-rpg",
+      "deliverables": [
+        "map event skeleton",
+        "dialogue ids",
+        "entry state"
+      ],
+      "dependsOnSliceIds": [
+        "if-graybox"
+      ]
+    }
+  ],
+  "validation": {
+    "requiredEvidence": [
+      "来源核验",
+      "输出形态选择理由",
+      "状态沉淀方案"
+    ],
+    "forbidCanonDrift": true,
+    "requireStatePlan": true
+  }
+}

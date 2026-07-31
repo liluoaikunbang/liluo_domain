@@ -33,6 +33,24 @@
       "status": "active"
     },
     {
+      "documentId": "project-vision",
+      "path": "docs/项目愿景.md",
+      "type": "project-charter",
+      "authorityFor": [
+        "project-vision",
+        "ai-native-narrative-game-production"
+      ],
+      "consumers": [
+        "README.md",
+        "docs/README.md",
+        "docs/项目概览.md",
+        "docs/设计记忆/项目宪章.md"
+      ],
+      "indexable": true,
+      "userFacing": true,
+      "status": "active"
+    },
+    {
       "documentId": "user-command-catalog",
       "path": "docs/用户命令目录.md",
       "type": "user-entry",
@@ -153,6 +171,102 @@
         "docs/README.md",
         "docs/系统说明/README.md",
         "docs/用户命令目录.md"
+      ],
+      "indexable": true,
+      "userFacing": true,
+      "status": "active"
+    },
+    {
+      "documentId": "ai-native-narrative-system",
+      "path": "docs/系统说明/AI原生叙事游戏生产体系.md",
+      "type": "system-spec",
+      "authorityFor": [
+        "ai-native-production-architecture",
+        "five-layer-production-model"
+      ],
+      "decision": "docs/设计记忆/架构决策/ADR-017-从单一像素RPG到AI原生叙事游戏生产体系.md",
+      "consumers": [
+        "AGENTS.md",
+        "README.md",
+        "docs/README.md",
+        "docs/项目概览.md",
+        "docs/系统说明/README.md"
+      ],
+      "indexable": true,
+      "userFacing": true,
+      "status": "active"
+    },
+    {
+      "documentId": "narrative-production-package-system",
+      "path": "docs/系统说明/叙事生产包设计.md",
+      "type": "system-spec",
+      "authorityFor": [
+        "narrative-production-package",
+        "story-to-production-contract"
+      ],
+      "decision": "docs/设计记忆/架构决策/ADR-017-从单一像素RPG到AI原生叙事游戏生产体系.md",
+      "consumers": [
+        "schemas/narrative/narrative-production-package-v1.schema.json",
+        "schemas/registry.json",
+        "project-workflows/templates/narrative-production-package.template.json",
+        "docs/系统说明/故事大纲到可玩内容转化系统.md",
+        "docs/系统说明/README.md"
+      ],
+      "indexable": true,
+      "userFacing": true,
+      "status": "active"
+    },
+    {
+      "documentId": "experience-orchestration-system",
+      "path": "docs/系统说明/玩法适配与体验编排.md",
+      "type": "system-spec",
+      "authorityFor": [
+        "experience-orchestration",
+        "multi-form-adaptation"
+      ],
+      "decision": "docs/设计记忆/架构决策/ADR-017-从单一像素RPG到AI原生叙事游戏生产体系.md",
+      "consumers": [
+        "README.md",
+        "docs/项目概览.md",
+        "docs/系统说明/输出形态与渐进生产.md",
+        "docs/系统说明/故事大纲到可玩内容转化系统.md"
+      ],
+      "indexable": true,
+      "userFacing": true,
+      "status": "active"
+    },
+    {
+      "documentId": "asset-slot-system",
+      "path": "docs/系统说明/素材槽位与渐进增强.md",
+      "type": "system-spec",
+      "authorityFor": [
+        "asset-slot-planning",
+        "progressive-enhancement-assets"
+      ],
+      "decision": "docs/设计记忆/架构决策/ADR-017-从单一像素RPG到AI原生叙事游戏生产体系.md",
+      "consumers": [
+        "docs/系统说明/叙事生产包设计.md",
+        "docs/系统说明/输出形态与渐进生产.md",
+        "docs/游戏素材图片清单.md"
+      ],
+      "indexable": true,
+      "userFacing": true,
+      "status": "active"
+    },
+    {
+      "documentId": "output-form-system",
+      "path": "docs/系统说明/输出形态与渐进生产.md",
+      "type": "system-spec",
+      "authorityFor": [
+        "official-output-forms",
+        "progressive-production-stages"
+      ],
+      "decision": "docs/设计记忆/架构决策/ADR-017-从单一像素RPG到AI原生叙事游戏生产体系.md",
+      "consumers": [
+        "README.md",
+        "docs/系统说明/游戏视图与模式.md",
+        "docs/系统说明/互动小说副本.md",
+        "docs/系统说明/README.md"
       ],
       "indexable": true,
       "userFacing": true,
@@ -750,6 +864,22 @@
         "package.json",
         "scripts/project-routine.mjs",
         "scripts/project-navigation/project-navigation.mjs"
+      ],
+      "indexable": true,
+      "userFacing": true,
+      "status": "active"
+    },
+    {
+      "documentId": "collaboration-expansion-route",
+      "path": "docs/协作参与与团队扩展路线.md",
+      "type": "project-charter",
+      "authorityFor": [
+        "collaboration-expansion-route"
+      ],
+      "consumers": [
+        "docs/README.md",
+        "docs/项目概览.md",
+        "docs/智能体说明/项目子智能体体系.md"
       ],
       "indexable": true,
       "userFacing": true,

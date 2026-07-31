@@ -1,5 +1,126 @@
 [
   {
+    "id": "docs/知识检索校准/batches/rab-ms2wxsly.md",
+    "indexVersion": 1,
+    "sourceHash": "98365ce670132a31f4453a3c1738c69e9bd62b86c2ba24c512127f477e9f026a",
+    "sourcePath": "docs/知识检索校准/batches/rab-ms2wxsly.md",
+    "subtype": "other",
+    "summary": "普通 RAG 抽查批次 rab-ms2wxsly",
+    "summarySource": "title-only",
+    "title": "普通 RAG 抽查批次 rab-ms2wxsly",
+    "type": "document"
+  },
+  {
+    "id": "docs/知识检索校准/batches/rab-ms2wxsns.md",
+    "indexVersion": 1,
+    "sourceHash": "2ebb04335291f893496bfc27aa9e0bbb2e5910dea5caac7a0719e0f9b68f2511",
+    "sourcePath": "docs/知识检索校准/batches/rab-ms2wxsns.md",
+    "subtype": "other",
+    "summary": "细节概念 抽查批次 rab-ms2wxsns",
+    "summarySource": "title-only",
+    "title": "细节概念 抽查批次 rab-ms2wxsns",
+    "type": "document"
+  },
+  {
+    "id": "docs/知识检索校准/batches/rab-ms2wxsnz.md",
+    "indexVersion": 1,
+    "sourceHash": "1d7e7373288c9757a3aba75ea260830b50b880085dfbab9064cebbc7e0e66a0d",
+    "sourcePath": "docs/知识检索校准/batches/rab-ms2wxsnz.md",
+    "subtype": "other",
+    "summary": "情节 抽查批次 rab-ms2wxsnz",
+    "summarySource": "title-only",
+    "title": "情节 抽查批次 rab-ms2wxsnz",
+    "type": "document"
+  },
+  {
+    "id": "docs/知识检索校准/batches/rab-ms2wxsol.md",
+    "indexVersion": 1,
+    "sourceHash": "9abaa7fd7c8f064f357f0edf70a2d9d72b4090caac78d315db541399f20c4fc0",
+    "sourcePath": "docs/知识检索校准/batches/rab-ms2wxsol.md",
+    "subtype": "other",
+    "summary": "综合（RAG / Style-RAG / 细节概念 / 情节） 抽查批次 rab-ms2wxsol",
+    "summarySource": "title-only",
+    "title": "综合（RAG / Style-RAG / 细节概念 / 情节） 抽查批次 rab-ms2wxsol",
+    "type": "document"
+  },
+  {
+    "id": "docs/知识检索校准/batches/rab-ms2x4z78.md",
+    "indexVersion": 1,
+    "sourceHash": "eed2c960f38a8a6e54e5e4e4f9b43a6d1639b67e16c523bfd5e3206262e49533",
+    "sourcePath": "docs/知识检索校准/batches/rab-ms2x4z78.md",
+    "subtype": "other",
+    "summary": "Style-RAG 抽查批次 rab-ms2x4z78",
+    "summarySource": "title-only",
+    "title": "Style-RAG 抽查批次 rab-ms2x4z78",
+    "type": "document"
+  },
+  {
+    "id": "docs/知识检索校准/batches/rab-ms2x4z88.md",
+    "indexVersion": 1,
+    "sourceHash": "88853bce53c7002d38244441ddb7cf6beca27c532390bc7ada6b1d67fd9c85a8",
+    "sourcePath": "docs/知识检索校准/batches/rab-ms2x4z88.md",
+    "subtype": "other",
+    "summary": "普通 RAG 抽查批次 rab-ms2x4z88",
+    "summarySource": "title-only",
+    "title": "普通 RAG 抽查批次 rab-ms2x4z88",
+    "type": "document"
+  },
+  {
+    "id": "docs/知识检索校准/batches/rab-ms2x4z8r.md",
+    "indexVersion": 1,
+    "sourceHash": "779c65d573b42023a6de642dcfeedccca7cb95b65dbd04ead7b35a79135ac05d",
+    "sourcePath": "docs/知识检索校准/batches/rab-ms2x4z8r.md",
+    "subtype": "other",
+    "summary": "普通 RAG 抽查批次 rab-ms2x4z8r",
+    "summarySource": "title-only",
+    "title": "普通 RAG 抽查批次 rab-ms2x4z8r",
+    "type": "document"
+  },
+  {
+    "id": "docs/知识检索校准/batches/rab-ms2x4z9d.md",
+    "indexVersion": 1,
+    "sourceHash": "ce06b99d6fa45e1cd84601b0c36b8c5ef423a72c6860632c92e5413f109ce96e",
+    "sourcePath": "docs/知识检索校准/batches/rab-ms2x4z9d.md",
+    "subtype": "other",
+    "summary": "普通 RAG 抽查批次 rab-ms2x4z9d",
+    "summarySource": "title-only",
+    "title": "普通 RAG 抽查批次 rab-ms2x4z9d",
+    "type": "document"
+  },
+  {
+    "id": "docs/知识检索校准/batches/rab-ms2x4z9x.md",
+    "indexVersion": 1,
+    "sourceHash": "e6992ffe5a13672b978da4fe32e39a2bc7a43c09a4d65930b33387540af518ce",
+    "sourcePath": "docs/知识检索校准/batches/rab-ms2x4z9x.md",
+    "subtype": "other",
+    "summary": "普通 RAG 抽查批次 rab-ms2x4z9x",
+    "summarySource": "title-only",
+    "title": "普通 RAG 抽查批次 rab-ms2x4z9x",
+    "type": "document"
+  },
+  {
+    "id": "docs/知识检索校准/batches/rab-ms2x4zbm.md",
+    "indexVersion": 1,
+    "sourceHash": "ed1db2b49b18e2fa477b3147262df3ea245ae562b85078bdb94212d5b8b0bdcf",
+    "sourcePath": "docs/知识检索校准/batches/rab-ms2x4zbm.md",
+    "subtype": "other",
+    "summary": "细节概念 抽查批次 rab-ms2x4zbm",
+    "summarySource": "title-only",
+    "title": "细节概念 抽查批次 rab-ms2x4zbm",
+    "type": "document"
+  },
+  {
+    "id": "docs/知识检索校准/batches/rab-ms2x4zbt.md",
+    "indexVersion": 1,
+    "sourceHash": "2e33dbdb4766e0abfdb644f698011b52b13b8f073d39fb080decf03271c1d6a0",
+    "sourcePath": "docs/知识检索校准/batches/rab-ms2x4zbt.md",
+    "subtype": "other",
+    "summary": "情节 抽查批次 rab-ms2x4zbt",
+    "summarySource": "title-only",
+    "title": "情节 抽查批次 rab-ms2x4zbt",
+    "type": "document"
+  },
+  {
     "id": "docs/知识检索校准/batches/rab-ms2x4zcj.md",
     "indexVersion": 1,
     "sourceHash": "e0ce279c1e862a8230f553f1b063ca9cb7d747e28eb04b1f9050607d699dad24",
@@ -451,6 +572,17 @@
     "type": "document"
   },
   {
+    "id": "docs/assets/readme/README.md",
+    "indexVersion": 1,
+    "sourceHash": "8d8157aeef698751d3216f5a2b7a9c56de99583c202e9498d67ef7d644763097",
+    "sourcePath": "docs/assets/readme/README.md",
+    "subtype": "other",
+    "summary": "README 视觉素材",
+    "summarySource": "title-only",
+    "title": "README 视觉素材",
+    "type": "document"
+  },
+  {
     "id": "docs/CG待制作清单.md",
     "indexVersion": 1,
     "sourceHash": "81996a1dd752cbf2e9c5a9fc68bb4a480e556d2d76ec35afa9b4b6894f067f8b",
@@ -464,12 +596,12 @@
   {
     "id": "docs/README.md",
     "indexVersion": 1,
-    "sourceHash": "c5fbe97bd54b6fd4da58346afdf2cda940a6c6fb6fefcb1552fe53fc87f40819",
+    "sourceHash": "f9977ec4cac61c82fdac85bd0c3b1bd94f50d1f910128bac80cd8f654a898d03",
     "sourcePath": "docs/README.md",
     "subtype": "other",
-    "summary": "璃落的城堡文档入口",
+    "summary": "璃落宇宙文档入口",
     "summarySource": "title-only",
-    "title": "璃落的城堡文档入口",
+    "title": "璃落宇宙文档入口",
     "type": "document"
   }
 ]
