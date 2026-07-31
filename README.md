@@ -21,34 +21,34 @@ AI 在这里不是代替作者的捷径，更像一套长期陪跑的方法：�
 <table>
 <tr>
 <td width="33%" valign="top">
-<img src="docs/assets/readme/world-mingsuo-yuling.png" alt="穆妮卡帝国" width="100%">
+<img src="docs/assets/readme/world-mingsuo-yuling.png" alt="穆妮卡帝国" width="100%" style="display:block; width:100%; aspect-ratio:16 / 9; object-fit:cover;">
 <strong>穆妮卡帝国</strong><br>
 璃落会从宫阙、拱廊、仪典与城道之间走过。这里既有帝国的威仪，也有庞大文明沉进日常之后留下的秩序与华美，连发饰、衣褶与街巷尽头的回声，都像在提醒她，这片土地从来不只有一种面貌。
 </td>
 <td width="33%" valign="top">
-<img src="docs/assets/readme/world-fuguang-lueying.png" alt="浮光掠影" width="100%">
+<img src="docs/assets/readme/world-fuguang-lueying.png" alt="浮光掠影" width="100%" style="display:block; width:100%; aspect-ratio:16 / 9; object-fit:cover;">
 <strong>浮光掠影</strong><br>
 璃落会在雨夜霓虹、校园长街与港城灯火之间停步回望。这里看上去仍然像日常，可越是熟悉的街角，越像藏着另一层不该被轻易看见的现实；热闹没有消失，只是安静地把怪谈藏进了人群里。
 </td>
 <td width="33%" valign="top">
-<img src="docs/assets/readme/world-jitu-wange.png" alt="寂土挽歌" width="100%">
+<img src="docs/assets/readme/world-jitu-wange.png" alt="寂土挽歌" width="100%" style="display:block; width:100%; aspect-ratio:16 / 9; object-fit:cover;">
 <strong>寂土挽歌</strong><br>
 璃落会在废墟、补给站、撤离线与临时营地之间继续向前。这里不只讲毁灭，也讲秩序崩塌之后，人该怎样重新把“活下去”变成一件值得争取的事；风沙扑面，衣角狼狈，可人还是得站稳。
 </td>
 </tr>
 <tr>
 <td width="33%" valign="top">
-<img src="docs/assets/readme/world-chenhuan-wendao.png" alt="尘寰问道" width="100%">
+<img src="docs/assets/readme/world-chenhuan-wendao.png" alt="尘寰问道" width="100%" style="display:block; width:100%; aspect-ratio:16 / 9; object-fit:cover;">
 <strong>尘寰问道</strong><br>
 璃落会走进街巷灯火、山水异闻与旧案疑云层层交叠的地方。这里有烟火气，也有礼法与因果压下来的凉意；檐下灯色温润，风里却常常藏着一分不动声色的锋利。
 </td>
 <td width="33%" valign="top">
-<img src="docs/assets/readme/world-zhoufu-huixiang.png" alt="咒缚回响" width="100%">
+<img src="docs/assets/readme/world-zhoufu-huixiang.png" alt="咒缚回响" width="100%" style="display:block; width:100%; aspect-ratio:16 / 9; object-fit:cover;">
 <strong>咒缚回响</strong><br>
 璃落会从古堡、学院、海路与森林一路走进契约魔法的深处。这里的空气总带着一点华丽而危险的甜意，远征、试炼、誓约与代价彼此缠绕，让每一次迈步都像踩在会回响的咒语上。
 </td>
 <td width="33%" valign="top">
-<img src="docs/assets/readme/world-xingyu-zhimeng.png" alt="星宇织梦" width="100%">
+<img src="docs/assets/readme/world-xingyu-zhimeng.png" alt="星宇织梦" width="100%" style="display:block; width:100%; aspect-ratio:16 / 9; object-fit:cover;">
 <strong>星宇织梦</strong><br>
 璃落会在轨道环城、远航方舟与异星聚落之间仰望更远的边疆。这里讲的不只是技术跃迁，也讲身份、意识与文明边界会怎样被重新改写；金属、白光与精密纹理之下，未来并不冰冷，只是比想象更辽阔。
 </td>
