@@ -3,6 +3,7 @@ import vue from '@vitejs/plugin-vue'
 import legacy from '@vitejs/plugin-legacy'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
+import { existsSync, renameSync } from 'node:fs'
 import { fileURLToPath, URL } from 'node:url'
 
 function offlineClassicScript() {
@@ -20,6 +21,17 @@ function offlineClassicScript() {
   }
 }
 
+function pagesRootIndex() {
+  return {
+    name: 'pages-root-index',
+    closeBundle() {
+      const source = fileURLToPath(new URL('./dist-pages/index.pages.html', import.meta.url))
+      const target = fileURLToPath(new URL('./dist-pages/index.html', import.meta.url))
+      if (existsSync(source)) renameSync(source, target)
+    },
+  }
+}
+
 export default defineConfig(({ mode }) => {
   const isOffline = mode === 'offline'
   const isPages = mode === 'pages'
@@ -32,6 +44,7 @@ export default defineConfig(({ mode }) => {
       AutoImport({ imports: ['vue'] }),
       Components({ dirs: ['src/components/base'] }),
       isOffline && offlineClassicScript(),
+      isPages && pagesRootIndex(),
 
       // 可选：兼容更老的浏览器（会增大体积）
       // legacy(),
