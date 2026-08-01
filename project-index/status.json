@@ -1,17 +1,30 @@
 {
   "affectedDomains": [
+    "code",
     "docs"
   ],
   "changes": {
     "added": [
-      "docs/写作资产/工作区/compare/cg-d35430f8-b/candidate-a.md",
-      "docs/写作资产/工作区/compare/cg-d35430f8-b/candidate-b.md",
-      "docs/写作资产/工作区/drafts/wr-20260731113434-2518e791.md",
-      "docs/写作资产/工作区/drafts/wr-20260731113521-aca8edba.md"
+      "docs/assets/readme/prompts/2026-07-31-character-system-batch-a.md",
+      "docs/assets/readme/prompts/2026-07-31-hero-liluo-universe-v2.md",
+      "docs/assets/readme/prompts/2026-07-31-liluo-variants-batch-a.md",
+      "docs/assets/readme/prompts/2026-07-31-overview-system-batch-b.md",
+      "docs/assets/readme/prompts/2026-07-31-world-triptychs-batch-a.md",
+      "docs/assets/readme/prompts/2026-07-31-world-triptychs-batch-b.md",
+      "docs/assets/readme/prompts/2026-08-01-readme-png-board-bases.md",
+      "docs/assets/readme/prompts/legacy-round-1-assets.md",
+      "docs/assets/readme/screenshots/screenshot-inventory.md",
+      "docs/readme/世界图册.md",
+      "docs/readme/可玩证据.md",
+      "docs/readme/生产体系.md"
     ],
     "deleted": [],
     "modified": [
-      "docs/功能更新目录.md"
+      "docs/assets/readme/README.md",
+      "docs/功能更新/176-AI原生叙事游戏生产体系升级.md",
+      "docs/功能更新目录.md",
+      "docs/协作参与与团队扩展路线.md",
+      "src/game/data/global/updateRecords.js"
     ],
     "renamed": []
   },
@@ -25,7 +38,7 @@
       "status": "current"
     },
     "docs": {
-      "entryCount": 559,
+      "entryCount": 571,
       "status": "current"
     },
     "game": {
@@ -45,15 +58,27 @@
       "status": "partial"
     }
   },
-  "generatedAt": "2026-07-31T11:57:53.032Z",
+  "generatedAt": "2026-08-01T03:19:15.175Z",
   "generatorVersion": "1.0.3",
   "mode": "changed",
   "schemaVersion": 1,
-  "sourceCommit": "60a42f9a3676ff6d0803577052ffd348400f0165",
+  "sourceCommit": "8e90f713e0cf84df8956103336c712676b9d387b",
   "sourceSnapshot": {
     "docs/CG待制作清单.md": "81996a1dd752cbf2e9c5a9fc68bb4a480e556d2d76ec35afa9b4b6894f067f8b",
     "docs/README.md": "59154f6e59605898f890a55619af68685d8158dce89accd91e264a60d164057d",
-    "docs/assets/readme/README.md": "b13aa47016a2d728ebab9288bced6ec806a4936a5543c63e5ad2d8c20d672a80",
+    "docs/assets/readme/README.md": "5f2711aacd333996837b469fe9799f6c1885267f0f1c5b826f6ac7cf7733e8dc",
+    "docs/assets/readme/prompts/2026-07-31-character-system-batch-a.md": "38a4af8d60b02a19de83a6d7c9f9bab40200e42d29533c5126bc9d82492cc057",
+    "docs/assets/readme/prompts/2026-07-31-hero-liluo-universe-v2.md": "9058e1ebf070d891a6e2d8d2bad4d85fd7ad76448857d6e73f2d27615dab8c8f",
+    "docs/assets/readme/prompts/2026-07-31-liluo-variants-batch-a.md": "00c2318d0ee6cd1fa60532ce56f4218b34c67fe33ad1eaada45f3f58f539db7a",
+    "docs/assets/readme/prompts/2026-07-31-overview-system-batch-b.md": "712abff54ce3a413ecff823bdadfa3df4e9866f55909d507eea3b92b862f3430",
+    "docs/assets/readme/prompts/2026-07-31-world-triptychs-batch-a.md": "bbda12d5642c846fdb4aef0a8e31c8d018b991832d5ba27716c1588a985b5cf9",
+    "docs/assets/readme/prompts/2026-07-31-world-triptychs-batch-b.md": "3355911aa4cba9655a96383d8a52f6197f281cf6ba03736774103f0f19cf76a1",
+    "docs/assets/readme/prompts/2026-08-01-readme-png-board-bases.md": "26f46fe52f4ed7a458b01aaaaf08d84c60503f44c255c09c92c0d9accc2b094c",
+    "docs/assets/readme/prompts/legacy-round-1-assets.md": "023c5e9dd77b68e742be3a3dd1ed08a5df5dbdf9f2dc122627f33bd69024d67b",
+    "docs/assets/readme/screenshots/screenshot-inventory.md": "c2e259c6411ee112de543683ef0b461ddf735c8c20228b4d46e5a1b19120b04b",
+    "docs/readme/世界图册.md": "3d54478e93e39460437e4f348053ab6eea9496d56874e3608da1d3c8fb902313",
+    "docs/readme/可玩证据.md": "607a94cb07ac32e33b3d95d166a92984868142ccfdbc1e9f1b370bc6c8a59730",
+    "docs/readme/生产体系.md": "b2fdf535c689823092c9ad71caa862e0266c73b7a6eb5bbfea50d0ff1b0b4926",
     "docs/写作资产/README.md": "15585fcf17a1e681ca960b01619217dd83b0e67ae0d46bc336f6fa52d867b32a",
     "docs/写作资产/个人历史作品/README.md": "b87c2bacd36e9050262954115891fc2f27295d312c3a989f8597b0cda33bf373",
     "docs/写作资产/个人历史作品/已整理/README.md": "9cefd094d0a021b27f24384862d7354c255dca7bc0b1d9a0945060b41fe6df5e",
@@ -358,9 +383,9 @@
     "docs/功能更新/173-故事情节RAG边界治理与逐条迁移门禁.md": "90a79a4a7574039fdc72f7afdcd889c852596b58c1d738945318ef6f7caadf50",
     "docs/功能更新/174-移除大纲层级核对工作流.md": "5f73abe145b153a5e2131356d1e5061d56a5fa8dbc7f97b093b65d3337932250",
     "docs/功能更新/175-RAG增量提议与来源关联图谱.md": "2214a1d8afc2b36a58393309b9ad9cb3ccd728c0e1bf80be40e0cc3ba05ef4fe",
-    "docs/功能更新/176-AI原生叙事游戏生产体系升级.md": "e937bd4ac88ff24482764dc1d1310ee6cb7c94b15efdac5bfe63530593b708b7",
-    "docs/功能更新目录.md": "2cd5b5d65aa2b428089954482755e9aa9b5538df2763622fcbf39b3dfb947e9d",
-    "docs/协作参与与团队扩展路线.md": "cde12dc906682d4b04159bac97ea3458c0cc4f79821c9f03f486c52029747f54",
+    "docs/功能更新/176-AI原生叙事游戏生产体系升级.md": "55d771d7d445e23749c854d33b960f2c5b97a91b3da4f2ba000701d421f8bd9c",
+    "docs/功能更新目录.md": "cbe1e649e65d0b4ff64f3ffc1f83fac5c5b50a6baaf365784734c63958261869",
+    "docs/协作参与与团队扩展路线.md": "9fd82982ab92ec8281a58c1f75c15beae9a365200fb5e07a77d92668a6c06aab",
     "docs/外部来源/Skill来源目录.md": "5dea73aeb2afb392039bccaefa6acfaa1b796cf666b7ebd859c77c9171f8fdf3",
     "docs/外部来源/Skill许可证与保存策略.md": "18498f5dc9c78c51a9198714ea470d8f6ecb9692128b5d8c6906ee57ba5308cd",
     "docs/大纲玩法总表整合规格.md": "12802d702fd6d332c6ae7460e5844371319a827d465b1a7e6eae006994ca3525",
@@ -1328,7 +1353,7 @@
     "src/game/data/global/cgVariantRules.ts": "a9be23c234f0c8a980f304256066538db732625a5fa49647b91b3b240a58e091",
     "src/game/data/global/gameMenuData.js": "549ad516de3df68f5628f912a08cf9d28dcfc52ef21e1d863bc11c3235bddb69",
     "src/game/data/global/updateRecordGroups.js": "ca9b92d0987ceb1890868ada15342a3d76e05657a319a92be851bde8efb64544",
-    "src/game/data/global/updateRecords.js": "e39bcece348cc669dc629d4bbcbdd1b3516b1838f422e91627acf15a863ba752",
+    "src/game/data/global/updateRecords.js": "33fcff62521f2b642d6f965aa4b0c3fd5e1687e25235ec5e0dc7d49d2a22fec9",
     "src/game/data/globalAssets.ts": "c8f61d63f69f0aed0fee4e821683bf4a2cee733104d4b48ab7f78d4879f4c17f",
     "src/game/data/interactive_fictions/asylum_for_lunatic/assets.ts": "a15be46e4a9841f1ea133a883c435b5fd799a858cde8a4ca44036650236c5a69",
     "src/game/data/interactive_fictions/asylum_for_lunatic/index.ts": "af405bbd76de80f5999d0f28a81a48b97a8219a3d050de42320247917c44c98b",

@@ -9,6 +9,8 @@
     "prebuild:web": "npm run assets:build-liluo-character-frames",
     "build:web": "vite build",
     "build:offline": "vite build --mode offline",
+    "readme:stats": "node scripts/readme/build-readme-stats.mjs",
+    "readme:validate": "node scripts/readme/validate-readme.mjs",
     "package:offline": "node scripts/release/offline-release.mjs package",
     "release:offline": "node scripts/release/offline-release.mjs release",
     "preview": "vite preview",

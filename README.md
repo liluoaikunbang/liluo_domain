@@ -1,146 +1,243 @@
-# 璃落的城堡 / Liluo Universe
+# 璃落宇宙 / Liluo Universe
 
-这里是璃落宇宙的入口。六个气质截然不同的世界，在同一个故事核心之下彼此映照；璃落会从其中穿行，把一段段冒险真正带到你眼前。AI 帮助这个宇宙被长期整理、扩写，并最终做成可进入、可游玩的叙事游戏世界。
+`璃落宇宙` 是一个 AI 原生叙事游戏生产体系。它不是把设定文档堆进仓库，也不是把概念图伪装成“已经做完的游戏”，而是在同一个宇宙里，持续把世界、角色、关系、状态和氛围生产成真正可进入的体验形态。当前旗舰入口仍然是像素风冒险 RPG。
 
-![璃落宇宙主视觉](docs/assets/readme/hero-liluo-universe.png)
+![璃落宇宙主视觉海报](docs/assets/readme/generated/hero-liluo-universe-v3.png)
 
-**快速进入**<br>
-[项目愿景](docs/项目愿景.md) · [项目概览](docs/项目概览.md) · [文档入口](docs/README.md) · [AI原生叙事游戏生产体系](docs/系统说明/AI原生叙事游戏生产体系.md) · [协作参与与团队扩展路线](docs/协作参与与团队扩展路线.md)
+**公开入口**  
+[项目愿景](docs/项目愿景.md) · [项目概览](docs/项目概览.md) · [世界图册](docs/readme/世界图册.md) · [生产体系](docs/readme/生产体系.md) · [可玩证据](docs/readme/可玩证据.md) · [协作参与与团队扩展路线](docs/协作参与与团队扩展路线.md)
 
-## 为什么要做这个项目
+> 一个角色，六大叙事域，多种正式形态，同一套持续生长的生产链。
 
-我们通常并不缺灵感，缺的是一种能把它稳稳留下来的方法。
-《璃落的城堡》想做的，不是一套把故事塞进功能页的壳，也不是写完就封存的短篇仓库，而是一座可以持续扩展的故事宇宙。这里的角色、关系、状态、地图、玩法和长期设定，不是彼此割裂的零散片段，而是要慢慢扣合，最后汇成一个真正能够进入、能够探索、也值得反复回来的世界。
+## 这是什么项目
 
-AI 在这里不是代替作者的捷径，更像一套长期陪跑的方法：它帮助我们梳理世界、发现真正的空缺、连接故事与玩法、沉淀资产与规则，让同一个宇宙每一次被重新进入时，都不是从零开始。
+这里要做的，不是一次性 Demo，也不是只有工具外壳的文档工程，而是一套长期可维护的叙事生产体系：
 
-## 六个世界，璃落的六段冒险
+- 同一故事可以先进入大纲、互动小说、副本、资料页，再进入地图章节与正式可玩段落。
+- AI 负责检索、提案、治理、验证和资产沉淀，不负责替代真实证据。
+- 所有“可玩、完成、已验证”的结论都要拿真实截图、代码现状或脚本统计说话。
 
-![璃落多世界融合图](docs/assets/readme/liluo-multiverse-fusion.png)
+![README 证据边界整板](docs/assets/readme/composites/readme-evidence-boundary-board-v2.png)
+
+上面这张板不是“把概念图伪装成截图”，而是先把公开展示的边界说清楚：
+
+- 真实可玩证据只放在后文证据板和截图归档里。
+- GPT Image 2 视觉只负责世界气质、角色延展、协作方向和生产阶段表达。
+- 统计、流程、规模与治理结论必须能回到仓库结构、脚本输出或真实界面。
 
 <table>
 <tr>
-<td width="33%" valign="top">
-<img src="docs/assets/readme/world-mingsuo-yuling.png" alt="穆妮卡帝国" width="100%" style="display:block; width:100%; aspect-ratio:16 / 9; object-fit:cover;">
-<strong>穆妮卡帝国</strong><br>
-璃落会从宫阙、拱廊、仪典与城道之间走过。这里既有帝国的威仪，也有庞大文明沉进日常之后留下的秩序与华美，连发饰、衣褶与街巷尽头的回声，都像在提醒她，这片土地从来不只有一种面貌。
+<td width="33.3%" valign="top">
+<img src="docs/assets/readme/generated/one-story-many-forms-v2-base.png" alt="同一故事进入多形态产出的概念板" width="100%">
+<strong>同一故事，多种正式形态</strong><br>
+同一份故事来源可以进入地图章节、互动小说、副本、资料页和验证文档，而不是各做一套互不相认的内容。
 </td>
-<td width="33%" valign="top">
-<img src="docs/assets/readme/world-fuguang-lueying.png" alt="浮光掠影" width="100%" style="display:block; width:100%; aspect-ratio:16 / 9; object-fit:cover;">
-<strong>浮光掠影</strong><br>
-璃落会在雨夜霓虹、校园长街与港城灯火之间停步回望。这里看上去仍然像日常，可越是熟悉的街角，越像藏着另一层不该被轻易看见的现实；热闹没有消失，只是安静地把怪谈藏进了人群里。
+<td width="33.3%" valign="top">
+<img src="docs/assets/readme/generated/five-layer-production-system-base.png" alt="五层生产系统概念板" width="100%">
+<strong>五层生产系统</strong><br>
+从来源、拆解、运行、验证到公开展示，项目希望把每一层都真正连起来，而不是只停在设定或海报。
 </td>
-<td width="33%" valign="top">
-<img src="docs/assets/readme/world-jitu-wange.png" alt="寂土挽歌" width="100%" style="display:block; width:100%; aspect-ratio:16 / 9; object-fit:cover;">
-<strong>寂土挽歌</strong><br>
-璃落会在废墟、补给站、撤离线与临时营地之间继续向前。这里不只讲毁灭，也讲秩序崩塌之后，人该怎样重新把“活下去”变成一件值得争取的事；风沙扑面，衣角狼狈，可人还是得站稳。
-</td>
-</tr>
-<tr>
-<td width="33%" valign="top">
-<img src="docs/assets/readme/world-chenhuan-wendao.png" alt="尘寰问道" width="100%" style="display:block; width:100%; aspect-ratio:16 / 9; object-fit:cover;">
-<strong>尘寰问道</strong><br>
-璃落会走进街巷灯火、山水异闻与旧案疑云层层交叠的地方。这里有烟火气，也有礼法与因果压下来的凉意；檐下灯色温润，风里却常常藏着一分不动声色的锋利。
-</td>
-<td width="33%" valign="top">
-<img src="docs/assets/readme/world-zhoufu-huixiang.png" alt="咒缚回响" width="100%" style="display:block; width:100%; aspect-ratio:16 / 9; object-fit:cover;">
-<strong>咒缚回响</strong><br>
-璃落会从古堡、学院、海路与森林一路走进契约魔法的深处。这里的空气总带着一点华丽而危险的甜意，远征、试炼、誓约与代价彼此缠绕，让每一次迈步都像踩在会回响的咒语上。
-</td>
-<td width="33%" valign="top">
-<img src="docs/assets/readme/world-xingyu-zhimeng.png" alt="星宇织梦" width="100%" style="display:block; width:100%; aspect-ratio:16 / 9; object-fit:cover;">
-<strong>星宇织梦</strong><br>
-璃落会在轨道环城、远航方舟与异星聚落之间仰望更远的边疆。这里讲的不只是技术跃迁，也讲身份、意识与文明边界会怎样被重新改写；金属、白光与精密纹理之下，未来并不冰冷，只是比想象更辽阔。
+<td width="33.3%" valign="top">
+<img src="docs/assets/readme/generated/universe-state-event-network-base.png" alt="宇宙状态事件网络概念板" width="100%">
+<strong>状态、事件与关系同图治理</strong><br>
+角色不是单张立绘，状态不是一次性文案，关系也不是孤立备注，而是同一宇宙中持续回流的运行结构。
 </td>
 </tr>
 </table>
 
-## 当前已经能看到的真实原型
+## 六大叙事域图册
 
-下面两张是项目当前运行中的真实界面截图。
+以下图片全部是**GPT Image 2 概念艺术**，用于公开表达气质、故事压力和协作方向，不冒充游戏内截图。当前一级公开结构统一为：`慕妮卡帝国、浮光掠影、寂土挽歌、尘寰问道、咒缚回响、星宇织梦`。
+
+### 慕妮卡帝国
+
+综合型主世界，负责承接宫阙、城市、住宅区、仪式秩序与璃落最稳定的长期关系线。当前最高证据阶段：`outline`。
+
+![慕妮卡帝国三联世界板](docs/assets/readme/composites/world-munika-triptych-board.png)
+
+### 浮光掠影
+
+都市异常、校园悬疑与港城夜雨并存的公开线，也是当前最接近“故事已开始向玩法转化”的叙事域。当前最高证据阶段：`skeleton`。
+
+![浮光掠影三联世界板](docs/assets/readme/composites/world-fuguang-triptych-board.png)
+
+### 寂土挽歌
+
+灾后废墟、撤离线、补给点与求生秩序构成的末日线。它强调生存、互助与重建，不把末日只画成猎奇苦难。当前最高证据阶段：`outline`。
+
+![寂土挽歌三联世界板](docs/assets/readme/composites/world-jitu-triptych-board.png)
+
+### 尘寰问道
+
+古风旧案、礼法约束、山水异闻与因果抉择最浓的一支。它的优势是叙事味道强，缺口仍主要在地图与运行验证。当前最高证据阶段：`outline`。
+
+![尘寰问道三联世界板](docs/assets/readme/composites/world-chenhuan-triptych-board.png)
+
+### 咒缚回响
+
+学院、古堡、海路、誓约与高气质幻想视觉交缠的魔幻线，很适合继续吸引美术、UI 和叙事设计协作者。当前最高证据阶段：`outline`。
+
+![咒缚回响三联世界板](docs/assets/readme/composites/world-zhoufu-triptych-board.png)
+
+### 星宇织梦
+
+轨道城、未来约束装置、殖民边疆与文明边界持续外推的科幻线，是六大叙事域里最接近中期制作设计的公开支脉。当前最高证据阶段：`productionDesign`。
+
+![星宇织梦三联世界板](docs/assets/readme/composites/world-xingyu-triptych-board.png)
+
+根 README 现在展示的是 `6` 张最终公开整板；它们背后对应的 `18` 张原始 GPT Image 2 分层概念图仍保留在 `docs/assets/readme/generated/`，供扩展页和后续复用继续使用。
+
+更完整的世界分层、阶段和协作切口见 [世界图册](docs/readme/世界图册.md)。
+
+## 六域并置总览
+
+![璃落穿行六域的横向总览海报](docs/assets/readme/generated/six-domains-panorama-v2.png)
+
+这张横卷继续强调一件事：六大叙事域不是六个互不相干的点子，而是同一个角色、同一套长期关系与同一条生产链，在不同世界压力下展开出的六种正式方向。
+
+## 璃落：穿行诸界但始终是同一个人
+
+璃落始终是同一个 `22` 岁成年女性角色：娇小、纤细、温柔、弱气、红发、红瞳，服装和发型可以随叙事域变化，但身份、气质和长期记忆不能散掉。
 
 <table>
 <tr>
-<td width="50%" valign="top">
-<img src="docs/assets/readme/prototype-campus-map.png" alt="现代校园地图运行截图" width="100%">
-<strong>地图探索与三栏界面原型</strong><br>
-已经能在真实地图中移动、探索、触发事件，并通过左侧人物栏与右侧信息栏承载状态和叙事入口。
+<td width="36%" valign="top">
+<img src="docs/assets/readme/generated/liluo-master-character-portrait-v2.png" alt="璃落公开基准立绘" width="100%">
+<strong>公开基准立绘</strong><br>
+这是 README 当前使用的稳定角色基准。
 </td>
-<td width="50%" valign="top">
-<img src="docs/assets/readme/prototype-gallery-ui.png" alt="图鉴与菜单运行截图" width="100%">
-<strong>图鉴、菜单与长期资料承载原型</strong><br>
-图鉴、物品、技能、任务和故事资料已经进入统一菜单体系，开始承担“世界记忆”和长期状态管理。
+<td width="64%" valign="top">
+<img src="docs/assets/readme/generated/liluo-identity-and-state-base.png" alt="璃落不变身份与可变状态概念图" width="100%">
+<strong>不变身份 / 可变状态</strong><br>
+左侧强调核心身份、记忆与关系，右侧强调服装、状态、携带物和运行时变化。
 </td>
 </tr>
 </table>
 
-## 同一个故事，可以进入多种正式形态
+<table>
+<tr>
+<td width="16.6%" valign="top"><img src="docs/assets/readme/generated/liluo-munika-variant.png" alt="璃落在慕妮卡帝国中的服装变体" width="100%"></td>
+<td width="16.6%" valign="top"><img src="docs/assets/readme/generated/liluo-fuguang-variant.png" alt="璃落在浮光掠影中的服装变体" width="100%"></td>
+<td width="16.6%" valign="top"><img src="docs/assets/readme/generated/liluo-jitu-variant.png" alt="璃落在寂土挽歌中的服装变体" width="100%"></td>
+<td width="16.6%" valign="top"><img src="docs/assets/readme/generated/liluo-chenhuan-variant.png" alt="璃落在尘寰问道中的服装变体" width="100%"></td>
+<td width="16.6%" valign="top"><img src="docs/assets/readme/generated/liluo-zhoufu-variant.png" alt="璃落在咒缚回响中的服装变体" width="100%"></td>
+<td width="16.6%" valign="top"><img src="docs/assets/readme/generated/liluo-xingyu-variant.png" alt="璃落在星宇织梦中的服装变体" width="100%"></td>
+</tr>
+<tr>
+<td align="center"><strong>慕妮卡帝国</strong></td>
+<td align="center"><strong>浮光掠影</strong></td>
+<td align="center"><strong>寂土挽歌</strong></td>
+<td align="center"><strong>尘寰问道</strong></td>
+<td align="center"><strong>咒缚回响</strong></td>
+<td align="center"><strong>星宇织梦</strong></td>
+</tr>
+</table>
 
-![同一个故事，多种形态](docs/assets/readme/one-story-many-forms.png)
+## 运行中的状态差分系统
 
-同一个故事不必一开始就抵达最终版本。它可以先是互动小说；然后变成带立绘和场景的视觉叙事；再进入像素地图、事件、NPC 和状态流转；最后进入真正可游玩的完整章节。
+这张图不是概念图，而是游戏内真实截图。它展示了当前项目已经具备的一个很有辨识度的运行层能力：同一角色可以在正式界面里切换、叠加和预览不同的紧缚状态差分组合，而不是只停留在文案描述。
 
-## AI 如何参与这个宇宙
+![紧缚状态差分组合面板实机截图](docs/assets/readme/screenshots/README-SHOT-07-restraint-state-combinations.png)
 
-![故事世界生长图](docs/assets/readme/storyworld-growth.png)
+## 三十秒证明它真的存在
 
-AI 在这里承担的，是让复杂世界能够被长期维护、持续生产和反复调用的工作，而不是抢走世界本身。
+下面这部分只放**真实证据**。
 
-- 它帮助管理多世界故事、角色关系与长期状态。
-- 它帮助发现剧情和玩法的真实缺口，而不是无边无际地堆点子。
-- 它帮助把同一个故事拆成多种正式输出路径，同时保留来源与约束。
-- 它帮助把文档、Schema、索引、素材和工作流收束成可复用的方法。
+- `2026-07-31` 已在当前仓库成功完成一次 `npm run build:web`。
+- 当前旗舰运行入口是 `/#/game`，对应 [GameView.vue](src/game/views/GameView.vue)。
+- 当前仓库内可确认到 `6` 个地图包、`1` 个正式互动小说副本、真实旅途菜单、关系图谱面板、存档槽位列表和地图对话运行结构。
 
-## 当前已经具备了什么
+![璃落宇宙当前运行证据板](docs/assets/readme/composites/runtime-evidence-board-v1.png)
 
-- 可运行的 `Vue 3 + Vite + Phaser + Pinia` 像素 RPG 基底。
-- 地图、事件、对话、状态流转与存档的持续化基础设施。
-- 六大世界的大纲、情节库、玩法目录与长期治理文档。
-- 可落成互动小说、视觉叙事与地图章节的多形态生产路线。
-- 供长期协作使用的技能、工作流、索引、规则和审计体系。
+这张证据板里的 `6` 格现在都已经换成真实运行截图：地图探索、旅途菜单、地图事件对话、存档面板、关系图谱面板和互动小说模式都已有公开实机证据。更完整的归档见 [截图清单](docs/assets/readme/screenshots/screenshot-inventory.md)。
 
-## 这个世界以后还能和谁一起继续做下去
+## 同一故事如何进入正式形态
 
-它以后不只需要程序，也需要会讲故事、会搭玩法、会做像素、会做界面、会配乐、会整理知识和会把流程跑顺的人。
-不同方向的工作不是各自往仓库里堆素材，而是进入同一套故事与玩法体系，继续增强已经存在的宇宙。
+![同一故事如何进入多种正式形态的流程整板](docs/assets/readme/composites/story-production-pipeline-board-v2.png)
 
-- 世界观与叙事设计
-- 地图、任务、事件与玩法设计
-- 像素角色、场景、CG 与 UI 视觉
-- 音乐、音效与氛围设计
-- Vue / Phaser / 工具链开发
-- AI / RAG / 自动化与工作流建设
-- 测试、本地化、文档与资料治理
+这条链路是项目最核心的公开价值之一：不是把同一个点子反复改名，而是让同一故事真正拥有从来源层到运行层的连续路径。
 
-协作入口与长期边界见 [协作参与与团队扩展路线](docs/协作参与与团队扩展路线.md)。
+- 来源层：世界来源 JSON、故事大纲、情节库、角色与关系约束。
+- 生产设计层：把故事拆成任务、地图、对话、事件、互动小说和资料页。
+- 运行层：进入 Phaser 地图探索、菜单、图谱、对话、存档和副本入口。
+- 验证层：构建检查、浏览器回归、路线验证、覆盖统计和 README 证据页。
 
-## 继续了解这个项目
+其中当前最接近“从旧内容走到正式可玩形态”的真实链路，是互动小说副本 `十三号病院`：旧页面流程已经沉淀进 `src/game/data/interactive_fictions/asylum_for_lunatic/scenario.json`，并有功能文档、测试、正式运行入口和真实副本截图同时支撑。
+
+![十三号病院故事到可玩链路板](docs/assets/readme/composites/story-to-playable-case-asylum-board.png)
+
+更完整的分层说明见 [生产体系](docs/readme/生产体系.md)。
+
+## 生产体系不是一句口号
+
+![璃落宇宙五层生产系统概念板](docs/assets/readme/generated/five-layer-production-system-base.png)
+
+这张图表达的是项目最重要的一件事：同一宇宙里的故事、角色、地图、对话、验证和公开展示，不应该各自分裂成互不相认的孤岛。
+
+![璃落宇宙状态与事件网络概念板](docs/assets/readme/generated/universe-state-event-network-base.png)
+
+同一角色跨世界出现时，真正要被维护的是身份、关系、记忆、状态变化和事件后果，而不是只换一张服装图。
+
+![关系图谱真实证据整板](docs/assets/readme/composites/relationship-graph-real-evidence-board.png)
+
+这里展示的是“关系图谱作为生产界面”的公开表达；真正已经存在的图谱运行证据，仍然以前文那张真实截图为准。
+
+## 规模快照
+
+![璃落宇宙公开规模快照](docs/assets/readme/composites/project-scale-dashboard-v2.png)
+
+当前自动统计文件来自 [project-stats.json](docs/assets/readme/generated/project-stats.json)：
+
+- 六大公开叙事域已固定。
+- 大纲关系图当前共有 `616` 个节点、`1243` 条关系边。
+- 当前可确认到 `158` 篇故事 Markdown、`22` 组情节群、`96` 个 Schema 文件、`37` 个项目专属 Skill。
+- 当前已归档 `7` 张真实运行截图，但这些证据仍然只证明“部分核心系统已可公开展示”，不代表六世界已经全面可玩。
+
+## 现在做到哪一层
+
+![璃落宇宙生产成熟度阶梯概念板](docs/assets/readme/generated/production-maturity-ladder-base.png)
+
+公开材料里最容易被误解的地方，就是“图很多”会不会等于“已经全做完”。这张阶梯板专门把阶段拆开：有些世界已经有大纲和世界视觉，有些支线已经能进入生产设计，有些功能已经有实机证据，但这三者不能混为一谈。
+
+## AI 与人工怎么分工
+
+![AI 与人工参与边界概念板](docs/assets/readme/generated/ai-participation-boundary-base.png)
+
+这个项目欢迎大量 AI 参与，但它不是把 canon、验证和完成结论外包给模型。AI 负责提案、整理、治理、检索和辅助生产，真正的正史确认、玩法落地和公开完成度判断仍然要回到仓库与实机证据。
+
+## 合作者可以从哪一层接入
+
+![璃落宇宙协作角色星图](docs/assets/readme/generated/collaboration-role-star-map-base.png)
+
+叙事、地图、玩法、视觉、UI、资料治理、验证和工具工作流都不是外围附属物，而是同一条生产链上的不同接力点。
+
+![璃落宇宙公开路线图概念板](docs/assets/readme/generated/project-roadmap-base.png)
+
+路线图的核心不是“明年要再画多少张图”，而是把更多世界从概念层推进到生产设计层，再把真正可玩的段落继续推进到稳定可验证的公开入口。
+
+## 协作入口
+
+这个项目适合的不是“只丢一张图”或“只堆一份设定”，而是愿意进入同一套宇宙生产链继续往前推的人。
+
+- 叙事设计：把已成形世界继续拆成真正可执行的章节、任务和支线。
+- 地图与玩法：把生产设计转成 Phaser 地图、交互点、事件流和可探索循环。
+- 视觉与 UI：围绕真实世界结构和真实玩法入口建立稳定风格，而不是做孤立海报。
+- 工具与治理：继续补统计、验证、资料治理、RAG 和协作工作流。
+
+![璃落宇宙协作邀请横幅](docs/assets/readme/generated/closing-invitation-banner.png)
+
+如果你想看“适合从哪里接入、AI 和人工各自守什么边界、接下来一年最值得补的制作段落”，可以直接看 [协作参与与团队扩展路线](docs/协作参与与团队扩展路线.md)。
+
+继续了解：
 
 - [项目愿景](docs/项目愿景.md)
 - [项目概览](docs/项目概览.md)
-- [文档入口](docs/README.md)
-- [AI原生叙事游戏生产体系](docs/系统说明/AI原生叙事游戏生产体系.md)
-- [系统说明](docs/系统说明/README.md)
-- [用户命令目录](docs/用户命令目录.md)
+- [世界图册](docs/readme/世界图册.md)
+- [生产体系](docs/readme/生产体系.md)
+- [可玩证据](docs/readme/可玩证据.md)
 - [协作参与与团队扩展路线](docs/协作参与与团队扩展路线.md)
-- [项目知识索引](project-index/INDEX.md)
-
-<details>
-<summary>开发与检查命令</summary>
-
-```powershell
-npm install
-npm run dev
-npm run build:web
-npm run build:offline
-npm run package:offline
-npm run docs:check-encoding
-npm run docs:governance:audit
-npm run project:index:changed
-npm run project:index:validate
-```
-
-</details>
+- [README 视觉资产说明](docs/assets/readme/README.md)
+- [视觉资产清单](docs/assets/readme/art-manifest.json)
 
 ## 内容说明与边界
 

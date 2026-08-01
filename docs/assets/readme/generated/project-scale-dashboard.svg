@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1600" height="980" viewBox="0 0 1600 980" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="80" y1="60" x2="1520" y2="920" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#221B36" />
+      <stop offset="0.45" stop-color="#19324F" />
+      <stop offset="1" stop-color="#0F1828" />
+    </linearGradient>
+    <linearGradient id="cardA" x1="0" y1="0" x2="400" y2="176" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#D05B64" />
+      <stop offset="1" stop-color="#8C2F43" />
+    </linearGradient>
+    <linearGradient id="cardB" x1="0" y1="0" x2="400" y2="176" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4E8BCF" />
+      <stop offset="1" stop-color="#27568F" />
+    </linearGradient>
+    <linearGradient id="cardC" x1="0" y1="0" x2="400" y2="176" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#5F9A7C" />
+      <stop offset="1" stop-color="#2D5F48" />
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="980" fill="url(#bg)" />
+  <text x="88" y="112" font-size="56" font-weight="800" fill="#F8F4FF">璃落宇宙公开规模快照</text>
+  <text x="88" y="156" font-size="24" fill="rgba(248,244,255,0.78)">生成于 2026-08-01T03:10:22.676Z，所有数字均来自仓库脚本或文件系统扫描。</text>
+  
+    <g transform="translate(88 208)">
+      <rect width="440" height="176" rx="28" fill="url(#cardA)" />
+      <text x="32" y="54" font-size="24" font-weight="700" fill="#fff">公开世界</text>
+      <text x="32" y="112" font-size="56" font-weight="800" fill="#fff">6</text>
+      <text x="32" y="148" font-size="20" fill="rgba(255,255,255,0.84)">当前公开结构固定为六大世界。</text>
+    </g>
+  
+  
+    <g transform="translate(580 208)">
+      <rect width="440" height="176" rx="28" fill="url(#cardB)" />
+      <text x="32" y="54" font-size="24" font-weight="700" fill="#fff">大纲关系图节点</text>
+      <text x="32" y="112" font-size="56" font-weight="800" fill="#fff">616</text>
+      <text x="32" y="148" font-size="20" fill="rgba(255,255,255,0.84)">其中故事 161 / 角色 135 / 玩法 128</text>
+    </g>
+  
+  
+    <g transform="translate(1072 208)">
+      <rect width="440" height="176" rx="28" fill="url(#cardC)" />
+      <text x="32" y="54" font-size="24" font-weight="700" fill="#fff">关系边</text>
+      <text x="32" y="112" font-size="56" font-weight="800" fill="#fff">1243</text>
+      <text x="32" y="148" font-size="20" fill="rgba(255,255,255,0.84)">包含 located_at、contains、parent 等 9 类关系</text>
+    </g>
+  
+  
+    <g transform="translate(88 430)">
+      <rect width="440" height="176" rx="28" fill="url(#cardB)" />
+      <text x="32" y="54" font-size="24" font-weight="700" fill="#fff">可运行地图包</text>
+      <text x="32" y="112" font-size="56" font-weight="800" fill="#fff">6</text>
+      <text x="32" y="148" font-size="20" fill="rgba(255,255,255,0.84)">按 map.json 计数，已接入当前 Phaser 运行时。</text>
+    </g>
+  
+  
+    <g transform="translate(580 430)">
+      <rect width="440" height="176" rx="28" fill="url(#cardC)" />
+      <text x="32" y="54" font-size="24" font-weight="700" fill="#fff">互动小说副本</text>
+      <text x="32" y="112" font-size="56" font-weight="800" fill="#fff">1</text>
+      <text x="32" y="148" font-size="20" fill="rgba(255,255,255,0.84)">当前仓库内可确认到 1 个正式 scenario.json 副本。</text>
+    </g>
+  
+  
+    <g transform="translate(1072 430)">
+      <rect width="440" height="176" rx="28" fill="url(#cardA)" />
+      <text x="32" y="54" font-size="24" font-weight="700" fill="#fff">Schema 文件</text>
+      <text x="32" y="112" font-size="56" font-weight="800" fill="#fff">96</text>
+      <text x="32" y="148" font-size="20" fill="rgba(255,255,255,0.84)">系统说明 60 篇 / 项目 Skill 37 个</text>
+    </g>
+  
+  <rect x="88" y="652" width="1424" height="248" rx="30" fill="rgba(255,255,255,0.08)" />
+  <text x="124" y="714" font-size="30" font-weight="700" fill="#F8F4FF">六大世界当前制作阶段</text>
+  <text x="124" y="752" font-size="20" fill="rgba(248,244,255,0.78)">以下阶段来自 npm run production:coverage，反映的是当前有证据的最高阶段。</text>
+  
+  <text x="124" y="812" font-size="24" fill="#FFFFFF">慕妮卡帝国: 缚神领地 / outline</text>
+  <text x="124" y="846" font-size="24" fill="#FFFFFF">浮光掠影: 荆锁会事件 / skeleton</text>
+  <text x="124" y="880" font-size="24" fill="#FFFFFF">寂土挽歌: 尸潮噬世 / outline</text>
+  <text x="828" y="812" font-size="24" fill="#FFFFFF">尘寰问道: 丫鬟难为 / outline</text>
+  <text x="828" y="846" font-size="24" fill="#FFFFFF">咒缚回响: 逐梦大陆 / outline</text>
+  <text x="828" y="880" font-size="24" fill="#FFFFFF">星宇织梦: 星门港区 / productionDesign</text>
+</svg>

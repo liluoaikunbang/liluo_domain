@@ -616,14 +616,113 @@
     "type": "document"
   },
   {
+    "id": "docs/assets/readme/prompts/2026-07-31-character-system-batch-a.md",
+    "indexVersion": 1,
+    "sourceHash": "38a4af8d60b02a19de83a6d7c9f9bab40200e42d29533c5126bc9d82492cc057",
+    "sourcePath": "docs/assets/readme/prompts/2026-07-31-character-system-batch-a.md",
+    "subtype": "other",
+    "summary": "README 角色与体系图提示词记录 A",
+    "summarySource": "title-only",
+    "title": "README 角色与体系图提示词记录 A",
+    "type": "document"
+  },
+  {
+    "id": "docs/assets/readme/prompts/2026-07-31-hero-liluo-universe-v2.md",
+    "indexVersion": 1,
+    "sourceHash": "9058e1ebf070d891a6e2d8d2bad4d85fd7ad76448857d6e73f2d27615dab8c8f",
+    "sourcePath": "docs/assets/readme/prompts/2026-07-31-hero-liluo-universe-v2.md",
+    "subtype": "other",
+    "summary": "README 主视觉提示词记录",
+    "summarySource": "title-only",
+    "title": "README 主视觉提示词记录",
+    "type": "document"
+  },
+  {
+    "id": "docs/assets/readme/prompts/2026-07-31-liluo-variants-batch-a.md",
+    "indexVersion": 1,
+    "sourceHash": "00c2318d0ee6cd1fa60532ce56f4218b34c67fe33ad1eaada45f3f58f539db7a",
+    "sourcePath": "docs/assets/readme/prompts/2026-07-31-liluo-variants-batch-a.md",
+    "subtype": "other",
+    "summary": "README 璃落跨域变体提示词记录 A",
+    "summarySource": "title-only",
+    "title": "README 璃落跨域变体提示词记录 A",
+    "type": "document"
+  },
+  {
+    "id": "docs/assets/readme/prompts/2026-07-31-overview-system-batch-b.md",
+    "indexVersion": 1,
+    "sourceHash": "712abff54ce3a413ecff823bdadfa3df4e9866f55909d507eea3b92b862f3430",
+    "sourcePath": "docs/assets/readme/prompts/2026-07-31-overview-system-batch-b.md",
+    "subtype": "other",
+    "summary": "2026-07-31 README 视觉扩编 Batch B",
+    "summarySource": "title-only",
+    "title": "2026-07-31 README 视觉扩编 Batch B",
+    "type": "document"
+  },
+  {
+    "id": "docs/assets/readme/prompts/2026-07-31-world-triptychs-batch-a.md",
+    "indexVersion": 1,
+    "sourceHash": "bbda12d5642c846fdb4aef0a8e31c8d018b991832d5ba27716c1588a985b5cf9",
+    "sourcePath": "docs/assets/readme/prompts/2026-07-31-world-triptychs-batch-a.md",
+    "subtype": "other",
+    "summary": "README 世界三联图提示词记录 A",
+    "summarySource": "title-only",
+    "title": "README 世界三联图提示词记录 A",
+    "type": "document"
+  },
+  {
+    "id": "docs/assets/readme/prompts/2026-07-31-world-triptychs-batch-b.md",
+    "indexVersion": 1,
+    "sourceHash": "3355911aa4cba9655a96383d8a52f6197f281cf6ba03736774103f0f19cf76a1",
+    "sourcePath": "docs/assets/readme/prompts/2026-07-31-world-triptychs-batch-b.md",
+    "subtype": "other",
+    "summary": "README 世界三联图提示词记录 B",
+    "summarySource": "title-only",
+    "title": "README 世界三联图提示词记录 B",
+    "type": "document"
+  },
+  {
+    "id": "docs/assets/readme/prompts/2026-08-01-readme-png-board-bases.md",
+    "indexVersion": 1,
+    "sourceHash": "26f46fe52f4ed7a458b01aaaaf08d84c60503f44c255c09c92c0d9accc2b094c",
+    "sourcePath": "docs/assets/readme/prompts/2026-08-01-readme-png-board-bases.md",
+    "subtype": "other",
+    "summary": "2026-08-01 README PNG 板底图补充",
+    "summarySource": "title-only",
+    "title": "2026-08-01 README PNG 板底图补充",
+    "type": "document"
+  },
+  {
+    "id": "docs/assets/readme/prompts/legacy-round-1-assets.md",
+    "indexVersion": 1,
+    "sourceHash": "023c5e9dd77b68e742be3a3dd1ed08a5df5dbdf9f2dc122627f33bd69024d67b",
+    "sourcePath": "docs/assets/readme/prompts/legacy-round-1-assets.md",
+    "subtype": "other",
+    "summary": "README 历史视觉记录",
+    "summarySource": "title-only",
+    "title": "README 历史视觉记录",
+    "type": "document"
+  },
+  {
     "id": "docs/assets/readme/README.md",
     "indexVersion": 1,
-    "sourceHash": "b13aa47016a2d728ebab9288bced6ec806a4936a5543c63e5ad2d8c20d672a80",
+    "sourceHash": "5f2711aacd333996837b469fe9799f6c1885267f0f1c5b826f6ac7cf7733e8dc",
     "sourcePath": "docs/assets/readme/README.md",
     "subtype": "other",
-    "summary": "README",
+    "summary": "README 视觉资产目录",
     "summarySource": "title-only",
-    "title": "README",
+    "title": "README 视觉资产目录",
+    "type": "document"
+  },
+  {
+    "id": "docs/assets/readme/screenshots/screenshot-inventory.md",
+    "indexVersion": 1,
+    "sourceHash": "c2e259c6411ee112de543683ef0b461ddf735c8c20228b4d46e5a1b19120b04b",
+    "sourcePath": "docs/assets/readme/screenshots/screenshot-inventory.md",
+    "subtype": "other",
+    "summary": "README 截图清单",
+    "summarySource": "title-only",
+    "title": "README 截图清单",
     "type": "document"
   },
   {
@@ -646,6 +745,39 @@
     "summary": "README",
     "summarySource": "title-only",
     "title": "README",
+    "type": "document"
+  },
+  {
+    "id": "docs/readme/可玩证据.md",
+    "indexVersion": 1,
+    "sourceHash": "607a94cb07ac32e33b3d95d166a92984868142ccfdbc1e9f1b370bc6c8a59730",
+    "sourcePath": "docs/readme/可玩证据.md",
+    "subtype": "other",
+    "summary": "璃落宇宙可玩证据",
+    "summarySource": "title-only",
+    "title": "璃落宇宙可玩证据",
+    "type": "document"
+  },
+  {
+    "id": "docs/readme/生产体系.md",
+    "indexVersion": 1,
+    "sourceHash": "b2fdf535c689823092c9ad71caa862e0266c73b7a6eb5bbfea50d0ff1b0b4926",
+    "sourcePath": "docs/readme/生产体系.md",
+    "subtype": "other",
+    "summary": "璃落宇宙生产体系",
+    "summarySource": "title-only",
+    "title": "璃落宇宙生产体系",
+    "type": "document"
+  },
+  {
+    "id": "docs/readme/世界图册.md",
+    "indexVersion": 1,
+    "sourceHash": "3d54478e93e39460437e4f348053ab6eea9496d56874e3608da1d3c8fb902313",
+    "sourcePath": "docs/readme/世界图册.md",
+    "subtype": "other",
+    "summary": "璃落宇宙世界图册",
+    "summarySource": "title-only",
+    "title": "璃落宇宙世界图册",
     "type": "document"
   }
 ]

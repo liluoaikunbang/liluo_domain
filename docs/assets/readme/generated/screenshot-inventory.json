@@ -1,0 +1,83 @@
+{
+  "generatedAt": "2026-08-01T03:10:22.676Z",
+  "existingScreenshots": [
+    {
+      "id": "prototype-campus-map",
+      "file": "docs/assets/readme/prototype-campus-map.png",
+      "label": "现代校园地图探索截图",
+      "type": "repository-real-screenshot",
+      "verifiedAt": "2026-07-31",
+      "notes": [
+        "仓库内已存在的真实运行截图。",
+        "画面展示地图探索、三栏信息结构和像素场景。"
+      ]
+    },
+    {
+      "id": "prototype-gallery-ui",
+      "file": "docs/assets/readme/prototype-gallery-ui.png",
+      "label": "旅途菜单与图鉴截图",
+      "type": "repository-real-screenshot",
+      "verifiedAt": "2026-07-31",
+      "notes": [
+        "仓库内已存在的真实运行截图。",
+        "画面展示菜单、图鉴和长期资料承载界面。"
+      ]
+    },
+    {
+      "id": "readme-shot-03",
+      "file": "docs/assets/readme/screenshots/README-SHOT-03-dialogue-and-map-event.png",
+      "label": "地图内对话与事件触发截图",
+      "type": "user-supplied-real-screenshot",
+      "verifiedAt": "2026-08-01",
+      "notes": [
+        "用户补回的真实运行截图。",
+        "画面同时包含地图场景、对话框、角色差分立绘与右侧当前状态显示。"
+      ]
+    },
+    {
+      "id": "readme-shot-04",
+      "file": "docs/assets/readme/screenshots/README-SHOT-04-save-load-panel.png",
+      "label": "真实存档与读档界面截图",
+      "type": "user-supplied-real-screenshot",
+      "verifiedAt": "2026-08-01",
+      "notes": [
+        "用户补回的真实运行截图。",
+        "画面展示存档槽位、地点、状态、时间和存档管理按钮。"
+      ]
+    },
+    {
+      "id": "readme-shot-05",
+      "file": "docs/assets/readme/screenshots/README-SHOT-05-relation-graph-panel.png",
+      "label": "关系图谱与大纲图谱面板截图",
+      "type": "user-supplied-real-screenshot",
+      "verifiedAt": "2026-08-01",
+      "notes": [
+        "用户补回的真实运行截图。",
+        "画面展示故事、情节、玩法、人物等节点与连线，以及图谱操作栏。"
+      ]
+    },
+    {
+      "id": "readme-shot-06",
+      "file": "docs/assets/readme/screenshots/README-SHOT-06-interactive-fiction-mode.png",
+      "label": "十三号病院互动小说模式截图",
+      "type": "user-supplied-real-screenshot",
+      "verifiedAt": "2026-08-01",
+      "notes": [
+        "用户补回的真实运行截图。",
+        "画面展示十三号病院正式副本入口、正文区域与副本侧栏。"
+      ]
+    },
+    {
+      "id": "readme-shot-07",
+      "file": "docs/assets/readme/screenshots/README-SHOT-07-restraint-state-combinations.png",
+      "label": "紧缚状态差分组合面板截图",
+      "type": "user-supplied-real-screenshot",
+      "verifiedAt": "2026-08-01",
+      "notes": [
+        "用户额外补回的真实运行截图。",
+        "画面展示可切换的紧缚状态组合、立绘差分与图层显示面板。"
+      ]
+    }
+  ],
+  "requestedScreenshots": []
+}

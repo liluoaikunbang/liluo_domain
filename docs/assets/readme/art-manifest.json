@@ -1,136 +1,1276 @@
-﻿{
-  "schemaVersion": 2,
-  "generatedAt": "2026-07-31",
+{
+  "schemaVersion": 3,
+  "generatedAt": "2026-08-01",
   "assets": [
     {
+      "id": "hero-liluo-universe-v2",
+      "title": "README 新主视觉海报",
+      "path": "docs/assets/readme/hero-liluo-universe-v2.png",
+      "section": "hero",
+      "category": "poster",
+      "sourceType": "gpt-image-2",
+      "status": "archived",
+      "maturityLabel": "concept-art",
+      "alt": "璃落宇宙主视觉海报，璃落站在六大世界交汇处",
+      "caption": "README 第二版首屏主视觉，现已由更完整的 v3 版替换为默认展示。",
+      "promptFile": "docs/assets/readme/prompts/2026-07-31-hero-liluo-universe-v2.md",
+      "referenceAssets": [
+        "src/assets/game/standee/LiLuo.png",
+        "docs/assets/readme/liluo-character-portrait.png"
+      ],
+      "createdAt": "2026-07-31",
+      "verifiedAt": "2026-07-31"
+    },
+    {
       "id": "hero-liluo-universe",
+      "title": "README 旧主视觉海报",
       "path": "docs/assets/readme/hero-liluo-universe.png",
-      "purpose": "README 首屏主视觉",
-      "source": "built-in image_gen",
-      "notes": [
-        "保留第一轮建立的宇宙旗帜图",
-        "用于表达璃落宇宙的总入口氛围"
-      ]
+      "section": "archive",
+      "category": "poster",
+      "sourceType": "legacy-imagegen",
+      "status": "archived",
+      "maturityLabel": "concept-art",
+      "alt": "璃落宇宙旧版主视觉海报",
+      "caption": "第一轮 README 升级遗留主视觉，现已退到历史资产。",
+      "promptFile": "docs/assets/readme/prompts/legacy-round-1-assets.md",
+      "referenceAssets": [],
+      "createdAt": "2026-07-31"
     },
     {
       "id": "liluo-character-portrait",
+      "title": "璃落角色基准立绘",
       "path": "docs/assets/readme/liluo-character-portrait.png",
-      "purpose": "README 角色展示",
-      "source": "built-in image_gen",
-      "notes": [
-        "替换旧像素代替立绘",
-        "统一刚成年、娇小、弱气的璃落角色基准气质"
-      ]
+      "section": "reference",
+      "category": "character",
+      "sourceType": "legacy-imagegen",
+      "status": "active",
+      "maturityLabel": "reference-art",
+      "alt": "成年璃落角色基准立绘",
+      "caption": "用于锁定 README 视觉中璃落的成年外观一致性。",
+      "promptFile": "docs/assets/readme/prompts/legacy-round-1-assets.md",
+      "referenceAssets": [
+        "src/assets/game/standee/LiLuo.png"
+      ],
+      "createdAt": "2026-07-31"
     },
     {
       "id": "liluo-multiverse-fusion",
+      "title": "璃落跨世界氛围图",
       "path": "docs/assets/readme/liluo-multiverse-fusion.png",
-      "purpose": "README 多世界融合横幅",
-      "source": "built-in image_gen",
-      "notes": [
-        "参考用户提供的横向排布意境图生成",
-        "强调不同世界中的服装、姿态与环境差异"
-      ]
+      "section": "worlds",
+      "category": "banner",
+      "sourceType": "legacy-imagegen",
+      "status": "active",
+      "maturityLabel": "concept-art",
+      "alt": "璃落在不同世界中的服装与氛围融合图",
+      "caption": "用于表达璃落在不同世界中的气质迁移，不作为可玩证据。",
+      "promptFile": "docs/assets/readme/prompts/legacy-round-1-assets.md",
+      "referenceAssets": [],
+      "createdAt": "2026-07-31"
     },
     {
       "id": "world-mingsuo-yuling",
+      "title": "慕妮卡帝国世界概念图",
       "path": "docs/assets/readme/world-mingsuo-yuling.png",
-      "purpose": "README 六大世界展示",
-      "source": "built-in image_gen",
-      "notes": [
-        "世界优先的穆妮卡帝国宣传图",
-        "表现综合型帝国世界中的秩序、装饰性与多风格并存感"
-      ]
+      "section": "worlds",
+      "category": "world-card",
+      "sourceType": "legacy-imagegen",
+      "status": "active",
+      "maturityLabel": "concept-art",
+      "alt": "慕妮卡帝国世界概念图",
+      "caption": "综合型帝国世界的公开氛围图。",
+      "promptFile": "docs/assets/readme/prompts/legacy-round-1-assets.md",
+      "referenceAssets": [],
+      "createdAt": "2026-07-31"
     },
     {
       "id": "world-fuguang-lueying",
+      "title": "浮光掠影世界概念图",
       "path": "docs/assets/readme/world-fuguang-lueying.png",
-      "purpose": "README 六大世界展示",
-      "source": "built-in image_gen",
-      "notes": [
-        "世界优先的浮光掠影宣传图",
-        "表现都市夜雨、校园与异常痕迹"
-      ]
+      "section": "worlds",
+      "category": "world-card",
+      "sourceType": "legacy-imagegen",
+      "status": "active",
+      "maturityLabel": "concept-art",
+      "alt": "浮光掠影世界概念图",
+      "caption": "都市夜雨、校园与异常痕迹的公开氛围图。",
+      "promptFile": "docs/assets/readme/prompts/legacy-round-1-assets.md",
+      "referenceAssets": [],
+      "createdAt": "2026-07-31"
     },
     {
       "id": "world-jitu-wange",
+      "title": "寂土挽歌世界概念图",
       "path": "docs/assets/readme/world-jitu-wange.png",
-      "purpose": "README 六大世界展示",
-      "source": "built-in image_gen",
-      "notes": [
-        "世界优先的寂土挽歌宣传图",
-        "表现灾后废墟、补给点与脆弱希望"
-      ]
+      "section": "worlds",
+      "category": "world-card",
+      "sourceType": "legacy-imagegen",
+      "status": "active",
+      "maturityLabel": "concept-art",
+      "alt": "寂土挽歌世界概念图",
+      "caption": "灾后废墟、补给点与脆弱希望的公开氛围图。",
+      "promptFile": "docs/assets/readme/prompts/legacy-round-1-assets.md",
+      "referenceAssets": [],
+      "createdAt": "2026-07-31"
     },
     {
       "id": "world-chenhuan-wendao",
+      "title": "尘寰问道世界概念图",
       "path": "docs/assets/readme/world-chenhuan-wendao.png",
-      "purpose": "README 六大世界展示",
-      "source": "built-in image_gen",
-      "notes": [
-        "世界优先的尘寰问道宣传图",
-        "表现旧城灯火、旧案疑云与山水异闻"
-      ]
+      "section": "worlds",
+      "category": "world-card",
+      "sourceType": "legacy-imagegen",
+      "status": "active",
+      "maturityLabel": "concept-art",
+      "alt": "尘寰问道世界概念图",
+      "caption": "旧城灯火、旧案疑云与山水异闻的公开氛围图。",
+      "promptFile": "docs/assets/readme/prompts/legacy-round-1-assets.md",
+      "referenceAssets": [],
+      "createdAt": "2026-07-31"
     },
     {
       "id": "world-zhoufu-huixiang",
+      "title": "咒缚回响世界概念图",
       "path": "docs/assets/readme/world-zhoufu-huixiang.png",
-      "purpose": "README 六大世界展示",
-      "source": "built-in image_gen",
-      "notes": [
-        "世界优先的咒缚回响宣传图",
-        "表现学院、古堡、海路与契约幻想"
-      ]
+      "section": "worlds",
+      "category": "world-card",
+      "sourceType": "legacy-imagegen",
+      "status": "active",
+      "maturityLabel": "concept-art",
+      "alt": "咒缚回响世界概念图",
+      "caption": "学院、古堡、海路与契约幻想的公开氛围图。",
+      "promptFile": "docs/assets/readme/prompts/legacy-round-1-assets.md",
+      "referenceAssets": [],
+      "createdAt": "2026-07-31"
     },
     {
       "id": "world-xingyu-zhimeng",
+      "title": "星宇织梦世界概念图",
       "path": "docs/assets/readme/world-xingyu-zhimeng.png",
-      "purpose": "README 六大世界展示",
-      "source": "built-in image_gen",
-      "notes": [
-        "世界优先的星宇织梦宣传图",
-        "表现轨道环城、远航方舟与未来边疆"
-      ]
+      "section": "worlds",
+      "category": "world-card",
+      "sourceType": "legacy-imagegen",
+      "status": "active",
+      "maturityLabel": "concept-art",
+      "alt": "星宇织梦世界概念图",
+      "caption": "轨道港、未来城市与远行边疆的公开氛围图。",
+      "promptFile": "docs/assets/readme/prompts/legacy-round-1-assets.md",
+      "referenceAssets": [],
+      "createdAt": "2026-07-31"
+    },
+    {
+      "id": "world-munika-poster-v2",
+      "title": "慕妮卡帝国总海报概念图",
+      "path": "docs/assets/readme/generated/world-munika-poster-v2.png",
+      "section": "worlds",
+      "category": "world-poster",
+      "sourceType": "gpt-image-2",
+      "status": "active",
+      "maturityLabel": "concept-art",
+      "alt": "慕妮卡帝国总海报概念图",
+      "caption": "用于 README 与世界图册的慕妮卡帝国主视觉，不代表实机。",
+      "promptFile": "docs/assets/readme/prompts/2026-07-31-world-triptychs-batch-a.md",
+      "referenceAssets": [
+        "src/assets/game/standee/LiLuo.png",
+        "docs/assets/readme/liluo-character-portrait.png"
+      ],
+      "createdAt": "2026-07-31"
+    },
+    {
+      "id": "world-munika-scene-v2",
+      "title": "慕妮卡帝国局部场景概念图",
+      "path": "docs/assets/readme/generated/world-munika-scene-v2.png",
+      "section": "worlds",
+      "category": "world-scene",
+      "sourceType": "gpt-image-2",
+      "status": "active",
+      "maturityLabel": "concept-art",
+      "alt": "慕妮卡帝国局部场景概念图",
+      "caption": "用于表达慕妮卡帝国可探索空间气质的局部环境图。",
+      "promptFile": "docs/assets/readme/prompts/2026-07-31-world-triptychs-batch-a.md",
+      "referenceAssets": [],
+      "createdAt": "2026-07-31"
+    },
+    {
+      "id": "world-munika-event-v2",
+      "title": "慕妮卡帝国事件落点概念图",
+      "path": "docs/assets/readme/generated/world-munika-event-v2.png",
+      "section": "worlds",
+      "category": "world-event",
+      "sourceType": "gpt-image-2",
+      "status": "active",
+      "maturityLabel": "concept-art",
+      "alt": "慕妮卡帝国事件落点概念图",
+      "caption": "用于表达慕妮卡帝国规则抉择与多界门扉压力的事件图。",
+      "promptFile": "docs/assets/readme/prompts/2026-07-31-world-triptychs-batch-a.md",
+      "referenceAssets": [
+        "src/assets/game/standee/LiLuo.png",
+        "docs/assets/readme/liluo-character-portrait.png"
+      ],
+      "createdAt": "2026-07-31"
+    },
+    {
+      "id": "world-fuguang-poster-v2",
+      "title": "浮光掠影总海报概念图",
+      "path": "docs/assets/readme/generated/world-fuguang-poster-v2.png",
+      "section": "worlds",
+      "category": "world-poster",
+      "sourceType": "gpt-image-2",
+      "status": "active",
+      "maturityLabel": "concept-art",
+      "alt": "浮光掠影总海报概念图",
+      "caption": "用于 README 与世界图册的浮光掠影主视觉，不代表实机。",
+      "promptFile": "docs/assets/readme/prompts/2026-07-31-world-triptychs-batch-a.md",
+      "referenceAssets": [
+        "src/assets/game/standee/LiLuo.png",
+        "docs/assets/readme/liluo-character-portrait.png"
+      ],
+      "createdAt": "2026-07-31"
+    },
+    {
+      "id": "world-fuguang-scene-v2",
+      "title": "浮光掠影局部场景概念图",
+      "path": "docs/assets/readme/generated/world-fuguang-scene-v2.png",
+      "section": "worlds",
+      "category": "world-scene",
+      "sourceType": "gpt-image-2",
+      "status": "active",
+      "maturityLabel": "concept-art",
+      "alt": "浮光掠影局部场景概念图",
+      "caption": "用于表达浮光掠影日常探索与轻异常氛围的局部环境图。",
+      "promptFile": "docs/assets/readme/prompts/2026-07-31-world-triptychs-batch-a.md",
+      "referenceAssets": [],
+      "createdAt": "2026-07-31"
+    },
+    {
+      "id": "world-fuguang-event-v2",
+      "title": "浮光掠影事件落点概念图",
+      "path": "docs/assets/readme/generated/world-fuguang-event-v2.png",
+      "section": "worlds",
+      "category": "world-event",
+      "sourceType": "gpt-image-2",
+      "status": "active",
+      "maturityLabel": "concept-art",
+      "alt": "浮光掠影事件落点概念图",
+      "caption": "用于表达浮光掠影调查、档案与线索拼接压力的事件图。",
+      "promptFile": "docs/assets/readme/prompts/2026-07-31-world-triptychs-batch-a.md",
+      "referenceAssets": [
+        "src/assets/game/standee/LiLuo.png",
+        "docs/assets/readme/liluo-character-portrait.png"
+      ],
+      "createdAt": "2026-07-31"
+    },
+    {
+      "id": "world-jitu-poster-v2",
+      "title": "寂土挽歌总海报概念图",
+      "path": "docs/assets/readme/generated/world-jitu-poster-v2.png",
+      "section": "worlds",
+      "category": "world-poster",
+      "sourceType": "gpt-image-2",
+      "status": "active",
+      "maturityLabel": "concept-art",
+      "alt": "寂土挽歌总海报概念图",
+      "caption": "用于 README 与世界图册的寂土挽歌主视觉，不代表实机。",
+      "promptFile": "docs/assets/readme/prompts/2026-07-31-world-triptychs-batch-a.md",
+      "referenceAssets": [
+        "src/assets/game/standee/LiLuo.png",
+        "docs/assets/readme/liluo-character-portrait.png"
+      ],
+      "createdAt": "2026-07-31"
+    },
+    {
+      "id": "world-jitu-scene-v2",
+      "title": "寂土挽歌局部场景概念图",
+      "path": "docs/assets/readme/generated/world-jitu-scene-v2.png",
+      "section": "worlds",
+      "category": "world-scene",
+      "sourceType": "gpt-image-2",
+      "status": "active",
+      "maturityLabel": "concept-art",
+      "alt": "寂土挽歌局部场景概念图",
+      "caption": "用于表达补给点、重建秩序与灾后日常的环境图。",
+      "promptFile": "docs/assets/readme/prompts/2026-07-31-world-triptychs-batch-a.md",
+      "referenceAssets": [],
+      "createdAt": "2026-07-31"
+    },
+    {
+      "id": "world-jitu-event-v2",
+      "title": "寂土挽歌事件落点概念图",
+      "path": "docs/assets/readme/generated/world-jitu-event-v2.png",
+      "section": "worlds",
+      "category": "world-event",
+      "sourceType": "gpt-image-2",
+      "status": "active",
+      "maturityLabel": "concept-art",
+      "alt": "寂土挽歌事件落点概念图",
+      "caption": "用于表达路线抉择、补给压力与队伍关系的事件图。",
+      "promptFile": "docs/assets/readme/prompts/2026-07-31-world-triptychs-batch-a.md",
+      "referenceAssets": [
+        "src/assets/game/standee/LiLuo.png",
+        "docs/assets/readme/liluo-character-portrait.png"
+      ],
+      "createdAt": "2026-07-31"
+    },
+    {
+      "id": "world-chenhuan-poster-v2",
+      "title": "尘寰问道总海报概念图",
+      "path": "docs/assets/readme/generated/world-chenhuan-poster-v2.png",
+      "section": "worlds",
+      "category": "world-poster",
+      "sourceType": "gpt-image-2",
+      "status": "active",
+      "maturityLabel": "concept-art",
+      "alt": "尘寰问道总海报概念图",
+      "caption": "用于 README 与世界图册的尘寰问道主视觉，不代表实机。",
+      "promptFile": "docs/assets/readme/prompts/2026-07-31-world-triptychs-batch-b.md",
+      "referenceAssets": [
+        "src/assets/game/standee/LiLuo.png",
+        "docs/assets/readme/liluo-character-portrait.png"
+      ],
+      "createdAt": "2026-07-31"
+    },
+    {
+      "id": "world-chenhuan-scene-v2",
+      "title": "尘寰问道局部场景概念图",
+      "path": "docs/assets/readme/generated/world-chenhuan-scene-v2.png",
+      "section": "worlds",
+      "category": "world-scene",
+      "sourceType": "gpt-image-2",
+      "status": "active",
+      "maturityLabel": "concept-art",
+      "alt": "尘寰问道局部场景概念图",
+      "caption": "用于表达旧城、桥巷、告示与山中异闻的环境图。",
+      "promptFile": "docs/assets/readme/prompts/2026-07-31-world-triptychs-batch-b.md",
+      "referenceAssets": [],
+      "createdAt": "2026-07-31"
+    },
+    {
+      "id": "world-chenhuan-event-v2",
+      "title": "尘寰问道事件落点概念图",
+      "path": "docs/assets/readme/generated/world-chenhuan-event-v2.png",
+      "section": "worlds",
+      "category": "world-event",
+      "sourceType": "gpt-image-2",
+      "status": "active",
+      "maturityLabel": "concept-art",
+      "alt": "尘寰问道事件落点概念图",
+      "caption": "用于表达旧案、证词冲突和因果抉择的事件图。",
+      "promptFile": "docs/assets/readme/prompts/2026-07-31-world-triptychs-batch-b.md",
+      "referenceAssets": [
+        "src/assets/game/standee/LiLuo.png",
+        "docs/assets/readme/liluo-character-portrait.png"
+      ],
+      "createdAt": "2026-07-31"
+    },
+    {
+      "id": "world-zhoufu-poster-v2",
+      "title": "咒缚回响总海报概念图",
+      "path": "docs/assets/readme/generated/world-zhoufu-poster-v2.png",
+      "section": "worlds",
+      "category": "world-poster",
+      "sourceType": "gpt-image-2",
+      "status": "active",
+      "maturityLabel": "concept-art",
+      "alt": "咒缚回响总海报概念图",
+      "caption": "用于 README 与世界图册的咒缚回响主视觉，不代表实机。",
+      "promptFile": "docs/assets/readme/prompts/2026-07-31-world-triptychs-batch-b.md",
+      "referenceAssets": [
+        "src/assets/game/standee/LiLuo.png",
+        "docs/assets/readme/liluo-character-portrait.png"
+      ],
+      "createdAt": "2026-07-31"
+    },
+    {
+      "id": "world-zhoufu-scene-v2",
+      "title": "咒缚回响局部场景概念图",
+      "path": "docs/assets/readme/generated/world-zhoufu-scene-v2.png",
+      "section": "worlds",
+      "category": "world-scene",
+      "sourceType": "gpt-image-2",
+      "status": "active",
+      "maturityLabel": "concept-art",
+      "alt": "咒缚回响局部场景概念图",
+      "caption": "用于表达学院、海路和契约研究空间气质的环境图。",
+      "promptFile": "docs/assets/readme/prompts/2026-07-31-world-triptychs-batch-b.md",
+      "referenceAssets": [],
+      "createdAt": "2026-07-31"
+    },
+    {
+      "id": "world-zhoufu-event-v2",
+      "title": "咒缚回响事件落点概念图",
+      "path": "docs/assets/readme/generated/world-zhoufu-event-v2.png",
+      "section": "worlds",
+      "category": "world-event",
+      "sourceType": "gpt-image-2",
+      "status": "active",
+      "maturityLabel": "concept-art",
+      "alt": "咒缚回响事件落点概念图",
+      "caption": "用于表达契约抉择、知识风险与冒险前夜的事件图。",
+      "promptFile": "docs/assets/readme/prompts/2026-07-31-world-triptychs-batch-b.md",
+      "referenceAssets": [
+        "src/assets/game/standee/LiLuo.png",
+        "docs/assets/readme/liluo-character-portrait.png"
+      ],
+      "createdAt": "2026-07-31"
+    },
+    {
+      "id": "world-xingyu-poster-v2",
+      "title": "星宇织梦总海报概念图",
+      "path": "docs/assets/readme/generated/world-xingyu-poster-v2.png",
+      "section": "worlds",
+      "category": "world-poster",
+      "sourceType": "gpt-image-2",
+      "status": "active",
+      "maturityLabel": "concept-art",
+      "alt": "星宇织梦总海报概念图",
+      "caption": "用于 README 与世界图册的星宇织梦主视觉，不代表实机。",
+      "promptFile": "docs/assets/readme/prompts/2026-07-31-world-triptychs-batch-b.md",
+      "referenceAssets": [
+        "src/assets/game/standee/LiLuo.png",
+        "docs/assets/readme/liluo-character-portrait.png"
+      ],
+      "createdAt": "2026-07-31"
+    },
+    {
+      "id": "world-xingyu-scene-v2",
+      "title": "星宇织梦局部场景概念图",
+      "path": "docs/assets/readme/generated/world-xingyu-scene-v2.png",
+      "section": "worlds",
+      "category": "world-scene",
+      "sourceType": "gpt-image-2",
+      "status": "active",
+      "maturityLabel": "concept-art",
+      "alt": "星宇织梦局部场景概念图",
+      "caption": "用于表达公共区、生态层与镜域技术共存的环境图。",
+      "promptFile": "docs/assets/readme/prompts/2026-07-31-world-triptychs-batch-b.md",
+      "referenceAssets": [],
+      "createdAt": "2026-07-31"
+    },
+    {
+      "id": "world-xingyu-event-v2",
+      "title": "星宇织梦事件落点概念图",
+      "path": "docs/assets/readme/generated/world-xingyu-event-v2.png",
+      "section": "worlds",
+      "category": "world-event",
+      "sourceType": "gpt-image-2",
+      "status": "active",
+      "maturityLabel": "concept-art",
+      "alt": "星宇织梦事件落点概念图",
+      "caption": "用于表达未来路由、镜域异常和后效选择的事件图。",
+      "promptFile": "docs/assets/readme/prompts/2026-07-31-world-triptychs-batch-b.md",
+      "referenceAssets": [
+        "src/assets/game/standee/LiLuo.png",
+        "docs/assets/readme/liluo-character-portrait.png"
+      ],
+      "createdAt": "2026-07-31"
+    },
+    {
+      "id": "liluo-master-character-portrait-v2",
+      "title": "璃落公开基准立绘 2.0",
+      "path": "docs/assets/readme/generated/liluo-master-character-portrait-v2.png",
+      "section": "character",
+      "category": "character",
+      "sourceType": "gpt-image-2",
+      "status": "active",
+      "maturityLabel": "reference-art",
+      "alt": "璃落公开基准立绘",
+      "caption": "用于 README 当前角色统一性展示的稳定基准立绘。",
+      "promptFile": "docs/assets/readme/prompts/2026-07-31-character-system-batch-a.md",
+      "referenceAssets": [
+        "src/assets/game/standee/LiLuo.png",
+        "docs/assets/readme/liluo-character-portrait.png"
+      ],
+      "createdAt": "2026-07-31"
+    },
+    {
+      "id": "liluo-identity-and-state-base",
+      "title": "璃落不变身份与可变状态概念图",
+      "path": "docs/assets/readme/generated/liluo-identity-and-state-base.png",
+      "section": "character",
+      "category": "system-diagram-base",
+      "sourceType": "gpt-image-2",
+      "status": "active",
+      "maturityLabel": "concept-diagram",
+      "alt": "璃落不变身份与可变状态概念图",
+      "caption": "用于解释统一身份与运行时状态分层的无字底图。",
+      "promptFile": "docs/assets/readme/prompts/2026-07-31-character-system-batch-a.md",
+      "referenceAssets": [
+        "src/assets/game/standee/LiLuo.png",
+        "docs/assets/readme/liluo-character-portrait.png"
+      ],
+      "createdAt": "2026-07-31"
+    },
+    {
+      "id": "prototype-evidence-frame-bg",
+      "title": "真实证据板底图",
+      "path": "docs/assets/readme/generated/prototype-evidence-frame-bg.png",
+      "section": "evidence",
+      "category": "system-diagram-base",
+      "sourceType": "gpt-image-2",
+      "status": "active",
+      "maturityLabel": "concept-diagram",
+      "alt": "真实截图证据板底图",
+      "caption": "用于后续拼接更多真实截图的装裱底板，不含任何伪造界面。",
+      "promptFile": "docs/assets/readme/prompts/2026-07-31-character-system-batch-a.md",
+      "referenceAssets": [],
+      "createdAt": "2026-07-31"
+    },
+    {
+      "id": "one-story-many-forms-v2-base",
+      "title": "同一故事多种正式形态无字底图",
+      "path": "docs/assets/readme/generated/one-story-many-forms-v2-base.png",
+      "section": "system",
+      "category": "system-diagram-base",
+      "sourceType": "gpt-image-2",
+      "status": "active",
+      "maturityLabel": "concept-diagram",
+      "alt": "同一故事多种正式形态无字底图",
+      "caption": "用于后续叠加准确中文标签和箭头的多形态生产底图。",
+      "promptFile": "docs/assets/readme/prompts/2026-07-31-character-system-batch-a.md",
+      "referenceAssets": [],
+      "createdAt": "2026-07-31"
+    },
+    {
+      "id": "readme-evidence-boundary-base-v2",
+      "title": "README 证据边界 PNG 概念板",
+      "path": "docs/assets/readme/generated/readme-evidence-boundary-base-v2.png",
+      "section": "system",
+      "category": "system-diagram-base",
+      "sourceType": "gpt-image-2",
+      "status": "active",
+      "maturityLabel": "concept-diagram",
+      "alt": "README 中真实证据、概念视觉与统计治理三类边界的 PNG 概念板",
+      "caption": "用于替换根 README 中旧 SVG 证据边界图的无字 PNG 板。复杂中文说明仍由正文承担。",
+      "promptFile": "docs/assets/readme/prompts/2026-08-01-readme-png-board-bases.md",
+      "referenceAssets": [],
+      "createdAt": "2026-08-01"
+    },
+    {
+      "id": "story-production-pipeline-base-v2",
+      "title": "故事进入多形态流程 PNG 概念板",
+      "path": "docs/assets/readme/generated/story-production-pipeline-base-v2.png",
+      "section": "system",
+      "category": "system-diagram-base",
+      "sourceType": "gpt-image-2",
+      "status": "active",
+      "maturityLabel": "concept-diagram",
+      "alt": "同一故事进入来源、设计、运行与验证流程的 PNG 概念板",
+      "caption": "用于替换根 README 中旧 SVG 流程图的无字 PNG 板，阶段说明由正文与统计补齐。",
+      "promptFile": "docs/assets/readme/prompts/2026-08-01-readme-png-board-bases.md",
+      "referenceAssets": [],
+      "createdAt": "2026-08-01"
+    },
+    {
+      "id": "liluo-munika-variant",
+      "title": "璃落慕妮卡帝国服装变体",
+      "path": "docs/assets/readme/generated/liluo-munika-variant.png",
+      "section": "character",
+      "category": "character-variant",
+      "sourceType": "gpt-image-2",
+      "status": "active",
+      "maturityLabel": "concept-art",
+      "alt": "璃落在慕妮卡帝国中的服装变体",
+      "caption": "用于展示璃落跨叙事域保持同一身份时的世界差分。",
+      "promptFile": "docs/assets/readme/prompts/2026-07-31-liluo-variants-batch-a.md",
+      "referenceAssets": [
+        "docs/assets/readme/generated/liluo-master-character-portrait-v2.png",
+        "src/assets/game/standee/LiLuo.png"
+      ],
+      "createdAt": "2026-07-31"
+    },
+    {
+      "id": "liluo-fuguang-variant",
+      "title": "璃落浮光掠影服装变体",
+      "path": "docs/assets/readme/generated/liluo-fuguang-variant.png",
+      "section": "character",
+      "category": "character-variant",
+      "sourceType": "gpt-image-2",
+      "status": "active",
+      "maturityLabel": "concept-art",
+      "alt": "璃落在浮光掠影中的服装变体",
+      "caption": "用于展示璃落跨叙事域保持同一身份时的世界差分。",
+      "promptFile": "docs/assets/readme/prompts/2026-07-31-liluo-variants-batch-a.md",
+      "referenceAssets": [
+        "docs/assets/readme/generated/liluo-master-character-portrait-v2.png",
+        "src/assets/game/standee/LiLuo.png"
+      ],
+      "createdAt": "2026-07-31"
+    },
+    {
+      "id": "liluo-jitu-variant",
+      "title": "璃落寂土挽歌服装变体",
+      "path": "docs/assets/readme/generated/liluo-jitu-variant.png",
+      "section": "character",
+      "category": "character-variant",
+      "sourceType": "gpt-image-2",
+      "status": "active",
+      "maturityLabel": "concept-art",
+      "alt": "璃落在寂土挽歌中的服装变体",
+      "caption": "用于展示璃落跨叙事域保持同一身份时的世界差分。",
+      "promptFile": "docs/assets/readme/prompts/2026-07-31-liluo-variants-batch-a.md",
+      "referenceAssets": [
+        "docs/assets/readme/generated/liluo-master-character-portrait-v2.png",
+        "src/assets/game/standee/LiLuo.png"
+      ],
+      "createdAt": "2026-07-31"
+    },
+    {
+      "id": "liluo-chenhuan-variant",
+      "title": "璃落尘寰问道服装变体",
+      "path": "docs/assets/readme/generated/liluo-chenhuan-variant.png",
+      "section": "character",
+      "category": "character-variant",
+      "sourceType": "gpt-image-2",
+      "status": "active",
+      "maturityLabel": "concept-art",
+      "alt": "璃落在尘寰问道中的服装变体",
+      "caption": "用于展示璃落跨叙事域保持同一身份时的世界差分。",
+      "promptFile": "docs/assets/readme/prompts/2026-07-31-liluo-variants-batch-a.md",
+      "referenceAssets": [
+        "docs/assets/readme/generated/liluo-master-character-portrait-v2.png",
+        "src/assets/game/standee/LiLuo.png"
+      ],
+      "createdAt": "2026-07-31"
+    },
+    {
+      "id": "liluo-zhoufu-variant",
+      "title": "璃落咒缚回响服装变体",
+      "path": "docs/assets/readme/generated/liluo-zhoufu-variant.png",
+      "section": "character",
+      "category": "character-variant",
+      "sourceType": "gpt-image-2",
+      "status": "active",
+      "maturityLabel": "concept-art",
+      "alt": "璃落在咒缚回响中的服装变体",
+      "caption": "用于展示璃落跨叙事域保持同一身份时的世界差分。",
+      "promptFile": "docs/assets/readme/prompts/2026-07-31-liluo-variants-batch-a.md",
+      "referenceAssets": [
+        "docs/assets/readme/generated/liluo-master-character-portrait-v2.png",
+        "src/assets/game/standee/LiLuo.png"
+      ],
+      "createdAt": "2026-07-31"
+    },
+    {
+      "id": "liluo-xingyu-variant",
+      "title": "璃落星宇织梦服装变体",
+      "path": "docs/assets/readme/generated/liluo-xingyu-variant.png",
+      "section": "character",
+      "category": "character-variant",
+      "sourceType": "gpt-image-2",
+      "status": "active",
+      "maturityLabel": "concept-art",
+      "alt": "璃落在星宇织梦中的服装变体",
+      "caption": "用于展示璃落跨叙事域保持同一身份时的世界差分。",
+      "promptFile": "docs/assets/readme/prompts/2026-07-31-liluo-variants-batch-a.md",
+      "referenceAssets": [
+        "docs/assets/readme/generated/liluo-master-character-portrait-v2.png",
+        "src/assets/game/standee/LiLuo.png"
+      ],
+      "createdAt": "2026-07-31"
     },
     {
       "id": "prototype-campus-map",
+      "title": "真实地图探索截图",
       "path": "docs/assets/readme/prototype-campus-map.png",
-      "purpose": "README 真实运行截图",
-      "source": "user-provided screenshot",
-      "notes": [
-        "真实地图探索与三栏 UI 运行截图",
-        "不是 AI 宣传图"
-      ]
+      "section": "evidence",
+      "category": "runtime-screenshot",
+      "sourceType": "real-screenshot",
+      "status": "active",
+      "maturityLabel": "runtime-evidence",
+      "alt": "真实地图探索与三栏界面运行截图",
+      "caption": "仓库内现有的真实地图探索截图，不是 AI 宣传图。",
+      "promptFile": null,
+      "referenceAssets": [],
+      "createdAt": "2026-07-31",
+      "verifiedAt": "2026-07-31"
     },
     {
       "id": "prototype-gallery-ui",
+      "title": "真实旅途菜单截图",
       "path": "docs/assets/readme/prototype-gallery-ui.png",
-      "purpose": "README 真实运行截图",
-      "source": "user-provided screenshot",
-      "notes": [
-        "真实图鉴与菜单运行截图",
-        "不是 AI 宣传图"
-      ]
+      "section": "evidence",
+      "category": "runtime-screenshot",
+      "sourceType": "real-screenshot",
+      "status": "active",
+      "maturityLabel": "runtime-evidence",
+      "alt": "真实旅途菜单与图鉴运行截图",
+      "caption": "仓库内现有的真实菜单截图，不是 AI 宣传图。",
+      "promptFile": null,
+      "referenceAssets": [],
+      "createdAt": "2026-07-31",
+      "verifiedAt": "2026-07-31"
+    },
+    {
+      "id": "hero-liluo-universe-v3",
+      "title": "README 首屏主视觉海报 3.0",
+      "path": "docs/assets/readme/generated/hero-liluo-universe-v3.png",
+      "section": "hero",
+      "category": "poster",
+      "sourceType": "gpt-image-2",
+      "status": "active",
+      "maturityLabel": "concept-art",
+      "alt": "璃落站在六大叙事域交汇处的 README 首屏主视觉",
+      "caption": "当前根 README 默认使用的首屏主视觉海报，表达六域同构与同一角色穿行诸界。",
+      "promptFile": "docs/assets/readme/prompts/2026-07-31-overview-system-batch-b.md",
+      "referenceAssets": [
+        "src/assets/game/standee/LiLuo.png",
+        "docs/assets/readme/generated/liluo-master-character-portrait-v2.png"
+      ],
+      "createdAt": "2026-07-31",
+      "verifiedAt": "2026-07-31"
+    },
+    {
+      "id": "six-domains-panorama-v2",
+      "title": "璃落穿行六域横向总览海报",
+      "path": "docs/assets/readme/generated/six-domains-panorama-v2.png",
+      "section": "worlds",
+      "category": "panorama",
+      "sourceType": "gpt-image-2",
+      "status": "active",
+      "maturityLabel": "concept-art",
+      "alt": "璃落穿行六大叙事域的横向总览海报",
+      "caption": "用于表现六大叙事域互相连通、但仍由同一个璃落贯穿的横卷概念图。",
+      "promptFile": "docs/assets/readme/prompts/2026-07-31-overview-system-batch-b.md",
+      "referenceAssets": [
+        "src/assets/game/standee/LiLuo.png",
+        "docs/assets/readme/generated/liluo-master-character-portrait-v2.png"
+      ],
+      "createdAt": "2026-07-31"
+    },
+    {
+      "id": "universe-state-event-network-base",
+      "title": "角色状态事件网络底图",
+      "path": "docs/assets/readme/generated/universe-state-event-network-base.png",
+      "section": "system",
+      "category": "system-diagram-base",
+      "sourceType": "gpt-image-2",
+      "status": "active",
+      "maturityLabel": "concept-diagram",
+      "alt": "角色、状态、地图与事件互相连接的系统底图",
+      "caption": "用于生产体系页解释同一宇宙如何在角色、关系、状态与事件之间持续对齐的无字底图。",
+      "promptFile": "docs/assets/readme/prompts/2026-07-31-overview-system-batch-b.md",
+      "referenceAssets": [],
+      "createdAt": "2026-07-31"
+    },
+    {
+      "id": "five-layer-production-system-base",
+      "title": "五层生产体系底图",
+      "path": "docs/assets/readme/generated/five-layer-production-system-base.png",
+      "section": "system",
+      "category": "system-diagram-base",
+      "sourceType": "gpt-image-2",
+      "status": "active",
+      "maturityLabel": "concept-diagram",
+      "alt": "璃落宇宙五层生产体系无字底图",
+      "caption": "用于承载来源层、设计层、运行层、验证层与公开层说明的无字底图。",
+      "promptFile": "docs/assets/readme/prompts/2026-07-31-overview-system-batch-b.md",
+      "referenceAssets": [],
+      "createdAt": "2026-07-31"
+    },
+    {
+      "id": "ai-participation-boundary-base",
+      "title": "AI 与人工协作边界底图",
+      "path": "docs/assets/readme/generated/ai-participation-boundary-base.png",
+      "section": "collaboration",
+      "category": "system-diagram-base",
+      "sourceType": "gpt-image-2",
+      "status": "active",
+      "maturityLabel": "concept-diagram",
+      "alt": "AI 与人工协作边界的无字底图",
+      "caption": "用于解释项目里概念生成、证据确认、正式 canon 与完成判断的边界分工。",
+      "promptFile": "docs/assets/readme/prompts/2026-07-31-overview-system-batch-b.md",
+      "referenceAssets": [],
+      "createdAt": "2026-07-31"
+    },
+    {
+      "id": "collaboration-role-star-map-base",
+      "title": "协作角色星图底图",
+      "path": "docs/assets/readme/generated/collaboration-role-star-map-base.png",
+      "section": "collaboration",
+      "category": "system-diagram-base",
+      "sourceType": "gpt-image-2",
+      "status": "active",
+      "maturityLabel": "concept-diagram",
+      "alt": "协作角色星图底图",
+      "caption": "用于公开展示叙事、美术、玩法、验证与资料治理如何围绕同一项目协作的底图。",
+      "promptFile": "docs/assets/readme/prompts/2026-07-31-overview-system-batch-b.md",
+      "referenceAssets": [],
+      "createdAt": "2026-07-31"
+    },
+    {
+      "id": "project-roadmap-base",
+      "title": "公开路线图底图",
+      "path": "docs/assets/readme/generated/project-roadmap-base.png",
+      "section": "collaboration",
+      "category": "system-diagram-base",
+      "sourceType": "gpt-image-2",
+      "status": "active",
+      "maturityLabel": "concept-diagram",
+      "alt": "公开协作路线图底图",
+      "caption": "用于说明项目后续最值得继续推进的真实制作路线，而不是空泛阶段口号。",
+      "promptFile": "docs/assets/readme/prompts/2026-07-31-overview-system-batch-b.md",
+      "referenceAssets": [],
+      "createdAt": "2026-07-31"
+    },
+    {
+      "id": "production-maturity-ladder-base",
+      "title": "公开成熟度阶梯底图",
+      "path": "docs/assets/readme/generated/production-maturity-ladder-base.png",
+      "section": "system",
+      "category": "system-diagram-base",
+      "sourceType": "gpt-image-2",
+      "status": "active",
+      "maturityLabel": "concept-diagram",
+      "alt": "生产成熟度阶梯无字底图",
+      "caption": "用于展示 outline、skeleton 与 productionDesign 等不同真实阶段的视觉底图。",
+      "promptFile": "docs/assets/readme/prompts/2026-07-31-overview-system-batch-b.md",
+      "referenceAssets": [],
+      "createdAt": "2026-07-31"
+    },
+    {
+      "id": "story-to-playable-case-base",
+      "title": "从故事到可玩案例底图",
+      "path": "docs/assets/readme/generated/story-to-playable-case-base.png",
+      "section": "system",
+      "category": "system-diagram-base",
+      "sourceType": "gpt-image-2",
+      "status": "active",
+      "maturityLabel": "concept-diagram",
+      "alt": "从故事节点走到可玩内容的案例底图",
+      "caption": "用于解释一个故事段落如何经过任务、地图、对话与事件设计后才进入运行层。",
+      "promptFile": "docs/assets/readme/prompts/2026-07-31-overview-system-batch-b.md",
+      "referenceAssets": [],
+      "createdAt": "2026-07-31"
+    },
+    {
+      "id": "relationship-graph-display-base",
+      "title": "关系图谱展示底图",
+      "path": "docs/assets/readme/generated/relationship-graph-display-base.png",
+      "section": "system",
+      "category": "system-diagram-base",
+      "sourceType": "gpt-image-2",
+      "status": "active",
+      "maturityLabel": "concept-diagram",
+      "alt": "关系图谱与节点治理展示底图",
+      "caption": "用于说明关系图谱、节点统计与治理面板为什么属于生产体系的一部分。",
+      "promptFile": "docs/assets/readme/prompts/2026-07-31-overview-system-batch-b.md",
+      "referenceAssets": [],
+      "createdAt": "2026-07-31"
+    },
+    {
+      "id": "project-scale-dashboard-base",
+      "title": "公开统计看板底图",
+      "path": "docs/assets/readme/generated/project-scale-dashboard-base.png",
+      "section": "stats",
+      "category": "system-diagram-base",
+      "sourceType": "gpt-image-2",
+      "status": "active",
+      "maturityLabel": "concept-diagram",
+      "alt": "公开统计看板无字底图",
+      "caption": "用于承载项目规模、覆盖与验证数字的无字看板底图。",
+      "promptFile": "docs/assets/readme/prompts/2026-07-31-overview-system-batch-b.md",
+      "referenceAssets": [],
+      "createdAt": "2026-07-31"
+    },
+    {
+      "id": "closing-invitation-banner",
+      "title": "协作邀请横幅",
+      "path": "docs/assets/readme/generated/closing-invitation-banner.png",
+      "section": "collaboration",
+      "category": "banner",
+      "sourceType": "gpt-image-2",
+      "status": "active",
+      "maturityLabel": "concept-art",
+      "alt": "璃落引导协作者继续前行的收尾横幅",
+      "caption": "用于 README 协作入口与招募收尾的公开邀请横幅。",
+      "promptFile": "docs/assets/readme/prompts/2026-07-31-overview-system-batch-b.md",
+      "referenceAssets": [
+        "src/assets/game/standee/LiLuo.png",
+        "docs/assets/readme/generated/liluo-master-character-portrait-v2.png"
+      ],
+      "createdAt": "2026-07-31"
+    },
+    {
+      "id": "project-scale-dashboard",
+      "title": "项目规模自动统计看板",
+      "path": "docs/assets/readme/generated/project-scale-dashboard.svg",
+      "section": "stats",
+      "category": "programmatic-diagram",
+      "sourceType": "script-generated-svg",
+      "status": "active",
+      "maturityLabel": "auto-stats",
+      "alt": "璃落宇宙公开规模快照看板",
+      "caption": "由脚本自动生成的规模与阶段看板。",
+      "promptFile": null,
+      "referenceAssets": [
+        "docs/assets/readme/generated/project-stats.json"
+      ],
+      "createdAt": "2026-07-31",
+      "verifiedAt": "2026-07-31"
+    },
+    {
+      "id": "story-production-pipeline",
+      "title": "多形态生产流程图",
+      "path": "docs/assets/readme/generated/story-production-pipeline.svg",
+      "section": "system",
+      "category": "programmatic-diagram",
+      "sourceType": "script-generated-svg",
+      "status": "archived",
+      "maturityLabel": "system-diagram",
+      "alt": "同一故事如何进入多种正式形态的流程图",
+      "caption": "历史版程序叠字说明图，现已退出根 README 首页展示，保留作脚本生成物与历史对照。",
+      "promptFile": null,
+      "referenceAssets": [],
+      "createdAt": "2026-07-31"
+    },
+    {
+      "id": "readme-evidence-boundary",
+      "title": "README 证据边界图",
+      "path": "docs/assets/readme/generated/readme-evidence-boundary.svg",
+      "section": "system",
+      "category": "programmatic-diagram",
+      "sourceType": "script-generated-svg",
+      "status": "archived",
+      "maturityLabel": "system-diagram",
+      "alt": "README 中真实证据、概念图和自动统计的边界示意图",
+      "caption": "历史版程序说明图，现已退出根 README 首页展示，保留作脚本生成物与历史对照。",
+      "promptFile": null,
+      "referenceAssets": [],
+      "createdAt": "2026-07-31"
     },
     {
       "id": "one-story-many-forms",
+      "title": "历史版多形态说明图",
       "path": "docs/assets/readme/one-story-many-forms.png",
-      "purpose": "README 多形态输出说明图",
-      "source": "built-in image_gen",
-      "notes": [
-        "保留第一轮说明图",
-        "用于表达同一个故事如何进入不同正式形态"
-      ]
+      "section": "archive",
+      "category": "diagram",
+      "sourceType": "legacy-imagegen",
+      "status": "archived",
+      "maturityLabel": "concept-diagram",
+      "alt": "历史版同一故事多形态说明图",
+      "caption": "第一轮 README 升级遗留说明图，现已由程序图替换。",
+      "promptFile": "docs/assets/readme/prompts/legacy-round-1-assets.md",
+      "referenceAssets": [],
+      "createdAt": "2026-07-31"
     },
     {
       "id": "storyworld-growth",
+      "title": "历史版生长方法说明图",
       "path": "docs/assets/readme/storyworld-growth.png",
-      "purpose": "README 生长方法说明图",
-      "source": "built-in image_gen",
-      "notes": [
-        "保留第一轮说明图",
-        "用于表达世界、故事、玩法与生产方法的生长关系"
-      ]
+      "section": "archive",
+      "category": "diagram",
+      "sourceType": "legacy-imagegen",
+      "status": "archived",
+      "maturityLabel": "concept-diagram",
+      "alt": "历史版故事世界生长方法说明图",
+      "caption": "第一轮 README 升级遗留说明图，现已由程序图替换。",
+      "promptFile": "docs/assets/readme/prompts/legacy-round-1-assets.md",
+      "referenceAssets": [],
+      "createdAt": "2026-07-31"
+    },
+    {
+      "id": "world-munika-triptych-board",
+      "title": "?????????",
+      "path": "docs/assets/readme/composites/world-munika-triptych-board.png",
+      "section": "worlds",
+      "category": "programmatic-composite",
+      "sourceType": "programmatic-composite",
+      "status": "active",
+      "maturityLabel": "concept-board",
+      "alt": "???????????????????????????",
+      "caption": "???????? GPT Image 2 ????????? README ??????????",
+      "promptFile": null,
+      "referenceAssets": [
+        "docs/assets/readme/generated/world-munika-poster-v2.png",
+        "docs/assets/readme/generated/world-munika-scene-v2.png",
+        "docs/assets/readme/generated/world-munika-event-v2.png"
+      ],
+      "createdAt": "2026-08-01"
+    },
+    {
+      "id": "world-fuguang-triptych-board",
+      "title": "????????",
+      "path": "docs/assets/readme/composites/world-fuguang-triptych-board.png",
+      "section": "worlds",
+      "category": "programmatic-composite",
+      "sourceType": "programmatic-composite",
+      "status": "active",
+      "maturityLabel": "concept-board",
+      "alt": "??????????????????????????",
+      "caption": "??????? GPT Image 2 ????????? README ??????????",
+      "promptFile": null,
+      "referenceAssets": [
+        "docs/assets/readme/generated/world-fuguang-poster-v2.png",
+        "docs/assets/readme/generated/world-fuguang-scene-v2.png",
+        "docs/assets/readme/generated/world-fuguang-event-v2.png"
+      ],
+      "createdAt": "2026-08-01"
+    },
+    {
+      "id": "world-jitu-triptych-board",
+      "title": "????????",
+      "path": "docs/assets/readme/composites/world-jitu-triptych-board.png",
+      "section": "worlds",
+      "category": "programmatic-composite",
+      "sourceType": "programmatic-composite",
+      "status": "active",
+      "maturityLabel": "concept-board",
+      "alt": "??????????????????????????",
+      "caption": "??????? GPT Image 2 ????????? README ??????????",
+      "promptFile": null,
+      "referenceAssets": [
+        "docs/assets/readme/generated/world-jitu-poster-v2.png",
+        "docs/assets/readme/generated/world-jitu-scene-v2.png",
+        "docs/assets/readme/generated/world-jitu-event-v2.png"
+      ],
+      "createdAt": "2026-08-01"
+    },
+    {
+      "id": "world-chenhuan-triptych-board",
+      "title": "????????",
+      "path": "docs/assets/readme/composites/world-chenhuan-triptych-board.png",
+      "section": "worlds",
+      "category": "programmatic-composite",
+      "sourceType": "programmatic-composite",
+      "status": "active",
+      "maturityLabel": "concept-board",
+      "alt": "??????????????????????????",
+      "caption": "??????? GPT Image 2 ????????? README ??????????",
+      "promptFile": null,
+      "referenceAssets": [
+        "docs/assets/readme/generated/world-chenhuan-poster-v2.png",
+        "docs/assets/readme/generated/world-chenhuan-scene-v2.png",
+        "docs/assets/readme/generated/world-chenhuan-event-v2.png"
+      ],
+      "createdAt": "2026-08-01"
+    },
+    {
+      "id": "world-zhoufu-triptych-board",
+      "title": "????????",
+      "path": "docs/assets/readme/composites/world-zhoufu-triptych-board.png",
+      "section": "worlds",
+      "category": "programmatic-composite",
+      "sourceType": "programmatic-composite",
+      "status": "active",
+      "maturityLabel": "concept-board",
+      "alt": "??????????????????????????",
+      "caption": "??????? GPT Image 2 ????????? README ??????????",
+      "promptFile": null,
+      "referenceAssets": [
+        "docs/assets/readme/generated/world-zhoufu-poster-v2.png",
+        "docs/assets/readme/generated/world-zhoufu-scene-v2.png",
+        "docs/assets/readme/generated/world-zhoufu-event-v2.png"
+      ],
+      "createdAt": "2026-08-01"
+    },
+    {
+      "id": "world-xingyu-triptych-board",
+      "title": "????????",
+      "path": "docs/assets/readme/composites/world-xingyu-triptych-board.png",
+      "section": "worlds",
+      "category": "programmatic-composite",
+      "sourceType": "programmatic-composite",
+      "status": "active",
+      "maturityLabel": "concept-board",
+      "alt": "??????????????????????????",
+      "caption": "??????? GPT Image 2 ????????? README ??????????",
+      "promptFile": null,
+      "referenceAssets": [
+        "docs/assets/readme/generated/world-xingyu-poster-v2.png",
+        "docs/assets/readme/generated/world-xingyu-scene-v2.png",
+        "docs/assets/readme/generated/world-xingyu-event-v2.png"
+      ],
+      "createdAt": "2026-08-01"
+    },
+    {
+      "id": "runtime-evidence-board-v1",
+      "title": "??????",
+      "path": "docs/assets/readme/composites/runtime-evidence-board-v1.png",
+      "section": "evidence",
+      "category": "programmatic-composite",
+      "sourceType": "programmatic-composite",
+      "status": "active",
+      "maturityLabel": "mixed-evidence-board",
+      "alt": "???????????????????????",
+      "caption": "?????????????????????????????????????????????",
+      "promptFile": null,
+      "referenceAssets": [
+        "docs/assets/readme/prototype-campus-map.png",
+        "docs/assets/readme/prototype-gallery-ui.png",
+        "docs/assets/readme/screenshots/screenshot-inventory.md"
+      ],
+      "createdAt": "2026-08-01"
+    },
+    {
+      "id": "story-to-playable-case-asylum-board",
+      "title": "?????????????",
+      "path": "docs/assets/readme/composites/story-to-playable-case-asylum-board.png",
+      "section": "system",
+      "category": "programmatic-composite",
+      "sourceType": "programmatic-composite",
+      "status": "active",
+      "maturityLabel": "evidence-board",
+      "alt": "???????????????????????????????",
+      "caption": "??????????????????? scenario ?????????????????????????????",
+      "promptFile": null,
+      "referenceAssets": [
+        "docs/assets/readme/generated/story-to-playable-case-base.png",
+        "src/components/Domain/ChamberShop/Chamber1.vue",
+        "src/game/data/interactive_fictions/asylum_for_lunatic/scenario.json",
+        "docs/????/048-asylum?????????????.md",
+        "docs/assets/readme/screenshots/screenshot-inventory.md"
+      ],
+      "createdAt": "2026-08-01"
+    },
+    {
+      "id": "project-scale-dashboard-v2",
+      "title": "??????????",
+      "path": "docs/assets/readme/composites/project-scale-dashboard-v2.png",
+      "section": "stats",
+      "category": "programmatic-composite",
+      "sourceType": "programmatic-composite",
+      "status": "active",
+      "maturityLabel": "auto-stats",
+      "alt": "????????????????????",
+      "caption": "? GPT Image 2 ??????????????????? README ??????????",
+      "promptFile": null,
+      "referenceAssets": [
+        "docs/assets/readme/generated/project-scale-dashboard-base.png",
+        "docs/assets/readme/generated/project-stats.json"
+      ],
+      "createdAt": "2026-08-01"
+    },
+    {
+      "id": "readme-evidence-boundary-board-v2",
+      "title": "README 证据边界 PNG 整板",
+      "path": "docs/assets/readme/composites/readme-evidence-boundary-board-v2.png",
+      "section": "system",
+      "category": "programmatic-composite",
+      "sourceType": "programmatic-composite",
+      "status": "active",
+      "maturityLabel": "system-board",
+      "alt": "README 中真实证据、概念视觉与自动统计三类边界的正式 PNG 整板",
+      "caption": "以 GPT Image 2 底图为基础，由程序叠加标题、三栏边界说明和脚注后的正式首页整板。",
+      "promptFile": "docs/assets/readme/prompts/2026-08-01-readme-png-board-bases.md",
+      "referenceAssets": [
+        "docs/assets/readme/generated/readme-evidence-boundary-base-v2.png"
+      ],
+      "createdAt": "2026-08-01"
+    },
+    {
+      "id": "story-production-pipeline-board-v2",
+      "title": "多形态生产流程 PNG 整板",
+      "path": "docs/assets/readme/composites/story-production-pipeline-board-v2.png",
+      "section": "system",
+      "category": "programmatic-composite",
+      "sourceType": "programmatic-composite",
+      "status": "active",
+      "maturityLabel": "system-board",
+      "alt": "同一故事进入来源、设计、运行与验证四阶段的正式 PNG 整板",
+      "caption": "以 GPT Image 2 底图为基础，由程序叠加四阶段标题与说明后的正式首页流程整板。",
+      "promptFile": "docs/assets/readme/prompts/2026-08-01-readme-png-board-bases.md",
+      "referenceAssets": [
+        "docs/assets/readme/generated/story-production-pipeline-base-v2.png"
+      ],
+      "createdAt": "2026-08-01"
+    },
+    {
+      "id": "relationship-graph-real-evidence-board",
+      "title": "关系图谱真实证据整板",
+      "path": "docs/assets/readme/composites/relationship-graph-real-evidence-board.png",
+      "section": "system",
+      "category": "programmatic-composite",
+      "sourceType": "programmatic-composite",
+      "status": "active",
+      "maturityLabel": "mixed-evidence-board",
+      "alt": "以真实关系图谱截图为中心、并叠加说明块的正式 PNG 整板",
+      "caption": "使用真实 README-SHOT-05 图谱截图，加上 GPT Image 2 装裱底图与说明块生成的公开证据整板。",
+      "promptFile": "docs/assets/readme/prompts/2026-08-01-readme-png-board-bases.md",
+      "referenceAssets": [
+        "docs/assets/readme/generated/relationship-graph-evidence-frame-bg.png",
+        "docs/assets/readme/screenshots/README-SHOT-05-relation-graph-panel.png"
+      ],
+      "createdAt": "2026-08-01"
+    },
+    {
+      "id": "readme-shot-03-dialogue-and-map-event",
+      "title": "???????????",
+      "path": "docs/assets/readme/screenshots/README-SHOT-03-dialogue-and-map-event.png",
+      "section": "evidence",
+      "category": "runtime-screenshot",
+      "sourceType": "user-supplied-real-screenshot",
+      "status": "active",
+      "maturityLabel": "runtime-evidence",
+      "alt": "???????????????????????????",
+      "caption": "?????????????????????????????????????",
+      "promptFile": null,
+      "referenceAssets": [],
+      "createdAt": "2026-08-01",
+      "verifiedAt": "2026-08-01"
+    },
+    {
+      "id": "readme-shot-04-save-load-panel",
+      "title": "?????????",
+      "path": "docs/assets/readme/screenshots/README-SHOT-04-save-load-panel.png",
+      "section": "evidence",
+      "category": "runtime-screenshot",
+      "sourceType": "user-supplied-real-screenshot",
+      "status": "active",
+      "maturityLabel": "runtime-evidence",
+      "alt": "?????????????????????????????",
+      "caption": "?????????????????????????",
+      "promptFile": null,
+      "referenceAssets": [],
+      "createdAt": "2026-08-01",
+      "verifiedAt": "2026-08-01"
+    },
+    {
+      "id": "readme-shot-05-relation-graph-panel",
+      "title": "????????",
+      "path": "docs/assets/readme/screenshots/README-SHOT-05-relation-graph-panel.png",
+      "section": "evidence",
+      "category": "runtime-screenshot",
+      "sourceType": "user-supplied-real-screenshot",
+      "status": "active",
+      "maturityLabel": "runtime-evidence",
+      "alt": "?????????????????????????????",
+      "caption": "??????????????????????????????????",
+      "promptFile": null,
+      "referenceAssets": [],
+      "createdAt": "2026-08-01",
+      "verifiedAt": "2026-08-01"
+    },
+    {
+      "id": "readme-shot-06-interactive-fiction-mode",
+      "title": "?????????????",
+      "path": "docs/assets/readme/screenshots/README-SHOT-06-interactive-fiction-mode.png",
+      "section": "evidence",
+      "category": "runtime-screenshot",
+      "sourceType": "user-supplied-real-screenshot",
+      "status": "active",
+      "maturityLabel": "runtime-evidence",
+      "alt": "????????????????????????????",
+      "caption": "????????????????????????????",
+      "promptFile": null,
+      "referenceAssets": [],
+      "createdAt": "2026-08-01",
+      "verifiedAt": "2026-08-01"
+    },
+    {
+      "id": "readme-shot-07-restraint-state-combinations",
+      "title": "????????????",
+      "path": "docs/assets/readme/screenshots/README-SHOT-07-restraint-state-combinations.png",
+      "section": "evidence",
+      "category": "runtime-screenshot",
+      "sourceType": "user-supplied-real-screenshot",
+      "status": "active",
+      "maturityLabel": "runtime-evidence",
+      "alt": "???????????????????????????",
+      "caption": "??????????????????????????????",
+      "promptFile": null,
+      "referenceAssets": [],
+      "createdAt": "2026-08-01",
+      "verifiedAt": "2026-08-01"
     }
   ]
 }

@@ -1,0 +1,949 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-01T03:10:22.676Z",
+  "buildEvidence": {
+    "command": "npm run build:web",
+    "verified": true,
+    "verifiedAt": "2026-07-31",
+    "note": "本轮 README 升级前已在当前仓库成功完成一次 Web 构建。"
+  },
+  "counts": {
+    "publicWorldCount": 6,
+    "mapPackageCount": 6,
+    "interactiveFictionScenarioCount": 1,
+    "storyMarkdownCount": 158,
+    "plotGroupCount": 22,
+    "schemaCount": 96,
+    "systemDocCount": 60,
+    "projectSkillCount": 37,
+    "promptRecordCount": 8,
+    "readmeAssetCount": 90,
+    "readmeVisualUnitCount": 33,
+    "readmeMarkdownImageCount": 22,
+    "readmeHtmlImageCount": 11,
+    "verifiedScreenshotCount": 7,
+    "pendingScreenshotRequestCount": 0
+  },
+  "readmeVisualSummary": {
+    "visualUnitCount": 33,
+    "markdownImageCount": 22,
+    "htmlImageCount": 11,
+    "targetRange": [
+      28,
+      36
+    ],
+    "inTargetRange": true
+  },
+  "outlineGraph": {
+    "builtAt": "2026-08-01T03:10:22.334Z",
+    "nodeCount": 616,
+    "edgeCount": 1243,
+    "orphanCount": 1,
+    "pendingReviewCount": 0,
+    "lowConfidenceEdgeCount": 0,
+    "missingSourceCount": 67,
+    "contentGapCount": 187,
+    "conceptWithoutRag": 15,
+    "conceptCategoryCount": 30,
+    "conceptDetailCount": 37,
+    "evidenceNodeCount": 0,
+    "sourceNodeCount": 0,
+    "ragStubCount": 67,
+    "ragMissingEvidenceCount": 67,
+    "pendingEvidenceCount": 0,
+    "confirmedEvidenceCount": 0,
+    "byType": {
+      "world": 6,
+      "story": 161,
+      "location": 35,
+      "character": 135,
+      "plot": 81,
+      "gameplay": 128,
+      "organization": 3,
+      "rag": 67
+    },
+    "byRelation": {
+      "contains": 232,
+      "parent": 161,
+      "located_at": 171,
+      "participates": 261,
+      "appears_in": 42,
+      "belongs_to": 112,
+      "narrower": 37,
+      "broader": 37,
+      "references": 190
+    }
+  },
+  "coverageSummary": [
+    {
+      "id": "0-munika",
+      "publicTitle": "慕妮卡帝国",
+      "worldTitle": "慕妮卡帝国（综合）",
+      "seriesTitle": "缚神领地",
+      "stage": "outline",
+      "stageLabel": "outline",
+      "gaps": [
+        "productionDesign",
+        "skeleton",
+        "graybox",
+        "partiallyPlayable",
+        "playable",
+        "validated"
+      ]
+    },
+    {
+      "id": "1-modern",
+      "publicTitle": "浮光掠影",
+      "worldTitle": "浮光掠影（都市）",
+      "seriesTitle": "荆锁会事件",
+      "stage": "skeleton",
+      "stageLabel": "skeleton",
+      "gaps": [
+        "graybox",
+        "partiallyPlayable",
+        "playable",
+        "validated"
+      ]
+    },
+    {
+      "id": "2-apocalypse",
+      "publicTitle": "寂土挽歌",
+      "worldTitle": "寂土挽歌（末日）",
+      "seriesTitle": "尸潮噬世",
+      "stage": "outline",
+      "stageLabel": "outline",
+      "gaps": [
+        "productionDesign",
+        "skeleton",
+        "graybox",
+        "partiallyPlayable",
+        "playable",
+        "validated"
+      ]
+    },
+    {
+      "id": "3-ancient",
+      "publicTitle": "尘寰问道",
+      "worldTitle": "尘寰问道（古风）",
+      "seriesTitle": "丫鬟难为",
+      "stage": "outline",
+      "stageLabel": "outline",
+      "gaps": [
+        "productionDesign",
+        "skeleton",
+        "graybox",
+        "partiallyPlayable",
+        "playable",
+        "validated"
+      ]
+    },
+    {
+      "id": "4-fantasy",
+      "publicTitle": "咒缚回响",
+      "worldTitle": "咒缚回响（魔幻）",
+      "seriesTitle": "逐梦大陆",
+      "stage": "outline",
+      "stageLabel": "outline",
+      "gaps": [
+        "productionDesign",
+        "skeleton",
+        "graybox",
+        "partiallyPlayable",
+        "playable",
+        "validated"
+      ]
+    },
+    {
+      "id": "5-science",
+      "publicTitle": "星宇织梦",
+      "worldTitle": "星宇织梦（科幻）",
+      "seriesTitle": "星门港区",
+      "stage": "productionDesign",
+      "stageLabel": "productionDesign",
+      "gaps": [
+        "skeleton",
+        "graybox",
+        "partiallyPlayable",
+        "playable",
+        "validated"
+      ]
+    }
+  ],
+  "runtimeEvidence": {
+    "existingScreenshots": [
+      {
+        "id": "prototype-campus-map",
+        "file": "docs/assets/readme/prototype-campus-map.png",
+        "label": "现代校园地图探索截图",
+        "type": "repository-real-screenshot",
+        "verifiedAt": "2026-07-31",
+        "notes": [
+          "仓库内已存在的真实运行截图。",
+          "画面展示地图探索、三栏信息结构和像素场景。"
+        ]
+      },
+      {
+        "id": "prototype-gallery-ui",
+        "file": "docs/assets/readme/prototype-gallery-ui.png",
+        "label": "旅途菜单与图鉴截图",
+        "type": "repository-real-screenshot",
+        "verifiedAt": "2026-07-31",
+        "notes": [
+          "仓库内已存在的真实运行截图。",
+          "画面展示菜单、图鉴和长期资料承载界面。"
+        ]
+      },
+      {
+        "id": "readme-shot-03",
+        "file": "docs/assets/readme/screenshots/README-SHOT-03-dialogue-and-map-event.png",
+        "label": "地图内对话与事件触发截图",
+        "type": "user-supplied-real-screenshot",
+        "verifiedAt": "2026-08-01",
+        "notes": [
+          "用户补回的真实运行截图。",
+          "画面同时包含地图场景、对话框、角色差分立绘与右侧当前状态显示。"
+        ]
+      },
+      {
+        "id": "readme-shot-04",
+        "file": "docs/assets/readme/screenshots/README-SHOT-04-save-load-panel.png",
+        "label": "真实存档与读档界面截图",
+        "type": "user-supplied-real-screenshot",
+        "verifiedAt": "2026-08-01",
+        "notes": [
+          "用户补回的真实运行截图。",
+          "画面展示存档槽位、地点、状态、时间和存档管理按钮。"
+        ]
+      },
+      {
+        "id": "readme-shot-05",
+        "file": "docs/assets/readme/screenshots/README-SHOT-05-relation-graph-panel.png",
+        "label": "关系图谱与大纲图谱面板截图",
+        "type": "user-supplied-real-screenshot",
+        "verifiedAt": "2026-08-01",
+        "notes": [
+          "用户补回的真实运行截图。",
+          "画面展示故事、情节、玩法、人物等节点与连线，以及图谱操作栏。"
+        ]
+      },
+      {
+        "id": "readme-shot-06",
+        "file": "docs/assets/readme/screenshots/README-SHOT-06-interactive-fiction-mode.png",
+        "label": "十三号病院互动小说模式截图",
+        "type": "user-supplied-real-screenshot",
+        "verifiedAt": "2026-08-01",
+        "notes": [
+          "用户补回的真实运行截图。",
+          "画面展示十三号病院正式副本入口、正文区域与副本侧栏。"
+        ]
+      },
+      {
+        "id": "readme-shot-07",
+        "file": "docs/assets/readme/screenshots/README-SHOT-07-restraint-state-combinations.png",
+        "label": "紧缚状态差分组合面板截图",
+        "type": "user-supplied-real-screenshot",
+        "verifiedAt": "2026-08-01",
+        "notes": [
+          "用户额外补回的真实运行截图。",
+          "画面展示可切换的紧缚状态组合、立绘差分与图层显示面板。"
+        ]
+      }
+    ],
+    "requestedScreenshots": []
+  },
+  "assetMetadata": [
+    {
+      "path": "docs/assets/readme/composites/project-scale-dashboard-v2.png",
+      "bytes": 1689496,
+      "sha256": "773f0af37a802e368dc45e185c12c50b56bde93f0664e2414a8e0b5ff3f3b032",
+      "dimensions": {
+        "width": 2100,
+        "height": 1260
+      }
+    },
+    {
+      "path": "docs/assets/readme/composites/readme-evidence-boundary-board-v2.png",
+      "bytes": 2262940,
+      "sha256": "acbb512d7c2cb4c26558168c820cb3d79c00906f9cb105e2cc791e470f257791",
+      "dimensions": {
+        "width": 2100,
+        "height": 1260
+      }
+    },
+    {
+      "path": "docs/assets/readme/composites/relationship-graph-real-evidence-board.png",
+      "bytes": 2929056,
+      "sha256": "fa7b5eccc9bd68ba3b1321572aad0edfedb48fa56865b42dc7a9ffd77ac90932",
+      "dimensions": {
+        "width": 2100,
+        "height": 1480
+      }
+    },
+    {
+      "path": "docs/assets/readme/composites/runtime-evidence-board-v1.png",
+      "bytes": 1171282,
+      "sha256": "6032f4a6e4bf7682f6d2f8bcfe38daacc2d1f48e06aed7864410321dbb922a19",
+      "dimensions": {
+        "width": 2240,
+        "height": 1480
+      }
+    },
+    {
+      "path": "docs/assets/readme/composites/story-production-pipeline-board-v2.png",
+      "bytes": 3849713,
+      "sha256": "b86396fec0cde2b782d5d6e238c513d3dde2946ecd015274186a6194e61fd084",
+      "dimensions": {
+        "width": 2240,
+        "height": 1260
+      }
+    },
+    {
+      "path": "docs/assets/readme/composites/story-to-playable-case-asylum-board.png",
+      "bytes": 2889598,
+      "sha256": "3f5891e9e99052976fff1dbfb8bfb09cce958ec47cc50fc23eb75da29a491453",
+      "dimensions": {
+        "width": 1540,
+        "height": 2240
+      }
+    },
+    {
+      "path": "docs/assets/readme/composites/world-chenhuan-triptych-board.png",
+      "bytes": 2498014,
+      "sha256": "d8bf378c115885664df95706dc24ef5706f52b936382bbd06919595db661bc1e",
+      "dimensions": {
+        "width": 2100,
+        "height": 1260
+      }
+    },
+    {
+      "path": "docs/assets/readme/composites/world-fuguang-triptych-board.png",
+      "bytes": 2512018,
+      "sha256": "235c91cb579ef3b6974c0519eef013f81e066bbd95f117e52209187f996afe4e",
+      "dimensions": {
+        "width": 2100,
+        "height": 1260
+      }
+    },
+    {
+      "path": "docs/assets/readme/composites/world-jitu-triptych-board.png",
+      "bytes": 2628171,
+      "sha256": "4ec6cfa2c5672a0c7c9eb70f290e3860f2ff149b20e5a21e420d1c33325308ae",
+      "dimensions": {
+        "width": 2100,
+        "height": 1260
+      }
+    },
+    {
+      "path": "docs/assets/readme/composites/world-munika-triptych-board.png",
+      "bytes": 2579634,
+      "sha256": "d2d03fede926b6c711cbe75dee3cc3098b960e6a26dabb20b4b803547e777d69",
+      "dimensions": {
+        "width": 2100,
+        "height": 1260
+      }
+    },
+    {
+      "path": "docs/assets/readme/composites/world-xingyu-triptych-board.png",
+      "bytes": 2460826,
+      "sha256": "96ea7f53f89e3baebf30bc33170e11fcd71a46aca1c155f9c4d1137d456bfa66",
+      "dimensions": {
+        "width": 2100,
+        "height": 1260
+      }
+    },
+    {
+      "path": "docs/assets/readme/composites/world-zhoufu-triptych-board.png",
+      "bytes": 2644941,
+      "sha256": "9c870dd727904d4e2bc66623b13bad8f1975bc37fd41500927de2ac98af11846",
+      "dimensions": {
+        "width": 2100,
+        "height": 1260
+      }
+    },
+    {
+      "path": "docs/assets/readme/generated/ai-participation-boundary-base.png",
+      "bytes": 2716498,
+      "sha256": "a25401dcb5edd91f130c9b653e81aa87bf6b634e81e6b64672838418b53531d8",
+      "dimensions": {
+        "width": 1672,
+        "height": 941
+      }
+    },
+    {
+      "path": "docs/assets/readme/generated/closing-invitation-banner.png",
+      "bytes": 2879651,
+      "sha256": "49c1369418d85cc7d6d9877a7c811881f59f3a53defb8ce7b9a0be00ad692cec",
+      "dimensions": {
+        "width": 1915,
+        "height": 821
+      }
+    },
+    {
+      "path": "docs/assets/readme/generated/collaboration-role-star-map-base.png",
+      "bytes": 2951588,
+      "sha256": "ea30f70ef1837e5764f2629bec9b859ae563d36c4b54536b08830eef3b87dafe",
+      "dimensions": {
+        "width": 1672,
+        "height": 941
+      }
+    },
+    {
+      "path": "docs/assets/readme/generated/five-layer-production-system-base.png",
+      "bytes": 2463010,
+      "sha256": "9954ed3f5369a31764d8bdea37c9abca55e4017c512151461cc9d8da303bea75",
+      "dimensions": {
+        "width": 1672,
+        "height": 941
+      }
+    },
+    {
+      "path": "docs/assets/readme/generated/hero-liluo-universe-v3.png",
+      "bytes": 3056516,
+      "sha256": "c0eb3144927d5972bad931e8f85b9edd18a18c04ba7aff55de559b18b104d28f",
+      "dimensions": {
+        "width": 1915,
+        "height": 821
+      }
+    },
+    {
+      "path": "docs/assets/readme/generated/liluo-chenhuan-variant.png",
+      "bytes": 2555053,
+      "sha256": "e27a0d0b4c0070f101ffe1764ad1f2eb0add7649a1cd982d7f750fe91750a05a",
+      "dimensions": {
+        "width": 1122,
+        "height": 1402
+      }
+    },
+    {
+      "path": "docs/assets/readme/generated/liluo-fuguang-variant.png",
+      "bytes": 2308278,
+      "sha256": "3b7fce1ccafe0ce936e15934cb3ee3fc2844cae6c4d758f094323ef0339942ba",
+      "dimensions": {
+        "width": 1122,
+        "height": 1402
+      }
+    },
+    {
+      "path": "docs/assets/readme/generated/liluo-identity-and-state-base.png",
+      "bytes": 2432529,
+      "sha256": "5f749f8c557a7992018f9911f3db7c6f59a8b9a1e0e591c944887fb91d1de179",
+      "dimensions": {
+        "width": 1672,
+        "height": 941
+      }
+    },
+    {
+      "path": "docs/assets/readme/generated/liluo-jitu-variant.png",
+      "bytes": 2446775,
+      "sha256": "4031b5a04fe1ffcd5cba7c3d5538863223dde0f051f1700ab560e63866ed61bb",
+      "dimensions": {
+        "width": 1122,
+        "height": 1402
+      }
+    },
+    {
+      "path": "docs/assets/readme/generated/liluo-master-character-portrait-v2.png",
+      "bytes": 2382967,
+      "sha256": "cffe461bdf684dfa21fa0efa585ea03e7d8f6afc0481840deedf91b7e3fec3dd",
+      "dimensions": {
+        "width": 948,
+        "height": 1659
+      }
+    },
+    {
+      "path": "docs/assets/readme/generated/liluo-munika-variant.png",
+      "bytes": 2268618,
+      "sha256": "9173b5fd9394ede1cdc2a838f9a34c1f04bca5ec0deedf38b32e1919f1ae3d06",
+      "dimensions": {
+        "width": 1122,
+        "height": 1402
+      }
+    },
+    {
+      "path": "docs/assets/readme/generated/liluo-xingyu-variant.png",
+      "bytes": 2229634,
+      "sha256": "b4374d28ff5bd8eeef6b355f959426bf9152f26af509fc33a3d290650a11c1dd",
+      "dimensions": {
+        "width": 1122,
+        "height": 1402
+      }
+    },
+    {
+      "path": "docs/assets/readme/generated/liluo-zhoufu-variant.png",
+      "bytes": 2345458,
+      "sha256": "cade4f17c174a3019defce77d68a5b3268fb3adff75b44decdcef3c85455a812",
+      "dimensions": {
+        "width": 1122,
+        "height": 1402
+      }
+    },
+    {
+      "path": "docs/assets/readme/generated/one-story-many-forms-v2-base.png",
+      "bytes": 2726083,
+      "sha256": "15da0b35d36989d2df0cd7fb510efda33dd27d96c1dd0277feee09a8f09dd13d",
+      "dimensions": {
+        "width": 1672,
+        "height": 941
+      }
+    },
+    {
+      "path": "docs/assets/readme/generated/production-maturity-ladder-base.png",
+      "bytes": 2122281,
+      "sha256": "6b33d88632b70b9a73721f305c58fbbae3aaca5a8e5c1d749519358940f85ac8",
+      "dimensions": {
+        "width": 1672,
+        "height": 941
+      }
+    },
+    {
+      "path": "docs/assets/readme/generated/project-roadmap-base.png",
+      "bytes": 2365516,
+      "sha256": "6b3b213bba641eb1e5b73b4f63df86cb71574778b805209f996395b36077cf93",
+      "dimensions": {
+        "width": 1672,
+        "height": 941
+      }
+    },
+    {
+      "path": "docs/assets/readme/generated/project-scale-dashboard-base.png",
+      "bytes": 1947299,
+      "sha256": "cb684a4864024a8affdd20be5b0db19617678de3c235ebc5b94108f7be6ef6e5",
+      "dimensions": {
+        "width": 1672,
+        "height": 941
+      }
+    },
+    {
+      "path": "docs/assets/readme/generated/project-scale-dashboard.svg",
+      "bytes": 4888,
+      "sha256": "d0a411afc391a2d9bc4979542d17f94f277ea8b3df89151ad4295b0acd8e8064",
+      "dimensions": {
+        "width": 1600,
+        "height": 980
+      }
+    },
+    {
+      "path": "docs/assets/readme/generated/prototype-evidence-frame-bg.png",
+      "bytes": 1990945,
+      "sha256": "6fd52bc6c2498b25ed69fadba7988e3aa2332f6022bb7d5e3660a068bf093423",
+      "dimensions": {
+        "width": 1672,
+        "height": 941
+      }
+    },
+    {
+      "path": "docs/assets/readme/generated/readme-evidence-boundary-base-v2.png",
+      "bytes": 2018199,
+      "sha256": "f328121d2699777c17bb99ca3c9015de85e35f327123b978714c8750f04017db",
+      "dimensions": {
+        "width": 1701,
+        "height": 925
+      }
+    },
+    {
+      "path": "docs/assets/readme/generated/readme-evidence-boundary.svg",
+      "bytes": 2120,
+      "sha256": "4c90d4eab5c217ff4cdfc9bf33a8437fc6e827f659718fea458601f90b160d46",
+      "dimensions": {
+        "width": 1600,
+        "height": 420
+      }
+    },
+    {
+      "path": "docs/assets/readme/generated/relationship-graph-display-base.png",
+      "bytes": 2277040,
+      "sha256": "5f2b1581546e1db9adfb0df117853b8c3556991348526d0dad5c4540ea96908c",
+      "dimensions": {
+        "width": 1672,
+        "height": 941
+      }
+    },
+    {
+      "path": "docs/assets/readme/generated/relationship-graph-evidence-frame-bg.png",
+      "bytes": 2275250,
+      "sha256": "52c73a8e3ce09aafe017d41d889d1b7561504d3d174a728babe5a4005afe147b",
+      "dimensions": {
+        "width": 1536,
+        "height": 1024
+      }
+    },
+    {
+      "path": "docs/assets/readme/generated/six-domains-panorama-v2.png",
+      "bytes": 3038675,
+      "sha256": "0f3b90eb26615556d742127f37760cec0a65a082554c118746a0bcefc68bf689",
+      "dimensions": {
+        "width": 1915,
+        "height": 821
+      }
+    },
+    {
+      "path": "docs/assets/readme/generated/story-production-pipeline-base-v2.png",
+      "bytes": 2657354,
+      "sha256": "286fcb5a64cacfce20187ab02bc14b93aa6782f3a7c75ccdd1d3be9473c40bc8",
+      "dimensions": {
+        "width": 1823,
+        "height": 863
+      }
+    },
+    {
+      "path": "docs/assets/readme/generated/story-production-pipeline.svg",
+      "bytes": 3675,
+      "sha256": "7d0fb2ea829c0110fbbd0e0fe6d199a804e2d1a61e541eda4a5562b31874b141",
+      "dimensions": {
+        "width": 1600,
+        "height": 540
+      }
+    },
+    {
+      "path": "docs/assets/readme/generated/story-to-playable-case-base.png",
+      "bytes": 2712464,
+      "sha256": "0cc89f9bccb9a9d00a36797513a40b708611133aff52fadefa1a02c6f84ecfde",
+      "dimensions": {
+        "width": 941,
+        "height": 1672
+      }
+    },
+    {
+      "path": "docs/assets/readme/generated/universe-state-event-network-base.png",
+      "bytes": 2769216,
+      "sha256": "703237de1b9a5ea541b5b5411bd581d5a30e5ff11fd9efa590872cb8f88bf5b4",
+      "dimensions": {
+        "width": 1672,
+        "height": 941
+      }
+    },
+    {
+      "path": "docs/assets/readme/generated/world-chenhuan-event-v2.png",
+      "bytes": 2440438,
+      "sha256": "9f51d3c56df75246df5067b308231b0d45447891973d31d9cb45d32211434f50",
+      "dimensions": {
+        "width": 1672,
+        "height": 941
+      }
+    },
+    {
+      "path": "docs/assets/readme/generated/world-chenhuan-poster-v2.png",
+      "bytes": 2779450,
+      "sha256": "d1ca571c62746be8e04f406c013d521ec76b1fc460445f2dc260489d9fa92b10",
+      "dimensions": {
+        "width": 1672,
+        "height": 941
+      }
+    },
+    {
+      "path": "docs/assets/readme/generated/world-chenhuan-scene-v2.png",
+      "bytes": 2788708,
+      "sha256": "3b4ca4ca75e5811b79f0311bbfdd7589cf4282bd98acee6079d128a0b822e17f",
+      "dimensions": {
+        "width": 1672,
+        "height": 941
+      }
+    },
+    {
+      "path": "docs/assets/readme/generated/world-fuguang-event-v2.png",
+      "bytes": 2371532,
+      "sha256": "a524966e23b5676f8170431baf1807bb055db25e9cac9049af9bf78deaec5ab9",
+      "dimensions": {
+        "width": 1672,
+        "height": 941
+      }
+    },
+    {
+      "path": "docs/assets/readme/generated/world-fuguang-poster-v2.png",
+      "bytes": 2927471,
+      "sha256": "ee83c0638b2edcce8bf8cde4da28f770e9c1e000005dbe14511d44591c730c28",
+      "dimensions": {
+        "width": 1672,
+        "height": 941
+      }
+    },
+    {
+      "path": "docs/assets/readme/generated/world-fuguang-scene-v2.png",
+      "bytes": 2448584,
+      "sha256": "0fb6be460d0ea3d112eb574cf3b998ed64a9e1df64d6abf5acdd08fd3e67e874",
+      "dimensions": {
+        "width": 1672,
+        "height": 941
+      }
+    },
+    {
+      "path": "docs/assets/readme/generated/world-jitu-event-v2.png",
+      "bytes": 2717711,
+      "sha256": "d24db061d77b33a1231259e7bbf145bae9d7ea53c89a5b916f65cb627a85622e",
+      "dimensions": {
+        "width": 1672,
+        "height": 941
+      }
+    },
+    {
+      "path": "docs/assets/readme/generated/world-jitu-poster-v2.png",
+      "bytes": 2861639,
+      "sha256": "f5947b33325e85548a3227e8e3cdb5c966fb588cf0da44bda417d77fde6ff900",
+      "dimensions": {
+        "width": 1672,
+        "height": 941
+      }
+    },
+    {
+      "path": "docs/assets/readme/generated/world-jitu-scene-v2.png",
+      "bytes": 2753844,
+      "sha256": "228f33b5285ba6184b2421dce31ccc971cd960db24467147ffa73535f3e61c61",
+      "dimensions": {
+        "width": 1672,
+        "height": 941
+      }
+    },
+    {
+      "path": "docs/assets/readme/generated/world-munika-event-v2.png",
+      "bytes": 2719302,
+      "sha256": "b325dfcacab03e9069b5095e3f4315c2f312b8f8490774910b88926918876a53",
+      "dimensions": {
+        "width": 1672,
+        "height": 941
+      }
+    },
+    {
+      "path": "docs/assets/readme/generated/world-munika-poster-v2.png",
+      "bytes": 3049740,
+      "sha256": "2b4183b74286aeb54b6dafc9633aa8417092839c68e0afc81027e7a88daf0ccb",
+      "dimensions": {
+        "width": 1024,
+        "height": 1536
+      }
+    },
+    {
+      "path": "docs/assets/readme/generated/world-munika-scene-v2.png",
+      "bytes": 2780869,
+      "sha256": "460f3a57c9851bec60817a3e7fc1b621d3e6979ab57b74c3bc85d102a00b59bb",
+      "dimensions": {
+        "width": 1672,
+        "height": 941
+      }
+    },
+    {
+      "path": "docs/assets/readme/generated/world-xingyu-event-v2.png",
+      "bytes": 2450595,
+      "sha256": "e78f3aad323187ee0bf2e17cf094e89669a266d8ba8158f85622e8e28115e600",
+      "dimensions": {
+        "width": 1672,
+        "height": 941
+      }
+    },
+    {
+      "path": "docs/assets/readme/generated/world-xingyu-poster-v2.png",
+      "bytes": 2879660,
+      "sha256": "20c53c057814db0fc3ad38144d77bf9f946ec25a67020037e80ed0155daf134f",
+      "dimensions": {
+        "width": 1672,
+        "height": 941
+      }
+    },
+    {
+      "path": "docs/assets/readme/generated/world-xingyu-scene-v2.png",
+      "bytes": 2682802,
+      "sha256": "7179e0d8dbdf09412aabe88ebfb99a6e0a155bfa6c45f65c756731c9ee94564b",
+      "dimensions": {
+        "width": 1672,
+        "height": 941
+      }
+    },
+    {
+      "path": "docs/assets/readme/generated/world-zhoufu-event-v2.png",
+      "bytes": 2685686,
+      "sha256": "a443dae9c24b23f17905561f6be54d663023c485f99e7b593d12f2b9c3069e77",
+      "dimensions": {
+        "width": 1672,
+        "height": 941
+      }
+    },
+    {
+      "path": "docs/assets/readme/generated/world-zhoufu-poster-v2.png",
+      "bytes": 3018408,
+      "sha256": "ecf755c4fea665dfef7838f0e304267978d6394c43499b1231bdb715c465fd38",
+      "dimensions": {
+        "width": 1672,
+        "height": 941
+      }
+    },
+    {
+      "path": "docs/assets/readme/generated/world-zhoufu-scene-v2.png",
+      "bytes": 2997090,
+      "sha256": "dad856cbafb16793b7914cb93904a31b645bf0cda2b907a905a24ea8bd2d6918",
+      "dimensions": {
+        "width": 1672,
+        "height": 941
+      }
+    },
+    {
+      "path": "docs/assets/readme/hero-liluo-universe-v2.png",
+      "bytes": 2906029,
+      "sha256": "aabc55c7c26cabac32ef7239b608dd19198f620c592b659a658303f5f3557315",
+      "dimensions": {
+        "width": 1672,
+        "height": 941
+      }
+    },
+    {
+      "path": "docs/assets/readme/hero-liluo-universe.png",
+      "bytes": 2659104,
+      "sha256": "b1576f0d6bd6927e92b043fd9fe0a9237922ec794e0055fd15bf0d575e74c1b8",
+      "dimensions": {
+        "width": 1881,
+        "height": 836
+      }
+    },
+    {
+      "path": "docs/assets/readme/liluo-character-portrait.png",
+      "bytes": 2263876,
+      "sha256": "b00d1dd084deea07b39200df273c940d1c6d24b64bf90092126142c150fbe9b6",
+      "dimensions": {
+        "width": 887,
+        "height": 1774
+      }
+    },
+    {
+      "path": "docs/assets/readme/liluo-multiverse-fusion.png",
+      "bytes": 3036470,
+      "sha256": "62b479d7185b17e4d12213cc094230e9540a788c0a5c04f0f78ce37ed8c92adc",
+      "dimensions": {
+        "width": 2115,
+        "height": 744
+      }
+    },
+    {
+      "path": "docs/assets/readme/one-story-many-forms.png",
+      "bytes": 2772805,
+      "sha256": "5a5e55af720a0f8add78f1ff31ca757cb5469213faead914134d56d003acf207",
+      "dimensions": {
+        "width": 1536,
+        "height": 1024
+      }
+    },
+    {
+      "path": "docs/assets/readme/prototype-campus-map.png",
+      "bytes": 499194,
+      "sha256": "4d0ecdf24733bb1e632cdc3e51f9a24de3909938fcab74edb30917c6a77d9f40",
+      "dimensions": {
+        "width": 1908,
+        "height": 842
+      }
+    },
+    {
+      "path": "docs/assets/readme/prototype-gallery-ui.png",
+      "bytes": 688497,
+      "sha256": "bcae2ba0e284585b7cbe453c7adc7f1893664c0d6a6d48122a7fe1fa0bf261ec",
+      "dimensions": {
+        "width": 1908,
+        "height": 842
+      }
+    },
+    {
+      "path": "docs/assets/readme/screenshots/README-SHOT-03-dialogue-and-map-event.png",
+      "bytes": 991162,
+      "sha256": "d446da6b40fa1adf2513b13499058aea12f2c8777d8323bdfbad15f89e410c2c",
+      "dimensions": {
+        "width": 1908,
+        "height": 842
+      }
+    },
+    {
+      "path": "docs/assets/readme/screenshots/README-SHOT-04-save-load-panel.png",
+      "bytes": 478887,
+      "sha256": "a32640b4e473b974a3ab940b8a7f71dc419cda24806b0f6e6a31b38e1b0a1638",
+      "dimensions": {
+        "width": 1908,
+        "height": 842
+      }
+    },
+    {
+      "path": "docs/assets/readme/screenshots/README-SHOT-05-relation-graph-panel.png",
+      "bytes": 647726,
+      "sha256": "f86d74f98a6c14bf395dbdc29ba9d30f0e9f8e613523e1e7583ca6db9f0b90da",
+      "dimensions": {
+        "width": 1908,
+        "height": 842
+      }
+    },
+    {
+      "path": "docs/assets/readme/screenshots/README-SHOT-06-interactive-fiction-mode.png",
+      "bytes": 675806,
+      "sha256": "b2a163d3a77e3e7bb019f737041dd136a4748296919f230a52c0f6df8106a5d4",
+      "dimensions": {
+        "width": 1908,
+        "height": 842
+      }
+    },
+    {
+      "path": "docs/assets/readme/screenshots/README-SHOT-07-restraint-state-combinations.png",
+      "bytes": 704390,
+      "sha256": "e37f2f10874bce975c53f990884925c5dd945a023c1c6477546ece7719efe07a",
+      "dimensions": {
+        "width": 1908,
+        "height": 842
+      }
+    },
+    {
+      "path": "docs/assets/readme/storyworld-growth.png",
+      "bytes": 2841406,
+      "sha256": "6e1207e21ca8b6208e15ae484e6330eca114669634f3ee1a05c282ad9f7b1c2a",
+      "dimensions": {
+        "width": 1536,
+        "height": 1024
+      }
+    },
+    {
+      "path": "docs/assets/readme/world-chenhuan-wendao.png",
+      "bytes": 2298292,
+      "sha256": "e8eddceb473bae35a6e51146e9741867126adb8eed5532c0b6a5d4132190a260",
+      "dimensions": {
+        "width": 1536,
+        "height": 864
+      }
+    },
+    {
+      "path": "docs/assets/readme/world-fuguang-lueying.png",
+      "bytes": 2650690,
+      "sha256": "6a8bf20c56b10152ee9a193ed9902f01f82df0b9c70c0c64339935022cf758bd",
+      "dimensions": {
+        "width": 1536,
+        "height": 864
+      }
+    },
+    {
+      "path": "docs/assets/readme/world-jitu-wange.png",
+      "bytes": 2522862,
+      "sha256": "da67d0bec00eeaa32503bed70dde6ec6f4262601bb79e36c4252f6a5ae27c99a",
+      "dimensions": {
+        "width": 1536,
+        "height": 864
+      }
+    },
+    {
+      "path": "docs/assets/readme/world-mingsuo-yuling.png",
+      "bytes": 2547293,
+      "sha256": "28691bb61d5945194787186f14b127c8f71f179e726468c6dc69cc80b976c484",
+      "dimensions": {
+        "width": 1536,
+        "height": 864
+      }
+    },
+    {
+      "path": "docs/assets/readme/world-xingyu-zhimeng.png",
+      "bytes": 2326877,
+      "sha256": "619619652f3fa5dc85c3c0336fe6b6584cb1f16e4fe2285110436d01c8ec728e",
+      "dimensions": {
+        "width": 1536,
+        "height": 864
+      }
+    },
+    {
+      "path": "docs/assets/readme/world-zhoufu-huixiang.png",
+      "bytes": 2682956,
+      "sha256": "82db5ea483dae3e39cee90b63ae42f80b2b54a4ba621599bb99f45ba41565260",
+      "dimensions": {
+        "width": 1536,
+        "height": 864
+      }
+    }
+  ]
+}

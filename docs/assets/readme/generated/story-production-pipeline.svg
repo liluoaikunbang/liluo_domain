@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1600" height="540" viewBox="0 0 1600 540" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="540" rx="36" fill="#F6F0EB" />
+  <text x="72" y="92" font-size="42" font-weight="800" fill="#2F2434">同一故事如何进入多种正式形态</text>
+  <text x="72" y="130" font-size="22" fill="#5A4D5F">这张图是程序生成的说明图，不冒充游戏截图，也不依赖图片模型绘制中文。</text>
+  
+  <g transform="translate(72 208)">
+    <rect width="280" height="212" rx="26" fill="#A4435C" />
+    <text x="26" y="54" font-size="28" font-weight="800" fill="#FFFFFF">世界与情节来源</text>
+    <foreignObject x="24" y="82" width="232" height="110">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="font-size:19px;line-height:1.55;color:rgba(255,255,255,0.9);font-family:'Microsoft YaHei UI','PingFang SC',sans-serif;">
+        世界来源 JSON、故事大纲、情节库、角色与关系约束
+      </div>
+    </foreignObject>
+    <text x="26" y="194" font-size="16" fill="rgba(255,255,255,0.74)">阶段 1</text>
+  </g>
+  <g transform="translate(420 208)">
+    <rect width="280" height="212" rx="26" fill="#3C6B9D" />
+    <text x="26" y="54" font-size="28" font-weight="800" fill="#FFFFFF">正式生产设计</text>
+    <foreignObject x="24" y="82" width="232" height="110">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="font-size:19px;line-height:1.55;color:rgba(255,255,255,0.9);font-family:'Microsoft YaHei UI','PingFang SC',sans-serif;">
+        把同一故事拆成可执行章节、事件、地图、互动小说和资料页
+      </div>
+    </foreignObject>
+    <text x="26" y="194" font-size="16" fill="rgba(255,255,255,0.74)">阶段 2</text>
+  </g>
+  <g transform="translate(768 208)">
+    <rect width="280" height="212" rx="26" fill="#4A7C63" />
+    <text x="26" y="54" font-size="28" font-weight="800" fill="#FFFFFF">可玩运行层</text>
+    <foreignObject x="24" y="82" width="232" height="110">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="font-size:19px;line-height:1.55;color:rgba(255,255,255,0.9);font-family:'Microsoft YaHei UI','PingFang SC',sans-serif;">
+        Phaser 地图探索、菜单、图谱、对话、存档、副本入口
+      </div>
+    </foreignObject>
+    <text x="26" y="194" font-size="16" fill="rgba(255,255,255,0.74)">阶段 3</text>
+  </g>
+  <g transform="translate(1116 208)">
+    <rect width="280" height="212" rx="26" fill="#8A5C33" />
+    <text x="26" y="54" font-size="28" font-weight="800" fill="#FFFFFF">验证与回流</text>
+    <foreignObject x="24" y="82" width="232" height="110">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="font-size:19px;line-height:1.55;color:rgba(255,255,255,0.9);font-family:'Microsoft YaHei UI','PingFang SC',sans-serif;">
+        浏览器回归、路线验证、产能统计、证据页与 README 公示
+      </div>
+    </foreignObject>
+    <text x="26" y="194" font-size="16" fill="rgba(255,255,255,0.74)">阶段 4</text>
+  </g>
+  <path d="M362 314H402" stroke="#7A687B" stroke-width="8" stroke-linecap="round" />
+  <path d="M710 314H750" stroke="#7A687B" stroke-width="8" stroke-linecap="round" />
+  <path d="M1058 314H1098" stroke="#7A687B" stroke-width="8" stroke-linecap="round" />
+  <path d="M390 298L410 314L390 330" stroke="#7A687B" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M738 298L758 314L738 330" stroke="#7A687B" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M1086 298L1106 314L1086 330" stroke="#7A687B" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
