@@ -1,30 +1,12 @@
 {
   "affectedDomains": [
-    "code",
     "docs"
   ],
   "changes": {
-    "added": [
-      "docs/assets/readme/prompts/2026-07-31-character-system-batch-a.md",
-      "docs/assets/readme/prompts/2026-07-31-hero-liluo-universe-v2.md",
-      "docs/assets/readme/prompts/2026-07-31-liluo-variants-batch-a.md",
-      "docs/assets/readme/prompts/2026-07-31-overview-system-batch-b.md",
-      "docs/assets/readme/prompts/2026-07-31-world-triptychs-batch-a.md",
-      "docs/assets/readme/prompts/2026-07-31-world-triptychs-batch-b.md",
-      "docs/assets/readme/prompts/2026-08-01-readme-png-board-bases.md",
-      "docs/assets/readme/prompts/legacy-round-1-assets.md",
-      "docs/assets/readme/screenshots/screenshot-inventory.md",
-      "docs/readme/世界图册.md",
-      "docs/readme/可玩证据.md",
-      "docs/readme/生产体系.md"
-    ],
+    "added": [],
     "deleted": [],
     "modified": [
-      "docs/assets/readme/README.md",
-      "docs/功能更新/176-AI原生叙事游戏生产体系升级.md",
-      "docs/功能更新目录.md",
-      "docs/协作参与与团队扩展路线.md",
-      "src/game/data/global/updateRecords.js"
+      "docs/assets/readme/README.md"
     ],
     "renamed": []
   },
@@ -58,15 +40,15 @@
       "status": "partial"
     }
   },
-  "generatedAt": "2026-08-01T03:19:15.175Z",
+  "generatedAt": "2026-08-01T07:16:40.638Z",
   "generatorVersion": "1.0.3",
   "mode": "changed",
   "schemaVersion": 1,
-  "sourceCommit": "8e90f713e0cf84df8956103336c712676b9d387b",
+  "sourceCommit": "f8e5eced8fcf7dbcaae9d8edc97133638ea9fad1",
   "sourceSnapshot": {
     "docs/CG待制作清单.md": "81996a1dd752cbf2e9c5a9fc68bb4a480e556d2d76ec35afa9b4b6894f067f8b",
     "docs/README.md": "59154f6e59605898f890a55619af68685d8158dce89accd91e264a60d164057d",
-    "docs/assets/readme/README.md": "5f2711aacd333996837b469fe9799f6c1885267f0f1c5b826f6ac7cf7733e8dc",
+    "docs/assets/readme/README.md": "162683f7d349e7bacd3202e379a975bd14a3cda1205c68b15439edc6710ac329",
     "docs/assets/readme/prompts/2026-07-31-character-system-batch-a.md": "38a4af8d60b02a19de83a6d7c9f9bab40200e42d29533c5126bc9d82492cc057",
     "docs/assets/readme/prompts/2026-07-31-hero-liluo-universe-v2.md": "9058e1ebf070d891a6e2d8d2bad4d85fd7ad76448857d6e73f2d27615dab8c8f",
     "docs/assets/readme/prompts/2026-07-31-liluo-variants-batch-a.md": "00c2318d0ee6cd1fa60532ce56f4218b34c67fe33ad1eaada45f3f58f539db7a",

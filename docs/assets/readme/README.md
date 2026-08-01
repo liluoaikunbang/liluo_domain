@@ -10,7 +10,7 @@
 
 ## 当前使用中的核心文件
 
-- `generated/hero-liluo-universe-v3.png`：本轮 README 首屏主视觉。
+- `generated/hero-liluo-universe-v3.jpg`：本轮 README 首屏主视觉。
 - `generated/six-domains-panorama-v2.png`：璃落穿行六域的横向总览海报。
 - `generated/world-*-v2.png`：六大叙事域三联图的 18 张原始概念图。
 - `composites/world-*-triptych-board.png`：六大叙事域最终单图整板，供根 README 与公开图册直接使用。

@@ -2,7 +2,7 @@
 
 `璃落宇宙` 是一个 AI 原生叙事游戏生产体系。它不是把设定文档堆进仓库，也不是把概念图伪装成“已经做完的游戏”，而是在同一个宇宙里，持续把世界、角色、关系、状态和氛围生产成真正可进入的体验形态。当前旗舰入口仍然是像素风冒险 RPG。
 
-![璃落宇宙主视觉海报](docs/assets/readme/generated/hero-liluo-universe-v3.png)
+![璃落宇宙主视觉海报](docs/assets/readme/generated/hero-liluo-universe-v3.jpg)
 
 **公开入口**  
 [项目愿景](docs/项目愿景.md) · [项目概览](docs/项目概览.md) · [世界图册](docs/readme/世界图册.md) · [生产体系](docs/readme/生产体系.md) · [可玩证据](docs/readme/可玩证据.md) · [协作参与与团队扩展路线](docs/协作参与与团队扩展路线.md)
