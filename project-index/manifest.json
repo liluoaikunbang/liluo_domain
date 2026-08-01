@@ -2,11 +2,10 @@
   "domains": {
     "assets": {
       "enabled": true,
-      "entryCount": 694,
+      "entryCount": 489,
       "outputs": [
         "assets/runtime/assets-001.json",
-        "assets/runtime/assets-002.json",
-        "assets/runtime/assets-003.json"
+        "assets/runtime/assets-002.json"
       ],
       "status": "current"
     },
@@ -20,7 +19,7 @@
     },
     "docs": {
       "enabled": true,
-      "entryCount": 571,
+      "entryCount": 578,
       "outputs": [
         "docs/documents-001.json",
         "docs/documents-002.json",

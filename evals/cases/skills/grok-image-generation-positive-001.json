@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "id": "grok-image-generation-positive-001",
+  "title": "liluo-grok-image-generation 正向路由",
+  "targetType": "skill",
+  "target": "liluo-grok-image-generation",
+  "status": "active",
+  "polarity": "positive",
+  "mode": "routing-plan",
+  "costTier": "standard",
+  "userPrompt": "帮我把这个璃落海报想法润色成 Grok 图片提示词，先 dry-run 看请求，不消耗额度。",
+  "contextFiles": [],
+  "expected": {
+    "requiredSkills": [
+      "liluo-grok-image-generation"
+    ],
+    "allowedSkills": [
+      "liluo-natural-expression"
+    ],
+    "forbiddenSkills": [
+      "liluo-asset-manager"
+    ],
+    "requiredAgents": [],
+    "forbiddenAgents": [],
+    "requiredReadPaths": [
+      ".agents/skills/liluo-project/liluo-grok-image-generation/SKILL.md"
+    ],
+    "allowedReadPaths": [
+      ".env.grok-image.example",
+      "docs/技能说明/liluo-grok-image-generation.md",
+      "docs/系统说明/Grok图像生成API配置与提示词润色工作流.md",
+      ".agents/skills/liluo-project/liluo-grok-image-generation/references/api-and-prompt-contract.md"
+    ],
+    "requiredWritePaths": [],
+    "allowedWritePaths": [],
+    "forbiddenActions": [
+      "要求用户在聊天中粘贴 API_KEY",
+      "未获 live 确认就调用付费生成",
+      "把草图自动写入正史或资产注册表",
+      "自动提交",
+      "自动推送"
+    ],
+    "requiredValidationProfiles": [],
+    "forbiddenValidationProfiles": [
+      "all"
+    ],
+    "approvalExpectation": "not-required"
+  }
+}

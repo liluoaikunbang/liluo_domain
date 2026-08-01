@@ -1,0 +1,3 @@
+interface:
+  display_name: "Grok 图像生成"
+  short_description: "润色提示词、检查配置并用本地脚本调用 Grok 生成草稿图片"

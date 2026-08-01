@@ -1,0 +1,3 @@
+interface:
+  display_name: "视觉资产图床管理"
+  short_description: "把 README、官网和游戏展示图按 manifest 转 WebP、走 dry-run/live，并上传到 Cloudflare R2"

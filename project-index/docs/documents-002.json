@@ -1,5 +1,38 @@
 [
   {
+    "id": "docs/设计记忆/架构决策/ADR-012-上下文分层与创作组有效参与机制.md",
+    "indexVersion": 1,
+    "sourceHash": "cab2ae3d3f5fd48dd0bdb92458d3e25f554a7f77c4d049e8a82985f8f823a952",
+    "sourcePath": "docs/设计记忆/架构决策/ADR-012-上下文分层与创作组有效参与机制.md",
+    "subtype": "other",
+    "summary": "ADR-012：上下文分层与创作组有效参与机制",
+    "summarySource": "title-only",
+    "title": "ADR-012：上下文分层与创作组有效参与机制",
+    "type": "document"
+  },
+  {
+    "id": "docs/设计记忆/架构决策/ADR-013-开放权重双模型与人工校准写作管线.md",
+    "indexVersion": 1,
+    "sourceHash": "12be84a17a01689c4d4d8e6aa14594b8a7a307bf583959b70fc3dc76ecd482e4",
+    "sourcePath": "docs/设计记忆/架构决策/ADR-013-开放权重双模型与人工校准写作管线.md",
+    "subtype": "other",
+    "summary": "ADR-013：开放权重双模型与人工校准写作管线",
+    "summarySource": "title-only",
+    "title": "ADR-013：开放权重双模型与人工校准写作管线",
+    "type": "document"
+  },
+  {
+    "id": "docs/设计记忆/架构决策/ADR-014-Style-RAG元数据检索与Canon风格隔离.md",
+    "indexVersion": 1,
+    "sourceHash": "2f47735f8b3c0a500842ee424af3bebe7e94a53b218556b47d082577baac619b",
+    "sourcePath": "docs/设计记忆/架构决策/ADR-014-Style-RAG元数据检索与Canon风格隔离.md",
+    "subtype": "other",
+    "summary": "ADR-014：Style-RAG 元数据检索与 Canon 风格隔离",
+    "summarySource": "title-only",
+    "title": "ADR-014：Style-RAG 元数据检索与 Canon 风格隔离",
+    "type": "document"
+  },
+  {
     "id": "docs/设计记忆/架构决策/ADR-015-旧页面参考迁移与按需索引入口.md",
     "indexVersion": 1,
     "sourceHash": "26536bda320f90796949daf7fff2bda2c21ebcce30e5fef77a45517082aced67",
@@ -385,6 +418,17 @@
     "type": "document"
   },
   {
+    "id": "docs/系统说明/公开展示资产与离线私有素材双轨分发系统.md",
+    "indexVersion": 1,
+    "sourceHash": "e598274a60d76e97ee1ef537fa15a7e7f1a1a6a9a328b8d4b365dc47d4b912a3",
+    "sourcePath": "docs/系统说明/公开展示资产与离线私有素材双轨分发系统.md",
+    "subtype": "system",
+    "summary": "公开展示资产与离线私有素材双轨分发系统",
+    "summarySource": "title-only",
+    "title": "公开展示资产与离线私有素材双轨分发系统",
+    "type": "document"
+  },
+  {
     "id": "docs/系统说明/故事大纲到可玩内容转化系统.md",
     "indexVersion": 1,
     "sourceHash": "3eecb4891806da280738cc94a9f5ab35815c3553ae67402a0e0daa74b2cd352c",
@@ -574,7 +618,7 @@
   {
     "id": "docs/系统说明/离线发行与GitHub-Release流程.md",
     "indexVersion": 1,
-    "sourceHash": "c04ec31d7b2d6b660fb20944a3f0933331db6d18c08272a4dacd35c04ca65646",
+    "sourceHash": "974125b2bed915358d0e39db4dc1cd15396b1d1cdcece4c1f526d32feeecb054",
     "sourcePath": "docs/系统说明/离线发行与GitHub-Release流程.md",
     "subtype": "system",
     "summary": "离线发行与 GitHub Release 流程",
@@ -668,6 +712,17 @@
     "summary": "事件与对话系统",
     "summarySource": "title-only",
     "title": "事件与对话系统",
+    "type": "document"
+  },
+  {
+    "id": "docs/系统说明/视觉资产图床与R2管理系统.md",
+    "indexVersion": 1,
+    "sourceHash": "a16e1c1e09c743c02daf20ce364115c81d1ba33260990c13308d194b0ae607b1",
+    "sourcePath": "docs/系统说明/视觉资产图床与R2管理系统.md",
+    "subtype": "system",
+    "summary": "视觉资产图床与R2管理系统",
+    "summarySource": "title-only",
+    "title": "视觉资产图床与R2管理系统",
     "type": "document"
   },
   {
@@ -858,6 +913,17 @@
     "type": "document"
   },
   {
+    "id": "docs/系统说明/运行时素材瘦身与外置治理系统.md",
+    "indexVersion": 1,
+    "sourceHash": "7050559feff2c5a5aaf82504188a4a7426304edbd9d000ced5fda90a35d8f65c",
+    "sourcePath": "docs/系统说明/运行时素材瘦身与外置治理系统.md",
+    "subtype": "system",
+    "summary": "运行时素材瘦身与外置治理系统",
+    "summarySource": "title-only",
+    "title": "运行时素材瘦身与外置治理系统",
+    "type": "document"
+  },
+  {
     "id": "docs/系统说明/正式项目内容来源与版权写入门槛.md",
     "indexVersion": 1,
     "sourceHash": "32a4ed46c9401a576fdd1caf153bded12d6287d91276eb6e876eb4e22904d9d4",
@@ -937,12 +1003,23 @@
   {
     "id": "docs/系统说明/Codex命令授权治理系统.md",
     "indexVersion": 1,
-    "sourceHash": "60f75478cbea04e51b8da1b3da0e84764cb574e8c2b61bb62d3d26a698007e0b",
+    "sourceHash": "34d7cd353b0a5de3213aa9049c46759f709f2f1bb20e63f64addd19f07a0837f",
     "sourcePath": "docs/系统说明/Codex命令授权治理系统.md",
     "subtype": "system",
     "summary": "Codex 命令授权治理系统",
     "summarySource": "title-only",
     "title": "Codex 命令授权治理系统",
+    "type": "document"
+  },
+  {
+    "id": "docs/系统说明/Grok图像生成API配置与提示词润色工作流.md",
+    "indexVersion": 1,
+    "sourceHash": "9e71ffe9fed76a412eee143028c1a85b5cfa9538ed9416c7fa9b1939cd337631",
+    "sourcePath": "docs/系统说明/Grok图像生成API配置与提示词润色工作流.md",
+    "subtype": "system",
+    "summary": "Grok 图像生成 API 配置与提示词润色工作流",
+    "summarySource": "title-only",
+    "title": "Grok 图像生成 API 配置与提示词润色工作流",
     "type": "document"
   },
   {
@@ -970,7 +1047,7 @@
   {
     "id": "docs/系统说明/README.md",
     "indexVersion": 1,
-    "sourceHash": "ffeea66c426f861433eb2526c2d1001a8f24b3866e7a31ab28d22eed442f6acc",
+    "sourceHash": "523770f38e5227a73eb685608f8d656b02b27a02c33a253604151c4ef6bb2211",
     "sourcePath": "docs/系统说明/README.md",
     "subtype": "system",
     "summary": "系统说明",
@@ -1003,7 +1080,7 @@
   {
     "id": "docs/系统说明/Windows命令与UTF-8编码规范.md",
     "indexVersion": 1,
-    "sourceHash": "2e262815daddceb5fa2f31229dea9475b674f4d5027bd1581ecc51f899f50bdc",
+    "sourceHash": "4286dca212269c09b2c3af745a9366e7cf2494db57c886392c77ab5245e726c0",
     "sourcePath": "docs/系统说明/Windows命令与UTF-8编码规范.md",
     "subtype": "system",
     "summary": "Windows 命令与 UTF-8 编码规范",
@@ -2466,7 +2543,7 @@
   {
     "id": "docs/用户命令目录.md",
     "indexVersion": 1,
-    "sourceHash": "01371cd753fd2a3f9947bf2f1728dfe304b3545f42756f92fedeb6d3e2a01438",
+    "sourceHash": "e7a23543fbe611c1eba2b787810921cc9229761f880ab0ad3d949ae964933b76",
     "sourcePath": "docs/用户命令目录.md",
     "subtype": "other",
     "summary": "用户命令目录",
@@ -2477,7 +2554,7 @@
   {
     "id": "docs/游戏素材图片清单.md",
     "indexVersion": 1,
-    "sourceHash": "e5341d8739d710c663aacfde2b5eff3a482b0da6b3f4cd08424803493998cf93",
+    "sourceHash": "c92c0ea6e98b9b49a3ea2db0b278e60c8f5bfe06e2a5bbcddb7d529f64237879",
     "sourcePath": "docs/游戏素材图片清单.md",
     "subtype": "other",
     "summary": "游戏素材图片清单",
@@ -2670,83 +2747,6 @@
     "summary": "Style-RAG 抽查批次 rab-ms2uga3f",
     "summarySource": "title-only",
     "title": "Style-RAG 抽查批次 rab-ms2uga3f",
-    "type": "document"
-  },
-  {
-    "id": "docs/知识检索校准/batches/rab-ms2uga42.md",
-    "indexVersion": 1,
-    "sourceHash": "af42e233165a60cb0d1e9245b3d27e82a8acafe934552a10c24376f912a71fda",
-    "sourcePath": "docs/知识检索校准/batches/rab-ms2uga42.md",
-    "subtype": "other",
-    "summary": "普通 RAG 抽查批次 rab-ms2uga42",
-    "summarySource": "title-only",
-    "title": "普通 RAG 抽查批次 rab-ms2uga42",
-    "type": "document"
-  },
-  {
-    "id": "docs/知识检索校准/batches/rab-ms2uga4k.md",
-    "indexVersion": 1,
-    "sourceHash": "5a23d1617dac912b31eebe12e7c76cce763ad47e73706a0528b73da11f6f4377",
-    "sourcePath": "docs/知识检索校准/batches/rab-ms2uga4k.md",
-    "subtype": "other",
-    "summary": "普通 RAG 抽查批次 rab-ms2uga4k",
-    "summarySource": "title-only",
-    "title": "普通 RAG 抽查批次 rab-ms2uga4k",
-    "type": "document"
-  },
-  {
-    "id": "docs/知识检索校准/batches/rab-ms2uga5w.md",
-    "indexVersion": 1,
-    "sourceHash": "e311bb8cc1b428abd00a1601d3e4c48a86dc45dac9a991e715f0c434f1e562c4",
-    "sourcePath": "docs/知识检索校准/batches/rab-ms2uga5w.md",
-    "subtype": "other",
-    "summary": "细节概念 抽查批次 rab-ms2uga5w",
-    "summarySource": "title-only",
-    "title": "细节概念 抽查批次 rab-ms2uga5w",
-    "type": "document"
-  },
-  {
-    "id": "docs/知识检索校准/batches/rab-ms2uga65.md",
-    "indexVersion": 1,
-    "sourceHash": "2fb8fecb733bedba9afa7e588207820fdd772a2e7817dbbdf10548b107f921bc",
-    "sourcePath": "docs/知识检索校准/batches/rab-ms2uga65.md",
-    "subtype": "other",
-    "summary": "情节 抽查批次 rab-ms2uga65",
-    "summarySource": "title-only",
-    "title": "情节 抽查批次 rab-ms2uga65",
-    "type": "document"
-  },
-  {
-    "id": "docs/知识检索校准/batches/rab-ms2uga6o.md",
-    "indexVersion": 1,
-    "sourceHash": "8c72d977dfd4a25ad1e241286786be8667d051833ee5f9d2822499a67fd9427f",
-    "sourcePath": "docs/知识检索校准/batches/rab-ms2uga6o.md",
-    "subtype": "other",
-    "summary": "综合（RAG / Style-RAG / 细节概念 / 情节） 抽查批次 rab-ms2uga6o",
-    "summarySource": "title-only",
-    "title": "综合（RAG / Style-RAG / 细节概念 / 情节） 抽查批次 rab-ms2uga6o",
-    "type": "document"
-  },
-  {
-    "id": "docs/知识检索校准/batches/rab-ms2vg6hy.md",
-    "indexVersion": 1,
-    "sourceHash": "cc78db44aeaec5f42fdf777b98e83befab7a4b1c710be21cb080ee58723035a2",
-    "sourcePath": "docs/知识检索校准/batches/rab-ms2vg6hy.md",
-    "subtype": "other",
-    "summary": "综合（RAG / Style-RAG / 细节概念 / 情节） 抽查批次 rab-ms2vg6hy",
-    "summarySource": "title-only",
-    "title": "综合（RAG / Style-RAG / 细节概念 / 情节） 抽查批次 rab-ms2vg6hy",
-    "type": "document"
-  },
-  {
-    "id": "docs/知识检索校准/batches/rab-ms2vzi2k.md",
-    "indexVersion": 1,
-    "sourceHash": "6028f1fe0aca5f7502d4d88ff6366880ab1febf8e8e8dbab8c7ca8de23ae8e37",
-    "sourcePath": "docs/知识检索校准/batches/rab-ms2vzi2k.md",
-    "subtype": "other",
-    "summary": "普通 RAG 抽查批次 rab-ms2vzi2k",
-    "summarySource": "title-only",
-    "title": "普通 RAG 抽查批次 rab-ms2vzi2k",
     "type": "document"
   }
 ]

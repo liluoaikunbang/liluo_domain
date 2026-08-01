@@ -3,7 +3,12 @@ import { createRouter, createWebHistory, createWebHashHistory } from 'vue-router
 const routes = [
     {
       path: '/',
-      redirect: '/home',
+      redirect: '/readme',
+    },
+    {
+        path: '/readme',
+        name: 'readme',
+        component: () => import('../pages/ReadmePage.vue'),
     },
     {
         path: '/read_page',

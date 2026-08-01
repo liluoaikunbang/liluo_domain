@@ -1,16 +1,14 @@
 {
   "byType": {
-    "jpeg": 2,
-    "jpg": 247,
+    "jpeg": 1,
+    "jpg": 99,
     "jsx": 2,
     "md": 1,
     "mp3": 5,
-    "png": 422,
+    "png": 374,
     "psd": 6,
-    "tmx": 7,
-    "unknown": 1,
-    "webp": 1
+    "unknown": 1
   },
-  "entryCount": 694,
-  "totalBytes": 549301176
+  "entryCount": 489,
+  "totalBytes": 430717612
 }

@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "id": "liluo-runtime-private-assets",
+  "title": "璃落离线私有运行素材清单",
+  "updatedAt": "2026-08-01",
+  "mode": "offline-first-private-sync",
+  "provider": {
+    "type": "nutstore",
+    "envFile": ".env.runtime-assets.local",
+    "exampleEnvFile": ".env.runtime-assets.example"
+  },
+  "publicBoundary": {
+    "allowGithubPages": [
+      "README public visuals",
+      "website marketing/gallery images",
+      "public screenshots explicitly selected for showcase"
+    ],
+    "forbidPublicR2": [
+      "runtime cg finals",
+      "runtime-sensitive standee sources",
+      "authoring source PSDs",
+      "map sources",
+      "candidate references"
+    ]
+  },
+  "groups": [
+    {
+      "id": "runtime-cg-finals",
+      "title": "运行时 CG 成品",
+      "repoRoots": [
+        "src/assets/game/cg"
+      ],
+      "syncSubdir": "game/visual/cg/finals",
+      "visibility": "private-offline-only",
+      "packagingPolicy": "bundle-into-offline-release",
+      "repoPolicy": "keep-in-repo-until-loader-and-package-contract-are-ready",
+      "publicR2Allowed": false,
+      "notes": "这是当前最占仓库的运行时图片目录，后续迁出时必须优先保证离线包仍可直接带上这些成品。"
+    },
+    {
+      "id": "authoring-cg-standee-sources",
+      "title": "CG 与立绘制作源",
+      "repoRoots": [
+        "src/assets/game/sucai_cg_standee"
+      ],
+      "syncSubdir": "game/visual/cg/standee-sources",
+      "visibility": "private-authoring-only",
+      "packagingPolicy": "exclude-from-public-site-and-normal-runtime-build",
+      "repoPolicy": "migrate-out-of-main-repo-first",
+      "publicR2Allowed": false,
+      "notes": "这批目录更接近生产输入和参考源，应优先从 GitHub 主仓库剥离，并与运行时 CG 成品放在同一私有父目录下方便切换。"
+    },
+    {
+      "id": "authoring-scene-sources",
+      "title": "场景制作源",
+      "repoRoots": [
+        "src/assets/game/sucai_scenes"
+      ],
+      "syncSubdir": "game/visual/scenes/sources",
+      "visibility": "private-authoring-only",
+      "packagingPolicy": "exclude-from-public-site-and-normal-runtime-build",
+      "repoPolicy": "migrate-out-of-main-repo-first",
+      "publicR2Allowed": false,
+      "notes": "场景制作源应与运行时场景成品分开，先进入私有素材库。"
+    },
+    {
+      "id": "pixel-map-sources",
+      "title": "像素地图与角色制作源",
+      "repoRoots": [
+        "src/assets/game/pixel_maps"
+      ],
+      "syncSubdir": "game/authoring/pixel-maps",
+      "visibility": "private-authoring-only",
+      "packagingPolicy": "exclude-from-public-site-and-normal-runtime-build",
+      "repoPolicy": "migrate-out-of-main-repo-first",
+      "publicR2Allowed": false,
+      "notes": "像素地图与角色拼装源更接近创作输入，而不是最终运行时成品。"
+    },
+    {
+      "id": "map-and-layout-sources",
+      "title": "地图与布局源文件",
+      "repoRoots": [
+        "src/assets/game/raw_maps"
+      ],
+      "syncSubdir": "game/authoring/map-sources",
+      "visibility": "private-authoring-only",
+      "packagingPolicy": "exclude-from-public-site-and-normal-runtime-build",
+      "repoPolicy": "migrate-out-of-main-repo-first",
+      "publicR2Allowed": false,
+      "notes": "原始地图源应和运行时导出结果分离。"
+    },
+    {
+      "id": "candidate-reference-boards",
+      "title": "候选参考与构图板",
+      "repoRoots": [
+        "src/assets/game/mode"
+      ],
+      "syncSubdir": "game/reference/mode-boards",
+      "visibility": "private-reference-only",
+      "packagingPolicy": "exclude-from-public-site-and-offline-runtime-build",
+      "repoPolicy": "migrate-out-of-main-repo-first",
+      "publicR2Allowed": false,
+      "notes": "这类素材只服务创作与比稿，不应进入公开展示线，也不应跟随正式运行素材无限增长。"
+    }
+  ]
+}

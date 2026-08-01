@@ -3,6 +3,16 @@
   "targets": [
     {
       "type": "skill",
+      "name": "liluo-asset-manager",
+      "path": ".agents/skills/liluo-project/liluo-asset-manager/SKILL.md",
+      "status": "active",
+      "tier": "standard",
+      "caseGlobs": [
+        "evals/cases/skills/asset-manager-positive-001.json"
+      ]
+    },
+    {
+      "type": "skill",
       "name": "liluo-asset-registry-audit",
       "path": ".agents/skills/liluo-project/liluo-asset-registry-audit/SKILL.md",
       "status": "active",
@@ -169,6 +179,16 @@
       "tier": "standard",
       "caseGlobs": [
         "evals/cases/skills/gameplay-loop-audit-positive-001.json"
+      ]
+    },
+    {
+      "type": "skill",
+      "name": "liluo-grok-image-generation",
+      "path": ".agents/skills/liluo-project/liluo-grok-image-generation/SKILL.md",
+      "status": "active",
+      "tier": "standard",
+      "caseGlobs": [
+        "evals/cases/skills/grok-image-generation-positive-001.json"
       ]
     },
     {

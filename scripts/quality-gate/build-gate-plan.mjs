@@ -104,6 +104,7 @@ export function buildGatePlan({ classification = { domains: [], files: [], requi
   if (mode === 'hook') selected.delete('npm run build:web')
   // Belt-and-suspenders: never rewrite files during prepush.
   if (mode === 'prepush') selected.delete(INDEX_CHANGED)
+  if (selected.has('npm run project:routine -- workflow')) selected.delete('npm run project:workflow:validate')
 
   const commands = ORDER.filter((command) => selected.has(command))
   const skipped = ORDER

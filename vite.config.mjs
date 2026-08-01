@@ -22,10 +22,11 @@ function offlineClassicScript() {
 
 export default defineConfig(({ mode }) => {
   const isOffline = mode === 'offline'
+  const isPages = mode === 'pages'
 
   return {
-    base: isOffline ? './' : '/domain/',
-    publicDir: isOffline ? false : 'public',
+    base: isOffline ? './' : isPages ? '/liluo_domain/' : '/domain/',
+    publicDir: isOffline || isPages ? false : 'public',
     plugins: [
       vue(),
       AutoImport({ imports: ['vue'] }),
@@ -35,7 +36,17 @@ export default defineConfig(({ mode }) => {
       // 可选：兼容更老的浏览器（会增大体积）
       // legacy(),
     ].filter(Boolean),
-    build: isOffline
+    build: isPages
+    ? {
+        outDir: 'dist-pages',
+        emptyOutDir: true,
+        sourcemap: false,
+        minify: true,
+        rollupOptions: {
+          input: fileURLToPath(new URL('./index.pages.html', import.meta.url)),
+        },
+      }
+    : isOffline
     ? {
         outDir: 'dist-offline',
         assetsInlineLimit: 0,

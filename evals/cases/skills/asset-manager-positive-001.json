@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "id": "asset-manager-positive-001",
+  "title": "liluo-asset-manager 正向路由",
+  "targetType": "skill",
+  "target": "liluo-asset-manager",
+  "status": "active",
+  "polarity": "positive",
+  "mode": "routing-plan",
+  "costTier": "standard",
+  "userPrompt": "把这批 README 图先转成 WebP，dry-run 一下上传到 R2 的远端 key。",
+  "contextFiles": [],
+  "expected": {
+    "requiredSkills": [
+      "liluo-asset-manager"
+    ],
+    "allowedSkills": [
+      "liluo-project-documentation-sync"
+    ],
+    "forbiddenSkills": [
+      "liluo-grok-image-generation"
+    ],
+    "requiredAgents": [],
+    "forbiddenAgents": [],
+    "requiredReadPaths": [
+      ".agents/skills/liluo-project/liluo-asset-manager/SKILL.md",
+      "docs/assets/registry/website-r2-manifest.json"
+    ],
+    "allowedReadPaths": [
+      ".env.assets.example",
+      "docs/技能说明/liluo-asset-manager.md",
+      "docs/系统说明/视觉资产图床与R2管理系统.md",
+      "scripts/assets/visual-asset-manager.mjs"
+    ],
+    "requiredWritePaths": [],
+    "allowedWritePaths": [],
+    "forbiddenActions": [
+      "要求用户在聊天中粘贴 R2 密钥",
+      "未获 live 确认就上传到 R2",
+      "自动提交",
+      "自动推送"
+    ],
+    "requiredValidationProfiles": [],
+    "forbiddenValidationProfiles": [
+      "all"
+    ],
+    "approvalExpectation": "not-required"
+  }
+}

@@ -43,7 +43,17 @@ test('command approval governance changes run their own checks without a Web bui
 test('executable workflow changes run the workflow routine without a Web build', () => {
   const commands = commandsFor(['project-workflows/definitions/wf-story-mainline-restructure.v1.0.0.json'])
   assert.ok(commands.includes('npm run project:routine -- workflow'))
+  assert.ok(!commands.includes('npm run project:workflow:validate'))
   assert.ok(!commands.includes('npm run build:web'))
+})
+
+test('workflow routine covers workflow validation when multiple sources request both', () => {
+  const commands = commandsFor([
+    'project-workflows/definitions/wf-story-mainline-restructure.v1.0.0.json',
+    '.agents/skills/liluo-project/liluo-executable-workflow/SKILL.md',
+  ])
+  assert.ok(commands.includes('npm run project:routine -- workflow'))
+  assert.ok(!commands.includes('npm run project:workflow:validate'))
 })
 
 test('Skill or Agent changes only light-check workflow refs without full regenerate routine', () => {

@@ -1641,7 +1641,7 @@
   {
     "id": "docs/功能更新/146-Codex命令授权反馈持久化与规范闭环.md",
     "indexVersion": 1,
-    "sourceHash": "a6a12695f635e82dc707624ef23af179446b337b82acb2e0059e6e53a1d267e8",
+    "sourceHash": "9e8932d35470ac3f5df89ed5542bd9286f096a632515b34b018c0d4964b6f748",
     "sourcePath": "docs/功能更新/146-Codex命令授权反馈持久化与规范闭环.md",
     "subtype": "update",
     "summary": "146-Codex 命令授权反馈、持久化与规范闭环",
@@ -1971,7 +1971,7 @@
   {
     "id": "docs/功能更新/176-AI原生叙事游戏生产体系升级.md",
     "indexVersion": 1,
-    "sourceHash": "55d771d7d445e23749c854d33b960f2c5b97a91b3da4f2ba000701d421f8bd9c",
+    "sourceHash": "580067e51527f120ddc2d2627f43d40e8d7dde8c2270ebb813ff00e5df18d1cf",
     "sourcePath": "docs/功能更新/176-AI原生叙事游戏生产体系升级.md",
     "subtype": "update",
     "summary": "176-AI原生叙事游戏生产体系升级",
@@ -1980,9 +1980,20 @@
     "type": "document"
   },
   {
+    "id": "docs/功能更新/177-Grok图像生成脚本与提示词润色Skill.md",
+    "indexVersion": 1,
+    "sourceHash": "a166ba1b43d3660e6fbe1e11974b66764e04a416684e02cd333c2f9fe8c77331",
+    "sourcePath": "docs/功能更新/177-Grok图像生成脚本与提示词润色Skill.md",
+    "subtype": "update",
+    "summary": "177-Grok图像生成脚本与提示词润色Skill",
+    "summarySource": "title-only",
+    "title": "177-Grok图像生成脚本与提示词润色Skill",
+    "type": "document"
+  },
+  {
     "id": "docs/功能更新目录.md",
     "indexVersion": 1,
-    "sourceHash": "cbe1e649e65d0b4ff64f3ffc1f83fac5c5b50a6baaf365784734c63958261869",
+    "sourceHash": "a3a376492ebd79bf16678d995ea77a81a1a9cfc9af6427ad767ed52cfe22f310",
     "sourcePath": "docs/功能更新目录.md",
     "subtype": "other",
     "summary": "功能更新目录",
@@ -2032,6 +2043,17 @@
     "summary": "liluo 知识检索抽查校准",
     "summarySource": "title-only",
     "title": "liluo 知识检索抽查校准",
+    "type": "document"
+  },
+  {
+    "id": "docs/技能说明/liluo-asset-manager.md",
+    "indexVersion": 1,
+    "sourceHash": "9983eb8abb3412dd4fd2105f5e94837c114e669d960689b8b80e4dcc79b16853",
+    "sourcePath": "docs/技能说明/liluo-asset-manager.md",
+    "subtype": "skill",
+    "summary": "视觉资产图床管理（`liluo-asset-manager`）",
+    "summarySource": "title-only",
+    "title": "视觉资产图床管理（`liluo-asset-manager`）",
     "type": "document"
   },
   {
@@ -2164,6 +2186,17 @@
     "summary": "liluo-gameplay-loop-audit",
     "summarySource": "title-only",
     "title": "liluo-gameplay-loop-audit",
+    "type": "document"
+  },
+  {
+    "id": "docs/技能说明/liluo-grok-image-generation.md",
+    "indexVersion": 1,
+    "sourceHash": "577bfd72c2fb37ed185cec37168642910fbb5fb7f4cd57ff889026e121fd665f",
+    "sourcePath": "docs/技能说明/liluo-grok-image-generation.md",
+    "subtype": "skill",
+    "summary": "Grok 图像生成（`liluo-grok-image-generation`）",
+    "summarySource": "title-only",
+    "title": "Grok 图像生成（`liluo-grok-image-generation`）",
     "type": "document"
   },
   {
@@ -2714,39 +2747,6 @@
     "summary": "ADR-011：成熟复杂任务采用机器可读工作流门禁",
     "summarySource": "title-only",
     "title": "ADR-011：成熟复杂任务采用机器可读工作流门禁",
-    "type": "document"
-  },
-  {
-    "id": "docs/设计记忆/架构决策/ADR-012-上下文分层与创作组有效参与机制.md",
-    "indexVersion": 1,
-    "sourceHash": "cab2ae3d3f5fd48dd0bdb92458d3e25f554a7f77c4d049e8a82985f8f823a952",
-    "sourcePath": "docs/设计记忆/架构决策/ADR-012-上下文分层与创作组有效参与机制.md",
-    "subtype": "other",
-    "summary": "ADR-012：上下文分层与创作组有效参与机制",
-    "summarySource": "title-only",
-    "title": "ADR-012：上下文分层与创作组有效参与机制",
-    "type": "document"
-  },
-  {
-    "id": "docs/设计记忆/架构决策/ADR-013-开放权重双模型与人工校准写作管线.md",
-    "indexVersion": 1,
-    "sourceHash": "12be84a17a01689c4d4d8e6aa14594b8a7a307bf583959b70fc3dc76ecd482e4",
-    "sourcePath": "docs/设计记忆/架构决策/ADR-013-开放权重双模型与人工校准写作管线.md",
-    "subtype": "other",
-    "summary": "ADR-013：开放权重双模型与人工校准写作管线",
-    "summarySource": "title-only",
-    "title": "ADR-013：开放权重双模型与人工校准写作管线",
-    "type": "document"
-  },
-  {
-    "id": "docs/设计记忆/架构决策/ADR-014-Style-RAG元数据检索与Canon风格隔离.md",
-    "indexVersion": 1,
-    "sourceHash": "2f47735f8b3c0a500842ee424af3bebe7e94a53b218556b47d082577baac619b",
-    "sourcePath": "docs/设计记忆/架构决策/ADR-014-Style-RAG元数据检索与Canon风格隔离.md",
-    "subtype": "other",
-    "summary": "ADR-014：Style-RAG 元数据检索与 Canon 风格隔离",
-    "summarySource": "title-only",
-    "title": "ADR-014：Style-RAG 元数据检索与 Canon 风格隔离",
     "type": "document"
   }
 ]

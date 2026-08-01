@@ -26,6 +26,8 @@ try {
     encoding: 'utf8',
   })
   for (const line of output.split(/\r?\n/)) {
+    const statusCode = line.slice(0, 2)
+    if (statusCode.includes('D') && statusCode !== '??') continue
     const relative = line.slice(3).replaceAll('\\', '/')
     if (relative && isIndexedSourcePath(relative) && !(relative in status.sourceSnapshot)) {
       changes.added.push(relative)

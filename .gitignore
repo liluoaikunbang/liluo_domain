@@ -10,8 +10,10 @@ lerna-debug.log*
 node_modules
 .local/team-presence-state.json
 .local/codex-user-rules-snapshot.json
+.local/grok-images/
 .local/project-context-pack/
 dist
+/dist-pages/
 /dist-offline/
 /release/
 dist-ssr
@@ -54,6 +56,11 @@ project-workflows/runs/reports/*
 
 # Writing model local credentials and informal workspace drafts
 .env.writing.local
+.env.grok-image.local
+.env.assets.local
+.env.runtime-assets.local
+.local/asset-manager/
+私有素材库/
 docs/写作资产/工作区/*
 !docs/写作资产/工作区/README.md
 !docs/写作资产/工作区/.gitignore

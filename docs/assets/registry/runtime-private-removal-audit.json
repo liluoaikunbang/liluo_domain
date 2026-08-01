@@ -1,0 +1,480 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-01",
+  "command": "assets:runtime:private:audit",
+  "mode": "offline-first-private-sync",
+  "provider": "nutstore",
+  "manifestPath": "docs/assets/registry/runtime-private-asset-manifest.json",
+  "syncRoot": "D:\\meng\\liluo_domain\\私有素材库",
+  "totals": {
+    "trackedGroupCount": 6,
+    "repoTotalMb": 364.89,
+    "readyNowCount": 5,
+    "readyAfterCleanupCount": 0,
+    "blockedCount": 1
+  },
+  "groups": [
+    {
+      "id": "runtime-cg-finals",
+      "title": "运行时 CG 成品",
+      "visibility": "private-offline-only",
+      "syncTargetPath": "私有素材库/game/visual/cg/finals",
+      "repoRoots": [
+        {
+          "path": "src/assets/game/cg",
+          "fileCount": 214,
+          "totalMb": 364.89
+        }
+      ],
+      "repoFileCount": 214,
+      "repoTotalMb": 364.89,
+      "runtimeCodeRefs": {
+        "count": 13,
+        "files": [
+          "src/game/data/global/gameMenuData.js",
+          "src/game/data/story_outline/1-modern/2.1-深夜城市探险.md",
+          "src/game/views/components/base/StoryMenuPanel.vue"
+        ],
+        "examples": [
+          {
+            "path": "src/game/views/components/base/StoryMenuPanel.vue",
+            "line": 780,
+            "preview": "'../../../../assets/game/cg/*.{png,jpg,jpeg,webp,gif}'"
+          },
+          {
+            "path": "src/game/data/story_outline/1-modern/2.1-深夜城市探险.md",
+            "line": 92,
+            "preview": "![关联CG：KTV最后一桌](src/assets/game/cg/都市DID-KTV服务员.jpg)"
+          },
+          {
+            "path": "src/game/data/story_outline/1-modern/2.1-深夜城市探险.md",
+            "line": 102,
+            "preview": "![关联CG：商场夜间保洁](src/assets/game/cg/都市DID-保洁员.png)"
+          },
+          {
+            "path": "src/game/data/story_outline/1-modern/2.1-深夜城市探险.md",
+            "line": 112,
+            "preview": "![关联CG：二十四小时超市](src/assets/game/cg/都市DID-超市售货员.png)"
+          },
+          {
+            "path": "src/game/data/story_outline/1-modern/2.1-深夜城市探险.md",
+            "line": 122,
+            "preview": "![关联CG：夜间出租车](src/assets/game/cg/都市DID-出租车.png)"
+          },
+          {
+            "path": "src/game/data/story_outline/1-modern/2.1-深夜城市探险.md",
+            "line": 134,
+            "preview": "![关联CG：空乘正式拍摄](src/assets/game/cg/都市DID-空姐（无束缚）.jpg)"
+          },
+          {
+            "path": "src/game/data/story_outline/1-modern/2.1-深夜城市探险.md",
+            "line": 146,
+            "preview": "![关联CG：门口取外卖](src/assets/game/cg/都市DID-捆绑取外卖.jpg)"
+          },
+          {
+            "path": "src/game/data/story_outline/1-modern/2.1-深夜城市探险.md",
+            "line": 158,
+            "preview": "![关联CG：夜间外卖员](src/assets/game/cg/都市DID-外卖员.png)"
+          },
+          {
+            "path": "src/game/data/story_outline/1-modern/2.1-深夜城市探险.md",
+            "line": 172,
+            "preview": "![关联CG：午夜配音试音](src/assets/game/cg/都市DID-配音演员（无拘束）.jpg)"
+          },
+          {
+            "path": "src/game/data/story_outline/1-modern/2.1-深夜城市探险.md",
+            "line": 186,
+            "preview": "![关联CG：五金店闭店](src/assets/game/cg/都市DID-五金店.jpg)"
+          },
+          {
+            "path": "src/game/data/story_outline/1-modern/2.1-深夜城市探险.md",
+            "line": 198,
+            "preview": "![关联CG：瑜伽馆闭馆](src/assets/game/cg/都市DID-瑜伽馆.png)"
+          },
+          {
+            "path": "src/game/data/story_outline/1-modern/2.1-深夜城市探险.md",
+            "line": 212,
+            "preview": "![关联CG：夜班护士](src/assets/game/cg/都市职业DID-夜班护士.png)"
+          }
+        ]
+      },
+      "runtimeContentRefs": {
+        "count": 11,
+        "files": [
+          "src/game/data/story_outline/1-modern/2.1-深夜城市探险.md"
+        ],
+        "examples": [
+          {
+            "path": "src/game/data/story_outline/1-modern/2.1-深夜城市探险.md",
+            "line": 92,
+            "preview": "![关联CG：KTV最后一桌](src/assets/game/cg/都市DID-KTV服务员.jpg)"
+          },
+          {
+            "path": "src/game/data/story_outline/1-modern/2.1-深夜城市探险.md",
+            "line": 102,
+            "preview": "![关联CG：商场夜间保洁](src/assets/game/cg/都市DID-保洁员.png)"
+          },
+          {
+            "path": "src/game/data/story_outline/1-modern/2.1-深夜城市探险.md",
+            "line": 112,
+            "preview": "![关联CG：二十四小时超市](src/assets/game/cg/都市DID-超市售货员.png)"
+          },
+          {
+            "path": "src/game/data/story_outline/1-modern/2.1-深夜城市探险.md",
+            "line": 122,
+            "preview": "![关联CG：夜间出租车](src/assets/game/cg/都市DID-出租车.png)"
+          },
+          {
+            "path": "src/game/data/story_outline/1-modern/2.1-深夜城市探险.md",
+            "line": 134,
+            "preview": "![关联CG：空乘正式拍摄](src/assets/game/cg/都市DID-空姐（无束缚）.jpg)"
+          },
+          {
+            "path": "src/game/data/story_outline/1-modern/2.1-深夜城市探险.md",
+            "line": 146,
+            "preview": "![关联CG：门口取外卖](src/assets/game/cg/都市DID-捆绑取外卖.jpg)"
+          },
+          {
+            "path": "src/game/data/story_outline/1-modern/2.1-深夜城市探险.md",
+            "line": 158,
+            "preview": "![关联CG：夜间外卖员](src/assets/game/cg/都市DID-外卖员.png)"
+          },
+          {
+            "path": "src/game/data/story_outline/1-modern/2.1-深夜城市探险.md",
+            "line": 172,
+            "preview": "![关联CG：午夜配音试音](src/assets/game/cg/都市DID-配音演员（无拘束）.jpg)"
+          },
+          {
+            "path": "src/game/data/story_outline/1-modern/2.1-深夜城市探险.md",
+            "line": 186,
+            "preview": "![关联CG：五金店闭店](src/assets/game/cg/都市DID-五金店.jpg)"
+          },
+          {
+            "path": "src/game/data/story_outline/1-modern/2.1-深夜城市探险.md",
+            "line": 198,
+            "preview": "![关联CG：瑜伽馆闭馆](src/assets/game/cg/都市DID-瑜伽馆.png)"
+          },
+          {
+            "path": "src/game/data/story_outline/1-modern/2.1-深夜城市探险.md",
+            "line": 212,
+            "preview": "![关联CG：夜班护士](src/assets/game/cg/都市职业DID-夜班护士.png)"
+          }
+        ]
+      },
+      "authoringRefs": {
+        "count": 0,
+        "files": [],
+        "examples": []
+      },
+      "docsRefs": {
+        "count": 15,
+        "files": [
+          "docs/CG待制作清单.md",
+          "docs/技能说明/liluo-asset-manager.md",
+          "docs/游戏素材图片清单.md",
+          "docs/系统说明/公开展示资产与离线私有素材双轨分发系统.md",
+          "docs/系统说明/故事大纲条目模板.md"
+        ],
+        "examples": [
+          {
+            "path": "docs/系统说明/故事大纲条目模板.md",
+            "line": 625,
+            "preview": "- src/assets/game/cg/modern/urban_did_nurse.png"
+          },
+          {
+            "path": "docs/系统说明/公开展示资产与离线私有素材双轨分发系统.md",
+            "line": 48,
+            "preview": "- `src/assets/game/cg/` 里的运行时 CG 成品"
+          },
+          {
+            "path": "docs/系统说明/公开展示资产与离线私有素材双轨分发系统.md",
+            "line": 200,
+            "preview": "- `src/assets/game/cg/` 下 `214` 个 CG 成品、约 `364.89 MB` 已同步到 `私有素材库/game/visual/cg/finals`"
+          },
+          {
+            "path": "docs/系统说明/公开展示资产与离线私有素材双轨分发系统.md",
+            "line": 201,
+            "preview": "- 但 `runtime-cg-finals` 仍不能从主仓库移除，因为当前运行时代码和打包内故事内容仍直接引用 `src/assets/game/cg/`"
+          },
+          {
+            "path": "docs/游戏素材图片清单.md",
+            "line": 30,
+            "preview": "| `src/assets/game/cg/` | 212 | CG 成品与差分 | 由图鉴通过 `import.meta.glob` 自动收录 |"
+          },
+          {
+            "path": "docs/游戏素材图片清单.md",
+            "line": 56,
+            "preview": "| `src/assets/game/cg/荆锁会事件-演出后台.jpg` | `荆锁会事件-演出后台.jpg` | CG 默认图 | 荆锁会事件演出后台主题的图鉴默认画面 |"
+          },
+          {
+            "path": "docs/游戏素材图片清单.md",
+            "line": 57,
+            "preview": "| `src/assets/game/cg/荆锁会事件-演出后台（无束缚）.png` | `荆锁会事件-演出后台（无束缚）.png` | CG 完整差分 | 同主题无束缚状态差分 |"
+          },
+          {
+            "path": "docs/游戏素材图片清单.md",
+            "line": 58,
+            "preview": "| `src/assets/game/cg/荆锁会事件-演出后台（无鞋）.jpg` | `荆锁会事件-演出后台（无鞋）.jpg` | CG 完整差分 | 同主题无鞋状态差分 |"
+          },
+          {
+            "path": "docs/游戏素材图片清单.md",
+            "line": 59,
+            "preview": "| `src/assets/game/cg/荆锁会事件-演出后台（胶带封嘴）.jpg` | `荆锁会事件-演出后台（胶带封嘴）.jpg` | CG 完整差分 | 同主题胶带封嘴状态差分 |"
+          },
+          {
+            "path": "docs/游戏素材图片清单.md",
+            "line": 60,
+            "preview": "| `src/assets/game/cg/荆锁会事件-演出后台（蒙眼）.jpg` | `荆锁会事件-演出后台（蒙眼）.jpg` | CG 完整差分 | 同主题蒙眼状态差分 |"
+          },
+          {
+            "path": "docs/游戏素材图片清单.md",
+            "line": 61,
+            "preview": "| `src/assets/game/cg/室外游乐场-邮轮上的真人垂钓.jpg` | `室外游乐场-邮轮上的真人垂钓.jpg` | CG 成品 | 室外游乐场邮轮真人垂钓主题的图鉴画面 |"
+          },
+          {
+            "path": "docs/游戏素材图片清单.md",
+            "line": 99,
+            "preview": "| `src/assets/game/cg/*` | 212 | CG 成品、连续剧情图、底图与图层差分 | 图鉴自动收录；括号后缀用于差分或图层语义，新增时需核对同名分组 |"
+          }
+        ]
+      },
+      "scriptRefs": {
+        "count": 0,
+        "files": [],
+        "examples": []
+      },
+      "removalStatus": "blocked-by-runtime-references",
+      "proposedPhase2Action": "keep-in-repo-for-now",
+      "rationale": "Runtime code or packaged story content still points at this repo path."
+    },
+    {
+      "id": "authoring-cg-standee-sources",
+      "title": "CG 与立绘制作源",
+      "visibility": "private-authoring-only",
+      "syncTargetPath": "私有素材库/game/visual/cg/standee-sources",
+      "repoRoots": [
+        {
+          "path": "src/assets/game/sucai_cg_standee",
+          "fileCount": 0,
+          "totalMb": 0
+        }
+      ],
+      "repoFileCount": 0,
+      "repoTotalMb": 0,
+      "runtimeCodeRefs": {
+        "count": 0,
+        "files": [],
+        "examples": []
+      },
+      "runtimeContentRefs": {
+        "count": 0,
+        "files": [],
+        "examples": []
+      },
+      "authoringRefs": {
+        "count": 0,
+        "files": [],
+        "examples": []
+      },
+      "docsRefs": {
+        "count": 0,
+        "files": [],
+        "examples": []
+      },
+      "scriptRefs": {
+        "count": 0,
+        "files": [],
+        "examples": []
+      },
+      "removalStatus": "ready-to-remove",
+      "proposedPhase2Action": "remove-from-main-repo-when-desired",
+      "rationale": "No runtime, authoring, docs, or helper-script references were detected."
+    },
+    {
+      "id": "authoring-scene-sources",
+      "title": "场景制作源",
+      "visibility": "private-authoring-only",
+      "syncTargetPath": "私有素材库/game/visual/scenes/sources",
+      "repoRoots": [
+        {
+          "path": "src/assets/game/sucai_scenes",
+          "fileCount": 0,
+          "totalMb": 0
+        }
+      ],
+      "repoFileCount": 0,
+      "repoTotalMb": 0,
+      "runtimeCodeRefs": {
+        "count": 0,
+        "files": [],
+        "examples": []
+      },
+      "runtimeContentRefs": {
+        "count": 0,
+        "files": [],
+        "examples": []
+      },
+      "authoringRefs": {
+        "count": 0,
+        "files": [],
+        "examples": []
+      },
+      "docsRefs": {
+        "count": 0,
+        "files": [],
+        "examples": []
+      },
+      "scriptRefs": {
+        "count": 0,
+        "files": [],
+        "examples": []
+      },
+      "removalStatus": "ready-to-remove",
+      "proposedPhase2Action": "remove-from-main-repo-when-desired",
+      "rationale": "No runtime, authoring, docs, or helper-script references were detected."
+    },
+    {
+      "id": "pixel-map-sources",
+      "title": "像素地图与角色制作源",
+      "visibility": "private-authoring-only",
+      "syncTargetPath": "私有素材库/game/authoring/pixel-maps",
+      "repoRoots": [
+        {
+          "path": "src/assets/game/pixel_maps",
+          "fileCount": 0,
+          "totalMb": 0
+        }
+      ],
+      "repoFileCount": 0,
+      "repoTotalMb": 0,
+      "runtimeCodeRefs": {
+        "count": 0,
+        "files": [],
+        "examples": []
+      },
+      "runtimeContentRefs": {
+        "count": 0,
+        "files": [],
+        "examples": []
+      },
+      "authoringRefs": {
+        "count": 0,
+        "files": [],
+        "examples": []
+      },
+      "docsRefs": {
+        "count": 0,
+        "files": [],
+        "examples": []
+      },
+      "scriptRefs": {
+        "count": 0,
+        "files": [],
+        "examples": []
+      },
+      "removalStatus": "ready-to-remove",
+      "proposedPhase2Action": "remove-from-main-repo-when-desired",
+      "rationale": "No runtime, authoring, docs, or helper-script references were detected."
+    },
+    {
+      "id": "map-and-layout-sources",
+      "title": "地图与布局源文件",
+      "visibility": "private-authoring-only",
+      "syncTargetPath": "私有素材库/game/authoring/map-sources",
+      "repoRoots": [
+        {
+          "path": "src/assets/game/raw_maps",
+          "fileCount": 0,
+          "totalMb": 0
+        }
+      ],
+      "repoFileCount": 0,
+      "repoTotalMb": 0,
+      "runtimeCodeRefs": {
+        "count": 0,
+        "files": [],
+        "examples": []
+      },
+      "runtimeContentRefs": {
+        "count": 0,
+        "files": [],
+        "examples": []
+      },
+      "authoringRefs": {
+        "count": 0,
+        "files": [],
+        "examples": []
+      },
+      "docsRefs": {
+        "count": 0,
+        "files": [],
+        "examples": []
+      },
+      "scriptRefs": {
+        "count": 0,
+        "files": [],
+        "examples": []
+      },
+      "removalStatus": "ready-to-remove",
+      "proposedPhase2Action": "remove-from-main-repo-when-desired",
+      "rationale": "No runtime, authoring, docs, or helper-script references were detected."
+    },
+    {
+      "id": "candidate-reference-boards",
+      "title": "候选参考与构图板",
+      "visibility": "private-reference-only",
+      "syncTargetPath": "私有素材库/game/reference/mode-boards",
+      "repoRoots": [
+        {
+          "path": "src/assets/game/mode",
+          "fileCount": 0,
+          "totalMb": 0
+        }
+      ],
+      "repoFileCount": 0,
+      "repoTotalMb": 0,
+      "runtimeCodeRefs": {
+        "count": 0,
+        "files": [],
+        "examples": []
+      },
+      "runtimeContentRefs": {
+        "count": 0,
+        "files": [],
+        "examples": []
+      },
+      "authoringRefs": {
+        "count": 0,
+        "files": [],
+        "examples": []
+      },
+      "docsRefs": {
+        "count": 0,
+        "files": [],
+        "examples": []
+      },
+      "scriptRefs": {
+        "count": 0,
+        "files": [],
+        "examples": []
+      },
+      "removalStatus": "ready-to-remove",
+      "proposedPhase2Action": "remove-from-main-repo-when-desired",
+      "rationale": "No runtime, authoring, docs, or helper-script references were detected."
+    }
+  ],
+  "summary": {
+    "readyNow": [
+      "authoring-cg-standee-sources",
+      "authoring-scene-sources",
+      "pixel-map-sources",
+      "map-and-layout-sources",
+      "candidate-reference-boards"
+    ],
+    "readyAfterCleanup": [],
+    "blocked": [
+      "runtime-cg-finals"
+    ]
+  },
+  "nextStep": "Do not remove blocked groups from the main repo until runtime/code references are replaced."
+}

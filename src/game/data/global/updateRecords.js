@@ -1,9 +1,15 @@
 export const updateRecords = Object.freeze([
     {
+        "id":  "177",
+        "date":  "2026-08-01",
+        "title":  "Grok图像生成脚本与提示词润色Skill",
+        "summary":  "新增本地 Grok 图像生成脚本、status/probe/dry-run/live 配置检查、提示词润色 Skill 与配套说明文档；现支持 CLI 覆盖模型、比例、超时、重试和本地网络参数，并把 --base-url 收口到 xAI 或 loopback，live 结果默认写入系统临时目录并生成不含密钥的 manifest。"
+    },
+    {
         "id":  "176",
-        "date":  "2026-07-31",
+        "date":  "2026-08-01",
         "title":  "AI原生叙事游戏生产体系升级",
-        "summary":  "根 README 收束为可公开展示、可用于招募协作者的项目海报页；实机截图已补齐，根页扩充到约 33 个视觉单元，并同步 PNG 概念板、自动统计与 README 回归校验。"
+        "summary":  "根 README 收束为可公开展示、可用于招募协作者的项目海报页，并拆出只发布 README/项目海报网站的 GitHub Pages 构建轨道；实机截图已补齐，根页扩充到约 33 个视觉单元，并补上 Cloudflare R2 公开图床底座、桶内陈旧对象回收流程，以及“公开展示资产走 R2、离线敏感素材走 Nutstore 私有同步、游戏主体通过离线包发布”的双轨资产治理底座；Nutstore 私有线现已拆成 6 组 manifest，完成首批制作源/参考源同步与 `214` 个 CG 成品私有镜像。"
     },
     {
         "id":  "175",
@@ -183,7 +189,7 @@ export const updateRecords = Object.freeze([
         "id":  "146",
         "date":  "2026-07-22",
         "title":  "Codex 命令授权反馈、持久化与规范闭环",
-        "summary":  "建立四级授权与精确规则；普通文档、Skill、Agent 与项目配置可在任务范围内直接修改，并以最小验证与受限聚合入口减少重复确认。"
+        "summary":  "建立四级授权与精确规则；普通文档、Skill、Agent 与项目配置可在任务范围内直接修改，并以最小验证、稳定 `EPERM` 命令直走精确路线和局部补丁策略减少重复确认。"
     },
     {
         "id":  "145",
