@@ -583,6 +583,17 @@
     "type": "document"
   },
   {
+    "id": "docs/系统说明/官网海报视觉反馈归档系统.md",
+    "indexVersion": 1,
+    "sourceHash": "3ea73f4885b96fa3d63162e8f77eb0bc3691bba647655283a4ac3cbd4296491a",
+    "sourcePath": "docs/系统说明/官网海报视觉反馈归档系统.md",
+    "subtype": "system",
+    "summary": "官网海报视觉反馈归档系统",
+    "summarySource": "title-only",
+    "title": "官网海报视觉反馈归档系统",
+    "type": "document"
+  },
+  {
     "id": "docs/系统说明/互动小说副本.md",
     "indexVersion": 1,
     "sourceHash": "d999484bfc6316e98792c8e64a83151edf07fc145ac173f79731f06f340ecda9",
@@ -871,7 +882,7 @@
   {
     "id": "docs/系统说明/项目知识索引系统.md",
     "indexVersion": 1,
-    "sourceHash": "e431638bbfd06f1ded77391d2ca29731a94b5ff5773e4b4325a7986b534bed8c",
+    "sourceHash": "1c314bbb2fdab136bff8d7e64491544c769825bc8c70252c2f5f15513300c921",
     "sourcePath": "docs/系统说明/项目知识索引系统.md",
     "subtype": "system",
     "summary": "项目知识索引系统",
@@ -1047,7 +1058,7 @@
   {
     "id": "docs/系统说明/Grok图像生成API配置与提示词润色工作流.md",
     "indexVersion": 1,
-    "sourceHash": "9e71ffe9fed76a412eee143028c1a85b5cfa9538ed9416c7fa9b1939cd337631",
+    "sourceHash": "0eeb19cf007c0cc36cd81131e331f6315d9bca17c286dcefba5c3dea35aadcf1",
     "sourcePath": "docs/系统说明/Grok图像生成API配置与提示词润色工作流.md",
     "subtype": "system",
     "summary": "Grok 图像生成 API 配置与提示词润色工作流",
@@ -1080,7 +1091,7 @@
   {
     "id": "docs/系统说明/README.md",
     "indexVersion": 1,
-    "sourceHash": "523770f38e5227a73eb685608f8d656b02b27a02c33a253604151c4ef6bb2211",
+    "sourceHash": "cc975b4c39d891a95892685d2c55e40316e9daacbbb9e43d961419441ab09bf5",
     "sourcePath": "docs/系统说明/README.md",
     "subtype": "system",
     "summary": "系统说明",
@@ -1113,7 +1124,7 @@
   {
     "id": "docs/系统说明/Windows命令与UTF-8编码规范.md",
     "indexVersion": 1,
-    "sourceHash": "4286dca212269c09b2c3af745a9366e7cf2494db57c886392c77ab5245e726c0",
+    "sourceHash": "4522a55f2ba05b83a417e7c6656e9b27a16d9aa2bb8c9c405451bdc9ca2f3c22",
     "sourcePath": "docs/系统说明/Windows命令与UTF-8编码规范.md",
     "subtype": "system",
     "summary": "Windows 命令与 UTF-8 编码规范",
@@ -2576,7 +2587,7 @@
   {
     "id": "docs/用户命令目录.md",
     "indexVersion": 1,
-    "sourceHash": "e7a23543fbe611c1eba2b787810921cc9229761f880ab0ad3d949ae964933b76",
+    "sourceHash": "3d0f2abb54ec287142940774a5294a0bca9470a44ff907fd64ae6d00af907aca",
     "sourcePath": "docs/用户命令目录.md",
     "subtype": "other",
     "summary": "用户命令目录",
@@ -2598,7 +2609,7 @@
   {
     "id": "docs/运行规范/未解决问题/Codex会话提交异常与上下文预算问题.md",
     "indexVersion": 1,
-    "sourceHash": "ba4da7287511055abd0c8dc381b33686d8cd74521a42aeed86372b96da7bb26a",
+    "sourceHash": "68f184b2f009822a3c0c1cc74863fa303df3c5f7c84398244285108b2bb563e8",
     "sourcePath": "docs/运行规范/未解决问题/Codex会话提交异常与上下文预算问题.md",
     "subtype": "other",
     "summary": "Codex 会话提交异常与上下文预算问题",
@@ -2736,17 +2747,6 @@
     "summary": "普通 RAG 抽查批次 rab-ms2ubk60",
     "summarySource": "title-only",
     "title": "普通 RAG 抽查批次 rab-ms2ubk60",
-    "type": "document"
-  },
-  {
-    "id": "docs/知识检索校准/batches/rab-ms2ubk72.md",
-    "indexVersion": 1,
-    "sourceHash": "644cad6f4c12a738305373fdd3bba56950783475977fb321dfb6cd7b2230ffa5",
-    "sourcePath": "docs/知识检索校准/batches/rab-ms2ubk72.md",
-    "subtype": "other",
-    "summary": "细节概念 抽查批次 rab-ms2ubk72",
-    "summarySource": "title-only",
-    "title": "细节概念 抽查批次 rab-ms2ubk72",
     "type": "document"
   }
 ]

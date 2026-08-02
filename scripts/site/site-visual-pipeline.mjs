@@ -4,6 +4,12 @@ import process from 'node:process'
 import crypto from 'node:crypto'
 import { fileURLToPath } from 'node:url'
 import {
+  characterShowcaseCompositionRules,
+  buildCharacterShowcasePromptFragment,
+  buildLiluoHairColorPromptFragment,
+  buildLiluoIdentityPromptFragment,
+  buildLiluoLookPromptFragment,
+  buildLiluoSafetyPromptFragment,
   collaborationTracks,
   developmentStatuses,
   evidenceLevels,
@@ -11,12 +17,15 @@ import {
   generalVisualSeedSets,
   liluoProfile,
   navigation,
+  posterStyleAuthorities,
   productionPhases,
   publicScreenshotSources,
   publishedAssetDescriptors,
   roadmapItems,
   series,
   siteConfig,
+  visualFeedbackArchiveRules,
+  visualFeedbackLedger,
   worlds,
 } from '../../src/content/site/siteBlueprint.js'
 
@@ -41,6 +50,18 @@ const dryRun = args.includes('--dry-run')
 
 const planStatusRank = ['planned', 'promptReady', 'generated', 'qaApproved', 'published']
 const publicationRank = ['review_required', 'internal_only', 'public_safe']
+const liluoPromptRequiredSnippets = [
+  `${liluoProfile.age} 岁刚成年的成年女性`,
+  '红色瞳孔',
+  liluoProfile.hairColorProfile.everydayLighting.baseHex,
+  liluoProfile.hairColorProfile.everydayLighting.shadowHex,
+  liluoProfile.hairColorProfile.everydayLighting.highlightHex,
+  '身高锚点约 150cm',
+  '体态带自然曲线与轻微丰润感',
+  '脸型为柔和鹅蛋脸',
+  '不画成尖下巴或瓜子脸',
+  '不幼态',
+]
 
 async function main() {
   const state = await buildState()
@@ -201,14 +222,19 @@ function buildVisualRegistry(publishedById) {
 
 function buildLiluoBaselineEntries(publishedById) {
   const entries = []
-  const frames = ['portrait', 'mid-shot', 'full-body', 'environmental']
+  const frames = [
+    { id: 'portrait', label: '纵向全身角色海报', shotType: 'full-body', backgroundPriority: false },
+    { id: 'mid-shot', label: '中距离全身角色构图', shotType: 'full-body', backgroundPriority: false },
+    { id: 'full-body', label: '全身动作构图', shotType: 'full-body', backgroundPriority: false },
+    { id: 'environmental', label: '人物与环境构图', shotType: 'environmental', backgroundPriority: true },
+  ]
   for (const world of worlds) {
     const looks = world.liluoLooks
     frames.forEach((frame, index) => {
       const look = looks[index % looks.length]
       entries.push(
         createEntry({
-          id: `visual-liluo-baseline-${world.id}-${frame}`,
+          id: `visual-liluo-baseline-${world.id}-${frame.id}`,
           title: `璃落·${world.name}·基线 ${index + 1}`,
           collection: 'liluo-character',
           world,
@@ -217,25 +243,25 @@ function buildLiluoBaselineEntries(publishedById) {
           publicationStatus: 'public_safe',
           promptStatus: 'promptReady',
           evidenceLevel: 'concept',
-          shotType: frame,
+          shotType: frame.shotType,
           timeOfDay: ['day', 'dawn', 'dusk', 'night'][index % 4],
           weather: ['clear', 'overcast', 'indoor', 'windy'][index % 4],
           visualLanguage: 'editorial-character-sheet',
-          tags: ['璃落', world.name, '身份基线', look.hair, look.outfit],
+          tags: ['璃落', world.name, '身份基线', look.hair, look.outfit, look.sock || '袜子细节'],
           previewAssetId: publishedById[`pub-liluo-${world.id}-variant`] ? `pub-liluo-${world.id}-variant` : 'pub-liluo-portrait',
           brief: {
             focus: `${world.name}中的公开身份基线`,
-            composition: frame,
-            subject: `${look.hair}，${look.outfit}`,
+            composition: frame.label,
+            subject: `${look.hair}，${look.outfit}，${look.sock || '袜子细节'}`,
             use: 'Batch 00 身份参考与审核基准',
           },
           prompt: [
             `为璃落宇宙官网生成一张公开安全的角色基线图，主题是“璃落在${world.name}中的稳定身份”。`,
-            `璃落固定为 22 岁成年女性，红发红瞳，成年感明确，娇小纤细但不幼态；本条重点使用${look.hair}和${look.outfit}，情绪为${look.mood}。`,
+            `${buildLiluoIdentityPromptFragment()}；${buildLiluoHairColorPromptFragment()}；${buildLiluoLookPromptFragment(look)}。`,
             `画面需要把她与${world.name}的空间关系讲清楚：${world.tagline}，周围可见${world.zones[index % world.zones.length].scene}，但不要把概念图写成已可玩。`,
-            `镜头采用${frame}构图，时间为${['白昼', '黎明', '黄昏', '夜间'][index % 4]}，环境气质强调${world.atmosphere}。`,
+            `${buildCharacterShowcasePromptFragment(frame.backgroundPriority)}。镜头采用${frame.label}，时间为${['白昼', '黎明', '黄昏', '夜间'][index % 4]}，环境气质强调${world.atmosphere}。`,
             `色彩以${world.palette.accent}、${world.palette.soft}和${world.palette.deep}代表的世界色板为主，保持明亮可读、留出网页排版安全区，不在图中生成文字、Logo 或水印。`,
-            '禁止幼态、过度性感、暴力摆拍、现有 IP 影子和无法公开的私密元素。',
+            `${buildLiluoSafetyPromptFragment()}。禁止现有 IP 影子和无法公开的私密元素。`,
           ].join(' '),
         }),
       )
@@ -280,21 +306,21 @@ function buildLiluoWorldEntries(world, publishedById) {
           timeOfDay: ['dawn', 'day', 'dusk', 'night'][counter % 4],
           weather: ['clear', 'overcast', 'interior', 'wind'][counter % 4],
           visualLanguage: 'narrative-character-illustration',
-          tags: ['璃落', world.name, action.label, frame.label, look.hair, look.outfit],
+          tags: ['璃落', world.name, action.label, frame.label, look.hair, look.outfit, look.sock || '袜子细节'],
           previewAssetId: `pub-liluo-${world.id}-variant`,
           brief: {
             focus: `${world.name}中的璃落角色变化`,
             composition: frame.label,
-            subject: `${action.label} / ${look.hair} / ${look.outfit}`,
+            subject: `${action.label} / ${look.hair} / ${look.outfit} / ${look.sock || '袜子细节'}`,
             use: '角色页、世界页、图鉴',
           },
           prompt: [
             `为璃落宇宙官网生成一张${world.name}角色视觉，主题是“璃落在${world.name}中${action.detail}”。`,
-            `璃落固定为 22 岁成年女性，红发红瞳；本条使用${look.hair}和${look.outfit}，情绪基调为${look.mood}。`,
+            `${buildLiluoIdentityPromptFragment()}；${buildLiluoHairColorPromptFragment()}；${buildLiluoLookPromptFragment(look)}。`,
             `场景放在${zone.label}：${zone.scene}，重点表现${zone.detail}，让人物与环境都能成立，而不是一张居中站姿图。`,
             `镜头采用${frame.label}，画面比例偏向${frame.aspect}，需要保留足够留白供网页信息叠加，避免图像文字。`,
             `时间/天气提示为${['黎明', '白昼', '黄昏', '夜间'][counter % 4]}与${['晴朗', '阴天', '室内灯光', '起风'][counter % 4]}，强调${world.atmosphere}。`,
-            `保持公开安全：不幼态、不露骨、不过度性感、不写入额外 canon，不使用现有 IP 与可读文字。`,
+            `${buildLiluoSafetyPromptFragment()}。不使用现有 IP 与可读文字。`,
           ].join(' '),
         }),
       )
@@ -788,8 +814,17 @@ function validatePrompts(visualRegistry) {
     const fingerprint = crypto.createHash('sha256').update(item.prompt).digest('hex')
     if (prompts.has(fingerprint)) throw new Error(`Prompt is duplicated: ${item.id}`)
     prompts.add(fingerprint)
+    validateLiluoIdentityPrompt(item)
   }
   if (visualRegistry.length !== 1248) throw new Error(`Expected 1248 visual assets, got ${visualRegistry.length}`)
+}
+
+function validateLiluoIdentityPrompt(item) {
+  if (item.collection !== 'liluo-character' && item.batchId !== 'B00') return
+  const missing = liluoPromptRequiredSnippets.filter((snippet) => !item.prompt.includes(snippet))
+  if (missing.length) {
+    throw new Error(`Liluo identity prompt missing required anchors: ${item.id} -> ${missing.join(', ')}`)
+  }
 }
 
 function validateScreenshots(screenshotBriefs) {
@@ -819,6 +854,7 @@ async function writeDocs(state) {
   await writeMarkdown('visual-master-plan.md', buildVisualMasterPlanDoc(planSummary))
   await writeMarkdown('world-visual-bibles.md', buildWorldBibleDoc())
   await writeMarkdown('liluo-identity-and-variation-bible.md', buildLiluoBibleDoc())
+  await writeMarkdown('visual-feedback-ledger.md', buildVisualFeedbackLedgerDoc())
   await writeMarkdown('image2-prompt-authoring-standard.md', buildPromptDoc())
   await writeMarkdown('visual-generation-batches.md', buildBatchDoc(planSummary))
   await writeMarkdown('screenshot-capture-plan.md', buildScreenshotDoc(state.screenshotBriefs))
@@ -940,6 +976,11 @@ function buildWorldBibleDoc() {
     .join('\n')
   return `# 六界视觉 bible
 
+## 归档原则
+
+- 世界风格评价进入账本后，必须明确归入 \`palette\`、\`materials\`、\`atmosphere\` 或 \`liluoLooks\` 这类绝对字段。
+- 不能把“再轻一点”“更亮一点”“少一点压迫感”这类无基线相对词直接沉淀成长期世界规则。
+
 ${sections}`
 }
 
@@ -950,13 +991,35 @@ function buildLiluoBibleDoc() {
 
 - ${liluoProfile.fixedTraits.join('\n- ')}
 
+## 发色参数
+
+- 日常光线描述：${liluoProfile.hairColorProfile.everydayLighting.description}
+- 基础色：${liluoProfile.hairColorProfile.everydayLighting.baseHex}
+- 阴影色：${liluoProfile.hairColorProfile.everydayLighting.shadowHex}
+- 高光色：${liluoProfile.hairColorProfile.everydayLighting.highlightHex}
+- 最亮反光：${liluoProfile.hairColorProfile.everydayLighting.rimLightHex}
+- 光线调整规则：
+- ${liluoProfile.hairColorProfile.adjustmentRules.join('\n- ')}
+
 ## 可变部分
 
 - ${liluoProfile.variableTraits.join('\n- ')}
 
+## 穿搭偏好
+
+- ${liluoProfile.stylePreferences.join('\n- ')}
+
 ## 公开安全
 
 - ${liluoProfile.publicSafety.join('\n- ')}
+
+## 反馈沉淀规则
+
+- ${liluoProfile.feedbackIntakeRules.join('\n- ')}
+
+## 人物展示构图
+
+- ${characterShowcaseCompositionRules.join('\n- ')}
 
 ## 页面用途
 
@@ -964,6 +1027,52 @@ function buildLiluoBibleDoc() {
 - 首页身份锚点
 - 世界页中的 24 项角色视觉入口
 - 角色页与图鉴的对照浏览
+`
+}
+
+function buildVisualFeedbackLedgerDoc() {
+  const entries = visualFeedbackLedger
+    .map(
+      (entry) => `## ${entry.date}｜${entry.id}
+
+- 作用范围：${entry.scope.join('、')}
+- 归入对象：角色 ${entry.appliesTo?.characters?.join('、') || '未指定'}；世界 ${entry.appliesTo?.worlds?.join('、') || '未指定'}；集合 ${entry.appliesTo?.collections?.join('、') || '未指定'}
+- 归入维度：${entry.appliesTo?.aspects?.join('、') || '未指定'}
+- 来源：${entry.source}
+- 归档规范：${entry.normalizationRule || '未指定'}
+- 回写目标：角色 ${entry.writebackTargets?.character?.join('、') || '未指定'}；世界 ${entry.writebackTargets?.worlds?.join('、') || '未指定'}；prompt ${entry.writebackTargets?.prompts?.join('、') || '未指定'}
+- 原始评价摘要：${entry.rawSummary}
+- 抽象出的长期特征：
+${entry.abstractedTraits.map((item) => `  - ${item}`).join('\n')}
+- 对 prompt 的直接影响：
+${entry.promptEffects.map((item) => `  - ${item}`).join('\n')}`,
+    )
+    .join('\n\n')
+
+  return `# 海报视觉反馈账本
+
+## 权威来源
+
+- 角色风格：${posterStyleAuthorities.character.join('、')}
+- 世界风格：${posterStyleAuthorities.worlds.join('、')}
+- 归档规范：${posterStyleAuthorities.archiveRules.join('、')}
+- 构图规则：${posterStyleAuthorities.composition.join('、')}
+- 反馈沉淀：${posterStyleAuthorities.feedback.join('、')}
+
+## 归档绝对化规则
+
+- ${visualFeedbackArchiveRules.join('\n- ')}
+
+## 自动归入规则
+
+1. 角色、世界、镜头、材质、色板、页面节奏等任何海报评价都先写入本账本。
+2. 账本负责把单次评价抽象成可复用特征和 prompt 影响。
+3. 确认后的稳定特征再回写到 \`liluoProfile\`、\`worlds[*]\` 或其他权威源，后续批次自动继承。
+4. 归档时不得直接保留“更浅一些”“少一点”这类相对说法，必须改写成绝对、可执行的目标描述。
+
+## 当前已吸收的评价
+
+${entries}
 `
 }
 
@@ -977,6 +1086,12 @@ function buildPromptDoc() {
 - 主体、空间、材质、时间、镜头、情绪
 - 公开安全边界
 - 不得出现的内容
+
+## 反馈归档要求
+
+- 来自用户的新偏好先进入视觉反馈账本，再决定是否写回角色与世界权威字段。
+- 如果用户原话使用了“更弱气”“更浅一些”“少一点”这类相对表述，归档时必须改写成绝对描述，不能把相对词原样沉淀到长期规则或 prompt 模板里。
+- 如果用户对人物展示方式提出长期要求，例如“专门展示人物时优先全身”，必须把它写成明确构图规则，再进入角色类 prompt。
 
 ## 禁止项
 

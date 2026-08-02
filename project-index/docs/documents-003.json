@@ -1,5 +1,16 @@
 [
   {
+    "id": "docs/知识检索校准/batches/rab-ms2ubk72.md",
+    "indexVersion": 1,
+    "sourceHash": "644cad6f4c12a738305373fdd3bba56950783475977fb321dfb6cd7b2230ffa5",
+    "sourcePath": "docs/知识检索校准/batches/rab-ms2ubk72.md",
+    "subtype": "other",
+    "summary": "细节概念 抽查批次 rab-ms2ubk72",
+    "summarySource": "title-only",
+    "title": "细节概念 抽查批次 rab-ms2ubk72",
+    "type": "document"
+  },
+  {
     "id": "docs/知识检索校准/batches/rab-ms2ubk7a.md",
     "indexVersion": 1,
     "sourceHash": "e6b5e192a5599490f4aa8fb9cbf4980873b5233b132c7e3392377468f9224dab",
@@ -847,6 +858,50 @@
     "type": "document"
   },
   {
+    "id": "docs/collaboration-conversion-plan.md",
+    "indexVersion": 1,
+    "sourceHash": "cfef96abbf8de8ab30263c5910b66f0891972448ce542658d1bdeda89374c1bc",
+    "sourcePath": "docs/collaboration-conversion-plan.md",
+    "subtype": "other",
+    "summary": "协作转化计划",
+    "summarySource": "title-only",
+    "title": "协作转化计划",
+    "type": "document"
+  },
+  {
+    "id": "docs/image2-prompt-authoring-standard.md",
+    "indexVersion": 1,
+    "sourceHash": "ff5b78e4c4a1feceabcf32e50467e1831a80da659cd973991f35a02317967ac8",
+    "sourcePath": "docs/image2-prompt-authoring-standard.md",
+    "subtype": "other",
+    "summary": "Image 2 提示词编写标准",
+    "summarySource": "title-only",
+    "title": "Image 2 提示词编写标准",
+    "type": "document"
+  },
+  {
+    "id": "docs/liluo-identity-and-variation-bible.md",
+    "indexVersion": 1,
+    "sourceHash": "5276b0053daae5002e4362d4f0e7fed52ba4c1aabbf7858be4c3c5c29369a2e4",
+    "sourcePath": "docs/liluo-identity-and-variation-bible.md",
+    "subtype": "other",
+    "summary": "璃落身份与变化 bible",
+    "summarySource": "title-only",
+    "title": "璃落身份与变化 bible",
+    "type": "document"
+  },
+  {
+    "id": "docs/performance-and-r2-policy.md",
+    "indexVersion": 1,
+    "sourceHash": "50047a55a614a7772ad5d4177d1ec69a8a7fde678d285bc1131d22a23684a30a",
+    "sourcePath": "docs/performance-and-r2-policy.md",
+    "subtype": "other",
+    "summary": "性能与 R2 策略",
+    "summarySource": "title-only",
+    "title": "性能与 R2 策略",
+    "type": "document"
+  },
+  {
     "id": "docs/README.md",
     "indexVersion": 1,
     "sourceHash": "59154f6e59605898f890a55619af68685d8158dce89accd91e264a60d164057d",
@@ -891,9 +946,42 @@
     "type": "document"
   },
   {
+    "id": "docs/recruitment-narrative-and-information-architecture.md",
+    "indexVersion": 1,
+    "sourceHash": "7b558a3761289223f1886b19ccaa4332bbbd79eb3a4a59abd3a924a0d760125c",
+    "sourcePath": "docs/recruitment-narrative-and-information-architecture.md",
+    "subtype": "other",
+    "summary": "招募叙事与信息架构",
+    "summarySource": "title-only",
+    "title": "招募叙事与信息架构",
+    "type": "document"
+  },
+  {
+    "id": "docs/screenshot-capture-plan.md",
+    "indexVersion": 1,
+    "sourceHash": "4e9f98db2f5cd4bf376557ef34451ee0d6d4208fe77269693254bd94efece5b3",
+    "sourcePath": "docs/screenshot-capture-plan.md",
+    "subtype": "other",
+    "summary": "截图计划",
+    "summarySource": "title-only",
+    "title": "截图计划",
+    "type": "document"
+  },
+  {
+    "id": "docs/site-current-audit-2026-08-02.md",
+    "indexVersion": 1,
+    "sourceHash": "4f506cda29da7b97b741865b20154a7724732fd1dd0604a05ea3b0f5a043bcbd",
+    "sourcePath": "docs/site-current-audit-2026-08-02.md",
+    "subtype": "other",
+    "summary": "官网现状审计（2026-08-02）",
+    "summarySource": "title-only",
+    "title": "官网现状审计（2026-08-02）",
+    "type": "document"
+  },
+  {
     "id": "docs/site/canonical-naming-review.md",
     "indexVersion": 1,
-    "sourceHash": "62f360d5fa26d047fd810900ecb663a6690f7c749b2d86ce9520bc2c861d926b",
+    "sourceHash": "dee0acf618ca80832fece0ee3fbcbb65799f95963331942b9868946c9049d5bc",
     "sourcePath": "docs/site/canonical-naming-review.md",
     "subtype": "other",
     "summary": "GitHub Pages 官网公开命名核对",
@@ -954,6 +1042,61 @@
     "summary": "GitHub Pages 官网视觉复核报告",
     "summarySource": "title-only",
     "title": "GitHub Pages 官网视觉复核报告",
+    "type": "document"
+  },
+  {
+    "id": "docs/visual-feedback-ledger.md",
+    "indexVersion": 1,
+    "sourceHash": "4ec2a85c1d15308724c9df6564b5958baf00abdf6c2631d23e7829d4a1af5230",
+    "sourcePath": "docs/visual-feedback-ledger.md",
+    "subtype": "other",
+    "summary": "海报视觉反馈账本",
+    "summarySource": "title-only",
+    "title": "海报视觉反馈账本",
+    "type": "document"
+  },
+  {
+    "id": "docs/visual-generation-batches.md",
+    "indexVersion": 1,
+    "sourceHash": "f95e8845a38bb959e0ed0dd5d378ed7ba375c915036720b1bc2c0081f703795a",
+    "sourcePath": "docs/visual-generation-batches.md",
+    "subtype": "other",
+    "summary": "视觉生成批次",
+    "summarySource": "title-only",
+    "title": "视觉生成批次",
+    "type": "document"
+  },
+  {
+    "id": "docs/visual-master-plan.md",
+    "indexVersion": 1,
+    "sourceHash": "627fc504a2963da4c1dc739829816ffe93b39db6a0fe44d57d0bff0a4a7f2d54",
+    "sourcePath": "docs/visual-master-plan.md",
+    "subtype": "other",
+    "summary": "视觉总计划",
+    "summarySource": "title-only",
+    "title": "视觉总计划",
+    "type": "document"
+  },
+  {
+    "id": "docs/visual-qa-and-publication-policy.md",
+    "indexVersion": 1,
+    "sourceHash": "e35a5b319aea0d12a2e845edca2be1bc0f3f00a589fc86513cb573cd5427de52",
+    "sourcePath": "docs/visual-qa-and-publication-policy.md",
+    "subtype": "other",
+    "summary": "视觉 QA 与公开发布策略",
+    "summarySource": "title-only",
+    "title": "视觉 QA 与公开发布策略",
+    "type": "document"
+  },
+  {
+    "id": "docs/world-visual-bibles.md",
+    "indexVersion": 1,
+    "sourceHash": "87bd597e41b64faba3e3e57c1dcb449a4f39bb917a01f53d8dd70ebe320815f9",
+    "sourcePath": "docs/world-visual-bibles.md",
+    "subtype": "other",
+    "summary": "六界视觉 bible",
+    "summarySource": "title-only",
+    "title": "六界视觉 bible",
     "type": "document"
   }
 ]

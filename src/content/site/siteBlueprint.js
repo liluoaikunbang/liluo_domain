@@ -93,10 +93,10 @@ export const worlds = [
       { id: 'market', title: '集市口风', premise: '居民日常闲谈成为帝国温度计', object: '摊位收据与食物篮', tension: '热闹生活里对规则的微妙回避' },
     ],
     liluoLooks: [
-      { hair: '高束马尾', outfit: '帝国调查外套与短靴', mood: '观察、克制、警觉' },
-      { hair: '低发髻', outfit: '档案庭工作裙与披肩', mood: '安静、记录、耐心' },
-      { hair: '编织侧辫', outfit: '河港便服与腰包', mood: '灵活、机敏、在场' },
-      { hair: '半扎直发', outfit: '仪式长外衣与轻甲衬层', mood: '正式、稳重、可公开展示' },
+      { hair: '高束马尾', outfit: '帝国短外套、轻薄内搭与百褶短裙', sock: '半透长袜与短靴之间留出清爽层次', mood: '弱气、警觉、先观察再行动' },
+      { hair: '低发髻', outfit: '浅色短罩衫、收腰短裙与轻披肩', sock: '及膝袜与细带短靴', mood: '安静、年轻、耐心' },
+      { hair: '编织侧辫', outfit: '河港轻便上衣、短裙与小腰包', sock: '堆堆短袜与便鞋', mood: '灵活、柔和、很有在场感' },
+      { hair: '半扎直发', outfit: '仪式感短外套、轻薄裙装与袖套', sock: '过膝袜与低跟短靴', mood: '拘谨、可爱、努力维持正式感' },
     ],
   },
   {
@@ -139,10 +139,10 @@ export const worlds = [
       { id: 'clinic', title: '值班室低语', premise: '照护与调查在同一处空间交织', object: '值班台便签与保温杯', tension: '关照与追问同时存在' },
     ],
     liluoLooks: [
-      { hair: '高马尾', outfit: '校内调查夹克与百褶长裙', mood: '清醒、耐心、克制' },
-      { hair: '侧分披发', outfit: '夜路防风外套与短靴', mood: '夜行、警觉、敏锐' },
-      { hair: '半扎低马尾', outfit: '排练厅宽松练习服', mood: '轻盈、专注、带一点疲惫' },
-      { hair: '松散发髻', outfit: '临时值班针织外套', mood: '柔软、可信、带余温' },
+      { hair: '高马尾', outfit: '校园短夹克、轻薄内搭与百褶短裙', sock: '白色膝上袜与运动鞋', mood: '清醒、弱气、努力稳住自己' },
+      { hair: '侧分披发', outfit: '夜路薄外套、短裙与轻便挎包', sock: '黑色过膝袜与短靴', mood: '夜行、警觉、带一点怯意' },
+      { hair: '半扎低马尾', outfit: '排练厅宽松上衣与运动短裙', sock: '条纹中筒袜', mood: '轻盈、专注、年轻可爱' },
+      { hair: '松散发髻', outfit: '值班针织开衫、贴身背心与短裙', sock: '薄连裤袜与乐福鞋', mood: '柔软、可信、带余温' },
     ],
   },
   {
@@ -185,10 +185,10 @@ export const worlds = [
       { id: 'salvage', title: '旧轨捡回', premise: '从废弃物里重建明天的设备', object: '编号零件篮', tension: '抢时间还是保安全' },
     ],
     liluoLooks: [
-      { hair: '高盘发', outfit: '防风斗篷与工作绑腿', mood: '干练、节制、耐力强' },
-      { hair: '短束低马尾', outfit: '温室围裙与轻便手套', mood: '专注、照料、温柔' },
-      { hair: '侧边编发', outfit: '值夜披肩与旧皮腰包', mood: '守望、沉静、长时间在外' },
-      { hair: '半扎乱发', outfit: '回收场工装外套', mood: '实用、疲惫、仍然可靠' },
+      { hair: '高盘发', outfit: '防沙短披肩、透气背心与工装短裙', sock: '防沙过膝袜与轻靴', mood: '节制、柔弱、仍在撑住' },
+      { hair: '短束低马尾', outfit: '温室围裙、短上衣与轻便工作裙', sock: '浅色中筒袜', mood: '专注、照料、温柔' },
+      { hair: '侧边编发', outfit: '值夜薄披肩、短裙与旧皮腰包', sock: '耐磨长袜', mood: '守望、安静、带一点倦意' },
+      { hair: '半扎乱发', outfit: '回收场轻工装外套与分层短裙', sock: '深色短袜与工装鞋', mood: '实用、疲惫、但还是可爱' },
     ],
   },
   {
@@ -231,10 +231,10 @@ export const worlds = [
       { id: 'courier', title: '驿门交物', premise: '小物件的传递牵出不同立场', object: '封口布包', tension: '谁能被信任到最后一步' },
     ],
     liluoLooks: [
-      { hair: '低发髻', outfit: '洗旧青灰短袄与布靴', mood: '劳作、平静、可信' },
-      { hair: '半扎碎发', outfit: '雨天披帛与深色长裙', mood: '谨慎、含蓄、夜色中更清醒' },
-      { hair: '细辫盘发', outfit: '小院抄录用的浅色对襟衣', mood: '专注、收敛、耐心' },
-      { hair: '松挽长发', outfit: '出行斗篷与简便包袱', mood: '在路上、观察、略带疲惫' },
+      { hair: '低发髻', outfit: '洗旧青灰短衫、轻薄短裙与布鞋', sock: '白色短袜', mood: '平静、可信、带一点柔弱' },
+      { hair: '半扎碎发', outfit: '雨天薄披帛、深色短裙与简靴', sock: '深色及膝袜', mood: '谨慎、含蓄、年轻又清醒' },
+      { hair: '细辫盘发', outfit: '浅色对襟短衫与收腰裙', sock: '薄棉长袜', mood: '专注、收敛、耐心' },
+      { hair: '松挽长发', outfit: '出行短斗篷、轻便裙装与小包袱', sock: '堆堆袜与布靴', mood: '在路上、观察、略带疲惫感' },
     ],
   },
   {
@@ -277,10 +277,10 @@ export const worlds = [
       { id: 'greenhouse', title: '温室夜班', premise: '最安静的照料时刻最容易出现长久记忆', object: '修剪剪刀与水壶', tension: '平静场景里的关系试探' },
     ],
     liluoLooks: [
-      { hair: '低马尾与细侧编', outfit: '学院长外套与柔软长袜', mood: '冷静、好学、长期停留' },
-      { hair: '松散盘发', outfit: '书库夜读披肩', mood: '耐心、克制、晚间仍保持专注' },
-      { hair: '中分半扎', outfit: '温室工作围裙', mood: '温和、可靠、带照料感' },
-      { hair: '高束发尾', outfit: '港口出行短斗篷', mood: '迎风、在边界上、准备出发' },
+      { hair: '低马尾与细侧编', outfit: '学院短外套、柔软短裙与轻披肩', sock: '深色过膝袜', mood: '冷静、好学、偏弱气' },
+      { hair: '松散盘发', outfit: '书库夜读薄披肩与简洁裙装', sock: '黑色连裤袜', mood: '耐心、克制、可爱又安静' },
+      { hair: '中分半扎', outfit: '温室工作围裙、短上衣与轻裙', sock: '浅色中筒袜', mood: '温和、可靠、带照料感' },
+      { hair: '高束发尾', outfit: '港口出行短斗篷与轻便短裙', sock: '厚织长袜与低跟短靴', mood: '迎风、拘谨、准备出发' },
     ],
   },
   {
@@ -323,10 +323,10 @@ export const worlds = [
       { id: 'archive', title: '档案取回', premise: '记录系统与个人记忆互相校正', object: '档案盒与标签片', tension: '谁定义过去，谁安排下一步' },
     ],
     liluoLooks: [
-      { hair: '高马尾', outfit: '轻型远航工作服', mood: '清楚、专业、在准备状态' },
-      { hair: '半扎侧编', outfit: '公共舱针织外搭与柔性长裤', mood: '松弛、亲近、未来生活感' },
-      { hair: '低束短辫', outfit: '维修 bay 工位夹克', mood: '专注、实干、能处理细节' },
-      { hair: '松散盘发', outfit: '档案室衬衫长外套', mood: '耐心、安静、处理记忆材料' },
+      { hair: '高马尾', outfit: '轻型远航短夹克、贴身上衣与功能短裙', sock: '科技感长袜与轻靴', mood: '清楚、专业、却还是柔软' },
+      { hair: '半扎侧编', outfit: '公共舱针织外搭、轻薄背心与柔性短裙', sock: '珠白中筒袜', mood: '松弛、亲近、年轻可爱' },
+      { hair: '低束短辫', outfit: '维修 bay 短夹克与分层工作裙', sock: '深色运动长袜', mood: '专注、实干、能处理细节' },
+      { hair: '松散盘发', outfit: '档案室轻衬衫、短外套与简洁裙装', sock: '薄连裤袜', mood: '耐心、安静、处理记忆材料时更温和' },
     ],
   },
 ]
@@ -380,11 +380,223 @@ export const liluoProfile = {
   id: 'liluo',
   name: '璃落',
   role: '旗舰主角',
-  summary: '公开官网中的璃落固定为 22 岁成年女性，红发红瞳、身份稳定，但在六界中的发型、服装、动作、职业外观和生活关系都可以真实变化。',
-  adultStatement: '官网所有公开人物均为成年人；璃落固定为 22 岁成年女性。',
-  fixedTraits: ['红发红瞳', '成年感明确', '娇小纤细但不幼态', '以观察、行动与长期记忆为中心'],
-  variableTraits: ['发型系统', '服装系统', '动作与职业姿态', '世界中的生活关系', '不同时间与天气里的状态变化'],
-  publicSafety: ['不露骨', '不幼态', '不过度性感', '不借概念图扩写 canon'],
+  age: 18,
+  summary:
+    '公开官网中的璃落固定为 18 岁刚成年的成年女性，日常光线下为偏绯红的浅红棕发、红色瞳孔，身高锚点约 150cm，整体是娇小但不过分单薄、带自然曲线和轻微丰润感的成年体态，脸型为柔和鹅蛋脸而非尖下巴瓜子脸，整体偏弱气、年轻可爱，但绝不幼态。她在六界中的发型、轻日常穿搭、袜子细节、动作、职业外观和生活关系都可以真实变化。',
+  adultStatement: '官网所有公开人物均为成年人；璃落固定为 18 岁刚成年的成年女性。',
+  fixedTraits: [
+    '18 岁刚成年的成年女性',
+    '日常光线下为偏绯红的浅红棕发与红色瞳孔',
+    '年轻可爱、偏弱气，但不幼态',
+    '身高锚点约 150cm，整体娇小，不拉成长腿高挑比例',
+    '体态带自然曲线与轻微丰润感，不过度夸张，不走纸片瘦削或夸张性感路线',
+    '脸型为柔和鹅蛋脸，下颌圆润收束，不画成尖下巴或瓜子脸',
+  ],
+  hairColorProfile: {
+    everydayLighting: {
+      description: '偏绯红的红系红棕发，不偏橙金，也不偏紫黑',
+      baseHex: '#c53159',
+      shadowHex: '#8e1f3f',
+      highlightHex: '#e15e74',
+      rimLightHex: '#f27c88',
+    },
+    adjustmentRules: [
+      '日常自然光以 baseHex 为主，允许在同色系内轻微明暗浮动，但不改发色归属。',
+      '强日照或高亮暖光下可整体提亮 8% 到 12%，高光可接近 rimLightHex，但不能漂成橙金。',
+      '阴天、背光或夜色环境下可整体压暗 12% 到 18%，阴影靠近 shadowHex，但不能转成棕灰或紫黑。',
+    ],
+  },
+  variableTraits: ['发型系统', '清凉日常的服装层次', '各种袜子形成的局部辨识度', '动作与职业姿态', '世界中的生活关系', '不同时间与天气里的状态变化'],
+  stylePreferences: ['服装优先偏清凉、日常、轻层次', '喜欢短袜、膝上袜、堆堆袜、连裤袜等不同袜型', '世界差异优先通过材质、配色、空间和袜子或饰品细节拉开'],
+  feedbackIntakeRules: [
+    '新增用户海报评价先进入视觉反馈账本，再抽象成可复用特征',
+    '已确认的抽象特征同步回写到角色或世界权威源，再进入批量 prompt',
+    '原始反馈可以保留“更弱气”“更浅一些”这类相对描述，但归档后的规则、特征和 prompt 影响必须改写成绝对说法',
+    '单次偏好不直接覆盖长期规则，除非用户明确确认要持久化',
+  ],
+  publicSafety: ['不幼态', '不露骨', '不过度性感化', '不借概念图扩写 canon'],
+}
+
+export const visualFeedbackArchiveRules = [
+  '原始反馈允许记录“更弱气”“更浅一些”“少一点”这类相对表达，用来保留用户当下的比较语境。',
+  '进入视觉反馈账本的 abstractedTraits、promptEffects，以及角色/世界权威字段时，必须改写成绝对、可复用、可执行的目标描述。',
+  '归档文本不得保留缺少参照物的比较词，例如“更”“再”“少一点”“浅一些”；如果确实需要比较，必须同时写明基线对象。',
+]
+
+export const characterShowcaseCompositionRules = [
+  '专门展示人物时，默认优先完整全身展示，让发型、服装、袜子与鞋履同时可读。',
+  '除非这张图的主要任务是解释背景、空间关系或页面信息层，否则不要使用半身或中近景裁切。',
+  '即使因为背景说明需要收成中近景，也应保持人物完整可识别，不做卖弄身体局部的裁切。',
+]
+
+export const visualFeedbackLedger = [
+  {
+    id: 'vf-2026-08-02-liluo-stature-face-calibration',
+    date: '2026-08-02',
+    scope: ['liluo-character', 'site-posters', 'batch-B00'],
+    appliesTo: {
+      characters: ['liluo'],
+      worlds: ['all'],
+      collections: ['site-posters', 'batch-B00'],
+      aspects: ['stature', 'body-proportion', 'face-shape'],
+    },
+    source: 'user-feedback',
+    normalizationRule: '用户原始反馈里的“太高”“太尖”“较为丰满”只保留在 rawSummary；归档后的体态与脸型规则必须改写成绝对、可复用的角色锚点。',
+    writebackTargets: {
+      character: ['liluoProfile.summary', 'liluoProfile.fixedTraits'],
+      worlds: ['worlds[].liluoLooks'],
+      prompts: ['buildLiluoIdentityPromptFragment()', 'buildLiluoBaselineEntries()', 'buildLiluoWorldEntries()'],
+    },
+    rawSummary: '用户反馈当前人物太高、脸太尖；璃落应当是娇小的，身高约 150 左右，体态相对较为丰满但不要夸张，脸型应为鹅蛋脸而不是瓜子脸。',
+    abstractedTraits: [
+      '璃落的身高锚点固定为约 150cm 的娇小成年女性，不使用高挑长腿比例',
+      '璃落的体态固定为娇小基础上的自然曲线与轻微丰润感，不过度夸张，不画成纸片瘦削或极端性感化身材',
+      '璃落的脸型固定为柔和鹅蛋脸，面中到下颌的过渡圆润收束，不画成尖脸、尖下巴或瓜子脸',
+    ],
+    promptEffects: [
+      '角色身份 prompt 必须显式写入约 150cm 的娇小身高锚点、自然曲线与轻微丰润感',
+      '角色 prompt 必须显式排除高挑比例、尖下巴和瓜子脸',
+      '后续对体态与脸型的评价继续先进入账本，再决定是否回写长期字段',
+    ],
+  },
+  {
+    id: 'vf-2026-08-02-liluo-baseline-calibration',
+    date: '2026-08-02',
+    scope: ['liluo-character', 'site-posters', 'batch-B00'],
+    appliesTo: {
+      characters: ['liluo'],
+      worlds: ['all'],
+      collections: ['site-posters', 'batch-B00'],
+      aspects: ['age-anchor', 'temperament', 'hair-color', 'eye-color', 'daily-cool-outfit', 'sock-signature'],
+    },
+    source: 'user-feedback',
+    normalizationRule: '用户原始反馈里的相对表达只保留在 rawSummary；归档后的 abstractedTraits 与 promptEffects 必须改写成绝对描述。',
+    writebackTargets: {
+      character: [
+        'liluoProfile.summary',
+        'liluoProfile.fixedTraits',
+        'liluoProfile.variableTraits',
+        'liluoProfile.stylePreferences',
+        'liluoProfile.feedbackIntakeRules',
+      ],
+      worlds: ['worlds[].liluoLooks', 'worlds[].palette', 'worlds[].materials', 'worlds[].atmosphere'],
+      prompts: [
+        'buildLiluoIdentityPromptFragment()',
+        'buildLiluoLookPromptFragment()',
+        'buildLiluoSafetyPromptFragment()',
+      ],
+    },
+    rawSummary: '用户要求璃落更弱气、更年轻可爱、刚刚成年，发色改为更浅的红棕色，保持红色瞳孔，穿着更清凉更日常，并把喜欢各种袜子作为长期可识别特征。',
+    abstractedTraits: [
+      '公开海报中的璃落改为 18 岁刚成年的成年女性，而不是更成熟的 22 岁感',
+      '默认气质从稳定成熟收束到偏弱气、年轻可爱、带一点怯意，但严格保持成年与非幼态边界',
+      '头发改为浅红棕色，瞳孔保持红色',
+      '服装默认改为清凉、日常、轻层次，避免厚重成熟化',
+      '袜子细节升级为长期视觉辨识点，可随世界切换不同袜型与材质',
+    ],
+    promptEffects: [
+      '角色 prompt 必须显式写入年龄锚点、发色瞳色、弱气可爱气质与非幼态边界',
+      '世界变体与身份基线 prompt 都应写入清凉日常穿搭和袜子辨识度',
+      '后续用户评价应继续追加到账本，再回写到角色或世界权威源',
+    ],
+  },
+  {
+    id: 'vf-2026-08-02-character-full-body-default',
+    date: '2026-08-02',
+    scope: ['liluo-character', 'site-posters', 'character-showcase'],
+    appliesTo: {
+      characters: ['liluo'],
+      worlds: ['all'],
+      collections: ['liluo-character', 'site-posters'],
+      aspects: ['composition', 'framing', 'showcase-coverage'],
+    },
+    source: 'user-feedback',
+    normalizationRule: '用户提出的“尽量全身、不要半身”属于长期构图规则，归档后必须写成稳定的构图约束，而不是只保留一次性的相对偏好。',
+    writebackTargets: {
+      character: ['characterShowcaseCompositionRules[]'],
+      worlds: [],
+      prompts: ['buildCharacterShowcasePromptFragment()', 'buildLiluoBaselineEntries()'],
+    },
+    rawSummary: '用户要求专门展示人物的时候尽量全身都展示，不要半身，除非这张图需要展示背景。',
+    abstractedTraits: [
+      '人物专门展示图默认采用完整全身构图，让发型、服装、袜子与鞋履同时可读',
+      '半身或中近景只在背景、空间关系或页面功能需要时使用',
+    ],
+    promptEffects: [
+      '角色基线与角色展示 prompt 必须优先要求完整全身展示，不能默认落到半身特写',
+      '如果一张图以背景说明为主，prompt 需要显式声明这是允许收成中近景的例外情形',
+    ],
+  },
+  {
+    id: 'vf-2026-08-02-hair-color-parameterization',
+    date: '2026-08-02',
+    scope: ['liluo-character', 'site-posters', 'color-calibration'],
+    appliesTo: {
+      characters: ['liluo'],
+      worlds: ['all'],
+      collections: ['liluo-character', 'site-posters'],
+      aspects: ['hair-color', 'lighting-variation', 'color-parameters'],
+    },
+    source: 'user-feedback-with-reference-image',
+    normalizationRule: '参考图只用于提炼日常光线下的发色色系参数；归档时必须写成稳定的颜色锚点和光线调整规则，不能只保留“像这张图一样红”的模糊描述。',
+    writebackTargets: {
+      character: ['liluoProfile.summary', 'liluoProfile.fixedTraits', 'liluoProfile.hairColorProfile'],
+      worlds: [],
+      prompts: ['buildLiluoHairColorPromptFragment()', 'buildLiluoIdentityPromptFragment()'],
+    },
+    rawSummary: '用户提供一张参考图，要求璃落发色以这张图的红色系为日常光线下的默认发色参数，并允许根据光线亮暗做适度调整。',
+    abstractedTraits: [
+      '璃落日常光线下的发色锚点改为偏绯红的红系红棕，而不是泛橙或偏紫的红发',
+      '发色规则需要显式给出基础色、阴影色和高光色参数，并允许在同色系内做亮暗调整',
+    ],
+    promptEffects: [
+      '角色 prompt 必须写明日常光线下的发色锚点和允许的明暗调整范围',
+      '不同世界与时间段可以调亮或压暗发色，但不能把璃落画成橙金、棕灰或紫黑头发',
+    ],
+  },
+]
+
+export const posterStyleAuthorities = {
+  character: ['liluoProfile.summary', 'liluoProfile.fixedTraits', 'liluoProfile.hairColorProfile', 'liluoProfile.stylePreferences', 'liluoProfile.publicSafety'],
+  worlds: ['worlds[].palette', 'worlds[].materials', 'worlds[].atmosphere', 'worlds[].liluoLooks'],
+  archiveRules: ['visualFeedbackArchiveRules[]'],
+  composition: ['characterShowcaseCompositionRules[]'],
+  feedback: ['visualFeedbackLedger[].abstractedTraits', 'visualFeedbackLedger[].promptEffects'],
+}
+
+export function buildLiluoFigurePromptFragment() {
+  return '身高锚点约 150cm，整体娇小，不拉成长腿高挑比例，体态带自然曲线与轻微丰润感，不过度夸张'
+}
+
+export function buildLiluoFacePromptFragment() {
+  return '脸型为柔和鹅蛋脸，下颌圆润收束，不画成尖下巴或瓜子脸'
+}
+
+export function buildLiluoIdentityPromptFragment() {
+  return `璃落固定为 ${liluoProfile.age} 岁刚成年的成年女性，${buildLiluoHairColorPromptFragment()}，红色瞳孔，${buildLiluoFigurePromptFragment()}，${buildLiluoFacePromptFragment()}，整体气质偏弱气、年轻可爱，带一点怯意与柔和感，但绝不幼态`
+}
+
+export function buildLiluoLookPromptFragment(look) {
+  const parts = [`本条重点使用 ${look.hair}`, look.outfit, '整体服装优先保持清凉、日常、轻层次']
+  if (look.sock) parts.push(`袜子细节使用 ${look.sock}`)
+  parts.push(`情绪为 ${look.mood}`)
+  return parts.join('，')
+}
+
+export function buildLiluoHairColorPromptFragment() {
+  const profile = liluoProfile.hairColorProfile.everydayLighting
+  return `发色以日常光线下的${profile.description}为锚点，基础色 ${profile.baseHex}，阴影色 ${profile.shadowHex}，高光色 ${profile.highlightHex}，最亮反光可接近 ${profile.rimLightHex}，允许随光线亮暗做同色系微调，但不能漂成橙金、棕灰或紫黑`
+}
+
+export function buildCharacterShowcasePromptFragment(backgroundPriority = false) {
+  if (backgroundPriority) {
+    return '如果本张图的主要任务是解释背景或空间关系，才允许使用中近景；即便如此也要保持人物完整可识别，不做卖弄身体局部的半身裁切'
+  }
+  return '如果本张图专门展示人物，默认优先完整全身展示，让发型、服装、袜子与鞋履同时可读，不做半身裁切'
+}
+
+export function buildLiluoSafetyPromptFragment() {
+  return '保持公开安全：不幼态、不露骨、不过度性感化、不做武器中心化摆拍、不写入额外 canon，不生成文字、Logo 或水印'
 }
 
 export const productionPhases = [

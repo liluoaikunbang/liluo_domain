@@ -3,13 +3,13 @@ export const updateRecords = Object.freeze([
         "id":  "180",
         "date":  "2026-08-02",
         "title":  "大型视觉海报官网升级与运行时视觉计划体系",
-        "summary":  "官网升级为面向长期扩展的海报式视觉展台：新增运行时视觉计划层，统一承载 1248 条视觉计划、96 条截图任务、52 个批次和 60 条已接入公开素材；重做首页、六界、世界详情、系列、角色、图鉴、证据、生产体系、路线图、开发日志与协作页，并将 Pages 入口切换到新的海报页实现，同时用新的站点运行时校验脚本替代旧的中间 JSON 依赖。"
+        "summary":  "官网升级为面向长期扩展的海报式视觉展台：新增运行时视觉计划层、视觉反馈账本与归档绝对化规则，并补上治理注册与璃落身份 prompt 强校验，现同时锁定年龄、发色、瞳色、身高体态与脸型锚点，防止只改提示词或让角色回落成高挑尖脸；统一承载 1248 条视觉计划、96 条截图任务、52 个批次和 60 条已接入公开素材；重做首页、六界、世界详情、系列、角色、图鉴、证据、生产体系、路线图、开发日志与协作页，并将 Pages 入口切换到新的海报页实现，同时用新的站点运行时校验脚本替代旧的中间 JSON 依赖。"
     },
     {
         "id":  "179",
         "date":  "2026-08-02",
         "title":  "Codex上下文预算缓解与静默构建",
-        "summary":  "将 `build:web` 与 `build:pages` 切到 Vite `--logLevel warn`，保留 warning 与失败输出，同时避免成功构建逐项打印大批图片、音频、字体和 chunk 体积清单；并升级 GitHub Pages workflow 中的关键官方 action 主版本，降低项目内 Codex 会话预算与旧运行时提示的双重干扰。"
+        "summary":  "将 `build:web` 与 `build:pages` 切到 Vite `--logLevel warn`，保留 warning 与失败输出，同时避免成功构建逐项打印大批图片、音频、字体和 chunk 体积清单；并升级 GitHub Pages workflow 中的关键官方 action 主版本。2026-08-02 追加：把批次、registry、prompt 与索引核对收口为“先看统计、字段和少量样本”的低输出默认，补上 Windows 中文文档的 UTF-8 分段读取脚本，并要求脏工作区先看 `git diff --stat`，减少乱码往返与宽范围大输出对 Codex 会话上下文预算的干扰。"
     },
     {
         "id":  "178",
@@ -21,7 +21,7 @@ export const updateRecords = Object.freeze([
         "id":  "177",
         "date":  "2026-08-01",
         "title":  "Grok图像生成脚本与提示词润色Skill",
-        "summary":  "新增本地 Grok 图像生成脚本、status/probe/dry-run/live 配置检查、提示词润色 Skill 与配套说明文档；现支持 CLI 覆盖模型、比例、超时、重试和本地网络参数，并把 --base-url 收口到 xAI 或 loopback，live 结果默认写入系统临时目录并生成不含密钥的 manifest。"
+        "summary":  "新增本地 Grok 图像生成脚本、status/probe/dry-run/live 配置检查、提示词润色 Skill 与配套说明文档；现支持 CLI 覆盖模型、比例、超时、重试和本地网络参数，并把 --base-url 收口到 xAI 或 loopback，live 结果默认写入系统临时目录并生成不含密钥的 manifest。2026-08-02 追加：官网海报、角色基线与 README/Pages 视觉批次默认优先走内置 Image 2，Grok 只在用户明确要求或检查 Grok 链路时触发。"
     },
     {
         "id":  "176",

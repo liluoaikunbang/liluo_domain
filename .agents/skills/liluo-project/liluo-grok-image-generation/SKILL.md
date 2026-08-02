@@ -1,6 +1,6 @@
 ---
 name: liluo-grok-image-generation
-description: Generate draft images with Grok/xAI from this project using a prompt-polish workflow, local configuration check, dry-run/live switch, safe temp output, and manifest capture. Use when the user wants to turn a scene brief, poster idea, key art request, UI mood board, or visual concept into Grok image output here, or when checking Grok image API configuration. Also use when the user asks to polish a Grok image prompt before generation. Not for canon story writing, asset registry finalization, or unrelated third-party image APIs.
+description: Generate draft images with Grok/xAI from this project only when the user explicitly asks for Grok output, wants to inspect Grok image API configuration, or wants to polish a Grok-specific prompt. Do not use as the default path for poster, key art, UI mood board, or site visual generation when the project already has an Image 2 workflow.
 ---
 
 # Grok Image Generation
@@ -11,6 +11,8 @@ This Skill covers two linked tasks:
 
 1. Turn a rough image idea into a Grok-ready prompt.
 2. Run the local Grok image script in dry-run or live mode.
+
+For project poster pages, site visuals, character baseline posters, and other Image 2-planned batches, Grok is not the default generator. Those tasks should stay on the built-in Image 2 path unless the user explicitly asks to use Grok for that run.
 
 ## Hard gates
 
@@ -24,6 +26,7 @@ This Skill covers two linked tasks:
 8. Default output lands in the system temp directory (`%TEMP%/liluo-grok-images` on Windows) so routine generations do not silently enter canon, docs, or asset registries.
 9. Do not invent canon facts, costumes, props, locations, or relationship states just to make an image prompt feel richer. Confirm or infer only what the current task safely supports.
 10. Do not imitate living artists. Use concrete visual language instead.
+11. Do not override an existing project-level Image 2 workflow just because a request mentions posters, key art, or visual concepts. Grok is opt-in, not the default for those project tasks.
 
 ## Prompt workflow
 
@@ -92,6 +95,7 @@ After a successful live run, report:
 
 ## Adjacent boundaries
 
-- Use `image_gen` only when the user explicitly wants the built-in image tool instead of Grok.
+- For poster upgrades, site visuals, README/Pages visual batches, character baseline calibration, and other project visual work already defined as Image 2 assets, use `image_gen` by default unless the user explicitly asks for Grok.
+- Use this Skill when the user explicitly wants Grok, wants to compare Grok against another generator, or wants to verify/debug the Grok image path itself.
 - Use `liluo-natural-expression` only for reader-facing copy around the prompt or delivery notes, not for the command output itself.
 - If the user wants adopted images registered as project assets later, handle that as a separate task with the relevant asset/documentation workflow.

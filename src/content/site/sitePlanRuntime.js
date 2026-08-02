@@ -1,4 +1,9 @@
 import {
+  buildCharacterShowcasePromptFragment,
+  buildLiluoHairColorPromptFragment,
+  buildLiluoIdentityPromptFragment,
+  buildLiluoLookPromptFragment,
+  buildLiluoSafetyPromptFragment,
   collaborationTracks,
   devlogEntries,
   developmentStatuses,
@@ -189,13 +194,18 @@ function buildVisualRegistry() {
 }
 
 function buildLiluoBaselineEntries() {
-  const frames = ['portrait', 'mid-shot', 'full-body', 'environmental']
+  const frames = [
+    { id: 'portrait', label: '纵向全身角色海报', shotType: 'full-body', backgroundPriority: false },
+    { id: 'mid-shot', label: '中距离全身角色构图', shotType: 'full-body', backgroundPriority: false },
+    { id: 'full-body', label: '全身动作构图', shotType: 'full-body', backgroundPriority: false },
+    { id: 'environmental', label: '人物与环境构图', shotType: 'environmental', backgroundPriority: true },
+  ]
   return worlds.flatMap((world) =>
     frames.map((frame, index) => {
       const look = world.liluoLooks[index % world.liluoLooks.length]
       return createEntry({
-        id: `visual-liluo-baseline-${world.id}-${frame}`,
-        title: `${world.name} / 璃落身份基线 / ${frame}`,
+        id: `visual-liluo-baseline-${world.id}-${frame.id}`,
+        title: `${world.name} / 璃落身份基线 / ${frame.id}`,
         collection: 'liluo-character',
         worldId: world.id,
         seriesId: worldSeriesMap.get(world.id)?.id || null,
@@ -203,24 +213,24 @@ function buildLiluoBaselineEntries() {
         publicationStatus: 'public_safe',
         promptStatus: 'promptReady',
         evidenceLevel: 'concept',
-        shotType: frame,
+        shotType: frame.shotType,
         timeOfDay: ['day', 'dawn', 'dusk', 'night'][index % 4],
         weather: ['clear', 'overcast', 'indoor', 'windy'][index % 4],
         visualLanguage: 'editorial-character-sheet',
-        tags: ['璃落', world.name, '身份基线', look.hair, look.outfit],
+        tags: ['璃落', world.name, '身份基线', look.hair, look.outfit, look.sock || '袜子细节'],
         previewAssetId: getPublishedAsset(`pub-liluo-${world.id}-variant`) ? `pub-liluo-${world.id}-variant` : 'pub-liluo-portrait',
         proofBoundary: '公开角色基线海报，不声明玩法落地。',
         brief: {
           focus: `${world.name} 中的璃落身份基线`,
-          composition: frame,
-          subject: `${look.hair} / ${look.outfit}`,
+          composition: frame.label,
+          subject: `${look.hair} / ${look.outfit} / ${look.sock || '袜子细节'}`,
           use: 'Batch 00 身份校准',
         },
         prompt: [
           `为璃落宇宙官网生成一张璃落身份基线海报，世界是 ${world.name}。`,
-          `她固定为 22 岁成年女性，红发红瞳，气质稳定，当前造型使用 ${look.hair} 与 ${look.outfit}。`,
-          `镜头采用 ${frame}，画面需要同时说明她与 ${world.tagline} 的关系，背景可以参考 ${world.zones[index % world.zones.length].scene}。`,
-          `整体情绪偏向 ${look.mood}，保持公开安全、可阅读、适合网页排版留白，不在图中生成文字。`,
+          `${buildLiluoIdentityPromptFragment()}。${buildLiluoHairColorPromptFragment()}。${buildLiluoLookPromptFragment(look)}。`,
+          `${buildCharacterShowcasePromptFragment(frame.backgroundPriority)}。镜头采用 ${frame.label}，画面需要同时说明她与 ${world.tagline} 的关系，背景可以参考 ${world.zones[index % world.zones.length].scene}。`,
+          `整体情绪偏向 ${look.mood}，保持公开安全、可阅读、适合网页排版留白。${buildLiluoSafetyPromptFragment()}。`,
         ].join(' '),
       })
     }),
@@ -237,10 +247,10 @@ function buildLiluoWorldEntries(world) {
     { id: 'rest', label: '短暂休息', detail: '在世界里停下而不是摆拍' },
   ]
   const frames = [
-    { id: 'portrait', label: '角色封面', aspect: '4:5' },
-    { id: 'mid', label: '叙事中景', aspect: '16:9' },
-    { id: 'full', label: '全身动作', aspect: '16:9' },
-    { id: 'env', label: '人与环境', aspect: '21:9' },
+    { id: 'portrait', label: '纵向全身角色封面', aspect: '4:5', shotType: 'full-body', backgroundPriority: false },
+    { id: 'mid', label: '中距离全身叙事构图', aspect: '16:9', shotType: 'full-body', backgroundPriority: false },
+    { id: 'full', label: '全身动作', aspect: '16:9', shotType: 'full-body', backgroundPriority: false },
+    { id: 'env', label: '人与环境', aspect: '21:9', shotType: 'environmental', backgroundPriority: true },
   ]
   const entries = []
   let counter = 0
@@ -259,24 +269,24 @@ function buildLiluoWorldEntries(world) {
           publicationStatus: 'public_safe',
           promptStatus: 'promptReady',
           evidenceLevel: 'concept',
-          shotType: frame.id,
+          shotType: frame.shotType,
           timeOfDay: ['dawn', 'day', 'dusk', 'night'][counter % 4],
           weather: ['clear', 'overcast', 'interior', 'wind'][counter % 4],
           visualLanguage: 'narrative-character-illustration',
-          tags: ['璃落', world.name, action.label, frame.label, look.hair, look.outfit],
+          tags: ['璃落', world.name, action.label, frame.label, look.hair, look.outfit, look.sock || '袜子细节'],
           previewAssetId: `pub-liluo-${world.id}-variant`,
           proofBoundary: '公开角色视觉，不直接写入未确认剧情。',
           brief: {
             focus: `${world.name} 中的璃落角色变化`,
             composition: frame.label,
-            subject: `${action.label} / ${look.hair} / ${look.outfit}`,
+            subject: `${action.label} / ${look.hair} / ${look.outfit} / ${look.sock || '袜子细节'}`,
             use: '角色页、世界页、图鉴',
           },
           prompt: [
             `为官网生成一张 ${world.name} 世界中的璃落角色海报，主题是“璃落正在${action.detail}”。`,
-            `她固定为成年女性，红发红瞳，当前外观为 ${look.hair} 与 ${look.outfit}，情绪基调 ${look.mood}。`,
-            `场景放在 ${zone.label}，要表现 ${zone.scene} 与 ${zone.detail}，镜头采用 ${frame.label}，比例偏向 ${frame.aspect}。`,
-            `保持世界氛围 ${world.atmosphere}，适合网页裁切，不生成文字，不做幼态或过度性感表达。`,
+            `${buildLiluoIdentityPromptFragment()}。${buildLiluoLookPromptFragment(look)}。`,
+            `${buildCharacterShowcasePromptFragment(frame.backgroundPriority)}。场景放在 ${zone.label}，要表现 ${zone.scene} 与 ${zone.detail}，镜头采用 ${frame.label}，比例偏向 ${frame.aspect}。`,
+            `保持世界氛围 ${world.atmosphere}，适合网页裁切。${buildLiluoSafetyPromptFragment()}。`,
           ].join(' '),
         }),
       )

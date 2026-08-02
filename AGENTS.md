@@ -61,6 +61,9 @@ Cursor 与 Codex 共用普通权威文件，`.cursor/` 与 `.codex/` 只保留�
 ## 项目知识索引
 
 跨文件、跨世界或跨系统定位优先使用项目索引查询命令，再按命中结果核验原始权威文件；不得默认加载完整 `project-index/INDEX.md`。索引异常时使用项目索引 Skill 修复或检查，修改被索引源后按范围增量刷新并验证。通用规划、TDD、调试、前端、Vue/Vite、审查和简化继续使用 `.agents/skills/` 下现有通用 Skills。
+- 涉及批次、注册表、prompt、索引命中或其他大文件核对时，默认先取统计、`--limit`、`--fields`、1–3 条样本或定向行段；除非用户明确要求，不直接打印整批 prompt、整份 JSON、整文件前数百行，也不并行执行会返回大段重叠输出的命令。脏工作区里先看 `git diff --stat`、定向 `rg` 或单文件 diff，不默认直接展开多文件大 diff 正文。
+- Windows 下读取中文 `docs`、JSON 或注册表时，默认优先用 `node scripts/docs/read-utf8-slice.mjs <file> --start <n> --count <m>` 做 UTF-8 分段读取；不要再用未显式指定编码的 `Get-Content` 去判断中文文件是否正常。
+- 官网海报、README/Pages 视觉批次、角色基线图与 `Batch 00` 的视觉反馈和 prompt 回写统一遵循 [官网海报视觉反馈归档系统](docs/系统说明/官网海报视觉反馈归档系统.md)；用户反馈先入 `visualFeedbackLedger`，再回写 `liluoProfile` / `worlds[*]` 等权威字段；璃落身份相关 prompt 必须显式包含年龄锚点、发色、瞳色与非幼态边界。
 
 ## 项目子智能体
 

@@ -667,6 +667,34 @@
       "status": "active"
     },
     {
+      "ruleId": "visual-feedback-ledger-before-writeback",
+      "title": "官网海报视觉反馈先入账本再回写权威字段与 prompt 规则",
+      "authority": "docs/系统说明/官网海报视觉反馈归档系统.md",
+      "consumers": [
+        "AGENTS.md",
+        "src/content/site/siteBlueprint.js",
+        "scripts/site/site-visual-pipeline.mjs",
+        "docs/liluo-identity-and-variation-bible.md",
+        "docs/image2-prompt-authoring-standard.md",
+        "docs/visual-feedback-ledger.md"
+      ],
+      "status": "active"
+    },
+    {
+      "ruleId": "liluo-identity-prompts-require-age-hair-eyes",
+      "title": "璃落身份相关 prompt 必须显式包含年龄锚点、发色、瞳色与非幼态边界",
+      "authority": "docs/系统说明/官网海报视觉反馈归档系统.md",
+      "consumers": [
+        "AGENTS.md",
+        "src/content/site/siteBlueprint.js",
+        "scripts/site/site-visual-pipeline.mjs",
+        "docs/liluo-identity-and-variation-bible.md",
+        "docs/image2-prompt-authoring-standard.md",
+        "docs/visual-generation-batches.md"
+      ],
+      "status": "active"
+    },
+    {
       "ruleId": "purpose-driven-ideation",
       "title": "构思候选必须以真实缺口、可观察因果和成本依据筛选，并允许不新增",
       "authority": "docs/系统说明/效用导向灵感与细节构思系统.md",

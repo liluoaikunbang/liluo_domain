@@ -1982,7 +1982,7 @@
   {
     "id": "docs/功能更新/177-Grok图像生成脚本与提示词润色Skill.md",
     "indexVersion": 1,
-    "sourceHash": "a166ba1b43d3660e6fbe1e11974b66764e04a416684e02cd333c2f9fe8c77331",
+    "sourceHash": "53e223378404e80f108efbde2576a776bc83f2b62dd3e0958e79a6b7a0cbda50",
     "sourcePath": "docs/功能更新/177-Grok图像生成脚本与提示词润色Skill.md",
     "subtype": "update",
     "summary": "177-Grok图像生成脚本与提示词润色Skill",
@@ -2004,7 +2004,7 @@
   {
     "id": "docs/功能更新/179-Codex上下文预算缓解与静默构建.md",
     "indexVersion": 1,
-    "sourceHash": "a150645ce31c26420cd10920e9c4e249dfbd2910f98fd4c8c0008f39e1be97d1",
+    "sourceHash": "7f891dfa5f9f99268ac5c0b80006acb8fce663f0f018ad28063d2a6d09712918",
     "sourcePath": "docs/功能更新/179-Codex上下文预算缓解与静默构建.md",
     "subtype": "update",
     "summary": "179-Codex上下文预算缓解与静默构建",
@@ -2015,7 +2015,7 @@
   {
     "id": "docs/功能更新/180-大型视觉海报官网升级与运行时视觉计划体系.md",
     "indexVersion": 1,
-    "sourceHash": "8486c421760ab9935ff4c68beba4aababe0a85d80545408903424722de8f3ea6",
+    "sourceHash": "e4f07a9c1d969a1432b63e94361e2c8cb467fb770ae3280c0d02f88cbe389581",
     "sourcePath": "docs/功能更新/180-大型视觉海报官网升级与运行时视觉计划体系.md",
     "subtype": "update",
     "summary": "180-大型视觉海报官网升级与运行时视觉计划体系",
@@ -2026,7 +2026,7 @@
   {
     "id": "docs/功能更新目录.md",
     "indexVersion": 1,
-    "sourceHash": "ff383891d99bf6f4b3c1ab414b3d21b6025be81aee72ec7922bbd40d88490017",
+    "sourceHash": "fb14f35c49b6d3331501f54bb17e6ba63c984febed8a561212206a74c999a012",
     "sourcePath": "docs/功能更新目录.md",
     "subtype": "other",
     "summary": "功能更新目录",
@@ -2224,7 +2224,7 @@
   {
     "id": "docs/技能说明/liluo-grok-image-generation.md",
     "indexVersion": 1,
-    "sourceHash": "577bfd72c2fb37ed185cec37168642910fbb5fb7f4cd57ff889026e121fd665f",
+    "sourceHash": "1a9bb22e8b00be4aceffc46708753745076543bb1a7e64f4a2240673bd2f1bdb",
     "sourcePath": "docs/技能说明/liluo-grok-image-generation.md",
     "subtype": "skill",
     "summary": "Grok 图像生成（`liluo-grok-image-generation`）",

@@ -870,6 +870,29 @@
       "status": "active"
     },
     {
+      "documentId": "website-poster-visual-feedback-system",
+      "path": "docs/系统说明/官网海报视觉反馈归档系统.md",
+      "type": "system-spec",
+      "authorityFor": [
+        "website-poster-visual-feedback-archive",
+        "liluo-visual-identity-writeback",
+        "image2-prompt-anchor-governance"
+      ],
+      "consumers": [
+        "AGENTS.md",
+        "src/content/site/siteBlueprint.js",
+        "scripts/site/site-visual-pipeline.mjs",
+        "docs/liluo-identity-and-variation-bible.md",
+        "docs/image2-prompt-authoring-standard.md",
+        "docs/visual-feedback-ledger.md",
+        "docs/visual-generation-batches.md",
+        "docs/系统说明/README.md"
+      ],
+      "indexable": true,
+      "userFacing": true,
+      "status": "active"
+    },
+    {
       "documentId": "collaboration-expansion-route",
       "path": "docs/协作参与与团队扩展路线.md",
       "type": "project-charter",
