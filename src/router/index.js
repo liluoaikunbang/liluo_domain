@@ -3,12 +3,67 @@ import { createRouter, createWebHistory, createWebHashHistory } from 'vue-router
 const routes = [
     {
       path: '/',
-      redirect: '/readme',
+      name: 'site-home',
+      component: () => import('../pages/SitePage.vue'),
     },
     {
         path: '/readme',
-        name: 'readme',
-        component: () => import('../pages/ReadmePage.vue'),
+        redirect: '/',
+    },
+    {
+        path: '/worlds',
+        name: 'site-worlds',
+        component: () => import('../pages/SitePage.vue'),
+    },
+    {
+        path: '/worlds/:worldId',
+        name: 'site-world-detail',
+        component: () => import('../pages/SitePage.vue'),
+    },
+    {
+        path: '/worlds/:worldId/series/:seriesId',
+        name: 'site-series',
+        component: () => import('../pages/SitePage.vue'),
+    },
+    {
+        path: '/characters',
+        name: 'site-characters',
+        component: () => import('../pages/SitePage.vue'),
+    },
+    {
+        path: '/characters/:characterId',
+        name: 'site-character-detail',
+        component: () => import('../pages/SitePage.vue'),
+    },
+    {
+        path: '/gallery',
+        name: 'site-gallery',
+        component: () => import('../pages/SitePage.vue'),
+    },
+    {
+        path: '/evidence',
+        name: 'site-evidence',
+        component: () => import('../pages/SitePage.vue'),
+    },
+    {
+        path: '/production',
+        name: 'site-production',
+        component: () => import('../pages/SitePage.vue'),
+    },
+    {
+        path: '/roadmap',
+        name: 'site-roadmap',
+        component: () => import('../pages/SitePage.vue'),
+    },
+    {
+        path: '/devlog',
+        name: 'site-devlog',
+        component: () => import('../pages/SitePage.vue'),
+    },
+    {
+        path: '/collab',
+        name: 'site-collab',
+        component: () => import('../pages/SitePage.vue'),
     },
     {
         path: '/read_page',

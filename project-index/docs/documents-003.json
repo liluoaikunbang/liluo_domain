@@ -1,5 +1,27 @@
 [
   {
+    "id": "docs/知识检索校准/batches/rab-ms2ubk7w.md",
+    "indexVersion": 1,
+    "sourceHash": "e7f59d712a5aad2b22f0b02a975e9695d0e269dad3fa7953f5009fd566447e0a",
+    "sourcePath": "docs/知识检索校准/batches/rab-ms2ubk7w.md",
+    "subtype": "other",
+    "summary": "综合（RAG / Style-RAG / 细节概念 / 情节） 抽查批次 rab-ms2ubk7w",
+    "summarySource": "title-only",
+    "title": "综合（RAG / Style-RAG / 细节概念 / 情节） 抽查批次 rab-ms2ubk7w",
+    "type": "document"
+  },
+  {
+    "id": "docs/知识检索校准/batches/rab-ms2uga3f.md",
+    "indexVersion": 1,
+    "sourceHash": "843bf4a42c66005d543404e0076310a48c337de7f7bc484a9c2556650d8cf073",
+    "sourcePath": "docs/知识检索校准/batches/rab-ms2uga3f.md",
+    "subtype": "other",
+    "summary": "Style-RAG 抽查批次 rab-ms2uga3f",
+    "summarySource": "title-only",
+    "title": "Style-RAG 抽查批次 rab-ms2uga3f",
+    "type": "document"
+  },
+  {
     "id": "docs/知识检索校准/batches/rab-ms2uga42.md",
     "indexVersion": 1,
     "sourceHash": "af42e233165a60cb0d1e9245b3d27e82a8acafe934552a10c24376f912a71fda",
@@ -855,6 +877,72 @@
     "summary": "璃落宇宙世界图册",
     "summarySource": "title-only",
     "title": "璃落宇宙世界图册",
+    "type": "document"
+  },
+  {
+    "id": "docs/site/canonical-naming-review.md",
+    "indexVersion": 1,
+    "sourceHash": "62f360d5fa26d047fd810900ecb663a6690f7c749b2d86ce9520bc2c861d926b",
+    "sourcePath": "docs/site/canonical-naming-review.md",
+    "subtype": "other",
+    "summary": "GitHub Pages 官网公开命名核对",
+    "summarySource": "title-only",
+    "title": "GitHub Pages 官网公开命名核对",
+    "type": "document"
+  },
+  {
+    "id": "docs/site/phase-2-3-baseline-audit.md",
+    "indexVersion": 1,
+    "sourceHash": "b975806daf0a71b073b474687c1c413a6b083c0b3629651f61b4f9e5c02d723a",
+    "sourcePath": "docs/site/phase-2-3-baseline-audit.md",
+    "subtype": "other",
+    "summary": "GitHub Pages 官网 Phase 2 + Phase 3 基线审计",
+    "summarySource": "title-only",
+    "title": "GitHub Pages 官网 Phase 2 + Phase 3 基线审计",
+    "type": "document"
+  },
+  {
+    "id": "docs/site/phase-2-3-final-report.md",
+    "indexVersion": 1,
+    "sourceHash": "58e9a7c8d0961f4d309be53f9eb2d827cd1c14a8e4f0b344fe06defc29aa4b50",
+    "sourcePath": "docs/site/phase-2-3-final-report.md",
+    "subtype": "other",
+    "summary": "GitHub Pages 官网 Phase 2 + Phase 3 执行报告",
+    "summarySource": "title-only",
+    "title": "GitHub Pages 官网 Phase 2 + Phase 3 执行报告",
+    "type": "document"
+  },
+  {
+    "id": "docs/site/screenshot-capture-plan.md",
+    "indexVersion": 1,
+    "sourceHash": "5437deae1954116330bbbdcb54e4d07a2600491abcecc372d26cb15125a52861",
+    "sourcePath": "docs/site/screenshot-capture-plan.md",
+    "subtype": "other",
+    "summary": "GitHub Pages 官网截图补拍计划",
+    "summarySource": "title-only",
+    "title": "GitHub Pages 官网截图补拍计划",
+    "type": "document"
+  },
+  {
+    "id": "docs/site/site-maintenance-guide.md",
+    "indexVersion": 1,
+    "sourceHash": "10b9d0b2e0e4ea52f668cf1184d789fed18fb564d18a7cf1778a4c076a8773a9",
+    "sourcePath": "docs/site/site-maintenance-guide.md",
+    "subtype": "other",
+    "summary": "GitHub Pages 官网维护手册",
+    "summarySource": "title-only",
+    "title": "GitHub Pages 官网维护手册",
+    "type": "document"
+  },
+  {
+    "id": "docs/site/visual-system/visual-review-report.md",
+    "indexVersion": 1,
+    "sourceHash": "6892aa4b9a05656909b6538ea8a010912914c9297688b53644dbf7f8b67f155d",
+    "sourcePath": "docs/site/visual-system/visual-review-report.md",
+    "subtype": "other",
+    "summary": "GitHub Pages 官网视觉复核报告",
+    "summarySource": "title-only",
+    "title": "GitHub Pages 官网视觉复核报告",
     "type": "document"
   }
 ]

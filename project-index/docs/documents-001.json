@@ -1991,9 +1991,31 @@
     "type": "document"
   },
   {
+    "id": "docs/功能更新/178-GitHub-Pages官网结构化扩展.md",
+    "indexVersion": 1,
+    "sourceHash": "33019090881ec9dffd1c8a415ef0b05c7edcdb818ece02b61cd8af521bec4b1f",
+    "sourcePath": "docs/功能更新/178-GitHub-Pages官网结构化扩展.md",
+    "subtype": "update",
+    "summary": "178-GitHub Pages 官网结构化扩展",
+    "summarySource": "title-only",
+    "title": "178-GitHub Pages 官网结构化扩展",
+    "type": "document"
+  },
+  {
+    "id": "docs/功能更新/179-Codex上下文预算缓解与静默构建.md",
+    "indexVersion": 1,
+    "sourceHash": "27c6c5fd8de93fa248bf4c3ea1baa8850e6bd0ce0cf647ed1563d845a8a9ee27",
+    "sourcePath": "docs/功能更新/179-Codex上下文预算缓解与静默构建.md",
+    "subtype": "update",
+    "summary": "179-Codex上下文预算缓解与静默构建",
+    "summarySource": "title-only",
+    "title": "179-Codex上下文预算缓解与静默构建",
+    "type": "document"
+  },
+  {
     "id": "docs/功能更新目录.md",
     "indexVersion": 1,
-    "sourceHash": "a3a376492ebd79bf16678d995ea77a81a1a9cfc9af6427ad767ed52cfe22f310",
+    "sourceHash": "7f765e4b369054e8713d734c6a35ef49af464adad489ba0311a1cf79c8506700",
     "sourcePath": "docs/功能更新目录.md",
     "subtype": "other",
     "summary": "功能更新目录",
@@ -2725,28 +2747,6 @@
     "summary": "ADR-009：取消项目级 Codex 生命周期 Hook",
     "summarySource": "title-only",
     "title": "ADR-009：取消项目级 Codex 生命周期 Hook",
-    "type": "document"
-  },
-  {
-    "id": "docs/设计记忆/架构决策/ADR-010-Cursor与Codex采用共享事实源和专属适配层.md",
-    "indexVersion": 1,
-    "sourceHash": "e8347df3ab0ff4410ee0b6ab81a72a78ce81824480995c5a78033c5e954ebfba",
-    "sourcePath": "docs/设计记忆/架构决策/ADR-010-Cursor与Codex采用共享事实源和专属适配层.md",
-    "subtype": "other",
-    "summary": "ADR-010：Cursor 与 Codex 采用共享事实源和专属适配层",
-    "summarySource": "title-only",
-    "title": "ADR-010：Cursor 与 Codex 采用共享事实源和专属适配层",
-    "type": "document"
-  },
-  {
-    "id": "docs/设计记忆/架构决策/ADR-011-成熟复杂任务采用机器可读工作流门禁.md",
-    "indexVersion": 1,
-    "sourceHash": "35c01356c7623523cd1a6cdc09bbecdff4b89c66dd2bde2081cd0e78f2c22cce",
-    "sourcePath": "docs/设计记忆/架构决策/ADR-011-成熟复杂任务采用机器可读工作流门禁.md",
-    "subtype": "other",
-    "summary": "ADR-011：成熟复杂任务采用机器可读工作流门禁",
-    "summarySource": "title-only",
-    "title": "ADR-011：成熟复杂任务采用机器可读工作流门禁",
     "type": "document"
   }
 ]

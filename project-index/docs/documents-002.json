@@ -1,5 +1,27 @@
 [
   {
+    "id": "docs/设计记忆/架构决策/ADR-010-Cursor与Codex采用共享事实源和专属适配层.md",
+    "indexVersion": 1,
+    "sourceHash": "e8347df3ab0ff4410ee0b6ab81a72a78ce81824480995c5a78033c5e954ebfba",
+    "sourcePath": "docs/设计记忆/架构决策/ADR-010-Cursor与Codex采用共享事实源和专属适配层.md",
+    "subtype": "other",
+    "summary": "ADR-010：Cursor 与 Codex 采用共享事实源和专属适配层",
+    "summarySource": "title-only",
+    "title": "ADR-010：Cursor 与 Codex 采用共享事实源和专属适配层",
+    "type": "document"
+  },
+  {
+    "id": "docs/设计记忆/架构决策/ADR-011-成熟复杂任务采用机器可读工作流门禁.md",
+    "indexVersion": 1,
+    "sourceHash": "35c01356c7623523cd1a6cdc09bbecdff4b89c66dd2bde2081cd0e78f2c22cce",
+    "sourcePath": "docs/设计记忆/架构决策/ADR-011-成熟复杂任务采用机器可读工作流门禁.md",
+    "subtype": "other",
+    "summary": "ADR-011：成熟复杂任务采用机器可读工作流门禁",
+    "summarySource": "title-only",
+    "title": "ADR-011：成熟复杂任务采用机器可读工作流门禁",
+    "type": "document"
+  },
+  {
     "id": "docs/设计记忆/架构决策/ADR-012-上下文分层与创作组有效参与机制.md",
     "indexVersion": 1,
     "sourceHash": "cab2ae3d3f5fd48dd0bdb92458d3e25f554a7f77c4d049e8a82985f8f823a952",
@@ -2565,7 +2587,7 @@
   {
     "id": "docs/运行规范/未解决问题/Codex会话提交异常与上下文预算问题.md",
     "indexVersion": 1,
-    "sourceHash": "c58700e69e954a0712ee33d2caf13cc9f27b99d3807781cde3558267a8dc4c45",
+    "sourceHash": "ba4da7287511055abd0c8dc381b33686d8cd74521a42aeed86372b96da7bb26a",
     "sourcePath": "docs/运行规范/未解决问题/Codex会话提交异常与上下文预算问题.md",
     "subtype": "other",
     "summary": "Codex 会话提交异常与上下文预算问题",
@@ -2725,28 +2747,6 @@
     "summary": "情节 抽查批次 rab-ms2ubk7a",
     "summarySource": "title-only",
     "title": "情节 抽查批次 rab-ms2ubk7a",
-    "type": "document"
-  },
-  {
-    "id": "docs/知识检索校准/batches/rab-ms2ubk7w.md",
-    "indexVersion": 1,
-    "sourceHash": "e7f59d712a5aad2b22f0b02a975e9695d0e269dad3fa7953f5009fd566447e0a",
-    "sourcePath": "docs/知识检索校准/batches/rab-ms2ubk7w.md",
-    "subtype": "other",
-    "summary": "综合（RAG / Style-RAG / 细节概念 / 情节） 抽查批次 rab-ms2ubk7w",
-    "summarySource": "title-only",
-    "title": "综合（RAG / Style-RAG / 细节概念 / 情节） 抽查批次 rab-ms2ubk7w",
-    "type": "document"
-  },
-  {
-    "id": "docs/知识检索校准/batches/rab-ms2uga3f.md",
-    "indexVersion": 1,
-    "sourceHash": "843bf4a42c66005d543404e0076310a48c337de7f7bc484a9c2556650d8cf073",
-    "sourcePath": "docs/知识检索校准/batches/rab-ms2uga3f.md",
-    "subtype": "other",
-    "summary": "Style-RAG 抽查批次 rab-ms2uga3f",
-    "summarySource": "title-only",
-    "title": "Style-RAG 抽查批次 rab-ms2uga3f",
     "type": "document"
   }
 ]
