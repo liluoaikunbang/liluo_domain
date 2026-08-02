@@ -3,7 +3,7 @@ export const updateRecords = Object.freeze([
         "id":  "179",
         "date":  "2026-08-02",
         "title":  "Codex上下文预算缓解与静默构建",
-        "summary":  "将 `build:web` 与 `build:pages` 切到 Vite `--logLevel warn`，保留 warning 与失败输出，同时避免成功构建逐项打印大批图片、音频、字体和 chunk 体积清单，降低项目内 Codex 会话的上下文预算消耗。"
+        "summary":  "将 `build:web` 与 `build:pages` 切到 Vite `--logLevel warn`，保留 warning 与失败输出，同时避免成功构建逐项打印大批图片、音频、字体和 chunk 体积清单；并升级 GitHub Pages workflow 中的关键官方 action 主版本，降低项目内 Codex 会话预算与旧运行时提示的双重干扰。"
     },
     {
         "id":  "178",

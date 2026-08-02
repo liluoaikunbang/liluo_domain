@@ -4,20 +4,11 @@
     "docs"
   ],
   "changes": {
-    "added": [
-      "docs/site/canonical-naming-review.md",
-      "docs/site/phase-2-3-baseline-audit.md",
-      "docs/site/phase-2-3-final-report.md",
-      "docs/site/screenshot-capture-plan.md",
-      "docs/site/site-maintenance-guide.md",
-      "docs/site/visual-system/visual-review-report.md",
-      "docs/功能更新/178-GitHub-Pages官网结构化扩展.md",
-      "docs/功能更新/179-Codex上下文预算缓解与静默构建.md"
-    ],
+    "added": [],
     "deleted": [],
     "modified": [
+      "docs/功能更新/179-Codex上下文预算缓解与静默构建.md",
       "docs/功能更新目录.md",
-      "docs/运行规范/未解决问题/Codex会话提交异常与上下文预算问题.md",
       "src/game/data/global/updateRecords.js"
     ],
     "renamed": []
@@ -52,11 +43,11 @@
       "status": "partial"
     }
   },
-  "generatedAt": "2026-08-02T05:49:27.024Z",
+  "generatedAt": "2026-08-02T06:00:32.059Z",
   "generatorVersion": "1.0.3",
   "mode": "changed",
   "schemaVersion": 1,
-  "sourceCommit": "f7672a68912a4fa8acc2809927c17aa68c55d7a5",
+  "sourceCommit": "8e7d70a85d73019e851a3dbe75358fc5f058aed7",
   "sourceSnapshot": {
     "docs/CG待制作清单.md": "a752b02736e083677375217e6bda2e91e331a1ca3f6d9bc273c0b0d433761ad4",
     "docs/README.md": "59154f6e59605898f890a55619af68685d8158dce89accd91e264a60d164057d",
@@ -386,8 +377,8 @@
     "docs/功能更新/176-AI原生叙事游戏生产体系升级.md": "580067e51527f120ddc2d2627f43d40e8d7dde8c2270ebb813ff00e5df18d1cf",
     "docs/功能更新/177-Grok图像生成脚本与提示词润色Skill.md": "a166ba1b43d3660e6fbe1e11974b66764e04a416684e02cd333c2f9fe8c77331",
     "docs/功能更新/178-GitHub-Pages官网结构化扩展.md": "33019090881ec9dffd1c8a415ef0b05c7edcdb818ece02b61cd8af521bec4b1f",
-    "docs/功能更新/179-Codex上下文预算缓解与静默构建.md": "27c6c5fd8de93fa248bf4c3ea1baa8850e6bd0ce0cf647ed1563d845a8a9ee27",
-    "docs/功能更新目录.md": "7f765e4b369054e8713d734c6a35ef49af464adad489ba0311a1cf79c8506700",
+    "docs/功能更新/179-Codex上下文预算缓解与静默构建.md": "a150645ce31c26420cd10920e9c4e249dfbd2910f98fd4c8c0008f39e1be97d1",
+    "docs/功能更新目录.md": "7c21acf6ceec1a3fb44347230224e1400c36bc403d2b3af380276f506c4629d6",
     "docs/协作参与与团队扩展路线.md": "9fd82982ab92ec8281a58c1f75c15beae9a365200fb5e07a77d92668a6c06aab",
     "docs/外部来源/Skill来源目录.md": "5dea73aeb2afb392039bccaefa6acfaa1b796cf666b7ebd859c77c9171f8fdf3",
     "docs/外部来源/Skill许可证与保存策略.md": "18498f5dc9c78c51a9198714ea470d8f6ecb9692128b5d8c6906ee57ba5308cd",
@@ -1157,7 +1148,7 @@
     "src/game/data/global/cgVariantRules.ts": "a9be23c234f0c8a980f304256066538db732625a5fa49647b91b3b240a58e091",
     "src/game/data/global/gameMenuData.js": "549ad516de3df68f5628f912a08cf9d28dcfc52ef21e1d863bc11c3235bddb69",
     "src/game/data/global/updateRecordGroups.js": "ca9b92d0987ceb1890868ada15342a3d76e05657a319a92be851bde8efb64544",
-    "src/game/data/global/updateRecords.js": "894b16badee30118aa7bad3ef8619ddcad3574d2bfd097323f41a8d99de8cdd0",
+    "src/game/data/global/updateRecords.js": "58ef2ea9e05584495788c29aa537b49f78c3398db2cd406774e6295fc3bc8402",
     "src/game/data/globalAssets.ts": "c8f61d63f69f0aed0fee4e821683bf4a2cee733104d4b48ab7f78d4879f4c17f",
     "src/game/data/interactive_fictions/asylum_for_lunatic/assets.ts": "a15be46e4a9841f1ea133a883c435b5fd799a858cde8a4ca44036650236c5a69",
     "src/game/data/interactive_fictions/asylum_for_lunatic/index.ts": "af405bbd76de80f5999d0f28a81a48b97a8219a3d050de42320247917c44c98b",

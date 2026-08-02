@@ -2004,7 +2004,7 @@
   {
     "id": "docs/功能更新/179-Codex上下文预算缓解与静默构建.md",
     "indexVersion": 1,
-    "sourceHash": "27c6c5fd8de93fa248bf4c3ea1baa8850e6bd0ce0cf647ed1563d845a8a9ee27",
+    "sourceHash": "a150645ce31c26420cd10920e9c4e249dfbd2910f98fd4c8c0008f39e1be97d1",
     "sourcePath": "docs/功能更新/179-Codex上下文预算缓解与静默构建.md",
     "subtype": "update",
     "summary": "179-Codex上下文预算缓解与静默构建",
@@ -2015,7 +2015,7 @@
   {
     "id": "docs/功能更新目录.md",
     "indexVersion": 1,
-    "sourceHash": "7f765e4b369054e8713d734c6a35ef49af464adad489ba0311a1cf79c8506700",
+    "sourceHash": "7c21acf6ceec1a3fb44347230224e1400c36bc403d2b3af380276f506c4629d6",
     "sourcePath": "docs/功能更新目录.md",
     "subtype": "other",
     "summary": "功能更新目录",
