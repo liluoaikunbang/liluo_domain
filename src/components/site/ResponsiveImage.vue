@@ -5,8 +5,8 @@
       :srcset="srcset || undefined"
       :sizes="sizes"
       :alt="asset?.alt || alt"
-      :width="asset?.width"
-      :height="asset?.height"
+      :width="asset?.width || undefined"
+      :height="asset?.height || undefined"
       :loading="priority ? 'eager' : 'lazy'"
       :fetchpriority="priority ? 'high' : undefined"
       decoding="async"
@@ -20,8 +20,8 @@
 </template>
 
 <script setup>
-import { computed, ref } from 'vue'
-import { resolveSiteAsset, resolveSiteSrcset } from '../../content/site/assetResolver'
+import { computed, ref, watch } from 'vue'
+import { resolveSiteAsset, resolveSiteSrcset } from '../../content/site/assetRuntime'
 
 const props = defineProps({
   asset: { type: Object, required: true },
@@ -35,6 +35,13 @@ const props = defineProps({
 const hasError = ref(false)
 const src = computed(() => resolveSiteAsset(props.asset, props.priority ? 'large' : 'content'))
 const srcset = computed(() => resolveSiteSrcset(props.asset))
+
+watch(
+  () => props.asset?.id,
+  () => {
+    hasError.value = false
+  },
+)
 </script>
 
 <style scoped>
@@ -42,7 +49,7 @@ const srcset = computed(() => resolveSiteSrcset(props.asset))
   position: relative;
   margin: 0;
   overflow: hidden;
-  background: #191d22;
+  background: linear-gradient(135deg, #151b24, #243247);
 }
 
 .responsive-image--frame {
@@ -62,8 +69,10 @@ const srcset = computed(() => resolveSiteSrcset(props.asset))
   display: grid;
   min-height: 180px;
   place-items: center;
-  color: #d6cdbc;
-  background: repeating-linear-gradient(135deg, #1a1e24 0 12px, #20252d 12px 24px);
+  color: #f4ece0;
+  background:
+    radial-gradient(circle at top left, rgba(255, 223, 175, 0.2), transparent 42%),
+    repeating-linear-gradient(135deg, rgba(29, 38, 52, 0.9) 0 16px, rgba(22, 28, 38, 0.95) 16px 32px);
 }
 
 figcaption {

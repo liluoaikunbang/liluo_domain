@@ -4,7 +4,7 @@ const routes = [
     {
       path: '/',
       name: 'site-home',
-      component: () => import('../pages/SitePage.vue'),
+      component: () => import('../pages/SitePosterPage.vue'),
     },
     {
         path: '/readme',
@@ -13,57 +13,57 @@ const routes = [
     {
         path: '/worlds',
         name: 'site-worlds',
-        component: () => import('../pages/SitePage.vue'),
+        component: () => import('../pages/SitePosterPage.vue'),
     },
     {
         path: '/worlds/:worldId',
         name: 'site-world-detail',
-        component: () => import('../pages/SitePage.vue'),
+        component: () => import('../pages/SitePosterPage.vue'),
     },
     {
         path: '/worlds/:worldId/series/:seriesId',
         name: 'site-series',
-        component: () => import('../pages/SitePage.vue'),
+        component: () => import('../pages/SitePosterPage.vue'),
     },
     {
         path: '/characters',
         name: 'site-characters',
-        component: () => import('../pages/SitePage.vue'),
+        component: () => import('../pages/SitePosterPage.vue'),
     },
     {
         path: '/characters/:characterId',
         name: 'site-character-detail',
-        component: () => import('../pages/SitePage.vue'),
+        component: () => import('../pages/SitePosterPage.vue'),
     },
     {
         path: '/gallery',
         name: 'site-gallery',
-        component: () => import('../pages/SitePage.vue'),
+        component: () => import('../pages/SitePosterPage.vue'),
     },
     {
         path: '/evidence',
         name: 'site-evidence',
-        component: () => import('../pages/SitePage.vue'),
+        component: () => import('../pages/SitePosterPage.vue'),
     },
     {
         path: '/production',
         name: 'site-production',
-        component: () => import('../pages/SitePage.vue'),
+        component: () => import('../pages/SitePosterPage.vue'),
     },
     {
         path: '/roadmap',
         name: 'site-roadmap',
-        component: () => import('../pages/SitePage.vue'),
+        component: () => import('../pages/SitePosterPage.vue'),
     },
     {
         path: '/devlog',
         name: 'site-devlog',
-        component: () => import('../pages/SitePage.vue'),
+        component: () => import('../pages/SitePosterPage.vue'),
     },
     {
         path: '/collab',
         name: 'site-collab',
-        component: () => import('../pages/SitePage.vue'),
+        component: () => import('../pages/SitePosterPage.vue'),
     },
     {
         path: '/read_page',

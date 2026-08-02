@@ -2013,9 +2013,20 @@
     "type": "document"
   },
   {
+    "id": "docs/功能更新/180-大型视觉海报官网升级与运行时视觉计划体系.md",
+    "indexVersion": 1,
+    "sourceHash": "8486c421760ab9935ff4c68beba4aababe0a85d80545408903424722de8f3ea6",
+    "sourcePath": "docs/功能更新/180-大型视觉海报官网升级与运行时视觉计划体系.md",
+    "subtype": "update",
+    "summary": "180-大型视觉海报官网升级与运行时视觉计划体系",
+    "summarySource": "title-only",
+    "title": "180-大型视觉海报官网升级与运行时视觉计划体系",
+    "type": "document"
+  },
+  {
     "id": "docs/功能更新目录.md",
     "indexVersion": 1,
-    "sourceHash": "7c21acf6ceec1a3fb44347230224e1400c36bc403d2b3af380276f506c4629d6",
+    "sourceHash": "ff383891d99bf6f4b3c1ab414b3d21b6025be81aee72ec7922bbd40d88490017",
     "sourcePath": "docs/功能更新目录.md",
     "subtype": "other",
     "summary": "功能更新目录",
@@ -2736,17 +2747,6 @@
     "summary": "ADR-008：交互生命周期 Hook 与质量门禁分离",
     "summarySource": "title-only",
     "title": "ADR-008：交互生命周期 Hook 与质量门禁分离",
-    "type": "document"
-  },
-  {
-    "id": "docs/设计记忆/架构决策/ADR-009-取消项目级Codex生命周期Hook.md",
-    "indexVersion": 1,
-    "sourceHash": "0ea15789f38ee0f2a7a9111222f49e8d47e87882210053d29fd703166708e3e1",
-    "sourcePath": "docs/设计记忆/架构决策/ADR-009-取消项目级Codex生命周期Hook.md",
-    "subtype": "other",
-    "summary": "ADR-009：取消项目级 Codex 生命周期 Hook",
-    "summarySource": "title-only",
-    "title": "ADR-009：取消项目级 Codex 生命周期 Hook",
     "type": "document"
   }
 ]

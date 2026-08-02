@@ -4,7 +4,7 @@ import { createPinia } from 'pinia'
 import { createRouter, createWebHashHistory } from 'vue-router'
 import App from './App.vue'
 
-const siteComponent = () => import('./pages/SitePage.vue')
+const siteComponent = () => import('./pages/SitePosterPage.vue')
 
 const router = createRouter({
   history: createWebHashHistory(),

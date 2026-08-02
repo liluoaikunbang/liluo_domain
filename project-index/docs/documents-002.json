@@ -1,5 +1,16 @@
 [
   {
+    "id": "docs/设计记忆/架构决策/ADR-009-取消项目级Codex生命周期Hook.md",
+    "indexVersion": 1,
+    "sourceHash": "0ea15789f38ee0f2a7a9111222f49e8d47e87882210053d29fd703166708e3e1",
+    "sourcePath": "docs/设计记忆/架构决策/ADR-009-取消项目级Codex生命周期Hook.md",
+    "subtype": "other",
+    "summary": "ADR-009：取消项目级 Codex 生命周期 Hook",
+    "summarySource": "title-only",
+    "title": "ADR-009：取消项目级 Codex 生命周期 Hook",
+    "type": "document"
+  },
+  {
     "id": "docs/设计记忆/架构决策/ADR-010-Cursor与Codex采用共享事实源和专属适配层.md",
     "indexVersion": 1,
     "sourceHash": "e8347df3ab0ff4410ee0b6ab81a72a78ce81824480995c5a78033c5e954ebfba",
@@ -2736,17 +2747,6 @@
     "summary": "细节概念 抽查批次 rab-ms2ubk72",
     "summarySource": "title-only",
     "title": "细节概念 抽查批次 rab-ms2ubk72",
-    "type": "document"
-  },
-  {
-    "id": "docs/知识检索校准/batches/rab-ms2ubk7a.md",
-    "indexVersion": 1,
-    "sourceHash": "e6b5e192a5599490f4aa8fb9cbf4980873b5233b132c7e3392377468f9224dab",
-    "sourcePath": "docs/知识检索校准/batches/rab-ms2ubk7a.md",
-    "subtype": "other",
-    "summary": "情节 抽查批次 rab-ms2ubk7a",
-    "summarySource": "title-only",
-    "title": "情节 抽查批次 rab-ms2ubk7a",
     "type": "document"
   }
 ]
