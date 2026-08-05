@@ -2057,9 +2057,20 @@
     "type": "document"
   },
   {
+    "id": "docs/功能更新/184-官网深色化与世界展示图同步接线.md",
+    "indexVersion": 1,
+    "sourceHash": "cb3bcd242dfc917f058591a4e1252328082c3070bb0d51bd37afd99a199bd5f9",
+    "sourcePath": "docs/功能更新/184-官网深色化与世界展示图同步接线.md",
+    "subtype": "update",
+    "summary": "184-官网深色化与世界展示图同步接线",
+    "summarySource": "title-only",
+    "title": "184-官网深色化与世界展示图同步接线",
+    "type": "document"
+  },
+  {
     "id": "docs/功能更新目录.md",
     "indexVersion": 1,
-    "sourceHash": "3f88ed1839bde43510d45708d1adca8a5dc66cb1591e972c6e86d60cd08c2bcb",
+    "sourceHash": "21d282eac30261fffede3acbd284fa5401daef2f039b145f03d9fa1d032577e9",
     "sourcePath": "docs/功能更新目录.md",
     "subtype": "other",
     "summary": "功能更新目录",
@@ -2736,17 +2747,6 @@
     "summary": "ADR-004：外部 Skill 采用非可信三层演化架构",
     "summarySource": "title-only",
     "title": "ADR-004：外部 Skill 采用非可信三层演化架构",
-    "type": "document"
-  },
-  {
-    "id": "docs/设计记忆/架构决策/ADR-005-命令授权采用项目规则与决定注册分层治理.md",
-    "indexVersion": 1,
-    "sourceHash": "709f3d4f9209a19c987762a6bced33dfa59de383caf6d04df58a5070160c493d",
-    "sourcePath": "docs/设计记忆/架构决策/ADR-005-命令授权采用项目规则与决定注册分层治理.md",
-    "subtype": "other",
-    "summary": "ADR-005：命令授权采用项目规则与决定注册分层治理",
-    "summarySource": "title-only",
-    "title": "ADR-005：命令授权采用项目规则与决定注册分层治理",
     "type": "document"
   }
 ]

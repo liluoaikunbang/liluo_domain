@@ -91,11 +91,11 @@ onBeforeUnmount(() => {
 <style scoped>
 .poster-shell {
   min-height: 100vh;
-  color: #112238;
+  color: #f4efe6;
   background:
-    radial-gradient(circle at top left, rgba(255, 210, 165, 0.55), transparent 28%),
-    radial-gradient(circle at top right, rgba(128, 170, 224, 0.32), transparent 24%),
-    linear-gradient(180deg, #fff7ef 0%, #fffdf9 34%, #f5efe8 100%);
+    radial-gradient(circle at top left, rgba(184, 111, 43, 0.2), transparent 24%),
+    radial-gradient(circle at top right, rgba(70, 115, 178, 0.18), transparent 22%),
+    linear-gradient(180deg, #0d1118 0%, #121923 36%, #0b1017 100%);
 }
 
 .poster-shell__skip {
@@ -105,8 +105,8 @@ onBeforeUnmount(() => {
   z-index: 60;
   padding: 10px 14px;
   border-radius: 999px;
-  background: #18375d;
-  color: #fff8ef;
+  background: #dba44f;
+  color: #12161d;
   text-decoration: none;
 }
 
@@ -119,8 +119,8 @@ onBeforeUnmount(() => {
   top: 0;
   z-index: 40;
   backdrop-filter: blur(18px);
-  background: rgba(255, 249, 242, 0.88);
-  border-bottom: 1px solid rgba(24, 55, 93, 0.08);
+  background: rgba(12, 17, 24, 0.86);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .poster-shell__inner {
@@ -139,7 +139,7 @@ onBeforeUnmount(() => {
 .poster-shell__brand {
   display: grid;
   gap: 4px;
-  color: #143257;
+  color: #faf3e7;
   text-decoration: none;
 }
 
@@ -150,7 +150,7 @@ onBeforeUnmount(() => {
 }
 
 .poster-shell__brand small {
-  color: #6d7d8c;
+  color: #9ba7b8;
   font-size: 0.74rem;
 }
 
@@ -165,7 +165,7 @@ onBeforeUnmount(() => {
 .poster-shell__nav a,
 .poster-shell__footer-nav a,
 .poster-shell__mobile-nav a {
-  color: #2d4969;
+  color: #d7deea;
   text-decoration: none;
   font-weight: 700;
 }
@@ -179,13 +179,14 @@ onBeforeUnmount(() => {
 .poster-shell__nav a:hover,
 .poster-shell__nav a:focus-visible,
 .poster-shell__mobile-nav a.router-link-active {
-  background: rgba(25, 70, 123, 0.08);
-  color: #18375d;
+  background: rgba(219, 164, 79, 0.14);
+  color: #fff3d9;
 }
 
 .poster-shell__nav .is-emphasis {
-  background: #18375d;
-  color: #fff8ef;
+  border: 1px solid rgba(219, 164, 79, 0.34);
+  background: rgba(219, 164, 79, 0.16);
+  color: #ffd99d;
 }
 
 .poster-shell__menu {
@@ -193,9 +194,9 @@ onBeforeUnmount(() => {
   position: relative;
   width: 48px;
   height: 48px;
-  border: 1px solid rgba(24, 55, 93, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 16px;
-  background: rgba(255, 255, 255, 0.68);
+  background: rgba(22, 29, 40, 0.9);
 }
 
 .poster-shell__menu span {
@@ -203,7 +204,7 @@ onBeforeUnmount(() => {
   width: 20px;
   height: 2px;
   margin: 4px auto;
-  background: #18375d;
+  background: #f3e7d0;
 }
 
 .poster-shell__menu b {
@@ -219,7 +220,7 @@ onBeforeUnmount(() => {
   inset: 0;
   z-index: 35;
   padding: 84px 18px 18px;
-  background: rgba(15, 27, 45, 0.2);
+  background: rgba(5, 8, 13, 0.56);
 }
 
 .poster-shell__mobile-nav {
@@ -228,10 +229,10 @@ onBeforeUnmount(() => {
   max-width: 360px;
   margin-left: auto;
   padding: 18px;
-  border: 1px solid rgba(24, 55, 93, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 28px;
-  background: rgba(255, 252, 248, 0.98);
-  box-shadow: 0 24px 60px rgba(22, 41, 68, 0.12);
+  background: rgba(14, 20, 29, 0.98);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.28);
 }
 
 .poster-shell__mobile-nav a {
@@ -246,8 +247,8 @@ onBeforeUnmount(() => {
 .poster-shell__footer {
   margin-top: 72px;
   padding: 38px 0 54px;
-  border-top: 1px solid rgba(24, 55, 93, 0.08);
-  background: linear-gradient(180deg, rgba(255, 251, 246, 0.4), rgba(241, 234, 225, 0.9));
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  background: linear-gradient(180deg, rgba(10, 14, 21, 0.44), rgba(7, 10, 15, 0.96));
 }
 
 .poster-shell__footer-inner {
@@ -257,14 +258,14 @@ onBeforeUnmount(() => {
 }
 
 .poster-shell__footer-copy strong {
-  color: #18375d;
+  color: #f5efe4;
   font-size: 1rem;
 }
 
 .poster-shell__footer-copy p {
   max-width: 620px;
   margin: 10px 0 0;
-  color: #56677a;
+  color: #9eabbd;
   line-height: 1.8;
 }
 

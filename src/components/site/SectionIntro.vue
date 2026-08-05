@@ -23,7 +23,7 @@ defineProps({
 
 .section-intro__eyebrow {
   margin: 0;
-  color: #94551f;
+  color: #dfb66e;
   font-size: 0.78rem;
   font-weight: 800;
   letter-spacing: 0.08em;
@@ -32,14 +32,14 @@ defineProps({
 
 h2 {
   margin: 0;
-  color: #14233a;
+  color: #f4efe6;
   font-size: clamp(2rem, 4vw, 3.7rem);
   line-height: 0.98;
 }
 
 .section-intro__body {
   margin: 0;
-  color: #4d5d70;
+  color: #aab4c7;
   font-size: 1rem;
   line-height: 1.8;
 }

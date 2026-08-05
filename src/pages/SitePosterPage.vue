@@ -247,10 +247,32 @@
         </div>
       </section>
 
-      <section class="page-shell section">
-        <SectionIntro eyebrow="已接入公开素材" title="先看现在已经能摆上站点的世界资产。" />
+      <section v-if="currentWorldShowcaseAssets.length" class="page-shell section">
+        <SectionIntro
+          eyebrow="世界展示分区"
+          title="这批正式展示图已经同步接进网站展示位。"
+          body="这些图对应世界总图中的一级主线大区，用来先把世界自己的长期板块讲清楚；后续更细的小图继续沿着各区单独扩。"
+        />
         <div class="published-grid">
-          <article v-for="asset in currentWorldPublished" :key="asset.id" class="published-card">
+          <article v-for="item in currentWorldShowcaseAssets" :key="item.asset.id" class="published-card">
+            <ResponsiveImage :asset="item.asset" :framed="false" sizes="(max-width: 780px) 100vw, 33vw" />
+            <div class="published-card__body">
+              <div class="badge-row">
+                <StatusBadge :value="item.asset.evidenceLevel" kind="evidence" />
+                <StatusBadge :value="item.asset.promptStatus" />
+              </div>
+              <h3>{{ item.assembly.label }}</h3>
+              <p>{{ item.assembly.detail }}</p>
+              <small class="micro-copy">{{ item.assembly.scene }}</small>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="page-shell section">
+        <SectionIntro eyebrow="已接入公开素材" title="除分区总图外，基础世界资产也都保留在这里。" />
+        <div class="published-grid">
+          <article v-for="asset in currentWorldPublishedCore" :key="asset.id" class="published-card">
             <ResponsiveImage :asset="asset" :framed="false" sizes="(max-width: 780px) 100vw, 33vw" />
             <div class="published-card__body">
               <div class="badge-row">
@@ -660,6 +682,12 @@ const currentWorld = computed(() => getWorld(String(route.params.worldId || ''))
 const currentSeries = computed(() => getSeries(String(route.params.seriesId || '')) || null)
 const currentWorldSeries = computed(() => (currentWorld.value ? getSeriesForWorld(currentWorld.value.id) : []))
 const currentWorldPublished = computed(() => (currentWorld.value ? getWorldPublishedAssets(currentWorld.value.id) : []))
+const currentWorldPublishedCore = computed(() => currentWorldPublished.value.filter((item) => !item.assemblyId))
+const currentWorldShowcaseAssets = computed(() => {
+  if (!currentWorld.value?.showcaseAssemblies?.length) return []
+  const assetMap = new Map(currentWorldPublished.value.filter((item) => item.assemblyId).map((item) => [item.assemblyId, item]))
+  return currentWorld.value.showcaseAssemblies.map((assembly) => ({ assembly, asset: assetMap.get(assembly.id) })).filter((item) => item.asset)
+})
 const currentWorldPlan = computed(() =>
   currentWorld.value ? visualRegistry.filter((item) => item.worldId === currentWorld.value.id).slice(0, 18) : [],
 )
@@ -774,7 +802,7 @@ function worldSummary(worldId) {
 <style scoped>
 :global(body) {
   margin: 0;
-  background: #fff9f3;
+  background: #0b1017;
 }
 
 :global(#app) {
@@ -798,7 +826,7 @@ function worldSummary(worldId) {
 .page-hero {
   position: relative;
   overflow: hidden;
-  border-bottom: 1px solid rgba(24, 55, 93, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .hero {
@@ -813,8 +841,8 @@ function worldSummary(worldId) {
 
 .hero__shade {
   background:
-    linear-gradient(90deg, rgba(255, 248, 240, 0.92), rgba(255, 248, 240, 0.48) 46%, rgba(255, 248, 240, 0.82)),
-    linear-gradient(180deg, rgba(255, 248, 240, 0.12), rgba(255, 248, 240, 0.94));
+    linear-gradient(90deg, rgba(8, 11, 16, 0.9), rgba(8, 11, 16, 0.48) 48%, rgba(8, 11, 16, 0.78)),
+    linear-gradient(180deg, rgba(8, 11, 16, 0.12), rgba(8, 11, 16, 0.95));
 }
 
 .hero__content {
@@ -828,7 +856,7 @@ function worldSummary(worldId) {
 
 .eyebrow {
   margin: 0 0 14px;
-  color: #a4581a;
+  color: #dfb66e;
   font-size: 0.8rem;
   font-weight: 900;
   letter-spacing: 0.08em;
@@ -847,7 +875,7 @@ span {
 
 h1 {
   max-width: 920px;
-  color: #13233b;
+  color: #f6f0e7;
   font-size: clamp(3rem, 6vw, 6.6rem);
   line-height: 0.95;
   letter-spacing: -0.03em;
@@ -864,7 +892,7 @@ h1 {
 .screenshot-note p,
 .feature-points p,
 .gallery-meta {
-  color: #536477;
+  color: #a6b2c4;
   line-height: 1.8;
 }
 
@@ -896,17 +924,18 @@ h1 {
   justify-content: center;
   min-height: 46px;
   padding: 0 18px;
-  border: 1px solid rgba(24, 55, 93, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.82);
-  color: #18375d;
+  background: rgba(22, 28, 38, 0.94);
+  color: #ece5d8;
   font-weight: 800;
   text-decoration: none;
 }
 
 .button--primary {
-  background: #18375d;
-  color: #fff8ef;
+  border-color: rgba(219, 164, 79, 0.36);
+  background: linear-gradient(135deg, #dca24d, #b87a2d);
+  color: #12161d;
 }
 
 .button:disabled {
@@ -915,7 +944,7 @@ h1 {
 }
 
 .text-link {
-  color: #18375d;
+  color: #f1c97e;
   font-weight: 800;
   text-decoration: none;
 }
@@ -947,10 +976,10 @@ h1 {
 .screenshot-note,
 .feature-points article {
   overflow: hidden;
-  border: 1px solid rgba(24, 55, 93, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 28px;
-  background: rgba(255, 253, 250, 0.9);
-  box-shadow: 0 18px 50px rgba(24, 44, 71, 0.06);
+  background: rgba(15, 21, 30, 0.94);
+  box-shadow: 0 22px 58px rgba(0, 0, 0, 0.26);
 }
 
 .stat-card,
@@ -965,7 +994,7 @@ h1 {
 .stat-card strong,
 .layer-card strong {
   display: block;
-  color: #18375d;
+  color: #f6efe2;
   font-size: clamp(2rem, 3vw, 3rem);
   line-height: 1;
 }
@@ -974,7 +1003,7 @@ h1 {
 .layer-card span {
   display: block;
   margin-top: 12px;
-  color: #18375d;
+  color: #e8dfd0;
   font-weight: 800;
 }
 
@@ -1003,7 +1032,7 @@ h1 {
 .batch-card h3,
 .feature-points h3,
 .evidence-card h3 {
-  color: #16283f;
+  color: #f4efe5;
   font-size: 1.24rem;
   line-height: 1.35;
 }
@@ -1011,8 +1040,8 @@ h1 {
 .tag-row span {
   padding: 7px 12px;
   border-radius: 999px;
-  background: rgba(233, 239, 247, 0.95);
-  color: #39506f;
+  background: rgba(33, 43, 60, 0.95);
+  color: #d5dfef;
   font-size: 0.82rem;
   font-weight: 700;
 }
@@ -1022,7 +1051,7 @@ h1 {
 }
 
 .world-card__meta {
-  color: #7d8895;
+  color: #97a2b5;
   font-size: 0.84rem;
 }
 
@@ -1067,8 +1096,13 @@ h1 {
 
 .batch-card span,
 .track-card small {
-  color: #7b8896;
+  color: #96a3b7;
   font-size: 0.82rem;
+  line-height: 1.7;
+}
+
+.micro-copy {
+  color: #8f9cb0;
   line-height: 1.7;
 }
 
@@ -1080,10 +1114,10 @@ h1 {
 .filter-bar select {
   min-height: 46px;
   padding: 0 14px;
-  border: 1px solid rgba(24, 55, 93, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.82);
-  color: #18375d;
+  background: rgba(19, 26, 36, 0.94);
+  color: #eef2fb;
 }
 
 .filter-bar input {
@@ -1094,16 +1128,17 @@ h1 {
 .chip {
   min-height: 42px;
   padding: 0 16px;
-  border: 1px solid rgba(24, 55, 93, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.74);
-  color: #18375d;
+  background: rgba(19, 26, 36, 0.88);
+  color: #d8e1ef;
   font-weight: 800;
 }
 
 .chip--active {
-  background: #18375d;
-  color: #fff8ef;
+  border-color: rgba(219, 164, 79, 0.36);
+  background: linear-gradient(135deg, #dca24d, #b87a2d);
+  color: #12161d;
 }
 
 .pager {

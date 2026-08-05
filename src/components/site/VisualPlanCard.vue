@@ -60,8 +60,8 @@ const collectionLabel = computed(() => {
 const placeholderLabel = computed(() => props.entry.worldId || collectionLabel.value)
 const visibleTags = computed(() => (props.entry.tags || []).slice(0, 4))
 const cardStyle = computed(() => ({
-  '--poster-start': props.entry.worldId ? 'rgba(255, 223, 185, 0.92)' : 'rgba(223, 236, 255, 0.92)',
-  '--poster-end': props.entry.collection === 'story-branch' ? 'rgba(255, 196, 145, 0.82)' : 'rgba(161, 190, 235, 0.82)',
+  '--poster-start': props.entry.worldId ? 'rgba(33, 49, 74, 0.98)' : 'rgba(23, 42, 69, 0.98)',
+  '--poster-end': props.entry.collection === 'story-branch' ? 'rgba(76, 45, 28, 0.9)' : 'rgba(34, 68, 102, 0.9)',
   cursor: props.interactive ? 'pointer' : 'default',
 }))
 </script>
@@ -70,10 +70,10 @@ const cardStyle = computed(() => ({
 .visual-card {
   display: grid;
   overflow: hidden;
-  border: 1px solid rgba(28, 43, 74, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 28px;
-  background: rgba(255, 251, 247, 0.96);
-  box-shadow: 0 20px 45px rgba(23, 39, 66, 0.08);
+  background: rgba(15, 20, 29, 0.96);
+  box-shadow: 0 24px 56px rgba(0, 0, 0, 0.28);
 }
 
 .visual-card__poster {
@@ -84,7 +84,7 @@ const cardStyle = computed(() => ({
 }
 
 .visual-card__poster:focus-visible {
-  box-shadow: inset 0 0 0 3px rgba(60, 109, 203, 0.32);
+  box-shadow: inset 0 0 0 3px rgba(121, 166, 255, 0.32);
 }
 
 .visual-card__placeholder {
@@ -99,7 +99,7 @@ const cardStyle = computed(() => ({
 }
 
 .visual-card__placeholder span {
-  color: #23395d;
+  color: #eef2fb;
   font-size: 0.9rem;
   font-weight: 800;
   letter-spacing: 0.08em;
@@ -126,7 +126,7 @@ const cardStyle = computed(() => ({
   flex-wrap: wrap;
   gap: 8px 12px;
   margin: 0;
-  color: #7b8798;
+  color: #8f9caf;
   font-size: 0.78rem;
   font-weight: 700;
   letter-spacing: 0.04em;
@@ -135,14 +135,14 @@ const cardStyle = computed(() => ({
 
 h3 {
   margin: 0;
-  color: #172b45;
+  color: #f5efe5;
   font-size: 1.18rem;
   line-height: 1.35;
 }
 
 .visual-card__body > p:last-of-type {
   margin: 0;
-  color: #4e5f70;
+  color: #aeb7c8;
   line-height: 1.75;
 }
 
@@ -155,8 +155,8 @@ h3 {
 .visual-card__tags span {
   padding: 6px 10px;
   border-radius: 999px;
-  background: rgba(238, 242, 248, 0.95);
-  color: #355173;
+  background: rgba(38, 48, 66, 0.95);
+  color: #d8dfec;
   font-size: 0.76rem;
   font-weight: 700;
 }

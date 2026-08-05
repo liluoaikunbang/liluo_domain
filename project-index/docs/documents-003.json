@@ -1,5 +1,16 @@
 [
   {
+    "id": "docs/知识检索校准/batches/rab-ms1w6rky.md",
+    "indexVersion": 1,
+    "sourceHash": "54c0e3ffe879fe5d7322c6f0139c3c85cb22dae6f5a3bea39c0248e6485339d7",
+    "sourcePath": "docs/知识检索校准/batches/rab-ms1w6rky.md",
+    "subtype": "other",
+    "summary": "普通 RAG 抽查批次 rab-ms1w6rky",
+    "summarySource": "title-only",
+    "title": "普通 RAG 抽查批次 rab-ms1w6rky",
+    "type": "document"
+  },
+  {
     "id": "docs/知识检索校准/batches/rab-ms1w6rl5.md",
     "indexVersion": 1,
     "sourceHash": "e8bf6ed19e920919fcb074b1bfeb3e7c422c84d893c34602b5cf6a84fafe522d",
