@@ -1,3 +1,5 @@
+import { createImageRuleCard } from './imageGenerationGovernance.js'
+
 export const siteConfig = {
   title: '璃落宇宙',
   englishTitle: 'Liluo Universe',
@@ -123,6 +125,44 @@ export const worlds = [
       '校园地图事件与调查节点',
       '都市悬疑支线结构',
       '截图证据与互动小说衔接',
+    ],
+    showcaseAssemblies: [
+      {
+        id: 'campus-dual',
+        label: '校园（普通与灵异）',
+        scene: '同一所现代学校同时具有普通日常层与灵异调查层，真实校园建筑、操场、校门、公告栏与异常痕迹共存',
+        detail: '总图里只保留“校园”这一块的大识别，且必须一眼像现代学校而不是城市广场；更细的小图后续单独生成',
+      },
+      {
+        id: 'city-dual',
+        label: '都市（白天与晚上）',
+        scene: '白天的公共都市与夜晚的湿路、换乘站、桥梁、住宅与办公楼共同组成真实的当代都市区块',
+        detail: '总图里只保留“都市”这一块的大识别，基调必须更真实、更当代，不走科幻未来城方向；更细的小图后续单独生成',
+      },
+      {
+        id: 'journey-overseas',
+        label: '世界旅行风景（雨林与金字塔）',
+        scene: '主线外出阶段会经过带现代考察痕迹的雨林边缘、沙漠金字塔与异地遗迹路线',
+        detail: '总图里只保留“远行风景”这一块的大识别，金字塔默认偏沙漠考古风，不再继续拆雨林图和金字塔图；更细的小图后续单独生成',
+      },
+      {
+        id: 'crime-city',
+        label: '混乱罪恶都市',
+        scene: '老旧而密集的现代夜晚街区、小巷、招牌反光、堆叠住宅与压迫感共同组成危险城区',
+        detail: '这块在总图里保持独立，不再和普通都市合并；默认参考现代版香港式的拥挤夜巷气质，不做大火灾或末日奇观；更细的小图后续单独生成',
+      },
+      {
+        id: 'past-timeline',
+        label: '过去时间线（民国 / 工业革命初期欧洲 / 近代日式）',
+        scene: '过去时间线作为单独大区存在，其中并置民国城市街区、工业革命初期欧洲城区与近代日式街区',
+        detail: '总图里只保留“过去时间线”这一块的大识别，不再继续拆三张并列子图区；重点是历史都市感，不走古风、仙侠或魔幻味；更细的小图后续单独生成',
+      },
+      {
+        id: 'special-scenes',
+        label: '特殊场景（豪门大别墅 / 城市迷宫）',
+        scene: '现代豪门大别墅与由城市结构组成的迷宫作为单独大区存在',
+        detail: '总图里只保留“特殊场景”这一块的大识别，不再继续拆别墅图和迷宫图；区域主气质仍需保持都市建成环境感；更细的小图后续单独生成',
+      },
     ],
     zones: [
       { id: 'gate', label: '校门与报到区', scene: '门岗、告示牌、自行车和人流入口', detail: '一眼能识别为长期运行校园' },
@@ -277,7 +317,7 @@ export const worlds = [
       { id: 'greenhouse', title: '温室夜班', premise: '最安静的照料时刻最容易出现长久记忆', object: '修剪剪刀与水壶', tension: '平静场景里的关系试探' },
     ],
     liluoLooks: [
-      { hair: '低马尾与细侧编', outfit: '学院短外套、柔软短裙与轻披肩', sock: '深色过膝袜', mood: '冷静、好学、偏弱气' },
+      { hair: '双马尾与细侧编', outfit: '学院短外套、柔软短裙与轻披肩', sock: '深色过膝袜', mood: '冷静、好学、偏弱气' },
       { hair: '松散盘发', outfit: '书库夜读薄披肩与简洁裙装', sock: '黑色连裤袜', mood: '耐心、克制、可爱又安静' },
       { hair: '中分半扎', outfit: '温室工作围裙、短上衣与轻裙', sock: '浅色中筒袜', mood: '温和、可靠、带照料感' },
       { hair: '高束发尾', outfit: '港口出行短斗篷与轻便短裙', sock: '厚织长袜与低跟短靴', mood: '迎风、拘谨、准备出发' },
@@ -382,8 +422,8 @@ export const liluoProfile = {
   role: '旗舰主角',
   age: 18,
   summary:
-    '公开官网中的璃落固定为 18 岁刚成年的成年女性，日常光线下为偏绯红的浅红棕发、红色瞳孔，身高锚点约 150cm，整体是娇小但不过分单薄、带自然曲线和轻微丰润感的成年体态，脸型为柔和鹅蛋脸而非尖下巴瓜子脸，整体偏弱气、年轻可爱，但绝不幼态。她在六界中的发型、轻日常穿搭、袜子细节、动作、职业外观和生活关系都可以真实变化。',
-  adultStatement: '官网所有公开人物均为成年人；璃落固定为 18 岁刚成年的成年女性。',
+    '项目公开图像中的璃落固定为 18 岁刚成年的成年女性，日常光线下为偏绯红的浅红棕发、红色瞳孔，身高锚点约 150cm，整体是娇小但不过分单薄、带自然曲线和轻微丰润感的成年体态，脸型为柔和鹅蛋脸而非尖下巴瓜子脸，五官比例保持年轻成年感而不做幼态化夸张，整体偏弱气、年轻可爱，但绝不幼态。她在六界中的发型、轻日常穿搭、袜子细节、动作、职业外观和生活关系都可以真实变化。',
+  adultStatement: '项目公开图像中的人物均为成年人；璃落固定为 18 岁刚成年的成年女性。',
   fixedTraits: [
     '18 岁刚成年的成年女性',
     '日常光线下为偏绯红的浅红棕发与红色瞳孔',
@@ -391,6 +431,7 @@ export const liluoProfile = {
     '身高锚点约 150cm，整体娇小，不拉成长腿高挑比例',
     '体态带自然曲线与轻微丰润感，不过度夸张，不走纸片瘦削或夸张性感路线',
     '脸型为柔和鹅蛋脸，下颌圆润收束，不画成尖下巴或瓜子脸',
+    '五官比例保持年轻成年感：保留漂亮脸形，但眼鼻口比例与间距不做幼态化夸张，不使用过大的眼睛、过短中庭或过重的婴儿感配置',
   ],
   hairColorProfile: {
     everydayLighting: {
@@ -407,10 +448,15 @@ export const liluoProfile = {
     ],
   },
   variableTraits: ['发型系统', '清凉日常的服装层次', '各种袜子形成的局部辨识度', '动作与职业姿态', '世界中的生活关系', '不同时间与天气里的状态变化'],
-  stylePreferences: ['服装优先偏清凉、日常、轻层次', '喜欢短袜、膝上袜、堆堆袜、连裤袜等不同袜型', '世界差异优先通过材质、配色、空间和袜子或饰品细节拉开'],
+  stylePreferences: [
+    '服装优先偏清凉、日常、轻层次，允许有设计感，但结构必须简洁清楚',
+    '避免繁琐叠穿、重装饰、复杂披挂、过多挂件或会误导身份的华丽套装',
+    '喜欢短袜、膝上袜、堆堆袜、连裤袜等不同袜型',
+    '世界差异优先通过材质、配色、空间和袜子或饰品细节拉开',
+  ],
   feedbackIntakeRules: [
-    '新增用户海报评价先进入视觉反馈账本，再抽象成可复用特征',
-    '已确认的抽象特征同步回写到角色或世界权威源，再进入批量 prompt',
+    '新增用户图像反馈先进入视觉反馈账本，再按判层协议抽象成可复用特征',
+    '已确认的抽象特征同步回写到角色或世界权威源，再进入 Image 2、Grok 等后续图像生成链路',
     '原始反馈可以保留“更弱气”“更浅一些”这类相对描述，但归档后的规则、特征和 prompt 影响必须改写成绝对说法',
     '单次偏好不直接覆盖长期规则，除非用户明确确认要持久化',
   ],
@@ -421,23 +467,32 @@ export const visualFeedbackArchiveRules = [
   '原始反馈允许记录“更弱气”“更浅一些”“少一点”这类相对表达，用来保留用户当下的比较语境。',
   '进入视觉反馈账本的 abstractedTraits、promptEffects，以及角色/世界权威字段时，必须改写成绝对、可复用、可执行的目标描述。',
   '归档文本不得保留缺少参照物的比较词，例如“更”“再”“少一点”“浅一些”；如果确实需要比较，必须同时写明基线对象。',
+  '所有图像生成链路都先按“事实身份 / 提示词组装 / 成图 QA”判层，再决定是否写进 authority、prompt 或 QA。',
+  '单次 prompt 只装配命中的规则层，不把全部长期规范全文塞进一次生成。',
+  '涉及 authority、技能说明和审计输出的同步时，固定顺序是 authority -> 直接消费者 -> 生成型写回；已知稳定 EPERM 的生成器首轮直走正确权限路线。',
 ]
 
 export const characterShowcaseCompositionRules = [
   '专门展示人物时，默认优先完整全身展示，让发型、服装、袜子与鞋履同时可读。',
+  '作为基准图或身份锚点图时，背景必须低干扰、低叙事、低复杂度，优先使用中性或轻世界提示背景，不让复杂场景抢走角色校准信息。',
   '除非这张图的主要任务是解释背景、空间关系或页面信息层，否则不要使用半身或中近景裁切。',
   '即使因为背景说明需要收成中近景，也应保持人物完整可识别，不做卖弄身体局部的裁切。',
 ]
 
 export const visualFeedbackLedger = [
-  {
+  createImageRuleCard({
     id: 'vf-2026-08-02-liluo-stature-face-calibration',
     date: '2026-08-02',
-    scope: ['liluo-character', 'site-posters', 'batch-B00'],
+    scope: ['project-image-generation', 'liluo-character', 'batch-B00'],
+    scopeLevel: 'global-character',
+    ruleKind: 'identity',
+    persistence: 'long-term',
+    enforcement: 'authority+prompt+qa',
+    generators: ['gpt-image-2', 'grok'],
     appliesTo: {
       characters: ['liluo'],
       worlds: ['all'],
-      collections: ['site-posters', 'batch-B00'],
+      collections: ['project-image-generation', 'batch-B00'],
       aspects: ['stature', 'body-proportion', 'face-shape'],
     },
     source: 'user-feedback',
@@ -458,15 +513,22 @@ export const visualFeedbackLedger = [
       '角色 prompt 必须显式排除高挑比例、尖下巴和瓜子脸',
       '后续对体态与脸型的评价继续先进入账本，再决定是否回写长期字段',
     ],
-  },
-  {
+    negativeExamples: ['把璃落继续画成长腿高挑比例', '把脸型收成尖下巴、瓜子脸或过瘦脸', '只在 QA 口头提醒，不把规则沉到长期 authority'],
+    promotionGate: '只有当这条反馈能稳定描述娇小体型、曲线边界和脸型边界时，才允许回写到长期角色 authority。',
+  }),
+  createImageRuleCard({
     id: 'vf-2026-08-02-liluo-baseline-calibration',
     date: '2026-08-02',
-    scope: ['liluo-character', 'site-posters', 'batch-B00'],
+    scope: ['project-image-generation', 'liluo-character', 'batch-B00'],
+    scopeLevel: 'global-character',
+    ruleKind: 'identity',
+    persistence: 'long-term',
+    enforcement: 'authority+prompt+qa',
+    generators: ['gpt-image-2', 'grok'],
     appliesTo: {
       characters: ['liluo'],
       worlds: ['all'],
-      collections: ['site-posters', 'batch-B00'],
+      collections: ['project-image-generation', 'batch-B00'],
       aspects: ['age-anchor', 'temperament', 'hair-color', 'eye-color', 'daily-cool-outfit', 'sock-signature'],
     },
     source: 'user-feedback',
@@ -499,15 +561,22 @@ export const visualFeedbackLedger = [
       '世界变体与身份基线 prompt 都应写入清凉日常穿搭和袜子辨识度',
       '后续用户评价应继续追加到账本，再回写到角色或世界权威源',
     ],
-  },
-  {
+    negativeExamples: ['把“更弱气”“更年轻”直接原样写进长期规范', '把璃落再次画成更成熟或发色漂移的另一套角色', '只在某个模型 prompt 里偷加，不回写 authority'],
+    promotionGate: '只有当年龄、发色、瞳色、气质和穿搭偏好都能被写成绝对目标时，才允许升级成长期规则。',
+  }),
+  createImageRuleCard({
     id: 'vf-2026-08-02-character-full-body-default',
     date: '2026-08-02',
-    scope: ['liluo-character', 'site-posters', 'character-showcase'],
+    scope: ['project-image-generation', 'liluo-character', 'character-showcase'],
+    scopeLevel: 'asset-type',
+    ruleKind: 'composition',
+    persistence: 'long-term',
+    enforcement: 'authority+prompt+qa',
+    generators: ['gpt-image-2', 'grok'],
     appliesTo: {
       characters: ['liluo'],
       worlds: ['all'],
-      collections: ['liluo-character', 'site-posters'],
+      collections: ['liluo-character', 'project-image-generation'],
       aspects: ['composition', 'framing', 'showcase-coverage'],
     },
     source: 'user-feedback',
@@ -526,15 +595,22 @@ export const visualFeedbackLedger = [
       '角色基线与角色展示 prompt 必须优先要求完整全身展示，不能默认落到半身特写',
       '如果一张图以背景说明为主，prompt 需要显式声明这是允许收成中近景的例外情形',
     ],
-  },
-  {
+    negativeExamples: ['专门展示角色时仍默认使用半身特写', '为了省事把构图规则只留在口头说明里', '把背景说明例外扩成所有角色图的默认镜头'],
+    promotionGate: '只有当“人物展示图”和“背景说明图”的边界明确后，才把全身优先升级为长期构图规则。',
+  }),
+  createImageRuleCard({
     id: 'vf-2026-08-02-hair-color-parameterization',
     date: '2026-08-02',
-    scope: ['liluo-character', 'site-posters', 'color-calibration'],
+    scope: ['project-image-generation', 'liluo-character', 'color-calibration'],
+    scopeLevel: 'global-character',
+    ruleKind: 'identity',
+    persistence: 'long-term',
+    enforcement: 'authority+prompt+qa',
+    generators: ['gpt-image-2', 'grok'],
     appliesTo: {
       characters: ['liluo'],
       worlds: ['all'],
-      collections: ['liluo-character', 'site-posters'],
+      collections: ['liluo-character', 'project-image-generation'],
       aspects: ['hair-color', 'lighting-variation', 'color-parameters'],
     },
     source: 'user-feedback-with-reference-image',
@@ -553,7 +629,215 @@ export const visualFeedbackLedger = [
       '角色 prompt 必须写明日常光线下的发色锚点和允许的明暗调整范围',
       '不同世界与时间段可以调亮或压暗发色，但不能把璃落画成橙金、棕灰或紫黑头发',
     ],
-  },
+    negativeExamples: ['只写“像参考图那样红”而不写稳定锚点', '允许不同模型把头发漂成橙金、棕灰或紫黑', '只靠成图后挑图，不回写发色 authority'],
+    promotionGate: '只有当参考图已经被抽象成稳定的发色锚点与同色系明暗规则后，才允许升级为长期 authority。',
+  }),
+  createImageRuleCard({
+    id: 'vf-2026-08-05-batch00-baseline-clarity',
+    date: '2026-08-05',
+    scope: ['project-image-generation', 'liluo-character', 'batch-B00', 'character-baseline'],
+    scopeLevel: 'asset-type',
+    ruleKind: 'composition',
+    persistence: 'long-term',
+    enforcement: 'authority+prompt+qa',
+    generators: ['gpt-image-2', 'grok'],
+    appliesTo: {
+      characters: ['liluo'],
+      worlds: ['all'],
+      collections: ['batch-B00', 'character-baseline', 'project-image-generation'],
+      aspects: ['baseline-background', 'outfit-complexity', 'identity-clarity'],
+    },
+    source: 'user-feedback',
+    normalizationRule:
+      '这条反馈只针对“基准图/身份锚点图”的信息组织，不强行扩成所有世界图的背景规则；归档后必须写成稳定的基准图约束，而不是保留“背景简单一点”“衣服别太复杂”这种相对说法。',
+    writebackTargets: {
+      character: ['liluoProfile.stylePreferences', 'characterShowcaseCompositionRules[]'],
+      worlds: [],
+      prompts: ['buildLiluoLookPromptFragment()', 'buildCharacterShowcasePromptFragment()', 'buildLiluoIdentityPromptFragment()'],
+    },
+    rawSummary: '用户指出当前基准图背景太复杂、服装太复杂，会误导后续基准；璃落不喜欢繁琐复杂服装，可以不朴素，但必须简单又不失设计。',
+    abstractedTraits: [
+      '基准图与身份锚点图的背景固定为低干扰、低叙事、低复杂度，不用重场景信息抢走角色校准重点',
+      '璃落的默认服装允许有设计感，但结构必须简洁清楚，避免繁琐叠穿、重装饰、复杂披挂和过多挂件',
+      '基准图的首要职责是校准人物身份，而不是提前定义完整世界场景或华丽服装系统',
+    ],
+    promptEffects: [
+      'Batch 00 基准图 prompt 必须显式要求中性、简洁、低干扰背景，不使用强叙事场景做身份底板',
+      '璃落的基准服装 prompt 必须显式要求“简洁但有设计感”，并排除繁复服装结构',
+      '后续世界变体可以继续增加材质和空间信息，但不能回头污染人物基准的低干扰原则',
+    ],
+    negativeExamples: [
+      '把复杂世界观场景直接塞进人物基准图背景',
+      '把华丽层叠服装误当成璃落默认审美',
+      '只在这一次 prompt 临时处理，不回写长期规则入口',
+    ],
+    promotionGate: '只有当“人物基准图”和“世界展示图”的边界持续稳定后，这条规则才继续保持为长期资产类型规范。',
+  }),
+  createImageRuleCard({
+    id: 'vf-2026-08-05-liluo-adult-feature-proportion',
+    date: '2026-08-05',
+    scope: ['project-image-generation', 'liluo-character', 'batch-B00'],
+    scopeLevel: 'global-character',
+    ruleKind: 'identity',
+    persistence: 'long-term',
+    enforcement: 'authority+prompt+qa',
+    generators: ['gpt-image-2', 'grok'],
+    appliesTo: {
+      characters: ['liluo'],
+      worlds: ['all'],
+      collections: ['liluo-character', 'batch-B00', 'project-image-generation'],
+      aspects: ['facial-feature-proportion', 'adult-coding', 'non-infantile-face'],
+    },
+    source: 'user-feedback',
+    normalizationRule: '用户已明确说明问题不在脸形而在五官比例，因此归档后必须把“脸形正确、五官比例偏幼”拆开描述，不得再用“脸有点幼”这种混合说法。',
+    writebackTargets: {
+      character: ['liluoProfile.summary', 'liluoProfile.fixedTraits'],
+      worlds: ['worlds[].liluoLooks'],
+      prompts: ['buildLiluoFacePromptFragment()', 'buildLiluoIdentityPromptFragment()'],
+    },
+    rawSummary: '用户确认璃落当前脸形很完美，但五官比例偏幼态，需要在不改脸形的前提下，把眼鼻口比例调到年轻成年女性的阅读。',
+    abstractedTraits: [
+      '璃落的脸形继续固定为柔和鹅蛋脸，不因这条修正改动脸形锚点',
+      '璃落的五官比例固定为年轻成年感，不使用过大的眼睛、过短中庭、过轻婴儿感或明显未成年化的五官配置',
+      '璃落可以柔和、可爱、偏弱气，但五官结构必须首先读成成年女性',
+    ],
+    promptEffects: [
+      '角色身份 prompt 必须把“脸形”和“五官比例”分开写，既保留鹅蛋脸，又显式排除幼态化五官比例',
+      '成图 QA 需要优先检查眼睛大小、鼻口比例和整体成年感，而不是只看下巴与脸轮廓',
+      '后续若模型再次出现幼态化趋势，应先按五官比例校正，不要误改脸形',
+    ],
+    negativeExamples: [
+      '因为五官幼态问题而把脸型重新改尖或改瘦',
+      '继续使用“大眼幼态可爱”作为默认风格捷径',
+      '只写“不幼态”而不补足成年感五官比例锚点',
+    ],
+    promotionGate: '只有当多轮生成都能在保持鹅蛋脸的同时稳定呈现成年感五官比例，这条规则才算验证通过。',
+  }),
+  createImageRuleCard({
+    id: 'vf-2026-08-05-batch-variation-diversity',
+    date: '2026-08-05',
+    scope: ['project-image-generation', 'batch-B00', 'website-display-refinement'],
+    scopeLevel: 'batch',
+    ruleKind: 'batchProfile',
+    persistence: 'batch-term',
+    enforcement: 'prompt+qa',
+    generators: ['gpt-image-2', 'grok'],
+    appliesTo: {
+      characters: ['liluo'],
+      worlds: ['all'],
+      collections: ['batch-B00', 'website-display-refinement', 'project-image-generation'],
+      aspects: ['hairstyle-rotation', 'pose-rotation', 'head-angle-rotation', 'style-rotation', 'anti-repetition'],
+    },
+    source: 'user-feedback',
+    normalizationRule:
+      '这条反馈纠正的是一整批公开图之间的重复问题，不是璃落个人身份错误；归档后必须写成“批次去重规则”，而不是把某一种发型或动作升级成唯一正确答案。',
+    rawSummary:
+      '用户确认浮光掠影方向基本成立，但指出当前网站候选图的主要共性问题是动作、发型、头部角度和风格太单一；后续精修不能继续批量使用同一种站姿、同一种发型、同一种头部朝向和同一种页面气质。',
+    abstractedTraits: [
+      '同一轮 Batch 00 或网站展示精修中，不得让多张图长期重复同一种默认站姿、同一种发型、同一种头部朝向和同一种服装风格重心',
+      '发型、动作、头部角度和整体风格必须在“同一人”的边界内主动轮换，形成可读的世界差异与页面节奏',
+      '批次多样性是公开展示层规则，不得通过破坏璃落身份一致性来换取表面差异',
+    ],
+    promptEffects: [
+      '批量生成或连续精修 prompt 必须显式说明当前图相对于同批其他图要避开什么重复项',
+      '网站展示图优先为每张图指定不同的发型、不同的动作重心、不同的头部朝向或不同的风格倾向，而不是默认沿用上一张图',
+      '成图 QA 需要把“是否与同批图片过于相似”作为正式检查项，而不是只看单张完成度',
+    ],
+    negativeExamples: [
+      '因为上一张图成功，就让整批图都沿用同一发型、同一站姿和同一头部角度',
+      '用破坏人物一致性的极端改造去强行制造差异',
+      '只在审美点评里提一句“有点像”，不把去重要求写回批次规则',
+    ],
+    promotionGate: '只有当连续几轮公开展示图都能稳定拉开发型、动作、头部朝向与风格差异，同时保持璃落身份一致，这条规则才算真正生效。',
+  }),
+  createImageRuleCard({
+    id: 'vf-2026-08-05-post-inclusion-freeze-priority',
+    date: '2026-08-05',
+    scope: ['project-image-generation', 'website-display-refinement', 'website-public-assets'],
+    scopeLevel: 'asset-type',
+    ruleKind: 'promptStructure',
+    persistence: 'long-term',
+    enforcement: 'prompt+qa',
+    generators: ['gpt-image-2', 'grok'],
+    appliesTo: {
+      characters: ['liluo'],
+      worlds: ['all'],
+      collections: ['website-display-refinement', 'website-public-assets', 'project-image-generation'],
+      aspects: ['phase-gating', 'breadth-priority', 'refinement-stop-line'],
+    },
+    source: 'user-feedback',
+    normalizationRule:
+      '这条反馈纠正的是图像生产流程在已达收录线的展示图上停留过久的问题；归档后必须写成“收录后冻结并优先扩后续视觉元素”的流程规则，而不是一次性的催进度口头提醒。',
+    rawSummary:
+      '用户明确要求当前这批网站正式展示图不要再继续来回打磨，后面应继续推进更多视觉元素，不能总卡在同一批人物图上。',
+    abstractedTraits: [
+      '网站展示图一旦达到正式收录线并得到用户放行，默认冻结当前版本，转入后续视觉元素生产',
+      '已正式收录的展示图不因“还可以再润一点”而自动重开；只有用户明确点名时，才进入二次精修',
+      '图像生产优先级默认从“单张完美化”切换到“批次覆盖度与后续素材推进”，避免被少数展示图长期占用产能',
+    ],
+    promptEffects: [
+      '后续批次规划或 prompt 任务层必须先说明当前是在做“新视觉元素生产”还是“已收录展示图返修”；未明确指定时默认视为新视觉元素生产',
+      '当某张网站展示图已完成正式收录，后续 prompt 不再默认把它当作待精修对象，只把它作为风格参考或已完成样本',
+      'QA 与任务复盘需要检查是否在未获明确指令的情况下反复回到已收录展示图',
+    ],
+    negativeExamples: [
+      '因为某张图还能更好看，就继续在同几张人物图上循环',
+      '未经用户明确要求，就把已正式收录的图再次当作当前主任务',
+      '用局部打磨拖慢后续大批量视觉元素的推进节奏',
+    ],
+    promotionGate: '只有当后续多个视觉批次都能在冻结已收录展示图的前提下继续稳定推进，而返修只在用户明确点名时发生，这条流程规则才算真正生效。',
+  }),
+  createImageRuleCard({
+    id: 'vf-2026-08-05-world-display-density-and-mainline-cues',
+    date: '2026-08-05',
+    scope: ['project-image-generation', 'website-public-assets', 'world-atlas', 'world-detail'],
+    scopeLevel: 'asset-type',
+    ruleKind: 'promptStructure',
+    persistence: 'long-term',
+    enforcement: 'prompt+qa',
+    generators: ['gpt-image-2', 'grok'],
+    appliesTo: {
+      characters: ['liluo'],
+      worlds: ['all'],
+      collections: ['website-public-assets', 'world-atlas', 'world-detail', 'project-image-generation'],
+      aspects: ['composition-density', 'asset-role-boundary', 'world-specificity', 'mainline-cue-selection'],
+    },
+    source: 'user-feedback',
+    normalizationRule:
+      '这条反馈纠正的是“首页 hero 的留白策略被误扩散到世界展示图”和“世界图只剩氛围没有主线特征”的双重偏移；归档后必须写成稳定的资产类型边界与世界特征装配规则，而不是只在个别批次里临时提醒。',
+    rawSummary:
+      '用户要求把单侧大留白收紧，明确只有特定首页类资产才允许明显文案安全区；同时世界展示图应该带有各自世界的主线部分特点，后续再逐个世界细化。',
+    abstractedTraits: [
+      '明显的单侧大留白默认只属于首页 hero、分享落地页或明确需要叠加文案/贡献者墙的资产，不自动外溢到世界展示图、分支预告图或一般展示板',
+      '世界展示图不能只成立于“这个世界很好看”，还必须让观者看见这个世界正在长期运转的主线部分、空间层级或关系压力',
+      '每张世界展示图默认至少装配 2–4 个该世界的公开主线特征锚点，优先从 zones、routines、branchSeeds 或长期公共叙事切口中挑，而不是只靠单一气氛和颜色命名世界',
+      '当单张世界图需要承载较多主线切片时，默认先建立 4–6 个清楚的宏观分区，再在每个分区内部保留软过渡；不能把所有切片同权混成一团',
+      '当世界天然存在 6 个主线大区时，不为追求简化而强行压缩；总图优先采用“人物锚点 + 4–6 个大区域”的一级结构',
+      '六个大区域必须有一眼可分的主色系与光线家族，不能在总图里混成同一套灰蓝调；观者不看标题也要能快速区分不同块',
+      '浮光掠影总图的六区默认都保留都市/建成环境底色：校园要像现代学校，正常都市要像真实当代都市，罪恶都市要像老旧密集夜巷，过去时间线要像历史都市而不是古风或魔幻',
+      '说明性文字默认不直接烤进世界展示底图；如果需要标题或说明，优先交给网页外部排版或后续程序化叠加',
+    ],
+    promptEffects: [
+      '后续任何 world-detail、world atlas、share-world、world-day 类 prompt，默认禁止大块单侧空白；如果确实需要留白，必须显式说明它服务的页面角色',
+      '世界图 prompt 必须显式写出本张图选取了该世界哪些主线特征锚点，例如空间区块、日常流程、分支张力、制度接口或长期生活切片',
+      '成图 QA 需要同时检查“构图是否因为错误套用首页安全区而偏空”和“这张图是否不用标题也能看出是哪个世界、在发生什么长期生活或主线压力”',
+      '当一张世界图装配的切片数量较多时，prompt 必须先交代一级分区逻辑，再交代二级切片内容；QA 需要检查观者第一眼能不能先抓住 1 个总重点或 4–6 个大块，而不是直接陷入同权信息洪流',
+      '对于总图级世界展示图，一级结构默认只写大区域，不在同一张图里继续要求每个大区域内部再拆子区域；子区域改为后续小图批次',
+      '总图级 prompt 需要为每个大区域指定不同色调家族，至少区分冷暖、明暗或材质反射特征，避免“六区结构正确但一眼看过去全像同一块”',
+      '浮光掠影总图 prompt 需要显式限制现代学校真实性、正常都市去科幻、金字塔转沙漠考古风、罪恶都市去大火奇观、过去时间线去古风/魔幻味，以及中心与分割线使用更偏都市广场/路网的材质语言',
+    ],
+    negativeExamples: [
+      '把 hero 的左侧 CTA 留白构图直接套到世界展示图上',
+      '用大面积空天、空墙、空地去代替真正的世界内容组织',
+      '只给出泛古风、泛校园、泛科幻氛围，却看不出该世界独有的主线空间、生活流程或公开分支张力',
+      '因为想保留氛围，就让所有切片以相近权重挤在同一层，导致观者找不到重点',
+      '明明世界天然有 6 个大区域，却为了图面整洁强行压缩成 4 块，反而丢掉原本清楚的主线组织',
+      '六个区域虽然结构分开了，但色系和明暗关系几乎一样，导致观者第一眼还是分不清块与块',
+      '把浮光掠影的学校画得像城市，把正常都市画成未来科幻城，把罪恶都市画成着火灾后废城，或把历史时间线做成泛古风/魔幻街景',
+      '遇到难读的世界拼图，第一反应就是把说明文字直接烤进图里，而不是先修正分区层级',
+    ],
+    promotionGate: '只有当多个世界批次都能在不依赖大块单侧留白的前提下，稳定做出“看图就能认出世界与主线特征”的展示图，这条规则才算真正生效。',
+  }),
 ]
 
 export const posterStyleAuthorities = {
@@ -569,7 +853,7 @@ export function buildLiluoFigurePromptFragment() {
 }
 
 export function buildLiluoFacePromptFragment() {
-  return '脸型为柔和鹅蛋脸，下颌圆润收束，不画成尖下巴或瓜子脸'
+  return '脸型为柔和鹅蛋脸，下颌圆润收束，不画成尖下巴或瓜子脸；五官比例保持年轻成年感，不使用过大的眼睛、过短中庭或明显婴儿感五官配置'
 }
 
 export function buildLiluoIdentityPromptFragment() {
@@ -577,7 +861,7 @@ export function buildLiluoIdentityPromptFragment() {
 }
 
 export function buildLiluoLookPromptFragment(look) {
-  const parts = [`本条重点使用 ${look.hair}`, look.outfit, '整体服装优先保持清凉、日常、轻层次']
+  const parts = [`本条重点使用 ${look.hair}`, look.outfit, '整体服装优先保持清凉、日常、轻层次，允许有设计感，但结构必须简洁清楚，避免繁琐叠穿与重装饰']
   if (look.sock) parts.push(`袜子细节使用 ${look.sock}`)
   parts.push(`情绪为 ${look.mood}`)
   return parts.join('，')
@@ -592,7 +876,11 @@ export function buildCharacterShowcasePromptFragment(backgroundPriority = false)
   if (backgroundPriority) {
     return '如果本张图的主要任务是解释背景或空间关系，才允许使用中近景；即便如此也要保持人物完整可识别，不做卖弄身体局部的半身裁切'
   }
-  return '如果本张图专门展示人物，默认优先完整全身展示，让发型、服装、袜子与鞋履同时可读，不做半身裁切'
+  return '如果本张图专门展示人物，默认优先完整全身展示，让发型、服装、袜子与鞋履同时可读，不做半身裁切；如果本张图还是基准图或身份锚点图，背景必须保持低干扰、低叙事、低复杂度'
+}
+
+export function buildLiluoBatchVariationPromptFragment() {
+  return '如果这是同批次中的连续角色图，本张图必须主动避开与同批其他图片重复的默认发型、默认站姿、默认头部朝向和默认风格重心，在保持璃落身份一致的前提下拉开发型、动作、头部角度与页面气质差异'
 }
 
 export function buildLiluoSafetyPromptFragment() {
@@ -887,8 +1175,8 @@ export const generalVisualSeedSets = {
     {
       id: 'world-day',
       title: '一个世界的一天',
-      scene: '同一世界在晨间、白昼、黄昏、夜晚连续切换，生活和空间跟着改变',
-      composition: '四联画时间切片',
+      scene: '同一世界在晨间、白昼、黄昏、夜晚连续切换，生活和空间跟着改变，并带出这个世界至少 2–4 个稳定主线特征锚点',
+      composition: '四联画时间切片，默认铺满画面，不沿用首页 hero 的单侧大留白',
       mood: '让世界像真的有人住',
       previewAssetId: 'pub-world-fuguang-scene',
     },
@@ -1021,8 +1309,8 @@ export const generalVisualSeedSets = {
     {
       id: 'share-world',
       title: '世界分享落地页',
-      scene: '把一个世界的气质、颜色和空间关系浓缩成单张分享海报',
-      composition: '横向分享图，不做复杂文字细节',
+      scene: '把一个世界的气质、颜色、空间关系与主线特征锚点浓缩成单张分享海报',
+      composition: '横向分享图，默认采用“人物锚点 + 4–6 个大区域”的一级结构；总图里的大区域不继续拆子区域，不做首页式大块单侧留白，也不把说明文字直接烤进图里',
       mood: '差异清楚，适合社交传播',
       previewAssetId: 'pub-six-domains-panorama',
     },

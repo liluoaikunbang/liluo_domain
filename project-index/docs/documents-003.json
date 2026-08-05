@@ -1,5 +1,49 @@
 [
   {
+    "id": "docs/知识检索校准/batches/rab-ms1w6rl5.md",
+    "indexVersion": 1,
+    "sourceHash": "e8bf6ed19e920919fcb074b1bfeb3e7c422c84d893c34602b5cf6a84fafe522d",
+    "sourcePath": "docs/知识检索校准/batches/rab-ms1w6rl5.md",
+    "subtype": "other",
+    "summary": "普通 RAG 抽查批次 rab-ms1w6rl5",
+    "summarySource": "title-only",
+    "title": "普通 RAG 抽查批次 rab-ms1w6rl5",
+    "type": "document"
+  },
+  {
+    "id": "docs/知识检索校准/batches/rab-ms2ubk4z.md",
+    "indexVersion": 1,
+    "sourceHash": "7c23da506d16cded66f6bfaa8623f0c5b6c9853cf48c29f9cce3100a3e982487",
+    "sourcePath": "docs/知识检索校准/batches/rab-ms2ubk4z.md",
+    "subtype": "other",
+    "summary": "Style-RAG 抽查批次 rab-ms2ubk4z",
+    "summarySource": "title-only",
+    "title": "Style-RAG 抽查批次 rab-ms2ubk4z",
+    "type": "document"
+  },
+  {
+    "id": "docs/知识检索校准/batches/rab-ms2ubk5l.md",
+    "indexVersion": 1,
+    "sourceHash": "ac97a0b0fa29846b3915f15473fb771933d3d5f048d3a8478bba128a9a139a37",
+    "sourcePath": "docs/知识检索校准/batches/rab-ms2ubk5l.md",
+    "subtype": "other",
+    "summary": "普通 RAG 抽查批次 rab-ms2ubk5l",
+    "summarySource": "title-only",
+    "title": "普通 RAG 抽查批次 rab-ms2ubk5l",
+    "type": "document"
+  },
+  {
+    "id": "docs/知识检索校准/batches/rab-ms2ubk60.md",
+    "indexVersion": 1,
+    "sourceHash": "9e87b66d40842762836763736525cb74264300cdc17e08d77b7c90175058958f",
+    "sourcePath": "docs/知识检索校准/batches/rab-ms2ubk60.md",
+    "subtype": "other",
+    "summary": "普通 RAG 抽查批次 rab-ms2ubk60",
+    "summarySource": "title-only",
+    "title": "普通 RAG 抽查批次 rab-ms2ubk60",
+    "type": "document"
+  },
+  {
     "id": "docs/知识检索校准/batches/rab-ms2ubk72.md",
     "indexVersion": 1,
     "sourceHash": "644cad6f4c12a738305373fdd3bba56950783475977fb321dfb6cd7b2230ffa5",
@@ -737,6 +781,138 @@
     "type": "document"
   },
   {
+    "id": "docs/assets/readme/batch-00-alignment-audit-2026-08-05.md",
+    "indexVersion": 1,
+    "sourceHash": "fd341b91873729c49e8faf7c8bf0342d4844f737e5f0cff4cdeeecfb13eaa270",
+    "sourcePath": "docs/assets/readme/batch-00-alignment-audit-2026-08-05.md",
+    "subtype": "other",
+    "summary": "Batch 00 对齐审计（2026-08-05）",
+    "summarySource": "title-only",
+    "title": "Batch 00 对齐审计（2026-08-05）",
+    "type": "document"
+  },
+  {
+    "id": "docs/assets/readme/batch-00-world-variant-expansion-2026-08-05.md",
+    "indexVersion": 1,
+    "sourceHash": "4fb2f55346254e0e653dc4efbc41274fa2dcb9ccb31e2f385d0e352bac6e43fe",
+    "sourcePath": "docs/assets/readme/batch-00-world-variant-expansion-2026-08-05.md",
+    "subtype": "other",
+    "summary": "Batch 00 世界变体扩展记录（2026-08-05）",
+    "summarySource": "title-only",
+    "title": "Batch 00 世界变体扩展记录（2026-08-05）",
+    "type": "document"
+  },
+  {
+    "id": "docs/assets/readme/batch-01-brand-wave-1-2026-08-05.md",
+    "indexVersion": 1,
+    "sourceHash": "ecee669def520b3cdbd86788221a50dd675d267d7e1d07cd6531bbad87744d5a",
+    "sourcePath": "docs/assets/readme/batch-01-brand-wave-1-2026-08-05.md",
+    "subtype": "other",
+    "summary": "Batch 01 品牌与首页 Wave 1（2026-08-05）",
+    "summarySource": "title-only",
+    "title": "Batch 01 品牌与首页 Wave 1（2026-08-05）",
+    "type": "document"
+  },
+  {
+    "id": "docs/assets/readme/batch-01-brand-wave-2-2026-08-05.md",
+    "indexVersion": 1,
+    "sourceHash": "daecb5983062698bdc681ae64353e8b4b27fe9c58cf31c57b950013aea864f0b",
+    "sourcePath": "docs/assets/readme/batch-01-brand-wave-2-2026-08-05.md",
+    "subtype": "other",
+    "summary": "Batch 01 品牌与首页 Wave 2（2026-08-05）",
+    "summarySource": "title-only",
+    "title": "Batch 01 品牌与首页 Wave 2（2026-08-05）",
+    "type": "document"
+  },
+  {
+    "id": "docs/assets/readme/batch-02-fuguang-wave-1-2026-08-05.md",
+    "indexVersion": 1,
+    "sourceHash": "39ac12d2225f4a7eab30b01345fffbc407ab3d3ea15ba35507387620a71cdcf2",
+    "sourcePath": "docs/assets/readme/batch-02-fuguang-wave-1-2026-08-05.md",
+    "subtype": "other",
+    "summary": "Batch 02 浮光掠影 Wave 1（2026-08-05）",
+    "summarySource": "title-only",
+    "title": "Batch 02 浮光掠影 Wave 1（2026-08-05）",
+    "type": "document"
+  },
+  {
+    "id": "docs/assets/readme/batch-02-fuguang-wave-2-campus-2026-08-05.md",
+    "indexVersion": 1,
+    "sourceHash": "c44af2f562b317cd38a86326ced6ced378b9434ea31e83cd830c91951d695a37",
+    "sourcePath": "docs/assets/readme/batch-02-fuguang-wave-2-campus-2026-08-05.md",
+    "subtype": "other",
+    "summary": "Batch 02 浮光掠影 Wave 2 Campus（2026-08-05）",
+    "summarySource": "title-only",
+    "title": "Batch 02 浮光掠影 Wave 2 Campus（2026-08-05）",
+    "type": "document"
+  },
+  {
+    "id": "docs/assets/readme/batch-02-fuguang-wave-3-city-2026-08-05.md",
+    "indexVersion": 1,
+    "sourceHash": "4528bc5d4950370924e29283853c78095916b037095c521a2f63e78acb63515d",
+    "sourcePath": "docs/assets/readme/batch-02-fuguang-wave-3-city-2026-08-05.md",
+    "subtype": "other",
+    "summary": "Batch 02 浮光掠影 Wave 3 City（2026-08-05）",
+    "summarySource": "title-only",
+    "title": "Batch 02 浮光掠影 Wave 3 City（2026-08-05）",
+    "type": "document"
+  },
+  {
+    "id": "docs/assets/readme/batch-02-fuguang-wave-4-travel-2026-08-05.md",
+    "indexVersion": 1,
+    "sourceHash": "a4acfaf8c48cb886e5973de9c5b6b17aa5fa9f9dfa71acc30dd5efe74b34092d",
+    "sourcePath": "docs/assets/readme/batch-02-fuguang-wave-4-travel-2026-08-05.md",
+    "subtype": "other",
+    "summary": "Batch 02 浮光掠影 Wave 4 Travel（2026-08-05）",
+    "summarySource": "title-only",
+    "title": "Batch 02 浮光掠影 Wave 4 Travel（2026-08-05）",
+    "type": "document"
+  },
+  {
+    "id": "docs/assets/readme/batch-02-fuguang-wave-5-crime-city-2026-08-05.md",
+    "indexVersion": 1,
+    "sourceHash": "92167ed582b52739d58e61fb27f1b11417afa43f8da2b810913641cbc8460fc7",
+    "sourcePath": "docs/assets/readme/batch-02-fuguang-wave-5-crime-city-2026-08-05.md",
+    "subtype": "other",
+    "summary": "Batch 02 浮光掠影 Wave 5 Crime City（2026-08-05）",
+    "summarySource": "title-only",
+    "title": "Batch 02 浮光掠影 Wave 5 Crime City（2026-08-05）",
+    "type": "document"
+  },
+  {
+    "id": "docs/assets/readme/batch-02-fuguang-wave-6-past-timeline-2026-08-05.md",
+    "indexVersion": 1,
+    "sourceHash": "3809e46ed4d75fd3f45d042885d543ebed5392ad82eee0d8a9ccbd09b7179efa",
+    "sourcePath": "docs/assets/readme/batch-02-fuguang-wave-6-past-timeline-2026-08-05.md",
+    "subtype": "other",
+    "summary": "Batch 02 浮光掠影 Wave 6 Past Timeline（2026-08-05）",
+    "summarySource": "title-only",
+    "title": "Batch 02 浮光掠影 Wave 6 Past Timeline（2026-08-05）",
+    "type": "document"
+  },
+  {
+    "id": "docs/assets/readme/batch-02-fuguang-wave-7-special-scenes-2026-08-05.md",
+    "indexVersion": 1,
+    "sourceHash": "b7240bfd12272786b54a1038a4c5046bdd2a8b5245dd23089368f2b5cc5c64a6",
+    "sourcePath": "docs/assets/readme/batch-02-fuguang-wave-7-special-scenes-2026-08-05.md",
+    "subtype": "other",
+    "summary": "Batch 02 浮光掠影 Wave 7 Special Scenes（2026-08-05）",
+    "summarySource": "title-only",
+    "title": "Batch 02 浮光掠影 Wave 7 Special Scenes（2026-08-05）",
+    "type": "document"
+  },
+  {
+    "id": "docs/assets/readme/batch-03-munika-wave-1-2026-08-05.md",
+    "indexVersion": 1,
+    "sourceHash": "34df9ac0d3d43cbda6fb72165334e7b4d40397fae296245ec395f324968088ec",
+    "sourcePath": "docs/assets/readme/batch-03-munika-wave-1-2026-08-05.md",
+    "subtype": "other",
+    "summary": "Batch 03 慕妮卡帝国 Wave 1（2026-08-05）",
+    "summarySource": "title-only",
+    "title": "Batch 03 慕妮卡帝国 Wave 1（2026-08-05）",
+    "type": "document"
+  },
+  {
     "id": "docs/assets/readme/prompts/2026-07-31-character-system-batch-a.md",
     "indexVersion": 1,
     "sourceHash": "38a4af8d60b02a19de83a6d7c9f9bab40200e42d29533c5126bc9d82492cc057",
@@ -814,6 +990,160 @@
     "type": "document"
   },
   {
+    "id": "docs/assets/readme/prompts/2026-08-05-batch-00-baseline-candidate-v2.md",
+    "indexVersion": 1,
+    "sourceHash": "ffb9f48056af2a468f51b1d1045408c09fbddecd474042ce006762d8783c7860",
+    "sourcePath": "docs/assets/readme/prompts/2026-08-05-batch-00-baseline-candidate-v2.md",
+    "subtype": "other",
+    "summary": "Batch 00 基准候选生成记录 v2（2026-08-05）",
+    "summarySource": "title-only",
+    "title": "Batch 00 基准候选生成记录 v2（2026-08-05）",
+    "type": "document"
+  },
+  {
+    "id": "docs/assets/readme/prompts/2026-08-05-batch-00-baseline-candidate.md",
+    "indexVersion": 1,
+    "sourceHash": "55c3e827342938e7a77700355b2f7dac321ccd57352caa3da19914c4e994b316",
+    "sourcePath": "docs/assets/readme/prompts/2026-08-05-batch-00-baseline-candidate.md",
+    "subtype": "other",
+    "summary": "Batch 00 基准候选生成记录（2026-08-05）",
+    "summarySource": "title-only",
+    "title": "Batch 00 基准候选生成记录（2026-08-05）",
+    "type": "document"
+  },
+  {
+    "id": "docs/assets/readme/prompts/2026-08-05-batch-00-world-variants-b00v2.md",
+    "indexVersion": 1,
+    "sourceHash": "5618df03b5db86bff145dd347fda0d3de9bc53b276c0d41f42312bbe962ce6e0",
+    "sourcePath": "docs/assets/readme/prompts/2026-08-05-batch-00-world-variants-b00v2.md",
+    "subtype": "other",
+    "summary": "Batch 00 世界变体提示词记录 b00v2（2026-08-05）",
+    "summarySource": "title-only",
+    "title": "Batch 00 世界变体提示词记录 b00v2（2026-08-05）",
+    "type": "document"
+  },
+  {
+    "id": "docs/assets/readme/prompts/2026-08-05-batch-01-brand-wave-1.md",
+    "indexVersion": 1,
+    "sourceHash": "f645edf9025fc6204745d2f5b68edfb34f298c00eb0dccbeb60c0c0f0e78feed",
+    "sourcePath": "docs/assets/readme/prompts/2026-08-05-batch-01-brand-wave-1.md",
+    "subtype": "other",
+    "summary": "2026-08-05 Batch 01 品牌与首页 Wave 1 Prompts",
+    "summarySource": "title-only",
+    "title": "2026-08-05 Batch 01 品牌与首页 Wave 1 Prompts",
+    "type": "document"
+  },
+  {
+    "id": "docs/assets/readme/prompts/2026-08-05-batch-01-brand-wave-2.md",
+    "indexVersion": 1,
+    "sourceHash": "ef42c7976124e14b05eaccc1098ed557dcad117440143ef9b1e109d36130f865",
+    "sourcePath": "docs/assets/readme/prompts/2026-08-05-batch-01-brand-wave-2.md",
+    "subtype": "other",
+    "summary": "2026-08-05 Batch 01 品牌与首页 Wave 2 Prompts",
+    "summarySource": "title-only",
+    "title": "2026-08-05 Batch 01 品牌与首页 Wave 2 Prompts",
+    "type": "document"
+  },
+  {
+    "id": "docs/assets/readme/prompts/2026-08-05-batch-02-fuguang-wave-1.md",
+    "indexVersion": 1,
+    "sourceHash": "0064c04b594336e3523998fe3c46b0883c9441be48b887175b0f0ea737b20298",
+    "sourcePath": "docs/assets/readme/prompts/2026-08-05-batch-02-fuguang-wave-1.md",
+    "subtype": "other",
+    "summary": "2026-08-05 Batch 02 浮光掠影 Wave 1 Prompts",
+    "summarySource": "title-only",
+    "title": "2026-08-05 Batch 02 浮光掠影 Wave 1 Prompts",
+    "type": "document"
+  },
+  {
+    "id": "docs/assets/readme/prompts/2026-08-05-batch-02-fuguang-wave-2-campus.md",
+    "indexVersion": 1,
+    "sourceHash": "cb24818e9dc1f545e2095070440903c0eeb33cf0b02e2a9d717ee8ec8ae0e795",
+    "sourcePath": "docs/assets/readme/prompts/2026-08-05-batch-02-fuguang-wave-2-campus.md",
+    "subtype": "other",
+    "summary": "2026-08-05 Batch 02 浮光掠影 Wave 2 Campus Prompt",
+    "summarySource": "title-only",
+    "title": "2026-08-05 Batch 02 浮光掠影 Wave 2 Campus Prompt",
+    "type": "document"
+  },
+  {
+    "id": "docs/assets/readme/prompts/2026-08-05-batch-02-fuguang-wave-3-city.md",
+    "indexVersion": 1,
+    "sourceHash": "3b734151176ead61fabbbb11c4449890af860e450dc0341203e9171d7378c46c",
+    "sourcePath": "docs/assets/readme/prompts/2026-08-05-batch-02-fuguang-wave-3-city.md",
+    "subtype": "other",
+    "summary": "2026-08-05 Batch 02 浮光掠影 Wave 3 City Prompt",
+    "summarySource": "title-only",
+    "title": "2026-08-05 Batch 02 浮光掠影 Wave 3 City Prompt",
+    "type": "document"
+  },
+  {
+    "id": "docs/assets/readme/prompts/2026-08-05-batch-02-fuguang-wave-4-travel.md",
+    "indexVersion": 1,
+    "sourceHash": "2486258b77e15a1783283b6d4ab9c076c6cb2bf077ab409c1e801ddd2563ec49",
+    "sourcePath": "docs/assets/readme/prompts/2026-08-05-batch-02-fuguang-wave-4-travel.md",
+    "subtype": "other",
+    "summary": "2026-08-05 Batch 02 浮光掠影 Wave 4 Travel Prompt",
+    "summarySource": "title-only",
+    "title": "2026-08-05 Batch 02 浮光掠影 Wave 4 Travel Prompt",
+    "type": "document"
+  },
+  {
+    "id": "docs/assets/readme/prompts/2026-08-05-batch-02-fuguang-wave-5-crime-city.md",
+    "indexVersion": 1,
+    "sourceHash": "6fd1223fbe747e0bddb8e38e855742f92a745c8aad1088eddfbb419a31efd934",
+    "sourcePath": "docs/assets/readme/prompts/2026-08-05-batch-02-fuguang-wave-5-crime-city.md",
+    "subtype": "other",
+    "summary": "2026-08-05 Batch 02 浮光掠影 Wave 5 Crime City Prompt",
+    "summarySource": "title-only",
+    "title": "2026-08-05 Batch 02 浮光掠影 Wave 5 Crime City Prompt",
+    "type": "document"
+  },
+  {
+    "id": "docs/assets/readme/prompts/2026-08-05-batch-02-fuguang-wave-6-past-timeline.md",
+    "indexVersion": 1,
+    "sourceHash": "ee2e75d6af52a3c6213198ab6ff6ea8ee93acb7dbe9e808bfa9ac1288f7b1b3e",
+    "sourcePath": "docs/assets/readme/prompts/2026-08-05-batch-02-fuguang-wave-6-past-timeline.md",
+    "subtype": "other",
+    "summary": "2026-08-05 Batch 02 浮光掠影 Wave 6 Past Timeline Prompt",
+    "summarySource": "title-only",
+    "title": "2026-08-05 Batch 02 浮光掠影 Wave 6 Past Timeline Prompt",
+    "type": "document"
+  },
+  {
+    "id": "docs/assets/readme/prompts/2026-08-05-batch-02-fuguang-wave-7-special-scenes.md",
+    "indexVersion": 1,
+    "sourceHash": "21f80a0c67c19a745b11ad37171da3af05890fad09f182c6f131fee0b03b6275",
+    "sourcePath": "docs/assets/readme/prompts/2026-08-05-batch-02-fuguang-wave-7-special-scenes.md",
+    "subtype": "other",
+    "summary": "2026-08-05 Batch 02 浮光掠影 Wave 7 Special Scenes Prompt",
+    "summarySource": "title-only",
+    "title": "2026-08-05 Batch 02 浮光掠影 Wave 7 Special Scenes Prompt",
+    "type": "document"
+  },
+  {
+    "id": "docs/assets/readme/prompts/2026-08-05-batch-03-munika-wave-1.md",
+    "indexVersion": 1,
+    "sourceHash": "8a374193f20e72fd2db7e023d3d44e82135b80689896b126a49d5f6fdf2d03e4",
+    "sourcePath": "docs/assets/readme/prompts/2026-08-05-batch-03-munika-wave-1.md",
+    "subtype": "other",
+    "summary": "2026-08-05 Batch 03 慕妮卡帝国 Wave 1 Prompt",
+    "summarySource": "title-only",
+    "title": "2026-08-05 Batch 03 慕妮卡帝国 Wave 1 Prompt",
+    "type": "document"
+  },
+  {
+    "id": "docs/assets/readme/prompts/2026-08-05-website-display-refinement-round-1.md",
+    "indexVersion": 1,
+    "sourceHash": "6629d5950a62500183b4d75ade477c323fb69684414334f2b18a826241af557b",
+    "sourcePath": "docs/assets/readme/prompts/2026-08-05-website-display-refinement-round-1.md",
+    "subtype": "other",
+    "summary": "网站正式展示图精修 Prompt 记录 Round 1（2026-08-05）",
+    "summarySource": "title-only",
+    "title": "网站正式展示图精修 Prompt 记录 Round 1（2026-08-05）",
+    "type": "document"
+  },
+  {
     "id": "docs/assets/readme/prompts/legacy-round-1-assets.md",
     "indexVersion": 1,
     "sourceHash": "023c5e9dd77b68e742be3a3dd1ed08a5df5dbdf9f2dc122627f33bd69024d67b",
@@ -847,6 +1177,17 @@
     "type": "document"
   },
   {
+    "id": "docs/assets/readme/website-display-refinement-round-1-2026-08-05.md",
+    "indexVersion": 1,
+    "sourceHash": "a9864e532167a472cc30f7a0ce5202d874334c610bf4cdd9c228a4f3537533ce",
+    "sourcePath": "docs/assets/readme/website-display-refinement-round-1-2026-08-05.md",
+    "subtype": "other",
+    "summary": "网站正式展示图精修 Round 1（2026-08-05）",
+    "summarySource": "title-only",
+    "title": "网站正式展示图精修 Round 1（2026-08-05）",
+    "type": "document"
+  },
+  {
     "id": "docs/CG待制作清单.md",
     "indexVersion": 1,
     "sourceHash": "a752b02736e083677375217e6bda2e91e331a1ca3f6d9bc273c0b0d433761ad4",
@@ -871,18 +1212,18 @@
   {
     "id": "docs/image2-prompt-authoring-standard.md",
     "indexVersion": 1,
-    "sourceHash": "ff5b78e4c4a1feceabcf32e50467e1831a80da659cd973991f35a02317967ac8",
+    "sourceHash": "a63daf3fa21d8680b3b3125b0308ee59eb42ca45824567ad63f8f27eea2d6642",
     "sourcePath": "docs/image2-prompt-authoring-standard.md",
     "subtype": "other",
-    "summary": "Image 2 提示词编写标准",
+    "summary": "项目图像生成提示词编写标准",
     "summarySource": "title-only",
-    "title": "Image 2 提示词编写标准",
+    "title": "项目图像生成提示词编写标准",
     "type": "document"
   },
   {
     "id": "docs/liluo-identity-and-variation-bible.md",
     "indexVersion": 1,
-    "sourceHash": "5276b0053daae5002e4362d4f0e7fed52ba4c1aabbf7858be4c3c5c29369a2e4",
+    "sourceHash": "7d47d6d387cccc80548cf6f6251504090e0cb61e090e722e949ad3f386ea7e9d",
     "sourcePath": "docs/liluo-identity-and-variation-bible.md",
     "subtype": "other",
     "summary": "璃落身份与变化 bible",
@@ -1047,12 +1388,12 @@
   {
     "id": "docs/visual-feedback-ledger.md",
     "indexVersion": 1,
-    "sourceHash": "4ec2a85c1d15308724c9df6564b5958baf00abdf6c2631d23e7829d4a1af5230",
+    "sourceHash": "b2016c5d358cea31a8a45c38e240aac4606c125eca4977842d4ba1d0c6b1b693",
     "sourcePath": "docs/visual-feedback-ledger.md",
     "subtype": "other",
-    "summary": "海报视觉反馈账本",
+    "summary": "项目图像反馈账本",
     "summarySource": "title-only",
-    "title": "海报视觉反馈账本",
+    "title": "项目图像反馈账本",
     "type": "document"
   },
   {
@@ -1069,7 +1410,7 @@
   {
     "id": "docs/visual-master-plan.md",
     "indexVersion": 1,
-    "sourceHash": "627fc504a2963da4c1dc739829816ffe93b39db6a0fe44d57d0bff0a4a7f2d54",
+    "sourceHash": "7eee6ff708f356a963e5f61dbb0d00696b07ec92b49b93aaf75ecfcfbefb7462",
     "sourcePath": "docs/visual-master-plan.md",
     "subtype": "other",
     "summary": "视觉总计划",
@@ -1080,7 +1421,7 @@
   {
     "id": "docs/visual-qa-and-publication-policy.md",
     "indexVersion": 1,
-    "sourceHash": "e35a5b319aea0d12a2e845edca2be1bc0f3f00a589fc86513cb573cd5427de52",
+    "sourceHash": "3aa1c3b0f1b8cdda4d30129e46ad093583e142dfb3ffa85891973f28f6a12e18",
     "sourcePath": "docs/visual-qa-and-publication-policy.md",
     "subtype": "other",
     "summary": "视觉 QA 与公开发布策略",

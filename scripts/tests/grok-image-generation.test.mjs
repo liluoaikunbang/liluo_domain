@@ -79,6 +79,8 @@ test('generate dry-run plans output without network', async () => {
   assert.equal(payload.configured, true)
   assert.equal(payload.request.aspectRatio, '16:9')
   assert.match(payload.plannedOutputDir, /liluo-grok-images/)
+  assert.equal(payload.governance.detectedSubject, 'liluo')
+  assert.equal(payload.governance.status, 'needs-review')
 
   await rm(dir, { recursive: true, force: true })
 })
@@ -126,7 +128,7 @@ test('generate live writes images and manifest without leaking api key', async (
     'generate',
     '--live',
     '--prompt',
-    'hero key art for Liluo, windswept hair, rain-soaked neon alley',
+    'hero key art for Liluo, young adult woman, reddish-brown hair, red eyes, not childlike, windswept hair, rain-soaked neon alley',
     '--out-dir',
     dir,
     '--slug',
@@ -145,6 +147,7 @@ test('generate live writes images and manifest without leaking api key', async (
 
   assert.equal(payload.mode, 'live')
   assert.equal(payload.files.length, 1)
+  assert.equal(payload.governance.detectedSubject, 'liluo')
   assert.equal(detectImageExtension(Buffer.from(ONE_PIXEL_PNG_BASE64, 'base64')), '.png')
   const manifest = JSON.parse(await readFile(path.join(dir, path.basename(payload.manifestPath)), 'utf8'))
   assert.equal(JSON.stringify(manifest).includes('test-key'), false)
@@ -156,6 +159,26 @@ test('generate live writes images and manifest without leaking api key', async (
   await rm(payload.manifestPath.replace(/\//g, path.sep), { force: true })
   await rm(dir, { recursive: true, force: true })
   await rm(envDir, { recursive: true, force: true })
+})
+
+test('generate live blocks Liluo prompts that miss core identity anchors', async () => {
+  const dir = await mkdtemp(path.join(os.tmpdir(), 'grok-live-block-'))
+  const envFile = path.join(dir, '.env.grok-image.local')
+  await writeFile(envFile, 'LILUO_GROK_IMAGE_API_KEY=test-key\n', 'utf8')
+
+  await assert.rejects(
+    () => runCli([
+      'generate',
+      '--live',
+      '--prompt',
+      'cinematic portrait of Liluo in rain',
+    ], {
+      envFilePath: envFile,
+    }),
+    /Prompt failed project image governance preflight/,
+  )
+
+  await rm(dir, { recursive: true, force: true })
 })
 
 test('generate live applies cli retry overrides', async () => {

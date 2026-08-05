@@ -28,6 +28,17 @@ import {
   visualFeedbackLedger,
   worlds,
 } from '../../src/content/site/siteBlueprint.js'
+import {
+  imagePromptAssemblyLayers,
+  imageRuleEnforcementModes,
+  imageRuleKinds,
+  imageRuleNarrowingPolicy,
+  imageRulePersistenceLevels,
+  imageRulePlacementQuestions,
+  imageRuleScopes,
+  runImagePromptGovernancePreflight,
+  validateImageRuleCard,
+} from '../../src/content/site/imageGenerationGovernance.js'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const root = path.resolve(__dirname, '..', '..')
@@ -65,6 +76,7 @@ const liluoPromptRequiredSnippets = [
 
 async function main() {
   const state = await buildState()
+  validateVisualFeedbackLedger()
 
   switch (command) {
     case 'plan':
@@ -819,8 +831,25 @@ function validatePrompts(visualRegistry) {
   if (visualRegistry.length !== 1248) throw new Error(`Expected 1248 visual assets, got ${visualRegistry.length}`)
 }
 
+function validateVisualFeedbackLedger() {
+  for (const entry of visualFeedbackLedger) {
+    const report = validateImageRuleCard(entry)
+    if (!report.ok) {
+      throw new Error(`Invalid visual feedback ledger entry: ${entry.id} -> ${report.errors.join('; ')}`)
+    }
+  }
+}
+
 function validateLiluoIdentityPrompt(item) {
   if (item.collection !== 'liluo-character' && item.batchId !== 'B00') return
+  const governance = runImagePromptGovernancePreflight({
+    prompt: item.prompt,
+    subjectHints: ['璃落'],
+    strictness: 'canonical-liluo',
+  })
+  if (governance.status === 'blocked') {
+    throw new Error(`Liluo identity prompt failed governance preflight: ${item.id} -> ${governance.errors.join('; ')}`)
+  }
   const missing = liluoPromptRequiredSnippets.filter((snippet) => !item.prompt.includes(snippet))
   if (missing.length) {
     throw new Error(`Liluo identity prompt missing required anchors: ${item.id} -> ${missing.join(', ')}`)
@@ -1036,20 +1065,26 @@ function buildVisualFeedbackLedgerDoc() {
       (entry) => `## ${entry.date}｜${entry.id}
 
 - 作用范围：${entry.scope.join('、')}
+- 判层卡：${imageRuleKinds[entry.ruleKind]} / ${imageRuleScopes[entry.scopeLevel]} / ${imageRulePersistenceLevels[entry.persistence]} / ${imageRuleEnforcementModes[entry.enforcement]}
+- 适用生成链路：${entry.generators?.join('、') || '未指定'}
 - 归入对象：角色 ${entry.appliesTo?.characters?.join('、') || '未指定'}；世界 ${entry.appliesTo?.worlds?.join('、') || '未指定'}；集合 ${entry.appliesTo?.collections?.join('、') || '未指定'}
 - 归入维度：${entry.appliesTo?.aspects?.join('、') || '未指定'}
 - 来源：${entry.source}
 - 归档规范：${entry.normalizationRule || '未指定'}
+- 落点层：${entry.promptLayer || '未指定'}
 - 回写目标：角色 ${entry.writebackTargets?.character?.join('、') || '未指定'}；世界 ${entry.writebackTargets?.worlds?.join('、') || '未指定'}；prompt ${entry.writebackTargets?.prompts?.join('、') || '未指定'}
 - 原始评价摘要：${entry.rawSummary}
 - 抽象出的长期特征：
 ${entry.abstractedTraits.map((item) => `  - ${item}`).join('\n')}
 - 对 prompt 的直接影响：
-${entry.promptEffects.map((item) => `  - ${item}`).join('\n')}`,
+${entry.promptEffects.map((item) => `  - ${item}`).join('\n')}
+- 明确排除的错放方式：
+${entry.negativeExamples.map((item) => `  - ${item}`).join('\n')}
+- 升级门槛：${entry.promotionGate}`,
     )
     .join('\n\n')
 
-  return `# 海报视觉反馈账本
+  return `# 项目图像反馈账本
 
 ## 权威来源
 
@@ -1065,10 +1100,19 @@ ${entry.promptEffects.map((item) => `  - ${item}`).join('\n')}`,
 
 ## 自动归入规则
 
-1. 角色、世界、镜头、材质、色板、页面节奏等任何海报评价都先写入本账本。
+1. 角色、世界、镜头、材质、色板、页面节奏等任何项目图像评价都先写入本账本。
 2. 账本负责把单次评价抽象成可复用特征和 prompt 影响。
-3. 确认后的稳定特征再回写到 \`liluoProfile\`、\`worlds[*]\` 或其他权威源，后续批次自动继承。
-4. 归档时不得直接保留“更浅一些”“少一点”这类相对说法，必须改写成绝对、可执行的目标描述。
+3. 每条反馈都先过“纠正什么 / 影响多大 / 持续多久 / 应该落在哪层”的判层问题，再决定是否写入 authority、prompt 或 QA。
+4. 确认后的稳定特征再回写到 \`liluoProfile\`、\`worlds[*]\` 或其他权威源，后续批次与 Grok 探索图共用同一套规则。
+5. 归档时不得直接保留“更浅一些”“少一点”这类相对说法，必须改写成绝对、可执行的目标描述。
+
+## 判层问题
+
+${imageRulePlacementQuestions.map((item, index) => `${index + 1}. ${item}`).join('\n')}
+
+## 默认收窄原则
+
+- ${imageRuleNarrowingPolicy.join('\n- ')}
 
 ## 当前已吸收的评价
 
@@ -1077,19 +1121,22 @@ ${entries}
 }
 
 function buildPromptDoc() {
-  return `# Image 2 提示词编写标准
+  return `# 项目图像生成提示词编写标准
 
-## 每条 prompt 必须包含
+## 适用范围
 
-- 使用页面与用途
-- 世界或跨页语境
-- 主体、空间、材质、时间、镜头、情绪
-- 公开安全边界
-- 不得出现的内容
+- 站点中的 Image 2 资产与批次 prompt
+- 使用 Grok 生成项目草稿图时的单条生产 prompt
+- 后续新增的项目内图像生成链路
+
+## 每条 prompt 的默认装配顺序
+
+${imagePromptAssemblyLayers.map((item, index) => `${index + 1}. ${item.title}：${item.description}`).join('\n')}
 
 ## 反馈归档要求
 
 - 来自用户的新偏好先进入视觉反馈账本，再决定是否写回角色与世界权威字段。
+- 不允许凭感觉直接把一句反馈升成全局规范；必须先填判层卡：\`ruleKind / scopeLevel / persistence / enforcement\`。
 - 如果用户原话使用了“更弱气”“更浅一些”“少一点”这类相对表述，归档时必须改写成绝对描述，不能把相对词原样沉淀到长期规则或 prompt 模板里。
 - 如果用户对人物展示方式提出长期要求，例如“专门展示人物时优先全身”，必须把它写成明确构图规则，再进入角色类 prompt。
 
@@ -1107,6 +1154,10 @@ function buildPromptDoc() {
 3. 指定镜头、比例、光线、材质与留白
 4. 指定情绪与公开安全边界
 5. 明确禁止项
+
+## 默认收窄原则
+
+- ${imageRuleNarrowingPolicy.join('\n- ')}
 `
 }
 
@@ -1168,6 +1219,7 @@ function buildQaDoc() {
 ## QA 核对项
 
 - prompt 是否完整且与画面一致
+- 判层协议是否把该规则放在正确层级，而不是把 QA 问题误塞进全局 prompt
 - 璃落身份是否稳定
 - 发型、服装、动作与世界是否多样
 - 是否出现文字、Logo、水印、IP 影子

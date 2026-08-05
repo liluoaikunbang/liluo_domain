@@ -6,6 +6,7 @@ import { generateImages, probeApi } from './lib/client.mjs'
 import { getGrokConfig, isGrokConfigured, loadGrokEnv } from './lib/env.mjs'
 import { DEFAULT_OUTPUT_DIR, resolveUserPath, toPosixRelative } from './lib/paths.mjs'
 import { getRuntimeSettings, summarizeRuntimeSettings } from './lib/runtime.mjs'
+import { runImagePromptGovernancePreflight } from '../../../../../src/content/site/imageGenerationGovernance.js'
 
 function createHelp() {
   return {
@@ -169,6 +170,13 @@ async function runGenerate(args, options = {}) {
   const env = await loadGrokEnv(options)
   const config = resolveConfig(args, env.values)
   const prompt = await loadPrompt(args)
+  const governance = runImagePromptGovernancePreflight({
+    prompt,
+    strictness: args.live ? 'liluo-live' : 'standard',
+  })
+  if (governance.status === 'blocked') {
+    throw new Error(`Prompt failed project image governance preflight: ${governance.errors.join('; ')}`)
+  }
   const createdAt = new Date().toISOString()
   const aspectRatio = normalizeAspectRatio(args['aspect-ratio'])
   const resolution = normalizeResolution(args.resolution)
@@ -185,6 +193,7 @@ async function runGenerate(args, options = {}) {
       mode: 'dry-run',
       configured: isGrokConfigured(config),
       prompt,
+      governance,
       request: {
         baseUrl: config.baseUrl,
         model: config.model,
@@ -238,6 +247,7 @@ async function runGenerate(args, options = {}) {
       ...result.request,
       prompt,
     },
+    governance,
     revisedPrompt: result.revisedPrompt,
     files: written,
     responseMetadata: result.responseMetadata,

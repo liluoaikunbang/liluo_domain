@@ -2024,9 +2024,42 @@
     "type": "document"
   },
   {
+    "id": "docs/功能更新/181-项目图像生成判层与治理协议.md",
+    "indexVersion": 1,
+    "sourceHash": "fe1676b867862543dc9d0722c9e867f91061e606e44a1a64017860b53b0ee566",
+    "sourcePath": "docs/功能更新/181-项目图像生成判层与治理协议.md",
+    "subtype": "update",
+    "summary": "181-项目图像生成判层与治理协议",
+    "summarySource": "title-only",
+    "title": "181-项目图像生成判层与治理协议",
+    "type": "document"
+  },
+  {
+    "id": "docs/功能更新/182-图像生成与文档写回低绕圈执行.md",
+    "indexVersion": 1,
+    "sourceHash": "be5da60f877a614b05dc13f106ae4b4595301b0cb4075676983eaa321d7d5c98",
+    "sourcePath": "docs/功能更新/182-图像生成与文档写回低绕圈执行.md",
+    "subtype": "update",
+    "summary": "182-图像生成与文档写回低绕圈执行",
+    "summarySource": "title-only",
+    "title": "182-图像生成与文档写回低绕圈执行",
+    "type": "document"
+  },
+  {
+    "id": "docs/功能更新/183-网站展示图轻量归档与收尾收缩.md",
+    "indexVersion": 1,
+    "sourceHash": "5ab5efefbc71d11a533a7489daa8b006fa894e8d2a767cfc39dd969df0dcf358",
+    "sourcePath": "docs/功能更新/183-网站展示图轻量归档与收尾收缩.md",
+    "subtype": "update",
+    "summary": "183-网站展示图轻量归档与收尾收缩",
+    "summarySource": "title-only",
+    "title": "183-网站展示图轻量归档与收尾收缩",
+    "type": "document"
+  },
+  {
     "id": "docs/功能更新目录.md",
     "indexVersion": 1,
-    "sourceHash": "fb14f35c49b6d3331501f54bb17e6ba63c984febed8a561212206a74c999a012",
+    "sourceHash": "3f88ed1839bde43510d45708d1adca8a5dc66cb1591e972c6e86d60cd08c2bcb",
     "sourcePath": "docs/功能更新目录.md",
     "subtype": "other",
     "summary": "功能更新目录",
@@ -2224,7 +2257,7 @@
   {
     "id": "docs/技能说明/liluo-grok-image-generation.md",
     "indexVersion": 1,
-    "sourceHash": "1a9bb22e8b00be4aceffc46708753745076543bb1a7e64f4a2240673bd2f1bdb",
+    "sourceHash": "2f9705538d5d9537e55a4a14decd65755676d1b2727f35be8bea0d628c204f2f",
     "sourcePath": "docs/技能说明/liluo-grok-image-generation.md",
     "subtype": "skill",
     "summary": "Grok 图像生成（`liluo-grok-image-generation`）",
@@ -2714,39 +2747,6 @@
     "summary": "ADR-005：命令授权采用项目规则与决定注册分层治理",
     "summarySource": "title-only",
     "title": "ADR-005：命令授权采用项目规则与决定注册分层治理",
-    "type": "document"
-  },
-  {
-    "id": "docs/设计记忆/架构决策/ADR-006-内容生产采用证据派生与最小持久化.md",
-    "indexVersion": 1,
-    "sourceHash": "5ebb356a99ec6ac6a11b888a18f9e6fcc4875783c338b3ed7d08b06577587d12",
-    "sourcePath": "docs/设计记忆/架构决策/ADR-006-内容生产采用证据派生与最小持久化.md",
-    "subtype": "other",
-    "summary": "ADR-006：内容生产采用证据派生与最小持久化",
-    "summarySource": "title-only",
-    "title": "ADR-006：内容生产采用证据派生与最小持久化",
-    "type": "document"
-  },
-  {
-    "id": "docs/设计记忆/架构决策/ADR-007-结构合同采用JSON-Schema并与业务验证分层.md",
-    "indexVersion": 1,
-    "sourceHash": "b5d5ff726ff34cfa2f525d439112064939be3c63de28b270743a29e43164f3f2",
-    "sourcePath": "docs/设计记忆/架构决策/ADR-007-结构合同采用JSON-Schema并与业务验证分层.md",
-    "subtype": "other",
-    "summary": "ADR-007：结构合同采用 JSON Schema 并与业务验证分层",
-    "summarySource": "title-only",
-    "title": "ADR-007：结构合同采用 JSON Schema 并与业务验证分层",
-    "type": "document"
-  },
-  {
-    "id": "docs/设计记忆/架构决策/ADR-008-交互生命周期Hook与质量门禁分离.md",
-    "indexVersion": 1,
-    "sourceHash": "f652a2c7a77bd61b7b5fed69286e0b2bd3969575f50839d373bdaed6a79d9310",
-    "sourcePath": "docs/设计记忆/架构决策/ADR-008-交互生命周期Hook与质量门禁分离.md",
-    "subtype": "other",
-    "summary": "ADR-008：交互生命周期 Hook 与质量门禁分离",
-    "summarySource": "title-only",
-    "title": "ADR-008：交互生命周期 Hook 与质量门禁分离",
     "type": "document"
   }
 ]

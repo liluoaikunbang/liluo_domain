@@ -602,6 +602,17 @@
       "status": "active"
     },
     {
+      "ruleId": "document-writeback-lanes-before-generator",
+      "title": "文档写回先分 authority / 直接消费者 / 生成型写回，生成器末尾只执行一次",
+      "authority": "docs/系统说明/Codex命令授权治理系统.md",
+      "consumers": [
+        "AGENTS.md",
+        ".agents/skills/liluo-project/liluo-command-approval-governance/SKILL.md",
+        "docs/用户命令目录.md"
+      ],
+      "status": "active"
+    },
+    {
       "ruleId": "windows-explicit-utf8",
       "title": "Windows 中文文件与 Git 中文路径采用确定性编码和解析",
       "authority": "docs/系统说明/Windows命令与UTF-8编码规范.md",
@@ -668,29 +679,66 @@
     },
     {
       "ruleId": "visual-feedback-ledger-before-writeback",
-      "title": "官网海报视觉反馈先入账本再回写权威字段与 prompt 规则",
-      "authority": "docs/系统说明/官网海报视觉反馈归档系统.md",
+      "title": "项目图像反馈先入账本，再按判层协议决定 authority / prompt / QA 落点",
+      "authority": "docs/系统说明/项目图像生成判层与治理系统.md",
       "consumers": [
         "AGENTS.md",
         "src/content/site/siteBlueprint.js",
+        "src/content/site/imageGenerationGovernance.js",
         "scripts/site/site-visual-pipeline.mjs",
+        ".agents/skills/liluo-project/liluo-grok-image-generation/scripts/grok-image.mjs",
         "docs/liluo-identity-and-variation-bible.md",
         "docs/image2-prompt-authoring-standard.md",
-        "docs/visual-feedback-ledger.md"
+        "docs/visual-feedback-ledger.md",
+        "docs/系统说明/Grok图像生成API配置与提示词润色工作流.md",
+        "docs/技能说明/liluo-grok-image-generation.md"
       ],
       "status": "active"
     },
     {
       "ruleId": "liluo-identity-prompts-require-age-hair-eyes",
-      "title": "璃落身份相关 prompt 必须显式包含年龄锚点、发色、瞳色与非幼态边界",
-      "authority": "docs/系统说明/官网海报视觉反馈归档系统.md",
+      "title": "璃落相关图像 prompt 必须覆盖年龄锚点、发色、瞳色与非幼态边界",
+      "authority": "docs/系统说明/项目图像生成判层与治理系统.md",
       "consumers": [
         "AGENTS.md",
         "src/content/site/siteBlueprint.js",
+        "src/content/site/imageGenerationGovernance.js",
         "scripts/site/site-visual-pipeline.mjs",
+        ".agents/skills/liluo-project/liluo-grok-image-generation/scripts/grok-image.mjs",
         "docs/liluo-identity-and-variation-bible.md",
         "docs/image2-prompt-authoring-standard.md",
-        "docs/visual-generation-batches.md"
+        "docs/visual-generation-batches.md",
+        "docs/系统说明/Grok图像生成API配置与提示词润色工作流.md",
+        "docs/技能说明/liluo-grok-image-generation.md"
+      ],
+      "status": "active"
+    },
+    {
+      "ruleId": "image-rule-card-before-promotion",
+      "title": "图像反馈升级为长期规则前必须先完成 ruleKind / scopeLevel / persistence / enforcement 判层卡",
+      "authority": "docs/系统说明/项目图像生成判层与治理系统.md",
+      "consumers": [
+        "AGENTS.md",
+        "src/content/site/siteBlueprint.js",
+        "src/content/site/imageGenerationGovernance.js",
+        "scripts/site/site-visual-pipeline.mjs",
+        "docs/visual-feedback-ledger.md",
+        "docs/image2-prompt-authoring-standard.md",
+        "docs/系统说明/Grok图像生成API配置与提示词润色工作流.md"
+      ],
+      "status": "active"
+    },
+    {
+      "ruleId": "image-generation-matched-layer-assembly",
+      "title": "图像生成只装配命中的 authority / prompt / QA 层，并按 source / consumer / generated 分道写回",
+      "authority": "docs/系统说明/项目图像生成判层与治理系统.md",
+      "consumers": [
+        "AGENTS.md",
+        "src/content/site/imageGenerationGovernance.js",
+        "scripts/site/site-visual-pipeline.mjs",
+        ".agents/skills/liluo-project/liluo-grok-image-generation/scripts/grok-image.mjs",
+        "docs/技能说明/liluo-grok-image-generation.md",
+        "docs/用户命令目录.md"
       ],
       "status": "active"
     },

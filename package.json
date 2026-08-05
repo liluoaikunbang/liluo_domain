@@ -15,6 +15,7 @@
     "site:visual:status": "node scripts/site/site-visual-pipeline.mjs status",
     "site:visual:diversity": "node scripts/site/site-visual-pipeline.mjs diversity",
     "site:visual:process": "node scripts/site/site-visual-pipeline.mjs process",
+    "site:asset:promote": "node scripts/site/promote-site-asset.mjs",
     "site:prompts:validate": "node scripts/site/site-visual-pipeline.mjs validate-prompts",
     "site:screenshots:validate": "node scripts/site/site-visual-pipeline.mjs screenshots-validate",
     "site:links:check": "node scripts/site/site-visual-pipeline.mjs links-check",

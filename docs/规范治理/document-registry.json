@@ -870,22 +870,27 @@
       "status": "active"
     },
     {
-      "documentId": "website-poster-visual-feedback-system",
-      "path": "docs/系统说明/官网海报视觉反馈归档系统.md",
+      "documentId": "project-image-generation-governance-system",
+      "path": "docs/系统说明/项目图像生成判层与治理系统.md",
       "type": "system-spec",
       "authorityFor": [
-        "website-poster-visual-feedback-archive",
-        "liluo-visual-identity-writeback",
-        "image2-prompt-anchor-governance"
+        "project-image-feedback-layering",
+        "project-image-feedback-writeback",
+        "project-image-prompt-governance",
+        "liluo-image-identity-anchor-governance"
       ],
       "consumers": [
         "AGENTS.md",
         "src/content/site/siteBlueprint.js",
+        "src/content/site/imageGenerationGovernance.js",
         "scripts/site/site-visual-pipeline.mjs",
+        ".agents/skills/liluo-project/liluo-grok-image-generation/scripts/grok-image.mjs",
         "docs/liluo-identity-and-variation-bible.md",
         "docs/image2-prompt-authoring-standard.md",
         "docs/visual-feedback-ledger.md",
         "docs/visual-generation-batches.md",
+        "docs/系统说明/Grok图像生成API配置与提示词润色工作流.md",
+        "docs/技能说明/liluo-grok-image-generation.md",
         "docs/系统说明/README.md"
       ],
       "indexable": true,

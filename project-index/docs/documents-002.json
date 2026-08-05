@@ -1,5 +1,38 @@
 [
   {
+    "id": "docs/设计记忆/架构决策/ADR-006-内容生产采用证据派生与最小持久化.md",
+    "indexVersion": 1,
+    "sourceHash": "5ebb356a99ec6ac6a11b888a18f9e6fcc4875783c338b3ed7d08b06577587d12",
+    "sourcePath": "docs/设计记忆/架构决策/ADR-006-内容生产采用证据派生与最小持久化.md",
+    "subtype": "other",
+    "summary": "ADR-006：内容生产采用证据派生与最小持久化",
+    "summarySource": "title-only",
+    "title": "ADR-006：内容生产采用证据派生与最小持久化",
+    "type": "document"
+  },
+  {
+    "id": "docs/设计记忆/架构决策/ADR-007-结构合同采用JSON-Schema并与业务验证分层.md",
+    "indexVersion": 1,
+    "sourceHash": "b5d5ff726ff34cfa2f525d439112064939be3c63de28b270743a29e43164f3f2",
+    "sourcePath": "docs/设计记忆/架构决策/ADR-007-结构合同采用JSON-Schema并与业务验证分层.md",
+    "subtype": "other",
+    "summary": "ADR-007：结构合同采用 JSON Schema 并与业务验证分层",
+    "summarySource": "title-only",
+    "title": "ADR-007：结构合同采用 JSON Schema 并与业务验证分层",
+    "type": "document"
+  },
+  {
+    "id": "docs/设计记忆/架构决策/ADR-008-交互生命周期Hook与质量门禁分离.md",
+    "indexVersion": 1,
+    "sourceHash": "f652a2c7a77bd61b7b5fed69286e0b2bd3969575f50839d373bdaed6a79d9310",
+    "sourcePath": "docs/设计记忆/架构决策/ADR-008-交互生命周期Hook与质量门禁分离.md",
+    "subtype": "other",
+    "summary": "ADR-008：交互生命周期 Hook 与质量门禁分离",
+    "summarySource": "title-only",
+    "title": "ADR-008：交互生命周期 Hook 与质量门禁分离",
+    "type": "document"
+  },
+  {
     "id": "docs/设计记忆/架构决策/ADR-009-取消项目级Codex生命周期Hook.md",
     "indexVersion": 1,
     "sourceHash": "0ea15789f38ee0f2a7a9111222f49e8d47e87882210053d29fd703166708e3e1",
@@ -585,12 +618,12 @@
   {
     "id": "docs/系统说明/官网海报视觉反馈归档系统.md",
     "indexVersion": 1,
-    "sourceHash": "3ea73f4885b96fa3d63162e8f77eb0bc3691bba647655283a4ac3cbd4296491a",
+    "sourceHash": "db5b843f22820c9680b72ea780ccd75ac14d8561f2fcb68f74deb1a3c457fee4",
     "sourcePath": "docs/系统说明/官网海报视觉反馈归档系统.md",
     "subtype": "system",
-    "summary": "官网海报视觉反馈归档系统",
+    "summary": "官网海报视觉反馈归档系统（兼容页）",
     "summarySource": "title-only",
-    "title": "官网海报视觉反馈归档系统",
+    "title": "官网海报视觉反馈归档系统（兼容页）",
     "type": "document"
   },
   {
@@ -880,6 +913,17 @@
     "type": "document"
   },
   {
+    "id": "docs/系统说明/项目图像生成判层与治理系统.md",
+    "indexVersion": 1,
+    "sourceHash": "01478d46e462b0aa813795d27f0b5955a91ea7161bf29635ff312b2d5a3d34fd",
+    "sourcePath": "docs/系统说明/项目图像生成判层与治理系统.md",
+    "subtype": "system",
+    "summary": "项目图像生成判层与治理系统",
+    "summarySource": "title-only",
+    "title": "项目图像生成判层与治理系统",
+    "type": "document"
+  },
+  {
     "id": "docs/系统说明/项目知识索引系统.md",
     "indexVersion": 1,
     "sourceHash": "1c314bbb2fdab136bff8d7e64491544c769825bc8c70252c2f5f15513300c921",
@@ -1047,7 +1091,7 @@
   {
     "id": "docs/系统说明/Codex命令授权治理系统.md",
     "indexVersion": 1,
-    "sourceHash": "34d7cd353b0a5de3213aa9049c46759f709f2f1bb20e63f64addd19f07a0837f",
+    "sourceHash": "eb205ada8474baf12ff619297b167c933ecf0ce65bf8e4efbd7ebd5608a44bf5",
     "sourcePath": "docs/系统说明/Codex命令授权治理系统.md",
     "subtype": "system",
     "summary": "Codex 命令授权治理系统",
@@ -1058,7 +1102,7 @@
   {
     "id": "docs/系统说明/Grok图像生成API配置与提示词润色工作流.md",
     "indexVersion": 1,
-    "sourceHash": "0eeb19cf007c0cc36cd81131e331f6315d9bca17c286dcefba5c3dea35aadcf1",
+    "sourceHash": "842512bf7a14269327f8bd49e667ac982ed253107210d59a8357e21b36397cd8",
     "sourcePath": "docs/系统说明/Grok图像生成API配置与提示词润色工作流.md",
     "subtype": "system",
     "summary": "Grok 图像生成 API 配置与提示词润色工作流",
@@ -1091,7 +1135,7 @@
   {
     "id": "docs/系统说明/README.md",
     "indexVersion": 1,
-    "sourceHash": "cc975b4c39d891a95892685d2c55e40316e9daacbbb9e43d961419441ab09bf5",
+    "sourceHash": "9bf502b8641be0a6ee287dd32cdf3a743b7826a519399e5578010dda693e370e",
     "sourcePath": "docs/系统说明/README.md",
     "subtype": "system",
     "summary": "系统说明",
@@ -2587,7 +2631,7 @@
   {
     "id": "docs/用户命令目录.md",
     "indexVersion": 1,
-    "sourceHash": "3d0f2abb54ec287142940774a5294a0bca9470a44ff907fd64ae6d00af907aca",
+    "sourceHash": "cb2cc9b26d44e141b687c26205a16002f14b0bca5b6f4f63e59d144e619df6d4",
     "sourcePath": "docs/用户命令目录.md",
     "subtype": "other",
     "summary": "用户命令目录",
@@ -2609,7 +2653,7 @@
   {
     "id": "docs/运行规范/未解决问题/Codex会话提交异常与上下文预算问题.md",
     "indexVersion": 1,
-    "sourceHash": "68f184b2f009822a3c0c1cc74863fa303df3c5f7c84398244285108b2bb563e8",
+    "sourceHash": "b1af55dd28d907344db34b7f5ff8d0046888db49ef7b2d56c769e332a969be87",
     "sourcePath": "docs/运行规范/未解决问题/Codex会话提交异常与上下文预算问题.md",
     "subtype": "other",
     "summary": "Codex 会话提交异常与上下文预算问题",
@@ -2703,50 +2747,6 @@
     "summary": "普通 RAG 抽查批次 rab-ms1w6rky",
     "summarySource": "title-only",
     "title": "普通 RAG 抽查批次 rab-ms1w6rky",
-    "type": "document"
-  },
-  {
-    "id": "docs/知识检索校准/batches/rab-ms1w6rl5.md",
-    "indexVersion": 1,
-    "sourceHash": "e8bf6ed19e920919fcb074b1bfeb3e7c422c84d893c34602b5cf6a84fafe522d",
-    "sourcePath": "docs/知识检索校准/batches/rab-ms1w6rl5.md",
-    "subtype": "other",
-    "summary": "普通 RAG 抽查批次 rab-ms1w6rl5",
-    "summarySource": "title-only",
-    "title": "普通 RAG 抽查批次 rab-ms1w6rl5",
-    "type": "document"
-  },
-  {
-    "id": "docs/知识检索校准/batches/rab-ms2ubk4z.md",
-    "indexVersion": 1,
-    "sourceHash": "7c23da506d16cded66f6bfaa8623f0c5b6c9853cf48c29f9cce3100a3e982487",
-    "sourcePath": "docs/知识检索校准/batches/rab-ms2ubk4z.md",
-    "subtype": "other",
-    "summary": "Style-RAG 抽查批次 rab-ms2ubk4z",
-    "summarySource": "title-only",
-    "title": "Style-RAG 抽查批次 rab-ms2ubk4z",
-    "type": "document"
-  },
-  {
-    "id": "docs/知识检索校准/batches/rab-ms2ubk5l.md",
-    "indexVersion": 1,
-    "sourceHash": "ac97a0b0fa29846b3915f15473fb771933d3d5f048d3a8478bba128a9a139a37",
-    "sourcePath": "docs/知识检索校准/batches/rab-ms2ubk5l.md",
-    "subtype": "other",
-    "summary": "普通 RAG 抽查批次 rab-ms2ubk5l",
-    "summarySource": "title-only",
-    "title": "普通 RAG 抽查批次 rab-ms2ubk5l",
-    "type": "document"
-  },
-  {
-    "id": "docs/知识检索校准/batches/rab-ms2ubk60.md",
-    "indexVersion": 1,
-    "sourceHash": "9e87b66d40842762836763736525cb74264300cdc17e08d77b7c90175058958f",
-    "sourcePath": "docs/知识检索校准/batches/rab-ms2ubk60.md",
-    "subtype": "other",
-    "summary": "普通 RAG 抽查批次 rab-ms2ubk60",
-    "summarySource": "title-only",
-    "title": "普通 RAG 抽查批次 rab-ms2ubk60",
     "type": "document"
   }
 ]

@@ -178,18 +178,21 @@
     },
     {
       "id": "world-munika-scene-v2",
-      "title": "慕妮卡帝国局部场景概念图",
+      "title": "慕妮卡帝国 World Atlas 正式展示图",
       "path": "docs/assets/readme/generated/world-munika-scene-v2.png",
       "section": "worlds",
       "category": "world-scene",
-      "sourceType": "gpt-image-2",
+      "sourceType": "built-in-imagegen",
       "status": "active",
       "maturityLabel": "concept-art",
-      "alt": "慕妮卡帝国局部场景概念图",
-      "caption": "用于表达慕妮卡帝国可探索空间气质的局部环境图。",
-      "promptFile": "docs/assets/readme/prompts/2026-07-31-world-triptychs-batch-a.md",
-      "referenceAssets": [],
-      "createdAt": "2026-07-31"
+      "alt": "慕妮卡帝国正式 world atlas 展示图：城门、石阶集市、河港、档案与帝国日常运转连成一座可进入的帝国城市",
+      "caption": "已正式收录的慕妮卡帝国 world atlas 展示图：把城门、集市、河港、档案与边疆秩序收束成一座有人生活的帝国城市。",
+      "promptFile": "docs/assets/readme/prompts/2026-08-05-batch-03-munika-wave-1.md",
+      "referenceAssets": [
+        "docs/assets/readme/generated/world-munika-scene-v2.png",
+        "docs/assets/readme/generated/liluo-munika-variant-b00v2-2026-08-05.png"
+      ],
+      "createdAt": "2026-08-05"
     },
     {
       "id": "world-munika-event-v2",
@@ -229,18 +232,20 @@
     },
     {
       "id": "world-fuguang-scene-v2",
-      "title": "浮光掠影局部场景概念图",
+      "title": "浮光掠影六区总图正式展示图",
       "path": "docs/assets/readme/generated/world-fuguang-scene-v2.png",
       "section": "worlds",
       "category": "world-scene",
-      "sourceType": "gpt-image-2",
+      "sourceType": "built-in-imagegen",
       "status": "active",
-      "maturityLabel": "concept-art",
-      "alt": "浮光掠影局部场景概念图",
-      "caption": "用于表达浮光掠影日常探索与轻异常氛围的局部环境图。",
-      "promptFile": "docs/assets/readme/prompts/2026-07-31-world-triptychs-batch-a.md",
-      "referenceAssets": [],
-      "createdAt": "2026-07-31"
+      "maturityLabel": "world-mainline-collage",
+      "alt": "浮光掠影采用中心人物与六个明显分色大区域组织的正式世界展示图",
+      "caption": "已正式收录的浮光掠影六区总图：以中心人物为锚点，区分校园、都市、远行、罪恶都市、过去时间线与特殊场景六个大区域。",
+      "promptFile": "docs/assets/readme/prompts/2026-08-05-batch-02-fuguang-wave-1.md",
+      "referenceAssets": [
+        "docs/assets/readme/generated/batch-02-fuguang-mainline-collage-wave-1-2026-08-05-v8.png"
+      ],
+      "createdAt": "2026-08-05"
     },
     {
       "id": "world-fuguang-event-v2",
@@ -562,39 +567,41 @@
     },
     {
       "id": "liluo-munika-variant",
-      "title": "璃落慕妮卡帝国服装变体",
+      "title": "璃落慕妮卡帝国网站展示变体",
       "path": "docs/assets/readme/generated/liluo-munika-variant.png",
       "section": "character",
       "category": "character-variant",
       "sourceType": "gpt-image-2",
       "status": "active",
       "maturityLabel": "concept-art",
-      "alt": "璃落在慕妮卡帝国中的服装变体",
-      "caption": "用于展示璃落跨叙事域保持同一身份时的世界差分。",
-      "promptFile": "docs/assets/readme/prompts/2026-07-31-liluo-variants-batch-a.md",
+      "alt": "璃落在慕妮卡帝国中的高束发网站展示图",
+      "caption": "用于网站正式展示的慕妮卡帝国变体，保留同一身份并强化高束发、三分之二转身与边境秩序感。",
+      "promptFile": "docs/assets/readme/prompts/2026-08-05-website-display-refinement-round-1.md",
       "referenceAssets": [
-        "docs/assets/readme/generated/liluo-master-character-portrait-v2.png",
+        "docs/assets/readme/generated/liluo-master-character-portrait-b00-candidate-2026-08-05-v2.png",
+        "docs/assets/readme/generated/liluo-munika-variant-b00v2-2026-08-05.png",
         "src/assets/game/standee/LiLuo.png"
       ],
-      "createdAt": "2026-07-31"
+      "createdAt": "2026-08-05"
     },
     {
       "id": "liluo-fuguang-variant",
-      "title": "璃落浮光掠影服装变体",
+      "title": "璃落浮光掠影网站展示变体",
       "path": "docs/assets/readme/generated/liluo-fuguang-variant.png",
       "section": "character",
       "category": "character-variant",
       "sourceType": "gpt-image-2",
       "status": "active",
       "maturityLabel": "concept-art",
-      "alt": "璃落在浮光掠影中的服装变体",
-      "caption": "用于展示璃落跨叙事域保持同一身份时的世界差分。",
-      "promptFile": "docs/assets/readme/prompts/2026-07-31-liluo-variants-batch-a.md",
+      "alt": "璃落在浮光掠影中的马尾网站展示图",
+      "caption": "用于网站正式展示的浮光掠影变体，保留同一身份并强化都市夜色中的轻盈马尾与通透气氛。",
+      "promptFile": "docs/assets/readme/prompts/2026-08-05-website-display-refinement-round-1.md",
       "referenceAssets": [
-        "docs/assets/readme/generated/liluo-master-character-portrait-v2.png",
+        "docs/assets/readme/generated/liluo-master-character-portrait-b00-candidate-2026-08-05-v2.png",
+        "docs/assets/readme/generated/liluo-fuguang-variant-site-candidate-2026-08-05.png",
         "src/assets/game/standee/LiLuo.png"
       ],
-      "createdAt": "2026-07-31"
+      "createdAt": "2026-08-05"
     },
     {
       "id": "liluo-jitu-variant",
@@ -616,57 +623,60 @@
     },
     {
       "id": "liluo-chenhuan-variant",
-      "title": "璃落尘寰问道服装变体",
+      "title": "璃落尘寰问道网站展示变体",
       "path": "docs/assets/readme/generated/liluo-chenhuan-variant.png",
       "section": "character",
       "category": "character-variant",
       "sourceType": "gpt-image-2",
       "status": "active",
       "maturityLabel": "concept-art",
-      "alt": "璃落在尘寰问道中的服装变体",
-      "caption": "用于展示璃落跨叙事域保持同一身份时的世界差分。",
-      "promptFile": "docs/assets/readme/prompts/2026-07-31-liluo-variants-batch-a.md",
+      "alt": "璃落在尘寰问道中的双丫发髻网站展示图",
+      "caption": "用于网站正式展示的尘寰问道变体，保留同一身份并强化古风日常中的双丫发髻与侧转阅读感。",
+      "promptFile": "docs/assets/readme/prompts/2026-08-05-website-display-refinement-round-1.md",
       "referenceAssets": [
-        "docs/assets/readme/generated/liluo-master-character-portrait-v2.png",
+        "docs/assets/readme/generated/liluo-master-character-portrait-b00-candidate-2026-08-05-v2.png",
+        "docs/assets/readme/generated/liluo-chenhuan-variant-site-candidate-2026-08-05-v2.png",
         "src/assets/game/standee/LiLuo.png"
       ],
-      "createdAt": "2026-07-31"
+      "createdAt": "2026-08-05"
     },
     {
       "id": "liluo-zhoufu-variant",
-      "title": "璃落咒缚回响服装变体",
+      "title": "璃落咒缚回响网站展示变体",
       "path": "docs/assets/readme/generated/liluo-zhoufu-variant.png",
       "section": "character",
       "category": "character-variant",
       "sourceType": "gpt-image-2",
       "status": "active",
       "maturityLabel": "concept-art",
-      "alt": "璃落在咒缚回响中的服装变体",
-      "caption": "用于展示璃落跨叙事域保持同一身份时的世界差分。",
-      "promptFile": "docs/assets/readme/prompts/2026-07-31-liluo-variants-batch-a.md",
+      "alt": "璃落在咒缚回响中的双马尾坐姿阅读展示图",
+      "caption": "用于网站正式展示的咒缚回响变体，保留同一身份并强化魔幻学院书库中的全身阅读姿态。",
+      "promptFile": "docs/assets/readme/prompts/2026-08-05-website-display-refinement-round-1.md",
       "referenceAssets": [
-        "docs/assets/readme/generated/liluo-master-character-portrait-v2.png",
+        "docs/assets/readme/generated/liluo-master-character-portrait-b00-candidate-2026-08-05-v2.png",
+        "docs/assets/readme/generated/liluo-zhoufu-variant-site-candidate-2026-08-05.png",
         "src/assets/game/standee/LiLuo.png"
       ],
-      "createdAt": "2026-07-31"
+      "createdAt": "2026-08-05"
     },
     {
       "id": "liluo-xingyu-variant",
-      "title": "璃落星宇织梦服装变体",
+      "title": "璃落星宇织梦网站展示变体",
       "path": "docs/assets/readme/generated/liluo-xingyu-variant.png",
       "section": "character",
       "category": "character-variant",
       "sourceType": "gpt-image-2",
       "status": "active",
       "maturityLabel": "concept-art",
-      "alt": "璃落在星宇织梦中的服装变体",
-      "caption": "用于展示璃落跨叙事域保持同一身份时的世界差分。",
-      "promptFile": "docs/assets/readme/prompts/2026-07-31-liluo-variants-batch-a.md",
+      "alt": "璃落在星宇织梦中的波波头机械身体网站展示图",
+      "caption": "用于网站正式展示的星宇织梦变体，保留同一身份并强化波波头与白色机械身体的非性化未来感。",
+      "promptFile": "docs/assets/readme/prompts/2026-08-05-website-display-refinement-round-1.md",
       "referenceAssets": [
-        "docs/assets/readme/generated/liluo-master-character-portrait-v2.png",
+        "docs/assets/readme/generated/liluo-master-character-portrait-b00-candidate-2026-08-05-v2.png",
+        "docs/assets/readme/generated/liluo-xingyu-variant-site-candidate-2026-08-05.png",
         "src/assets/game/standee/LiLuo.png"
       ],
-      "createdAt": "2026-07-31"
+      "createdAt": "2026-08-05"
     },
     {
       "id": "prototype-campus-map",
@@ -1271,6 +1281,230 @@
       "referenceAssets": [],
       "createdAt": "2026-08-01",
       "verifiedAt": "2026-08-01"
+    },
+    {
+      "id": "batch-02-fuguang-mainline-collage-wave-1-2026-08-05",
+      "title": "浮光掠影主线拼合世界图 Wave 1",
+      "path": "docs/assets/readme/generated/batch-02-fuguang-mainline-collage-wave-1-2026-08-05.png",
+      "section": "worlds",
+      "category": "world-showcase-candidate",
+      "sourceType": "built-in-imagegen",
+      "status": "candidate",
+      "maturityLabel": "world-mainline-collage",
+      "alt": "浮光掠影按主线阶段展开的多场景模糊拼合世界展示图",
+      "caption": "把校园普通层、校园灵异层、都市昼夜、旅行段、过去时间线与特殊场景拼合进同一张公开世界入口图的首轮候选。",
+      "promptFile": "docs/assets/readme/prompts/2026-08-05-batch-02-fuguang-wave-1.md",
+      "referenceAssets": [
+        "docs/assets/readme/world-fuguang-lueying.png",
+        "docs/assets/readme/generated/batch-01-brand-world-day-wave-2-2026-08-05.png"
+      ],
+      "createdAt": "2026-08-05"
+    },
+    {
+      "id": "batch-02-fuguang-mainline-collage-wave-1-2026-08-05-v2",
+      "title": "浮光掠影主线拼合世界图 Wave 1 v2",
+      "path": "docs/assets/readme/generated/batch-02-fuguang-mainline-collage-wave-1-2026-08-05-v2.png",
+      "section": "worlds",
+      "category": "world-showcase-candidate",
+      "sourceType": "built-in-imagegen",
+      "status": "candidate",
+      "maturityLabel": "world-mainline-collage",
+      "alt": "浮光掠影按主线阶段展开的多场景模糊拼合世界展示图提亮版",
+      "caption": "针对首版偏黑与信息不够清的问题，保留同一拼合结构并提升中间调可读性的 v2 候选。",
+      "promptFile": "docs/assets/readme/prompts/2026-08-05-batch-02-fuguang-wave-1.md",
+      "referenceAssets": [
+        "docs/assets/readme/generated/batch-02-fuguang-mainline-collage-wave-1-2026-08-05.png"
+      ],
+      "createdAt": "2026-08-05"
+    },
+    {
+      "id": "batch-02-fuguang-mainline-collage-wave-1-2026-08-05-v3",
+      "title": "浮光掠影主线拼合世界图 Wave 1 v3",
+      "path": "docs/assets/readme/generated/batch-02-fuguang-mainline-collage-wave-1-2026-08-05-v3.png",
+      "section": "worlds",
+      "category": "world-showcase-candidate",
+      "sourceType": "built-in-imagegen",
+      "status": "candidate",
+      "maturityLabel": "world-mainline-collage",
+      "alt": "浮光掠影按四大主分区组织的多场景模糊拼合世界展示图",
+      "caption": "针对重点不清的问题，把大世界图调整为先看四个主分区、再看分区内细节的 v3 候选。",
+      "promptFile": "docs/assets/readme/prompts/2026-08-05-batch-02-fuguang-wave-1.md",
+      "referenceAssets": [
+        "docs/assets/readme/generated/batch-02-fuguang-mainline-collage-wave-1-2026-08-05-v2.png"
+      ],
+      "createdAt": "2026-08-05"
+    },
+    {
+      "id": "batch-02-fuguang-mainline-collage-wave-1-2026-08-05-v5",
+      "title": "浮光掠影主线拼合世界图 Wave 1 v5",
+      "path": "docs/assets/readme/generated/batch-02-fuguang-mainline-collage-wave-1-2026-08-05-v5.png",
+      "section": "worlds",
+      "category": "world-showcase-candidate",
+      "sourceType": "built-in-imagegen",
+      "status": "candidate",
+      "maturityLabel": "world-mainline-collage",
+      "alt": "浮光掠影采用中心人物与六个大区域组织的总图候选",
+      "caption": "按“人物锚点加六个大区域”重新组织后的总图候选，最终版已去除模型误写的图内标题。",
+      "promptFile": "docs/assets/readme/prompts/2026-08-05-batch-02-fuguang-wave-1.md",
+      "referenceAssets": [
+        "docs/assets/readme/generated/batch-02-fuguang-mainline-collage-wave-1-2026-08-05-v3.png"
+      ],
+      "createdAt": "2026-08-05"
+    },
+    {
+      "id": "batch-02-fuguang-mainline-collage-wave-1-2026-08-05-v6",
+      "title": "浮光掠影主线拼合世界图 Wave 1 v6",
+      "path": "docs/assets/readme/generated/batch-02-fuguang-mainline-collage-wave-1-2026-08-05-v6.png",
+      "section": "worlds",
+      "category": "world-showcase-candidate",
+      "sourceType": "built-in-imagegen",
+      "status": "candidate",
+      "maturityLabel": "world-mainline-collage",
+      "alt": "浮光掠影采用中心人物与六个大区域组织并强化都市感的总图候选",
+      "caption": "在 v5 的六区结构基础上，进一步提亮整体并强化现代都市区识别度的 v6 候选。",
+      "promptFile": "docs/assets/readme/prompts/2026-08-05-batch-02-fuguang-wave-1.md",
+      "referenceAssets": [
+        "docs/assets/readme/generated/batch-02-fuguang-mainline-collage-wave-1-2026-08-05-v5.png"
+      ],
+      "createdAt": "2026-08-05"
+    },
+    {
+      "id": "batch-02-fuguang-mainline-collage-wave-1-2026-08-05-v7",
+      "title": "浮光掠影主线拼合世界图 Wave 1 v7",
+      "path": "docs/assets/readme/generated/batch-02-fuguang-mainline-collage-wave-1-2026-08-05-v7.png",
+      "section": "worlds",
+      "category": "world-showcase-candidate",
+      "sourceType": "built-in-imagegen",
+      "status": "candidate",
+      "maturityLabel": "world-mainline-collage",
+      "alt": "浮光掠影采用中心人物与六个现代都市化大区域组织的总图候选",
+      "caption": "在 v6 基础上进一步把现代学校、真实都市、沙漠考古、香港式夜巷与历史都市感压实后的 v7 候选。",
+      "promptFile": "docs/assets/readme/prompts/2026-08-05-batch-02-fuguang-wave-1.md",
+      "referenceAssets": [
+        "docs/assets/readme/generated/batch-02-fuguang-mainline-collage-wave-1-2026-08-05-v6.png"
+      ],
+      "createdAt": "2026-08-05"
+    },
+    {
+      "id": "batch-02-fuguang-mainline-collage-wave-1-2026-08-05-v8",
+      "title": "浮光掠影主线拼合世界图 Wave 1 v8",
+      "path": "docs/assets/readme/generated/batch-02-fuguang-mainline-collage-wave-1-2026-08-05-v8.png",
+      "section": "worlds",
+      "category": "world-showcase-candidate",
+      "sourceType": "built-in-imagegen",
+      "status": "candidate",
+      "maturityLabel": "world-mainline-collage",
+      "alt": "浮光掠影采用中心人物与六个明显分色大区域组织的总图候选",
+      "caption": "在 v7 基础上进一步把六区色系拉开，并强化国内大学、迷宫与民国风识别的 v8 候选。",
+      "promptFile": "docs/assets/readme/prompts/2026-08-05-batch-02-fuguang-wave-1.md",
+      "referenceAssets": [
+        "docs/assets/readme/generated/batch-02-fuguang-mainline-collage-wave-1-2026-08-05-v7.png"
+      ],
+      "createdAt": "2026-08-05"
+    },
+    {
+      "id": "batch-02-fuguang-campus-zone-wave-2-2026-08-05",
+      "title": "浮光掠影校园分区正式展示图",
+      "path": "docs/assets/readme/generated/world-fuguang-campus-zone-v1.png",
+      "section": "worlds",
+      "category": "world-subregion",
+      "sourceType": "built-in-imagegen",
+      "status": "active",
+      "maturityLabel": "world-subregion-campus",
+      "alt": "浮光掠影现代校园分区正式展示图，雨后国内大学入口与克制异常痕迹同框",
+      "caption": "已正式收录的浮光掠影校园分区图：以现代国内大学入口广场为主体，保留雨后校园日常与轻微异常调查感。",
+      "promptFile": "docs/assets/readme/prompts/2026-08-05-batch-02-fuguang-wave-2-campus.md",
+      "referenceAssets": [
+        "docs/assets/readme/generated/batch-02-fuguang-campus-zone-wave-2-2026-08-05.png"
+      ],
+      "createdAt": "2026-08-05"
+    },
+    {
+      "id": "batch-02-fuguang-city-zone-wave-3-2026-08-05",
+      "title": "浮光掠影都市分区正式展示图",
+      "path": "docs/assets/readme/generated/world-fuguang-city-zone-v1.png",
+      "section": "worlds",
+      "category": "world-subregion",
+      "sourceType": "built-in-imagegen",
+      "status": "active",
+      "maturityLabel": "world-subregion-city",
+      "alt": "浮光掠影现代都市分区正式展示图，雨后蓝调通勤城市与环境优先构图",
+      "caption": "已正式收录的浮光掠影都市分区图：以真实当代都市的通勤路径、地铁入口与雨后夜色为主体。",
+      "promptFile": "docs/assets/readme/prompts/2026-08-05-batch-02-fuguang-wave-3-city.md",
+      "referenceAssets": [
+        "docs/assets/readme/generated/batch-02-fuguang-city-zone-wave-3-2026-08-05.png"
+      ],
+      "createdAt": "2026-08-05"
+    },
+    {
+      "id": "batch-02-fuguang-travel-zone-wave-4-2026-08-05",
+      "title": "浮光掠影远行分区正式展示图",
+      "path": "docs/assets/readme/generated/world-fuguang-travel-zone-v1.png",
+      "section": "worlds",
+      "category": "world-subregion",
+      "sourceType": "built-in-imagegen",
+      "status": "active",
+      "maturityLabel": "world-subregion-travel",
+      "alt": "浮光掠影远行分区正式展示图，雨林边缘与沙漠考古远征路线同框",
+      "caption": "已正式收录的浮光掠影远行分区图：以连贯远征路线把雨林边缘、补给营地与沙漠考古区串在一起。",
+      "promptFile": "docs/assets/readme/prompts/2026-08-05-batch-02-fuguang-wave-4-travel.md",
+      "referenceAssets": [
+        "docs/assets/readme/generated/batch-02-fuguang-travel-zone-wave-4-2026-08-05.png"
+      ],
+      "createdAt": "2026-08-05"
+    },
+    {
+      "id": "batch-02-fuguang-crime-city-zone-wave-5-2026-08-05",
+      "title": "浮光掠影罪恶都市分区正式展示图",
+      "path": "docs/assets/readme/generated/world-fuguang-crime-city-zone-v1.png",
+      "section": "worlds",
+      "category": "world-subregion",
+      "sourceType": "built-in-imagegen",
+      "status": "active",
+      "maturityLabel": "world-subregion-crime-city",
+      "alt": "浮光掠影罪恶都市分区正式展示图，霓虹夜巷里唯一红发璃落与多样夜生活女性同框",
+      "caption": "已正式收录的浮光掠影罪恶都市分区图：保留老旧密集夜巷压力，并以更亮的霓虹和更分化的人群气质强化成人夜生活街区感。",
+      "promptFile": "docs/assets/readme/prompts/2026-08-05-batch-02-fuguang-wave-5-crime-city.md",
+      "referenceAssets": [
+        "docs/assets/readme/generated/batch-02-fuguang-crime-city-zone-wave-5-2026-08-05-v3.png"
+      ],
+      "createdAt": "2026-08-05"
+    },
+    {
+      "id": "batch-02-fuguang-past-timeline-zone-wave-6-2026-08-05",
+      "title": "浮光掠影过去时间线分区正式图 v1",
+      "path": "docs/assets/readme/generated/world-fuguang-past-timeline-zone-v1.png",
+      "section": "worlds",
+      "category": "world-subregion",
+      "sourceType": "built-in-imagegen",
+      "status": "active",
+      "maturityLabel": "world-subregion",
+      "alt": "浮光掠影过去时间线正式分区图：璃落以更年轻的民国卷发与深色简洁旗袍穿行于民国、工业早期欧洲与近代日式城市错层之间",
+      "caption": "已正式收录的浮光掠影过去时间线分区图：用一条连续历史都市路线承载民国、工业革命早期欧洲与近代日式城市的时间错层，并把璃落的人物感收回到更接近 Batch 00 v2 的方向。",
+      "promptFile": "docs/assets/readme/prompts/2026-08-05-batch-02-fuguang-wave-6-past-timeline.md",
+      "referenceAssets": [
+        "docs/assets/readme/generated/liluo-fuguang-variant-b00v2-2026-08-05.png",
+        "docs/assets/readme/generated/world-fuguang-scene-v2.png"
+      ],
+      "createdAt": "2026-08-05"
+    },
+    {
+      "id": "batch-02-fuguang-special-scenes-zone-wave-7-2026-08-05",
+      "title": "浮光掠影特殊场景分区正式展示图",
+      "path": "docs/assets/readme/generated/world-fuguang-special-scenes-zone-v1.png",
+      "section": "worlds",
+      "category": "world-subregion",
+      "sourceType": "built-in-imagegen",
+      "status": "active",
+      "maturityLabel": "world-subregion",
+      "alt": "浮光掠影特殊场景正式分区图：豪门宅邸连续外翻成由城市结构组成的层叠迷宫",
+      "caption": "已正式收录的浮光掠影特殊场景分区图：从豪门宅邸的台阶、庭院与廊桥连续展开到由城市结构组成的层叠迷宫。",
+      "promptFile": "docs/assets/readme/prompts/2026-08-05-batch-02-fuguang-wave-7-special-scenes.md",
+      "referenceAssets": [
+        "docs/assets/readme/generated/world-fuguang-scene-v2.png",
+        "docs/assets/readme/generated/liluo-fuguang-variant-b00v2-2026-08-05.png"
+      ],
+      "createdAt": "2026-08-05"
     }
   ]
 }

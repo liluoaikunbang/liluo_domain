@@ -52,7 +52,7 @@ Cursor 与 Codex 共用普通权威文件，`.cursor/` 与 `.codex/` 只保留�
 
 ## 用户批准决定的持久化
 
-命令的长期允许、每次询问或禁止，使用 `liluo-command-approval-governance`；单次允许不持久化，不改写用户级规则。项目 allow 与 Cursor 平台智能审批是两层，互不替代。用户已确认无须重复审批时，同任务内合并提交后一次 push，不得为 record/commit/push 逐步重复触发同类审批。普通编辑按用户任务授权执行，项目 Skill、Agent、规则和配置均直接使用 `apply_patch`，不得再按文件或目录逐项询问；生成物只走正式生成器。网络、依赖、发布、凭据、`.git` 写入与正式删除仍遵守平台边界。用户明确要求上传 GitHub 时，完成本地审查、暂存和提交后直接执行一次目标 `git push`，不得默认先用 `git ls-remote`、fetch 或其他联网命令预检远端。验证选择 `npm run project:routine -- <最小适用 profile>`，按变化面去重，不以 `all` 代替范围判断；完整规则见 [Codex 命令授权治理系统](docs/系统说明/Codex命令授权治理系统.md)。项目不得注册 Codex 生命周期 Hook；平台沙箱、`.codex/rules`、显式 `project:gate:*`、Git pre-push 与 CI 仍按各自边界保护，详见 [Codex Hooks 与自动质量门禁系统](docs/系统说明/Codex-Hooks与自动质量门禁系统.md)。若某次工具或命令耗时明显异常（尤其远超命令本体或无预期地持续约 30 秒以上），必须主动告知用户、说明已核查的原因边界，并明确该问题是否已解决；不得把异常等待静默带过。
+命令的长期允许、每次询问或禁止，使用 `liluo-command-approval-governance`；单次允许不持久化，不改写用户级规则。项目 allow 与 Cursor 平台智能审批是两层，互不替代。用户已确认无须重复审批时，同任务内合并提交后一次 push，不得为 record/commit/push 逐步重复触发同类审批。普通编辑按用户任务授权执行，项目 Skill、Agent、规则和配置均直接使用 `apply_patch`，不得再按文件或目录逐项询问；生成物只走正式生成器。所有文档写入先区分 `authority`、直接消费者和生成型写回三类：前两类优先直接 patch，审计/注册表/索引/批量汇总等生成物只在任务末尾统一执行一次；已知会稳定触发 `EPERM` 的生成命令首轮就走正确权限路线，不先制造一次失败再重试。网络、依赖、发布、凭据、`.git` 写入与正式删除仍遵守平台边界。用户明确要求上传 GitHub 时，完成本地审查、暂存和提交后直接执行一次目标 `git push`，不得默认先用 `git ls-remote`、fetch 或其他联网命令预检远端。验证选择 `npm run project:routine -- <最小适用 profile>`，按变化面去重，不以 `all` 代替范围判断；完整规则见 [Codex 命令授权治理系统](docs/系统说明/Codex命令授权治理系统.md)。项目不得注册 Codex 生命周期 Hook；平台沙箱、`.codex/rules`、显式 `project:gate:*`、Git pre-push 与 CI 仍按各自边界保护，详见 [Codex Hooks 与自动质量门禁系统](docs/系统说明/Codex-Hooks与自动质量门禁系统.md)。若某次工具或命令耗时明显异常（尤其远超命令本体或无预期地持续约 30 秒以上），必须主动告知用户、说明已核查的原因边界，并明确该问题是否已解决；不得把异常等待静默带过。
 
 ## 故事缺口发现与灵感补全
 
@@ -63,7 +63,7 @@ Cursor 与 Codex 共用普通权威文件，`.cursor/` 与 `.codex/` 只保留�
 跨文件、跨世界或跨系统定位优先使用项目索引查询命令，再按命中结果核验原始权威文件；不得默认加载完整 `project-index/INDEX.md`。索引异常时使用项目索引 Skill 修复或检查，修改被索引源后按范围增量刷新并验证。通用规划、TDD、调试、前端、Vue/Vite、审查和简化继续使用 `.agents/skills/` 下现有通用 Skills。
 - 涉及批次、注册表、prompt、索引命中或其他大文件核对时，默认先取统计、`--limit`、`--fields`、1–3 条样本或定向行段；除非用户明确要求，不直接打印整批 prompt、整份 JSON、整文件前数百行，也不并行执行会返回大段重叠输出的命令。脏工作区里先看 `git diff --stat`、定向 `rg` 或单文件 diff，不默认直接展开多文件大 diff 正文。
 - Windows 下读取中文 `docs`、JSON 或注册表时，默认优先用 `node scripts/docs/read-utf8-slice.mjs <file> --start <n> --count <m>` 做 UTF-8 分段读取；不要再用未显式指定编码的 `Get-Content` 去判断中文文件是否正常。
-- 官网海报、README/Pages 视觉批次、角色基线图与 `Batch 00` 的视觉反馈和 prompt 回写统一遵循 [官网海报视觉反馈归档系统](docs/系统说明/官网海报视觉反馈归档系统.md)；用户反馈先入 `visualFeedbackLedger`，再回写 `liluoProfile` / `worlds[*]` 等权威字段；璃落身份相关 prompt 必须显式包含年龄锚点、发色、瞳色与非幼态边界。
+- 项目内所有图像生成任务（官网海报、README/Pages 视觉批次、角色基线图、`Batch 00`、Grok 草稿图与后续新增链路）的反馈判层、prompt 组装与 QA 统一遵循 [项目图像生成判层与治理系统](docs/系统说明/项目图像生成判层与治理系统.md)；用户反馈先入 `visualFeedbackLedger`，再按 authority / prompt / QA 判层回写；单次 prompt 只装配命中的层级，不把全部长期规范硬塞进一次生成；璃落身份相关 prompt 必须显式覆盖年龄锚点、发色、瞳色与非幼态边界。
 
 ## 项目子智能体
 
